@@ -1,0 +1,37 @@
+[
+  {
+    "source": "content/print/T09_挑战卡_A4.pdf",
+    "pages": 18,
+    "status": "rendered",
+    "command": "pdftoppm -r 100 -png content/print/T09_挑战卡_A4.pdf <output-prefix>",
+    "stderr": ""
+  },
+  {
+    "source": "content/print/T09_答案册.pdf",
+    "pages": 36,
+    "status": "rendered",
+    "command": "pdftoppm -r 100 -png content/print/T09_答案册.pdf <output-prefix>",
+    "stderr": ""
+  },
+  {
+    "source": "materials/rule-cards/pdf/all-independent-cards.pdf",
+    "pages": 8,
+    "status": "rendered",
+    "command": "pdftoppm -r 100 -png materials/rule-cards/pdf/all-independent-cards.pdf <output-prefix>",
+    "stderr": ""
+  },
+  {
+    "source": "materials/rule-cards/pdf/PRINT-A4-landscape-short-edge.pdf",
+    "pages": 6,
+    "status": "rendered",
+    "command": "pdftoppm -r 100 -png materials/rule-cards/pdf/PRINT-A4-landscape-short-edge.pdf <output-prefix>",
+    "stderr": ""
+  },
+  {
+    "source": "materials/rule-cards/pdf/PRINT-A4-portrait-long-edge-mini.pdf",
+    "pages": 2,
+    "status": "rendered",
+    "command": "pdftoppm -r 100 -png materials/rule-cards/pdf/PRINT-A4-portrait-long-edge-mini.pdf <output-prefix>",
+    "stderr": ""
+  }
+]

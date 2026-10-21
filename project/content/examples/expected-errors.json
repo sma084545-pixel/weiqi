@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "DEV-ERRORS-001",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "DeveloperErrorManifest",
+  "developmentOnly": true,
+  "cases": [
+    {
+      "file": "invalid/out-of-bounds.json",
+      "expectedCode": "COORD_BOUNDS",
+      "expectedPath": "/stones/0/row"
+    },
+    {
+      "file": "invalid/duplicate-point.json",
+      "expectedCode": "DUPLICATE_POINT",
+      "expectedPath": "/stones/1"
+    },
+    {
+      "file": "invalid/unknown-stone.json",
+      "expectedCode": "SCHEMA_FIELD",
+      "expectedPath": "/stones/0/color"
+    },
+    {
+      "file": "invalid/unknown-major.json",
+      "expectedCode": "SCHEMA_VERSION",
+      "expectedPath": "/schemaVersion"
+    }
+  ]
+}

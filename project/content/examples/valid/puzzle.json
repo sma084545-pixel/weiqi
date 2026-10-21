@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "id": "DEV-LIB-001",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "Puzzle",
+  "developmentOnly": true,
+  "category": "LIB",
+  "difficulty": {
+    "level": "beginner",
+    "rationale": "完整5×5中的中心单子，无提子或劫依赖。"
+  },
+  "prompt": "开发示例：选择中央黑子的全部气。",
+  "initialPosition": {
+    "schemaVersion": 1,
+    "id": "DEV-POS-001",
+    "revision": 1,
+    "rulesetId": "GO-CLUB-AREA-1",
+    "kind": "Position",
+    "size": 5,
+    "stones": [
+      {
+        "row": 2,
+        "col": 2,
+        "color": "B"
+      }
+    ],
+    "toPlay": "W",
+    "historyPolicy": "fresh-setup",
+    "history": null
+  },
+  "targetMarkers": [
+    {
+      "markerId": "target-1",
+      "type": "target",
+      "points": [
+        {
+          "row": 2,
+          "col": 2
+        }
+      ],
+      "label": "中央黑子",
+      "owner": "B"
+    }
+  ],
+  "firstPlayer": "W",
+  "conditions": {
+    "boundary": "full-board",
+    "external": "真实完整5×5；不存在盘外棋子。",
+    "assumptions": [
+      "仅选择空点，不提交落子。"
+    ],
+    "viewport": null
+  },
+  "hints": [
+    "只找上下左右。",
+    "斜角不算气。",
+    "逐一核对四个相邻交叉点。"
+  ],
+  "answer": {
+    "type": "point-set",
+    "points": [
+      {
+        "row": 1,
+        "col": 2
+      },
+      {
+        "row": 2,
+        "col": 1
+      },
+      {
+        "row": 2,
+        "col": 3
+      },
+      {
+        "row": 3,
+        "col": 2
+      }
+    ],
+    "explanation": "手算：C4、B3、D3、C2 共四个互不重复的正交空点。"
+  },
+  "coveredBranches": [],
+  "sources": [
+    {
+      "type": "original",
+      "title": "T00 开发示例",
+      "url": null,
+      "accessedAt": null,
+      "note": "依据用户规则原创；不是学生记录，不属于正式题库。"
+    }
+  ],
+  "validation": {
+    "structure": null,
+    "moveLegality": null,
+    "solutionChecked": null,
+    "externalReferenceChecked": null,
+    "modelChecked": null,
+    "humanReviewed": null
+  },
+  "relatedContent": []
+}

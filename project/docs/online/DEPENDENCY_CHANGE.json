@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "ONLINE-DEPENDENCY-CHANGE",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "baseVersion": "0.19.0-history.1",
+  "resultVersion": "0.20.0-online.1",
+  "reason": "User-authorized optional online room server; formal rules/content/schema unchanged.",
+  "baseLockSha256": "80fb6c23436fb904456dea058ecb97d48d6789c5fc5a3f59bceca8131e7d655c",
+  "resultLockSha256": "84a5b92eaabb8b26b2ed578cfc75b0065a001092a9c6878b42a1b844adee9b5a",
+  "basePackageSha256": "bfcb2c8e1f11f9bb6b34e50f8dadb8b99415ed4571fa97d311d41ae78869e5df",
+  "addedDependencies": {
+    "ws": "8.22.0"
+  },
+  "addedDevDependencies": {
+    "@types/ws": "8.18.2"
+  },
+  "existingDirectVersionsUnchanged": true
+}

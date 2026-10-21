@@ -1,0 +1,10 @@
+import {mkdirSync,writeFileSync} from 'node:fs';
+import assert from 'node:assert/strict';
+import {addTestFixture,emptyEvidence,summarize,validateEvidence} from '../src/features/evidence/model';
+import {reviewedReport,reportMarkdown} from '../src/features/evidence/report';
+const fixture=addTestFixture(emptyEvidence());for(const f of fixture.feedback)f.feedback.recordedAt='2026-10-05T00:00:00.000Z';
+const s=summarize(fixture.feedback);assert.equal(s.total,3);assert.deepEqual(s.difficulty,{'too-easy':0,comfortable:1,'too-hard':1,missing:1});assert.equal(s.preferred.liberties,2);assert.equal(s.preferred.missing,1);assert.equal(s.missingComment,1);
+assert(validateEvidence(fixture).ok);const empty=reviewedReport(fixture);assert.equal(empty.feedback.length,0);assert(validateEvidence(empty).ok);
+const invalid={...fixture,schemaVersion:9};const rejected=validateEvidence(invalid);assert(!rejected.ok);
+mkdirSync('content/t17/development',{recursive:true});writeFileSync('content/t17/development/TEST-T17-three-replies.json',JSON.stringify(fixture,null,2)+'\n');writeFileSync('content/t17/development/TEST-T17-invalid-major.json',JSON.stringify(invalid,null,2)+'\n');writeFileSync('content/t17/development/expected-results.json',JSON.stringify({schemaVersion:1,id:'TEST-T17-EXPECTED',revision:1,rulesetId:'GO-CLUB-AREA-1',developmentOnly:true,validFile:'TEST-T17-three-replies.json',invalidFile:'TEST-T17-invalid-major.json',expectedErrorField:'/schemaVersion',expected:{total:3,difficulty:{'too-easy':0,comfortable:1,'too-hard':1,missing:1},favorite:{liberties:2,missing:1},missingComment:1,defaultExportFeedback:0}},null,2)+'\n');writeFileSync('content/t17/development/TEST-T17-report.md',reportMarkdown({...reviewedReport(fixture,true),id:'TEST-T17-REPORT'}));
+console.log('PASS T17: empty, 3 labelled test replies, independent counts/missing/denominators, default test exclusion, schemaVersion rejection. No real participant records generated.');

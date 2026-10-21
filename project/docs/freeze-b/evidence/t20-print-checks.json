@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "id": "T20-PRINT-CHECKS",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "checks": [
+    {
+      "name": "T20-01-main-front single page",
+      "status": "PASS"
+    },
+    {
+      "name": "T20-01-main-front actual dimensions",
+      "status": "PASS"
+    },
+    {
+      "name": "T20-01-main-front identity",
+      "status": "PASS"
+    },
+    {
+      "name": "T20-01-main-front embedded used CJK font",
+      "status": "PASS"
+    },
+    {
+      "name": "T20-01-main-front editable real-size SVG",
+      "status": "PASS"
+    },
+    {
+      "name": "T20-02-main-back single page",
+      "status": "PASS"
+    },
+    {
+      "name": "T20-02-main-back actual dimensions",
+      "status": "PASS"
+    },
+    {
+      "name": "T20-02-main-back identity",
+      "status": "PASS"
+    },
+    {
+      "name": "T20-02-main-back embedded used CJK font",
+      "status": "PASS"
+    },
+    {
+      "name": "T20-02-main-back editable real-size SVG",
+      "status": "PASS"
+    },
+    {
+      "name": "T20-03-detail-front single page",
+      "status": "PASS"
+    },
+    {
+      "name": "T20-03-detail-front actual dimensions",
+      "status": "PASS"
+    },
+    {
+      "name": "T20-03-detail-front identity",
+      "status": "PASS"
+    },
+    {
+      "name": "T20-03-detail-front embedded used CJK font",
+      "status": "PASS"
+    },
+    {
+      "name": "T20-03-detail-front editable real-size SVG",
+      "status": "PASS"
+    },
+    {
+      "name": "T20-04-detail-back single page",
+      "status": "PASS"
+    },
+    {
+      "name": "T20-04-detail-back actual dimensions",
+      "status": "PASS"
+    },
+    {
+      "name": "T20-04-detail-back identity",
+      "status": "PASS"
+    },
+    {
+      "name": "T20-04-detail-back embedded used CJK font",
+      "status": "PASS"
+    },
+    {
+      "name": "T20-04-detail-back editable real-size SVG",
+      "status": "PASS"
+    },
+    {
+      "name": "T20-05-score single page",
+      "status": "PASS"
+    },
+    {
+      "name": "T20-05-score actual dimensions",
+      "status": "PASS"
+    },
+    {
+      "name": "T20-05-score identity",
+      "status": "PASS"
+    },
+    {
+      "name": "T20-05-score embedded used CJK font",
+      "status": "PASS"
+    },
+    {
+      "name": "T20-05-score editable real-size SVG",
+      "status": "PASS"
+    },
+    {
+      "name": "T20-06-pathway single page",
+      "status": "PASS"
+    },
+    {
+      "name": "T20-06-pathway actual dimensions",
+      "status": "PASS"
+    },
+    {
+      "name": "T20-06-pathway identity",
+      "status": "PASS"
+    },
+    {
+      "name": "T20-06-pathway embedded used CJK font",
+      "status": "PASS"
+    },
+    {
+      "name": "T20-06-pathway editable real-size SVG",
+      "status": "PASS"
+    },
+    {
+      "name": "T20-07-mini-front single page",
+      "status": "PASS"
+    },
+    {
+      "name": "T20-07-mini-front actual dimensions",
+      "status": "PASS"
+    },
+    {
+      "name": "T20-07-mini-front identity",
+      "status": "PASS"
+    },
+    {
+      "name": "T20-07-mini-front embedded used CJK font",
+      "status": "PASS"
+    },
+    {
+      "name": "T20-07-mini-front editable real-size SVG",
+      "status": "PASS"
+    },
+    {
+      "name": "T20-08-mini-back single page",
+      "status": "PASS"
+    },
+    {
+      "name": "T20-08-mini-back actual dimensions",
+      "status": "PASS"
+    },
+    {
+      "name": "T20-08-mini-back identity",
+      "status": "PASS"
+    },
+    {
+      "name": "T20-08-mini-back embedded used CJK font",
+      "status": "PASS"
+    },
+    {
+      "name": "T20-08-mini-back editable real-size SVG",
+      "status": "PASS"
+    },
+    {
+      "name": "PRINT-A4-landscape-short-edge page count",
+      "status": "PASS"
+    },
+    {
+      "name": "PRINT-A4-landscape-short-edge page 1 A4",
+      "status": "PASS"
+    },
+    {
+      "name": "PRINT-A4-landscape-short-edge page 1 paired ID count",
+      "status": "PASS"
+    },
+    {
+      "name": "PRINT-A4-landscape-short-edge page 2 A4",
+      "status": "PASS"
+    },
+    {
+      "name": "PRINT-A4-landscape-short-edge page 2 paired ID count",
+      "status": "PASS"
+    },
+    {
+      "name": "PRINT-A4-landscape-short-edge page 3 A4",
+      "status": "PASS"
+    },
+    {
+      "name": "PRINT-A4-landscape-short-edge page 3 paired ID count",
+      "status": "PASS"
+    },
+    {
+      "name": "PRINT-A4-landscape-short-edge page 4 A4",
+      "status": "PASS"
+    },
+    {
+      "name": "PRINT-A4-landscape-short-edge page 4 paired ID count",
+      "status": "PASS"
+    },
+    {
+      "name": "PRINT-A4-landscape-short-edge page 5 A4",
+      "status": "PASS"
+    },
+    {
+      "name": "PRINT-A4-landscape-short-edge page 5 paired ID count",
+      "status": "PASS"
+    },
+    {
+      "name": "PRINT-A4-landscape-short-edge page 6 A4",
+      "status": "PASS"
+    },
+    {
+      "name": "PRINT-A4-landscape-short-edge page 6 paired ID count",
+      "status": "PASS"
+    },
+    {
+      "name": "PRINT-A4-portrait-long-edge-mini page count",
+      "status": "PASS"
+    },
+    {
+      "name": "PRINT-A4-portrait-long-edge-mini page 1 A4",
+      "status": "PASS"
+    },
+    {
+      "name": "PRINT-A4-portrait-long-edge-mini page 1 paired ID count",
+      "status": "PASS"
+    },
+    {
+      "name": "PRINT-A4-portrait-long-edge-mini page 2 A4",
+      "status": "PASS"
+    },
+    {
+      "name": "PRINT-A4-portrait-long-edge-mini page 2 paired ID count",
+      "status": "PASS"
+    },
+    {
+      "name": "full diagrams contain only B/W sparse stones and row/col",
+      "status": "PASS"
+    }
+  ]
+}

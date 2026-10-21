@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "id": "END-005",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "TerminalFixture",
+  "developmentOnly": false,
+  "title": "提子更多也不额外加分",
+  "position": {
+    "schemaVersion": 1,
+    "id": "POS-END-005",
+    "revision": 1,
+    "rulesetId": "GO-CLUB-AREA-1",
+    "kind": "Position",
+    "size": 5,
+    "stones": [
+      {
+        "row": 0,
+        "col": 0,
+        "color": "B"
+      },
+      {
+        "row": 0,
+        "col": 2,
+        "color": "B"
+      },
+      {
+        "row": 0,
+        "col": 4,
+        "color": "B"
+      },
+      {
+        "row": 1,
+        "col": 0,
+        "color": "B"
+      },
+      {
+        "row": 1,
+        "col": 1,
+        "color": "B"
+      },
+      {
+        "row": 1,
+        "col": 2,
+        "color": "B"
+      },
+      {
+        "row": 1,
+        "col": 3,
+        "color": "B"
+      },
+      {
+        "row": 1,
+        "col": 4,
+        "color": "B"
+      },
+      {
+        "row": 2,
+        "col": 0,
+        "color": "W"
+      },
+      {
+        "row": 2,
+        "col": 1,
+        "color": "W"
+      },
+      {
+        "row": 2,
+        "col": 2,
+        "color": "W"
+      },
+      {
+        "row": 2,
+        "col": 3,
+        "color": "W"
+      },
+      {
+        "row": 2,
+        "col": 4,
+        "color": "W"
+      },
+      {
+        "row": 3,
+        "col": 0,
+        "color": "W"
+      },
+      {
+        "row": 3,
+        "col": 1,
+        "color": "W"
+      },
+      {
+        "row": 3,
+        "col": 2,
+        "color": "W"
+      },
+      {
+        "row": 3,
+        "col": 3,
+        "color": "W"
+      },
+      {
+        "row": 3,
+        "col": 4,
+        "color": "W"
+      },
+      {
+        "row": 4,
+        "col": 0,
+        "color": "W"
+      },
+      {
+        "row": 4,
+        "col": 2,
+        "color": "W"
+      },
+      {
+        "row": 4,
+        "col": 4,
+        "color": "W"
+      }
+    ],
+    "toPlay": "B",
+    "historyPolicy": "fresh-setup",
+    "history": null
+  },
+  "status": "teaching-assumption",
+  "assumptions": [
+    "真实完整 5×5 小棋盘练习；新教学起点，过去劫史未知。",
+    "B=12、W=1 只是反事实比较用的提子账本标签，不是重建或声称存在这样的历史棋谱。把标签换成 B=0、W=0，面积计算仍相同。",
+    "这是给定存活与死子约定的教学算例，不是某场已确认实战记录。confirmedBy 保持空数组。",
+    "除明确标记死子外，盘上棋子按活子计算。提子数不额外计入面积。"
+  ],
+  "agreement": {
+    "deadStones": [],
+    "neutralPoints": [],
+    "confirmedBy": []
+  },
+  "komi": 0,
+  "captureCountsForComparison": {
+    "B": 12,
+    "W": 1
+  },
+  "expectedScore": {
+    "blackStones": 8,
+    "whiteStones": 13,
+    "blackTerritory": [
+      {
+        "row": 0,
+        "col": 1
+      },
+      {
+        "row": 0,
+        "col": 3
+      }
+    ],
+    "whiteTerritory": [
+      {
+        "row": 4,
+        "col": 1
+      },
+      {
+        "row": 4,
+        "col": 3
+      }
+    ],
+    "neutralPoints": [],
+    "komi": 0,
+    "blackTotal": 10,
+    "whiteTotal": 15,
+    "difference": -5,
+    "winner": "W",
+    "basis": "teaching-assumption"
+  },
+  "sources": [
+    {
+      "type": "original",
+      "title": "T09 原创题目、表达与坐标图",
+      "url": null,
+      "accessedAt": null,
+      "note": "依据 GO-CLUB-AREA-1 自行设计和模型推导，未复制协会题图或网上题库。不是教师审题或学生记录。"
+    },
+    {
+      "type": "reference",
+      "title": "British Go Association: How to Play",
+      "url": "https://www.britgo.org/intro/intro2.html",
+      "accessedAt": "2026-09-07",
+      "note": "仅核对正交连接、气、提子与两眼的一般概念。自定义计分、停手及重复规则以项目约定为准；原创题目的正确性另行验证。"
+    }
+  ],
+  "validation": {
+    "structure": {
+      "status": "passed",
+      "method": "T00 structure / T01 engine / independent vectors as applicable",
+      "checkedAt": "2026-09-07",
+      "evidence": [
+        "content/validation/results.json: END-005",
+        "content/t09/pedagogy.json: END-005"
+      ]
+    },
+    "moveLegality": {
+      "status": "passed",
+      "method": "T00 structure / T01 engine / independent vectors as applicable",
+      "checkedAt": "2026-09-07",
+      "evidence": [
+        "content/validation/results.json: END-005",
+        "content/t09/pedagogy.json: END-005"
+      ]
+    },
+    "solutionChecked": {
+      "status": "passed",
+      "method": "T00 structure / T01 engine / independent vectors as applicable",
+      "checkedAt": "2026-09-07",
+      "evidence": [
+        "content/validation/results.json: END-005",
+        "content/t09/pedagogy.json: END-005"
+      ]
+    },
+    "externalReferenceChecked": {
+      "status": "passed",
+      "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+      "checkedAt": "2026-09-07",
+      "evidence": [
+        "content/validation/results.json: END-005",
+        "content/t09/pedagogy.json: END-005",
+        "content/t09/SOURCES.md"
+      ]
+    },
+    "modelChecked": {
+      "status": "passed",
+      "method": "Authored reasoning + explicit finite scope, not human review",
+      "checkedAt": "2026-09-07",
+      "evidence": [
+        "content/validation/results.json: END-005",
+        "content/t09/pedagogy.json: END-005"
+      ]
+    },
+    "humanReviewed": null
+  }
+}

@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "id": "AREA-003",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "Puzzle",
+  "developmentOnly": false,
+  "category": "AREA",
+  "difficulty": {
+    "level": "beginner",
+    "rationale": "明确教学约定下逐项核对面积，不使用未完棋局估算。"
+  },
+  "prompt": "按“C5 白子已被双方同意为死子”的教学假设，移除后黑方面积是多少？",
+  "initialPosition": {
+    "schemaVersion": 1,
+    "id": "POS-AREA-003",
+    "revision": 1,
+    "rulesetId": "GO-CLUB-AREA-1",
+    "kind": "Position",
+    "size": 5,
+    "stones": [
+      {
+        "row": 0,
+        "col": 1,
+        "color": "B"
+      },
+      {
+        "row": 0,
+        "col": 3,
+        "color": "B"
+      },
+      {
+        "row": 1,
+        "col": 0,
+        "color": "B"
+      },
+      {
+        "row": 1,
+        "col": 1,
+        "color": "B"
+      },
+      {
+        "row": 1,
+        "col": 3,
+        "color": "B"
+      },
+      {
+        "row": 1,
+        "col": 4,
+        "color": "B"
+      },
+      {
+        "row": 2,
+        "col": 0,
+        "color": "B"
+      },
+      {
+        "row": 2,
+        "col": 1,
+        "color": "B"
+      },
+      {
+        "row": 2,
+        "col": 2,
+        "color": "B"
+      },
+      {
+        "row": 2,
+        "col": 3,
+        "color": "B"
+      },
+      {
+        "row": 2,
+        "col": 4,
+        "color": "B"
+      },
+      {
+        "row": 3,
+        "col": 0,
+        "color": "W"
+      },
+      {
+        "row": 3,
+        "col": 1,
+        "color": "W"
+      },
+      {
+        "row": 3,
+        "col": 2,
+        "color": "W"
+      },
+      {
+        "row": 3,
+        "col": 3,
+        "color": "W"
+      },
+      {
+        "row": 3,
+        "col": 4,
+        "color": "W"
+      },
+      {
+        "row": 4,
+        "col": 0,
+        "color": "W"
+      },
+      {
+        "row": 4,
+        "col": 2,
+        "color": "W"
+      },
+      {
+        "row": 4,
+        "col": 4,
+        "color": "W"
+      },
+      {
+        "row": 0,
+        "col": 2,
+        "color": "W"
+      }
+    ],
+    "toPlay": "B",
+    "historyPolicy": "fresh-setup",
+    "history": null
+  },
+  "targetMarkers": [
+    {
+      "markerId": "target-1",
+      "type": "target",
+      "points": [
+        {
+          "row": 0,
+          "col": 2
+        }
+      ],
+      "label": "目标1：C5",
+      "owner": "W"
+    }
+  ],
+  "firstPlayer": "B",
+  "conditions": {
+    "boundary": "full-board",
+    "external": "真实完整 5×5 小棋盘练习，图外无棋子，不使用裁切边缘。",
+    "assumptions": [
+      "成功标准：数字为 15；理解死子移除与真实落子演示是两种不同操作。",
+      "常见错误：漏算活子、把提子账本再次相加，或把中立区分给一方。",
+      "同伴讨论：一人逐点标空区，另一人核对活子，最后检查总和是否覆盖全盘。",
+      "新教学起点，过去劫史未知；从当前布局建立新历史，不宣称来自合法实战棋谱。",
+      "真实完整 5×5 小棋盘练习；新教学起点，过去劫史未知。",
+      "教学假设双方已同意 C5 白子为死子，移除其完整一子块。此处不伪造真实双方确认。",
+      "可实际演示黑 C4 提掉 C5；该演示是新教学起点的合法变化。",
+      "这是给定存活与死子约定的教学算例，不是某场已确认实战记录。confirmedBy 保持空数组。",
+      "除明确标记死子外，盘上棋子按活子计算。提子数不额外计入面积。"
+    ],
+    "viewport": null
+  },
+  "hints": [
+    "先读题干的死子、中立点与贴目约定。",
+    "分别数活子和围住的空点；中立点留空。",
+    "核对是否多加了提子账本，或漏了白方贴目。"
+  ],
+  "answer": {
+    "type": "number",
+    "value": 15,
+    "explanation": "黑活子 11 + 黑围空 4 = 15。白活子 8 + 白围空 2 + 贴目 0 = 10。中立 0 点不归双方。盘面核对：活子与三类空点合计 25。 C5 移除后是黑方围空之一，不作为提子另加分。"
+  },
+  "coveredBranches": [],
+  "sources": [
+    {
+      "type": "original",
+      "title": "T09 原创题目、表达与坐标图",
+      "url": null,
+      "accessedAt": null,
+      "note": "依据 GO-CLUB-AREA-1 自行设计和模型推导，未复制协会题图或网上题库。不是教师审题或学生记录。"
+    },
+    {
+      "type": "reference",
+      "title": "British Go Association: How to Play",
+      "url": "https://www.britgo.org/intro/intro2.html",
+      "accessedAt": "2026-09-07",
+      "note": "仅核对正交连接、气、提子与两眼的一般概念。自定义计分、停手及重复规则以项目约定为准；原创题目的正确性另行验证。"
+    }
+  ],
+  "validation": {
+    "structure": {
+      "status": "passed",
+      "method": "T00 structure / T01 engine / independent vectors as applicable",
+      "checkedAt": "2026-09-07",
+      "evidence": [
+        "content/validation/results.json: AREA-003",
+        "content/t09/pedagogy.json: AREA-003"
+      ]
+    },
+    "moveLegality": {
+      "status": "passed",
+      "method": "T00 structure / T01 engine / independent vectors as applicable",
+      "checkedAt": "2026-09-07",
+      "evidence": [
+        "content/validation/results.json: AREA-003",
+        "content/t09/pedagogy.json: AREA-003"
+      ]
+    },
+    "solutionChecked": {
+      "status": "passed",
+      "method": "T00 structure / T01 engine / independent vectors as applicable",
+      "checkedAt": "2026-09-07",
+      "evidence": [
+        "content/validation/results.json: AREA-003",
+        "content/t09/pedagogy.json: AREA-003"
+      ]
+    },
+    "externalReferenceChecked": {
+      "status": "passed",
+      "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+      "checkedAt": "2026-09-07",
+      "evidence": [
+        "content/validation/results.json: AREA-003",
+        "content/t09/pedagogy.json: AREA-003",
+        "content/t09/SOURCES.md"
+      ]
+    },
+    "modelChecked": {
+      "status": "passed",
+      "method": "Authored reasoning + explicit finite scope, not human review",
+      "checkedAt": "2026-09-07",
+      "evidence": [
+        "content/validation/results.json: AREA-003",
+        "content/t09/pedagogy.json: AREA-003"
+      ]
+    },
+    "humanReviewed": null
+  },
+  "relatedContent": [
+    {
+      "id": "END-003",
+      "revision": 1
+    }
+  ]
+}

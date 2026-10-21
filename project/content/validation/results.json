@@ -1,0 +1,2893 @@
+{
+  "schemaVersion": 1,
+  "id": "T09-VALIDATION",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "ContentValidationReport",
+  "checkedAt": "2026-09-07",
+  "baseVersion": "0.2.0",
+  "contentVersion": "0.2.0-t09.1",
+  "checks": 851,
+  "replayedMoves": 134,
+  "exploredTransitions": 2179,
+  "passed": true,
+  "failures": [],
+  "items": [
+    {
+      "id": "LIB-001",
+      "revision": 1,
+      "status": "passed",
+      "scope": [
+        "Hand-enumerated full liberty set compared to T01."
+      ],
+      "legalReplayMoves": 0,
+      "checks": 12
+    },
+    {
+      "id": "LIB-002",
+      "revision": 1,
+      "status": "passed",
+      "scope": [
+        "Hand-enumerated full liberty set compared to T01."
+      ],
+      "legalReplayMoves": 0,
+      "checks": 12
+    },
+    {
+      "id": "LIB-003",
+      "revision": 1,
+      "status": "passed",
+      "scope": [
+        "Hand-enumerated full liberty set compared to T01."
+      ],
+      "legalReplayMoves": 0,
+      "checks": 13
+    },
+    {
+      "id": "LIB-004",
+      "revision": 1,
+      "status": "passed",
+      "scope": [
+        "Hand-enumerated full liberty set compared to T01."
+      ],
+      "legalReplayMoves": 0,
+      "checks": 14
+    },
+    {
+      "id": "LIB-005",
+      "revision": 1,
+      "status": "passed",
+      "scope": [
+        "Hand-enumerated full liberty set compared to T01."
+      ],
+      "legalReplayMoves": 0,
+      "checks": 15
+    },
+    {
+      "id": "CAP-001",
+      "revision": 1,
+      "status": "passed",
+      "scope": [
+        "All stored tree moves replayed; every authored leaf matches stated goal."
+      ],
+      "legalReplayMoves": 6,
+      "firstMoveExhaustion": {
+        "boardSize": 5,
+        "plies": 1,
+        "legalActionsIncludingPass": 22,
+        "success": [
+          "D3"
+        ],
+        "criterion": "capture-now"
+      },
+      "checks": 22
+    },
+    {
+      "id": "CAP-002",
+      "revision": 1,
+      "status": "passed",
+      "scope": [
+        "All stored tree moves replayed; every authored leaf matches stated goal."
+      ],
+      "legalReplayMoves": 6,
+      "firstMoveExhaustion": {
+        "boardSize": 5,
+        "plies": 1,
+        "legalActionsIncludingPass": 21,
+        "success": [
+          "D5"
+        ],
+        "criterion": "capture-now"
+      },
+      "checks": 23
+    },
+    {
+      "id": "CAP-003",
+      "revision": 1,
+      "status": "passed",
+      "scope": [
+        "All stored tree moves replayed; every authored leaf matches stated goal."
+      ],
+      "legalReplayMoves": 6,
+      "firstMoveExhaustion": {
+        "boardSize": 5,
+        "plies": 1,
+        "legalActionsIncludingPass": 23,
+        "success": [
+          "A2"
+        ],
+        "criterion": "capture-now"
+      },
+      "checks": 22
+    },
+    {
+      "id": "CAP-004",
+      "revision": 1,
+      "status": "passed",
+      "scope": [
+        "All stored tree moves replayed; every authored leaf matches stated goal."
+      ],
+      "legalReplayMoves": 6,
+      "firstMoveExhaustion": {
+        "boardSize": 5,
+        "plies": 1,
+        "legalActionsIncludingPass": 18,
+        "success": [
+          "C3"
+        ],
+        "criterion": "capture-now"
+      },
+      "checks": 23
+    },
+    {
+      "id": "CAP-005",
+      "revision": 1,
+      "status": "passed",
+      "scope": [
+        "All stored tree moves replayed; every authored leaf matches stated goal."
+      ],
+      "legalReplayMoves": 6,
+      "firstMoveExhaustion": {
+        "boardSize": 5,
+        "plies": 1,
+        "legalActionsIncludingPass": 14,
+        "success": [
+          "C3"
+        ],
+        "criterion": "capture-now"
+      },
+      "checks": 25
+    },
+    {
+      "id": "CON-001",
+      "revision": 1,
+      "status": "passed",
+      "scope": [
+        "All stored tree moves replayed; every authored leaf matches stated goal."
+      ],
+      "legalReplayMoves": 6,
+      "firstMoveExhaustion": {
+        "boardSize": 5,
+        "plies": 1,
+        "legalActionsIncludingPass": 23,
+        "success": [
+          "C3"
+        ],
+        "criterion": "connect"
+      },
+      "checks": 47
+    },
+    {
+      "id": "CON-002",
+      "revision": 1,
+      "status": "passed",
+      "scope": [
+        "All stored tree moves replayed; every authored leaf matches stated goal."
+      ],
+      "legalReplayMoves": 8,
+      "firstMoveExhaustion": {
+        "boardSize": 5,
+        "plies": 1,
+        "legalActionsIncludingPass": 23,
+        "success": [
+          "C4",
+          "B3"
+        ],
+        "criterion": "connect"
+      },
+      "checks": 51
+    },
+    {
+      "id": "CON-003",
+      "revision": 1,
+      "status": "passed",
+      "scope": [
+        "All stored tree moves replayed; every authored leaf matches stated goal."
+      ],
+      "legalReplayMoves": 6,
+      "firstMoveExhaustion": {
+        "boardSize": 5,
+        "plies": 1,
+        "legalActionsIncludingPass": 22,
+        "success": [
+          "C2"
+        ],
+        "criterion": "escape"
+      },
+      "checks": 45
+    },
+    {
+      "id": "CON-004",
+      "revision": 1,
+      "status": "passed",
+      "scope": [
+        "All stored tree moves replayed; every authored leaf matches stated goal."
+      ],
+      "legalReplayMoves": 6,
+      "firstMoveExhaustion": {
+        "boardSize": 5,
+        "plies": 1,
+        "legalActionsIncludingPass": 22,
+        "success": [
+          "C5"
+        ],
+        "criterion": "connect"
+      },
+      "checks": 46
+    },
+    {
+      "id": "CON-005",
+      "revision": 1,
+      "status": "passed",
+      "scope": [
+        "All stored tree moves replayed; every authored leaf matches stated goal."
+      ],
+      "legalReplayMoves": 6,
+      "firstMoveExhaustion": {
+        "boardSize": 5,
+        "plies": 1,
+        "legalActionsIncludingPass": 22,
+        "success": [
+          "A2"
+        ],
+        "criterion": "connect"
+      },
+      "checks": 46
+    },
+    {
+      "id": "LIFE-001",
+      "revision": 1,
+      "status": "passed",
+      "scope": [
+        "Same-block two-eye structural proof plus both suicide checks."
+      ],
+      "legalReplayMoves": 0,
+      "checks": 20
+    },
+    {
+      "id": "LIFE-002",
+      "revision": 1,
+      "status": "passed",
+      "scope": [
+        "All stored tree moves replayed; every authored leaf matches stated goal."
+      ],
+      "legalReplayMoves": 6,
+      "firstMoveExhaustion": {
+        "boardSize": 5,
+        "plies": 1,
+        "legalActionsIncludingPass": 15,
+        "success": [
+          "C3"
+        ],
+        "criterion": "capture-now"
+      },
+      "checks": 25
+    },
+    {
+      "id": "LIFE-003",
+      "revision": 1,
+      "status": "passed",
+      "scope": [
+        "All stored tree moves replayed; every authored leaf matches stated goal."
+      ],
+      "legalReplayMoves": 10,
+      "firstMoveExhaustion": {
+        "boardSize": 5,
+        "plies": 1,
+        "legalActionsIncludingPass": 14,
+        "success": [
+          "B5"
+        ],
+        "criterion": "split-eyes"
+      },
+      "checks": 29
+    },
+    {
+      "id": "LIFE-004",
+      "revision": 1,
+      "status": "passed",
+      "scope": [
+        "All stored tree moves replayed; every authored leaf matches stated goal."
+      ],
+      "legalReplayMoves": 20,
+      "firstMoveExhaustion": {
+        "boardSize": 5,
+        "plies": 1,
+        "legalActionsIncludingPass": 15,
+        "success": [
+          "B5",
+          "C5"
+        ],
+        "criterion": "split-eyes"
+      },
+      "checks": 48
+    },
+    {
+      "id": "LIFE-005",
+      "revision": 1,
+      "status": "passed",
+      "scope": [
+        "All stored tree moves replayed; every authored leaf matches stated goal."
+      ],
+      "legalReplayMoves": 12,
+      "exhaustion": {
+        "plies": 3,
+        "boardSize": 5,
+        "includesPass": true,
+        "goal": "Every original target stone removed within 3 plies; every legal defense",
+        "coverage": [
+          {
+            "first": {
+              "type": "place",
+              "color": "W",
+              "at": {
+                "row": 0,
+                "col": 1
+              }
+            },
+            "success": true,
+            "defenses": [
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 0,
+                    "col": 2
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 1
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 0
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 2
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 1
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 2
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 2
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 2
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 3
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 2
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 4
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 2
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 0
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 2
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 1
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 2
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 2
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 2
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 3
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 2
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 4
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 2
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "pass",
+                  "color": "B"
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 2
+                    }
+                  }
+                ],
+                "success": true
+              }
+            ]
+          },
+          {
+            "first": {
+              "type": "place",
+              "color": "W",
+              "at": {
+                "row": 0,
+                "col": 2
+              }
+            },
+            "success": true,
+            "defenses": [
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 0,
+                    "col": 1
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 2
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 0
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 1
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 1
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 1
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 2
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 1
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 3
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 1
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 4
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 1
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 0
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 1
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 1
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 1
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 2
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 1
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 3
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 1
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 4
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 1
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "pass",
+                  "color": "B"
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 1
+                    }
+                  }
+                ],
+                "success": true
+              }
+            ]
+          },
+          {
+            "first": {
+              "type": "place",
+              "color": "W",
+              "at": {
+                "row": 3,
+                "col": 0
+              }
+            },
+            "success": false,
+            "defenses": [
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 0,
+                    "col": 1
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 2
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 0,
+                    "col": 2
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 1
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 1
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 2
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 3
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 4
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 0
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 1
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 2
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 3
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 4
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "pass",
+                  "color": "B"
+                },
+                "winningReplies": [],
+                "success": false
+              }
+            ]
+          },
+          {
+            "first": {
+              "type": "place",
+              "color": "W",
+              "at": {
+                "row": 3,
+                "col": 1
+              }
+            },
+            "success": false,
+            "defenses": [
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 0,
+                    "col": 1
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 2
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 0,
+                    "col": 2
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 1
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 0
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 2
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 3
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 4
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 0
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 1
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 2
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 3
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 4
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "pass",
+                  "color": "B"
+                },
+                "winningReplies": [],
+                "success": false
+              }
+            ]
+          },
+          {
+            "first": {
+              "type": "place",
+              "color": "W",
+              "at": {
+                "row": 3,
+                "col": 2
+              }
+            },
+            "success": false,
+            "defenses": [
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 0,
+                    "col": 1
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 2
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 0,
+                    "col": 2
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 1
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 0
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 1
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 3
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 4
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 0
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 1
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 2
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 3
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 4
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "pass",
+                  "color": "B"
+                },
+                "winningReplies": [],
+                "success": false
+              }
+            ]
+          },
+          {
+            "first": {
+              "type": "place",
+              "color": "W",
+              "at": {
+                "row": 3,
+                "col": 3
+              }
+            },
+            "success": false,
+            "defenses": [
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 0,
+                    "col": 1
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 2
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 0,
+                    "col": 2
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 1
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 0
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 1
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 2
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 4
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 0
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 1
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 2
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 3
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 4
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "pass",
+                  "color": "B"
+                },
+                "winningReplies": [],
+                "success": false
+              }
+            ]
+          },
+          {
+            "first": {
+              "type": "place",
+              "color": "W",
+              "at": {
+                "row": 3,
+                "col": 4
+              }
+            },
+            "success": false,
+            "defenses": [
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 0,
+                    "col": 1
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 2
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 0,
+                    "col": 2
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 1
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 0
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 1
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 2
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 3
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 0
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 1
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 2
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 3
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 4
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "pass",
+                  "color": "B"
+                },
+                "winningReplies": [],
+                "success": false
+              }
+            ]
+          },
+          {
+            "first": {
+              "type": "place",
+              "color": "W",
+              "at": {
+                "row": 4,
+                "col": 0
+              }
+            },
+            "success": false,
+            "defenses": [
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 0,
+                    "col": 1
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 2
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 0,
+                    "col": 2
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 1
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 0
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 1
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 2
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 3
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 4
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 1
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 2
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 3
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 4
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "pass",
+                  "color": "B"
+                },
+                "winningReplies": [],
+                "success": false
+              }
+            ]
+          },
+          {
+            "first": {
+              "type": "place",
+              "color": "W",
+              "at": {
+                "row": 4,
+                "col": 1
+              }
+            },
+            "success": false,
+            "defenses": [
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 0,
+                    "col": 1
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 2
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 0,
+                    "col": 2
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 1
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 0
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 1
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 2
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 3
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 4
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 0
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 2
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 3
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 4
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "pass",
+                  "color": "B"
+                },
+                "winningReplies": [],
+                "success": false
+              }
+            ]
+          },
+          {
+            "first": {
+              "type": "place",
+              "color": "W",
+              "at": {
+                "row": 4,
+                "col": 2
+              }
+            },
+            "success": false,
+            "defenses": [
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 0,
+                    "col": 1
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 2
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 0,
+                    "col": 2
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 1
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 0
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 1
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 2
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 3
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 4
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 0
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 1
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 3
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 4
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "pass",
+                  "color": "B"
+                },
+                "winningReplies": [],
+                "success": false
+              }
+            ]
+          },
+          {
+            "first": {
+              "type": "place",
+              "color": "W",
+              "at": {
+                "row": 4,
+                "col": 3
+              }
+            },
+            "success": false,
+            "defenses": [
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 0,
+                    "col": 1
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 2
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 0,
+                    "col": 2
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 1
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 0
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 1
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 2
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 3
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 4
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 0
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 1
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 2
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 4
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "pass",
+                  "color": "B"
+                },
+                "winningReplies": [],
+                "success": false
+              }
+            ]
+          },
+          {
+            "first": {
+              "type": "place",
+              "color": "W",
+              "at": {
+                "row": 4,
+                "col": 4
+              }
+            },
+            "success": false,
+            "defenses": [
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 0,
+                    "col": 1
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 2
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 0,
+                    "col": 2
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 1
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 0
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 1
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 2
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 3
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 4
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 0
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 1
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 2
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 3
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "pass",
+                  "color": "B"
+                },
+                "winningReplies": [],
+                "success": false
+              }
+            ]
+          },
+          {
+            "first": {
+              "type": "pass",
+              "color": "W"
+            },
+            "success": false,
+            "defenses": [
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 0,
+                    "col": 1
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 2
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 0,
+                    "col": 2
+                  }
+                },
+                "winningReplies": [
+                  {
+                    "type": "place",
+                    "color": "W",
+                    "at": {
+                      "row": 0,
+                      "col": 1
+                    }
+                  }
+                ],
+                "success": true
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 0
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 1
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 2
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 3
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 3,
+                    "col": 4
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 0
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 1
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 2
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 3
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "place",
+                  "color": "B",
+                  "at": {
+                    "row": 4,
+                    "col": 4
+                  }
+                },
+                "winningReplies": [],
+                "success": false
+              },
+              {
+                "defense": {
+                  "type": "pass",
+                  "color": "B"
+                },
+                "winningReplies": [],
+                "success": false
+              }
+            ]
+          }
+        ]
+      },
+      "checks": 26
+    },
+    {
+      "id": "AREA-001",
+      "revision": 1,
+      "status": "passed",
+      "scope": [],
+      "legalReplayMoves": 0,
+      "checks": 15
+    },
+    {
+      "id": "AREA-002",
+      "revision": 1,
+      "status": "passed",
+      "scope": [],
+      "legalReplayMoves": 0,
+      "checks": 15
+    },
+    {
+      "id": "AREA-003",
+      "revision": 1,
+      "status": "passed",
+      "scope": [],
+      "legalReplayMoves": 0,
+      "checks": 15
+    },
+    {
+      "id": "AREA-004",
+      "revision": 1,
+      "status": "passed",
+      "scope": [],
+      "legalReplayMoves": 0,
+      "checks": 15
+    },
+    {
+      "id": "AREA-005",
+      "revision": 1,
+      "status": "passed",
+      "scope": [],
+      "legalReplayMoves": 0,
+      "checks": 17
+    },
+    {
+      "id": "DISC-001",
+      "revision": 1,
+      "status": "passed",
+      "scope": [
+        "Two legal candidate/response pairs; rubric not evaluated as best move."
+      ],
+      "legalReplayMoves": 4,
+      "checks": 22
+    },
+    {
+      "id": "DISC-002",
+      "revision": 1,
+      "status": "passed",
+      "scope": [
+        "Two legal candidate/response pairs; rubric not evaluated as best move."
+      ],
+      "legalReplayMoves": 4,
+      "checks": 21
+    },
+    {
+      "id": "DISC-003",
+      "revision": 1,
+      "status": "passed",
+      "scope": [
+        "Two legal candidate/response pairs; rubric not evaluated as best move."
+      ],
+      "legalReplayMoves": 4,
+      "checks": 21
+    },
+    {
+      "id": "DISC-004",
+      "revision": 1,
+      "status": "passed",
+      "scope": [
+        "Two legal candidate/response pairs; rubric not evaluated as best move."
+      ],
+      "legalReplayMoves": 4,
+      "checks": 21
+    },
+    {
+      "id": "DISC-005",
+      "revision": 1,
+      "status": "passed",
+      "scope": [
+        "Two legal candidate/response pairs; rubric not evaluated as best move."
+      ],
+      "legalReplayMoves": 4,
+      "checks": 21
+    },
+    {
+      "id": "END-001",
+      "revision": 1,
+      "status": "passed",
+      "scope": [],
+      "legalReplayMoves": 0,
+      "checks": 12
+    },
+    {
+      "id": "END-002",
+      "revision": 1,
+      "status": "passed",
+      "scope": [],
+      "legalReplayMoves": 0,
+      "checks": 12
+    },
+    {
+      "id": "END-003",
+      "revision": 1,
+      "status": "passed",
+      "scope": [],
+      "legalReplayMoves": 1,
+      "checks": 14
+    },
+    {
+      "id": "END-004",
+      "revision": 1,
+      "status": "passed",
+      "scope": [],
+      "legalReplayMoves": 0,
+      "checks": 24
+    },
+    {
+      "id": "END-005",
+      "revision": 1,
+      "status": "passed",
+      "scope": [],
+      "legalReplayMoves": 0,
+      "checks": 15
+    },
+    {
+      "id": "END-006",
+      "revision": 1,
+      "status": "passed",
+      "scope": [],
+      "legalReplayMoves": 3,
+      "checks": 17
+    }
+  ]
+}

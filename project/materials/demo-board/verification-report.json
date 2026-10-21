@@ -1,0 +1,257 @@
+{
+  "schemaVersion": 1,
+  "id": "T18-VERIFICATION-REPORT",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "taskId": "T18",
+  "resultVersion": "0.2.0+t18.1",
+  "status": "pass",
+  "checks": [
+    {
+      "check": "Required deliverable files",
+      "status": "pass",
+      "evidence": "missing=[]"
+    },
+    {
+      "check": "SVG vertical lines",
+      "status": "pass",
+      "evidence": "found 9"
+    },
+    {
+      "check": "SVG horizontal lines",
+      "status": "pass",
+      "evidence": "found 9"
+    },
+    {
+      "check": "SVG intersections",
+      "status": "pass",
+      "evidence": "elements=81, unique row/col=81"
+    },
+    {
+      "check": "SVG physical size",
+      "status": "pass",
+      "evidence": "450mm x 450mm"
+    },
+    {
+      "check": "Grid extents and spacing",
+      "status": "pass",
+      "evidence": "x=[45.0, 90.0, 135.0, 180.0, 225.0, 270.0, 315.0, 360.0, 405.0]; y=[45.0, 90.0, 135.0, 180.0, 225.0, 270.0, 315.0, 360.0, 405.0]"
+    },
+    {
+      "check": "Corner intersections retained",
+      "status": "pass",
+      "evidence": "[(0, 0), (0, 8), (8, 0), (8, 8)]"
+    },
+    {
+      "check": "SVG 100 mm ruler",
+      "status": "pass",
+      "evidence": "coordinate length=100.0 mm"
+    },
+    {
+      "check": "Stone clearance",
+      "status": "pass",
+      "evidence": "spacing 45 - diameter 38 = 7 mm"
+    },
+    {
+      "check": "1:1 PDF media box",
+      "status": "pass",
+      "evidence": "450.000 x 450.000 mm"
+    },
+    {
+      "check": "A4 tiled page count",
+      "status": "pass",
+      "evidence": "pages=6"
+    },
+    {
+      "check": "A4 tiled media boxes",
+      "status": "pass",
+      "evidence": "210.00x297.00; 210.00x297.00; 210.00x297.00; 210.00x297.00; 210.00x297.00; 210.00x297.00"
+    },
+    {
+      "check": "Piece/marker page count",
+      "status": "pass",
+      "evidence": "pages=6"
+    },
+    {
+      "check": "Assembly guide page count",
+      "status": "pass",
+      "evidence": "pages=8"
+    },
+    {
+      "check": "Teaching A3 page count",
+      "status": "pass",
+      "evidence": "pages=1"
+    },
+    {
+      "check": "PDF text bounds board-9x9-450mm-1to1.pdf",
+      "status": "pass",
+      "evidence": "chars=88; out=[]"
+    },
+    {
+      "check": "PDF text bounds pieces-markers-a4.pdf",
+      "status": "pass",
+      "evidence": "chars=471; out=[]"
+    },
+    {
+      "check": "PDF text bounds assembly-guide.pdf",
+      "status": "pass",
+      "evidence": "chars=2537; out=[]"
+    },
+    {
+      "check": "PDF text bounds teaching-flows-a3.pdf",
+      "status": "pass",
+      "evidence": "chars=469; out=[]"
+    },
+    {
+      "check": "Tiled PDF visible page instructions",
+      "status": "pass",
+      "evidence": "page labels 1/6..6/6 and scale/ruler text extracted; clipped board reviewed via raster"
+    },
+    {
+      "check": "Embedded CJK font board-9x9-450mm-1to1.pdf",
+      "status": "pass",
+      "evidence": "embedded subsets=1"
+    },
+    {
+      "check": "Embedded CJK font board-9x9-a4-tiled.pdf",
+      "status": "pass",
+      "evidence": "embedded subsets=6"
+    },
+    {
+      "check": "Embedded CJK font pieces-markers-a4.pdf",
+      "status": "pass",
+      "evidence": "embedded subsets=6"
+    },
+    {
+      "check": "Embedded CJK font assembly-guide.pdf",
+      "status": "pass",
+      "evidence": "embedded subsets=24"
+    },
+    {
+      "check": "Embedded CJK font teaching-flows-a3.pdf",
+      "status": "pass",
+      "evidence": "embedded subsets=1"
+    },
+    {
+      "check": "Tile horizontal coverage",
+      "status": "pass",
+      "evidence": "[(0, 160), (145, 305), (290, 450)]"
+    },
+    {
+      "check": "Tile vertical coverage",
+      "status": "pass",
+      "evidence": "[(0, 235), (215, 450)]"
+    },
+    {
+      "check": "Tile stated overlaps",
+      "status": "pass",
+      "evidence": "x overlaps=[15, 15]; y=20"
+    },
+    {
+      "check": "Join edges avoid grid/star lines",
+      "status": "pass",
+      "evidence": "grid∩join=[]"
+    },
+    {
+      "check": "Tile grid continuity",
+      "status": "pass",
+      "evidence": "missing=[]"
+    },
+    {
+      "check": "Center/edge/corner liberties",
+      "status": "pass",
+      "evidence": "中心 E5=4, 上边 E9=3, 左上角 A9=2"
+    },
+    {
+      "check": "L-group liberty de-dup",
+      "status": "pass",
+      "evidence": "computed=[(3, 3), (3, 4), (4, 2), (4, 5), (5, 2), (5, 4), (6, 3)], listed=[(3, 3), (3, 4), (4, 2), (4, 5), (5, 2), (5, 4), (6, 3)]"
+    },
+    {
+      "check": "Shared E4 documented",
+      "status": "pass",
+      "evidence": "E4 is one coordinate shared by E5 and D4"
+    },
+    {
+      "check": "Editable sheet A4 black-stones-01.svg",
+      "status": "pass",
+      "evidence": "210mm x 297mm"
+    },
+    {
+      "check": "Sheet ruler black-stones-01.svg",
+      "status": "pass",
+      "evidence": "100 mm metadata present"
+    },
+    {
+      "check": "Editable sheet A4 black-stones-02.svg",
+      "status": "pass",
+      "evidence": "210mm x 297mm"
+    },
+    {
+      "check": "Sheet ruler black-stones-02.svg",
+      "status": "pass",
+      "evidence": "100 mm metadata present"
+    },
+    {
+      "check": "Editable sheet A4 white-stones-01.svg",
+      "status": "pass",
+      "evidence": "210mm x 297mm"
+    },
+    {
+      "check": "Sheet ruler white-stones-01.svg",
+      "status": "pass",
+      "evidence": "100 mm metadata present"
+    },
+    {
+      "check": "Editable sheet A4 white-stones-02.svg",
+      "status": "pass",
+      "evidence": "210mm x 297mm"
+    },
+    {
+      "check": "Sheet ruler white-stones-02.svg",
+      "status": "pass",
+      "evidence": "100 mm metadata present"
+    },
+    {
+      "check": "Editable sheet A4 liberty-rings.svg",
+      "status": "pass",
+      "evidence": "210mm x 297mm"
+    },
+    {
+      "check": "Sheet ruler liberty-rings.svg",
+      "status": "pass",
+      "evidence": "100 mm metadata present"
+    },
+    {
+      "check": "Editable sheet A4 targets-sequence-last.svg",
+      "status": "pass",
+      "evidence": "210mm x 297mm"
+    },
+    {
+      "check": "Sheet ruler targets-sequence-last.svg",
+      "status": "pass",
+      "evidence": "100 mm metadata present"
+    },
+    {
+      "check": "Piece and marker quantities",
+      "status": "pass",
+      "evidence": "{'stones': 90, 'rings': 24, 'triangles': 12, 'numbers': 20, 'last': 6}"
+    },
+    {
+      "check": "Liberty rings remain open/dashed",
+      "status": "pass",
+      "evidence": "24 ring groups use dashed outline plus open center"
+    }
+  ],
+  "physicalTests": {
+    "status": "not-tested",
+    "items": [
+      "printed ruler measurement",
+      "magnetic hold",
+      "durability",
+      "glare/residue",
+      "classroom viewing distance",
+      "mounting stability"
+    ]
+  }
+}

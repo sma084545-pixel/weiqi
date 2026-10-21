@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 9,
+  "id": "LOCAL-T17-EVIDENCE",
+  "revision": 2,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "T17Workspace",
+  "activities": [
+    {
+      "schemaVersion": 1,
+      "id": "TEST-T17-ACT-001",
+      "revision": 1,
+      "rulesetId": "GO-CLUB-AREA-1",
+      "kind": "ActivityRecord",
+      "title": "开发测试活动（非真实反馈）",
+      "date": "2026-10-05",
+      "developmentOnly": true
+    }
+  ],
+  "feedback": [
+    {
+      "schemaVersion": 1,
+      "id": "ENTRY-TEST-001",
+      "revision": 1,
+      "rulesetId": "GO-CLUB-AREA-1",
+      "kind": "FeedbackEntry",
+      "activityId": "TEST-T17-ACT-001",
+      "issue": null,
+      "resourceRef": null,
+      "feedback": {
+        "schemaVersion": 1,
+        "id": "FEEDBACK-TEST-001",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Feedback",
+        "developmentOnly": true,
+        "activityRef": {
+          "id": "TEST-T17-ACT-001",
+          "revision": 1
+        },
+        "recordedAt": "2026-10-05T00:00:00.000Z",
+        "difficulty": "comfortable",
+        "preferredActivities": [
+          "liberties"
+        ],
+        "comment": "测试文本 A，不是真实成员意见。",
+        "consentToUse": true,
+        "evidenceType": "participant-submission",
+        "responseContext": null,
+        "response": null
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "ENTRY-TEST-002",
+      "revision": 1,
+      "rulesetId": "GO-CLUB-AREA-1",
+      "kind": "FeedbackEntry",
+      "activityId": "TEST-T17-ACT-001",
+      "issue": null,
+      "resourceRef": null,
+      "feedback": {
+        "schemaVersion": 1,
+        "id": "FEEDBACK-TEST-002",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Feedback",
+        "developmentOnly": true,
+        "activityRef": {
+          "id": "TEST-T17-ACT-001",
+          "revision": 1
+        },
+        "recordedAt": "2026-10-05T00:00:00.000Z",
+        "difficulty": "too-hard",
+        "preferredActivities": [
+          "liberties"
+        ],
+        "comment": "测试文本 B，不是真实成员意见。",
+        "consentToUse": true,
+        "evidenceType": "participant-submission",
+        "responseContext": null,
+        "response": null
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "ENTRY-TEST-003",
+      "revision": 1,
+      "rulesetId": "GO-CLUB-AREA-1",
+      "kind": "FeedbackEntry",
+      "activityId": "TEST-T17-ACT-001",
+      "issue": null,
+      "resourceRef": null,
+      "feedback": {
+        "schemaVersion": 1,
+        "id": "FEEDBACK-TEST-003",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Feedback",
+        "developmentOnly": true,
+        "activityRef": {
+          "id": "TEST-T17-ACT-001",
+          "revision": 1
+        },
+        "recordedAt": "2026-10-05T00:00:00.000Z",
+        "difficulty": null,
+        "preferredActivities": [],
+        "comment": "",
+        "consentToUse": true,
+        "evidenceType": "participant-submission",
+        "responseContext": null,
+        "response": null
+      }
+    }
+  ],
+  "improvements": [],
+  "processes": [],
+  "exportPolicy": null
+}

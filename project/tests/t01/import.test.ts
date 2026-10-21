@@ -1,0 +1,25 @@
+import {it,expect} from 'vitest';
+import {readFileSync} from 'node:fs';
+import {restoreGame,serializeGame,undo,redo,applyPass,resign,tryMove,createVerifiedGameStore} from '../../src/core/rules';
+import {createContentStore} from '../../src/core/persistence';
+import type {GameState} from '../../src/core/rules';
+import {value,game,place} from './helpers';
+const sample=()=>place(place(game(),0,0),1,1);
+const edit=(fn:(s:GameState)=>void)=>{const s=structuredClone(sample());fn(s);return s;};
+const bad:[string,(s:GameState)=>void][]=[
+ ['captures',s=>s.captures.B=3],['turn',s=>s.toPlay='W'],['board',s=>s.board[0][0]=null],['history',s=>s.history.layouts.push('5|.........................')],['last move',s=>s.lastMove=null],['passes',s=>s.consecutivePasses=1],['phase',s=>s.phase='scoring'],['size',s=>s.size=9],['winner',s=>{s.phase='finished';s.result={reason:'resign',winner:'B'};}],['setup',s=>s.setup.stones=[{row:5,col:0,color:'B'}]],['rule',s=>(s as any).rulesetId='AGA'],['version',s=>(s as any).schemaVersion=2],['move turn',s=>(s.moves[0] as any).color='W'],['illegal move',s=>(s.moves[1] as any).at={row:0,col:0}],['unknown operation',s=>(s.moves[0] as any).type='setup-erase'],['undo cache',s=>s.undoStack[1].captures.W=2],['missing undo',s=>s.undoStack.pop()],['extra undo',s=>s.undoStack.push(s.undoStack[0])],['unsafe revision',s=>s.revision=1e30]
+];
+for(const [label,mutate] of bad)it(`T01 forged ${label} rejected with field; input unchanged`,()=>{const s=edit(mutate),text=JSON.stringify(s),r=restoreGame(s);expect(r).toMatchObject({ok:false,error:{code:'IMPORT_MISMATCH'}});if(!r.ok)expect(r.error.field).toBeTruthy();expect(JSON.stringify(s)).toBe(text);});
+it('T01 forged komi and cached undo komi rejected',()=>{for(const mutate of [(s:GameState)=>s.komi=6.5,(s:GameState)=>s.undoStack[0].komi=6.5])expect(restoreGame(edit(mutate))).toMatchObject({ok:false,error:{code:'KOMI_LOCKED'}});});
+it('T01 redo caches are replayed, including order and current prefix',()=>{const source=value(undo(value(undo(place(sample(),2,2)))));expect(source.redoStack).toHaveLength(2);expect(value(restoreGame(source))).toEqual(source);for(const mutate of [(s:GameState)=>s.redoStack[0].captures.B++,(s:GameState)=>s.redoStack.reverse(),(s:GameState)=>s.redoStack[0].moves.shift()]){const copy=structuredClone(source);mutate(copy);expect(restoreGame(copy).ok).toBe(false);}expect(value(restoreGame(value(redo(source))))).toEqual(value(redo(source)));});
+it('T01 pass/resign and all four sizes round trip',()=>{for(const n of [5,9,13,19] as const){let s=place(game(n),n-1,n-1);s=value(applyPass(s,s.toPlay)).nextState;s=value(resign(s,s.toPlay)).nextState;const json=value(serializeGame(s));expect(value(restoreGame(json))).toEqual(s);expect(value(restoreGame(JSON.parse(json)))).toEqual(s);}});
+it('T01 object key order does not matter; no foreign object is frozen',()=>{const s=sample(),copy=Object.fromEntries(Object.entries(structuredClone(s)).reverse());expect(value(restoreGame(copy))).toEqual(s);expect(Object.isFrozen(copy)).toBe(false);});
+it('T01 malformed JSON, cycles, wrong kind, unsupported major fail safely',()=>{const cycle:any={};cycle.self=cycle;for(const input of ['{',null,undefined,cycle,'[]','{"schemaVersion":8}',readFileSync('content/examples/valid/puzzle.json','utf8')])expect(restoreGame(input)).toMatchObject({ok:false,error:{code:'IMPORT_MISMATCH'}});});
+it('T01 legacy T00 root GameState remains valid schema 1',()=>{expect(restoreGame(readFileSync('content/examples/valid/game.json','utf8')).ok).toBe(true);});
+it('T01 public operations cannot run forged cache clones',()=>{const fake=edit(s=>s.captures.B=20);expect(tryMove(fake,{type:'place',color:'B',at:{row:2,col:2}})).toMatchObject({ok:false,error:{code:'IMPORT_MISMATCH'}});expect(serializeGame(fake).ok).toBe(false);});
+it('T01 verified store uses shared key, replays both reads and writes, keeps bad records',()=>{
+ const map=new Map<string,string>(),port={getItem:(k:string)=>map.get(k)??null,setItem:(k:string,v:string)=>{map.set(k,v);},removeItem:(k:string)=>{map.delete(k);}},store=createVerifiedGameStore(port),s=sample();
+ expect(store.save(s)).toEqual({ok:true,value:s});expect(map.has(`go-club:v1:${s.id}`)).toBe(true);expect(store.load(s.id)).toEqual({ok:true,value:s});const original=map.get(`go-club:v1:${s.id}`);expect(store.save(edit(x=>x.captures.W=50)).ok).toBe(false);expect(map.get(`go-club:v1:${s.id}`)).toBe(original);
+ const fake=edit(x=>x.captures.B=50);expect(createContentStore(port).save(fake).ok).toBe(true);const bad=map.get(`go-club:v1:${s.id}`);expect(store.load(s.id).ok).toBe(false);expect(map.get(`go-club:v1:${s.id}`)).toBe(bad);store.remove(s.id);expect(store.load(s.id)).toEqual({ok:true,value:null});
+});
+it('T01 verified store reports quota failures without false success',()=>{let raw='old';const store=createVerifiedGameStore({getItem:()=>raw,setItem:()=>{throw Error('quota');},removeItem:()=>{}});const r=store.save(sample());expect(r).toMatchObject({ok:false,issues:[{code:'STORAGE_UNAVAILABLE'}]});expect(raw).toBe('old');});

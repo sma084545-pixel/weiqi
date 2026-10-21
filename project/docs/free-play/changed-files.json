@@ -1,0 +1,574 @@
+{
+  "schemaVersion": 1,
+  "id": "FREE-PLAY-CHANGE-MANIFEST",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "baseVersion": "0.17.1-t24.1",
+  "resultVersion": "0.18.0-freeplay.1",
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "kind": "modified",
+      "sha256": "a1a0cb6c0c94cabea9fad9444344df46e742c8deb0aaea67315474a038cca7fa"
+    },
+    {
+      "path": "README.md",
+      "kind": "modified",
+      "sha256": "3cf06d06de0c1c200a64af8830d2d92de809586222c87cb1bb500caa85b52160"
+    },
+    {
+      "path": "SOURCES.md",
+      "kind": "modified",
+      "sha256": "1763bbc97197746f2295ec07ad41e03f17ea3b6f690a54dda54be6c64850d129"
+    },
+    {
+      "path": "dist/assets/index-C5sn94WV.css",
+      "kind": "added",
+      "sha256": "36a7451df47d9c8cdc62a4150801c38427a7162ee01f6465ada45a93a312009b"
+    },
+    {
+      "path": "dist/assets/index-D6HBhnuC.js",
+      "kind": "added",
+      "sha256": "5e34e2f882f429be0422cb05995343882e1129bf7995b468b103ae932d42545b"
+    },
+    {
+      "path": "dist/index.html",
+      "kind": "modified",
+      "sha256": "f8fdf08a8c812327a20de9620289a9e893ff42b9564e6721e903eb4b69e2f1d8"
+    },
+    {
+      "path": "dist/offline-assets.json",
+      "kind": "modified",
+      "sha256": "b77f6d0f1a5b3e11ad377363845d901e238591c1ded4bae8530368e883b820a9"
+    },
+    {
+      "path": "dist/sw.js",
+      "kind": "modified",
+      "sha256": "b59e75174c6d2f6bb37c012c3950538ec74a0099df62f3af14bc08eb5e5ca14c"
+    },
+    {
+      "path": "dist-engine/package.json",
+      "kind": "modified",
+      "sha256": "1722e67cab15637db619a4ab50d8d5730a9b20faaa9c427645388b24fa7262a5"
+    },
+    {
+      "path": "docs/free-play/ACCEPTANCE.md",
+      "kind": "added",
+      "sha256": "ab0363e6fca3ca326a790586ce50199d212a895f1e7c5f7329fc7ef43ec74e4b"
+    },
+    {
+      "path": "docs/free-play/USAGE.md",
+      "kind": "added",
+      "sha256": "c4502df069f9f51137658531d4c898b729c1f7e76c400be05a5dc777c8ecb209"
+    },
+    {
+      "path": "docs/free-play/changed-files.json",
+      "kind": "added",
+      "sha256": "ca44a20a360be7d4d8dc0f0dfc057079b9aafc1def5cb4aa2c474f715f871a3e"
+    },
+    {
+      "path": "docs/free-play/checks/browser-initial.log",
+      "kind": "added",
+      "sha256": "0fed9ca2806bff2aa8d2d9caa0d43dad964fafe4425453e4c3bd8ddfda29e3af"
+    },
+    {
+      "path": "docs/free-play/checks/browser.log",
+      "kind": "added",
+      "sha256": "87f006afb1373fe2be28df841f5ee2d1512a2fb4494471c2704c6b26bf3cba9e"
+    },
+    {
+      "path": "docs/free-play/checks/build.log",
+      "kind": "added",
+      "sha256": "e71516385f56a687dc2b0481fd937c06209002c847af62c9c7478ddddd53f560"
+    },
+    {
+      "path": "docs/free-play/checks/full-check-initial.log",
+      "kind": "added",
+      "sha256": "d5c2de6ac5c795153413e9edc5a12557271f556df2d181fccab13976e97ea3e6"
+    },
+    {
+      "path": "docs/free-play/checks/full-check.log",
+      "kind": "added",
+      "sha256": "43439db89036755299acea870e0d2c77c1358c9e7ea2b5289d5bc2a0b287a8bb"
+    },
+    {
+      "path": "docs/free-play/checks/install.log",
+      "kind": "added",
+      "sha256": "2c5447fd92a729783f786445e1c17dafd52b280ad99299547e48996f4d8fd163"
+    },
+    {
+      "path": "docs/free-play/checks/preservation.json",
+      "kind": "added",
+      "sha256": "f14eff56f7a4b6d8b93668b280fdd39233c1fba9bdaad6c1fdda7bff5bdff0a8"
+    },
+    {
+      "path": "docs/free-play/checks/regression-journey/full-game.png",
+      "kind": "added",
+      "sha256": "ef4952f3ac84b1edc6e74178b0de8f384b2e47bec358af0e5cfed04e63e56b69"
+    },
+    {
+      "path": "docs/free-play/checks/regression-journey/journey.json",
+      "kind": "added",
+      "sha256": "8347894ef55fe9ccf92b389142e681f2d72216681c15196eee7f40b2ae2bed99"
+    },
+    {
+      "path": "docs/free-play/checks/regression-journey/offline-editor.png",
+      "kind": "added",
+      "sha256": "475fd9ab283bfeb80acc6a81515b781c96b5b4c2cf766500ea4e587d27091fed"
+    },
+    {
+      "path": "docs/free-play/checks/web-guidance.md",
+      "kind": "added",
+      "sha256": "99defc97c52782175c2b8ed5c411256dc9361b6c8712f815736586fb996348b6"
+    },
+    {
+      "path": "docs/free-play/checks/webkit.log",
+      "kind": "added",
+      "sha256": "7969ee32ee489acf8fd0feb3d0650f93f996ae36aa40474a52ca95ca9038211d"
+    },
+    {
+      "path": "docs/free-play/input-manifest.json",
+      "kind": "added",
+      "sha256": "f9a7015d64da795c5f96716697ee6b3b55f31db723a1ad3639f04a97c5282a7d"
+    },
+    {
+      "path": "docs/free-play/provenance/T24-RELEASE_MANIFEST.json",
+      "kind": "added",
+      "sha256": "ff4f0989663127bb98d18761525e496740db7357bd0b4af43ac80777ce8fe5d6"
+    },
+    {
+      "path": "docs/requirements-matrix.md",
+      "kind": "modified",
+      "sha256": "6da38c858d3fa5f40f77b9d9dd88ddeabe16a58f3a99b04e11090c94dc0e986d"
+    },
+    {
+      "path": "handoff/FREE_PLAY.md",
+      "kind": "added",
+      "sha256": "f6212d783df4a98d8eb45d60742645ad96cea96f7c7b1a9494c27e2fe0216d30"
+    },
+    {
+      "path": "output/pdf/T17-development-report.pdf",
+      "kind": "modified",
+      "sha256": "ac9acb945c1f4822125023be1db298064b31f7683ab62dcf69de8c941b2edde2"
+    },
+    {
+      "path": "output/pdf/T17-empty-report.pdf",
+      "kind": "modified",
+      "sha256": "ecc4b9c72c12cd707f8f895fbbf3f3a34fd24c5a12219e107149b3bc512271e1"
+    },
+    {
+      "path": "output/playwright/free-play/1280-board.png",
+      "kind": "added",
+      "sha256": "d5d907ed6c194b4b8c6d1c1a6682df27374c7a7294c3f2633b79cea2f2f3e06a"
+    },
+    {
+      "path": "output/playwright/free-play/360-board.png",
+      "kind": "added",
+      "sha256": "65e6827adcf9ed0be44d6fa91150e08e9b422b36e38ac37fca860d76a26807de"
+    },
+    {
+      "path": "output/playwright/free-play/360-touch-19-offline.png",
+      "kind": "added",
+      "sha256": "c3d54a6eff92970fa6600f702d0361745850b9926375ffdf74d5bbc0ea575b11"
+    },
+    {
+      "path": "output/playwright/free-play/768-board.png",
+      "kind": "added",
+      "sha256": "70a7a8673bb40d4046f252022158f841912a28f74eef1918c8c77ff61295e631"
+    },
+    {
+      "path": "output/playwright/free-play/final-score.png",
+      "kind": "added",
+      "sha256": "238626d38ff4aabbb46378e5a4a02a3dc69d8b152e0bc5c79c94ef8f792b9928"
+    },
+    {
+      "path": "output/playwright/t02/1280-markers-grayscale.png",
+      "kind": "modified",
+      "sha256": "b9c3ddac0e15aff4e0dd61c8bb993e00dc59736b15cc4b7d85fece4dd448c3e1"
+    },
+    {
+      "path": "output/playwright/t02/1280-select.png",
+      "kind": "modified",
+      "sha256": "52c682abbd10175e6b9ae6dbf9531fccfb3d95e95e7dea5c3b38691500065337"
+    },
+    {
+      "path": "output/playwright/t02/360-19-scroll.png",
+      "kind": "modified",
+      "sha256": "069bc7e6c9e9fa0a0ab641b34f7a151337e3b627ace75e241d3fa27f1f624642"
+    },
+    {
+      "path": "output/playwright/t02/360-select.png",
+      "kind": "modified",
+      "sha256": "5e5a18d9799b6009ec69a16954f7f11bca84c5ce752f0a0e9938b44a77a60a05"
+    },
+    {
+      "path": "output/playwright/t02/768-select.png",
+      "kind": "modified",
+      "sha256": "e04bec1199fed8450e071f373f1d8217982b680914dbc7c3066e133b2b1e964c"
+    },
+    {
+      "path": "output/playwright/t03/1280-home.png",
+      "kind": "modified",
+      "sha256": "92f2589122c1a46652fad5a6927a167cc0df5193745351f41409a9963706e120"
+    },
+    {
+      "path": "output/playwright/t03/1280-route.png",
+      "kind": "modified",
+      "sha256": "52931dcebcc014290ca9fe98cd71493b5415b7b7e4b6a622cb3f307ac7d0b91d"
+    },
+    {
+      "path": "output/playwright/t03/1280-teacher-projector.png",
+      "kind": "modified",
+      "sha256": "4912beecf2ec3a79316630d972c7d2c7db8245fca60366214d93f978b6fe7538"
+    },
+    {
+      "path": "output/playwright/t03/360-home.png",
+      "kind": "modified",
+      "sha256": "af6d25912d146a0ca7b36c1d47daf1c77849f6f877c693e68f62ed34b0d0143c"
+    },
+    {
+      "path": "output/playwright/t03/768-home.png",
+      "kind": "modified",
+      "sha256": "e7ed44b02c729ca966f89ed1078236256aa2327ce658261cf9025c376350caff"
+    },
+    {
+      "path": "output/playwright/t04/1280-revealed-projector-grayscale.png",
+      "kind": "modified",
+      "sha256": "a98586e4067d046902f80b512564f4757db39d15f4075cf94c46fb790d822611"
+    },
+    {
+      "path": "output/playwright/t04/1280-sealed.png",
+      "kind": "modified",
+      "sha256": "10f0c3507aa648f7ba9e240f79c3e7156dff5590b4d0ded35e128959ccaaf638"
+    },
+    {
+      "path": "output/playwright/t04/360-sealed.png",
+      "kind": "modified",
+      "sha256": "ca1d28fde4b91880250af450587f0b3f16c8c42f3b3fe00b54c264c46ef18f9a"
+    },
+    {
+      "path": "output/playwright/t04/768-sealed.png",
+      "kind": "modified",
+      "sha256": "c27a4452c99c5efb846d49094eede2ed95d7a97179c33a1de73143b9d7314418"
+    },
+    {
+      "path": "output/playwright/t05/1280-final-projector-grayscale.png",
+      "kind": "modified",
+      "sha256": "a9cbfa3d7e9e1c265af0004b6cdd22256f98862273d484a23b2fcc50c4e31799"
+    },
+    {
+      "path": "output/playwright/t05/1280-initial.png",
+      "kind": "modified",
+      "sha256": "c0d5a7c1da88db683bbf4267a598fca6a7499083abbcc32b6bc8098cb43c7abc"
+    },
+    {
+      "path": "output/playwright/t05/360-initial.png",
+      "kind": "modified",
+      "sha256": "57751f5f2a15039a17d0d2970b036aa4afe52841da1959e26e5c4c6b09f58a3e"
+    },
+    {
+      "path": "output/playwright/t05/768-initial.png",
+      "kind": "modified",
+      "sha256": "0b3278c0eb31dac29973161e315b09cd9c38c69403ea6f706c40541581adea95"
+    },
+    {
+      "path": "output/playwright/t06/1280-projector-grayscale.png",
+      "kind": "modified",
+      "sha256": "368de006a530073e89631c1f4d63e290f16cfdb88fde0c03e10b39a0fa21eb1d"
+    },
+    {
+      "path": "output/playwright/t06/1280-setup.png",
+      "kind": "modified",
+      "sha256": "fef8abe787715a1254766967290f26a0fff67b793c4c80623c37f089a740f6a4"
+    },
+    {
+      "path": "output/playwright/t06/360-setup.png",
+      "kind": "modified",
+      "sha256": "4ced42f0979475e8ff8bbae59dd477e650094f58649abc21469d6b8fe0320c9e"
+    },
+    {
+      "path": "output/playwright/t06/768-setup.png",
+      "kind": "modified",
+      "sha256": "b5dcd676d9c932ea4a250e5fc8b350e98bda4af37869d94514eed78c402279d1"
+    },
+    {
+      "path": "output/playwright/t07/1280-finished-projector-grayscale.png",
+      "kind": "modified",
+      "sha256": "21e0eb3ae2324a08e1561f1f17f9bf03ae24e3b6c35a4fddea14eb7ed14fedae"
+    },
+    {
+      "path": "output/playwright/t07/1280-initial.png",
+      "kind": "modified",
+      "sha256": "803661362eb71a9ec838eb5201c45534018f365182c6a5f361b0a016073ce490"
+    },
+    {
+      "path": "output/playwright/t07/360-initial.png",
+      "kind": "modified",
+      "sha256": "59f47b91cb546061db89ce446f67efeb2f7af0946f4623807abe18d94b0e228d"
+    },
+    {
+      "path": "output/playwright/t07/768-initial.png",
+      "kind": "modified",
+      "sha256": "fa8362c48bd01308a0a7523b770df8471200f33cc0a3ef1dce840f9244ea7571"
+    },
+    {
+      "path": "output/playwright/t08/1280-final-score.png",
+      "kind": "modified",
+      "sha256": "ec818ee210d7f3597fd0f2e61b3dffde44d49630930484c7f8e651dddd8aaccf"
+    },
+    {
+      "path": "output/playwright/t08/1280-setup.png",
+      "kind": "modified",
+      "sha256": "06538ea197adebef5f69255ff2375af2bf070a88cbc7f49661dd2a998935b1b2"
+    },
+    {
+      "path": "output/playwright/t08/360-19x19-projector-grayscale.png",
+      "kind": "modified",
+      "sha256": "0e4e08f5c055c93cea8592a5139ad0ed474c822e800638b8937d5cceaf4384c4"
+    },
+    {
+      "path": "output/playwright/t08/360-setup.png",
+      "kind": "modified",
+      "sha256": "bebd947efa20c8e40c9982709f7dcdafe954c056ddc46eb6ac2300e5a99ce6cb"
+    },
+    {
+      "path": "output/playwright/t08/768-setup.png",
+      "kind": "modified",
+      "sha256": "502fec25819c3e9d9c61d98432e0ad3753e9268797b0fc8d1ba54966ffb35895"
+    },
+    {
+      "path": "output/playwright/t10/1280-catalog.png",
+      "kind": "modified",
+      "sha256": "97ece1d7dda3c68dce9122daff95f87f0b4c5ef155e1b84fd19d08410e1b2bed"
+    },
+    {
+      "path": "output/playwright/t10/1280-move-player.png",
+      "kind": "modified",
+      "sha256": "1c9a2da59c4343874ec3140d257714f8fbb118aebab0ace63911de0319c0f6ba"
+    },
+    {
+      "path": "output/playwright/t10/360-point-set-touch.png",
+      "kind": "modified",
+      "sha256": "5e9021023e6b1b019cb0f6084eebe7e8302487a49c6c863505ad90e9bad4dda8"
+    },
+    {
+      "path": "output/playwright/t10/768-move-player.png",
+      "kind": "modified",
+      "sha256": "316ef922cfe9e855497cebece3e2432a31a67e0ae3a57c5d43c984e1a2e1e43c"
+    },
+    {
+      "path": "output/playwright/t11/1280-life-lesson.png",
+      "kind": "modified",
+      "sha256": "d3e499ed737fa9114b559b68ed99ee133067cab3a8ad40febd1ff240d3e57b71"
+    },
+    {
+      "path": "output/playwright/t11/1280-life-top.png",
+      "kind": "modified",
+      "sha256": "0731e02ab0fb6be41a3350de7d87311afe10f0cb799e5f9dffb63c95a9654e58"
+    },
+    {
+      "path": "output/playwright/t11/360-life-lesson.png",
+      "kind": "modified",
+      "sha256": "87a268a131a3691e6ccc722715db59efd05ad6f51719ba17cd9290e8c9a335b6"
+    },
+    {
+      "path": "output/playwright/t11/768-life-top.png",
+      "kind": "modified",
+      "sha256": "6503d8789543c0858f83eb1fab93d8b5ee568c6aed07de5fdc12ffe83062b791"
+    },
+    {
+      "path": "output/playwright/t12/1280-cooperative.png",
+      "kind": "modified",
+      "sha256": "69570eecea22d57ef58753cf9eb5710f763970cf330b63273263b5a4a5ab8df6"
+    },
+    {
+      "path": "output/playwright/t12/360-cooperative.png",
+      "kind": "modified",
+      "sha256": "da926a6e485d28604e59f072f2a347d2ab983c164504758094a6b11671a26d42"
+    },
+    {
+      "path": "output/playwright/t12/768-cooperative.png",
+      "kind": "modified",
+      "sha256": "281357ad8f305960e65ca4a0b1ed092d7039f8c152954588fe792c4debf00ae0"
+    },
+    {
+      "path": "output/playwright/t13/1280-territory.png",
+      "kind": "modified",
+      "sha256": "c160cf6b6e6ef330df016374dbd975ceb86ffd26b2333b93662304581fe39c78"
+    },
+    {
+      "path": "output/playwright/t13/360-territory.png",
+      "kind": "modified",
+      "sha256": "0616a2462f104df69f83c1c0393cdd6b2193e318e04316da379ad7e6bb2a543b"
+    },
+    {
+      "path": "output/playwright/t13/768-territory.png",
+      "kind": "modified",
+      "sha256": "a67014ba6a20af6b99761852addbf2dd0f60f0cef0b23caa2979b8cd1fc94da6"
+    },
+    {
+      "path": "output/playwright/t14/1280-editor.png",
+      "kind": "modified",
+      "sha256": "a1223e0fcf5d9d537e8bfc63c95d92f5a9df572ad6635398fe1879dcb38ce6b9"
+    },
+    {
+      "path": "output/playwright/t14/360-editor.png",
+      "kind": "modified",
+      "sha256": "e2001281d4ba840f458ceca009ad0fc6cb1ce327d32aa97bdd1c3fbf447121a3"
+    },
+    {
+      "path": "output/playwright/t14/768-editor.png",
+      "kind": "modified",
+      "sha256": "88af39e08700660c3071f31011995c032321e30da5731f1f6bc41cf743657c55"
+    },
+    {
+      "path": "output/playwright/t15/1280-file-exchange.png",
+      "kind": "modified",
+      "sha256": "bda99ce7565ec8fee55eaffdf7e0e12c8f5d7f23b0d434da6df8f06d1b6cc84c"
+    },
+    {
+      "path": "output/playwright/t15/360-file-exchange.png",
+      "kind": "modified",
+      "sha256": "6032ab3d76219709290ade8b1c1b852e474c67daca78d2d9a20f056c639b6b4c"
+    },
+    {
+      "path": "output/playwright/t15/768-file-exchange.png",
+      "kind": "modified",
+      "sha256": "8ff5bc043ccaf235913d216b006ac6d3691190923eefcee9ba9c8d3b780c159c"
+    },
+    {
+      "path": "output/playwright/t16/1280-offline-data.png",
+      "kind": "modified",
+      "sha256": "6799846bc717ec7e1c755a2728d71343910d4eb47ee08d96e3399d8e8c4f309c"
+    },
+    {
+      "path": "output/playwright/t16/360-offline-data.png",
+      "kind": "modified",
+      "sha256": "e109ce9c2c77c7440f8b2d3b2753b0128a664a1b846eb99dd2e84ec0c4809e90"
+    },
+    {
+      "path": "output/playwright/t16/768-offline-data.png",
+      "kind": "modified",
+      "sha256": "f077d925abb47d24ed5f48392863fa1b5262f8d47db9dd9acc03734eb106098b"
+    },
+    {
+      "path": "output/playwright/t16/offline-ready-1280.png",
+      "kind": "modified",
+      "sha256": "1fa36ce11ee3a29ac9673776060866224b46201d2400ca258498a05def474493"
+    },
+    {
+      "path": "output/playwright/t17/1280-feedback.png",
+      "kind": "modified",
+      "sha256": "aeedcbad2380d0e9a792b95f6439c6be689fdf0c4836c8e19106aec40a21dcd1"
+    },
+    {
+      "path": "output/playwright/t17/1280-summary-empty.png",
+      "kind": "modified",
+      "sha256": "3499df51aa3881adcac1d6eaf47a08fc744e3b0e3baf392b3b7daf2c92d23228"
+    },
+    {
+      "path": "output/playwright/t17/1280-summary-three-tests.png",
+      "kind": "modified",
+      "sha256": "a3310ad35e975bbe53436f6a047a39521220ca96ca993577a52a4cc44e7ef8a1"
+    },
+    {
+      "path": "output/playwright/t17/360-feedback.png",
+      "kind": "modified",
+      "sha256": "c6fe2503d5169c827b12828b2e0351204e4ca2e32026fa9b482f1e40713ce7f6"
+    },
+    {
+      "path": "output/playwright/t17/360-summary-empty.png",
+      "kind": "modified",
+      "sha256": "5582e9286e6182fed34cb6c69ea0a31be8d831a30d8cb35b8bc56a1b7e8089c4"
+    },
+    {
+      "path": "output/playwright/t17/768-feedback.png",
+      "kind": "modified",
+      "sha256": "4ec1648bbe1100adfa67e7a9c1367c0042734e623c73261ad66f5c43a03cdea3"
+    },
+    {
+      "path": "output/playwright/t17/768-summary-empty.png",
+      "kind": "modified",
+      "sha256": "4a0fa8410195888576840d863ea93e5eb81c97d77ad8a54268e4892807b46d62"
+    },
+    {
+      "path": "output/validation/T01/capacity-report.json",
+      "kind": "modified",
+      "sha256": "f61c48e4c40d224b735d70240e66b10971dd7b45e33398194d870f61c6fff594"
+    },
+    {
+      "path": "output/validation/content-report.json",
+      "kind": "modified",
+      "sha256": "bb5eef397ff7611964c5910fb028c1e8a0ddab9eab6c715a53f682bb41cb5056"
+    },
+    {
+      "path": "package.json",
+      "kind": "modified",
+      "sha256": "b05ff325d2f12ab3c1b161401b0e7e49509e8fb5699ca1e0850df5c6ff6028ff"
+    },
+    {
+      "path": "scripts/package-free-play.py",
+      "kind": "added",
+      "sha256": "7e409e3d2bd112d1389994cfd1a60931c080a95013b7c2ef7f760cba66b21e4b"
+    },
+    {
+      "path": "src/core/unified-persistence.ts",
+      "kind": "modified",
+      "sha256": "e7d52cf3d5e6af6f9cc4763eedf3692bdf716af5937d51dca16fcb014564c556"
+    },
+    {
+      "path": "src/features/full-game/FullGame.css",
+      "kind": "modified",
+      "sha256": "7639151dd98eecf967927b434d396a924aba7fadd6bae93d962bc083ff9f5cdd"
+    },
+    {
+      "path": "src/features/full-game/FullGame.tsx",
+      "kind": "modified",
+      "sha256": "e21aa87759a17e63479943e24b34fb2a074b075e9e7ef0370582d0134df1244d"
+    },
+    {
+      "path": "src/features/full-game/model.ts",
+      "kind": "modified",
+      "sha256": "c7c87864fbc1d2104d2a043aac1e22c257759965a21023d103ae4875ba30eacb"
+    },
+    {
+      "path": "src/features/learning-hub/LearningHub.tsx",
+      "kind": "modified",
+      "sha256": "4714904f5cc94671142f2acf592ba806fb761c7a7d4a9c0783ed37b759192e94"
+    },
+    {
+      "path": "src/features/learning-hub/registry.ts",
+      "kind": "modified",
+      "sha256": "c0c493adf1634ec6ff0c7f2cee4f6dbea469e7da50aacacfadb4a938eed562c0"
+    },
+    {
+      "path": "tests/browser/free-play.spec.ts",
+      "kind": "added",
+      "sha256": "af0eb227835dba22c364dfd979acea9110259472a3b72e8d74afa8500afe336e"
+    },
+    {
+      "path": "tests/browser/t03.spec.ts",
+      "kind": "modified",
+      "sha256": "0e6f1ba2561fc641ffc734435bae58567166e0946463b2eaa6282b497ebef2ae"
+    },
+    {
+      "path": "tests/browser/t16.spec.ts",
+      "kind": "modified",
+      "sha256": "8c140aea1e9feb5d9f940dc6844afcfc1da0f281d9514416064858e08c204333"
+    },
+    {
+      "path": "tests/free-play/model.test.ts",
+      "kind": "added",
+      "sha256": "5692e9f75273c63720d57106d263be32e9113cd755e5746c57f40278b9d0f88e"
+    },
+    {
+      "path": "tests/t03/navigation.test.tsx",
+      "kind": "modified",
+      "sha256": "9abdfae4439b5b9ed2abb9d27276a0e47f708f0acc4e73e224892004f3cd912c"
+    }
+  ],
+  "removed": [
+    "dist/assets/index-CbgLW9-l.js",
+    "dist/assets/index-sO1tMWpE.css"
+  ]
+}

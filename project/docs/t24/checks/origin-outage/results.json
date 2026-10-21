@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "T24-ORIGIN-OUTAGE-CONTROL",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "rows": [
+    {
+      "name": "chromium",
+      "version": "151.0.7922.34",
+      "method": "stop isolated HTTP origin; no setOffline flag",
+      "scope": "origin-unavailability control, not physical Wi-Fi disconnection",
+      "status": "passed",
+      "readiness": {
+        "controller": true,
+        "cacheNames": [
+          "go-club-offline-0.17.1"
+        ]
+      },
+      "beforeRefresh": [
+        {
+          "key": "go-club:teacher-drafts:v1",
+          "title": null,
+          "savedTitles": [
+            "TEST-T24 outage draft, not formal"
+          ]
+        },
+        {
+          "key": "go-club:teacher-editor-session:v1",
+          "title": "TEST-T24 outage draft, not formal",
+          "savedTitles": null
+        }
+      ],
+      "requestsAfterOriginStopped": []
+    },
+    {
+      "name": "webkit",
+      "version": "26.5",
+      "method": "stop isolated HTTP origin; no setOffline flag",
+      "scope": "origin-unavailability control, not physical Wi-Fi disconnection",
+      "status": "passed",
+      "readiness": {
+        "controller": true,
+        "cacheNames": [
+          "go-club-offline-0.17.1"
+        ]
+      },
+      "beforeRefresh": [
+        {
+          "key": "go-club:teacher-drafts:v1",
+          "title": null,
+          "savedTitles": [
+            "TEST-T24 outage draft, not formal"
+          ]
+        },
+        {
+          "key": "go-club:teacher-editor-session:v1",
+          "title": "TEST-T24 outage draft, not formal",
+          "savedTitles": null
+        }
+      ],
+      "requestsAfterOriginStopped": []
+    }
+  ],
+  "humanReviewed": null
+}

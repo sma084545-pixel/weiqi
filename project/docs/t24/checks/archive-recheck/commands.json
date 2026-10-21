@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "T24-CLEAN-ARCHIVE-COMMANDS",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "resultVersion": "0.17.1-t24.1",
+  "workingDirectory": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t24-20261009/candidate-recheck/go-club",
+  "results": [
+    {
+      "command": "pnpm install --frozen-lockfile",
+      "status": "passed",
+      "exitCode": 0,
+      "log": "docs/t24/checks/archive-recheck/clean-install.log"
+    },
+    {
+      "command": "pnpm check",
+      "status": "passed",
+      "exitCode": 0,
+      "log": "docs/t24/checks/archive-recheck/full-check.log"
+    },
+    {
+      "command": "pnpm exec playwright test tests/browser/t24.spec.ts tests/browser/t24-refresh.spec.ts --workers=1",
+      "status": "passed",
+      "exitCode": 0,
+      "log": "docs/t24/checks/archive-recheck/browser.log"
+    },
+    {
+      "command": "node scripts/check-clean-start-t24.mjs (pnpm dev --port 4197)",
+      "status": "passed",
+      "exitCode": 0,
+      "log": "docs/t24/checks/archive-recheck/dev-start.log"
+    }
+  ],
+  "shutdownNote": "dev service deliberately SIGTERM after successful browser check (143 child code is cleanup)",
+  "humanReviewed": null
+}

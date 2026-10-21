@@ -1,0 +1,23 @@
+$ tsc --noEmit && vite build && node scripts/finalize-offline.mjs
+vite v8.2.2 building client environment for production...
+transforming...
+✓ 183 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.58 kB │ gzip:   0.43 kB
+dist/assets/index-B29lK9BV.css  128.43 kB │ gzip:  25.62 kB
+dist/assets/index-B6jS9x7u.js   998.76 kB │ gzip: 260.12 kB
+
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 6.63s
+[33m[PLUGIN_TIMINGS] [0mPlugin hooks ran for 4.4s of this 6.6s build (67%).
+The slowest hooks, timed inside each callback (the wait before a callback starts is excluded, the time it awaits is included):
+  - vite:css-post renderChunk (61%, 4.0s, 1 call)
+Additional hook time came from hooks under 1s.
+See https://rolldown.rs/reference/InputOptions.checks#plugintimings for more details.
+
+Offline bundle 0.20.0: 8 required resources.

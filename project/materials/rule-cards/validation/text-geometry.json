@@ -1,0 +1,1816 @@
+{
+  "schemaVersion": 1,
+  "id": "T20-TEXT-GEOMETRY",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "baseVersion": "0.2.0",
+  "resultVersion": "0.2.0-t20.1",
+  "checks": [
+    {
+      "card": "01-main-front",
+      "text": "边下边查 · 落子与提子",
+      "sizePt": 19,
+      "rightMm": 80.379,
+      "baselineMm": 16
+    },
+    {
+      "card": "01-main-front",
+      "text": "完整对弈 quick reference · 正面",
+      "sizePt": 9,
+      "rightMm": 58.933,
+      "baselineMm": 24
+    },
+    {
+      "card": "01-main-front",
+      "text": "01 正面 ↔ 01 背面  |  GO-CLUB-AREA-1",
+      "sizePt": 7,
+      "rightMm": 54.724,
+      "baselineMm": 198
+    },
+    {
+      "card": "01-main-front",
+      "text": "T20-01-main-front · schemaVersion 1 · revision 1",
+      "sizePt": 6,
+      "rightMm": 60.538,
+      "baselineMm": 202
+    },
+    {
+      "card": "01-main-front",
+      "text": "棋子（stone）放在交叉点（intersection）。",
+      "sizePt": 10.5,
+      "rightMm": 84.939,
+      "baselineMm": 35
+    },
+    {
+      "card": "01-main-front",
+      "text": "空盘黑先，黑白轮流；每次落一颗在空点。",
+      "sizePt": 10.5,
+      "rightMm": 80.379,
+      "baselineMm": 40.5
+    },
+    {
+      "card": "01-main-front",
+      "text": "上下左右直接相连",
+      "sizePt": 11,
+      "rightMm": 41.044,
+      "baselineMm": 53
+    },
+    {
+      "card": "01-main-front",
+      "text": "整块的气一起数",
+      "sizePt": 11,
+      "rightMm": 106.164,
+      "baselineMm": 53
+    },
+    {
+      "card": "01-main-front",
+      "text": "A",
+      "sizePt": 8,
+      "rightMm": 18.088,
+      "baselineMm": 57
+    },
+    {
+      "card": "01-main-front",
+      "text": "5",
+      "sizePt": 8,
+      "rightMm": 10.564,
+      "baselineMm": 64.0
+    },
+    {
+      "card": "01-main-front",
+      "text": "B",
+      "sizePt": 8,
+      "rightMm": 27.62,
+      "baselineMm": 57
+    },
+    {
+      "card": "01-main-front",
+      "text": "4",
+      "sizePt": 8,
+      "rightMm": 10.564,
+      "baselineMm": 74.0
+    },
+    {
+      "card": "01-main-front",
+      "text": "C",
+      "sizePt": 8,
+      "rightMm": 38.294,
+      "baselineMm": 57
+    },
+    {
+      "card": "01-main-front",
+      "text": "3",
+      "sizePt": 8,
+      "rightMm": 10.564,
+      "baselineMm": 84.0
+    },
+    {
+      "card": "01-main-front",
+      "text": "D",
+      "sizePt": 8,
+      "rightMm": 48.1,
+      "baselineMm": 57
+    },
+    {
+      "card": "01-main-front",
+      "text": "2",
+      "sizePt": 8,
+      "rightMm": 10.564,
+      "baselineMm": 94.0
+    },
+    {
+      "card": "01-main-front",
+      "text": "E",
+      "sizePt": 8,
+      "rightMm": 57.513,
+      "baselineMm": 57
+    },
+    {
+      "card": "01-main-front",
+      "text": "1",
+      "sizePt": 8,
+      "rightMm": 10.564,
+      "baselineMm": 104.0
+    },
+    {
+      "card": "01-main-front",
+      "text": "CONNECT",
+      "sizePt": 6.5,
+      "rightMm": 28.321,
+      "baselineMm": 107
+    },
+    {
+      "card": "01-main-front",
+      "text": "A",
+      "sizePt": 8,
+      "rightMm": 87.088,
+      "baselineMm": 57
+    },
+    {
+      "card": "01-main-front",
+      "text": "5",
+      "sizePt": 8,
+      "rightMm": 79.564,
+      "baselineMm": 64.0
+    },
+    {
+      "card": "01-main-front",
+      "text": "B",
+      "sizePt": 8,
+      "rightMm": 96.62,
+      "baselineMm": 57
+    },
+    {
+      "card": "01-main-front",
+      "text": "4",
+      "sizePt": 8,
+      "rightMm": 79.564,
+      "baselineMm": 74.0
+    },
+    {
+      "card": "01-main-front",
+      "text": "C",
+      "sizePt": 8,
+      "rightMm": 107.294,
+      "baselineMm": 57
+    },
+    {
+      "card": "01-main-front",
+      "text": "3",
+      "sizePt": 8,
+      "rightMm": 79.564,
+      "baselineMm": 84.0
+    },
+    {
+      "card": "01-main-front",
+      "text": "D",
+      "sizePt": 8,
+      "rightMm": 117.1,
+      "baselineMm": 57
+    },
+    {
+      "card": "01-main-front",
+      "text": "2",
+      "sizePt": 8,
+      "rightMm": 79.564,
+      "baselineMm": 94.0
+    },
+    {
+      "card": "01-main-front",
+      "text": "E",
+      "sizePt": 8,
+      "rightMm": 126.513,
+      "baselineMm": 57
+    },
+    {
+      "card": "01-main-front",
+      "text": "1",
+      "sizePt": 8,
+      "rightMm": 79.564,
+      "baselineMm": 104.0
+    },
+    {
+      "card": "01-main-front",
+      "text": "LIBERTY",
+      "sizePt": 6.5,
+      "rightMm": 93.849,
+      "baselineMm": 107
+    },
+    {
+      "card": "01-main-front",
+      "text": "B4、C4相连；",
+      "sizePt": 10,
+      "rightMm": 32.913,
+      "baselineMm": 112
+    },
+    {
+      "card": "01-main-front",
+      "text": "D3斜邻C4，不相连。",
+      "sizePt": 10,
+      "rightMm": 44.096,
+      "baselineMm": 117
+    },
+    {
+      "card": "01-main-front",
+      "text": "气（liberty）共7口。",
+      "sizePt": 10,
+      "rightMm": 110.38,
+      "baselineMm": 112
+    },
+    {
+      "card": "01-main-front",
+      "text": "小气环C3被共享，只算1次。",
+      "sizePt": 10,
+      "rightMm": 122.582,
+      "baselineMm": 117
+    },
+    {
+      "card": "01-main-front",
+      "text": "只剩1气叫打吃（atari），还没有被提掉。",
+      "sizePt": 10.5,
+      "rightMm": 79.49,
+      "baselineMm": 130
+    },
+    {
+      "card": "01-main-front",
+      "text": "A",
+      "sizePt": 8,
+      "rightMm": 18.088,
+      "baselineMm": 135
+    },
+    {
+      "card": "01-main-front",
+      "text": "5",
+      "sizePt": 8,
+      "rightMm": 10.564,
+      "baselineMm": 142.0
+    },
+    {
+      "card": "01-main-front",
+      "text": "B",
+      "sizePt": 8,
+      "rightMm": 25.62,
+      "baselineMm": 135
+    },
+    {
+      "card": "01-main-front",
+      "text": "4",
+      "sizePt": 8,
+      "rightMm": 10.564,
+      "baselineMm": 150.0
+    },
+    {
+      "card": "01-main-front",
+      "text": "C",
+      "sizePt": 8,
+      "rightMm": 34.294,
+      "baselineMm": 135
+    },
+    {
+      "card": "01-main-front",
+      "text": "3",
+      "sizePt": 8,
+      "rightMm": 10.564,
+      "baselineMm": 158.0
+    },
+    {
+      "card": "01-main-front",
+      "text": "D",
+      "sizePt": 8,
+      "rightMm": 42.1,
+      "baselineMm": 135
+    },
+    {
+      "card": "01-main-front",
+      "text": "2",
+      "sizePt": 8,
+      "rightMm": 10.564,
+      "baselineMm": 166.0
+    },
+    {
+      "card": "01-main-front",
+      "text": "E",
+      "sizePt": 8,
+      "rightMm": 49.513,
+      "baselineMm": 135
+    },
+    {
+      "card": "01-main-front",
+      "text": "1",
+      "sizePt": 8,
+      "rightMm": 10.564,
+      "baselineMm": 174.0
+    },
+    {
+      "card": "01-main-front",
+      "text": "CAPTURE-BEFORE",
+      "sizePt": 6.5,
+      "rightMm": 36.051,
+      "baselineMm": 177
+    },
+    {
+      "card": "01-main-front",
+      "text": "A",
+      "sizePt": 8,
+      "rightMm": 92.088,
+      "baselineMm": 135
+    },
+    {
+      "card": "01-main-front",
+      "text": "5",
+      "sizePt": 8,
+      "rightMm": 84.564,
+      "baselineMm": 142.0
+    },
+    {
+      "card": "01-main-front",
+      "text": "B",
+      "sizePt": 8,
+      "rightMm": 99.62,
+      "baselineMm": 135
+    },
+    {
+      "card": "01-main-front",
+      "text": "4",
+      "sizePt": 8,
+      "rightMm": 84.564,
+      "baselineMm": 150.0
+    },
+    {
+      "card": "01-main-front",
+      "text": "C",
+      "sizePt": 8,
+      "rightMm": 108.294,
+      "baselineMm": 135
+    },
+    {
+      "card": "01-main-front",
+      "text": "3",
+      "sizePt": 8,
+      "rightMm": 84.564,
+      "baselineMm": 158.0
+    },
+    {
+      "card": "01-main-front",
+      "text": "D",
+      "sizePt": 8,
+      "rightMm": 116.1,
+      "baselineMm": 135
+    },
+    {
+      "card": "01-main-front",
+      "text": "2",
+      "sizePt": 8,
+      "rightMm": 84.564,
+      "baselineMm": 166.0
+    },
+    {
+      "card": "01-main-front",
+      "text": "E",
+      "sizePt": 8,
+      "rightMm": 123.513,
+      "baselineMm": 135
+    },
+    {
+      "card": "01-main-front",
+      "text": "1",
+      "sizePt": 8,
+      "rightMm": 84.564,
+      "baselineMm": 174.0
+    },
+    {
+      "card": "01-main-front",
+      "text": "CAPTURE-AFTER",
+      "sizePt": 6.5,
+      "rightMm": 108.186,
+      "baselineMm": 177
+    },
+    {
+      "card": "01-main-front",
+      "text": "黑D3",
+      "sizePt": 10,
+      "rightMm": 66.107,
+      "baselineMm": 155
+    },
+    {
+      "card": "01-main-front",
+      "text": "→",
+      "sizePt": 16,
+      "rightMm": 63.644,
+      "baselineMm": 163
+    },
+    {
+      "card": "01-main-front",
+      "text": "提子（capture）：填掉最后一气，提走对方整块。",
+      "sizePt": 10.5,
+      "rightMm": 94.862,
+      "baselineMm": 182
+    },
+    {
+      "card": "01-main-front",
+      "text": "全图为完整5×5小棋盘练习；上为5行，左为A列。",
+      "sizePt": 8,
+      "rightMm": 72.419,
+      "baselineMm": 189
+    },
+    {
+      "card": "02-main-back",
+      "text": "边下边查 · 如何结束",
+      "sizePt": 19,
+      "rightMm": 73.676,
+      "baselineMm": 16
+    },
+    {
+      "card": "02-main-back",
+      "text": "完整对弈 full game · 背面",
+      "sizePt": 9,
+      "rightMm": 48.945,
+      "baselineMm": 24
+    },
+    {
+      "card": "02-main-back",
+      "text": "01 背面 ↔ 01 正面  |  GO-CLUB-AREA-1",
+      "sizePt": 7,
+      "rightMm": 54.724,
+      "baselineMm": 198
+    },
+    {
+      "card": "02-main-back",
+      "text": "T20-02-main-back · schemaVersion 1 · revision 1",
+      "sizePt": 6,
+      "rightMm": 61.162,
+      "baselineMm": 202
+    },
+    {
+      "card": "02-main-back",
+      "text": "01  想不到要下哪里？可以停一手",
+      "sizePt": 11,
+      "rightMm": 68.687,
+      "baselineMm": 37
+    },
+    {
+      "card": "02-main-back",
+      "text": "停一手（pass）就是本轮不落子，换对方。",
+      "sizePt": 11,
+      "rightMm": 84.278,
+      "baselineMm": 48
+    },
+    {
+      "card": "02-main-back",
+      "text": "双方连续两次停手，进入终局确认",
+      "sizePt": 11,
+      "rightMm": 68.208,
+      "baselineMm": 54
+    },
+    {
+      "card": "02-main-back",
+      "text": "（end confirmation），还不是自动结束。",
+      "sizePt": 11,
+      "rightMm": 85.077,
+      "baselineMm": 60
+    },
+    {
+      "card": "02-main-back",
+      "text": "02  两人一起确认，再数分",
+      "sizePt": 11,
+      "rightMm": 57.045,
+      "baselineMm": 70
+    },
+    {
+      "card": "02-main-back",
+      "text": "共同确认死子与中立点；不自动判死。",
+      "sizePt": 11,
+      "rightMm": 75.969,
+      "baselineMm": 81
+    },
+    {
+      "card": "02-main-back",
+      "text": "有争议就恢复对弈，实际演示；详见补充卡。",
+      "sizePt": 11,
+      "rightMm": 87.611,
+      "baselineMm": 87
+    },
+    {
+      "card": "02-main-back",
+      "text": "只在计分副本中移除双方同意的死子。",
+      "sizePt": 11,
+      "rightMm": 75.969,
+      "baselineMm": 93
+    },
+    {
+      "card": "02-main-back",
+      "text": "03  面积计分（area scoring）",
+      "sizePt": 11,
+      "rightMm": 64.966,
+      "baselineMm": 103
+    },
+    {
+      "card": "02-main-back",
+      "text": "黑分＝黑活子数＋黑围空点数。",
+      "sizePt": 10.5,
+      "rightMm": 61.858,
+      "baselineMm": 114
+    },
+    {
+      "card": "02-main-back",
+      "text": "白分＝白活子数＋白围空点数＋贴目。",
+      "sizePt": 10.5,
+      "rightMm": 72.971,
+      "baselineMm": 119.8
+    },
+    {
+      "card": "02-main-back",
+      "text": "围空（territory）指仅由一方棋子围住的空区。",
+      "sizePt": 10.5,
+      "rightMm": 86.387,
+      "baselineMm": 125.6
+    },
+    {
+      "card": "02-main-back",
+      "text": "提子数不再额外加分；中立点双方都不计。",
+      "sizePt": 10.5,
+      "rightMm": 80.379,
+      "baselineMm": 131.4
+    },
+    {
+      "card": "02-main-back",
+      "text": "贴目（komi）开局说好，默认0，可和棋。",
+      "sizePt": 10.5,
+      "rightMm": 79.82,
+      "baselineMm": 139.20000000000002
+    },
+    {
+      "card": "02-main-back",
+      "text": "默认0是社团教学选择，不是官方标准。",
+      "sizePt": 10.5,
+      "rightMm": 75.023,
+      "baselineMm": 145.00000000000003
+    },
+    {
+      "card": "02-main-back",
+      "text": "禁着提醒：提完敌子后，己方新棋块仍无气，",
+      "sizePt": 10.5,
+      "rightMm": 84.083,
+      "baselineMm": 153.80000000000004
+    },
+    {
+      "card": "02-main-back",
+      "text": "是自杀（suicide），禁止。劫（ko）不能立即",
+      "sizePt": 10.5,
+      "rightMm": 86.065,
+      "baselineMm": 159.60000000000005
+    },
+    {
+      "card": "02-main-back",
+      "text": "回提重现旧盘面；更长重复也禁，见02补充卡。",
+      "sizePt": 10.5,
+      "rightMm": 88.188,
+      "baselineMm": 165.40000000000006
+    },
+    {
+      "card": "03-detail-front",
+      "text": "两种容易混淆的落点",
+      "sizePt": 19,
+      "rightMm": 70.325,
+      "baselineMm": 16
+    },
+    {
+      "card": "03-detail-front",
+      "text": "详细补充卡 · 图示",
+      "sizePt": 9,
+      "rightMm": 36.987,
+      "baselineMm": 24
+    },
+    {
+      "card": "03-detail-front",
+      "text": "02 正面 ↔ 02 背面  |  GO-CLUB-AREA-1",
+      "sizePt": 7,
+      "rightMm": 54.724,
+      "baselineMm": 198
+    },
+    {
+      "card": "03-detail-front",
+      "text": "T20-03-detail-front · schemaVersion 1 · revision 1",
+      "sizePt": 6,
+      "rightMm": 61.228,
+      "baselineMm": 202
+    },
+    {
+      "card": "03-detail-front",
+      "text": "先提子，获得气：这一手可以下",
+      "sizePt": 12,
+      "rightMm": 69.267,
+      "baselineMm": 36
+    },
+    {
+      "card": "03-detail-front",
+      "text": "A",
+      "sizePt": 8,
+      "rightMm": 20.088,
+      "baselineMm": 42
+    },
+    {
+      "card": "03-detail-front",
+      "text": "5",
+      "sizePt": 8,
+      "rightMm": 12.564,
+      "baselineMm": 49.0
+    },
+    {
+      "card": "03-detail-front",
+      "text": "B",
+      "sizePt": 8,
+      "rightMm": 29.12,
+      "baselineMm": 42
+    },
+    {
+      "card": "03-detail-front",
+      "text": "4",
+      "sizePt": 8,
+      "rightMm": 12.564,
+      "baselineMm": 58.5
+    },
+    {
+      "card": "03-detail-front",
+      "text": "C",
+      "sizePt": 8,
+      "rightMm": 39.294,
+      "baselineMm": 42
+    },
+    {
+      "card": "03-detail-front",
+      "text": "3",
+      "sizePt": 8,
+      "rightMm": 12.564,
+      "baselineMm": 68.0
+    },
+    {
+      "card": "03-detail-front",
+      "text": "D",
+      "sizePt": 8,
+      "rightMm": 48.6,
+      "baselineMm": 42
+    },
+    {
+      "card": "03-detail-front",
+      "text": "2",
+      "sizePt": 8,
+      "rightMm": 12.564,
+      "baselineMm": 77.5
+    },
+    {
+      "card": "03-detail-front",
+      "text": "E",
+      "sizePt": 8,
+      "rightMm": 57.513,
+      "baselineMm": 42
+    },
+    {
+      "card": "03-detail-front",
+      "text": "1",
+      "sizePt": 8,
+      "rightMm": 12.564,
+      "baselineMm": 87.0
+    },
+    {
+      "card": "03-detail-front",
+      "text": "LEGAL-BEFORE",
+      "sizePt": 6.5,
+      "rightMm": 35.077,
+      "baselineMm": 90
+    },
+    {
+      "card": "03-detail-front",
+      "text": "A",
+      "sizePt": 8,
+      "rightMm": 93.088,
+      "baselineMm": 42
+    },
+    {
+      "card": "03-detail-front",
+      "text": "5",
+      "sizePt": 8,
+      "rightMm": 85.564,
+      "baselineMm": 49.0
+    },
+    {
+      "card": "03-detail-front",
+      "text": "B",
+      "sizePt": 8,
+      "rightMm": 102.12,
+      "baselineMm": 42
+    },
+    {
+      "card": "03-detail-front",
+      "text": "4",
+      "sizePt": 8,
+      "rightMm": 85.564,
+      "baselineMm": 58.5
+    },
+    {
+      "card": "03-detail-front",
+      "text": "C",
+      "sizePt": 8,
+      "rightMm": 112.294,
+      "baselineMm": 42
+    },
+    {
+      "card": "03-detail-front",
+      "text": "3",
+      "sizePt": 8,
+      "rightMm": 85.564,
+      "baselineMm": 68.0
+    },
+    {
+      "card": "03-detail-front",
+      "text": "D",
+      "sizePt": 8,
+      "rightMm": 121.6,
+      "baselineMm": 42
+    },
+    {
+      "card": "03-detail-front",
+      "text": "2",
+      "sizePt": 8,
+      "rightMm": 85.564,
+      "baselineMm": 77.5
+    },
+    {
+      "card": "03-detail-front",
+      "text": "E",
+      "sizePt": 8,
+      "rightMm": 130.513,
+      "baselineMm": 42
+    },
+    {
+      "card": "03-detail-front",
+      "text": "1",
+      "sizePt": 8,
+      "rightMm": 85.564,
+      "baselineMm": 87.0
+    },
+    {
+      "card": "03-detail-front",
+      "text": "LEGAL-AFTER",
+      "sizePt": 6.5,
+      "rightMm": 106.212,
+      "baselineMm": 90
+    },
+    {
+      "card": "03-detail-front",
+      "text": "→",
+      "sizePt": 16,
+      "rightMm": 70.644,
+      "baselineMm": 67
+    },
+    {
+      "card": "03-detail-front",
+      "text": "黑下A5（三角目标），先提白B5与A4。",
+      "sizePt": 10.5,
+      "rightMm": 75.623,
+      "baselineMm": 96
+    },
+    {
+      "card": "03-detail-front",
+      "text": "黑A5因此得到2气；这个新教学起点中合法。",
+      "sizePt": 10.5,
+      "rightMm": 83.52,
+      "baselineMm": 102
+    },
+    {
+      "card": "03-detail-front",
+      "text": "劫（ko）：立即回提会重现旧棋盘",
+      "sizePt": 12,
+      "rightMm": 74.165,
+      "baselineMm": 116
+    },
+    {
+      "card": "03-detail-front",
+      "text": "A",
+      "sizePt": 8,
+      "rightMm": 20.088,
+      "baselineMm": 122
+    },
+    {
+      "card": "03-detail-front",
+      "text": "5",
+      "sizePt": 8,
+      "rightMm": 12.564,
+      "baselineMm": 129.0
+    },
+    {
+      "card": "03-detail-front",
+      "text": "B",
+      "sizePt": 8,
+      "rightMm": 29.12,
+      "baselineMm": 122
+    },
+    {
+      "card": "03-detail-front",
+      "text": "4",
+      "sizePt": 8,
+      "rightMm": 12.564,
+      "baselineMm": 138.5
+    },
+    {
+      "card": "03-detail-front",
+      "text": "C",
+      "sizePt": 8,
+      "rightMm": 39.294,
+      "baselineMm": 122
+    },
+    {
+      "card": "03-detail-front",
+      "text": "3",
+      "sizePt": 8,
+      "rightMm": 12.564,
+      "baselineMm": 148.0
+    },
+    {
+      "card": "03-detail-front",
+      "text": "D",
+      "sizePt": 8,
+      "rightMm": 48.6,
+      "baselineMm": 122
+    },
+    {
+      "card": "03-detail-front",
+      "text": "2",
+      "sizePt": 8,
+      "rightMm": 12.564,
+      "baselineMm": 157.5
+    },
+    {
+      "card": "03-detail-front",
+      "text": "E",
+      "sizePt": 8,
+      "rightMm": 57.513,
+      "baselineMm": 122
+    },
+    {
+      "card": "03-detail-front",
+      "text": "1",
+      "sizePt": 8,
+      "rightMm": 12.564,
+      "baselineMm": 167.0
+    },
+    {
+      "card": "03-detail-front",
+      "text": "KO-BEFORE",
+      "sizePt": 6.5,
+      "rightMm": 31.38,
+      "baselineMm": 170
+    },
+    {
+      "card": "03-detail-front",
+      "text": "A",
+      "sizePt": 8,
+      "rightMm": 93.088,
+      "baselineMm": 122
+    },
+    {
+      "card": "03-detail-front",
+      "text": "5",
+      "sizePt": 8,
+      "rightMm": 85.564,
+      "baselineMm": 129.0
+    },
+    {
+      "card": "03-detail-front",
+      "text": "B",
+      "sizePt": 8,
+      "rightMm": 102.12,
+      "baselineMm": 122
+    },
+    {
+      "card": "03-detail-front",
+      "text": "4",
+      "sizePt": 8,
+      "rightMm": 85.564,
+      "baselineMm": 138.5
+    },
+    {
+      "card": "03-detail-front",
+      "text": "C",
+      "sizePt": 8,
+      "rightMm": 112.294,
+      "baselineMm": 122
+    },
+    {
+      "card": "03-detail-front",
+      "text": "3",
+      "sizePt": 8,
+      "rightMm": 85.564,
+      "baselineMm": 148.0
+    },
+    {
+      "card": "03-detail-front",
+      "text": "D",
+      "sizePt": 8,
+      "rightMm": 121.6,
+      "baselineMm": 122
+    },
+    {
+      "card": "03-detail-front",
+      "text": "2",
+      "sizePt": 8,
+      "rightMm": 85.564,
+      "baselineMm": 157.5
+    },
+    {
+      "card": "03-detail-front",
+      "text": "E",
+      "sizePt": 8,
+      "rightMm": 130.513,
+      "baselineMm": 122
+    },
+    {
+      "card": "03-detail-front",
+      "text": "1",
+      "sizePt": 8,
+      "rightMm": 85.564,
+      "baselineMm": 167.0
+    },
+    {
+      "card": "03-detail-front",
+      "text": "KO-AFTER",
+      "sizePt": 6.5,
+      "rightMm": 102.516,
+      "baselineMm": 170
+    },
+    {
+      "card": "03-detail-front",
+      "text": "→",
+      "sizePt": 16,
+      "rightMm": 70.644,
+      "baselineMm": 149
+    },
+    {
+      "card": "03-detail-front",
+      "text": "黑D3提白C3。白若立即下C3回提黑D3，",
+      "sizePt": 10.5,
+      "rightMm": 77.897,
+      "baselineMm": 175
+    },
+    {
+      "card": "03-detail-front",
+      "text": "就回到左图，禁止；不是隔一手就一定能提。",
+      "sizePt": 10.5,
+      "rightMm": 84.083,
+      "baselineMm": 180.5
+    },
+    {
+      "card": "03-detail-front",
+      "text": "完整5×5练习；上5左A；左→右；三角是目标非棋子。",
+      "sizePt": 8,
+      "rightMm": 78.064,
+      "baselineMm": 189
+    },
+    {
+      "card": "04-detail-back",
+      "text": "规则不随卡片简化而改变",
+      "sizePt": 19,
+      "rightMm": 83.731,
+      "baselineMm": 16
+    },
+    {
+      "card": "04-detail-back",
+      "text": "详细补充卡 · 学生与带领者共用",
+      "sizePt": 9,
+      "rightMm": 56.038,
+      "baselineMm": 24
+    },
+    {
+      "card": "04-detail-back",
+      "text": "02 背面 ↔ 02 正面  |  GO-CLUB-AREA-1",
+      "sizePt": 7,
+      "rightMm": 54.724,
+      "baselineMm": 198
+    },
+    {
+      "card": "04-detail-back",
+      "text": "T20-04-detail-back · schemaVersion 1 · revision 1",
+      "sizePt": 6,
+      "rightMm": 61.852,
+      "baselineMm": 202
+    },
+    {
+      "card": "04-detail-back",
+      "text": "位置超级劫（positional superko）",
+      "sizePt": 11,
+      "rightMm": 72.723,
+      "baselineMm": 37
+    },
+    {
+      "card": "04-detail-back",
+      "text": "落子完成提子后，棋子布局不能与本局当前",
+      "sizePt": 10.5,
+      "rightMm": 80.379,
+      "baselineMm": 48
+    },
+    {
+      "card": "04-detail-back",
+      "text": "有效路径中的任何先前布局相同，含初始布局。",
+      "sizePt": 10.5,
+      "rightMm": 87.787,
+      "baselineMm": 53.8
+    },
+    {
+      "card": "04-detail-back",
+      "text": "只比较棋子，不看下一手颜色；长重复也禁止。",
+      "sizePt": 10.5,
+      "rightMm": 87.787,
+      "baselineMm": 59.599999999999994
+    },
+    {
+      "card": "04-detail-back",
+      "text": "停手免重复检查，但不清空历史。",
+      "sizePt": 10.5,
+      "rightMm": 65.562,
+      "baselineMm": 65.39999999999999
+    },
+    {
+      "card": "04-detail-back",
+      "text": "争议如何恢复",
+      "sizePt": 11,
+      "rightMm": 35.283,
+      "baselineMm": 75.19999999999999
+    },
+    {
+      "card": "04-detail-back",
+      "text": "保留原棋盘、轮次、重复历史；停手数归零，",
+      "sizePt": 10.5,
+      "rightMm": 84.083,
+      "baselineMm": 86.19999999999999
+    },
+    {
+      "card": "04-detail-back",
+      "text": "清除预览标记。争议方按轮次实际演示；",
+      "sizePt": 10.5,
+      "rightMm": 76.675,
+      "baselineMm": 91.99999999999999
+    },
+    {
+      "card": "04-detail-back",
+      "text": "另一方可合法停手。未达一致则保留未解决。",
+      "sizePt": 10.5,
+      "rightMm": 84.083,
+      "baselineMm": 97.79999999999998
+    },
+    {
+      "card": "04-detail-back",
+      "text": "落子与撤回",
+      "sizePt": 11,
+      "rightMm": 31.403,
+      "baselineMm": 107.59999999999998
+    },
+    {
+      "card": "04-detail-back",
+      "text": "先查轮次、坐标、占用；暂放己子，同时提走",
+      "sizePt": 10.5,
+      "rightMm": 84.083,
+      "baselineMm": 118.59999999999998
+    },
+    {
+      "card": "04-detail-back",
+      "text": "相邻无气敌块；再查己方气、重复。无效动作",
+      "sizePt": 10.5,
+      "rightMm": 84.083,
+      "baselineMm": 124.39999999999998
+    },
+    {
+      "card": "04-detail-back",
+      "text": "不改历史、轮次、计数。撤回恢复棋盘、轮次、",
+      "sizePt": 10.5,
+      "rightMm": 87.787,
+      "baselineMm": 130.2
+    },
+    {
+      "card": "04-detail-back",
+      "text": "提子数、停手数、终局状态、重复历史、上一手。",
+      "sizePt": 10.5,
+      "rightMm": 91.492,
+      "baselineMm": 136.0
+    },
+    {
+      "card": "04-detail-back",
+      "text": "眼与摆棋的边界",
+      "sizePt": 11,
+      "rightMm": 39.164,
+      "baselineMm": 145.8
+    },
+    {
+      "card": "04-detail-back",
+      "text": "两个可靠保护的独立真眼（true eyes）是基础",
+      "sizePt": 10.5,
+      "rightMm": 85.461,
+      "baselineMm": 156.8
+    },
+    {
+      "card": "04-detail-back",
+      "text": "活棋形，不是两个空点，也非所有活棋都需要；",
+      "sizePt": 10.5,
+      "rightMm": 87.787,
+      "baselineMm": 162.60000000000002
+    },
+    {
+      "card": "04-detail-back",
+      "text": "双活（seki）存在。不自动判定任意棋块死活。",
+      "sizePt": 10.5,
+      "rightMm": 86.824,
+      "baselineMm": 168.40000000000003
+    },
+    {
+      "card": "04-detail-back",
+      "text": "摆棋（setup）可任选颜色或擦除，不是棋谱。",
+      "sizePt": 10.5,
+      "rightMm": 86.554,
+      "baselineMm": 174.20000000000005
+    },
+    {
+      "card": "04-detail-back",
+      "text": "转规则模式须验证局面、轮次，建立新历史，",
+      "sizePt": 10.5,
+      "rightMm": 84.083,
+      "baselineMm": 180.00000000000006
+    },
+    {
+      "card": "04-detail-back",
+      "text": "明确说明之前历史未知。",
+      "sizePt": 10.5,
+      "rightMm": 50.746,
+      "baselineMm": 185.80000000000007
+    },
+    {
+      "card": "05-score",
+      "text": "一起算一次 · 面积计分",
+      "sizePt": 19,
+      "rightMm": 80.379,
+      "baselineMm": 16
+    },
+    {
+      "card": "05-score",
+      "text": "计分例卡 · 完整5×5小棋盘教学算例",
+      "sizePt": 9,
+      "rightMm": 61.826,
+      "baselineMm": 24
+    },
+    {
+      "card": "05-score",
+      "text": "03 正面（计分）↔ 03 背面（路线）  |  GO-CLUB-AREA-1",
+      "sizePt": 7,
+      "rightMm": 73.862,
+      "baselineMm": 198
+    },
+    {
+      "card": "05-score",
+      "text": "T20-05-score · schemaVersion 1 · revision 1",
+      "sizePt": 6,
+      "rightMm": 55.582,
+      "baselineMm": 202
+    },
+    {
+      "card": "05-score",
+      "text": "明确教学假设：盘上棋子均按活子计、无死子；",
+      "sizePt": 10.5,
+      "rightMm": 87.787,
+      "baselineMm": 35
+    },
+    {
+      "card": "05-score",
+      "text": "A3–E3为中立点。这不证明棋形无条件活。",
+      "sizePt": 10.5,
+      "rightMm": 79.949,
+      "baselineMm": 40.7
+    },
+    {
+      "card": "05-score",
+      "text": "A",
+      "sizePt": 8,
+      "rightMm": 50.088,
+      "baselineMm": 52
+    },
+    {
+      "card": "05-score",
+      "text": "5",
+      "sizePt": 8,
+      "rightMm": 42.564,
+      "baselineMm": 59.0
+    },
+    {
+      "card": "05-score",
+      "text": "B",
+      "sizePt": 8,
+      "rightMm": 61.62,
+      "baselineMm": 52
+    },
+    {
+      "card": "05-score",
+      "text": "4",
+      "sizePt": 8,
+      "rightMm": 42.564,
+      "baselineMm": 71.0
+    },
+    {
+      "card": "05-score",
+      "text": "C",
+      "sizePt": 8,
+      "rightMm": 74.294,
+      "baselineMm": 52
+    },
+    {
+      "card": "05-score",
+      "text": "3",
+      "sizePt": 8,
+      "rightMm": 42.564,
+      "baselineMm": 83.0
+    },
+    {
+      "card": "05-score",
+      "text": "D",
+      "sizePt": 8,
+      "rightMm": 86.1,
+      "baselineMm": 52
+    },
+    {
+      "card": "05-score",
+      "text": "2",
+      "sizePt": 8,
+      "rightMm": 42.564,
+      "baselineMm": 95.0
+    },
+    {
+      "card": "05-score",
+      "text": "E",
+      "sizePt": 8,
+      "rightMm": 97.513,
+      "baselineMm": 52
+    },
+    {
+      "card": "05-score",
+      "text": "1",
+      "sizePt": 8,
+      "rightMm": 42.564,
+      "baselineMm": 107.0
+    },
+    {
+      "card": "05-score",
+      "text": "SCORE",
+      "sizePt": 6.5,
+      "rightMm": 112.62,
+      "baselineMm": 106
+    },
+    {
+      "card": "05-score",
+      "text": "a",
+      "sizePt": 8,
+      "rightMm": 73.828,
+      "baselineMm": 59.2
+    },
+    {
+      "card": "05-score",
+      "text": "b",
+      "sizePt": 8,
+      "rightMm": 73.825,
+      "baselineMm": 107.2
+    },
+    {
+      "card": "05-score",
+      "text": "×",
+      "sizePt": 8,
+      "rightMm": 49.918,
+      "baselineMm": 83.2
+    },
+    {
+      "card": "05-score",
+      "text": "×",
+      "sizePt": 8,
+      "rightMm": 61.918,
+      "baselineMm": 83.2
+    },
+    {
+      "card": "05-score",
+      "text": "×",
+      "sizePt": 8,
+      "rightMm": 73.918,
+      "baselineMm": 83.2
+    },
+    {
+      "card": "05-score",
+      "text": "×",
+      "sizePt": 8,
+      "rightMm": 85.918,
+      "baselineMm": 83.2
+    },
+    {
+      "card": "05-score",
+      "text": "×",
+      "sizePt": 8,
+      "rightMm": 97.918,
+      "baselineMm": 83.2
+    },
+    {
+      "card": "05-score",
+      "text": "上为5行，左为A列。目标：分别数活子和围空。",
+      "sizePt": 10.5,
+      "rightMm": 88.877,
+      "baselineMm": 117
+    },
+    {
+      "card": "05-score",
+      "text": "a＝黑围空C5；b＝白围空C1；×＝中立点。",
+      "sizePt": 10.5,
+      "rightMm": 83.394,
+      "baselineMm": 122.7
+    },
+    {
+      "card": "05-score",
+      "text": "开局贴目0：黑10，白10，和棋",
+      "sizePt": 11,
+      "rightMm": 65.435,
+      "baselineMm": 136
+    },
+    {
+      "card": "05-score",
+      "text": "黑：9颗活子＋1个围空＝10。",
+      "sizePt": 10.5,
+      "rightMm": 58.954,
+      "baselineMm": 147
+    },
+    {
+      "card": "05-score",
+      "text": "白：9颗活子＋1个围空＋0贴目＝10。",
+      "sizePt": 10.5,
+      "rightMm": 72.119,
+      "baselineMm": 152.7
+    },
+    {
+      "card": "05-score",
+      "text": "中立点（neutral point / dame）：A3–E3共5点。",
+      "sizePt": 10.5,
+      "rightMm": 93.188,
+      "baselineMm": 158.39999999999998
+    },
+    {
+      "card": "05-score",
+      "text": "核对：18颗子＋2个围空＋5个中立＝25点。",
+      "sizePt": 10.5,
+      "rightMm": 81.579,
+      "baselineMm": 164.09999999999997
+    },
+    {
+      "card": "05-score",
+      "text": "提子不另加分。另开一例若贴目0.5，白为10.5。",
+      "sizePt": 10,
+      "rightMm": 85.226,
+      "baselineMm": 171.79999999999995
+    },
+    {
+      "card": "05-score",
+      "text": "默认0、允许和棋是教学约定；不是官方标准。",
+      "sizePt": 10,
+      "rightMm": 82.51,
+      "baselineMm": 177.29999999999995
+    },
+    {
+      "card": "05-score",
+      "text": "未完成对局的染色只是预览，不是最终胜负。",
+      "sizePt": 10,
+      "rightMm": 80.556,
+      "baselineMm": 182.79999999999995
+    },
+    {
+      "card": "06-pathway",
+      "text": "今天想从哪里开始？",
+      "sizePt": 19,
+      "rightMm": 70.325,
+      "baselineMm": 16
+    },
+    {
+      "card": "06-pathway",
+      "text": "自选学习路线 · 可跳过、重访，也可直接对弈",
+      "sizePt": 9,
+      "rightMm": 75.088,
+      "baselineMm": 24
+    },
+    {
+      "card": "06-pathway",
+      "text": "03 背面（路线）↔ 03 正面（计分）  |  GO-CLUB-AREA-1",
+      "sizePt": 7,
+      "rightMm": 73.862,
+      "baselineMm": 198
+    },
+    {
+      "card": "06-pathway",
+      "text": "T20-06-pathway · schemaVersion 1 · revision 1",
+      "sizePt": 6,
+      "rightMm": 59.229,
+      "baselineMm": 202
+    },
+    {
+      "card": "06-pathway",
+      "text": "01  交叉点、连接与气",
+      "sizePt": 12,
+      "rightMm": 50.674,
+      "baselineMm": 36
+    },
+    {
+      "card": "06-pathway",
+      "text": "摆3颗同色子，逐一点出整块不重复的气。",
+      "sizePt": 10.5,
+      "rightMm": 78.727,
+      "baselineMm": 43
+    },
+    {
+      "card": "06-pathway",
+      "text": "我想再试",
+      "sizePt": 10,
+      "rightMm": 29.111,
+      "baselineMm": 50
+    },
+    {
+      "card": "06-pathway",
+      "text": "我可以向同伴解释",
+      "sizePt": 10,
+      "rightMm": 89.222,
+      "baselineMm": 50
+    },
+    {
+      "card": "06-pathway",
+      "text": "02  打吃、提子 → 吃子小游戏",
+      "sizePt": 12,
+      "rightMm": 65.491,
+      "baselineMm": 61
+    },
+    {
+      "card": "06-pathway",
+      "text": "先指出一气形，再玩一轮“首提即止”。",
+      "sizePt": 10.5,
+      "rightMm": 76.675,
+      "baselineMm": 68
+    },
+    {
+      "card": "06-pathway",
+      "text": "我想再试",
+      "sizePt": 10,
+      "rightMm": 29.111,
+      "baselineMm": 75
+    },
+    {
+      "card": "06-pathway",
+      "text": "我可以向同伴解释",
+      "sizePt": 10,
+      "rightMm": 89.222,
+      "baselineMm": 75
+    },
+    {
+      "card": "06-pathway",
+      "text": "03  完成一盘9×9",
+      "sizePt": 12,
+      "rightMm": 41.458,
+      "baselineMm": 86
+    },
+    {
+      "card": "06-pathway",
+      "text": "试下完整一盘；两停后一起确认与计分。",
+      "sizePt": 10.5,
+      "rightMm": 76.675,
+      "baselineMm": 93
+    },
+    {
+      "card": "06-pathway",
+      "text": "我想再试",
+      "sizePt": 10,
+      "rightMm": 29.111,
+      "baselineMm": 100
+    },
+    {
+      "card": "06-pathway",
+      "text": "我可以向同伴解释",
+      "sizePt": 10,
+      "rightMm": 89.222,
+      "baselineMm": 100
+    },
+    {
+      "card": "06-pathway",
+      "text": "04  连接与切断",
+      "sizePt": 12,
+      "rightMm": 37.974,
+      "baselineMm": 111
+    },
+    {
+      "card": "06-pathway",
+      "text": "选一步连接，再试同伴提出的一个回应。",
+      "sizePt": 10.5,
+      "rightMm": 76.675,
+      "baselineMm": 118
+    },
+    {
+      "card": "06-pathway",
+      "text": "我想再试",
+      "sizePt": 10,
+      "rightMm": 29.111,
+      "baselineMm": 125
+    },
+    {
+      "card": "06-pathway",
+      "text": "我可以向同伴解释",
+      "sizePt": 10,
+      "rightMm": 89.222,
+      "baselineMm": 125
+    },
+    {
+      "card": "06-pathway",
+      "text": "05  眼（eye）与基础死活",
+      "sizePt": 12,
+      "rightMm": 58.446,
+      "baselineMm": 136
+    },
+    {
+      "card": "06-pathway",
+      "text": "说明为什么“两个空点”不一定是两真眼。",
+      "sizePt": 10.5,
+      "rightMm": 80.379,
+      "baselineMm": 143
+    },
+    {
+      "card": "06-pathway",
+      "text": "我想再试",
+      "sizePt": 10,
+      "rightMm": 29.111,
+      "baselineMm": 150
+    },
+    {
+      "card": "06-pathway",
+      "text": "我可以向同伴解释",
+      "sizePt": 10,
+      "rightMm": 89.222,
+      "baselineMm": 150
+    },
+    {
+      "card": "06-pathway",
+      "text": "06  自选挑战与13×13",
+      "sizePt": 12,
+      "rightMm": 50.382,
+      "baselineMm": 161
+    },
+    {
+      "card": "06-pathway",
+      "text": "合作讨论一个挑战，或试一盘13×13。",
+      "sizePt": 10.5,
+      "rightMm": 72.715,
+      "baselineMm": 168
+    },
+    {
+      "card": "06-pathway",
+      "text": "我想再试",
+      "sizePt": 10,
+      "rightMm": 29.111,
+      "baselineMm": 175
+    },
+    {
+      "card": "06-pathway",
+      "text": "我可以向同伴解释",
+      "sizePt": 10,
+      "rightMm": 89.222,
+      "baselineMm": 175
+    },
+    {
+      "card": "06-pathway",
+      "text": "阶段对应 STAGE-01–06；勾选可留空，不是考试或评级。",
+      "sizePt": 9,
+      "rightMm": 90.55,
+      "baselineMm": 186
+    },
+    {
+      "card": "07-mini-front",
+      "text": "吃子小游戏",
+      "sizePt": 16,
+      "rightMm": 38.222,
+      "baselineMm": 16
+    },
+    {
+      "card": "07-mini-front",
+      "text": "capture-first · 独立小卡",
+      "sizePt": 9,
+      "rightMm": 45.827,
+      "baselineMm": 24
+    },
+    {
+      "card": "07-mini-front",
+      "text": "04 正面 ↔ 04 背面  |  GO-CLUB-AREA-1",
+      "sizePt": 7,
+      "rightMm": 54.724,
+      "baselineMm": 136
+    },
+    {
+      "card": "07-mini-front",
+      "text": "T20-07-mini-front · schemaVersion 1 · revision 1",
+      "sizePt": 6,
+      "rightMm": 59.515,
+      "baselineMm": 140
+    },
+    {
+      "card": "07-mini-front",
+      "text": "首个成功提子者立即获胜",
+      "sizePt": 11,
+      "rightMm": 54.686,
+      "baselineMm": 37
+    },
+    {
+      "card": "07-mini-front",
+      "text": "可用完整5×5小棋盘练习，",
+      "sizePt": 11,
+      "rightMm": 55.88,
+      "baselineMm": 48
+    },
+    {
+      "card": "07-mini-front",
+      "text": "也可用9×9；空盘黑先。",
+      "sizePt": 11,
+      "rightMm": 51.999,
+      "baselineMm": 54.3
+    },
+    {
+      "card": "07-mini-front",
+      "text": "落子合法性仍按社团规则：",
+      "sizePt": 11,
+      "rightMm": 56.567,
+      "baselineMm": 60.599999999999994
+    },
+    {
+      "card": "07-mini-front",
+      "text": "禁止自杀和重复旧棋盘。",
+      "sizePt": 11,
+      "rightMm": 52.686,
+      "baselineMm": 66.89999999999999
+    },
+    {
+      "card": "07-mini-front",
+      "text": "两人连续停手：本轮无胜者。",
+      "sizePt": 11,
+      "rightMm": 60.447,
+      "baselineMm": 77.19999999999999
+    },
+    {
+      "card": "07-mini-front",
+      "text": "一旦首提获胜，本轮立即结束；",
+      "sizePt": 11,
+      "rightMm": 64.328,
+      "baselineMm": 83.49999999999999
+    },
+    {
+      "card": "07-mini-front",
+      "text": "清空棋盘，重开新一轮。",
+      "sizePt": 11,
+      "rightMm": 52.686,
+      "baselineMm": 89.79999999999998
+    },
+    {
+      "card": "07-mini-front",
+      "text": "本小游戏不看面积分。",
+      "sizePt": 11,
+      "rightMm": 48.806,
+      "baselineMm": 100.09999999999998
+    },
+    {
+      "card": "07-mini-front",
+      "text": "完整围棋按终局确认后的",
+      "sizePt": 11,
+      "rightMm": 52.686,
+      "baselineMm": 106.39999999999998
+    },
+    {
+      "card": "07-mini-front",
+      "text": "面积计分；别混用胜负目标。",
+      "sizePt": 11,
+      "rightMm": 60.447,
+      "baselineMm": 112.69999999999997
+    },
+    {
+      "card": "08-mini-back",
+      "text": "开局先说好",
+      "sizePt": 16,
+      "rightMm": 38.222,
+      "baselineMm": 16
+    },
+    {
+      "card": "08-mini-back",
+      "text": "吃子小游戏 · 使用提示",
+      "sizePt": 9,
+      "rightMm": 43.337,
+      "baselineMm": 24
+    },
+    {
+      "card": "08-mini-back",
+      "text": "04 背面 ↔ 04 正面  |  GO-CLUB-AREA-1",
+      "sizePt": 7,
+      "rightMm": 54.724,
+      "baselineMm": 136
+    },
+    {
+      "card": "08-mini-back",
+      "text": "T20-08-mini-back · schemaVersion 1 · revision 1",
+      "sizePt": 6,
+      "rightMm": 60.14,
+      "baselineMm": 140
+    },
+    {
+      "card": "08-mini-back",
+      "text": "“这一轮玩吃子小游戏，",
+      "sizePt": 12,
+      "rightMm": 56.567,
+      "baselineMm": 37
+    },
+    {
+      "card": "08-mini-back",
+      "text": "先提到对方棋子就结束。”",
+      "sizePt": 12,
+      "rightMm": 60.8,
+      "baselineMm": 44
+    },
+    {
+      "card": "08-mini-back",
+      "text": "每轮只留一个观察",
+      "sizePt": 11,
+      "rightMm": 43.044,
+      "baselineMm": 57
+    },
+    {
+      "card": "08-mini-back",
+      "text": "我看见了哪一块的最后一气？",
+      "sizePt": 11,
+      "rightMm": 60.447,
+      "baselineMm": 68
+    },
+    {
+      "card": "08-mini-back",
+      "text": "下次想试保护它，还是去提子？",
+      "sizePt": 11,
+      "rightMm": 64.328,
+      "baselineMm": 74.3
+    },
+    {
+      "card": "08-mini-back",
+      "text": "可以交换黑白，也可以换活动。",
+      "sizePt": 11,
+      "rightMm": 64.328,
+      "baselineMm": 80.6
+    },
+    {
+      "card": "08-mini-back",
+      "text": "想下一盘完整围棋？",
+      "sizePt": 11,
+      "rightMm": 46.925,
+      "baselineMm": 92.89999999999999
+    },
+    {
+      "card": "08-mini-back",
+      "text": "换9×9，先确定贴目。",
+      "sizePt": 11,
+      "rightMm": 48.119,
+      "baselineMm": 103.89999999999999
+    },
+    {
+      "card": "08-mini-back",
+      "text": "使用01规则卡和03计分卡；",
+      "sizePt": 11,
+      "rightMm": 57.405,
+      "baselineMm": 110.19999999999999
+    },
+    {
+      "card": "08-mini-back",
+      "text": "提子后继续下，不以首提决胜。",
+      "sizePt": 11,
+      "rightMm": 64.328,
+      "baselineMm": 116.49999999999999
+    },
+    {
+      "card": "08-mini-back",
+      "text": "随时可选旁观或同伴讨论。",
+      "sizePt": 11,
+      "rightMm": 56.567,
+      "baselineMm": 122.79999999999998
+    }
+  ]
+}

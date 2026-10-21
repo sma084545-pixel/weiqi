@@ -1,0 +1,366 @@
+{
+  "schemaVersion": 1,
+  "id": "T18-ARTIFACT-MANIFEST",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "taskId": "T18",
+  "baseVersion": "0.2.0",
+  "resultVersion": "0.2.0+t18.1",
+  "files": [
+    {
+      "path": "materials/demo-board/CHANGED_FILES.md",
+      "bytes": 1644,
+      "sha256": "e72e133cca33d218107e4b6432469c33e25ed8f68fd1db40335eeb7a21a54724"
+    },
+    {
+      "path": "materials/demo-board/README.md",
+      "bytes": 2881,
+      "sha256": "4b8965bb6503bd2a2073f253c280f17923546213e10433a04703e5a21d020a59"
+    },
+    {
+      "path": "materials/demo-board/assembly-diagrams-a4.svg",
+      "bytes": 3557,
+      "sha256": "06b6e8f90ea6b9f1374c229c55a92333f3aba34b71387c768a0136c302a96cd9"
+    },
+    {
+      "path": "materials/demo-board/assembly-guide.md",
+      "bytes": 6889,
+      "sha256": "6551fac8f15ed09ec8117f67be3b0170bb8594f387fa8985376b71f185e7889c"
+    },
+    {
+      "path": "materials/demo-board/assembly-guide.pdf",
+      "bytes": 224248,
+      "sha256": "c94ac0de1f73b22fd0a8191c75f964dca6d9b30485a1898eb6b7c81339086ae0"
+    },
+    {
+      "path": "materials/demo-board/board-9x9-450mm-1to1.pdf",
+      "bytes": 39407,
+      "sha256": "a4a1f55e40eae5c19f55d3e57b5d61a0027e6c52f56c18dea22a66d629dca7a8"
+    },
+    {
+      "path": "materials/demo-board/board-9x9-450mm.svg",
+      "bytes": 13544,
+      "sha256": "21927ec2ff29e1d766055df04bab8bc527c4207dc77643151f9e7cce363eb18f"
+    },
+    {
+      "path": "materials/demo-board/board-9x9-a4-tiled.pdf",
+      "bytes": 62305,
+      "sha256": "6ca917217bc6a37d6f392f771e179358bad85b445b040c043dbcce2e365abcce"
+    },
+    {
+      "path": "materials/demo-board/dimensions.json",
+      "bytes": 1644,
+      "sha256": "3faddb1360973b6728104fe89b22cca8b024b96b458da24ce8aaa5060b3aea55"
+    },
+    {
+      "path": "materials/demo-board/editable-sheets/black-stones-01.svg",
+      "bytes": 9369,
+      "sha256": "73b4963ff83e03262ac68c8aa29cb3c4e325ea6f7dc2174e93236195ff06bf59"
+    },
+    {
+      "path": "materials/demo-board/editable-sheets/black-stones-02.svg",
+      "bytes": 5772,
+      "sha256": "cc33f9ef99b126b7a7dee9f14348e77e6bc99744ff526f387c1157618a690cad"
+    },
+    {
+      "path": "materials/demo-board/editable-sheets/liberty-rings.svg",
+      "bytes": 10219,
+      "sha256": "6e05cef9ba29394f769ff8b77215154fccd8fbc502cf668b097a1dfc4789520a"
+    },
+    {
+      "path": "materials/demo-board/editable-sheets/targets-sequence-last.svg",
+      "bytes": 10565,
+      "sha256": "5303e17fb8dd3762bf488a1dc0a9982958781f3282ab55102d660ee9ae769f70"
+    },
+    {
+      "path": "materials/demo-board/editable-sheets/white-stones-01.svg",
+      "bytes": 7501,
+      "sha256": "e029bdd31c686403dad8e90db00ce8115a90629126580f8d27c5b8cd0c6b48af"
+    },
+    {
+      "path": "materials/demo-board/editable-sheets/white-stones-02.svg",
+      "bytes": 4843,
+      "sha256": "1a8a74a1f8db488bd10c559902922ba48a83995623613cc060dc8fd08465a521"
+    },
+    {
+      "path": "materials/demo-board/generate_assets.py",
+      "bytes": 37745,
+      "sha256": "f586d1812574459cbad16bde359203359452f3a1e87a254c70219f4ad99a0341"
+    },
+    {
+      "path": "materials/demo-board/make_contact_sheets.py",
+      "bytes": 1324,
+      "sha256": "865cc018be502d5ffa422fb9f71d612f8caa38cc585765150cd6c7a74a326788"
+    },
+    {
+      "path": "materials/demo-board/materials-list.md",
+      "bytes": 5255,
+      "sha256": "1bfa4baa4746e1a27b680bef04846ca2232960c7affeea298604b889ff089fdc"
+    },
+    {
+      "path": "materials/demo-board/package_release.py",
+      "bytes": 3408,
+      "sha256": "7fc448a7f52a7ac943ad3e02b2fe5a70f8f9a8f2caf375c54d04ed8bfc0a9aed"
+    },
+    {
+      "path": "materials/demo-board/pieces-markers-a4.pdf",
+      "bytes": 81017,
+      "sha256": "4fc579fee0dc01f34c2c1fdfbde9a19e7e3ee65fb593d770620a2174a28bd0cd"
+    },
+    {
+      "path": "materials/demo-board/qa/board-contact.jpg",
+      "bytes": 76610,
+      "sha256": "56829be5257c6f9078aa5b7d6056686c927e0ab886c9b63e8c31b2fa6cd93854"
+    },
+    {
+      "path": "materials/demo-board/qa/commands.log",
+      "bytes": 2051,
+      "sha256": "8c15f4fee33e548e868104bad8ca3bc210130742a4010efeab40a2e6f4ce849a"
+    },
+    {
+      "path": "materials/demo-board/qa/guide-contact.jpg",
+      "bytes": 146501,
+      "sha256": "080058d28405921acccf4dfc2fbb42200d76e53a086d6f9e04cadf0a99706ee8"
+    },
+    {
+      "path": "materials/demo-board/qa/pieces-color-contact.jpg",
+      "bytes": 235316,
+      "sha256": "b3d6116d72bca692f4937ce558eff63c0c2f87de15ded5e79335885a7bec0fe4"
+    },
+    {
+      "path": "materials/demo-board/qa/pieces-gray-contact.jpg",
+      "bytes": 225765,
+      "sha256": "6b87d56310fe188ae0890c552c40be5ad6d7a9ee7add8dedb80b02d9159fb943"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/board-1to1-1.png",
+      "bytes": 50212,
+      "sha256": "4f58e3536867b09c0ad31255db017fcef956b89abd00fce2bb170ebcd31cd63f"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/guide-1.png",
+      "bytes": 106226,
+      "sha256": "34f9d89c80463510747c58c1b61c6b66174cef03da318dec7d2c43dd139e81b5"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/guide-2.png",
+      "bytes": 78676,
+      "sha256": "ac20e3e399c867a40a1061bdfb8398f26ea34118ddf1e815de95347e0ce299e7"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/guide-3.png",
+      "bytes": 92764,
+      "sha256": "77b95b72d831914769024e079309542fde9b1655e6a379f6e48d8458e637ffa2"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/guide-4.png",
+      "bytes": 72966,
+      "sha256": "0196e1a63dbc1dab529b3a070cc3f2d745c450afa7a4ce9063181ed65263b962"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/guide-5.png",
+      "bytes": 80252,
+      "sha256": "6426f1defb68890da767dd9cf6bbd17063be34b66e7e6f7f31279dbe4576e64d"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/guide-6.png",
+      "bytes": 71727,
+      "sha256": "4b7cb27612773f04269986d03bfe44a999db13422501e266a6ce3e396d00cf89"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/guide-7.png",
+      "bytes": 96465,
+      "sha256": "29ec95b1586e5ff142ab6b56043ad4ec460097f821cf385b7f3aa2e557001f53"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/guide-8.png",
+      "bytes": 140173,
+      "sha256": "c3f2e5b75964f5d7d1113df7e462c548b1f5fb01a014f21764e75337f17bcb4b"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/pieces-color-1.png",
+      "bytes": 114463,
+      "sha256": "dd572c24106420ae61efe2853763b583df4370f8cf5fc07a260b924a8ed714a9"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/pieces-color-2.png",
+      "bytes": 70541,
+      "sha256": "700d941df3766567c756de03f96f7c880e90a88d5c0dc72292606851c25e2600"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/pieces-color-3.png",
+      "bytes": 131195,
+      "sha256": "65f8eab57467d334c79919d132f48791dc35344b46ea9602f704269d087d9587"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/pieces-color-4.png",
+      "bytes": 78531,
+      "sha256": "2b9f5c00fce1673e41bccc3150d9999adcb60b6d84b26cc485213f796486e31c"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/pieces-color-5.png",
+      "bytes": 145866,
+      "sha256": "7ce1a54cbec600427ed37cf5a68ee74b4c98c79dde017d9894b2bb891054eac0"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/pieces-color-6.png",
+      "bytes": 85563,
+      "sha256": "0728e3e1925acda29148fdbc3d4aab567d091a917725099fa6f352139db32cda"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/pieces-gray-1.png",
+      "bytes": 113542,
+      "sha256": "00a051ec87a1d100b7a5b0dfc1ee63f65ec3d7280de27a475707574140877c93"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/pieces-gray-2.png",
+      "bytes": 69815,
+      "sha256": "ac8a7575c8303363c4f2765292dfbccfca6dcb5e5ee1fbaf18932ef765d464cf"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/pieces-gray-3.png",
+      "bytes": 130320,
+      "sha256": "c706193e9e94183104425f8cc2cd8d85aaec2e9316354bb71d88dcc1952d0e0e"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/pieces-gray-4.png",
+      "bytes": 77510,
+      "sha256": "e5aae3e156f5855c380a694dbc964f73b7cc8662152db65ef0369c9e2c90931f"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/pieces-gray-5.png",
+      "bytes": 147126,
+      "sha256": "00c20cd6bad38153347ba133469ab29e7a993099bcbdeafd98971421fc54999d"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/pieces-gray-6.png",
+      "bytes": 82539,
+      "sha256": "a4cf762bf1002e0331a19e8db6ff7202e0ffc1d6a787da1933cdb0c6ba474983"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/teaching-1.png",
+      "bytes": 151377,
+      "sha256": "c902c08b4fdd7d1d9a7b1209c95285614fcd769319e28e5b3ccb699026d1be36"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/tiles-color-1.png",
+      "bytes": 35393,
+      "sha256": "1cb662063cb85be416039fb2b060ce52582d3fefcb80349fdf17c6b73cdf75c5"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/tiles-color-2.png",
+      "bytes": 39033,
+      "sha256": "8e9672d6925a266f275670c7c441937b3441ec1e9936ee5c8730f1cc4f1e8573"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/tiles-color-3.png",
+      "bytes": 35343,
+      "sha256": "2411822e9d7633c6cf580ba4fb17d25c0d9f0846143990ffb22ed4a463f48277"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/tiles-color-4.png",
+      "bytes": 37458,
+      "sha256": "698446f26477139b4d0368ef05dd3650bb60ee1742c95fa05a561ec2c7ef77ec"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/tiles-color-5.png",
+      "bytes": 37675,
+      "sha256": "ee8572cd6776fe9a995aade808845d8fe1611226808a1ca3283371bef8f11ffe"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/tiles-color-6.png",
+      "bytes": 35373,
+      "sha256": "73e65697a2bbf787e0a4f38e59bc21de75eed80b6d7aa066665b1e7eb4da5aa0"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/tiles-gray-1.png",
+      "bytes": 34351,
+      "sha256": "2e624012695fa08f4d14b64292cbfb8484d8499af94443fd7420590710ae006f"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/tiles-gray-2.png",
+      "bytes": 37605,
+      "sha256": "d9f3d66b6197ddcce797a2331b5598481967705d4b2a029cbd16928961302064"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/tiles-gray-3.png",
+      "bytes": 34377,
+      "sha256": "577c9b91465a50d341315df8ddba56c9d4c009fc4121e7d5af9548d2a7d490ec"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/tiles-gray-4.png",
+      "bytes": 36238,
+      "sha256": "e8ae20bc4db225c1c364e650b222585860818c950a6e98c7dd62c84a6e25706f"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/tiles-gray-5.png",
+      "bytes": 36449,
+      "sha256": "675d2125c6fea6f0c6ea27ac8b41decca38a6372b507037fc4117c3f4906f2fc"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/tiles-gray-6.png",
+      "bytes": 34344,
+      "sha256": "c36dcaa403a2af2207cb8fd6453fc142805f4b091c9c96c9e81b885134cd2217"
+    },
+    {
+      "path": "materials/demo-board/qa/teaching-contact.jpg",
+      "bytes": 90687,
+      "sha256": "10def4d56c41b81f37ad2246e80763ea8023775d653d1cc0d6c121e14f173f8e"
+    },
+    {
+      "path": "materials/demo-board/qa/tiles-color-contact.jpg",
+      "bytes": 140370,
+      "sha256": "c695d6ee22e6445fa07f4465a4ae0560f109737028825220f2979c5218d1af53"
+    },
+    {
+      "path": "materials/demo-board/qa/tiles-gray-contact.jpg",
+      "bytes": 122833,
+      "sha256": "5404cca708d51269176df1b7e267345391fc5b932d31ca06d3d80e543430500a"
+    },
+    {
+      "path": "materials/demo-board/render_and_contact_sheet.sh",
+      "bytes": 1015,
+      "sha256": "35b4635c29c5e38e7ba9b92c5b3f4bd4b39421189b54a490aa589ca8d2eb3f72"
+    },
+    {
+      "path": "materials/demo-board/sources.md",
+      "bytes": 1320,
+      "sha256": "3acbd8d56069009406054530bdd425cf320e42906911fbbe3402ca4033f7b7d6"
+    },
+    {
+      "path": "materials/demo-board/teaching-flows-a3.pdf",
+      "bytes": 74725,
+      "sha256": "45bc7284c293d7fe7203dfe9046693cd4e586ead3ead609be2d9dda562dfa713"
+    },
+    {
+      "path": "materials/demo-board/teaching-flows-a3.svg",
+      "bytes": 12398,
+      "sha256": "daae5fcfbfd8db312d925973ea8102246f7a09000c3a8ccca3e26b9b2692d29f"
+    },
+    {
+      "path": "materials/demo-board/teaching-setups.json",
+      "bytes": 1985,
+      "sha256": "73ca7761f13554dc2a79a4d6081e2c8ba58188f495ab44e0107651e12484cf2d"
+    },
+    {
+      "path": "materials/demo-board/trial-record.csv",
+      "bytes": 296,
+      "sha256": "7461b57d3f1544089b1162048ddf71b834198fddf741893604a67cd3bee6932a"
+    },
+    {
+      "path": "materials/demo-board/verification-report.json",
+      "bytes": 6725,
+      "sha256": "c3ae762444463377c23ffb690147af93727ba54c454cd50156bc11734cb104cd"
+    },
+    {
+      "path": "materials/demo-board/verify_assets.py",
+      "bytes": 11630,
+      "sha256": "7fa2be72a826e2c4da6bea52ebdb8061aa9a3145b6b5f102d4156f082feb13ec"
+    },
+    {
+      "path": "materials/demo-board/visual-check.md",
+      "bytes": 3385,
+      "sha256": "362031d18e3e685a0ec0caa7036ee050d1f060c19417599e5eabe21f1698c860"
+    }
+  ]
+}

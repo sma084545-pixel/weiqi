@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "T24-MATERIALS-REGRESSION",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "results": [
+    {
+      "name": "T18",
+      "command": [
+        "/Users/maxiao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "materials/demo-board/verify_assets.py"
+      ],
+      "exitCode": 0,
+      "changedOutputCopiedThenRestored": []
+    },
+    {
+      "name": "T19",
+      "command": [
+        "/Users/maxiao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "materials/pair-boards/tools/verify_geometry.py"
+      ],
+      "exitCode": 0,
+      "changedOutputCopiedThenRestored": []
+    },
+    {
+      "name": "T20-rules",
+      "command": [
+        "/Users/maxiao/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "materials/rule-cards/source/verify-demos.mjs"
+      ],
+      "exitCode": 0,
+      "changedOutputCopiedThenRestored": []
+    },
+    {
+      "name": "T20-print",
+      "command": [
+        "/Users/maxiao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "materials/rule-cards/source/verify-print.py"
+      ],
+      "exitCode": 0,
+      "changedOutputCopiedThenRestored": []
+    },
+    {
+      "name": "T22-content",
+      "command": [
+        "/Users/maxiao/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "materials/micro-lessons/source/verify-content.mjs"
+      ],
+      "exitCode": 0,
+      "changedOutputCopiedThenRestored": []
+    },
+    {
+      "name": "T22-native",
+      "command": [
+        "/Users/maxiao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "materials/micro-lessons/source/verify-delivery.py"
+      ],
+      "exitCode": 0,
+      "changedOutputCopiedThenRestored": []
+    },
+    {
+      "name": "T21-current-outputs",
+      "command": "verify_freeze + validate_outputs in shipped build_cards.py (no build)",
+      "checks": 84,
+      "exitCode": 0
+    }
+  ],
+  "humanReviewed": null,
+  "physicalTests": null
+}

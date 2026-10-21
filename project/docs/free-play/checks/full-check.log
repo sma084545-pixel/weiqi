@@ -1,0 +1,117 @@
+$ pnpm schema:check && pnpm test && pnpm validate:content && pnpm validate:t09 && pnpm test:t09-grader && pnpm test:t14 && pnpm test:t15 && pnpm validate:t17 && pnpm verify:merge-a && pnpm verify:t16-freeze && pnpm build && pnpm test:t16-refresh && pnpm build:engine && pnpm test:engine-build && pnpm test:engine-capacity
+$ node scripts/generate-types.mjs --check
+$ vitest run
+
+ RUN  v5.0.0 /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/free-play-20261021/mainline/go-club
+
+
+ Test Files  44 passed (44)
+      Tests  366 passed (366)
+   Start at  13:48:30
+   Duration  10.50s (import 32%, tests 26%, environment 25%, transform 15%, worker 1%)
+
+    Isolate  44 workers spawned · ~594ms startup each (spawn + environment, per file)
+             at least ~2.31s faster with isolate: false — reuses workers across files instead of one per file
+
+$ node --import tsx scripts/validate-content.ts
+PASSED valid/bundle.json {"level":"structural","needsRulesReplay":true}
+PASSED valid/feedback-blank.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/game.json {"level":"structural","needsRulesReplay":true}
+PASSED valid/lesson.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/marker.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/move.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/position.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/puzzle.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/setup.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/terminal.json {"level":"structural","needsRulesReplay":false}
+PASSED content/t04/liberty-demos.json {"level":"structural","needsRulesReplay":false}
+PASSED content/t05/capture-demos.json {"level":"structural","needsRulesReplay":false}
+PASSED content/t08/development-terminal.json {"level":"structural","needsRulesReplay":false}
+PASSED invalid/out-of-bounds.json [{"code":"COORD_BOUNDS","path":"/stones/0/row","message":"坐标超出完整棋盘。"}]
+PASSED invalid/duplicate-point.json [{"code":"DUPLICATE_POINT","path":"/stones/1","message":"同一交叉点不能重复占用。"}]
+PASSED invalid/unknown-stone.json [{"code":"SCHEMA_FIELD","path":"/stones/0/color","message":"请使用该字段允许的值。"}]
+PASSED invalid/unknown-major.json [{"code":"SCHEMA_VERSION","path":"/schemaVersion","message":"仅支持内容主版本 1；请保留原文件，使用对应迁移工具。"}]
+$ node --import tsx content/tools/validate.mjs
+PASS: 851 checks, 134 recorded moves replayed, 2179 explored rule transitions, 30 puzzles + 6 fixtures. Human review not performed.
+$ node content/tools/test-grade.mjs
+PASS: 20 adapter checks including legal unknown, multiple solutions, invalid-state preservation and open discussion.
+PASS: known wrong first move immediately fails the one-move objective.
+$ vitest run tests/t14
+
+ RUN  v5.0.0 /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/free-play-20261021/mainline/go-club
+
+
+ Test Files  2 passed (2)
+      Tests  13 passed (13)
+   Start at  13:48:44
+   Duration  1.10s (environment 35%, transform 26%, import 25%, tests 14%)
+
+$ vitest run tests/t15
+
+ RUN  v5.0.0 /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/free-play-20261021/mainline/go-club
+
+
+ Test Files  4 passed (4)
+      Tests  16 passed (16)
+   Start at  13:48:46
+   Duration  844ms (import 71%, transform 25%, tests 3%, worker 1%)
+
+$ node --import tsx scripts/validate-t17.ts
+PASS T17: empty, 3 labelled test replies, independent counts/missing/denominators, default test exclusion, schemaVersion rejection. No real participant records generated.
+$ node scripts/verify-merge-a.mjs
+PASS: MERGE_A integrity; 201 T09 files, 30 formal puzzles, 6 endgames, schema v1 and GO-CLUB-AREA-1 verified.
+$ node scripts/verify-t16-freeze-preservation.mjs
+PASS GO-CLUB-FREEZE-B-20260919-01: 201 content/rules/schema files unchanged; 30 puzzles + 6 terminals remain at frozen revisions.
+$ tsc --noEmit && vite build && node scripts/finalize-offline.mjs
+vite v8.2.2 building client environment for production...
+transforming...
+✓ 177 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.58 kB │ gzip:   0.42 kB
+dist/assets/index-C5sn94WV.css  120.57 kB │ gzip:  24.09 kB
+dist/assets/index-D6HBhnuC.js   973.10 kB │ gzip: 252.22 kB
+
+✓ built in 713ms
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+Offline bundle 0.18.0: 8 required resources.
+$ node scripts/verify-t16-refresh.mjs
+{"ok":true,"check":"teacher-editor-refresh-recovery","title":"刷新后仍在的草稿","status":"可编辑草稿 已恢复上次尚未提交的编辑内容。"}
+$ vite build --config vite.engine.config.ts && tsc -p tsconfig.engine.json && node scripts/finish-engine-build.mjs
+vite v8.2.2 building client environment for production...
+transforming...
+✓ 83 modules transformed.
+rendering chunks...
+computing gzip size...
+dist-engine/go-club-rules.mjs  299.23 kB │ gzip: 66.06 kB │ map: 550.74 kB
+
+✓ built in 54ms
+$ node scripts/engine-smoke.mjs && tsc -p tsconfig.engine-smoke.json
+PASS: standalone ESM library: create, place, pass, undo/redo, serialize/replay; no React, browser, network or installed consumer dependencies.
+$ node scripts/engine-capacity.mjs
+{
+  "schemaVersion": 1,
+  "id": "REPORT-T01-CAPACITY",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "DeveloperValidationReport",
+  "checkedAt": "2026-10-21T05:49:01.210Z",
+  "method": "Built standalone ESM; seeded legal path and legal pass/resume capacity stress",
+  "humanReviewed": null,
+  "legalPlacements": 240,
+  "currentMoves": 238,
+  "redoSnapshots": 2,
+  "serializedBytes": 12705289,
+  "limitBytes": 64000000,
+  "roundTrip": "passed",
+  "verifiedStoreRoundTrip": "passed",
+  "oversizedEventCount": 2100,
+  "oversizedExportCode": "EXPORT_TOO_LARGE",
+  "oversizedSaveKeepsOldRecord": "passed",
+  "elapsedMilliseconds": 2319,
+  "storage": "in-memory atomic StoragePort; not a browser quota measurement"
+}

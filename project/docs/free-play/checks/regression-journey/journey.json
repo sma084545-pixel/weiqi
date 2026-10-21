@@ -1,0 +1,82 @@
+{
+  "kind": "DeveloperValidationReport",
+  "schemaVersion": 1,
+  "id": "T24-JOURNEY",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "browser": "151.0.7922.34",
+  "networkScope": "online-then-context-offline",
+  "steps": [
+    {
+      "name": "首次访问与学习入口",
+      "status": "passed"
+    },
+    {
+      "name": "数气预测，提交前隐藏气环",
+      "status": "passed"
+    },
+    {
+      "name": "提子预测与受控步骤终态",
+      "status": "passed"
+    },
+    {
+      "name": "摆棋验证、新历史、规则试下及两类撤回",
+      "status": "passed"
+    },
+    {
+      "name": "双人吃子即时锁定与双方悔棋",
+      "status": "passed"
+    },
+    {
+      "name": "完整9路、双停、标死争议恢复、确认及和棋",
+      "status": "passed"
+    },
+    {
+      "name": "正式题分层提示、重试与正确数值",
+      "status": "passed"
+    },
+    {
+      "name": "未知合法手不判错、自由试下返回原题",
+      "status": "passed"
+    },
+    {
+      "name": "死活对照合法提子与真实自杀拒绝",
+      "status": "passed"
+    },
+    {
+      "name": "合作自选点、交换角色、预览后本机保存",
+      "status": "passed"
+    },
+    {
+      "name": "围地完整点集与面积明细、贴目教学试算",
+      "status": "passed"
+    },
+    {
+      "name": "教师出题自动检查、保存及真实学生预览",
+      "status": "passed"
+    },
+    {
+      "name": "导入导出安全预览、坏JSON不覆盖",
+      "status": "passed"
+    },
+    {
+      "name": "真正禁网后刷新题库与草稿仍可用",
+      "status": "passed"
+    },
+    {
+      "name": "离线反馈空态、重复提交锁、下一人清空",
+      "status": "passed"
+    },
+    {
+      "name": "完整备份、选择性清除、损坏备份拒绝及恢复",
+      "status": "passed"
+    },
+    {
+      "name": "无运行错误、无外部请求、测试数据仅存在隔离上下文",
+      "status": "passed"
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "humanReviewed": null
+}

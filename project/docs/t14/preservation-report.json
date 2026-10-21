@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "T14-PRESERVATION-001",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "taskId": "T14",
+  "baseVersion": "0.13.0",
+  "resultVersion": "0.14.0",
+  "status": "passed",
+  "guarded": [
+    {
+      "path": "content/puzzles",
+      "status": "identical",
+      "fileCount": 30,
+      "changed": []
+    },
+    {
+      "path": "content/endgames",
+      "status": "identical",
+      "fileCount": 6,
+      "changed": []
+    },
+    {
+      "path": "content/artwork",
+      "status": "identical",
+      "fileCount": 36,
+      "changed": []
+    },
+    {
+      "path": "content/t09",
+      "status": "identical",
+      "fileCount": 9,
+      "changed": []
+    },
+    {
+      "path": "schemas",
+      "status": "identical",
+      "fileCount": 1,
+      "changed": []
+    },
+    {
+      "path": "src/core/rules",
+      "status": "identical",
+      "fileCount": 9,
+      "changed": []
+    },
+    {
+      "path": "src/components/Board.tsx",
+      "status": "identical",
+      "fileCount": 1,
+      "changed": []
+    },
+    {
+      "path": "src/components/Board.css",
+      "status": "identical",
+      "fileCount": 1,
+      "changed": []
+    },
+    {
+      "path": "src/components/board.types.ts",
+      "status": "identical",
+      "fileCount": 1,
+      "changed": []
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "status": "identical",
+      "fileCount": 1,
+      "changed": []
+    }
+  ]
+}

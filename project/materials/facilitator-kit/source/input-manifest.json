@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "T23-INPUTS",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "taskId": "T23",
+  "baseVersion": "0.17.0-merge-c.1",
+  "resultVersion": "0.17.0-plus-t23.1",
+  "baseArchive": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/deliverables/MERGE_C_0.17.0-merge-c.1/go-club-MERGE_C-0.17.0-merge-c.1-full.zip",
+  "baseSha256": "b0e3353236a3cbec85ba0448076f911851600b48d5259879b200502898df5330",
+  "crc": "passed",
+  "freezeId": "GO-CLUB-FREEZE-B-20260919-01"
+}

@@ -1,0 +1,332 @@
+{
+  "schemaVersion": 1,
+  "id": "LIFE-005",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "Puzzle",
+  "developmentOnly": false,
+  "category": "LIFE",
+  "difficulty": {
+    "level": "optional-challenge",
+    "rationale": "一次局部决定，需区分即时目标与后续应对。"
+  },
+  "prompt": "白先。在最多三手（白、黑、白）内提掉标记黑块。B5、C5 是一个相连空间。",
+  "initialPosition": {
+    "schemaVersion": 1,
+    "id": "POS-LIFE-005",
+    "revision": 1,
+    "rulesetId": "GO-CLUB-AREA-1",
+    "kind": "Position",
+    "size": 5,
+    "stones": [
+      {
+        "row": 0,
+        "col": 0,
+        "color": "B"
+      },
+      {
+        "row": 0,
+        "col": 3,
+        "color": "B"
+      },
+      {
+        "row": 1,
+        "col": 0,
+        "color": "B"
+      },
+      {
+        "row": 1,
+        "col": 1,
+        "color": "B"
+      },
+      {
+        "row": 1,
+        "col": 2,
+        "color": "B"
+      },
+      {
+        "row": 1,
+        "col": 3,
+        "color": "B"
+      },
+      {
+        "row": 0,
+        "col": 4,
+        "color": "W"
+      },
+      {
+        "row": 1,
+        "col": 4,
+        "color": "W"
+      },
+      {
+        "row": 2,
+        "col": 0,
+        "color": "W"
+      },
+      {
+        "row": 2,
+        "col": 1,
+        "color": "W"
+      },
+      {
+        "row": 2,
+        "col": 2,
+        "color": "W"
+      },
+      {
+        "row": 2,
+        "col": 3,
+        "color": "W"
+      },
+      {
+        "row": 2,
+        "col": 4,
+        "color": "W"
+      }
+    ],
+    "toPlay": "W",
+    "historyPolicy": "fresh-setup",
+    "history": null
+  },
+  "targetMarkers": [
+    {
+      "markerId": "target-1",
+      "type": "target",
+      "points": [
+        {
+          "row": 1,
+          "col": 1
+        }
+      ],
+      "label": "目标1：B4",
+      "owner": "B"
+    }
+  ],
+  "firstPlayer": "W",
+  "conditions": {
+    "boundary": "full-board",
+    "external": "真实完整 5×5 小棋盘练习，图外无棋子，不使用裁切边缘。",
+    "assumptions": [
+      "成功标准：无论合法黑回应为何，白在第三手或之前使全部原目标黑子消失。",
+      "常见错误：只数两个空点就宣布活棋，或把每次回提都当作劫。这里回提后的整盘黑子数不同，布局不会相同。",
+      "同伴讨论：把“黑提一颗白子”和“白随后提掉整块”逐步摆出，比较两个完整棋盘。",
+      "新教学起点，过去劫史未知；从当前布局建立新历史，不宣称来自合法实战棋谱。"
+    ],
+    "viewport": null
+  },
+  "hints": [
+    "先检查目标块的全部气。",
+    "比较候选点落下后，哪些棋子连接或被提走。",
+    "在完整棋盘上重放一手，再按成功标准核对。"
+  ],
+  "answer": {
+    "type": "move-tree",
+    "rootNodeId": "root",
+    "nodes": [
+      {
+        "nodeId": "root",
+        "move": null,
+        "children": [
+          "l1-1",
+          "l2-1"
+        ],
+        "outcome": "continue",
+        "terminalStatus": null,
+        "evidence": [],
+        "explanation": "白 B5 或 C5 均可。若黑占另一空点提白，白回到原点提掉整块；若黑下别处或停手，白占另一空点直接提掉目标。两点并非两个独立真眼。验证遍历本完整 5×5 的所有合法黑回应，终止于目标消失或三手界限；不是通用死活求解器。"
+      },
+      {
+        "nodeId": "l1-1",
+        "move": {
+          "type": "place",
+          "color": "W",
+          "at": {
+            "row": 0,
+            "col": 1
+          }
+        },
+        "children": [
+          "l1-2"
+        ],
+        "outcome": "continue",
+        "terminalStatus": null,
+        "evidence": [],
+        "explanation": "按顺序重放；成功范围见题干。"
+      },
+      {
+        "nodeId": "l1-2",
+        "move": {
+          "type": "place",
+          "color": "B",
+          "at": {
+            "row": 0,
+            "col": 2
+          }
+        },
+        "children": [
+          "l1-3"
+        ],
+        "outcome": "continue",
+        "terminalStatus": null,
+        "evidence": [],
+        "explanation": "按顺序重放；成功范围见题干。"
+      },
+      {
+        "nodeId": "l1-3",
+        "move": {
+          "type": "place",
+          "color": "W",
+          "at": {
+            "row": 0,
+            "col": 1
+          }
+        },
+        "children": [],
+        "outcome": "success",
+        "terminalStatus": "verified-dead",
+        "evidence": [
+          "白 B5，黑 C5 提白后，白 B5 提掉原目标块；这两个 B5 后的完整布局不同。"
+        ],
+        "explanation": "白 B5，黑 C5 提白后，白 B5 提掉原目标块；这两个 B5 后的完整布局不同。"
+      },
+      {
+        "nodeId": "l2-1",
+        "move": {
+          "type": "place",
+          "color": "W",
+          "at": {
+            "row": 0,
+            "col": 2
+          }
+        },
+        "children": [
+          "l2-2"
+        ],
+        "outcome": "continue",
+        "terminalStatus": null,
+        "evidence": [],
+        "explanation": "按顺序重放；成功范围见题干。"
+      },
+      {
+        "nodeId": "l2-2",
+        "move": {
+          "type": "place",
+          "color": "B",
+          "at": {
+            "row": 0,
+            "col": 1
+          }
+        },
+        "children": [
+          "l2-3"
+        ],
+        "outcome": "continue",
+        "terminalStatus": null,
+        "evidence": [],
+        "explanation": "按顺序重放；成功范围见题干。"
+      },
+      {
+        "nodeId": "l2-3",
+        "move": {
+          "type": "place",
+          "color": "W",
+          "at": {
+            "row": 0,
+            "col": 2
+          }
+        },
+        "children": [],
+        "outcome": "success",
+        "terminalStatus": "verified-dead",
+        "evidence": [
+          "对称变化：白 C5，黑 B5 提白后，白 C5 提掉原目标块。"
+        ],
+        "explanation": "对称变化：白 C5，黑 B5 提白后，白 C5 提掉原目标块。"
+      }
+    ],
+    "uncoveredPolicy": "unknown",
+    "uniquenessClaim": false,
+    "uniquenessEvidence": []
+  },
+  "coveredBranches": [
+    [
+      "root",
+      "l1-1",
+      "l1-2",
+      "l1-3"
+    ],
+    [
+      "root",
+      "l2-1",
+      "l2-2",
+      "l2-3"
+    ]
+  ],
+  "sources": [
+    {
+      "type": "original",
+      "title": "T09 原创题目、表达与坐标图",
+      "url": null,
+      "accessedAt": null,
+      "note": "依据 GO-CLUB-AREA-1 自行设计和模型推导，未复制协会题图或网上题库。不是教师审题或学生记录。"
+    },
+    {
+      "type": "reference",
+      "title": "British Go Association: How to Play",
+      "url": "https://www.britgo.org/intro/intro2.html",
+      "accessedAt": "2026-09-07",
+      "note": "仅核对正交连接、气、提子与两眼的一般概念。自定义计分、停手及重复规则以项目约定为准；原创题目的正确性另行验证。"
+    }
+  ],
+  "validation": {
+    "structure": {
+      "status": "passed",
+      "method": "T00 structure / T01 engine / independent vectors as applicable",
+      "checkedAt": "2026-09-07",
+      "evidence": [
+        "content/validation/results.json: LIFE-005",
+        "content/t09/pedagogy.json: LIFE-005"
+      ]
+    },
+    "moveLegality": {
+      "status": "passed",
+      "method": "T00 structure / T01 engine / independent vectors as applicable",
+      "checkedAt": "2026-09-07",
+      "evidence": [
+        "content/validation/results.json: LIFE-005",
+        "content/t09/pedagogy.json: LIFE-005"
+      ]
+    },
+    "solutionChecked": {
+      "status": "passed",
+      "method": "T00 structure / T01 engine / independent vectors as applicable",
+      "checkedAt": "2026-09-07",
+      "evidence": [
+        "content/validation/results.json: LIFE-005",
+        "content/t09/pedagogy.json: LIFE-005"
+      ]
+    },
+    "externalReferenceChecked": {
+      "status": "passed",
+      "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+      "checkedAt": "2026-09-07",
+      "evidence": [
+        "content/validation/results.json: LIFE-005",
+        "content/t09/pedagogy.json: LIFE-005",
+        "content/t09/SOURCES.md"
+      ]
+    },
+    "modelChecked": {
+      "status": "passed",
+      "method": "Authored reasoning + explicit finite scope, not human review",
+      "checkedAt": "2026-09-07",
+      "evidence": [
+        "content/validation/results.json: LIFE-005",
+        "content/t09/pedagogy.json: LIFE-005"
+      ]
+    },
+    "humanReviewed": null
+  },
+  "relatedContent": []
+}

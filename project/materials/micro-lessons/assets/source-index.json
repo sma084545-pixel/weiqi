@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "id": "T22-FROZEN-SOURCE-INDEX",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "freezeId": "GO-CLUB-FREEZE-B-20260919-01",
+  "files": [
+    {
+      "id": "AREA-005",
+      "revision": 1,
+      "originalPath": "content/puzzles/AREA-005.json",
+      "localPath": "assets/frozen/content/puzzles/AREA-005.json",
+      "sha256": "32e94ab284735f1814f0acb990a4b3289c1bc4bd702f2d415470f8a5435c6554"
+    },
+    {
+      "id": "CAP-001",
+      "revision": 1,
+      "originalPath": "content/puzzles/CAP-001.json",
+      "localPath": "assets/frozen/content/puzzles/CAP-001.json",
+      "sha256": "e0a0950af03ba144d4464790b1292ac4a77b7534bc5a1228b77c194862f767cd"
+    },
+    {
+      "id": "CAP-002",
+      "revision": 1,
+      "originalPath": "content/puzzles/CAP-002.json",
+      "localPath": "assets/frozen/content/puzzles/CAP-002.json",
+      "sha256": "f72172c4db6adf32228632d7660f174b649ae3ebbbedd9dd3f3bed1ba3e4e61e"
+    },
+    {
+      "id": "CON-001",
+      "revision": 1,
+      "originalPath": "content/puzzles/CON-001.json",
+      "localPath": "assets/frozen/content/puzzles/CON-001.json",
+      "sha256": "fc6f68f65b0461f248bbacd27c9753327bc5f8d86e4763ebad2d93999bd46013"
+    },
+    {
+      "id": "CON-002",
+      "revision": 1,
+      "originalPath": "content/puzzles/CON-002.json",
+      "localPath": "assets/frozen/content/puzzles/CON-002.json",
+      "sha256": "aa877a3ef8e658715254ca2efee4ea07a34593be8a5d122aecbe198bee8339c0"
+    },
+    {
+      "id": "END-001",
+      "revision": 1,
+      "originalPath": "content/endgames/END-001.json",
+      "localPath": "assets/frozen/content/endgames/END-001.json",
+      "sha256": "88fe7f6226f33da4d12f0cf14121be2c4f6b4ee7da376f3d9dd77bc080b4ebed"
+    },
+    {
+      "id": "END-002",
+      "revision": 1,
+      "originalPath": "content/endgames/END-002.json",
+      "localPath": "assets/frozen/content/endgames/END-002.json",
+      "sha256": "fdc052992973abb3140041ea3d62d1cc9078eb4eeaf15dda2c36604af6170859"
+    },
+    {
+      "id": "LIB-001",
+      "revision": 1,
+      "originalPath": "content/puzzles/LIB-001.json",
+      "localPath": "assets/frozen/content/puzzles/LIB-001.json",
+      "sha256": "3c5fa560f7cd43a13e14021d5e1baa80353592e38e95e454355d4c18b6158257"
+    },
+    {
+      "id": "LIB-004",
+      "revision": 1,
+      "originalPath": "content/puzzles/LIB-004.json",
+      "localPath": "assets/frozen/content/puzzles/LIB-004.json",
+      "sha256": "bbb1fb3435c71c4212ec85917bf4c7226216023ea15723b082a184c87a3cec0a"
+    },
+    {
+      "id": "LIFE-001",
+      "revision": 1,
+      "originalPath": "content/puzzles/LIFE-001.json",
+      "localPath": "assets/frozen/content/puzzles/LIFE-001.json",
+      "sha256": "3e800b83347c378568c5b0ff8a4a96412fa44081df9711eb325cc0d1c3ca4c2f"
+    },
+    {
+      "id": "LIFE-002",
+      "revision": 1,
+      "originalPath": "content/puzzles/LIFE-002.json",
+      "localPath": "assets/frozen/content/puzzles/LIFE-002.json",
+      "sha256": "4a9c755d45126cef93464d2e42c74b51af63468701c701d64957910269b32526"
+    },
+    {
+      "id": "LIFE-003",
+      "revision": 1,
+      "originalPath": "content/puzzles/LIFE-003.json",
+      "localPath": "assets/frozen/content/puzzles/LIFE-003.json",
+      "sha256": "1909976bc369d0434b0db10720cbb722be4cb4ca49b2781668b56cb8ee8f6ffc"
+    },
+    {
+      "id": "LIFE-005",
+      "revision": 1,
+      "originalPath": "content/puzzles/LIFE-005.json",
+      "localPath": "assets/frozen/content/puzzles/LIFE-005.json",
+      "sha256": "506f62c281d0c1f09c8dfff2725fe0677fcfcf9ecda05615b10adeff4a968992"
+    },
+    {
+      "id": "RULE-DEMO-T20-CONNECT",
+      "revision": 1,
+      "originalPath": "materials/rule-cards/data/RULE-DEMO-T20-CONNECT.json",
+      "localPath": "assets/frozen/materials/rule-cards/data/RULE-DEMO-T20-CONNECT.json",
+      "sha256": "c745c0a49849f21ca32a94106865328fb005d1a75136403754b5c713a0a07127"
+    },
+    {
+      "id": "RULE-DEMO-T20-KO-AFTER",
+      "revision": 1,
+      "originalPath": "materials/rule-cards/data/RULE-DEMO-T20-KO-AFTER.json",
+      "localPath": "assets/frozen/materials/rule-cards/data/RULE-DEMO-T20-KO-AFTER.json",
+      "sha256": "89d9a194282bdbbce299ed730cec96191f7fc70c7667e1e3861122fb7b31fd43"
+    },
+    {
+      "id": "RULE-DEMO-T20-KO-BEFORE",
+      "revision": 1,
+      "originalPath": "materials/rule-cards/data/RULE-DEMO-T20-KO-BEFORE.json",
+      "localPath": "assets/frozen/materials/rule-cards/data/RULE-DEMO-T20-KO-BEFORE.json",
+      "sha256": "d4fe9642a299e6abb7fd957cb5d7fd0cf5f339980f812404f8f46f0dcf8d73b5"
+    },
+    {
+      "id": "RULE-DEMO-T20-LEGAL-AFTER",
+      "revision": 1,
+      "originalPath": "materials/rule-cards/data/RULE-DEMO-T20-LEGAL-AFTER.json",
+      "localPath": "assets/frozen/materials/rule-cards/data/RULE-DEMO-T20-LEGAL-AFTER.json",
+      "sha256": "a6e455337c43630ef583417544bd2e285ae507dee005acc4159149d073a6a909"
+    },
+    {
+      "id": "RULE-DEMO-T20-LEGAL-BEFORE",
+      "revision": 1,
+      "originalPath": "materials/rule-cards/data/RULE-DEMO-T20-LEGAL-BEFORE.json",
+      "localPath": "assets/frozen/materials/rule-cards/data/RULE-DEMO-T20-LEGAL-BEFORE.json",
+      "sha256": "4dc310af6907bf6ec3c6ff7dda5a0b5b31620c36fa90f7d6f6ac06ebbc066109"
+    }
+  ]
+}

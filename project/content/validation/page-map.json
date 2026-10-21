@@ -1,0 +1,443 @@
+{
+  "schemaVersion": 1,
+  "id": "T09-PAGE-MAP",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "PageMap",
+  "answerPages": [
+    {
+      "id": "LIB-001",
+      "page": 1,
+      "revision": 1,
+      "lowestBodyBaseline": 334.1999999999998
+    },
+    {
+      "id": "LIB-002",
+      "page": 2,
+      "revision": 1,
+      "lowestBodyBaseline": 334.1999999999998
+    },
+    {
+      "id": "LIB-003",
+      "page": 3,
+      "revision": 1,
+      "lowestBodyBaseline": 334.1999999999998
+    },
+    {
+      "id": "LIB-004",
+      "page": 4,
+      "revision": 1,
+      "lowestBodyBaseline": 334.1999999999998
+    },
+    {
+      "id": "LIB-005",
+      "page": 5,
+      "revision": 1,
+      "lowestBodyBaseline": 334.1999999999998
+    },
+    {
+      "id": "CAP-001",
+      "page": 6,
+      "revision": 1,
+      "lowestBodyBaseline": 320.0999999999998
+    },
+    {
+      "id": "CAP-002",
+      "page": 7,
+      "revision": 1,
+      "lowestBodyBaseline": 320.0999999999998
+    },
+    {
+      "id": "CAP-003",
+      "page": 8,
+      "revision": 1,
+      "lowestBodyBaseline": 320.0999999999998
+    },
+    {
+      "id": "CAP-004",
+      "page": 9,
+      "revision": 1,
+      "lowestBodyBaseline": 320.0999999999998
+    },
+    {
+      "id": "CAP-005",
+      "page": 10,
+      "revision": 1,
+      "lowestBodyBaseline": 320.0999999999998
+    },
+    {
+      "id": "CON-001",
+      "page": 11,
+      "revision": 1,
+      "lowestBodyBaseline": 320.0999999999998
+    },
+    {
+      "id": "CON-002",
+      "page": 12,
+      "revision": 1,
+      "lowestBodyBaseline": 320.0999999999998
+    },
+    {
+      "id": "CON-003",
+      "page": 13,
+      "revision": 1,
+      "lowestBodyBaseline": 305.9999999999998
+    },
+    {
+      "id": "CON-004",
+      "page": 14,
+      "revision": 1,
+      "lowestBodyBaseline": 320.0999999999998
+    },
+    {
+      "id": "CON-005",
+      "page": 15,
+      "revision": 1,
+      "lowestBodyBaseline": 305.9999999999998
+    },
+    {
+      "id": "LIFE-001",
+      "page": 16,
+      "revision": 1,
+      "lowestBodyBaseline": 305.9999999999998
+    },
+    {
+      "id": "LIFE-002",
+      "page": 17,
+      "revision": 1,
+      "lowestBodyBaseline": 305.9999999999998
+    },
+    {
+      "id": "LIFE-003",
+      "page": 18,
+      "revision": 1,
+      "lowestBodyBaseline": 291.89999999999975
+    },
+    {
+      "id": "LIFE-004",
+      "page": 19,
+      "revision": 1,
+      "lowestBodyBaseline": 305.9999999999998
+    },
+    {
+      "id": "LIFE-005",
+      "page": 20,
+      "revision": 1,
+      "lowestBodyBaseline": 305.9999999999998
+    },
+    {
+      "id": "AREA-001",
+      "page": 21,
+      "revision": 1,
+      "lowestBodyBaseline": 320.0999999999998
+    },
+    {
+      "id": "AREA-002",
+      "page": 22,
+      "revision": 1,
+      "lowestBodyBaseline": 305.9999999999998
+    },
+    {
+      "id": "AREA-003",
+      "page": 23,
+      "revision": 1,
+      "lowestBodyBaseline": 320.0999999999998
+    },
+    {
+      "id": "AREA-004",
+      "page": 24,
+      "revision": 1,
+      "lowestBodyBaseline": 320.0999999999998
+    },
+    {
+      "id": "AREA-005",
+      "page": 25,
+      "revision": 1,
+      "lowestBodyBaseline": 320.0999999999998
+    },
+    {
+      "id": "DISC-001",
+      "page": 26,
+      "revision": 1,
+      "lowestBodyBaseline": 305.9999999999998
+    },
+    {
+      "id": "DISC-002",
+      "page": 27,
+      "revision": 1,
+      "lowestBodyBaseline": 305.9999999999998
+    },
+    {
+      "id": "DISC-003",
+      "page": 28,
+      "revision": 1,
+      "lowestBodyBaseline": 305.9999999999998
+    },
+    {
+      "id": "DISC-004",
+      "page": 29,
+      "revision": 1,
+      "lowestBodyBaseline": 305.9999999999998
+    },
+    {
+      "id": "DISC-005",
+      "page": 30,
+      "revision": 1,
+      "lowestBodyBaseline": 305.9999999999998
+    },
+    {
+      "id": "END-001",
+      "page": 31,
+      "revision": 1,
+      "lowestBodyBaseline": 305.9999999999998
+    },
+    {
+      "id": "END-002",
+      "page": 32,
+      "revision": 1,
+      "lowestBodyBaseline": 305.9999999999998
+    },
+    {
+      "id": "END-003",
+      "page": 33,
+      "revision": 1,
+      "lowestBodyBaseline": 305.9999999999998
+    },
+    {
+      "id": "END-004",
+      "page": 34,
+      "revision": 1,
+      "lowestBodyBaseline": 291.89999999999975
+    },
+    {
+      "id": "END-005",
+      "page": 35,
+      "revision": 1,
+      "lowestBodyBaseline": 305.9999999999998
+    },
+    {
+      "id": "END-006",
+      "page": 36,
+      "revision": 1,
+      "lowestBodyBaseline": 320.0999999999998
+    }
+  ],
+  "cardPages": [
+    {
+      "id": "LIB-001",
+      "page": 1,
+      "half": 1,
+      "revision": 1
+    },
+    {
+      "id": "LIB-002",
+      "page": 1,
+      "half": 2,
+      "revision": 1
+    },
+    {
+      "id": "LIB-003",
+      "page": 2,
+      "half": 1,
+      "revision": 1
+    },
+    {
+      "id": "LIB-004",
+      "page": 2,
+      "half": 2,
+      "revision": 1
+    },
+    {
+      "id": "LIB-005",
+      "page": 3,
+      "half": 1,
+      "revision": 1
+    },
+    {
+      "id": "CAP-001",
+      "page": 3,
+      "half": 2,
+      "revision": 1
+    },
+    {
+      "id": "CAP-002",
+      "page": 4,
+      "half": 1,
+      "revision": 1
+    },
+    {
+      "id": "CAP-003",
+      "page": 4,
+      "half": 2,
+      "revision": 1
+    },
+    {
+      "id": "CAP-004",
+      "page": 5,
+      "half": 1,
+      "revision": 1
+    },
+    {
+      "id": "CAP-005",
+      "page": 5,
+      "half": 2,
+      "revision": 1
+    },
+    {
+      "id": "CON-001",
+      "page": 6,
+      "half": 1,
+      "revision": 1
+    },
+    {
+      "id": "CON-002",
+      "page": 6,
+      "half": 2,
+      "revision": 1
+    },
+    {
+      "id": "CON-003",
+      "page": 7,
+      "half": 1,
+      "revision": 1
+    },
+    {
+      "id": "CON-004",
+      "page": 7,
+      "half": 2,
+      "revision": 1
+    },
+    {
+      "id": "CON-005",
+      "page": 8,
+      "half": 1,
+      "revision": 1
+    },
+    {
+      "id": "LIFE-001",
+      "page": 8,
+      "half": 2,
+      "revision": 1
+    },
+    {
+      "id": "LIFE-002",
+      "page": 9,
+      "half": 1,
+      "revision": 1
+    },
+    {
+      "id": "LIFE-003",
+      "page": 9,
+      "half": 2,
+      "revision": 1
+    },
+    {
+      "id": "LIFE-004",
+      "page": 10,
+      "half": 1,
+      "revision": 1
+    },
+    {
+      "id": "LIFE-005",
+      "page": 10,
+      "half": 2,
+      "revision": 1
+    },
+    {
+      "id": "AREA-001",
+      "page": 11,
+      "half": 1,
+      "revision": 1
+    },
+    {
+      "id": "AREA-002",
+      "page": 11,
+      "half": 2,
+      "revision": 1
+    },
+    {
+      "id": "AREA-003",
+      "page": 12,
+      "half": 1,
+      "revision": 1
+    },
+    {
+      "id": "AREA-004",
+      "page": 12,
+      "half": 2,
+      "revision": 1
+    },
+    {
+      "id": "AREA-005",
+      "page": 13,
+      "half": 1,
+      "revision": 1
+    },
+    {
+      "id": "DISC-001",
+      "page": 13,
+      "half": 2,
+      "revision": 1
+    },
+    {
+      "id": "DISC-002",
+      "page": 14,
+      "half": 1,
+      "revision": 1
+    },
+    {
+      "id": "DISC-003",
+      "page": 14,
+      "half": 2,
+      "revision": 1
+    },
+    {
+      "id": "DISC-004",
+      "page": 15,
+      "half": 1,
+      "revision": 1
+    },
+    {
+      "id": "DISC-005",
+      "page": 15,
+      "half": 2,
+      "revision": 1
+    },
+    {
+      "id": "END-001",
+      "page": 16,
+      "half": 1,
+      "revision": 1
+    },
+    {
+      "id": "END-002",
+      "page": 16,
+      "half": 2,
+      "revision": 1
+    },
+    {
+      "id": "END-003",
+      "page": 17,
+      "half": 1,
+      "revision": 1
+    },
+    {
+      "id": "END-004",
+      "page": 17,
+      "half": 2,
+      "revision": 1
+    },
+    {
+      "id": "END-005",
+      "page": 18,
+      "half": 1,
+      "revision": 1
+    },
+    {
+      "id": "END-006",
+      "page": 18,
+      "half": 2,
+      "revision": 1
+    }
+  ]
+}

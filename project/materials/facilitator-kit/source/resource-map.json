@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 1,
+  "id": "T23-RESOURCE-MAP",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "baseVersion": "0.17.0-merge-c.1",
+  "resultVersion": "0.17.0-plus-t23.1",
+  "paperResources": [
+    {
+      "code": "B5",
+      "label": "完整 5 路示意盘",
+      "path": "materials/facilitator-kit/output/T23_board_5x5_A4.pdf",
+      "pages": "1"
+    },
+    {
+      "code": "B9",
+      "label": "9 路主盘",
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a4_coordinates.pdf",
+      "pages": "1"
+    },
+    {
+      "code": "B13",
+      "label": "13 路首选 A3",
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a3_coordinates.pdf",
+      "pages": "1"
+    },
+    {
+      "code": "B13T",
+      "label": "13 路 A4 拼接",
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a3_coordinates_tiled-A4.pdf",
+      "pages": "1–2"
+    },
+    {
+      "code": "S18",
+      "label": "18 mm 棋子 每色 90",
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_18mm_black-white_180.pdf",
+      "pages": "1–2"
+    },
+    {
+      "code": "O9",
+      "label": "可选气覆片",
+      "path": "materials/pair-boards/output/overlays/liberty-overlay_9x9-a4.pdf",
+      "pages": "1"
+    },
+    {
+      "code": "RB",
+      "label": "基础规则",
+      "path": "materials/rule-cards/pdf/main-rule-A5-duplex.pdf",
+      "pages": "1–2"
+    },
+    {
+      "code": "RD",
+      "label": "规则详情",
+      "path": "materials/rule-cards/pdf/detailed-A5-duplex.pdf",
+      "pages": "1–2"
+    },
+    {
+      "code": "RS",
+      "label": "面积计分",
+      "path": "materials/rule-cards/pdf/05-score.pdf",
+      "pages": "1"
+    },
+    {
+      "code": "RM",
+      "label": "吃子小游戏",
+      "path": "materials/rule-cards/pdf/capture-mini-A6-duplex.pdf",
+      "pages": "1–2"
+    },
+    {
+      "code": "CF",
+      "label": "挑战卡正面",
+      "path": "materials/challenge-cards/output/T21_challenge_cards_front_A4.pdf",
+      "pages": "1–15"
+    },
+    {
+      "code": "CB",
+      "label": "挑战卡背面",
+      "path": "materials/challenge-cards/output/T21_challenge_cards_back_A4.pdf",
+      "pages": "1–15"
+    },
+    {
+      "code": "CA",
+      "label": "教师答案册",
+      "path": "materials/challenge-cards/output/T21_teacher_answer_book.pdf",
+      "pages": "1–33"
+    },
+    {
+      "code": "DT",
+      "label": "双面套准试印",
+      "path": "materials/challenge-cards/output/T21_duplex_test_page1.pdf",
+      "pages": "1–2"
+    },
+    {
+      "code": "DB",
+      "label": "可选演示盘拼接",
+      "path": "materials/demo-board/board-9x9-a4-tiled.pdf",
+      "pages": "1–6"
+    },
+    {
+      "code": "DG",
+      "label": "可选演示盘装配",
+      "path": "materials/demo-board/assembly-guide.pdf",
+      "pages": "1–8"
+    }
+  ],
+  "slides": [
+    {
+      "number": 1,
+      "pptx": "materials/micro-lessons/output/T22_MicroLesson_01_r1.pptx",
+      "pdf": "materials/micro-lessons/output/T22_MicroLesson_01_r1.pdf",
+      "pages": 5
+    },
+    {
+      "number": 2,
+      "pptx": "materials/micro-lessons/output/T22_MicroLesson_02_r1.pptx",
+      "pdf": "materials/micro-lessons/output/T22_MicroLesson_02_r1.pdf",
+      "pages": 5
+    },
+    {
+      "number": 3,
+      "pptx": "materials/micro-lessons/output/T22_MicroLesson_03_r1.pptx",
+      "pdf": "materials/micro-lessons/output/T22_MicroLesson_03_r1.pdf",
+      "pages": 5
+    },
+    {
+      "number": 4,
+      "pptx": "materials/micro-lessons/output/T22_MicroLesson_04_r1.pptx",
+      "pdf": "materials/micro-lessons/output/T22_MicroLesson_04_r1.pdf",
+      "pages": 5
+    },
+    {
+      "number": 5,
+      "pptx": "materials/micro-lessons/output/T22_MicroLesson_05_r1.pptx",
+      "pdf": "materials/micro-lessons/output/T22_MicroLesson_05_r1.pdf",
+      "pages": 5
+    }
+  ],
+  "modules": [
+    {
+      "label": "气实验室",
+      "id": "liberty-lab",
+      "route": "#/learn/liberties"
+    },
+    {
+      "label": "提子实验室",
+      "id": "capture-lab",
+      "route": "#/learn/captures"
+    },
+    {
+      "label": "吃子小游戏",
+      "id": "capture-game",
+      "route": "#/play/partner"
+    },
+    {
+      "label": "完整对弈",
+      "id": "full-game",
+      "route": "#/play/full-game"
+    },
+    {
+      "label": "互动题",
+      "id": "puzzle-runner",
+      "route": "#/challenges"
+    },
+    {
+      "label": "眼专题",
+      "id": "life-lab",
+      "route": "#/learn/life"
+    },
+    {
+      "label": "合作挑战",
+      "id": "cooperative-challenge",
+      "route": "#/challenges/together"
+    },
+    {
+      "label": "围地练习",
+      "id": "territory-trainer",
+      "route": "#/learn/territory"
+    },
+    {
+      "label": "新草稿",
+      "id": "teacher-editor",
+      "route": "#/teacher/editor"
+    },
+    {
+      "label": "文件交接",
+      "id": "file-exchange",
+      "route": "#/teacher/file-exchange"
+    },
+    {
+      "label": "离线与备份",
+      "id": "offline-data",
+      "route": "#/teacher/offline-data"
+    },
+    {
+      "label": "自愿反馈",
+      "id": "member-feedback",
+      "route": "#/feedback"
+    },
+    {
+      "label": "反馈与修订",
+      "id": "evidence-log",
+      "route": "#/teacher/evidence"
+    }
+  ],
+  "puzzles": [
+    "AREA-005",
+    "CAP-001",
+    "CAP-002",
+    "CON-001",
+    "CON-003",
+    "CON-005",
+    "DISC-001",
+    "DISC-002",
+    "DISC-003",
+    "DISC-004",
+    "DISC-005",
+    "LIB-001",
+    "LIB-004",
+    "LIFE-001",
+    "LIFE-002",
+    "LIFE-003",
+    "LIFE-004",
+    "LIFE-005"
+  ],
+  "fixtures": [
+    "END-002",
+    "END-006"
+  ]
+}

@@ -1,25 +1,33 @@
-# 围棋 CAS｜Play Go · Learn Go · Create for Go
+# 围棋社 · 最新版 0.20.1
 
-这是围棋社 CAS 项目的公开静态发布包。打开本仓库的 GitHub Pages 即可使用，无需账号、后端或外部 API。
+**原网址：[打开学习工具](https://sma084545-pixel.github.io/weiqi/)**
 
-当前发布代码版本为 `0.16.0`，基于已冻结的正式内容版本 `0.15.1`：规则为 `GO-CLUB-AREA-1`，内容模型为 `schemaVersion=1`，包含 30 道正式题、6 个终局示例与 T20 规则卡材料。T16 的离线运行与本机保存改动已通过其针对性测试和生产构建；完整的人类围棋教师审核、真实课堂、实体打印与跨浏览器复核仍未完成。
+同步此前尚未上线的教学、反馈、完整自由双人对弈、5/9/13/19路选择、回退和棋局滑动条。包含30道正式题、6个终局、可编辑课件、教具与主持材料；GO-CLUB-AREA-1、schemaVersion1及正式revision保持。
 
-本仓库根目录是可直接由 GitHub Pages 提供的静态站点。`source/` 目录另附同一版本的完整开发源代码归档（不含依赖安装目录和自动生成的测试输出），可用于本地继续开发。为符合 GitHub 网页上传的单文件限制，源码归档已拆成多个 ZIP 分卷；下载 `source/` 中的全部同名分卷后合并即可。
+- [学习入口](https://sma084545-pixel.github.io/weiqi/#/home)
+- [自由双人对弈](https://sma084545-pixel.github.io/weiqi/#/play/free)
+- [题目挑战](https://sma084545-pixel.github.io/weiqi/#/challenges)
+- [教师工具](https://sma084545-pixel.github.io/weiqi/#/teacher)
+- [联机状态](https://sma084545-pixel.github.io/weiqi/#/play/online)
 
-## 本地运行源码
+旧缓存用户先保存，再点“保存已提交内容并应用”。页脚和[version.json](https://sma084545-pixel.github.io/weiqi/version.json)可核对0.20.1；不要清除站点数据来升级。本机进度/草稿/反馈留在浏览器，不默认上传。
 
-将 `source/go-club-cas-0.16.0-source-github.z01`、`.z02` 和 `.zip` 放在同一文件夹后，先运行下列命令合并为普通 ZIP，再解压 `go-club-cas-0.16.0-source-restored.zip`：
+## 联机边界
 
-```sh
-zip -s 0 go-club-cas-0.16.0-source-github.zip --out go-club-cas-0.16.0-source-restored.zip
-```
+GitHub Pages只提供静态网页，不运行房间服务器。联机代码和可部署Node服务已提供，未接入公网后台时网站明确显示“联机服务未接入”。不能把前端发布称为两个异地设备已可同步。将来可保留同一网址接入实际HTTPS后台，见[接入说明](ONLINE_SETUP.md)。本次不购买托管或创建账户。
 
-随后在解压出的项目目录运行：
+## 当前源码和工具包
+
+[project/](project/)保存当前可构建源码、题库、材料和交接。从该目录执行：
 
 ```sh
 pnpm install --frozen-lockfile
 pnpm build
-pnpm preview
+pnpm start
 ```
 
-项目为教学用途，不宣称已由本项目证明能够提高智力、治疗压力或提高学业成绩。正式内容冻结清单和验证边界在源码的 `handoff/CONTENT_FREEZE.json`、`handoff/FREEZE_B.md` 与 `docs/freeze-b/ACCEPTANCE.md`。
+Node版本要求见package.json；默认本机/局域网服务端口4190，Ctrl+C停止。私有runtime-data/凭据/已安装依赖不在仓库。
+
+[完整工具包、轻量软件与校验值](https://github.com/sma084545-pixel/weiqi/releases/tag/v0.20.1-pages.1)包含生产构建、全部可编辑材料、PDF/PPTX、交接和验证。历史source/0.16.0分卷只作溯源，不作为当前主线。
+
+当前静态清单PUBLICATION.json、SHA256SUMS.txt；源码清单project/SOURCE_INFO.json。验收见project/docs/github-pages/。自动化、实体制造与真人教学验证分别记录；不声称提高智商、治疗压力、改善学业或保证CAS认可。第三方许可证随docs和字体目录保留。

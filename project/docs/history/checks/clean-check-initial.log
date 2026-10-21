@@ -1,0 +1,30 @@
+$ pnpm schema:check && pnpm test && pnpm validate:content && pnpm validate:t09 && pnpm test:t09-grader && pnpm test:t14 && pnpm test:t15 && pnpm validate:t17 && pnpm verify:merge-a && pnpm verify:t16-freeze && pnpm build && pnpm test:t16-refresh && pnpm build:engine && pnpm test:engine-build && pnpm test:engine-capacity
+$ node scripts/generate-types.mjs --check
+$ vitest run
+
+ RUN  v5.0.0 /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/history-slider-20261021/archive-recheck/go-club
+
+ ❯ tests/t01/properties.test.ts (10 tests | 1 failed) 66862ms
+   × T01 seeded legal path invariants on 19x19 34758ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/t01/properties.test.ts > T01 seeded legal path invariants on 19x19
+Error: Test timed out in 15000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ tests/t01/properties.test.ts:17:2
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed | 45 passed (46)
+      Tests  1 failed | 373 passed (374)
+   Start at  14:42:32
+   Duration  75.11s (environment 30%, import 30%, tests 28%, transform 11%, worker 1%)
+
+    Isolate  46 workers spawned · ~4.60s startup each (spawn + environment, per file)
+             at least ~18.91s faster with isolate: false — reuses workers across files instead of one per file
+
+[ELIFECYCLE] Test failed. See above for more details.
+[ELIFECYCLE] Command failed with exit code 1.

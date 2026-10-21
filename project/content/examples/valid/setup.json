@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "DEV-SETUP-001",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "Setup",
+  "size": 5,
+  "operations": [
+    {
+      "type": "setup-set",
+      "at": {
+        "row": 0,
+        "col": 0
+      },
+      "color": "B"
+    },
+    {
+      "type": "setup-erase",
+      "at": {
+        "row": 0,
+        "col": 0
+      }
+    }
+  ]
+}

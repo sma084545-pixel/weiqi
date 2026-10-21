@@ -1,0 +1,22 @@
+$ playwright test tests/browser/history.spec.ts --workers=1
+[WebServer] (node:61987) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 12 tests using 1 worker
+
+(node:61993) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 tests/browser/history.spec.ts:13:57 › /#/play/free capture history, native live drag, return and refresh preserve the actual game (1.3s)
+  ✓   2 tests/browser/history.spec.ts:13:57 › /#/play/full-game capture history, native live drag, return and refresh preserve the actual game (1.2s)
+  ✓   3 tests/browser/history.spec.ts:29:1 › final score, passes and dispute are history steps, not preview removals; actual agreed undo resets range (1.1s)
+  ✓   4 tests/browser/history.spec.ts:43:1 › Capture Go browses the whole round during play and beyond the last-five review; agreed undo and restart reset it (1.4s)
+  ✓   5 tests/browser/history.spec.ts:55:1 › experiment setup remains a fresh root, game undo/redo and branching refresh the slider (866ms)
+  ✓   6 tests/browser/history.spec.ts:64:1 › puzzle variations and free trial browse independently without changing attempts or leaving a reply behind (2.3s)
+  ✓   7 tests/browser/history.spec.ts:75:1 › teacher answer path allows forward review after going back and preserves previous branches (627ms)
+  ✓   8 tests/browser/history.spec.ts:84:1 › component play example also offers the shared timeline (471ms)
+  ✓   9 tests/browser/history.spec.ts:88:35 › 360px timeline with keyboard, no page overflow and no animation (680ms)
+  ✓  10 tests/browser/history.spec.ts:88:35 › 768px timeline with keyboard, no page overflow and no animation (817ms)
+  ✓  11 tests/browser/history.spec.ts:88:35 › 1280px timeline with keyboard, no page overflow and no animation (1.4s)
+  ✓  12 tests/browser/history.spec.ts:96:1 › touch range, 19x19 local scrolling, offline refresh and history recovery (2.1s)
+
+  12 passed (15.7s)

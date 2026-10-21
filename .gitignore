@@ -1,0 +1,8 @@
+project/node_modules/
+project/dist/
+project/dist-server/
+project/dist-engine/
+project/runtime-data/
+project/.env
+project/.env.*
+.DS_Store

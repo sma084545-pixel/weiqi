@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "T23-EMPTY-FORM-MODEL",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "MaterialTemplates",
+  "notSubmittedRecords": true,
+  "forms": [
+    {
+      "id": "T23-FEEDBACK-TEMPLATE",
+      "revision": 1,
+      "name": "04_voluntary_feedback",
+      "values": {},
+      "submitted": false
+    },
+    {
+      "id": "T23-OBSERVATION-TEMPLATE",
+      "revision": 1,
+      "name": "05_teacher_observation",
+      "values": {},
+      "submitted": false
+    },
+    {
+      "id": "T23-REVISION-TEMPLATE",
+      "revision": 1,
+      "name": "06_revision_record",
+      "values": {},
+      "submitted": false
+    },
+    {
+      "id": "T23-GAME-LOG-TEMPLATE",
+      "revision": 1,
+      "name": "08_paper_game_log",
+      "values": {},
+      "submitted": false
+    }
+  ]
+}

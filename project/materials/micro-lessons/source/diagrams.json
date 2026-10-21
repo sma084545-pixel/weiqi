@@ -1,0 +1,1662 @@
+{
+  "schemaVersion": 1,
+  "id": "T22-DIAGRAMS",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "freezeId": "GO-CLUB-FREEZE-B-20260919-01",
+  "diagrams": {
+    "AREA-005": {
+      "key": "AREA-005",
+      "sourceId": "AREA-005",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/content/puzzles/AREA-005.json",
+      "sourceSha256": "32e94ab284735f1814f0acb990a4b3289c1bc4bd702f2d415470f8a5435c6554",
+      "position": {
+        "schemaVersion": 1,
+        "id": "POS-AREA-005",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 5,
+        "stones": [
+          {
+            "row": 0,
+            "col": 0,
+            "color": "B"
+          },
+          {
+            "row": 0,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 0,
+            "col": 4,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 0,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 1,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 3,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 4,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 0,
+            "color": "W"
+          },
+          {
+            "row": 2,
+            "col": 1,
+            "color": "W"
+          },
+          {
+            "row": 2,
+            "col": 2,
+            "color": "W"
+          },
+          {
+            "row": 2,
+            "col": 3,
+            "color": "W"
+          },
+          {
+            "row": 2,
+            "col": 4,
+            "color": "W"
+          },
+          {
+            "row": 3,
+            "col": 0,
+            "color": "W"
+          },
+          {
+            "row": 3,
+            "col": 1,
+            "color": "W"
+          },
+          {
+            "row": 3,
+            "col": 2,
+            "color": "W"
+          },
+          {
+            "row": 3,
+            "col": 3,
+            "color": "W"
+          },
+          {
+            "row": 3,
+            "col": 4,
+            "color": "W"
+          },
+          {
+            "row": 4,
+            "col": 0,
+            "color": "W"
+          },
+          {
+            "row": 4,
+            "col": 2,
+            "color": "W"
+          },
+          {
+            "row": 4,
+            "col": 4,
+            "color": "W"
+          }
+        ],
+        "toPlay": "B",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "targetPoints": [
+        {
+          "row": 1,
+          "col": 2
+        }
+      ],
+      "nodePath": [],
+      "lastMove": null
+    },
+    "CAP-001": {
+      "key": "CAP-001",
+      "sourceId": "CAP-001",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/content/puzzles/CAP-001.json",
+      "sourceSha256": "e0a0950af03ba144d4464790b1292ac4a77b7534bc5a1228b77c194862f767cd",
+      "position": {
+        "schemaVersion": 1,
+        "id": "POS-CAP-001",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 5,
+        "stones": [
+          {
+            "row": 1,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 1,
+            "color": "B"
+          },
+          {
+            "row": 3,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 2,
+            "color": "W"
+          }
+        ],
+        "toPlay": "B",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "targetPoints": [
+        {
+          "row": 2,
+          "col": 2
+        }
+      ],
+      "nodePath": [],
+      "lastMove": null
+    },
+    "CAP-002": {
+      "key": "CAP-002",
+      "sourceId": "CAP-002",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/content/puzzles/CAP-002.json",
+      "sourceSha256": "f72172c4db6adf32228632d7660f174b649ae3ebbbedd9dd3f3bed1ba3e4e61e",
+      "position": {
+        "schemaVersion": 1,
+        "id": "POS-CAP-002",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 5,
+        "stones": [
+          {
+            "row": 0,
+            "col": 0,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 1,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 0,
+            "col": 1,
+            "color": "W"
+          },
+          {
+            "row": 0,
+            "col": 2,
+            "color": "W"
+          }
+        ],
+        "toPlay": "B",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "targetPoints": [
+        {
+          "row": 0,
+          "col": 1
+        },
+        {
+          "row": 0,
+          "col": 2
+        }
+      ],
+      "nodePath": [],
+      "lastMove": null
+    },
+    "CON-001": {
+      "key": "CON-001",
+      "sourceId": "CON-001",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/content/puzzles/CON-001.json",
+      "sourceSha256": "fc6f68f65b0461f248bbacd27c9753327bc5f8d86e4763ebad2d93999bd46013",
+      "position": {
+        "schemaVersion": 1,
+        "id": "POS-CON-001",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 5,
+        "stones": [
+          {
+            "row": 2,
+            "col": 1,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 3,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 2,
+            "color": "W"
+          }
+        ],
+        "toPlay": "B",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "targetPoints": [
+        {
+          "row": 2,
+          "col": 1
+        },
+        {
+          "row": 2,
+          "col": 3
+        }
+      ],
+      "nodePath": [],
+      "lastMove": null
+    },
+    "CON-002": {
+      "key": "CON-002",
+      "sourceId": "CON-002",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/content/puzzles/CON-002.json",
+      "sourceSha256": "aa877a3ef8e658715254ca2efee4ea07a34593be8a5d122aecbe198bee8339c0",
+      "position": {
+        "schemaVersion": 1,
+        "id": "POS-CON-002",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 5,
+        "stones": [
+          {
+            "row": 1,
+            "col": 1,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 3,
+            "color": "W"
+          }
+        ],
+        "toPlay": "B",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "targetPoints": [
+        {
+          "row": 1,
+          "col": 1
+        },
+        {
+          "row": 2,
+          "col": 2
+        }
+      ],
+      "nodePath": [],
+      "lastMove": null
+    },
+    "END-001": {
+      "key": "END-001",
+      "sourceId": "END-001",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/content/endgames/END-001.json",
+      "sourceSha256": "88fe7f6226f33da4d12f0cf14121be2c4f6b4ee7da376f3d9dd77bc080b4ebed",
+      "position": {
+        "schemaVersion": 1,
+        "id": "POS-END-001",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 5,
+        "stones": [
+          {
+            "row": 0,
+            "col": 0,
+            "color": "B"
+          },
+          {
+            "row": 0,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 0,
+            "col": 4,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 0,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 1,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 3,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 4,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 0,
+            "color": "W"
+          },
+          {
+            "row": 2,
+            "col": 1,
+            "color": "W"
+          },
+          {
+            "row": 2,
+            "col": 2,
+            "color": "W"
+          },
+          {
+            "row": 2,
+            "col": 3,
+            "color": "W"
+          },
+          {
+            "row": 2,
+            "col": 4,
+            "color": "W"
+          },
+          {
+            "row": 3,
+            "col": 0,
+            "color": "W"
+          },
+          {
+            "row": 3,
+            "col": 1,
+            "color": "W"
+          },
+          {
+            "row": 3,
+            "col": 2,
+            "color": "W"
+          },
+          {
+            "row": 3,
+            "col": 3,
+            "color": "W"
+          },
+          {
+            "row": 3,
+            "col": 4,
+            "color": "W"
+          },
+          {
+            "row": 4,
+            "col": 0,
+            "color": "W"
+          },
+          {
+            "row": 4,
+            "col": 2,
+            "color": "W"
+          },
+          {
+            "row": 4,
+            "col": 4,
+            "color": "W"
+          }
+        ],
+        "toPlay": "B",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "targetPoints": [],
+      "nodePath": [],
+      "lastMove": null
+    },
+    "END-002": {
+      "key": "END-002",
+      "sourceId": "END-002",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/content/endgames/END-002.json",
+      "sourceSha256": "fdc052992973abb3140041ea3d62d1cc9078eb4eeaf15dda2c36604af6170859",
+      "position": {
+        "schemaVersion": 1,
+        "id": "POS-END-002",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 5,
+        "stones": [
+          {
+            "row": 0,
+            "col": 0,
+            "color": "B"
+          },
+          {
+            "row": 0,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 0,
+            "col": 4,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 0,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 1,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 3,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 4,
+            "color": "B"
+          },
+          {
+            "row": 3,
+            "col": 0,
+            "color": "W"
+          },
+          {
+            "row": 3,
+            "col": 1,
+            "color": "W"
+          },
+          {
+            "row": 3,
+            "col": 2,
+            "color": "W"
+          },
+          {
+            "row": 3,
+            "col": 3,
+            "color": "W"
+          },
+          {
+            "row": 3,
+            "col": 4,
+            "color": "W"
+          },
+          {
+            "row": 4,
+            "col": 0,
+            "color": "W"
+          },
+          {
+            "row": 4,
+            "col": 2,
+            "color": "W"
+          },
+          {
+            "row": 4,
+            "col": 4,
+            "color": "W"
+          }
+        ],
+        "toPlay": "B",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "targetPoints": [],
+      "nodePath": [],
+      "lastMove": null
+    },
+    "LIB-001": {
+      "key": "LIB-001",
+      "sourceId": "LIB-001",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/content/puzzles/LIB-001.json",
+      "sourceSha256": "3c5fa560f7cd43a13e14021d5e1baa80353592e38e95e454355d4c18b6158257",
+      "position": {
+        "schemaVersion": 1,
+        "id": "POS-LIB-001",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 9,
+        "stones": [
+          {
+            "row": 4,
+            "col": 4,
+            "color": "B"
+          }
+        ],
+        "toPlay": "B",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "targetPoints": [
+        {
+          "row": 4,
+          "col": 4
+        }
+      ],
+      "nodePath": [],
+      "lastMove": null,
+      "liberties": [
+        {
+          "row": 3,
+          "col": 4
+        },
+        {
+          "row": 4,
+          "col": 3
+        },
+        {
+          "row": 4,
+          "col": 5
+        },
+        {
+          "row": 5,
+          "col": 4
+        }
+      ]
+    },
+    "LIB-004": {
+      "key": "LIB-004",
+      "sourceId": "LIB-004",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/content/puzzles/LIB-004.json",
+      "sourceSha256": "bbb1fb3435c71c4212ec85917bf4c7226216023ea15723b082a184c87a3cec0a",
+      "position": {
+        "schemaVersion": 1,
+        "id": "POS-LIB-004",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 5,
+        "stones": [
+          {
+            "row": 1,
+            "col": 1,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 1,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 2,
+            "color": "B"
+          }
+        ],
+        "toPlay": "B",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "targetPoints": [
+        {
+          "row": 1,
+          "col": 1
+        },
+        {
+          "row": 2,
+          "col": 1
+        },
+        {
+          "row": 2,
+          "col": 2
+        }
+      ],
+      "nodePath": [],
+      "lastMove": null,
+      "liberties": [
+        {
+          "row": 0,
+          "col": 1
+        },
+        {
+          "row": 1,
+          "col": 0
+        },
+        {
+          "row": 1,
+          "col": 2
+        },
+        {
+          "row": 2,
+          "col": 0
+        },
+        {
+          "row": 2,
+          "col": 3
+        },
+        {
+          "row": 3,
+          "col": 1
+        },
+        {
+          "row": 3,
+          "col": 2
+        }
+      ]
+    },
+    "LIFE-001": {
+      "key": "LIFE-001",
+      "sourceId": "LIFE-001",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/content/puzzles/LIFE-001.json",
+      "sourceSha256": "3e800b83347c378568c5b0ff8a4a96412fa44081df9711eb325cc0d1c3ca4c2f",
+      "position": {
+        "schemaVersion": 1,
+        "id": "POS-LIFE-001",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 5,
+        "stones": [
+          {
+            "row": 0,
+            "col": 0,
+            "color": "B"
+          },
+          {
+            "row": 0,
+            "col": 1,
+            "color": "B"
+          },
+          {
+            "row": 0,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 0,
+            "col": 3,
+            "color": "B"
+          },
+          {
+            "row": 0,
+            "col": 4,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 0,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 4,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 0,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 1,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 3,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 4,
+            "color": "B"
+          },
+          {
+            "row": 3,
+            "col": 0,
+            "color": "W"
+          },
+          {
+            "row": 3,
+            "col": 1,
+            "color": "W"
+          },
+          {
+            "row": 3,
+            "col": 2,
+            "color": "W"
+          },
+          {
+            "row": 3,
+            "col": 3,
+            "color": "W"
+          },
+          {
+            "row": 3,
+            "col": 4,
+            "color": "W"
+          }
+        ],
+        "toPlay": "W",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "targetPoints": [
+        {
+          "row": 1,
+          "col": 2
+        }
+      ],
+      "nodePath": [],
+      "lastMove": null
+    },
+    "LIFE-002": {
+      "key": "LIFE-002",
+      "sourceId": "LIFE-002",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/content/puzzles/LIFE-002.json",
+      "sourceSha256": "4a9c755d45126cef93464d2e42c74b51af63468701c701d64957910269b32526",
+      "position": {
+        "schemaVersion": 1,
+        "id": "POS-LIFE-002",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 5,
+        "stones": [
+          {
+            "row": 1,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 1,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 3,
+            "color": "B"
+          },
+          {
+            "row": 3,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 1,
+            "color": "W"
+          },
+          {
+            "row": 1,
+            "col": 3,
+            "color": "W"
+          },
+          {
+            "row": 3,
+            "col": 1,
+            "color": "W"
+          },
+          {
+            "row": 3,
+            "col": 3,
+            "color": "W"
+          },
+          {
+            "row": 0,
+            "col": 2,
+            "color": "W"
+          },
+          {
+            "row": 2,
+            "col": 0,
+            "color": "W"
+          },
+          {
+            "row": 2,
+            "col": 4,
+            "color": "W"
+          }
+        ],
+        "toPlay": "W",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "targetPoints": [
+        {
+          "row": 1,
+          "col": 2
+        },
+        {
+          "row": 2,
+          "col": 1
+        },
+        {
+          "row": 2,
+          "col": 3
+        }
+      ],
+      "nodePath": [],
+      "lastMove": null
+    },
+    "LIFE-003": {
+      "key": "LIFE-003",
+      "sourceId": "LIFE-003",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/content/puzzles/LIFE-003.json",
+      "sourceSha256": "1909976bc369d0434b0db10720cbb722be4cb4ca49b2781668b56cb8ee8f6ffc",
+      "position": {
+        "schemaVersion": 1,
+        "id": "POS-LIFE-003",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 5,
+        "stones": [
+          {
+            "row": 0,
+            "col": 3,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 0,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 1,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 3,
+            "color": "B"
+          },
+          {
+            "row": 0,
+            "col": 4,
+            "color": "W"
+          },
+          {
+            "row": 1,
+            "col": 4,
+            "color": "W"
+          },
+          {
+            "row": 2,
+            "col": 0,
+            "color": "W"
+          },
+          {
+            "row": 2,
+            "col": 1,
+            "color": "W"
+          },
+          {
+            "row": 2,
+            "col": 2,
+            "color": "W"
+          },
+          {
+            "row": 2,
+            "col": 3,
+            "color": "W"
+          },
+          {
+            "row": 2,
+            "col": 4,
+            "color": "W"
+          }
+        ],
+        "toPlay": "B",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "targetPoints": [
+        {
+          "row": 1,
+          "col": 1
+        }
+      ],
+      "nodePath": [],
+      "lastMove": null
+    },
+    "LIFE-005": {
+      "key": "LIFE-005",
+      "sourceId": "LIFE-005",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/content/puzzles/LIFE-005.json",
+      "sourceSha256": "506f62c281d0c1f09c8dfff2725fe0677fcfcf9ecda05615b10adeff4a968992",
+      "position": {
+        "schemaVersion": 1,
+        "id": "POS-LIFE-005",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 5,
+        "stones": [
+          {
+            "row": 0,
+            "col": 0,
+            "color": "B"
+          },
+          {
+            "row": 0,
+            "col": 3,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 0,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 1,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 3,
+            "color": "B"
+          },
+          {
+            "row": 0,
+            "col": 4,
+            "color": "W"
+          },
+          {
+            "row": 1,
+            "col": 4,
+            "color": "W"
+          },
+          {
+            "row": 2,
+            "col": 0,
+            "color": "W"
+          },
+          {
+            "row": 2,
+            "col": 1,
+            "color": "W"
+          },
+          {
+            "row": 2,
+            "col": 2,
+            "color": "W"
+          },
+          {
+            "row": 2,
+            "col": 3,
+            "color": "W"
+          },
+          {
+            "row": 2,
+            "col": 4,
+            "color": "W"
+          }
+        ],
+        "toPlay": "W",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "targetPoints": [
+        {
+          "row": 1,
+          "col": 1
+        }
+      ],
+      "nodePath": [],
+      "lastMove": null
+    },
+    "RULE-DEMO-T20-CONNECT": {
+      "key": "RULE-DEMO-T20-CONNECT",
+      "sourceId": "RULE-DEMO-T20-CONNECT",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/materials/rule-cards/data/RULE-DEMO-T20-CONNECT.json",
+      "sourceSha256": "c745c0a49849f21ca32a94106865328fb005d1a75136403754b5c713a0a07127",
+      "position": {
+        "schemaVersion": 1,
+        "id": "RULE-DEMO-T20-CONNECT",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 5,
+        "stones": [
+          {
+            "row": 1,
+            "col": 1,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 3,
+            "color": "B"
+          }
+        ],
+        "toPlay": "B",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "targetPoints": [],
+      "nodePath": [],
+      "lastMove": null
+    },
+    "RULE-DEMO-T20-KO-AFTER": {
+      "key": "RULE-DEMO-T20-KO-AFTER",
+      "sourceId": "RULE-DEMO-T20-KO-AFTER",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/materials/rule-cards/data/RULE-DEMO-T20-KO-AFTER.json",
+      "sourceSha256": "89d9a194282bdbbce299ed730cec96191f7fc70c7667e1e3861122fb7b31fd43",
+      "position": {
+        "schemaVersion": 1,
+        "id": "RULE-DEMO-T20-KO-AFTER",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 5,
+        "stones": [
+          {
+            "row": 1,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 3,
+            "color": "W"
+          },
+          {
+            "row": 2,
+            "col": 1,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 3,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 4,
+            "color": "W"
+          },
+          {
+            "row": 3,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 3,
+            "col": 3,
+            "color": "W"
+          }
+        ],
+        "toPlay": "W",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "targetPoints": [],
+      "nodePath": [],
+      "lastMove": null
+    },
+    "RULE-DEMO-T20-KO-BEFORE": {
+      "key": "RULE-DEMO-T20-KO-BEFORE",
+      "sourceId": "RULE-DEMO-T20-KO-BEFORE",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/materials/rule-cards/data/RULE-DEMO-T20-KO-BEFORE.json",
+      "sourceSha256": "d4fe9642a299e6abb7fd957cb5d7fd0cf5f339980f812404f8f46f0dcf8d73b5",
+      "position": {
+        "schemaVersion": 1,
+        "id": "RULE-DEMO-T20-KO-BEFORE",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 5,
+        "stones": [
+          {
+            "row": 1,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 3,
+            "color": "W"
+          },
+          {
+            "row": 2,
+            "col": 1,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 2,
+            "color": "W"
+          },
+          {
+            "row": 2,
+            "col": 4,
+            "color": "W"
+          },
+          {
+            "row": 3,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 3,
+            "col": 3,
+            "color": "W"
+          }
+        ],
+        "toPlay": "B",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "targetPoints": [],
+      "nodePath": [],
+      "lastMove": null
+    },
+    "RULE-DEMO-T20-LEGAL-AFTER": {
+      "key": "RULE-DEMO-T20-LEGAL-AFTER",
+      "sourceId": "RULE-DEMO-T20-LEGAL-AFTER",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/materials/rule-cards/data/RULE-DEMO-T20-LEGAL-AFTER.json",
+      "sourceSha256": "a6e455337c43630ef583417544bd2e285ae507dee005acc4159149d073a6a909",
+      "position": {
+        "schemaVersion": 1,
+        "id": "RULE-DEMO-T20-LEGAL-AFTER",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 5,
+        "stones": [
+          {
+            "row": 0,
+            "col": 0,
+            "color": "B"
+          },
+          {
+            "row": 0,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 1,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 0,
+            "color": "B"
+          }
+        ],
+        "toPlay": "W",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "targetPoints": [],
+      "nodePath": [],
+      "lastMove": null
+    },
+    "RULE-DEMO-T20-LEGAL-BEFORE": {
+      "key": "RULE-DEMO-T20-LEGAL-BEFORE",
+      "sourceId": "RULE-DEMO-T20-LEGAL-BEFORE",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/materials/rule-cards/data/RULE-DEMO-T20-LEGAL-BEFORE.json",
+      "sourceSha256": "4dc310af6907bf6ec3c6ff7dda5a0b5b31620c36fa90f7d6f6ac06ebbc066109",
+      "position": {
+        "schemaVersion": 1,
+        "id": "RULE-DEMO-T20-LEGAL-BEFORE",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 5,
+        "stones": [
+          {
+            "row": 0,
+            "col": 1,
+            "color": "W"
+          },
+          {
+            "row": 0,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 0,
+            "color": "W"
+          },
+          {
+            "row": 1,
+            "col": 1,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 0,
+            "color": "B"
+          }
+        ],
+        "toPlay": "B",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "targetPoints": [],
+      "nodePath": [],
+      "lastMove": null
+    },
+    "CAP-001-SUCCESS": {
+      "key": "CAP-001-SUCCESS",
+      "sourceId": "CAP-001",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/content/puzzles/CAP-001.json",
+      "sourceSha256": "e0a0950af03ba144d4464790b1292ac4a77b7534bc5a1228b77c194862f767cd",
+      "position": {
+        "schemaVersion": 1,
+        "id": "T22-DERIVED-CAP-001-SUCCESS",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 5,
+        "stones": [
+          {
+            "row": 1,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 1,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 3,
+            "color": "B"
+          },
+          {
+            "row": 3,
+            "col": 2,
+            "color": "B"
+          }
+        ],
+        "toPlay": "W",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "targetPoints": [
+        {
+          "row": 2,
+          "col": 2
+        }
+      ],
+      "nodePath": [
+        "l1-1"
+      ],
+      "lastMove": {
+        "row": 2,
+        "col": 3
+      },
+      "captured": [
+        {
+          "row": 2,
+          "col": 2
+        }
+      ]
+    },
+    "CON-001-SUCCESS": {
+      "key": "CON-001-SUCCESS",
+      "sourceId": "CON-001",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/content/puzzles/CON-001.json",
+      "sourceSha256": "fc6f68f65b0461f248bbacd27c9753327bc5f8d86e4763ebad2d93999bd46013",
+      "position": {
+        "schemaVersion": 1,
+        "id": "T22-DERIVED-CON-001-SUCCESS",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 5,
+        "stones": [
+          {
+            "row": 1,
+            "col": 2,
+            "color": "W"
+          },
+          {
+            "row": 2,
+            "col": 1,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 3,
+            "color": "B"
+          }
+        ],
+        "toPlay": "W",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "targetPoints": [
+        {
+          "row": 2,
+          "col": 1
+        },
+        {
+          "row": 2,
+          "col": 3
+        }
+      ],
+      "nodePath": [
+        "l1-1"
+      ],
+      "lastMove": {
+        "row": 2,
+        "col": 2
+      },
+      "captured": []
+    },
+    "CON-001-CUT": {
+      "key": "CON-001-CUT",
+      "sourceId": "CON-001",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/content/puzzles/CON-001.json",
+      "sourceSha256": "fc6f68f65b0461f248bbacd27c9753327bc5f8d86e4763ebad2d93999bd46013",
+      "position": {
+        "schemaVersion": 1,
+        "id": "T22-DERIVED-CON-001-CUT",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 5,
+        "stones": [
+          {
+            "row": 1,
+            "col": 2,
+            "color": "W"
+          },
+          {
+            "row": 2,
+            "col": 1,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 2,
+            "color": "W"
+          },
+          {
+            "row": 2,
+            "col": 3,
+            "color": "B"
+          },
+          {
+            "row": 3,
+            "col": 2,
+            "color": "B"
+          }
+        ],
+        "toPlay": "B",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "targetPoints": [
+        {
+          "row": 2,
+          "col": 1
+        },
+        {
+          "row": 2,
+          "col": 3
+        }
+      ],
+      "nodePath": [
+        "l2-1",
+        "l2-2"
+      ],
+      "lastMove": {
+        "row": 2,
+        "col": 2
+      },
+      "captured": []
+    },
+    "LIFE-002-SUCCESS": {
+      "key": "LIFE-002-SUCCESS",
+      "sourceId": "LIFE-002",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/content/puzzles/LIFE-002.json",
+      "sourceSha256": "4a9c755d45126cef93464d2e42c74b51af63468701c701d64957910269b32526",
+      "position": {
+        "schemaVersion": 1,
+        "id": "T22-DERIVED-LIFE-002-SUCCESS",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 5,
+        "stones": [
+          {
+            "row": 0,
+            "col": 2,
+            "color": "W"
+          },
+          {
+            "row": 1,
+            "col": 1,
+            "color": "W"
+          },
+          {
+            "row": 1,
+            "col": 3,
+            "color": "W"
+          },
+          {
+            "row": 2,
+            "col": 0,
+            "color": "W"
+          },
+          {
+            "row": 2,
+            "col": 2,
+            "color": "W"
+          },
+          {
+            "row": 2,
+            "col": 4,
+            "color": "W"
+          },
+          {
+            "row": 3,
+            "col": 1,
+            "color": "W"
+          },
+          {
+            "row": 3,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 3,
+            "col": 3,
+            "color": "W"
+          }
+        ],
+        "toPlay": "B",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "targetPoints": [
+        {
+          "row": 1,
+          "col": 2
+        },
+        {
+          "row": 2,
+          "col": 1
+        },
+        {
+          "row": 2,
+          "col": 3
+        }
+      ],
+      "nodePath": [
+        "l1-1"
+      ],
+      "lastMove": {
+        "row": 2,
+        "col": 2
+      },
+      "captured": [
+        {
+          "row": 1,
+          "col": 2
+        },
+        {
+          "row": 2,
+          "col": 1
+        },
+        {
+          "row": 2,
+          "col": 3
+        }
+      ]
+    },
+    "T22-EMPTY-5": {
+      "key": "T22-EMPTY-5",
+      "sourceId": "T22-EMPTY-5",
+      "sourceRevision": 1,
+      "sourcePath": "local-original-empty",
+      "position": {
+        "schemaVersion": 1,
+        "id": "T22-EMPTY-5",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 5,
+        "stones": [],
+        "toPlay": "B",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "targetPoints": [],
+      "nodePath": [],
+      "lastMove": null
+    },
+    "T22-EMPTY-9": {
+      "key": "T22-EMPTY-9",
+      "sourceId": "T22-EMPTY-9",
+      "sourceRevision": 1,
+      "sourcePath": "local-original-empty",
+      "position": {
+        "schemaVersion": 1,
+        "id": "T22-EMPTY-9",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 9,
+        "stones": [],
+        "toPlay": "B",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "targetPoints": [],
+      "nodePath": [],
+      "lastMove": null
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "REPORT-T01-CAPACITY",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "DeveloperValidationReport",
+  "checkedAt": "2026-09-19T09:10:16.484Z",
+  "method": "Built standalone ESM; seeded legal path and legal pass/resume capacity stress",
+  "humanReviewed": null,
+  "legalPlacements": 240,
+  "currentMoves": 238,
+  "redoSnapshots": 2,
+  "serializedBytes": 12705289,
+  "limitBytes": 64000000,
+  "roundTrip": "passed",
+  "verifiedStoreRoundTrip": "passed",
+  "oversizedEventCount": 2100,
+  "oversizedExportCode": "EXPORT_TOO_LARGE",
+  "oversizedSaveKeepsOldRecord": "passed",
+  "elapsedMilliseconds": 2310,
+  "storage": "in-memory atomic StoragePort; not a browser quota measurement"
+}

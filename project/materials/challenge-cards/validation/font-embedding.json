@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "T21-FONT-EMBEDDING",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "passed",
+  "method": "pypdf page resource inspection",
+  "files": [
+    {
+      "path": "output/T21_challenge_cards_front_A4.pdf",
+      "embeddedContentFonts": ["AAAAAA+ArialUnicodeMS", "AAAAAB+ArialUnicodeMS"],
+      "note": "All generated card text uses the embedded subset font. A built-in Helvetica resource is retained by ReportLab but is not the selected drawing font."
+    },
+    {
+      "path": "output/T21_challenge_cards_back_A4.pdf",
+      "embeddedContentFonts": ["AAAAAA+ArialUnicodeMS", "AAAAAB+ArialUnicodeMS"],
+      "note": "All generated card text uses the embedded subset font. A built-in Helvetica resource is retained by ReportLab but is not the selected drawing font."
+    },
+    {
+      "path": "output/T21_teacher_answer_book.pdf",
+      "embeddedContentFonts": ["AAAAAA+ArialUnicodeMS", "AAAAAB+ArialUnicodeMS", "AAAAAC+ArialUnicodeMS"],
+      "note": "All generated teacher-book text uses embedded subset fonts. A built-in Helvetica resource is retained by ReportLab but is not the selected drawing font."
+    }
+  ],
+  "svgBoundary": "SVG declares Arial Unicode MS, PingFang SC, sans-serif and depends on the editing/viewing device; font substitution requires renewed layout review."
+}

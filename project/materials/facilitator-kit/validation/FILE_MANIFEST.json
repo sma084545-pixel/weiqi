@@ -1,0 +1,566 @@
+{
+  "schemaVersion": 1,
+  "id": "T23-FILE-MANIFEST",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "baseVersion": "0.17.0-merge-c.1",
+  "resultVersion": "0.17.0-plus-t23.1",
+  "files": [
+    {
+      "path": "handoff/T23.md",
+      "sha256": "852f554fe58e0087f865e3cef8e60eb71c85cd549c8c2ae91b12a4df9fc6be5b"
+    },
+    {
+      "path": "materials/facilitator-kit/README.md",
+      "sha256": "d31a0b19a72756272672075a1d9e28cf3d9f23f5b5079e7d9b0a9d4391471bf0"
+    },
+    {
+      "path": "materials/facilitator-kit/SOURCES.md",
+      "sha256": "0f9c9e696acc1b59baae1eba2553934c68ba67d17e56a2c6ea1a4e2f39a11f3b"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_01_screen_alternatives.docx",
+      "sha256": "2c8f7b850ddc4d88f2dcba323599a7b605ab7c0f6c7c6e2c69920e5214dc68fc"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_01_screen_alternatives.md",
+      "sha256": "c695ff49c2d1c462d839fcff0e234827148a467ca7e16103df5a932824a7933b"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_01_screen_alternatives.pdf",
+      "sha256": "02931d183d8139cc4878325481d8dbc9487bb32800437097133d91ddd48398f6"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_02_peer_teaching.docx",
+      "sha256": "0a3327b8ec9d460483b5965cb9b494ce69fbcd276c65a71164378f88fa1fd5b5"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_02_peer_teaching.md",
+      "sha256": "e06e2641f189c67b8fa2f7ac5354a7cc9b3ec30cc85ac1761455f19999015455"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_02_peer_teaching.pdf",
+      "sha256": "acbb2fcf48dcc62e055ebf860fdbf339a91ad894a2c3f5ef48ee9a15ae9dad93"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_03_prepare_close.docx",
+      "sha256": "fa4b4c7c292b516c31e8c60748e31a706f94637d57dacdcbbd456ce53bdbf946"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_03_prepare_close.md",
+      "sha256": "e493ba58b273a1e279ee409825b77fcea70e2075ed1f2c009c566ef2bee63970"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_03_prepare_close.pdf",
+      "sha256": "5fa4f1b3692b9bb2ab3f705ece4e945dac3d5a494603409f36117997b7bd58b1"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_04_voluntary_feedback.docx",
+      "sha256": "3498d7a6482020c56663ebd5bf25fbacd9a32f243a698ee50fa1c0faeee0048e"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_04_voluntary_feedback.md",
+      "sha256": "e446218cbc53f4a4bf658d8d68d312056d8fabcd62147a615749baa6a96a1cf3"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_04_voluntary_feedback.pdf",
+      "sha256": "29f486c5be7aebde29c8ee5b38436a89958d4af8de3b07d23d2687d407952240"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_05_teacher_observation.docx",
+      "sha256": "6ed81d233f47ce185614c7deff5a1530e9520726415fc511a86d6cf2d26965b6"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_05_teacher_observation.md",
+      "sha256": "4350b227cccd09a70c289d821d981fe2f4e27167efb13e87abc7dd6f1a2ed2f9"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_05_teacher_observation.pdf",
+      "sha256": "71ee7907b320e449cdccfe22c31e44d961d22134f13dfd28f50a0e6a61d8d87c"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_06_revision_record.docx",
+      "sha256": "0d7fe84673bd3713af8de36fce3dd5963eed7d580e41dfd27132f677de696ab0"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_06_revision_record.md",
+      "sha256": "a7bd511d6fb05312b76891241d69f6245627fc51c2485d56843b679f0920abd9"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_06_revision_record.pdf",
+      "sha256": "b9dc16548e2e84a1afaa86eb054962f8a247a3dae9230180a471882d114a9769"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_07_new_member.docx",
+      "sha256": "e4345e1ff1592116980075afac849b1a6f036ab44f15403383aea1022d414227"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_07_new_member.md",
+      "sha256": "be3e55624a807e0653393a8171fa5d12621815891e98c0e11cf77f6fc0ed18c1"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_07_new_member.pdf",
+      "sha256": "6e736c7f357c9685df536ae85c625adaf460bee369f9c82994eb6495fff8588d"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_08_paper_game_log.docx",
+      "sha256": "4c0054f4b4b470363feb95748749ffff118ce627149b2364f61100d268ac4a46"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_08_paper_game_log.md",
+      "sha256": "6813459239cb9168451adffcfff2d69137346ff4008e97013c353c1b48bbf07e"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_08_paper_game_log.pdf",
+      "sha256": "0162c33eff5b0d4c9500be350582725fd72adc1d84ddeec2006c838ae79a61c7"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_01.docx",
+      "sha256": "b05a275630a86713445a3a7c13a05decd8954de3920e6eccd10b905a96251333"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_01.md",
+      "sha256": "dad8cc568ca8e5ab34f419d9ff6440fbfc1c7aec772cc2446376583ab48201ad"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_01.pdf",
+      "sha256": "c00cd24991b4d79683443138a39641c5d31e681e2940c70d0c6c867201584da0"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_02.docx",
+      "sha256": "a1a6057628564b1a0bdcc49d09ada58372f108e4f1519aa648fe23989c91bb81"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_02.md",
+      "sha256": "03c85322abf7046b0e8a500b185eae912dac6b89c08d5533019d541227352592"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_02.pdf",
+      "sha256": "e0b3381096ee89084c91c1a8022097d38601a39f94a7f0d2003bb4b42b47ad38"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_03.docx",
+      "sha256": "c37a6cbf80a57f0963395411e3d69a11a9aa9130af780ad0244ea89ee6fbfd25"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_03.md",
+      "sha256": "62092217b459ac32cf6c2dfff42b70a3493112aa9bdd0e61b7c28b0ff1e0c2fc"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_03.pdf",
+      "sha256": "b671dbda8e6da8620039545f8b600026ad449e62062aa7ebaa8c17dfefdfec09"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_04.docx",
+      "sha256": "7c488fa9640f0fbeba307e88ace2fa855fbec5480068292d52b0d1d3a03441c6"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_04.md",
+      "sha256": "62748c9f0f11016e2be3baeb0de050020167247fac11f70a99f9db4e92e3f0cc"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_04.pdf",
+      "sha256": "0083c4d35d8490edb91206aa30194d1d2d3dae7ab34ac87c1f02643c0146ba64"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_05.docx",
+      "sha256": "85ceb50d9fad8a9d7c1566a61cd5b261e674821dfb6cdf3b630e61b5aaa1b124"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_05.md",
+      "sha256": "796bbda01c5464a8cf577912fc7a0270d4b02202a87c94906066fdb76389e69b"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_05.pdf",
+      "sha256": "96a48a585dd6328e2ac7cc62cba8b1307a5ebf793c23d2b2031075f73f78dbfe"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_06.docx",
+      "sha256": "54bd63eba3287c099870e5050ae090bed6c9ab1639d4fd2366a3f19e830d820c"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_06.md",
+      "sha256": "631a0d948a344c2d709e518d5bf0f9c8659b6334aa10da7ba2744511bbdb3c9e"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_06.pdf",
+      "sha256": "6283e5236c2ee912f9d37a461c6712c4251fe52f1544a6963ffda27391def516"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_board_5x5_A4.pdf",
+      "sha256": "a7418661b2ab85456d8f7e61e2f8832095bef5c6e46adefce18331253c7bbbea"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_board_5x5_A4.svg",
+      "sha256": "d7cd2166236f0c82117bc07466521561734e17056fa2928cf3a33f796dfdaf9b"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_facilitator_manual.docx",
+      "sha256": "7ccf244047b4e00929195e1767c49ce7d1de3094c4a508b3e02412a7da59460f"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_facilitator_manual.md",
+      "sha256": "bc357399d0654a542fbc6dfe4e9693192622ed491a5f20c7b1f0c0dcf1695ca5"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_facilitator_manual.pdf",
+      "sha256": "d760330fbef9331d511b5c039b38738703ec7cf9d9fc3ce69f70154bd60ae776"
+    },
+    {
+      "path": "materials/facilitator-kit/source/author_content.py",
+      "sha256": "43d56f65449263598c9f6b58bd2c090495412c99d10a81a4212fc5a1c9e758b0"
+    },
+    {
+      "path": "materials/facilitator-kit/source/build_board.py",
+      "sha256": "2763961620104c2eb62a45e3999d58319a0d2451fecd9a255a1388f7288991e8"
+    },
+    {
+      "path": "materials/facilitator-kit/source/build_kit.py",
+      "sha256": "e6255618ddfff3cb7a9c40b786421a70d7a0ce91b690f075a6090a9afb8afd6d"
+    },
+    {
+      "path": "materials/facilitator-kit/source/close_delivery.py",
+      "sha256": "26d200ee9b07ced51736ff67fa499850a1d3012f5bcdffd1f0e568e8e8f619ae"
+    },
+    {
+      "path": "materials/facilitator-kit/source/empty-forms.json",
+      "sha256": "b2213447674da1ce4f6231d4034a195613dbe7620d49709fd6d3f5490f199a77"
+    },
+    {
+      "path": "materials/facilitator-kit/source/input-manifest.json",
+      "sha256": "ce9d29d8a58bc2c34a55364aa7834b4ce826b4ceea33aa607803344d4303557a"
+    },
+    {
+      "path": "materials/facilitator-kit/source/kit.json",
+      "sha256": "b7fe79360aa0b46881d5eae55523737a017d0eed59a2ee53902a64e74c1a754e"
+    },
+    {
+      "path": "materials/facilitator-kit/source/page-model.json",
+      "sha256": "720d6718038a7de14b9dbf67b2f4b8bb1d2b2620516f7248de343f071f866d53"
+    },
+    {
+      "path": "materials/facilitator-kit/source/render_all.py",
+      "sha256": "63785221cc6e00fb5e305f854f98ed6fea975ea353dbfad05c39f430b2d5fd81"
+    },
+    {
+      "path": "materials/facilitator-kit/source/resource-map.json",
+      "sha256": "e68aae7010dc5dd6ddaad9d63b3271786c49be32bf0ba90f2ec1c0ef2a4687b2"
+    },
+    {
+      "path": "materials/facilitator-kit/source/verify_kit.py",
+      "sha256": "532b6d12bef5b51cd15d900fdf32507992488f7c74b018d5a3b0a7f7b886a5dd"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/ACCEPTANCE.md",
+      "sha256": "623b4aad286cccee12fb93beeed49be4580216c81d650991221166287c9bab07"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/T23_01_screen_alternatives-render.log",
+      "sha256": "024b72712c80082c03bd38751dae503daedb0921670d8b4f4d3e6d2781fbd7ad"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/T23_02_peer_teaching-render.log",
+      "sha256": "d55dc058a887f41d648ec400db1f68270df201cf632253a005c444aed2390cde"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/T23_03_prepare_close-render.log",
+      "sha256": "eadab5ab473d61902e78c2cfc7a4769118eb9f9bb25bad1dc50e7f818bd0fdbb"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/T23_04_voluntary_feedback-render.log",
+      "sha256": "e11af3a805cdc9f3465ef841c32e131240b2d7acc9523b9f3a47c33c973d562c"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/T23_05_teacher_observation-render.log",
+      "sha256": "2de3ce70ab250542926ee9fa61743bec759bf840c126e3249401ae77c0bf12d5"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/T23_06_revision_record-render.log",
+      "sha256": "566a53f0742d25b0d8252e0df90e8a25ca37733c092f8a1235073bc8d4255bd5"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/T23_07_new_member-render.log",
+      "sha256": "c140291e44ad7ce186070f188b53b70ca4b7f491cceca33f24f5f87daf74d67b"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/T23_08_paper_game_log-render.log",
+      "sha256": "a77f70b5e00f6a3160a45156b09ddc16c9ccba8d9382cacea2564e410d60ad1a"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/T23_activity_01-render.log",
+      "sha256": "290ab15b2aa6f7cc1000ff6cb3ac44a650303b31655b126c4948a5374845e6cf"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/T23_activity_02-render.log",
+      "sha256": "15ee7cf403962829b891e3d84135a177ddedd8214c303f63ee2d0aa6a0d0411d"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/T23_activity_03-render.log",
+      "sha256": "32c360fde79ab30c65af99701bb00cfbe43eeeeeb9ba6cbba59afea269d8bcd2"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/T23_activity_04-render.log",
+      "sha256": "b8b33f48762d7e1b497b469f0523ffa79b32fe3b0fe82cb6022cf986e0d41386"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/T23_activity_05-render.log",
+      "sha256": "756ccef3aea60676e6b8ba62c5739aebe6b39b87b2d308d350d0828b89ef7306"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/T23_activity_06-render.log",
+      "sha256": "346cfb875d4540b5bf603a3996e921f5c8ebbb796089468d3f2e2ea0996974de"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/T23_facilitator_manual-render.log",
+      "sha256": "54274875419f38b6bf73a878ac9f65aae740d4113699397f1e6dc2ca73ce7386"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/TIME_CALCULATION.md",
+      "sha256": "35d04ca42cd840bbbb232a60be341362725e220802bbe7b4b95a9098d3d0532e"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/VISUAL_REVIEW.md",
+      "sha256": "47ac341eafb4b8a3ec6012df02b103ef10b4bd0c8e300ceb606b13626ebcdb97"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/board-build.log",
+      "sha256": "8226e054558ca4bc87cf3330c5b32c1d31e69b79306094bd9e344dda95064af8"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/check-results.json",
+      "sha256": "ed087790a4b4d35e2b207b0f004c55a5abc342d984a05180dd4d61c7b18f7ce4"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/check.log",
+      "sha256": "6fa40e7e162db40034f6cb15d81040fc54fc1a0bc1c1502e22f0238cd340a6aa"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/delivery.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/fontconfig.xml",
+      "sha256": "403a88d1ff1b9ca4f551da8669e1d9493dbb1a6e8be653261e111892cd968d69"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/manual-render-final.log",
+      "sha256": "54274875419f38b6bf73a878ac9f65aae740d4113699397f1e6dc2ca73ce7386"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/manual-render-fontfix.log",
+      "sha256": "91c111babb9c07c590110c368ac956c0cab51ba2f2354c801bb3bb9210cc80c2"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/manual-render.log",
+      "sha256": "9bc030ab1d23cd5d40d9ab0a909f15d121f3a8fcc47c50df82bd0035b3906fb9"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/render-all.log",
+      "sha256": "964315efa6d6ef42c5d37957a1e094320ed37e1ded8c2211113d80ccd30cf11b"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/render-commands.json",
+      "sha256": "5d2a2b126068e44401ad62a99ab35158b0b784415cfcc323fb53d3666bbfe08a"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_01_screen_alternatives/T23_01_screen_alternatives.pdf",
+      "sha256": "ea1d6e3325b2344a91d80661cf53d62d8f22bf125111288ff409f30636c12367"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_01_screen_alternatives/page-1.png",
+      "sha256": "796884106824bbb4ab46e470ce779eba9111b2526ad872f6495117ecf815d19f"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_02_peer_teaching/T23_02_peer_teaching.pdf",
+      "sha256": "b832adee2efb51b89ac6716733b84b605ea322c172d9b34a7350ffb1d9ef15b3"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_02_peer_teaching/page-1.png",
+      "sha256": "1c81d0db62377f22dd5ff50c18feb3556858f3cf894abda8667e66b645b169e5"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_03_prepare_close/T23_03_prepare_close.pdf",
+      "sha256": "7c30e3a3ba7a34a535170f6071aa3a2fad595263a7a2248529dc701a56880afc"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_03_prepare_close/page-1.png",
+      "sha256": "f2eee7e5b2f8bab9224b075a58f2df75a00c9788d27665d14574bf8cc6e8dd6b"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_04_voluntary_feedback/T23_04_voluntary_feedback.pdf",
+      "sha256": "91c0a3a608c2c4ee2900e6235be64e3e2a775af170a3b9f1fbfd3d04fcff2bb7"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_04_voluntary_feedback/page-1.png",
+      "sha256": "30f1a211a249aa76778243018b807475759c07dc58aebcf9279e356a3791fd97"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_05_teacher_observation/T23_05_teacher_observation.pdf",
+      "sha256": "a9f2e6b5e83179083d841b26b337192ba6d9b9a5853a839d46f7acc328330621"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_05_teacher_observation/page-1.png",
+      "sha256": "fd7db8d04c1e9db413b79e96d75d276d13bc7c7b0d71c696135115c11e4ea1bf"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_06_revision_record/T23_06_revision_record.pdf",
+      "sha256": "f5293a349c60b9c9dd19eb389c642ef3395e2cf0923e701bb90f32bc3236ef4f"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_06_revision_record/page-1.png",
+      "sha256": "cbc74a8cd50d5910aa39508a142a54675a4d87d14afba9cbba6c85fc2756bfca"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_07_new_member/T23_07_new_member.pdf",
+      "sha256": "9ea46ce2ad61b71b4f4d68091c07bf9c7121782ad54fb3c4cb30b1430daa78f6"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_07_new_member/page-1.png",
+      "sha256": "9885a6d0b11e3c78c7714b0f5b0346274569b36fc052c06f949fa828c75247c5"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_08_paper_game_log/T23_08_paper_game_log.pdf",
+      "sha256": "db3d26fa182f03bb25eb456063e246d8a847519675b9df90b5b87e5eb756d525"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_08_paper_game_log/page-1.png",
+      "sha256": "a1d2e2da9fa5f5ae51f9bbedab4db5a491f0b4a6c1e58266bbb0dbf24b7fd5d8"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_activity_01/T23_activity_01.pdf",
+      "sha256": "840cbbda6ad92fc03af876a43be939c5da0be32d7fc34e7f47247ed072bb067f"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_activity_01/page-1.png",
+      "sha256": "a20e3078bc27375f98e20d72794039518e9a27af9e0fd078c0e3c23358827411"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_activity_02/T23_activity_02.pdf",
+      "sha256": "2ae34a2c01d13953cbb28014a060abba2a1fe6513a9a6de8dc9cdcad206fb85a"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_activity_02/page-1.png",
+      "sha256": "83df2c67d53912b757ad4ad64be43ee6f6a08048e900fb603c015397583c866e"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_activity_03/T23_activity_03.pdf",
+      "sha256": "3e466d1e42f50acefb92782c45f4dc5dd99b31ea2eaf5267ca11a85c413d79ed"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_activity_03/page-1.png",
+      "sha256": "c493f261739326e6d56d8ed7dead56feaf598085c95638118ac01ed9b9e700c8"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_activity_04/T23_activity_04.pdf",
+      "sha256": "4366bf8a4442b43def769c8e5ccdbb4c5ab00d877fc33d877e5bb49e0e9e76b3"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_activity_04/page-1.png",
+      "sha256": "be13b36934a63c8e1aff629cffa6314a4b419bf8b40b7e2296eb37dbee5ca401"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_activity_05/T23_activity_05.pdf",
+      "sha256": "1ee60fa0bf1562513430732ed67190ecf4aba4bea3423542324720b07b8192cc"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_activity_05/page-1.png",
+      "sha256": "eb912485aa4bb1eac11241391fe4f39f9f12c8d1529422a3918e3a478909cfa6"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_activity_06/T23_activity_06.pdf",
+      "sha256": "09e0375098ff4c4ae5b76ba1b3b1f943bb4b6ac9a065b92a5def41ef3b48533c"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_activity_06/page-1.png",
+      "sha256": "f278638d9e6ead56a21b1885842ca68cfe8510ef9011981436bb3c03d12ee55e"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_board_5x5_A4/page-1.png",
+      "sha256": "7b32b5c0cce2ace888a941290725c4f9518677dce8dd516507addd593ba21009"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/T23_facilitator_manual.pdf",
+      "sha256": "3f0079b4e4332390b0ed24da139f46c80b36b79c88dbd1a57ee006588ba9b077"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-1.png",
+      "sha256": "c164e924d160c34f025849d6cac1ce85cb8c0cdf1f44a0c99ab72d643a0aa93d"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-10.png",
+      "sha256": "00f827be2539ccbc2974b1b5a4725aff6df1820466450500dbfa9bc5896e81fc"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-11.png",
+      "sha256": "a98f25c66d6dc0088d46daa947968a460b4d9abea3cacb308d492755d4417a90"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-12.png",
+      "sha256": "e199f9b98096404a616afa598bf9a912effe788d0175edb5643f8480e5697451"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-13.png",
+      "sha256": "428c7f313e9144e96cc39873413ecd4ab714e91c7321d58996f5e8059ecbb4c8"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-14.png",
+      "sha256": "211811a440137c1554969a7ba099da2ddf2f33f2546bbffc8f5238b859d758c2"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-15.png",
+      "sha256": "7598c8ba64d345fd8a4f9347a053309ab70af71d7daa7565989815c9f2db5418"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-16.png",
+      "sha256": "73d4129bd322d9b08fb16ec8daee72a0019d937d778ebcb7820fcd3b7fe71ca0"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-17.png",
+      "sha256": "d886a2f57c1e70b75e7f2a15bf918549d3ec5a4cfa013169473d3d5192335c19"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-18.png",
+      "sha256": "5b4d1ad1c79ad9dbaaa258945a1e43ab328ac2f1fc0146374fec0394e6721acc"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-19.png",
+      "sha256": "a532fe97576cf23be645cd4f3940552a8206817c597e0d47640d3d93e0b1727d"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-2.png",
+      "sha256": "9218b5a8c9b0dd0d264d01944c53cc11822d3f4a6d33569484617aeb226b7a79"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-20.png",
+      "sha256": "f3509ed984b2419c92ec8f6835b7e64417556b041dee9f24f6de71788ebe152c"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-3.png",
+      "sha256": "4a60c6f7ef02cd0c9edf71cdfc7c5ec45a585c14fe97ca1a8b1f4a1f730407c3"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-4.png",
+      "sha256": "cb448565ed583652e30431949d90ce24b6c2bfa1321c82ffafd20205c299625a"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-5.png",
+      "sha256": "34bd98ba1fc8e941cff6da3d0204fe4d6604e1ec20bf35a4c78f565e839fa137"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-6.png",
+      "sha256": "0bb2d221211e9c87317881a2fbb0b54a23a65ca2edd5973b425dc5cd5146c415"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-7.png",
+      "sha256": "a1fa298d120b469681215b11bfbccff58d095991f025779e5a6f8c9020477ce2"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-8.png",
+      "sha256": "f3cf07ae7f9f0c3f6810a6170eb63fc900ba56f699274a79dc5de8fe10fba263"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-9.png",
+      "sha256": "7ce2cb32b64142feb4329cb043d39e1ee924bf44acd4a13e3030934baa06ae0b"
+    }
+  ]
+}

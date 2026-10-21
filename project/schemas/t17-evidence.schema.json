@@ -1,0 +1,534 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "urn:go-club:schema:t17:1",
+  "title": "T17 local evidence workspace and reviewed export",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9._-]{0,79}$"
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "rulesetId": {
+      "const": "GO-CLUB-AREA-1"
+    },
+    "kind": {
+      "enum": [
+        "T17Workspace",
+        "T17EvidenceReport"
+      ]
+    },
+    "activities": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Activity"
+      },
+      "maxItems": 500
+    },
+    "feedback": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/FeedbackEntry"
+      },
+      "maxItems": 5000
+    },
+    "improvements": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Improvement"
+      },
+      "maxItems": 500
+    },
+    "processes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Process"
+      },
+      "maxItems": 1000
+    },
+    "exportPolicy": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "includeTests": {
+              "type": "boolean"
+            },
+            "excludedWithoutConsent": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "reviewedFreeText": {
+              "const": true
+            }
+          },
+          "required": [
+            "includeTests",
+            "excludedWithoutConsent",
+            "reviewedFreeText"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "id",
+    "revision",
+    "rulesetId",
+    "kind",
+    "activities",
+    "feedback",
+    "improvements",
+    "processes",
+    "exportPolicy"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "Activity": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9._-]{0,79}$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "rulesetId": {
+          "const": "GO-CLUB-AREA-1"
+        },
+        "kind": {
+          "const": "ActivityRecord"
+        },
+        "date": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "developmentOnly": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "id",
+        "revision",
+        "rulesetId",
+        "kind",
+        "date",
+        "title",
+        "developmentOnly"
+      ],
+      "additionalProperties": false
+    },
+    "FeedbackEntry": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9._-]{0,79}$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "rulesetId": {
+          "const": "GO-CLUB-AREA-1"
+        },
+        "kind": {
+          "const": "FeedbackEntry"
+        },
+        "activityId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "issue": {
+          "enum": [
+            "too-hard",
+            "unclear",
+            "bug",
+            "other",
+            null
+          ]
+        },
+        "resourceRef": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 200
+                },
+                "revision": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              },
+              "required": [
+                "id",
+                "revision"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "feedback": {
+          "$ref": "urn:go-club:schema:content:1#/$defs/Feedback"
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "id",
+        "revision",
+        "rulesetId",
+        "kind",
+        "activityId",
+        "issue",
+        "resourceRef",
+        "feedback"
+      ],
+      "additionalProperties": false
+    },
+    "Improvement": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9._-]{0,79}$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "rulesetId": {
+          "const": "GO-CLUB-AREA-1"
+        },
+        "kind": {
+          "const": "ImprovementRecord"
+        },
+        "developmentOnly": {
+          "type": "boolean"
+        },
+        "activityId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "problem": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "evidenceIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "maxItems": 100
+        },
+        "evidenceNote": {
+          "type": "string",
+          "maxLength": 20000
+        },
+        "resourceRef": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 200
+                },
+                "revision": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              },
+              "required": [
+                "id",
+                "revision"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "change": {
+          "type": "string",
+          "maxLength": 20000
+        },
+        "changeDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "validationMethod": {
+          "type": "string",
+          "maxLength": 20000
+        },
+        "implementationDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "afterObservation": {
+          "anyOf": [
+            {
+              "type": "string",
+              "maxLength": 20000
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "nextStep": {
+          "type": "string",
+          "maxLength": 20000
+        },
+        "state": {
+          "enum": [
+            "planned",
+            "revised",
+            "implemented"
+          ]
+        },
+        "revisionLink": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "beforeRef": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 200
+                    },
+                    "revision": {
+                      "type": "integer",
+                      "minimum": 1
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "revision"
+                  ],
+                  "additionalProperties": false
+                },
+                "afterRef": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 200
+                    },
+                    "revision": {
+                      "type": "integer",
+                      "minimum": 1
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "revision"
+                  ],
+                  "additionalProperties": false
+                },
+                "before": {
+                  "anyOf": [
+                    {
+                      "$ref": "urn:go-club:schema:content:1#/$defs/Puzzle"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "after": {
+                  "anyOf": [
+                    {
+                      "$ref": "urn:go-club:schema:content:1#/$defs/Puzzle"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "beforeRef",
+                "afterRef",
+                "before",
+                "after"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "id",
+        "revision",
+        "rulesetId",
+        "kind",
+        "developmentOnly",
+        "activityId",
+        "problem",
+        "evidenceIds",
+        "evidenceNote",
+        "resourceRef",
+        "change",
+        "changeDate",
+        "validationMethod",
+        "implementationDate",
+        "afterObservation",
+        "nextStep",
+        "state",
+        "revisionLink"
+      ],
+      "additionalProperties": false
+    },
+    "Process": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9._-]{0,79}$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "rulesetId": {
+          "const": "GO-CLUB-AREA-1"
+        },
+        "kind": {
+          "const": "CASProcessRecord"
+        },
+        "developmentOnly": {
+          "type": "boolean"
+        },
+        "activityId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "date": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "design": {
+          "type": "string",
+          "maxLength": 20000
+        },
+        "peerContribution": {
+          "type": "string",
+          "maxLength": 20000
+        },
+        "aiAssistance": {
+          "type": "string",
+          "maxLength": 20000
+        },
+        "references": {
+          "type": "string",
+          "maxLength": 20000
+        },
+        "implementation": {
+          "type": "string",
+          "maxLength": 20000
+        },
+        "actualMinutes": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100000
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "reflection": {
+          "type": "string",
+          "maxLength": 20000
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "id",
+        "revision",
+        "rulesetId",
+        "kind",
+        "developmentOnly",
+        "activityId",
+        "date",
+        "design",
+        "peerContribution",
+        "aiAssistance",
+        "references",
+        "implementation",
+        "actualMinutes",
+        "reflection"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

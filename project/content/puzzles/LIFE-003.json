@@ -1,0 +1,308 @@
+{
+  "schemaVersion": 1,
+  "id": "LIFE-003",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "Puzzle",
+  "developmentOnly": false,
+  "category": "LIFE",
+  "difficulty": {
+    "level": "elementary",
+    "rationale": "一次局部决定，需区分即时目标与后续应对。"
+  },
+  "prompt": "黑先。在 A5、B5、C5 的空间内，本手做出两个独立单点真眼。",
+  "initialPosition": {
+    "schemaVersion": 1,
+    "id": "POS-LIFE-003",
+    "revision": 1,
+    "rulesetId": "GO-CLUB-AREA-1",
+    "kind": "Position",
+    "size": 5,
+    "stones": [
+      {
+        "row": 0,
+        "col": 3,
+        "color": "B"
+      },
+      {
+        "row": 1,
+        "col": 0,
+        "color": "B"
+      },
+      {
+        "row": 1,
+        "col": 1,
+        "color": "B"
+      },
+      {
+        "row": 1,
+        "col": 2,
+        "color": "B"
+      },
+      {
+        "row": 1,
+        "col": 3,
+        "color": "B"
+      },
+      {
+        "row": 0,
+        "col": 4,
+        "color": "W"
+      },
+      {
+        "row": 1,
+        "col": 4,
+        "color": "W"
+      },
+      {
+        "row": 2,
+        "col": 0,
+        "color": "W"
+      },
+      {
+        "row": 2,
+        "col": 1,
+        "color": "W"
+      },
+      {
+        "row": 2,
+        "col": 2,
+        "color": "W"
+      },
+      {
+        "row": 2,
+        "col": 3,
+        "color": "W"
+      },
+      {
+        "row": 2,
+        "col": 4,
+        "color": "W"
+      }
+    ],
+    "toPlay": "B",
+    "historyPolicy": "fresh-setup",
+    "history": null
+  },
+  "targetMarkers": [
+    {
+      "markerId": "target-1",
+      "type": "target",
+      "points": [
+        {
+          "row": 1,
+          "col": 1
+        }
+      ],
+      "label": "目标1：B4",
+      "owner": "B"
+    }
+  ],
+  "firstPlayer": "B",
+  "conditions": {
+    "boundary": "full-board",
+    "external": "真实完整 5×5 小棋盘练习，图外无棋子，不使用裁切边缘。",
+    "assumptions": [
+      "成功标准：本手产生两个被同一黑块包围的独立单点空区。",
+      "常见错误：黑 A5 后剩 B5、C5 相连，仍只有一个空间。白 B5，黑 C5 提白，白再 B5 可提掉原黑块；末手与之前布局不同，不是劫。",
+      "同伴讨论：为什么中点与端点虽然都在内部，结果却不同？",
+      "新教学起点，过去劫史未知；从当前布局建立新历史，不宣称来自合法实战棋谱。"
+    ],
+    "viewport": null
+  },
+  "hints": [
+    "先检查目标块的全部气。",
+    "比较候选点落下后，哪些棋子连接或被提走。",
+    "在完整棋盘上重放一手，再按成功标准核对。"
+  ],
+  "answer": {
+    "type": "move-tree",
+    "rootNodeId": "root",
+    "nodes": [
+      {
+        "nodeId": "root",
+        "move": null,
+        "children": [
+          "l1-1",
+          "l2-1"
+        ],
+        "outcome": "continue",
+        "terminalStatus": null,
+        "evidence": [],
+        "explanation": "黑 B5 接上 B4，把空间分为 A5、C5 两个单点眼。每个眼的邻接黑子都在同一块，另一眼使白不能合法吃进，黑不自填眼即可保有此两眼结构。"
+      },
+      {
+        "nodeId": "l1-1",
+        "move": {
+          "type": "place",
+          "color": "B",
+          "at": {
+            "row": 0,
+            "col": 1
+          }
+        },
+        "children": [],
+        "outcome": "success",
+        "terminalStatus": null,
+        "evidence": [
+          "黑 B5 接上 B4，把空间分为 A5、C5 两个单点眼。每个眼的邻接黑子都在同一块，另一眼使白不能合法吃进，黑不自填眼即可保有此两眼结构。"
+        ],
+        "explanation": "黑 B5 接上 B4，把空间分为 A5、C5 两个单点眼。每个眼的邻接黑子都在同一块，另一眼使白不能合法吃进，黑不自填眼即可保有此两眼结构。"
+      },
+      {
+        "nodeId": "l2-1",
+        "move": {
+          "type": "place",
+          "color": "B",
+          "at": {
+            "row": 0,
+            "col": 0
+          }
+        },
+        "children": [
+          "l2-2"
+        ],
+        "outcome": "failure",
+        "terminalStatus": null,
+        "evidence": [],
+        "explanation": "黑 A5 后剩 B5、C5 相连，仍只有一个空间。白 B5，黑 C5 提白，白再 B5 可提掉原黑块；末手与之前布局不同，不是劫。"
+      },
+      {
+        "nodeId": "l2-2",
+        "move": {
+          "type": "place",
+          "color": "W",
+          "at": {
+            "row": 0,
+            "col": 1
+          }
+        },
+        "children": [
+          "l2-3"
+        ],
+        "outcome": "continue",
+        "terminalStatus": null,
+        "evidence": [],
+        "explanation": "按顺序重放；成功范围见题干。"
+      },
+      {
+        "nodeId": "l2-3",
+        "move": {
+          "type": "place",
+          "color": "B",
+          "at": {
+            "row": 0,
+            "col": 2
+          }
+        },
+        "children": [
+          "l2-4"
+        ],
+        "outcome": "continue",
+        "terminalStatus": null,
+        "evidence": [],
+        "explanation": "按顺序重放；成功范围见题干。"
+      },
+      {
+        "nodeId": "l2-4",
+        "move": {
+          "type": "place",
+          "color": "W",
+          "at": {
+            "row": 0,
+            "col": 1
+          }
+        },
+        "children": [],
+        "outcome": "failure",
+        "terminalStatus": null,
+        "evidence": [
+          "黑 A5 后剩 B5、C5 相连，仍只有一个空间。白 B5，黑 C5 提白，白再 B5 可提掉原黑块；末手与之前布局不同，不是劫。"
+        ],
+        "explanation": "黑 A5 后剩 B5、C5 相连，仍只有一个空间。白 B5，黑 C5 提白，白再 B5 可提掉原黑块；末手与之前布局不同，不是劫。"
+      }
+    ],
+    "uncoveredPolicy": "unknown",
+    "uniquenessClaim": false,
+    "uniquenessEvidence": []
+  },
+  "coveredBranches": [
+    [
+      "root",
+      "l1-1"
+    ],
+    [
+      "root",
+      "l2-1",
+      "l2-2",
+      "l2-3",
+      "l2-4"
+    ]
+  ],
+  "sources": [
+    {
+      "type": "original",
+      "title": "T09 原创题目、表达与坐标图",
+      "url": null,
+      "accessedAt": null,
+      "note": "依据 GO-CLUB-AREA-1 自行设计和模型推导，未复制协会题图或网上题库。不是教师审题或学生记录。"
+    },
+    {
+      "type": "reference",
+      "title": "British Go Association: How to Play",
+      "url": "https://www.britgo.org/intro/intro2.html",
+      "accessedAt": "2026-09-07",
+      "note": "仅核对正交连接、气、提子与两眼的一般概念。自定义计分、停手及重复规则以项目约定为准；原创题目的正确性另行验证。"
+    }
+  ],
+  "validation": {
+    "structure": {
+      "status": "passed",
+      "method": "T00 structure / T01 engine / independent vectors as applicable",
+      "checkedAt": "2026-09-07",
+      "evidence": [
+        "content/validation/results.json: LIFE-003",
+        "content/t09/pedagogy.json: LIFE-003"
+      ]
+    },
+    "moveLegality": {
+      "status": "passed",
+      "method": "T00 structure / T01 engine / independent vectors as applicable",
+      "checkedAt": "2026-09-07",
+      "evidence": [
+        "content/validation/results.json: LIFE-003",
+        "content/t09/pedagogy.json: LIFE-003"
+      ]
+    },
+    "solutionChecked": {
+      "status": "passed",
+      "method": "T00 structure / T01 engine / independent vectors as applicable",
+      "checkedAt": "2026-09-07",
+      "evidence": [
+        "content/validation/results.json: LIFE-003",
+        "content/t09/pedagogy.json: LIFE-003"
+      ]
+    },
+    "externalReferenceChecked": {
+      "status": "passed",
+      "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+      "checkedAt": "2026-09-07",
+      "evidence": [
+        "content/validation/results.json: LIFE-003",
+        "content/t09/pedagogy.json: LIFE-003",
+        "content/t09/SOURCES.md"
+      ]
+    },
+    "modelChecked": {
+      "status": "passed",
+      "method": "Authored reasoning + explicit finite scope, not human review",
+      "checkedAt": "2026-09-07",
+      "evidence": [
+        "content/validation/results.json: LIFE-003",
+        "content/t09/pedagogy.json: LIFE-003"
+      ]
+    },
+    "humanReviewed": null
+  },
+  "relatedContent": []
+}

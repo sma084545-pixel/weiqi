@@ -1,0 +1,7 @@
+? Verifying lockfile against supply-chain policies (176 entries)...
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +108
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+✗ Lockfile failed supply-chain policy check (176 entries in 393ms)
+[ERR_PNPM_NO_OFFLINE_META] Failed to resolve @asamuzakjp/dom-selector in package mirror /Users/maxiao/Library/Caches/pnpm/v11/metadata-full/registry.npmjs.org/@asamuzakjp/dom-selector.jsonl

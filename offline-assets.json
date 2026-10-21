@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "version": "0.20.1",
+  "resources": [
+    "./ONLINE_SETUP.md",
+    "./app.webmanifest",
+    "./assets/index-CEIKv_I5.js",
+    "./assets/index-D5QJxBHW.css",
+    "./content/formal-content-v1.json",
+    "./index.html",
+    "./materials/t13/territory-counting-card.md",
+    "./materials/t17/CAS-evidence-template.md",
+    "./offline.html",
+    "./version.json"
+  ]
+}

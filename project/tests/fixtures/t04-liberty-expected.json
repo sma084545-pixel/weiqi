@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "FIXTURE-T04-LIBERTIES",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "derivedBy": "independent manual enumeration before engine execution",
+  "cases": [
+    {"id": "DEMO-LIB-001", "phase": "before", "target": {"row": 2, "col": 2}, "group": [{"row": 2, "col": 2}], "liberties": [{"row": 1, "col": 2}, {"row": 2, "col": 1}, {"row": 2, "col": 3}, {"row": 3, "col": 2}]},
+    {"id": "DEMO-LIB-002", "phase": "before", "target": {"row": 0, "col": 2}, "group": [{"row": 0, "col": 2}], "liberties": [{"row": 0, "col": 1}, {"row": 0, "col": 3}, {"row": 1, "col": 2}]},
+    {"id": "DEMO-LIB-003", "phase": "before", "target": {"row": 0, "col": 0}, "group": [{"row": 0, "col": 0}], "liberties": [{"row": 0, "col": 1}, {"row": 1, "col": 0}]},
+    {"id": "DEMO-LIB-004", "phase": "before", "target": {"row": 2, "col": 2}, "group": [{"row": 2, "col": 2}, {"row": 2, "col": 3}], "liberties": [{"row": 1, "col": 2}, {"row": 1, "col": 3}, {"row": 2, "col": 1}, {"row": 2, "col": 4}, {"row": 3, "col": 2}, {"row": 3, "col": 3}]},
+    {"id": "DEMO-LIB-005", "phase": "before", "target": {"row": 1, "col": 1}, "group": [{"row": 1, "col": 1}], "liberties": [{"row": 0, "col": 1}, {"row": 1, "col": 0}, {"row": 1, "col": 2}, {"row": 2, "col": 1}]},
+    {"id": "DEMO-LIB-006", "phase": "before", "target": {"row": 2, "col": 1}, "group": [{"row": 2, "col": 1}, {"row": 2, "col": 2}, {"row": 3, "col": 1}], "liberties": [{"row": 1, "col": 1}, {"row": 1, "col": 2}, {"row": 2, "col": 0}, {"row": 2, "col": 3}, {"row": 3, "col": 0}, {"row": 3, "col": 2}, {"row": 4, "col": 1}]},
+    {"id": "DEMO-LIB-007", "phase": "before", "target": {"row": 2, "col": 2}, "group": [{"row": 2, "col": 2}], "liberties": [{"row": 2, "col": 3}]},
+    {"id": "DEMO-LIB-008", "phase": "before", "target": {"row": 2, "col": 1}, "group": [{"row": 2, "col": 1}], "liberties": [{"row": 1, "col": 1}, {"row": 2, "col": 0}, {"row": 2, "col": 2}, {"row": 3, "col": 1}]},
+    {"id": "DEMO-LIB-008", "phase": "after", "target": {"row": 2, "col": 2}, "group": [{"row": 2, "col": 1}, {"row": 2, "col": 2}, {"row": 2, "col": 3}], "liberties": [{"row": 1, "col": 1}, {"row": 1, "col": 2}, {"row": 1, "col": 3}, {"row": 2, "col": 0}, {"row": 2, "col": 4}, {"row": 3, "col": 1}, {"row": 3, "col": 2}, {"row": 3, "col": 3}]}
+  ]
+}

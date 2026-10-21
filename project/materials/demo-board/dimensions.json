@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "T18-DEMO-BOARD-DIMENSIONS",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "taskId": "T18",
+  "resultVersion": "0.2.0+t18.1",
+  "units": "mm",
+  "board9x9": {
+    "lineCount": 9,
+    "intersectionCount": 81,
+    "gridSpacing": 45,
+    "gridIntervals": 8,
+    "gridSpan": 360,
+    "margin": 45,
+    "width": 450,
+    "height": 450,
+    "formula": "total = 2 * margin + (lineCount - 1) * gridSpacing = 2 * 45 + 8 * 45 = 450",
+    "gridOrigin": { "x": 45, "y": 45 },
+    "gridEnd": { "x": 405, "y": 405 },
+    "stoneDiameter": 38,
+    "stoneGapAtAdjacentPoints": 7,
+    "starPointDiameter": 6,
+    "calibrationRulerLength": 100
+  },
+  "markers": {
+    "libertyRing": { "outerDiameter": 30, "innerDiameter": 16, "strokeWidth": 3 },
+    "targetTriangle": { "boundingDiameter": 24, "strokeWidth": 3 },
+    "sequenceNumber": { "diameter": 20, "range": [1, 20] },
+    "lastMove": { "boundingSquare": 18, "symbol": "diagonal-cross" }
+  },
+  "a4Tiling": {
+    "pageWidth": 210,
+    "pageHeight": 297,
+    "orientation": "portrait",
+    "columns": 3,
+    "rows": 2,
+    "viewportWidth": 160,
+    "viewportHeight": 235,
+    "xOffsets": [0, 145, 290],
+    "yOffsets": [0, 215],
+    "horizontalOverlap": 15,
+    "verticalOverlap": 20,
+    "printScale": "100% / actual size",
+    "joinBandsAvoidGridLines": true
+  },
+  "optional13x13": {
+    "status": "parameter recommendation only; no compressed 450 mm board supplied",
+    "lineCount": 13,
+    "gridSpacing": 35,
+    "gridSpan": 420,
+    "margin": 40,
+    "width": 500,
+    "height": 500,
+    "stoneDiameter": 30,
+    "formula": "total = 2 * 40 + 12 * 35 = 500"
+  }
+}

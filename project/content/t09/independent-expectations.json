@@ -1,0 +1,513 @@
+{
+  "schemaVersion": 1,
+  "id": "T09-EXPECTED",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "VerificationVectors",
+  "method": "Before engine execution: authored coordinate enumeration, set arguments, fixed area arithmetic and bounded target predicates. Model reasoning, not human review.",
+  "items": {
+    "LIB-001": {
+      "kind": "liberties",
+      "at": {
+        "row": 4,
+        "col": 4
+      },
+      "expected": [
+        {
+          "row": 3,
+          "col": 4
+        },
+        {
+          "row": 4,
+          "col": 3
+        },
+        {
+          "row": 4,
+          "col": 5
+        },
+        {
+          "row": 5,
+          "col": 4
+        }
+      ]
+    },
+    "LIB-002": {
+      "kind": "liberties",
+      "at": {
+        "row": 0,
+        "col": 0
+      },
+      "expected": [
+        {
+          "row": 0,
+          "col": 1
+        },
+        {
+          "row": 1,
+          "col": 0
+        }
+      ]
+    },
+    "LIB-003": {
+      "kind": "liberties",
+      "at": {
+        "row": 2,
+        "col": 1
+      },
+      "expected": [
+        {
+          "row": 1,
+          "col": 1
+        },
+        {
+          "row": 1,
+          "col": 2
+        },
+        {
+          "row": 2,
+          "col": 0
+        },
+        {
+          "row": 2,
+          "col": 3
+        },
+        {
+          "row": 3,
+          "col": 1
+        },
+        {
+          "row": 3,
+          "col": 2
+        }
+      ]
+    },
+    "LIB-004": {
+      "kind": "liberties",
+      "at": {
+        "row": 1,
+        "col": 1
+      },
+      "expected": [
+        {
+          "row": 0,
+          "col": 1
+        },
+        {
+          "row": 1,
+          "col": 0
+        },
+        {
+          "row": 1,
+          "col": 2
+        },
+        {
+          "row": 2,
+          "col": 0
+        },
+        {
+          "row": 2,
+          "col": 3
+        },
+        {
+          "row": 3,
+          "col": 1
+        },
+        {
+          "row": 3,
+          "col": 2
+        }
+      ]
+    },
+    "LIB-005": {
+      "kind": "liberties",
+      "at": {
+        "row": 4,
+        "col": 3
+      },
+      "expected": [
+        {
+          "row": 3,
+          "col": 4
+        },
+        {
+          "row": 4,
+          "col": 5
+        },
+        {
+          "row": 5,
+          "col": 2
+        },
+        {
+          "row": 5,
+          "col": 5
+        },
+        {
+          "row": 6,
+          "col": 3
+        },
+        {
+          "row": 6,
+          "col": 4
+        }
+      ]
+    },
+    "CAP-001": {
+      "kind": "capture-now",
+      "targets": [
+        {
+          "row": 2,
+          "col": 2
+        }
+      ],
+      "accepted": [
+        {
+          "row": 2,
+          "col": 3
+        }
+      ],
+      "captured": 1
+    },
+    "CAP-002": {
+      "kind": "capture-now",
+      "targets": [
+        {
+          "row": 0,
+          "col": 1
+        },
+        {
+          "row": 0,
+          "col": 2
+        }
+      ],
+      "accepted": [
+        {
+          "row": 0,
+          "col": 3
+        }
+      ],
+      "captured": 2
+    },
+    "CAP-003": {
+      "kind": "capture-now",
+      "targets": [
+        {
+          "row": 2,
+          "col": 0
+        }
+      ],
+      "accepted": [
+        {
+          "row": 3,
+          "col": 0
+        }
+      ],
+      "captured": 1
+    },
+    "CAP-004": {
+      "kind": "capture-now",
+      "targets": [
+        {
+          "row": 2,
+          "col": 1
+        },
+        {
+          "row": 2,
+          "col": 3
+        }
+      ],
+      "accepted": [
+        {
+          "row": 2,
+          "col": 2
+        }
+      ],
+      "captured": 2
+    },
+    "CAP-005": {
+      "kind": "capture-now",
+      "targets": [
+        {
+          "row": 1,
+          "col": 2
+        },
+        {
+          "row": 2,
+          "col": 1
+        },
+        {
+          "row": 2,
+          "col": 3
+        },
+        {
+          "row": 3,
+          "col": 2
+        }
+      ],
+      "accepted": [
+        {
+          "row": 2,
+          "col": 2
+        }
+      ],
+      "captured": 4
+    },
+    "CON-001": {
+      "kind": "connect",
+      "targets": [
+        {
+          "row": 2,
+          "col": 1
+        },
+        {
+          "row": 2,
+          "col": 3
+        }
+      ],
+      "accepted": [
+        {
+          "row": 2,
+          "col": 2
+        }
+      ]
+    },
+    "CON-002": {
+      "kind": "connect",
+      "targets": [
+        {
+          "row": 1,
+          "col": 1
+        },
+        {
+          "row": 2,
+          "col": 2
+        }
+      ],
+      "accepted": [
+        {
+          "row": 1,
+          "col": 2
+        },
+        {
+          "row": 2,
+          "col": 1
+        }
+      ]
+    },
+    "CON-003": {
+      "kind": "escape",
+      "targets": [
+        {
+          "row": 2,
+          "col": 2
+        }
+      ],
+      "accepted": [
+        {
+          "row": 3,
+          "col": 2
+        }
+      ]
+    },
+    "CON-004": {
+      "kind": "connect",
+      "targets": [
+        {
+          "row": 0,
+          "col": 1
+        },
+        {
+          "row": 0,
+          "col": 3
+        }
+      ],
+      "accepted": [
+        {
+          "row": 0,
+          "col": 2
+        }
+      ]
+    },
+    "CON-005": {
+      "kind": "connect",
+      "targets": [
+        {
+          "row": 2,
+          "col": 0
+        },
+        {
+          "row": 3,
+          "col": 1
+        }
+      ],
+      "accepted": [
+        {
+          "row": 3,
+          "col": 0
+        }
+      ]
+    },
+    "LIFE-001": {
+      "kind": "two-eyes",
+      "eyes": [
+        {
+          "row": 1,
+          "col": 1
+        },
+        {
+          "row": 1,
+          "col": 3
+        }
+      ],
+      "target": {
+        "row": 1,
+        "col": 2
+      }
+    },
+    "LIFE-002": {
+      "kind": "capture-now",
+      "targets": [
+        {
+          "row": 1,
+          "col": 2
+        },
+        {
+          "row": 2,
+          "col": 1
+        },
+        {
+          "row": 2,
+          "col": 3
+        }
+      ],
+      "accepted": [
+        {
+          "row": 2,
+          "col": 2
+        }
+      ],
+      "captured": 3
+    },
+    "LIFE-003": {
+      "kind": "split-eyes",
+      "target": {
+        "row": 1,
+        "col": 1
+      },
+      "spaces": [
+        {
+          "row": 0,
+          "col": 0
+        },
+        {
+          "row": 0,
+          "col": 1
+        },
+        {
+          "row": 0,
+          "col": 2
+        }
+      ],
+      "accepted": [
+        {
+          "row": 0,
+          "col": 1
+        }
+      ],
+      "sizes": [
+        1,
+        1
+      ]
+    },
+    "LIFE-004": {
+      "kind": "split-eyes",
+      "target": {
+        "row": 1,
+        "col": 2
+      },
+      "spaces": [
+        {
+          "row": 0,
+          "col": 0
+        },
+        {
+          "row": 0,
+          "col": 1
+        },
+        {
+          "row": 0,
+          "col": 2
+        },
+        {
+          "row": 0,
+          "col": 3
+        }
+      ],
+      "accepted": [
+        {
+          "row": 0,
+          "col": 1
+        },
+        {
+          "row": 0,
+          "col": 2
+        }
+      ],
+      "sizes": [
+        1,
+        2
+      ]
+    },
+    "LIFE-005": {
+      "kind": "capture-within-3",
+      "target": {
+        "row": 1,
+        "col": 1
+      },
+      "accepted": [
+        {
+          "row": 0,
+          "col": 1
+        },
+        {
+          "row": 0,
+          "col": 2
+        }
+      ]
+    },
+    "AREA-001": {
+      "kind": "area-reference",
+      "ref": "END-001"
+    },
+    "AREA-002": {
+      "kind": "area-reference",
+      "ref": "END-002"
+    },
+    "AREA-003": {
+      "kind": "area-reference",
+      "ref": "END-003"
+    },
+    "AREA-004": {
+      "kind": "area-reference",
+      "ref": "END-004"
+    },
+    "AREA-005": {
+      "kind": "area-reference",
+      "ref": "END-005"
+    },
+    "DISC-001": {
+      "kind": "open-rubric"
+    },
+    "DISC-002": {
+      "kind": "open-rubric"
+    },
+    "DISC-003": {
+      "kind": "open-rubric"
+    },
+    "DISC-004": {
+      "kind": "open-rubric"
+    },
+    "DISC-005": {
+      "kind": "open-rubric"
+    }
+  }
+}

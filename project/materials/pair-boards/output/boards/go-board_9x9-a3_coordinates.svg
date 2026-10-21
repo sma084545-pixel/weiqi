@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 420 297" id="T19-BOARD-9X9-A3-COORDINATES">
+<metadata>{&quot;boardSize&quot;: 9, &quot;coordinates&quot;: true, &quot;id&quot;: &quot;T19-BOARD-9X9-A3-COORDINATES&quot;, &quot;kind&quot;: &quot;printable-board&quot;, &quot;pageMm&quot;: [420, 297], &quot;printScalePercent&quot;: 100, &quot;resultVersion&quot;: &quot;0.2.0-t19.1&quot;, &quot;revision&quot;: 1, &quot;rulesetId&quot;: &quot;GO-CLUB-AREA-1&quot;, &quot;schemaVersion&quot;: 1, &quot;spacingMm&quot;: 28, &quot;stoneDiameterMm&quot;: [24, 26]}</metadata>
+<style>text{font-family:"Arial Unicode MS","PingFang SC","Hiragino Sans GB",sans-serif}.cut{stroke-dasharray:2 1}.guide{stroke-dasharray:3 2}</style>
+<rect x="12.000" y="23.000" width="248.000" height="252.000" rx="2.500" fill="#F6D88A" stroke="#7B5A20" stroke-width="0.550" class="board-panel"/>
+<line x1="24.000" y1="37.000" x2="24.000" y2="261.000" stroke="#111111" stroke-width="0.420" class="grid-line vertical"/>
+<line x1="24.000" y1="37.000" x2="248.000" y2="37.000" stroke="#111111" stroke-width="0.420" class="grid-line horizontal"/>
+<line x1="52.000" y1="37.000" x2="52.000" y2="261.000" stroke="#111111" stroke-width="0.420" class="grid-line vertical"/>
+<line x1="24.000" y1="65.000" x2="248.000" y2="65.000" stroke="#111111" stroke-width="0.420" class="grid-line horizontal"/>
+<line x1="80.000" y1="37.000" x2="80.000" y2="261.000" stroke="#111111" stroke-width="0.420" class="grid-line vertical"/>
+<line x1="24.000" y1="93.000" x2="248.000" y2="93.000" stroke="#111111" stroke-width="0.420" class="grid-line horizontal"/>
+<line x1="108.000" y1="37.000" x2="108.000" y2="261.000" stroke="#111111" stroke-width="0.420" class="grid-line vertical"/>
+<line x1="24.000" y1="121.000" x2="248.000" y2="121.000" stroke="#111111" stroke-width="0.420" class="grid-line horizontal"/>
+<line x1="136.000" y1="37.000" x2="136.000" y2="261.000" stroke="#111111" stroke-width="0.420" class="grid-line vertical"/>
+<line x1="24.000" y1="149.000" x2="248.000" y2="149.000" stroke="#111111" stroke-width="0.420" class="grid-line horizontal"/>
+<line x1="164.000" y1="37.000" x2="164.000" y2="261.000" stroke="#111111" stroke-width="0.420" class="grid-line vertical"/>
+<line x1="24.000" y1="177.000" x2="248.000" y2="177.000" stroke="#111111" stroke-width="0.420" class="grid-line horizontal"/>
+<line x1="192.000" y1="37.000" x2="192.000" y2="261.000" stroke="#111111" stroke-width="0.420" class="grid-line vertical"/>
+<line x1="24.000" y1="205.000" x2="248.000" y2="205.000" stroke="#111111" stroke-width="0.420" class="grid-line horizontal"/>
+<line x1="220.000" y1="37.000" x2="220.000" y2="261.000" stroke="#111111" stroke-width="0.420" class="grid-line vertical"/>
+<line x1="24.000" y1="233.000" x2="248.000" y2="233.000" stroke="#111111" stroke-width="0.420" class="grid-line horizontal"/>
+<line x1="248.000" y1="37.000" x2="248.000" y2="261.000" stroke="#111111" stroke-width="0.420" class="grid-line vertical"/>
+<line x1="24.000" y1="261.000" x2="248.000" y2="261.000" stroke="#111111" stroke-width="0.420" class="grid-line horizontal"/>
+<circle cx="80.000" cy="93.000" r="1.400" fill="#111111" stroke="#111111" stroke-width="0.000" class="navigation-dot"/>
+<circle cx="192.000" cy="93.000" r="1.400" fill="#111111" stroke="#111111" stroke-width="0.000" class="navigation-dot"/>
+<circle cx="136.000" cy="149.000" r="1.400" fill="#111111" stroke="#111111" stroke-width="0.000" class="navigation-dot"/>
+<circle cx="80.000" cy="205.000" r="1.400" fill="#111111" stroke="#111111" stroke-width="0.000" class="navigation-dot"/>
+<circle cx="192.000" cy="205.000" r="1.400" fill="#111111" stroke="#111111" stroke-width="0.000" class="navigation-dot"/>
+<text x="24.000" y="31.000" font-size="3.500mm" text-anchor="middle" fill="#111111" font-weight="bold" class="coordinate column top">A</text>
+<text x="24.000" y="270.000" font-size="3.500mm" text-anchor="middle" fill="#111111" font-weight="bold" class="coordinate column bottom">A</text>
+<text x="52.000" y="31.000" font-size="3.500mm" text-anchor="middle" fill="#111111" font-weight="bold" class="coordinate column top">B</text>
+<text x="52.000" y="270.000" font-size="3.500mm" text-anchor="middle" fill="#111111" font-weight="bold" class="coordinate column bottom">B</text>
+<text x="80.000" y="31.000" font-size="3.500mm" text-anchor="middle" fill="#111111" font-weight="bold" class="coordinate column top">C</text>
+<text x="80.000" y="270.000" font-size="3.500mm" text-anchor="middle" fill="#111111" font-weight="bold" class="coordinate column bottom">C</text>
+<text x="108.000" y="31.000" font-size="3.500mm" text-anchor="middle" fill="#111111" font-weight="bold" class="coordinate column top">D</text>
+<text x="108.000" y="270.000" font-size="3.500mm" text-anchor="middle" fill="#111111" font-weight="bold" class="coordinate column bottom">D</text>
+<text x="136.000" y="31.000" font-size="3.500mm" text-anchor="middle" fill="#111111" font-weight="bold" class="coordinate column top">E</text>
+<text x="136.000" y="270.000" font-size="3.500mm" text-anchor="middle" fill="#111111" font-weight="bold" class="coordinate column bottom">E</text>
+<text x="164.000" y="31.000" font-size="3.500mm" text-anchor="middle" fill="#111111" font-weight="bold" class="coordinate column top">F</text>
+<text x="164.000" y="270.000" font-size="3.500mm" text-anchor="middle" fill="#111111" font-weight="bold" class="coordinate column bottom">F</text>
+<text x="192.000" y="31.000" font-size="3.500mm" text-anchor="middle" fill="#111111" font-weight="bold" class="coordinate column top">G</text>
+<text x="192.000" y="270.000" font-size="3.500mm" text-anchor="middle" fill="#111111" font-weight="bold" class="coordinate column bottom">G</text>
+<text x="220.000" y="31.000" font-size="3.500mm" text-anchor="middle" fill="#111111" font-weight="bold" class="coordinate column top">H</text>
+<text x="220.000" y="270.000" font-size="3.500mm" text-anchor="middle" fill="#111111" font-weight="bold" class="coordinate column bottom">H</text>
+<text x="248.000" y="31.000" font-size="3.500mm" text-anchor="middle" fill="#111111" font-weight="bold" class="coordinate column top">J</text>
+<text x="248.000" y="270.000" font-size="3.500mm" text-anchor="middle" fill="#111111" font-weight="bold" class="coordinate column bottom">J</text>
+<text x="16.000" y="38.200" font-size="3.500mm" text-anchor="middle" fill="#111111" font-weight="bold" class="coordinate row left">9</text>
+<text x="256.000" y="38.200" font-size="3.500mm" text-anchor="middle" fill="#111111" font-weight="bold" class="coordinate row right">9</text>
+<text x="16.000" y="66.200" font-size="3.500mm" text-anchor="middle" fill="#111111" font-weight="bold" class="coordinate row left">8</text>
+<text x="256.000" y="66.200" font-size="3.500mm" text-anchor="middle" fill="#111111" font-weight="bold" class="coordinate row right">8</text>
+<text x="16.000" y="94.200" font-size="3.500mm" text-anchor="middle" fill="#111111" font-weight="bold" class="coordinate row left">7</text>
+<text x="256.000" y="94.200" font-size="3.500mm" text-anchor="middle" fill="#111111" font-weight="bold" class="coordinate row right">7</text>
+<text x="16.000" y="122.200" font-size="3.500mm" text-anchor="middle" fill="#111111" font-weight="bold" class="coordinate row left">6</text>
+<text x="256.000" y="122.200" font-size="3.500mm" text-anchor="middle" fill="#111111" font-weight="bold" class="coordinate row right">6</text>
+<text x="16.000" y="150.200" font-size="3.500mm" text-anchor="middle" fill="#111111" font-weight="bold" class="coordinate row left">5</text>
+<text x="256.000" y="150.200" font-size="3.500mm" text-anchor="middle" fill="#111111" font-weight="bold" class="coordinate row right">5</text>
+<text x="16.000" y="178.200" font-size="3.500mm" text-anchor="middle" fill="#111111" font-weight="bold" class="coordinate row left">4</text>
+<text x="256.000" y="178.200" font-size="3.500mm" text-anchor="middle" fill="#111111" font-weight="bold" class="coordinate row right">4</text>
+<text x="16.000" y="206.200" font-size="3.500mm" text-anchor="middle" fill="#111111" font-weight="bold" class="coordinate row left">3</text>
+<text x="256.000" y="206.200" font-size="3.500mm" text-anchor="middle" fill="#111111" font-weight="bold" class="coordinate row right">3</text>
+<text x="16.000" y="234.200" font-size="3.500mm" text-anchor="middle" fill="#111111" font-weight="bold" class="coordinate row left">2</text>
+<text x="256.000" y="234.200" font-size="3.500mm" text-anchor="middle" fill="#111111" font-weight="bold" class="coordinate row right">2</text>
+<text x="16.000" y="262.200" font-size="3.500mm" text-anchor="middle" fill="#111111" font-weight="bold" class="coordinate row left">1</text>
+<text x="256.000" y="262.200" font-size="3.500mm" text-anchor="middle" fill="#111111" font-weight="bold" class="coordinate row right">1</text>
+<text x="278.000" y="22.000" font-size="5.500mm" text-anchor="start" fill="#111111" font-weight="bold" class="">双人练习棋盘</text>
+<text x="278.000" y="32.000" font-size="4.800mm" text-anchor="start" fill="#35515A" font-weight="bold" class="">9×9 | 坐标版</text>
+<text x="278.000" y="42.000" font-size="3.200mm" text-anchor="start" fill="#222222" font-weight="normal" class="">棋子落在交叉点。黑先。</text>
+<text x="278.000" y="47.500" font-size="3.000mm" text-anchor="start" fill="#222222" font-weight="normal" class="">显示坐标：列 A-T 跳过 I；</text>
+<text x="278.000" y="52.700" font-size="3.000mm" text-anchor="start" fill="#222222" font-weight="normal" class="">行从下往上 1-N。左上角数据坐标为 </text>
+<text x="278.000" y="57.900" font-size="3.000mm" text-anchor="start" fill="#222222" font-weight="normal" class="">row=0, col=0。</text>
+<line x1="278.000" y1="66.100" x2="400.000" y2="66.100" stroke="#7C8B8F" stroke-width="0.300" class=""/>
+<text x="278.000" y="74.100" font-size="3.800mm" text-anchor="start" fill="#111111" font-weight="bold" class="">实际尺寸</text>
+<text x="278.000" y="81.100" font-size="2.900mm" text-anchor="start" fill="#111111" font-weight="normal" class="">纸张：A3 横向 420×297 mm</text>
+<text x="278.000" y="86.300" font-size="2.900mm" text-anchor="start" fill="#111111" font-weight="normal" class="">格距：28 mm</text>
+<text x="278.000" y="91.500" font-size="2.900mm" text-anchor="start" fill="#111111" font-weight="normal" class="">适用棋子：直径 24-26 mm</text>
+<text x="278.000" y="96.700" font-size="2.900mm" text-anchor="start" fill="#111111" font-weight="normal" class="">打印：100% / 实际大小</text>
+<text x="278.000" y="101.900" font-size="2.900mm" text-anchor="start" fill="#111111" font-weight="normal" class="">禁止：适合页面 / 自动缩放</text>
+<text x="278.000" y="110.100" font-size="3.000mm" text-anchor="start" fill="#111111" font-weight="normal" class="">覆膜后可用可擦写笔；</text>
+<text x="278.000" y="115.100" font-size="3.000mm" text-anchor="start" fill="#111111" font-weight="normal" class="">请先在边角试擦。</text>
+<text x="278.000" y="123.100" font-size="2.600mm" text-anchor="start" fill="#111111" font-weight="normal" class="">规则：GO-CLUB-AREA-1</text>
+<text x="278.000" y="128.100" font-size="2.600mm" text-anchor="start" fill="#111111" font-weight="normal" class="">版次：0.2.0-t19.1</text>
+<line x1="278.000" y1="269.000" x2="378.000" y2="269.000" stroke="#111111" stroke-width="0.450" class="calibration-ruler"/>
+<line x1="278.000" y1="266.000" x2="278.000" y2="272.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="278.000" y="275.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">0</text>
+<line x1="288.000" y1="267.000" x2="288.000" y2="271.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="288.000" y="275.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">10</text>
+<line x1="298.000" y1="267.000" x2="298.000" y2="271.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="298.000" y="275.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">20</text>
+<line x1="308.000" y1="267.000" x2="308.000" y2="271.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="308.000" y="275.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">30</text>
+<line x1="318.000" y1="267.000" x2="318.000" y2="271.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="318.000" y="275.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">40</text>
+<line x1="328.000" y1="266.000" x2="328.000" y2="272.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="328.000" y="275.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">50</text>
+<line x1="338.000" y1="267.000" x2="338.000" y2="271.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="338.000" y="275.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">60</text>
+<line x1="348.000" y1="267.000" x2="348.000" y2="271.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="348.000" y="275.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">70</text>
+<line x1="358.000" y1="267.000" x2="358.000" y2="271.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="358.000" y="275.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">80</text>
+<line x1="368.000" y1="267.000" x2="368.000" y2="271.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="368.000" y="275.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">90</text>
+<line x1="378.000" y1="266.000" x2="378.000" y2="272.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="378.000" y="275.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">100</text>
+<text x="328.000" y="265.000" font-size="2.500mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-title">校准尺 100 mm</text>
+</svg>

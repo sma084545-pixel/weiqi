@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "id": "GO-CLUB-PUBLIC-VERSION",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "programVersion": "0.20.1",
+  "resultVersion": "0.20.1-pages.1",
+  "onlineServerConfigured": false
+}

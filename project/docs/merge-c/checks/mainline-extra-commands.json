@@ -1,0 +1,109 @@
+[
+  {
+    "command": [
+      "node",
+      "--import",
+      "tsx",
+      "scripts/validate-content.ts"
+    ],
+    "cwd": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/merge-c-20261006/validation/go-club",
+    "exitCode": 0,
+    "log": "mainline-extra-01.log"
+  },
+  {
+    "command": [
+      "node",
+      "content/tools/test-grade.mjs"
+    ],
+    "cwd": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/merge-c-20261006/validation/go-club",
+    "exitCode": 0,
+    "log": "mainline-extra-02.log"
+  },
+  {
+    "command": [
+      "node",
+      "--import",
+      "tsx",
+      "scripts/validate-t17.ts"
+    ],
+    "cwd": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/merge-c-20261006/validation/go-club",
+    "exitCode": 0,
+    "log": "mainline-extra-03.log"
+  },
+  {
+    "command": [
+      "node",
+      "scripts/verify-merge-a.mjs"
+    ],
+    "cwd": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/merge-c-20261006/validation/go-club",
+    "exitCode": 0,
+    "log": "mainline-extra-04.log"
+  },
+  {
+    "command": [
+      "node",
+      "scripts/verify-t16-refresh.mjs"
+    ],
+    "cwd": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/merge-c-20261006/validation/go-club",
+    "exitCode": 0,
+    "log": "mainline-extra-05.log"
+  },
+  {
+    "command": [
+      "./node_modules/.bin/vite",
+      "build",
+      "--config",
+      "vite.engine.config.ts"
+    ],
+    "cwd": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/merge-c-20261006/validation/go-club",
+    "exitCode": 0,
+    "log": "mainline-extra-06.log"
+  },
+  {
+    "command": [
+      "./node_modules/.bin/tsc",
+      "-p",
+      "tsconfig.engine.json"
+    ],
+    "cwd": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/merge-c-20261006/validation/go-club",
+    "exitCode": 0,
+    "log": "mainline-extra-07.log"
+  },
+  {
+    "command": [
+      "node",
+      "scripts/finish-engine-build.mjs"
+    ],
+    "cwd": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/merge-c-20261006/validation/go-club",
+    "exitCode": 0,
+    "log": "mainline-extra-08.log"
+  },
+  {
+    "command": [
+      "node",
+      "scripts/engine-smoke.mjs"
+    ],
+    "cwd": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/merge-c-20261006/validation/go-club",
+    "exitCode": 0,
+    "log": "mainline-extra-09.log"
+  },
+  {
+    "command": [
+      "./node_modules/.bin/tsc",
+      "-p",
+      "tsconfig.engine-smoke.json"
+    ],
+    "cwd": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/merge-c-20261006/validation/go-club",
+    "exitCode": 0,
+    "log": "mainline-extra-10.log"
+  },
+  {
+    "command": [
+      "node",
+      "scripts/engine-capacity.mjs"
+    ],
+    "cwd": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/merge-c-20261006/validation/go-club",
+    "exitCode": 0,
+    "log": "mainline-extra-11.log"
+  }
+]

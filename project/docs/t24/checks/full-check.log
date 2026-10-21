@@ -1,0 +1,95 @@
+$ pnpm schema:check && pnpm test && pnpm validate:content && pnpm validate:t09 && pnpm test:t09-grader && pnpm test:t14 && pnpm test:t15 && pnpm validate:t17 && pnpm verify:merge-a && pnpm verify:t16-freeze && pnpm build && pnpm test:t16-refresh && pnpm build:engine && pnpm test:engine-build && pnpm test:engine-capacity
+$ node scripts/generate-types.mjs --check
+$ vitest run
+
+ RUN  v5.0.0 /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t24-20261009/mainline/go-club
+
+
+ Test Files  43 passed (43)
+      Tests  358 passed (358)
+   Start at  09:57:55
+   Duration  8.61s (import 31%, environment 26%, tests 26%, transform 16%, worker 1%)
+
+    Isolate  43 workers spawned · ~446ms startup each (spawn + environment, per file)
+             at least ~1.69s faster with isolate: false — reuses workers across files instead of one per file
+
+$ node --import tsx scripts/validate-content.ts
+PASSED valid/bundle.json {"level":"structural","needsRulesReplay":true}
+PASSED valid/feedback-blank.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/game.json {"level":"structural","needsRulesReplay":true}
+PASSED valid/lesson.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/marker.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/move.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/position.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/puzzle.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/setup.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/terminal.json {"level":"structural","needsRulesReplay":false}
+PASSED content/t04/liberty-demos.json {"level":"structural","needsRulesReplay":false}
+PASSED content/t05/capture-demos.json {"level":"structural","needsRulesReplay":false}
+PASSED content/t08/development-terminal.json {"level":"structural","needsRulesReplay":false}
+PASSED invalid/out-of-bounds.json [{"code":"COORD_BOUNDS","path":"/stones/0/row","message":"坐标超出完整棋盘。"}]
+PASSED invalid/duplicate-point.json [{"code":"DUPLICATE_POINT","path":"/stones/1","message":"同一交叉点不能重复占用。"}]
+PASSED invalid/unknown-stone.json [{"code":"SCHEMA_FIELD","path":"/stones/0/color","message":"请使用该字段允许的值。"}]
+PASSED invalid/unknown-major.json [{"code":"SCHEMA_VERSION","path":"/schemaVersion","message":"仅支持内容主版本 1；请保留原文件，使用对应迁移工具。"}]
+$ node --import tsx content/tools/validate.mjs
+PASS: 851 checks, 134 recorded moves replayed, 2179 explored rule transitions, 30 puzzles + 6 fixtures. Human review not performed.
+$ node content/tools/test-grade.mjs
+PASS: 20 adapter checks including legal unknown, multiple solutions, invalid-state preservation and open discussion.
+PASS: known wrong first move immediately fails the one-move objective.
+$ vitest run tests/t14
+
+ RUN  v5.0.0 /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t24-20261009/mainline/go-club
+
+
+ Test Files  2 passed (2)
+      Tests  13 passed (13)
+   Start at  09:58:07
+   Duration  1.11s (environment 36%, transform 26%, import 24%, tests 13%)
+
+$ vitest run tests/t15
+
+ RUN  v5.0.0 /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t24-20261009/mainline/go-club
+
+
+ Test Files  4 passed (4)
+      Tests  16 passed (16)
+   Start at  09:58:08
+   Duration  371ms (import 57%, transform 37%, tests 5%, worker 1%)
+
+$ node --import tsx scripts/validate-t17.ts
+PASS T17: empty, 3 labelled test replies, independent counts/missing/denominators, default test exclusion, schemaVersion rejection. No real participant records generated.
+$ node scripts/verify-merge-a.mjs
+PASS: MERGE_A integrity; 201 T09 files, 30 formal puzzles, 6 endgames, schema v1 and GO-CLUB-AREA-1 verified.
+$ node scripts/verify-t16-freeze-preservation.mjs
+PASS GO-CLUB-FREEZE-B-20260919-01: 201 content/rules/schema files unchanged; 30 puzzles + 6 terminals remain at frozen revisions.
+$ tsc --noEmit && vite build && node scripts/finalize-offline.mjs
+vite v8.2.2 building client environment for production...
+transforming...
+✓ 177 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.58 kB │ gzip:   0.42 kB
+dist/assets/index-sO1tMWpE.css  119.67 kB │ gzip:  23.94 kB
+dist/assets/index-Dd4ZqOn7.js   971.09 kB │ gzip: 251.60 kB
+
+✓ built in 610ms
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+Offline bundle 0.17.0: 8 required resources.
+$ node scripts/verify-t16-refresh.mjs
+file:///Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t24-20261009/mainline/go-club/scripts/verify-t16-refresh.mjs:6
+const waitForServer=()=>new Promise((resolve,reject)=>{const timer=setTimeout(()=>reject(new Error('Preview server did not start')),10_000);server.stdout.on('data',chunk=>{if(String(chunk).includes('Local:')){clearTimeout(timer);resolve();}});server.once('exit',code=>reject(new Error(`Preview server exited with ${code}`)));});
+                                                                                                                                                                                                                                                                                   ^
+
+Error: Preview server exited with 1
+    at ChildProcess.<anonymous> (file:///Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t24-20261009/mainline/go-club/scripts/verify-t16-refresh.mjs:6:276)
+    at Object.onceWrapper (node:events:631:26)
+    at ChildProcess.emit (node:events:509:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:295:12)
+
+Node.js v24.19.0
+[ELIFECYCLE] Command failed with exit code 1.
+[ELIFECYCLE] Command failed with exit code 1.

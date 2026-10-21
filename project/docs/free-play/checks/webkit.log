@@ -1,0 +1,22 @@
+[WebServer] (node:60203) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 13 tests using 1 worker
+
+(node:60212) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [webkit] › tests/browser/free-play.spec.ts:8:1 › home partner card and top navigation open the playable board directly (3.0s)
+  ✓   2 [webkit] › tests/browser/free-play.spec.ts:14:31 › 5x5: grid, opposite corners, alternation and refresh recovery (1.9s)
+  ✓   3 [webkit] › tests/browser/free-play.spec.ts:14:31 › 9x9: grid, opposite corners, alternation and refresh recovery (1.6s)
+  ✓   4 [webkit] › tests/browser/free-play.spec.ts:14:31 › 13x13: grid, opposite corners, alternation and refresh recovery (1.5s)
+  ✓   5 [webkit] › tests/browser/free-play.spec.ts:14:31 › 19x19: grid, opposite corners, alternation and refresh recovery (1.3s)
+  ✓   6 [webkit] › tests/browser/free-play.spec.ts:20:1 › capture continues full Go; illegal points and fast repeated click keep state valid (956ms)
+  ✓   7 [webkit] › tests/browser/free-play.spec.ts:27:94 › automatic final score: 黑方获胜, opening komi 0 (1.3s)
+  ✓   8 [webkit] › tests/browser/free-play.spec.ts:27:94 › automatic final score: 和棋, opening komi 1 (1.1s)
+  ✓   9 [webkit] › tests/browser/free-play.spec.ts:27:94 › automatic final score: 白方获胜, opening komi 1.5 (1.1s)
+  ✓  10 [webkit] › tests/browser/free-play.spec.ts:33:1 › resignation produces winner immediately, agreed undo recovers, old address keeps the same game (1.1s)
+  ✓  11 [webkit] › tests/browser/free-play.spec.ts:39:35 › 360px layout, keyboard turn and reduced motion (738ms)
+  ✓  12 [webkit] › tests/browser/free-play.spec.ts:39:35 › 768px layout, keyboard turn and reduced motion (758ms)
+  ✓  13 [webkit] › tests/browser/free-play.spec.ts:39:35 › 1280px layout, keyboard turn and reduced motion (770ms)
+
+  13 passed (20.0s)

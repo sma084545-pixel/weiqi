@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="210mm" height="148.5mm" viewBox="0 0 595.276 420.945">
+<title>LIFE-002 r1 | 眼与基础死活 Life &amp; death 背面</title>
+<metadata>{&quot;schemaVersion&quot;: 1, &quot;id&quot;: &quot;T21-BACK-LIFE-002&quot;, &quot;revision&quot;: 1, &quot;rulesetId&quot;: &quot;GO-CLUB-AREA-1&quot;, &quot;contentRef&quot;: {&quot;id&quot;: &quot;LIFE-002&quot;, &quot;revision&quot;: 1}}</metadata>
+<rect width="595.276" height="420.945" fill="#FFFFFF" stroke="#9EA8A6"/>
+<rect width="595.276" height="28" fill="#8C5E3C"/>
+<text x="22" y="19" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="12.5" fill="#FFFFFF">LIFE-002 r1 | 眼与基础死活 Life &amp; death</text>
+<text x="22" y="50" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="13.5" fill="#1D3035">看似眼的点可以被吃进</text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="10" fill="#13766D"><tspan x="22" y="83">三层提示</tspan></text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="8.7" fill="#1D3035"><tspan x="22" y="101.0">1. 先检查目标块的全部气。</tspan></text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="8.7" fill="#1D3035"><tspan x="22" y="117.5">2. 比较候选点落下后，哪些棋子连接或被提走。</tspan></text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="8.7" fill="#1D3035"><tspan x="22" y="134.0">3. 在完整棋盘上重放一手，再按成功标准核对。</tspan></text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="10" fill="#A44A3F"><tspan x="22" y="154.5">常见错误</tspan></text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="8.2" fill="#1D3035"><tspan x="22" y="171.5">白 A1 没提掉目标；黑 C1 可延长下方黑块，但没有让上方</tspan><tspan x="22" y="183.3">三个目标从最初就成为真眼。</tspan></text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="10" fill="#13766D"><tspan x="296" y="83">正确答案</tspan></text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="8.2" fill="#1D3035"><tspan x="296" y="101.0">白 C3 同时提掉 C4、B3、D3 三块，因而获得气。三块</tspan><tspan x="296" y="112.7">眼壁原来各只剩 C3；空点看似被黑包住，却可合法吃进。与 L</tspan><tspan x="296" y="124.4">IFE-001 的同块两眼结构不同。</tspan></text>
+<text x="22" y="386" font-family="Arial Unicode MS" font-size="8.5" fill="#5A6B9F">教师详解：答案册第 20 页</text>
+</svg>

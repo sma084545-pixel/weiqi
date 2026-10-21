@@ -1,0 +1,8 @@
+convert /workspace/scratch/cca7ce1f7698/materials/micro-lessons/output/T22_All_25_r1.pptx as a Impress document -> /workspace/scratch/cca7ce1f7698/materials/micro-lessons/output/T22_All_25_r1.pdf using filter : impress_pdf_Export
+Overwriting: /workspace/scratch/cca7ce1f7698/materials/micro-lessons/output/T22_All_25_r1.pdf
+convert /workspace/scratch/cca7ce1f7698/materials/micro-lessons/output/T22_MicroLesson_01_r1.pptx as a Impress document -> /workspace/scratch/cca7ce1f7698/materials/micro-lessons/output/T22_MicroLesson_01_r1.pdf using filter : impress_pdf_Export
+Overwriting: /workspace/scratch/cca7ce1f7698/materials/micro-lessons/output/T22_MicroLesson_01_r1.pdf
+convert /workspace/scratch/cca7ce1f7698/materials/micro-lessons/output/T22_MicroLesson_02_r1.pptx as a Impress document -> /workspace/scratch/cca7ce1f7698/materials/micro-lessons/output/T22_MicroLesson_02_r1.pdf using filter : impress_pdf_Export
+Overwriting: /workspace/scratch/cca7ce1f7698/materials/micro-lessons/output/T22_MicroLesson_02_r1.pdf
+convert /workspace/scratch/cca7ce1f7698/materials/micro-lessons/output/T22_MicroLesson_03_r1.pptx as a Impress document -> /workspace/scratch/cca7ce1f7698/materials/micro-lessons/output/T22_MicroLesson_03_r1.pdf using filter : impress_pdf_Export
+Overwriting: /workspace/scratch/cca7ce1f7698/materials/micro-lessons/output/T22_MicroLesson_03_r1.pdf

@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "DEV-END-T08-001",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "TerminalFixture",
+  "developmentOnly": true,
+  "title": "T08 开发算例：9路双方围空与中立点",
+  "position": {
+    "schemaVersion": 1,
+    "id": "DEV-POS-T08-001",
+    "revision": 1,
+    "rulesetId": "GO-CLUB-AREA-1",
+    "kind": "Position",
+    "size": 9,
+    "stones": [
+      {"row":0,"col":0,"color":"B"},{"row":0,"col":1,"color":"B"},{"row":0,"col":2,"color":"B"},{"row":0,"col":3,"color":"B"},{"row":0,"col":4,"color":"W"},{"row":0,"col":5,"color":"W"},{"row":0,"col":6,"color":"W"},{"row":0,"col":7,"color":"W"},{"row":0,"col":8,"color":"W"},
+      {"row":1,"col":0,"color":"B"},{"row":1,"col":2,"color":"B"},{"row":1,"col":3,"color":"B"},{"row":1,"col":4,"color":"W"},{"row":1,"col":5,"color":"W"},{"row":1,"col":6,"color":"W"},{"row":1,"col":7,"color":"W"},{"row":1,"col":8,"color":"W"},
+      {"row":2,"col":0,"color":"B"},{"row":2,"col":1,"color":"B"},{"row":2,"col":2,"color":"B"},{"row":2,"col":3,"color":"B"},{"row":2,"col":4,"color":"W"},{"row":2,"col":5,"color":"W"},{"row":2,"col":6,"color":"W"},{"row":2,"col":7,"color":"W"},{"row":2,"col":8,"color":"W"},
+      {"row":3,"col":0,"color":"B"},{"row":3,"col":1,"color":"B"},{"row":3,"col":2,"color":"B"},{"row":3,"col":3,"color":"B"},{"row":3,"col":4,"color":"W"},{"row":3,"col":5,"color":"W"},{"row":3,"col":6,"color":"W"},{"row":3,"col":7,"color":"W"},{"row":3,"col":8,"color":"W"},
+      {"row":4,"col":0,"color":"B"},{"row":4,"col":1,"color":"B"},{"row":4,"col":2,"color":"B"},{"row":4,"col":3,"color":"B"},{"row":4,"col":5,"color":"W"},{"row":4,"col":6,"color":"W"},{"row":4,"col":7,"color":"W"},{"row":4,"col":8,"color":"W"},
+      {"row":5,"col":0,"color":"B"},{"row":5,"col":1,"color":"B"},{"row":5,"col":2,"color":"B"},{"row":5,"col":3,"color":"B"},{"row":5,"col":4,"color":"W"},{"row":5,"col":5,"color":"W"},{"row":5,"col":6,"color":"W"},{"row":5,"col":7,"color":"W"},{"row":5,"col":8,"color":"W"},
+      {"row":6,"col":0,"color":"B"},{"row":6,"col":1,"color":"B"},{"row":6,"col":2,"color":"B"},{"row":6,"col":3,"color":"B"},{"row":6,"col":4,"color":"W"},{"row":6,"col":5,"color":"W"},{"row":6,"col":6,"color":"W"},{"row":6,"col":7,"color":"W"},{"row":6,"col":8,"color":"W"},
+      {"row":7,"col":0,"color":"B"},{"row":7,"col":1,"color":"B"},{"row":7,"col":2,"color":"B"},{"row":7,"col":3,"color":"B"},{"row":7,"col":4,"color":"W"},{"row":7,"col":5,"color":"W"},{"row":7,"col":6,"color":"W"},{"row":7,"col":8,"color":"W"},
+      {"row":8,"col":0,"color":"B"},{"row":8,"col":1,"color":"B"},{"row":8,"col":2,"color":"B"},{"row":8,"col":3,"color":"B"},{"row":8,"col":4,"color":"W"},{"row":8,"col":5,"color":"W"},{"row":8,"col":6,"color":"W"},{"row":8,"col":7,"color":"W"},{"row":8,"col":8,"color":"W"}
+    ],
+    "toPlay": "B",
+    "historyPolicy": "fresh-setup",
+    "history": null
+  },
+  "status": "teaching-assumption",
+  "assumptions": [
+    "仅用于核对面积计算：盘上棋子视为活子，三个空点分别为黑空、中立点和白空。",
+    "这是开发验证局面，不声称来自真实活动或经过人类教师审核。"
+  ],
+  "agreement": {"deadStones":[],"neutralPoints":[{"row":4,"col":4}],"confirmedBy":[]},
+  "komi": 0,
+  "captureCountsForComparison": {"B":9,"W":2},
+  "expectedScore": {
+    "blackStones":35,"whiteStones":43,
+    "blackTerritory":[{"row":1,"col":1}],
+    "whiteTerritory":[{"row":7,"col":7}],
+    "neutralPoints":[{"row":4,"col":4}],
+    "komi":0,"blackTotal":36,"whiteTotal":44,"difference":-8,"winner":"W","basis":"teaching-assumption"
+  },
+  "sources":[{"type":"original","title":"T08 独立手算开发终局","url":null,"accessedAt":null,"note":"按 GO-CLUB-AREA-1 面积定义原创并逐点手算；不是正式题库或活动记录。"}],
+  "validation":{"structure":{"status":"passed","checkedAt":"2026-09-12","method":"schemaVersion 1 validator","evidence":["pnpm validate:content"]},"moveLegality":{"status":"passed","checkedAt":"2026-09-12","method":"T01 validateSetup核对所有棋块均有气","evidence":["tests/t08/model.test.ts"]},"solutionChecked":{"status":"passed","checkedAt":"2026-09-12","method":"独立列出35黑子、43白子、1黑空、1白空、1中立点；再与 scoreArea 比较","evidence":["tests/fixtures/t08-full-game-expected.json","tests/t08/model.test.ts"]},"externalReferenceChecked":null,"modelChecked":null,"humanReviewed":null}
+}

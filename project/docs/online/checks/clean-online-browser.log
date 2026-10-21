@@ -1,0 +1,19 @@
+$ playwright test --config=playwright.online.config.ts --workers=1
+[WebServer] (node:68360) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 9 tests using 1 worker
+
+(node:68361) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/browser/online.spec.ts:20:1 › home and existing same-screen board expose the installed online entry (630ms)
+  ✓  2 tests/browser/online.spec.ts:25:1 › two isolated players synchronize turns/capture, illegal suicide and live history without duplicate moves (1.4s)
+  ✓  3 tests/browser/online.spec.ts:36:1 › bad/full room recovery, disconnect and same-tab refresh preserve the authenticated seat (2.3s)
+  ✓  4 tests/browser/online.spec.ts:47:1 › each seat confirms its own undo; rejection retains state, acceptance restores captures (1.7s)
+  ✓  5 tests/browser/online.spec.ts:53:1 › double pass, changing dead marks, both-role score, historic read-only view and disputed restoration (1.6s)
+  ✓  6 tests/browser/online.spec.ts:61:1 › resignation has no invented score; leaving and restoring a room does not give its seat to a third player (1.3s)
+  ✓  7 tests/browser/online.spec.ts:66:35 › 360px room layout, keyboard and local 19-route touch scrolling (2.2s)
+  ✓  8 tests/browser/online.spec.ts:66:35 › 768px room layout, keyboard and local 19-route touch scrolling (1.7s)
+  ✓  9 tests/browser/online.spec.ts:66:35 › 1280px room layout, keyboard and local 19-route touch scrolling (1.6s)
+
+  9 passed (15.6s)

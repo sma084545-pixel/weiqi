@@ -1,0 +1,740 @@
+{
+  "schemaVersion": 1,
+  "id": "T22-DELIVERY-CHECKS",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "passed",
+  "slidesValidated": 50,
+  "combinedNotes": 25,
+  "diagramsPerUniqueDeck": 30,
+  "individualPdfPageComparisons": [
+    {
+      "lesson": 1,
+      "slide": 1,
+      "combinedSlide": 1,
+      "identical": true,
+      "changedPixels": 0,
+      "fraction": 0.0,
+      "meanAbsoluteDelta": 0.0,
+      "maxDelta": 0,
+      "status": "passed"
+    },
+    {
+      "lesson": 1,
+      "slide": 2,
+      "combinedSlide": 2,
+      "identical": true,
+      "changedPixels": 0,
+      "fraction": 0.0,
+      "meanAbsoluteDelta": 0.0,
+      "maxDelta": 0,
+      "status": "passed"
+    },
+    {
+      "lesson": 1,
+      "slide": 3,
+      "combinedSlide": 3,
+      "identical": true,
+      "changedPixels": 0,
+      "fraction": 0.0,
+      "meanAbsoluteDelta": 0.0,
+      "maxDelta": 0,
+      "status": "passed"
+    },
+    {
+      "lesson": 1,
+      "slide": 4,
+      "combinedSlide": 4,
+      "identical": true,
+      "changedPixels": 0,
+      "fraction": 0.0,
+      "meanAbsoluteDelta": 0.0,
+      "maxDelta": 0,
+      "status": "passed"
+    },
+    {
+      "lesson": 1,
+      "slide": 5,
+      "combinedSlide": 5,
+      "identical": true,
+      "changedPixels": 0,
+      "fraction": 0.0,
+      "meanAbsoluteDelta": 0.0,
+      "maxDelta": 0,
+      "status": "passed"
+    },
+    {
+      "lesson": 2,
+      "slide": 1,
+      "combinedSlide": 6,
+      "identical": true,
+      "changedPixels": 0,
+      "fraction": 0.0,
+      "meanAbsoluteDelta": 0.0,
+      "maxDelta": 0,
+      "status": "passed"
+    },
+    {
+      "lesson": 2,
+      "slide": 2,
+      "combinedSlide": 7,
+      "identical": true,
+      "changedPixels": 0,
+      "fraction": 0.0,
+      "meanAbsoluteDelta": 0.0,
+      "maxDelta": 0,
+      "status": "passed"
+    },
+    {
+      "lesson": 2,
+      "slide": 3,
+      "combinedSlide": 8,
+      "identical": true,
+      "changedPixels": 0,
+      "fraction": 0.0,
+      "meanAbsoluteDelta": 0.0,
+      "maxDelta": 0,
+      "status": "passed"
+    },
+    {
+      "lesson": 2,
+      "slide": 4,
+      "combinedSlide": 9,
+      "identical": true,
+      "changedPixels": 0,
+      "fraction": 0.0,
+      "meanAbsoluteDelta": 0.0,
+      "maxDelta": 0,
+      "status": "passed"
+    },
+    {
+      "lesson": 2,
+      "slide": 5,
+      "combinedSlide": 10,
+      "identical": true,
+      "changedPixels": 0,
+      "fraction": 0.0,
+      "meanAbsoluteDelta": 0.0,
+      "maxDelta": 0,
+      "status": "passed"
+    },
+    {
+      "lesson": 3,
+      "slide": 1,
+      "combinedSlide": 11,
+      "identical": true,
+      "changedPixels": 0,
+      "fraction": 0.0,
+      "meanAbsoluteDelta": 0.0,
+      "maxDelta": 0,
+      "status": "passed"
+    },
+    {
+      "lesson": 3,
+      "slide": 2,
+      "combinedSlide": 12,
+      "identical": true,
+      "changedPixels": 0,
+      "fraction": 0.0,
+      "meanAbsoluteDelta": 0.0,
+      "maxDelta": 0,
+      "status": "passed"
+    },
+    {
+      "lesson": 3,
+      "slide": 3,
+      "combinedSlide": 13,
+      "identical": true,
+      "changedPixels": 0,
+      "fraction": 0.0,
+      "meanAbsoluteDelta": 0.0,
+      "maxDelta": 0,
+      "status": "passed"
+    },
+    {
+      "lesson": 3,
+      "slide": 4,
+      "combinedSlide": 14,
+      "identical": true,
+      "changedPixels": 0,
+      "fraction": 0.0,
+      "meanAbsoluteDelta": 0.0,
+      "maxDelta": 0,
+      "status": "passed"
+    },
+    {
+      "lesson": 3,
+      "slide": 5,
+      "combinedSlide": 15,
+      "identical": true,
+      "changedPixels": 0,
+      "fraction": 0.0,
+      "meanAbsoluteDelta": 0.0,
+      "maxDelta": 0,
+      "status": "passed"
+    },
+    {
+      "lesson": 4,
+      "slide": 1,
+      "combinedSlide": 16,
+      "identical": true,
+      "changedPixels": 0,
+      "fraction": 0.0,
+      "meanAbsoluteDelta": 0.0,
+      "maxDelta": 0,
+      "status": "passed"
+    },
+    {
+      "lesson": 4,
+      "slide": 2,
+      "combinedSlide": 17,
+      "identical": true,
+      "changedPixels": 0,
+      "fraction": 0.0,
+      "meanAbsoluteDelta": 0.0,
+      "maxDelta": 0,
+      "status": "passed"
+    },
+    {
+      "lesson": 4,
+      "slide": 3,
+      "combinedSlide": 18,
+      "identical": true,
+      "changedPixels": 0,
+      "fraction": 0.0,
+      "meanAbsoluteDelta": 0.0,
+      "maxDelta": 0,
+      "status": "passed"
+    },
+    {
+      "lesson": 4,
+      "slide": 4,
+      "combinedSlide": 19,
+      "identical": true,
+      "changedPixels": 0,
+      "fraction": 0.0,
+      "meanAbsoluteDelta": 0.0,
+      "maxDelta": 0,
+      "status": "passed"
+    },
+    {
+      "lesson": 4,
+      "slide": 5,
+      "combinedSlide": 20,
+      "identical": true,
+      "changedPixels": 0,
+      "fraction": 0.0,
+      "meanAbsoluteDelta": 0.0,
+      "maxDelta": 0,
+      "status": "passed"
+    },
+    {
+      "lesson": 5,
+      "slide": 1,
+      "combinedSlide": 21,
+      "identical": true,
+      "changedPixels": 0,
+      "fraction": 0.0,
+      "meanAbsoluteDelta": 0.0,
+      "maxDelta": 0,
+      "status": "passed"
+    },
+    {
+      "lesson": 5,
+      "slide": 2,
+      "combinedSlide": 22,
+      "identical": true,
+      "changedPixels": 0,
+      "fraction": 0.0,
+      "meanAbsoluteDelta": 0.0,
+      "maxDelta": 0,
+      "status": "passed"
+    },
+    {
+      "lesson": 5,
+      "slide": 3,
+      "combinedSlide": 23,
+      "identical": true,
+      "changedPixels": 0,
+      "fraction": 0.0,
+      "meanAbsoluteDelta": 0.0,
+      "maxDelta": 0,
+      "status": "passed"
+    },
+    {
+      "lesson": 5,
+      "slide": 4,
+      "combinedSlide": 24,
+      "identical": false,
+      "changedPixels": 38,
+      "fraction": 4.120045103651661e-05,
+      "meanAbsoluteDelta": 0.00037875502356376676,
+      "maxDelta": 20,
+      "status": "passed"
+    },
+    {
+      "lesson": 5,
+      "slide": 5,
+      "combinedSlide": 25,
+      "identical": false,
+      "changedPixels": 75,
+      "fraction": 8.131667967733541e-05,
+      "meanAbsoluteDelta": 0.0009009888108248765,
+      "maxDelta": 53,
+      "status": "passed"
+    }
+  ],
+  "pdfImagesDecoded": 55,
+  "results": [
+    {
+      "file": "output/T22_All_25_r1.pptx",
+      "slide": 1,
+      "combinedSlide": 1,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_All_25_r1.pptx",
+      "slide": 2,
+      "combinedSlide": 2,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_All_25_r1.pptx",
+      "slide": 3,
+      "combinedSlide": 3,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_All_25_r1.pptx",
+      "slide": 4,
+      "combinedSlide": 4,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_All_25_r1.pptx",
+      "slide": 5,
+      "combinedSlide": 5,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_All_25_r1.pptx",
+      "slide": 6,
+      "combinedSlide": 6,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_All_25_r1.pptx",
+      "slide": 7,
+      "combinedSlide": 7,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_All_25_r1.pptx",
+      "slide": 8,
+      "combinedSlide": 8,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_All_25_r1.pptx",
+      "slide": 9,
+      "combinedSlide": 9,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_All_25_r1.pptx",
+      "slide": 10,
+      "combinedSlide": 10,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_All_25_r1.pptx",
+      "slide": 11,
+      "combinedSlide": 11,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_All_25_r1.pptx",
+      "slide": 12,
+      "combinedSlide": 12,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_All_25_r1.pptx",
+      "slide": 13,
+      "combinedSlide": 13,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_All_25_r1.pptx",
+      "slide": 14,
+      "combinedSlide": 14,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_All_25_r1.pptx",
+      "slide": 15,
+      "combinedSlide": 15,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_All_25_r1.pptx",
+      "slide": 16,
+      "combinedSlide": 16,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_All_25_r1.pptx",
+      "slide": 17,
+      "combinedSlide": 17,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_All_25_r1.pptx",
+      "slide": 18,
+      "combinedSlide": 18,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_All_25_r1.pptx",
+      "slide": 19,
+      "combinedSlide": 19,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_All_25_r1.pptx",
+      "slide": 20,
+      "combinedSlide": 20,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_All_25_r1.pptx",
+      "slide": 21,
+      "combinedSlide": 21,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_All_25_r1.pptx",
+      "slide": 22,
+      "combinedSlide": 22,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_All_25_r1.pptx",
+      "slide": 23,
+      "combinedSlide": 23,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_All_25_r1.pptx",
+      "slide": 24,
+      "combinedSlide": 24,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_All_25_r1.pptx",
+      "slide": 25,
+      "combinedSlide": 25,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_MicroLesson_01_r1.pptx",
+      "slide": 1,
+      "combinedSlide": 1,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_MicroLesson_01_r1.pptx",
+      "slide": 2,
+      "combinedSlide": 2,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_MicroLesson_01_r1.pptx",
+      "slide": 3,
+      "combinedSlide": 3,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_MicroLesson_01_r1.pptx",
+      "slide": 4,
+      "combinedSlide": 4,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_MicroLesson_01_r1.pptx",
+      "slide": 5,
+      "combinedSlide": 5,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_MicroLesson_02_r1.pptx",
+      "slide": 1,
+      "combinedSlide": 6,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_MicroLesson_02_r1.pptx",
+      "slide": 2,
+      "combinedSlide": 7,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_MicroLesson_02_r1.pptx",
+      "slide": 3,
+      "combinedSlide": 8,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_MicroLesson_02_r1.pptx",
+      "slide": 4,
+      "combinedSlide": 9,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_MicroLesson_02_r1.pptx",
+      "slide": 5,
+      "combinedSlide": 10,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_MicroLesson_03_r1.pptx",
+      "slide": 1,
+      "combinedSlide": 11,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_MicroLesson_03_r1.pptx",
+      "slide": 2,
+      "combinedSlide": 12,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_MicroLesson_03_r1.pptx",
+      "slide": 3,
+      "combinedSlide": 13,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_MicroLesson_03_r1.pptx",
+      "slide": 4,
+      "combinedSlide": 14,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_MicroLesson_03_r1.pptx",
+      "slide": 5,
+      "combinedSlide": 15,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_MicroLesson_04_r1.pptx",
+      "slide": 1,
+      "combinedSlide": 16,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_MicroLesson_04_r1.pptx",
+      "slide": 2,
+      "combinedSlide": 17,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_MicroLesson_04_r1.pptx",
+      "slide": 3,
+      "combinedSlide": 18,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_MicroLesson_04_r1.pptx",
+      "slide": 4,
+      "combinedSlide": 19,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_MicroLesson_04_r1.pptx",
+      "slide": 5,
+      "combinedSlide": 20,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_MicroLesson_05_r1.pptx",
+      "slide": 1,
+      "combinedSlide": 21,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_MicroLesson_05_r1.pptx",
+      "slide": 2,
+      "combinedSlide": 22,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_MicroLesson_05_r1.pptx",
+      "slide": 3,
+      "combinedSlide": 23,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_MicroLesson_05_r1.pptx",
+      "slide": 4,
+      "combinedSlide": 24,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    },
+    {
+      "file": "output/T22_MicroLesson_05_r1.pptx",
+      "slide": 5,
+      "combinedSlide": 25,
+      "notes": "passed",
+      "nativeBoardCoordinates": "passed",
+      "primaryFontAtLeast24pt": "passed",
+      "noRasterCore": "passed"
+    }
+  ]
+}

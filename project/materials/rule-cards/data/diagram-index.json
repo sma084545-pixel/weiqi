@@ -1,0 +1,557 @@
+{
+  "schemaVersion": 1,
+  "id": "RULE-DEMO-T20-INDEX",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "T20DiagramIndex",
+  "extensionScope": "materials-only; not ContentBundle",
+  "demos": {
+    "RULE-DEMO-T20-CONNECT": {
+      "position": {
+        "schemaVersion": 1,
+        "id": "RULE-DEMO-T20-CONNECT",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 5,
+        "stones": [
+          {
+            "row": 1,
+            "col": 1,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 3,
+            "color": "B"
+          }
+        ],
+        "toPlay": "B",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "rows": [
+        ".....",
+        ".BB..",
+        "...B.",
+        ".....",
+        "....."
+      ]
+    },
+    "RULE-DEMO-T20-LIBERTY": {
+      "position": {
+        "schemaVersion": 1,
+        "id": "RULE-DEMO-T20-LIBERTY",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 5,
+        "stones": [
+          {
+            "row": 1,
+            "col": 1,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 1,
+            "color": "B"
+          }
+        ],
+        "toPlay": "B",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "rows": [
+        ".....",
+        ".BB..",
+        ".B...",
+        ".....",
+        "....."
+      ],
+      "liberties": [
+        {
+          "row": 0,
+          "col": 1
+        },
+        {
+          "row": 0,
+          "col": 2
+        },
+        {
+          "row": 1,
+          "col": 0
+        },
+        {
+          "row": 1,
+          "col": 3
+        },
+        {
+          "row": 2,
+          "col": 0
+        },
+        {
+          "row": 2,
+          "col": 2
+        },
+        {
+          "row": 3,
+          "col": 1
+        }
+      ]
+    },
+    "RULE-DEMO-T20-CAPTURE-BEFORE": {
+      "position": {
+        "schemaVersion": 1,
+        "id": "RULE-DEMO-T20-CAPTURE-BEFORE",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 5,
+        "stones": [
+          {
+            "row": 1,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 1,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 2,
+            "color": "W"
+          },
+          {
+            "row": 3,
+            "col": 2,
+            "color": "B"
+          }
+        ],
+        "toPlay": "B",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "rows": [
+        ".....",
+        "..B..",
+        ".BW..",
+        "..B..",
+        "....."
+      ]
+    },
+    "RULE-DEMO-T20-CAPTURE-AFTER": {
+      "position": {
+        "schemaVersion": 1,
+        "id": "RULE-DEMO-T20-CAPTURE-AFTER",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 5,
+        "stones": [
+          {
+            "row": 1,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 1,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 3,
+            "color": "B"
+          },
+          {
+            "row": 3,
+            "col": 2,
+            "color": "B"
+          }
+        ],
+        "toPlay": "W",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "rows": [
+        ".....",
+        "..B..",
+        ".B.B.",
+        "..B..",
+        "....."
+      ]
+    },
+    "RULE-DEMO-T20-LEGAL-BEFORE": {
+      "position": {
+        "schemaVersion": 1,
+        "id": "RULE-DEMO-T20-LEGAL-BEFORE",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 5,
+        "stones": [
+          {
+            "row": 0,
+            "col": 1,
+            "color": "W"
+          },
+          {
+            "row": 0,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 0,
+            "color": "W"
+          },
+          {
+            "row": 1,
+            "col": 1,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 0,
+            "color": "B"
+          }
+        ],
+        "toPlay": "B",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "rows": [
+        ".WB..",
+        "WB...",
+        "B....",
+        ".....",
+        "....."
+      ]
+    },
+    "RULE-DEMO-T20-LEGAL-AFTER": {
+      "position": {
+        "schemaVersion": 1,
+        "id": "RULE-DEMO-T20-LEGAL-AFTER",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 5,
+        "stones": [
+          {
+            "row": 0,
+            "col": 0,
+            "color": "B"
+          },
+          {
+            "row": 0,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 1,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 0,
+            "color": "B"
+          }
+        ],
+        "toPlay": "W",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "rows": [
+        "B.B..",
+        ".B...",
+        "B....",
+        ".....",
+        "....."
+      ]
+    },
+    "RULE-DEMO-T20-KO-BEFORE": {
+      "position": {
+        "schemaVersion": 1,
+        "id": "RULE-DEMO-T20-KO-BEFORE",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 5,
+        "stones": [
+          {
+            "row": 1,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 3,
+            "color": "W"
+          },
+          {
+            "row": 2,
+            "col": 1,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 2,
+            "color": "W"
+          },
+          {
+            "row": 2,
+            "col": 4,
+            "color": "W"
+          },
+          {
+            "row": 3,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 3,
+            "col": 3,
+            "color": "W"
+          }
+        ],
+        "toPlay": "B",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "rows": [
+        ".....",
+        "..BW.",
+        ".BW.W",
+        "..BW.",
+        "....."
+      ]
+    },
+    "RULE-DEMO-T20-KO-AFTER": {
+      "position": {
+        "schemaVersion": 1,
+        "id": "RULE-DEMO-T20-KO-AFTER",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 5,
+        "stones": [
+          {
+            "row": 1,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 3,
+            "color": "W"
+          },
+          {
+            "row": 2,
+            "col": 1,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 3,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 4,
+            "color": "W"
+          },
+          {
+            "row": 3,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 3,
+            "col": 3,
+            "color": "W"
+          }
+        ],
+        "toPlay": "W",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "rows": [
+        ".....",
+        "..BW.",
+        ".B.BW",
+        "..BW.",
+        "....."
+      ]
+    },
+    "RULE-DEMO-T20-SCORE": {
+      "position": {
+        "schemaVersion": 1,
+        "id": "RULE-DEMO-T20-SCORE",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 5,
+        "stones": [
+          {
+            "row": 0,
+            "col": 0,
+            "color": "B"
+          },
+          {
+            "row": 0,
+            "col": 1,
+            "color": "B"
+          },
+          {
+            "row": 0,
+            "col": 3,
+            "color": "B"
+          },
+          {
+            "row": 0,
+            "col": 4,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 0,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 1,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 3,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 4,
+            "color": "B"
+          },
+          {
+            "row": 3,
+            "col": 0,
+            "color": "W"
+          },
+          {
+            "row": 3,
+            "col": 1,
+            "color": "W"
+          },
+          {
+            "row": 3,
+            "col": 2,
+            "color": "W"
+          },
+          {
+            "row": 3,
+            "col": 3,
+            "color": "W"
+          },
+          {
+            "row": 3,
+            "col": 4,
+            "color": "W"
+          },
+          {
+            "row": 4,
+            "col": 0,
+            "color": "W"
+          },
+          {
+            "row": 4,
+            "col": 1,
+            "color": "W"
+          },
+          {
+            "row": 4,
+            "col": 3,
+            "color": "W"
+          },
+          {
+            "row": 4,
+            "col": 4,
+            "color": "W"
+          }
+        ],
+        "toPlay": "B",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "rows": [
+        "BB.BB",
+        "BBBBB",
+        ".....",
+        "WWWWW",
+        "WW.WW"
+      ],
+      "score": {
+        "blackStones": 9,
+        "whiteStones": 9,
+        "blackTerritory": [
+          {
+            "row": 0,
+            "col": 2
+          }
+        ],
+        "whiteTerritory": [
+          {
+            "row": 4,
+            "col": 2
+          }
+        ],
+        "neutralPoints": [
+          {
+            "row": 2,
+            "col": 0
+          },
+          {
+            "row": 2,
+            "col": 1
+          },
+          {
+            "row": 2,
+            "col": 2
+          },
+          {
+            "row": 2,
+            "col": 3
+          },
+          {
+            "row": 2,
+            "col": 4
+          }
+        ],
+        "komi": 0,
+        "blackTotal": 10,
+        "whiteTotal": 10,
+        "difference": 0,
+        "winner": "draw",
+        "basis": "teaching-assumption"
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "INPUT-T17-001",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "DeveloperInputManifest",
+  "taskId": "T17",
+  "baseVersion": "T16 0.16.0",
+  "resultVersion": "0.17.0",
+  "promptSource": "User T17 prompt in this main conversation; no separate attachment assumed",
+  "baseArchive": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/deliverables/T16_0.16.0/go-club-T16-0.16.0-full.zip",
+  "baseArchiveSha256": "8d11905ec0cd1600b5059690152c94746bf815a57d3d91963da6ae7002c9e542",
+  "baseTaskId": "T16",
+  "baseResultVersion": "0.16.0",
+  "readHandoffs": [
+    "handoff/T16.md",
+    "handoff/T00.md",
+    "handoff/T03.md",
+    "handoff/T12.md",
+    "handoff/T14.md"
+  ],
+  "freezeId": "GO-CLUB-FREEZE-B-20260919-01",
+  "readonlySourcesPreserved": true,
+  "dependencyPolicy": "Existing locked T16 dependencies reused; no dependency changes or fresh network download",
+  "preservedEngineBoardLockSchemaFiles": 15
+}

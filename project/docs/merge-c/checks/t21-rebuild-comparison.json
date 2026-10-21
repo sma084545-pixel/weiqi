@@ -1,0 +1,422 @@
+{
+  "comparisons": [
+    {
+      "path": "materials/challenge-cards/CARD_INDEX.json",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/CONTENT_FREEZE.json",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/bundle.json",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/pedagogy.json",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/CAP-001.json",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIFE-002.json",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/CON-002.json",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIB-002.json",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIB-003.json",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/CON-003.json",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/DISC-001.json",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIFE-003.json",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/CON-004.json",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIB-004.json",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/AREA-001.json",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIFE-004.json",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIFE-005.json",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIB-005.json",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/CON-005.json",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/AREA-003.json",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/DISC-004.json",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/CAP-005.json",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/CAP-004.json",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/DISC-005.json",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/AREA-002.json",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/DISC-002.json",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/CAP-003.json",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/AREA-005.json",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/CON-001.json",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIB-001.json",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/AREA-004.json",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/CAP-002.json",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIFE-001.json",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/DISC-003.json",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/DISC-002-back.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/DISC-003-back.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/LIFE-003-back.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/CON-001-back.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/LIFE-002-back.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/LIB-002-back.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/LIB-003-back.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/CAP-001-back.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/LIB-005-back.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/LIB-004-back.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/DISC-005-back.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/DISC-004-back.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/AREA-001-back.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/LIFE-004-back.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/LIFE-005-back.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/CAP-004-back.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/CAP-005-back.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/LIB-001-back.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/CON-003-back.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/CON-002-back.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/LIFE-001-back.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/DISC-001-back.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/AREA-004-back.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/AREA-005-back.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/CON-004-back.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/CON-005-back.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/AREA-003-back.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/AREA-002-back.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/CAP-003-back.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/CAP-002-back.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/LIFE-004-front.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/CON-005-front.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/CAP-001-front.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/LIFE-002-front.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/LIB-001-front.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/DISC-001-front.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/CON-003-front.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/LIFE-005-front.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/CON-004-front.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/LIFE-003-front.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/AREA-001-front.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/CON-002-front.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/AREA-004-front.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/LIB-005-front.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/DISC-005-front.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/CAP-003-front.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/AREA-002-front.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/LIB-003-front.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/CON-001-front.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/CAP-005-front.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/DISC-003-front.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/LIB-004-front.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/AREA-005-front.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/DISC-004-front.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/CAP-002-front.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/LIB-002-front.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/AREA-003-front.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/LIFE-001-front.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/CAP-004-front.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/DISC-002-front.svg",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/validation/page-map.json",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/validation/PACKAGE_PAYLOAD_MANIFEST.json",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/validation/font-embedding.json",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/validation/automated-checks.json",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/validation/render-qa.json",
+      "equal": true
+    },
+    {
+      "path": "materials/challenge-cards/output/T21_teacher_answer_book.pdf",
+      "equal": true,
+      "method": "page count, geometry and extracted text (PDF metadata timestamps excluded)"
+    },
+    {
+      "path": "materials/challenge-cards/output/T21_challenge_cards_back_A4.pdf",
+      "equal": true,
+      "method": "page count, geometry and extracted text (PDF metadata timestamps excluded)"
+    },
+    {
+      "path": "materials/challenge-cards/output/T21_challenge_cards_front_A4.pdf",
+      "equal": true,
+      "method": "page count, geometry and extracted text (PDF metadata timestamps excluded)"
+    },
+    {
+      "path": "materials/challenge-cards/output/T21_duplex_test_page1.pdf",
+      "equal": true,
+      "method": "page count, geometry and extracted text (PDF metadata timestamps excluded)"
+    }
+  ],
+  "passed": 103,
+  "failed": 0
+}

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="210mm" height="297mm" viewBox="0 0 210 297" id="T19-PORTABLE-KIT-LAYOUT-A4">
+<metadata>{&quot;id&quot;: &quot;T19-PORTABLE-KIT-LAYOUT-A4&quot;, &quot;kind&quot;: &quot;portable-kit-print-sheet&quot;, &quot;pageMm&quot;: [210, 297], &quot;printScalePercent&quot;: 100, &quot;resultVersion&quot;: &quot;0.2.0-t19.1&quot;, &quot;revision&quot;: 1, &quot;rulesetId&quot;: &quot;GO-CLUB-AREA-1&quot;, &quot;schemaVersion&quot;: 1}</metadata>
+<style>text{font-family:"Arial Unicode MS","PingFang SC","Hiragino Sans GB",sans-serif}.cut{stroke-dasharray:2 1}.guide{stroke-dasharray:3 2}</style>
+<text x="15.000" y="14.000" font-size="5.000mm" text-anchor="start" fill="#111111" font-weight="bold" class="">一套便携棋具 | 配置示意</text>
+<text x="15.000" y="23.000" font-size="2.900mm" text-anchor="start" fill="#333333" font-weight="normal" class="">这是制作与装袋示意，不表示学校已有器材。实际人数、备用比例与材料由教师填写。</text>
+<text x="195.000" y="14.000" font-size="2.700mm" text-anchor="end" fill="#444444" font-weight="normal" class="">配置页</text>
+<text x="15.000" y="287.000" font-size="2.400mm" text-anchor="start" fill="#111111" font-weight="normal" class="">A4 210×297 mm | 适用棋子直径：16-18 / 24-26 mm | 100% / 实际大小打印 | GO-CLUB-AREA-1</text>
+<line x1="55.000" y1="273.000" x2="155.000" y2="273.000" stroke="#111111" stroke-width="0.450" class="calibration-ruler"/>
+<line x1="55.000" y1="270.000" x2="55.000" y2="276.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="55.000" y="279.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">0</text>
+<line x1="65.000" y1="271.000" x2="65.000" y2="275.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="65.000" y="279.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">10</text>
+<line x1="75.000" y1="271.000" x2="75.000" y2="275.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="75.000" y="279.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">20</text>
+<line x1="85.000" y1="271.000" x2="85.000" y2="275.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="85.000" y="279.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">30</text>
+<line x1="95.000" y1="271.000" x2="95.000" y2="275.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="95.000" y="279.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">40</text>
+<line x1="105.000" y1="270.000" x2="105.000" y2="276.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="105.000" y="279.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">50</text>
+<line x1="115.000" y1="271.000" x2="115.000" y2="275.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="115.000" y="279.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">60</text>
+<line x1="125.000" y1="271.000" x2="125.000" y2="275.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="125.000" y="279.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">70</text>
+<line x1="135.000" y1="271.000" x2="135.000" y2="275.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="135.000" y="279.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">80</text>
+<line x1="145.000" y1="271.000" x2="145.000" y2="275.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="145.000" y="279.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">90</text>
+<line x1="155.000" y1="270.000" x2="155.000" y2="276.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="155.000" y="279.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">100</text>
+<text x="105.000" y="269.000" font-size="2.500mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-title">校准尺 100 mm</text>
+<rect x="15.000" y="35.000" width="180.000" height="185.000" rx="3.000" fill="#F7F7F2" stroke="#444444" stroke-width="0.450" class="portable-kit-container"/>
+<text x="22.000" y="47.000" font-size="4.400mm" text-anchor="start" fill="#111111" font-weight="bold" class="">套装封套 / 文件袋</text>
+<text x="188.000" y="47.000" font-size="2.800mm" text-anchor="end" fill="#111111" font-weight="normal" class="">Kit ID: ______</text>
+<rect x="25.000" y="58.000" width="74.000" height="48.000" rx="2.000" fill="#FFFFFF" stroke="#51747C" stroke-width="0.350" class="kit-item"/>
+<text x="30.000" y="68.000" font-size="3.500mm" text-anchor="start" fill="#111111" font-weight="bold" class="">主棋盘</text>
+<text x="30.000" y="77.000" font-size="2.800mm" text-anchor="start" fill="#111111" font-weight="normal" class="">9×9 单页</text>
+<text x="30.000" y="100.000" font-size="2.400mm" text-anchor="start" fill="#555555" font-weight="normal" class="">优先放最外层</text>
+<rect x="108.000" y="58.000" width="74.000" height="48.000" rx="2.000" fill="#FFFFFF" stroke="#51747C" stroke-width="0.350" class="kit-item"/>
+<text x="113.000" y="68.000" font-size="3.500mm" text-anchor="start" fill="#111111" font-weight="bold" class="">扩展棋盘</text>
+<text x="113.000" y="77.000" font-size="2.800mm" text-anchor="start" fill="#111111" font-weight="normal" class="">13×13 / 拼接页</text>
+<text x="113.000" y="100.000" font-size="2.400mm" text-anchor="start" fill="#555555" font-weight="normal" class="">平放或分袋</text>
+<rect x="25.000" y="116.000" width="74.000" height="38.000" rx="2.000" fill="#FFFFFF" stroke="#51747C" stroke-width="0.350" class="kit-item"/>
+<text x="30.000" y="126.000" font-size="3.500mm" text-anchor="start" fill="#111111" font-weight="bold" class="">黑棋袋 B</text>
+<text x="30.000" y="135.000" font-size="2.800mm" text-anchor="start" fill="#111111" font-weight="normal" class="">数量：____</text>
+<text x="30.000" y="148.000" font-size="2.400mm" text-anchor="start" fill="#555555" font-weight="normal" class="">独立收纳</text>
+<rect x="108.000" y="116.000" width="74.000" height="38.000" rx="2.000" fill="#FFFFFF" stroke="#51747C" stroke-width="0.350" class="kit-item"/>
+<text x="113.000" y="126.000" font-size="3.500mm" text-anchor="start" fill="#111111" font-weight="bold" class="">白棋袋 W</text>
+<text x="113.000" y="135.000" font-size="2.800mm" text-anchor="start" fill="#111111" font-weight="normal" class="">数量：____</text>
+<text x="113.000" y="148.000" font-size="2.400mm" text-anchor="start" fill="#555555" font-weight="normal" class="">独立收纳</text>
+<rect x="25.000" y="164.000" width="74.000" height="42.000" rx="2.000" fill="#FFFFFF" stroke="#51747C" stroke-width="0.350" class="kit-item"/>
+<text x="30.000" y="174.000" font-size="3.500mm" text-anchor="start" fill="#111111" font-weight="bold" class="">透明覆片</text>
+<text x="30.000" y="183.000" font-size="2.800mm" text-anchor="start" fill="#111111" font-weight="normal" class="">先圈气再落子</text>
+<text x="30.000" y="200.000" font-size="2.400mm" text-anchor="start" fill="#555555" font-weight="normal" class="">与棋盘同尺寸</text>
+<rect x="108.000" y="164.000" width="74.000" height="42.000" rx="2.000" fill="#FFFFFF" stroke="#51747C" stroke-width="0.350" class="kit-item"/>
+<text x="113.000" y="174.000" font-size="3.500mm" text-anchor="start" fill="#111111" font-weight="bold" class="">规则卡固定袋</text>
+<text x="113.000" y="183.000" font-size="2.800mm" text-anchor="start" fill="#111111" font-weight="normal" class="">封面内侧</text>
+<text x="113.000" y="200.000" font-size="2.400mm" text-anchor="start" fill="#555555" font-weight="normal" class="">正面朝外</text>
+<text x="15.000" y="232.000" font-size="3.800mm" text-anchor="start" fill="#111111" font-weight="bold" class="">套数公式</text>
+<text x="15.000" y="241.000" font-size="3.200mm" text-anchor="start" fill="#111111" font-weight="normal" class="">基础套数 = ⌈实际参与人数 ÷ 2⌉</text>
+<text x="15.000" y="249.000" font-size="2.800mm" text-anchor="start" fill="#111111" font-weight="normal" class="">准备套数 = 基础套数 + 教师填写的备用套数（建议先从 1 套或约 10% 试配，不冒充已确认需求）</text>
+<text x="15.000" y="257.000" font-size="2.800mm" text-anchor="start" fill="#111111" font-weight="normal" class="">若人数为奇数：仍按向上取整；可由一组轮换观察/记录，但不强制计时或排名。</text>
+<text x="15.000" y="265.000" font-size="2.800mm" text-anchor="start" fill="#111111" font-weight="normal" class="">A3 板需 A3 封套；追求更便携时，用两页 A4 拼接版并在桌面临时对齐。覆膜 A3 不建议折叠。</text>
+</svg>

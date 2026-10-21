@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 1,
+  "id": "LIFE-001",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "Puzzle",
+  "developmentOnly": false,
+  "category": "LIFE",
+  "difficulty": {
+    "level": "elementary",
+    "rationale": "单一完整黑块与两个互不连通单点眼，避开劫和双活。"
+  },
+  "prompt": "白方轮次。标出黑棋两个独立真眼（true eyes）的空点。只选点，不落子。",
+  "initialPosition": {
+    "schemaVersion": 1,
+    "id": "POS-LIFE-001",
+    "revision": 1,
+    "rulesetId": "GO-CLUB-AREA-1",
+    "kind": "Position",
+    "size": 5,
+    "stones": [
+      {
+        "row": 0,
+        "col": 0,
+        "color": "B"
+      },
+      {
+        "row": 0,
+        "col": 1,
+        "color": "B"
+      },
+      {
+        "row": 0,
+        "col": 2,
+        "color": "B"
+      },
+      {
+        "row": 0,
+        "col": 3,
+        "color": "B"
+      },
+      {
+        "row": 0,
+        "col": 4,
+        "color": "B"
+      },
+      {
+        "row": 1,
+        "col": 0,
+        "color": "B"
+      },
+      {
+        "row": 1,
+        "col": 2,
+        "color": "B"
+      },
+      {
+        "row": 1,
+        "col": 4,
+        "color": "B"
+      },
+      {
+        "row": 2,
+        "col": 0,
+        "color": "B"
+      },
+      {
+        "row": 2,
+        "col": 1,
+        "color": "B"
+      },
+      {
+        "row": 2,
+        "col": 2,
+        "color": "B"
+      },
+      {
+        "row": 2,
+        "col": 3,
+        "color": "B"
+      },
+      {
+        "row": 2,
+        "col": 4,
+        "color": "B"
+      },
+      {
+        "row": 3,
+        "col": 0,
+        "color": "W"
+      },
+      {
+        "row": 3,
+        "col": 1,
+        "color": "W"
+      },
+      {
+        "row": 3,
+        "col": 2,
+        "color": "W"
+      },
+      {
+        "row": 3,
+        "col": 3,
+        "color": "W"
+      },
+      {
+        "row": 3,
+        "col": 4,
+        "color": "W"
+      }
+    ],
+    "toPlay": "W",
+    "historyPolicy": "fresh-setup",
+    "history": null
+  },
+  "targetMarkers": [
+    {
+      "markerId": "target-1",
+      "type": "target",
+      "points": [
+        {
+          "row": 1,
+          "col": 2
+        }
+      ],
+      "label": "目标1：C4",
+      "owner": "B"
+    }
+  ],
+  "firstPlayer": "W",
+  "conditions": {
+    "boundary": "full-board",
+    "external": "真实完整 5×5 小棋盘练习，图外无棋子，不使用裁切边缘。",
+    "assumptions": [
+      "成功标准：恰好选择 B4、D4；理解证明适用于黑不自毁眼形。",
+      "常见错误：把两个相连空点算两眼，或忽略眼壁属于不同、可被提的棋块。",
+      "同伴讨论：试解释“假设第一次提掉这块黑棋”为什么会矛盾。",
+      "新教学起点，过去劫史未知；从当前布局建立新历史，不宣称来自合法实战棋谱。"
+    ],
+    "viewport": null
+  },
+  "hints": [
+    "两个空点是否彼此相通？",
+    "检查每个空点的所有正交邻点属于哪一块。",
+    "白若先填一眼，黑块是否仍保有另一眼？"
+  ],
+  "answer": {
+    "type": "point-set",
+    "points": [
+      {
+        "row": 1,
+        "col": 1
+      },
+      {
+        "row": 1,
+        "col": 3
+      }
+    ],
+    "explanation": "B4、D4 各自是独立单点空区，全部邻点属于同一个黑连通块。白先填任一眼，黑块仍有另一眼，不能被提；白新子无气，故自杀禁止。外部落子不能把已有黑子拆开。黑不主动填自己的眼时，白无法开始合法的最后提子。这是充分结构论证，不把两眼说成所有活棋的必要条件。"
+  },
+  "coveredBranches": [],
+  "sources": [
+    {
+      "type": "original",
+      "title": "T09 原创题目、表达与坐标图",
+      "url": null,
+      "accessedAt": null,
+      "note": "依据 GO-CLUB-AREA-1 自行设计和模型推导，未复制协会题图或网上题库。不是教师审题或学生记录。"
+    },
+    {
+      "type": "reference",
+      "title": "British Go Association: How to Play",
+      "url": "https://www.britgo.org/intro/intro2.html",
+      "accessedAt": "2026-09-07",
+      "note": "仅核对正交连接、气、提子与两眼的一般概念。自定义计分、停手及重复规则以项目约定为准；原创题目的正确性另行验证。"
+    }
+  ],
+  "validation": {
+    "structure": {
+      "status": "passed",
+      "method": "T00 structure / T01 engine / independent vectors as applicable",
+      "checkedAt": "2026-09-07",
+      "evidence": [
+        "content/validation/results.json: LIFE-001",
+        "content/t09/pedagogy.json: LIFE-001"
+      ]
+    },
+    "moveLegality": {
+      "status": "passed",
+      "method": "T00 structure / T01 engine / independent vectors as applicable",
+      "checkedAt": "2026-09-07",
+      "evidence": [
+        "content/validation/results.json: LIFE-001",
+        "content/t09/pedagogy.json: LIFE-001"
+      ]
+    },
+    "solutionChecked": {
+      "status": "passed",
+      "method": "T00 structure / T01 engine / independent vectors as applicable",
+      "checkedAt": "2026-09-07",
+      "evidence": [
+        "content/validation/results.json: LIFE-001",
+        "content/t09/pedagogy.json: LIFE-001"
+      ]
+    },
+    "externalReferenceChecked": {
+      "status": "passed",
+      "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+      "checkedAt": "2026-09-07",
+      "evidence": [
+        "content/validation/results.json: LIFE-001",
+        "content/t09/pedagogy.json: LIFE-001",
+        "content/t09/SOURCES.md"
+      ]
+    },
+    "modelChecked": {
+      "status": "passed",
+      "method": "Authored reasoning + explicit finite scope, not human review",
+      "checkedAt": "2026-09-07",
+      "evidence": [
+        "content/validation/results.json: LIFE-001",
+        "content/t09/pedagogy.json: LIFE-001"
+      ]
+    },
+    "humanReviewed": null
+  },
+  "relatedContent": []
+}

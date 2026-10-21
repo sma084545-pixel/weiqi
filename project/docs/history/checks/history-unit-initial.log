@@ -1,0 +1,35 @@
+✓ Lockfile passes supply-chain policies (verified 12d ago)
+Lockfile is up to date, resolution step is skipped
+Already up to date
+
+Done in 707ms using pnpm v11.25.0
+$ vitest run tests/history
+
+ RUN  v5.0.0 /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/history-slider-20261021/mainline/go-club
+
+ ❯ tests/history/game-history.test.ts (5 tests | 1 failed) 32ms
+   ❯ shared game history projection (5)
+     × shows original stones at final confirmation, not scoring-preview removals 7ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/history/game-history.test.ts > shared game history projection > shows original stones at final confirmation, not scoring-preview removals
+Error: {"code":"AGREEMENT_REQUIRED","field":"/agreement/neutralPoints"}
+ ❯ value tests/t01/helpers.ts:4:56
+      2| import type {Result} from '../../src/core/rules';
+      3| import {startGame,tryMove} from '../../src/core/rules';
+      4| export const value=<T>(r:Result<T>):T=>{if(!r.ok)throw Error(JSON.stri…
+       |                                                        ^
+      5| export const board=(rows:string[]):Board=>rows.map(r=>[...r].map(c=>c=…
+      6| export const rows=(b:Board)=>b.map(r=>r.map(c=>c??'.').join(''));
+ ❯ tests/history/game-history.test.ts:38:17
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed | 1 passed (2)
+      Tests  1 failed | 7 passed (8)
+   Start at  14:16:45
+   Duration  1.28s (environment 55%, import 26%, transform 13%, tests 6%, worker 1%)
+
+[ELIFECYCLE] Command failed with exit code 1.

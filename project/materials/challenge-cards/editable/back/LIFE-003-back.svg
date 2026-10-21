@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="210mm" height="148.5mm" viewBox="0 0 595.276 420.945">
+<title>LIFE-003 r1 | 眼与基础死活 Life &amp; death 背面</title>
+<metadata>{&quot;schemaVersion&quot;: 1, &quot;id&quot;: &quot;T21-BACK-LIFE-003&quot;, &quot;revision&quot;: 1, &quot;rulesetId&quot;: &quot;GO-CLUB-AREA-1&quot;, &quot;contentRef&quot;: {&quot;id&quot;: &quot;LIFE-003&quot;, &quot;revision&quot;: 1}}</metadata>
+<rect width="595.276" height="420.945" fill="#FFFFFF" stroke="#9EA8A6"/>
+<rect width="595.276" height="28" fill="#8C5E3C"/>
+<text x="22" y="19" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="12.5" fill="#FFFFFF">LIFE-003 r1 | 眼与基础死活 Life &amp; death</text>
+<text x="22" y="50" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="13.5" fill="#1D3035">先手把三点空间分开</text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="10" fill="#13766D"><tspan x="22" y="83">三层提示</tspan></text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="8.7" fill="#1D3035"><tspan x="22" y="101.0">1. 先检查目标块的全部气。</tspan></text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="8.7" fill="#1D3035"><tspan x="22" y="117.5">2. 比较候选点落下后，哪些棋子连接或被提走。</tspan></text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="8.7" fill="#1D3035"><tspan x="22" y="134.0">3. 在完整棋盘上重放一手，再按成功标准核对。</tspan></text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="10" fill="#A44A3F"><tspan x="22" y="154.5">常见错误</tspan></text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="8.2" fill="#1D3035"><tspan x="22" y="171.5">黑 A5 后剩 B5、C5 相连，仍只有一个空间。白 B5，</tspan><tspan x="22" y="183.3">黑 C5 提白，白再 B5 可提掉原黑块；末手与之前布局不同</tspan><tspan x="22" y="195.1">，不是劫。</tspan></text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="10" fill="#13766D"><tspan x="296" y="83">正确答案</tspan></text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="8.2" fill="#1D3035"><tspan x="296" y="101.0">黑 B5 接上 B4，把空间分为 A5、C5 两个单点眼。每</tspan><tspan x="296" y="112.7">个眼的邻接黑子都在同一块，另一眼使白不能合法吃进，黑不自填眼</tspan><tspan x="296" y="124.4">即可保有此两眼结构。</tspan></text>
+<text x="22" y="386" font-family="Arial Unicode MS" font-size="8.5" fill="#5A6B9F">教师详解：答案册第 21 页</text>
+</svg>

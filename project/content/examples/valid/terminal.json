@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 1,
+  "id": "DEV-END-001",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "TerminalFixture",
+  "developmentOnly": true,
+  "title": "开发算例：相同面积，提子数不额外加分",
+  "position": {
+    "schemaVersion": 1,
+    "id": "DEV-POS-AREA-001",
+    "revision": 1,
+    "rulesetId": "GO-CLUB-AREA-1",
+    "kind": "Position",
+    "size": 5,
+    "stones": [
+      {
+        "row": 0,
+        "col": 0,
+        "color": "B"
+      },
+      {
+        "row": 0,
+        "col": 1,
+        "color": "B"
+      },
+      {
+        "row": 0,
+        "col": 3,
+        "color": "B"
+      },
+      {
+        "row": 0,
+        "col": 4,
+        "color": "B"
+      },
+      {
+        "row": 1,
+        "col": 0,
+        "color": "B"
+      },
+      {
+        "row": 1,
+        "col": 1,
+        "color": "B"
+      },
+      {
+        "row": 1,
+        "col": 2,
+        "color": "B"
+      },
+      {
+        "row": 1,
+        "col": 3,
+        "color": "B"
+      },
+      {
+        "row": 1,
+        "col": 4,
+        "color": "B"
+      },
+      {
+        "row": 3,
+        "col": 0,
+        "color": "W"
+      },
+      {
+        "row": 3,
+        "col": 1,
+        "color": "W"
+      },
+      {
+        "row": 3,
+        "col": 2,
+        "color": "W"
+      },
+      {
+        "row": 3,
+        "col": 3,
+        "color": "W"
+      },
+      {
+        "row": 3,
+        "col": 4,
+        "color": "W"
+      },
+      {
+        "row": 4,
+        "col": 0,
+        "color": "W"
+      },
+      {
+        "row": 4,
+        "col": 1,
+        "color": "W"
+      },
+      {
+        "row": 4,
+        "col": 3,
+        "color": "W"
+      },
+      {
+        "row": 4,
+        "col": 4,
+        "color": "W"
+      }
+    ],
+    "toPlay": "B",
+    "historyPolicy": "fresh-setup",
+    "history": null
+  },
+  "status": "teaching-assumption",
+  "assumptions": [
+    "只检验明确给定的计分假设：全部盘上子视为活子，中间一行为空的中立区，无待移除死子。",
+    "不声称该摆棋为实战终局或已经由教师确认。"
+  ],
+  "agreement": {
+    "deadStones": [],
+    "neutralPoints": [
+      {
+        "row": 2,
+        "col": 0
+      },
+      {
+        "row": 2,
+        "col": 1
+      },
+      {
+        "row": 2,
+        "col": 2
+      },
+      {
+        "row": 2,
+        "col": 3
+      },
+      {
+        "row": 2,
+        "col": 4
+      }
+    ],
+    "confirmedBy": []
+  },
+  "komi": 0,
+  "captureCountsForComparison": {
+    "B": 7,
+    "W": 2
+  },
+  "expectedScore": {
+    "blackStones": 9,
+    "whiteStones": 9,
+    "blackTerritory": [
+      {
+        "row": 0,
+        "col": 2
+      }
+    ],
+    "whiteTerritory": [
+      {
+        "row": 4,
+        "col": 2
+      }
+    ],
+    "neutralPoints": [
+      {
+        "row": 2,
+        "col": 0
+      },
+      {
+        "row": 2,
+        "col": 1
+      },
+      {
+        "row": 2,
+        "col": 2
+      },
+      {
+        "row": 2,
+        "col": 3
+      },
+      {
+        "row": 2,
+        "col": 4
+      }
+    ],
+    "komi": 0,
+    "blackTotal": 10,
+    "whiteTotal": 10,
+    "difference": 0,
+    "winner": "draw",
+    "basis": "teaching-assumption"
+  },
+  "sources": [
+    {
+      "type": "original",
+      "title": "T00 开发示例",
+      "url": null,
+      "accessedAt": null,
+      "note": "依据用户规则原创；不是学生记录，不属于正式题库。"
+    }
+  ],
+  "validation": {
+    "structure": null,
+    "moveLegality": null,
+    "solutionChecked": null,
+    "externalReferenceChecked": null,
+    "modelChecked": null,
+    "humanReviewed": null
+  }
+}

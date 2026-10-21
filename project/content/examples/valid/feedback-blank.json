@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "DEV-FEEDBACK-BLANK",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "Feedback",
+  "developmentOnly": true,
+  "activityRef": null,
+  "recordedAt": null,
+  "difficulty": null,
+  "preferredActivities": [],
+  "comment": "",
+  "consentToUse": false,
+  "evidenceType": "blank-template",
+  "responseContext": null,
+  "response": null
+}

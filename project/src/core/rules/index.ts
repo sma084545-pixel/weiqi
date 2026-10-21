@@ -1,0 +1,10 @@
+export * from './contract';
+export * from './topology';
+export * from './engine';
+export * from './game-store';
+export {RULE_ERROR_ZH} from './errors.zh';
+export type {Color,Coord,Size,StoneValue,Position,Move,GameState,GameSnapshot,GameEvent,ScoreAgreement,AreaScore} from '../content.generated';
+import * as engine from './engine';
+import * as topology from './topology';
+import type {RulesEngine} from './contract';
+export const rulesEngine:RulesEngine=Object.freeze({...topology,...engine});

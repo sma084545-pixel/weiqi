@@ -1,0 +1,36 @@
+
+ RUN  v5.0.0 /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/freeze-b-20260919/mainline/go-club
+
+····························································································································································································································································stderr | tests/t05/step-player.test.tsx > T05 StepPlayer timer control > advances once and cancels scheduled work when unmounted
+The current testing environment is not configured to support act(...)
+The current testing environment is not configured to support act(...)
+
+stderr | tests/t05/step-player.test.tsx > T05 StepPlayer timer control > does not schedule while paused
+The current testing environment is not configured to support act(...)
+
+stderr | tests/t05/step-player.test.tsx > T05 StepPlayer timer control > does not schedule while paused
+The current testing environment is not configured to support act(...)
+
+stderr | tests/t05/step-player.test.tsx > T05 StepPlayer timer control > jumps to the final frame for reduced motion
+The current testing environment is not configured to support act(...)
+
+stderr | tests/t05/step-player.test.tsx > T05 StepPlayer timer control > jumps to the final frame for reduced motion
+The current testing environment is not configured to support act(...)
+
+stderr | tests/t05/step-player.test.tsx > T05 StepPlayer timer control > completes a final frame once across rerenders
+The current testing environment is not configured to support act(...)
+The current testing environment is not configured to support act(...)
+
+···stderr | tests/t05/step-player.test.tsx > T05 StepPlayer timer control > completes a final frame once across rerenders
+The current testing environment is not configured to support act(...)
+
+······················································································
+
+ Test Files  41 passed (41)
+      Tests  341 passed (341)
+   Start at  17:10:00
+   Duration  10.60s (import 31%, environment 29%, tests 27%, transform 12%, worker 1%)
+
+    Isolate  41 workers spawned · ~661ms startup each (spawn + environment, per file)
+             at least ~2.35s faster with isolate: false — reuses workers across files instead of one per file
+

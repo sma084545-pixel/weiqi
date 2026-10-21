@@ -1,0 +1,711 @@
+{
+  "schemaVersion": 1,
+  "id": "T24-EXECUTED-FINGERPRINT",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "passed",
+  "files": [
+    {
+      "path": "src/main.tsx",
+      "sha256": "da580973df8c25c6d15bd50f6795a3b4544c54c1dcbf8c2b3cf8bc52a3386f2a"
+    },
+    {
+      "path": "src/styles.css",
+      "sha256": "5eb83861fb85a0dd140812078c5c113e037ad6e693269199ce0ff0d96f17478f"
+    },
+    {
+      "path": "src/config.ts",
+      "sha256": "2bdeef873d9d8369e0d55d06ecf60ae666d0a243d704e159e2c5b45bfd5e12f9"
+    },
+    {
+      "path": "src/core/validation.ts",
+      "sha256": "152405b95158ae2e3a27b5b354c6ee7b4093b9661623bbd8050b503920aa2296"
+    },
+    {
+      "path": "src/core/coordinates.ts",
+      "sha256": "eb51c267c8f48bfea6538d439d3e5c0c43d6eeb4a1aefb5266da047add3a8b81"
+    },
+    {
+      "path": "src/core/content.generated.d.ts",
+      "sha256": "051a94eda12a064248aac313a97a90c93336a934a13cf39583314c03b68b23b1"
+    },
+    {
+      "path": "src/core/offline.ts",
+      "sha256": "52bf2b36cb0da6f53413adf151b356ba26c7e762a67438163b6b031d1a567be0"
+    },
+    {
+      "path": "src/core/constants.ts",
+      "sha256": "34d300591ec2ff5bd4e0c0676beb6edd562a056163e3c2c6d3b1c232a92fc011"
+    },
+    {
+      "path": "src/core/unified-persistence.ts",
+      "sha256": "4dfbefb39ba99de8b5143f611f3578b0f3bc5a58ffe4b4b131aca16f8b9df39d"
+    },
+    {
+      "path": "src/core/persistence.ts",
+      "sha256": "8db6f37b16baeb76f82babd8288a2445ca1c338c1905986d8b8262009b4d95ef"
+    },
+    {
+      "path": "src/components/board.types.ts",
+      "sha256": "ae6294c816a2642b4ce20583e1ad9219913f20eb91af2a889aba75d2996904e5"
+    },
+    {
+      "path": "src/components/Board.tsx",
+      "sha256": "a17c86a1062fe96f39c0427399db03671ae6a45679357d4db914377e9049e581"
+    },
+    {
+      "path": "src/components/Board.css",
+      "sha256": "9739c43d5c2967d425bc84e99fc1a13d246e752fd255694863222dd534e3bc08"
+    },
+    {
+      "path": "src/core/rules/errors.zh.ts",
+      "sha256": "72b1cf7d81f6501117fbbd3908981a14605aa2d3912125c98811682811a8cc6d"
+    },
+    {
+      "path": "src/core/rules/contract.ts",
+      "sha256": "c83f724155ef53b8bfb625dbf502549e061b1aeb8c02d6db69ebf0352698cff0"
+    },
+    {
+      "path": "src/core/rules/placement.ts",
+      "sha256": "b344b4291fe2fb77195030768c09e6018022eaa72c1ad668c4febf8c86b51d0b"
+    },
+    {
+      "path": "src/core/rules/topology.ts",
+      "sha256": "5bcc0672e9f75fe1ce9845bdade83bc5a9008fa9a5bc1950dac13833df947596"
+    },
+    {
+      "path": "src/core/rules/engine.ts",
+      "sha256": "c26657287972a8afc1935c691c4cc649199d1070209eb8873ef72f2494b3e014"
+    },
+    {
+      "path": "src/core/rules/game-store.ts",
+      "sha256": "6e24e8bce6f044eb440148e254b9645bbce7a8b15a97e369339d682534ff832c"
+    },
+    {
+      "path": "src/core/rules/scoring.ts",
+      "sha256": "9ec7fa559c40442bd132e1ee385aaf08911d56bafbc1c48b436caa8b3a5036d4"
+    },
+    {
+      "path": "src/core/rules/index.ts",
+      "sha256": "55334977e115784fdbdd1b1726569b70ddd48f12e1e58529d4cbbe343e2e9d77"
+    },
+    {
+      "path": "src/core/rules/internal.ts",
+      "sha256": "f5709f56f5a7c84e26cb6cf0dc246847d7acecf40136a8f77449172ff2294e29"
+    },
+    {
+      "path": "src/features/home/Home.tsx",
+      "sha256": "0b347c9cee0cbfd46395c7c7592eb286632b0fa575fd062365a0adf14225c0fd"
+    },
+    {
+      "path": "src/features/capture-lab/frames.ts",
+      "sha256": "b15d198ea84a5871b07152d4c319553d61b70910e81e43b149383edb5c5d26f3"
+    },
+    {
+      "path": "src/features/capture-lab/evaluation.ts",
+      "sha256": "1923bc2c19d30c3225e4a14e446cc0c16e8cfff6cb2cdb4d85f569a3aa220c29"
+    },
+    {
+      "path": "src/features/capture-lab/CaptureLab.css",
+      "sha256": "d31890fc9b012e925141bc94909482d04d849ec92a0ba66a31561ed0c8bea7dc"
+    },
+    {
+      "path": "src/features/capture-lab/StepPlayer.tsx",
+      "sha256": "6c5ac95b199ed47d0cdbd922b75ffccf70e6f6eedce82abae895dbff3b57cadc"
+    },
+    {
+      "path": "src/features/capture-lab/demos.ts",
+      "sha256": "515e5edc19ea92218549af534403e759c885df1a618a882c6fe499659279578b"
+    },
+    {
+      "path": "src/features/capture-lab/CaptureLab.tsx",
+      "sha256": "28c517f95c27b1ee6202d93eab95aa9bde84360e71a81321cfcae016c304d9d6"
+    },
+    {
+      "path": "src/features/evidence/report.ts",
+      "sha256": "7b813588caa569e17f0bb9f995e31b669bc45d3154f2d0c15a8068a7c358fc00"
+    },
+    {
+      "path": "src/features/evidence/model.ts",
+      "sha256": "e70343e1a747e22e02b3d83544a3b78754e76e79949e3e210b26e30befc6497d"
+    },
+    {
+      "path": "src/features/evidence/EvidencePage.css",
+      "sha256": "71956d45c33382336a89281d6a31d9a2faeb155b7bfdee12bafb16fa8c9d2d97"
+    },
+    {
+      "path": "src/features/evidence/EvidencePage.tsx",
+      "sha256": "fd20f6ea5a6ea6b90d962a2919f1afbe4c82da52b87df05b1ad1ff05803df736"
+    },
+    {
+      "path": "src/features/puzzle-runner/PuzzleRunner.css",
+      "sha256": "a5f75452469b31843de78aee465575979847c95799955e986db3bcc310f91a76"
+    },
+    {
+      "path": "src/features/puzzle-runner/progress.ts",
+      "sha256": "42f472f404366840b2940b3a7ba9b20440fc57f472f2c6111a2f0e627e6e3a47"
+    },
+    {
+      "path": "src/features/puzzle-runner/PuzzleRunner.tsx",
+      "sha256": "e16659ad7984f220abf0bdb31627b1f1d592b6bfbe496aa6f06393a3419324b9"
+    },
+    {
+      "path": "src/features/puzzle-runner/grading.ts",
+      "sha256": "f15fefc36c7acc26284215936fda40f7973e9afad75a92dfd6570d33a5ae5b43"
+    },
+    {
+      "path": "src/features/puzzle-runner/catalog.ts",
+      "sha256": "f54dbbce38e7fe08e1313fe05397e7710be3c0d410dcba2823a821ec24c95129"
+    },
+    {
+      "path": "src/features/learning-hub/progress.ts",
+      "sha256": "740ea8f1301931ee1ff52c9f443b6435e2ca4c912e93b42af9e03b38a3049803"
+    },
+    {
+      "path": "src/features/learning-hub/stages.ts",
+      "sha256": "945c95232a4bbdfc8f68cf1879cf393cc221625245b7d2562cf2750d56ff627c"
+    },
+    {
+      "path": "src/features/learning-hub/types.ts",
+      "sha256": "63beb83374b5af1a6ba4547f9269cbda7e38320149aa204b3ffe1eb4891b29cc"
+    },
+    {
+      "path": "src/features/learning-hub/LearningHub.tsx",
+      "sha256": "c94bdb3b8997a350f3d325abe37dd1df3cf0312336b9c71a33365a81877e53de"
+    },
+    {
+      "path": "src/features/learning-hub/registry.ts",
+      "sha256": "5223d1a750760d6ed4a022f9eca022e9abe4c1dbd3179fbb7ba42870939ebf8b"
+    },
+    {
+      "path": "src/features/learning-hub/LearningHub.css",
+      "sha256": "e1788a96d01168d616563b47d146262c4f216a2af6637436fed3b11062376065"
+    },
+    {
+      "path": "src/features/cooperative/model.ts",
+      "sha256": "f32f9771f4117785aac372f02982984b7cb4fa6d23ebdfce80d46fdd14f27c4f"
+    },
+    {
+      "path": "src/features/cooperative/CooperativeChallenge.tsx",
+      "sha256": "17d440754bdde7f9cb5ab23adcccc928e363845f568601f8662ce16eac407e4b"
+    },
+    {
+      "path": "src/features/cooperative/CooperativeChallenge.css",
+      "sha256": "2a07db9541b23629941b76e807471796de4600bf829756cc1b9e559c8481d474"
+    },
+    {
+      "path": "src/features/full-game/FullGame.css",
+      "sha256": "00c5b49a9df404b1ff99f28c76c7be345d5e181f77776913d5bbf4a40cdb73d9"
+    },
+    {
+      "path": "src/features/full-game/storage.ts",
+      "sha256": "2693cbaa7ada06d32d5de8a9543d6ff7989135f3416441508f20b031b2f83177"
+    },
+    {
+      "path": "src/features/full-game/FullGame.tsx",
+      "sha256": "d68e068c1a0c5ab18013a2efdf2c0e612594568c3062e6ffdaaa172c58f00243"
+    },
+    {
+      "path": "src/features/full-game/model.ts",
+      "sha256": "4aedcedc65f2a8838c13e303f856b84cea2f5c7e5de4106ab0a46ec1cc4172c3"
+    },
+    {
+      "path": "src/features/full-game/review.ts",
+      "sha256": "7ec58e64bcb9416ee053b2f1ce7bde82152fde94c6b454954f2ea8e2cb77b71e"
+    },
+    {
+      "path": "src/features/life-lab/LifeLab.tsx",
+      "sha256": "46242b49b61a3e025bd28a8a86b82c242f40702527d27304382292be6060decd"
+    },
+    {
+      "path": "src/features/life-lab/LifeLab.css",
+      "sha256": "08d51723d5d9a9eb29da3d7a34f0b5a386c1229ceca585364132c28ab606673e"
+    },
+    {
+      "path": "src/features/life-lab/model.ts",
+      "sha256": "56ddd656a1a34724c58154501365766bf1078758fcc0420f42a2e20fc71f4997"
+    },
+    {
+      "path": "src/features/capture-game/CaptureGame.tsx",
+      "sha256": "924e6616813fb233024ce7bfd201f7387a6323566d291d5b2fed336683f70955"
+    },
+    {
+      "path": "src/features/capture-game/CaptureGame.css",
+      "sha256": "b5911f18cae9ae0dd7eb88a4932be60ae21fcf0b3f0f0cf1b13b116faf15eca3"
+    },
+    {
+      "path": "src/features/capture-game/model.ts",
+      "sha256": "9f8ef722bf63dc6fc8dbff0c0d210ca5bc687ee9bf46ef9fcf792c734a5dc762"
+    },
+    {
+      "path": "src/features/capture-game/review.ts",
+      "sha256": "dfe29ac045a424c1c8c33e69e84aebb805dc0306d870b10aa2544fd29078242c"
+    },
+    {
+      "path": "src/features/territory/TerritoryTrainer.tsx",
+      "sha256": "3971021a4af53fc7ab9cb55a73080127912d41071994af3c588f4683fb6536f6"
+    },
+    {
+      "path": "src/features/territory/TerritoryTrainer.css",
+      "sha256": "caf2f39a88882f2d661042af39fa9c1036310e12de686d903c07559f62a9711c"
+    },
+    {
+      "path": "src/features/territory/model.ts",
+      "sha256": "f2acbb73e5e5beb0c61e357d7db51cd006040cbd58709dbf87cdc0a0e716046f"
+    },
+    {
+      "path": "src/features/liberty-lab/LibertyLab.css",
+      "sha256": "11a1dd9588d03a11a57c30f0d552894b37ae7947ae5f4f675f185abe8d14354a"
+    },
+    {
+      "path": "src/features/liberty-lab/LibertyLab.tsx",
+      "sha256": "0212ffca55f715dff1ca26ca55d88a1202f1f137415c276635550ef02e35c210"
+    },
+    {
+      "path": "src/features/liberty-lab/evaluation.ts",
+      "sha256": "6679e2d339e6ecb82af1d4101f25aca7e87ab498fd88bd827cd5d0266a46325a"
+    },
+    {
+      "path": "src/features/liberty-lab/demos.ts",
+      "sha256": "9def321bcdcda66493ca8c4eb8948339150275bf4861ec4f0f99a195670bdacb"
+    },
+    {
+      "path": "src/features/file-exchange/json.ts",
+      "sha256": "d20c52e291cf12164514d938e7f413b6009592fe014b84a5d3bd4b27d325b7f8"
+    },
+    {
+      "path": "src/features/file-exchange/storage.ts",
+      "sha256": "be60ca5ec738d449a70bbf8690bcffec5832085aeb7d762191ba0f23a728f975"
+    },
+    {
+      "path": "src/features/file-exchange/sgf.ts",
+      "sha256": "f41ebce370e97e7efc48275de6456c050592b0380c12490af2158ef3decf50ed"
+    },
+    {
+      "path": "src/features/file-exchange/types.ts",
+      "sha256": "f028fd1953079f95a5bf7fee2c9cb36e9322184ec492d274a4240dbaebb7a09c"
+    },
+    {
+      "path": "src/features/file-exchange/FileExchange.css",
+      "sha256": "003b3984f3a1a58f847b8a4393794c27c0b99d6362f50a2548fc41a79d6d8bf2"
+    },
+    {
+      "path": "src/features/file-exchange/FileExchange.tsx",
+      "sha256": "05b49e2f03dccce41879330cdcbd05c7028c3b5f00f790658b51b1c8e33741e0"
+    },
+    {
+      "path": "src/features/file-exchange/graphics.ts",
+      "sha256": "dfea96cfdc2d679d373de0de3b703f65b23f963644eda4f1187ee7cceb737495"
+    },
+    {
+      "path": "src/features/offline-data/OfflineData.css",
+      "sha256": "5fb044c09d134658feac2714facba67fcde7667a935601ff586f4a65b8c7fe96"
+    },
+    {
+      "path": "src/features/offline-data/OfflineData.tsx",
+      "sha256": "caca3ef75e5473b70c94eb4e4307294eed734a3ab0018c0f1f053b76c19da8d1"
+    },
+    {
+      "path": "src/features/teacher-editor/TeacherEditor.css",
+      "sha256": "88bee9c025e5a8d67bd98542ddf8a7ecd06cf69cdef146503162ca61c295efcb"
+    },
+    {
+      "path": "src/features/teacher-editor/storage.ts",
+      "sha256": "e68aa50691f769d699b4b5ff1c8a69245b63eaf80ad93a19696960907f94d29c"
+    },
+    {
+      "path": "src/features/teacher-editor/TeacherEditor.tsx",
+      "sha256": "06a564b9aaefbbb7292230995b7583ac3a1a7940bbe161fe32b23a3e956d27d9"
+    },
+    {
+      "path": "src/features/teacher-editor/templates.ts",
+      "sha256": "072f86c18c516bbaafa91c92d6c7b3280002e45247706f25216e8d55d22cb5e6"
+    },
+    {
+      "path": "src/features/teacher-editor/model.ts",
+      "sha256": "289d8135b0021cd93d6d54085ee6511e12368c9db27a87db78d60bffafcaa351"
+    },
+    {
+      "path": "src/features/experiment-board/ExperimentBoard.css",
+      "sha256": "b0255eb6a77b67550a7aecc8d2fb8d01cf4a8f5f81b484385a0f6539efbc85d9"
+    },
+    {
+      "path": "src/features/experiment-board/storage.ts",
+      "sha256": "bfb37e4c0730123336c6bd16e515e7811a93f7a73b4140327fc56525ced69d5e"
+    },
+    {
+      "path": "src/features/experiment-board/ExperimentBoard.tsx",
+      "sha256": "443ebd1b4f69e335d52564dff829f438dcc55d48f03d0767261ef7a436af5f93"
+    },
+    {
+      "path": "src/features/experiment-board/machine.ts",
+      "sha256": "b37c6451713e475e3e51679e6e26acb3937ab0fbe6e6186f6c44eea7e5a8360c"
+    },
+    {
+      "path": "src/features/experiment-board/model.ts",
+      "sha256": "d21faf84de29aad70a3fa679a330d1ef610cf20009780e9b546b1452eec1ce34"
+    },
+    {
+      "path": "src/features/experiment-board/diagnostics.ts",
+      "sha256": "df4b132702fcfaaaa5d137b600819fec2745b0a7a1e9e166c7402b21c1530428"
+    },
+    {
+      "path": "schemas/t17-evidence.schema.json",
+      "sha256": "2013cddc5d70c95a9ffa5e42e370fd5d49b90a0b0acd5c1517037e4be3d6d949"
+    },
+    {
+      "path": "schemas/content.schema.json",
+      "sha256": "82a1a060ff48c7072aba29d5091c55e976eaed04e5d6af5787408885b07e2e88"
+    },
+    {
+      "path": "content/puzzles/CAP-001.json",
+      "sha256": "e0a0950af03ba144d4464790b1292ac4a77b7534bc5a1228b77c194862f767cd"
+    },
+    {
+      "path": "content/puzzles/LIFE-002.json",
+      "sha256": "4a9c755d45126cef93464d2e42c74b51af63468701c701d64957910269b32526"
+    },
+    {
+      "path": "content/puzzles/CON-002.json",
+      "sha256": "aa877a3ef8e658715254ca2efee4ea07a34593be8a5d122aecbe198bee8339c0"
+    },
+    {
+      "path": "content/puzzles/LIB-002.json",
+      "sha256": "8a057d4f583931bdaed4e45f2b6080858e6af9eca6096f248a9d8f01e057972c"
+    },
+    {
+      "path": "content/puzzles/LIB-003.json",
+      "sha256": "bba49850e48d1a5a9e741a8228fff30bb61471124fb395c6863d4957a7be753f"
+    },
+    {
+      "path": "content/puzzles/CON-003.json",
+      "sha256": "7b5b4efdd21de2f90023f34b9c8dee3f1e11743c9a4c434cc03b816c16ae30c7"
+    },
+    {
+      "path": "content/puzzles/DISC-001.json",
+      "sha256": "309fbe53ee677d08e50c7e1196de664f75c46921b17459a0d6b62cadce78fff1"
+    },
+    {
+      "path": "content/puzzles/LIFE-003.json",
+      "sha256": "1909976bc369d0434b0db10720cbb722be4cb4ca49b2781668b56cb8ee8f6ffc"
+    },
+    {
+      "path": "content/puzzles/CON-004.json",
+      "sha256": "4537bfa53a47ef670c096ea5e87573ad848cd6b4f3464fbfbbb41ea302371211"
+    },
+    {
+      "path": "content/puzzles/LIB-004.json",
+      "sha256": "bbb1fb3435c71c4212ec85917bf4c7226216023ea15723b082a184c87a3cec0a"
+    },
+    {
+      "path": "content/puzzles/AREA-001.json",
+      "sha256": "9865586cc32ac7887e9aa4951ac9a2fbf668bbdc52e997bfeebc60b4fa73f7cd"
+    },
+    {
+      "path": "content/puzzles/LIFE-004.json",
+      "sha256": "4ae5d60c5a862d20e64e8b7ffab7659cabe13d3289f6c682d80c171f4ad849ca"
+    },
+    {
+      "path": "content/puzzles/LIFE-005.json",
+      "sha256": "506f62c281d0c1f09c8dfff2725fe0677fcfcf9ecda05615b10adeff4a968992"
+    },
+    {
+      "path": "content/puzzles/LIB-005.json",
+      "sha256": "0d8565c2908a2876ea9a70331354d17ea2158bc20d7429517a5d49fb41e57387"
+    },
+    {
+      "path": "content/puzzles/CON-005.json",
+      "sha256": "0b5327dc3885e5f4e49308e5164e79953d1065423074a7f0b0afd8d8df24520c"
+    },
+    {
+      "path": "content/puzzles/AREA-003.json",
+      "sha256": "c77db09cb0b7697a01fb9554aaccf6990b3889d79b3846ba94e9e2cbce2264cc"
+    },
+    {
+      "path": "content/puzzles/DISC-004.json",
+      "sha256": "15f35fb4a699b6c8083cb901675c9c79e17a61a0dd742bb4673067b2830ea6ac"
+    },
+    {
+      "path": "content/puzzles/CAP-005.json",
+      "sha256": "8272de484c2b56a7997481bb5b93c914698d6e595087850c37130eeed222e79d"
+    },
+    {
+      "path": "content/puzzles/CAP-004.json",
+      "sha256": "2f598b1d4a5d70b283bd0d4a2bd5728742c6a2b5c103de46e208409e5257a700"
+    },
+    {
+      "path": "content/puzzles/DISC-005.json",
+      "sha256": "5e8d7c96a647be704dcffbcd955902598a627079ae8cddb20c19036fc4b5d3bc"
+    },
+    {
+      "path": "content/puzzles/AREA-002.json",
+      "sha256": "4e2e9c14b90ce85a6296c709773d97f9c2a9a9a0018c29dd7a25d21cc4953cdb"
+    },
+    {
+      "path": "content/puzzles/DISC-002.json",
+      "sha256": "989d275f49faad33b2ef1773fd20dca7fbcae652b805c5b735031dbad428067e"
+    },
+    {
+      "path": "content/puzzles/CAP-003.json",
+      "sha256": "092eb801f433d09ad685e1d0718151eea40b41bcdc4765cba639d85d999a4682"
+    },
+    {
+      "path": "content/puzzles/AREA-005.json",
+      "sha256": "32e94ab284735f1814f0acb990a4b3289c1bc4bd702f2d415470f8a5435c6554"
+    },
+    {
+      "path": "content/puzzles/CON-001.json",
+      "sha256": "fc6f68f65b0461f248bbacd27c9753327bc5f8d86e4763ebad2d93999bd46013"
+    },
+    {
+      "path": "content/puzzles/LIB-001.json",
+      "sha256": "3c5fa560f7cd43a13e14021d5e1baa80353592e38e95e454355d4c18b6158257"
+    },
+    {
+      "path": "content/puzzles/AREA-004.json",
+      "sha256": "2129c1b57829c623de628c0bcf203025c317c380a75bc09dab6c8ecf2f191687"
+    },
+    {
+      "path": "content/puzzles/CAP-002.json",
+      "sha256": "f72172c4db6adf32228632d7660f174b649ae3ebbbedd9dd3f3bed1ba3e4e61e"
+    },
+    {
+      "path": "content/puzzles/LIFE-001.json",
+      "sha256": "3e800b83347c378568c5b0ff8a4a96412fa44081df9711eb325cc0d1c3ca4c2f"
+    },
+    {
+      "path": "content/puzzles/DISC-003.json",
+      "sha256": "aac6b4679d2517d03e9eeed1f2ffc3897c56e5651dd3176b8bf3368e0035a599"
+    },
+    {
+      "path": "content/endgames/END-006.json",
+      "sha256": "29bc999f1712bfe3a30c1eb41178ed0c7beae2a1749642815ace3b9662715603"
+    },
+    {
+      "path": "content/endgames/END-001.json",
+      "sha256": "88fe7f6226f33da4d12f0cf14121be2c4f6b4ee7da376f3d9dd77bc080b4ebed"
+    },
+    {
+      "path": "content/endgames/END-002.json",
+      "sha256": "fdc052992973abb3140041ea3d62d1cc9078eb4eeaf15dda2c36604af6170859"
+    },
+    {
+      "path": "content/endgames/END-003.json",
+      "sha256": "a2f8051b0b151056e18d1aec42f7499f4e6b6c8c82e30ac279e9da17ee6282f6"
+    },
+    {
+      "path": "content/endgames/END-004.json",
+      "sha256": "967208e0213d5d786b5fe1bb37600d44f8fed7fb629e4d19f6ddaa8d1248eabe"
+    },
+    {
+      "path": "content/endgames/END-005.json",
+      "sha256": "81dfe29d1a8ca9b96aac90cae4f3d64b23faa248ada69cd7c325798eab35a3be"
+    },
+    {
+      "path": "content/t09/input-manifest.json",
+      "sha256": "2fe8ec62c8306472a06ee46e2cd543451caa256df281f345f8194fb193f97c19"
+    },
+    {
+      "path": "content/t09/SOURCES.md",
+      "sha256": "514476222cf2806b147f8183175312d7df0f520c1fecebf16720720473cc811d"
+    },
+    {
+      "path": "content/t09/bundle.json",
+      "sha256": "a58630def9526df81cd8e27b8fabe8bbe59e9905eb4aad1af2fb6203f9b46532"
+    },
+    {
+      "path": "content/t09/README.md",
+      "sha256": "9a7c6046f3046f9f1d43d9a67f8ab031dfb7e82dbe09fddb37550df441ddd2d5"
+    },
+    {
+      "path": "content/t09/CHANGED_FILES.md",
+      "sha256": "bc1bad8b0b0feec47c2400714a8458a4aa66691d4e31b51b1c337be03424b4e1"
+    },
+    {
+      "path": "content/t09/pedagogy.json",
+      "sha256": "3d01eeec7edc2f5e4883eb9cde8c6ca879d3345c5bfa86a9f8426d9f8177944c"
+    },
+    {
+      "path": "content/t09/release-pool.json",
+      "sha256": "0cfbf43457fac54fa8f074c2af17ccb3a1ef1ccd3c4d93e9244763f8117a7796"
+    },
+    {
+      "path": "content/t09/independent-expectations.json",
+      "sha256": "2ae2aeab29b40b66e5d28018429544f68a967c18d517fa1902a8a32048c61dfe"
+    },
+    {
+      "path": "content/t09/FILE_MANIFEST.json",
+      "sha256": "9cdd91d11c91987992365cb4c8b7a859709a96ff7445025eaa02841c6fca3d62"
+    },
+    {
+      "path": "public/offline.html",
+      "sha256": "b5379d9413769029799e8e7914650cab8a5c3477bce36531ee91762389005fe5"
+    },
+    {
+      "path": "public/app.webmanifest",
+      "sha256": "26ae2d10fc5b45982ae4f4f593aaa93b781d4ff63a8bfe2166bc392d01cc9b50"
+    },
+    {
+      "path": "public/sw.js",
+      "sha256": "64744fbfdcb18d1a3ab68a181c3fdd0c8dc70b8e163cc34ceceb5bf76731f137"
+    },
+    {
+      "path": "dist/offline.html",
+      "sha256": "b5379d9413769029799e8e7914650cab8a5c3477bce36531ee91762389005fe5"
+    },
+    {
+      "path": "dist/index.html",
+      "sha256": "a53aec96d84e91e2c19220aae4f0f2e06be822552e42db33ff376bdac02b2ca0"
+    },
+    {
+      "path": "dist/app.webmanifest",
+      "sha256": "26ae2d10fc5b45982ae4f4f593aaa93b781d4ff63a8bfe2166bc392d01cc9b50"
+    },
+    {
+      "path": "dist/offline-assets.json",
+      "sha256": "e9a1e136a1eb3cc03e93a6795a37d4abfe5cb8816fee4c7a300d73170385f6d3"
+    },
+    {
+      "path": "dist/sw.js",
+      "sha256": "f020b60525c627919dd4ece4a760cf6ef530b245c4f5b7f2f04f7226baf61786"
+    },
+    {
+      "path": "dist/content/formal-content-v1.json",
+      "sha256": "a58630def9526df81cd8e27b8fabe8bbe59e9905eb4aad1af2fb6203f9b46532"
+    },
+    {
+      "path": "dist/assets/index-sO1tMWpE.css",
+      "sha256": "ff835b4c62108eedab3fbfcaf81b766f69702101a17749d8c0c087918af0964e"
+    },
+    {
+      "path": "dist/assets/index-CbgLW9-l.js",
+      "sha256": "ea19801f0f4281ce698ff38f00f950ed2d021e1462047cd7e09cf8559ff518e9"
+    },
+    {
+      "path": "dist/materials/t17/CAS-evidence-template.md",
+      "sha256": "02db2b62aefe8d0dc007f3a243a47d4f298f73c86169a42b65edba6be52e5bcc"
+    },
+    {
+      "path": "dist/materials/t13/territory-counting-card.md",
+      "sha256": "158917237f52ac5cca0fd2106823f28b5b2ce0310b24cd7bd455c10583de229b"
+    },
+    {
+      "path": "dist-engine/offline.html",
+      "sha256": "b5379d9413769029799e8e7914650cab8a5c3477bce36531ee91762389005fe5"
+    },
+    {
+      "path": "dist-engine/app.webmanifest",
+      "sha256": "26ae2d10fc5b45982ae4f4f593aaa93b781d4ff63a8bfe2166bc392d01cc9b50"
+    },
+    {
+      "path": "dist-engine/go-club-rules.mjs",
+      "sha256": "028ff1a53af96bc8aa44b2b603ba80ada31b8517c89aeff11088db6683e108b7"
+    },
+    {
+      "path": "dist-engine/THIRD_PARTY_NOTICES.md",
+      "sha256": "3f9d7b0e2fbdf81510013682960b1dc9a2212a5a7ab65aef586ff46ca0656024"
+    },
+    {
+      "path": "dist-engine/README.md",
+      "sha256": "68b7d3fcbd431814e07e2c1e11c6a3615b9c4a11b5f57a96341574d80fd5f85c"
+    },
+    {
+      "path": "dist-engine/package.json",
+      "sha256": "6a22ddbfc1762060e0b91f3fc3209b8aeda7cb5b1f813bed15d17fd2efbe7a31"
+    },
+    {
+      "path": "dist-engine/go-club-rules.mjs.map",
+      "sha256": "37945c4c8a993461d2bd8c378e3439438967d60ae159246248836f3b0071a711"
+    },
+    {
+      "path": "dist-engine/sw.js",
+      "sha256": "64744fbfdcb18d1a3ab68a181c3fdd0c8dc70b8e163cc34ceceb5bf76731f137"
+    },
+    {
+      "path": "dist-engine/types/constants.d.ts",
+      "sha256": "d0b4dce317f1c5e484c5a464ee15876e5556c67e95e8600203b99b7132344936"
+    },
+    {
+      "path": "dist-engine/types/content.generated.d.ts",
+      "sha256": "051a94eda12a064248aac313a97a90c93336a934a13cf39583314c03b68b23b1"
+    },
+    {
+      "path": "dist-engine/types/coordinates.d.ts",
+      "sha256": "50ab441d0732ee9ef1f2cc4809f1486a9639475a273f06f041735c43408bd495"
+    },
+    {
+      "path": "dist-engine/types/validation.d.ts",
+      "sha256": "8e4e594e29815ac809c5fb698c2d9427d9e4462c9f9199f63e2568b9f1e32119"
+    },
+    {
+      "path": "dist-engine/types/persistence.d.ts",
+      "sha256": "a8740ec7fcc47a43af47025edc07a75be4be5cb3d71610db89c7395f17ddd308"
+    },
+    {
+      "path": "dist-engine/types/rules/scoring.d.ts",
+      "sha256": "2803eb18376c1a585187f47a384974a0067d64b875c51ec24c3cecb7e457934d"
+    },
+    {
+      "path": "dist-engine/types/rules/placement.d.ts",
+      "sha256": "5e725a641c564b90bd429f4a441a7a96dbb57c0d02221802df111d4077dfb5e4"
+    },
+    {
+      "path": "dist-engine/types/rules/engine.d.ts",
+      "sha256": "808d34b6193eb6a446e7d1c98ef0deaf8426dea5e44e4fe7bb29b75e2d690391"
+    },
+    {
+      "path": "dist-engine/types/rules/errors.zh.d.ts",
+      "sha256": "b9cc4850f058dc79ed9ecee0513e26a489344844fecddfcf52079ee5c5b34283"
+    },
+    {
+      "path": "dist-engine/types/rules/internal.d.ts",
+      "sha256": "d5a51b937b2c5c2f62ce09c366c119b04a89cc62c9a96e6a1233d802ff554c5a"
+    },
+    {
+      "path": "dist-engine/types/rules/topology.d.ts",
+      "sha256": "9ef7e99ed71654949306a2836b15ad9569c3cc58d6b389e879d0b6245d6a225c"
+    },
+    {
+      "path": "dist-engine/types/rules/index.d.ts",
+      "sha256": "8dfa1926261e6607c99e257458e5b431f96b6a062a2b9d20a691ac0fe7c15c0e"
+    },
+    {
+      "path": "dist-engine/types/rules/contract.d.ts",
+      "sha256": "1fd7cfe9e43901052d522a4bef06db1b1d68347baa5d331223cc977d0e9ad6e6"
+    },
+    {
+      "path": "dist-engine/types/rules/game-store.d.ts",
+      "sha256": "a39ef61585126301e406f1d100d68812719fd09782c5123223ff390236059924"
+    },
+    {
+      "path": "package.json",
+      "sha256": "c0f6245d4f09a58a3db007e413457a764dca1962bbeb1c7fda5f4c506a1f386d"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "sha256": "80fb6c23436fb904456dea058ecb97d48d6789c5fc5a3f59bceca8131e7d655c"
+    },
+    {
+      "path": "vite.config.ts",
+      "sha256": "43f30beaf17749c85fe3438716ae8a0509ab65d1d7d9eb08ac2cee085339d209"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "4dac4ac2cd33385c7f15d27769e8e7079f2495909907425b8c23ac14f8cf8d6a"
+    },
+    {
+      "path": "playwright.config.ts",
+      "sha256": "da3319640128eb62a67272539e8131c8e42ac59b515c2a9230e5cb52e4c037de"
+    },
+    {
+      "path": "tests/browser/t24.spec.ts",
+      "sha256": "85b02ed54a89ce65bfe77bba5a3ba11059d8154ad1ad17ad9c0d0f89d47c78fe"
+    },
+    {
+      "path": "tests/browser/t24-refresh.spec.ts",
+      "sha256": "2fc599bcc3de2561186e0509f6d71aa86f05fea9fb3df63f0c1d2b2baa45267c"
+    }
+  ],
+  "scope": "candidate clean install/check/start/browser executed; current executable files match byte for byte",
+  "humanReviewed": null
+}

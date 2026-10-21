@@ -1,0 +1,25 @@
+[WebServer] (node:96371) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:96377) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [firefox] › tests/browser/t24.spec.ts:8:1 › T24 continuous learner to teacher journey, offline save and recovery (1ms)
+
+
+  1) [firefox] › tests/browser/t24.spec.ts:8:1 › T24 continuous learner to teacher journey, offline save and recovery 
+
+    TimeoutError: browserType.launch: Timeout 180000ms exceeded.
+    Call log:
+      - <launching> /Users/maxiao/Library/Caches/ms-playwright/firefox-1538/firefox/Nightly.app/Contents/MacOS/firefox -no-remote -headless -profile /var/folders/rt/3w1ydypn74b4yst9ftks_mdc0000gn/T/playwright_firefoxdev_profile-H9EvNf -juggler-pipe -silent
+      - <launched> pid=96378
+      - [pid=96378][err] *** You are running in headless mode.
+      - [pid=96378][err] sandbox_extension_issue_file_to_process failed for /Users/maxiao/Library/Caches/ms-playwright/firefox-1538/firefox/Nightly.app/Contents/MacOS/plugin-container.app: 1 (Operation not permitted)
+      - [pid=96378][out] Crash Annotation GraphicsCriticalError: |[0][GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt (t=5.93384) [GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+
+
+    Error Context: output/playwright/results/t24-T24-continuous-learner-e7c3d-y-offline-save-and-recovery-firefox/error-context.md
+
+  1 failed
+    [firefox] › tests/browser/t24.spec.ts:8:1 › T24 continuous learner to teacher journey, offline save and recovery 

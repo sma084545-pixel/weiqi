@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="210mm" height="148.5mm" viewBox="0 0 595.276 420.945">
+<title>LIFE-004 r1 | 眼与基础死活 Life &amp; death 背面</title>
+<metadata>{&quot;schemaVersion&quot;: 1, &quot;id&quot;: &quot;T21-BACK-LIFE-004&quot;, &quot;revision&quot;: 1, &quot;rulesetId&quot;: &quot;GO-CLUB-AREA-1&quot;, &quot;contentRef&quot;: {&quot;id&quot;: &quot;LIFE-004&quot;, &quot;revision&quot;: 1}}</metadata>
+<rect width="595.276" height="420.945" fill="#FFFFFF" stroke="#9EA8A6"/>
+<rect width="595.276" height="28" fill="#8C5E3C"/>
+<text x="22" y="19" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="12.5" fill="#FFFFFF">LIFE-004 r1 | 眼与基础死活 Life &amp; death</text>
+<text x="22" y="50" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="13.5" fill="#1D3035">四点空间的防守要点</text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="10" fill="#13766D"><tspan x="22" y="83">三层提示</tspan></text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="8.7" fill="#1D3035"><tspan x="22" y="101.0">1. 先检查目标块的全部气。</tspan></text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="8.7" fill="#1D3035"><tspan x="22" y="117.5">2. 比较候选点落下后，哪些棋子连接或被提走。</tspan></text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="8.7" fill="#1D3035"><tspan x="22" y="134.0">3. 在完整棋盘上重放一手，再按成功标准核对。</tspan></text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="10" fill="#A44A3F"><tspan x="22" y="154.5">常见错误</tspan></text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="8.2" fill="#1D3035"><tspan x="22" y="171.5">黑 A5 后剩 B5–D5 一个连通空间，本手没有分眼；白 </tspan><tspan x="22" y="183.3">C5 抢占中点。此变化不作全盘死亡证明。</tspan></text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="10" fill="#13766D"><tspan x="296" y="83">正确答案</tspan></text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="8.2" fill="#1D3035"><tspan x="296" y="101.0">黑 B5 或 C5 均把四点直线分为单点眼与两点眼区。以 B</tspan><tspan x="296" y="112.7">5 为例，白 C5 后黑 D5 提白；白 D5 后黑 C5 </tspan><tspan x="296" y="124.4">提白。单点眼保住黑块，及时提掉侵入子可保持另一眼区。C5 首</tspan><tspan x="296" y="136.1">手完全对称。</tspan></text>
+<text x="22" y="386" font-family="Arial Unicode MS" font-size="8.5" fill="#5A6B9F">教师详解：答案册第 22 页</text>
+</svg>

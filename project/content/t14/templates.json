@@ -1,0 +1,603 @@
+{
+  "schemaVersion": 1,
+  "id": "T14-TEMPLATE-BUNDLE",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "ContentBundle",
+  "developmentOnly": true,
+  "title": "T14 教师出题开发模板",
+  "items": [
+    {
+      "schemaVersion": 1,
+      "id": "TEMPLATE-LIB-001",
+      "revision": 1,
+      "rulesetId": "GO-CLUB-AREA-1",
+      "kind": "Puzzle",
+      "developmentOnly": true,
+      "category": "LIB",
+      "difficulty": {
+        "level": "beginner",
+        "rationale": "单子中心数气，只有一次去重计数。"
+      },
+      "prompt": "数出标记黑子的气。",
+      "initialPosition": {
+        "schemaVersion": 1,
+        "id": "POS-TEMPLATE-LIB-001",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 5,
+        "stones": [
+          {
+            "row": 2,
+            "col": 2,
+            "color": "B"
+          }
+        ],
+        "toPlay": "B",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "targetMarkers": [
+        {
+          "markerId": "target-1",
+          "type": "target",
+          "points": [
+            {
+              "row": 2,
+              "col": 2
+            }
+          ],
+          "label": "模板目标棋块",
+          "owner": "B"
+        }
+      ],
+      "firstPlayer": "B",
+      "conditions": {
+        "boundary": "full-board",
+        "external": "真实完整 5×5 棋盘；模板外部无附加棋子。",
+        "assumptions": [
+          "学习目标：认识正交相邻的气并准确计数",
+          "新教学起点，过去劫史未知；发布前需重新核查内容。"
+        ],
+        "viewport": null
+      },
+      "hints": [
+        "观察上下左右。",
+        "排除斜角和非空点。",
+        "把找到的空点去重后计数。"
+      ],
+      "answer": {
+        "type": "number",
+        "value": 4,
+        "explanation": "中心单子有四口气；发布前请重新核查。"
+      },
+      "coveredBranches": [],
+      "sources": [
+        {
+          "type": "original",
+          "title": "T14 本机编辑模板",
+          "url": null,
+          "accessedAt": null,
+          "note": "原创开发模板；只用于创建草稿，不计入正式30题，也不代表解答已由人类复核。"
+        }
+      ],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T14 模板生成器与 schema v1 校验",
+          "checkedAt": "2026-09-15",
+          "evidence": [
+            "模板结构通过"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T01 validateSetup 与已录着法重放",
+          "checkedAt": "2026-09-15",
+          "evidence": [
+            "模板起点和示例分支合法"
+          ]
+        },
+        "solutionChecked": {
+          "status": "partial",
+          "method": "模板示例答案仅供起步，发布前须由使用者重新核查",
+          "checkedAt": "2026-09-15",
+          "evidence": [
+            "不得继承为发布证明"
+          ]
+        },
+        "externalReferenceChecked": null,
+        "modelChecked": null,
+        "humanReviewed": null
+      },
+      "relatedContent": []
+    },
+    {
+      "schemaVersion": 1,
+      "id": "TEMPLATE-CAP-001",
+      "revision": 1,
+      "rulesetId": "GO-CLUB-AREA-1",
+      "kind": "Puzzle",
+      "developmentOnly": true,
+      "category": "CAP",
+      "difficulty": {
+        "level": "beginner",
+        "rationale": "一步局部提子，示例只含一条已录成功分支。"
+      },
+      "prompt": "黑先，找出一步提掉目标白子的着法。",
+      "initialPosition": {
+        "schemaVersion": 1,
+        "id": "POS-TEMPLATE-CAP-001",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 5,
+        "stones": [
+          {
+            "row": 1,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 1,
+            "color": "B"
+          },
+          {
+            "row": 3,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 2,
+            "color": "W"
+          }
+        ],
+        "toPlay": "B",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "targetMarkers": [
+        {
+          "markerId": "target-1",
+          "type": "target",
+          "points": [
+            {
+              "row": 2,
+              "col": 2
+            }
+          ],
+          "label": "模板目标棋块",
+          "owner": "W"
+        }
+      ],
+      "firstPlayer": "B",
+      "conditions": {
+        "boundary": "full-board",
+        "external": "真实完整 5×5 棋盘；模板外部无附加棋子。",
+        "assumptions": [
+          "学习目标：练习占据最后一气并解释提子因果",
+          "新教学起点，过去劫史未知；发布前需重新核查内容。"
+        ],
+        "viewport": null
+      },
+      "hints": [
+        "先数目标棋块的气。",
+        "找出落子后会令气归零的空点。",
+        "用规则重放核对被提坐标。"
+      ],
+      "answer": {
+        "type": "move-tree",
+        "rootNodeId": "root",
+        "nodes": [
+          {
+            "nodeId": "root",
+            "move": null,
+            "children": [
+              "node-1"
+            ],
+            "outcome": "continue",
+            "terminalStatus": null,
+            "evidence": [],
+            "explanation": "从模板起点开始。"
+          },
+          {
+            "nodeId": "node-1",
+            "move": {
+              "type": "place",
+              "color": "B",
+              "at": {
+                "row": 2,
+                "col": 3
+              }
+            },
+            "children": [],
+            "outcome": "success",
+            "terminalStatus": null,
+            "evidence": [
+              "D3 是目标白子的最后一气；T01 重放后白子被提。"
+            ],
+            "explanation": "黑 D3 占据最后一气并提掉目标白子。"
+          }
+        ],
+        "uncoveredPolicy": "unknown",
+        "uniquenessClaim": false,
+        "uniquenessEvidence": []
+      },
+      "coveredBranches": [
+        [
+          "root",
+          "node-1"
+        ]
+      ],
+      "sources": [
+        {
+          "type": "original",
+          "title": "T14 本机编辑模板",
+          "url": null,
+          "accessedAt": null,
+          "note": "原创开发模板；只用于创建草稿，不计入正式30题，也不代表解答已由人类复核。"
+        }
+      ],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T14 模板生成器与 schema v1 校验",
+          "checkedAt": "2026-09-15",
+          "evidence": [
+            "模板结构通过"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T01 validateSetup 与已录着法重放",
+          "checkedAt": "2026-09-15",
+          "evidence": [
+            "模板起点和示例分支合法"
+          ]
+        },
+        "solutionChecked": {
+          "status": "partial",
+          "method": "模板示例答案仅供起步，发布前须由使用者重新核查",
+          "checkedAt": "2026-09-15",
+          "evidence": [
+            "不得继承为发布证明"
+          ]
+        },
+        "externalReferenceChecked": null,
+        "modelChecked": null,
+        "humanReviewed": null
+      },
+      "relatedContent": []
+    },
+    {
+      "schemaVersion": 1,
+      "id": "TEMPLATE-LIFE-001",
+      "revision": 1,
+      "rulesetId": "GO-CLUB-AREA-1",
+      "kind": "Puzzle",
+      "developmentOnly": true,
+      "category": "LIFE",
+      "difficulty": {
+        "level": "beginner",
+        "rationale": "完整5路盘上的两个独立单点眼，避开劫与双活。"
+      },
+      "prompt": "标出目标黑棋两个独立真眼的空点。",
+      "initialPosition": {
+        "schemaVersion": 1,
+        "id": "POS-TEMPLATE-LIFE-001",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 5,
+        "stones": [
+          {
+            "row": 0,
+            "col": 0,
+            "color": "B"
+          },
+          {
+            "row": 0,
+            "col": 1,
+            "color": "B"
+          },
+          {
+            "row": 0,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 0,
+            "col": 3,
+            "color": "B"
+          },
+          {
+            "row": 0,
+            "col": 4,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 0,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 4,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 0,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 1,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 3,
+            "color": "B"
+          },
+          {
+            "row": 2,
+            "col": 4,
+            "color": "B"
+          },
+          {
+            "row": 3,
+            "col": 0,
+            "color": "W"
+          },
+          {
+            "row": 3,
+            "col": 1,
+            "color": "W"
+          },
+          {
+            "row": 3,
+            "col": 2,
+            "color": "W"
+          },
+          {
+            "row": 3,
+            "col": 3,
+            "color": "W"
+          },
+          {
+            "row": 3,
+            "col": 4,
+            "color": "W"
+          }
+        ],
+        "toPlay": "W",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "targetMarkers": [
+        {
+          "markerId": "target-1",
+          "type": "target",
+          "points": [
+            {
+              "row": 1,
+              "col": 2
+            }
+          ],
+          "label": "模板目标棋块",
+          "owner": "B"
+        }
+      ],
+      "firstPlayer": "W",
+      "conditions": {
+        "boundary": "full-board",
+        "external": "真实完整 5×5 棋盘；模板外部无附加棋子。",
+        "assumptions": [
+          "学习目标：用具体结构说明两个受保护独立眼",
+          "新教学起点，过去劫史未知；发布前需重新核查内容。"
+        ],
+        "viewport": null
+      },
+      "hints": [
+        "观察空点是否相通。",
+        "检查每个空点的正交边界。",
+        "分别尝试对方填入每个眼位是否合法。"
+      ],
+      "answer": {
+        "type": "point-set",
+        "points": [
+          {
+            "row": 1,
+            "col": 1
+          },
+          {
+            "row": 1,
+            "col": 3
+          }
+        ],
+        "explanation": "B4 与 D4 是两个独立单点眼；此结论只针对本模板局面。"
+      },
+      "coveredBranches": [],
+      "sources": [
+        {
+          "type": "original",
+          "title": "T14 本机编辑模板",
+          "url": null,
+          "accessedAt": null,
+          "note": "原创开发模板；只用于创建草稿，不计入正式30题，也不代表解答已由人类复核。"
+        }
+      ],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T14 模板生成器与 schema v1 校验",
+          "checkedAt": "2026-09-15",
+          "evidence": [
+            "模板结构通过"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T01 validateSetup 与已录着法重放",
+          "checkedAt": "2026-09-15",
+          "evidence": [
+            "模板起点和示例分支合法"
+          ]
+        },
+        "solutionChecked": {
+          "status": "partial",
+          "method": "模板示例答案仅供起步，发布前须由使用者重新核查",
+          "checkedAt": "2026-09-15",
+          "evidence": [
+            "不得继承为发布证明"
+          ]
+        },
+        "externalReferenceChecked": null,
+        "modelChecked": null,
+        "humanReviewed": null
+      },
+      "relatedContent": []
+    },
+    {
+      "schemaVersion": 1,
+      "id": "TEMPLATE-DISC-001",
+      "revision": 1,
+      "rulesetId": "GO-CLUB-AREA-1",
+      "kind": "Puzzle",
+      "developmentOnly": true,
+      "category": "DISC",
+      "difficulty": {
+        "level": "beginner",
+        "rationale": "开放讨论不设唯一答案，以目标、回应和取舍为观察点。"
+      },
+      "prompt": "黑先，提出一个局部计划和对方可能的回应。",
+      "initialPosition": {
+        "schemaVersion": 1,
+        "id": "POS-TEMPLATE-DISC-001",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 9,
+        "stones": [
+          {
+            "row": 4,
+            "col": 3,
+            "color": "B"
+          },
+          {
+            "row": 4,
+            "col": 5,
+            "color": "B"
+          },
+          {
+            "row": 3,
+            "col": 4,
+            "color": "W"
+          }
+        ],
+        "toPlay": "B",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "targetMarkers": [
+        {
+          "markerId": "target-1",
+          "type": "target",
+          "points": [
+            {
+              "row": 4,
+              "col": 3
+            },
+            {
+              "row": 4,
+              "col": 5
+            }
+          ],
+          "label": "模板目标棋块",
+          "owner": "B"
+        }
+      ],
+      "firstPlayer": "B",
+      "conditions": {
+        "boundary": "full-board",
+        "external": "真实完整 9×9 棋盘；模板外部无附加棋子。",
+        "assumptions": [
+          "学习目标：围绕局部计划与对手回应进行低压力讨论",
+          "新教学起点，过去劫史未知；发布前需重新核查内容。"
+        ],
+        "viewport": null
+      },
+      "hints": [
+        "先说清想保护或改变什么。",
+        "替对手找一个合法回应。",
+        "比较取舍，再写下是否调整原计划。"
+      ],
+      "answer": {
+        "type": "open-text",
+        "criteria": [
+          "写出一个具体目标。",
+          "提出一个合法回应。",
+          "说明一项取舍。"
+        ],
+        "sampleConsiderations": [
+          "可比较立即连接与向空处发展的不同目标。"
+        ],
+        "automaticVerdict": false
+      },
+      "coveredBranches": [],
+      "sources": [
+        {
+          "type": "original",
+          "title": "T14 本机编辑模板",
+          "url": null,
+          "accessedAt": null,
+          "note": "原创开发模板；只用于创建草稿，不计入正式30题，也不代表解答已由人类复核。"
+        }
+      ],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T14 模板生成器与 schema v1 校验",
+          "checkedAt": "2026-09-15",
+          "evidence": [
+            "模板结构通过"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T01 validateSetup 与已录着法重放",
+          "checkedAt": "2026-09-15",
+          "evidence": [
+            "模板起点和示例分支合法"
+          ]
+        },
+        "solutionChecked": {
+          "status": "partial",
+          "method": "模板示例答案仅供起步，发布前须由使用者重新核查",
+          "checkedAt": "2026-09-15",
+          "evidence": [
+            "不得继承为发布证明"
+          ]
+        },
+        "externalReferenceChecked": null,
+        "modelChecked": null,
+        "humanReviewed": null
+      },
+      "relatedContent": []
+    }
+  ]
+}

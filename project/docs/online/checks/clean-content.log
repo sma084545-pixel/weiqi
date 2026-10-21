@@ -1,0 +1,2 @@
+$ node --import tsx content/tools/validate.mjs
+PASS: 851 checks, 134 recorded moves replayed, 2179 explored rule transitions, 30 puzzles + 6 fixtures. Human review not performed.

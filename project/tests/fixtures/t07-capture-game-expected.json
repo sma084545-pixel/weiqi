@@ -1,0 +1,29 @@
+{
+  "source": "T07 开发固定向量；坐标与结果由人工按 GO-CLUB-AREA-1 落子顺序预先推导，不由被测函数生成",
+  "cases": [
+    {
+      "id": "T07-BLACK-CORNER-CAPTURE",
+      "description": "黑方第3手占据白角单子的最后一气",
+      "size": 5,
+      "moves": [[1, 0], [0, 0], [0, 1]],
+      "winner": "B",
+      "captured": [[0, 0]]
+    },
+    {
+      "id": "T07-WHITE-CORNER-CAPTURE",
+      "description": "白方第4手占据黑角单子的最后一气",
+      "size": 5,
+      "moves": [[0, 0], [1, 0], [2, 2], [0, 1]],
+      "winner": "W",
+      "captured": [[0, 0]]
+    },
+    {
+      "id": "T07-BLACK-TWO-STONE-CAPTURE",
+      "description": "黑方第5手同时提走相连的两颗白子",
+      "size": 5,
+      "moves": [[1, 0], [0, 0], [1, 1], [0, 1], [0, 2]],
+      "winner": "B",
+      "captured": [[0, 0], [0, 1]]
+    }
+  ]
+}

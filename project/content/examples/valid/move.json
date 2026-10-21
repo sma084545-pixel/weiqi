@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "DEV-MOVE-001",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "Move",
+  "size": 5,
+  "move": {
+    "type": "place",
+    "color": "W",
+    "at": {
+      "row": 0,
+      "col": 0
+    }
+  }
+}

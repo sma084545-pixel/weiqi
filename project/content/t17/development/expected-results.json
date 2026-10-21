@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "TEST-T17-EXPECTED",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "developmentOnly": true,
+  "validFile": "TEST-T17-three-replies.json",
+  "invalidFile": "TEST-T17-invalid-major.json",
+  "expectedErrorField": "/schemaVersion",
+  "expected": {
+    "total": 3,
+    "difficulty": {
+      "too-easy": 0,
+      "comfortable": 1,
+      "too-hard": 1,
+      "missing": 1
+    },
+    "favorite": {
+      "liberties": 2,
+      "missing": 1
+    },
+    "missingComment": 1,
+    "defaultExportFeedback": 0
+  }
+}

@@ -1,0 +1,601 @@
+{
+  "schemaVersion": 1,
+  "id": "DEV-BUNDLE-001",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "ContentBundle",
+  "developmentOnly": true,
+  "title": "仅供开发校验：不是正式题库",
+  "items": [
+    {
+      "schemaVersion": 1,
+      "id": "DEV-FEEDBACK-BLANK",
+      "revision": 1,
+      "rulesetId": "GO-CLUB-AREA-1",
+      "kind": "Feedback",
+      "developmentOnly": true,
+      "activityRef": null,
+      "recordedAt": null,
+      "difficulty": null,
+      "preferredActivities": [],
+      "comment": "",
+      "consentToUse": false,
+      "evidenceType": "blank-template",
+      "responseContext": null,
+      "response": null
+    },
+    {
+      "schemaVersion": 1,
+      "id": "DEV-GAME-001",
+      "revision": 1,
+      "rulesetId": "GO-CLUB-AREA-1",
+      "kind": "GameState",
+      "size": 9,
+      "setup": {
+        "schemaVersion": 1,
+        "id": "DEV-POS-EMPTY",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 9,
+        "stones": [],
+        "toPlay": "B",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "mode": "full-game",
+      "board": [
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      "toPlay": "B",
+      "history": {
+        "layouts": [
+          "9|................................................................................."
+        ]
+      },
+      "moves": [],
+      "captures": {
+        "B": 0,
+        "W": 0
+      },
+      "consecutivePasses": 0,
+      "phase": "playing",
+      "komi": 0,
+      "lastMove": null,
+      "agreement": null,
+      "result": null,
+      "undoStack": [],
+      "redoStack": []
+    },
+    {
+      "schemaVersion": 1,
+      "id": "DEV-LESSON-001",
+      "revision": 1,
+      "rulesetId": "GO-CLUB-AREA-1",
+      "kind": "Lesson",
+      "developmentOnly": true,
+      "stage": 1,
+      "title": "开发示例：交叉点与气",
+      "objectives": [
+        "区分正交相邻与斜邻。"
+      ],
+      "prerequisites": [],
+      "activity": "两人轮流指出中央黑子的气。",
+      "readinessObservations": [
+        "能解释斜角为什么不算。"
+      ],
+      "beginnerRoute": "手指沿上下左右找点。",
+      "experiencedRoute": "向同伴解释共享气去重。",
+      "contentRefs": [
+        {
+          "id": "DEV-LIB-001",
+          "revision": 1
+        }
+      ],
+      "sources": [
+        {
+          "type": "original",
+          "title": "T00 开发示例",
+          "url": null,
+          "accessedAt": null,
+          "note": "依据用户规则原创；不是学生记录，不属于正式题库。"
+        }
+      ],
+      "validation": {
+        "structure": null,
+        "moveLegality": null,
+        "solutionChecked": null,
+        "externalReferenceChecked": null,
+        "modelChecked": null,
+        "humanReviewed": null
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "DEV-MARKER-001",
+      "revision": 1,
+      "rulesetId": "GO-CLUB-AREA-1",
+      "kind": "Marker",
+      "size": 5,
+      "marker": {
+        "markerId": "target-1",
+        "type": "target",
+        "points": [
+          {
+            "row": 2,
+            "col": 2
+          }
+        ],
+        "label": "中央黑子",
+        "owner": "B"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "DEV-MOVE-001",
+      "revision": 1,
+      "rulesetId": "GO-CLUB-AREA-1",
+      "kind": "Move",
+      "size": 5,
+      "move": {
+        "type": "place",
+        "color": "W",
+        "at": {
+          "row": 0,
+          "col": 0
+        }
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "DEV-POS-001",
+      "revision": 1,
+      "rulesetId": "GO-CLUB-AREA-1",
+      "kind": "Position",
+      "size": 5,
+      "stones": [
+        {
+          "row": 2,
+          "col": 2,
+          "color": "B"
+        }
+      ],
+      "toPlay": "W",
+      "historyPolicy": "fresh-setup",
+      "history": null
+    },
+    {
+      "schemaVersion": 1,
+      "id": "DEV-LIB-001",
+      "revision": 1,
+      "rulesetId": "GO-CLUB-AREA-1",
+      "kind": "Puzzle",
+      "developmentOnly": true,
+      "category": "LIB",
+      "difficulty": {
+        "level": "beginner",
+        "rationale": "完整5×5中的中心单子，无提子或劫依赖。"
+      },
+      "prompt": "开发示例：选择中央黑子的全部气。",
+      "initialPosition": {
+        "schemaVersion": 1,
+        "id": "DEV-POS-001",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 5,
+        "stones": [
+          {
+            "row": 2,
+            "col": 2,
+            "color": "B"
+          }
+        ],
+        "toPlay": "W",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "targetMarkers": [
+        {
+          "markerId": "target-1",
+          "type": "target",
+          "points": [
+            {
+              "row": 2,
+              "col": 2
+            }
+          ],
+          "label": "中央黑子",
+          "owner": "B"
+        }
+      ],
+      "firstPlayer": "W",
+      "conditions": {
+        "boundary": "full-board",
+        "external": "真实完整5×5；不存在盘外棋子。",
+        "assumptions": [
+          "仅选择空点，不提交落子。"
+        ],
+        "viewport": null
+      },
+      "hints": [
+        "只找上下左右。",
+        "斜角不算气。",
+        "逐一核对四个相邻交叉点。"
+      ],
+      "answer": {
+        "type": "point-set",
+        "points": [
+          {
+            "row": 1,
+            "col": 2
+          },
+          {
+            "row": 2,
+            "col": 1
+          },
+          {
+            "row": 2,
+            "col": 3
+          },
+          {
+            "row": 3,
+            "col": 2
+          }
+        ],
+        "explanation": "手算：C4、B3、D3、C2 共四个互不重复的正交空点。"
+      },
+      "coveredBranches": [],
+      "sources": [
+        {
+          "type": "original",
+          "title": "T00 开发示例",
+          "url": null,
+          "accessedAt": null,
+          "note": "依据用户规则原创；不是学生记录，不属于正式题库。"
+        }
+      ],
+      "validation": {
+        "structure": null,
+        "moveLegality": null,
+        "solutionChecked": null,
+        "externalReferenceChecked": null,
+        "modelChecked": null,
+        "humanReviewed": null
+      },
+      "relatedContent": []
+    },
+    {
+      "schemaVersion": 1,
+      "id": "DEV-SETUP-001",
+      "revision": 1,
+      "rulesetId": "GO-CLUB-AREA-1",
+      "kind": "Setup",
+      "size": 5,
+      "operations": [
+        {
+          "type": "setup-set",
+          "at": {
+            "row": 0,
+            "col": 0
+          },
+          "color": "B"
+        },
+        {
+          "type": "setup-erase",
+          "at": {
+            "row": 0,
+            "col": 0
+          }
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "id": "DEV-END-001",
+      "revision": 1,
+      "rulesetId": "GO-CLUB-AREA-1",
+      "kind": "TerminalFixture",
+      "developmentOnly": true,
+      "title": "开发算例：相同面积，提子数不额外加分",
+      "position": {
+        "schemaVersion": 1,
+        "id": "DEV-POS-AREA-001",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 5,
+        "stones": [
+          {
+            "row": 0,
+            "col": 0,
+            "color": "B"
+          },
+          {
+            "row": 0,
+            "col": 1,
+            "color": "B"
+          },
+          {
+            "row": 0,
+            "col": 3,
+            "color": "B"
+          },
+          {
+            "row": 0,
+            "col": 4,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 0,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 1,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 2,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 3,
+            "color": "B"
+          },
+          {
+            "row": 1,
+            "col": 4,
+            "color": "B"
+          },
+          {
+            "row": 3,
+            "col": 0,
+            "color": "W"
+          },
+          {
+            "row": 3,
+            "col": 1,
+            "color": "W"
+          },
+          {
+            "row": 3,
+            "col": 2,
+            "color": "W"
+          },
+          {
+            "row": 3,
+            "col": 3,
+            "color": "W"
+          },
+          {
+            "row": 3,
+            "col": 4,
+            "color": "W"
+          },
+          {
+            "row": 4,
+            "col": 0,
+            "color": "W"
+          },
+          {
+            "row": 4,
+            "col": 1,
+            "color": "W"
+          },
+          {
+            "row": 4,
+            "col": 3,
+            "color": "W"
+          },
+          {
+            "row": 4,
+            "col": 4,
+            "color": "W"
+          }
+        ],
+        "toPlay": "B",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      },
+      "status": "teaching-assumption",
+      "assumptions": [
+        "只检验明确给定的计分假设：全部盘上子视为活子，中间一行为空的中立区，无待移除死子。",
+        "不声称该摆棋为实战终局或已经由教师确认。"
+      ],
+      "agreement": {
+        "deadStones": [],
+        "neutralPoints": [
+          {
+            "row": 2,
+            "col": 0
+          },
+          {
+            "row": 2,
+            "col": 1
+          },
+          {
+            "row": 2,
+            "col": 2
+          },
+          {
+            "row": 2,
+            "col": 3
+          },
+          {
+            "row": 2,
+            "col": 4
+          }
+        ],
+        "confirmedBy": []
+      },
+      "komi": 0,
+      "captureCountsForComparison": {
+        "B": 7,
+        "W": 2
+      },
+      "expectedScore": {
+        "blackStones": 9,
+        "whiteStones": 9,
+        "blackTerritory": [
+          {
+            "row": 0,
+            "col": 2
+          }
+        ],
+        "whiteTerritory": [
+          {
+            "row": 4,
+            "col": 2
+          }
+        ],
+        "neutralPoints": [
+          {
+            "row": 2,
+            "col": 0
+          },
+          {
+            "row": 2,
+            "col": 1
+          },
+          {
+            "row": 2,
+            "col": 2
+          },
+          {
+            "row": 2,
+            "col": 3
+          },
+          {
+            "row": 2,
+            "col": 4
+          }
+        ],
+        "komi": 0,
+        "blackTotal": 10,
+        "whiteTotal": 10,
+        "difference": 0,
+        "winner": "draw",
+        "basis": "teaching-assumption"
+      },
+      "sources": [
+        {
+          "type": "original",
+          "title": "T00 开发示例",
+          "url": null,
+          "accessedAt": null,
+          "note": "依据用户规则原创；不是学生记录，不属于正式题库。"
+        }
+      ],
+      "validation": {
+        "structure": null,
+        "moveLegality": null,
+        "solutionChecked": null,
+        "externalReferenceChecked": null,
+        "modelChecked": null,
+        "humanReviewed": null
+      }
+    }
+  ]
+}

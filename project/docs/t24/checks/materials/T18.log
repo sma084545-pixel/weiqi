@@ -1,0 +1,49 @@
+PASS Required deliverable files - missing=[]
+PASS SVG vertical lines - found 9
+PASS SVG horizontal lines - found 9
+PASS SVG intersections - elements=81, unique row/col=81
+PASS SVG physical size - 450mm x 450mm
+PASS Grid extents and spacing - x=[45.0, 90.0, 135.0, 180.0, 225.0, 270.0, 315.0, 360.0, 405.0]; y=[45.0, 90.0, 135.0, 180.0, 225.0, 270.0, 315.0, 360.0, 405.0]
+PASS Corner intersections retained - [(0, 0), (0, 8), (8, 0), (8, 8)]
+PASS SVG 100 mm ruler - coordinate length=100.0 mm
+PASS Stone clearance - spacing 45 - diameter 38 = 7 mm
+PASS 1:1 PDF media box - 450.000 x 450.000 mm
+PASS A4 tiled page count - pages=6
+PASS A4 tiled media boxes - 210.00x297.00; 210.00x297.00; 210.00x297.00; 210.00x297.00; 210.00x297.00; 210.00x297.00
+PASS Piece/marker page count - pages=6
+PASS Assembly guide page count - pages=8
+PASS Teaching A3 page count - pages=1
+PASS PDF text bounds board-9x9-450mm-1to1.pdf - chars=88; out=[]
+PASS PDF text bounds pieces-markers-a4.pdf - chars=471; out=[]
+PASS PDF text bounds assembly-guide.pdf - chars=2537; out=[]
+PASS PDF text bounds teaching-flows-a3.pdf - chars=469; out=[]
+PASS Tiled PDF visible page instructions - page labels 1/6..6/6 and scale/ruler text extracted; clipped board reviewed via raster
+PASS Embedded CJK font board-9x9-450mm-1to1.pdf - embedded subsets=1
+PASS Embedded CJK font board-9x9-a4-tiled.pdf - embedded subsets=6
+PASS Embedded CJK font pieces-markers-a4.pdf - embedded subsets=6
+PASS Embedded CJK font assembly-guide.pdf - embedded subsets=24
+PASS Embedded CJK font teaching-flows-a3.pdf - embedded subsets=1
+PASS Tile horizontal coverage - [(0, 160), (145, 305), (290, 450)]
+PASS Tile vertical coverage - [(0, 235), (215, 450)]
+PASS Tile stated overlaps - x overlaps=[15, 15]; y=20
+PASS Join edges avoid grid/star lines - grid∩join=[]
+PASS Tile grid continuity - missing=[]
+PASS Center/edge/corner liberties - 中心 E5=4, 上边 E9=3, 左上角 A9=2
+PASS L-group liberty de-dup - computed=[(3, 3), (3, 4), (4, 2), (4, 5), (5, 2), (5, 4), (6, 3)], listed=[(3, 3), (3, 4), (4, 2), (4, 5), (5, 2), (5, 4), (6, 3)]
+PASS Shared E4 documented - E4 is one coordinate shared by E5 and D4
+PASS Editable sheet A4 black-stones-01.svg - 210mm x 297mm
+PASS Sheet ruler black-stones-01.svg - 100 mm metadata present
+PASS Editable sheet A4 black-stones-02.svg - 210mm x 297mm
+PASS Sheet ruler black-stones-02.svg - 100 mm metadata present
+PASS Editable sheet A4 white-stones-01.svg - 210mm x 297mm
+PASS Sheet ruler white-stones-01.svg - 100 mm metadata present
+PASS Editable sheet A4 white-stones-02.svg - 210mm x 297mm
+PASS Sheet ruler white-stones-02.svg - 100 mm metadata present
+PASS Editable sheet A4 liberty-rings.svg - 210mm x 297mm
+PASS Sheet ruler liberty-rings.svg - 100 mm metadata present
+PASS Editable sheet A4 targets-sequence-last.svg - 210mm x 297mm
+PASS Sheet ruler targets-sequence-last.svg - 100 mm metadata present
+PASS Piece and marker quantities - {'stones': 90, 'rings': 24, 'triangles': 12, 'numbers': 20, 'last': 6}
+PASS Liberty rings remain open/dashed - 24 ring groups use dashed outline plus open center
+SUMMARY: 47/47 passed
+

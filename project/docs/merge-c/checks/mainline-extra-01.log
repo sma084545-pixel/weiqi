@@ -1,0 +1,17 @@
+PASSED valid/bundle.json {"level":"structural","needsRulesReplay":true}
+PASSED valid/feedback-blank.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/game.json {"level":"structural","needsRulesReplay":true}
+PASSED valid/lesson.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/marker.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/move.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/position.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/puzzle.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/setup.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/terminal.json {"level":"structural","needsRulesReplay":false}
+PASSED content/t04/liberty-demos.json {"level":"structural","needsRulesReplay":false}
+PASSED content/t05/capture-demos.json {"level":"structural","needsRulesReplay":false}
+PASSED content/t08/development-terminal.json {"level":"structural","needsRulesReplay":false}
+PASSED invalid/out-of-bounds.json [{"code":"COORD_BOUNDS","path":"/stones/0/row","message":"坐标超出完整棋盘。"}]
+PASSED invalid/duplicate-point.json [{"code":"DUPLICATE_POINT","path":"/stones/1","message":"同一交叉点不能重复占用。"}]
+PASSED invalid/unknown-stone.json [{"code":"SCHEMA_FIELD","path":"/stones/0/color","message":"请使用该字段允许的值。"}]
+PASSED invalid/unknown-major.json [{"code":"SCHEMA_VERSION","path":"/schemaVersion","message":"仅支持内容主版本 1；请保留原文件，使用对应迁移工具。"}]

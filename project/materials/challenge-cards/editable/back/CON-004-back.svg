@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="210mm" height="148.5mm" viewBox="0 0 595.276 420.945">
+<title>CON-004 r1 | 连接 Connection 背面</title>
+<metadata>{&quot;schemaVersion&quot;: 1, &quot;id&quot;: &quot;T21-BACK-CON-004&quot;, &quot;revision&quot;: 1, &quot;rulesetId&quot;: &quot;GO-CLUB-AREA-1&quot;, &quot;contentRef&quot;: {&quot;id&quot;: &quot;CON-004&quot;, &quot;revision&quot;: 1}}</metadata>
+<rect width="595.276" height="420.945" fill="#FFFFFF" stroke="#9EA8A6"/>
+<rect width="595.276" height="28" fill="#5A6B9F"/>
+<text x="22" y="19" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="12.5" fill="#FFFFFF">CON-004 r1 | 连接 Connection</text>
+<text x="22" y="50" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="13.5" fill="#1D3035">边上搭桥</text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="10" fill="#13766D"><tspan x="22" y="83">三层提示</tspan></text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="8.7" fill="#1D3035"><tspan x="22" y="101.0">1. 先检查目标块的全部气。</tspan></text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="8.7" fill="#1D3035"><tspan x="22" y="117.5">2. 比较候选点落下后，哪些棋子连接或被提走。</tspan></text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="8.7" fill="#1D3035"><tspan x="22" y="134.0">3. 在完整棋盘上重放一手，再按成功标准核对。</tspan></text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="10" fill="#A44A3F"><tspan x="22" y="154.5">常见错误</tspan></text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="8.2" fill="#1D3035"><tspan x="22" y="171.5">黑 A4 没有接通两目标；白 C5 可合法占住桥点。</tspan></text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="10" fill="#13766D"><tspan x="296" y="83">正确答案</tspan></text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="8.2" fill="#1D3035"><tspan x="296" y="101.0">黑 C5 把两边的黑子接为一块，剩 A5、E5、C4 三口气</tspan><tspan x="296" y="112.7">。 这只证明本题即时目标，不证明永久活棋。</tspan></text>
+<text x="22" y="386" font-family="Arial Unicode MS" font-size="8.5" fill="#5A6B9F">教师详解：答案册第 17 页</text>
+</svg>

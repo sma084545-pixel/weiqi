@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "T09-EXPORT-CHECK",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "ExportVerification",
+  "passed": true,
+  "checks": 28243,
+  "svg": 36,
+  "pdfPages": 54,
+  "pptSlides": 36,
+  "notes": 36,
+  "scope": "All exported stone positions/colors, SVG direction, PDF sizes/text bounds, PPT editable stone objects and required notes. Visual review recorded separately."
+}

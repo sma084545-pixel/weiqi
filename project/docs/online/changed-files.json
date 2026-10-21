@@ -1,0 +1,894 @@
+{
+  "schemaVersion": 1,
+  "id": "ONLINE-CHANGE-MANIFEST",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "baseVersion": "0.19.0-history.1",
+  "resultVersion": "0.20.0-online.1",
+  "files": [
+    {
+      "path": ".gitignore",
+      "kind": "modified",
+      "sha256": "70be5b117c059800f06c56582c29a426676a262201e7d35ded8062a388f19063"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "kind": "modified",
+      "sha256": "dc1b14d39e868b27b7c94f41860747460718f13085f2dc545a7d0a6cd21843e7"
+    },
+    {
+      "path": "README.md",
+      "kind": "modified",
+      "sha256": "54a7107c26474396988f64b9fc7eaafa1b984c33485f67897f5b66566ac5b442"
+    },
+    {
+      "path": "SOURCES.md",
+      "kind": "modified",
+      "sha256": "4caedcb8cbbb2a7e0794f0f5736067a27907ada5bf70b0dd44bd1916b607b51c"
+    },
+    {
+      "path": "dist/assets/index-D5LEyGe-.css",
+      "kind": "added",
+      "sha256": "a2b687b63b97b597bb384a437a798ec52e12acaa674de23fd1fe894aeeb3475b"
+    },
+    {
+      "path": "dist/assets/index-Kj3rowYh.js",
+      "kind": "added",
+      "sha256": "37e7c88144516529f520257e4434688c52f20c620a507826fc2905d67dc4a03b"
+    },
+    {
+      "path": "dist/index.html",
+      "kind": "modified",
+      "sha256": "d53a74bf542489489ddeda6479fdd772b213daf8fb81ab0c28e1c6d4894a4cc5"
+    },
+    {
+      "path": "dist/offline-assets.json",
+      "kind": "modified",
+      "sha256": "39d01371dcd7f00be3cdc75e32b97f24b2f34714667a22ef73de377a137584e4"
+    },
+    {
+      "path": "dist/sw.js",
+      "kind": "modified",
+      "sha256": "31583662d8cb84fa51f6e05b3488dbb7fe9bd70ba63ba90c750f55e418a8d177"
+    },
+    {
+      "path": "dist-engine/go-club-rules.mjs.map",
+      "kind": "modified",
+      "sha256": "5934ebaa84f6ee702c1e05c0c540f01f7423979ef412f4f15a76619983695cc8"
+    },
+    {
+      "path": "dist-engine/package.json",
+      "kind": "modified",
+      "sha256": "7b13cf7f1d2f1483ce3c892a44417efb69e349a004e51854b3b865495fb37c95"
+    },
+    {
+      "path": "dist-engine/types/constants.d.ts",
+      "kind": "modified",
+      "sha256": "bca6c5a6deb1140d9bc76c45545f6a94d5b3007e0806c99b38c6947cec648bd3"
+    },
+    {
+      "path": "dist-engine/types/version.d.ts",
+      "kind": "added",
+      "sha256": "39176bfea02281b875fbec82a7392ce1d61616937c54d398d00ba464c8e3eee7"
+    },
+    {
+      "path": "dist-server/app.webmanifest",
+      "kind": "added",
+      "sha256": "26ae2d10fc5b45982ae4f4f593aaa93b781d4ff63a8bfe2166bc392d01cc9b50"
+    },
+    {
+      "path": "dist-server/offline.html",
+      "kind": "added",
+      "sha256": "b5379d9413769029799e8e7914650cab8a5c3477bce36531ee91762389005fe5"
+    },
+    {
+      "path": "dist-server/server.mjs",
+      "kind": "added",
+      "sha256": "1510aacfb0f0af0a9c8c4f1508ae7714a2632d30731632075c58f95c08e4927c"
+    },
+    {
+      "path": "dist-server/sw.js",
+      "kind": "added",
+      "sha256": "64744fbfdcb18d1a3ab68a181c3fdd0c8dc70b8e163cc34ceceb5bf76731f137"
+    },
+    {
+      "path": "docs/INTERFACES.md",
+      "kind": "modified",
+      "sha256": "c4cde34d794cecee4440c30041e1f444ef929bf3af4c1b04dd303d90583733f3"
+    },
+    {
+      "path": "docs/PROJECT_CONTRACT.md",
+      "kind": "modified",
+      "sha256": "10966bf8f80b46624283c1db97dcace178bd1bfb80ad597f113a670bb31ce0d7"
+    },
+    {
+      "path": "docs/online/ACCEPTANCE.md",
+      "kind": "added",
+      "sha256": "f402022fffe1133fa3cafd0a29903a32a2b8476b1e36f01e7c77d4c66b0ba0af"
+    },
+    {
+      "path": "docs/online/DEPENDENCY_CHANGE.json",
+      "kind": "added",
+      "sha256": "a341a7ce9aa09b305615fc87f89f9d1b7bcae5c52fd4885c78423062ed7c0813"
+    },
+    {
+      "path": "docs/online/DEPLOYMENT.md",
+      "kind": "added",
+      "sha256": "2ceabdeacfb790ec32b254bc45f478dce5cdc0cc68066e0761c0b93dea81d239"
+    },
+    {
+      "path": "docs/online/KNOWN_ISSUES.md",
+      "kind": "added",
+      "sha256": "d9d2e7ff2692f073c36e3f1d9d82c609faa275a5127701f234205b016cc46b2f"
+    },
+    {
+      "path": "docs/online/PROTOCOL.md",
+      "kind": "added",
+      "sha256": "99ce0ce0915e21142d9dfc26814f845a35a7fc97dac89c80dbd8ce0f3a86036a"
+    },
+    {
+      "path": "docs/online/USAGE.md",
+      "kind": "added",
+      "sha256": "930e7796511cb8153977d3a20c99fbb1ad49ebcb7a674ace7703ef0c7c31ef6b"
+    },
+    {
+      "path": "docs/online/checks/bare-app-result.png",
+      "kind": "added",
+      "sha256": "ee915c52fb6e7f90590cba2e30ac74b84bb93baca8862f028ef34573c14f271a"
+    },
+    {
+      "path": "docs/online/checks/bare-app.json",
+      "kind": "added",
+      "sha256": "7a2e1af94dde8108da8d55da32cf3794c06f2aabe20cda28752ad98937dda9ed"
+    },
+    {
+      "path": "docs/online/checks/bare-app.log",
+      "kind": "added",
+      "sha256": "8f45b43399acd8b304634ee2b1b2364b4032b2469d2f53afbf5f3f1bc5d2cfbf"
+    },
+    {
+      "path": "docs/online/checks/browser-all.log",
+      "kind": "added",
+      "sha256": "d53cb46a01f50abaecc859d64d7414b0ceb3831fa60cc0b4d5a159f950da82a1"
+    },
+    {
+      "path": "docs/online/checks/browser-initial.log",
+      "kind": "added",
+      "sha256": "1112c7d6af56cd68971b7be63d6801eab94b1ff9f03de5b6cc49ff8f0200ffbe"
+    },
+    {
+      "path": "docs/online/checks/browser-webkit.log",
+      "kind": "added",
+      "sha256": "d8ab1c8f5a5d2f7076ae1723b29a3f18e498239e66889a061ab6647a7c4f26ec"
+    },
+    {
+      "path": "docs/online/checks/build-final.log",
+      "kind": "added",
+      "sha256": "8ecb977c7f59580fb46afaeacc6fccb3c97fd4e1405c73ffc6872d1579cc0263"
+    },
+    {
+      "path": "docs/online/checks/build-front.log",
+      "kind": "added",
+      "sha256": "652ec18a6c422d0e800c79edf5e4fcf3a368d812e33e81177db31b83c49aa7a7"
+    },
+    {
+      "path": "docs/online/checks/build-server.log",
+      "kind": "added",
+      "sha256": "29d6b6b54cb889b2f4f39ef79e4c95c7d1ee57309f5b58f9657e9a01353ba824"
+    },
+    {
+      "path": "docs/online/checks/build.log",
+      "kind": "added",
+      "sha256": "36730f17489ddd2f967c45ea7a0d75ef1ee06c94fa1c539b12f0df43d282c501"
+    },
+    {
+      "path": "docs/online/checks/clean-build.log",
+      "kind": "added",
+      "sha256": "d96042571e054f5de6d64a255910343265399f84359efbabb612762e426500db"
+    },
+    {
+      "path": "docs/online/checks/clean-content.log",
+      "kind": "added",
+      "sha256": "d6b5459e17038500dbf19df59a1a37006009734c6a4781452d0caf0a9faa26b3"
+    },
+    {
+      "path": "docs/online/checks/clean-install.log",
+      "kind": "added",
+      "sha256": "1630faa7e79be283444a97d78a53126030adc05d4c703c2582f526ffceafbd7e"
+    },
+    {
+      "path": "docs/online/checks/clean-online-browser.log",
+      "kind": "added",
+      "sha256": "a239cecf368e9754395183b4e65bcfff5a8ac3205873f59bf099b1525f03a7ef"
+    },
+    {
+      "path": "docs/online/checks/clean-online-unit.log",
+      "kind": "added",
+      "sha256": "ec15afe12c7a0d1a1fc788d521ebd6dec76628282ce695642ef5253016412fe2"
+    },
+    {
+      "path": "docs/online/checks/clean-schema.log",
+      "kind": "added",
+      "sha256": "b0f4f46757e48fd167d42c01dda4926ecac9aae9d38f62a50249f4dc58250337"
+    },
+    {
+      "path": "docs/online/checks/current-preview.png",
+      "kind": "added",
+      "sha256": "d38f49a9df345a9df7c81c27a6f3cbe6a9863b376be21cce65bf1de934ef45d5"
+    },
+    {
+      "path": "docs/online/checks/dependency-lock.diff",
+      "kind": "added",
+      "sha256": "071eff4171fe8e743d79e26f611776292fc3b50465a6d66efedb388c4002187f"
+    },
+    {
+      "path": "docs/online/checks/full-check-initial-lock-conflict.log",
+      "kind": "added",
+      "sha256": "c35f9ebf14262218358293fae1eb30ccddda28607ebf2aba67e736d7865936a4"
+    },
+    {
+      "path": "docs/online/checks/full-check.log",
+      "kind": "added",
+      "sha256": "8723ab5023b2f7f16600a267a2a85a974eb8f82f77c7bcee9d43f2bc6a73ef89"
+    },
+    {
+      "path": "docs/online/checks/install-base.log",
+      "kind": "added",
+      "sha256": "5e283e9ee513a9580f1ab360df9dc42f93d2a36dde10dcaadec6f1d79a809307"
+    },
+    {
+      "path": "docs/online/checks/journey/docs/t24/checks/journey/chromium/full-game.png",
+      "kind": "added",
+      "sha256": "04fbdd0a8fd62b94c439b7796b823431ef6385724861e455689dee0cb33e6e1b"
+    },
+    {
+      "path": "docs/online/checks/journey/docs/t24/checks/journey/chromium/offline-editor.png",
+      "kind": "added",
+      "sha256": "a1cd1bef6be24ea63537a0b1550aa980c6ba67befb7644e1df1b7d6eccb033ec"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/free-play/1280-board.png",
+      "kind": "added",
+      "sha256": "503864e2137ee9c673f21be5ecba477f9afb8e14368d67401462fb4b531f77f3"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/free-play/360-board.png",
+      "kind": "added",
+      "sha256": "66e4a366f630cc94e6458e8a352b85f907635112bbb7f6771d5fa7ead394019f"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/free-play/360-touch-19-offline.png",
+      "kind": "added",
+      "sha256": "699129d214bc31a8da1fa4eba995b6c4cee1fdc5f746afd1e0e4dcd7d20b1974"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/free-play/768-board.png",
+      "kind": "added",
+      "sha256": "1a0a03e1d05112d91a83396730402e9429f1e55798a0f73692323e4b6960a77a"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/free-play/final-score.png",
+      "kind": "added",
+      "sha256": "f51d587416784b52bd398af4dfa4e88ecd23e24f0b950dff48d5f1eec861afda"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/history/1280-history.png",
+      "kind": "added",
+      "sha256": "1c34e35d6d8ac9357415fc6791876f340f660e335e78117bf7447ca83687bb0c"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/history/360-history.png",
+      "kind": "added",
+      "sha256": "e79c5070bcdcd0834a3ee4eb69fda370c36e9de81b6e1bc50e99953651a0b4de"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/history/360-touch-19-offline.png",
+      "kind": "added",
+      "sha256": "4473e17304b9e5baf7491b9d93b7088f8e7388b687c17b1ba24b45ede4a71970"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/history/768-history.png",
+      "kind": "added",
+      "sha256": "6fd1b2636629eb14a5966703ce34f80534476c9dc6cdce6b118966dafb5d0614"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t02/1280-markers-grayscale.png",
+      "kind": "added",
+      "sha256": "1d28466eef4964f18d208688e5f2998bccdca24fd3325f759e470997ada1e1b5"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t02/1280-select.png",
+      "kind": "added",
+      "sha256": "d35e69f2527a64b3f071ef91d803b740f1c2415e053344bd6cc90b3f3a7ee50c"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t02/360-19-scroll.png",
+      "kind": "added",
+      "sha256": "775f6b0fd11566338e316a9717c068420343d6b9c14cc5a24c3a2a0c5c7ca92e"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t02/360-select.png",
+      "kind": "added",
+      "sha256": "05f0f95fed6c7e6f8b7ffb8ecdd419fedeccdff09578a45e8e7490f7e7240430"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t02/768-select.png",
+      "kind": "added",
+      "sha256": "febfed2bd00917a3d5356445a20139ba8b6b764498d4b72eaa231187a3395828"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t03/1280-home.png",
+      "kind": "added",
+      "sha256": "7f653881a830a289ff8f59c714120de4138678ef218dff3660441426ce9f5560"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t03/1280-route.png",
+      "kind": "added",
+      "sha256": "efa56a4d6cb4690d5113a0c4bd2f57dc2251e566a02bfed92f38a0a34f1915e8"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t03/1280-teacher-projector.png",
+      "kind": "added",
+      "sha256": "0dc7646f1897cb85dce5bccd08ddda16a5e3f1fd19cf8da75e7e5a925d1a9d71"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t03/360-home.png",
+      "kind": "added",
+      "sha256": "b4fbd83cba415a8b21658cc991ff1aaae5a9ac79df54896a28be36e3d453fbdd"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t03/768-home.png",
+      "kind": "added",
+      "sha256": "332912d5692a27cb477edbed49d0f9e74170a8c3c18660e93569cf36c2ec75ba"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t04/1280-revealed-projector-grayscale.png",
+      "kind": "added",
+      "sha256": "0d93e3fec5ba5fa8c750858d3df5fe7d8853f45c6ab6aafb18a2ef79e85064ee"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t04/1280-sealed.png",
+      "kind": "added",
+      "sha256": "763cea450bc653ad5dc4b01df069e58e08a2a8ac1d0d39f4f035d22f7ba6d29e"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t04/360-sealed.png",
+      "kind": "added",
+      "sha256": "72dc8116906feb7848db4aecbeac5cb3b969894b733e29d5e113a964f17b059b"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t04/768-sealed.png",
+      "kind": "added",
+      "sha256": "d1c06e4de5cb8374bea0c2b038cd0f0c48e0ca0b0663a18bea827c0a99709ccf"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t05/1280-final-projector-grayscale.png",
+      "kind": "added",
+      "sha256": "bf847bed74a67c4fec25bd5e9fc167a666f80182957b38b0eca72b201dc3bca0"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t05/1280-initial.png",
+      "kind": "added",
+      "sha256": "3b1963fa670e5f5bcbc6c0b4f59c715d4d391b5253bf1d2d2bbf5366dd43d51c"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t05/360-initial.png",
+      "kind": "added",
+      "sha256": "3af784cf4be418f9bca032ed2d657082869d7184da0846209f32fcf5e232fd46"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t05/768-initial.png",
+      "kind": "added",
+      "sha256": "33ea0128f68868e5a5be811799a0a82409669b87884a0d9e737a809b1ef90c9a"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t06/1280-projector-grayscale.png",
+      "kind": "added",
+      "sha256": "61e0dd0109723ebf9bef30502fbef1be0910d531149bb60eae1fbc25bf9284fb"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t06/1280-setup.png",
+      "kind": "added",
+      "sha256": "46240d277713e61c87f06750d9a0046bdcdbd9e4b028c48485c5b6022e38980c"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t06/360-setup.png",
+      "kind": "added",
+      "sha256": "b2f4c1001588a07a0bfb895562dd9ada7134d801ae709acae2c01a21c7b6dfe0"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t06/768-setup.png",
+      "kind": "added",
+      "sha256": "57de6c393174466afb0bf340b32c84e507700bbc0bd3b349b09ded1ae36bc416"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t07/1280-finished-projector-grayscale.png",
+      "kind": "added",
+      "sha256": "ab2f4f68420e081527de7e4b568aa5cdb147e3148b46c8a3d74b08db89ffe773"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t07/1280-initial.png",
+      "kind": "added",
+      "sha256": "583f12e303c3a608cbda9642a2b7dac3c45b242ccb03663d25f31832ea7b3a5d"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t07/360-initial.png",
+      "kind": "added",
+      "sha256": "dd0852d25611654f4980a53b809803c30656e85cbd015806b4da03eb1ffd79c2"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t07/768-initial.png",
+      "kind": "added",
+      "sha256": "9e7a518aef4fac5a6ee52e2c2b73fc3706762d2025089286441424be75c7486f"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t08/1280-final-score.png",
+      "kind": "added",
+      "sha256": "eac1b0f9ecfdd0d2443ae1f9517aa8d0b40205af3675a316cc2a3dec7f7a30ff"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t08/1280-setup.png",
+      "kind": "added",
+      "sha256": "2ad6d1adf1c0e9f23b441a68b559a9f75070d9675de9fd1929e4d20e42f6ae29"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t08/360-19x19-projector-grayscale.png",
+      "kind": "added",
+      "sha256": "e35b144f366fc4eaea33946d07cdbb1a9f1a8d474c978334cbeb103c413c7bd8"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t08/360-setup.png",
+      "kind": "added",
+      "sha256": "0ecc8ba1658f0525750aead7e6db4cf3773f873c4f485ad4a34d513479384dee"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t08/768-setup.png",
+      "kind": "added",
+      "sha256": "531a2354fea90ed8c5c7e9177cafd0cabac25be331e1b93ae1fce544ee0b1958"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t10/1280-catalog.png",
+      "kind": "added",
+      "sha256": "cf4379c4e7cb31578214329780eb5b8a7a8adb76f467be9ee2fe1108e982870c"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t10/1280-move-player.png",
+      "kind": "added",
+      "sha256": "db9eaf24964ce891b7fbce5d5d5bf44c5afbc52f4360640abd9ca4b6b433062c"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t10/360-point-set-touch.png",
+      "kind": "added",
+      "sha256": "d01be75349f21dc35e543ace561727e80154d18e51773f788e0c57e623aaa581"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t10/768-move-player.png",
+      "kind": "added",
+      "sha256": "22d8f327c6db43aa5aa2d96bbc187c12d69591a9bba815d2055699b7fa20d67b"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t11/1280-life-lesson.png",
+      "kind": "added",
+      "sha256": "efc0dcbfa508e0b6bf282ed9ad619ee76d165a08441c788732c7b8097523fcc1"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t11/1280-life-top.png",
+      "kind": "added",
+      "sha256": "65378be42c2aca818758236765f021544ce14fbcb023393f0120fa8ff08c0164"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t11/360-life-lesson.png",
+      "kind": "added",
+      "sha256": "23f677c5c42c8989d5f1fec9dbecf9aad53a466b7755fda8179d7ceb65a246bc"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t11/768-life-top.png",
+      "kind": "added",
+      "sha256": "665c79680dd869299aa2e3a01b0e6ca3977c78ef9f25e7ac1cbbb07e669867f6"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t12/1280-cooperative.png",
+      "kind": "added",
+      "sha256": "53c18ab6176c09ca49988a9c1a68083c4e2fc92e899d90b3286dc78cfbda14f0"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t12/360-cooperative.png",
+      "kind": "added",
+      "sha256": "142f2612baa6f28afb3c9ca444ffdc470f5ddc4db60af62a0ba10aef8a0262d1"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t12/768-cooperative.png",
+      "kind": "added",
+      "sha256": "55bfa6075446f1da0d693f9013819309e4e288d85498f5a9e3b126750b2cbf5c"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t13/1280-territory.png",
+      "kind": "added",
+      "sha256": "a82a675715cdeb57df5f480c110e4257330ac35a62df9ca02ae88754ed40dbd1"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t13/360-territory.png",
+      "kind": "added",
+      "sha256": "adf1716e7383f3d51456afc6de838ada40cdd1a805f0fb6c0b6cfaf7728d2205"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t13/768-territory.png",
+      "kind": "added",
+      "sha256": "dfc3ed11d4bb71aab0f7fa705e5b8a9022f67569d9b2554c99d77a8415cf629f"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t14/1280-editor.png",
+      "kind": "added",
+      "sha256": "5fde259f3859018d4e29b196107e240ae4f35a4d67f37b7395fce326c0dfb962"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t14/360-editor.png",
+      "kind": "added",
+      "sha256": "1a694b4a0e70b8a6d44343abe23426f7916d42592407adcb15ca044bd08c8de6"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t14/768-editor.png",
+      "kind": "added",
+      "sha256": "22dd4267927e101b56403f447126907d30265243b53e41a2d9fe9ce86a285441"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t15/1280-file-exchange.png",
+      "kind": "added",
+      "sha256": "84041362c696b1afdae42a778a6050df275ac876cb904f6f7f2bec86aa02c9ec"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t15/360-file-exchange.png",
+      "kind": "added",
+      "sha256": "df62f869e2cf254b6d50eb22a659ac3beacec04f51690d82b493f0cbddd1eaf5"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t15/768-file-exchange.png",
+      "kind": "added",
+      "sha256": "01469e2df4889911c76ee2c081adbaf462e38f72e6b9a6a237c4f633501d141c"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t16/1280-offline-data.png",
+      "kind": "added",
+      "sha256": "94aba86aa2eb010eb07092d68fce7fc4db20811f8a496ac1c673405fde26eb79"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t16/360-offline-data.png",
+      "kind": "added",
+      "sha256": "3905341c57e3e488d8593546672f8aa26cb3f0253b71207406492e2a67aae47e"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t16/768-offline-data.png",
+      "kind": "added",
+      "sha256": "5db98794b2e5b5814d19e870ab27bbb8f817177541e5ac44d71e06e089831cce"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t16/offline-ready-1280.png",
+      "kind": "added",
+      "sha256": "636e20c42a92f31d5f48087902248d228f0859bc3f170ae9ab014b9934c52289"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t17/1280-feedback.png",
+      "kind": "added",
+      "sha256": "e7349ae181ef510af0514a3abf93fe282506c2024454a66f1265e2d095726ca9"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t17/1280-summary-empty.png",
+      "kind": "added",
+      "sha256": "aa740f20d156a422878565454a55fa3dd30907e8c7b52843066c28176e26cc8b"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t17/1280-summary-three-tests.png",
+      "kind": "added",
+      "sha256": "239e1abc388fa1a7c1e6caebca2697de4b1622bb35df11f954053eb65a25221c"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t17/360-feedback.png",
+      "kind": "added",
+      "sha256": "6ded6d3b6249224cbb49fa58834ac500faeea5f1b5145b6843b2d5759a4a36ca"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t17/360-summary-empty.png",
+      "kind": "added",
+      "sha256": "a244be2f53ee2a98c3653eaeb1d6d91fb0bca819234cf2542852728c74b4d7a7"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t17/768-feedback.png",
+      "kind": "added",
+      "sha256": "118b30e0fea22eecf88819a310d77e1fef0c74dbbe664291c52fc3548069d0ef"
+    },
+    {
+      "path": "docs/online/checks/journey/output/playwright/t17/768-summary-empty.png",
+      "kind": "added",
+      "sha256": "de5d5f32bb34aaa04f1d0882413af0cdbde6d47dd58d375a4b28dc90348c62bb"
+    },
+    {
+      "path": "docs/online/checks/preservation.json",
+      "kind": "added",
+      "sha256": "e61e22f91bca8e5870a480a5b98d4d9df917e8e2001e5fd9f6d224a86ed31540"
+    },
+    {
+      "path": "docs/online/checks/preview.json",
+      "kind": "added",
+      "sha256": "16881e6ea74a24dafc7caf2a029acef857bb44409312384d35f2aa584072f217"
+    },
+    {
+      "path": "docs/online/checks/restored-historical-evidence.json",
+      "kind": "added",
+      "sha256": "d1bb7014f367bff2f8d752f32f72177d80d1494c8ac4158394cacfa64fe928ac"
+    },
+    {
+      "path": "docs/online/checks/types.log",
+      "kind": "added",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/online/checks/unit-initial.log",
+      "kind": "added",
+      "sha256": "5fcdc9be3513170239cd82a90b5a6778c389fca2120f07fd65e735bba0813ba0"
+    },
+    {
+      "path": "docs/online/provenance/HISTORY-RELEASE_MANIFEST.json",
+      "kind": "added",
+      "sha256": "9f947017562ec7c73a5efb6813abea55516fd880bcf41d3d617ff9148ec7abe3"
+    },
+    {
+      "path": "docs/online/provenance/HISTORY-package.json",
+      "kind": "added",
+      "sha256": "bfcb2c8e1f11f9bb6b34e50f8dadb8b99415ed4571fa97d311d41ae78869e5df"
+    },
+    {
+      "path": "docs/online/provenance/HISTORY-pnpm-lock.yaml",
+      "kind": "added",
+      "sha256": "80fb6c23436fb904456dea058ecb97d48d6789c5fc5a3f59bceca8131e7d655c"
+    },
+    {
+      "path": "docs/online/third-party/types-ws-LICENSE.txt",
+      "kind": "added",
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "path": "docs/online/third-party/ws-LICENSE.txt",
+      "kind": "added",
+      "sha256": "2b29dcfe0d6471f7e8c92c5fb38c9f93edee10330937055440192f1832b1ecef"
+    },
+    {
+      "path": "docs/requirements-matrix.md",
+      "kind": "modified",
+      "sha256": "55f96a964245a187fae7c6236669b0a44b33efbb24159ea12d565448e3e4b0db"
+    },
+    {
+      "path": "handoff/ONLINE_PLAY.md",
+      "kind": "added",
+      "sha256": "3130320382369df2fbd03873c16e9651ed32eda2793cd885242f8f3d3112a156"
+    },
+    {
+      "path": "output/pdf/T17-development-report.pdf",
+      "kind": "modified",
+      "sha256": "36919edacea7df9706c0665b3447f49eb762890ec8e8ee2794b0c3d42a434143"
+    },
+    {
+      "path": "output/pdf/T17-empty-report.pdf",
+      "kind": "modified",
+      "sha256": "91c126c2ce24619e03bbd8596c711ada09b6ba2f79cf91d81e57a468025a00e0"
+    },
+    {
+      "path": "output/playwright/online/1280-live-room.png",
+      "kind": "added",
+      "sha256": "6e14cb861f0aa7e94134485f269ca61a02467826b8b43ad3e8559ecf91dc5136"
+    },
+    {
+      "path": "output/playwright/online/1280-room.png",
+      "kind": "added",
+      "sha256": "5024b301cc449401508d055ac7f337abe309d5aaf7bdbd31e12f2a86bdd3d0df"
+    },
+    {
+      "path": "output/playwright/online/360-room.png",
+      "kind": "added",
+      "sha256": "7d42c77d167bd9ab90bda781a9cc128f55e9e3357e90739d54326ae457a370bb"
+    },
+    {
+      "path": "output/playwright/online/768-room.png",
+      "kind": "added",
+      "sha256": "c90fe1e015fdb0ba7689ca9f3cdea848af2162c0d11672df56e9595497f89708"
+    },
+    {
+      "path": "output/playwright/online-webkit/1280-live-room.png",
+      "kind": "added",
+      "sha256": "b961600f75b5ded1d77ec213584f19523714c8d9a728d056e66db9aebf5214f5"
+    },
+    {
+      "path": "output/playwright/online-webkit/1280-room.png",
+      "kind": "added",
+      "sha256": "d3f12d029e55f22244ccf47af0ae8cba9268339b33ce8eb84eb512e8c068114b"
+    },
+    {
+      "path": "output/playwright/online-webkit/360-room.png",
+      "kind": "added",
+      "sha256": "1feb48a1dcb8339807f894f6ab465db3b464aaf8817b926312016a6a08051ce7"
+    },
+    {
+      "path": "output/playwright/online-webkit/768-room.png",
+      "kind": "added",
+      "sha256": "b3ec78001f67d8563189399378366af2d418dcc3f4b1c8de6a4d52d14e9b3993"
+    },
+    {
+      "path": "output/validation/T01/capacity-report.json",
+      "kind": "modified",
+      "sha256": "528ebb5895a013c913127499ea6595b4a67ca122b38577f1ec8c87feb3c93a61"
+    },
+    {
+      "path": "output/validation/content-report.json",
+      "kind": "modified",
+      "sha256": "ec874b55b1502dbaa456bf1c230dbb3127515f693fdfab784e9516dbd2a05c5d"
+    },
+    {
+      "path": "package.json",
+      "kind": "modified",
+      "sha256": "9419e8ed7614f450b73365d11df19abfa55e8f8ffa75af4b5f190b92102da9d8"
+    },
+    {
+      "path": "playwright.config.ts",
+      "kind": "modified",
+      "sha256": "d5977719ff657900b993b1abce7681d233bc34451c0180295818cafee34b2f56"
+    },
+    {
+      "path": "playwright.online-webkit.config.ts",
+      "kind": "added",
+      "sha256": "509802a3f81ffd908db2d6337228ffddf7565911e358ff84af532a0c001d86ee"
+    },
+    {
+      "path": "playwright.online.config.ts",
+      "kind": "added",
+      "sha256": "1102d307eaef342a2c9814fd85333605e7ea353da5e5d7d49744cc1f83663dee"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "kind": "modified",
+      "sha256": "84a5b92eaabb8b26b2ed578cfc75b0065a001092a9c6878b42a1b844adee9b5a"
+    },
+    {
+      "path": "scripts/package-online.py",
+      "kind": "added",
+      "sha256": "179bb411d04011290d1a6f50ac1edef55d0e5dc546d5f79c44238ec9c8292c96"
+    },
+    {
+      "path": "scripts/smoke-online-app.mjs",
+      "kind": "added",
+      "sha256": "0d5e72c883624c2bb662866aeacc28505a9861494ee18726311c75fe693fa128"
+    },
+    {
+      "path": "scripts/verify-merge-a.mjs",
+      "kind": "modified",
+      "sha256": "58021dc180323b1243e374454929da36a95deb90ad302c45ff35090440dc05b0"
+    },
+    {
+      "path": "scripts/verify-online-dependencies.mjs",
+      "kind": "added",
+      "sha256": "ef7d4f92b063c894f213ba5708c9ebc7a5dd01f35d2c77c75ccf87adfac356e1"
+    },
+    {
+      "path": "scripts/verify-online-preservation.py",
+      "kind": "added",
+      "sha256": "19d3cc783d8a0d713ca672ff73220572fe0c932863e69a2a1c7aca79499b6326"
+    },
+    {
+      "path": "server/http.ts",
+      "kind": "added",
+      "sha256": "76dfdbd57b730250bbedcf64fda26be108482917f445b30a197c087d759a248e"
+    },
+    {
+      "path": "server/index.ts",
+      "kind": "added",
+      "sha256": "9580ea3ae4b88642fb7848872e106bf4e0021f02f9d1acc950f652726cd72e48"
+    },
+    {
+      "path": "server/rooms.ts",
+      "kind": "added",
+      "sha256": "3eb4069456a4b105f6e986f2dd5fccd2d25aa10f4bb109eac516766bc41f3cde"
+    },
+    {
+      "path": "src/core/constants.ts",
+      "kind": "modified",
+      "sha256": "a05af8496eb3266d34cef5f8dedd7c6f9b6d83bd51a75bb50cbdda1b8d303028"
+    },
+    {
+      "path": "src/core/unified-persistence.ts",
+      "kind": "modified",
+      "sha256": "f7c468e6a09b89d5d3479171778144d2308dc9abd70381d35eb9758a39b02ef8"
+    },
+    {
+      "path": "src/core/version.ts",
+      "kind": "added",
+      "sha256": "90d9906b1298c86dbb8d4db98e9ca6962ff217e4172286ad578a9ad242b42601"
+    },
+    {
+      "path": "src/features/full-game/FullGame.tsx",
+      "kind": "modified",
+      "sha256": "7dba8dc91a2bea3acf15d84eb77a699d1f8a56652e281ba5a753369a5acc86ce"
+    },
+    {
+      "path": "src/features/learning-hub/LearningHub.css",
+      "kind": "modified",
+      "sha256": "704a0b6248b05bb4f722a3aae7eaea36ebbde98f24b0f2bf3f7c985e87b1f1a4"
+    },
+    {
+      "path": "src/features/learning-hub/LearningHub.tsx",
+      "kind": "modified",
+      "sha256": "a50aea886e02baaf0c25a8375a6393b2284f627a705897abbaf381843118aaf0"
+    },
+    {
+      "path": "src/features/learning-hub/registry.ts",
+      "kind": "modified",
+      "sha256": "ce19697eeb818be2e9f77b632a6ad951b14a6726e45ecf00d57f630b62f251b7"
+    },
+    {
+      "path": "src/features/learning-hub/types.ts",
+      "kind": "modified",
+      "sha256": "48f5b23c960a560f234db12c23e7cf86a6205e7d0b713a65078fbe2fec5e8de8"
+    },
+    {
+      "path": "src/features/offline-data/OfflineData.tsx",
+      "kind": "modified",
+      "sha256": "3ebc5ab7477ce826fdffdc2f58a9a182c737fb3a1a6de2c13665c793d39bb84b"
+    },
+    {
+      "path": "src/features/online-game/OnlineGame.css",
+      "kind": "added",
+      "sha256": "98d1873a1bd2b0c9eba30c37c7633a7d232342c84b70334a287b7ecaf3ca8f5f"
+    },
+    {
+      "path": "src/features/online-game/OnlineGame.tsx",
+      "kind": "added",
+      "sha256": "768ab18f27d319013a6e6d3fdb1a91d0b36c1c53ba962e16867a3e1f6076f13b"
+    },
+    {
+      "path": "src/features/online-game/client.ts",
+      "kind": "added",
+      "sha256": "0e0564b5fe29479c9e088ae44c9efb2f81022cb0676942b0e2f20884515321aa"
+    },
+    {
+      "path": "src/features/online-game/protocol.ts",
+      "kind": "added",
+      "sha256": "f3ae4eb4968900d731571186939c10c934574a1c1d4cb4bc97c950a8d920d0f4"
+    },
+    {
+      "path": "tests/browser/online.spec.ts",
+      "kind": "added",
+      "sha256": "19e36de0d441c4737f576259a2244fbf4b50e2e5d18195f8bfa7bb3860febe41"
+    },
+    {
+      "path": "tests/browser/t16.spec.ts",
+      "kind": "modified",
+      "sha256": "fb4f812dde6aa0ef1ed18eca30ba89ab5d6d51e435f950e44b070acf85494f83"
+    },
+    {
+      "path": "tests/online/server.test.ts",
+      "kind": "added",
+      "sha256": "b9f5304a789fc1bcc253b7e4fd13a11513b1154f7dd6f8da7049006ac5c23649"
+    },
+    {
+      "path": "tsconfig.json",
+      "kind": "modified",
+      "sha256": "7ca22ea6acf7039b13d727ab12242acf9cc9a010eb58fd2c321d8bf75686662f"
+    },
+    {
+      "path": "vite.server.config.ts",
+      "kind": "added",
+      "sha256": "0b4b011f8792a9642e4ad10beab217fa22ec04a1d7bc446359fb7f671782c1be"
+    },
+    {
+      "path": "启动联机对弈.command",
+      "kind": "added",
+      "sha256": "74996fd4610e4d5d86aed3a452b53d795ed0e90e77b694826f58eaa4abdb5274"
+    },
+    {
+      "path": "docs/online/changed-files.json",
+      "kind": "generated-manifest",
+      "selfHashExcluded": true
+    }
+  ],
+  "removed": [
+    "dist/assets/index-CrdHJ63M.css",
+    "dist/assets/index-DkB8lu0P.js"
+  ]
+}

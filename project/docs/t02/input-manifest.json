@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "INPUT-T02-001",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "taskId": "T02",
+  "baseVersion": "0.2.0",
+  "sourceProject": "/Users/maxiao/Desktop/weiqi/go-club",
+  "workCopy": "/private/tmp/go-club-t02.0AXAUa",
+  "readOnlySourcesModified": false,
+  "inputs": [
+    {"path":"handoff/T00.md","sha256":"ad0621ade993bf80e931261bcd09fee26c65456eceb2588802c166285455e31f"},
+    {"path":"handoff/T01.md","sha256":"f7defdc4c150c662a0ca077f6be16481af338141c94f5c6109030a3796dcf7cf"},
+    {"path":"docs/RULES.md","sha256":"f90c9adafcbab75f6c64acd789dd02462d2cfb14665374b2ba020f8c1f6fa965"},
+    {"path":"schemas/content.schema.json","sha256":"82a1a060ff48c7072aba29d5091c55e976eaed04e5d6af5787408885b07e2e88"},
+    {"path":"pnpm-lock.yaml","sha256":"80fb6c23436fb904456dea058ecb97d48d6789c5fc5a3f59bceca8131e7d655c"}
+  ],
+  "note": "桌面工程含独立T18材料分支；T02继承但不修改该范围。sources/为空且未修改。"
+}

@@ -1,0 +1,359 @@
+{
+  "schemaVersion": 1,
+  "id": "HISTORY-CHANGE-MANIFEST",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "baseVersion": "0.18.0-freeplay.1",
+  "resultVersion": "0.19.0-history.1",
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "kind": "modified",
+      "sha256": "f8944d6ee3a76998b5dc63ff744ed4cf2dd61c752e97a916998da575897e06a2"
+    },
+    {
+      "path": "README.md",
+      "kind": "modified",
+      "sha256": "e26f2a552787751bf30b9b932aac6abd26e244b191c08e7fcfe7ccff2b23590c"
+    },
+    {
+      "path": "SOURCES.md",
+      "kind": "modified",
+      "sha256": "2baa5bd1eb745647a16118c1af986568f2369df5aa6e8dd2d522840d13eca19e"
+    },
+    {
+      "path": "dist/assets/index-CrdHJ63M.css",
+      "kind": "added",
+      "sha256": "e1558615f3421d41a1a4b81651c8110a20caaf7c9d3b05571c9eff215c36f3b4"
+    },
+    {
+      "path": "dist/assets/index-DkB8lu0P.js",
+      "kind": "added",
+      "sha256": "3c436bf05cecba7379be645beeb8b6674b762b857c1bd17e203de5aed2e439b3"
+    },
+    {
+      "path": "dist/index.html",
+      "kind": "modified",
+      "sha256": "5d2697ff2a2ebcfa9cf5cf23828c9840a9ac253465fc56f57db0130f232ecee3"
+    },
+    {
+      "path": "dist/offline-assets.json",
+      "kind": "modified",
+      "sha256": "f2e5c5e1bbdf3599f4f1da3a58a78f24b71b4e3327f758e24413c4c11f2b8537"
+    },
+    {
+      "path": "dist/sw.js",
+      "kind": "modified",
+      "sha256": "7b1e9ba6a7d14b028db785b226f7e17ba904c4d44658676ecb620c13be042e58"
+    },
+    {
+      "path": "dist-engine/package.json",
+      "kind": "modified",
+      "sha256": "71585d626db37d255ac3fd4f1e1510f8c3226e6f9dac91eb7070346cc8fd2b72"
+    },
+    {
+      "path": "docs/history/ACCEPTANCE.md",
+      "kind": "added",
+      "sha256": "5e4eb26b4f628b65c9e526f8a3151bb0eabfa43a5666829ba013af2c9ceb20f4"
+    },
+    {
+      "path": "docs/history/IMPLEMENTATION.md",
+      "kind": "added",
+      "sha256": "dadc0e9c314778a6718ffbcab57c4ba25a1da9181bf61fe38706824aa95224b1"
+    },
+    {
+      "path": "docs/history/KNOWN_ISSUES.md",
+      "kind": "added",
+      "sha256": "292609e80990f3790dece6479dd07cc425c9015d4205439d98f9ad17dfc9b52a"
+    },
+    {
+      "path": "docs/history/USAGE.md",
+      "kind": "added",
+      "sha256": "2c698ddf01e25970618e7a12c20b443f3265b6325cbdd25b33ba272869867ce2"
+    },
+    {
+      "path": "docs/history/checks/browser-all.log",
+      "kind": "added",
+      "sha256": "1c95b2663dc416c4905ded67b60966eecc265929c64f20b7d35f68273c65f8b2"
+    },
+    {
+      "path": "docs/history/checks/browser-history-initial.log",
+      "kind": "added",
+      "sha256": "e655fa597e49cfe5f859e325e20dc9c46a140d6bc78b4fab0ed6362b535fc3f1"
+    },
+    {
+      "path": "docs/history/checks/browser-versions.json",
+      "kind": "added",
+      "sha256": "d1ce81717f1e4f72aa6efe51dbc38ec335b199ea8a3336698f485709634ed82b"
+    },
+    {
+      "path": "docs/history/checks/browser-webkit.log",
+      "kind": "added",
+      "sha256": "f0d9d4d479491eb5ba885cffd1ef7ac4e896c8fad3028f43acebf59c0e1d9bad"
+    },
+    {
+      "path": "docs/history/checks/build.log",
+      "kind": "added",
+      "sha256": "31d35fdfc6865c533706c98c580a977228e957d23e2c69c39215b95549315efe"
+    },
+    {
+      "path": "docs/history/checks/check-workers4-initial.log",
+      "kind": "added",
+      "sha256": "0e5b57b66e0b38beae8bfe264204345071ad903cc5d1ab9f7449d29fcf88b3e9"
+    },
+    {
+      "path": "docs/history/checks/check.log",
+      "kind": "added",
+      "sha256": "30e0e1ff3d08183fc7b06c95c601b23a9fe5d406ee47e3b405ee4841413c5017"
+    },
+    {
+      "path": "docs/history/checks/clean-check-initial.log",
+      "kind": "added",
+      "sha256": "4df74049456c4fcfbf5e66bb6a82a2dd004e00180ed22b47ed2104bb620208b5"
+    },
+    {
+      "path": "docs/history/checks/historical-evidence-preserved.json",
+      "kind": "added",
+      "sha256": "1e5c39414aaec5634cfc5ff704d67b993c527b88e39e470965cf189f35cc0579"
+    },
+    {
+      "path": "docs/history/checks/history-unit-initial.log",
+      "kind": "added",
+      "sha256": "683291eca8c915d642b38d339e4c387eb3819c5c0021c4344290f06dfb450898"
+    },
+    {
+      "path": "docs/history/checks/history-unit.log",
+      "kind": "added",
+      "sha256": "4d3374599dae9867f276a96c0f11cdc2854be8010c9921c961fdf02bdfb34755"
+    },
+    {
+      "path": "docs/history/checks/install.log",
+      "kind": "added",
+      "sha256": "751733d48c1d42d1cf22fe82514cb215279636b65df50501899779e15d07d955"
+    },
+    {
+      "path": "docs/history/checks/journey/chromium/full-game.png",
+      "kind": "added",
+      "sha256": "cfdc69d5055ea4c342fca8a18fe8fd215ce463a2023a4dcc91571a83c58a84fa"
+    },
+    {
+      "path": "docs/history/checks/journey/chromium/journey.json",
+      "kind": "added",
+      "sha256": "8347894ef55fe9ccf92b389142e681f2d72216681c15196eee7f40b2ae2bed99"
+    },
+    {
+      "path": "docs/history/checks/journey/chromium/offline-editor.png",
+      "kind": "added",
+      "sha256": "475fd9ab283bfeb80acc6a81515b781c96b5b4c2cf766500ea4e587d27091fed"
+    },
+    {
+      "path": "docs/history/checks/preservation.json",
+      "kind": "added",
+      "sha256": "e5dbb31835d9737274f88a141278025c0d1a63cad6244eca0376b4b5b46146f8"
+    },
+    {
+      "path": "docs/history/checks/touch-offline.log",
+      "kind": "added",
+      "sha256": "4d043bf13abf68b9aa4c654972b059a8f626290ebd3aa30ba7f1c2f2f54d8144"
+    },
+    {
+      "path": "docs/history/checks/typecheck.log",
+      "kind": "added",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/history/checks/web-guidance.txt",
+      "kind": "added",
+      "sha256": "b939587aca2231552ebad8ca06934bdaa93dfae014a44303c4f2ccd9be97ce8f"
+    },
+    {
+      "path": "docs/history/provenance/FREE_PLAY-RELEASE_MANIFEST.json",
+      "kind": "added",
+      "sha256": "3240dc4c4abdba60d2e411ec0e9fab4a78487dd297cc550b7621d44c884b3de2"
+    },
+    {
+      "path": "docs/requirements-matrix.md",
+      "kind": "modified",
+      "sha256": "1365e6241f73eca96def15bf6768eeb0231bf0e38ed2bd8691eb925a2cbee006"
+    },
+    {
+      "path": "handoff/HISTORY_SLIDER.md",
+      "kind": "added",
+      "sha256": "508b8496a797b29c3f67cc5ac15ca3bb06c2f955700e9a5d86261ac1af240f17"
+    },
+    {
+      "path": "output/pdf/T17-development-report.pdf",
+      "kind": "modified",
+      "sha256": "64d3be7ddd8f81aa6647b343bf6b7bd7f97346ca61882cea1dd487ed71f6d971"
+    },
+    {
+      "path": "output/pdf/T17-empty-report.pdf",
+      "kind": "modified",
+      "sha256": "b45b1b816f1633fb928d8d665ba38a951adc2a951f72ba9805cd0c3dd2aab884"
+    },
+    {
+      "path": "output/playwright/history/1280-history.png",
+      "kind": "added",
+      "sha256": "d0ce8249c8a6ce63dd7c5792ebe22916787d676165d8eb907a6d55f0725b4ad9"
+    },
+    {
+      "path": "output/playwright/history/360-history.png",
+      "kind": "added",
+      "sha256": "f26af98a0dc635cd4b7c5af6b758e6df038020eecfec524e0bb238b25a3b106a"
+    },
+    {
+      "path": "output/playwright/history/360-touch-19-offline.png",
+      "kind": "added",
+      "sha256": "7d6e0f7497ba2fef963119aca110f86e7c23cdb18394ff56958eb45ed50d6857"
+    },
+    {
+      "path": "output/playwright/history/768-history.png",
+      "kind": "added",
+      "sha256": "69818bc9e489f953b5e4c9b29354b66c131794063f3311fab5f0d35af32e5d66"
+    },
+    {
+      "path": "output/playwright/history-webkit/1280-history.png",
+      "kind": "added",
+      "sha256": "296ed3a56d32ecb8a8d196395b0dd40c47cf8285ac7cb7086abb5b98455c5a80"
+    },
+    {
+      "path": "output/playwright/history-webkit/360-history.png",
+      "kind": "added",
+      "sha256": "19d78e90b1263534b20fdd7c58267839f8d1f287a6bd7fbd68428ed8a2e98bef"
+    },
+    {
+      "path": "output/playwright/history-webkit/768-history.png",
+      "kind": "added",
+      "sha256": "9ff2b14f73fe5621b4bcf2a30644910a5b0d18d129be99586c8ab27885ec3996"
+    },
+    {
+      "path": "output/validation/T01/capacity-report.json",
+      "kind": "modified",
+      "sha256": "b900675567b72cf5e42d5f3f428a2fafcc0f2e3f23104a992eb722ddb3863292"
+    },
+    {
+      "path": "output/validation/content-report.json",
+      "kind": "modified",
+      "sha256": "53e8cbb7c5e2e466cfe7e71a1b863a5e4d9c2ae93a31cf395bf012a334a454a4"
+    },
+    {
+      "path": "package.json",
+      "kind": "modified",
+      "sha256": "bfcb2c8e1f11f9bb6b34e50f8dadb8b99415ed4571fa97d311d41ae78869e5df"
+    },
+    {
+      "path": "playwright.history-webkit.config.ts",
+      "kind": "added",
+      "sha256": "b28981bf0c63479d85c9ab0b40c20a4c6e5e3a52f7f2bea2511cf23b0576f52e"
+    },
+    {
+      "path": "scripts/package-history.py",
+      "kind": "added",
+      "sha256": "a0eb306d7bfb0dfcf0400f90bfb0ee4efcc1216746d24e51111c95962b2c57f8"
+    },
+    {
+      "path": "scripts/verify-history-preservation.py",
+      "kind": "added",
+      "sha256": "5270ccd82642b188ba7d86dcff2b18a497c664793413e276f086333293dba92e"
+    },
+    {
+      "path": "src/components/GameTimeline.css",
+      "kind": "added",
+      "sha256": "0b97727fc44a988cc44b9e6d225e6eb5632e0c29a18ea7420b0b110a91ff4b12"
+    },
+    {
+      "path": "src/components/GameTimeline.tsx",
+      "kind": "added",
+      "sha256": "8bfbcbb60b992c5ef1708cd1fcf01accb29db4eca62917f4bd09299bdba90765"
+    },
+    {
+      "path": "src/core/game-history.ts",
+      "kind": "added",
+      "sha256": "82f77cabb0fd4f3dfb1d87f3e143126f401d8ae148dfa4f277d49f818a372bc3"
+    },
+    {
+      "path": "src/core/unified-persistence.ts",
+      "kind": "modified",
+      "sha256": "6ecf72f31e31df8ce739f27304e4c12dbb20d9f6092c1c9786b98f56e97ce758"
+    },
+    {
+      "path": "src/features/capture-game/CaptureGame.tsx",
+      "kind": "modified",
+      "sha256": "6a3313b640f2718a56d5996e4f483e72e58b7de6491be95f5ce359550bb2d08b"
+    },
+    {
+      "path": "src/features/experiment-board/ExperimentBoard.tsx",
+      "kind": "modified",
+      "sha256": "824d19b3852774dac65198f1963d9f8c347a60f7868c7969987a8d4837fae64c"
+    },
+    {
+      "path": "src/features/full-game/FullGame.tsx",
+      "kind": "modified",
+      "sha256": "1ce44c5e7900ecce43913b2281a5d871973966283ade14762477044b4e7e2e1c"
+    },
+    {
+      "path": "src/features/full-game/review.ts",
+      "kind": "modified",
+      "sha256": "4eee29da61208022e66d318676bc11437d4c6bce420cee244913d047bad19d84"
+    },
+    {
+      "path": "src/features/home/Home.tsx",
+      "kind": "modified",
+      "sha256": "9b1d4192800347a2fdb6f798044c740d0abfb46813d9d56dc092cfb8557e40ad"
+    },
+    {
+      "path": "src/features/puzzle-runner/PuzzleRunner.tsx",
+      "kind": "modified",
+      "sha256": "fd5a25f685ccd69240b18cdcc23ad293ace4b67c2a5a730848fefba32660e586"
+    },
+    {
+      "path": "src/features/teacher-editor/TeacherEditor.tsx",
+      "kind": "modified",
+      "sha256": "c766db65a867fc1d6b9ed674e52e8f88eeae2b085c3c7cebc945942a806f6ee8"
+    },
+    {
+      "path": "tests/browser/history.spec.ts",
+      "kind": "added",
+      "sha256": "1afc6647a5587389d915b549832c1972d44e29036c428d2741b86d0af24bcab7"
+    },
+    {
+      "path": "tests/browser/t08.spec.ts",
+      "kind": "modified",
+      "sha256": "d6f3de46a5d4d2e80c76c6b581295208f2ab40f8ba31711597a4de13abedfa88"
+    },
+    {
+      "path": "tests/browser/t16.spec.ts",
+      "kind": "modified",
+      "sha256": "762cad8cd117bf6916128edc389ad0943bc742a335b940d9914f35b2a1317289"
+    },
+    {
+      "path": "tests/history/game-history.test.ts",
+      "kind": "added",
+      "sha256": "d5b7243df601716be22fbf546bc732ef6a7d43be226a8d24867c9b898f2381d7"
+    },
+    {
+      "path": "tests/history/timeline.test.tsx",
+      "kind": "added",
+      "sha256": "5e339357e6af61fffb4916db3df56835f580db007f518d772075ad05d8cb9f01"
+    },
+    {
+      "path": "tests/t01/properties.test.ts",
+      "kind": "modified",
+      "sha256": "c4c545f1517530a6309cd01ce23a8219ea2491285a5c982efacc0a5cd53c8b99"
+    },
+    {
+      "path": "vitest.config.ts",
+      "kind": "modified",
+      "sha256": "488f5f4cfea9f6cc833e157e7a808312d1c844da14a1f4463c9b4f59dd07ef6c"
+    },
+    {
+      "path": "docs/history/changed-files.json",
+      "kind": "generated-manifest",
+      "selfHashExcluded": true
+    }
+  ],
+  "removed": [
+    "dist/assets/index-C5sn94WV.css",
+    "dist/assets/index-D6HBhnuC.js"
+  ]
+}

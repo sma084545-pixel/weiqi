@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="210mm" height="148.5mm" viewBox="0 0 595.276 420.945">
+<title>AREA-004 r1 | 面积判断 Area 背面</title>
+<metadata>{&quot;schemaVersion&quot;: 1, &quot;id&quot;: &quot;T21-BACK-AREA-004&quot;, &quot;revision&quot;: 1, &quot;rulesetId&quot;: &quot;GO-CLUB-AREA-1&quot;, &quot;contentRef&quot;: {&quot;id&quot;: &quot;AREA-004&quot;, &quot;revision&quot;: 1}}</metadata>
+<rect width="595.276" height="420.945" fill="#FFFFFF" stroke="#9EA8A6"/>
+<rect width="595.276" height="28" fill="#4D7651"/>
+<text x="22" y="19" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="12.5" fill="#FFFFFF">AREA-004 r1 | 面积判断 Area</text>
+<text x="22" y="50" font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="13.5" fill="#1D3035">贴目变化：同一面积不同结果</text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="10" fill="#13766D"><tspan x="22" y="83">三层提示</tspan></text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="8.7" fill="#1D3035"><tspan x="22" y="101.0">1. 先读题干的死子、中立点与贴目约定。</tspan></text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="8.7" fill="#1D3035"><tspan x="22" y="117.5">2. 分别数活子和围住的空点；中立点留空。</tspan></text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="8.7" fill="#1D3035"><tspan x="22" y="134.0">3. 核对是否多加了提子账本，或漏了白方贴目。</tspan></text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="10" fill="#A44A3F"><tspan x="22" y="154.5">常见错误</tspan></text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="8.2" fill="#1D3035"><tspan x="22" y="171.5">漏算活子、把提子账本再次相加，或把中立区分给一方。</tspan></text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="10" fill="#13766D"><tspan x="296" y="83">正确答案</tspan></text>
+<text font-family="Arial Unicode MS, PingFang SC, sans-serif" font-size="8.2" fill="#1D3035"><tspan x="296" y="101.0">正确答案：10.5。黑活子 8 + 黑围空 2 = 10。白</tspan><tspan x="296" y="112.7">活子 8 + 白围空 2 + 贴目 0.5 = 10.5。中</tspan><tspan x="296" y="124.4">立 5 点不归双方。盘面核对：活子与三类空点合计 25。</tspan></text>
+<text x="22" y="386" font-family="Arial Unicode MS" font-size="8.5" fill="#5A6B9F">教师详解：答案册第 27 页</text>
+</svg>

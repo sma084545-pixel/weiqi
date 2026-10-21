@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "id": "T22-PDF-CHECKS",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "results": [
+    {
+      "file": "output/T22_All_25_r1.pdf",
+      "pages": 25,
+      "rendered": 25,
+      "pageSizePoints": [
+        960.009448818898,
+        540.0
+      ],
+      "status": "passed"
+    },
+    {
+      "file": "output/T22_MicroLesson_01_r1.pdf",
+      "pages": 5,
+      "rendered": 5,
+      "pageSizePoints": [
+        960.009448818898,
+        540.0
+      ],
+      "status": "passed"
+    },
+    {
+      "file": "output/T22_MicroLesson_02_r1.pdf",
+      "pages": 5,
+      "rendered": 5,
+      "pageSizePoints": [
+        960.009448818898,
+        540.0
+      ],
+      "status": "passed"
+    },
+    {
+      "file": "output/T22_MicroLesson_03_r1.pdf",
+      "pages": 5,
+      "rendered": 5,
+      "pageSizePoints": [
+        960.009448818898,
+        540.0
+      ],
+      "status": "passed"
+    },
+    {
+      "file": "output/T22_MicroLesson_04_r1.pdf",
+      "pages": 5,
+      "rendered": 5,
+      "pageSizePoints": [
+        960.009448818898,
+        540.0
+      ],
+      "status": "passed"
+    },
+    {
+      "file": "output/T22_MicroLesson_05_r1.pdf",
+      "pages": 5,
+      "rendered": 5,
+      "pageSizePoints": [
+        960.009448818898,
+        540.0
+      ],
+      "status": "passed"
+    },
+    {
+      "file": "output/T22_Teacher_Summary_5pages_r1.pdf",
+      "pages": 5,
+      "rendered": 5,
+      "pageSizePoints": [
+        595.2756,
+        841.8898
+      ],
+      "status": "passed"
+    }
+  ]
+}

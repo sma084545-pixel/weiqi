@@ -1,0 +1,32 @@
+[WebServer] (node:97355) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:97362) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [webkit] › tests/browser/t24.spec.ts:8:1 › T24 continuous learner to teacher journey, offline save and recovery (7.5s)
+
+
+  1) [webkit] › tests/browser/t24.spec.ts:8:1 › T24 continuous learner to teacher journey, offline save and recovery › 真正禁网后刷新题库与草稿仍可用 
+
+    Error: page.reload: WebKit encountered an internal error
+    Call log:
+      - waiting for navigation until "load"
+
+
+      136 |   await step('真正禁网后刷新题库与草稿仍可用',async()=>{
+      137 |     await page.goto('/#/teacher/offline-data');await expect(page.getByRole('heading',{name:'已可离线'})).toBeVisible({timeout:20_000});
+    > 138 |     await context.setOffline(true);await page.reload();await page.goto('/#/challenges');await expect(page.getByText('30道正式题可用')).toBeVisible();
+          |                                               ^
+      139 |     await page.goto('/#/teacher/editor');await expect(page.getByLabel('列表标题')).toHaveValue('T24 自动化测试草稿，非正式题');
+      140 |     await page.screenshot({path:evidence+'/offline-editor.png',fullPage:true});
+      141 |   });
+        at /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t24-20261009/mainline/go-club/tests/browser/t24.spec.ts:138:47
+        at step (/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t24-20261009/mainline/go-club/tests/browser/t24.spec.ts:19:5)
+        at /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t24-20261009/mainline/go-club/tests/browser/t24.spec.ts:136:3
+
+    Error Context: output/playwright/results/t24-T24-continuous-learner-e7c3d-y-offline-save-and-recovery-webkit/error-context.md
+
+  1 failed
+    [webkit] › tests/browser/t24.spec.ts:8:1 › T24 continuous learner to teacher journey, offline save and recovery 

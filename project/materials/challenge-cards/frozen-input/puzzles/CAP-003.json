@@ -1,0 +1,225 @@
+{
+  "schemaVersion": 1,
+  "id": "CAP-003",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "Puzzle",
+  "developmentOnly": false,
+  "category": "CAP",
+  "difficulty": {
+    "level": "elementary",
+    "rationale": "一次局部决定，需区分即时目标与后续应对。"
+  },
+  "prompt": "黑先。本手提掉全部标记白子（capture）；成功后立即结束本题。",
+  "initialPosition": {
+    "schemaVersion": 1,
+    "id": "POS-CAP-003",
+    "revision": 1,
+    "rulesetId": "GO-CLUB-AREA-1",
+    "kind": "Position",
+    "size": 5,
+    "stones": [
+      {
+        "row": 1,
+        "col": 0,
+        "color": "B"
+      },
+      {
+        "row": 2,
+        "col": 1,
+        "color": "B"
+      },
+      {
+        "row": 2,
+        "col": 0,
+        "color": "W"
+      }
+    ],
+    "toPlay": "B",
+    "historyPolicy": "fresh-setup",
+    "history": null
+  },
+  "targetMarkers": [
+    {
+      "markerId": "target-1",
+      "type": "target",
+      "points": [
+        {
+          "row": 2,
+          "col": 0
+        }
+      ],
+      "label": "目标1：A3",
+      "owner": "W"
+    }
+  ],
+  "firstPlayer": "B",
+  "conditions": {
+    "boundary": "full-board",
+    "external": "真实完整 5×5 小棋盘练习，图外无棋子，不使用裁切边缘。",
+    "assumptions": [
+      "成功标准：本手全部标记白子消失，不以面积或后续胜负判定。",
+      "常见错误：黑 C3 没有提到目标；白 A2 延伸，获得 A1、B2 等气。",
+      "同伴讨论：先预测提子数，再由同伴实际移走整块核对。",
+      "新教学起点，过去劫史未知；从当前布局建立新历史，不宣称来自合法实战棋谱。"
+    ],
+    "viewport": null
+  },
+  "hints": [
+    "先检查目标块的全部气。",
+    "比较候选点落下后，哪些棋子连接或被提走。",
+    "在完整棋盘上重放一手，再按成功标准核对。"
+  ],
+  "answer": {
+    "type": "move-tree",
+    "rootNodeId": "root",
+    "nodes": [
+      {
+        "nodeId": "root",
+        "move": null,
+        "children": [
+          "l1-1",
+          "l2-1"
+        ],
+        "outcome": "continue",
+        "terminalStatus": null,
+        "evidence": [],
+        "explanation": "完整棋盘左边没有盘外一气。黑 A2 填最后一气，提走 A3。"
+      },
+      {
+        "nodeId": "l1-1",
+        "move": {
+          "type": "place",
+          "color": "B",
+          "at": {
+            "row": 3,
+            "col": 0
+          }
+        },
+        "children": [],
+        "outcome": "success",
+        "terminalStatus": null,
+        "evidence": [
+          "完整棋盘左边没有盘外一气。黑 A2 填最后一气，提走 A3。"
+        ],
+        "explanation": "完整棋盘左边没有盘外一气。黑 A2 填最后一气，提走 A3。"
+      },
+      {
+        "nodeId": "l2-1",
+        "move": {
+          "type": "place",
+          "color": "B",
+          "at": {
+            "row": 2,
+            "col": 2
+          }
+        },
+        "children": [
+          "l2-2"
+        ],
+        "outcome": "failure",
+        "terminalStatus": null,
+        "evidence": [],
+        "explanation": "黑 C3 没有提到目标；白 A2 延伸，获得 A1、B2 等气。"
+      },
+      {
+        "nodeId": "l2-2",
+        "move": {
+          "type": "place",
+          "color": "W",
+          "at": {
+            "row": 3,
+            "col": 0
+          }
+        },
+        "children": [],
+        "outcome": "failure",
+        "terminalStatus": null,
+        "evidence": [
+          "黑 C3 没有提到目标；白 A2 延伸，获得 A1、B2 等气。"
+        ],
+        "explanation": "黑 C3 没有提到目标；白 A2 延伸，获得 A1、B2 等气。"
+      }
+    ],
+    "uncoveredPolicy": "unknown",
+    "uniquenessClaim": false,
+    "uniquenessEvidence": []
+  },
+  "coveredBranches": [
+    [
+      "root",
+      "l1-1"
+    ],
+    [
+      "root",
+      "l2-1",
+      "l2-2"
+    ]
+  ],
+  "sources": [
+    {
+      "type": "original",
+      "title": "T09 原创题目、表达与坐标图",
+      "url": null,
+      "accessedAt": null,
+      "note": "依据 GO-CLUB-AREA-1 自行设计和模型推导，未复制协会题图或网上题库。不是教师审题或学生记录。"
+    },
+    {
+      "type": "reference",
+      "title": "British Go Association: How to Play",
+      "url": "https://www.britgo.org/intro/intro2.html",
+      "accessedAt": "2026-09-07",
+      "note": "仅核对正交连接、气、提子与两眼的一般概念。自定义计分、停手及重复规则以项目约定为准；原创题目的正确性另行验证。"
+    }
+  ],
+  "validation": {
+    "structure": {
+      "status": "passed",
+      "method": "T00 structure / T01 engine / independent vectors as applicable",
+      "checkedAt": "2026-09-07",
+      "evidence": [
+        "content/validation/results.json: CAP-003",
+        "content/t09/pedagogy.json: CAP-003"
+      ]
+    },
+    "moveLegality": {
+      "status": "passed",
+      "method": "T00 structure / T01 engine / independent vectors as applicable",
+      "checkedAt": "2026-09-07",
+      "evidence": [
+        "content/validation/results.json: CAP-003",
+        "content/t09/pedagogy.json: CAP-003"
+      ]
+    },
+    "solutionChecked": {
+      "status": "passed",
+      "method": "T00 structure / T01 engine / independent vectors as applicable",
+      "checkedAt": "2026-09-07",
+      "evidence": [
+        "content/validation/results.json: CAP-003",
+        "content/t09/pedagogy.json: CAP-003"
+      ]
+    },
+    "externalReferenceChecked": {
+      "status": "passed",
+      "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+      "checkedAt": "2026-09-07",
+      "evidence": [
+        "content/validation/results.json: CAP-003",
+        "content/t09/pedagogy.json: CAP-003",
+        "content/t09/SOURCES.md"
+      ]
+    },
+    "modelChecked": {
+      "status": "passed",
+      "method": "Authored reasoning + explicit finite scope, not human review",
+      "checkedAt": "2026-09-07",
+      "evidence": [
+        "content/validation/results.json: CAP-003",
+        "content/t09/pedagogy.json: CAP-003"
+      ]
+    },
+    "humanReviewed": null
+  },
+  "relatedContent": []
+}

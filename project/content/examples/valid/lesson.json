@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "DEV-LESSON-001",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "Lesson",
+  "developmentOnly": true,
+  "stage": 1,
+  "title": "开发示例：交叉点与气",
+  "objectives": [
+    "区分正交相邻与斜邻。"
+  ],
+  "prerequisites": [],
+  "activity": "两人轮流指出中央黑子的气。",
+  "readinessObservations": [
+    "能解释斜角为什么不算。"
+  ],
+  "beginnerRoute": "手指沿上下左右找点。",
+  "experiencedRoute": "向同伴解释共享气去重。",
+  "contentRefs": [
+    {
+      "id": "DEV-LIB-001",
+      "revision": 1
+    }
+  ],
+  "sources": [
+    {
+      "type": "original",
+      "title": "T00 开发示例",
+      "url": null,
+      "accessedAt": null,
+      "note": "依据用户规则原创；不是学生记录，不属于正式题库。"
+    }
+  ],
+  "validation": {
+    "structure": null,
+    "moveLegality": null,
+    "solutionChecked": null,
+    "externalReferenceChecked": null,
+    "modelChecked": null,
+    "humanReviewed": null
+  }
+}

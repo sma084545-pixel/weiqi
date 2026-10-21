@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1, "id": "DEV-T01-RULE-VECTORS", "revision": 1, "rulesetId": "GO-CLUB-AREA-1", "developmentOnly": true,
+  "note": "Expected coordinates and rows were fixed before engine implementation; these are developer vectors, not official puzzles or human-reviewed content.",
+  "topology": [
+    {"id":"center","rows":[".....",".....","..B..",".....","....."],"at":{"row":2,"col":2},"stones":[{"row":2,"col":2}],"liberties":[{"row":1,"col":2},{"row":2,"col":1},{"row":2,"col":3},{"row":3,"col":2}]},
+    {"id":"edge","rows":["..B..",".....",".....",".....","....."],"at":{"row":0,"col":2},"stones":[{"row":0,"col":2}],"liberties":[{"row":0,"col":1},{"row":0,"col":3},{"row":1,"col":2}]},
+    {"id":"corner","rows":["B....",".....",".....",".....","....."],"at":{"row":0,"col":0},"stones":[{"row":0,"col":0}],"liberties":[{"row":0,"col":1},{"row":1,"col":0}]},
+    {"id":"diagonal","rows":["B....",".B...",".....",".....","....."],"at":{"row":0,"col":0},"stones":[{"row":0,"col":0}],"liberties":[{"row":0,"col":1},{"row":1,"col":0}]},
+    {"id":"shared-liberty","rows":[".....",".BB..",".B...",".....","....."],"at":{"row":1,"col":1},"stones":[{"row":1,"col":1},{"row":1,"col":2},{"row":2,"col":1}],"liberties":[{"row":0,"col":1},{"row":0,"col":2},{"row":1,"col":0},{"row":1,"col":3},{"row":2,"col":0},{"row":2,"col":2},{"row":3,"col":1}]}
+  ],
+  "placements": [
+    {"id":"single-capture","rows":[".B...","BW...",".B...",".....","....."],"move":{"type":"place","color":"B","at":{"row":1,"col":2}},"captured":[{"row":1,"col":1}],"after":[".B...","B.B..",".B...",".....","....."]},
+    {"id":"two-stone-capture","rows":[".BB..","BWWB.",".B...",".....","....."],"move":{"type":"place","color":"B","at":{"row":2,"col":2}},"captured":[{"row":1,"col":1},{"row":1,"col":2}],"after":[".BB..","B..B.",".BB..",".....","....."]},
+    {"id":"same-group-touching-twice","rows":[".BB..","BWWB.","BW.B.",".BB..","....."],"move":{"type":"place","color":"B","at":{"row":2,"col":2}},"captured":[{"row":1,"col":1},{"row":1,"col":2},{"row":2,"col":1}],"after":[".BB..","B..B.","B.BB.",".BB..","....."]},
+    {"id":"simultaneous-two-groups","rows":["..B..",".BWB.","BW...",".B...","....."],"move":{"type":"place","color":"B","at":{"row":2,"col":2}},"captured":[{"row":1,"col":2},{"row":2,"col":1}],"after":["..B..",".B.B.","B.B..",".B...","....."]},
+    {"id":"capture-before-suicide","rows":[".WB..","WB...","B....",".....","....."],"move":{"type":"place","color":"B","at":{"row":0,"col":0}},"captured":[{"row":0,"col":1},{"row":1,"col":0}],"after":["B.B..",".B...","B....",".....","....."]},
+    {"id":"merge","rows":[".....",".....",".B.B.",".....","....."],"move":{"type":"place","color":"B","at":{"row":2,"col":2}},"captured":[],"after":[".....",".....",".BBB.",".....","....."],"libertiesBefore":[{"row":1,"col":1},{"row":1,"col":3},{"row":2,"col":0},{"row":2,"col":2},{"row":2,"col":4},{"row":3,"col":1},{"row":3,"col":3}],"libertiesAfter":[{"row":1,"col":1},{"row":1,"col":2},{"row":1,"col":3},{"row":2,"col":0},{"row":2,"col":4},{"row":3,"col":1},{"row":3,"col":2},{"row":3,"col":3}]},
+    {"id":"suicide","rows":[".W...","W....",".....",".....","....."],"move":{"type":"place","color":"B","at":{"row":0,"col":0}},"error":"SUICIDE"}
+  ],
+  "ko": {
+    "id":"ko-from-empty","size":5,
+    "sequence":[[0,1],[1,1],[1,0],[0,2],[2,1],[2,2],[4,4],[1,3]],
+    "before":[".BW..","BW.W.",".BW..",".....","....B"],
+    "capture":{"type":"place","color":"B","at":{"row":1,"col":2}},
+    "after":[".BW..","B.BW.",".BW..",".....","....B"],
+    "recapture":{"type":"place","color":"W","at":{"row":1,"col":1}},
+    "threat":{"type":"place","color":"W","at":{"row":3,"col":4}},
+    "answer":{"type":"place","color":"B","at":{"row":4,"col":3}},
+    "afterLegalRecapture":[".BW..","BW.W.",".BW..","....W","...BB"]
+  },
+  "area": [
+    {"id":"mixed","rows":["BB.BB","BBBBB",".....","WWWWW","WW.WW"],"komi":0,"dead":[],"blackStones":9,"whiteStones":9,"blackTerritory":[[0,2]],"whiteTerritory":[[4,2]],"neutral":[[2,0],[2,1],[2,2],[2,3],[2,4]],"blackTotal":10,"whiteTotal":10},
+    {"id":"dead-removal-assumption","rows":["BBBBB","B...B","B.W.B","B...B","BBBBB"],"komi":0.5,"dead":[[2,2]],"blackStones":16,"whiteStones":0,"blackTerritory":[[1,1],[1,2],[1,3],[2,1],[2,2],[2,3],[3,1],[3,2],[3,3]],"whiteTerritory":[],"neutral":[],"blackTotal":25,"whiteTotal":0.5}
+  ]
+}

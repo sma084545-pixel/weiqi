@@ -1,0 +1,370 @@
+{
+  "links": [
+    {
+      "link": "../../materials/demo-board/assembly-guide.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/demo-board/board-9x9-450mm-1to1.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/demo-board/board-9x9-a4-tiled.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/demo-board/pieces-markers-a4.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/demo-board/teaching-flows-a3.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/pair-boards/output/boards/go-board_13x13-a3_coordinates.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/pair-boards/output/boards/go-board_13x13-a3_coordinates_tiled-A4.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/pair-boards/output/boards/go-board_13x13-a3_plain.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/pair-boards/output/boards/go-board_13x13-a3_plain_tiled-A4.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/pair-boards/output/boards/go-board_13x13-a4_coordinates.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/pair-boards/output/boards/go-board_13x13-a4_plain.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/pair-boards/output/boards/go-board_9x9-a3_coordinates.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/pair-boards/output/boards/go-board_9x9-a3_coordinates_tiled-A4.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/pair-boards/output/boards/go-board_9x9-a3_plain.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/pair-boards/output/boards/go-board_9x9-a3_plain_tiled-A4.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/pair-boards/output/boards/go-board_9x9-a4_coordinates.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/pair-boards/output/boards/go-board_9x9-a4_plain.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/pair-boards/output/overlays/liberty-overlay_13x13-a3.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/pair-boards/output/overlays/liberty-overlay_13x13-a4.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/pair-boards/output/overlays/liberty-overlay_9x9-a3.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/pair-boards/output/overlays/liberty-overlay_9x9-a4.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/pair-boards/output/portable-kit/loan-return-checklist_A4.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/pair-boards/output/portable-kit/paper-stones_12mm_black-white_338.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/pair-boards/output/portable-kit/paper-stones_12mm_black_169.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/pair-boards/output/portable-kit/paper-stones_12mm_white_169.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/pair-boards/output/portable-kit/paper-stones_18mm_black-white_180.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/pair-boards/output/portable-kit/paper-stones_18mm_black_90.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/pair-boards/output/portable-kit/paper-stones_18mm_white_90.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/pair-boards/output/portable-kit/portable-kit-layout_A4.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/pair-boards/output/portable-kit/storage-labels_A4.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/pair-boards/output/print-pack_13x13-A3-extension.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/pair-boards/output/print-pack_13x13-A4-small-extension.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/pair-boards/output/print-pack_9x9-A4-portable-kit.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/rule-cards/pdf/01-main-front.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/rule-cards/pdf/02-main-back.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/rule-cards/pdf/03-detail-front.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/rule-cards/pdf/04-detail-back.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/rule-cards/pdf/05-score.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/rule-cards/pdf/06-pathway.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/rule-cards/pdf/07-mini-front.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/rule-cards/pdf/08-mini-back.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/rule-cards/pdf/PRINT-A4-landscape-short-edge.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/rule-cards/pdf/PRINT-A4-portrait-long-edge-mini.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/rule-cards/pdf/all-independent-cards.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/rule-cards/pdf/capture-mini-A6-duplex.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/rule-cards/pdf/detailed-A5-duplex.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/rule-cards/pdf/main-rule-A5-duplex.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/challenge-cards/output/T21_challenge_cards_back_A4.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/challenge-cards/output/T21_challenge_cards_front_A4.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/challenge-cards/output/T21_duplex_test_page1.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/challenge-cards/output/T21_teacher_answer_book.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/micro-lessons/output/T22_All_25_r1.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/micro-lessons/output/T22_MicroLesson_01_r1.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/micro-lessons/output/T22_MicroLesson_02_r1.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/micro-lessons/output/T22_MicroLesson_03_r1.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/micro-lessons/output/T22_MicroLesson_04_r1.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/micro-lessons/output/T22_MicroLesson_05_r1.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/micro-lessons/output/T22_Teacher_Summary_5pages_r1.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/challenge-cards/output/T21_challenge_cards_front_A4.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/challenge-cards/output/T21_challenge_cards_back_A4.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/challenge-cards/output/T21_teacher_answer_book.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/challenge-cards/output/T21_duplex_test_page1.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/micro-lessons/output/T22_All_25_r1.pptx",
+      "exists": true
+    },
+    {
+      "link": "../../materials/micro-lessons/output/T22_All_25_r1.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/micro-lessons/source/speaker-notes.md",
+      "exists": true
+    },
+    {
+      "link": "../../materials/micro-lessons/output/T22_Teacher_Summary_5pages_r1.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../materials/micro-lessons/output/T22_MicroLesson_01_r1.pptx",
+      "exists": true
+    },
+    {
+      "link": "../../materials/micro-lessons/output/T22_MicroLesson_01_r1.pptx",
+      "exists": true
+    },
+    {
+      "link": "../../materials/micro-lessons/output/T22_MicroLesson_01_r1.pptx",
+      "exists": true
+    },
+    {
+      "link": "../../materials/micro-lessons/output/T22_MicroLesson_01_r1.pptx",
+      "exists": true
+    },
+    {
+      "link": "../../materials/micro-lessons/output/T22_MicroLesson_01_r1.pptx",
+      "exists": true
+    },
+    {
+      "link": "../../materials/micro-lessons/output/T22_MicroLesson_02_r1.pptx",
+      "exists": true
+    },
+    {
+      "link": "../../materials/micro-lessons/output/T22_MicroLesson_02_r1.pptx",
+      "exists": true
+    },
+    {
+      "link": "../../materials/micro-lessons/output/T22_MicroLesson_02_r1.pptx",
+      "exists": true
+    },
+    {
+      "link": "../../materials/micro-lessons/output/T22_MicroLesson_02_r1.pptx",
+      "exists": true
+    },
+    {
+      "link": "../../materials/micro-lessons/output/T22_MicroLesson_02_r1.pptx",
+      "exists": true
+    },
+    {
+      "link": "../../materials/micro-lessons/output/T22_MicroLesson_03_r1.pptx",
+      "exists": true
+    },
+    {
+      "link": "../../materials/micro-lessons/output/T22_MicroLesson_03_r1.pptx",
+      "exists": true
+    },
+    {
+      "link": "../../materials/micro-lessons/output/T22_MicroLesson_03_r1.pptx",
+      "exists": true
+    },
+    {
+      "link": "../../materials/micro-lessons/output/T22_MicroLesson_03_r1.pptx",
+      "exists": true
+    },
+    {
+      "link": "../../materials/micro-lessons/output/T22_MicroLesson_03_r1.pptx",
+      "exists": true
+    },
+    {
+      "link": "../../materials/micro-lessons/output/T22_MicroLesson_04_r1.pptx",
+      "exists": true
+    },
+    {
+      "link": "../../materials/micro-lessons/output/T22_MicroLesson_04_r1.pptx",
+      "exists": true
+    },
+    {
+      "link": "../../materials/micro-lessons/output/T22_MicroLesson_04_r1.pptx",
+      "exists": true
+    },
+    {
+      "link": "../../materials/micro-lessons/output/T22_MicroLesson_04_r1.pptx",
+      "exists": true
+    },
+    {
+      "link": "../../materials/micro-lessons/output/T22_MicroLesson_04_r1.pptx",
+      "exists": true
+    },
+    {
+      "link": "../../materials/micro-lessons/output/T22_MicroLesson_05_r1.pptx",
+      "exists": true
+    },
+    {
+      "link": "../../materials/micro-lessons/output/T22_MicroLesson_05_r1.pptx",
+      "exists": true
+    },
+    {
+      "link": "../../materials/micro-lessons/output/T22_MicroLesson_05_r1.pptx",
+      "exists": true
+    },
+    {
+      "link": "../../materials/micro-lessons/output/T22_MicroLesson_05_r1.pptx",
+      "exists": true
+    },
+    {
+      "link": "../../materials/micro-lessons/output/T22_MicroLesson_05_r1.pptx",
+      "exists": true
+    }
+  ],
+  "passed": 91,
+  "failed": 0
+}

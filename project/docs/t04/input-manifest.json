@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "INPUT-T04-001",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "InputManifest",
+  "taskId": "T04",
+  "capturedAt": "2026-09-11T08:00:00+08:00",
+  "baseVersion": "0.4.0",
+  "inputs": {
+    "T03FullArchive": {"path": "/Users/maxiao/Desktop/weiqi/deliverables/T03_go-club_0.4.0/go-club-T03-0.4.0-full.zip", "sha256": "dda81328f5fb1f17972f5bfda0b17ef13fc17d5e13030dd4390589c26a3ad6d4"},
+    "handoff/T03.md": "1626630ee0f0c0638f61cf368934d1e15d080db6af2e25478b758aaedfc7e7c2",
+    "src/core/rules/index.ts": "55334977e115784fdbdd1b1726569b70ddd48f12e1e58529d4cbbe343e2e9d77",
+    "src/components/Board.tsx": "7f9985b2520d0583cfc26283cbd43a00eac1e9039ec749bf96b8efd7f3324807",
+    "src/features/learning-hub/registry.ts": "46fbab55000b188919da9797fc0c8f6c8f892050ec027032987f75807a209761",
+    "schemas/content.schema.json": "82a1a060ff48c7072aba29d5091c55e976eaed04e5d6af5787408885b07e2e88",
+    "pnpm-lock.yaml": "80fb6c23436fb904456dea058ecb97d48d6789c5fc5a3f59bceca8131e7d655c"
+  },
+  "sourcesDirectory": {"path": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/sources", "filesFound": 0, "readOnly": true},
+  "notes": ["实际从桌面正式 T03 0.4.0 工程建立隔离副本。", "桌面工程另含独立 T18 材料分支；T04 不修改其文件。"]
+}

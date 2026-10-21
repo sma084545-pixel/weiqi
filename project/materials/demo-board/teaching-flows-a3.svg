@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 420 297">
+  <title>T18 两组摆棋流程</title>
+  <desc>中心边角与共享气去重的A3可编辑矢量教学页</desc>
+  <metadata>schemaVersion=1; id=T18-DEMO-BOARD; revision=1; rulesetId=GO-CLUB-AREA-1; units=mm</metadata>
+  <style>
+    text { font-family: "Arial Unicode MS", "PingFang SC", sans-serif; fill: #18211C; }
+    .grid-line { stroke: #263028; stroke-width: 1.2; vector-effect: non-scaling-stroke; }
+    .cut-line { stroke: #777; stroke-width: .35; stroke-dasharray: 2 1; fill: none; }
+    .note { font-size: 4px; } .small { font-size: 3.2px; } .label { font-size: 5px; font-weight: 700; }
+  </style>
+<rect width="420" height="297" fill="#FFFFFF"/>
+<text x="210" y="15" class="label" text-anchor="middle" >两组可操作摆棋流程｜GO-CLUB-AREA-1</text>
+<text x="210" y="23" class="note" text-anchor="middle" >坐标 row,col 从左上 0 开始；以下均为摆棋模式，不代表合法棋谱</text>
+<g transform="translate(20 40)">
+<rect width="70" height="70" fill="#EDC585" stroke="#18211C" stroke-width=".8"/>
+<line x1="0" y1="0.0" x2="70" y2="0.0" stroke="#263028" stroke-width=".45"/><line x1="0.0" y1="0" x2="0.0" y2="70" stroke="#263028" stroke-width=".45"/>
+<line x1="0" y1="8.75" x2="70" y2="8.75" stroke="#263028" stroke-width=".45"/><line x1="8.75" y1="0" x2="8.75" y2="70" stroke="#263028" stroke-width=".45"/>
+<line x1="0" y1="17.5" x2="70" y2="17.5" stroke="#263028" stroke-width=".45"/><line x1="17.5" y1="0" x2="17.5" y2="70" stroke="#263028" stroke-width=".45"/>
+<line x1="0" y1="26.25" x2="70" y2="26.25" stroke="#263028" stroke-width=".45"/><line x1="26.25" y1="0" x2="26.25" y2="70" stroke="#263028" stroke-width=".45"/>
+<line x1="0" y1="35.0" x2="70" y2="35.0" stroke="#263028" stroke-width=".45"/><line x1="35.0" y1="0" x2="35.0" y2="70" stroke="#263028" stroke-width=".45"/>
+<line x1="0" y1="43.75" x2="70" y2="43.75" stroke="#263028" stroke-width=".45"/><line x1="43.75" y1="0" x2="43.75" y2="70" stroke="#263028" stroke-width=".45"/>
+<line x1="0" y1="52.5" x2="70" y2="52.5" stroke="#263028" stroke-width=".45"/><line x1="52.5" y1="0" x2="52.5" y2="70" stroke="#263028" stroke-width=".45"/>
+<line x1="0" y1="61.25" x2="70" y2="61.25" stroke="#263028" stroke-width=".45"/><line x1="61.25" y1="0" x2="61.25" y2="70" stroke="#263028" stroke-width=".45"/>
+<line x1="0" y1="70.0" x2="70" y2="70.0" stroke="#263028" stroke-width=".45"/><line x1="70.0" y1="0" x2="70.0" y2="70" stroke="#263028" stroke-width=".45"/>
+<circle cx="35.0" cy="35.0" r="3.325" fill="#111" stroke="#111"/>
+<circle cx="35.0" cy="26.25" r="2.625" fill="white" fill-opacity=".68" stroke="#007C91" stroke-width="1.4" stroke-dasharray="3 2"/>
+<circle cx="26.25" cy="35.0" r="2.625" fill="white" fill-opacity=".68" stroke="#007C91" stroke-width="1.4" stroke-dasharray="3 2"/>
+<circle cx="43.75" cy="35.0" r="2.625" fill="white" fill-opacity=".68" stroke="#007C91" stroke-width="1.4" stroke-dasharray="3 2"/>
+<circle cx="35.0" cy="43.75" r="2.625" fill="white" fill-opacity=".68" stroke="#007C91" stroke-width="1.4" stroke-dasharray="3 2"/>
+</g>
+<text x="55.0" y="118" class="label" text-anchor="middle" >中心 E5 (4,4)</text>
+<text x="55.0" y="125" class="note" text-anchor="middle" >去重气数：4</text>
+<g transform="translate(120 40)">
+<rect width="70" height="70" fill="#EDC585" stroke="#18211C" stroke-width=".8"/>
+<line x1="0" y1="0.0" x2="70" y2="0.0" stroke="#263028" stroke-width=".45"/><line x1="0.0" y1="0" x2="0.0" y2="70" stroke="#263028" stroke-width=".45"/>
+<line x1="0" y1="8.75" x2="70" y2="8.75" stroke="#263028" stroke-width=".45"/><line x1="8.75" y1="0" x2="8.75" y2="70" stroke="#263028" stroke-width=".45"/>
+<line x1="0" y1="17.5" x2="70" y2="17.5" stroke="#263028" stroke-width=".45"/><line x1="17.5" y1="0" x2="17.5" y2="70" stroke="#263028" stroke-width=".45"/>
+<line x1="0" y1="26.25" x2="70" y2="26.25" stroke="#263028" stroke-width=".45"/><line x1="26.25" y1="0" x2="26.25" y2="70" stroke="#263028" stroke-width=".45"/>
+<line x1="0" y1="35.0" x2="70" y2="35.0" stroke="#263028" stroke-width=".45"/><line x1="35.0" y1="0" x2="35.0" y2="70" stroke="#263028" stroke-width=".45"/>
+<line x1="0" y1="43.75" x2="70" y2="43.75" stroke="#263028" stroke-width=".45"/><line x1="43.75" y1="0" x2="43.75" y2="70" stroke="#263028" stroke-width=".45"/>
+<line x1="0" y1="52.5" x2="70" y2="52.5" stroke="#263028" stroke-width=".45"/><line x1="52.5" y1="0" x2="52.5" y2="70" stroke="#263028" stroke-width=".45"/>
+<line x1="0" y1="61.25" x2="70" y2="61.25" stroke="#263028" stroke-width=".45"/><line x1="61.25" y1="0" x2="61.25" y2="70" stroke="#263028" stroke-width=".45"/>
+<line x1="0" y1="70.0" x2="70" y2="70.0" stroke="#263028" stroke-width=".45"/><line x1="70.0" y1="0" x2="70.0" y2="70" stroke="#263028" stroke-width=".45"/>
+<circle cx="35.0" cy="0.0" r="3.325" fill="#111" stroke="#111"/>
+<circle cx="26.25" cy="0.0" r="2.625" fill="white" fill-opacity=".68" stroke="#007C91" stroke-width="1.4" stroke-dasharray="3 2"/>
+<circle cx="43.75" cy="0.0" r="2.625" fill="white" fill-opacity=".68" stroke="#007C91" stroke-width="1.4" stroke-dasharray="3 2"/>
+<circle cx="35.0" cy="8.75" r="2.625" fill="white" fill-opacity=".68" stroke="#007C91" stroke-width="1.4" stroke-dasharray="3 2"/>
+</g>
+<text x="155.0" y="118" class="label" text-anchor="middle" >上边 E9 (0,4)</text>
+<text x="155.0" y="125" class="note" text-anchor="middle" >去重气数：3</text>
+<g transform="translate(220 40)">
+<rect width="70" height="70" fill="#EDC585" stroke="#18211C" stroke-width=".8"/>
+<line x1="0" y1="0.0" x2="70" y2="0.0" stroke="#263028" stroke-width=".45"/><line x1="0.0" y1="0" x2="0.0" y2="70" stroke="#263028" stroke-width=".45"/>
+<line x1="0" y1="8.75" x2="70" y2="8.75" stroke="#263028" stroke-width=".45"/><line x1="8.75" y1="0" x2="8.75" y2="70" stroke="#263028" stroke-width=".45"/>
+<line x1="0" y1="17.5" x2="70" y2="17.5" stroke="#263028" stroke-width=".45"/><line x1="17.5" y1="0" x2="17.5" y2="70" stroke="#263028" stroke-width=".45"/>
+<line x1="0" y1="26.25" x2="70" y2="26.25" stroke="#263028" stroke-width=".45"/><line x1="26.25" y1="0" x2="26.25" y2="70" stroke="#263028" stroke-width=".45"/>
+<line x1="0" y1="35.0" x2="70" y2="35.0" stroke="#263028" stroke-width=".45"/><line x1="35.0" y1="0" x2="35.0" y2="70" stroke="#263028" stroke-width=".45"/>
+<line x1="0" y1="43.75" x2="70" y2="43.75" stroke="#263028" stroke-width=".45"/><line x1="43.75" y1="0" x2="43.75" y2="70" stroke="#263028" stroke-width=".45"/>
+<line x1="0" y1="52.5" x2="70" y2="52.5" stroke="#263028" stroke-width=".45"/><line x1="52.5" y1="0" x2="52.5" y2="70" stroke="#263028" stroke-width=".45"/>
+<line x1="0" y1="61.25" x2="70" y2="61.25" stroke="#263028" stroke-width=".45"/><line x1="61.25" y1="0" x2="61.25" y2="70" stroke="#263028" stroke-width=".45"/>
+<line x1="0" y1="70.0" x2="70" y2="70.0" stroke="#263028" stroke-width=".45"/><line x1="70.0" y1="0" x2="70.0" y2="70" stroke="#263028" stroke-width=".45"/>
+<circle cx="0.0" cy="0.0" r="3.325" fill="#111" stroke="#111"/>
+<circle cx="8.75" cy="0.0" r="2.625" fill="white" fill-opacity=".68" stroke="#007C91" stroke-width="1.4" stroke-dasharray="3 2"/>
+<circle cx="0.0" cy="8.75" r="2.625" fill="white" fill-opacity=".68" stroke="#007C91" stroke-width="1.4" stroke-dasharray="3 2"/>
+</g>
+<text x="255.0" y="118" class="label" text-anchor="middle" >左上角 A9 (0,0)</text>
+<text x="255.0" y="125" class="note" text-anchor="middle" >去重气数：2</text>
+<g transform="translate(320 40)">
+<rect width="70" height="70" fill="#EDC585" stroke="#18211C" stroke-width=".8"/>
+<line x1="0" y1="0.0" x2="70" y2="0.0" stroke="#263028" stroke-width=".45"/><line x1="0.0" y1="0" x2="0.0" y2="70" stroke="#263028" stroke-width=".45"/>
+<line x1="0" y1="8.75" x2="70" y2="8.75" stroke="#263028" stroke-width=".45"/><line x1="8.75" y1="0" x2="8.75" y2="70" stroke="#263028" stroke-width=".45"/>
+<line x1="0" y1="17.5" x2="70" y2="17.5" stroke="#263028" stroke-width=".45"/><line x1="17.5" y1="0" x2="17.5" y2="70" stroke="#263028" stroke-width=".45"/>
+<line x1="0" y1="26.25" x2="70" y2="26.25" stroke="#263028" stroke-width=".45"/><line x1="26.25" y1="0" x2="26.25" y2="70" stroke="#263028" stroke-width=".45"/>
+<line x1="0" y1="35.0" x2="70" y2="35.0" stroke="#263028" stroke-width=".45"/><line x1="35.0" y1="0" x2="35.0" y2="70" stroke="#263028" stroke-width=".45"/>
+<line x1="0" y1="43.75" x2="70" y2="43.75" stroke="#263028" stroke-width=".45"/><line x1="43.75" y1="0" x2="43.75" y2="70" stroke="#263028" stroke-width=".45"/>
+<line x1="0" y1="52.5" x2="70" y2="52.5" stroke="#263028" stroke-width=".45"/><line x1="52.5" y1="0" x2="52.5" y2="70" stroke="#263028" stroke-width=".45"/>
+<line x1="0" y1="61.25" x2="70" y2="61.25" stroke="#263028" stroke-width=".45"/><line x1="61.25" y1="0" x2="61.25" y2="70" stroke="#263028" stroke-width=".45"/>
+<line x1="0" y1="70.0" x2="70" y2="70.0" stroke="#263028" stroke-width=".45"/><line x1="70.0" y1="0" x2="70.0" y2="70" stroke="#263028" stroke-width=".45"/>
+<circle cx="26.25" cy="35.0" r="3.325" fill="#111" stroke="#111"/>
+<circle cx="35.0" cy="35.0" r="3.325" fill="#111" stroke="#111"/>
+<circle cx="26.25" cy="43.75" r="3.325" fill="#111" stroke="#111"/>
+<circle cx="26.25" cy="26.25" r="2.625" fill="white" fill-opacity=".68" stroke="#007C91" stroke-width="1.4" stroke-dasharray="3 2"/>
+<circle cx="17.5" cy="35.0" r="2.625" fill="white" fill-opacity=".68" stroke="#007C91" stroke-width="1.4" stroke-dasharray="3 2"/>
+<circle cx="35.0" cy="26.25" r="2.625" fill="white" fill-opacity=".68" stroke="#007C91" stroke-width="1.4" stroke-dasharray="3 2"/>
+<circle cx="43.75" cy="35.0" r="2.625" fill="white" fill-opacity=".68" stroke="#007C91" stroke-width="1.4" stroke-dasharray="3 2"/>
+<circle cx="35.0" cy="43.75" r="2.625" fill="white" fill-opacity=".68" stroke="#007C91" stroke-width="1.4" stroke-dasharray="3 2"/>
+<circle cx="17.5" cy="43.75" r="2.625" fill="white" fill-opacity=".68" stroke="#007C91" stroke-width="1.4" stroke-dasharray="3 2"/>
+<circle cx="26.25" cy="52.5" r="2.625" fill="white" fill-opacity=".68" stroke="#007C91" stroke-width="1.4" stroke-dasharray="3 2"/>
+</g>
+<text x="355.0" y="118" class="label" text-anchor="middle" >L形 D5/E5/D4</text>
+<text x="355.0" y="125" class="note" text-anchor="middle" >去重气数：7</text>
+<text x="20" y="142" class="label" text-anchor="start" >流程 A｜中心、边、角</text>
+<text x="20" y="152" class="note" text-anchor="start" >① E5 放黑棋；成员用气环圈 E6/D5/F5/E4 → 4 气。</text>
+<text x="20" y="161" class="note" text-anchor="start" >② 清空后移到 E9；圈 D9/F9/E8 → 3 气；板外不算。</text>
+<text x="20" y="170" class="note" text-anchor="start" >③ 清空后移到 A9；圈 B9/A8 → 2 气。</text>
+<text x="20" y="179" class="note" text-anchor="start" >④ 成员把数字 4/3/2 放到三个标题旁，说出差异来自边界。</text>
+<text x="220" y="142" class="label" text-anchor="start" >流程 B｜L 形连通块与共享气去重</text>
+<text x="220" y="152" class="note" text-anchor="start" >① 放 D5、E5、D4；目标三角指出同一正交连通块。</text>
+<text x="220" y="161" class="note" text-anchor="start" >② 在 D6/C5/E6/F5/E4/C4/D3 放 7 个气环。</text>
+<text x="220" y="170" class="note" text-anchor="start" >③ E4 同时邻接 E5 和 D4；重复放第二个环后立即移走。</text>
+<text x="220" y="179" class="note" text-anchor="start" >④ 8 个相邻空位槽中 E4 重复一次；去重集合为 7 气。</text>
+<rect x="20" y="200" width="380" height="70" rx="4" fill="#F3F6F4" stroke="#CED8D1"/>
+<text x="30" y="214" class="label" text-anchor="start" >教师语言模板</text>
+<text x="30" y="225" class="note" text-anchor="start" >“气只沿棋盘线找；斜角不算。数整块时，同一个空交叉点只报一次。”</text>
+<text x="30" y="238" class="note" text-anchor="start" >成员动作：每找到一个不同空点就放一个双虚线气环；重复点必须拿掉重复环。</text>
+<text x="30" y="251" class="note" text-anchor="start" >预期观察：单子中心/边/角为 4/3/2；L 形三子块为 7 个不同气点。</text>
+<text x="30" y="263" class="note" text-anchor="start" >证据边界：这是准确坐标生成的教学示例；未填人类教师审核或学生成效。</text>
+</svg>

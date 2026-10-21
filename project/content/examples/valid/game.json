@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "id": "DEV-GAME-001",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "GameState",
+  "size": 9,
+  "setup": {
+    "schemaVersion": 1,
+    "id": "DEV-POS-EMPTY",
+    "revision": 1,
+    "rulesetId": "GO-CLUB-AREA-1",
+    "kind": "Position",
+    "size": 9,
+    "stones": [],
+    "toPlay": "B",
+    "historyPolicy": "fresh-setup",
+    "history": null
+  },
+  "mode": "full-game",
+  "board": [
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  ],
+  "toPlay": "B",
+  "history": {
+    "layouts": [
+      "9|................................................................................."
+    ]
+  },
+  "moves": [],
+  "captures": {
+    "B": 0,
+    "W": 0
+  },
+  "consecutivePasses": 0,
+  "phase": "playing",
+  "komi": 0,
+  "lastMove": null,
+  "agreement": null,
+  "result": null,
+  "undoStack": [],
+  "redoStack": []
+}

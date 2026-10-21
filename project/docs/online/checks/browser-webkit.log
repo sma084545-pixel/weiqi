@@ -1,0 +1,17 @@
+[WebServer] (node:68210) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 8 tests using 1 worker
+
+(node:68211) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/browser/online.spec.ts:20:1 › home and existing same-screen board expose the installed online entry (1.9s)
+  ✓  2 tests/browser/online.spec.ts:25:1 › two isolated players synchronize turns/capture, illegal suicide and live history without duplicate moves (4.0s)
+  ✓  3 tests/browser/online.spec.ts:47:1 › each seat confirms its own undo; rejection retains state, acceptance restores captures (3.1s)
+  ✓  4 tests/browser/online.spec.ts:53:1 › double pass, changing dead marks, both-role score, historic read-only view and disputed restoration (2.4s)
+  ✓  5 tests/browser/online.spec.ts:61:1 › resignation has no invented score; leaving and restoring a room does not give its seat to a third player (1.9s)
+  ✓  6 tests/browser/online.spec.ts:66:35 › 360px room layout, keyboard and local 19-route touch scrolling (2.5s)
+  ✓  7 tests/browser/online.spec.ts:66:35 › 768px room layout, keyboard and local 19-route touch scrolling (1.8s)
+  ✓  8 tests/browser/online.spec.ts:66:35 › 1280px room layout, keyboard and local 19-route touch scrolling (2.4s)
+
+  8 passed (22.1s)

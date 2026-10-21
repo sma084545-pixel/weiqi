@@ -1,0 +1,5 @@
+{
+  "fixtureId":"DEV-END-T08-001",
+  "manualCount":{"blackStones":35,"whiteStones":43,"blackTerritory":[[1,1]],"whiteTerritory":[[7,7]],"neutralPoints":[[4,4]],"blackTotal":36,"whiteTotal":44,"difference":-8,"winner":"W"},
+  "notes":["逐行数得黑子35、白子43。","(1,1)仅以黑棋为边界，(7,7)仅以白棋为边界。","(4,4)同时接触黑白边界，因此中立。","提子计数B=9、W=2仅供比较，不加入面积。"]
+}

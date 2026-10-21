@@ -1,0 +1,122 @@
+[
+  {
+    "command": [
+      "python3",
+      "materials/demo-board/verify_assets.py"
+    ],
+    "cwd": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/merge-c-20261006/validation/go-club",
+    "exitCode": 0,
+    "log": "command-01.log"
+  },
+  {
+    "command": [
+      "python3",
+      "materials/pair-boards/tools/verify_geometry.py"
+    ],
+    "cwd": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/merge-c-20261006/validation/go-club",
+    "exitCode": 0,
+    "log": "command-02.log"
+  },
+  {
+    "command": [
+      "node",
+      "materials/rule-cards/source/verify-demos.mjs"
+    ],
+    "cwd": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/merge-c-20261006/validation/go-club",
+    "exitCode": 0,
+    "log": "command-03.log"
+  },
+  {
+    "command": [
+      "python3",
+      "materials/rule-cards/source/verify-print.py"
+    ],
+    "cwd": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/merge-c-20261006/validation/go-club",
+    "exitCode": 0,
+    "log": "command-04.log"
+  },
+  {
+    "command": [
+      "node",
+      "materials/micro-lessons/source/verify-content.mjs"
+    ],
+    "cwd": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/merge-c-20261006/validation/go-club",
+    "exitCode": 0,
+    "log": "command-05.log"
+  },
+  {
+    "command": [
+      "python3",
+      "materials/micro-lessons/source/verify-delivery.py"
+    ],
+    "cwd": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/merge-c-20261006/validation/go-club",
+    "exitCode": 1,
+    "log": "command-06.log"
+  },
+  {
+    "command": [
+      "node",
+      "scripts/generate-types.mjs",
+      "--check"
+    ],
+    "cwd": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/merge-c-20261006/validation/go-club",
+    "exitCode": 0,
+    "log": "command-07.log"
+  },
+  {
+    "command": [
+      "./node_modules/.bin/vitest",
+      "run"
+    ],
+    "cwd": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/merge-c-20261006/validation/go-club",
+    "exitCode": 0,
+    "log": "command-08.log"
+  },
+  {
+    "command": [
+      "node",
+      "--import",
+      "tsx",
+      "content/tools/validate.mjs"
+    ],
+    "cwd": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/merge-c-20261006/validation/go-club",
+    "exitCode": 0,
+    "log": "command-09.log"
+  },
+  {
+    "command": [
+      "node",
+      "scripts/verify-t16-freeze-preservation.mjs"
+    ],
+    "cwd": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/merge-c-20261006/validation/go-club",
+    "exitCode": 0,
+    "log": "command-10.log"
+  },
+  {
+    "command": [
+      "./node_modules/.bin/tsc",
+      "--noEmit"
+    ],
+    "cwd": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/merge-c-20261006/validation/go-club",
+    "exitCode": 0,
+    "log": "command-11.log"
+  },
+  {
+    "command": [
+      "./node_modules/.bin/vite",
+      "build"
+    ],
+    "cwd": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/merge-c-20261006/validation/go-club",
+    "exitCode": 0,
+    "log": "command-12.log"
+  },
+  {
+    "command": [
+      "node",
+      "scripts/finalize-offline.mjs"
+    ],
+    "cwd": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/merge-c-20261006/validation/go-club",
+    "exitCode": 0,
+    "log": "command-13.log"
+  }
+]

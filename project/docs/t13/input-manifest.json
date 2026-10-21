@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "INPUT-T13-001",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "taskId": "T13",
+  "baseVersion": "0.12.0",
+  "baseArchive": "go-club-T12-0.12.0-full.zip",
+  "baseArchiveSha256": "44db7882df3212745d4011f14c7357e7bb7b2109ff9ff9f26db2f54997cc6dc9",
+  "requiredHandoffs": ["handoff/T12.md", "handoff/T10.md", "handoff/T09.md", "handoff/T08.md"],
+  "formalFixtures": [
+    {"id":"END-001","revision":1},{"id":"END-002","revision":1},{"id":"END-003","revision":1},
+    {"id":"END-004","revision":1},{"id":"END-005","revision":1},{"id":"END-006","revision":1}
+  ],
+  "formalAreaPuzzles": [
+    {"id":"AREA-001","revision":1},{"id":"AREA-002","revision":1},{"id":"AREA-003","revision":1},
+    {"id":"AREA-004","revision":1},{"id":"AREA-005","revision":1}
+  ]
+}

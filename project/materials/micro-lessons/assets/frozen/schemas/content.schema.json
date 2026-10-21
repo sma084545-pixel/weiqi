@@ -1,0 +1,2203 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "urn:go-club:schema:content:1",
+  "title": "ContentDocument",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/Position"
+    },
+    {
+      "$ref": "#/$defs/MoveDocument"
+    },
+    {
+      "$ref": "#/$defs/GameState"
+    },
+    {
+      "$ref": "#/$defs/MarkerDocument"
+    },
+    {
+      "$ref": "#/$defs/SetupDocument"
+    },
+    {
+      "$ref": "#/$defs/Lesson"
+    },
+    {
+      "$ref": "#/$defs/Puzzle"
+    },
+    {
+      "$ref": "#/$defs/TerminalFixture"
+    },
+    {
+      "$ref": "#/$defs/Feedback"
+    },
+    {
+      "$ref": "#/$defs/ContentBundle"
+    }
+  ],
+  "$defs": {
+    "Coord": {
+      "type": "object",
+      "properties": {
+        "row": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 18
+        },
+        "col": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 18
+        }
+      },
+      "required": [
+        "row",
+        "col"
+      ],
+      "additionalProperties": false
+    },
+    "Color": {
+      "enum": [
+        "B",
+        "W"
+      ]
+    },
+    "StoneValue": {
+      "enum": [
+        "B",
+        "W",
+        null
+      ]
+    },
+    "Size": {
+      "enum": [
+        5,
+        9,
+        13,
+        19
+      ]
+    },
+    "Stone": {
+      "type": "object",
+      "properties": {
+        "row": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 18
+        },
+        "col": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 18
+        },
+        "color": {
+          "$ref": "#/$defs/Color"
+        }
+      },
+      "required": [
+        "row",
+        "col",
+        "color"
+      ],
+      "additionalProperties": false
+    },
+    "Board": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "$ref": "#/$defs/StoneValue"
+        },
+        "minItems": 5,
+        "maxItems": 19
+      },
+      "minItems": 5,
+      "maxItems": 19
+    },
+    "Move": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "place"
+            },
+            "color": {
+              "$ref": "#/$defs/Color"
+            },
+            "at": {
+              "$ref": "#/$defs/Coord"
+            }
+          },
+          "required": [
+            "type",
+            "color",
+            "at"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "pass"
+            },
+            "color": {
+              "$ref": "#/$defs/Color"
+            }
+          },
+          "required": [
+            "type",
+            "color"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "resign"
+            },
+            "color": {
+              "$ref": "#/$defs/Color"
+            }
+          },
+          "required": [
+            "type",
+            "color"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "SetupOperation": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "setup-set"
+            },
+            "at": {
+              "$ref": "#/$defs/Coord"
+            },
+            "color": {
+              "$ref": "#/$defs/Color"
+            }
+          },
+          "required": [
+            "type",
+            "at",
+            "color"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "setup-erase"
+            },
+            "at": {
+              "$ref": "#/$defs/Coord"
+            }
+          },
+          "required": [
+            "type",
+            "at"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "History": {
+      "type": "object",
+      "properties": {
+        "layouts": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^(5|9|13|19)\\|[.BW]+$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "layouts"
+      ],
+      "additionalProperties": false
+    },
+    "Position": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9._-]{0,79}$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "rulesetId": {
+          "const": "GO-CLUB-AREA-1"
+        },
+        "kind": {
+          "const": "Position"
+        },
+        "size": {
+          "$ref": "#/$defs/Size"
+        },
+        "stones": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Stone"
+          },
+          "maxItems": 361
+        },
+        "toPlay": {
+          "$ref": "#/$defs/Color"
+        },
+        "historyPolicy": {
+          "enum": [
+            "fresh-setup",
+            "recorded"
+          ]
+        },
+        "history": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/History"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "id",
+        "revision",
+        "rulesetId",
+        "kind",
+        "size",
+        "stones",
+        "toPlay",
+        "historyPolicy",
+        "history"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "historyPolicy": {
+                "const": "fresh-setup"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "history": {
+                "type": "null"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "history": {
+                "$ref": "#/$defs/History"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "Marker": {
+      "type": "object",
+      "properties": {
+        "markerId": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9._-]{0,79}$"
+        },
+        "type": {
+          "enum": [
+            "target",
+            "liberty",
+            "last-move",
+            "sequence",
+            "annotation",
+            "ownership"
+          ]
+        },
+        "points": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Coord"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "label": {
+          "type": "string",
+          "maxLength": 20000
+        },
+        "owner": {
+          "anyOf": [
+            {
+              "enum": [
+                "B",
+                "W",
+                "neutral"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "markerId",
+        "type",
+        "points",
+        "label",
+        "owner"
+      ],
+      "additionalProperties": false
+    },
+    "Check": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "enum": [
+            "passed",
+            "failed",
+            "partial",
+            "not-applicable"
+          ]
+        },
+        "method": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "checkedAt": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "status",
+        "method",
+        "checkedAt",
+        "evidence"
+      ],
+      "additionalProperties": false
+    },
+    "HumanReview": {
+      "type": "object",
+      "properties": {
+        "reviewer": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "reviewerRole": {
+          "const": "human"
+        },
+        "checkedAt": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "scope": {
+          "type": "string",
+          "maxLength": 20000
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "reviewer",
+        "reviewerRole",
+        "checkedAt",
+        "scope",
+        "evidence"
+      ],
+      "additionalProperties": false
+    },
+    "Validation": {
+      "type": "object",
+      "properties": {
+        "structure": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Check"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "moveLegality": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Check"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "solutionChecked": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Check"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "externalReferenceChecked": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Check"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "modelChecked": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Check"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "humanReviewed": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/HumanReview"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "structure",
+        "moveLegality",
+        "solutionChecked",
+        "externalReferenceChecked",
+        "modelChecked",
+        "humanReviewed"
+      ],
+      "additionalProperties": false
+    },
+    "Source": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "enum": [
+            "original",
+            "adapted",
+            "reference"
+          ]
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "url": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^https://[^\\s]+$",
+              "maxLength": 2000
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "accessedAt": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 200
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "note": {
+          "type": "string",
+          "maxLength": 20000
+        }
+      },
+      "required": [
+        "type",
+        "title",
+        "url",
+        "accessedAt",
+        "note"
+      ],
+      "additionalProperties": false
+    },
+    "ContentRef": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9._-]{0,79}$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "required": [
+        "id",
+        "revision"
+      ],
+      "additionalProperties": false
+    },
+    "Viewport": {
+      "type": "object",
+      "properties": {
+        "rowStart": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "colStart": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "rowEnd": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "colEnd": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "rowStart",
+        "colStart",
+        "rowEnd",
+        "colEnd"
+      ],
+      "additionalProperties": false
+    },
+    "Conditions": {
+      "type": "object",
+      "properties": {
+        "boundary": {
+          "const": "full-board"
+        },
+        "external": {
+          "type": "string",
+          "maxLength": 20000
+        },
+        "assumptions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 20000
+          }
+        },
+        "viewport": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Viewport"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "boundary",
+        "external",
+        "assumptions",
+        "viewport"
+      ],
+      "additionalProperties": false
+    },
+    "Ownership": {
+      "type": "object",
+      "properties": {
+        "at": {
+          "$ref": "#/$defs/Coord"
+        },
+        "owner": {
+          "enum": [
+            "B",
+            "W",
+            "neutral",
+            "unknown"
+          ]
+        }
+      },
+      "required": [
+        "at",
+        "owner"
+      ],
+      "additionalProperties": false
+    },
+    "TerminalStatus": {
+      "enum": [
+        "verified-alive",
+        "verified-dead",
+        "unsettled",
+        "unknown"
+      ]
+    },
+    "TreeNode": {
+      "type": "object",
+      "properties": {
+        "nodeId": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9._-]{0,79}$"
+        },
+        "move": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Move"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "children": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9._-]{0,79}$"
+          },
+          "uniqueItems": true
+        },
+        "outcome": {
+          "enum": [
+            "continue",
+            "success",
+            "failure",
+            "unknown"
+          ]
+        },
+        "terminalStatus": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/TerminalStatus"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          }
+        },
+        "explanation": {
+          "type": "string",
+          "maxLength": 20000
+        }
+      },
+      "required": [
+        "nodeId",
+        "move",
+        "children",
+        "outcome",
+        "terminalStatus",
+        "evidence",
+        "explanation"
+      ],
+      "additionalProperties": false
+    },
+    "Answer": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "point-set"
+            },
+            "points": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/Coord"
+              },
+              "uniqueItems": true
+            },
+            "explanation": {
+              "type": "string",
+              "maxLength": 20000
+            }
+          },
+          "required": [
+            "type",
+            "points",
+            "explanation"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "number"
+            },
+            "value": {
+              "type": "number"
+            },
+            "explanation": {
+              "type": "string",
+              "maxLength": 20000
+            }
+          },
+          "required": [
+            "type",
+            "value",
+            "explanation"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "region-labels"
+            },
+            "labels": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/Ownership"
+              }
+            },
+            "explanation": {
+              "type": "string",
+              "maxLength": 20000
+            }
+          },
+          "required": [
+            "type",
+            "labels",
+            "explanation"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "reason-choice"
+            },
+            "options": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "optionId": {
+                    "type": "string",
+                    "pattern": "^[A-Za-z][A-Za-z0-9._-]{0,79}$"
+                  },
+                  "text": {
+                    "type": "string",
+                    "maxLength": 20000
+                  }
+                },
+                "required": [
+                  "optionId",
+                  "text"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 2
+            },
+            "acceptedOptionIds": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9._-]{0,79}$"
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            },
+            "explanation": {
+              "type": "string",
+              "maxLength": 20000
+            }
+          },
+          "required": [
+            "type",
+            "options",
+            "acceptedOptionIds",
+            "explanation"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "open-text"
+            },
+            "criteria": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 200
+              },
+              "minItems": 1
+            },
+            "sampleConsiderations": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "maxLength": 20000
+              }
+            },
+            "automaticVerdict": {
+              "const": false
+            }
+          },
+          "required": [
+            "type",
+            "criteria",
+            "sampleConsiderations",
+            "automaticVerdict"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "move-tree"
+            },
+            "rootNodeId": {
+              "type": "string",
+              "pattern": "^[A-Za-z][A-Za-z0-9._-]{0,79}$"
+            },
+            "nodes": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/TreeNode"
+              },
+              "minItems": 1
+            },
+            "uncoveredPolicy": {
+              "const": "unknown"
+            },
+            "uniquenessClaim": {
+              "type": "boolean"
+            },
+            "uniquenessEvidence": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 200
+              }
+            }
+          },
+          "required": [
+            "type",
+            "rootNodeId",
+            "nodes",
+            "uncoveredPolicy",
+            "uniquenessClaim",
+            "uniquenessEvidence"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "Response": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "point-set"
+            },
+            "points": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/Coord"
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "type",
+            "points"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "number"
+            },
+            "value": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "type",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "region-labels"
+            },
+            "labels": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/Ownership"
+              }
+            }
+          },
+          "required": [
+            "type",
+            "labels"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "reason-choice"
+            },
+            "optionIds": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9._-]{0,79}$"
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "type",
+            "optionIds"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "open-text"
+            },
+            "text": {
+              "type": "string",
+              "maxLength": 20000
+            }
+          },
+          "required": [
+            "type",
+            "text"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "move"
+            },
+            "move": {
+              "$ref": "#/$defs/Move"
+            }
+          },
+          "required": [
+            "type",
+            "move"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "Puzzle": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9._-]{0,79}$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "rulesetId": {
+          "const": "GO-CLUB-AREA-1"
+        },
+        "kind": {
+          "const": "Puzzle"
+        },
+        "developmentOnly": {
+          "type": "boolean"
+        },
+        "category": {
+          "enum": [
+            "LIB",
+            "CAP",
+            "CON",
+            "LIFE",
+            "AREA",
+            "DISC"
+          ]
+        },
+        "difficulty": {
+          "type": "object",
+          "properties": {
+            "level": {
+              "enum": [
+                "beginner",
+                "elementary",
+                "optional-challenge"
+              ]
+            },
+            "rationale": {
+              "type": "string",
+              "maxLength": 20000
+            }
+          },
+          "required": [
+            "level",
+            "rationale"
+          ],
+          "additionalProperties": false
+        },
+        "prompt": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "initialPosition": {
+          "$ref": "#/$defs/Position"
+        },
+        "targetMarkers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Marker"
+          }
+        },
+        "firstPlayer": {
+          "$ref": "#/$defs/Color"
+        },
+        "conditions": {
+          "$ref": "#/$defs/Conditions"
+        },
+        "hints": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 20000
+          },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "answer": {
+          "$ref": "#/$defs/Answer"
+        },
+        "coveredBranches": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z][A-Za-z0-9._-]{0,79}$"
+            },
+            "minItems": 1
+          }
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Source"
+          },
+          "minItems": 1
+        },
+        "validation": {
+          "$ref": "#/$defs/Validation"
+        },
+        "relatedContent": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ContentRef"
+          }
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "id",
+        "revision",
+        "rulesetId",
+        "kind",
+        "developmentOnly",
+        "category",
+        "difficulty",
+        "prompt",
+        "initialPosition",
+        "targetMarkers",
+        "firstPlayer",
+        "conditions",
+        "hints",
+        "answer",
+        "coveredBranches",
+        "sources",
+        "validation",
+        "relatedContent"
+      ],
+      "additionalProperties": false
+    },
+    "Lesson": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9._-]{0,79}$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "rulesetId": {
+          "const": "GO-CLUB-AREA-1"
+        },
+        "kind": {
+          "const": "Lesson"
+        },
+        "developmentOnly": {
+          "type": "boolean"
+        },
+        "stage": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 6
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "objectives": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "minItems": 1
+        },
+        "prerequisites": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 20000
+          }
+        },
+        "activity": {
+          "type": "string",
+          "maxLength": 20000
+        },
+        "readinessObservations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 20000
+          }
+        },
+        "beginnerRoute": {
+          "type": "string",
+          "maxLength": 20000
+        },
+        "experiencedRoute": {
+          "type": "string",
+          "maxLength": 20000
+        },
+        "contentRefs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ContentRef"
+          }
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Source"
+          }
+        },
+        "validation": {
+          "$ref": "#/$defs/Validation"
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "id",
+        "revision",
+        "rulesetId",
+        "kind",
+        "developmentOnly",
+        "stage",
+        "title",
+        "objectives",
+        "prerequisites",
+        "activity",
+        "readinessObservations",
+        "beginnerRoute",
+        "experiencedRoute",
+        "contentRefs",
+        "sources",
+        "validation"
+      ],
+      "additionalProperties": false
+    },
+    "ScoreAgreement": {
+      "type": "object",
+      "properties": {
+        "deadStones": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Coord"
+          },
+          "uniqueItems": true
+        },
+        "neutralPoints": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Coord"
+          },
+          "uniqueItems": true
+        },
+        "confirmedBy": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Color"
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "deadStones",
+        "neutralPoints",
+        "confirmedBy"
+      ],
+      "additionalProperties": false
+    },
+    "AreaScore": {
+      "type": "object",
+      "properties": {
+        "blackStones": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "whiteStones": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "blackTerritory": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Coord"
+          },
+          "uniqueItems": true
+        },
+        "whiteTerritory": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Coord"
+          },
+          "uniqueItems": true
+        },
+        "neutralPoints": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Coord"
+          },
+          "uniqueItems": true
+        },
+        "komi": {
+          "type": "number"
+        },
+        "blackTotal": {
+          "type": "number"
+        },
+        "whiteTotal": {
+          "type": "number"
+        },
+        "difference": {
+          "type": "number"
+        },
+        "winner": {
+          "enum": [
+            "B",
+            "W",
+            "draw"
+          ]
+        },
+        "basis": {
+          "enum": [
+            "confirmed",
+            "teaching-assumption",
+            "preview"
+          ]
+        }
+      },
+      "required": [
+        "blackStones",
+        "whiteStones",
+        "blackTerritory",
+        "whiteTerritory",
+        "neutralPoints",
+        "komi",
+        "blackTotal",
+        "whiteTotal",
+        "difference",
+        "winner",
+        "basis"
+      ],
+      "additionalProperties": false
+    },
+    "TerminalFixture": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9._-]{0,79}$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "rulesetId": {
+          "const": "GO-CLUB-AREA-1"
+        },
+        "kind": {
+          "const": "TerminalFixture"
+        },
+        "developmentOnly": {
+          "type": "boolean"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "position": {
+          "$ref": "#/$defs/Position"
+        },
+        "status": {
+          "enum": [
+            "confirmed",
+            "teaching-assumption",
+            "unsettled"
+          ]
+        },
+        "assumptions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 20000
+          }
+        },
+        "agreement": {
+          "$ref": "#/$defs/ScoreAgreement"
+        },
+        "komi": {
+          "type": "number"
+        },
+        "captureCountsForComparison": {
+          "type": "object",
+          "properties": {
+            "B": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "W": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "required": [
+            "B",
+            "W"
+          ],
+          "additionalProperties": false
+        },
+        "expectedScore": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/AreaScore"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Source"
+          },
+          "minItems": 1
+        },
+        "validation": {
+          "$ref": "#/$defs/Validation"
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "id",
+        "revision",
+        "rulesetId",
+        "kind",
+        "developmentOnly",
+        "title",
+        "position",
+        "status",
+        "assumptions",
+        "agreement",
+        "komi",
+        "captureCountsForComparison",
+        "expectedScore",
+        "sources",
+        "validation"
+      ],
+      "additionalProperties": false
+    },
+    "GameEvent": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/Move"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "resume"
+            },
+            "requestedBy": {
+              "$ref": "#/$defs/Color"
+            }
+          },
+          "required": [
+            "type",
+            "requestedBy"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "confirm-score"
+            },
+            "agreement": {
+              "$ref": "#/$defs/ScoreAgreement"
+            }
+          },
+          "required": [
+            "type",
+            "agreement"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "GameResult": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "reason": {
+              "enum": [
+                "resign",
+                "first-capture"
+              ]
+            },
+            "winner": {
+              "$ref": "#/$defs/Color"
+            }
+          },
+          "required": [
+            "reason",
+            "winner"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "reason": {
+              "const": "two-passes"
+            },
+            "winner": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "reason",
+            "winner"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "reason": {
+              "const": "area"
+            },
+            "score": {
+              "$ref": "#/$defs/AreaScore"
+            }
+          },
+          "required": [
+            "reason",
+            "score"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "GameSnapshot": {
+      "type": "object",
+      "properties": {
+        "size": {
+          "$ref": "#/$defs/Size"
+        },
+        "board": {
+          "$ref": "#/$defs/Board"
+        },
+        "toPlay": {
+          "$ref": "#/$defs/Color"
+        },
+        "history": {
+          "$ref": "#/$defs/History"
+        },
+        "moves": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/GameEvent"
+          }
+        },
+        "captures": {
+          "type": "object",
+          "properties": {
+            "B": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "W": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "required": [
+            "B",
+            "W"
+          ],
+          "additionalProperties": false
+        },
+        "consecutivePasses": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "phase": {
+          "enum": [
+            "playing",
+            "scoring",
+            "finished"
+          ]
+        },
+        "komi": {
+          "type": "number"
+        },
+        "lastMove": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Move"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "agreement": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ScoreAgreement"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "result": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/GameResult"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "size",
+        "board",
+        "toPlay",
+        "history",
+        "moves",
+        "captures",
+        "consecutivePasses",
+        "phase",
+        "komi",
+        "lastMove",
+        "agreement",
+        "result"
+      ],
+      "additionalProperties": false
+    },
+    "GameState": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9._-]{0,79}$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "rulesetId": {
+          "const": "GO-CLUB-AREA-1"
+        },
+        "kind": {
+          "const": "GameState"
+        },
+        "size": {
+          "$ref": "#/$defs/Size"
+        },
+        "board": {
+          "$ref": "#/$defs/Board"
+        },
+        "toPlay": {
+          "$ref": "#/$defs/Color"
+        },
+        "history": {
+          "$ref": "#/$defs/History"
+        },
+        "moves": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/GameEvent"
+          }
+        },
+        "captures": {
+          "type": "object",
+          "properties": {
+            "B": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "W": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "required": [
+            "B",
+            "W"
+          ],
+          "additionalProperties": false
+        },
+        "consecutivePasses": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "phase": {
+          "enum": [
+            "playing",
+            "scoring",
+            "finished"
+          ]
+        },
+        "komi": {
+          "type": "number"
+        },
+        "lastMove": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Move"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "agreement": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ScoreAgreement"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "result": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/GameResult"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "setup": {
+          "$ref": "#/$defs/Position"
+        },
+        "mode": {
+          "enum": [
+            "full-game",
+            "capture-first"
+          ]
+        },
+        "undoStack": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/GameSnapshot"
+          }
+        },
+        "redoStack": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/GameSnapshot"
+          }
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "id",
+        "revision",
+        "rulesetId",
+        "kind",
+        "size",
+        "board",
+        "toPlay",
+        "history",
+        "moves",
+        "captures",
+        "consecutivePasses",
+        "phase",
+        "komi",
+        "lastMove",
+        "agreement",
+        "result",
+        "setup",
+        "mode",
+        "undoStack",
+        "redoStack"
+      ],
+      "additionalProperties": false
+    },
+    "Feedback": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9._-]{0,79}$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "rulesetId": {
+          "const": "GO-CLUB-AREA-1"
+        },
+        "kind": {
+          "const": "Feedback"
+        },
+        "developmentOnly": {
+          "type": "boolean"
+        },
+        "activityRef": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ContentRef"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "recordedAt": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 200
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "difficulty": {
+          "anyOf": [
+            {
+              "enum": [
+                "too-easy",
+                "comfortable",
+                "too-hard"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "preferredActivities": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          }
+        },
+        "comment": {
+          "type": "string",
+          "maxLength": 20000
+        },
+        "consentToUse": {
+          "type": "boolean"
+        },
+        "evidenceType": {
+          "enum": [
+            "blank-template",
+            "participant-submission"
+          ]
+        },
+        "responseContext": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "size": {
+                  "$ref": "#/$defs/Size"
+                },
+                "contentRef": {
+                  "anyOf": [
+                    {
+                      "$ref": "#/$defs/ContentRef"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "size",
+                "contentRef"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "response": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Response"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "id",
+        "revision",
+        "rulesetId",
+        "kind",
+        "developmentOnly",
+        "activityRef",
+        "recordedAt",
+        "difficulty",
+        "preferredActivities",
+        "comment",
+        "consentToUse",
+        "evidenceType",
+        "responseContext",
+        "response"
+      ],
+      "additionalProperties": false
+    },
+    "MoveDocument": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9._-]{0,79}$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "rulesetId": {
+          "const": "GO-CLUB-AREA-1"
+        },
+        "kind": {
+          "const": "Move"
+        },
+        "size": {
+          "$ref": "#/$defs/Size"
+        },
+        "move": {
+          "$ref": "#/$defs/Move"
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "id",
+        "revision",
+        "rulesetId",
+        "kind",
+        "size",
+        "move"
+      ],
+      "additionalProperties": false
+    },
+    "MarkerDocument": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9._-]{0,79}$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "rulesetId": {
+          "const": "GO-CLUB-AREA-1"
+        },
+        "kind": {
+          "const": "Marker"
+        },
+        "size": {
+          "$ref": "#/$defs/Size"
+        },
+        "marker": {
+          "$ref": "#/$defs/Marker"
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "id",
+        "revision",
+        "rulesetId",
+        "kind",
+        "size",
+        "marker"
+      ],
+      "additionalProperties": false
+    },
+    "SetupDocument": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9._-]{0,79}$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "rulesetId": {
+          "const": "GO-CLUB-AREA-1"
+        },
+        "kind": {
+          "const": "Setup"
+        },
+        "size": {
+          "$ref": "#/$defs/Size"
+        },
+        "operations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/SetupOperation"
+          }
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "id",
+        "revision",
+        "rulesetId",
+        "kind",
+        "size",
+        "operations"
+      ],
+      "additionalProperties": false
+    },
+    "ContentBundle": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9._-]{0,79}$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "rulesetId": {
+          "const": "GO-CLUB-AREA-1"
+        },
+        "kind": {
+          "const": "ContentBundle"
+        },
+        "developmentOnly": {
+          "type": "boolean"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "$ref": "#/$defs/Position"
+              },
+              {
+                "$ref": "#/$defs/MoveDocument"
+              },
+              {
+                "$ref": "#/$defs/GameState"
+              },
+              {
+                "$ref": "#/$defs/MarkerDocument"
+              },
+              {
+                "$ref": "#/$defs/SetupDocument"
+              },
+              {
+                "$ref": "#/$defs/Lesson"
+              },
+              {
+                "$ref": "#/$defs/Puzzle"
+              },
+              {
+                "$ref": "#/$defs/TerminalFixture"
+              },
+              {
+                "$ref": "#/$defs/Feedback"
+              }
+            ]
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "id",
+        "revision",
+        "rulesetId",
+        "kind",
+        "developmentOnly",
+        "title",
+        "items"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

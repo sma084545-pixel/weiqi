@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "T10-INPUT-MANIFEST",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "baseVersion": "0.9.1",
+  "inputs": [
+    {"path": "work/deliverables/MERGE_A_go-club_0.9.1/go-club-MERGE_A-0.9.1-full.zip", "sha256": "601089844eab9d5cb9a3819342493e7e4ec9a3ee7ee78f1fabf38512a6288c8d"},
+    {"path": "handoff/MERGE_A.md", "sha256": "3d5c0f8b8a07306b2517d06549cc9c019591b3a0584f29a3b41d920b69e0b9aa"},
+    {"path": "handoff/T09.md", "sha256": "00601485ff0f6150ebc9e1f619efb58e0f6f5c0459eaee4e5850ad5b2e080e61"},
+    {"path": "content/t09/bundle.json", "sha256": "a58630def9526df81cd8e27b8fabe8bbe59e9905eb4aad1af2fb6203f9b46532"},
+    {"path": "content/t09/pedagogy.json", "sha256": "3d01eeec7edc2f5e4883eb9cde8c6ca879d3345c5bfa86a9f8426d9f8177944c"}
+  ]
+}

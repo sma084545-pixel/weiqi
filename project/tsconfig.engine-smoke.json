@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "skipLibCheck": false
+  },
+  "include": [
+    "scripts/engine-types-smoke.ts"
+  ],
+  "exclude": []
+}

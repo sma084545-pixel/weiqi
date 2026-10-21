@@ -1,0 +1,12 @@
+{
+  "basis": "Independent coordinate expectations written before engine comparison",
+  "rulesetId": "GO-CLUB-AREA-1",
+  "vectors": [
+    {"id":"DEMO-CAP-001","candidate":{"row":2,"col":3},"captured":[{"row":2,"col":2}],"finalLiberties":[{"row":1,"col":3},{"row":2,"col":2},{"row":2,"col":4},{"row":3,"col":3}]},
+    {"id":"DEMO-CAP-002","candidate":{"row":2,"col":4},"captured":[{"row":2,"col":2},{"row":2,"col":3}],"finalLiberties":[{"row":1,"col":4},{"row":2,"col":3},{"row":3,"col":4}]},
+    {"id":"DEMO-CAP-003","candidate":{"row":2,"col":2},"captured":[{"row":1,"col":2},{"row":2,"col":1},{"row":2,"col":3},{"row":3,"col":2}],"finalLiberties":[{"row":1,"col":2},{"row":2,"col":1},{"row":2,"col":3},{"row":3,"col":2}]},
+    {"id":"DEMO-CAP-004","candidate":{"row":3,"col":2},"captured":[],"finalLiberties":[{"row":3,"col":1},{"row":3,"col":3},{"row":4,"col":2}]},
+    {"id":"DEMO-CAP-005","candidate":{"row":0,"col":0},"captured":[{"row":0,"col":1},{"row":1,"col":0},{"row":1,"col":1}],"finalLiberties":[{"row":0,"col":1},{"row":1,"col":0}]},
+    {"id":"DEMO-CAP-006","candidate":{"row":0,"col":0},"captured":[{"row":0,"col":1},{"row":1,"col":0},{"row":1,"col":1}],"finalLiberties":[{"row":0,"col":1},{"row":1,"col":0}],"illegalComparison":{"at":{"row":4,"col":4},"error":"SUICIDE"}}
+  ]
+}

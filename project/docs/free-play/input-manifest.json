@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "FREE-PLAY-INPUT",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "taskId": "FREE_PLAY",
+  "baseVersion": "T24 0.17.1-t24.1",
+  "baseArchive": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/release/0.17.1-t24.1/go-club-T24-0.17.1-t24.1-full.zip",
+  "baseSha256": "f3f1bc2590117828df26b81f3351a7ab95b1ab15f8f8c8bd13d67d23cd634feb",
+  "resultVersion": "0.18.0-freeplay.1",
+  "programVersion": "0.18.0",
+  "schemaMajor": 1,
+  "freezeId": "GO-CLUB-FREEZE-B-20260919-01"
+}

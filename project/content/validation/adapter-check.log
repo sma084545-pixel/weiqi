@@ -1,0 +1,2 @@
+PASS: 20 adapter checks including legal unknown, multiple solutions, invalid-state preservation and open discussion.
+PASS: known wrong first move immediately fails the one-move objective.

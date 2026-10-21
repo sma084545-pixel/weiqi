@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "T14-INPUT-MANIFEST",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "taskId": "T14",
+  "baseVersion": "0.13.0",
+  "inputs": [
+    {"role":"authoritative-task","path":"/Users/maxiao/.codex/attachments/b378e457-cf79-41c3-870e-89fd08d23b03/pasted-text.txt","sha256":"9a31bbd081c09b845f85c2e64d4996e74f9cab9b3c2939b5d9601a8a97973332"},
+    {"role":"mainline-base","path":"/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/deliverables/T13_go-club_0.13.0/go-club-T13-0.13.0-full.zip","sha256":"b0b1855aedf8ea101aeac141dc1864b5948a001ea5bf41cee0673d4d0a39259e"},
+    {"role":"base-handoff","path":"handoff/T13.md","sha256":"4e84fa548ec41a51430b252cd4d94509e7a83746caa068556e0b0fb2e182cc31"},
+    {"role":"schema-baseline","path":"schemas/content.schema.json","sha256":"82a1a060ff48c7072aba29d5091c55e976eaed04e5d6af5787408885b07e2e88"},
+    {"role":"dependency-lock","path":"pnpm-lock.yaml","sha256":"80fb6c23436fb904456dea058ecb97d48d6789c5fc5a3f59bceca8131e7d655c"}
+  ]
+}

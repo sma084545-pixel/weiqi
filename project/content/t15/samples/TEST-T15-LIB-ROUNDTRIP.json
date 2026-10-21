@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "id": "TEST-T15-LIB-ROUNDTRIP",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "Puzzle",
+  "developmentOnly": true,
+  "category": "LIB",
+  "difficulty": {
+    "level": "beginner",
+    "rationale": "单子中心数气，只有一次去重计数。"
+  },
+  "prompt": "开发往返样例：数出目标黑子的气。",
+  "initialPosition": {
+    "schemaVersion": 1,
+    "id": "POS-TEST-T15-LIB-ROUNDTRIP",
+    "revision": 1,
+    "rulesetId": "GO-CLUB-AREA-1",
+    "kind": "Position",
+    "size": 5,
+    "stones": [
+      {
+        "row": 2,
+        "col": 2,
+        "color": "B"
+      }
+    ],
+    "toPlay": "B",
+    "historyPolicy": "fresh-setup",
+    "history": null
+  },
+  "targetMarkers": [
+    {
+      "markerId": "target-1",
+      "type": "target",
+      "points": [
+        {
+          "row": 2,
+          "col": 2
+        }
+      ],
+      "label": "模板目标棋块",
+      "owner": "B"
+    }
+  ],
+  "firstPlayer": "B",
+  "conditions": {
+    "boundary": "full-board",
+    "external": "真实完整 5×5 棋盘；模板外部无附加棋子。",
+    "assumptions": [
+      "学习目标：认识正交相邻的气并准确计数",
+      "新教学起点，过去劫史未知；发布前需重新核查内容。"
+    ],
+    "viewport": null
+  },
+  "hints": [
+    "观察上下左右。",
+    "排除斜角和非空点。",
+    "把找到的空点去重后计数。"
+  ],
+  "answer": {
+    "type": "number",
+    "value": 4,
+    "explanation": "中心单子有四口气；发布前请重新核查。"
+  },
+  "coveredBranches": [],
+  "sources": [
+    {
+      "type": "original",
+      "title": "T14 本机编辑模板",
+      "url": null,
+      "accessedAt": null,
+      "note": "原创开发模板；只用于创建草稿，不计入正式30题，也不代表解答已由人类复核。 T15 开发样例，不计入正式30题。"
+    }
+  ],
+  "validation": {
+    "structure": {
+      "status": "passed",
+      "method": "T14 模板生成器与 schema v1 校验",
+      "checkedAt": "2026-09-15",
+      "evidence": [
+        "模板结构通过"
+      ]
+    },
+    "moveLegality": {
+      "status": "passed",
+      "method": "T01 validateSetup 与已录着法重放",
+      "checkedAt": "2026-09-15",
+      "evidence": [
+        "模板起点和示例分支合法"
+      ]
+    },
+    "solutionChecked": {
+      "status": "partial",
+      "method": "模板示例答案仅供起步，发布前须由使用者重新核查",
+      "checkedAt": "2026-09-15",
+      "evidence": [
+        "不得继承为发布证明"
+      ]
+    },
+    "externalReferenceChecked": null,
+    "modelChecked": null,
+    "humanReviewed": null
+  },
+  "relatedContent": []
+}

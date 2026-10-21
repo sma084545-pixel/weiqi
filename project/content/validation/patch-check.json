@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "T09-PATCH-CHECK",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "PatchVerification",
+  "checkedAt": "2026-09-07",
+  "baseVersion": "0.2.0",
+  "resultVersion": "0.2.0-t09.1",
+  "passed": true,
+  "items": [
+    {
+      "test": "dry run makes no changes",
+      "passed": true,
+      "exitCode": 0,
+      "output": "DRY RUN PASSED: 201 task files; compatible T01 engine/schema; no conflicting existing files."
+    },
+    {
+      "test": "apply to explicit T01 base",
+      "passed": true,
+      "exitCode": 0,
+      "output": "APPLIED: 201 task files. Run node --import tsx content/tools/validate.mjs and node content/tools/test-grade.mjs in the target."
+    },
+    {
+      "test": "idempotent identical reapply",
+      "passed": true,
+      "exitCode": 0,
+      "output": "APPLIED: 201 task files. Run node --import tsx content/tools/validate.mjs and node content/tools/test-grade.mjs in the target."
+    },
+    {
+      "test": "conflicting existing task file refused before writes",
+      "passed": true,
+      "exitCode": 1,
+      "output": "Conflicting target content: content/puzzles/LIB-001.json. Nothing written."
+    },
+    {
+      "test": "incompatible engine refused before writes",
+      "passed": true,
+      "exitCode": 1,
+      "output": "Compatibility fingerprint differs: dist-engine/go-club-rules.mjs. Revalidate the new base with the mainline first; nothing written."
+    },
+    {
+      "test": "installed bundle checked by original engine and schema",
+      "passed": true,
+      "exitCode": 0,
+      "output": "PASS: 851 checks, 134 recorded moves replayed, 2179 explored rule transitions, 30 puzzles + 6 fixtures. Human review not performed."
+    },
+    {
+      "test": "installed adapter behavior",
+      "passed": true,
+      "exitCode": 0,
+      "output": "PASS: 20 adapter checks including legal unknown, multiple solutions, invalid-state preservation and open discussion.\nPASS: known wrong first move immediately fails the one-move objective."
+    },
+    {
+      "test": "all 134 original T01 files unchanged after apply and tests",
+      "passed": true
+    }
+  ],
+  "scope": "Isolated original T01 archive, never the user mainline. Installer logic and delivered bundle validated; final archive hashes checked separately."
+}

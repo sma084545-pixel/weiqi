@@ -1,0 +1,39 @@
+[
+  {
+    "name": "正交两子相连，斜邻第三子不相连",
+    "status": "PASS"
+  },
+  {
+    "name": "L形三子7气，共享C3只计一次",
+    "status": "PASS"
+  },
+  {
+    "name": "白C3恰好一气D3",
+    "status": "PASS"
+  },
+  {
+    "name": "黑D3提白C3，输入不变",
+    "status": "PASS"
+  },
+  {
+    "name": "黑A5先提两白获得两气，合法",
+    "status": "PASS"
+  },
+  {
+    "name": "黑D3提白C3；白C3立即回提返回SUPERKO",
+    "status": "PASS"
+  },
+  {
+    "name": "两停与争议恢复不清劫史，保持轮次",
+    "status": "PASS"
+  },
+  {
+    "name": "手算9+1对9+1+0，5中立，25点完整覆盖",
+    "status": "PASS"
+  },
+  {
+    "name": "吃子小游戏首提结束，连续两停无胜者",
+    "status": "PASS"
+  }
+]
+

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="210mm" height="297mm" viewBox="0 0 210 297">
+  <title>白棋 1/2</title>
+  <desc>A4 1:1 30枚W棋切割排版</desc>
+  <metadata>schemaVersion=1; id=T18-DEMO-BOARD; revision=1; rulesetId=GO-CLUB-AREA-1; units=mm</metadata>
+  <style>
+    text { font-family: "Arial Unicode MS", "PingFang SC", sans-serif; fill: #18211C; }
+    .grid-line { stroke: #263028; stroke-width: 1.2; vector-effect: non-scaling-stroke; }
+    .cut-line { stroke: #777; stroke-width: .35; stroke-dasharray: 2 1; fill: none; }
+    .note { font-size: 4px; } .small { font-size: 3.2px; } .label { font-size: 5px; font-weight: 700; }
+  </style>
+<rect width="210" height="297" fill="#FFFFFF"/>
+<text x="105" y="12" class="label" text-anchor="middle" >白棋 1/2｜38 mm 棋子｜实际尺寸 100%</text>
+<text x="105" y="19" class="small" text-anchor="middle" >实线为成品边，灰虚线为裁切辅助；背面标 B/W</text>
+<circle class="stone W" data-piece-index="1" cx="25" cy="45" r="19" fill="#FFFFFF" stroke="#111111" stroke-width="1.2"/>
+<circle class="cut-line" cx="25" cy="45" r="19.5"/>
+<circle class="stone W" data-piece-index="2" cx="65" cy="45" r="19" fill="#FFFFFF" stroke="#111111" stroke-width="1.2"/>
+<circle class="cut-line" cx="65" cy="45" r="19.5"/>
+<circle class="stone W" data-piece-index="3" cx="105" cy="45" r="19" fill="#FFFFFF" stroke="#111111" stroke-width="1.2"/>
+<circle class="cut-line" cx="105" cy="45" r="19.5"/>
+<circle class="stone W" data-piece-index="4" cx="145" cy="45" r="19" fill="#FFFFFF" stroke="#111111" stroke-width="1.2"/>
+<circle class="cut-line" cx="145" cy="45" r="19.5"/>
+<circle class="stone W" data-piece-index="5" cx="185" cy="45" r="19" fill="#FFFFFF" stroke="#111111" stroke-width="1.2"/>
+<circle class="cut-line" cx="185" cy="45" r="19.5"/>
+<circle class="stone W" data-piece-index="6" cx="25" cy="85" r="19" fill="#FFFFFF" stroke="#111111" stroke-width="1.2"/>
+<circle class="cut-line" cx="25" cy="85" r="19.5"/>
+<circle class="stone W" data-piece-index="7" cx="65" cy="85" r="19" fill="#FFFFFF" stroke="#111111" stroke-width="1.2"/>
+<circle class="cut-line" cx="65" cy="85" r="19.5"/>
+<circle class="stone W" data-piece-index="8" cx="105" cy="85" r="19" fill="#FFFFFF" stroke="#111111" stroke-width="1.2"/>
+<circle class="cut-line" cx="105" cy="85" r="19.5"/>
+<circle class="stone W" data-piece-index="9" cx="145" cy="85" r="19" fill="#FFFFFF" stroke="#111111" stroke-width="1.2"/>
+<circle class="cut-line" cx="145" cy="85" r="19.5"/>
+<circle class="stone W" data-piece-index="10" cx="185" cy="85" r="19" fill="#FFFFFF" stroke="#111111" stroke-width="1.2"/>
+<circle class="cut-line" cx="185" cy="85" r="19.5"/>
+<circle class="stone W" data-piece-index="11" cx="25" cy="125" r="19" fill="#FFFFFF" stroke="#111111" stroke-width="1.2"/>
+<circle class="cut-line" cx="25" cy="125" r="19.5"/>
+<circle class="stone W" data-piece-index="12" cx="65" cy="125" r="19" fill="#FFFFFF" stroke="#111111" stroke-width="1.2"/>
+<circle class="cut-line" cx="65" cy="125" r="19.5"/>
+<circle class="stone W" data-piece-index="13" cx="105" cy="125" r="19" fill="#FFFFFF" stroke="#111111" stroke-width="1.2"/>
+<circle class="cut-line" cx="105" cy="125" r="19.5"/>
+<circle class="stone W" data-piece-index="14" cx="145" cy="125" r="19" fill="#FFFFFF" stroke="#111111" stroke-width="1.2"/>
+<circle class="cut-line" cx="145" cy="125" r="19.5"/>
+<circle class="stone W" data-piece-index="15" cx="185" cy="125" r="19" fill="#FFFFFF" stroke="#111111" stroke-width="1.2"/>
+<circle class="cut-line" cx="185" cy="125" r="19.5"/>
+<circle class="stone W" data-piece-index="16" cx="25" cy="165" r="19" fill="#FFFFFF" stroke="#111111" stroke-width="1.2"/>
+<circle class="cut-line" cx="25" cy="165" r="19.5"/>
+<circle class="stone W" data-piece-index="17" cx="65" cy="165" r="19" fill="#FFFFFF" stroke="#111111" stroke-width="1.2"/>
+<circle class="cut-line" cx="65" cy="165" r="19.5"/>
+<circle class="stone W" data-piece-index="18" cx="105" cy="165" r="19" fill="#FFFFFF" stroke="#111111" stroke-width="1.2"/>
+<circle class="cut-line" cx="105" cy="165" r="19.5"/>
+<circle class="stone W" data-piece-index="19" cx="145" cy="165" r="19" fill="#FFFFFF" stroke="#111111" stroke-width="1.2"/>
+<circle class="cut-line" cx="145" cy="165" r="19.5"/>
+<circle class="stone W" data-piece-index="20" cx="185" cy="165" r="19" fill="#FFFFFF" stroke="#111111" stroke-width="1.2"/>
+<circle class="cut-line" cx="185" cy="165" r="19.5"/>
+<circle class="stone W" data-piece-index="21" cx="25" cy="205" r="19" fill="#FFFFFF" stroke="#111111" stroke-width="1.2"/>
+<circle class="cut-line" cx="25" cy="205" r="19.5"/>
+<circle class="stone W" data-piece-index="22" cx="65" cy="205" r="19" fill="#FFFFFF" stroke="#111111" stroke-width="1.2"/>
+<circle class="cut-line" cx="65" cy="205" r="19.5"/>
+<circle class="stone W" data-piece-index="23" cx="105" cy="205" r="19" fill="#FFFFFF" stroke="#111111" stroke-width="1.2"/>
+<circle class="cut-line" cx="105" cy="205" r="19.5"/>
+<circle class="stone W" data-piece-index="24" cx="145" cy="205" r="19" fill="#FFFFFF" stroke="#111111" stroke-width="1.2"/>
+<circle class="cut-line" cx="145" cy="205" r="19.5"/>
+<circle class="stone W" data-piece-index="25" cx="185" cy="205" r="19" fill="#FFFFFF" stroke="#111111" stroke-width="1.2"/>
+<circle class="cut-line" cx="185" cy="205" r="19.5"/>
+<circle class="stone W" data-piece-index="26" cx="25" cy="245" r="19" fill="#FFFFFF" stroke="#111111" stroke-width="1.2"/>
+<circle class="cut-line" cx="25" cy="245" r="19.5"/>
+<circle class="stone W" data-piece-index="27" cx="65" cy="245" r="19" fill="#FFFFFF" stroke="#111111" stroke-width="1.2"/>
+<circle class="cut-line" cx="65" cy="245" r="19.5"/>
+<circle class="stone W" data-piece-index="28" cx="105" cy="245" r="19" fill="#FFFFFF" stroke="#111111" stroke-width="1.2"/>
+<circle class="cut-line" cx="105" cy="245" r="19.5"/>
+<circle class="stone W" data-piece-index="29" cx="145" cy="245" r="19" fill="#FFFFFF" stroke="#111111" stroke-width="1.2"/>
+<circle class="cut-line" cx="145" cy="245" r="19.5"/>
+<circle class="stone W" data-piece-index="30" cx="185" cy="245" r="19" fill="#FFFFFF" stroke="#111111" stroke-width="1.2"/>
+<circle class="cut-line" cx="185" cy="245" r="19.5"/>
+<text x="10" y="278" class="small" text-anchor="start" >本页 30 枚｜磁背建议 34–36 mm</text>
+<g id="calibration-ruler" data-length-mm="100">
+<line x1="55" y1="286" x2="155" y2="286" stroke="#18211C" stroke-width="0.7"/>
+<line x1="55" y1="282" x2="55" y2="290" stroke="#18211C" stroke-width="0.6"/>
+<line x1="65" y1="284.2" x2="65" y2="287.8" stroke="#18211C" stroke-width="0.6"/>
+<line x1="75" y1="284.2" x2="75" y2="287.8" stroke="#18211C" stroke-width="0.6"/>
+<line x1="85" y1="284.2" x2="85" y2="287.8" stroke="#18211C" stroke-width="0.6"/>
+<line x1="95" y1="284.2" x2="95" y2="287.8" stroke="#18211C" stroke-width="0.6"/>
+<line x1="105" y1="283.5" x2="105" y2="288.5" stroke="#18211C" stroke-width="0.6"/>
+<line x1="115" y1="284.2" x2="115" y2="287.8" stroke="#18211C" stroke-width="0.6"/>
+<line x1="125" y1="284.2" x2="125" y2="287.8" stroke="#18211C" stroke-width="0.6"/>
+<line x1="135" y1="284.2" x2="135" y2="287.8" stroke="#18211C" stroke-width="0.6"/>
+<line x1="145" y1="284.2" x2="145" y2="287.8" stroke="#18211C" stroke-width="0.6"/>
+<line x1="155" y1="282" x2="155" y2="290" stroke="#18211C" stroke-width="0.6"/>
+<text x="105.0" y="281" class="small" text-anchor="middle" >100 mm 校准尺</text>
+</g>
+</svg>

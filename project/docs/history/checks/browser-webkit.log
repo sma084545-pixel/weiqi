@@ -1,0 +1,20 @@
+[WebServer] (node:63433) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 11 tests using 1 worker
+
+(node:63439) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 tests/browser/history.spec.ts:13:57 › /#/play/free capture history, native live drag, return and refresh preserve the actual game (3.2s)
+  ✓   2 tests/browser/history.spec.ts:13:57 › /#/play/full-game capture history, native live drag, return and refresh preserve the actual game (3.4s)
+  ✓   3 tests/browser/history.spec.ts:29:1 › final score, passes and dispute are history steps, not preview removals; actual agreed undo resets range (5.3s)
+  ✓   4 tests/browser/history.spec.ts:43:1 › Capture Go browses the whole round during play and beyond the last-five review; agreed undo and restart reset it (6.4s)
+  ✓   5 tests/browser/history.spec.ts:55:1 › experiment setup remains a fresh root, game undo/redo and branching refresh the slider (4.8s)
+  ✓   6 tests/browser/history.spec.ts:64:1 › puzzle variations and free trial browse independently without changing attempts or leaving a reply behind (6.3s)
+  ✓   7 tests/browser/history.spec.ts:75:1 › teacher answer path allows forward review after going back and preserves previous branches (8.9s)
+  ✓   8 tests/browser/history.spec.ts:84:1 › component play example also offers the shared timeline (19.7s)
+  ✓   9 tests/browser/history.spec.ts:88:35 › 360px timeline with keyboard, no page overflow and no animation (5.6s)
+  ✓  10 tests/browser/history.spec.ts:88:35 › 768px timeline with keyboard, no page overflow and no animation (5.1s)
+  ✓  11 tests/browser/history.spec.ts:88:35 › 1280px timeline with keyboard, no page overflow and no animation (3.7s)
+
+  11 passed (1.3m)

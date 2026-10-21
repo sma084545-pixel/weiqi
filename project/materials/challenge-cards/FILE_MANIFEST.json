@@ -1,0 +1,696 @@
+{
+  "schemaVersion": 1,
+  "id": "T21-MERGE-C-FILE-MANIFEST",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "baseVersion": "0.15.1",
+  "resultVersion": "0.15.1-t21.1",
+  "files": [
+    {
+      "path": "materials/challenge-cards/CARD_INDEX.csv",
+      "bytes": 4198,
+      "sha256": "a8ad9ec10ed6c183e803c32b05198a8477039ab41c19c587f5b2e9a10e0ff08f"
+    },
+    {
+      "path": "materials/challenge-cards/CARD_INDEX.json",
+      "bytes": 14573,
+      "sha256": "def1d31d1a1d69f98d8a34edfbe96639cc855fef8a8fa17148a22098ba486fc3"
+    },
+    {
+      "path": "materials/challenge-cards/PRINT-AND-ACTIVITIES.md",
+      "bytes": 2601,
+      "sha256": "6e0028f56b97fb3ab98c7ecaebdb286d7584b7b30fa0081afef3d5aa3a2c532e"
+    },
+    {
+      "path": "materials/challenge-cards/README.md",
+      "bytes": 2673,
+      "sha256": "4eb977ef8077eb5d040b7e530b335aad2d2a91f6e9e2ac38363d6f2a30f108b2"
+    },
+    {
+      "path": "materials/challenge-cards/SOURCES.md",
+      "bytes": 830,
+      "sha256": "a71ced3b536fbeb93b3b175d95a4e3a92f9c657d55776cd2df5e0094194cf76f"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/AREA-001-back.svg",
+      "bytes": 2552,
+      "sha256": "4572af775f397f56c063ce0046fef6597f22a1966cc798b34e43bf34736649a2"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/AREA-002-back.svg",
+      "bytes": 2645,
+      "sha256": "0c399056a748875f58f59c5e8f443aa6c4f4e6434d0a7363f75ed8274accd574"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/AREA-003-back.svg",
+      "bytes": 2640,
+      "sha256": "6b4f810cbe3c765ae2e7af0cb7ccfaf6ae45393c802d9cf84b27bde49a36e636"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/AREA-004-back.svg",
+      "bytes": 2563,
+      "sha256": "e73fe0328cc30bed645fcae8a452144864d380ae83b8cd751de8e320be042baa"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/AREA-005-back.svg",
+      "bytes": 2734,
+      "sha256": "c48dedeefd65970e4e135cc75fdd5dc6e2d731f388a48b6b1286025b2a018b93"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/CAP-001-back.svg",
+      "bytes": 2333,
+      "sha256": "654181c7db5661eb84cab87ca9ec264ad29afa88477fe3cc82a8f29c0b5bc2d8"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/CAP-002-back.svg",
+      "bytes": 2363,
+      "sha256": "21625f8d32f60eab82a64c590e17b071c9a0130e01fcdb8f6eb1363ea5701bdc"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/CAP-003-back.svg",
+      "bytes": 2380,
+      "sha256": "bb4d327794e6aacfd500743fdb5a2d4c304e2ae32642eb16846218548015d8c9"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/CAP-004-back.svg",
+      "bytes": 2415,
+      "sha256": "3ca367a1cae3d8c6e48efdff1c4b5f54b2d21addbb98cd831a6819fd0552fb2f"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/CAP-005-back.svg",
+      "bytes": 2470,
+      "sha256": "9d68bccd94bfd5ed1599eefd2afe94ecfe2b6fa2b8e8f10618bdf89ac46b2e77"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/CON-001-back.svg",
+      "bytes": 2418,
+      "sha256": "95709d8ff03d8ae3ecb1db68dfe7b048972a5b6502bbc91c434ec3ed369a3b85"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/CON-002-back.svg",
+      "bytes": 2499,
+      "sha256": "1be4fb5afe6003f39fe99fff8f9555f11a7db95d482cc3cd835e315bb8a78b8d"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/CON-003-back.svg",
+      "bytes": 2478,
+      "sha256": "0e4fa2b12174a78899fc07c3018a877b27c72fa439795d3c4a3410e71c2b816f"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/CON-004-back.svg",
+      "bytes": 2423,
+      "sha256": "83b38aa8919d1d1bda875d4e8ccde868397a66ac962bc1ff1720d25b0a5c0cd7"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/CON-005-back.svg",
+      "bytes": 2513,
+      "sha256": "561403549fcaecd984a8ee96d4f41e2b0c0aca5cbc810f146e53e59e4b1209bf"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/DISC-001-back.svg",
+      "bytes": 2681,
+      "sha256": "a750c1e1b01c2aa18ed3ad43c8e6e264556f964797bf204674724542fe0d30ba"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/DISC-002-back.svg",
+      "bytes": 2691,
+      "sha256": "7607bfa5e66be32f85c1b99ed941f79fa2ebd8d3d5a03b58939affdd2aa318e6"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/DISC-003-back.svg",
+      "bytes": 2699,
+      "sha256": "9108ed16b246ee5a3cc37ab916ec0c604450a472e64c824ab8e325e989f2c7b9"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/DISC-004-back.svg",
+      "bytes": 2667,
+      "sha256": "834bc5382033cc578c9e134138ea13c34530bbc2490a6a311245c724b9e798e7"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/DISC-005-back.svg",
+      "bytes": 2715,
+      "sha256": "a64e4479b4b664ce88bbf14299a24b9cc5e3e79100e6563da9067625a24a2509"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/LIB-001-back.svg",
+      "bytes": 2365,
+      "sha256": "e916701769f1a09da4e37b446b1852207932bc8813f4b88fc9e057cadf3c9b86"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/LIB-002-back.svg",
+      "bytes": 2382,
+      "sha256": "5cb6bbf769ef8500284ebd679235882e1347790e99ff10c3215e68263c57c05d"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/LIB-003-back.svg",
+      "bytes": 2367,
+      "sha256": "78e6b9ad3a655a5fba5b6629891a3e588bdc9b65810b120232a9ce9e8afaa71c"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/LIB-004-back.svg",
+      "bytes": 2442,
+      "sha256": "0d0f4d850404ad68c3b0ecf35e46d952b07a50016adfb9e8d3a7aca9b9d1b6b8"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/LIB-005-back.svg",
+      "bytes": 2438,
+      "sha256": "e9854cf669b7331d175436194fc71eff616b193bb100d81a510c22092ac191eb"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/LIFE-001-back.svg",
+      "bytes": 2844,
+      "sha256": "f08646d434385cbbda831f0b9f18c6b0281a8c5b31f7ac6ddf837f91494985b8"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/LIFE-002-back.svg",
+      "bytes": 2654,
+      "sha256": "3bf6b954baeeb5dcf8dcd0aa45f85fd6fef883c19d7b2fac8a6756b848085709"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/LIFE-003-back.svg",
+      "bytes": 2723,
+      "sha256": "edc3747d7be4db953a959565ed514b0bef8992099e321364ee01e817dc2270c7"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/LIFE-004-back.svg",
+      "bytes": 2735,
+      "sha256": "bf7df2eabd4009f714c38c51f93e62c7e3fd60d3cfaeb4bfd0dc581ed90d879e"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/LIFE-005-back.svg",
+      "bytes": 2827,
+      "sha256": "2adbc0b863f20cec0ed19e96f1357f7026aaffe3957eda10296e3a1145721794"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/AREA-001-front.svg",
+      "bytes": 5587,
+      "sha256": "1081f4ed5ab47e57df9ab38349fee5aa9ffd0ef0cac903d192789d2bb13e7823"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/AREA-002-front.svg",
+      "bytes": 5303,
+      "sha256": "60ac709712877b95be2b35a3cd166bbcc9d3d87ae973c5ea9c586da815c9d076"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/AREA-003-front.svg",
+      "bytes": 5823,
+      "sha256": "d33785d38b3ba40a042d7ea3f3c9d93b333f2bad964d9586d7c073e5c64ff5e3"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/AREA-004-front.svg",
+      "bytes": 5394,
+      "sha256": "49e14b179f1b0ef4f65df3b28313c6630c21f7bc8bd046fbde315cbad8ae236f"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/AREA-005-front.svg",
+      "bytes": 5952,
+      "sha256": "9924a39941bb62ee4017768a639f97dce23e53bf6b97682626c5ab4b0a3b710d"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/CAP-001-front.svg",
+      "bytes": 3473,
+      "sha256": "291377f4b024de7d58ee28ad6a9aa1d7ee6fe6b5691fdc117163799427be146f"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/CAP-002-front.svg",
+      "bytes": 3693,
+      "sha256": "5f3353a4eaeaf9439a4dab86a90c0dfa96fc3d188f7267fabca5632ec0d92920"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/CAP-003-front.svg",
+      "bytes": 3362,
+      "sha256": "8e5ab2c29023b639daceef06a228c3fdb73d6ded0e40ddf0bcce403732b73b2f"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/CAP-004-front.svg",
+      "bytes": 4031,
+      "sha256": "80064c658f75c8068f272759c3ce35cbadc9a2280837872fe4b6a9a93cc5de68"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/CAP-005-front.svg",
+      "bytes": 4707,
+      "sha256": "9717bde694f23e32604631dcd0e055dc4ca15fb45e74bd3d2407ddd37ecc4104"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/CON-001-front.svg",
+      "bytes": 3467,
+      "sha256": "0641c3e364bbc32b8e307e77244e19d9fbb01bdaf4b2b96694d16b9936e7b3e1"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/CON-002-front.svg",
+      "bytes": 3470,
+      "sha256": "04d094ac3de9f56154ef6543bbf03aeb233bf285a002643809dcd65654d7544c"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/CON-003-front.svg",
+      "bytes": 3477,
+      "sha256": "7f8d93631d7d75563790b2e8b5c999aa15cbcdf9b4328598d7ede86a5be1da22"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/CON-004-front.svg",
+      "bytes": 3569,
+      "sha256": "be2f2df840d1b451fb482c6e72a90901380eb64c2dc9228e910f8e0d8a25dabe"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/CON-005-front.svg",
+      "bytes": 3580,
+      "sha256": "9422b8b0b1a62fc56e3d04b1aae3fbb95e73b093f81910a822451ca0a7474b2b"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/DISC-001-front.svg",
+      "bytes": 4142,
+      "sha256": "bd826d9e7d350e06990ad6dced0ed2f9088e921b10a88bf13e1262ae9e4105af"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/DISC-002-front.svg",
+      "bytes": 4129,
+      "sha256": "0ff08c150ca551a29151ab41b5284c65d0a9e30c405b256149ecb90c14e2ff1b"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/DISC-003-front.svg",
+      "bytes": 4682,
+      "sha256": "c8f9e4bc5e6da87e80dcdb38e436e00b4905426b2f0016d11521af0be17e7ff9"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/DISC-004-front.svg",
+      "bytes": 4371,
+      "sha256": "5f795cbdef94a5a7c731f7693e23dc790ee4d04e4f2252fdd6868b0ffbce6faa"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/DISC-005-front.svg",
+      "bytes": 4123,
+      "sha256": "2d7690d6f6ea3c5df46232dd89c8a1922318d37ba3c0ce1c1a90f9d9acf02075"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/LIB-001-front.svg",
+      "bytes": 3743,
+      "sha256": "bab5c6b622c24dc345e336c6ca133ff2362d13660dde107e3d995c931a3ff894"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/LIB-002-front.svg",
+      "bytes": 3138,
+      "sha256": "9b8bd77f23b54bd8d9500358122b8e005f50dc2ae5a13948b099f136a0833e1c"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/LIB-003-front.svg",
+      "bytes": 3359,
+      "sha256": "ba86260d1eb8107b1b48877a18a253ede0b9a5a525347c58ef68ecf6c0fb137c"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/LIB-004-front.svg",
+      "bytes": 3580,
+      "sha256": "6ad91924021b47e32279badce8a6b1e2edbcefff6c107392fd5d52a91554e45e"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/LIB-005-front.svg",
+      "bytes": 4648,
+      "sha256": "4a08f9986a3b85b0c644ba58482c0b1a24fa547e8b138c40aba30be156822aa9"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/LIFE-001-front.svg",
+      "bytes": 5073,
+      "sha256": "c36538d56fe3ec63c59bdce93f7e6cff1f2bf4b5b626256e747a8bf5b784f8d7"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/LIFE-002-front.svg",
+      "bytes": 4539,
+      "sha256": "616b933d30352f472ff4fa599e7e29636b269a06ba5e6d2fe6b7f4b0418c83dd"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/LIFE-003-front.svg",
+      "bytes": 4405,
+      "sha256": "d592612d04cdf758c96858cf057274a1b6853197410b07fb0fd397e3d5fd8d78"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/LIFE-004-front.svg",
+      "bytes": 4312,
+      "sha256": "b650659699ae53fd3e2c37d3af96302fb563520e8a1c00ec0836532e5cc7320c"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/LIFE-005-front.svg",
+      "bytes": 4538,
+      "sha256": "259566818aa5dbe8bc48be0feec78f2c46d29de2716f7be2cfe5e335c827928f"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/CONTENT_FREEZE.json",
+      "bytes": 114416,
+      "sha256": "94ae85ce048b83ff73d8b2ef080665175e5f285904dd89bb7be5ca906d865324"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/bundle.json",
+      "bytes": 249844,
+      "sha256": "a58630def9526df81cd8e27b8fabe8bbe59e9905eb4aad1af2fb6203f9b46532"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/pedagogy.json",
+      "bytes": 40448,
+      "sha256": "3d01eeec7edc2f5e4883eb9cde8c6ca879d3345c5bfa86a9f8426d9f8177944c"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/AREA-001.json",
+      "bytes": 6145,
+      "sha256": "9865586cc32ac7887e9aa4951ac9a2fbf668bbdc52e997bfeebc60b4fa73f7cd"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/AREA-002.json",
+      "bytes": 6976,
+      "sha256": "4e2e9c14b90ce85a6296c709773d97f9c2a9a9a0018c29dd7a25d21cc4953cdb"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/AREA-003.json",
+      "bytes": 6448,
+      "sha256": "c77db09cb0b7697a01fb9554aaccf6990b3889d79b3846ba94e9e2cbce2264cc"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/AREA-004.json",
+      "bytes": 6060,
+      "sha256": "2129c1b57829c623de628c0bcf203025c317c380a75bc09dab6c8ecf2f191687"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/AREA-005.json",
+      "bytes": 6852,
+      "sha256": "32e94ab284735f1814f0acb990a4b3289c1bc4bd702f2d415470f8a5435c6554"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/CAP-001.json",
+      "bytes": 6288,
+      "sha256": "e0a0950af03ba144d4464790b1292ac4a77b7534bc5a1228b77c194862f767cd"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/CAP-002.json",
+      "bytes": 6405,
+      "sha256": "f72172c4db6adf32228632d7660f174b649ae3ebbbedd9dd3f3bed1ba3e4e61e"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/CAP-003.json",
+      "bytes": 6247,
+      "sha256": "092eb801f433d09ad685e1d0718151eea40b41bcdc4765cba639d85d999a4682"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/CAP-004.json",
+      "bytes": 6693,
+      "sha256": "2f598b1d4a5d70b283bd0d4a2bd5728742c6a2b5c103de46e208409e5257a700"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/CAP-005.json",
+      "bytes": 7303,
+      "sha256": "8272de484c2b56a7997481bb5b93c914698d6e595087850c37130eeed222e79d"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/CON-001.json",
+      "bytes": 6568,
+      "sha256": "fc6f68f65b0461f248bbacd27c9753327bc5f8d86e4763ebad2d93999bd46013"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/CON-002.json",
+      "bytes": 7400,
+      "sha256": "aa877a3ef8e658715254ca2efee4ea07a34593be8a5d122aecbe198bee8339c0"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/CON-003.json",
+      "bytes": 6503,
+      "sha256": "7b5b4efdd21de2f90023f34b9c8dee3f1e11743c9a4c434cc03b816c16ae30c7"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/CON-004.json",
+      "bytes": 6672,
+      "sha256": "4537bfa53a47ef670c096ea5e87573ad848cd6b4f3464fbfbbb41ea302371211"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/CON-005.json",
+      "bytes": 6714,
+      "sha256": "0b5327dc3885e5f4e49308e5164e79953d1065423074a7f0b0afd8d8df24520c"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/DISC-001.json",
+      "bytes": 4988,
+      "sha256": "309fbe53ee677d08e50c7e1196de664f75c46921b17459a0d6b62cadce78fff1"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/DISC-002.json",
+      "bytes": 5004,
+      "sha256": "989d275f49faad33b2ef1773fd20dca7fbcae652b805c5b735031dbad428067e"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/DISC-003.json",
+      "bytes": 4944,
+      "sha256": "aac6b4679d2517d03e9eeed1f2ffc3897c56e5651dd3176b8bf3368e0035a599"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/DISC-004.json",
+      "bytes": 5130,
+      "sha256": "15f35fb4a699b6c8083cb901675c9c79e17a61a0dd742bb4673067b2830ea6ac"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/DISC-005.json",
+      "bytes": 5029,
+      "sha256": "5e8d7c96a647be704dcffbcd955902598a627079ae8cddb20c19036fc4b5d3bc"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIB-001.json",
+      "bytes": 4117,
+      "sha256": "3c5fa560f7cd43a13e14021d5e1baa80353592e38e95e454355d4c18b6158257"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIB-002.json",
+      "bytes": 4292,
+      "sha256": "8a057d4f583931bdaed4e45f2b6080858e6af9eca6096f248a9d8f01e057972c"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIB-003.json",
+      "bytes": 4283,
+      "sha256": "bba49850e48d1a5a9e741a8228fff30bb61471124fb395c6863d4957a7be753f"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIB-004.json",
+      "bytes": 4846,
+      "sha256": "bbb1fb3435c71c4212ec85917bf4c7226216023ea15723b082a184c87a3cec0a"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIB-005.json",
+      "bytes": 4725,
+      "sha256": "0d8565c2908a2876ea9a70331354d17ea2158bc20d7429517a5d49fb41e57387"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIFE-001.json",
+      "bytes": 5938,
+      "sha256": "3e800b83347c378568c5b0ff8a4a96412fa44081df9711eb325cc0d1c3ca4c2f"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIFE-002.json",
+      "bytes": 7860,
+      "sha256": "4a9c755d45126cef93464d2e42c74b51af63468701c701d64957910269b32526"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIFE-003.json",
+      "bytes": 8412,
+      "sha256": "1909976bc369d0434b0db10720cbb722be4cb4ca49b2781668b56cb8ee8f6ffc"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIFE-004.json",
+      "bytes": 8429,
+      "sha256": "4ae5d60c5a862d20e64e8b7ffab7659cabe13d3289f6c682d80c171f4ad849ca"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIFE-005.json",
+      "bytes": 8662,
+      "sha256": "506f62c281d0c1f09c8dfff2725fe0677fcfcf9ecda05615b10adeff4a968992"
+    },
+    {
+      "path": "materials/challenge-cards/output/T21_challenge_cards_back_A4.pdf",
+      "bytes": 202244,
+      "sha256": "9b2eb6b8e1a71e5d2a7c8fd6030142f4a64df9d6207789e9b8b97549188fa5d3"
+    },
+    {
+      "path": "materials/challenge-cards/output/T21_challenge_cards_front_A4.pdf",
+      "bytes": 200047,
+      "sha256": "0e8d592efed5b19f3655f0bde77a2c403a544d0b913095bb0e4ffeaf92180467"
+    },
+    {
+      "path": "materials/challenge-cards/output/T21_duplex_test_page1.pdf",
+      "bytes": 312625,
+      "sha256": "00a0fab7c700c5f8be95b9584533eca8490234b18567056d9f91b3e3f81c9f14"
+    },
+    {
+      "path": "materials/challenge-cards/output/T21_teacher_answer_book.pdf",
+      "bytes": 378707,
+      "sha256": "683f8c60994591003040548642a04035b9cdd54faf133da5b2e25546bb08a22b"
+    },
+    {
+      "path": "materials/challenge-cards/source/FONTS.md",
+      "bytes": 672,
+      "sha256": "af62102fc9a4a282bc9736b571c88ec589579452fabbda58851a5c95a75caa90"
+    },
+    {
+      "path": "materials/challenge-cards/source/build_cards.py",
+      "bytes": 43385,
+      "sha256": "1711dbcfbc920547c0fee2302b2ff9a4c2e643e17e16c86a535d54b7955e9019"
+    },
+    {
+      "path": "materials/challenge-cards/source/package_materials.py",
+      "bytes": 4761,
+      "sha256": "86b08b7cca933ae7e4c04267505d43b70f3c705448eb72a3e2e6f21cfc9bc7c4"
+    },
+    {
+      "path": "materials/challenge-cards/source/render_qa.py",
+      "bytes": 4548,
+      "sha256": "a685e6a67e3ac93bb6b46a16034345a9786e6f3915f72f4d0962999eb845b129"
+    },
+    {
+      "path": "materials/challenge-cards/validation/VISUAL_QA.md",
+      "bytes": 6571,
+      "sha256": "5c752039e20fb77c9627157494e6f9a3cc6313cb9f6af79b23b8a462593b1812"
+    },
+    {
+      "path": "materials/challenge-cards/validation/automated-checks.json",
+      "bytes": 11948,
+      "sha256": "92fa59d6e9c889cafb0bc0a02c29b94f79465bcfb62a9c2c214c0f093a0aff05"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/back-01-04.jpg",
+      "bytes": 319577,
+      "sha256": "3e25cda8ff10cf9b4538a815876a6b6d0aecbe76400d6b214df06328f5fa53f4"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/back-05-08.jpg",
+      "bytes": 366496,
+      "sha256": "9c41f40fa7c3a217190f3ed0fcdc30f45e6bd32f8e6d4dea087296a396410e8d"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/back-09-12.jpg",
+      "bytes": 401156,
+      "sha256": "6b15f6d7aa38ae26b6c958dafdd8f3b38de40cc8ccb73cdb74ca2e4b5fa19442"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/back-13-15.jpg",
+      "bytes": 353658,
+      "sha256": "0805f3f78b9130f078737040fe6027d70f4690e5011f632d10c895975235cf46"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/back-gray-01-04.jpg",
+      "bytes": 299760,
+      "sha256": "d6a9a78bb9b7bbf18ce61f0ea21318763086ea00b8a06ccbba95dd30a0b57927"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/back-gray-05-08.jpg",
+      "bytes": 343479,
+      "sha256": "494729e8f7dbe3dfd944676c3bb159f4da9d7eb201d516231a4f35c9a5fc6a36"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/back-gray-09-12.jpg",
+      "bytes": 377978,
+      "sha256": "a02303f3e204720dd3fb96620de7fcd86774fc2a723bae8d1098427ff407032d"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/back-gray-13-15.jpg",
+      "bytes": 338392,
+      "sha256": "8da0c4db5d765574da5db70803dc13eff3d21c4d00c2a9d567f06cd3652d5e23"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/front-01-04.jpg",
+      "bytes": 411476,
+      "sha256": "66072ebd6c7090e9362b1b285f7bf790831fac8ca8033247719311f4f0a31af4"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/front-05-08.jpg",
+      "bytes": 420820,
+      "sha256": "a14939db7885b73ddc9e824717945437d683f8b4e3769ee31e43121daa070cd6"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/front-09-12.jpg",
+      "bytes": 524234,
+      "sha256": "4f6e3ea851a7cf32f0ae61d0a862d4cd0c2c81e5bd8e8dc3257ae7503bd09fd3"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/front-13-15.jpg",
+      "bytes": 413091,
+      "sha256": "4e9c13e6643a5eb571ce066fb2afa863eaa38ae53a7069fbb6096a66d9ee058e"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/front-gray-01-04.jpg",
+      "bytes": 365496,
+      "sha256": "f4cd2332cf967e0674c56d985b05a8f0ac123842dd29fb8c2ee8d0f0a200980f"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/front-gray-05-08.jpg",
+      "bytes": 373341,
+      "sha256": "d0d917e64b17a178017ccc015ccb28c80a25c795bc95d18f47ee292eb56fd6ff"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/front-gray-09-12.jpg",
+      "bytes": 470804,
+      "sha256": "3cb86b464f5c012c483bef697ebec18f303a5a7282963a92406158a08a272f52"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/front-gray-13-15.jpg",
+      "bytes": 374041,
+      "sha256": "ed150b79f64245f9b4a84518c96233723a413b79232c63b940bcf3220a393cef"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/teacher-01-04.jpg",
+      "bytes": 377498,
+      "sha256": "f0984debda46f5ce022b05f84622e1a68846aa6a1c04a2e5069ef9cdf006be0a"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/teacher-05-08.jpg",
+      "bytes": 324680,
+      "sha256": "594c6b8feaf40f9c425cc681f43cb95ecc79a3136c0496f8611d316682989267"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/teacher-09-12.jpg",
+      "bytes": 428180,
+      "sha256": "7a8f3abe2950c2a0ed13c9b9e5dc07ab2e50fb813600afe4c8eb4833db1fe8e1"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/teacher-13-16.jpg",
+      "bytes": 461572,
+      "sha256": "6a099879a0229baae501ffd4d377b02d1acb32f808b07ed33e17bd0d35d99cc9"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/teacher-17-20.jpg",
+      "bytes": 460708,
+      "sha256": "311e20fd1be08ab7dd718be9b79d2ef923fe7da6f92ea103e76af736803de29c"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/teacher-21-24.jpg",
+      "bytes": 508061,
+      "sha256": "80387efda9f63ad21bdb134404f824ecfe8e707afa148cd09f231348a323b688"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/teacher-25-28.jpg",
+      "bytes": 454909,
+      "sha256": "6847bb0eb38683b0f617f3fd54099bb2e3f94419246b97eb70edccc6b0869303"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/teacher-29-32.jpg",
+      "bytes": 470407,
+      "sha256": "9414c013638458918b1c39687e6b0aa66b1773f32bbaf6ebc02094426821caae"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/teacher-33-33.jpg",
+      "bytes": 148794,
+      "sha256": "0db0bf7649ade6e3377647d4a12a368f5c5cddfa83d8446c665b95cee4f5fb93"
+    },
+    {
+      "path": "materials/challenge-cards/validation/font-embedding.json",
+      "bytes": 1330,
+      "sha256": "d95092c5e29edc34e9defa943726821a6cae0ebb7ed5cacc194277d4557856c4"
+    },
+    {
+      "path": "materials/challenge-cards/validation/page-map.json",
+      "bytes": 17805,
+      "sha256": "7520414fd5bb9605cc3b2f5a3aa252a16540d1fe2d05c7f925196fe146a99d10"
+    },
+    {
+      "path": "materials/challenge-cards/validation/render-qa.json",
+      "bytes": 32483,
+      "sha256": "9365dbb65cb2a0d70e800f860db45ef7f358026e26fe573aaf993903b78ce435"
+    },
+    {
+      "path": "handoff/T21.md",
+      "bytes": 5923,
+      "sha256": "26cd98c2abddc0cabc52d18529c09b6577930d39a8844e6bfa2a75bf9ec0aec4"
+    }
+  ],
+  "note": "MERGE_C alias of packaged payload manifest. Original package deliberately excludes outer FILE_MANIFEST and SHA256SUMS; original payload and handoff are preserved."
+}

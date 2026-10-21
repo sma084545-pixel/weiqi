@@ -1,0 +1,3361 @@
+{
+  "schemaVersion": 1,
+  "id": "T22-FREEZE-CHECK",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "freezeId": "GO-CLUB-FREEZE-B-20260919-01",
+  "recordsChecked": 558,
+  "uniquePaths": 474,
+  "identicalArchivesFreeze": true,
+  "failures": [],
+  "records": [
+    {
+      "path": "schemas/content.schema.json",
+      "expected": "82a1a060ff48c7072aba29d5091c55e976eaed04e5d6af5787408885b07e2e88",
+      "actual": "82a1a060ff48c7072aba29d5091c55e976eaed04e5d6af5787408885b07e2e88",
+      "passed": true
+    },
+    {
+      "path": "dist-engine/go-club-rules.mjs",
+      "expected": "028ff1a53af96bc8aa44b2b603ba80ada31b8517c89aeff11088db6683e108b7",
+      "actual": "028ff1a53af96bc8aa44b2b603ba80ada31b8517c89aeff11088db6683e108b7",
+      "passed": true
+    },
+    {
+      "path": "content/t09/bundle.json",
+      "expected": "a58630def9526df81cd8e27b8fabe8bbe59e9905eb4aad1af2fb6203f9b46532",
+      "actual": "a58630def9526df81cd8e27b8fabe8bbe59e9905eb4aad1af2fb6203f9b46532",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/LIB-001.json",
+      "expected": "3c5fa560f7cd43a13e14021d5e1baa80353592e38e95e454355d4c18b6158257",
+      "actual": "3c5fa560f7cd43a13e14021d5e1baa80353592e38e95e454355d4c18b6158257",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/LIB-001.svg",
+      "expected": "3b0dbb84dff31496c0add57070f3b75fe3e0d63b00d6a8eeb6936d7c3c8c00a7",
+      "actual": "3b0dbb84dff31496c0add57070f3b75fe3e0d63b00d6a8eeb6936d7c3c8c00a7",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/LIB-002.json",
+      "expected": "8a057d4f583931bdaed4e45f2b6080858e6af9eca6096f248a9d8f01e057972c",
+      "actual": "8a057d4f583931bdaed4e45f2b6080858e6af9eca6096f248a9d8f01e057972c",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/LIB-002.svg",
+      "expected": "6b80f76280718a1dc2df493bdf05f80bfbc98cdba1f49582d714c48c9a59fbe2",
+      "actual": "6b80f76280718a1dc2df493bdf05f80bfbc98cdba1f49582d714c48c9a59fbe2",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/LIB-003.json",
+      "expected": "bba49850e48d1a5a9e741a8228fff30bb61471124fb395c6863d4957a7be753f",
+      "actual": "bba49850e48d1a5a9e741a8228fff30bb61471124fb395c6863d4957a7be753f",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/LIB-003.svg",
+      "expected": "96624e4cc670dbde09486030a2202d649b7c172de9c1791385334cc600fafb0b",
+      "actual": "96624e4cc670dbde09486030a2202d649b7c172de9c1791385334cc600fafb0b",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/LIB-004.json",
+      "expected": "bbb1fb3435c71c4212ec85917bf4c7226216023ea15723b082a184c87a3cec0a",
+      "actual": "bbb1fb3435c71c4212ec85917bf4c7226216023ea15723b082a184c87a3cec0a",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/LIB-004.svg",
+      "expected": "0c97d44c499d6911a5bc7bd8a823eedd03d44abb7c2e7023d55f5ce05b78ae39",
+      "actual": "0c97d44c499d6911a5bc7bd8a823eedd03d44abb7c2e7023d55f5ce05b78ae39",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/LIB-005.json",
+      "expected": "0d8565c2908a2876ea9a70331354d17ea2158bc20d7429517a5d49fb41e57387",
+      "actual": "0d8565c2908a2876ea9a70331354d17ea2158bc20d7429517a5d49fb41e57387",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/LIB-005.svg",
+      "expected": "6d86ea35afc083aa219cfa47fcc6fdeb2219e1f2e4dc3bf767f8b95e7c40f916",
+      "actual": "6d86ea35afc083aa219cfa47fcc6fdeb2219e1f2e4dc3bf767f8b95e7c40f916",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/CAP-001.json",
+      "expected": "e0a0950af03ba144d4464790b1292ac4a77b7534bc5a1228b77c194862f767cd",
+      "actual": "e0a0950af03ba144d4464790b1292ac4a77b7534bc5a1228b77c194862f767cd",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/CAP-001.svg",
+      "expected": "7d4bb190248a6f3e048682f3e8e1b027f98052a43c26e6df64628d6246a47ca4",
+      "actual": "7d4bb190248a6f3e048682f3e8e1b027f98052a43c26e6df64628d6246a47ca4",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/CAP-002.json",
+      "expected": "f72172c4db6adf32228632d7660f174b649ae3ebbbedd9dd3f3bed1ba3e4e61e",
+      "actual": "f72172c4db6adf32228632d7660f174b649ae3ebbbedd9dd3f3bed1ba3e4e61e",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/CAP-002.svg",
+      "expected": "5416860fd7082428bd86f958b4606b961abc79fdfc8e900a0337091a0249eadb",
+      "actual": "5416860fd7082428bd86f958b4606b961abc79fdfc8e900a0337091a0249eadb",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/CAP-003.json",
+      "expected": "092eb801f433d09ad685e1d0718151eea40b41bcdc4765cba639d85d999a4682",
+      "actual": "092eb801f433d09ad685e1d0718151eea40b41bcdc4765cba639d85d999a4682",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/CAP-003.svg",
+      "expected": "3955600ae8b32c1c8c85d7232a9459db18f88e60f9dd89e474fcd9d1c4e292a5",
+      "actual": "3955600ae8b32c1c8c85d7232a9459db18f88e60f9dd89e474fcd9d1c4e292a5",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/CAP-004.json",
+      "expected": "2f598b1d4a5d70b283bd0d4a2bd5728742c6a2b5c103de46e208409e5257a700",
+      "actual": "2f598b1d4a5d70b283bd0d4a2bd5728742c6a2b5c103de46e208409e5257a700",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/CAP-004.svg",
+      "expected": "d241e4ac26275f782e9f10c9031e0c2a6a571408c12b4a28cd84fe65739ab8a7",
+      "actual": "d241e4ac26275f782e9f10c9031e0c2a6a571408c12b4a28cd84fe65739ab8a7",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/CAP-005.json",
+      "expected": "8272de484c2b56a7997481bb5b93c914698d6e595087850c37130eeed222e79d",
+      "actual": "8272de484c2b56a7997481bb5b93c914698d6e595087850c37130eeed222e79d",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/CAP-005.svg",
+      "expected": "35ac08d90ba0524d74c598d8dd318c3a708612eba525c5c333729d9efd19fca7",
+      "actual": "35ac08d90ba0524d74c598d8dd318c3a708612eba525c5c333729d9efd19fca7",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/CON-001.json",
+      "expected": "fc6f68f65b0461f248bbacd27c9753327bc5f8d86e4763ebad2d93999bd46013",
+      "actual": "fc6f68f65b0461f248bbacd27c9753327bc5f8d86e4763ebad2d93999bd46013",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/CON-001.svg",
+      "expected": "2689d00864f15782f2e8f81322a32be261e0aee55d1fb5453036ef5ceac1aaa4",
+      "actual": "2689d00864f15782f2e8f81322a32be261e0aee55d1fb5453036ef5ceac1aaa4",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/CON-002.json",
+      "expected": "aa877a3ef8e658715254ca2efee4ea07a34593be8a5d122aecbe198bee8339c0",
+      "actual": "aa877a3ef8e658715254ca2efee4ea07a34593be8a5d122aecbe198bee8339c0",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/CON-002.svg",
+      "expected": "555f8ac6058e3d0f8de6e168ea012e7d9ac1a210236e2f5afcc85b40dbd04c36",
+      "actual": "555f8ac6058e3d0f8de6e168ea012e7d9ac1a210236e2f5afcc85b40dbd04c36",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/CON-003.json",
+      "expected": "7b5b4efdd21de2f90023f34b9c8dee3f1e11743c9a4c434cc03b816c16ae30c7",
+      "actual": "7b5b4efdd21de2f90023f34b9c8dee3f1e11743c9a4c434cc03b816c16ae30c7",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/CON-003.svg",
+      "expected": "b2ec230dc07fdf68a04ae47d38b2685c24d0a748d413dcb2b4c96edb7ab33038",
+      "actual": "b2ec230dc07fdf68a04ae47d38b2685c24d0a748d413dcb2b4c96edb7ab33038",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/CON-004.json",
+      "expected": "4537bfa53a47ef670c096ea5e87573ad848cd6b4f3464fbfbbb41ea302371211",
+      "actual": "4537bfa53a47ef670c096ea5e87573ad848cd6b4f3464fbfbbb41ea302371211",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/CON-004.svg",
+      "expected": "c7efd9352ecf6255d578d07eaf4073a1c5ac254fd970e8eed3fe7b2c80881df7",
+      "actual": "c7efd9352ecf6255d578d07eaf4073a1c5ac254fd970e8eed3fe7b2c80881df7",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/CON-005.json",
+      "expected": "0b5327dc3885e5f4e49308e5164e79953d1065423074a7f0b0afd8d8df24520c",
+      "actual": "0b5327dc3885e5f4e49308e5164e79953d1065423074a7f0b0afd8d8df24520c",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/CON-005.svg",
+      "expected": "e24d5354b3e74bf6821604a7263d488ff4b9938e9c8786d1010c6b842d6c59e9",
+      "actual": "e24d5354b3e74bf6821604a7263d488ff4b9938e9c8786d1010c6b842d6c59e9",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/LIFE-001.json",
+      "expected": "3e800b83347c378568c5b0ff8a4a96412fa44081df9711eb325cc0d1c3ca4c2f",
+      "actual": "3e800b83347c378568c5b0ff8a4a96412fa44081df9711eb325cc0d1c3ca4c2f",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/LIFE-001.svg",
+      "expected": "45e52ed412a33f747c0a78a3caf025ee3503416cf30fa682f8c6ed2ed1657c16",
+      "actual": "45e52ed412a33f747c0a78a3caf025ee3503416cf30fa682f8c6ed2ed1657c16",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/LIFE-002.json",
+      "expected": "4a9c755d45126cef93464d2e42c74b51af63468701c701d64957910269b32526",
+      "actual": "4a9c755d45126cef93464d2e42c74b51af63468701c701d64957910269b32526",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/LIFE-002.svg",
+      "expected": "37eec93256e13270547197356180ec11fe9674917677ba222920e8a4bdc16be8",
+      "actual": "37eec93256e13270547197356180ec11fe9674917677ba222920e8a4bdc16be8",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/LIFE-003.json",
+      "expected": "1909976bc369d0434b0db10720cbb722be4cb4ca49b2781668b56cb8ee8f6ffc",
+      "actual": "1909976bc369d0434b0db10720cbb722be4cb4ca49b2781668b56cb8ee8f6ffc",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/LIFE-003.svg",
+      "expected": "2ccc504437fb6d85adb9ef2075bd86f922769bdfd3c48d0103dc6680c28c0d90",
+      "actual": "2ccc504437fb6d85adb9ef2075bd86f922769bdfd3c48d0103dc6680c28c0d90",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/LIFE-004.json",
+      "expected": "4ae5d60c5a862d20e64e8b7ffab7659cabe13d3289f6c682d80c171f4ad849ca",
+      "actual": "4ae5d60c5a862d20e64e8b7ffab7659cabe13d3289f6c682d80c171f4ad849ca",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/LIFE-004.svg",
+      "expected": "44471a992cf4f28d3b148dd21425eeca62dcbc20c83f30e097fa83e54b12c93a",
+      "actual": "44471a992cf4f28d3b148dd21425eeca62dcbc20c83f30e097fa83e54b12c93a",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/LIFE-005.json",
+      "expected": "506f62c281d0c1f09c8dfff2725fe0677fcfcf9ecda05615b10adeff4a968992",
+      "actual": "506f62c281d0c1f09c8dfff2725fe0677fcfcf9ecda05615b10adeff4a968992",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/LIFE-005.svg",
+      "expected": "70806b90cd1e8e1c03ca200204e473d31955b6c8d6000d0a121e1a32396e2799",
+      "actual": "70806b90cd1e8e1c03ca200204e473d31955b6c8d6000d0a121e1a32396e2799",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/AREA-001.json",
+      "expected": "9865586cc32ac7887e9aa4951ac9a2fbf668bbdc52e997bfeebc60b4fa73f7cd",
+      "actual": "9865586cc32ac7887e9aa4951ac9a2fbf668bbdc52e997bfeebc60b4fa73f7cd",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/AREA-001.svg",
+      "expected": "57343fd4a65c14b19d3d98dcb595311fc279dd5da1296300b3c2b9d2984ab621",
+      "actual": "57343fd4a65c14b19d3d98dcb595311fc279dd5da1296300b3c2b9d2984ab621",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/AREA-002.json",
+      "expected": "4e2e9c14b90ce85a6296c709773d97f9c2a9a9a0018c29dd7a25d21cc4953cdb",
+      "actual": "4e2e9c14b90ce85a6296c709773d97f9c2a9a9a0018c29dd7a25d21cc4953cdb",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/AREA-002.svg",
+      "expected": "955f141be71e0f97fb3022e84abc55af7b9c7701ca9c1f3b60c88efd34008658",
+      "actual": "955f141be71e0f97fb3022e84abc55af7b9c7701ca9c1f3b60c88efd34008658",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/AREA-003.json",
+      "expected": "c77db09cb0b7697a01fb9554aaccf6990b3889d79b3846ba94e9e2cbce2264cc",
+      "actual": "c77db09cb0b7697a01fb9554aaccf6990b3889d79b3846ba94e9e2cbce2264cc",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/AREA-003.svg",
+      "expected": "f8ff6954b49d9ec9aee70d3e8a692cfb4086b4fcff5d06d05ff29d379a03f87a",
+      "actual": "f8ff6954b49d9ec9aee70d3e8a692cfb4086b4fcff5d06d05ff29d379a03f87a",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/AREA-004.json",
+      "expected": "2129c1b57829c623de628c0bcf203025c317c380a75bc09dab6c8ecf2f191687",
+      "actual": "2129c1b57829c623de628c0bcf203025c317c380a75bc09dab6c8ecf2f191687",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/AREA-004.svg",
+      "expected": "1bbd6b5e5f460d57cbdfac6c5ab93c66fe2f88b48e86c02b08b4ab219b5b6ee3",
+      "actual": "1bbd6b5e5f460d57cbdfac6c5ab93c66fe2f88b48e86c02b08b4ab219b5b6ee3",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/AREA-005.json",
+      "expected": "32e94ab284735f1814f0acb990a4b3289c1bc4bd702f2d415470f8a5435c6554",
+      "actual": "32e94ab284735f1814f0acb990a4b3289c1bc4bd702f2d415470f8a5435c6554",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/AREA-005.svg",
+      "expected": "0122c62b90170df1cb16652e82dc52f77d900ca31b5e047450d84264b8aa6487",
+      "actual": "0122c62b90170df1cb16652e82dc52f77d900ca31b5e047450d84264b8aa6487",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/DISC-001.json",
+      "expected": "309fbe53ee677d08e50c7e1196de664f75c46921b17459a0d6b62cadce78fff1",
+      "actual": "309fbe53ee677d08e50c7e1196de664f75c46921b17459a0d6b62cadce78fff1",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/DISC-001.svg",
+      "expected": "84a39d8a9021b10e3da47bd7bb08fa1fe6c43c8852c7f6b1b70f43159f86910f",
+      "actual": "84a39d8a9021b10e3da47bd7bb08fa1fe6c43c8852c7f6b1b70f43159f86910f",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/DISC-002.json",
+      "expected": "989d275f49faad33b2ef1773fd20dca7fbcae652b805c5b735031dbad428067e",
+      "actual": "989d275f49faad33b2ef1773fd20dca7fbcae652b805c5b735031dbad428067e",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/DISC-002.svg",
+      "expected": "c93d4f45b70bea760cad0b0d1e33cf526c2eea8d79716a85dfa462143bf55f09",
+      "actual": "c93d4f45b70bea760cad0b0d1e33cf526c2eea8d79716a85dfa462143bf55f09",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/DISC-003.json",
+      "expected": "aac6b4679d2517d03e9eeed1f2ffc3897c56e5651dd3176b8bf3368e0035a599",
+      "actual": "aac6b4679d2517d03e9eeed1f2ffc3897c56e5651dd3176b8bf3368e0035a599",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/DISC-003.svg",
+      "expected": "1c26e5a1c4e861e6b674736e95650ccf59f3f06515db9e71c0ae23e19b927e5b",
+      "actual": "1c26e5a1c4e861e6b674736e95650ccf59f3f06515db9e71c0ae23e19b927e5b",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/DISC-004.json",
+      "expected": "15f35fb4a699b6c8083cb901675c9c79e17a61a0dd742bb4673067b2830ea6ac",
+      "actual": "15f35fb4a699b6c8083cb901675c9c79e17a61a0dd742bb4673067b2830ea6ac",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/DISC-004.svg",
+      "expected": "1be0ff6739cbd2f2266063feccae56632fda8aabecf54e70a672dc613c06bbe0",
+      "actual": "1be0ff6739cbd2f2266063feccae56632fda8aabecf54e70a672dc613c06bbe0",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/DISC-005.json",
+      "expected": "5e8d7c96a647be704dcffbcd955902598a627079ae8cddb20c19036fc4b5d3bc",
+      "actual": "5e8d7c96a647be704dcffbcd955902598a627079ae8cddb20c19036fc4b5d3bc",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/DISC-005.svg",
+      "expected": "9c279e7335bdd5537e965eac423f892333e41a26f3730af0e195bdb5280af023",
+      "actual": "9c279e7335bdd5537e965eac423f892333e41a26f3730af0e195bdb5280af023",
+      "passed": true
+    },
+    {
+      "path": "content/endgames/END-001.json",
+      "expected": "88fe7f6226f33da4d12f0cf14121be2c4f6b4ee7da376f3d9dd77bc080b4ebed",
+      "actual": "88fe7f6226f33da4d12f0cf14121be2c4f6b4ee7da376f3d9dd77bc080b4ebed",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/END-001.svg",
+      "expected": "1767e83e395ec501ca903abf9e77ec5692971bb135500d3ece09e273916ebe20",
+      "actual": "1767e83e395ec501ca903abf9e77ec5692971bb135500d3ece09e273916ebe20",
+      "passed": true
+    },
+    {
+      "path": "content/endgames/END-002.json",
+      "expected": "fdc052992973abb3140041ea3d62d1cc9078eb4eeaf15dda2c36604af6170859",
+      "actual": "fdc052992973abb3140041ea3d62d1cc9078eb4eeaf15dda2c36604af6170859",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/END-002.svg",
+      "expected": "1ff889b484b9f517090ba35d8040fb31098cd6aaf1922a800261671ca18b3f1e",
+      "actual": "1ff889b484b9f517090ba35d8040fb31098cd6aaf1922a800261671ca18b3f1e",
+      "passed": true
+    },
+    {
+      "path": "content/endgames/END-003.json",
+      "expected": "a2f8051b0b151056e18d1aec42f7499f4e6b6c8c82e30ac279e9da17ee6282f6",
+      "actual": "a2f8051b0b151056e18d1aec42f7499f4e6b6c8c82e30ac279e9da17ee6282f6",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/END-003.svg",
+      "expected": "341b4611442712759332fd22a8740643525925fd5977becac1936701bbd7d1fb",
+      "actual": "341b4611442712759332fd22a8740643525925fd5977becac1936701bbd7d1fb",
+      "passed": true
+    },
+    {
+      "path": "content/endgames/END-004.json",
+      "expected": "967208e0213d5d786b5fe1bb37600d44f8fed7fb629e4d19f6ddaa8d1248eabe",
+      "actual": "967208e0213d5d786b5fe1bb37600d44f8fed7fb629e4d19f6ddaa8d1248eabe",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/END-004.svg",
+      "expected": "6d1b3e0cfc8a67c3ab95fe3e2eebeb8b6b5b1e0eb1baa754450aabf183cc1996",
+      "actual": "6d1b3e0cfc8a67c3ab95fe3e2eebeb8b6b5b1e0eb1baa754450aabf183cc1996",
+      "passed": true
+    },
+    {
+      "path": "content/endgames/END-005.json",
+      "expected": "81dfe29d1a8ca9b96aac90cae4f3d64b23faa248ada69cd7c325798eab35a3be",
+      "actual": "81dfe29d1a8ca9b96aac90cae4f3d64b23faa248ada69cd7c325798eab35a3be",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/END-005.svg",
+      "expected": "2addc5f39e76cfc5172905133decaf145e1fbc695903308c7cdafd8251ec623e",
+      "actual": "2addc5f39e76cfc5172905133decaf145e1fbc695903308c7cdafd8251ec623e",
+      "passed": true
+    },
+    {
+      "path": "content/endgames/END-006.json",
+      "expected": "29bc999f1712bfe3a30c1eb41178ed0c7beae2a1749642815ace3b9662715603",
+      "actual": "29bc999f1712bfe3a30c1eb41178ed0c7beae2a1749642815ace3b9662715603",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/END-006.svg",
+      "expected": "8c7b03962a5e74a0621d3a7602c279da1b1489d019dc3458ef0eba0467a62824",
+      "actual": "8c7b03962a5e74a0621d3a7602c279da1b1489d019dc3458ef0eba0467a62824",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-CAPTURE-AFTER.json",
+      "expected": "c49a90c0bcd509a47859e52e689ebf26cd3410797d70f59258b47bad180240d5",
+      "actual": "c49a90c0bcd509a47859e52e689ebf26cd3410797d70f59258b47bad180240d5",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-CAPTURE-BEFORE.json",
+      "expected": "6b7b4142b6aeae8b242c726a148a668ed55efe066c7bc5adcd12cfbade68daed",
+      "actual": "6b7b4142b6aeae8b242c726a148a668ed55efe066c7bc5adcd12cfbade68daed",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-CONNECT.json",
+      "expected": "c745c0a49849f21ca32a94106865328fb005d1a75136403754b5c713a0a07127",
+      "actual": "c745c0a49849f21ca32a94106865328fb005d1a75136403754b5c713a0a07127",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-KO-AFTER.json",
+      "expected": "89d9a194282bdbbce299ed730cec96191f7fc70c7667e1e3861122fb7b31fd43",
+      "actual": "89d9a194282bdbbce299ed730cec96191f7fc70c7667e1e3861122fb7b31fd43",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-KO-BEFORE.json",
+      "expected": "d4fe9642a299e6abb7fd957cb5d7fd0cf5f339980f812404f8f46f0dcf8d73b5",
+      "actual": "d4fe9642a299e6abb7fd957cb5d7fd0cf5f339980f812404f8f46f0dcf8d73b5",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-LEGAL-AFTER.json",
+      "expected": "a6e455337c43630ef583417544bd2e285ae507dee005acc4159149d073a6a909",
+      "actual": "a6e455337c43630ef583417544bd2e285ae507dee005acc4159149d073a6a909",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-LEGAL-BEFORE.json",
+      "expected": "4dc310af6907bf6ec3c6ff7dda5a0b5b31620c36fa90f7d6f6ac06ebbc066109",
+      "actual": "4dc310af6907bf6ec3c6ff7dda5a0b5b31620c36fa90f7d6f6ac06ebbc066109",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-LIBERTY.json",
+      "expected": "6c6907aa5af61161db98b961905a0a08f3382ad6c98bb4ad0ae2c73383c4f67b",
+      "actual": "6c6907aa5af61161db98b961905a0a08f3382ad6c98bb4ad0ae2c73383c4f67b",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-SCORE.json",
+      "expected": "4572ff686851003ddb99c7168251dc34ceeb8bfe8463f8717e797b60d534bf91",
+      "actual": "4572ff686851003ddb99c7168251dc34ceeb8bfe8463f8717e797b60d534bf91",
+      "passed": true
+    },
+    {
+      "path": "README.md",
+      "expected": "13b8d3067bd1d3f564e328bdb6b1bc1345979596083d5167a8ae76cd3ff2d9be",
+      "actual": "13b8d3067bd1d3f564e328bdb6b1bc1345979596083d5167a8ae76cd3ff2d9be",
+      "passed": true
+    },
+    {
+      "path": "SOURCES.md",
+      "expected": "0a598e76a42f7522d748dacfad7ada37967a1cf1d0c33e827856c632d72f20a3",
+      "actual": "0a598e76a42f7522d748dacfad7ada37967a1cf1d0c33e827856c632d72f20a3",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/AREA-001.svg",
+      "expected": "57343fd4a65c14b19d3d98dcb595311fc279dd5da1296300b3c2b9d2984ab621",
+      "actual": "57343fd4a65c14b19d3d98dcb595311fc279dd5da1296300b3c2b9d2984ab621",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/AREA-002.svg",
+      "expected": "955f141be71e0f97fb3022e84abc55af7b9c7701ca9c1f3b60c88efd34008658",
+      "actual": "955f141be71e0f97fb3022e84abc55af7b9c7701ca9c1f3b60c88efd34008658",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/AREA-003.svg",
+      "expected": "f8ff6954b49d9ec9aee70d3e8a692cfb4086b4fcff5d06d05ff29d379a03f87a",
+      "actual": "f8ff6954b49d9ec9aee70d3e8a692cfb4086b4fcff5d06d05ff29d379a03f87a",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/AREA-004.svg",
+      "expected": "1bbd6b5e5f460d57cbdfac6c5ab93c66fe2f88b48e86c02b08b4ab219b5b6ee3",
+      "actual": "1bbd6b5e5f460d57cbdfac6c5ab93c66fe2f88b48e86c02b08b4ab219b5b6ee3",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/AREA-005.svg",
+      "expected": "0122c62b90170df1cb16652e82dc52f77d900ca31b5e047450d84264b8aa6487",
+      "actual": "0122c62b90170df1cb16652e82dc52f77d900ca31b5e047450d84264b8aa6487",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/CAP-001.svg",
+      "expected": "7d4bb190248a6f3e048682f3e8e1b027f98052a43c26e6df64628d6246a47ca4",
+      "actual": "7d4bb190248a6f3e048682f3e8e1b027f98052a43c26e6df64628d6246a47ca4",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/CAP-002.svg",
+      "expected": "5416860fd7082428bd86f958b4606b961abc79fdfc8e900a0337091a0249eadb",
+      "actual": "5416860fd7082428bd86f958b4606b961abc79fdfc8e900a0337091a0249eadb",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/CAP-003.svg",
+      "expected": "3955600ae8b32c1c8c85d7232a9459db18f88e60f9dd89e474fcd9d1c4e292a5",
+      "actual": "3955600ae8b32c1c8c85d7232a9459db18f88e60f9dd89e474fcd9d1c4e292a5",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/CAP-004.svg",
+      "expected": "d241e4ac26275f782e9f10c9031e0c2a6a571408c12b4a28cd84fe65739ab8a7",
+      "actual": "d241e4ac26275f782e9f10c9031e0c2a6a571408c12b4a28cd84fe65739ab8a7",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/CAP-005.svg",
+      "expected": "35ac08d90ba0524d74c598d8dd318c3a708612eba525c5c333729d9efd19fca7",
+      "actual": "35ac08d90ba0524d74c598d8dd318c3a708612eba525c5c333729d9efd19fca7",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/CON-001.svg",
+      "expected": "2689d00864f15782f2e8f81322a32be261e0aee55d1fb5453036ef5ceac1aaa4",
+      "actual": "2689d00864f15782f2e8f81322a32be261e0aee55d1fb5453036ef5ceac1aaa4",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/CON-002.svg",
+      "expected": "555f8ac6058e3d0f8de6e168ea012e7d9ac1a210236e2f5afcc85b40dbd04c36",
+      "actual": "555f8ac6058e3d0f8de6e168ea012e7d9ac1a210236e2f5afcc85b40dbd04c36",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/CON-003.svg",
+      "expected": "b2ec230dc07fdf68a04ae47d38b2685c24d0a748d413dcb2b4c96edb7ab33038",
+      "actual": "b2ec230dc07fdf68a04ae47d38b2685c24d0a748d413dcb2b4c96edb7ab33038",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/CON-004.svg",
+      "expected": "c7efd9352ecf6255d578d07eaf4073a1c5ac254fd970e8eed3fe7b2c80881df7",
+      "actual": "c7efd9352ecf6255d578d07eaf4073a1c5ac254fd970e8eed3fe7b2c80881df7",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/CON-005.svg",
+      "expected": "e24d5354b3e74bf6821604a7263d488ff4b9938e9c8786d1010c6b842d6c59e9",
+      "actual": "e24d5354b3e74bf6821604a7263d488ff4b9938e9c8786d1010c6b842d6c59e9",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/DISC-001.svg",
+      "expected": "84a39d8a9021b10e3da47bd7bb08fa1fe6c43c8852c7f6b1b70f43159f86910f",
+      "actual": "84a39d8a9021b10e3da47bd7bb08fa1fe6c43c8852c7f6b1b70f43159f86910f",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/DISC-002.svg",
+      "expected": "c93d4f45b70bea760cad0b0d1e33cf526c2eea8d79716a85dfa462143bf55f09",
+      "actual": "c93d4f45b70bea760cad0b0d1e33cf526c2eea8d79716a85dfa462143bf55f09",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/DISC-003.svg",
+      "expected": "1c26e5a1c4e861e6b674736e95650ccf59f3f06515db9e71c0ae23e19b927e5b",
+      "actual": "1c26e5a1c4e861e6b674736e95650ccf59f3f06515db9e71c0ae23e19b927e5b",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/DISC-004.svg",
+      "expected": "1be0ff6739cbd2f2266063feccae56632fda8aabecf54e70a672dc613c06bbe0",
+      "actual": "1be0ff6739cbd2f2266063feccae56632fda8aabecf54e70a672dc613c06bbe0",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/DISC-005.svg",
+      "expected": "9c279e7335bdd5537e965eac423f892333e41a26f3730af0e195bdb5280af023",
+      "actual": "9c279e7335bdd5537e965eac423f892333e41a26f3730af0e195bdb5280af023",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/END-001.svg",
+      "expected": "1767e83e395ec501ca903abf9e77ec5692971bb135500d3ece09e273916ebe20",
+      "actual": "1767e83e395ec501ca903abf9e77ec5692971bb135500d3ece09e273916ebe20",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/END-002.svg",
+      "expected": "1ff889b484b9f517090ba35d8040fb31098cd6aaf1922a800261671ca18b3f1e",
+      "actual": "1ff889b484b9f517090ba35d8040fb31098cd6aaf1922a800261671ca18b3f1e",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/END-003.svg",
+      "expected": "341b4611442712759332fd22a8740643525925fd5977becac1936701bbd7d1fb",
+      "actual": "341b4611442712759332fd22a8740643525925fd5977becac1936701bbd7d1fb",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/END-004.svg",
+      "expected": "6d1b3e0cfc8a67c3ab95fe3e2eebeb8b6b5b1e0eb1baa754450aabf183cc1996",
+      "actual": "6d1b3e0cfc8a67c3ab95fe3e2eebeb8b6b5b1e0eb1baa754450aabf183cc1996",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/END-005.svg",
+      "expected": "2addc5f39e76cfc5172905133decaf145e1fbc695903308c7cdafd8251ec623e",
+      "actual": "2addc5f39e76cfc5172905133decaf145e1fbc695903308c7cdafd8251ec623e",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/END-006.svg",
+      "expected": "8c7b03962a5e74a0621d3a7602c279da1b1489d019dc3458ef0eba0467a62824",
+      "actual": "8c7b03962a5e74a0621d3a7602c279da1b1489d019dc3458ef0eba0467a62824",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/LIB-001.svg",
+      "expected": "3b0dbb84dff31496c0add57070f3b75fe3e0d63b00d6a8eeb6936d7c3c8c00a7",
+      "actual": "3b0dbb84dff31496c0add57070f3b75fe3e0d63b00d6a8eeb6936d7c3c8c00a7",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/LIB-002.svg",
+      "expected": "6b80f76280718a1dc2df493bdf05f80bfbc98cdba1f49582d714c48c9a59fbe2",
+      "actual": "6b80f76280718a1dc2df493bdf05f80bfbc98cdba1f49582d714c48c9a59fbe2",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/LIB-003.svg",
+      "expected": "96624e4cc670dbde09486030a2202d649b7c172de9c1791385334cc600fafb0b",
+      "actual": "96624e4cc670dbde09486030a2202d649b7c172de9c1791385334cc600fafb0b",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/LIB-004.svg",
+      "expected": "0c97d44c499d6911a5bc7bd8a823eedd03d44abb7c2e7023d55f5ce05b78ae39",
+      "actual": "0c97d44c499d6911a5bc7bd8a823eedd03d44abb7c2e7023d55f5ce05b78ae39",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/LIB-005.svg",
+      "expected": "6d86ea35afc083aa219cfa47fcc6fdeb2219e1f2e4dc3bf767f8b95e7c40f916",
+      "actual": "6d86ea35afc083aa219cfa47fcc6fdeb2219e1f2e4dc3bf767f8b95e7c40f916",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/LIFE-001.svg",
+      "expected": "45e52ed412a33f747c0a78a3caf025ee3503416cf30fa682f8c6ed2ed1657c16",
+      "actual": "45e52ed412a33f747c0a78a3caf025ee3503416cf30fa682f8c6ed2ed1657c16",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/LIFE-002.svg",
+      "expected": "37eec93256e13270547197356180ec11fe9674917677ba222920e8a4bdc16be8",
+      "actual": "37eec93256e13270547197356180ec11fe9674917677ba222920e8a4bdc16be8",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/LIFE-003.svg",
+      "expected": "2ccc504437fb6d85adb9ef2075bd86f922769bdfd3c48d0103dc6680c28c0d90",
+      "actual": "2ccc504437fb6d85adb9ef2075bd86f922769bdfd3c48d0103dc6680c28c0d90",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/LIFE-004.svg",
+      "expected": "44471a992cf4f28d3b148dd21425eeca62dcbc20c83f30e097fa83e54b12c93a",
+      "actual": "44471a992cf4f28d3b148dd21425eeca62dcbc20c83f30e097fa83e54b12c93a",
+      "passed": true
+    },
+    {
+      "path": "content/artwork/LIFE-005.svg",
+      "expected": "70806b90cd1e8e1c03ca200204e473d31955b6c8d6000d0a121e1a32396e2799",
+      "actual": "70806b90cd1e8e1c03ca200204e473d31955b6c8d6000d0a121e1a32396e2799",
+      "passed": true
+    },
+    {
+      "path": "content/endgames/END-001.json",
+      "expected": "88fe7f6226f33da4d12f0cf14121be2c4f6b4ee7da376f3d9dd77bc080b4ebed",
+      "actual": "88fe7f6226f33da4d12f0cf14121be2c4f6b4ee7da376f3d9dd77bc080b4ebed",
+      "passed": true
+    },
+    {
+      "path": "content/endgames/END-002.json",
+      "expected": "fdc052992973abb3140041ea3d62d1cc9078eb4eeaf15dda2c36604af6170859",
+      "actual": "fdc052992973abb3140041ea3d62d1cc9078eb4eeaf15dda2c36604af6170859",
+      "passed": true
+    },
+    {
+      "path": "content/endgames/END-003.json",
+      "expected": "a2f8051b0b151056e18d1aec42f7499f4e6b6c8c82e30ac279e9da17ee6282f6",
+      "actual": "a2f8051b0b151056e18d1aec42f7499f4e6b6c8c82e30ac279e9da17ee6282f6",
+      "passed": true
+    },
+    {
+      "path": "content/endgames/END-004.json",
+      "expected": "967208e0213d5d786b5fe1bb37600d44f8fed7fb629e4d19f6ddaa8d1248eabe",
+      "actual": "967208e0213d5d786b5fe1bb37600d44f8fed7fb629e4d19f6ddaa8d1248eabe",
+      "passed": true
+    },
+    {
+      "path": "content/endgames/END-005.json",
+      "expected": "81dfe29d1a8ca9b96aac90cae4f3d64b23faa248ada69cd7c325798eab35a3be",
+      "actual": "81dfe29d1a8ca9b96aac90cae4f3d64b23faa248ada69cd7c325798eab35a3be",
+      "passed": true
+    },
+    {
+      "path": "content/endgames/END-006.json",
+      "expected": "29bc999f1712bfe3a30c1eb41178ed0c7beae2a1749642815ace3b9662715603",
+      "actual": "29bc999f1712bfe3a30c1eb41178ed0c7beae2a1749642815ace3b9662715603",
+      "passed": true
+    },
+    {
+      "path": "content/print/T09_\u6311\u6218\u5361_A4.pdf",
+      "expected": "f6c7968e57c50d2b1c34b450a17967184624600586d4f396030d1349698acd8b",
+      "actual": "f6c7968e57c50d2b1c34b450a17967184624600586d4f396030d1349698acd8b",
+      "passed": true
+    },
+    {
+      "path": "content/print/T09_\u6559\u5b66\u6f14\u793a_r1.pptx",
+      "expected": "6e30628e59936a819c470eb5664f074b9d6eaa62c4377468859ec140571850e5",
+      "actual": "6e30628e59936a819c470eb5664f074b9d6eaa62c4377468859ec140571850e5",
+      "passed": true
+    },
+    {
+      "path": "content/print/T09_\u7b54\u6848\u518c.md",
+      "expected": "cb71fb1d03362a039d9ce854716425cfca66f02357d8c78d718f2caf4b543430",
+      "actual": "cb71fb1d03362a039d9ce854716425cfca66f02357d8c78d718f2caf4b543430",
+      "passed": true
+    },
+    {
+      "path": "content/print/T09_\u7b54\u6848\u518c.pdf",
+      "expected": "f0d978e995e953c57b072aa876d98a5dd43f1a14ad8b2710bcbbf4be894f8798",
+      "actual": "f0d978e995e953c57b072aa876d98a5dd43f1a14ad8b2710bcbbf4be894f8798",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/AREA-001.json",
+      "expected": "9865586cc32ac7887e9aa4951ac9a2fbf668bbdc52e997bfeebc60b4fa73f7cd",
+      "actual": "9865586cc32ac7887e9aa4951ac9a2fbf668bbdc52e997bfeebc60b4fa73f7cd",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/AREA-002.json",
+      "expected": "4e2e9c14b90ce85a6296c709773d97f9c2a9a9a0018c29dd7a25d21cc4953cdb",
+      "actual": "4e2e9c14b90ce85a6296c709773d97f9c2a9a9a0018c29dd7a25d21cc4953cdb",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/AREA-003.json",
+      "expected": "c77db09cb0b7697a01fb9554aaccf6990b3889d79b3846ba94e9e2cbce2264cc",
+      "actual": "c77db09cb0b7697a01fb9554aaccf6990b3889d79b3846ba94e9e2cbce2264cc",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/AREA-004.json",
+      "expected": "2129c1b57829c623de628c0bcf203025c317c380a75bc09dab6c8ecf2f191687",
+      "actual": "2129c1b57829c623de628c0bcf203025c317c380a75bc09dab6c8ecf2f191687",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/AREA-005.json",
+      "expected": "32e94ab284735f1814f0acb990a4b3289c1bc4bd702f2d415470f8a5435c6554",
+      "actual": "32e94ab284735f1814f0acb990a4b3289c1bc4bd702f2d415470f8a5435c6554",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/CAP-001.json",
+      "expected": "e0a0950af03ba144d4464790b1292ac4a77b7534bc5a1228b77c194862f767cd",
+      "actual": "e0a0950af03ba144d4464790b1292ac4a77b7534bc5a1228b77c194862f767cd",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/CAP-002.json",
+      "expected": "f72172c4db6adf32228632d7660f174b649ae3ebbbedd9dd3f3bed1ba3e4e61e",
+      "actual": "f72172c4db6adf32228632d7660f174b649ae3ebbbedd9dd3f3bed1ba3e4e61e",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/CAP-003.json",
+      "expected": "092eb801f433d09ad685e1d0718151eea40b41bcdc4765cba639d85d999a4682",
+      "actual": "092eb801f433d09ad685e1d0718151eea40b41bcdc4765cba639d85d999a4682",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/CAP-004.json",
+      "expected": "2f598b1d4a5d70b283bd0d4a2bd5728742c6a2b5c103de46e208409e5257a700",
+      "actual": "2f598b1d4a5d70b283bd0d4a2bd5728742c6a2b5c103de46e208409e5257a700",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/CAP-005.json",
+      "expected": "8272de484c2b56a7997481bb5b93c914698d6e595087850c37130eeed222e79d",
+      "actual": "8272de484c2b56a7997481bb5b93c914698d6e595087850c37130eeed222e79d",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/CON-001.json",
+      "expected": "fc6f68f65b0461f248bbacd27c9753327bc5f8d86e4763ebad2d93999bd46013",
+      "actual": "fc6f68f65b0461f248bbacd27c9753327bc5f8d86e4763ebad2d93999bd46013",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/CON-002.json",
+      "expected": "aa877a3ef8e658715254ca2efee4ea07a34593be8a5d122aecbe198bee8339c0",
+      "actual": "aa877a3ef8e658715254ca2efee4ea07a34593be8a5d122aecbe198bee8339c0",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/CON-003.json",
+      "expected": "7b5b4efdd21de2f90023f34b9c8dee3f1e11743c9a4c434cc03b816c16ae30c7",
+      "actual": "7b5b4efdd21de2f90023f34b9c8dee3f1e11743c9a4c434cc03b816c16ae30c7",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/CON-004.json",
+      "expected": "4537bfa53a47ef670c096ea5e87573ad848cd6b4f3464fbfbbb41ea302371211",
+      "actual": "4537bfa53a47ef670c096ea5e87573ad848cd6b4f3464fbfbbb41ea302371211",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/CON-005.json",
+      "expected": "0b5327dc3885e5f4e49308e5164e79953d1065423074a7f0b0afd8d8df24520c",
+      "actual": "0b5327dc3885e5f4e49308e5164e79953d1065423074a7f0b0afd8d8df24520c",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/DISC-001.json",
+      "expected": "309fbe53ee677d08e50c7e1196de664f75c46921b17459a0d6b62cadce78fff1",
+      "actual": "309fbe53ee677d08e50c7e1196de664f75c46921b17459a0d6b62cadce78fff1",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/DISC-002.json",
+      "expected": "989d275f49faad33b2ef1773fd20dca7fbcae652b805c5b735031dbad428067e",
+      "actual": "989d275f49faad33b2ef1773fd20dca7fbcae652b805c5b735031dbad428067e",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/DISC-003.json",
+      "expected": "aac6b4679d2517d03e9eeed1f2ffc3897c56e5651dd3176b8bf3368e0035a599",
+      "actual": "aac6b4679d2517d03e9eeed1f2ffc3897c56e5651dd3176b8bf3368e0035a599",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/DISC-004.json",
+      "expected": "15f35fb4a699b6c8083cb901675c9c79e17a61a0dd742bb4673067b2830ea6ac",
+      "actual": "15f35fb4a699b6c8083cb901675c9c79e17a61a0dd742bb4673067b2830ea6ac",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/DISC-005.json",
+      "expected": "5e8d7c96a647be704dcffbcd955902598a627079ae8cddb20c19036fc4b5d3bc",
+      "actual": "5e8d7c96a647be704dcffbcd955902598a627079ae8cddb20c19036fc4b5d3bc",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/LIB-001.json",
+      "expected": "3c5fa560f7cd43a13e14021d5e1baa80353592e38e95e454355d4c18b6158257",
+      "actual": "3c5fa560f7cd43a13e14021d5e1baa80353592e38e95e454355d4c18b6158257",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/LIB-002.json",
+      "expected": "8a057d4f583931bdaed4e45f2b6080858e6af9eca6096f248a9d8f01e057972c",
+      "actual": "8a057d4f583931bdaed4e45f2b6080858e6af9eca6096f248a9d8f01e057972c",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/LIB-003.json",
+      "expected": "bba49850e48d1a5a9e741a8228fff30bb61471124fb395c6863d4957a7be753f",
+      "actual": "bba49850e48d1a5a9e741a8228fff30bb61471124fb395c6863d4957a7be753f",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/LIB-004.json",
+      "expected": "bbb1fb3435c71c4212ec85917bf4c7226216023ea15723b082a184c87a3cec0a",
+      "actual": "bbb1fb3435c71c4212ec85917bf4c7226216023ea15723b082a184c87a3cec0a",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/LIB-005.json",
+      "expected": "0d8565c2908a2876ea9a70331354d17ea2158bc20d7429517a5d49fb41e57387",
+      "actual": "0d8565c2908a2876ea9a70331354d17ea2158bc20d7429517a5d49fb41e57387",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/LIFE-001.json",
+      "expected": "3e800b83347c378568c5b0ff8a4a96412fa44081df9711eb325cc0d1c3ca4c2f",
+      "actual": "3e800b83347c378568c5b0ff8a4a96412fa44081df9711eb325cc0d1c3ca4c2f",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/LIFE-002.json",
+      "expected": "4a9c755d45126cef93464d2e42c74b51af63468701c701d64957910269b32526",
+      "actual": "4a9c755d45126cef93464d2e42c74b51af63468701c701d64957910269b32526",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/LIFE-003.json",
+      "expected": "1909976bc369d0434b0db10720cbb722be4cb4ca49b2781668b56cb8ee8f6ffc",
+      "actual": "1909976bc369d0434b0db10720cbb722be4cb4ca49b2781668b56cb8ee8f6ffc",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/LIFE-004.json",
+      "expected": "4ae5d60c5a862d20e64e8b7ffab7659cabe13d3289f6c682d80c171f4ad849ca",
+      "actual": "4ae5d60c5a862d20e64e8b7ffab7659cabe13d3289f6c682d80c171f4ad849ca",
+      "passed": true
+    },
+    {
+      "path": "content/puzzles/LIFE-005.json",
+      "expected": "506f62c281d0c1f09c8dfff2725fe0677fcfcf9ecda05615b10adeff4a968992",
+      "actual": "506f62c281d0c1f09c8dfff2725fe0677fcfcf9ecda05615b10adeff4a968992",
+      "passed": true
+    },
+    {
+      "path": "content/t09/CHANGED_FILES.md",
+      "expected": "bc1bad8b0b0feec47c2400714a8458a4aa66691d4e31b51b1c337be03424b4e1",
+      "actual": "bc1bad8b0b0feec47c2400714a8458a4aa66691d4e31b51b1c337be03424b4e1",
+      "passed": true
+    },
+    {
+      "path": "content/t09/FILE_MANIFEST.json",
+      "expected": "9cdd91d11c91987992365cb4c8b7a859709a96ff7445025eaa02841c6fca3d62",
+      "actual": "9cdd91d11c91987992365cb4c8b7a859709a96ff7445025eaa02841c6fca3d62",
+      "passed": true
+    },
+    {
+      "path": "content/t09/README.md",
+      "expected": "9a7c6046f3046f9f1d43d9a67f8ab031dfb7e82dbe09fddb37550df441ddd2d5",
+      "actual": "9a7c6046f3046f9f1d43d9a67f8ab031dfb7e82dbe09fddb37550df441ddd2d5",
+      "passed": true
+    },
+    {
+      "path": "content/t09/SOURCES.md",
+      "expected": "514476222cf2806b147f8183175312d7df0f520c1fecebf16720720473cc811d",
+      "actual": "514476222cf2806b147f8183175312d7df0f520c1fecebf16720720473cc811d",
+      "passed": true
+    },
+    {
+      "path": "content/t09/bundle.json",
+      "expected": "a58630def9526df81cd8e27b8fabe8bbe59e9905eb4aad1af2fb6203f9b46532",
+      "actual": "a58630def9526df81cd8e27b8fabe8bbe59e9905eb4aad1af2fb6203f9b46532",
+      "passed": true
+    },
+    {
+      "path": "content/t09/independent-expectations.json",
+      "expected": "2ae2aeab29b40b66e5d28018429544f68a967c18d517fa1902a8a32048c61dfe",
+      "actual": "2ae2aeab29b40b66e5d28018429544f68a967c18d517fa1902a8a32048c61dfe",
+      "passed": true
+    },
+    {
+      "path": "content/t09/input-manifest.json",
+      "expected": "2fe8ec62c8306472a06ee46e2cd543451caa256df281f345f8194fb193f97c19",
+      "actual": "2fe8ec62c8306472a06ee46e2cd543451caa256df281f345f8194fb193f97c19",
+      "passed": true
+    },
+    {
+      "path": "content/t09/pedagogy.json",
+      "expected": "3d01eeec7edc2f5e4883eb9cde8c6ca879d3345c5bfa86a9f8426d9f8177944c",
+      "actual": "3d01eeec7edc2f5e4883eb9cde8c6ca879d3345c5bfa86a9f8426d9f8177944c",
+      "passed": true
+    },
+    {
+      "path": "content/t09/release-pool.json",
+      "expected": "0cfbf43457fac54fa8f074c2af17ccb3a1ef1ccd3c4d93e9244763f8117a7796",
+      "actual": "0cfbf43457fac54fa8f074c2af17ccb3a1ef1ccd3c4d93e9244763f8117a7796",
+      "passed": true
+    },
+    {
+      "path": "content/tools/apply_patch.py",
+      "expected": "24990a05a4d94146df0c196b02ababaee7e177821055476f1e24a2aeffe957bf",
+      "actual": "24990a05a4d94146df0c196b02ababaee7e177821055476f1e24a2aeffe957bf",
+      "passed": true
+    },
+    {
+      "path": "content/tools/build_content.py",
+      "expected": "08cc87a4abc566e381861ab9cb7560e597f50d21e244016f54550f8daa80e9a3",
+      "actual": "08cc87a4abc566e381861ab9cb7560e597f50d21e244016f54550f8daa80e9a3",
+      "passed": true
+    },
+    {
+      "path": "content/tools/build_deck.mjs",
+      "expected": "497e3f3fc257bd2231264352492a5b4ed162c3f6eb043e6c8d3f6741ea52b06c",
+      "actual": "497e3f3fc257bd2231264352492a5b4ed162c3f6eb043e6c8d3f6741ea52b06c",
+      "passed": true
+    },
+    {
+      "path": "content/tools/grade.mjs",
+      "expected": "fe90a93387224f043d21a3b7cb75d0ab69548a18377eb6c517496cf8e6d651ad",
+      "actual": "fe90a93387224f043d21a3b7cb75d0ab69548a18377eb6c517496cf8e6d651ad",
+      "passed": true
+    },
+    {
+      "path": "content/tools/package_content.py",
+      "expected": "88c56ea6d21f6cf64745d21dc11e1be3740535ea0649bcad2e6b2842dad3fac7",
+      "actual": "88c56ea6d21f6cf64745d21dc11e1be3740535ea0649bcad2e6b2842dad3fac7",
+      "passed": true
+    },
+    {
+      "path": "content/tools/render_materials.py",
+      "expected": "e15cb705287766532cdd7568c5f66670e885edc52b607242ac0ae4b239f2d4df",
+      "actual": "e15cb705287766532cdd7568c5f66670e885edc52b607242ac0ae4b239f2d4df",
+      "passed": true
+    },
+    {
+      "path": "content/tools/test-grade.mjs",
+      "expected": "df3e41992d8a49829af8892c8ee0eebbc1cdf8c98908bdc1ad74abada43349d5",
+      "actual": "df3e41992d8a49829af8892c8ee0eebbc1cdf8c98908bdc1ad74abada43349d5",
+      "passed": true
+    },
+    {
+      "path": "content/tools/validate.mjs",
+      "expected": "27471df7d8121f29cf979dcf8a8c337745d0e1397a6b77c7ad3da9f7ada74242",
+      "actual": "27471df7d8121f29cf979dcf8a8c337745d0e1397a6b77c7ad3da9f7ada74242",
+      "passed": true
+    },
+    {
+      "path": "content/tools/validate_exports.py",
+      "expected": "e67d37fc07d0d4fdff5af2bbff3b0b9a0ea913969186e13a0123bdd41d43eff4",
+      "actual": "e67d37fc07d0d4fdff5af2bbff3b0b9a0ea913969186e13a0123bdd41d43eff4",
+      "passed": true
+    },
+    {
+      "path": "content/validation/adapter-check.log",
+      "expected": "97e86a03aed21667b3e4f0aaa47744473143ce33cae33788252888af0ff1fd66",
+      "actual": "97e86a03aed21667b3e4f0aaa47744473143ce33cae33788252888af0ff1fd66",
+      "passed": true
+    },
+    {
+      "path": "content/validation/base-capacity-report.json",
+      "expected": "0ae6f84fa471317861f07ca097ad9afb702ea2bdbdb80d0deeed9f4c34cad718",
+      "actual": "0ae6f84fa471317861f07ca097ad9afb702ea2bdbdb80d0deeed9f4c34cad718",
+      "passed": true
+    },
+    {
+      "path": "content/validation/base-check.log",
+      "expected": "968de375a0da3484086d77a466cdf924039edc745472734703b1d2ad9f11ec80",
+      "actual": "968de375a0da3484086d77a466cdf924039edc745472734703b1d2ad9f11ec80",
+      "passed": true
+    },
+    {
+      "path": "content/validation/content-check.log",
+      "expected": "60fa55bce424a1049b8efad0c466eff4d572e9c5bba7b33a381b2c3ccc8be70b",
+      "actual": "60fa55bce424a1049b8efad0c466eff4d572e9c5bba7b33a381b2c3ccc8be70b",
+      "passed": true
+    },
+    {
+      "path": "content/validation/deck-build.log",
+      "expected": "6297b24f0a6c35669ce2d3d1e73eb26c95a2e8ba61a964ebb30ec3679998e599",
+      "actual": "6297b24f0a6c35669ce2d3d1e73eb26c95a2e8ba61a964ebb30ec3679998e599",
+      "passed": true
+    },
+    {
+      "path": "content/validation/dependency-check.json",
+      "expected": "29c0d15ef6b539a2490ba0659b82196a62844337591804b9a912af36e2ceb3e4",
+      "actual": "29c0d15ef6b539a2490ba0659b82196a62844337591804b9a912af36e2ceb3e4",
+      "passed": true
+    },
+    {
+      "path": "content/validation/export-check.json",
+      "expected": "bf4195c0147a35eadd13fa2e96549b8f76ef7c6700e8833d739c551929367159",
+      "actual": "bf4195c0147a35eadd13fa2e96549b8f76ef7c6700e8833d739c551929367159",
+      "passed": true
+    },
+    {
+      "path": "content/validation/export-check.log",
+      "expected": "50deaa1195c0a615105fd5ef9dfa7c85e78e9bbdc495dd05e99b57b2d5820ffb",
+      "actual": "50deaa1195c0a615105fd5ef9dfa7c85e78e9bbdc495dd05e99b57b2d5820ffb",
+      "passed": true
+    },
+    {
+      "path": "content/validation/page-map.json",
+      "expected": "b5633e9fd42febe426b9bac5249ca42350b149ad1c6c4df165d52ae9f033814f",
+      "actual": "b5633e9fd42febe426b9bac5249ca42350b149ad1c6c4df165d52ae9f033814f",
+      "passed": true
+    },
+    {
+      "path": "content/validation/patch-check.json",
+      "expected": "135fb50e0b99da785a0a07980b469bdf4c2569e738d029f76ac7e3896a8e73e0",
+      "actual": "135fb50e0b99da785a0a07980b469bdf4c2569e738d029f76ac7e3896a8e73e0",
+      "passed": true
+    },
+    {
+      "path": "content/validation/ppt-validation.json",
+      "expected": "fe8bda53c82a6dc7a2d94e44eaf54c3bdf99de9988ab2a3330f707637cfef810",
+      "actual": "fe8bda53c82a6dc7a2d94e44eaf54c3bdf99de9988ab2a3330f707637cfef810",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/answers/page-01.png",
+      "expected": "88e8518a9e67ef96a7a67054c646bf81e06aa49139d595a42458df54a8f47341",
+      "actual": "88e8518a9e67ef96a7a67054c646bf81e06aa49139d595a42458df54a8f47341",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/answers/page-02.png",
+      "expected": "8c0ae9ca525f8e068f6ab2a9ff1a4829b372666b084f0fbdda7deba1f0bf0937",
+      "actual": "8c0ae9ca525f8e068f6ab2a9ff1a4829b372666b084f0fbdda7deba1f0bf0937",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/answers/page-03.png",
+      "expected": "a5aabd9427307dc0c2e18440cfa6d4c90ae1552c3a125145566af16df80a76b4",
+      "actual": "a5aabd9427307dc0c2e18440cfa6d4c90ae1552c3a125145566af16df80a76b4",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/answers/page-04.png",
+      "expected": "b35d984cf0793ae396b0216d611f8bf07209025aa342db9523307722f4964d4a",
+      "actual": "b35d984cf0793ae396b0216d611f8bf07209025aa342db9523307722f4964d4a",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/answers/page-05.png",
+      "expected": "010ac6dbe66641ed00e0b176470b55b6a36a29a95c49ddb4b4d7be9a2d4909f8",
+      "actual": "010ac6dbe66641ed00e0b176470b55b6a36a29a95c49ddb4b4d7be9a2d4909f8",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/answers/page-06.png",
+      "expected": "2b0bbda605226736c41efb383d1799431f5aacc47ba6c0bbfb6d044a2190ea51",
+      "actual": "2b0bbda605226736c41efb383d1799431f5aacc47ba6c0bbfb6d044a2190ea51",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/answers/page-07.png",
+      "expected": "fdc545668ccb3bc902308dc5ec1972a414494f847927e40de8caa3db7cf64cad",
+      "actual": "fdc545668ccb3bc902308dc5ec1972a414494f847927e40de8caa3db7cf64cad",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/answers/page-08.png",
+      "expected": "6a3a18c948bcb4777bedbfc0490e73cad9a9d6798a627f22c8a467d86ec62e05",
+      "actual": "6a3a18c948bcb4777bedbfc0490e73cad9a9d6798a627f22c8a467d86ec62e05",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/answers/page-09.png",
+      "expected": "c28c319753b9f1066a61d4f4e38e312ab47319928327590a5173b60c2644be69",
+      "actual": "c28c319753b9f1066a61d4f4e38e312ab47319928327590a5173b60c2644be69",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/answers/page-10.png",
+      "expected": "9c381bf402e8a57b124c16cdc8bd40f21fb595d7f523103bbb1c91587bf0bde9",
+      "actual": "9c381bf402e8a57b124c16cdc8bd40f21fb595d7f523103bbb1c91587bf0bde9",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/answers/page-11.png",
+      "expected": "9b803e5065f8beaa7624d6c98babf1bf0d8f3efd3c4c8b38234a0816970b279c",
+      "actual": "9b803e5065f8beaa7624d6c98babf1bf0d8f3efd3c4c8b38234a0816970b279c",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/answers/page-12.png",
+      "expected": "1d44bc99caf616f5b2a56eeb987d609b7cd49c57406f4709bb94e963e8d6e76b",
+      "actual": "1d44bc99caf616f5b2a56eeb987d609b7cd49c57406f4709bb94e963e8d6e76b",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/answers/page-13.png",
+      "expected": "ed88fa88d8f2c2a953c480d0a7c9a72120c7b932fcecd1df5694a8c06e111fca",
+      "actual": "ed88fa88d8f2c2a953c480d0a7c9a72120c7b932fcecd1df5694a8c06e111fca",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/answers/page-14.png",
+      "expected": "ae1fa68d87a8f75348889dc033ab107e218e8840d4858ae8dafe27d049959e62",
+      "actual": "ae1fa68d87a8f75348889dc033ab107e218e8840d4858ae8dafe27d049959e62",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/answers/page-15.png",
+      "expected": "9aa1e2e38b2a524e9d11b8354d0778557f91fadc53a51df5def92740747ae53e",
+      "actual": "9aa1e2e38b2a524e9d11b8354d0778557f91fadc53a51df5def92740747ae53e",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/answers/page-16.png",
+      "expected": "48c71f294ad6948caa66937d0619f4ab8be7d3c745b72874a60ee3f32dfc35bf",
+      "actual": "48c71f294ad6948caa66937d0619f4ab8be7d3c745b72874a60ee3f32dfc35bf",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/answers/page-17.png",
+      "expected": "85641a25e0c979f77e35e28d23f87ffec88598f12ba372f6a85f6f9f62920cdb",
+      "actual": "85641a25e0c979f77e35e28d23f87ffec88598f12ba372f6a85f6f9f62920cdb",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/answers/page-18.png",
+      "expected": "5135ee2bcc7d2908cb4a0a82cfe81f4c89b0a24e8632e87c5871bf78ea67c66d",
+      "actual": "5135ee2bcc7d2908cb4a0a82cfe81f4c89b0a24e8632e87c5871bf78ea67c66d",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/answers/page-19.png",
+      "expected": "80a9b1b79fc15fa1fb6b932ad954c778615cd55b249ac1ecaed4c74cba29be69",
+      "actual": "80a9b1b79fc15fa1fb6b932ad954c778615cd55b249ac1ecaed4c74cba29be69",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/answers/page-20.png",
+      "expected": "b5b276cc97d5c8cf5692d44b21ca6722679c90bbde9576d918c407a15e54df25",
+      "actual": "b5b276cc97d5c8cf5692d44b21ca6722679c90bbde9576d918c407a15e54df25",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/answers/page-21.png",
+      "expected": "c5c2fa64bd3d582cb9d31f5854e82cc7a9e0e38a47f3d28409a927a1ccc858c1",
+      "actual": "c5c2fa64bd3d582cb9d31f5854e82cc7a9e0e38a47f3d28409a927a1ccc858c1",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/answers/page-22.png",
+      "expected": "8364382b479100c42ac5858356d13dcb8d92686a077865699f3c8e9cec38f763",
+      "actual": "8364382b479100c42ac5858356d13dcb8d92686a077865699f3c8e9cec38f763",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/answers/page-23.png",
+      "expected": "4e72a65fbd84567000b3000a861ea16ff35629a67612a5acf053acfb72490964",
+      "actual": "4e72a65fbd84567000b3000a861ea16ff35629a67612a5acf053acfb72490964",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/answers/page-24.png",
+      "expected": "129513beb93864a3ec07f8c3449fa1c177b9adc57274b06448f04dc486a39af5",
+      "actual": "129513beb93864a3ec07f8c3449fa1c177b9adc57274b06448f04dc486a39af5",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/answers/page-25.png",
+      "expected": "1002ba6b356f4372e40d23e26aa460c174b2ad5fd6a0245b703f371a341b1100",
+      "actual": "1002ba6b356f4372e40d23e26aa460c174b2ad5fd6a0245b703f371a341b1100",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/answers/page-26.png",
+      "expected": "f8739597c818d58b1ebb29ae37217a37432b7e6d049391a180b92415fda270d7",
+      "actual": "f8739597c818d58b1ebb29ae37217a37432b7e6d049391a180b92415fda270d7",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/answers/page-27.png",
+      "expected": "cba858a6134242d51ec952c8cff64af5006ddca3ed856096610c270a3c1d62ac",
+      "actual": "cba858a6134242d51ec952c8cff64af5006ddca3ed856096610c270a3c1d62ac",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/answers/page-28.png",
+      "expected": "883a37cfad5ed6e2e050b17940043d22db02acee12bf736bbb1d827544046793",
+      "actual": "883a37cfad5ed6e2e050b17940043d22db02acee12bf736bbb1d827544046793",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/answers/page-29.png",
+      "expected": "1438c6a0fe52127de021f7610c073b7df8e83381c78bdf848d5c40270360f21a",
+      "actual": "1438c6a0fe52127de021f7610c073b7df8e83381c78bdf848d5c40270360f21a",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/answers/page-30.png",
+      "expected": "eaf822e67a02137397363cf0acfb3ce4c98db5e1d0a684bb51abf3d39f7a75d3",
+      "actual": "eaf822e67a02137397363cf0acfb3ce4c98db5e1d0a684bb51abf3d39f7a75d3",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/answers/page-31.png",
+      "expected": "ff132c2434c180525793db1eac287691b20423480d912d0b342cc34f5228b103",
+      "actual": "ff132c2434c180525793db1eac287691b20423480d912d0b342cc34f5228b103",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/answers/page-32.png",
+      "expected": "64ce49304886ee78dc00d881d467a2708d7ed029abb32c18227c344f91dccf0b",
+      "actual": "64ce49304886ee78dc00d881d467a2708d7ed029abb32c18227c344f91dccf0b",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/answers/page-33.png",
+      "expected": "73e23424a4c58a52eea668642a1a05aca74552e52efd4693179ae523308e409e",
+      "actual": "73e23424a4c58a52eea668642a1a05aca74552e52efd4693179ae523308e409e",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/answers/page-34.png",
+      "expected": "2800e96c497cc07b7aaf48308da6aecea2231e338684e286369652cf65a5baf9",
+      "actual": "2800e96c497cc07b7aaf48308da6aecea2231e338684e286369652cf65a5baf9",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/answers/page-35.png",
+      "expected": "cfda4119dfe6e3b82bbf2fdcfc3cfbbb53eccab96142fecae81a6022f5b917e9",
+      "actual": "cfda4119dfe6e3b82bbf2fdcfc3cfbbb53eccab96142fecae81a6022f5b917e9",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/answers/page-36.png",
+      "expected": "9ce208290021f8dafd35d90af002485bdf12e6cf6622b951f6938d38352289a7",
+      "actual": "9ce208290021f8dafd35d90af002485bdf12e6cf6622b951f6938d38352289a7",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/cards/page-01.png",
+      "expected": "65dfddc54fee9203cf8fc56d661b5b46fca99ae1e92ed615bdb94f0ca859e495",
+      "actual": "65dfddc54fee9203cf8fc56d661b5b46fca99ae1e92ed615bdb94f0ca859e495",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/cards/page-02.png",
+      "expected": "30c3588fa3616ce4b35b5ec57c8d1bb1f912140f3af13ecc96dc01b6a52e06ea",
+      "actual": "30c3588fa3616ce4b35b5ec57c8d1bb1f912140f3af13ecc96dc01b6a52e06ea",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/cards/page-03.png",
+      "expected": "389c6af40d12db2f934783855171c7439ef0050d09faa067bfdb20aed184b46c",
+      "actual": "389c6af40d12db2f934783855171c7439ef0050d09faa067bfdb20aed184b46c",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/cards/page-04.png",
+      "expected": "39afc06189bdb9042b725b4c50645c4d5dd3cb7b8d482da349c86101fe0667a8",
+      "actual": "39afc06189bdb9042b725b4c50645c4d5dd3cb7b8d482da349c86101fe0667a8",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/cards/page-05.png",
+      "expected": "e2071e663e9aefe01ecfc0c25e4950044620dd09245b5802b931791f7e692894",
+      "actual": "e2071e663e9aefe01ecfc0c25e4950044620dd09245b5802b931791f7e692894",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/cards/page-06.png",
+      "expected": "f2847055b3c9172eef6f4fcd6447420b50c7284735bf225ff73e23a13eaffd83",
+      "actual": "f2847055b3c9172eef6f4fcd6447420b50c7284735bf225ff73e23a13eaffd83",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/cards/page-07.png",
+      "expected": "d6a2e340bb3746090f1b409bf73fa4219528ca64542ac812b802eace2b0f4643",
+      "actual": "d6a2e340bb3746090f1b409bf73fa4219528ca64542ac812b802eace2b0f4643",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/cards/page-08.png",
+      "expected": "68f3162f8551723c078c678a1b45f838cb3ceec88c2add812e4fd44ec9f142af",
+      "actual": "68f3162f8551723c078c678a1b45f838cb3ceec88c2add812e4fd44ec9f142af",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/cards/page-09.png",
+      "expected": "6ec0e5716b2ea5c9b4ae98232a267e16de7a9fcfa6beeffadd9eed6c91e5f5e7",
+      "actual": "6ec0e5716b2ea5c9b4ae98232a267e16de7a9fcfa6beeffadd9eed6c91e5f5e7",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/cards/page-10.png",
+      "expected": "b62e027a2efd4c27100f942723438c5f26afa187f291ce55e07b10bbe52de776",
+      "actual": "b62e027a2efd4c27100f942723438c5f26afa187f291ce55e07b10bbe52de776",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/cards/page-11.png",
+      "expected": "ba686ad50a89a49cb286d587c08ceff788ceedc8658674d1551a76a67545e677",
+      "actual": "ba686ad50a89a49cb286d587c08ceff788ceedc8658674d1551a76a67545e677",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/cards/page-12.png",
+      "expected": "c81af90b6bdc78c3c6c34fcd68f669514782bf0508c704e171c55dd163bf1049",
+      "actual": "c81af90b6bdc78c3c6c34fcd68f669514782bf0508c704e171c55dd163bf1049",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/cards/page-13.png",
+      "expected": "15c721c07d0ddd7c98d2241651de5cb5b5a7b1cdf8f88bada26e15ef245a8524",
+      "actual": "15c721c07d0ddd7c98d2241651de5cb5b5a7b1cdf8f88bada26e15ef245a8524",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/cards/page-14.png",
+      "expected": "a392f064cb4013e899b2e5ab65bb5fa0f105631850ed7cd5423dea2646c927e9",
+      "actual": "a392f064cb4013e899b2e5ab65bb5fa0f105631850ed7cd5423dea2646c927e9",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/cards/page-15.png",
+      "expected": "9953d0c12d304098b7fc23d913b7dc249d06d7bf7eaa1cba5e00be2bfea5e0ad",
+      "actual": "9953d0c12d304098b7fc23d913b7dc249d06d7bf7eaa1cba5e00be2bfea5e0ad",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/cards/page-16.png",
+      "expected": "3fb9736306c3c300f7705859fe519e2a695c23bacc45b672a32aa4f621cd54fb",
+      "actual": "3fb9736306c3c300f7705859fe519e2a695c23bacc45b672a32aa4f621cd54fb",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/cards/page-17.png",
+      "expected": "49a1f700b5a6fa2a9b277fe6ebb9730ad1eb852a8bf72f0c5fd3b600481c591a",
+      "actual": "49a1f700b5a6fa2a9b277fe6ebb9730ad1eb852a8bf72f0c5fd3b600481c591a",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/cards/page-18.png",
+      "expected": "d21d6e44e2cd2c4a69d441b4a59efceaee0e1665d50fad0f536137f70470ef2b",
+      "actual": "d21d6e44e2cd2c4a69d441b4a59efceaee0e1665d50fad0f536137f70470ef2b",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-1.png",
+      "expected": "764a45a572c51060210f2393c8a1011134bc4b7b64562b0cb661f3833535e25c",
+      "actual": "764a45a572c51060210f2393c8a1011134bc4b7b64562b0cb661f3833535e25c",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-10.png",
+      "expected": "4fc8977fa5b8eb86702d38ecb59d56b327c9a397c9aae202b50359796e1309cf",
+      "actual": "4fc8977fa5b8eb86702d38ecb59d56b327c9a397c9aae202b50359796e1309cf",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-11.png",
+      "expected": "c01b305e43e57cfdbec9a11b47179ef8281a76511a40c61f75a0984179e83833",
+      "actual": "c01b305e43e57cfdbec9a11b47179ef8281a76511a40c61f75a0984179e83833",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-12.png",
+      "expected": "4feadc0572df7b5ec03ecda51aa83cccc659307fa43bcf9109b5d00c55d943f8",
+      "actual": "4feadc0572df7b5ec03ecda51aa83cccc659307fa43bcf9109b5d00c55d943f8",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-13.png",
+      "expected": "22a5d7bcd44415b674b9ff281f542d2e967796f1f26badf25676fcd43a03e06e",
+      "actual": "22a5d7bcd44415b674b9ff281f542d2e967796f1f26badf25676fcd43a03e06e",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-14.png",
+      "expected": "b44b3c0d3ffe7127eb5b469d37a860c12cbee81d7809843917f05b6b060d3771",
+      "actual": "b44b3c0d3ffe7127eb5b469d37a860c12cbee81d7809843917f05b6b060d3771",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-15.png",
+      "expected": "6f09b255e8287fec5fb138d3f808348d13488d2385e2e6230287ba612db41db4",
+      "actual": "6f09b255e8287fec5fb138d3f808348d13488d2385e2e6230287ba612db41db4",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-16.png",
+      "expected": "6fadd7322510009acafe0178ba5e0ddc5f82aabf35eb812f2ead1bfdc1beafd7",
+      "actual": "6fadd7322510009acafe0178ba5e0ddc5f82aabf35eb812f2ead1bfdc1beafd7",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-17.png",
+      "expected": "0059a0374b5205b7af38b2cdea8cb4c7c8b3ed9330bf8c4ed8e31b4e1690c290",
+      "actual": "0059a0374b5205b7af38b2cdea8cb4c7c8b3ed9330bf8c4ed8e31b4e1690c290",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-18.png",
+      "expected": "00dfd2d144ef354c36a9d75eacbab58ab014e3805aa37c34e17cfbfc016abe95",
+      "actual": "00dfd2d144ef354c36a9d75eacbab58ab014e3805aa37c34e17cfbfc016abe95",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-19.png",
+      "expected": "b48b0ceddaf87b57c19bb97b08f50ace0b58f3dd42c3d5487ff2cb5b494f9e6d",
+      "actual": "b48b0ceddaf87b57c19bb97b08f50ace0b58f3dd42c3d5487ff2cb5b494f9e6d",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-2.png",
+      "expected": "e4afb89ced4ad4d7d9ad806a22868a102f7db2a26ba9c2acd92413ef6aa2ad65",
+      "actual": "e4afb89ced4ad4d7d9ad806a22868a102f7db2a26ba9c2acd92413ef6aa2ad65",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-20.png",
+      "expected": "0976665946fdc297ac2f7de1fda9ad6e8c1f87722ae56b9d32e0f69d94deedd8",
+      "actual": "0976665946fdc297ac2f7de1fda9ad6e8c1f87722ae56b9d32e0f69d94deedd8",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-21.png",
+      "expected": "7769c11e9681e7b924254b7b138dc7b331d5b3ddf581ae5a01bbcb834dc66004",
+      "actual": "7769c11e9681e7b924254b7b138dc7b331d5b3ddf581ae5a01bbcb834dc66004",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-22.png",
+      "expected": "a550c902feb8ec3f053eab966f11d302962317d6afdddf79676e18b525ce1b9f",
+      "actual": "a550c902feb8ec3f053eab966f11d302962317d6afdddf79676e18b525ce1b9f",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-23.png",
+      "expected": "b78a45250e2f2c2925049a0680b6794b6c87f58cc672e33b7b1a153868aeb0e2",
+      "actual": "b78a45250e2f2c2925049a0680b6794b6c87f58cc672e33b7b1a153868aeb0e2",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-24.png",
+      "expected": "4bdf75d29797ea135813ba81cc755789dd925081cc6a409efd554da854c68950",
+      "actual": "4bdf75d29797ea135813ba81cc755789dd925081cc6a409efd554da854c68950",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-25.png",
+      "expected": "1f1df845db7ed8fbe712496193536238877586629ca7ef60391fec5993814fca",
+      "actual": "1f1df845db7ed8fbe712496193536238877586629ca7ef60391fec5993814fca",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-26.png",
+      "expected": "7b884183418b03740fac5f84963b224896b95318d26d599447e5e2bc1eddf04a",
+      "actual": "7b884183418b03740fac5f84963b224896b95318d26d599447e5e2bc1eddf04a",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-27.png",
+      "expected": "30491364d6aee1d52b1fa2464f473bc291f21129d43e405b6d01e3855a4995cf",
+      "actual": "30491364d6aee1d52b1fa2464f473bc291f21129d43e405b6d01e3855a4995cf",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-28.png",
+      "expected": "793f6d44fecad918fc45c128fe32e0037b140f93959258df90c3781b54eb1b93",
+      "actual": "793f6d44fecad918fc45c128fe32e0037b140f93959258df90c3781b54eb1b93",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-29.png",
+      "expected": "fe53183295968bac27f43c12c83d18c4308ef9884129d83d29d3277388539e4c",
+      "actual": "fe53183295968bac27f43c12c83d18c4308ef9884129d83d29d3277388539e4c",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-3.png",
+      "expected": "ef16f927753abd6df1fe34810d440504224d878358e7fb792391688115d9c6e2",
+      "actual": "ef16f927753abd6df1fe34810d440504224d878358e7fb792391688115d9c6e2",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-30.png",
+      "expected": "262fbec978b68db732e4e4d2eab4b91da8a7febbd3eef82eee7b94f6203e489f",
+      "actual": "262fbec978b68db732e4e4d2eab4b91da8a7febbd3eef82eee7b94f6203e489f",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-31.png",
+      "expected": "40fb06b7add7b46403257951f3cc1a8c1d66637ceb320a5428f619ed6fc73f8a",
+      "actual": "40fb06b7add7b46403257951f3cc1a8c1d66637ceb320a5428f619ed6fc73f8a",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-32.png",
+      "expected": "ba24a925c802e921c3188dc16da8bec66eeebae5e61c1732eed395e345189901",
+      "actual": "ba24a925c802e921c3188dc16da8bec66eeebae5e61c1732eed395e345189901",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-33.png",
+      "expected": "9cc4d8e59416a304e783feb7f8214740c1f148fa9753cb71cf6297491dd46cc8",
+      "actual": "9cc4d8e59416a304e783feb7f8214740c1f148fa9753cb71cf6297491dd46cc8",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-34.png",
+      "expected": "2672c383e602083226456b5815447585a908cf3883ac93c2d93ad45d17899477",
+      "actual": "2672c383e602083226456b5815447585a908cf3883ac93c2d93ad45d17899477",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-35.png",
+      "expected": "39d260cab20c50ddc754f9eaf9ffd09b45edc768bd80f878ec35aaad923471fe",
+      "actual": "39d260cab20c50ddc754f9eaf9ffd09b45edc768bd80f878ec35aaad923471fe",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-36.png",
+      "expected": "73477f0c035d6a0ba7f0269aedfca09dc1cbb6fca92410687c305aefc4d479d6",
+      "actual": "73477f0c035d6a0ba7f0269aedfca09dc1cbb6fca92410687c305aefc4d479d6",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-4.png",
+      "expected": "a18c3ec7eb7f00261bd1b480063a9ed7403d2599c282f88bb9bf1d9d57a95675",
+      "actual": "a18c3ec7eb7f00261bd1b480063a9ed7403d2599c282f88bb9bf1d9d57a95675",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-5.png",
+      "expected": "5f0606ecb974b7e5566306759a037ec2242e419afb817e6999d6c733734b7f7e",
+      "actual": "5f0606ecb974b7e5566306759a037ec2242e419afb817e6999d6c733734b7f7e",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-6.png",
+      "expected": "a1696f10c050f823cd549f8a636ded16176351d08b416eeef2220bfff9443612",
+      "actual": "a1696f10c050f823cd549f8a636ded16176351d08b416eeef2220bfff9443612",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-7.png",
+      "expected": "6f8baa452f98473836d274aec56599f58c8e4dea69dba3c6463a1e40c4fb66dd",
+      "actual": "6f8baa452f98473836d274aec56599f58c8e4dea69dba3c6463a1e40c4fb66dd",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-8.png",
+      "expected": "920568baec71f75894b8d9d10544235d315d98595d475b28a99bd606f90e889c",
+      "actual": "920568baec71f75894b8d9d10544235d315d98595d475b28a99bd606f90e889c",
+      "passed": true
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-9.png",
+      "expected": "37dbcb2e4722e03e99105b11b82406047b08ac53c8c197a3f56ae1c69ab32843",
+      "actual": "37dbcb2e4722e03e99105b11b82406047b08ac53c8c197a3f56ae1c69ab32843",
+      "passed": true
+    },
+    {
+      "path": "content/validation/results.json",
+      "expected": "8a93ec1394e6280b2b0e8a0503a117fcfd60d10fd5725d247c849278d57c3efe",
+      "actual": "8a93ec1394e6280b2b0e8a0503a117fcfd60d10fd5725d247c849278d57c3efe",
+      "passed": true
+    },
+    {
+      "path": "content/validation/slide-render.log",
+      "expected": "8c3d72ae47c6f1eab24f1ff2eb00769e63e7405b4823e43311f636e1385147e2",
+      "actual": "8c3d72ae47c6f1eab24f1ff2eb00769e63e7405b4823e43311f636e1385147e2",
+      "passed": true
+    },
+    {
+      "path": "content/validation/visual-review.json",
+      "expected": "22af1563f7373c8da7830b1b4874d15a27f0c2052f0cf96b3a9e1eb72d855b66",
+      "actual": "22af1563f7373c8da7830b1b4874d15a27f0c2052f0cf96b3a9e1eb72d855b66",
+      "passed": true
+    },
+    {
+      "path": "dist-engine/README.md",
+      "expected": "68b7d3fcbd431814e07e2c1e11c6a3615b9c4a11b5f57a96341574d80fd5f85c",
+      "actual": "68b7d3fcbd431814e07e2c1e11c6a3615b9c4a11b5f57a96341574d80fd5f85c",
+      "passed": true
+    },
+    {
+      "path": "dist-engine/THIRD_PARTY_NOTICES.md",
+      "expected": "3f9d7b0e2fbdf81510013682960b1dc9a2212a5a7ab65aef586ff46ca0656024",
+      "actual": "3f9d7b0e2fbdf81510013682960b1dc9a2212a5a7ab65aef586ff46ca0656024",
+      "passed": true
+    },
+    {
+      "path": "dist-engine/go-club-rules.mjs",
+      "expected": "028ff1a53af96bc8aa44b2b603ba80ada31b8517c89aeff11088db6683e108b7",
+      "actual": "028ff1a53af96bc8aa44b2b603ba80ada31b8517c89aeff11088db6683e108b7",
+      "passed": true
+    },
+    {
+      "path": "dist-engine/go-club-rules.mjs.map",
+      "expected": "a1f1b95bba44e0a3907c07361f577910574c45ad27f58d312b4cb2afa321682d",
+      "actual": "a1f1b95bba44e0a3907c07361f577910574c45ad27f58d312b4cb2afa321682d",
+      "passed": true
+    },
+    {
+      "path": "dist-engine/package.json",
+      "expected": "1dd0a559e768124032c5ae2127e99175181ba3d37c13d0129133aadc4f345dc1",
+      "actual": "1dd0a559e768124032c5ae2127e99175181ba3d37c13d0129133aadc4f345dc1",
+      "passed": true
+    },
+    {
+      "path": "dist-engine/types/constants.d.ts",
+      "expected": "d0b4dce317f1c5e484c5a464ee15876e5556c67e95e8600203b99b7132344936",
+      "actual": "d0b4dce317f1c5e484c5a464ee15876e5556c67e95e8600203b99b7132344936",
+      "passed": true
+    },
+    {
+      "path": "dist-engine/types/content.generated.d.ts",
+      "expected": "051a94eda12a064248aac313a97a90c93336a934a13cf39583314c03b68b23b1",
+      "actual": "051a94eda12a064248aac313a97a90c93336a934a13cf39583314c03b68b23b1",
+      "passed": true
+    },
+    {
+      "path": "dist-engine/types/coordinates.d.ts",
+      "expected": "50ab441d0732ee9ef1f2cc4809f1486a9639475a273f06f041735c43408bd495",
+      "actual": "50ab441d0732ee9ef1f2cc4809f1486a9639475a273f06f041735c43408bd495",
+      "passed": true
+    },
+    {
+      "path": "dist-engine/types/persistence.d.ts",
+      "expected": "6f91e61e97f45dfdd3152f30faeea21be7152fbb25ff2cc9bcb382a5cc42f7bc",
+      "actual": "6f91e61e97f45dfdd3152f30faeea21be7152fbb25ff2cc9bcb382a5cc42f7bc",
+      "passed": true
+    },
+    {
+      "path": "dist-engine/types/rules/contract.d.ts",
+      "expected": "1fd7cfe9e43901052d522a4bef06db1b1d68347baa5d331223cc977d0e9ad6e6",
+      "actual": "1fd7cfe9e43901052d522a4bef06db1b1d68347baa5d331223cc977d0e9ad6e6",
+      "passed": true
+    },
+    {
+      "path": "dist-engine/types/rules/engine.d.ts",
+      "expected": "808d34b6193eb6a446e7d1c98ef0deaf8426dea5e44e4fe7bb29b75e2d690391",
+      "actual": "808d34b6193eb6a446e7d1c98ef0deaf8426dea5e44e4fe7bb29b75e2d690391",
+      "passed": true
+    },
+    {
+      "path": "dist-engine/types/rules/errors.zh.d.ts",
+      "expected": "b9cc4850f058dc79ed9ecee0513e26a489344844fecddfcf52079ee5c5b34283",
+      "actual": "b9cc4850f058dc79ed9ecee0513e26a489344844fecddfcf52079ee5c5b34283",
+      "passed": true
+    },
+    {
+      "path": "dist-engine/types/rules/game-store.d.ts",
+      "expected": "a39ef61585126301e406f1d100d68812719fd09782c5123223ff390236059924",
+      "actual": "a39ef61585126301e406f1d100d68812719fd09782c5123223ff390236059924",
+      "passed": true
+    },
+    {
+      "path": "dist-engine/types/rules/index.d.ts",
+      "expected": "8dfa1926261e6607c99e257458e5b431f96b6a062a2b9d20a691ac0fe7c15c0e",
+      "actual": "8dfa1926261e6607c99e257458e5b431f96b6a062a2b9d20a691ac0fe7c15c0e",
+      "passed": true
+    },
+    {
+      "path": "dist-engine/types/rules/internal.d.ts",
+      "expected": "d5a51b937b2c5c2f62ce09c366c119b04a89cc62c9a96e6a1233d802ff554c5a",
+      "actual": "d5a51b937b2c5c2f62ce09c366c119b04a89cc62c9a96e6a1233d802ff554c5a",
+      "passed": true
+    },
+    {
+      "path": "dist-engine/types/rules/placement.d.ts",
+      "expected": "5e725a641c564b90bd429f4a441a7a96dbb57c0d02221802df111d4077dfb5e4",
+      "actual": "5e725a641c564b90bd429f4a441a7a96dbb57c0d02221802df111d4077dfb5e4",
+      "passed": true
+    },
+    {
+      "path": "dist-engine/types/rules/scoring.d.ts",
+      "expected": "2803eb18376c1a585187f47a384974a0067d64b875c51ec24c3cecb7e457934d",
+      "actual": "2803eb18376c1a585187f47a384974a0067d64b875c51ec24c3cecb7e457934d",
+      "passed": true
+    },
+    {
+      "path": "dist-engine/types/rules/topology.d.ts",
+      "expected": "9ef7e99ed71654949306a2836b15ad9569c3cc58d6b389e879d0b6245d6a225c",
+      "actual": "9ef7e99ed71654949306a2836b15ad9569c3cc58d6b389e879d0b6245d6a225c",
+      "passed": true
+    },
+    {
+      "path": "dist-engine/types/validation.d.ts",
+      "expected": "8e4e594e29815ac809c5fb698c2d9427d9e4462c9f9199f63e2568b9f1e32119",
+      "actual": "8e4e594e29815ac809c5fb698c2d9427d9e4462c9f9199f63e2568b9f1e32119",
+      "passed": true
+    },
+    {
+      "path": "docs/CONTENT_SCHEMA.md",
+      "expected": "a5258059ad808e0aed231bf27134878772a70060bad22a0fe037aa51a8aaa184",
+      "actual": "a5258059ad808e0aed231bf27134878772a70060bad22a0fe037aa51a8aaa184",
+      "passed": true
+    },
+    {
+      "path": "docs/CURRICULUM.md",
+      "expected": "56b4a55449f3bd027d5864f2121252a53b9a97561204679aa2499ba884f1acbb",
+      "actual": "56b4a55449f3bd027d5864f2121252a53b9a97561204679aa2499ba884f1acbb",
+      "passed": true
+    },
+    {
+      "path": "docs/INTERFACES.md",
+      "expected": "0ed36cf1d6f244fc9ac60d2936f67c6ee016b0982d94093d8e315388ce90b112",
+      "actual": "0ed36cf1d6f244fc9ac60d2936f67c6ee016b0982d94093d8e315388ce90b112",
+      "passed": true
+    },
+    {
+      "path": "docs/PROJECT_CONTRACT.md",
+      "expected": "837ac018d15f1c757ef729911bce321fadc459d0cac25552514c1796a6fe8425",
+      "actual": "837ac018d15f1c757ef729911bce321fadc459d0cac25552514c1796a6fe8425",
+      "passed": true
+    },
+    {
+      "path": "docs/RULES.md",
+      "expected": "f90c9adafcbab75f6c64acd789dd02462d2cfb14665374b2ba020f8c1f6fa965",
+      "actual": "f90c9adafcbab75f6c64acd789dd02462d2cfb14665374b2ba020f8c1f6fa965",
+      "passed": true
+    },
+    {
+      "path": "docs/TERMINOLOGY.md",
+      "expected": "0b53f3cbfc21765db29621e0c87e2d1abd08f54b96181bbc8c1e7522cb9e3d54",
+      "actual": "0b53f3cbfc21765db29621e0c87e2d1abd08f54b96181bbc8c1e7522cb9e3d54",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/ACCEPTANCE.md",
+      "expected": "52cc03e06ac3e047f93dcf8b3d271d8f6ab2e14213e42bd3719cdefbf12a23ca",
+      "actual": "52cc03e06ac3e047f93dcf8b3d271d8f6ab2e14213e42bd3719cdefbf12a23ca",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/CONFLICTS.md",
+      "expected": "5e604770da21d5a50c185e383a022c4138cc7c17fd882c06bfbb23e1ddf52154",
+      "actual": "5e604770da21d5a50c185e383a022c4138cc7c17fd882c06bfbb23e1ddf52154",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/CONSUMER_README.md",
+      "expected": "fff93be354077b5f0445e2e6c8b1dbd93f83d538624401929b9472df463b69f2",
+      "actual": "fff93be354077b5f0445e2e6c8b1dbd93f83d538624401929b9472df463b69f2",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/CONTENT_REVIEW.md",
+      "expected": "c806ca0957132614eb522792c0be506216ca5f9d60d42b001355a6aa487ab82b",
+      "actual": "c806ca0957132614eb522792c0be506216ca5f9d60d42b001355a6aa487ab82b",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/FONTS_AND_STYLE.md",
+      "expected": "b314a8668339892add64048447bfc891502d76096dda6275335295bd8ee024c5",
+      "actual": "b314a8668339892add64048447bfc891502d76096dda6275335295bd8ee024c5",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/browser-check.log",
+      "expected": "df778a22b1259d3800fbf91311e77b43cd0e245de467745b621d39920d5f0e17",
+      "actual": "df778a22b1259d3800fbf91311e77b43cd0e245de467745b621d39920d5f0e17",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/browser-sandbox-attempt.log",
+      "expected": "860dd7b7f016be43633a51bc10d6f7bfd14215f2f3d414829d0cc74adc10e09c",
+      "actual": "860dd7b7f016be43633a51bc10d6f7bfd14215f2f3d414829d0cc74adc10e09c",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/check-01.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/check-02.log",
+      "expected": "8a4c5dd8ff3a0f603b5ade0568b22e1dd3c182990cbac285987c08d3f83d6695",
+      "actual": "8a4c5dd8ff3a0f603b5ade0568b22e1dd3c182990cbac285987c08d3f83d6695",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/check-03.log",
+      "expected": "12fcde54336cce39a9855a158e5651e8316dea3a8ae7349f936e0d5320559df1",
+      "actual": "12fcde54336cce39a9855a158e5651e8316dea3a8ae7349f936e0d5320559df1",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/check-04.log",
+      "expected": "60fa55bce424a1049b8efad0c466eff4d572e9c5bba7b33a381b2c3ccc8be70b",
+      "actual": "60fa55bce424a1049b8efad0c466eff4d572e9c5bba7b33a381b2c3ccc8be70b",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/check-05.log",
+      "expected": "97e86a03aed21667b3e4f0aaa47744473143ce33cae33788252888af0ff1fd66",
+      "actual": "97e86a03aed21667b3e4f0aaa47744473143ce33cae33788252888af0ff1fd66",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/check-06.log",
+      "expected": "d1a9784fda8ecaaf858d4fed597ba7e88a602b7c2c518581fc9de90f2c5d200e",
+      "actual": "d1a9784fda8ecaaf858d4fed597ba7e88a602b7c2c518581fc9de90f2c5d200e",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/check-07.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/check-08.log",
+      "expected": "df314a442ba786207f1251d1139fe847f8ac7b244b24a2b8c432742f4d38f42b",
+      "actual": "df314a442ba786207f1251d1139fe847f8ac7b244b24a2b8c432742f4d38f42b",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/check-09.log",
+      "expected": "5d1d28eb85235e1ae8e99490ce8a2b2d3c00260a1053527a535f5a9718165246",
+      "actual": "5d1d28eb85235e1ae8e99490ce8a2b2d3c00260a1053527a535f5a9718165246",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/check-10.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/check-11.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/check-12.log",
+      "expected": "db1ed4f8edc77bd34e8209190a62795bc08f24947908f7c8ffd9b44ba16370ee",
+      "actual": "db1ed4f8edc77bd34e8209190a62795bc08f24947908f7c8ffd9b44ba16370ee",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/check-13.log",
+      "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/check-14.log",
+      "expected": "4e4b5c35a49614d90206083e7ab5793e8d675204890b2af223225f49c363a107",
+      "actual": "4e4b5c35a49614d90206083e7ab5793e8d675204890b2af223225f49c363a107",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/checks.json",
+      "expected": "43a0d5180f12dcda34f4a33e91c24dd7b2850b9f0edc40081135b5eec220ebde",
+      "actual": "43a0d5180f12dcda34f4a33e91c24dd7b2850b9f0edc40081135b5eec220ebde",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/content-audit.json",
+      "expected": "0f68314959e4ae8e13c9fecf9b60f2c0b379e0e5925f2f5a65b5ca5922be95a7",
+      "actual": "0f68314959e4ae8e13c9fecf9b60f2c0b379e0e5925f2f5a65b5ca5922be95a7",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/content-audit.log",
+      "expected": "83144ab828551c70c9e6f79f5f2063571e7fffa1220d7389578816b9ee3fb752",
+      "actual": "83144ab828551c70c9e6f79f5f2063571e7fffa1220d7389578816b9ee3fb752",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/export-check.log",
+      "expected": "50deaa1195c0a615105fd5ef9dfa7c85e78e9bbdc495dd05e99b57b2d5820ffb",
+      "actual": "50deaa1195c0a615105fd5ef9dfa7c85e78e9bbdc495dd05e99b57b2d5820ffb",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/font-embedding.json",
+      "expected": "5c7d2dd6c49ada8601054a51df868b6c21b3abcaf87301ebd5f05b015b8475f6",
+      "actual": "5c7d2dd6c49ada8601054a51df868b6c21b3abcaf87301ebd5f05b015b8475f6",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/input-integrity.json",
+      "expected": "a699a57397aa0914a6d7790ecce2bd9a58a734e228a637ffa3ddcfef5b35e361",
+      "actual": "a699a57397aa0914a6d7790ecce2bd9a58a734e228a637ffa3ddcfef5b35e361",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/mainline-check.json",
+      "expected": "826b560e721d92d60e89b4f965e6b0ed3d048de630981eb4455cfe31ef059329",
+      "actual": "826b560e721d92d60e89b4f965e6b0ed3d048de630981eb4455cfe31ef059329",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/mainline-check.log",
+      "expected": "cbd78548cd82a53d3a7b406506d81e0340629ebe81e562b7004e9117b944287a",
+      "actual": "cbd78548cd82a53d3a7b406506d81e0340629ebe81e562b7004e9117b944287a",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/render-report.json",
+      "expected": "bd3b21d491c541aa31c649b50aa56b087ec61db81a352f5f8cd4e58a1c31c1b7",
+      "actual": "bd3b21d491c541aa31c649b50aa56b087ec61db81a352f5f8cd4e58a1c31c1b7",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/render.log",
+      "expected": "878d09a729539bd5c7e6da9ffa323fefc7dcdd10595b38fdf75a0335379ef265",
+      "actual": "878d09a729539bd5c7e6da9ffa323fefc7dcdd10595b38fdf75a0335379ef265",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-01.png",
+      "expected": "88e8518a9e67ef96a7a67054c646bf81e06aa49139d595a42458df54a8f47341",
+      "actual": "88e8518a9e67ef96a7a67054c646bf81e06aa49139d595a42458df54a8f47341",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-02.png",
+      "expected": "8c0ae9ca525f8e068f6ab2a9ff1a4829b372666b084f0fbdda7deba1f0bf0937",
+      "actual": "8c0ae9ca525f8e068f6ab2a9ff1a4829b372666b084f0fbdda7deba1f0bf0937",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-03.png",
+      "expected": "a5aabd9427307dc0c2e18440cfa6d4c90ae1552c3a125145566af16df80a76b4",
+      "actual": "a5aabd9427307dc0c2e18440cfa6d4c90ae1552c3a125145566af16df80a76b4",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-04.png",
+      "expected": "b35d984cf0793ae396b0216d611f8bf07209025aa342db9523307722f4964d4a",
+      "actual": "b35d984cf0793ae396b0216d611f8bf07209025aa342db9523307722f4964d4a",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-05.png",
+      "expected": "010ac6dbe66641ed00e0b176470b55b6a36a29a95c49ddb4b4d7be9a2d4909f8",
+      "actual": "010ac6dbe66641ed00e0b176470b55b6a36a29a95c49ddb4b4d7be9a2d4909f8",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-06.png",
+      "expected": "2b0bbda605226736c41efb383d1799431f5aacc47ba6c0bbfb6d044a2190ea51",
+      "actual": "2b0bbda605226736c41efb383d1799431f5aacc47ba6c0bbfb6d044a2190ea51",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-07.png",
+      "expected": "fdc545668ccb3bc902308dc5ec1972a414494f847927e40de8caa3db7cf64cad",
+      "actual": "fdc545668ccb3bc902308dc5ec1972a414494f847927e40de8caa3db7cf64cad",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-08.png",
+      "expected": "6a3a18c948bcb4777bedbfc0490e73cad9a9d6798a627f22c8a467d86ec62e05",
+      "actual": "6a3a18c948bcb4777bedbfc0490e73cad9a9d6798a627f22c8a467d86ec62e05",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-09.png",
+      "expected": "c28c319753b9f1066a61d4f4e38e312ab47319928327590a5173b60c2644be69",
+      "actual": "c28c319753b9f1066a61d4f4e38e312ab47319928327590a5173b60c2644be69",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-10.png",
+      "expected": "9c381bf402e8a57b124c16cdc8bd40f21fb595d7f523103bbb1c91587bf0bde9",
+      "actual": "9c381bf402e8a57b124c16cdc8bd40f21fb595d7f523103bbb1c91587bf0bde9",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-11.png",
+      "expected": "9b803e5065f8beaa7624d6c98babf1bf0d8f3efd3c4c8b38234a0816970b279c",
+      "actual": "9b803e5065f8beaa7624d6c98babf1bf0d8f3efd3c4c8b38234a0816970b279c",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-12.png",
+      "expected": "1d44bc99caf616f5b2a56eeb987d609b7cd49c57406f4709bb94e963e8d6e76b",
+      "actual": "1d44bc99caf616f5b2a56eeb987d609b7cd49c57406f4709bb94e963e8d6e76b",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-13.png",
+      "expected": "ed88fa88d8f2c2a953c480d0a7c9a72120c7b932fcecd1df5694a8c06e111fca",
+      "actual": "ed88fa88d8f2c2a953c480d0a7c9a72120c7b932fcecd1df5694a8c06e111fca",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-14.png",
+      "expected": "ae1fa68d87a8f75348889dc033ab107e218e8840d4858ae8dafe27d049959e62",
+      "actual": "ae1fa68d87a8f75348889dc033ab107e218e8840d4858ae8dafe27d049959e62",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-15.png",
+      "expected": "9aa1e2e38b2a524e9d11b8354d0778557f91fadc53a51df5def92740747ae53e",
+      "actual": "9aa1e2e38b2a524e9d11b8354d0778557f91fadc53a51df5def92740747ae53e",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-16.png",
+      "expected": "48c71f294ad6948caa66937d0619f4ab8be7d3c745b72874a60ee3f32dfc35bf",
+      "actual": "48c71f294ad6948caa66937d0619f4ab8be7d3c745b72874a60ee3f32dfc35bf",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-17.png",
+      "expected": "85641a25e0c979f77e35e28d23f87ffec88598f12ba372f6a85f6f9f62920cdb",
+      "actual": "85641a25e0c979f77e35e28d23f87ffec88598f12ba372f6a85f6f9f62920cdb",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-18.png",
+      "expected": "5135ee2bcc7d2908cb4a0a82cfe81f4c89b0a24e8632e87c5871bf78ea67c66d",
+      "actual": "5135ee2bcc7d2908cb4a0a82cfe81f4c89b0a24e8632e87c5871bf78ea67c66d",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-19.png",
+      "expected": "80a9b1b79fc15fa1fb6b932ad954c778615cd55b249ac1ecaed4c74cba29be69",
+      "actual": "80a9b1b79fc15fa1fb6b932ad954c778615cd55b249ac1ecaed4c74cba29be69",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-20.png",
+      "expected": "b5b276cc97d5c8cf5692d44b21ca6722679c90bbde9576d918c407a15e54df25",
+      "actual": "b5b276cc97d5c8cf5692d44b21ca6722679c90bbde9576d918c407a15e54df25",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-21.png",
+      "expected": "c5c2fa64bd3d582cb9d31f5854e82cc7a9e0e38a47f3d28409a927a1ccc858c1",
+      "actual": "c5c2fa64bd3d582cb9d31f5854e82cc7a9e0e38a47f3d28409a927a1ccc858c1",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-22.png",
+      "expected": "8364382b479100c42ac5858356d13dcb8d92686a077865699f3c8e9cec38f763",
+      "actual": "8364382b479100c42ac5858356d13dcb8d92686a077865699f3c8e9cec38f763",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-23.png",
+      "expected": "4e72a65fbd84567000b3000a861ea16ff35629a67612a5acf053acfb72490964",
+      "actual": "4e72a65fbd84567000b3000a861ea16ff35629a67612a5acf053acfb72490964",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-24.png",
+      "expected": "129513beb93864a3ec07f8c3449fa1c177b9adc57274b06448f04dc486a39af5",
+      "actual": "129513beb93864a3ec07f8c3449fa1c177b9adc57274b06448f04dc486a39af5",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-25.png",
+      "expected": "1002ba6b356f4372e40d23e26aa460c174b2ad5fd6a0245b703f371a341b1100",
+      "actual": "1002ba6b356f4372e40d23e26aa460c174b2ad5fd6a0245b703f371a341b1100",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-26.png",
+      "expected": "f8739597c818d58b1ebb29ae37217a37432b7e6d049391a180b92415fda270d7",
+      "actual": "f8739597c818d58b1ebb29ae37217a37432b7e6d049391a180b92415fda270d7",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-27.png",
+      "expected": "cba858a6134242d51ec952c8cff64af5006ddca3ed856096610c270a3c1d62ac",
+      "actual": "cba858a6134242d51ec952c8cff64af5006ddca3ed856096610c270a3c1d62ac",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-28.png",
+      "expected": "883a37cfad5ed6e2e050b17940043d22db02acee12bf736bbb1d827544046793",
+      "actual": "883a37cfad5ed6e2e050b17940043d22db02acee12bf736bbb1d827544046793",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-29.png",
+      "expected": "1438c6a0fe52127de021f7610c073b7df8e83381c78bdf848d5c40270360f21a",
+      "actual": "1438c6a0fe52127de021f7610c073b7df8e83381c78bdf848d5c40270360f21a",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-30.png",
+      "expected": "eaf822e67a02137397363cf0acfb3ce4c98db5e1d0a684bb51abf3d39f7a75d3",
+      "actual": "eaf822e67a02137397363cf0acfb3ce4c98db5e1d0a684bb51abf3d39f7a75d3",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-31.png",
+      "expected": "ff132c2434c180525793db1eac287691b20423480d912d0b342cc34f5228b103",
+      "actual": "ff132c2434c180525793db1eac287691b20423480d912d0b342cc34f5228b103",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-32.png",
+      "expected": "64ce49304886ee78dc00d881d467a2708d7ed029abb32c18227c344f91dccf0b",
+      "actual": "64ce49304886ee78dc00d881d467a2708d7ed029abb32c18227c344f91dccf0b",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-33.png",
+      "expected": "73e23424a4c58a52eea668642a1a05aca74552e52efd4693179ae523308e409e",
+      "actual": "73e23424a4c58a52eea668642a1a05aca74552e52efd4693179ae523308e409e",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-34.png",
+      "expected": "2800e96c497cc07b7aaf48308da6aecea2231e338684e286369652cf65a5baf9",
+      "actual": "2800e96c497cc07b7aaf48308da6aecea2231e338684e286369652cf65a5baf9",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-35.png",
+      "expected": "cfda4119dfe6e3b82bbf2fdcfc3cfbbb53eccab96142fecae81a6022f5b917e9",
+      "actual": "cfda4119dfe6e3b82bbf2fdcfc3cfbbb53eccab96142fecae81a6022f5b917e9",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-36.png",
+      "expected": "9ce208290021f8dafd35d90af002485bdf12e6cf6622b951f6938d38352289a7",
+      "actual": "9ce208290021f8dafd35d90af002485bdf12e6cf6622b951f6938d38352289a7",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-contact-1.jpg",
+      "expected": "0157dae0e5e0356e05324e51fbdc520a9a0b158e8b9d08ba5b03e8fce650d2c6",
+      "actual": "0157dae0e5e0356e05324e51fbdc520a9a0b158e8b9d08ba5b03e8fce650d2c6",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-contact-2.jpg",
+      "expected": "658e84e1920227d53e49e2a6252edf26582826aa8e1b4af80178836fef5a4c01",
+      "actual": "658e84e1920227d53e49e2a6252edf26582826aa8e1b4af80178836fef5a4c01",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-contact-3.jpg",
+      "expected": "e837d2ad76d977f0939b86cff110f6bbf109ac82e3e51c47ea642a590b84ccae",
+      "actual": "e837d2ad76d977f0939b86cff110f6bbf109ac82e3e51c47ea642a590b84ccae",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-contact-4.jpg",
+      "expected": "d8606a08f33374a6323216a1b369ea3d49ef7c225deeed5f3167078e1e3353d3",
+      "actual": "d8606a08f33374a6323216a1b369ea3d49ef7c225deeed5f3167078e1e3353d3",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-contact-5.jpg",
+      "expected": "d9ce0e05e69072bbb07162a80f2981e412bc14a1604f25850b077ac61742bfcc",
+      "actual": "d9ce0e05e69072bbb07162a80f2981e412bc14a1604f25850b077ac61742bfcc",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-answers-contact-6.jpg",
+      "expected": "dbf3999635da66fe02ba3388ce78f588bdac5bc2fd88b35e7183a00dbd99bb54",
+      "actual": "dbf3999635da66fe02ba3388ce78f588bdac5bc2fd88b35e7183a00dbd99bb54",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-questions-01.png",
+      "expected": "65dfddc54fee9203cf8fc56d661b5b46fca99ae1e92ed615bdb94f0ca859e495",
+      "actual": "65dfddc54fee9203cf8fc56d661b5b46fca99ae1e92ed615bdb94f0ca859e495",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-questions-02.png",
+      "expected": "30c3588fa3616ce4b35b5ec57c8d1bb1f912140f3af13ecc96dc01b6a52e06ea",
+      "actual": "30c3588fa3616ce4b35b5ec57c8d1bb1f912140f3af13ecc96dc01b6a52e06ea",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-questions-03.png",
+      "expected": "389c6af40d12db2f934783855171c7439ef0050d09faa067bfdb20aed184b46c",
+      "actual": "389c6af40d12db2f934783855171c7439ef0050d09faa067bfdb20aed184b46c",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-questions-04.png",
+      "expected": "39afc06189bdb9042b725b4c50645c4d5dd3cb7b8d482da349c86101fe0667a8",
+      "actual": "39afc06189bdb9042b725b4c50645c4d5dd3cb7b8d482da349c86101fe0667a8",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-questions-05.png",
+      "expected": "e2071e663e9aefe01ecfc0c25e4950044620dd09245b5802b931791f7e692894",
+      "actual": "e2071e663e9aefe01ecfc0c25e4950044620dd09245b5802b931791f7e692894",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-questions-06.png",
+      "expected": "f2847055b3c9172eef6f4fcd6447420b50c7284735bf225ff73e23a13eaffd83",
+      "actual": "f2847055b3c9172eef6f4fcd6447420b50c7284735bf225ff73e23a13eaffd83",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-questions-07.png",
+      "expected": "d6a2e340bb3746090f1b409bf73fa4219528ca64542ac812b802eace2b0f4643",
+      "actual": "d6a2e340bb3746090f1b409bf73fa4219528ca64542ac812b802eace2b0f4643",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-questions-08.png",
+      "expected": "68f3162f8551723c078c678a1b45f838cb3ceec88c2add812e4fd44ec9f142af",
+      "actual": "68f3162f8551723c078c678a1b45f838cb3ceec88c2add812e4fd44ec9f142af",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-questions-09.png",
+      "expected": "6ec0e5716b2ea5c9b4ae98232a267e16de7a9fcfa6beeffadd9eed6c91e5f5e7",
+      "actual": "6ec0e5716b2ea5c9b4ae98232a267e16de7a9fcfa6beeffadd9eed6c91e5f5e7",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-questions-10.png",
+      "expected": "b62e027a2efd4c27100f942723438c5f26afa187f291ce55e07b10bbe52de776",
+      "actual": "b62e027a2efd4c27100f942723438c5f26afa187f291ce55e07b10bbe52de776",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-questions-11.png",
+      "expected": "ba686ad50a89a49cb286d587c08ceff788ceedc8658674d1551a76a67545e677",
+      "actual": "ba686ad50a89a49cb286d587c08ceff788ceedc8658674d1551a76a67545e677",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-questions-12.png",
+      "expected": "c81af90b6bdc78c3c6c34fcd68f669514782bf0508c704e171c55dd163bf1049",
+      "actual": "c81af90b6bdc78c3c6c34fcd68f669514782bf0508c704e171c55dd163bf1049",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-questions-13.png",
+      "expected": "15c721c07d0ddd7c98d2241651de5cb5b5a7b1cdf8f88bada26e15ef245a8524",
+      "actual": "15c721c07d0ddd7c98d2241651de5cb5b5a7b1cdf8f88bada26e15ef245a8524",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-questions-14.png",
+      "expected": "a392f064cb4013e899b2e5ab65bb5fa0f105631850ed7cd5423dea2646c927e9",
+      "actual": "a392f064cb4013e899b2e5ab65bb5fa0f105631850ed7cd5423dea2646c927e9",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-questions-15.png",
+      "expected": "9953d0c12d304098b7fc23d913b7dc249d06d7bf7eaa1cba5e00be2bfea5e0ad",
+      "actual": "9953d0c12d304098b7fc23d913b7dc249d06d7bf7eaa1cba5e00be2bfea5e0ad",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-questions-16.png",
+      "expected": "3fb9736306c3c300f7705859fe519e2a695c23bacc45b672a32aa4f621cd54fb",
+      "actual": "3fb9736306c3c300f7705859fe519e2a695c23bacc45b672a32aa4f621cd54fb",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-questions-17.png",
+      "expected": "49a1f700b5a6fa2a9b277fe6ebb9730ad1eb852a8bf72f0c5fd3b600481c591a",
+      "actual": "49a1f700b5a6fa2a9b277fe6ebb9730ad1eb852a8bf72f0c5fd3b600481c591a",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-questions-18.png",
+      "expected": "d21d6e44e2cd2c4a69d441b4a59efceaee0e1665d50fad0f536137f70470ef2b",
+      "actual": "d21d6e44e2cd2c4a69d441b4a59efceaee0e1665d50fad0f536137f70470ef2b",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-questions-contact-1.jpg",
+      "expected": "b4bda526fa424a551d6028afb7725de4bfabebfa302678e7cdefd144579fafa1",
+      "actual": "b4bda526fa424a551d6028afb7725de4bfabebfa302678e7cdefd144579fafa1",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-questions-contact-2.jpg",
+      "expected": "504edcfbff4a1b3ad86ad5957189d212818006f05815bb6c609e80cf8c377058",
+      "actual": "504edcfbff4a1b3ad86ad5957189d212818006f05815bb6c609e80cf8c377058",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T09-questions-contact-3.jpg",
+      "expected": "f134393bcfba5c6d911fabb64e69c38497e70b8936f316b6c905e9fd1fc442a2",
+      "actual": "f134393bcfba5c6d911fabb64e69c38497e70b8936f316b6c905e9fd1fc442a2",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T20-A4-1-gray.jpg",
+      "expected": "f776fd6b8653d8f7ca51f0ff9aa8afaf8580835e8412cb893d28e971b83e6054",
+      "actual": "f776fd6b8653d8f7ca51f0ff9aa8afaf8580835e8412cb893d28e971b83e6054",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T20-A4-1.png",
+      "expected": "92fa7334f6d75562597e5e902d097fc8fa6b74b167ccb8ff80a97ed40ccbecba",
+      "actual": "92fa7334f6d75562597e5e902d097fc8fa6b74b167ccb8ff80a97ed40ccbecba",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T20-A4-2-gray.jpg",
+      "expected": "aedb8ba286fd56b71b350f0c67b01de65f64acdb3934b10dbcc63c4efe069006",
+      "actual": "aedb8ba286fd56b71b350f0c67b01de65f64acdb3934b10dbcc63c4efe069006",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T20-A4-2.png",
+      "expected": "94189fed4c49eb592f0186dbe3220a67810bbbd95b515b76bccbb0a5b189eab4",
+      "actual": "94189fed4c49eb592f0186dbe3220a67810bbbd95b515b76bccbb0a5b189eab4",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T20-A4-3-gray.jpg",
+      "expected": "3ec8fe8971f38c08012b7a10cc328ab4a5dc287358c1e139dc9ce8310eae84e6",
+      "actual": "3ec8fe8971f38c08012b7a10cc328ab4a5dc287358c1e139dc9ce8310eae84e6",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T20-A4-3.png",
+      "expected": "8cf505abd94bbfc06c44308649b323fcf1bd3b536e0ca96c8219803dcae27446",
+      "actual": "8cf505abd94bbfc06c44308649b323fcf1bd3b536e0ca96c8219803dcae27446",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T20-A4-4-gray.jpg",
+      "expected": "0faf0f1112dd60338190dd30e58d2f459378b30b6aac93c1081c5c6f70884cc0",
+      "actual": "0faf0f1112dd60338190dd30e58d2f459378b30b6aac93c1081c5c6f70884cc0",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T20-A4-4.png",
+      "expected": "c7771b2f76abe0365fc5734f40a5e67b219d07f6448a5b2c5f7730477bb98101",
+      "actual": "c7771b2f76abe0365fc5734f40a5e67b219d07f6448a5b2c5f7730477bb98101",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T20-A4-5-gray.jpg",
+      "expected": "f3bd81c7a59d248caaeaaa67a0cb3b2bc493f12b5338e0da67b88caa456da12f",
+      "actual": "f3bd81c7a59d248caaeaaa67a0cb3b2bc493f12b5338e0da67b88caa456da12f",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T20-A4-5.png",
+      "expected": "f1367a720c6ff0499cc4f04c80f798b07b110b76cad29a1b8df0280bd18a9937",
+      "actual": "f1367a720c6ff0499cc4f04c80f798b07b110b76cad29a1b8df0280bd18a9937",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T20-A4-6-gray.jpg",
+      "expected": "6608852bb4d2934ac0f7f74f52acd52284456be8a65e4e0378df122d2e734bb6",
+      "actual": "6608852bb4d2934ac0f7f74f52acd52284456be8a65e4e0378df122d2e734bb6",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T20-A4-6.png",
+      "expected": "6df741929d49935bc5a0ff71dca75264a7b4bd9b213a5f37e3d0a777cfc4414a",
+      "actual": "6df741929d49935bc5a0ff71dca75264a7b4bd9b213a5f37e3d0a777cfc4414a",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T20-A4-contact-1.jpg",
+      "expected": "9050014fcb29b335841b3cb8e02b62854970dc8dfe5abc71772364a42093a9e4",
+      "actual": "9050014fcb29b335841b3cb8e02b62854970dc8dfe5abc71772364a42093a9e4",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T20-cards-1-gray.jpg",
+      "expected": "8cb79e81bd6c75863734043966f2520116824ef1dd16c8fbf75e35397be6ef57",
+      "actual": "8cb79e81bd6c75863734043966f2520116824ef1dd16c8fbf75e35397be6ef57",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T20-cards-1.png",
+      "expected": "29e65365e408c3cbc3ade358084b5e54b7e41f0de605e6990afa6c00308bf558",
+      "actual": "29e65365e408c3cbc3ade358084b5e54b7e41f0de605e6990afa6c00308bf558",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T20-cards-2-gray.jpg",
+      "expected": "97ce58d6c9982a0bd0dcb1f1669ba5470be542b24386db9bcc3c1d4467284b17",
+      "actual": "97ce58d6c9982a0bd0dcb1f1669ba5470be542b24386db9bcc3c1d4467284b17",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T20-cards-2.png",
+      "expected": "602db7a7cad9ca3dd41a716e1ea8acd69fb7a8e534ff6484ca323069babf3e7b",
+      "actual": "602db7a7cad9ca3dd41a716e1ea8acd69fb7a8e534ff6484ca323069babf3e7b",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T20-cards-3-gray.jpg",
+      "expected": "762401a85537b9d09e7d561f11a14a80ef5dbec63a2134e7f165cebcdb90ef51",
+      "actual": "762401a85537b9d09e7d561f11a14a80ef5dbec63a2134e7f165cebcdb90ef51",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T20-cards-3.png",
+      "expected": "daafda3920822fdfe55a102019be8c56d0906d01dbb8e9ca6553d65d6c23921c",
+      "actual": "daafda3920822fdfe55a102019be8c56d0906d01dbb8e9ca6553d65d6c23921c",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T20-cards-4-gray.jpg",
+      "expected": "c69d0d12556be772e12e3076aaadfa35eed9f83da969b24fc29f7e62f0abdf7f",
+      "actual": "c69d0d12556be772e12e3076aaadfa35eed9f83da969b24fc29f7e62f0abdf7f",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T20-cards-4.png",
+      "expected": "8bcdc798005da79ec36bab5734ae23cdf1336feeb9d2aa236cb837a33a86d30b",
+      "actual": "8bcdc798005da79ec36bab5734ae23cdf1336feeb9d2aa236cb837a33a86d30b",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T20-cards-5-gray.jpg",
+      "expected": "5f8132e502758eb9b634790c06c477c93d6204e7d27eb2e156e1998d0ef68d2d",
+      "actual": "5f8132e502758eb9b634790c06c477c93d6204e7d27eb2e156e1998d0ef68d2d",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T20-cards-5.png",
+      "expected": "d073678bacecdac90ac7f42a14356f64838588f4760b5de9eeb4a48c4ea05632",
+      "actual": "d073678bacecdac90ac7f42a14356f64838588f4760b5de9eeb4a48c4ea05632",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T20-cards-6-gray.jpg",
+      "expected": "cf8480607d68b3da9511a8c109a490981aad872b59efcc76b97488fffede8c34",
+      "actual": "cf8480607d68b3da9511a8c109a490981aad872b59efcc76b97488fffede8c34",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T20-cards-6.png",
+      "expected": "c9bb041855c6a461e6c4a869502cfe670bb3e534e42ba6d190cef794dcfb8c4b",
+      "actual": "c9bb041855c6a461e6c4a869502cfe670bb3e534e42ba6d190cef794dcfb8c4b",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T20-cards-7-gray.jpg",
+      "expected": "2cadd8a7f79540648e360ca5d0720d350b383b6cb161cbc156d22543ee60d3b2",
+      "actual": "2cadd8a7f79540648e360ca5d0720d350b383b6cb161cbc156d22543ee60d3b2",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T20-cards-7.png",
+      "expected": "0781f15c1f864bc8374a848bc3e97effc182e554a2219309499865fedf55d049",
+      "actual": "0781f15c1f864bc8374a848bc3e97effc182e554a2219309499865fedf55d049",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T20-cards-8-gray.jpg",
+      "expected": "ceb0d7b1e2aafe6efaa111a9d7843ec436f93634993ed6e2fb4f47e6dcad6bd2",
+      "actual": "ceb0d7b1e2aafe6efaa111a9d7843ec436f93634993ed6e2fb4f47e6dcad6bd2",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T20-cards-8.png",
+      "expected": "2953498f86e9dc9842a3eabe9c9f394ae5b1ab295e147344e19887060558e3e9",
+      "actual": "2953498f86e9dc9842a3eabe9c9f394ae5b1ab295e147344e19887060558e3e9",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T20-cards-contact-1.jpg",
+      "expected": "59dc23b8230261953c8bc1d9ef537d7b5530943927cd7d44dbdb0b213c9feb5b",
+      "actual": "59dc23b8230261953c8bc1d9ef537d7b5530943927cd7d44dbdb0b213c9feb5b",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T20-cards-contact-2.jpg",
+      "expected": "4fb89b4e9dfca86bdf70902db1f53d732c15b7d32c5b713bb5eeee61da01e0b3",
+      "actual": "4fb89b4e9dfca86bdf70902db1f53d732c15b7d32c5b713bb5eeee61da01e0b3",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T20-mini-1-gray.jpg",
+      "expected": "dc208eab2423a290034a85fdbc67f02513d24d1ebdb5c7541da47a091262fc92",
+      "actual": "dc208eab2423a290034a85fdbc67f02513d24d1ebdb5c7541da47a091262fc92",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T20-mini-1.png",
+      "expected": "840d49c84cedb38fcdd531bf1e9a834e41eda16b1e5eb6da6b6a0df1a835a359",
+      "actual": "840d49c84cedb38fcdd531bf1e9a834e41eda16b1e5eb6da6b6a0df1a835a359",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T20-mini-2-gray.jpg",
+      "expected": "2b9c0f8fc3d4a6197f4123fe301e075d64c7ef7bd90b0cd3f455c6555a08c614",
+      "actual": "2b9c0f8fc3d4a6197f4123fe301e075d64c7ef7bd90b0cd3f455c6555a08c614",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T20-mini-2.png",
+      "expected": "4d99d6df72d27d4b75c46d479aa28f508fdc3b5d1662baaa4091c80cd9edf69b",
+      "actual": "4d99d6df72d27d4b75c46d479aa28f508fdc3b5d1662baaa4091c80cd9edf69b",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/rendered/T20-mini-contact-1.jpg",
+      "expected": "b8565c0abb472c9facb02bca899d16a9c8449cd191ee807515b7b366776d82a3",
+      "actual": "b8565c0abb472c9facb02bca899d16a9c8449cd191ee807515b7b366776d82a3",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/t20-card-text.txt",
+      "expected": "d673809d6244c1f612cb83445545f59a74ae0dd34bb71983142b56ae07bb2802",
+      "actual": "d673809d6244c1f612cb83445545f59a74ae0dd34bb71983142b56ae07bb2802",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/t20-check-1.log",
+      "expected": "34c8fb0ca5e06eaadbda6c3890ef2e301f83cb004e5c92c1c888b4cbd35cf73f",
+      "actual": "34c8fb0ca5e06eaadbda6c3890ef2e301f83cb004e5c92c1c888b4cbd35cf73f",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/t20-check-2.log",
+      "expected": "b593470bbbad1a1e3be70f868ddf531b47340590fca257e2e72c30367be47fa3",
+      "actual": "b593470bbbad1a1e3be70f868ddf531b47340590fca257e2e72c30367be47fa3",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/t20-engine-checks.json",
+      "expected": "bbd31de1c58247ee871eb82f9344940e3e1802bd0dab1146b3eb4778e2594aeb",
+      "actual": "bbd31de1c58247ee871eb82f9344940e3e1802bd0dab1146b3eb4778e2594aeb",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/t20-print-checks.json",
+      "expected": "40f41314d1cb2c4debb8ab4e16814040a78f98944e41acfb627e7e48789861cf",
+      "actual": "40f41314d1cb2c4debb8ab4e16814040a78f98944e41acfb627e7e48789861cf",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/t20-revalidation.json",
+      "expected": "12f7e9c5c0fe04c3b6df7b53aa15a84071c900e69962eb1b4db90c428f981e4f",
+      "actual": "12f7e9c5c0fe04c3b6df7b53aa15a84071c900e69962eb1b4db90c428f981e4f",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/t20-schema.log",
+      "expected": "e731b02e4bf01e348e773c5c93664ba32d2728827e99e0d6f15649ef9b5ef4df",
+      "actual": "e731b02e4bf01e348e773c5c93664ba32d2728827e99e0d6f15649ef9b5ef4df",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/evidence/visual-review.json",
+      "expected": "78e346572a3c498c4d4aca0d961392abb7d4b3c350e7d7864c825796a9dd97a4",
+      "actual": "78e346572a3c498c4d4aca0d961392abb7d4b3c350e7d7864c825796a9dd97a4",
+      "passed": true
+    },
+    {
+      "path": "docs/freeze-b/input-T15-release-manifest.json",
+      "expected": "2e0ebf7e9e2293c274a5062a48e6235cb3664f28654b20e510df901c2e4a2c97",
+      "actual": "2e0ebf7e9e2293c274a5062a48e6235cb3664f28654b20e510df901c2e4a2c97",
+      "passed": true
+    },
+    {
+      "path": "docs/requirements-matrix.md",
+      "expected": "2ae366300004963059327b1cfc3d343fdca970eef18f6196bcb3cca70068f8d0",
+      "actual": "2ae366300004963059327b1cfc3d343fdca970eef18f6196bcb3cca70068f8d0",
+      "passed": true
+    },
+    {
+      "path": "docs/t11/LIFE_CONTENT_CHANGE_RECORD.md",
+      "expected": "3bd22246f104a08d0d19ee5f1428b58c1e9dc71980cff8c240b57e467c4cb60c",
+      "actual": "3bd22246f104a08d0d19ee5f1428b58c1e9dc71980cff8c240b57e467c4cb60c",
+      "passed": true
+    },
+    {
+      "path": "docs/t11/TEACHING_CORRECTNESS_REVIEW.md",
+      "expected": "b8ab540bcf50500b0b979215b1627ef776967517257791d14b7374a3943f247b",
+      "actual": "b8ab540bcf50500b0b979215b1627ef776967517257791d14b7374a3943f247b",
+      "passed": true
+    },
+    {
+      "path": "handoff/FREEZE_B.md",
+      "expected": "b7bdc44f7987c73542060448137856a7d621b6049f2aad4448af438c2f9158bd",
+      "actual": "b7bdc44f7987c73542060448137856a7d621b6049f2aad4448af438c2f9158bd",
+      "passed": true
+    },
+    {
+      "path": "handoff/T09.md",
+      "expected": "00601485ff0f6150ebc9e1f619efb58e0f6f5c0459eaee4e5850ad5b2e080e61",
+      "actual": "00601485ff0f6150ebc9e1f619efb58e0f6f5c0459eaee4e5850ad5b2e080e61",
+      "passed": true
+    },
+    {
+      "path": "handoff/T11.md",
+      "expected": "e7378ed67fd08c06bee6da99a6e6e67c619d1757506e0156ddfca5c41218d9dc",
+      "actual": "e7378ed67fd08c06bee6da99a6e6e67c619d1757506e0156ddfca5c41218d9dc",
+      "passed": true
+    },
+    {
+      "path": "handoff/T20.md",
+      "expected": "e4643f151be6578c34044217ffd422fb278cddb0787199c287937b368335acdb",
+      "actual": "e4643f151be6578c34044217ffd422fb278cddb0787199c287937b368335acdb",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/FILE_MANIFEST.json",
+      "expected": "a854a184e9d3a440cc9b5effbe8c191bedc62d78a4352496384216620a4b6184",
+      "actual": "a854a184e9d3a440cc9b5effbe8c191bedc62d78a4352496384216620a4b6184",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/PRINT-AND-TEACHER.md",
+      "expected": "c1100b5f47b4e34a661a717357c1fc2da42399106bfdb9f34c162c332e274cd9",
+      "actual": "c1100b5f47b4e34a661a717357c1fc2da42399106bfdb9f34c162c332e274cd9",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-CAPTURE-AFTER.json",
+      "expected": "c49a90c0bcd509a47859e52e689ebf26cd3410797d70f59258b47bad180240d5",
+      "actual": "c49a90c0bcd509a47859e52e689ebf26cd3410797d70f59258b47bad180240d5",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-CAPTURE-BEFORE.json",
+      "expected": "6b7b4142b6aeae8b242c726a148a668ed55efe066c7bc5adcd12cfbade68daed",
+      "actual": "6b7b4142b6aeae8b242c726a148a668ed55efe066c7bc5adcd12cfbade68daed",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-CONNECT.json",
+      "expected": "c745c0a49849f21ca32a94106865328fb005d1a75136403754b5c713a0a07127",
+      "actual": "c745c0a49849f21ca32a94106865328fb005d1a75136403754b5c713a0a07127",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-KO-AFTER.json",
+      "expected": "89d9a194282bdbbce299ed730cec96191f7fc70c7667e1e3861122fb7b31fd43",
+      "actual": "89d9a194282bdbbce299ed730cec96191f7fc70c7667e1e3861122fb7b31fd43",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-KO-BEFORE.json",
+      "expected": "d4fe9642a299e6abb7fd957cb5d7fd0cf5f339980f812404f8f46f0dcf8d73b5",
+      "actual": "d4fe9642a299e6abb7fd957cb5d7fd0cf5f339980f812404f8f46f0dcf8d73b5",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-LEGAL-AFTER.json",
+      "expected": "a6e455337c43630ef583417544bd2e285ae507dee005acc4159149d073a6a909",
+      "actual": "a6e455337c43630ef583417544bd2e285ae507dee005acc4159149d073a6a909",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-LEGAL-BEFORE.json",
+      "expected": "4dc310af6907bf6ec3c6ff7dda5a0b5b31620c36fa90f7d6f6ac06ebbc066109",
+      "actual": "4dc310af6907bf6ec3c6ff7dda5a0b5b31620c36fa90f7d6f6ac06ebbc066109",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-LIBERTY.json",
+      "expected": "6c6907aa5af61161db98b961905a0a08f3382ad6c98bb4ad0ae2c73383c4f67b",
+      "actual": "6c6907aa5af61161db98b961905a0a08f3382ad6c98bb4ad0ae2c73383c4f67b",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-SCORE.json",
+      "expected": "4572ff686851003ddb99c7168251dc34ceeb8bfe8463f8717e797b60d534bf91",
+      "actual": "4572ff686851003ddb99c7168251dc34ceeb8bfe8463f8717e797b60d534bf91",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/data/card-manifest.json",
+      "expected": "f92021579bd38399d3bd7a72d81092eddb20067fd8a0adc2dbd2474a0a2a7025",
+      "actual": "f92021579bd38399d3bd7a72d81092eddb20067fd8a0adc2dbd2474a0a2a7025",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/data/diagram-index.json",
+      "expected": "74b73d83ee5f5651aa4302a8f5d63de7f6936ec60f6a32e21e02b774b1513fa7",
+      "actual": "74b73d83ee5f5651aa4302a8f5d63de7f6936ec60f6a32e21e02b774b1513fa7",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/pdf/01-main-front.pdf",
+      "expected": "62c7fcc18e99d28ca3e613449a4574dedd26586a50e28422f7228ce08d5b5371",
+      "actual": "62c7fcc18e99d28ca3e613449a4574dedd26586a50e28422f7228ce08d5b5371",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/pdf/02-main-back.pdf",
+      "expected": "ef30abc02924366ee564a4caadd81340795258a62c913719fb829015fbed9518",
+      "actual": "ef30abc02924366ee564a4caadd81340795258a62c913719fb829015fbed9518",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/pdf/03-detail-front.pdf",
+      "expected": "5839089cbb3bbf772b9de0001abd2da388840ed6137d0ddec1151f8964b94e2f",
+      "actual": "5839089cbb3bbf772b9de0001abd2da388840ed6137d0ddec1151f8964b94e2f",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/pdf/04-detail-back.pdf",
+      "expected": "d79c584965cdff7931cf342a2ab22ce80e5e7a5a3b14eebe1bd41ce0df2b7b2c",
+      "actual": "d79c584965cdff7931cf342a2ab22ce80e5e7a5a3b14eebe1bd41ce0df2b7b2c",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/pdf/05-score.pdf",
+      "expected": "201ad8c0767aa7187d607b90a384afdc6c974db06645af5ce1c128855b91c891",
+      "actual": "201ad8c0767aa7187d607b90a384afdc6c974db06645af5ce1c128855b91c891",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/pdf/06-pathway.pdf",
+      "expected": "d4da6bf7d772d62477615bc1e66c953b55537327627b996c93c0b26a1d24254f",
+      "actual": "d4da6bf7d772d62477615bc1e66c953b55537327627b996c93c0b26a1d24254f",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/pdf/07-mini-front.pdf",
+      "expected": "6f7338d48383a4d39ad24273d528b22db91ac6bae4dc403d28c61bc79cdcb5de",
+      "actual": "6f7338d48383a4d39ad24273d528b22db91ac6bae4dc403d28c61bc79cdcb5de",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/pdf/08-mini-back.pdf",
+      "expected": "d1e0ea15c210f81fd2028ca24361c6ed7962cfef49f95148872a21223b6416ba",
+      "actual": "d1e0ea15c210f81fd2028ca24361c6ed7962cfef49f95148872a21223b6416ba",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/pdf/PRINT-A4-landscape-short-edge.pdf",
+      "expected": "ed608bc9db4491808843ac7608bf7f8c02dec45e8f76a739fd7bf2e132c5fd55",
+      "actual": "ed608bc9db4491808843ac7608bf7f8c02dec45e8f76a739fd7bf2e132c5fd55",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/pdf/PRINT-A4-portrait-long-edge-mini.pdf",
+      "expected": "4aa90d2b658746c8736d0855064bc1c6dbbe6642635700eab3ac13dc4d55690e",
+      "actual": "4aa90d2b658746c8736d0855064bc1c6dbbe6642635700eab3ac13dc4d55690e",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/pdf/all-independent-cards.pdf",
+      "expected": "728a728831b2a7ed60c091555980274258d9c0ad659a96bbe04d03f5bb1902e8",
+      "actual": "728a728831b2a7ed60c091555980274258d9c0ad659a96bbe04d03f5bb1902e8",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/pdf/capture-mini-A6-duplex.pdf",
+      "expected": "4402fe60240903d2085ba284295a95918bc89f1c5de06e97f7cc5260d1a998c4",
+      "actual": "4402fe60240903d2085ba284295a95918bc89f1c5de06e97f7cc5260d1a998c4",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/pdf/detailed-A5-duplex.pdf",
+      "expected": "736c0cd25999d6ce863f1b5fdff6ab09dc0c9fb64517f952ea2b0eedd035d262",
+      "actual": "736c0cd25999d6ce863f1b5fdff6ab09dc0c9fb64517f952ea2b0eedd035d262",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/pdf/main-rule-A5-duplex.pdf",
+      "expected": "8dbd03fc2483195eb25ec4be3e2da19f3e0f4748b7b2859f9c460d0756552759",
+      "actual": "8dbd03fc2483195eb25ec4be3e2da19f3e0f4748b7b2859f9c460d0756552759",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/source/01-main-front.svg",
+      "expected": "b114ac7eeaf22c93dc082714aeb9e2a5959edd9f180a97dfce4dd24432928038",
+      "actual": "b114ac7eeaf22c93dc082714aeb9e2a5959edd9f180a97dfce4dd24432928038",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/source/02-main-back.svg",
+      "expected": "cb07a88c03f7a283201e37c3a9c0b2e26c73673d7360cf3b0c3d6b97757ba1b0",
+      "actual": "cb07a88c03f7a283201e37c3a9c0b2e26c73673d7360cf3b0c3d6b97757ba1b0",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/source/03-detail-front.svg",
+      "expected": "a47f34a0483f10fdf12b7735c03649491453a6175fd458cc3bab3a7ae115375d",
+      "actual": "a47f34a0483f10fdf12b7735c03649491453a6175fd458cc3bab3a7ae115375d",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/source/04-detail-back.svg",
+      "expected": "a990fe596dd9a17c39547a9660178afe5687ab0d19e22615723fa099315bb410",
+      "actual": "a990fe596dd9a17c39547a9660178afe5687ab0d19e22615723fa099315bb410",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/source/05-score.svg",
+      "expected": "9256446d1cdd9384f4702372a3c8e1cc23fba7e4c9cbe4fcf047883dbf42cb9f",
+      "actual": "9256446d1cdd9384f4702372a3c8e1cc23fba7e4c9cbe4fcf047883dbf42cb9f",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/source/06-pathway.svg",
+      "expected": "9eff91a03ef33ba60e8f33c0eb0cd23ba634f7a73837b8dd38bd37411fb62cf2",
+      "actual": "9eff91a03ef33ba60e8f33c0eb0cd23ba634f7a73837b8dd38bd37411fb62cf2",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/source/07-mini-front.svg",
+      "expected": "dc6e26f6196ca42e460246aae8c0a10067158ce1ba8ed1fb50ca01bb8057a8e4",
+      "actual": "dc6e26f6196ca42e460246aae8c0a10067158ce1ba8ed1fb50ca01bb8057a8e4",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/source/08-mini-back.svg",
+      "expected": "0e0fe223605bfcccafe2ea77922a9d292b66015789cfa51db273354df1b02474",
+      "actual": "0e0fe223605bfcccafe2ea77922a9d292b66015789cfa51db273354df1b02474",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/source/PRINT-A4-landscape-short-edge-01.svg",
+      "expected": "49f6438de52d71a4e99e697c2800fd108c330b5d1ad71b5a27d4028adf69607a",
+      "actual": "49f6438de52d71a4e99e697c2800fd108c330b5d1ad71b5a27d4028adf69607a",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/source/PRINT-A4-landscape-short-edge-02.svg",
+      "expected": "f661a8abcf1af7b1a2c6bb68faed6524d563ba78a33c79f585031e96490e5fdc",
+      "actual": "f661a8abcf1af7b1a2c6bb68faed6524d563ba78a33c79f585031e96490e5fdc",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/source/PRINT-A4-landscape-short-edge-03.svg",
+      "expected": "43c4fe5a14931e7475406ca8ac5b31b9635f9eb642e5cad10d90daf06ff8bd59",
+      "actual": "43c4fe5a14931e7475406ca8ac5b31b9635f9eb642e5cad10d90daf06ff8bd59",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/source/PRINT-A4-landscape-short-edge-04.svg",
+      "expected": "d2958fa634ebc7da19ec0ebe689007c4d40ac787cfc381636d9c50f0b0c18ea0",
+      "actual": "d2958fa634ebc7da19ec0ebe689007c4d40ac787cfc381636d9c50f0b0c18ea0",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/source/PRINT-A4-landscape-short-edge-05.svg",
+      "expected": "f6eee8a680fbbe7945e8d6724af4ab831561cab9ed73b37a2cf85f0b905502c6",
+      "actual": "f6eee8a680fbbe7945e8d6724af4ab831561cab9ed73b37a2cf85f0b905502c6",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/source/PRINT-A4-landscape-short-edge-06.svg",
+      "expected": "da9b0b6dae1e633f2a317e369e9f6980aab752654f44e00690fcfe79d89fa025",
+      "actual": "da9b0b6dae1e633f2a317e369e9f6980aab752654f44e00690fcfe79d89fa025",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/source/PRINT-A4-portrait-long-edge-mini-01.svg",
+      "expected": "0378ca2cb5d7c9d19354e45376e232905dbf14106bf33a086c11292a23fe423a",
+      "actual": "0378ca2cb5d7c9d19354e45376e232905dbf14106bf33a086c11292a23fe423a",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/source/PRINT-A4-portrait-long-edge-mini-02.svg",
+      "expected": "719d6ed0e8f627ae369f3adb3797336da3ad9b72fcb0e0b37dce7a691634b44b",
+      "actual": "719d6ed0e8f627ae369f3adb3797336da3ad9b72fcb0e0b37dce7a691634b44b",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/source/build_cards.py",
+      "expected": "c7b3d05841a985f854419e75102e3fe1b2f9cf76dc684c912f2c32c8f93d768d",
+      "actual": "c7b3d05841a985f854419e75102e3fe1b2f9cf76dc684c912f2c32c8f93d768d",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/source/make-contact.py",
+      "expected": "138fc15bcfd06a61d38076ed69a6e70a5757178dce2559163ade173f4068c8c4",
+      "actual": "138fc15bcfd06a61d38076ed69a6e70a5757178dce2559163ade173f4068c8c4",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/source/package.py",
+      "expected": "33ae31096295776b43c11718669f6e6003faa73549371bd687318a496c666944",
+      "actual": "33ae31096295776b43c11718669f6e6003faa73549371bd687318a496c666944",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/source/verify-demos.mjs",
+      "expected": "b00d1de659f899d3e17530e769852546fd0cd6db9970237f50a85e9b02ba9ed0",
+      "actual": "b00d1de659f899d3e17530e769852546fd0cd6db9970237f50a85e9b02ba9ed0",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/source/verify-print.py",
+      "expected": "3f288eef828d7bd0f14724d6a3f1c4512af41ccd5ee1fcd52b013e7d70b69d8c",
+      "actual": "3f288eef828d7bd0f14724d6a3f1c4512af41ccd5ee1fcd52b013e7d70b69d8c",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/validation/ACCEPTANCE.md",
+      "expected": "a9c197455a65100f473a7a393672b3127191dae1441f5870b7071e1cec54eb82",
+      "actual": "a9c197455a65100f473a7a393672b3127191dae1441f5870b7071e1cec54eb82",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/validation/a4-1.png",
+      "expected": "ef0b10e0718cf991af65a9f8eca40f4cbae31f2446d978ce170baa1973f2e529",
+      "actual": "ef0b10e0718cf991af65a9f8eca40f4cbae31f2446d978ce170baa1973f2e529",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/validation/a4-2.png",
+      "expected": "03a2dbb21214e96330552520084b827e62829360380a744e6993302cda192ea2",
+      "actual": "03a2dbb21214e96330552520084b827e62829360380a744e6993302cda192ea2",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/validation/a4-3.png",
+      "expected": "53c6370fc63bb76a50f58b3ff791907f4eafb1fada26284efeeeb54f473bfe09",
+      "actual": "53c6370fc63bb76a50f58b3ff791907f4eafb1fada26284efeeeb54f473bfe09",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/validation/a4-4.png",
+      "expected": "4c653aa411965835be2db7b974d820389461961c50a0ad1b1363a6443efab7a1",
+      "actual": "4c653aa411965835be2db7b974d820389461961c50a0ad1b1363a6443efab7a1",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/validation/a4-5.png",
+      "expected": "76eb667b23ff95a65e0bb859675fcf03e085ef29c596f5a51c5d75b13bbbb80e",
+      "actual": "76eb667b23ff95a65e0bb859675fcf03e085ef29c596f5a51c5d75b13bbbb80e",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/validation/a4-6.png",
+      "expected": "57bcdaf21917e0fb4849949a754f86a144c2946766a9c83df96232fd429feeba",
+      "actual": "57bcdaf21917e0fb4849949a754f86a144c2946766a9c83df96232fd429feeba",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/validation/a4-contact-1.png",
+      "expected": "e0a0b412fad342ac40550cd3ee1da604cf0b864cf65d25e37365145116d5787b",
+      "actual": "e0a0b412fad342ac40550cd3ee1da604cf0b864cf65d25e37365145116d5787b",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/validation/a4-gray-1.png",
+      "expected": "f19ce6631030f24c5b5fa16010a8f9cb95639f557b84de67b105576e5aa56e38",
+      "actual": "f19ce6631030f24c5b5fa16010a8f9cb95639f557b84de67b105576e5aa56e38",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/validation/card-1.png",
+      "expected": "9874e002ace03934f265146ab02b562fa27495b3738d53af623678295530eeba",
+      "actual": "9874e002ace03934f265146ab02b562fa27495b3738d53af623678295530eeba",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/validation/card-2.png",
+      "expected": "19da2d55d22ccb555122e1820224520b3b4f955066226b5804221e6c8f8e22ed",
+      "actual": "19da2d55d22ccb555122e1820224520b3b4f955066226b5804221e6c8f8e22ed",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/validation/card-3.png",
+      "expected": "e05ab2eafd7bd73200d454f42cd3bf098439cc3ad34037a83235f622facc9d4e",
+      "actual": "e05ab2eafd7bd73200d454f42cd3bf098439cc3ad34037a83235f622facc9d4e",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/validation/card-4.png",
+      "expected": "a08aa2295e9d1a56c302593bd47812ad38431cb9fc0c5efcdcb867099e2ab612",
+      "actual": "a08aa2295e9d1a56c302593bd47812ad38431cb9fc0c5efcdcb867099e2ab612",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/validation/card-5.png",
+      "expected": "53976172e02a23d7a0443f44eeffa72f4ea0115d4d95c24e344f47907e2e18f8",
+      "actual": "53976172e02a23d7a0443f44eeffa72f4ea0115d4d95c24e344f47907e2e18f8",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/validation/card-6.png",
+      "expected": "db842b9d1993d281601179ee6eaa434eaa4ad84bf2f3fd5ebb864d04615d46c7",
+      "actual": "db842b9d1993d281601179ee6eaa434eaa4ad84bf2f3fd5ebb864d04615d46c7",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/validation/card-7.png",
+      "expected": "27cd7d8829caaf88ec824ad0cec8ea7d96c9cb8261e0eaae8a3058803d9afdae",
+      "actual": "27cd7d8829caaf88ec824ad0cec8ea7d96c9cb8261e0eaae8a3058803d9afdae",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/validation/card-8.png",
+      "expected": "2f8ab05c14177f26ffe859ac7d1b404275c0ab40cdd2fdf7e76e30eb6ca4baf9",
+      "actual": "2f8ab05c14177f26ffe859ac7d1b404275c0ab40cdd2fdf7e76e30eb6ca4baf9",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/validation/card-contact-1.png",
+      "expected": "708242b93413ad89b54e4fbd3d1c0170bd0a258a756d6da1388b77127ce9798e",
+      "actual": "708242b93413ad89b54e4fbd3d1c0170bd0a258a756d6da1388b77127ce9798e",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/validation/card-contact-2.png",
+      "expected": "550456204d72f57ed51245d2c3166e07615510cbc19afdac3a9ce588efdaece4",
+      "actual": "550456204d72f57ed51245d2c3166e07615510cbc19afdac3a9ce588efdaece4",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/validation/card-gray-1.png",
+      "expected": "1808f24df5275dd886c1b8ef56925c70d5b31e86e71649e1cbdb4cf857473232",
+      "actual": "1808f24df5275dd886c1b8ef56925c70d5b31e86e71649e1cbdb4cf857473232",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/validation/card-gray-2.png",
+      "expected": "4691ade8e35310a398955a336282d7c6024162b169260686c9c3102e6a1702a4",
+      "actual": "4691ade8e35310a398955a336282d7c6024162b169260686c9c3102e6a1702a4",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/validation/engine-checks.json",
+      "expected": "bbd31de1c58247ee871eb82f9344940e3e1802bd0dab1146b3eb4778e2594aeb",
+      "actual": "bbd31de1c58247ee871eb82f9344940e3e1802bd0dab1146b3eb4778e2594aeb",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/validation/input-manifest.json",
+      "expected": "1452173f6081ab340115afc01fa191a1da62e4f8337adf6938578e1912267bab",
+      "actual": "1452173f6081ab340115afc01fa191a1da62e4f8337adf6938578e1912267bab",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/validation/mini-1.png",
+      "expected": "a1a458cda61f05f34a90f248c9defe4b48d3286c842b2a58a4be636d7c4d08cf",
+      "actual": "a1a458cda61f05f34a90f248c9defe4b48d3286c842b2a58a4be636d7c4d08cf",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/validation/mini-2.png",
+      "expected": "cd720dcc42bc15cd857f9481a642982e46cfebd9bb98e46e27658357f5134498",
+      "actual": "cd720dcc42bc15cd857f9481a642982e46cfebd9bb98e46e27658357f5134498",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/validation/mini-contact-1.png",
+      "expected": "4a171aca532603942dd83891ffeba27d7d7260a7f7000906292bae70f6f71538",
+      "actual": "4a171aca532603942dd83891ffeba27d7d7260a7f7000906292bae70f6f71538",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/validation/mini-gray-1.png",
+      "expected": "e05d823629c6fdcdc5b599f9723ea07aae64c21a90f9e5016fb5f377314fcbc7",
+      "actual": "e05d823629c6fdcdc5b599f9723ea07aae64c21a90f9e5016fb5f377314fcbc7",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/validation/print-checks.json",
+      "expected": "40f41314d1cb2c4debb8ab4e16814040a78f98944e41acfb627e7e48789861cf",
+      "actual": "40f41314d1cb2c4debb8ab4e16814040a78f98944e41acfb627e7e48789861cf",
+      "passed": true
+    },
+    {
+      "path": "materials/rule-cards/validation/text-geometry.json",
+      "expected": "b49e1ecfa4622f9cb63775b01dd088fd598f98258167e4568281dbb076dc33b9",
+      "actual": "b49e1ecfa4622f9cb63775b01dd088fd598f98258167e4568281dbb076dc33b9",
+      "passed": true
+    },
+    {
+      "path": "package.json",
+      "expected": "4a325233a8dd6f57308c9624792420e8008f9837e765074178db200ab98ba1ae",
+      "actual": "4a325233a8dd6f57308c9624792420e8008f9837e765074178db200ab98ba1ae",
+      "passed": true
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "expected": "80fb6c23436fb904456dea058ecb97d48d6789c5fc5a3f59bceca8131e7d655c",
+      "actual": "80fb6c23436fb904456dea058ecb97d48d6789c5fc5a3f59bceca8131e7d655c",
+      "passed": true
+    },
+    {
+      "path": "schemas/content.schema.json",
+      "expected": "82a1a060ff48c7072aba29d5091c55e976eaed04e5d6af5787408885b07e2e88",
+      "actual": "82a1a060ff48c7072aba29d5091c55e976eaed04e5d6af5787408885b07e2e88",
+      "passed": true
+    },
+    {
+      "path": "scripts/freeze-b/audit-content.py",
+      "expected": "7c340e58c67f64b53440a82219b573dceec071777fb3b9305415c7e263813bb2",
+      "actual": "7c340e58c67f64b53440a82219b573dceec071777fb3b9305415c7e263813bb2",
+      "passed": true
+    },
+    {
+      "path": "scripts/freeze-b/check-material-schema.mjs",
+      "expected": "6c1f15e307a6cc23f61666d5a6e61676a1bf78d91127a92fbc945e5249633b6a",
+      "actual": "6c1f15e307a6cc23f61666d5a6e61676a1bf78d91127a92fbc945e5249633b6a",
+      "passed": true
+    },
+    {
+      "path": "scripts/freeze-b/generate-manifests.py",
+      "expected": "0a4bad77ae19bc64a2c57dcdeb8ddceb1f080a753fda128fcff2a1d24e8d7682",
+      "actual": "0a4bad77ae19bc64a2c57dcdeb8ddceb1f080a753fda128fcff2a1d24e8d7682",
+      "passed": true
+    },
+    {
+      "path": "scripts/freeze-b/package.py",
+      "expected": "f94279ff35ec765b3ecfb53efb7ea7f95b78af3ae798a030902daecbfbebf2bb",
+      "actual": "f94279ff35ec765b3ecfb53efb7ea7f95b78af3ae798a030902daecbfbebf2bb",
+      "passed": true
+    },
+    {
+      "path": "scripts/freeze-b/playwright.config.ts",
+      "expected": "db8113774f957390f56c52ca798da6a695ff8e5e0103496575f1edbbdc978d05",
+      "actual": "db8113774f957390f56c52ca798da6a695ff8e5e0103496575f1edbbdc978d05",
+      "passed": true
+    },
+    {
+      "path": "scripts/freeze-b/render-review.py",
+      "expected": "eebdeffafa76bdfb78d743abef38cefa6ba5057e4bc5d0384364d517cc47d46e",
+      "actual": "eebdeffafa76bdfb78d743abef38cefa6ba5057e4bc5d0384364d517cc47d46e",
+      "passed": true
+    },
+    {
+      "path": "scripts/freeze-b/run-main-checks.py",
+      "expected": "8909e990a50f4d6995bd16fcf504a3457c7d3b99b16029ce7cc6f96665d8e0e1",
+      "actual": "8909e990a50f4d6995bd16fcf504a3457c7d3b99b16029ce7cc6f96665d8e0e1",
+      "passed": true
+    },
+    {
+      "path": "scripts/freeze-b/run-t20-checks.py",
+      "expected": "95d077fa2746f0f20c5440d9fdaed1c86b4cbded3eea13b862ac583f69bc862c",
+      "actual": "95d077fa2746f0f20c5440d9fdaed1c86b4cbded3eea13b862ac583f69bc862c",
+      "passed": true
+    },
+    {
+      "path": "scripts/verify-content-freeze.mjs",
+      "expected": "2c7566041376e9169be4f14aac4b8aa9407a451cbcdf4a4c5ba75b91afd04185",
+      "actual": "2c7566041376e9169be4f14aac4b8aa9407a451cbcdf4a4c5ba75b91afd04185",
+      "passed": true
+    },
+    {
+      "path": "src/core/constants.ts",
+      "expected": "34d300591ec2ff5bd4e0c0676beb6edd562a056163e3c2c6d3b1c232a92fc011",
+      "actual": "34d300591ec2ff5bd4e0c0676beb6edd562a056163e3c2c6d3b1c232a92fc011",
+      "passed": true
+    },
+    {
+      "path": "src/core/content.generated.d.ts",
+      "expected": "051a94eda12a064248aac313a97a90c93336a934a13cf39583314c03b68b23b1",
+      "actual": "051a94eda12a064248aac313a97a90c93336a934a13cf39583314c03b68b23b1",
+      "passed": true
+    },
+    {
+      "path": "src/core/coordinates.ts",
+      "expected": "eb51c267c8f48bfea6538d439d3e5c0c43d6eeb4a1aefb5266da047add3a8b81",
+      "actual": "eb51c267c8f48bfea6538d439d3e5c0c43d6eeb4a1aefb5266da047add3a8b81",
+      "passed": true
+    },
+    {
+      "path": "src/core/persistence.ts",
+      "expected": "488e75ea10061845ed3d1ea194698fe5ef7fc8f2f6e8b2639785ffc0cc1dbcfb",
+      "actual": "488e75ea10061845ed3d1ea194698fe5ef7fc8f2f6e8b2639785ffc0cc1dbcfb",
+      "passed": true
+    },
+    {
+      "path": "src/core/rules/contract.ts",
+      "expected": "c83f724155ef53b8bfb625dbf502549e061b1aeb8c02d6db69ebf0352698cff0",
+      "actual": "c83f724155ef53b8bfb625dbf502549e061b1aeb8c02d6db69ebf0352698cff0",
+      "passed": true
+    },
+    {
+      "path": "src/core/rules/engine.ts",
+      "expected": "c26657287972a8afc1935c691c4cc649199d1070209eb8873ef72f2494b3e014",
+      "actual": "c26657287972a8afc1935c691c4cc649199d1070209eb8873ef72f2494b3e014",
+      "passed": true
+    },
+    {
+      "path": "src/core/rules/errors.zh.ts",
+      "expected": "72b1cf7d81f6501117fbbd3908981a14605aa2d3912125c98811682811a8cc6d",
+      "actual": "72b1cf7d81f6501117fbbd3908981a14605aa2d3912125c98811682811a8cc6d",
+      "passed": true
+    },
+    {
+      "path": "src/core/rules/game-store.ts",
+      "expected": "6e24e8bce6f044eb440148e254b9645bbce7a8b15a97e369339d682534ff832c",
+      "actual": "6e24e8bce6f044eb440148e254b9645bbce7a8b15a97e369339d682534ff832c",
+      "passed": true
+    },
+    {
+      "path": "src/core/rules/index.ts",
+      "expected": "55334977e115784fdbdd1b1726569b70ddd48f12e1e58529d4cbbe343e2e9d77",
+      "actual": "55334977e115784fdbdd1b1726569b70ddd48f12e1e58529d4cbbe343e2e9d77",
+      "passed": true
+    },
+    {
+      "path": "src/core/rules/internal.ts",
+      "expected": "f5709f56f5a7c84e26cb6cf0dc246847d7acecf40136a8f77449172ff2294e29",
+      "actual": "f5709f56f5a7c84e26cb6cf0dc246847d7acecf40136a8f77449172ff2294e29",
+      "passed": true
+    },
+    {
+      "path": "src/core/rules/placement.ts",
+      "expected": "b344b4291fe2fb77195030768c09e6018022eaa72c1ad668c4febf8c86b51d0b",
+      "actual": "b344b4291fe2fb77195030768c09e6018022eaa72c1ad668c4febf8c86b51d0b",
+      "passed": true
+    },
+    {
+      "path": "src/core/rules/scoring.ts",
+      "expected": "9ec7fa559c40442bd132e1ee385aaf08911d56bafbc1c48b436caa8b3a5036d4",
+      "actual": "9ec7fa559c40442bd132e1ee385aaf08911d56bafbc1c48b436caa8b3a5036d4",
+      "passed": true
+    },
+    {
+      "path": "src/core/rules/topology.ts",
+      "expected": "5bcc0672e9f75fe1ce9845bdade83bc5a9008fa9a5bc1950dac13833df947596",
+      "actual": "5bcc0672e9f75fe1ce9845bdade83bc5a9008fa9a5bc1950dac13833df947596",
+      "passed": true
+    },
+    {
+      "path": "src/core/validation.ts",
+      "expected": "152405b95158ae2e3a27b5b354c6ee7b4093b9661623bbd8050b503920aa2296",
+      "actual": "152405b95158ae2e3a27b5b354c6ee7b4093b9661623bbd8050b503920aa2296",
+      "passed": true
+    }
+  ]
+}

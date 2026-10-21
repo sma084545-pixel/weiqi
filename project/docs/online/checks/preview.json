@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "ONLINE-CURRENT-PREVIEW",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "programVersion": "0.20.0",
+  "url": "http://127.0.0.1:4190/#/play/online",
+  "status": "passed",
+  "checks": [
+    "Previous local service absent; started new Node server on original port4190",
+    "Actual in-app browser kept local data and used Save submitted content and apply update",
+    "UI visibly shows online-play/Create/Join/Service connected/default9/komi0",
+    "No room or test feedback created in user preview; test rooms are isolated tmp files"
+  ],
+  "publicDeployment": false,
+  "realTwoDevicesTested": false,
+  "humanReviewed": null
+}

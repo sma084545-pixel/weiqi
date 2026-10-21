@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="210mm" height="297mm" viewBox="0 0 210 297" id="T19-BOARD-13X13-A4-PLAIN">
+<metadata>{&quot;boardSize&quot;: 13, &quot;coordinates&quot;: false, &quot;id&quot;: &quot;T19-BOARD-13X13-A4-PLAIN&quot;, &quot;kind&quot;: &quot;printable-board&quot;, &quot;pageMm&quot;: [210, 297], &quot;printScalePercent&quot;: 100, &quot;resultVersion&quot;: &quot;0.2.0-t19.1&quot;, &quot;revision&quot;: 1, &quot;rulesetId&quot;: &quot;GO-CLUB-AREA-1&quot;, &quot;schemaVersion&quot;: 1, &quot;spacingMm&quot;: 14, &quot;stoneDiameterMm&quot;: [11, 12]}</metadata>
+<style>text{font-family:"Arial Unicode MS","PingFang SC","Hiragino Sans GB",sans-serif}.cut{stroke-dasharray:2 1}.guide{stroke-dasharray:3 2}</style>
+<rect x="10.000" y="37.000" width="190.000" height="194.000" rx="2.500" fill="#F6D88A" stroke="#7B5A20" stroke-width="0.550" class="board-panel"/>
+<line x1="21.000" y1="50.000" x2="21.000" y2="218.000" stroke="#111111" stroke-width="0.420" class="grid-line vertical"/>
+<line x1="21.000" y1="50.000" x2="189.000" y2="50.000" stroke="#111111" stroke-width="0.420" class="grid-line horizontal"/>
+<line x1="35.000" y1="50.000" x2="35.000" y2="218.000" stroke="#111111" stroke-width="0.420" class="grid-line vertical"/>
+<line x1="21.000" y1="64.000" x2="189.000" y2="64.000" stroke="#111111" stroke-width="0.420" class="grid-line horizontal"/>
+<line x1="49.000" y1="50.000" x2="49.000" y2="218.000" stroke="#111111" stroke-width="0.420" class="grid-line vertical"/>
+<line x1="21.000" y1="78.000" x2="189.000" y2="78.000" stroke="#111111" stroke-width="0.420" class="grid-line horizontal"/>
+<line x1="63.000" y1="50.000" x2="63.000" y2="218.000" stroke="#111111" stroke-width="0.420" class="grid-line vertical"/>
+<line x1="21.000" y1="92.000" x2="189.000" y2="92.000" stroke="#111111" stroke-width="0.420" class="grid-line horizontal"/>
+<line x1="77.000" y1="50.000" x2="77.000" y2="218.000" stroke="#111111" stroke-width="0.420" class="grid-line vertical"/>
+<line x1="21.000" y1="106.000" x2="189.000" y2="106.000" stroke="#111111" stroke-width="0.420" class="grid-line horizontal"/>
+<line x1="91.000" y1="50.000" x2="91.000" y2="218.000" stroke="#111111" stroke-width="0.420" class="grid-line vertical"/>
+<line x1="21.000" y1="120.000" x2="189.000" y2="120.000" stroke="#111111" stroke-width="0.420" class="grid-line horizontal"/>
+<line x1="105.000" y1="50.000" x2="105.000" y2="218.000" stroke="#111111" stroke-width="0.420" class="grid-line vertical"/>
+<line x1="21.000" y1="134.000" x2="189.000" y2="134.000" stroke="#111111" stroke-width="0.420" class="grid-line horizontal"/>
+<line x1="119.000" y1="50.000" x2="119.000" y2="218.000" stroke="#111111" stroke-width="0.420" class="grid-line vertical"/>
+<line x1="21.000" y1="148.000" x2="189.000" y2="148.000" stroke="#111111" stroke-width="0.420" class="grid-line horizontal"/>
+<line x1="133.000" y1="50.000" x2="133.000" y2="218.000" stroke="#111111" stroke-width="0.420" class="grid-line vertical"/>
+<line x1="21.000" y1="162.000" x2="189.000" y2="162.000" stroke="#111111" stroke-width="0.420" class="grid-line horizontal"/>
+<line x1="147.000" y1="50.000" x2="147.000" y2="218.000" stroke="#111111" stroke-width="0.420" class="grid-line vertical"/>
+<line x1="21.000" y1="176.000" x2="189.000" y2="176.000" stroke="#111111" stroke-width="0.420" class="grid-line horizontal"/>
+<line x1="161.000" y1="50.000" x2="161.000" y2="218.000" stroke="#111111" stroke-width="0.420" class="grid-line vertical"/>
+<line x1="21.000" y1="190.000" x2="189.000" y2="190.000" stroke="#111111" stroke-width="0.420" class="grid-line horizontal"/>
+<line x1="175.000" y1="50.000" x2="175.000" y2="218.000" stroke="#111111" stroke-width="0.420" class="grid-line vertical"/>
+<line x1="21.000" y1="204.000" x2="189.000" y2="204.000" stroke="#111111" stroke-width="0.420" class="grid-line horizontal"/>
+<line x1="189.000" y1="50.000" x2="189.000" y2="218.000" stroke="#111111" stroke-width="0.420" class="grid-line vertical"/>
+<line x1="21.000" y1="218.000" x2="189.000" y2="218.000" stroke="#111111" stroke-width="0.420" class="grid-line horizontal"/>
+<circle cx="63.000" cy="92.000" r="1.150" fill="#111111" stroke="#111111" stroke-width="0.000" class="navigation-dot"/>
+<circle cx="147.000" cy="92.000" r="1.150" fill="#111111" stroke="#111111" stroke-width="0.000" class="navigation-dot"/>
+<circle cx="105.000" cy="134.000" r="1.150" fill="#111111" stroke="#111111" stroke-width="0.000" class="navigation-dot"/>
+<circle cx="63.000" cy="176.000" r="1.150" fill="#111111" stroke="#111111" stroke-width="0.000" class="navigation-dot"/>
+<circle cx="147.000" cy="176.000" r="1.150" fill="#111111" stroke="#111111" stroke-width="0.000" class="navigation-dot"/>
+<text x="105.000" y="14.000" font-size="5.000mm" text-anchor="middle" fill="#111111" font-weight="bold" class="">双人练习棋盘 | 13×13 无坐标版</text>
+<text x="105.000" y="23.000" font-size="3.100mm" text-anchor="middle" fill="#333333" font-weight="normal" class="">棋子落在交叉点；黑先。显示坐标从左下 A1 起，列跳过 I。</text>
+<text x="15.000" y="239.000" font-size="3.800mm" text-anchor="start" fill="#111111" font-weight="bold" class="">打印与使用</text>
+<text x="15.000" y="246.000" font-size="2.700mm" text-anchor="start" fill="#111111" font-weight="normal" class="">A4 竖向 210×297 mm | 格距 14 mm | 适用棋子直径 11-12 mm</text>
+<text x="15.000" y="251.000" font-size="2.700mm" text-anchor="start" fill="#111111" font-weight="normal" class="">按 100% / 实际大小打印；关闭“适合页面”。先量校准尺，再使用或覆膜。</text>
+<text x="15.000" y="256.000" font-size="2.700mm" text-anchor="start" fill="#111111" font-weight="normal" class="">规则：GO-CLUB-AREA-1（项目自定义教学规则） | 版次：0.2.0-t19.1</text>
+<line x1="55.000" y1="278.000" x2="155.000" y2="278.000" stroke="#111111" stroke-width="0.450" class="calibration-ruler"/>
+<line x1="55.000" y1="275.000" x2="55.000" y2="281.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="55.000" y="284.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">0</text>
+<line x1="65.000" y1="276.000" x2="65.000" y2="280.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="65.000" y="284.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">10</text>
+<line x1="75.000" y1="276.000" x2="75.000" y2="280.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="75.000" y="284.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">20</text>
+<line x1="85.000" y1="276.000" x2="85.000" y2="280.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="85.000" y="284.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">30</text>
+<line x1="95.000" y1="276.000" x2="95.000" y2="280.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="95.000" y="284.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">40</text>
+<line x1="105.000" y1="275.000" x2="105.000" y2="281.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="105.000" y="284.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">50</text>
+<line x1="115.000" y1="276.000" x2="115.000" y2="280.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="115.000" y="284.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">60</text>
+<line x1="125.000" y1="276.000" x2="125.000" y2="280.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="125.000" y="284.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">70</text>
+<line x1="135.000" y1="276.000" x2="135.000" y2="280.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="135.000" y="284.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">80</text>
+<line x1="145.000" y1="276.000" x2="145.000" y2="280.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="145.000" y="284.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">90</text>
+<line x1="155.000" y1="275.000" x2="155.000" y2="281.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="155.000" y="284.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">100</text>
+<text x="105.000" y="274.000" font-size="2.500mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-title">校准尺 100 mm</text>
+</svg>

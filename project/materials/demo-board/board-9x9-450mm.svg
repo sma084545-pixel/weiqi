@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="450mm" height="450mm" viewBox="0 0 450 450">
+  <title>9×9 围棋演示盘 450 mm</title>
+  <desc>九横九竖、81交叉点、45 mm网格的可编辑矢量图。</desc>
+  <metadata>schemaVersion=1; id=T18-DEMO-BOARD; revision=1; rulesetId=GO-CLUB-AREA-1; units=mm</metadata>
+  <style>
+    text { font-family: "Arial Unicode MS", "PingFang SC", sans-serif; fill: #18211C; }
+    .grid-line { stroke: #263028; stroke-width: 1.2; vector-effect: non-scaling-stroke; }
+    .cut-line { stroke: #777; stroke-width: .35; stroke-dasharray: 2 1; fill: none; }
+    .note { font-size: 4px; } .small { font-size: 3.2px; } .label { font-size: 5px; font-weight: 700; }
+  </style>
+<rect id="board-background" x="0" y="0" width="450" height="450" fill="#EDC585"/>
+<rect x="1" y="1" width="448" height="448" rx="2" fill="none" stroke="#3B2F22" stroke-width="2"/>
+<g id="grid">
+<line class="grid-line vertical" data-index="0" x1="45" y1="45" x2="45" y2="405"/>
+<line class="grid-line horizontal" data-index="0" x1="45" y1="45" x2="405" y2="45"/>
+<line class="grid-line vertical" data-index="1" x1="90" y1="45" x2="90" y2="405"/>
+<line class="grid-line horizontal" data-index="1" x1="45" y1="90" x2="405" y2="90"/>
+<line class="grid-line vertical" data-index="2" x1="135" y1="45" x2="135" y2="405"/>
+<line class="grid-line horizontal" data-index="2" x1="45" y1="135" x2="405" y2="135"/>
+<line class="grid-line vertical" data-index="3" x1="180" y1="45" x2="180" y2="405"/>
+<line class="grid-line horizontal" data-index="3" x1="45" y1="180" x2="405" y2="180"/>
+<line class="grid-line vertical" data-index="4" x1="225" y1="45" x2="225" y2="405"/>
+<line class="grid-line horizontal" data-index="4" x1="45" y1="225" x2="405" y2="225"/>
+<line class="grid-line vertical" data-index="5" x1="270" y1="45" x2="270" y2="405"/>
+<line class="grid-line horizontal" data-index="5" x1="45" y1="270" x2="405" y2="270"/>
+<line class="grid-line vertical" data-index="6" x1="315" y1="45" x2="315" y2="405"/>
+<line class="grid-line horizontal" data-index="6" x1="45" y1="315" x2="405" y2="315"/>
+<line class="grid-line vertical" data-index="7" x1="360" y1="45" x2="360" y2="405"/>
+<line class="grid-line horizontal" data-index="7" x1="45" y1="360" x2="405" y2="360"/>
+<line class="grid-line vertical" data-index="8" x1="405" y1="45" x2="405" y2="405"/>
+<line class="grid-line horizontal" data-index="8" x1="45" y1="405" x2="405" y2="405"/>
+</g>
+<g id="intersections" fill="none" stroke="none">
+<circle class="intersection" data-row="0" data-col="0" cx="45" cy="45" r="0.25"/>
+<circle class="intersection" data-row="0" data-col="1" cx="90" cy="45" r="0.25"/>
+<circle class="intersection" data-row="0" data-col="2" cx="135" cy="45" r="0.25"/>
+<circle class="intersection" data-row="0" data-col="3" cx="180" cy="45" r="0.25"/>
+<circle class="intersection" data-row="0" data-col="4" cx="225" cy="45" r="0.25"/>
+<circle class="intersection" data-row="0" data-col="5" cx="270" cy="45" r="0.25"/>
+<circle class="intersection" data-row="0" data-col="6" cx="315" cy="45" r="0.25"/>
+<circle class="intersection" data-row="0" data-col="7" cx="360" cy="45" r="0.25"/>
+<circle class="intersection" data-row="0" data-col="8" cx="405" cy="45" r="0.25"/>
+<circle class="intersection" data-row="1" data-col="0" cx="45" cy="90" r="0.25"/>
+<circle class="intersection" data-row="1" data-col="1" cx="90" cy="90" r="0.25"/>
+<circle class="intersection" data-row="1" data-col="2" cx="135" cy="90" r="0.25"/>
+<circle class="intersection" data-row="1" data-col="3" cx="180" cy="90" r="0.25"/>
+<circle class="intersection" data-row="1" data-col="4" cx="225" cy="90" r="0.25"/>
+<circle class="intersection" data-row="1" data-col="5" cx="270" cy="90" r="0.25"/>
+<circle class="intersection" data-row="1" data-col="6" cx="315" cy="90" r="0.25"/>
+<circle class="intersection" data-row="1" data-col="7" cx="360" cy="90" r="0.25"/>
+<circle class="intersection" data-row="1" data-col="8" cx="405" cy="90" r="0.25"/>
+<circle class="intersection" data-row="2" data-col="0" cx="45" cy="135" r="0.25"/>
+<circle class="intersection" data-row="2" data-col="1" cx="90" cy="135" r="0.25"/>
+<circle class="intersection" data-row="2" data-col="2" cx="135" cy="135" r="0.25"/>
+<circle class="intersection" data-row="2" data-col="3" cx="180" cy="135" r="0.25"/>
+<circle class="intersection" data-row="2" data-col="4" cx="225" cy="135" r="0.25"/>
+<circle class="intersection" data-row="2" data-col="5" cx="270" cy="135" r="0.25"/>
+<circle class="intersection" data-row="2" data-col="6" cx="315" cy="135" r="0.25"/>
+<circle class="intersection" data-row="2" data-col="7" cx="360" cy="135" r="0.25"/>
+<circle class="intersection" data-row="2" data-col="8" cx="405" cy="135" r="0.25"/>
+<circle class="intersection" data-row="3" data-col="0" cx="45" cy="180" r="0.25"/>
+<circle class="intersection" data-row="3" data-col="1" cx="90" cy="180" r="0.25"/>
+<circle class="intersection" data-row="3" data-col="2" cx="135" cy="180" r="0.25"/>
+<circle class="intersection" data-row="3" data-col="3" cx="180" cy="180" r="0.25"/>
+<circle class="intersection" data-row="3" data-col="4" cx="225" cy="180" r="0.25"/>
+<circle class="intersection" data-row="3" data-col="5" cx="270" cy="180" r="0.25"/>
+<circle class="intersection" data-row="3" data-col="6" cx="315" cy="180" r="0.25"/>
+<circle class="intersection" data-row="3" data-col="7" cx="360" cy="180" r="0.25"/>
+<circle class="intersection" data-row="3" data-col="8" cx="405" cy="180" r="0.25"/>
+<circle class="intersection" data-row="4" data-col="0" cx="45" cy="225" r="0.25"/>
+<circle class="intersection" data-row="4" data-col="1" cx="90" cy="225" r="0.25"/>
+<circle class="intersection" data-row="4" data-col="2" cx="135" cy="225" r="0.25"/>
+<circle class="intersection" data-row="4" data-col="3" cx="180" cy="225" r="0.25"/>
+<circle class="intersection" data-row="4" data-col="4" cx="225" cy="225" r="0.25"/>
+<circle class="intersection" data-row="4" data-col="5" cx="270" cy="225" r="0.25"/>
+<circle class="intersection" data-row="4" data-col="6" cx="315" cy="225" r="0.25"/>
+<circle class="intersection" data-row="4" data-col="7" cx="360" cy="225" r="0.25"/>
+<circle class="intersection" data-row="4" data-col="8" cx="405" cy="225" r="0.25"/>
+<circle class="intersection" data-row="5" data-col="0" cx="45" cy="270" r="0.25"/>
+<circle class="intersection" data-row="5" data-col="1" cx="90" cy="270" r="0.25"/>
+<circle class="intersection" data-row="5" data-col="2" cx="135" cy="270" r="0.25"/>
+<circle class="intersection" data-row="5" data-col="3" cx="180" cy="270" r="0.25"/>
+<circle class="intersection" data-row="5" data-col="4" cx="225" cy="270" r="0.25"/>
+<circle class="intersection" data-row="5" data-col="5" cx="270" cy="270" r="0.25"/>
+<circle class="intersection" data-row="5" data-col="6" cx="315" cy="270" r="0.25"/>
+<circle class="intersection" data-row="5" data-col="7" cx="360" cy="270" r="0.25"/>
+<circle class="intersection" data-row="5" data-col="8" cx="405" cy="270" r="0.25"/>
+<circle class="intersection" data-row="6" data-col="0" cx="45" cy="315" r="0.25"/>
+<circle class="intersection" data-row="6" data-col="1" cx="90" cy="315" r="0.25"/>
+<circle class="intersection" data-row="6" data-col="2" cx="135" cy="315" r="0.25"/>
+<circle class="intersection" data-row="6" data-col="3" cx="180" cy="315" r="0.25"/>
+<circle class="intersection" data-row="6" data-col="4" cx="225" cy="315" r="0.25"/>
+<circle class="intersection" data-row="6" data-col="5" cx="270" cy="315" r="0.25"/>
+<circle class="intersection" data-row="6" data-col="6" cx="315" cy="315" r="0.25"/>
+<circle class="intersection" data-row="6" data-col="7" cx="360" cy="315" r="0.25"/>
+<circle class="intersection" data-row="6" data-col="8" cx="405" cy="315" r="0.25"/>
+<circle class="intersection" data-row="7" data-col="0" cx="45" cy="360" r="0.25"/>
+<circle class="intersection" data-row="7" data-col="1" cx="90" cy="360" r="0.25"/>
+<circle class="intersection" data-row="7" data-col="2" cx="135" cy="360" r="0.25"/>
+<circle class="intersection" data-row="7" data-col="3" cx="180" cy="360" r="0.25"/>
+<circle class="intersection" data-row="7" data-col="4" cx="225" cy="360" r="0.25"/>
+<circle class="intersection" data-row="7" data-col="5" cx="270" cy="360" r="0.25"/>
+<circle class="intersection" data-row="7" data-col="6" cx="315" cy="360" r="0.25"/>
+<circle class="intersection" data-row="7" data-col="7" cx="360" cy="360" r="0.25"/>
+<circle class="intersection" data-row="7" data-col="8" cx="405" cy="360" r="0.25"/>
+<circle class="intersection" data-row="8" data-col="0" cx="45" cy="405" r="0.25"/>
+<circle class="intersection" data-row="8" data-col="1" cx="90" cy="405" r="0.25"/>
+<circle class="intersection" data-row="8" data-col="2" cx="135" cy="405" r="0.25"/>
+<circle class="intersection" data-row="8" data-col="3" cx="180" cy="405" r="0.25"/>
+<circle class="intersection" data-row="8" data-col="4" cx="225" cy="405" r="0.25"/>
+<circle class="intersection" data-row="8" data-col="5" cx="270" cy="405" r="0.25"/>
+<circle class="intersection" data-row="8" data-col="6" cx="315" cy="405" r="0.25"/>
+<circle class="intersection" data-row="8" data-col="7" cx="360" cy="405" r="0.25"/>
+<circle class="intersection" data-row="8" data-col="8" cx="405" cy="405" r="0.25"/>
+</g>
+<circle class="star-point" data-row="2" data-col="2" cx="135" cy="135" r="3" fill="#18211C"/>
+<circle class="star-point" data-row="2" data-col="6" cx="315" cy="135" r="3" fill="#18211C"/>
+<circle class="star-point" data-row="4" data-col="4" cx="225" cy="225" r="3" fill="#18211C"/>
+<circle class="star-point" data-row="6" data-col="2" cx="135" cy="315" r="3" fill="#18211C"/>
+<circle class="star-point" data-row="6" data-col="6" cx="315" cy="315" r="3" fill="#18211C"/>
+<text x="45" y="28" class="label" text-anchor="middle" >A</text>
+<text x="45" y="425" class="label" text-anchor="middle" >A</text>
+<text x="90" y="28" class="label" text-anchor="middle" >B</text>
+<text x="90" y="425" class="label" text-anchor="middle" >B</text>
+<text x="135" y="28" class="label" text-anchor="middle" >C</text>
+<text x="135" y="425" class="label" text-anchor="middle" >C</text>
+<text x="180" y="28" class="label" text-anchor="middle" >D</text>
+<text x="180" y="425" class="label" text-anchor="middle" >D</text>
+<text x="225" y="28" class="label" text-anchor="middle" >E</text>
+<text x="225" y="425" class="label" text-anchor="middle" >E</text>
+<text x="270" y="28" class="label" text-anchor="middle" >F</text>
+<text x="270" y="425" class="label" text-anchor="middle" >F</text>
+<text x="315" y="28" class="label" text-anchor="middle" >G</text>
+<text x="315" y="425" class="label" text-anchor="middle" >G</text>
+<text x="360" y="28" class="label" text-anchor="middle" >H</text>
+<text x="360" y="425" class="label" text-anchor="middle" >H</text>
+<text x="405" y="28" class="label" text-anchor="middle" >J</text>
+<text x="405" y="425" class="label" text-anchor="middle" >J</text>
+<text x="25" y="46.8" class="label" text-anchor="middle" >9</text>
+<text x="425" y="46.8" class="label" text-anchor="middle" >9</text>
+<text x="25" y="91.8" class="label" text-anchor="middle" >8</text>
+<text x="425" y="91.8" class="label" text-anchor="middle" >8</text>
+<text x="25" y="136.8" class="label" text-anchor="middle" >7</text>
+<text x="425" y="136.8" class="label" text-anchor="middle" >7</text>
+<text x="25" y="181.8" class="label" text-anchor="middle" >6</text>
+<text x="425" y="181.8" class="label" text-anchor="middle" >6</text>
+<text x="25" y="226.8" class="label" text-anchor="middle" >5</text>
+<text x="425" y="226.8" class="label" text-anchor="middle" >5</text>
+<text x="25" y="271.8" class="label" text-anchor="middle" >4</text>
+<text x="425" y="271.8" class="label" text-anchor="middle" >4</text>
+<text x="25" y="316.8" class="label" text-anchor="middle" >3</text>
+<text x="425" y="316.8" class="label" text-anchor="middle" >3</text>
+<text x="25" y="361.8" class="label" text-anchor="middle" >2</text>
+<text x="425" y="361.8" class="label" text-anchor="middle" >2</text>
+<text x="25" y="406.8" class="label" text-anchor="middle" >1</text>
+<text x="425" y="406.8" class="label" text-anchor="middle" >1</text>
+<text x="225" y="12" class="label" text-anchor="middle" >围棋社 9×9 演示盘｜交叉点落子</text>
+<text x="225" y="435" class="small" text-anchor="middle" >45 mm 网格｜38 mm 棋子｜打印 100%</text>
+<g id="calibration-ruler" data-length-mm="100">
+<line x1="45" y1="444" x2="145" y2="444" stroke="#18211C" stroke-width="0.7"/>
+<line x1="45" y1="440" x2="45" y2="448" stroke="#18211C" stroke-width="0.6"/>
+<line x1="55" y1="442.2" x2="55" y2="445.8" stroke="#18211C" stroke-width="0.6"/>
+<line x1="65" y1="442.2" x2="65" y2="445.8" stroke="#18211C" stroke-width="0.6"/>
+<line x1="75" y1="442.2" x2="75" y2="445.8" stroke="#18211C" stroke-width="0.6"/>
+<line x1="85" y1="442.2" x2="85" y2="445.8" stroke="#18211C" stroke-width="0.6"/>
+<line x1="95" y1="441.5" x2="95" y2="446.5" stroke="#18211C" stroke-width="0.6"/>
+<line x1="105" y1="442.2" x2="105" y2="445.8" stroke="#18211C" stroke-width="0.6"/>
+<line x1="115" y1="442.2" x2="115" y2="445.8" stroke="#18211C" stroke-width="0.6"/>
+<line x1="125" y1="442.2" x2="125" y2="445.8" stroke="#18211C" stroke-width="0.6"/>
+<line x1="135" y1="442.2" x2="135" y2="445.8" stroke="#18211C" stroke-width="0.6"/>
+<line x1="145" y1="440" x2="145" y2="448" stroke="#18211C" stroke-width="0.6"/>
+<text x="95.0" y="439" class="small" text-anchor="middle" >100 mm 校准尺</text>
+</g>
+</svg>

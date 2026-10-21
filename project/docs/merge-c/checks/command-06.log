@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/merge-c-20261006/validation/go-club/materials/micro-lessons/source/verify-delivery.py", line 2, in <module>
+    from lxml import etree as E
+ModuleNotFoundError: No module named 'lxml'

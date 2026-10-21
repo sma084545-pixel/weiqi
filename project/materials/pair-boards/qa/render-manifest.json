@@ -1,0 +1,327 @@
+{
+  "schemaVersion": 1,
+  "id": "T19-RENDER-MANIFEST",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "renderDpi": 120,
+  "status": "pass",
+  "pageCount": 44,
+  "pages": {
+    "boards": [
+      {
+        "file": "qa/rendered-pages/boards/go-board_13x13-a3_coordinates-1.png",
+        "pixels": [
+          1985,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/boards/go-board_13x13-a3_coordinates_tiled-A4-1.png",
+        "pixels": [
+          993,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/boards/go-board_13x13-a3_coordinates_tiled-A4-2.png",
+        "pixels": [
+          993,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/boards/go-board_13x13-a3_plain-1.png",
+        "pixels": [
+          1985,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/boards/go-board_13x13-a3_plain_tiled-A4-1.png",
+        "pixels": [
+          993,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/boards/go-board_13x13-a3_plain_tiled-A4-2.png",
+        "pixels": [
+          993,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/boards/go-board_13x13-a4_coordinates-1.png",
+        "pixels": [
+          993,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/boards/go-board_13x13-a4_plain-1.png",
+        "pixels": [
+          993,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/boards/go-board_9x9-a3_coordinates-1.png",
+        "pixels": [
+          1985,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/boards/go-board_9x9-a3_coordinates_tiled-A4-1.png",
+        "pixels": [
+          993,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/boards/go-board_9x9-a3_coordinates_tiled-A4-2.png",
+        "pixels": [
+          993,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/boards/go-board_9x9-a3_plain-1.png",
+        "pixels": [
+          1985,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/boards/go-board_9x9-a3_plain_tiled-A4-1.png",
+        "pixels": [
+          993,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/boards/go-board_9x9-a3_plain_tiled-A4-2.png",
+        "pixels": [
+          993,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/boards/go-board_9x9-a4_coordinates-1.png",
+        "pixels": [
+          993,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/boards/go-board_9x9-a4_plain-1.png",
+        "pixels": [
+          993,
+          1404
+        ]
+      }
+    ],
+    "overlays": [
+      {
+        "file": "qa/rendered-pages/overlays/liberty-overlay_13x13-a3-1.png",
+        "pixels": [
+          1985,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/overlays/liberty-overlay_13x13-a4-1.png",
+        "pixels": [
+          993,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/overlays/liberty-overlay_9x9-a3-1.png",
+        "pixels": [
+          1985,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/overlays/liberty-overlay_9x9-a4-1.png",
+        "pixels": [
+          993,
+          1404
+        ]
+      }
+    ],
+    "portable-kit": [
+      {
+        "file": "qa/rendered-pages/portable-kit/loan-return-checklist_A4-1.png",
+        "pixels": [
+          993,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/portable-kit/paper-stones_12mm_black-white_338-1.png",
+        "pixels": [
+          993,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/portable-kit/paper-stones_12mm_black-white_338-2.png",
+        "pixels": [
+          993,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/portable-kit/paper-stones_12mm_black_169-1.png",
+        "pixels": [
+          993,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/portable-kit/paper-stones_12mm_white_169-1.png",
+        "pixels": [
+          993,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/portable-kit/paper-stones_18mm_black-white_180-1.png",
+        "pixels": [
+          993,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/portable-kit/paper-stones_18mm_black-white_180-2.png",
+        "pixels": [
+          993,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/portable-kit/paper-stones_18mm_black_90-1.png",
+        "pixels": [
+          993,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/portable-kit/paper-stones_18mm_white_90-1.png",
+        "pixels": [
+          993,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/portable-kit/portable-kit-layout_A4-1.png",
+        "pixels": [
+          993,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/portable-kit/storage-labels_A4-1.png",
+        "pixels": [
+          993,
+          1404
+        ]
+      }
+    ],
+    "print-packs": [
+      {
+        "file": "qa/rendered-pages/print-packs/print-pack_13x13-A3-extension-1.png",
+        "pixels": [
+          1985,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/print-packs/print-pack_13x13-A3-extension-2.png",
+        "pixels": [
+          1985,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/print-packs/print-pack_13x13-A4-small-extension-1.png",
+        "pixels": [
+          993,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/print-packs/print-pack_13x13-A4-small-extension-2.png",
+        "pixels": [
+          993,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/print-packs/print-pack_13x13-A4-small-extension-3.png",
+        "pixels": [
+          993,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/print-packs/print-pack_13x13-A4-small-extension-4.png",
+        "pixels": [
+          993,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/print-packs/print-pack_9x9-A4-portable-kit-1.png",
+        "pixels": [
+          993,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/print-packs/print-pack_9x9-A4-portable-kit-2.png",
+        "pixels": [
+          993,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/print-packs/print-pack_9x9-A4-portable-kit-3.png",
+        "pixels": [
+          993,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/print-packs/print-pack_9x9-A4-portable-kit-4.png",
+        "pixels": [
+          993,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/print-packs/print-pack_9x9-A4-portable-kit-5.png",
+        "pixels": [
+          993,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/print-packs/print-pack_9x9-A4-portable-kit-6.png",
+        "pixels": [
+          993,
+          1404
+        ]
+      },
+      {
+        "file": "qa/rendered-pages/print-packs/print-pack_9x9-A4-portable-kit-7.png",
+        "pixels": [
+          993,
+          1404
+        ]
+      }
+    ]
+  }
+}

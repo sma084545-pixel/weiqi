@@ -1,0 +1,993 @@
+{
+  "schemaVersion": 1,
+  "id": "T09-PEDAGOGY",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "TeachingCompanion",
+  "contentVersion": "0.2.0-t09.1",
+  "items": {
+    "LIB-001": {
+      "title": "中央单子的四周",
+      "success": "数字准确；不判断活死。",
+      "explanation": "气为 E6 D5 F5 E4，共 4 口。斜角有空位，但不沿棋盘线与 E5 相邻。",
+      "commonErrors": "把斜角、己子或重复空点算入气。",
+      "peerDiscussion": "把四条方向逐一指给同伴。",
+      "lines": [],
+      "reviewScope": "模型推导与自动核查；humanReviewed=null。"
+    },
+    "LIB-002": {
+      "title": "真正的角上只有两向",
+      "success": "点集合与全部气完全一致，无遗漏无多选；不判断活死。",
+      "explanation": "气为 B5 A4，共 2 口。A5 已在完整棋盘角上；上方和左方没有交叉点。",
+      "commonErrors": "把斜角、己子或重复空点算入气。",
+      "peerDiscussion": "若移到 A4，气的数量怎样改变？",
+      "lines": [],
+      "reviewScope": "模型推导与自动核查；humanReviewed=null。"
+    },
+    "LIB-003": {
+      "title": "连成一块一起数",
+      "success": "数字准确；不判断活死。",
+      "explanation": "气为 B4 C4 A3 D3 B2 C2，共 6 口。两颗相连黑子互相占据的点不是气。",
+      "commonErrors": "把斜角、己子或重复空点算入气。",
+      "peerDiscussion": "为什么不能把两个单子的四气直接相加？",
+      "lines": [],
+      "reviewScope": "模型推导与自动核查；humanReviewed=null。"
+    },
+    "LIB-004": {
+      "title": "折形的共享气",
+      "success": "点集合与全部气完全一致，无遗漏无多选；不判断活死。",
+      "explanation": "气为 B5 A4 C4 A3 D3 B2 C2，共 7 口。C4 同时邻接 B4、C3，但同一个空点只计一次。",
+      "commonErrors": "把斜角、己子或重复空点算入气。",
+      "peerDiscussion": "让一人数方向，另一人检查是否重复。",
+      "lines": [],
+      "reviewScope": "模型推导与自动核查；humanReviewed=null。"
+    },
+    "LIB-005": {
+      "title": "整块与敌子共同限制",
+      "success": "数字准确；不判断活死。",
+      "explanation": "气为 E6 F5 C4 F4 D3 E3，共 6 口。C5、D6 已有白子，不能作为气；方块内部的棋子也不是空点。",
+      "commonErrors": "把斜角、己子或重复空点算入气。",
+      "peerDiscussion": "若白下 E6，全块会少几口气？为什么？",
+      "lines": [],
+      "reviewScope": "模型推导与自动核查；humanReviewed=null。"
+    },
+    "CAP-001": {
+      "title": "补最后一口气",
+      "success": "本手全部标记白子消失，不以面积或后续胜负判定。",
+      "explanation": "D3 是 C3 白子的唯一气。黑 D3 后整颗白子被提走。",
+      "commonErrors": "黑 D4 未填最后一气；白 D3 后目标扩展并获得新气。",
+      "peerDiscussion": "先预测提子数，再由同伴实际移走整块核对。",
+      "lines": [
+        {
+          "moves": [
+            "D3"
+          ],
+          "outcome": "success",
+          "proof": "D3 是 C3 白子的唯一气。黑 D3 后整颗白子被提走。"
+        },
+        {
+          "moves": [
+            "D4",
+            "D3"
+          ],
+          "outcome": "failure",
+          "proof": "黑 D4 未填最后一气；白 D3 后目标扩展并获得新气。"
+        }
+      ],
+      "reviewScope": "模型推导与自动核查；humanReviewed=null。"
+    },
+    "CAP-002": {
+      "title": "沿边提掉整块",
+      "success": "本手全部标记白子消失，不以面积或后续胜负判定。",
+      "explanation": "B5、C5 是同一块，唯一气是 D5。黑 D5 一手提掉两颗。",
+      "commonErrors": "黑 D4 没填 D5；白 D5 连接后可向 E5 等点延伸。",
+      "peerDiscussion": "先预测提子数，再由同伴实际移走整块核对。",
+      "lines": [
+        {
+          "moves": [
+            "D5"
+          ],
+          "outcome": "success",
+          "proof": "B5、C5 是同一块，唯一气是 D5。黑 D5 一手提掉两颗。"
+        },
+        {
+          "moves": [
+            "D4",
+            "D5"
+          ],
+          "outcome": "failure",
+          "proof": "黑 D4 没填 D5；白 D5 连接后可向 E5 等点延伸。"
+        }
+      ],
+      "reviewScope": "模型推导与自动核查；humanReviewed=null。"
+    },
+    "CAP-003": {
+      "title": "边线方向少一条",
+      "success": "本手全部标记白子消失，不以面积或后续胜负判定。",
+      "explanation": "完整棋盘左边没有盘外一气。黑 A2 填最后一气，提走 A3。",
+      "commonErrors": "黑 C3 没有提到目标；白 A2 延伸，获得 A1、B2 等气。",
+      "peerDiscussion": "先预测提子数，再由同伴实际移走整块核对。",
+      "lines": [
+        {
+          "moves": [
+            "A2"
+          ],
+          "outcome": "success",
+          "proof": "完整棋盘左边没有盘外一气。黑 A2 填最后一气，提走 A3。"
+        },
+        {
+          "moves": [
+            "C3",
+            "A2"
+          ],
+          "outcome": "failure",
+          "proof": "黑 C3 没有提到目标；白 A2 延伸，获得 A1、B2 等气。"
+        }
+      ],
+      "reviewScope": "模型推导与自动核查；humanReviewed=null。"
+    },
+    "CAP-004": {
+      "title": "一手同时提两块",
+      "success": "本手全部标记白子消失，不以面积或后续胜负判定。",
+      "explanation": "B3 与 D3 是两块，但共同只剩 C3。黑 C3 同时提走两块。",
+      "commonErrors": "黑 C4 不是最后一气；白 C3 将两块接成一块并有 C2 一气。",
+      "peerDiscussion": "先预测提子数，再由同伴实际移走整块核对。",
+      "lines": [
+        {
+          "moves": [
+            "C3"
+          ],
+          "outcome": "success",
+          "proof": "B3 与 D3 是两块，但共同只剩 C3。黑 C3 同时提走两块。"
+        },
+        {
+          "moves": [
+            "C4",
+            "C3"
+          ],
+          "outcome": "failure",
+          "proof": "黑 C4 不是最后一气；白 C3 将两块接成一块并有 C2 一气。"
+        }
+      ],
+      "reviewScope": "模型推导与自动核查；humanReviewed=null。"
+    },
+    "CAP-005": {
+      "title": "先提子再检查自杀",
+      "success": "本手全部标记白子消失，不以面积或后续胜负判定。",
+      "explanation": "四块白子各只剩 C3。黑 C3 先提掉四颗，随后获得四口气，因此合法。",
+      "commonErrors": "黑 A1 本手未提目标；白 A4 是合法的外侧施压，不能把未完成即时目标说成成功。",
+      "peerDiscussion": "先预测提子数，再由同伴实际移走整块核对。",
+      "lines": [
+        {
+          "moves": [
+            "C3"
+          ],
+          "outcome": "success",
+          "proof": "四块白子各只剩 C3。黑 C3 先提掉四颗，随后获得四口气，因此合法。"
+        },
+        {
+          "moves": [
+            "A1",
+            "A4"
+          ],
+          "outcome": "failure",
+          "proof": "黑 A1 本手未提目标；白 A4 是合法的外侧施压，不能把未完成即时目标说成成功。"
+        }
+      ],
+      "reviewScope": "模型推导与自动核查；humanReviewed=null。"
+    },
+    "CON-001": {
+      "title": "一间空点连接",
+      "success": "本手两目标仍在盘上且属于同一连通块。 不要求保证永久活棋。",
+      "explanation": "黑 C3 与 B3、D3 正交相邻，三子成为一块。 这只证明本题即时目标，不证明永久活棋。",
+      "commonErrors": "黑 C2 与两目标都不直接相邻；白 C3 占住连接点。",
+      "peerDiscussion": "下一手对方可以在哪里施压？连接与永远安全有什么差别？",
+      "lines": [
+        {
+          "moves": [
+            "C3"
+          ],
+          "outcome": "success",
+          "proof": "黑 C3 与 B3、D3 正交相邻，三子成为一块。 这只证明本题即时目标，不证明永久活棋。"
+        },
+        {
+          "moves": [
+            "C2",
+            "C3"
+          ],
+          "outcome": "failure",
+          "proof": "黑 C2 与两目标都不直接相邻；白 C3 占住连接点。"
+        }
+      ],
+      "reviewScope": "模型推导与自动核查；humanReviewed=null。"
+    },
+    "CON-002": {
+      "title": "斜邻有两条接法",
+      "success": "本手两目标仍在盘上且属于同一连通块。 不要求保证永久活棋。",
+      "explanation": "黑 C4 或 B3 都同时邻接两目标，因此两手均接受。 这只证明本题即时目标，不证明永久活棋。",
+      "commonErrors": "黑 A4 只接上 B4；白 B3 占住一种接法，C4 仍可连接，不能据此断言永远断开。",
+      "peerDiscussion": "下一手对方可以在哪里施压？连接与永远安全有什么差别？",
+      "lines": [
+        {
+          "moves": [
+            "C4"
+          ],
+          "outcome": "success",
+          "proof": "黑 C4 或 B3 都同时邻接两目标，因此两手均接受。 这只证明本题即时目标，不证明永久活棋。"
+        },
+        {
+          "moves": [
+            "B3"
+          ],
+          "outcome": "success",
+          "proof": "黑 C4 或 B3 都同时邻接两目标，因此两手均接受。 这只证明本题即时目标，不证明永久活棋。"
+        },
+        {
+          "moves": [
+            "A4",
+            "B3"
+          ],
+          "outcome": "failure",
+          "proof": "黑 A4 只接上 B4；白 B3 占住一种接法，C4 仍可连接，不能据此断言永远断开。"
+        }
+      ],
+      "reviewScope": "模型推导与自动核查；humanReviewed=null。"
+    },
+    "CON-003": {
+      "title": "打吃时向外延伸",
+      "success": "本手目标仍在，所在块至少有两口气。 不要求保证永久活棋。",
+      "explanation": "目标原仅 C2 一气。黑 C2 后整块有 B2、D2、C1 三口气，已解除当前打吃。 这只证明本题即时目标，不证明永久活棋。",
+      "commonErrors": "黑 A1 离开目标，白 C2 可立即提掉 C3。",
+      "peerDiscussion": "下一手对方可以在哪里施压？连接与永远安全有什么差别？",
+      "lines": [
+        {
+          "moves": [
+            "C2"
+          ],
+          "outcome": "success",
+          "proof": "目标原仅 C2 一气。黑 C2 后整块有 B2、D2、C1 三口气，已解除当前打吃。 这只证明本题即时目标，不证明永久活棋。"
+        },
+        {
+          "moves": [
+            "A1",
+            "C2"
+          ],
+          "outcome": "failure",
+          "proof": "黑 A1 离开目标，白 C2 可立即提掉 C3。"
+        }
+      ],
+      "reviewScope": "模型推导与自动核查；humanReviewed=null。"
+    },
+    "CON-004": {
+      "title": "边上搭桥",
+      "success": "本手两目标仍在盘上且属于同一连通块。 不要求保证永久活棋。",
+      "explanation": "黑 C5 把两边的黑子接为一块，剩 A5、E5、C4 三口气。 这只证明本题即时目标，不证明永久活棋。",
+      "commonErrors": "黑 A4 没有接通两目标；白 C5 可合法占住桥点。",
+      "peerDiscussion": "下一手对方可以在哪里施压？连接与永远安全有什么差别？",
+      "lines": [
+        {
+          "moves": [
+            "C5"
+          ],
+          "outcome": "success",
+          "proof": "黑 C5 把两边的黑子接为一块，剩 A5、E5、C4 三口气。 这只证明本题即时目标，不证明永久活棋。"
+        },
+        {
+          "moves": [
+            "A4",
+            "C5"
+          ],
+          "outcome": "failure",
+          "proof": "黑 A4 没有接通两目标；白 C5 可合法占住桥点。"
+        }
+      ],
+      "reviewScope": "模型推导与自动核查；humanReviewed=null。"
+    },
+    "CON-005": {
+      "title": "逃跑同时接到同伴",
+      "success": "本手两目标仍在盘上且属于同一连通块。 不要求保证永久活棋。",
+      "explanation": "A3 仅 A2 一气。黑 A2 同时连接 B2，整块有 A1、B1、C2 三口气。 这只证明本题即时目标，不证明永久活棋。",
+      "commonErrors": "黑 C2 虽加厚 B2，却没有救 A3；白 A2 立即提走 A3。",
+      "peerDiscussion": "下一手对方可以在哪里施压？连接与永远安全有什么差别？",
+      "lines": [
+        {
+          "moves": [
+            "A2"
+          ],
+          "outcome": "success",
+          "proof": "A3 仅 A2 一气。黑 A2 同时连接 B2，整块有 A1、B1、C2 三口气。 这只证明本题即时目标，不证明永久活棋。"
+        },
+        {
+          "moves": [
+            "C2",
+            "A2"
+          ],
+          "outcome": "failure",
+          "proof": "黑 C2 虽加厚 B2，却没有救 A3；白 A2 立即提走 A3。"
+        }
+      ],
+      "reviewScope": "模型推导与自动核查；humanReviewed=null。"
+    },
+    "LIFE-001": {
+      "title": "两个独立真眼",
+      "success": "恰好选择 B4、D4；理解证明适用于黑不自毁眼形。",
+      "explanation": "B4、D4 各自是独立单点空区，全部邻点属于同一个黑连通块。白先填任一眼，黑块仍有另一眼，不能被提；白新子无气，故自杀禁止。外部落子不能把已有黑子拆开。黑不主动填自己的眼时，白无法开始合法的最后提子。这是充分结构论证，不把两眼说成所有活棋的必要条件。",
+      "commonErrors": "把两个相连空点算两眼，或忽略眼壁属于不同、可被提的棋块。",
+      "peerDiscussion": "试解释“假设第一次提掉这块黑棋”为什么会矛盾。",
+      "lines": [],
+      "reviewScope": "模型推导与自动核查；humanReviewed=null。"
+    },
+    "LIFE-002": {
+      "title": "看似眼的点可以被吃进",
+      "success": "白本手提掉三颗标记黑子；只证伪这个眼，不判断其他黑棋的全盘死活。",
+      "explanation": "白 C3 同时提掉 C4、B3、D3 三块，因而获得气。三块眼壁原来各只剩 C3；空点看似被黑包住，却可合法吃进。与 LIFE-001 的同块两眼结构不同。",
+      "commonErrors": "白 A1 没提掉目标；黑 C1 可延长下方黑块，但没有让上方三个目标从最初就成为真眼。",
+      "peerDiscussion": "比较 LIFE-001：仅看围住空点的颜色，漏掉了什么？",
+      "lines": [
+        {
+          "moves": [
+            "C3"
+          ],
+          "outcome": "success",
+          "proof": "白 C3 同时提掉 C4、B3、D3 三块，因而获得气。三块眼壁原来各只剩 C3；空点看似被黑包住，却可合法吃进。与 LIFE-001 的同块两眼结构不同。"
+        },
+        {
+          "moves": [
+            "A1",
+            "C1"
+          ],
+          "outcome": "failure",
+          "proof": "白 A1 没提掉目标；黑 C1 可延长下方黑块，但没有让上方三个目标从最初就成为真眼。"
+        }
+      ],
+      "reviewScope": "模型推导与自动核查；humanReviewed=null。"
+    },
+    "LIFE-003": {
+      "title": "先手把三点空间分开",
+      "success": "本手产生两个被同一黑块包围的独立单点空区。",
+      "explanation": "黑 B5 接上 B4，把空间分为 A5、C5 两个单点眼。每个眼的邻接黑子都在同一块，另一眼使白不能合法吃进，黑不自填眼即可保有此两眼结构。",
+      "commonErrors": "黑 A5 后剩 B5、C5 相连，仍只有一个空间。白 B5，黑 C5 提白，白再 B5 可提掉原黑块；末手与之前布局不同，不是劫。",
+      "peerDiscussion": "为什么中点与端点虽然都在内部，结果却不同？",
+      "lines": [
+        {
+          "moves": [
+            "B5"
+          ],
+          "outcome": "success",
+          "proof": "黑 B5 接上 B4，把空间分为 A5、C5 两个单点眼。每个眼的邻接黑子都在同一块，另一眼使白不能合法吃进，黑不自填眼即可保有此两眼结构。"
+        },
+        {
+          "moves": [
+            "A5",
+            "B5",
+            "C5",
+            "B5"
+          ],
+          "outcome": "failure",
+          "proof": "黑 A5 后剩 B5、C5 相连，仍只有一个空间。白 B5，黑 C5 提白，白再 B5 可提掉原黑块；末手与之前布局不同，不是劫。"
+        }
+      ],
+      "reviewScope": "模型推导与自动核查；humanReviewed=null。"
+    },
+    "LIFE-004": {
+      "title": "四点空间的防守要点",
+      "success": "本手在指定空间形成大小 1 与 2 的两个空区，所有边界棋子同属目标黑块。",
+      "explanation": "黑 B5 或 C5 均把四点直线分为单点眼与两点眼区。以 B5 为例，白 C5 后黑 D5 提白；白 D5 后黑 C5 提白。单点眼保住黑块，及时提掉侵入子可保持另一眼区。C5 首手完全对称。",
+      "commonErrors": "黑 A5 后剩 B5–D5 一个连通空间，本手没有分眼；白 C5 抢占中点。此变化不作全盘死亡证明。",
+      "peerDiscussion": "对手从较大眼的另一端进入，你能交换应对点吗？",
+      "lines": [
+        {
+          "moves": [
+            "B5"
+          ],
+          "outcome": "success",
+          "proof": "黑 B5 或 C5 均把四点直线分为单点眼与两点眼区。以 B5 为例，白 C5 后黑 D5 提白；白 D5 后黑 C5 提白。单点眼保住黑块，及时提掉侵入子可保持另一眼区。C5 首手完全对称。"
+        },
+        {
+          "moves": [
+            "C5"
+          ],
+          "outcome": "success",
+          "proof": "黑 B5 或 C5 均把四点直线分为单点眼与两点眼区。以 B5 为例，白 C5 后黑 D5 提白；白 D5 后黑 C5 提白。单点眼保住黑块，及时提掉侵入子可保持另一眼区。C5 首手完全对称。"
+        },
+        {
+          "moves": [
+            "A5",
+            "C5"
+          ],
+          "outcome": "failure",
+          "proof": "黑 A5 后剩 B5–D5 一个连通空间，本手没有分眼；白 C5 抢占中点。此变化不作全盘死亡证明。"
+        }
+      ],
+      "reviewScope": "模型推导与自动核查；humanReviewed=null。",
+      "supplementalLines": [
+        {
+          "moves": [
+            {
+              "type": "place",
+              "color": "B",
+              "at": {
+                "row": 0,
+                "col": 1
+              }
+            },
+            {
+              "type": "place",
+              "color": "W",
+              "at": {
+                "row": 0,
+                "col": 2
+              }
+            },
+            {
+              "type": "place",
+              "color": "B",
+              "at": {
+                "row": 0,
+                "col": 3
+              }
+            }
+          ],
+          "claim": "提掉侵入的单颗白子，单点眼仍在。",
+          "capturedAtEnd": 1
+        },
+        {
+          "moves": [
+            {
+              "type": "place",
+              "color": "B",
+              "at": {
+                "row": 0,
+                "col": 1
+              }
+            },
+            {
+              "type": "place",
+              "color": "W",
+              "at": {
+                "row": 0,
+                "col": 3
+              }
+            },
+            {
+              "type": "place",
+              "color": "B",
+              "at": {
+                "row": 0,
+                "col": 2
+              }
+            }
+          ],
+          "claim": "提掉侵入的单颗白子，单点眼仍在。",
+          "capturedAtEnd": 1
+        },
+        {
+          "moves": [
+            {
+              "type": "place",
+              "color": "B",
+              "at": {
+                "row": 0,
+                "col": 2
+              }
+            },
+            {
+              "type": "place",
+              "color": "W",
+              "at": {
+                "row": 0,
+                "col": 0
+              }
+            },
+            {
+              "type": "place",
+              "color": "B",
+              "at": {
+                "row": 0,
+                "col": 1
+              }
+            }
+          ],
+          "claim": "提掉侵入的单颗白子，单点眼仍在。",
+          "capturedAtEnd": 1
+        },
+        {
+          "moves": [
+            {
+              "type": "place",
+              "color": "B",
+              "at": {
+                "row": 0,
+                "col": 2
+              }
+            },
+            {
+              "type": "place",
+              "color": "W",
+              "at": {
+                "row": 0,
+                "col": 1
+              }
+            },
+            {
+              "type": "place",
+              "color": "B",
+              "at": {
+                "row": 0,
+                "col": 0
+              }
+            }
+          ],
+          "claim": "提掉侵入的单颗白子，单点眼仍在。",
+          "capturedAtEnd": 1
+        }
+      ]
+    },
+    "LIFE-005": {
+      "title": "两点相连仍是一个眼区",
+      "success": "无论合法黑回应为何，白在第三手或之前使全部原目标黑子消失。",
+      "explanation": "白 B5 或 C5 均可。若黑占另一空点提白，白回到原点提掉整块；若黑下别处或停手，白占另一空点直接提掉目标。两点并非两个独立真眼。验证遍历本完整 5×5 的所有合法黑回应，终止于目标消失或三手界限；不是通用死活求解器。",
+      "commonErrors": "只数两个空点就宣布活棋，或把每次回提都当作劫。这里回提后的整盘黑子数不同，布局不会相同。",
+      "peerDiscussion": "把“黑提一颗白子”和“白随后提掉整块”逐步摆出，比较两个完整棋盘。",
+      "lines": [
+        {
+          "moves": [
+            "B5",
+            "C5",
+            "B5"
+          ],
+          "outcome": "success",
+          "terminalStatus": "verified-dead",
+          "proof": "白 B5，黑 C5 提白后，白 B5 提掉原目标块；这两个 B5 后的完整布局不同。"
+        },
+        {
+          "moves": [
+            "C5",
+            "B5",
+            "C5"
+          ],
+          "outcome": "success",
+          "terminalStatus": "verified-dead",
+          "proof": "对称变化：白 C5，黑 B5 提白后，白 C5 提掉原目标块。"
+        }
+      ],
+      "reviewScope": "模型推导与自动核查；humanReviewed=null。"
+    },
+    "END-001": {
+      "title": "清楚围空：子与空都计入",
+      "success": "逐项计算并说明结论依据。",
+      "explanation": "黑活子 8 + 黑围空 2 = 10。白活子 13 + 白围空 2 + 贴目 0 = 15。中立 0 点不归双方。盘面核对：活子与三类空点合计 25。",
+      "commonErrors": "漏算活子、把提子账本再次相加，或把中立区分给一方。",
+      "peerDiscussion": "一人逐点标空区，另一人核对活子，最后检查总和是否覆盖全盘。",
+      "lines": [],
+      "hints": [
+        "先读本例终局状态与假设。",
+        "按整块核对死子与空区的完整边界。",
+        "最后才代入面积公式；未完反例保留空答案。"
+      ]
+    },
+    "END-002": {
+      "title": "中立空区：不分给任何一方",
+      "success": "逐项计算并说明结论依据。",
+      "explanation": "黑活子 8 + 黑围空 2 = 10。白活子 8 + 白围空 2 + 贴目 0 = 10。中立 5 点不归双方。盘面核对：活子与三类空点合计 25。",
+      "commonErrors": "漏算活子、把提子账本再次相加，或把中立区分给一方。",
+      "peerDiscussion": "一人逐点标空区，另一人核对活子，最后检查总和是否覆盖全盘。",
+      "lines": [],
+      "hints": [
+        "先读本例终局状态与假设。",
+        "按整块核对死子与空区的完整边界。",
+        "最后才代入面积公式；未完反例保留空答案。"
+      ]
+    },
+    "END-003": {
+      "title": "确认死子后再计算",
+      "success": "逐项计算并说明结论依据。",
+      "explanation": "黑活子 11 + 黑围空 4 = 15。白活子 8 + 白围空 2 + 贴目 0 = 10。中立 0 点不归双方。盘面核对：活子与三类空点合计 25。 C5 移除后是黑方围空之一，不作为提子另加分。",
+      "commonErrors": "漏算活子、把提子账本再次相加，或把中立区分给一方。",
+      "peerDiscussion": "一人逐点标空区，另一人核对活子，最后检查总和是否覆盖全盘。",
+      "lines": [],
+      "hints": [
+        "先读本例终局状态与假设。",
+        "按整块核对死子与空区的完整边界。",
+        "最后才代入面积公式；未完反例保留空答案。"
+      ],
+      "supplementalLines": [
+        {
+          "moves": [
+            {
+              "type": "place",
+              "color": "B",
+              "at": {
+                "row": 1,
+                "col": 2
+              }
+            }
+          ],
+          "claim": "提掉 C5 白子。",
+          "capturedAtEnd": 1
+        }
+      ]
+    },
+    "END-004": {
+      "title": "贴目变化：同一面积不同结果",
+      "success": "逐项计算并说明结论依据。",
+      "explanation": "黑活子 8 + 黑围空 2 = 10。白活子 8 + 白围空 2 + 贴目 0.5 = 10.5。中立 5 点不归双方。盘面核对：活子与三类空点合计 25。",
+      "commonErrors": "漏算活子、把提子账本再次相加，或把中立区分给一方。",
+      "peerDiscussion": "一人逐点标空区，另一人核对活子，最后检查总和是否覆盖全盘。",
+      "lines": [],
+      "hints": [
+        "先读本例终局状态与假设。",
+        "按整块核对死子与空区的完整边界。",
+        "最后才代入面积公式；未完反例保留空答案。"
+      ],
+      "komiScenarios": [
+        {
+          "komi": 0,
+          "blackTotal": 10,
+          "whiteTotal": 10,
+          "winner": "draw"
+        },
+        {
+          "komi": 0.5,
+          "blackTotal": 10,
+          "whiteTotal": 10.5,
+          "winner": "W"
+        },
+        {
+          "komi": 2.5,
+          "blackTotal": 10,
+          "whiteTotal": 12.5,
+          "winner": "W"
+        }
+      ]
+    },
+    "END-005": {
+      "title": "提子更多也不额外加分",
+      "success": "逐项计算并说明结论依据。",
+      "explanation": "黑活子 8 + 黑围空 2 = 10。白活子 13 + 白围空 2 + 贴目 0 = 15。中立 0 点不归双方。盘面核对：活子与三类空点合计 25。 提子账本 B=12、W=1 不参与公式，白仍多 5 分。",
+      "commonErrors": "漏算活子、把提子账本再次相加，或把中立区分给一方。",
+      "peerDiscussion": "一人逐点标空区，另一人核对活子，最后检查总和是否覆盖全盘。",
+      "lines": [],
+      "hints": [
+        "先读本例终局状态与假设。",
+        "按整块核对死子与空区的完整边界。",
+        "最后才代入面积公式；未完反例保留空答案。"
+      ]
+    },
+    "END-006": {
+      "title": "反例：未完与争议不能报终局分",
+      "success": "拒绝最终分数，提出继续下或核对争议。",
+      "explanation": "正确结论是继续下或先解决争议，不能报最终分数。黑 D3 是合法提子示范；两停只进入确认，有争议时恢复对弈，不能自动判死。",
+      "commonErrors": "将未完棋盘的空区染色当作最终胜负，或未同意就删掉有气白子。",
+      "peerDiscussion": "如果同伴不接受死子判断，怎样用实际着法演示？",
+      "lines": [],
+      "hints": [
+        "先读本例终局状态与假设。",
+        "按整块核对死子与空区的完整边界。",
+        "最后才代入面积公式；未完反例保留空答案。"
+      ],
+      "supplementalLines": [
+        {
+          "moves": [
+            {
+              "type": "place",
+              "color": "B",
+              "at": {
+                "row": 2,
+                "col": 3
+              }
+            }
+          ],
+          "claim": "提掉 C3 白子；仍不自动宣布全盘结束。",
+          "capturedAtEnd": 1
+        }
+      ]
+    },
+    "AREA-001": {
+      "title": "清楚围空：子与空都计入",
+      "success": "数字为 10。",
+      "explanation": "黑活子 8 + 黑围空 2 = 10。白活子 13 + 白围空 2 + 贴目 0 = 15。中立 0 点不归双方。盘面核对：活子与三类空点合计 25。",
+      "commonErrors": "漏算活子、把提子账本再次相加，或把中立区分给一方。",
+      "peerDiscussion": "一人逐点标空区，另一人核对活子，最后检查总和是否覆盖全盘。",
+      "lines": [],
+      "reviewScope": "模型推导与自动核查；humanReviewed=null。"
+    },
+    "AREA-002": {
+      "title": "中立空区：不分给任何一方",
+      "success": "恰好标记全部 9 个空点，所属方全部正确。",
+      "explanation": "黑活子 8 + 黑围空 2 = 10。白活子 8 + 白围空 2 + 贴目 0 = 10。中立 5 点不归双方。盘面核对：活子与三类空点合计 25。",
+      "commonErrors": "漏算活子、把提子账本再次相加，或把中立区分给一方。",
+      "peerDiscussion": "一人逐点标空区，另一人核对活子，最后检查总和是否覆盖全盘。",
+      "lines": [],
+      "reviewScope": "模型推导与自动核查；humanReviewed=null。"
+    },
+    "AREA-003": {
+      "title": "确认死子后再计算",
+      "success": "数字为 15；理解死子移除与真实落子演示是两种不同操作。",
+      "explanation": "黑活子 11 + 黑围空 4 = 15。白活子 8 + 白围空 2 + 贴目 0 = 10。中立 0 点不归双方。盘面核对：活子与三类空点合计 25。 C5 移除后是黑方围空之一，不作为提子另加分。",
+      "commonErrors": "漏算活子、把提子账本再次相加，或把中立区分给一方。",
+      "peerDiscussion": "一人逐点标空区，另一人核对活子，最后检查总和是否覆盖全盘。",
+      "lines": [],
+      "reviewScope": "模型推导与自动核查；humanReviewed=null。"
+    },
+    "AREA-004": {
+      "title": "贴目变化：同一面积不同结果",
+      "success": "数字为 10.5；只在白方加开局贴目。",
+      "explanation": "黑活子 8 + 黑围空 2 = 10。白活子 8 + 白围空 2 + 贴目 0.5 = 10.5。中立 5 点不归双方。盘面核对：活子与三类空点合计 25。",
+      "commonErrors": "漏算活子、把提子账本再次相加，或把中立区分给一方。",
+      "peerDiscussion": "一人逐点标空区，另一人核对活子，最后检查总和是否覆盖全盘。",
+      "lines": [],
+      "reviewScope": "模型推导与自动核查；humanReviewed=null。"
+    },
+    "AREA-005": {
+      "title": "提子更多也不额外加分",
+      "success": "只选 area，并能指出活子加围空的公式。",
+      "explanation": "黑活子 8 + 黑围空 2 = 10。白活子 13 + 白围空 2 + 贴目 0 = 15。中立 0 点不归双方。盘面核对：活子与三类空点合计 25。 提子账本 B=12、W=1 不参与公式，白仍多 5 分。",
+      "commonErrors": "漏算活子、把提子账本再次相加，或把中立区分给一方。",
+      "peerDiscussion": "一人逐点标空区，另一人核对活子，最后检查总和是否覆盖全盘。",
+      "lines": [],
+      "reviewScope": "模型推导与自动核查；humanReviewed=null。"
+    },
+    "DISC-001": {
+      "title": "连接还是向空处发展",
+      "success": "同伴观察到有依据、有回应、有倾听的讨论即可；不自动判文本对错。",
+      "explanation": "候选只是讨论起点，不列唯一最佳手。反馈关注依据、回应与倾听；有新候选也按同一量规讨论。",
+      "commonErrors": "把作者示例当唯一答案，或用输赢给个人价值打分。",
+      "peerDiscussion": "请先准确复述同伴的选择理由，再说明你是否改变想法。",
+      "lines": [],
+      "reviewScope": "模型推导与自动核查；humanReviewed=null。",
+      "candidates": [
+        {
+          "moves": [
+            {
+              "type": "place",
+              "color": "B",
+              "at": {
+                "row": 4,
+                "col": 4
+              }
+            },
+            {
+              "type": "place",
+              "color": "W",
+              "at": {
+                "row": 5,
+                "col": 4
+              }
+            }
+          ],
+          "consideration": "E5 立即把两子连通；白 E4 从下方接近。取舍是连接稳妥，但黑暂未在左下扩展。"
+        },
+        {
+          "moves": [
+            {
+              "type": "place",
+              "color": "B",
+              "at": {
+                "row": 6,
+                "col": 2
+              }
+            },
+            {
+              "type": "place",
+              "color": "W",
+              "at": {
+                "row": 4,
+                "col": 4
+              }
+            }
+          ],
+          "consideration": "C3 在左下留下据点；白 E5 占住两黑子间的点。取舍是空间与连接需求。"
+        }
+      ]
+    },
+    "DISC-002": {
+      "title": "救一颗子与改变方向",
+      "success": "同伴观察到有依据、有回应、有倾听的讨论即可；不自动判文本对错。",
+      "explanation": "候选只是讨论起点，不列唯一最佳手。反馈关注依据、回应与倾听；有新候选也按同一量规讨论。",
+      "commonErrors": "把作者示例当唯一答案，或用输赢给个人价值打分。",
+      "peerDiscussion": "请先准确复述同伴的选择理由，再说明你是否改变想法。",
+      "lines": [],
+      "reviewScope": "模型推导与自动核查；humanReviewed=null。",
+      "candidates": [
+        {
+          "moves": [
+            {
+              "type": "place",
+              "color": "B",
+              "at": {
+                "row": 5,
+                "col": 0
+              }
+            },
+            {
+              "type": "place",
+              "color": "W",
+              "at": {
+                "row": 5,
+                "col": 1
+              }
+            }
+          ],
+          "consideration": "A4 使 A5 延伸到两气以上；白 B4 继续施压。取舍是保留目标但局部仍需注意。"
+        },
+        {
+          "moves": [
+            {
+              "type": "place",
+              "color": "B",
+              "at": {
+                "row": 4,
+                "col": 4
+              }
+            },
+            {
+              "type": "place",
+              "color": "W",
+              "at": {
+                "row": 5,
+                "col": 0
+              }
+            }
+          ],
+          "consideration": "E5 向中心发展；白 A4 提掉 A5。取舍是接受明确的一子损失，不可称它也救了目标。"
+        }
+      ]
+    },
+    "DISC-003": {
+      "title": "十三路上的两种距离",
+      "success": "同伴观察到有依据、有回应、有倾听的讨论即可；不自动判文本对错。",
+      "explanation": "候选只是讨论起点，不列唯一最佳手。反馈关注依据、回应与倾听；有新候选也按同一量规讨论。",
+      "commonErrors": "把作者示例当唯一答案，或用输赢给个人价值打分。",
+      "peerDiscussion": "请先准确复述同伴的选择理由，再说明你是否改变想法。",
+      "lines": [],
+      "reviewScope": "模型推导与自动核查；humanReviewed=null。",
+      "candidates": [
+        {
+          "moves": [
+            {
+              "type": "place",
+              "color": "B",
+              "at": {
+                "row": 7,
+                "col": 3
+              }
+            },
+            {
+              "type": "place",
+              "color": "W",
+              "at": {
+                "row": 7,
+                "col": 4
+              }
+            }
+          ],
+          "consideration": "D6 靠近 D4，但隔着 D5，尚未正交连成一块；白 E6 可以接近。取舍是局部协作与覆盖范围。"
+        },
+        {
+          "moves": [
+            {
+              "type": "place",
+              "color": "B",
+              "at": {
+                "row": 9,
+                "col": 9
+              }
+            },
+            {
+              "type": "place",
+              "color": "W",
+              "at": {
+                "row": 9,
+                "col": 8
+              }
+            }
+          ],
+          "consideration": "K4 在右下发展；白 J4 可接近。取舍是更分散，左侧黑子暂未得到直接连接。"
+        }
+      ]
+    },
+    "DISC-004": {
+      "title": "提子还是先连接",
+      "success": "同伴观察到有依据、有回应、有倾听的讨论即可；不自动判文本对错。",
+      "explanation": "候选只是讨论起点，不列唯一最佳手。反馈关注依据、回应与倾听；有新候选也按同一量规讨论。",
+      "commonErrors": "把作者示例当唯一答案，或用输赢给个人价值打分。",
+      "peerDiscussion": "请先准确复述同伴的选择理由，再说明你是否改变想法。",
+      "lines": [],
+      "reviewScope": "模型推导与自动核查；humanReviewed=null。",
+      "candidates": [
+        {
+          "moves": [
+            {
+              "type": "place",
+              "color": "B",
+              "at": {
+                "row": 4,
+                "col": 3
+              }
+            },
+            {
+              "type": "place",
+              "color": "W",
+              "at": {
+                "row": 4,
+                "col": 6
+              }
+            }
+          ],
+          "consideration": "D5 立即提掉 C5 白子；白 G5 可占黑棋连接点。取舍是局部收益与另一处连接。"
+        },
+        {
+          "moves": [
+            {
+              "type": "place",
+              "color": "B",
+              "at": {
+                "row": 4,
+                "col": 6
+              }
+            },
+            {
+              "type": "place",
+              "color": "W",
+              "at": {
+                "row": 4,
+                "col": 3
+              }
+            }
+          ],
+          "consideration": "G5 先连接右方两子；白 D5 救出 C5。取舍是放过本来的一手提子机会。"
+        }
+      ]
+    },
+    "DISC-005": {
+      "title": "停手前先核对争议",
+      "success": "同伴观察到有依据、有回应、有倾听的讨论即可；不自动判文本对错。",
+      "explanation": "候选只是讨论起点，不列唯一最佳手。反馈关注依据、回应与倾听；有新候选也按同一量规讨论。",
+      "commonErrors": "把作者示例当唯一答案，或用输赢给个人价值打分。",
+      "peerDiscussion": "请先准确复述同伴的选择理由，再说明你是否改变想法。",
+      "lines": [],
+      "reviewScope": "模型推导与自动核查；humanReviewed=null。",
+      "candidates": [
+        {
+          "moves": [
+            {
+              "type": "place",
+              "color": "B",
+              "at": {
+                "row": 4,
+                "col": 3
+              }
+            },
+            {
+              "type": "place",
+              "color": "W",
+              "at": {
+                "row": 4,
+                "col": 4
+              }
+            }
+          ],
+          "consideration": "黑 D5 实际提掉 C5，白 E5 可继续下。此局仍有大片未定空间，不把这一提当全局结束。"
+        },
+        {
+          "moves": [
+            {
+              "type": "pass",
+              "color": "B"
+            },
+            {
+              "type": "place",
+              "color": "W",
+              "at": {
+                "row": 4,
+                "col": 3
+              }
+            }
+          ],
+          "consideration": "黑停一手后白 D5 可以延伸救子。停手本身合法，但没有解决目标状态，更没有自动移除白子。"
+        }
+      ]
+    }
+  }
+}

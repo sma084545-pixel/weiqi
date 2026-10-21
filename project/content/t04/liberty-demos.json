@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "id": "BUNDLE-T04-LIBERTY-DEMOS",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "ContentBundle",
+  "developmentOnly": true,
+  "title": "T04 气实验室开发演示（不计入正式题库）",
+  "items": [
+    {
+      "schemaVersion": 1, "id": "DEMO-LIB-001", "revision": 1, "rulesetId": "GO-CLUB-AREA-1", "kind": "Puzzle", "developmentOnly": true, "category": "LIB",
+      "difficulty": {"level": "beginner", "rationale": "完整5路棋盘中央的单颗棋子。"},
+      "prompt": "选择棋盘中央的黑棋块，观察与它沿线相邻的空点。",
+      "initialPosition": {"schemaVersion": 1, "id": "POS-DEMO-LIB-001", "revision": 1, "rulesetId": "GO-CLUB-AREA-1", "kind": "Position", "size": 5, "stones": [{"row": 2, "col": 2, "color": "B"}], "toPlay": "W", "historyPolicy": "fresh-setup", "history": null},
+      "targetMarkers": [{"markerId": "target", "type": "target", "points": [{"row": 2, "col": 2}], "label": "要观察的黑棋块", "owner": "B"}], "firstPlayer": "W",
+      "conditions": {"boundary": "full-board", "external": "真实完整5路棋盘；不存在盘外棋子。", "assumptions": ["这是点集观察题，不提交着法。"], "viewport": null},
+      "hints": ["只看沿棋盘线直接相邻的位置。", "斜角位置不算气。", "从棋子四周逐个核对。"],
+      "answer": {"type": "point-set", "points": [{"row": 1, "col": 2}, {"row": 2, "col": 1}, {"row": 2, "col": 3}, {"row": 3, "col": 2}], "explanation": "中央单子四周的四个正交相邻空点互不重复。"},
+      "coveredBranches": [], "sources": [{"type": "original", "title": "T04 原创演示", "url": null, "accessedAt": null, "note": "原创棋形与文字；一般气概念另见 SOURCES.md。"}],
+      "validation": {"structure": {"status": "passed", "method": "JSON Schema 与上下文校验", "checkedAt": "2026-09-11T09:00:00+08:00", "evidence": ["pnpm validate:content", "tests/t04/demos.test.ts"]}, "moveLegality": null, "solutionChecked": {"status": "passed", "method": "独立手算与 T01 引擎交叉核对", "checkedAt": "2026-09-11T09:00:00+08:00", "evidence": ["tests/fixtures/t04-liberty-expected.json", "docs/t04/EXPECTED_RESULTS.md"]}, "externalReferenceChecked": null, "modelChecked": null, "humanReviewed": null}, "relatedContent": []
+    },
+    {
+      "schemaVersion": 1, "id": "DEMO-LIB-002", "revision": 1, "rulesetId": "GO-CLUB-AREA-1", "kind": "Puzzle", "developmentOnly": true, "category": "LIB",
+      "difficulty": {"level": "beginner", "rationale": "完整5路棋盘边上的单颗棋子。"},
+      "prompt": "选择棋盘上边的黑棋块，观察真实边界怎样影响相邻空点。",
+      "initialPosition": {"schemaVersion": 1, "id": "POS-DEMO-LIB-002", "revision": 1, "rulesetId": "GO-CLUB-AREA-1", "kind": "Position", "size": 5, "stones": [{"row": 0, "col": 2, "color": "B"}], "toPlay": "W", "historyPolicy": "fresh-setup", "history": null},
+      "targetMarkers": [{"markerId": "target", "type": "target", "points": [{"row": 0, "col": 2}], "label": "要观察的黑棋块", "owner": "B"}], "firstPlayer": "W",
+      "conditions": {"boundary": "full-board", "external": "真实完整5路棋盘；上边是实际棋盘边界。", "assumptions": ["这是点集观察题，不提交着法。"], "viewport": null},
+      "hints": ["棋盘外没有交叉点。", "只看沿线相邻的空点。", "从左右和下方逐个核对。"],
+      "answer": {"type": "point-set", "points": [{"row": 0, "col": 1}, {"row": 0, "col": 3}, {"row": 1, "col": 2}], "explanation": "边上单子没有盘外气，只剩左右和下方三个相邻空点。"},
+      "coveredBranches": [], "sources": [{"type": "original", "title": "T04 原创演示", "url": null, "accessedAt": null, "note": "原创完整棋盘边界示例。"}],
+      "validation": {"structure": {"status": "passed", "method": "JSON Schema 与上下文校验", "checkedAt": "2026-09-11T09:00:00+08:00", "evidence": ["pnpm validate:content", "tests/t04/demos.test.ts"]}, "moveLegality": null, "solutionChecked": {"status": "passed", "method": "独立手算与 T01 引擎交叉核对", "checkedAt": "2026-09-11T09:00:00+08:00", "evidence": ["tests/fixtures/t04-liberty-expected.json"]}, "externalReferenceChecked": null, "modelChecked": null, "humanReviewed": null}, "relatedContent": []
+    },
+    {
+      "schemaVersion": 1, "id": "DEMO-LIB-003", "revision": 1, "rulesetId": "GO-CLUB-AREA-1", "kind": "Puzzle", "developmentOnly": true, "category": "LIB",
+      "difficulty": {"level": "beginner", "rationale": "完整5路棋盘角上的单颗棋子。"},
+      "prompt": "选择左上角的黑棋块，观察两个真实棋盘边界。",
+      "initialPosition": {"schemaVersion": 1, "id": "POS-DEMO-LIB-003", "revision": 1, "rulesetId": "GO-CLUB-AREA-1", "kind": "Position", "size": 5, "stones": [{"row": 0, "col": 0, "color": "B"}], "toPlay": "W", "historyPolicy": "fresh-setup", "history": null},
+      "targetMarkers": [{"markerId": "target", "type": "target", "points": [{"row": 0, "col": 0}], "label": "要观察的黑棋块", "owner": "B"}], "firstPlayer": "W",
+      "conditions": {"boundary": "full-board", "external": "真实完整5路棋盘；左边和上边均为实际边界。", "assumptions": ["这是点集观察题，不提交着法。"], "viewport": null},
+      "hints": ["棋盘外不算气。", "斜角不算气。", "只核对右方和下方。"],
+      "answer": {"type": "point-set", "points": [{"row": 0, "col": 1}, {"row": 1, "col": 0}], "explanation": "角上单子只有右方和下方两个正交相邻空点。"},
+      "coveredBranches": [], "sources": [{"type": "original", "title": "T04 原创演示", "url": null, "accessedAt": null, "note": "原创完整棋盘边界示例。"}],
+      "validation": {"structure": {"status": "passed", "method": "JSON Schema 与上下文校验", "checkedAt": "2026-09-11T09:00:00+08:00", "evidence": ["pnpm validate:content", "tests/t04/demos.test.ts"]}, "moveLegality": null, "solutionChecked": {"status": "passed", "method": "独立手算与 T01 引擎交叉核对", "checkedAt": "2026-09-11T09:00:00+08:00", "evidence": ["tests/fixtures/t04-liberty-expected.json"]}, "externalReferenceChecked": null, "modelChecked": null, "humanReviewed": null}, "relatedContent": []
+    },
+    {
+      "schemaVersion": 1, "id": "DEMO-LIB-004", "revision": 1, "rulesetId": "GO-CLUB-AREA-1", "kind": "Puzzle", "developmentOnly": true, "category": "LIB",
+      "difficulty": {"level": "beginner", "rationale": "两颗正交相连的黑子构成同一棋块。"},
+      "prompt": "选择任一颗相连黑子，观察整块而不是单颗棋子。",
+      "initialPosition": {"schemaVersion": 1, "id": "POS-DEMO-LIB-004", "revision": 1, "rulesetId": "GO-CLUB-AREA-1", "kind": "Position", "size": 5, "stones": [{"row": 2, "col": 2, "color": "B"}, {"row": 2, "col": 3, "color": "B"}], "toPlay": "W", "historyPolicy": "fresh-setup", "history": null},
+      "targetMarkers": [{"markerId": "target", "type": "target", "points": [{"row": 2, "col": 2}, {"row": 2, "col": 3}], "label": "要观察的相连棋块", "owner": "B"}], "firstPlayer": "W",
+      "conditions": {"boundary": "full-board", "external": "真实完整5路棋盘。", "assumptions": ["同色正交相邻视为同一连通块。"], "viewport": null},
+      "hints": ["沿棋盘线相邻的同色棋子连成一块。", "两颗棋子接触的位置不再是空点。", "绕整块外缘逐个核对。"],
+      "answer": {"type": "point-set", "points": [{"row": 1, "col": 2}, {"row": 1, "col": 3}, {"row": 2, "col": 1}, {"row": 2, "col": 4}, {"row": 3, "col": 2}, {"row": 3, "col": 3}], "explanation": "两子连接后作为一个棋块，外缘共有六个不同空点。"},
+      "coveredBranches": [], "sources": [{"type": "original", "title": "T04 原创演示", "url": null, "accessedAt": null, "note": "原创相连棋块示例。"}],
+      "validation": {"structure": {"status": "passed", "method": "JSON Schema 与上下文校验", "checkedAt": "2026-09-11T09:00:00+08:00", "evidence": ["pnpm validate:content", "tests/t04/demos.test.ts"]}, "moveLegality": null, "solutionChecked": {"status": "passed", "method": "独立手算与 T01 引擎交叉核对", "checkedAt": "2026-09-11T09:00:00+08:00", "evidence": ["tests/fixtures/t04-liberty-expected.json"]}, "externalReferenceChecked": null, "modelChecked": null, "humanReviewed": null}, "relatedContent": []
+    },
+    {
+      "schemaVersion": 1, "id": "DEMO-LIB-005", "revision": 1, "rulesetId": "GO-CLUB-AREA-1", "kind": "Puzzle", "developmentOnly": true, "category": "LIB",
+      "difficulty": {"level": "beginner", "rationale": "两颗斜邻黑子看似接近但不相连。"},
+      "prompt": "选择左上方黑子，再选择右下方黑子，比较两个棋块。",
+      "initialPosition": {"schemaVersion": 1, "id": "POS-DEMO-LIB-005", "revision": 1, "rulesetId": "GO-CLUB-AREA-1", "kind": "Position", "size": 5, "stones": [{"row": 1, "col": 1, "color": "B"}, {"row": 2, "col": 2, "color": "B"}], "toPlay": "W", "historyPolicy": "fresh-setup", "history": null},
+      "targetMarkers": [{"markerId": "target", "type": "target", "points": [{"row": 1, "col": 1}], "label": "先观察的黑棋块", "owner": "B"}], "firstPlayer": "W",
+      "conditions": {"boundary": "full-board", "external": "真实完整5路棋盘。", "assumptions": ["斜邻不算连接。"], "viewport": null},
+      "hints": ["连接必须沿横线或竖线。", "斜角接触不合成一块。", "分别从每颗棋子出发核对。"],
+      "answer": {"type": "point-set", "points": [{"row": 0, "col": 1}, {"row": 1, "col": 0}, {"row": 1, "col": 2}, {"row": 2, "col": 1}], "explanation": "目标黑子与另一颗黑子斜邻，仍是单独棋块；它的四个正交相邻点都是空点。"},
+      "coveredBranches": [], "sources": [{"type": "original", "title": "T04 原创演示", "url": null, "accessedAt": null, "note": "原创斜邻对照示例。"}],
+      "validation": {"structure": {"status": "passed", "method": "JSON Schema 与上下文校验", "checkedAt": "2026-09-11T09:00:00+08:00", "evidence": ["pnpm validate:content", "tests/t04/demos.test.ts"]}, "moveLegality": null, "solutionChecked": {"status": "passed", "method": "独立手算与 T01 引擎交叉核对", "checkedAt": "2026-09-11T09:00:00+08:00", "evidence": ["tests/fixtures/t04-liberty-expected.json"]}, "externalReferenceChecked": null, "modelChecked": null, "humanReviewed": null}, "relatedContent": []
+    },
+    {
+      "schemaVersion": 1, "id": "DEMO-LIB-006", "revision": 1, "rulesetId": "GO-CLUB-AREA-1", "kind": "Puzzle", "developmentOnly": true, "category": "LIB",
+      "difficulty": {"level": "beginner", "rationale": "弯形三子有一个由两颗棋子共同接触的空点。"},
+      "prompt": "选择弯形黑棋块，注意同一个空点即使接触两颗棋子也只算一次。",
+      "initialPosition": {"schemaVersion": 1, "id": "POS-DEMO-LIB-006", "revision": 1, "rulesetId": "GO-CLUB-AREA-1", "kind": "Position", "size": 5, "stones": [{"row": 2, "col": 1, "color": "B"}, {"row": 2, "col": 2, "color": "B"}, {"row": 3, "col": 1, "color": "B"}], "toPlay": "W", "historyPolicy": "fresh-setup", "history": null},
+      "targetMarkers": [{"markerId": "target", "type": "target", "points": [{"row": 2, "col": 1}, {"row": 2, "col": 2}, {"row": 3, "col": 1}], "label": "要观察的弯形棋块", "owner": "B"}], "firstPlayer": "W",
+      "conditions": {"boundary": "full-board", "external": "真实完整5路棋盘。", "assumptions": ["气是去重后的空点集合。"], "viewport": null},
+      "hints": ["把整块周围的空点列成集合。", "同一点被两颗棋子接触也只记一次。", "最后检查是否重复圈点。"],
+      "answer": {"type": "point-set", "points": [{"row": 1, "col": 1}, {"row": 1, "col": 2}, {"row": 2, "col": 0}, {"row": 2, "col": 3}, {"row": 3, "col": 0}, {"row": 3, "col": 2}, {"row": 4, "col": 1}], "explanation": "弯形棋块的外缘有七个不同空点；数据坐标 (3,2) 同时接触两颗黑子，但只能计一次。"},
+      "coveredBranches": [], "sources": [{"type": "original", "title": "T04 原创演示", "url": null, "accessedAt": null, "note": "原创共享气示例。"}],
+      "validation": {"structure": {"status": "passed", "method": "JSON Schema 与上下文校验", "checkedAt": "2026-09-11T09:00:00+08:00", "evidence": ["pnpm validate:content", "tests/t04/demos.test.ts"]}, "moveLegality": null, "solutionChecked": {"status": "passed", "method": "独立手算与 T01 引擎交叉核对", "checkedAt": "2026-09-11T09:00:00+08:00", "evidence": ["tests/fixtures/t04-liberty-expected.json"]}, "externalReferenceChecked": null, "modelChecked": null, "humanReviewed": null}, "relatedContent": []
+    },
+    {
+      "schemaVersion": 1, "id": "DEMO-LIB-007", "revision": 1, "rulesetId": "GO-CLUB-AREA-1", "kind": "Puzzle", "developmentOnly": true, "category": "LIB",
+      "difficulty": {"level": "beginner", "rationale": "目标单子被三颗白子包围，只有一个相邻空点。"},
+      "prompt": "选择被包围的黑棋块，逐个检查上下左右。",
+      "initialPosition": {"schemaVersion": 1, "id": "POS-DEMO-LIB-007", "revision": 1, "rulesetId": "GO-CLUB-AREA-1", "kind": "Position", "size": 5, "stones": [{"row": 2, "col": 2, "color": "B"}, {"row": 1, "col": 2, "color": "W"}, {"row": 2, "col": 1, "color": "W"}, {"row": 3, "col": 2, "color": "W"}], "toPlay": "W", "historyPolicy": "fresh-setup", "history": null},
+      "targetMarkers": [{"markerId": "target", "type": "target", "points": [{"row": 2, "col": 2}], "label": "要观察的被包围棋块", "owner": "B"}], "firstPlayer": "W",
+      "conditions": {"boundary": "full-board", "external": "真实完整5路棋盘；仅观察当前布局。", "assumptions": ["本题不要求提交提子着法。"], "viewport": null},
+      "hints": ["被对方棋子占住的位置不是气。", "只看目标棋块的正交相邻点。", "找还没有棋子的相邻点。"],
+      "answer": {"type": "point-set", "points": [{"row": 2, "col": 3}], "explanation": "目标黑子上、左、下均被白子占住，右方空点是唯一一口气。"},
+      "coveredBranches": [], "sources": [{"type": "original", "title": "T04 原创演示", "url": null, "accessedAt": null, "note": "原创被包围棋块示例。"}],
+      "validation": {"structure": {"status": "passed", "method": "JSON Schema 与上下文校验", "checkedAt": "2026-09-11T09:00:00+08:00", "evidence": ["pnpm validate:content", "tests/t04/demos.test.ts"]}, "moveLegality": null, "solutionChecked": {"status": "passed", "method": "独立手算与 T01 引擎交叉核对", "checkedAt": "2026-09-11T09:00:00+08:00", "evidence": ["tests/fixtures/t04-liberty-expected.json"]}, "externalReferenceChecked": null, "modelChecked": null, "humanReviewed": null}, "relatedContent": []
+    },
+    {
+      "schemaVersion": 1, "id": "DEMO-LIB-008", "revision": 1, "rulesetId": "GO-CLUB-AREA-1", "kind": "Puzzle", "developmentOnly": true, "category": "LIB",
+      "difficulty": {"level": "beginner", "rationale": "两颗同色棋子尚未连接，可切换查看连接后的完整棋形。"},
+      "prompt": "观察两边棋块，再切换到放下连接子后的棋形进行比较。",
+      "initialPosition": {"schemaVersion": 1, "id": "POS-DEMO-LIB-008", "revision": 1, "rulesetId": "GO-CLUB-AREA-1", "kind": "Position", "size": 5, "stones": [{"row": 2, "col": 1, "color": "B"}, {"row": 2, "col": 3, "color": "B"}], "toPlay": "W", "historyPolicy": "fresh-setup", "history": null},
+      "targetMarkers": [{"markerId": "target", "type": "target", "points": [{"row": 2, "col": 1}], "label": "连接前先观察的左侧棋块", "owner": "B"}], "firstPlayer": "W",
+      "conditions": {"boundary": "full-board", "external": "真实完整5路棋盘；比较态只增加 C3 黑子。", "assumptions": ["比较态用于观察，不提交为正式对局历史。"], "viewport": null},
+      "hints": ["连接前两边是不同棋块。", "连接点落子后，新子也会带来相邻空点。", "比较两个状态的去重气集合。"],
+      "answer": {"type": "point-set", "points": [{"row": 1, "col": 1}, {"row": 2, "col": 0}, {"row": 2, "col": 2}, {"row": 3, "col": 1}], "explanation": "连接前左侧单子有四口气；放下 C3 黑子后，三子连成一块，连接点被占用，同时新子带来上下空点，整块共有八口气。"},
+      "coveredBranches": [], "sources": [{"type": "original", "title": "T04 原创演示", "url": null, "accessedAt": null, "note": "原创连接前后对照示例。"}],
+      "validation": {"structure": {"status": "passed", "method": "JSON Schema 与上下文校验", "checkedAt": "2026-09-11T09:00:00+08:00", "evidence": ["pnpm validate:content", "tests/t04/demos.test.ts"]}, "moveLegality": null, "solutionChecked": {"status": "passed", "method": "连接前后独立手算与 T01 引擎交叉核对", "checkedAt": "2026-09-11T09:00:00+08:00", "evidence": ["tests/fixtures/t04-liberty-expected.json", "docs/t04/EXPECTED_RESULTS.md"]}, "externalReferenceChecked": null, "modelChecked": null, "humanReviewed": null}, "relatedContent": []
+    }
+  ]
+}

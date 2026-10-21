@@ -1,0 +1,2202 @@
+{
+  "schemaVersion": 1,
+  "id": "MERGE-C-RESOURCE-CATALOG",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "resultVersion": "0.17.0-merge-c.1",
+  "programVersion": "0.17.0",
+  "freezeId": "GO-CLUB-FREEZE-B-20260919-01",
+  "pdfs": [
+    {
+      "path": "materials/demo-board/assembly-guide.pdf",
+      "pages": 8,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/demo-board/board-9x9-450mm-1to1.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          450.0,
+          450.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/demo-board/board-9x9-a4-tiled.pdf",
+      "pages": 6,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/demo-board/pieces-markers-a4.pdf",
+      "pages": 6,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/demo-board/teaching-flows-a3.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          420.0,
+          297.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a3_coordinates.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          420.0,
+          297.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a3_coordinates_tiled-A4.pdf",
+      "pages": 2,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a3_plain.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          420.0,
+          297.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a3_plain_tiled-A4.pdf",
+      "pages": 2,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a4_coordinates.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a4_plain.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a3_coordinates.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          420.0,
+          297.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a3_coordinates_tiled-A4.pdf",
+      "pages": 2,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a3_plain.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          420.0,
+          297.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a3_plain_tiled-A4.pdf",
+      "pages": 2,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a4_coordinates.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a4_plain.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/pair-boards/output/overlays/liberty-overlay_13x13-a3.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          420.0,
+          297.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/pair-boards/output/overlays/liberty-overlay_13x13-a4.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/pair-boards/output/overlays/liberty-overlay_9x9-a3.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          420.0,
+          297.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/pair-boards/output/overlays/liberty-overlay_9x9-a4.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/loan-return-checklist_A4.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_12mm_black-white_338.pdf",
+      "pages": 2,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_12mm_black_169.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_12mm_white_169.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_18mm_black-white_180.pdf",
+      "pages": 2,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_18mm_black_90.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_18mm_white_90.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/portable-kit-layout_A4.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/storage-labels_A4.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/pair-boards/output/print-pack_13x13-A3-extension.pdf",
+      "pages": 2,
+      "pageSizesMm": [
+        [
+          420.0,
+          297.0
+        ],
+        [
+          420.0,
+          297.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/pair-boards/output/print-pack_13x13-A4-small-extension.pdf",
+      "pages": 4,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/pair-boards/output/print-pack_9x9-A4-portable-kit.pdf",
+      "pages": 7,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/rule-cards/pdf/01-main-front.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          148.0,
+          210.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/rule-cards/pdf/02-main-back.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          148.0,
+          210.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/rule-cards/pdf/03-detail-front.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          148.0,
+          210.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/rule-cards/pdf/04-detail-back.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          148.0,
+          210.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/rule-cards/pdf/05-score.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          148.0,
+          210.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/rule-cards/pdf/06-pathway.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          148.0,
+          210.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/rule-cards/pdf/07-mini-front.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          105.0,
+          148.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/rule-cards/pdf/08-mini-back.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          105.0,
+          148.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/rule-cards/pdf/PRINT-A4-landscape-short-edge.pdf",
+      "pages": 6,
+      "pageSizesMm": [
+        [
+          297.0,
+          210.0
+        ],
+        [
+          297.0,
+          210.0
+        ],
+        [
+          297.0,
+          210.0
+        ],
+        [
+          297.0,
+          210.0
+        ],
+        [
+          297.0,
+          210.0
+        ],
+        [
+          297.0,
+          210.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/rule-cards/pdf/PRINT-A4-portrait-long-edge-mini.pdf",
+      "pages": 2,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/rule-cards/pdf/all-independent-cards.pdf",
+      "pages": 8,
+      "pageSizesMm": [
+        [
+          148.0,
+          210.0
+        ],
+        [
+          148.0,
+          210.0
+        ],
+        [
+          148.0,
+          210.0
+        ],
+        [
+          148.0,
+          210.0
+        ],
+        [
+          148.0,
+          210.0
+        ],
+        [
+          148.0,
+          210.0
+        ],
+        [
+          105.0,
+          148.0
+        ],
+        [
+          105.0,
+          148.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/rule-cards/pdf/capture-mini-A6-duplex.pdf",
+      "pages": 2,
+      "pageSizesMm": [
+        [
+          105.0,
+          148.0
+        ],
+        [
+          105.0,
+          148.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/rule-cards/pdf/detailed-A5-duplex.pdf",
+      "pages": 2,
+      "pageSizesMm": [
+        [
+          148.0,
+          210.0
+        ],
+        [
+          148.0,
+          210.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/rule-cards/pdf/main-rule-A5-duplex.pdf",
+      "pages": 2,
+      "pageSizesMm": [
+        [
+          148.0,
+          210.0
+        ],
+        [
+          148.0,
+          210.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/challenge-cards/output/T21_challenge_cards_back_A4.pdf",
+      "pages": 15,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/challenge-cards/output/T21_challenge_cards_front_A4.pdf",
+      "pages": 15,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/challenge-cards/output/T21_duplex_test_page1.pdf",
+      "pages": 2,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/challenge-cards/output/T21_teacher_answer_book.pdf",
+      "pages": 33,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_All_25_r1.pdf",
+      "pages": 25,
+      "pageSizesMm": [
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_01_r1.pdf",
+      "pages": 5,
+      "pageSizesMm": [
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_02_r1.pdf",
+      "pages": 5,
+      "pageSizesMm": [
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_03_r1.pdf",
+      "pages": 5,
+      "pageSizesMm": [
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_04_r1.pdf",
+      "pages": 5,
+      "pageSizesMm": [
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_05_r1.pdf",
+      "pages": 5,
+      "pageSizesMm": [
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ]
+      ],
+      "links": []
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_Teacher_Summary_5pages_r1.pdf",
+      "pages": 5,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "links": []
+    }
+  ],
+  "decks": [
+    {
+      "path": "materials/micro-lessons/output/T22_All_25_r1.pptx",
+      "slides": 25,
+      "notes": 25
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_01_r1.pptx",
+      "slides": 5,
+      "notes": 5
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_02_r1.pptx",
+      "slides": 5,
+      "notes": 5
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_03_r1.pptx",
+      "slides": 5,
+      "notes": 5
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_04_r1.pptx",
+      "slides": 5,
+      "notes": 5
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_05_r1.pptx",
+      "slides": 5,
+      "notes": 5
+    }
+  ],
+  "cards": [
+    {
+      "id": "LIB-001",
+      "revision": 1,
+      "category": "LIB",
+      "categoryLabel": "气",
+      "difficulty": "beginner",
+      "difficultyLabel": "入门",
+      "frontPdfPage": 1,
+      "frontPosition": "top",
+      "backPdfPage": 1,
+      "backPosition": "top",
+      "teacherPage": 4,
+      "title": "中央单子的四周",
+      "rulesetId": "GO-CLUB-AREA-1",
+      "schemaVersion": 1,
+      "freezeId": "GO-CLUB-FREEZE-B-20260919-01"
+    },
+    {
+      "id": "LIB-002",
+      "revision": 1,
+      "category": "LIB",
+      "categoryLabel": "气",
+      "difficulty": "beginner",
+      "difficultyLabel": "入门",
+      "frontPdfPage": 1,
+      "frontPosition": "bottom",
+      "backPdfPage": 1,
+      "backPosition": "bottom",
+      "teacherPage": 5,
+      "title": "真正的角上只有两向",
+      "rulesetId": "GO-CLUB-AREA-1",
+      "schemaVersion": 1,
+      "freezeId": "GO-CLUB-FREEZE-B-20260919-01"
+    },
+    {
+      "id": "LIB-003",
+      "revision": 1,
+      "category": "LIB",
+      "categoryLabel": "气",
+      "difficulty": "beginner",
+      "difficultyLabel": "入门",
+      "frontPdfPage": 2,
+      "frontPosition": "top",
+      "backPdfPage": 2,
+      "backPosition": "top",
+      "teacherPage": 6,
+      "title": "连成一块一起数",
+      "rulesetId": "GO-CLUB-AREA-1",
+      "schemaVersion": 1,
+      "freezeId": "GO-CLUB-FREEZE-B-20260919-01"
+    },
+    {
+      "id": "LIB-004",
+      "revision": 1,
+      "category": "LIB",
+      "categoryLabel": "气",
+      "difficulty": "beginner",
+      "difficultyLabel": "入门",
+      "frontPdfPage": 2,
+      "frontPosition": "bottom",
+      "backPdfPage": 2,
+      "backPosition": "bottom",
+      "teacherPage": 7,
+      "title": "折形的共享气",
+      "rulesetId": "GO-CLUB-AREA-1",
+      "schemaVersion": 1,
+      "freezeId": "GO-CLUB-FREEZE-B-20260919-01"
+    },
+    {
+      "id": "LIB-005",
+      "revision": 1,
+      "category": "LIB",
+      "categoryLabel": "气",
+      "difficulty": "beginner",
+      "difficultyLabel": "入门",
+      "frontPdfPage": 3,
+      "frontPosition": "top",
+      "backPdfPage": 3,
+      "backPosition": "top",
+      "teacherPage": 8,
+      "title": "整块与敌子共同限制",
+      "rulesetId": "GO-CLUB-AREA-1",
+      "schemaVersion": 1,
+      "freezeId": "GO-CLUB-FREEZE-B-20260919-01"
+    },
+    {
+      "id": "CAP-001",
+      "revision": 1,
+      "category": "CAP",
+      "categoryLabel": "提子",
+      "difficulty": "elementary",
+      "difficultyLabel": "基础",
+      "frontPdfPage": 3,
+      "frontPosition": "bottom",
+      "backPdfPage": 3,
+      "backPosition": "bottom",
+      "teacherPage": 9,
+      "title": "补最后一口气",
+      "rulesetId": "GO-CLUB-AREA-1",
+      "schemaVersion": 1,
+      "freezeId": "GO-CLUB-FREEZE-B-20260919-01"
+    },
+    {
+      "id": "CAP-002",
+      "revision": 1,
+      "category": "CAP",
+      "categoryLabel": "提子",
+      "difficulty": "elementary",
+      "difficultyLabel": "基础",
+      "frontPdfPage": 4,
+      "frontPosition": "top",
+      "backPdfPage": 4,
+      "backPosition": "top",
+      "teacherPage": 10,
+      "title": "沿边提掉整块",
+      "rulesetId": "GO-CLUB-AREA-1",
+      "schemaVersion": 1,
+      "freezeId": "GO-CLUB-FREEZE-B-20260919-01"
+    },
+    {
+      "id": "CAP-003",
+      "revision": 1,
+      "category": "CAP",
+      "categoryLabel": "提子",
+      "difficulty": "elementary",
+      "difficultyLabel": "基础",
+      "frontPdfPage": 4,
+      "frontPosition": "bottom",
+      "backPdfPage": 4,
+      "backPosition": "bottom",
+      "teacherPage": 11,
+      "title": "边线方向少一条",
+      "rulesetId": "GO-CLUB-AREA-1",
+      "schemaVersion": 1,
+      "freezeId": "GO-CLUB-FREEZE-B-20260919-01"
+    },
+    {
+      "id": "CAP-004",
+      "revision": 1,
+      "category": "CAP",
+      "categoryLabel": "提子",
+      "difficulty": "elementary",
+      "difficultyLabel": "基础",
+      "frontPdfPage": 5,
+      "frontPosition": "top",
+      "backPdfPage": 5,
+      "backPosition": "top",
+      "teacherPage": 12,
+      "title": "一手同时提两块",
+      "rulesetId": "GO-CLUB-AREA-1",
+      "schemaVersion": 1,
+      "freezeId": "GO-CLUB-FREEZE-B-20260919-01"
+    },
+    {
+      "id": "CAP-005",
+      "revision": 1,
+      "category": "CAP",
+      "categoryLabel": "提子",
+      "difficulty": "elementary",
+      "difficultyLabel": "基础",
+      "frontPdfPage": 5,
+      "frontPosition": "bottom",
+      "backPdfPage": 5,
+      "backPosition": "bottom",
+      "teacherPage": 13,
+      "title": "先提子再检查自杀",
+      "rulesetId": "GO-CLUB-AREA-1",
+      "schemaVersion": 1,
+      "freezeId": "GO-CLUB-FREEZE-B-20260919-01"
+    },
+    {
+      "id": "CON-001",
+      "revision": 1,
+      "category": "CON",
+      "categoryLabel": "连接",
+      "difficulty": "elementary",
+      "difficultyLabel": "基础",
+      "frontPdfPage": 6,
+      "frontPosition": "top",
+      "backPdfPage": 6,
+      "backPosition": "top",
+      "teacherPage": 14,
+      "title": "一间空点连接",
+      "rulesetId": "GO-CLUB-AREA-1",
+      "schemaVersion": 1,
+      "freezeId": "GO-CLUB-FREEZE-B-20260919-01"
+    },
+    {
+      "id": "CON-002",
+      "revision": 1,
+      "category": "CON",
+      "categoryLabel": "连接",
+      "difficulty": "elementary",
+      "difficultyLabel": "基础",
+      "frontPdfPage": 6,
+      "frontPosition": "bottom",
+      "backPdfPage": 6,
+      "backPosition": "bottom",
+      "teacherPage": 15,
+      "title": "斜邻有两条接法",
+      "rulesetId": "GO-CLUB-AREA-1",
+      "schemaVersion": 1,
+      "freezeId": "GO-CLUB-FREEZE-B-20260919-01"
+    },
+    {
+      "id": "CON-003",
+      "revision": 1,
+      "category": "CON",
+      "categoryLabel": "连接",
+      "difficulty": "elementary",
+      "difficultyLabel": "基础",
+      "frontPdfPage": 7,
+      "frontPosition": "top",
+      "backPdfPage": 7,
+      "backPosition": "top",
+      "teacherPage": 16,
+      "title": "打吃时向外延伸",
+      "rulesetId": "GO-CLUB-AREA-1",
+      "schemaVersion": 1,
+      "freezeId": "GO-CLUB-FREEZE-B-20260919-01"
+    },
+    {
+      "id": "CON-004",
+      "revision": 1,
+      "category": "CON",
+      "categoryLabel": "连接",
+      "difficulty": "elementary",
+      "difficultyLabel": "基础",
+      "frontPdfPage": 7,
+      "frontPosition": "bottom",
+      "backPdfPage": 7,
+      "backPosition": "bottom",
+      "teacherPage": 17,
+      "title": "边上搭桥",
+      "rulesetId": "GO-CLUB-AREA-1",
+      "schemaVersion": 1,
+      "freezeId": "GO-CLUB-FREEZE-B-20260919-01"
+    },
+    {
+      "id": "CON-005",
+      "revision": 1,
+      "category": "CON",
+      "categoryLabel": "连接",
+      "difficulty": "elementary",
+      "difficultyLabel": "基础",
+      "frontPdfPage": 8,
+      "frontPosition": "top",
+      "backPdfPage": 8,
+      "backPosition": "top",
+      "teacherPage": 18,
+      "title": "逃跑同时接到同伴",
+      "rulesetId": "GO-CLUB-AREA-1",
+      "schemaVersion": 1,
+      "freezeId": "GO-CLUB-FREEZE-B-20260919-01"
+    },
+    {
+      "id": "LIFE-001",
+      "revision": 1,
+      "category": "LIFE",
+      "categoryLabel": "眼与基础死活",
+      "difficulty": "elementary",
+      "difficultyLabel": "基础",
+      "frontPdfPage": 8,
+      "frontPosition": "bottom",
+      "backPdfPage": 8,
+      "backPosition": "bottom",
+      "teacherPage": 19,
+      "title": "两个独立真眼",
+      "rulesetId": "GO-CLUB-AREA-1",
+      "schemaVersion": 1,
+      "freezeId": "GO-CLUB-FREEZE-B-20260919-01"
+    },
+    {
+      "id": "LIFE-002",
+      "revision": 1,
+      "category": "LIFE",
+      "categoryLabel": "眼与基础死活",
+      "difficulty": "elementary",
+      "difficultyLabel": "基础",
+      "frontPdfPage": 9,
+      "frontPosition": "top",
+      "backPdfPage": 9,
+      "backPosition": "top",
+      "teacherPage": 20,
+      "title": "看似眼的点可以被吃进",
+      "rulesetId": "GO-CLUB-AREA-1",
+      "schemaVersion": 1,
+      "freezeId": "GO-CLUB-FREEZE-B-20260919-01"
+    },
+    {
+      "id": "LIFE-003",
+      "revision": 1,
+      "category": "LIFE",
+      "categoryLabel": "眼与基础死活",
+      "difficulty": "elementary",
+      "difficultyLabel": "基础",
+      "frontPdfPage": 9,
+      "frontPosition": "bottom",
+      "backPdfPage": 9,
+      "backPosition": "bottom",
+      "teacherPage": 21,
+      "title": "先手把三点空间分开",
+      "rulesetId": "GO-CLUB-AREA-1",
+      "schemaVersion": 1,
+      "freezeId": "GO-CLUB-FREEZE-B-20260919-01"
+    },
+    {
+      "id": "LIFE-004",
+      "revision": 1,
+      "category": "LIFE",
+      "categoryLabel": "眼与基础死活",
+      "difficulty": "elementary",
+      "difficultyLabel": "基础",
+      "frontPdfPage": 10,
+      "frontPosition": "top",
+      "backPdfPage": 10,
+      "backPosition": "top",
+      "teacherPage": 22,
+      "title": "四点空间的防守要点",
+      "rulesetId": "GO-CLUB-AREA-1",
+      "schemaVersion": 1,
+      "freezeId": "GO-CLUB-FREEZE-B-20260919-01"
+    },
+    {
+      "id": "LIFE-005",
+      "revision": 1,
+      "category": "LIFE",
+      "categoryLabel": "眼与基础死活",
+      "difficulty": "optional-challenge",
+      "difficultyLabel": "自选挑战",
+      "frontPdfPage": 10,
+      "frontPosition": "bottom",
+      "backPdfPage": 10,
+      "backPosition": "bottom",
+      "teacherPage": 23,
+      "title": "两点相连仍是一个眼区",
+      "rulesetId": "GO-CLUB-AREA-1",
+      "schemaVersion": 1,
+      "freezeId": "GO-CLUB-FREEZE-B-20260919-01"
+    },
+    {
+      "id": "AREA-001",
+      "revision": 1,
+      "category": "AREA",
+      "categoryLabel": "面积判断",
+      "difficulty": "beginner",
+      "difficultyLabel": "入门",
+      "frontPdfPage": 11,
+      "frontPosition": "top",
+      "backPdfPage": 11,
+      "backPosition": "top",
+      "teacherPage": 24,
+      "title": "清楚围空：子与空都计入",
+      "rulesetId": "GO-CLUB-AREA-1",
+      "schemaVersion": 1,
+      "freezeId": "GO-CLUB-FREEZE-B-20260919-01"
+    },
+    {
+      "id": "AREA-002",
+      "revision": 1,
+      "category": "AREA",
+      "categoryLabel": "面积判断",
+      "difficulty": "beginner",
+      "difficultyLabel": "入门",
+      "frontPdfPage": 11,
+      "frontPosition": "bottom",
+      "backPdfPage": 11,
+      "backPosition": "bottom",
+      "teacherPage": 25,
+      "title": "中立空区：不分给任何一方",
+      "rulesetId": "GO-CLUB-AREA-1",
+      "schemaVersion": 1,
+      "freezeId": "GO-CLUB-FREEZE-B-20260919-01"
+    },
+    {
+      "id": "AREA-003",
+      "revision": 1,
+      "category": "AREA",
+      "categoryLabel": "面积判断",
+      "difficulty": "beginner",
+      "difficultyLabel": "入门",
+      "frontPdfPage": 12,
+      "frontPosition": "top",
+      "backPdfPage": 12,
+      "backPosition": "top",
+      "teacherPage": 26,
+      "title": "确认死子后再计算",
+      "rulesetId": "GO-CLUB-AREA-1",
+      "schemaVersion": 1,
+      "freezeId": "GO-CLUB-FREEZE-B-20260919-01"
+    },
+    {
+      "id": "AREA-004",
+      "revision": 1,
+      "category": "AREA",
+      "categoryLabel": "面积判断",
+      "difficulty": "beginner",
+      "difficultyLabel": "入门",
+      "frontPdfPage": 12,
+      "frontPosition": "bottom",
+      "backPdfPage": 12,
+      "backPosition": "bottom",
+      "teacherPage": 27,
+      "title": "贴目变化：同一面积不同结果",
+      "rulesetId": "GO-CLUB-AREA-1",
+      "schemaVersion": 1,
+      "freezeId": "GO-CLUB-FREEZE-B-20260919-01"
+    },
+    {
+      "id": "AREA-005",
+      "revision": 1,
+      "category": "AREA",
+      "categoryLabel": "面积判断",
+      "difficulty": "beginner",
+      "difficultyLabel": "入门",
+      "frontPdfPage": 13,
+      "frontPosition": "top",
+      "backPdfPage": 13,
+      "backPosition": "top",
+      "teacherPage": 28,
+      "title": "提子更多也不额外加分",
+      "rulesetId": "GO-CLUB-AREA-1",
+      "schemaVersion": 1,
+      "freezeId": "GO-CLUB-FREEZE-B-20260919-01"
+    },
+    {
+      "id": "DISC-001",
+      "revision": 1,
+      "category": "DISC",
+      "categoryLabel": "开放讨论",
+      "difficulty": "elementary",
+      "difficultyLabel": "基础",
+      "frontPdfPage": 13,
+      "frontPosition": "bottom",
+      "backPdfPage": 13,
+      "backPosition": "bottom",
+      "teacherPage": 29,
+      "title": "连接还是向空处发展",
+      "rulesetId": "GO-CLUB-AREA-1",
+      "schemaVersion": 1,
+      "freezeId": "GO-CLUB-FREEZE-B-20260919-01"
+    },
+    {
+      "id": "DISC-002",
+      "revision": 1,
+      "category": "DISC",
+      "categoryLabel": "开放讨论",
+      "difficulty": "elementary",
+      "difficultyLabel": "基础",
+      "frontPdfPage": 14,
+      "frontPosition": "top",
+      "backPdfPage": 14,
+      "backPosition": "top",
+      "teacherPage": 30,
+      "title": "救一颗子与改变方向",
+      "rulesetId": "GO-CLUB-AREA-1",
+      "schemaVersion": 1,
+      "freezeId": "GO-CLUB-FREEZE-B-20260919-01"
+    },
+    {
+      "id": "DISC-003",
+      "revision": 1,
+      "category": "DISC",
+      "categoryLabel": "开放讨论",
+      "difficulty": "elementary",
+      "difficultyLabel": "基础",
+      "frontPdfPage": 14,
+      "frontPosition": "bottom",
+      "backPdfPage": 14,
+      "backPosition": "bottom",
+      "teacherPage": 31,
+      "title": "十三路上的两种距离",
+      "rulesetId": "GO-CLUB-AREA-1",
+      "schemaVersion": 1,
+      "freezeId": "GO-CLUB-FREEZE-B-20260919-01"
+    },
+    {
+      "id": "DISC-004",
+      "revision": 1,
+      "category": "DISC",
+      "categoryLabel": "开放讨论",
+      "difficulty": "elementary",
+      "difficultyLabel": "基础",
+      "frontPdfPage": 15,
+      "frontPosition": "top",
+      "backPdfPage": 15,
+      "backPosition": "top",
+      "teacherPage": 32,
+      "title": "提子还是先连接",
+      "rulesetId": "GO-CLUB-AREA-1",
+      "schemaVersion": 1,
+      "freezeId": "GO-CLUB-FREEZE-B-20260919-01"
+    },
+    {
+      "id": "DISC-005",
+      "revision": 1,
+      "category": "DISC",
+      "categoryLabel": "开放讨论",
+      "difficulty": "elementary",
+      "difficultyLabel": "基础",
+      "frontPdfPage": 15,
+      "frontPosition": "bottom",
+      "backPdfPage": 15,
+      "backPosition": "bottom",
+      "teacherPage": 33,
+      "title": "停手前先核对争议",
+      "rulesetId": "GO-CLUB-AREA-1",
+      "schemaVersion": 1,
+      "freezeId": "GO-CLUB-FREEZE-B-20260919-01"
+    }
+  ],
+  "slides": [
+    {
+      "id": "T22-ML-01-S01",
+      "revision": 1,
+      "title": "这颗黑子有几口气？",
+      "lessonId": "T22-ML-01",
+      "topic": "落子、连接与气",
+      "combinedPage": 1,
+      "individualPage": 1,
+      "individualPptx": "materials/micro-lessons/output/T22_MicroLesson_01_r1.pptx",
+      "individualPdf": "materials/micro-lessons/output/T22_MicroLesson_01_r1.pdf",
+      "diagramKeys": [
+        "LIB-001"
+      ]
+    },
+    {
+      "id": "T22-ML-01-S02",
+      "revision": 1,
+      "title": "沿线相邻的空点才是气",
+      "lessonId": "T22-ML-01",
+      "topic": "落子、连接与气",
+      "combinedPage": 2,
+      "individualPage": 2,
+      "individualPptx": "materials/micro-lessons/output/T22_MicroLesson_01_r1.pptx",
+      "individualPdf": "materials/micro-lessons/output/T22_MicroLesson_01_r1.pdf",
+      "diagramKeys": [
+        "LIB-001"
+      ]
+    },
+    {
+      "id": "T22-ML-01-S03",
+      "revision": 1,
+      "title": "靠得近，连成一块了吗？",
+      "lessonId": "T22-ML-01",
+      "topic": "落子、连接与气",
+      "combinedPage": 3,
+      "individualPage": 3,
+      "individualPptx": "materials/micro-lessons/output/T22_MicroLesson_01_r1.pptx",
+      "individualPdf": "materials/micro-lessons/output/T22_MicroLesson_01_r1.pdf",
+      "diagramKeys": [
+        "RULE-DEMO-T20-CONNECT"
+      ]
+    },
+    {
+      "id": "T22-ML-01-S04",
+      "revision": 1,
+      "title": "同一个空点，算几次？",
+      "lessonId": "T22-ML-01",
+      "topic": "落子、连接与气",
+      "combinedPage": 4,
+      "individualPage": 4,
+      "individualPptx": "materials/micro-lessons/output/T22_MicroLesson_01_r1.pptx",
+      "individualPdf": "materials/micro-lessons/output/T22_MicroLesson_01_r1.pdf",
+      "diagramKeys": [
+        "LIB-004"
+      ]
+    },
+    {
+      "id": "T22-ML-01-S05",
+      "revision": 1,
+      "title": "两个人，轮流摆与找",
+      "lessonId": "T22-ML-01",
+      "topic": "落子、连接与气",
+      "combinedPage": 5,
+      "individualPage": 5,
+      "individualPptx": "materials/micro-lessons/output/T22_MicroLesson_01_r1.pptx",
+      "individualPdf": "materials/micro-lessons/output/T22_MicroLesson_01_r1.pdf",
+      "diagramKeys": [
+        "T22-EMPTY-5"
+      ]
+    },
+    {
+      "id": "T22-ML-02-S01",
+      "revision": 1,
+      "title": "黑先，这一手能提白吗？",
+      "lessonId": "T22-ML-02",
+      "topic": "提子和打吃",
+      "combinedPage": 6,
+      "individualPage": 1,
+      "individualPptx": "materials/micro-lessons/output/T22_MicroLesson_02_r1.pptx",
+      "individualPdf": "materials/micro-lessons/output/T22_MicroLesson_02_r1.pdf",
+      "diagramKeys": [
+        "CAP-001"
+      ]
+    },
+    {
+      "id": "T22-ML-02-S02",
+      "revision": 1,
+      "title": "一气叫打吃，无气就提走",
+      "lessonId": "T22-ML-02",
+      "topic": "提子和打吃",
+      "combinedPage": 7,
+      "individualPage": 2,
+      "individualPptx": "materials/micro-lessons/output/T22_MicroLesson_02_r1.pptx",
+      "individualPdf": "materials/micro-lessons/output/T22_MicroLesson_02_r1.pdf",
+      "diagramKeys": [
+        "CAP-001",
+        "CAP-001-SUCCESS"
+      ]
+    },
+    {
+      "id": "T22-ML-02-S03",
+      "revision": 1,
+      "title": "没有外气，就一定不能下吗？",
+      "lessonId": "T22-ML-02",
+      "topic": "提子和打吃",
+      "combinedPage": 8,
+      "individualPage": 3,
+      "individualPptx": "materials/micro-lessons/output/T22_MicroLesson_02_r1.pptx",
+      "individualPdf": "materials/micro-lessons/output/T22_MicroLesson_02_r1.pdf",
+      "diagramKeys": [
+        "RULE-DEMO-T20-LEGAL-BEFORE",
+        "RULE-DEMO-T20-LEGAL-AFTER"
+      ]
+    },
+    {
+      "id": "T22-ML-02-S04",
+      "revision": 1,
+      "title": "这一手会移走几颗？",
+      "lessonId": "T22-ML-02",
+      "topic": "提子和打吃",
+      "combinedPage": 9,
+      "individualPage": 4,
+      "individualPptx": "materials/micro-lessons/output/T22_MicroLesson_02_r1.pptx",
+      "individualPdf": "materials/micro-lessons/output/T22_MicroLesson_02_r1.pdf",
+      "diagramKeys": [
+        "CAP-002"
+      ]
+    },
+    {
+      "id": "T22-ML-02-S05",
+      "revision": 1,
+      "title": "开始一轮吃子小游戏",
+      "lessonId": "T22-ML-02",
+      "topic": "提子和打吃",
+      "combinedPage": 10,
+      "individualPage": 5,
+      "individualPptx": "materials/micro-lessons/output/T22_MicroLesson_02_r1.pptx",
+      "individualPdf": "materials/micro-lessons/output/T22_MicroLesson_02_r1.pdf",
+      "diagramKeys": [
+        "T22-EMPTY-5"
+      ]
+    },
+    {
+      "id": "T22-ML-03-S01",
+      "revision": 1,
+      "title": "提得多，就一定赢了吗？",
+      "lessonId": "T22-ML-03",
+      "topic": "完成第一盘9×9",
+      "combinedPage": 11,
+      "individualPage": 1,
+      "individualPptx": "materials/micro-lessons/output/T22_MicroLesson_03_r1.pptx",
+      "individualPdf": "materials/micro-lessons/output/T22_MicroLesson_03_r1.pdf",
+      "diagramKeys": [
+        "AREA-005"
+      ]
+    },
+    {
+      "id": "T22-ML-03-S02",
+      "revision": 1,
+      "title": "双停后，一起确认再计分",
+      "lessonId": "T22-ML-03",
+      "topic": "完成第一盘9×9",
+      "combinedPage": 12,
+      "individualPage": 2,
+      "individualPptx": "materials/micro-lessons/output/T22_MicroLesson_03_r1.pptx",
+      "individualPdf": "materials/micro-lessons/output/T22_MicroLesson_03_r1.pdf",
+      "diagramKeys": []
+    },
+    {
+      "id": "T22-ML-03-S03",
+      "revision": 1,
+      "title": "白方能立即回提吗？",
+      "lessonId": "T22-ML-03",
+      "topic": "完成第一盘9×9",
+      "combinedPage": 13,
+      "individualPage": 3,
+      "individualPptx": "materials/micro-lessons/output/T22_MicroLesson_03_r1.pptx",
+      "individualPdf": "materials/micro-lessons/output/T22_MicroLesson_03_r1.pdf",
+      "diagramKeys": [
+        "RULE-DEMO-T20-KO-BEFORE",
+        "RULE-DEMO-T20-KO-AFTER"
+      ]
+    },
+    {
+      "id": "T22-ML-03-S04",
+      "revision": 1,
+      "title": "活子、围空、中立，怎样数？",
+      "lessonId": "T22-ML-03",
+      "topic": "完成第一盘9×9",
+      "combinedPage": 14,
+      "individualPage": 4,
+      "individualPptx": "materials/micro-lessons/output/T22_MicroLesson_03_r1.pptx",
+      "individualPdf": "materials/micro-lessons/output/T22_MicroLesson_03_r1.pdf",
+      "diagramKeys": [
+        "END-002"
+      ]
+    },
+    {
+      "id": "T22-ML-03-S05",
+      "revision": 1,
+      "title": "完整9×9，从空盘开始",
+      "lessonId": "T22-ML-03",
+      "topic": "完成第一盘9×9",
+      "combinedPage": 15,
+      "individualPage": 5,
+      "individualPptx": "materials/micro-lessons/output/T22_MicroLesson_03_r1.pptx",
+      "individualPdf": "materials/micro-lessons/output/T22_MicroLesson_03_r1.pdf",
+      "diagramKeys": [
+        "T22-EMPTY-9"
+      ]
+    },
+    {
+      "id": "T22-ML-04-S01",
+      "revision": 1,
+      "title": "黑先，一手把两块接起来",
+      "lessonId": "T22-ML-04",
+      "topic": "连接与切断",
+      "combinedPage": 16,
+      "individualPage": 1,
+      "individualPptx": "materials/micro-lessons/output/T22_MicroLesson_04_r1.pptx",
+      "individualPdf": "materials/micro-lessons/output/T22_MicroLesson_04_r1.pdf",
+      "diagramKeys": [
+        "CON-001"
+      ]
+    },
+    {
+      "id": "T22-ML-04-S02",
+      "revision": 1,
+      "title": "接上以后，作为整块看气",
+      "lessonId": "T22-ML-04",
+      "topic": "连接与切断",
+      "combinedPage": 17,
+      "individualPage": 2,
+      "individualPptx": "materials/micro-lessons/output/T22_MicroLesson_04_r1.pptx",
+      "individualPdf": "materials/micro-lessons/output/T22_MicroLesson_04_r1.pdf",
+      "diagramKeys": [
+        "CON-001-SUCCESS"
+      ]
+    },
+    {
+      "id": "T22-ML-04-S03",
+      "revision": 1,
+      "title": "接上，还是被占住连接点？",
+      "lessonId": "T22-ML-04",
+      "topic": "连接与切断",
+      "combinedPage": 18,
+      "individualPage": 3,
+      "individualPptx": "materials/micro-lessons/output/T22_MicroLesson_04_r1.pptx",
+      "individualPdf": "materials/micro-lessons/output/T22_MicroLesson_04_r1.pdf",
+      "diagramKeys": [
+        "CON-001-SUCCESS",
+        "CON-001-CUT"
+      ]
+    },
+    {
+      "id": "T22-ML-04-S04",
+      "revision": 1,
+      "title": "斜邻的两子，怎样接上？",
+      "lessonId": "T22-ML-04",
+      "topic": "连接与切断",
+      "combinedPage": 19,
+      "individualPage": 4,
+      "individualPptx": "materials/micro-lessons/output/T22_MicroLesson_04_r1.pptx",
+      "individualPdf": "materials/micro-lessons/output/T22_MicroLesson_04_r1.pdf",
+      "diagramKeys": [
+        "CON-002"
+      ]
+    },
+    {
+      "id": "T22-ML-04-S05",
+      "revision": 1,
+      "title": "落子前，先听伙伴的回应",
+      "lessonId": "T22-ML-04",
+      "topic": "连接与切断",
+      "combinedPage": 20,
+      "individualPage": 5,
+      "individualPptx": "materials/micro-lessons/output/T22_MicroLesson_04_r1.pptx",
+      "individualPdf": "materials/micro-lessons/output/T22_MicroLesson_04_r1.pdf",
+      "diagramKeys": [
+        "T22-EMPTY-9"
+      ]
+    },
+    {
+      "id": "T22-ML-05-S01",
+      "revision": 1,
+      "title": "被黑棋围住，就一定是眼吗？",
+      "lessonId": "T22-ML-05",
+      "topic": "眼和简单死活",
+      "combinedPage": 21,
+      "individualPage": 1,
+      "individualPptx": "materials/micro-lessons/output/T22_MicroLesson_05_r1.pptx",
+      "individualPdf": "materials/micro-lessons/output/T22_MicroLesson_05_r1.pdf",
+      "diagramKeys": [
+        "LIFE-002"
+      ]
+    },
+    {
+      "id": "T22-ML-05-S02",
+      "revision": 1,
+      "title": "假眼：眼壁会先被提走",
+      "lessonId": "T22-ML-05",
+      "topic": "眼和简单死活",
+      "combinedPage": 22,
+      "individualPage": 2,
+      "individualPptx": "materials/micro-lessons/output/T22_MicroLesson_05_r1.pptx",
+      "individualPdf": "materials/micro-lessons/output/T22_MicroLesson_05_r1.pdf",
+      "diagramKeys": [
+        "LIFE-002",
+        "LIFE-002-SUCCESS"
+      ]
+    },
+    {
+      "id": "T22-ML-05-S03",
+      "revision": 1,
+      "title": "两个空点，还是两个独立真眼？",
+      "lessonId": "T22-ML-05",
+      "topic": "眼和简单死活",
+      "combinedPage": 23,
+      "individualPage": 3,
+      "individualPptx": "materials/micro-lessons/output/T22_MicroLesson_05_r1.pptx",
+      "individualPdf": "materials/micro-lessons/output/T22_MicroLesson_05_r1.pdf",
+      "diagramKeys": [
+        "LIFE-001",
+        "LIFE-005"
+      ]
+    },
+    {
+      "id": "T22-ML-05-S04",
+      "revision": 1,
+      "title": "黑先，怎样做出两个独立眼？",
+      "lessonId": "T22-ML-05",
+      "topic": "眼和简单死活",
+      "combinedPage": 24,
+      "individualPage": 4,
+      "individualPptx": "materials/micro-lessons/output/T22_MicroLesson_05_r1.pptx",
+      "individualPdf": "materials/micro-lessons/output/T22_MicroLesson_05_r1.pdf",
+      "diagramKeys": [
+        "LIFE-003"
+      ]
+    },
+    {
+      "id": "T22-ML-05-S05",
+      "revision": 1,
+      "title": "先解释眼形，再回到对弈",
+      "lessonId": "T22-ML-05",
+      "topic": "眼和简单死活",
+      "combinedPage": 25,
+      "individualPage": 5,
+      "individualPptx": "materials/micro-lessons/output/T22_MicroLesson_05_r1.pptx",
+      "individualPdf": "materials/micro-lessons/output/T22_MicroLesson_05_r1.pdf",
+      "diagramKeys": [
+        "T22-EMPTY-9"
+      ]
+    }
+  ],
+  "routes": {
+    "HOME_ROUTE": "#/home",
+    "ROUTE_ROUTE": "#/route",
+    "TEACHER_ROUTE": "#/teacher",
+    "BOARD_LAB_ROUTE": "#/board-lab",
+    "LIBERTY_LAB_ROUTE": "#/learn/liberties",
+    "CAPTURE_LAB_ROUTE": "#/learn/captures",
+    "CAPTURE_GAME_ROUTE": "#/play/partner",
+    "EXPERIMENT_BOARD_ROUTE": "#/board/experiment",
+    "FULL_GAME_ROUTE": "#/play/full-game",
+    "PUZZLE_ROUTE": "#/challenges",
+    "LIFE_LAB_ROUTE": "#/learn/life",
+    "COOPERATIVE_ROUTE": "#/challenges/together",
+    "TERRITORY_ROUTE": "#/learn/territory",
+    "TEACHER_EDITOR_ROUTE": "#/teacher/editor",
+    "FILE_EXCHANGE_ROUTE": "#/teacher/file-exchange",
+    "OFFLINE_DATA_ROUTE": "#/teacher/offline-data",
+    "FEEDBACK_ROUTE": "#/feedback",
+    "EVIDENCE_ROUTE": "#/teacher/evidence",
+    "LEGACY_PUZZLE_ROUTE": "#/challenge/try-one"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "taskId": "FREEZE_B",
+  "date": "2026-09-19",
+  "dependencyMode": "T15 existing locked dependencies, no installation",
+  "commands": [
+    {
+      "command": "node scripts/generate-types.mjs --check",
+      "startedAt": "2026-09-19T17:09:59.231428+08:00",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "docs/freeze-b/evidence/check-01.log"
+    },
+    {
+      "command": "./node_modules/.bin/vitest run --reporter=dot",
+      "startedAt": "2026-09-19T17:09:59.504188+08:00",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "docs/freeze-b/evidence/check-02.log"
+    },
+    {
+      "command": "node --import tsx scripts/validate-content.ts",
+      "startedAt": "2026-09-19T17:10:10.659688+08:00",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "docs/freeze-b/evidence/check-03.log"
+    },
+    {
+      "command": "node --import tsx content/tools/validate.mjs",
+      "startedAt": "2026-09-19T17:10:11.142877+08:00",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "docs/freeze-b/evidence/check-04.log"
+    },
+    {
+      "command": "node content/tools/test-grade.mjs",
+      "startedAt": "2026-09-19T17:10:11.670245+08:00",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "docs/freeze-b/evidence/check-05.log"
+    },
+    {
+      "command": "node scripts/verify-merge-a.mjs",
+      "startedAt": "2026-09-19T17:10:11.839339+08:00",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "docs/freeze-b/evidence/check-06.log"
+    },
+    {
+      "command": "./node_modules/.bin/tsc --noEmit --pretty false",
+      "startedAt": "2026-09-19T17:10:11.945076+08:00",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "docs/freeze-b/evidence/check-07.log"
+    },
+    {
+      "command": "./node_modules/.bin/vite build",
+      "startedAt": "2026-09-19T17:10:12.486828+08:00",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "docs/freeze-b/evidence/check-08.log"
+    },
+    {
+      "command": "./node_modules/.bin/vite build --config vite.engine.config.ts",
+      "startedAt": "2026-09-19T17:10:13.007360+08:00",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "docs/freeze-b/evidence/check-09.log"
+    },
+    {
+      "command": "./node_modules/.bin/tsc -p tsconfig.engine.json --pretty false",
+      "startedAt": "2026-09-19T17:10:13.236529+08:00",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "docs/freeze-b/evidence/check-10.log"
+    },
+    {
+      "command": "node scripts/finish-engine-build.mjs",
+      "startedAt": "2026-09-19T17:10:13.372790+08:00",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "docs/freeze-b/evidence/check-11.log"
+    },
+    {
+      "command": "node scripts/engine-smoke.mjs",
+      "startedAt": "2026-09-19T17:10:13.423185+08:00",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "docs/freeze-b/evidence/check-12.log"
+    },
+    {
+      "command": "./node_modules/.bin/tsc -p tsconfig.engine-smoke.json --pretty false",
+      "startedAt": "2026-09-19T17:10:13.594133+08:00",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "docs/freeze-b/evidence/check-13.log"
+    },
+    {
+      "command": "node scripts/engine-capacity.mjs",
+      "startedAt": "2026-09-19T17:10:13.975790+08:00",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "docs/freeze-b/evidence/check-14.log"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "FIXTURE-T06-TRANSITIONS",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "independentExpected": {
+    "surroundedBlack": {"size": 5, "black": [2, 2], "white": [[1, 2], [2, 1], [2, 3], [3, 2]], "invalidGroup": [[2, 2]], "liberties": []},
+    "freshRootLayoutCount": 1,
+    "afterFirstRuleMove": {"moves": 1, "historyLayouts": 2, "toPlay": "W"},
+    "twoPasses": {"phase": "scoring", "consecutivePasses": 2},
+    "resizeFrom9To5": {"preserved": [4, 4], "cropped": [8, 8]}
+  }
+}

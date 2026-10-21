@@ -1,0 +1,404 @@
+{
+  "schemaVersion": 1,
+  "id": "T22-CONTENT-CHECKS",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "passed",
+  "engine": "frozen dist-engine/go-club-rules.mjs; no new engine",
+  "checks": [
+    {
+      "check": "frozen-setup",
+      "id": "AREA-005",
+      "status": "passed"
+    },
+    {
+      "check": "frozen-setup",
+      "id": "CAP-001",
+      "status": "passed"
+    },
+    {
+      "check": "frozen-setup",
+      "id": "CAP-002",
+      "status": "passed"
+    },
+    {
+      "check": "frozen-setup",
+      "id": "CON-001",
+      "status": "passed"
+    },
+    {
+      "check": "frozen-setup",
+      "id": "CON-002",
+      "status": "passed"
+    },
+    {
+      "check": "frozen-setup",
+      "id": "END-001",
+      "status": "passed"
+    },
+    {
+      "check": "frozen-setup",
+      "id": "END-002",
+      "status": "passed"
+    },
+    {
+      "check": "frozen-setup",
+      "id": "LIB-001",
+      "status": "passed"
+    },
+    {
+      "check": "frozen-setup",
+      "id": "LIB-004",
+      "status": "passed"
+    },
+    {
+      "check": "frozen-setup",
+      "id": "LIFE-001",
+      "status": "passed"
+    },
+    {
+      "check": "frozen-setup",
+      "id": "LIFE-002",
+      "status": "passed"
+    },
+    {
+      "check": "frozen-setup",
+      "id": "LIFE-003",
+      "status": "passed"
+    },
+    {
+      "check": "frozen-setup",
+      "id": "LIFE-005",
+      "status": "passed"
+    },
+    {
+      "check": "frozen-setup",
+      "id": "RULE-DEMO-T20-CONNECT",
+      "status": "passed"
+    },
+    {
+      "check": "frozen-setup",
+      "id": "RULE-DEMO-T20-KO-AFTER",
+      "status": "passed"
+    },
+    {
+      "check": "frozen-setup",
+      "id": "RULE-DEMO-T20-KO-BEFORE",
+      "status": "passed"
+    },
+    {
+      "check": "frozen-setup",
+      "id": "RULE-DEMO-T20-LEGAL-AFTER",
+      "status": "passed"
+    },
+    {
+      "check": "frozen-setup",
+      "id": "RULE-DEMO-T20-LEGAL-BEFORE",
+      "status": "passed"
+    },
+    {
+      "check": "branch-replay",
+      "id": "CAP-001",
+      "nodes": [
+        "l1-1"
+      ],
+      "captured": [
+        {
+          "row": 2,
+          "col": 2
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "branch-replay",
+      "id": "CON-001",
+      "nodes": [
+        "l1-1"
+      ],
+      "captured": [],
+      "status": "passed"
+    },
+    {
+      "check": "branch-replay",
+      "id": "CON-001",
+      "nodes": [
+        "l2-1",
+        "l2-2"
+      ],
+      "captured": [],
+      "status": "passed"
+    },
+    {
+      "check": "branch-replay",
+      "id": "LIFE-002",
+      "nodes": [
+        "l1-1"
+      ],
+      "captured": [
+        {
+          "row": 1,
+          "col": 2
+        },
+        {
+          "row": 2,
+          "col": 1
+        },
+        {
+          "row": 2,
+          "col": 3
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "covered-branch-legality",
+      "id": "CAP-001",
+      "branch": [
+        "root",
+        "l1-1"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "covered-branch-legality",
+      "id": "CAP-001",
+      "branch": [
+        "root",
+        "l2-1",
+        "l2-2"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "covered-branch-legality",
+      "id": "CAP-002",
+      "branch": [
+        "root",
+        "l1-1"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "covered-branch-legality",
+      "id": "CAP-002",
+      "branch": [
+        "root",
+        "l2-1",
+        "l2-2"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "covered-branch-legality",
+      "id": "CON-001",
+      "branch": [
+        "root",
+        "l1-1"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "covered-branch-legality",
+      "id": "CON-001",
+      "branch": [
+        "root",
+        "l2-1",
+        "l2-2"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "covered-branch-legality",
+      "id": "CON-002",
+      "branch": [
+        "root",
+        "l1-1"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "covered-branch-legality",
+      "id": "CON-002",
+      "branch": [
+        "root",
+        "l2-1"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "covered-branch-legality",
+      "id": "CON-002",
+      "branch": [
+        "root",
+        "l3-1",
+        "l3-2"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "covered-branch-legality",
+      "id": "LIFE-002",
+      "branch": [
+        "root",
+        "l1-1"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "covered-branch-legality",
+      "id": "LIFE-002",
+      "branch": [
+        "root",
+        "l2-1",
+        "l2-2"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "covered-branch-legality",
+      "id": "LIFE-003",
+      "branch": [
+        "root",
+        "l1-1"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "covered-branch-legality",
+      "id": "LIFE-003",
+      "branch": [
+        "root",
+        "l2-1",
+        "l2-2",
+        "l2-3",
+        "l2-4"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "covered-branch-legality",
+      "id": "LIFE-005",
+      "branch": [
+        "root",
+        "l1-1",
+        "l1-2",
+        "l1-3"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "covered-branch-legality",
+      "id": "LIFE-005",
+      "branch": [
+        "root",
+        "l2-1",
+        "l2-2",
+        "l2-3"
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "liberty-count",
+      "id": "LIB-001",
+      "count": 4,
+      "points": [
+        {
+          "row": 3,
+          "col": 4
+        },
+        {
+          "row": 4,
+          "col": 3
+        },
+        {
+          "row": 4,
+          "col": 5
+        },
+        {
+          "row": 5,
+          "col": 4
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "liberty-count",
+      "id": "LIB-004",
+      "count": 7,
+      "points": [
+        {
+          "row": 0,
+          "col": 1
+        },
+        {
+          "row": 1,
+          "col": 0
+        },
+        {
+          "row": 1,
+          "col": 2
+        },
+        {
+          "row": 2,
+          "col": 0
+        },
+        {
+          "row": 2,
+          "col": 3
+        },
+        {
+          "row": 3,
+          "col": 1
+        },
+        {
+          "row": 3,
+          "col": 2
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "check": "capture-before-suicide",
+      "captured": 2,
+      "status": "passed"
+    },
+    {
+      "check": "simple-ko-with-real-derived-history",
+      "status": "passed"
+    },
+    {
+      "check": "area-score",
+      "id": "END-001",
+      "black": 10,
+      "white": 15,
+      "neutral": 0,
+      "status": "passed"
+    },
+    {
+      "check": "area-score",
+      "id": "END-002",
+      "black": 10,
+      "white": 10,
+      "neutral": 5,
+      "status": "passed"
+    },
+    {
+      "check": "protected-independent-eyes-reject-white-entry",
+      "status": "passed"
+    },
+    {
+      "check": "double-pass-and-resume-preserves-board-history",
+      "status": "passed"
+    },
+    {
+      "check": "capture-first-ends-on-first-capture",
+      "status": "passed"
+    },
+    {
+      "check": "capture-first-two-passes-no-winner",
+      "status": "passed"
+    }
+  ],
+  "humanReviewed": false
+}

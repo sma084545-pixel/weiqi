@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "RULE-DEMO-T20-CONNECT",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "Position",
+  "size": 5,
+  "stones": [
+    {
+      "row": 1,
+      "col": 1,
+      "color": "B"
+    },
+    {
+      "row": 1,
+      "col": 2,
+      "color": "B"
+    },
+    {
+      "row": 2,
+      "col": 3,
+      "color": "B"
+    }
+  ],
+  "toPlay": "B",
+  "historyPolicy": "fresh-setup",
+  "history": null
+}

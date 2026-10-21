@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "id": "T09-DEPENDENCIES",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "DependencyVerification",
+  "passed": true,
+  "items": [
+    {
+      "name": "ajv",
+      "wanted": "8.20.0",
+      "actual": "8.20.0",
+      "matches": true
+    },
+    {
+      "name": "react",
+      "wanted": "19.2.8",
+      "actual": "19.2.8",
+      "matches": true
+    },
+    {
+      "name": "react-dom",
+      "wanted": "19.2.8",
+      "actual": "19.2.8",
+      "matches": true
+    },
+    {
+      "name": "@playwright/test",
+      "wanted": "1.62.1",
+      "actual": "1.62.1",
+      "matches": true
+    },
+    {
+      "name": "@types/node",
+      "wanted": "26.4.1",
+      "actual": "26.4.1",
+      "matches": true
+    },
+    {
+      "name": "@types/react",
+      "wanted": "19.2.18",
+      "actual": "19.2.18",
+      "matches": true
+    },
+    {
+      "name": "@types/react-dom",
+      "wanted": "19.2.7",
+      "actual": "19.2.7",
+      "matches": true
+    },
+    {
+      "name": "@vitejs/plugin-react",
+      "wanted": "6.1.1",
+      "actual": "6.1.1",
+      "matches": true
+    },
+    {
+      "name": "jsdom",
+      "wanted": "30.0.1",
+      "actual": "30.0.1",
+      "matches": true
+    },
+    {
+      "name": "json-schema-to-typescript",
+      "wanted": "16.0.0",
+      "actual": "16.0.0",
+      "matches": true
+    },
+    {
+      "name": "tsx",
+      "wanted": "4.23.13",
+      "actual": "4.23.13",
+      "matches": true
+    },
+    {
+      "name": "typescript",
+      "wanted": "7.0.2",
+      "actual": "7.0.2",
+      "matches": true
+    },
+    {
+      "name": "vite",
+      "wanted": "8.2.2",
+      "actual": "8.2.2",
+      "matches": true
+    },
+    {
+      "name": "vitest",
+      "wanted": "5.0.0",
+      "actual": "5.0.0",
+      "matches": true
+    }
+  ]
+}

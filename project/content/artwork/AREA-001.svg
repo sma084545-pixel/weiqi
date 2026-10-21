@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="650" viewBox="0 0 600 650" role="img" aria-labelledby="title desc">
+<title id="title">AREA-001  r1 清楚围空：子与空都计入</title>
+<desc id="desc">完整5乘5棋盘，左上row=0，列向右，行号自下向上；目标数字为题目标记。黑：A5 C5 E5 A4 B4 C4 D4 E4；白：A3 B3 C3 D3 E3 A2 B2 C2 D2 E2 A1 C1 E1</desc>
+<metadata>{&quot;schemaVersion&quot;: 1, &quot;id&quot;: &quot;SVG-AREA-001&quot;, &quot;revision&quot;: 1, &quot;rulesetId&quot;: &quot;GO-CLUB-AREA-1&quot;, &quot;contentRef&quot;: {&quot;id&quot;: &quot;AREA-001&quot;, &quot;revision&quot;: 1}}</metadata>
+<rect width="600" height="650" fill="white"/>
+<g font-family="Arial Unicode MS, PingFang SC, sans-serif" fill="#172a32"><text x="30" y="32" font-size="21">AREA-001  r1 · 5×5 小棋盘</text><text x="30" y="61" font-size="16">上方 row=0；列 A →；显示行号自下向上</text></g>
+<g stroke="#78746a" stroke-width="1.4">
+<line x1="65.0" y1="100" x2="65.0" y2="570"/>
+<line x1="65" y1="100.0" x2="535" y2="100.0"/>
+<line x1="182.5" y1="100" x2="182.5" y2="570"/>
+<line x1="65" y1="217.5" x2="535" y2="217.5"/>
+<line x1="300.0" y1="100" x2="300.0" y2="570"/>
+<line x1="65" y1="335.0" x2="535" y2="335.0"/>
+<line x1="417.5" y1="100" x2="417.5" y2="570"/>
+<line x1="65" y1="452.5" x2="535" y2="452.5"/>
+<line x1="535.0" y1="100" x2="535.0" y2="570"/>
+<line x1="65" y1="570.0" x2="535" y2="570.0"/>
+</g><g font-family="Arial Unicode MS, sans-serif" text-anchor="middle" fill="#172a32" font-size="19">
+<text x="65.0" y="604">A</text>
+<text x="35" y="107.0">5</text>
+<text x="182.5" y="604">B</text>
+<text x="35" y="224.5">4</text>
+<text x="300.0" y="604">C</text>
+<text x="35" y="342.0">3</text>
+<text x="417.5" y="604">D</text>
+<text x="35" y="459.5">2</text>
+<text x="535.0" y="604">E</text>
+<text x="35" y="577.0">1</text>
+</g>
+<circle data-row="0" data-col="0" data-color="B" cx="65.0" cy="100.0" r="24" fill="#20272a" stroke="#20272a" stroke-width="2"/>
+<circle data-row="0" data-col="2" data-color="B" cx="300.0" cy="100.0" r="24" fill="#20272a" stroke="#20272a" stroke-width="2"/>
+<circle data-row="0" data-col="4" data-color="B" cx="535.0" cy="100.0" r="24" fill="#20272a" stroke="#20272a" stroke-width="2"/>
+<circle data-row="1" data-col="0" data-color="B" cx="65.0" cy="217.5" r="24" fill="#20272a" stroke="#20272a" stroke-width="2"/>
+<circle data-row="1" data-col="1" data-color="B" cx="182.5" cy="217.5" r="24" fill="#20272a" stroke="#20272a" stroke-width="2"/>
+<circle data-row="1" data-col="2" data-color="B" cx="300.0" cy="217.5" r="24" fill="#20272a" stroke="#20272a" stroke-width="2"/>
+<text x="300.0" y="224.5" text-anchor="middle" font-family="Arial Unicode MS, sans-serif" font-size="20" fill="white">1</text>
+<circle data-row="1" data-col="3" data-color="B" cx="417.5" cy="217.5" r="24" fill="#20272a" stroke="#20272a" stroke-width="2"/>
+<circle data-row="1" data-col="4" data-color="B" cx="535.0" cy="217.5" r="24" fill="#20272a" stroke="#20272a" stroke-width="2"/>
+<circle data-row="2" data-col="0" data-color="W" cx="65.0" cy="335.0" r="24" fill="#fff" stroke="#20272a" stroke-width="2"/>
+<circle data-row="2" data-col="1" data-color="W" cx="182.5" cy="335.0" r="24" fill="#fff" stroke="#20272a" stroke-width="2"/>
+<circle data-row="2" data-col="2" data-color="W" cx="300.0" cy="335.0" r="24" fill="#fff" stroke="#20272a" stroke-width="2"/>
+<circle data-row="2" data-col="3" data-color="W" cx="417.5" cy="335.0" r="24" fill="#fff" stroke="#20272a" stroke-width="2"/>
+<circle data-row="2" data-col="4" data-color="W" cx="535.0" cy="335.0" r="24" fill="#fff" stroke="#20272a" stroke-width="2"/>
+<circle data-row="3" data-col="0" data-color="W" cx="65.0" cy="452.5" r="24" fill="#fff" stroke="#20272a" stroke-width="2"/>
+<circle data-row="3" data-col="1" data-color="W" cx="182.5" cy="452.5" r="24" fill="#fff" stroke="#20272a" stroke-width="2"/>
+<circle data-row="3" data-col="2" data-color="W" cx="300.0" cy="452.5" r="24" fill="#fff" stroke="#20272a" stroke-width="2"/>
+<circle data-row="3" data-col="3" data-color="W" cx="417.5" cy="452.5" r="24" fill="#fff" stroke="#20272a" stroke-width="2"/>
+<circle data-row="3" data-col="4" data-color="W" cx="535.0" cy="452.5" r="24" fill="#fff" stroke="#20272a" stroke-width="2"/>
+<circle data-row="4" data-col="0" data-color="W" cx="65.0" cy="570.0" r="24" fill="#fff" stroke="#20272a" stroke-width="2"/>
+<circle data-row="4" data-col="2" data-color="W" cx="300.0" cy="570.0" r="24" fill="#fff" stroke="#20272a" stroke-width="2"/>
+<circle data-row="4" data-col="4" data-color="W" cx="535.0" cy="570.0" r="24" fill="#fff" stroke="#20272a" stroke-width="2"/>
+<text x="30" y="638" font-size="15" font-family="Arial Unicode MS, sans-serif" fill="#43535b">数字=目标；黑方轮次；新教学起点</text></svg>

@@ -1,0 +1,1594 @@
+{
+  "schemaVersion": 1,
+  "id": "T21-PDF-RENDER-QA",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "renderDpi": 144,
+  "status": "passed",
+  "pdfs": {
+    "front": {
+      "path": "output/T21_challenge_cards_front_A4.pdf",
+      "pdfPages": 15,
+      "renderedPages": 15,
+      "pageSizePoints": [
+        595.2756,
+        841.8898
+      ],
+      "pages": [
+        {
+          "file": "front-01.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1683
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 1
+          },
+          "status": "passed"
+        },
+        {
+          "file": "front-02.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1683
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 1
+          },
+          "status": "passed"
+        },
+        {
+          "file": "front-03.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1683
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 1
+          },
+          "status": "passed"
+        },
+        {
+          "file": "front-04.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1683
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 1
+          },
+          "status": "passed"
+        },
+        {
+          "file": "front-05.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1683
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 1
+          },
+          "status": "passed"
+        },
+        {
+          "file": "front-06.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1683
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 1
+          },
+          "status": "passed"
+        },
+        {
+          "file": "front-07.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1683
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 1
+          },
+          "status": "passed"
+        },
+        {
+          "file": "front-08.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1683
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 1
+          },
+          "status": "passed"
+        },
+        {
+          "file": "front-09.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1683
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 1
+          },
+          "status": "passed"
+        },
+        {
+          "file": "front-10.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1683
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 1
+          },
+          "status": "passed"
+        },
+        {
+          "file": "front-11.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1683
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 1
+          },
+          "status": "passed"
+        },
+        {
+          "file": "front-12.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1683
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 1
+          },
+          "status": "passed"
+        },
+        {
+          "file": "front-13.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1683
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 1
+          },
+          "status": "passed"
+        },
+        {
+          "file": "front-14.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1683
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 1
+          },
+          "status": "passed"
+        },
+        {
+          "file": "front-15.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1683
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 1
+          },
+          "status": "passed"
+        }
+      ],
+      "contactSheets": [
+        "front-01-04.jpg",
+        "front-05-08.jpg",
+        "front-09-12.jpg",
+        "front-13-15.jpg"
+      ],
+      "status": "passed",
+      "grayscaleContactSheets": [
+        "front-gray-01-04.jpg",
+        "front-gray-05-08.jpg",
+        "front-gray-09-12.jpg",
+        "front-gray-13-15.jpg"
+      ]
+    },
+    "back": {
+      "path": "output/T21_challenge_cards_back_A4.pdf",
+      "pdfPages": 15,
+      "renderedPages": 15,
+      "pageSizePoints": [
+        595.2756,
+        841.8898
+      ],
+      "pages": [
+        {
+          "file": "back-01.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1683
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 1
+          },
+          "status": "passed"
+        },
+        {
+          "file": "back-02.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1683
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 1
+          },
+          "status": "passed"
+        },
+        {
+          "file": "back-03.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1683
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 1
+          },
+          "status": "passed"
+        },
+        {
+          "file": "back-04.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1683
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 1
+          },
+          "status": "passed"
+        },
+        {
+          "file": "back-05.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1683
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 1
+          },
+          "status": "passed"
+        },
+        {
+          "file": "back-06.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1683
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 1
+          },
+          "status": "passed"
+        },
+        {
+          "file": "back-07.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1683
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 1
+          },
+          "status": "passed"
+        },
+        {
+          "file": "back-08.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1683
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 1
+          },
+          "status": "passed"
+        },
+        {
+          "file": "back-09.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1683
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 1
+          },
+          "status": "passed"
+        },
+        {
+          "file": "back-10.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1683
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 1
+          },
+          "status": "passed"
+        },
+        {
+          "file": "back-11.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1683
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 1
+          },
+          "status": "passed"
+        },
+        {
+          "file": "back-12.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1683
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 1
+          },
+          "status": "passed"
+        },
+        {
+          "file": "back-13.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1683
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 1
+          },
+          "status": "passed"
+        },
+        {
+          "file": "back-14.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1683
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 1
+          },
+          "status": "passed"
+        },
+        {
+          "file": "back-15.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1683
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 1
+          },
+          "status": "passed"
+        }
+      ],
+      "contactSheets": [
+        "back-01-04.jpg",
+        "back-05-08.jpg",
+        "back-09-12.jpg",
+        "back-13-15.jpg"
+      ],
+      "status": "passed",
+      "grayscaleContactSheets": [
+        "back-gray-01-04.jpg",
+        "back-gray-05-08.jpg",
+        "back-gray-09-12.jpg",
+        "back-gray-13-15.jpg"
+      ]
+    },
+    "teacher": {
+      "path": "output/T21_teacher_answer_book.pdf",
+      "pdfPages": 33,
+      "renderedPages": 33,
+      "pageSizePoints": [
+        595.2756,
+        841.8898
+      ],
+      "pages": [
+        {
+          "file": "teacher-01.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1651
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 33
+          },
+          "status": "passed"
+        },
+        {
+          "file": "teacher-02.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1651
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 33
+          },
+          "status": "passed"
+        },
+        {
+          "file": "teacher-03.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1651
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 33
+          },
+          "status": "passed"
+        },
+        {
+          "file": "teacher-04.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1651
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 33
+          },
+          "status": "passed"
+        },
+        {
+          "file": "teacher-05.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1651
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 33
+          },
+          "status": "passed"
+        },
+        {
+          "file": "teacher-06.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1651
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 33
+          },
+          "status": "passed"
+        },
+        {
+          "file": "teacher-07.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1651
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 33
+          },
+          "status": "passed"
+        },
+        {
+          "file": "teacher-08.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1651
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 33
+          },
+          "status": "passed"
+        },
+        {
+          "file": "teacher-09.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1651
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 33
+          },
+          "status": "passed"
+        },
+        {
+          "file": "teacher-10.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1651
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 33
+          },
+          "status": "passed"
+        },
+        {
+          "file": "teacher-11.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1651
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 33
+          },
+          "status": "passed"
+        },
+        {
+          "file": "teacher-12.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1651
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 33
+          },
+          "status": "passed"
+        },
+        {
+          "file": "teacher-13.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1651
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 33
+          },
+          "status": "passed"
+        },
+        {
+          "file": "teacher-14.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1651
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 33
+          },
+          "status": "passed"
+        },
+        {
+          "file": "teacher-15.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1651
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 33
+          },
+          "status": "passed"
+        },
+        {
+          "file": "teacher-16.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1651
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 33
+          },
+          "status": "passed"
+        },
+        {
+          "file": "teacher-17.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1651
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 33
+          },
+          "status": "passed"
+        },
+        {
+          "file": "teacher-18.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1651
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 33
+          },
+          "status": "passed"
+        },
+        {
+          "file": "teacher-19.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1651
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 33
+          },
+          "status": "passed"
+        },
+        {
+          "file": "teacher-20.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1651
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 33
+          },
+          "status": "passed"
+        },
+        {
+          "file": "teacher-21.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1651
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 33
+          },
+          "status": "passed"
+        },
+        {
+          "file": "teacher-22.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1651
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 33
+          },
+          "status": "passed"
+        },
+        {
+          "file": "teacher-23.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1651
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 33
+          },
+          "status": "passed"
+        },
+        {
+          "file": "teacher-24.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1651
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 33
+          },
+          "status": "passed"
+        },
+        {
+          "file": "teacher-25.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1651
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 33
+          },
+          "status": "passed"
+        },
+        {
+          "file": "teacher-26.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1651
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 33
+          },
+          "status": "passed"
+        },
+        {
+          "file": "teacher-27.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1651
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 33
+          },
+          "status": "passed"
+        },
+        {
+          "file": "teacher-28.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1651
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 33
+          },
+          "status": "passed"
+        },
+        {
+          "file": "teacher-29.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1651
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 33
+          },
+          "status": "passed"
+        },
+        {
+          "file": "teacher-30.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1651
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 33
+          },
+          "status": "passed"
+        },
+        {
+          "file": "teacher-31.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1651
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 33
+          },
+          "status": "passed"
+        },
+        {
+          "file": "teacher-32.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1651
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 33
+          },
+          "status": "passed"
+        },
+        {
+          "file": "teacher-33.png",
+          "pixelSize": [
+            1191,
+            1684
+          ],
+          "expectedPixelSize": [
+            1191,
+            1684
+          ],
+          "nonBlankBBox": [
+            0,
+            0,
+            1191,
+            1651
+          ],
+          "nonBlankMarginsPx": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 33
+          },
+          "status": "passed"
+        }
+      ],
+      "contactSheets": [
+        "teacher-01-04.jpg",
+        "teacher-05-08.jpg",
+        "teacher-09-12.jpg",
+        "teacher-13-16.jpg",
+        "teacher-17-20.jpg",
+        "teacher-21-24.jpg",
+        "teacher-25-28.jpg",
+        "teacher-29-32.jpg",
+        "teacher-33-33.jpg"
+      ],
+      "status": "passed"
+    }
+  },
+  "reviewBoundary": "Automated geometry and nonblank checks; assistant visual contact-sheet review is recorded separately. Physical printing remains untested."
+}

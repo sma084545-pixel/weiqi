@@ -1,0 +1,39 @@
+[WebServer] (node:96681) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:96687) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [webkit] › tests/browser/t24.spec.ts:8:1 › T24 continuous learner to teacher journey, offline save and recovery (7.0s)
+
+
+  1) [webkit] › tests/browser/t24.spec.ts:8:1 › T24 continuous learner to teacher journey, offline save and recovery › 摆棋验证、新历史、规则试下及两类撤回 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('[data-work-mode="rules"]')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('[data-work-mode="rules"]')
+
+
+      45 |     await page.getByText(/确认把当前盘面作为新起点/).click();
+      46 |     await page.getByRole('button',{name:'从当前局面开始按规则试下'}).click();
+    > 47 |     await expect(page.locator('[data-work-mode="rules"]')).toBeVisible();
+         |                                                            ^
+      48 |     await expect(page.locator('.rule-summary dl>div').filter({hasText:'历史布局'}).locator('dd')).toHaveText('1');
+      49 |     await cell(page,0,0).click();await expect(page.getByText('白方',{exact:true})).toBeVisible();
+      50 |     await page.getByRole('button',{name:'撤回对局'}).click();await page.getByRole('button',{name:'重做对局'}).click();
+        at /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t24-20261009/mainline/go-club/tests/browser/t24.spec.ts:47:60
+        at step (/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t24-20261009/mainline/go-club/tests/browser/t24.spec.ts:19:5)
+        at /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t24-20261009/mainline/go-club/tests/browser/t24.spec.ts:43:3
+
+    Error Context: output/playwright/results/t24-T24-continuous-learner-e7c3d-y-offline-save-and-recovery-webkit/error-context.md
+
+  1 failed
+    [webkit] › tests/browser/t24.spec.ts:8:1 › T24 continuous learner to teacher journey, offline save and recovery 

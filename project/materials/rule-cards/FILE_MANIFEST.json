@@ -1,0 +1,396 @@
+{
+  "schemaVersion": 1,
+  "id": "T20-FILE-MANIFEST",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "baseVersion": "0.2.0",
+  "resultVersion": "0.2.0-t20.1",
+  "scope": "Only materials/rule-cards and handoff/T20.md. No baseline files modified.",
+  "files": [
+    {
+      "path": "materials/rule-cards/PRINT-AND-TEACHER.md",
+      "sha256": "c1100b5f47b4e34a661a717357c1fc2da42399106bfdb9f34c162c332e274cd9",
+      "bytes": 8419
+    },
+    {
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-CAPTURE-AFTER.json",
+      "sha256": "c49a90c0bcd509a47859e52e689ebf26cd3410797d70f59258b47bad180240d5",
+      "bytes": 493
+    },
+    {
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-CAPTURE-BEFORE.json",
+      "sha256": "6b7b4142b6aeae8b242c726a148a668ed55efe066c7bc5adcd12cfbade68daed",
+      "bytes": 494
+    },
+    {
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-CONNECT.json",
+      "sha256": "c745c0a49849f21ca32a94106865328fb005d1a75136403754b5c713a0a07127",
+      "bytes": 423
+    },
+    {
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-KO-AFTER.json",
+      "sha256": "89d9a194282bdbbce299ed730cec96191f7fc70c7667e1e3861122fb7b31fd43",
+      "bytes": 680
+    },
+    {
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-KO-BEFORE.json",
+      "sha256": "d4fe9642a299e6abb7fd957cb5d7fd0cf5f339980f812404f8f46f0dcf8d73b5",
+      "bytes": 681
+    },
+    {
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-LEGAL-AFTER.json",
+      "sha256": "a6e455337c43630ef583417544bd2e285ae507dee005acc4159149d073a6a909",
+      "bytes": 491
+    },
+    {
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-LEGAL-BEFORE.json",
+      "sha256": "4dc310af6907bf6ec3c6ff7dda5a0b5b31620c36fa90f7d6f6ac06ebbc066109",
+      "bytes": 556
+    },
+    {
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-LIBERTY.json",
+      "sha256": "6c6907aa5af61161db98b961905a0a08f3382ad6c98bb4ad0ae2c73383c4f67b",
+      "bytes": 423
+    },
+    {
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-SCORE.json",
+      "sha256": "4572ff686851003ddb99c7168251dc34ceeb8bfe8463f8717e797b60d534bf91",
+      "bytes": 1381
+    },
+    {
+      "path": "materials/rule-cards/data/card-manifest.json",
+      "sha256": "f92021579bd38399d3bd7a72d81092eddb20067fd8a0adc2dbd2474a0a2a7025",
+      "bytes": 15071
+    },
+    {
+      "path": "materials/rule-cards/data/diagram-index.json",
+      "sha256": "74b73d83ee5f5651aa4302a8f5d63de7f6936ec60f6a32e21e02b774b1513fa7",
+      "bytes": 10914
+    },
+    {
+      "path": "materials/rule-cards/pdf/01-main-front.pdf",
+      "sha256": "62c7fcc18e99d28ca3e613449a4574dedd26586a50e28422f7228ce08d5b5371",
+      "bytes": 44544
+    },
+    {
+      "path": "materials/rule-cards/pdf/02-main-back.pdf",
+      "sha256": "ef30abc02924366ee564a4caadd81340795258a62c913719fb829015fbed9518",
+      "bytes": 67904
+    },
+    {
+      "path": "materials/rule-cards/pdf/03-detail-front.pdf",
+      "sha256": "5839089cbb3bbf772b9de0001abd2da388840ed6137d0ddec1151f8964b94e2f",
+      "bytes": 44616
+    },
+    {
+      "path": "materials/rule-cards/pdf/04-detail-back.pdf",
+      "sha256": "d79c584965cdff7931cf342a2ab22ce80e5e7a5a3b14eebe1bd41ce0df2b7b2c",
+      "bytes": 90608
+    },
+    {
+      "path": "materials/rule-cards/pdf/05-score.pdf",
+      "sha256": "201ad8c0767aa7187d607b90a384afdc6c974db06645af5ce1c128855b91c891",
+      "bytes": 49273
+    },
+    {
+      "path": "materials/rule-cards/pdf/06-pathway.pdf",
+      "sha256": "d4da6bf7d772d62477615bc1e66c953b55537327627b996c93c0b26a1d24254f",
+      "bytes": 58353
+    },
+    {
+      "path": "materials/rule-cards/pdf/07-mini-front.pdf",
+      "sha256": "6f7338d48383a4d39ad24273d528b22db91ac6bae4dc403d28c61bc79cdcb5de",
+      "bytes": 44868
+    },
+    {
+      "path": "materials/rule-cards/pdf/08-mini-back.pdf",
+      "sha256": "d1e0ea15c210f81fd2028ca24361c6ed7962cfef49f95148872a21223b6416ba",
+      "bytes": 48693
+    },
+    {
+      "path": "materials/rule-cards/pdf/PRINT-A4-landscape-short-edge.pdf",
+      "sha256": "ed608bc9db4491808843ac7608bf7f8c02dec45e8f76a739fd7bf2e132c5fd55",
+      "bytes": 846565
+    },
+    {
+      "path": "materials/rule-cards/pdf/PRINT-A4-portrait-long-edge-mini.pdf",
+      "sha256": "4aa90d2b658746c8736d0855064bc1c6dbbe6642635700eab3ac13dc4d55690e",
+      "bytes": 406612
+    },
+    {
+      "path": "materials/rule-cards/pdf/all-independent-cards.pdf",
+      "sha256": "728a728831b2a7ed60c091555980274258d9c0ad659a96bbe04d03f5bb1902e8",
+      "bytes": 440662
+    },
+    {
+      "path": "materials/rule-cards/pdf/capture-mini-A6-duplex.pdf",
+      "sha256": "4402fe60240903d2085ba284295a95918bc89f1c5de06e97f7cc5260d1a998c4",
+      "bytes": 92012
+    },
+    {
+      "path": "materials/rule-cards/pdf/detailed-A5-duplex.pdf",
+      "sha256": "736c0cd25999d6ce863f1b5fdff6ab09dc0c9fb64517f952ea2b0eedd035d262",
+      "bytes": 133570
+    },
+    {
+      "path": "materials/rule-cards/pdf/main-rule-A5-duplex.pdf",
+      "sha256": "8dbd03fc2483195eb25ec4be3e2da19f3e0f4748b7b2859f9c460d0756552759",
+      "bytes": 110798
+    },
+    {
+      "path": "materials/rule-cards/source/01-main-front.svg",
+      "sha256": "b114ac7eeaf22c93dc082714aeb9e2a5959edd9f180a97dfce4dd24432928038",
+      "bytes": 13925
+    },
+    {
+      "path": "materials/rule-cards/source/02-main-back.svg",
+      "sha256": "cb07a88c03f7a283201e37c3a9c0b2e26c73673d7360cf3b0c3d6b97757ba1b0",
+      "bytes": 4663
+    },
+    {
+      "path": "materials/rule-cards/source/03-detail-front.svg",
+      "sha256": "a47f34a0483f10fdf12b7735c03649491453a6175fd458cc3bab3a7ae115375d",
+      "bytes": 14092
+    },
+    {
+      "path": "materials/rule-cards/source/04-detail-back.svg",
+      "sha256": "a990fe596dd9a17c39547a9660178afe5687ab0d19e22615723fa099315bb410",
+      "bytes": 5462
+    },
+    {
+      "path": "materials/rule-cards/source/05-score.svg",
+      "sha256": "9256446d1cdd9384f4702372a3c8e1cc23fba7e4c9cbe4fcf047883dbf42cb9f",
+      "bytes": 8422
+    },
+    {
+      "path": "materials/rule-cards/source/06-pathway.svg",
+      "sha256": "9eff91a03ef33ba60e8f33c0eb0cd23ba634f7a73837b8dd38bd37411fb62cf2",
+      "bytes": 6140
+    },
+    {
+      "path": "materials/rule-cards/source/07-mini-front.svg",
+      "sha256": "dc6e26f6196ca42e460246aae8c0a10067158ce1ba8ed1fb50ca01bb8057a8e4",
+      "bytes": 3155
+    },
+    {
+      "path": "materials/rule-cards/source/08-mini-back.svg",
+      "sha256": "0e0fe223605bfcccafe2ea77922a9d292b66015789cfa51db273354df1b02474",
+      "bytes": 3220
+    },
+    {
+      "path": "materials/rule-cards/source/PRINT-A4-landscape-short-edge-01.svg",
+      "sha256": "49f6438de52d71a4e99e697c2800fd108c330b5d1ad71b5a27d4028adf69607a",
+      "bytes": 29496
+    },
+    {
+      "path": "materials/rule-cards/source/PRINT-A4-landscape-short-edge-02.svg",
+      "sha256": "f661a8abcf1af7b1a2c6bb68faed6524d563ba78a33c79f585031e96490e5fdc",
+      "bytes": 9738
+    },
+    {
+      "path": "materials/rule-cards/source/PRINT-A4-landscape-short-edge-03.svg",
+      "sha256": "43c4fe5a14931e7475406ca8ac5b31b9635f9eb642e5cad10d90daf06ff8bd59",
+      "bytes": 29846
+    },
+    {
+      "path": "materials/rule-cards/source/PRINT-A4-landscape-short-edge-04.svg",
+      "sha256": "d2958fa634ebc7da19ec0ebe689007c4d40ac787cfc381636d9c50f0b0c18ea0",
+      "bytes": 11394
+    },
+    {
+      "path": "materials/rule-cards/source/PRINT-A4-landscape-short-edge-05.svg",
+      "sha256": "f6eee8a680fbbe7945e8d6724af4ab831561cab9ed73b37a2cf85f0b905502c6",
+      "bytes": 17708
+    },
+    {
+      "path": "materials/rule-cards/source/PRINT-A4-landscape-short-edge-06.svg",
+      "sha256": "da9b0b6dae1e633f2a317e369e9f6980aab752654f44e00690fcfe79d89fa025",
+      "bytes": 12894
+    },
+    {
+      "path": "materials/rule-cards/source/PRINT-A4-portrait-long-edge-mini-01.svg",
+      "sha256": "0378ca2cb5d7c9d19354e45376e232905dbf14106bf33a086c11292a23fe423a",
+      "bytes": 12975
+    },
+    {
+      "path": "materials/rule-cards/source/PRINT-A4-portrait-long-edge-mini-02.svg",
+      "sha256": "719d6ed0e8f627ae369f3adb3797336da3ad9b72fcb0e0b37dce7a691634b44b",
+      "bytes": 13255
+    },
+    {
+      "path": "materials/rule-cards/source/build_cards.py",
+      "sha256": "c7b3d05841a985f854419e75102e3fe1b2f9cf76dc684c912f2c32c8f93d768d",
+      "bytes": 14986
+    },
+    {
+      "path": "materials/rule-cards/source/make-contact.py",
+      "sha256": "138fc15bcfd06a61d38076ed69a6e70a5757178dce2559163ade173f4068c8c4",
+      "bytes": 762
+    },
+    {
+      "path": "materials/rule-cards/source/package.py",
+      "sha256": "33ae31096295776b43c11718669f6e6003faa73549371bd687318a496c666944",
+      "bytes": 2371
+    },
+    {
+      "path": "materials/rule-cards/source/verify-demos.mjs",
+      "sha256": "b00d1de659f899d3e17530e769852546fd0cd6db9970237f50a85e9b02ba9ed0",
+      "bytes": 4620
+    },
+    {
+      "path": "materials/rule-cards/source/verify-print.py",
+      "sha256": "3f288eef828d7bd0f14724d6a3f1c4512af41ccd5ee1fcd52b013e7d70b69d8c",
+      "bytes": 3068
+    },
+    {
+      "path": "materials/rule-cards/validation/ACCEPTANCE.md",
+      "sha256": "a9c197455a65100f473a7a393672b3127191dae1441f5870b7071e1cec54eb82",
+      "bytes": 5131
+    },
+    {
+      "path": "materials/rule-cards/validation/a4-1.png",
+      "sha256": "ef0b10e0718cf991af65a9f8eca40f4cbae31f2446d978ce170baa1973f2e529",
+      "bytes": 79636
+    },
+    {
+      "path": "materials/rule-cards/validation/a4-2.png",
+      "sha256": "03a2dbb21214e96330552520084b827e62829360380a744e6993302cda192ea2",
+      "bytes": 107199
+    },
+    {
+      "path": "materials/rule-cards/validation/a4-3.png",
+      "sha256": "53c6370fc63bb76a50f58b3ff791907f4eafb1fada26284efeeeb54f473bfe09",
+      "bytes": 81694
+    },
+    {
+      "path": "materials/rule-cards/validation/a4-4.png",
+      "sha256": "4c653aa411965835be2db7b974d820389461961c50a0ad1b1363a6443efab7a1",
+      "bytes": 128497
+    },
+    {
+      "path": "materials/rule-cards/validation/a4-5.png",
+      "sha256": "76eb667b23ff95a65e0bb859675fcf03e085ef29c596f5a51c5d75b13bbbb80e",
+      "bytes": 92479
+    },
+    {
+      "path": "materials/rule-cards/validation/a4-6.png",
+      "sha256": "57bcdaf21917e0fb4849949a754f86a144c2946766a9c83df96232fd429feeba",
+      "bytes": 103332
+    },
+    {
+      "path": "materials/rule-cards/validation/a4-contact-1.png",
+      "sha256": "e0a0b412fad342ac40550cd3ee1da604cf0b864cf65d25e37365145116d5787b",
+      "bytes": 597059
+    },
+    {
+      "path": "materials/rule-cards/validation/a4-gray-1.png",
+      "sha256": "f19ce6631030f24c5b5fa16010a8f9cb95639f557b84de67b105576e5aa56e38",
+      "bytes": 238386
+    },
+    {
+      "path": "materials/rule-cards/validation/card-1.png",
+      "sha256": "9874e002ace03934f265146ab02b562fa27495b3738d53af623678295530eeba",
+      "bytes": 78535
+    },
+    {
+      "path": "materials/rule-cards/validation/card-2.png",
+      "sha256": "19da2d55d22ccb555122e1820224520b3b4f955066226b5804221e6c8f8e22ed",
+      "bytes": 107986
+    },
+    {
+      "path": "materials/rule-cards/validation/card-3.png",
+      "sha256": "e05ab2eafd7bd73200d454f42cd3bf098439cc3ad34037a83235f622facc9d4e",
+      "bytes": 74543
+    },
+    {
+      "path": "materials/rule-cards/validation/card-4.png",
+      "sha256": "a08aa2295e9d1a56c302593bd47812ad38431cb9fc0c5efcdcb867099e2ab612",
+      "bytes": 128216
+    },
+    {
+      "path": "materials/rule-cards/validation/card-5.png",
+      "sha256": "53976172e02a23d7a0443f44eeffa72f4ea0115d4d95c24e344f47907e2e18f8",
+      "bytes": 107014
+    },
+    {
+      "path": "materials/rule-cards/validation/card-6.png",
+      "sha256": "db842b9d1993d281601179ee6eaa434eaa4ad84bf2f3fd5ebb864d04615d46c7",
+      "bytes": 99339
+    },
+    {
+      "path": "materials/rule-cards/validation/card-7.png",
+      "sha256": "27cd7d8829caaf88ec824ad0cec8ea7d96c9cb8261e0eaae8a3058803d9afdae",
+      "bytes": 52919
+    },
+    {
+      "path": "materials/rule-cards/validation/card-8.png",
+      "sha256": "2f8ab05c14177f26ffe859ac7d1b404275c0ab40cdd2fdf7e76e30eb6ca4baf9",
+      "bytes": 52860
+    },
+    {
+      "path": "materials/rule-cards/validation/card-contact-1.png",
+      "sha256": "708242b93413ad89b54e4fbd3d1c0170bd0a258a756d6da1388b77127ce9798e",
+      "bytes": 393489
+    },
+    {
+      "path": "materials/rule-cards/validation/card-contact-2.png",
+      "sha256": "550456204d72f57ed51245d2c3166e07615510cbc19afdac3a9ce588efdaece4",
+      "bytes": 367367
+    },
+    {
+      "path": "materials/rule-cards/validation/card-gray-1.png",
+      "sha256": "1808f24df5275dd886c1b8ef56925c70d5b31e86e71649e1cbdb4cf857473232",
+      "bytes": 162736
+    },
+    {
+      "path": "materials/rule-cards/validation/card-gray-2.png",
+      "sha256": "4691ade8e35310a398955a336282d7c6024162b169260686c9c3102e6a1702a4",
+      "bytes": 150475
+    },
+    {
+      "path": "materials/rule-cards/validation/engine-checks.json",
+      "sha256": "bbd31de1c58247ee871eb82f9344940e3e1802bd0dab1146b3eb4778e2594aeb",
+      "bytes": 995
+    },
+    {
+      "path": "materials/rule-cards/validation/input-manifest.json",
+      "sha256": "1452173f6081ab340115afc01fa191a1da62e4f8337adf6938578e1912267bab",
+      "bytes": 15161
+    },
+    {
+      "path": "materials/rule-cards/validation/mini-1.png",
+      "sha256": "a1a458cda61f05f34a90f248c9defe4b48d3286c842b2a58a4be636d7c4d08cf",
+      "bytes": 60891
+    },
+    {
+      "path": "materials/rule-cards/validation/mini-2.png",
+      "sha256": "cd720dcc42bc15cd857f9481a642982e46cfebd9bb98e46e27658357f5134498",
+      "bytes": 60227
+    },
+    {
+      "path": "materials/rule-cards/validation/mini-contact-1.png",
+      "sha256": "4a171aca532603942dd83891ffeba27d7d7260a7f7000906292bae70f6f71538",
+      "bytes": 121035
+    },
+    {
+      "path": "materials/rule-cards/validation/mini-gray-1.png",
+      "sha256": "e05d823629c6fdcdc5b599f9723ea07aae64c21a90f9e5016fb5f377314fcbc7",
+      "bytes": 47613
+    },
+    {
+      "path": "materials/rule-cards/validation/print-checks.json",
+      "sha256": "40f41314d1cb2c4debb8ab4e16814040a78f98944e41acfb627e7e48789861cf",
+      "bytes": 5511
+    },
+    {
+      "path": "materials/rule-cards/validation/text-geometry.json",
+      "sha256": "b49e1ecfa4622f9cb63775b01dd088fd598f98258167e4568281dbb076dc33b9",
+      "bytes": 40831
+    },
+    {
+      "path": "handoff/T20.md",
+      "sha256": "e4643f151be6578c34044217ffd422fb278cddb0787199c287937b368335acdb",
+      "bytes": 4697
+    }
+  ]
+}

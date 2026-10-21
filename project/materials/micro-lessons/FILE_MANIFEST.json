@@ -1,0 +1,1063 @@
+{
+  "schemaVersion": 1,
+  "id": "T22-FILE-MANIFEST",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "baseVersion": "0.15.1",
+  "resultVersion": "0.15.1-t22.1",
+  "freezeId": "GO-CLUB-FREEZE-B-20260919-01",
+  "scope": "material-only incremental package; does not include the old full project",
+  "manifestSelfExcluded": true,
+  "files": [
+    {
+      "path": "handoff/T22.md",
+      "bytes": 9112,
+      "sha256": "418b779064e862934be56dfa007d3822004431b4b3c05bb1b6daa01f293ccd5e"
+    },
+    {
+      "path": "materials/micro-lessons/README.md",
+      "bytes": 5892,
+      "sha256": "3a516839fb208f219f902efa73452e271073c203b30580675863d0d239ea5b4f"
+    },
+    {
+      "path": "materials/micro-lessons/assets/fonts/NotoSansSC-Regular.ttf",
+      "bytes": 10595944,
+      "sha256": "4533846d69e662f228a2e9f89b8283a686c61ff9ba77fbe982d45c516abd56f8"
+    },
+    {
+      "path": "materials/micro-lessons/assets/fonts/OFL.txt",
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    {
+      "path": "materials/micro-lessons/assets/fonts-and-assets.md",
+      "bytes": 881,
+      "sha256": "5a57477b8339e7f6a0029196807779d3738cefee02473c7d15653fc3b4588c60"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/content/endgames/END-001.json",
+      "bytes": 5300,
+      "sha256": "88fe7f6226f33da4d12f0cf14121be2c4f6b4ee7da376f3d9dd77bc080b4ebed"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/content/endgames/END-002.json",
+      "bytes": 5602,
+      "sha256": "fdc052992973abb3140041ea3d62d1cc9078eb4eeaf15dda2c36604af6170859"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/content/puzzles/AREA-005.json",
+      "bytes": 6852,
+      "sha256": "32e94ab284735f1814f0acb990a4b3289c1bc4bd702f2d415470f8a5435c6554"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/content/puzzles/CAP-001.json",
+      "bytes": 6288,
+      "sha256": "e0a0950af03ba144d4464790b1292ac4a77b7534bc5a1228b77c194862f767cd"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/content/puzzles/CAP-002.json",
+      "bytes": 6405,
+      "sha256": "f72172c4db6adf32228632d7660f174b649ae3ebbbedd9dd3f3bed1ba3e4e61e"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/content/puzzles/CON-001.json",
+      "bytes": 6568,
+      "sha256": "fc6f68f65b0461f248bbacd27c9753327bc5f8d86e4763ebad2d93999bd46013"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/content/puzzles/CON-002.json",
+      "bytes": 7400,
+      "sha256": "aa877a3ef8e658715254ca2efee4ea07a34593be8a5d122aecbe198bee8339c0"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/content/puzzles/LIB-001.json",
+      "bytes": 4117,
+      "sha256": "3c5fa560f7cd43a13e14021d5e1baa80353592e38e95e454355d4c18b6158257"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/content/puzzles/LIB-004.json",
+      "bytes": 4846,
+      "sha256": "bbb1fb3435c71c4212ec85917bf4c7226216023ea15723b082a184c87a3cec0a"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/content/puzzles/LIFE-001.json",
+      "bytes": 5938,
+      "sha256": "3e800b83347c378568c5b0ff8a4a96412fa44081df9711eb325cc0d1c3ca4c2f"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/content/puzzles/LIFE-002.json",
+      "bytes": 7860,
+      "sha256": "4a9c755d45126cef93464d2e42c74b51af63468701c701d64957910269b32526"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/content/puzzles/LIFE-003.json",
+      "bytes": 8412,
+      "sha256": "1909976bc369d0434b0db10720cbb722be4cb4ca49b2781668b56cb8ee8f6ffc"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/content/puzzles/LIFE-005.json",
+      "bytes": 8662,
+      "sha256": "506f62c281d0c1f09c8dfff2725fe0677fcfcf9ecda05615b10adeff4a968992"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/dist-engine/go-club-rules.mjs",
+      "bytes": 299235,
+      "sha256": "028ff1a53af96bc8aa44b2b603ba80ada31b8517c89aeff11088db6683e108b7"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/docs/CURRICULUM.md",
+      "bytes": 4458,
+      "sha256": "56b4a55449f3bd027d5864f2121252a53b9a97561204679aa2499ba884f1acbb"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/docs/RULES.md",
+      "bytes": 9832,
+      "sha256": "f90c9adafcbab75f6c64acd789dd02462d2cfb14665374b2ba020f8c1f6fa965"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/docs/TERMINOLOGY.md",
+      "bytes": 2891,
+      "sha256": "0b53f3cbfc21765db29621e0c87e2d1abd08f54b96181bbc8c1e7522cb9e3d54"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/handoff/CONTENT_FREEZE.json",
+      "bytes": 114416,
+      "sha256": "94ae85ce048b83ff73d8b2ef080665175e5f285904dd89bb7be5ca906d865324"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/handoff/FREEZE_B.md",
+      "bytes": 4272,
+      "sha256": "b7bdc44f7987c73542060448137856a7d621b6049f2aad4448af438c2f9158bd"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/handoff/T00.md",
+      "bytes": 5645,
+      "sha256": "ad0621ade993bf80e931261bcd09fee26c65456eceb2588802c166285455e31f"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/handoff/T11.md",
+      "bytes": 3780,
+      "sha256": "e7378ed67fd08c06bee6da99a6e6e67c619d1757506e0156ddfca5c41218d9dc"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/handoff/T15.md",
+      "bytes": 4792,
+      "sha256": "173625c4698d3867081972e6e5dc1338e60b39a919c8a50d7837af892e5b3657"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/handoff/T20.md",
+      "bytes": 4697,
+      "sha256": "e4643f151be6578c34044217ffd422fb278cddb0787199c287937b368335acdb"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/materials/rule-cards/data/RULE-DEMO-T20-CONNECT.json",
+      "bytes": 423,
+      "sha256": "c745c0a49849f21ca32a94106865328fb005d1a75136403754b5c713a0a07127"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/materials/rule-cards/data/RULE-DEMO-T20-KO-AFTER.json",
+      "bytes": 680,
+      "sha256": "89d9a194282bdbbce299ed730cec96191f7fc70c7667e1e3861122fb7b31fd43"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/materials/rule-cards/data/RULE-DEMO-T20-KO-BEFORE.json",
+      "bytes": 681,
+      "sha256": "d4fe9642a299e6abb7fd957cb5d7fd0cf5f339980f812404f8f46f0dcf8d73b5"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/materials/rule-cards/data/RULE-DEMO-T20-LEGAL-AFTER.json",
+      "bytes": 491,
+      "sha256": "a6e455337c43630ef583417544bd2e285ae507dee005acc4159149d073a6a909"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/materials/rule-cards/data/RULE-DEMO-T20-LEGAL-BEFORE.json",
+      "bytes": 556,
+      "sha256": "4dc310af6907bf6ec3c6ff7dda5a0b5b31620c36fa90f7d6f6ac06ebbc066109"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/schemas/content.schema.json",
+      "bytes": 47098,
+      "sha256": "82a1a060ff48c7072aba29d5091c55e976eaed04e5d6af5787408885b07e2e88"
+    },
+    {
+      "path": "materials/micro-lessons/assets/source-index.json",
+      "bytes": 5199,
+      "sha256": "7a6b726c63a1ea501f7c43354a7169f95e00e578f32906c929583bf5e296a4c0"
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_All_25_r1.pdf",
+      "bytes": 454690,
+      "sha256": "4c611e790411aeac0cadae21671e3eb7856aeebb632d65564fb68d80a4ea5a05"
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_All_25_r1.pptx",
+      "bytes": 181368,
+      "sha256": "415c199fc6e015b3abe7ef6673a8ff32a58a97f0b594d5f54f9f9988773a4a46"
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_01_r1.pdf",
+      "bytes": 108191,
+      "sha256": "ef406f908219c6a63faefdc62233f2cd3f5d3d78bc3146bfe4d25f9f74938e20"
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_01_r1.pptx",
+      "bytes": 48347,
+      "sha256": "70d6910b0f424533fe55e1eee3f79333e4e62f37d4d8ea12030305fd517d20d5"
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_02_r1.pdf",
+      "bytes": 113432,
+      "sha256": "5f0a80c5eb8da4d45e390ecc6e1439558a696ab79a70cbc86f2b769debb36248"
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_02_r1.pptx",
+      "bytes": 49553,
+      "sha256": "f5e24d16ec90df6311d350ac7b1d03f2947b2ca94bf2c1c456ca4895ba80b04b"
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_03_r1.pdf",
+      "bytes": 129920,
+      "sha256": "190280b8f73110c2b87c8979eb3903cf761180978c73f75022ce40af38139aca"
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_03_r1.pptx",
+      "bytes": 49338,
+      "sha256": "59773f2bde2c4099a156e3c8b46a32a46c30694ba8451190a084034718d4df17"
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_04_r1.pdf",
+      "bytes": 113896,
+      "sha256": "3b04db7958bcfb4eb9836c408e93222b81c79c9be3bbe3447552711965cb52e2"
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_04_r1.pptx",
+      "bytes": 49144,
+      "sha256": "af0821b033f244c27db4b96ff2eb5cb5d2dfc46edbd1bb74ff0ea1fee70b5f05"
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_05_r1.pdf",
+      "bytes": 148086,
+      "sha256": "2d982f9660d3e45b658bfdb79b214f5a61a3b8f2b36d8d1f31b98156917620d2"
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_05_r1.pptx",
+      "bytes": 53059,
+      "sha256": "ba21a6c2439cdd38d9096608fea1d172cc7cf856fdbd019127f1a7120bf5327c"
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_Teacher_Summary_5pages_r1.pdf",
+      "bytes": 93262,
+      "sha256": "2c56d9c457dc5e8aa7ab3135d218b2f730e1c36afb0bed5ac166e16c040d195b"
+    },
+    {
+      "path": "materials/micro-lessons/qa/QA.md",
+      "bytes": 8026,
+      "sha256": "a9cc18c15d14e0dbda531c3321985cd12234a66dffe9f924634713533af3ecba"
+    },
+    {
+      "path": "materials/micro-lessons/qa/T22_All_25.validation.json",
+      "bytes": 3700,
+      "sha256": "a9dcbf42a5e3fdddb95cb7123a908e87eab6776a6129b76f91d4d8909b45c674"
+    },
+    {
+      "path": "materials/micro-lessons/qa/T22_MicroLesson_01.validation.json",
+      "bytes": 3692,
+      "sha256": "caa451ce920f92a182ffee2db84b29628f666da2df6d5e9f6c8dcf25f65c4463"
+    },
+    {
+      "path": "materials/micro-lessons/qa/T22_MicroLesson_02.validation.json",
+      "bytes": 3692,
+      "sha256": "87dc3d00dbd3ecd614671e4b52d7da866c6824355d80aed68a42e40654818ab4"
+    },
+    {
+      "path": "materials/micro-lessons/qa/T22_MicroLesson_03.validation.json",
+      "bytes": 3692,
+      "sha256": "b019eb147fe30b93019ced87405b9d8717eaaeaaba8e57b6be7207b4d69b1f2f"
+    },
+    {
+      "path": "materials/micro-lessons/qa/T22_MicroLesson_04.validation.json",
+      "bytes": 3692,
+      "sha256": "1b72cc4c7ae034b328ed1c7607a3294f09620188384119cee16d7e388b7501dd"
+    },
+    {
+      "path": "materials/micro-lessons/qa/T22_MicroLesson_05.validation.json",
+      "bytes": 3692,
+      "sha256": "b08571f3eafc12154b84345e152d10b646b9e5ba1ed96ac51f8c51400fdd0dc5"
+    },
+    {
+      "path": "materials/micro-lessons/qa/content-checks.json",
+      "bytes": 7296,
+      "sha256": "07873481a2a87a704a0337d5f94aa9c4ded392950ab99553727b975a792b65c5"
+    },
+    {
+      "path": "materials/micro-lessons/qa/delivery-checks.json",
+      "bytes": 18334,
+      "sha256": "3c9337928aabe40b29033753db396205ade843bcebbee191459a2041f46d918e"
+    },
+    {
+      "path": "materials/micro-lessons/qa/delivery-checks.log",
+      "bytes": 130,
+      "sha256": "3db95105ac7b234bec28ea927065831107116ba6b3700e4ccbebd774c97cd125"
+    },
+    {
+      "path": "materials/micro-lessons/qa/freeze-lock-check.json",
+      "bytes": 146282,
+      "sha256": "5982cecf681f7711b2703d5c16a39d449236624050d6dd4e8dd16caee7760968"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-01.png",
+      "bytes": 59630,
+      "sha256": "eb30387815329850d17a5b73a484fb237067e5fd96f6861f6fd1c8c09fda46bf"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-02.png",
+      "bytes": 58304,
+      "sha256": "465822bd000b91a6266e837c8874b96cdcb6d6a68182397b44f4c305896913e5"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-03.png",
+      "bytes": 63853,
+      "sha256": "abd1452f2388c1743a7719c0087d5afa9c9d40477ac486345e4505c0a279ed5a"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-04.png",
+      "bytes": 58240,
+      "sha256": "2ffe4c65787e89aefb7dc290f9826042b56f360378982ba6e8d4f0135996d991"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-05.png",
+      "bytes": 64792,
+      "sha256": "9abaa3f7d49485b93db9328384402b8e1a4594163724a1cbc510060ad231a5ef"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-06.png",
+      "bytes": 58326,
+      "sha256": "a02c5d59176a66d45b48737a7e049dc15c4cf584ec6dcdd7b5311eb2b2f6f993"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-07.png",
+      "bytes": 57508,
+      "sha256": "3c0aafa2662edec1419fa8512e11eef13248d74c33eb33af1e005abd5f816614"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-08.png",
+      "bytes": 63580,
+      "sha256": "ab59401cc5babf7cfd1d4cdf5fff9e278aa8d15305175484103e01b0c7c7e03e"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-09.png",
+      "bytes": 59707,
+      "sha256": "006f25fd09e1506b993dd430752f1bedc3a07153101e16ea6280af12a5b1cfc3"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-10.png",
+      "bytes": 67138,
+      "sha256": "2cde54b11409f365300a247470f42142cfe5d90678b3e45a38737aae156bd002"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-11.png",
+      "bytes": 87936,
+      "sha256": "d71021a7b632aecedb9c12bd116fbeebb41e0daeb6e5f9286c1cae007ea1998e"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-12.png",
+      "bytes": 92263,
+      "sha256": "49f5ed36ea4e088f7ee5af18c4dfddd6e2578495e74258d45e0fb71c83f66c82"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-13.png",
+      "bytes": 66625,
+      "sha256": "fd753d3de6a4b14ac78727fdeffe3ae56c298696ce708e6a83144c79f488aabb"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-14.png",
+      "bytes": 82496,
+      "sha256": "aca32b194a764a6dff5945d9907da43a1e799574c3dfa3be73af421be3117b3b"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-15.png",
+      "bytes": 67930,
+      "sha256": "361b3d26331fb4c09ed8a1aadb925ff0bafe883c806cf4bfc1c9d7b0471ed1bb"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-16.png",
+      "bytes": 57895,
+      "sha256": "ee59af828fef32f5648a03e2a3fe295211faf5643370a96f2751f5644e2be09c"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-17.png",
+      "bytes": 60061,
+      "sha256": "97089b405a094579a58058c62fdbef521abfd2a0a96fb3a6d28e27e8b448ea06"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-18.png",
+      "bytes": 71957,
+      "sha256": "6b86fbbb481344cd37057c8dc038d3b9e9cd67dc68ad466e0631d8c22c1c6018"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-19.png",
+      "bytes": 63238,
+      "sha256": "8f6602c4a446f547b708f80ab20d121a9efac9043089a57785d9e33eaf8c0e78"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-20.png",
+      "bytes": 62755,
+      "sha256": "392314db766d70029cb54640de757ec51bea86fcc8f1b104d51675e00514ec7f"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-21.png",
+      "bytes": 70966,
+      "sha256": "09c6f0dee7ff66924f16183a37deeaaac4bbe829fb2fea735e0eee9dcefa91d8"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-22.png",
+      "bytes": 75962,
+      "sha256": "900b6c7670ed3261aaa8726ea9b9188908ca2afc32b853d10f55f187b6fa2a2f"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-23.png",
+      "bytes": 95161,
+      "sha256": "164ee70335c309c8dcebe22d9f0db81553b033606cf51efae51ebaa07041d419"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-24.png",
+      "bytes": 78973,
+      "sha256": "8f7be799006a69ed06db5e3c39569a71d44a462ac143c6e3019f94b27ba2a0ba"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-25.png",
+      "bytes": 70826,
+      "sha256": "76079280b0a9b1ff1002148d2005350ea59efcafddede679874952eafa11cf7b"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale-render.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-01.json",
+      "bytes": 10808,
+      "sha256": "0e6dbd01040b08a823f5d79a1b0351de632c3833bfa4c5722cb7c6d0a9ff6370"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-02.json",
+      "bytes": 11562,
+      "sha256": "66f2fc3d344f0d37e3d8c7593f4882e1239a92b7d12a3c360d7ca411f0c5c06c"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-03.json",
+      "bytes": 7602,
+      "sha256": "2bb3cd21af7772d23161c089c6551d1d0bf4ad489559d7558fa367cd51b3f50b"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-04.json",
+      "bytes": 8143,
+      "sha256": "6099ee2473a4823a3947951f4fbf026296449cb14e6c2f1ce9cb29ebf1d8c50f"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-05.json",
+      "bytes": 6955,
+      "sha256": "05c0f99d3d9d434e521acbb299750298c8d5150c73e14465fc5c3a7d10868a12"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-06.json",
+      "bytes": 7974,
+      "sha256": "eac25b04d91ac78a1d01d69903d6ab9e152767ce9dc488079a427be18d1445e8"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-07.json",
+      "bytes": 13372,
+      "sha256": "73cb127c91732683dfee62e399db6dd2b99f5056aaca7fe167d5091d4564ebb7"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-08.json",
+      "bytes": 13123,
+      "sha256": "90cf5e92f47e40236775c32cceff7718ed0bb01f212bb3784f14c801c212811a"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-09.json",
+      "bytes": 8374,
+      "sha256": "e39b6dd9f14107d4fff0e05573a1758f600eebdb28d8246dce65c6647623f664"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-10.json",
+      "bytes": 6960,
+      "sha256": "413bf936262161059ed064332cb423bf53ba146110ed65430ce7b713f066525a"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-11.json",
+      "bytes": 11514,
+      "sha256": "c5e62ae51f28e9ae76838c89a02a6c723e8f8685fca2df63d098b6bb51d033fa"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-12.json",
+      "bytes": 2862,
+      "sha256": "8eb77a3c72294d0518dfe1fa514dffe576e938aaa71438d37d07a16642d123f9"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-13.json",
+      "bytes": 14209,
+      "sha256": "5ebab71fb1033f4d9cf70c314e35ed60f679f9ae0c2243445034f9253fb87c82"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-14.json",
+      "bytes": 10703,
+      "sha256": "c18dfae30fa42490057b956c1c6f37f8e5349be1dc189f0d49dbcce5e9f5acaf"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-15.json",
+      "bytes": 10422,
+      "sha256": "08fad2218c973454b6fd250b2316b100d1f430d763778b6fb01e924958bb3461"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-16.json",
+      "bytes": 7951,
+      "sha256": "acd8b8da56e9bde7ce5be9e3027da0a60b98e2200e25c8f46e6522f9b4a77c27"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-17.json",
+      "bytes": 8071,
+      "sha256": "fb1f06a50323289888372053bd911ee1f656318abb54e82e2551626134c85f15"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-18.json",
+      "bytes": 13728,
+      "sha256": "d47d17002dcd1e29b576b891d69f039b52ec61b27b2158e8be1b37dfb974c484"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-19.json",
+      "bytes": 7965,
+      "sha256": "99db3e261cef685bf14bcd2a400cddeb215a5074514bc1c461f912a0246bbd8f"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-20.json",
+      "bytes": 10403,
+      "sha256": "76f479b15e396fb1fa2e232edcdba6df30f82c8df4e01e5cb67802fd35d4348a"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-21.json",
+      "bytes": 9891,
+      "sha256": "fc79392755ef3cda63e58d198a83f4c9e7d2e9a90e21bbd15615b89a12db93fd"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-22.json",
+      "bytes": 16393,
+      "sha256": "39992507be26f047ec6d62d9f2424687858592c4ed694bd276e205aa07d45a39"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-23.json",
+      "bytes": 17978,
+      "sha256": "ee4a8fd945f69c4b5be76e306aeb4620a3cb1c7920b2fd0636ee5b93de33afae"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-24.json",
+      "bytes": 9750,
+      "sha256": "c24607fd9cca88c45aca89049b097ac8d2dea7d5642218bc14fc9b8adafec94e"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-25.json",
+      "bytes": 10423,
+      "sha256": "78e30e7249c04a5906555e2ba5b36136db96b37512ffbc8e560d6aa6749d97b4"
+    },
+    {
+      "path": "materials/micro-lessons/qa/page-by-page.json",
+      "bytes": 17938,
+      "sha256": "049f4a7b1949c4ee64a8de9717c5fdafe5188bb98be17abf522821b92b276263"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-checks.json",
+      "bytes": 1530,
+      "sha256": "c545a95a7b5c3f1ad88dad2cf2a71f4248b2b24548a0c84c021cda64933c5912"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-01.png",
+      "bytes": 62076,
+      "sha256": "34334cd262bc75def689bead2f1648745fd50a2e0d625a11ccc865a328e66f44"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-02.png",
+      "bytes": 60841,
+      "sha256": "2468b8e978aa2245d4e5be9111e3d22c214e9573f403463f67b8b5e4fb0be1f2"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-03.png",
+      "bytes": 66890,
+      "sha256": "0ab24897d2cc41cb0b22d627a035733c97c028f3700ae13ccd84ac1d7adb4cae"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-04.png",
+      "bytes": 60770,
+      "sha256": "da55e8f1fc7988366d6e0a36c43e925210f9cfbca345ebe7c4fca8259623854b"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-05.png",
+      "bytes": 67922,
+      "sha256": "4a6608c2c859d6b7f83b0b3d2ee596e34750b3600c0bffdcd60e1ffaf1294326"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-06.png",
+      "bytes": 61274,
+      "sha256": "266b2abf2c891f5a452c20dd9653b1b9498e84bd9104ee3a9504287343b1a306"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-07.png",
+      "bytes": 59929,
+      "sha256": "be9bda3d37bd31c1ac6c84a1769895892048a994af3a165377006f09e411413a"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-08.png",
+      "bytes": 66250,
+      "sha256": "32fbaa237594751b5718cce7c977e6807b67e194a18c29a4135807158110fdcd"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-09.png",
+      "bytes": 62325,
+      "sha256": "c0953ec0bc891d750ea6bdb11b9b42116da5fe1fe2c3b4c30024cca0cf735a4e"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-10.png",
+      "bytes": 70167,
+      "sha256": "d3f6b5783ee76f6385e7d448deac802c7ffe1b3e79f7d7f3ef056fe79ff4c4ad"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-11.png",
+      "bytes": 92585,
+      "sha256": "c058dc495fe150a785e33f978eeb36a58ebd7355af60b8415b9027c3022b9002"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-12.png",
+      "bytes": 97443,
+      "sha256": "6d45b7d5e8a0be816a1bbf80f348d386934e66b18dcf3856a5d0810a2db6d6c1"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-13.png",
+      "bytes": 69555,
+      "sha256": "f07f71a463ee35f3d33267450f3cbd9f88bd1bed0a042686ba1eef9c1594ab39"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-14.png",
+      "bytes": 86681,
+      "sha256": "d65a988b3db0b3d4a805170124230d2900012d9a1e8108b2fff597effcbd6cf5"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-15.png",
+      "bytes": 71142,
+      "sha256": "58cc8bc609630c5c9c71fcdabfd93fba7c9ec896a251dc3aad73cd89c01ec760"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-16.png",
+      "bytes": 60707,
+      "sha256": "166f7635149ffbded0f5a742ee230cf0d62eb40779d3ca2772d6a4ed25649c32"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-17.png",
+      "bytes": 62895,
+      "sha256": "cc32b2ef345033b82fd579dc84abdbee1db6862b1856644e11e3ef9dfc4f08de"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-18.png",
+      "bytes": 75380,
+      "sha256": "6a91fd599e33492f0d09b2d9c818aff8fdb0274a1d368fd15d6e2ff40c0ee15e"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-19.png",
+      "bytes": 66410,
+      "sha256": "58340f66e4972c5323c73ebd235070387a2e0e92981d1914c0fd741b61bd680f"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-20.png",
+      "bytes": 65485,
+      "sha256": "21a6d63fb61a78e7e40763abc71919aaea14d6b10390b8a513579c7e10bd7528"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-21.png",
+      "bytes": 74305,
+      "sha256": "375d25a3894e0254f5296995c9f0daa47d6b56c7c4b802bbcc6a269121151a6b"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-22.png",
+      "bytes": 79133,
+      "sha256": "823d0afe33ae29b6d05992e11fa0b0f61a8657e2a2f8b2da5f1fdc393295dc0a"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-23.png",
+      "bytes": 99645,
+      "sha256": "5e7b11a99a1156d5781243b71d4ccc6a53a1a6804a7c6ef1ab2ac16dc1f060de"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-24.png",
+      "bytes": 83191,
+      "sha256": "1429168d6b12ad9c3a19a2a381e693ef5a09bd3ced11c026f696ce44a787b7ab"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-25.png",
+      "bytes": 73882,
+      "sha256": "fc08cc77d9bb857b411221756d04f9ba02f4a893e1b6e051024e8a4c2a48b1de"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_01_r1/page-1.png",
+      "bytes": 62076,
+      "sha256": "34334cd262bc75def689bead2f1648745fd50a2e0d625a11ccc865a328e66f44"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_01_r1/page-2.png",
+      "bytes": 60841,
+      "sha256": "2468b8e978aa2245d4e5be9111e3d22c214e9573f403463f67b8b5e4fb0be1f2"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_01_r1/page-3.png",
+      "bytes": 66890,
+      "sha256": "0ab24897d2cc41cb0b22d627a035733c97c028f3700ae13ccd84ac1d7adb4cae"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_01_r1/page-4.png",
+      "bytes": 60770,
+      "sha256": "da55e8f1fc7988366d6e0a36c43e925210f9cfbca345ebe7c4fca8259623854b"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_01_r1/page-5.png",
+      "bytes": 67922,
+      "sha256": "4a6608c2c859d6b7f83b0b3d2ee596e34750b3600c0bffdcd60e1ffaf1294326"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_02_r1/page-1.png",
+      "bytes": 61274,
+      "sha256": "266b2abf2c891f5a452c20dd9653b1b9498e84bd9104ee3a9504287343b1a306"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_02_r1/page-2.png",
+      "bytes": 59929,
+      "sha256": "be9bda3d37bd31c1ac6c84a1769895892048a994af3a165377006f09e411413a"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_02_r1/page-3.png",
+      "bytes": 66250,
+      "sha256": "32fbaa237594751b5718cce7c977e6807b67e194a18c29a4135807158110fdcd"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_02_r1/page-4.png",
+      "bytes": 62325,
+      "sha256": "c0953ec0bc891d750ea6bdb11b9b42116da5fe1fe2c3b4c30024cca0cf735a4e"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_02_r1/page-5.png",
+      "bytes": 70167,
+      "sha256": "d3f6b5783ee76f6385e7d448deac802c7ffe1b3e79f7d7f3ef056fe79ff4c4ad"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_03_r1/page-1.png",
+      "bytes": 92585,
+      "sha256": "c058dc495fe150a785e33f978eeb36a58ebd7355af60b8415b9027c3022b9002"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_03_r1/page-2.png",
+      "bytes": 97443,
+      "sha256": "6d45b7d5e8a0be816a1bbf80f348d386934e66b18dcf3856a5d0810a2db6d6c1"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_03_r1/page-3.png",
+      "bytes": 69555,
+      "sha256": "f07f71a463ee35f3d33267450f3cbd9f88bd1bed0a042686ba1eef9c1594ab39"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_03_r1/page-4.png",
+      "bytes": 86681,
+      "sha256": "d65a988b3db0b3d4a805170124230d2900012d9a1e8108b2fff597effcbd6cf5"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_03_r1/page-5.png",
+      "bytes": 71142,
+      "sha256": "58cc8bc609630c5c9c71fcdabfd93fba7c9ec896a251dc3aad73cd89c01ec760"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_04_r1/page-1.png",
+      "bytes": 60707,
+      "sha256": "166f7635149ffbded0f5a742ee230cf0d62eb40779d3ca2772d6a4ed25649c32"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_04_r1/page-2.png",
+      "bytes": 62895,
+      "sha256": "cc32b2ef345033b82fd579dc84abdbee1db6862b1856644e11e3ef9dfc4f08de"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_04_r1/page-3.png",
+      "bytes": 75380,
+      "sha256": "6a91fd599e33492f0d09b2d9c818aff8fdb0274a1d368fd15d6e2ff40c0ee15e"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_04_r1/page-4.png",
+      "bytes": 66410,
+      "sha256": "58340f66e4972c5323c73ebd235070387a2e0e92981d1914c0fd741b61bd680f"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_04_r1/page-5.png",
+      "bytes": 65485,
+      "sha256": "21a6d63fb61a78e7e40763abc71919aaea14d6b10390b8a513579c7e10bd7528"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_05_r1/page-1.png",
+      "bytes": 74305,
+      "sha256": "375d25a3894e0254f5296995c9f0daa47d6b56c7c4b802bbcc6a269121151a6b"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_05_r1/page-2.png",
+      "bytes": 79133,
+      "sha256": "823d0afe33ae29b6d05992e11fa0b0f61a8657e2a2f8b2da5f1fdc393295dc0a"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_05_r1/page-3.png",
+      "bytes": 99645,
+      "sha256": "5e7b11a99a1156d5781243b71d4ccc6a53a1a6804a7c6ef1ab2ac16dc1f060de"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_05_r1/page-4.png",
+      "bytes": 83153,
+      "sha256": "06d8969474e0577c8060d487e2d7f01f88e0cfb99ba0ee6626cb0c33c6b915f9"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_05_r1/page-5.png",
+      "bytes": 73918,
+      "sha256": "5d40e383ee861281d4f43bfcecdc6cbd2f422d505f00c02be2d3792ebc772737"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_Teacher_Summary_5pages_r1/page-1.png",
+      "bytes": 191018,
+      "sha256": "47e724a428d50def9d32cf267e363a0e5885ad2943fa5227f9505deea8bb0d61"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_Teacher_Summary_5pages_r1/page-2.png",
+      "bytes": 183443,
+      "sha256": "e115028e68ca99dcf6f4e47fa21ec00c987e7e966441cb1a0955bc2f1e783be9"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_Teacher_Summary_5pages_r1/page-3.png",
+      "bytes": 209578,
+      "sha256": "13c0f5a48435c732ec27e6cc891295a3c798e1b450c77cd6c367aa9c760ee86f"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_Teacher_Summary_5pages_r1/page-4.png",
+      "bytes": 189419,
+      "sha256": "c92888a6a035c8cec017a3837d55b100c8f3cd8aa047ce8c68d6f82ee5b1586f"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_Teacher_Summary_5pages_r1/page-5.png",
+      "bytes": 202999,
+      "sha256": "4e1b79a88d461b24837f36d0969b5fb7a8317849263c6d9d80f5fa2a877926d6"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-01.png",
+      "bytes": 75165,
+      "sha256": "24abbb1423c2605763d449dcdc196461db8593677e7c90e805e811f36a498076"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-02.png",
+      "bytes": 74740,
+      "sha256": "292e9b46a4584f4acb4c26260dc24aecb40fcb994e61eb88310bbb4f6f0dbc8f"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-03.png",
+      "bytes": 82107,
+      "sha256": "381ba672e51b965303f38c54ef4fc39d5c8602072d1df4f72695589d602e5f3a"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-04.png",
+      "bytes": 75361,
+      "sha256": "68dc9a65330a131ad71e34531a789aaa41bdef9ee80123322b91ba15f994f4b1"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-05.png",
+      "bytes": 82351,
+      "sha256": "ed767568e99df8e2ac730cad62323549903782f9a82dde7667dbdb49ee87f3eb"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-06.png",
+      "bytes": 76049,
+      "sha256": "6d559a4de2a4acd694f1b5b5efe1cfbcc2d36022bf585ae12a9abaf4c1a21a88"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-07.png",
+      "bytes": 73158,
+      "sha256": "7cdf85dc5d272b8a2c53daa92786c92d4da3e45bf2956ccfdf6dcec7e62a1cc1"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-08.png",
+      "bytes": 81049,
+      "sha256": "0293cb9a8b22517935020dfc605c9f90db68cd0d8ae9676af2b983fa71295cee"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-09.png",
+      "bytes": 79435,
+      "sha256": "4fd5e5350801f0a3cb1be0d32df821d5a10ca2f80f44d091deda61eff202f675"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-10.png",
+      "bytes": 85681,
+      "sha256": "71cb81522b8447e08fd8737bd71b93d2cea4c8951fa9f6ea5972184de13ae99f"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-11.png",
+      "bytes": 110818,
+      "sha256": "aed606d31f9ee054600d86dad6e7a9355ced1215ac614bc05cf848cb52b8f130"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-12.png",
+      "bytes": 112802,
+      "sha256": "904b46571333c8f18dad0072f51e526dce78eafaa00a2f3ba7e8ceb035307cd8"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-13.png",
+      "bytes": 82214,
+      "sha256": "40b2458d09b6728639197fa8df2ca979e76b5b3fcf98d7d7f86f5ee0d3327c3d"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-14.png",
+      "bytes": 102133,
+      "sha256": "f211e55582acacc0d707c44041921d432eda69b959bf20c281f8acd6c0992fec"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-15.png",
+      "bytes": 86591,
+      "sha256": "7f56ae9abede52136b0085a5840352063429d23516938b64cb32b12cb0f9b254"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-16.png",
+      "bytes": 74730,
+      "sha256": "c05fdbbd01a475045fe48a77ffcac4c9aee7de2cb6f63055eb160c1b5fd3855a"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-17.png",
+      "bytes": 76255,
+      "sha256": "81b8afe96f39309b822e641ef3f71fd0dd39bdcb90f4329d4dbcdb4c88db3eeb"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-18.png",
+      "bytes": 90784,
+      "sha256": "1197c2763730f76337e3772c1eedcab661e15aa8231b060fb9dfa20d76e4b170"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-19.png",
+      "bytes": 82568,
+      "sha256": "891113ca28744bc8480dc869b82e146dfcfedf81398042afe04ffc33356bbdac"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-20.png",
+      "bytes": 80657,
+      "sha256": "bc14fab054b4b0aac624a16c6fdcaeba4e361b56f860b7a42f788b3f40ea38ed"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-21.png",
+      "bytes": 91249,
+      "sha256": "a2f641057848fb169dd598ba30e91357bc6a3f39c2a387f93d10da279191e7aa"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-22.png",
+      "bytes": 95945,
+      "sha256": "09333aae333e7d14183adb2c05ccea16448bfaee4b4bc0a9110f0bdef40f27b5"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-23.png",
+      "bytes": 116040,
+      "sha256": "b3317831cae1b34b8d982a33c9db51903aa74fa2952ca060915d06c39ca51951"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-24.png",
+      "bytes": 101294,
+      "sha256": "512921f9acc22f8d3389d6a77df371894e5803051292192a557d910986336041"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-25.png",
+      "bytes": 95488,
+      "sha256": "0c7b013238ff8f801a247a323b1ca6864eb4cc2b45bfe1ea2cd34088f4829c54"
+    },
+    {
+      "path": "materials/micro-lessons/qa/viewer-open-and-pdf.log",
+      "bytes": 1368,
+      "sha256": "7c5fe9db3dba5a316c18c633cb62451765f3eda7ac3e31660869fa0860ca6d92"
+    },
+    {
+      "path": "materials/micro-lessons/source/author-lessons.py",
+      "bytes": 25912,
+      "sha256": "49e52aba9dc80579d98efbc8c18db4d5c24ce733b6f322d2c03c792e3eaa935b"
+    },
+    {
+      "path": "materials/micro-lessons/source/build-lessons.mjs",
+      "bytes": 10459,
+      "sha256": "d8d989f30a2fc38b8da8622d6209b47c39a23597d243fa0e642044b58e03bf80"
+    },
+    {
+      "path": "materials/micro-lessons/source/build-teacher-summary.py",
+      "bytes": 4125,
+      "sha256": "d30ac38165f2dbd5582c1e251b25818f97bbb2ec63dd52cc8416e4209b0acd19"
+    },
+    {
+      "path": "materials/micro-lessons/source/combined.presentation.json",
+      "bytes": 1128180,
+      "sha256": "c8cb244df6e05e0d2c66031d5b822739f920a88abe8ce9fe0e7c179f7a350461"
+    },
+    {
+      "path": "materials/micro-lessons/source/diagrams.json",
+      "bytes": 35766,
+      "sha256": "1baf093d251e13fed23b69ee7087c96f495ec2fa27c897d82b8544e2d273961c"
+    },
+    {
+      "path": "materials/micro-lessons/source/lessons.json",
+      "bytes": 42891,
+      "sha256": "a0282228c395ee47e2734507fe494f211b8b4995398f7f8c63f708d756dcd7c1"
+    },
+    {
+      "path": "materials/micro-lessons/source/package-final.py",
+      "bytes": 2146,
+      "sha256": "3ab8b9acfdccfa7bd50b7c236ac0aa4a00aeb8dbcfed0869d5f3504417fcb4e9"
+    },
+    {
+      "path": "materials/micro-lessons/source/prepare-assets.py",
+      "bytes": 2784,
+      "sha256": "ec6d975071813fa4f0e72490c7ce479d192c5264d62969ca00663a89517a3857"
+    },
+    {
+      "path": "materials/micro-lessons/source/rebuild.sh",
+      "bytes": 1850,
+      "sha256": "02ec9e02cb07c853b4f6eb535a4185065c33989f0e5778bd6c67ec6ca41ebdcb"
+    },
+    {
+      "path": "materials/micro-lessons/source/record-qa.py",
+      "bytes": 7090,
+      "sha256": "412b5dd81c6a223ab7bb5d2e9628a47695eba6d015669dfabda706e04b510e1e"
+    },
+    {
+      "path": "materials/micro-lessons/source/render-pdfs.py",
+      "bytes": 1478,
+      "sha256": "928e85f02e68d459ffa375fc7ad898863038883c023af9d090a5a0455ddbefe6"
+    },
+    {
+      "path": "materials/micro-lessons/source/rendered-board-manifest.json",
+      "bytes": 33187,
+      "sha256": "3a5ccf80abdfbdf9393e01632dc4110ddb791a2b11612962b133ce193ee535e2"
+    },
+    {
+      "path": "materials/micro-lessons/source/speaker-notes.md",
+      "bytes": 51579,
+      "sha256": "8efb89a0fe351b0e588ee4c36ffec4d867149f262512f82b997c6258e1791bad"
+    },
+    {
+      "path": "materials/micro-lessons/source/teacher-summary.md",
+      "bytes": 13623,
+      "sha256": "c66846ec09bfa11cc7fb8f6e4ae8ee417daeaa7bb6d2402ec4b467bf9c5ead11"
+    },
+    {
+      "path": "materials/micro-lessons/source/verify-content.mjs",
+      "bytes": 6348,
+      "sha256": "cc226211d37812f374df2f187b1841a1ddd9b95cc47c3ec53f86d241fe16aef5"
+    },
+    {
+      "path": "materials/micro-lessons/source/verify-delivery.py",
+      "bytes": 5061,
+      "sha256": "c5ebd7b9bbb12c83c0f0668f03f2cbf00b1f2521de68b2a8970fac549f16ae68"
+    },
+    {
+      "path": "materials/micro-lessons/sources.md",
+      "bytes": 2410,
+      "sha256": "ee45a8f82f446fc3939b6aaf79e584c00881751e96f5ceef2e02c858dc3a11e3"
+    }
+  ]
+}

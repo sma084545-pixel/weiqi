@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "PAGES-PRESERVATION",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "baseVersion": "0.20.0-online.1",
+  "resultVersion": "0.20.1-pages.1",
+  "status": "passed",
+  "checkedFiles": 1038,
+  "failures": [],
+  "humanReviewed": null
+}

@@ -1,0 +1,46 @@
+T18 validation command record - 2026-09-06 Asia/Shanghai
+
+Baseline input:
+  go-club-T01-0.2.0-full.zip
+  SHA-256 03949f1f8c645832c7a93d0307cc770acaaf4a9692ea61d46a6d87408c37ba73
+
+Authoritative prompts read:
+  T00_project_contract.md
+  SHA-256 a63cdf128360ecbd687e69d1dbb1e45289a076cc0c1c2cf0aa0dcdd55df1ce6a
+  T18_demonstration_board.md
+  SHA-256 40a326a245e2091c8450f5205e1a38287e6c4dd18e41e5dbba0b98c14de9e59f
+
+Generation:
+  /Users/maxiao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 materials/demo-board/generate_assets.py
+  exit: 0
+  result: SVG and PDF assets generated
+
+Geometry/content/PDF check (final run):
+  /Users/maxiao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 materials/demo-board/verify_assets.py
+  exit: 0
+  result: 47/47 checks passed
+
+Rendering and contact sheets:
+  sh materials/demo-board/render_and_contact_sheet.sh
+  exit: 0
+  result: 22 color pages, 12 grayscale pages, seven contact sheets
+
+Manual visual inspection:
+  Opened seven contact sheets and high-resolution guide pages 1,4,6,7,8;
+  grayscale marker page 6; tiled pages 1 and 6.
+  result: no visible clipping, overlap, missing page, broken glyph, or ambiguous marker shape.
+  boundary: assistant visual review only; not human teacher review or physical prototype testing.
+
+Baseline immutability comparison:
+  compared all 134 files in the attached T01 0.2.0 full ZIP against the reproduction tree
+  result: missing=[]; changed=[]
+
+Release packaging:
+  /Users/maxiao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 materials/demo-board/package_release.py <output-dir>
+  result: material delta ZIP, T01+T18 full reproduction ZIP, delivery-manifest.json, SHA256SUMS.txt
+
+Archive consumer check:
+  unzip -t for both archives; extract material delta; rerun verify_assets.py from extracted delta
+  exit: 0
+  result: both ZIP integrity checks passed; extracted material verification 47/47;
+          manifest hashes and byte counts matched; full archive contains board and handoff.

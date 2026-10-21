@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="210mm" height="297mm" viewBox="0 0 210 297">
+  <title>气环排版</title>
+  <desc>A4 1:1 气环24枚</desc>
+  <metadata>schemaVersion=1; id=T18-DEMO-BOARD; revision=1; rulesetId=GO-CLUB-AREA-1; units=mm</metadata>
+  <style>
+    text { font-family: "Arial Unicode MS", "PingFang SC", sans-serif; fill: #18211C; }
+    .grid-line { stroke: #263028; stroke-width: 1.2; vector-effect: non-scaling-stroke; }
+    .cut-line { stroke: #777; stroke-width: .35; stroke-dasharray: 2 1; fill: none; }
+    .note { font-size: 4px; } .small { font-size: 3.2px; } .label { font-size: 5px; font-weight: 700; }
+  </style>
+<rect width="210" height="297" fill="#FFFFFF"/>
+<text x="105" y="12" class="label" text-anchor="middle" >气环 24 枚｜外径 30 / 内径 16 mm｜100%</text>
+<text x="105" y="19" class="small" text-anchor="middle" >双虚线空心环；中央必须透明或镂空以露出交叉点</text>
+<g class="liberty-ring" data-marker-index="1"><circle cx="30" cy="45" r="15" fill="none" stroke="#007C91" stroke-width="3" stroke-dasharray="7 4"/><circle cx="30" cy="45" r="8" fill="none" stroke="#18211C" stroke-width="0.8" stroke-dasharray="2 2"/><path d="M 26 45 H 34 M 30 41 V 30 49" stroke="#777" stroke-width=".5"/></g>
+<g class="liberty-ring" data-marker-index="2"><circle cx="80" cy="45" r="15" fill="none" stroke="#007C91" stroke-width="3" stroke-dasharray="7 4"/><circle cx="80" cy="45" r="8" fill="none" stroke="#18211C" stroke-width="0.8" stroke-dasharray="2 2"/><path d="M 76 45 H 84 M 80 41 V 80 49" stroke="#777" stroke-width=".5"/></g>
+<g class="liberty-ring" data-marker-index="3"><circle cx="130" cy="45" r="15" fill="none" stroke="#007C91" stroke-width="3" stroke-dasharray="7 4"/><circle cx="130" cy="45" r="8" fill="none" stroke="#18211C" stroke-width="0.8" stroke-dasharray="2 2"/><path d="M 126 45 H 134 M 130 41 V 130 49" stroke="#777" stroke-width=".5"/></g>
+<g class="liberty-ring" data-marker-index="4"><circle cx="180" cy="45" r="15" fill="none" stroke="#007C91" stroke-width="3" stroke-dasharray="7 4"/><circle cx="180" cy="45" r="8" fill="none" stroke="#18211C" stroke-width="0.8" stroke-dasharray="2 2"/><path d="M 176 45 H 184 M 180 41 V 180 49" stroke="#777" stroke-width=".5"/></g>
+<g class="liberty-ring" data-marker-index="5"><circle cx="30" cy="83" r="15" fill="none" stroke="#007C91" stroke-width="3" stroke-dasharray="7 4"/><circle cx="30" cy="83" r="8" fill="none" stroke="#18211C" stroke-width="0.8" stroke-dasharray="2 2"/><path d="M 26 83 H 34 M 30 79 V 30 87" stroke="#777" stroke-width=".5"/></g>
+<g class="liberty-ring" data-marker-index="6"><circle cx="80" cy="83" r="15" fill="none" stroke="#007C91" stroke-width="3" stroke-dasharray="7 4"/><circle cx="80" cy="83" r="8" fill="none" stroke="#18211C" stroke-width="0.8" stroke-dasharray="2 2"/><path d="M 76 83 H 84 M 80 79 V 80 87" stroke="#777" stroke-width=".5"/></g>
+<g class="liberty-ring" data-marker-index="7"><circle cx="130" cy="83" r="15" fill="none" stroke="#007C91" stroke-width="3" stroke-dasharray="7 4"/><circle cx="130" cy="83" r="8" fill="none" stroke="#18211C" stroke-width="0.8" stroke-dasharray="2 2"/><path d="M 126 83 H 134 M 130 79 V 130 87" stroke="#777" stroke-width=".5"/></g>
+<g class="liberty-ring" data-marker-index="8"><circle cx="180" cy="83" r="15" fill="none" stroke="#007C91" stroke-width="3" stroke-dasharray="7 4"/><circle cx="180" cy="83" r="8" fill="none" stroke="#18211C" stroke-width="0.8" stroke-dasharray="2 2"/><path d="M 176 83 H 184 M 180 79 V 180 87" stroke="#777" stroke-width=".5"/></g>
+<g class="liberty-ring" data-marker-index="9"><circle cx="30" cy="121" r="15" fill="none" stroke="#007C91" stroke-width="3" stroke-dasharray="7 4"/><circle cx="30" cy="121" r="8" fill="none" stroke="#18211C" stroke-width="0.8" stroke-dasharray="2 2"/><path d="M 26 121 H 34 M 30 117 V 30 125" stroke="#777" stroke-width=".5"/></g>
+<g class="liberty-ring" data-marker-index="10"><circle cx="80" cy="121" r="15" fill="none" stroke="#007C91" stroke-width="3" stroke-dasharray="7 4"/><circle cx="80" cy="121" r="8" fill="none" stroke="#18211C" stroke-width="0.8" stroke-dasharray="2 2"/><path d="M 76 121 H 84 M 80 117 V 80 125" stroke="#777" stroke-width=".5"/></g>
+<g class="liberty-ring" data-marker-index="11"><circle cx="130" cy="121" r="15" fill="none" stroke="#007C91" stroke-width="3" stroke-dasharray="7 4"/><circle cx="130" cy="121" r="8" fill="none" stroke="#18211C" stroke-width="0.8" stroke-dasharray="2 2"/><path d="M 126 121 H 134 M 130 117 V 130 125" stroke="#777" stroke-width=".5"/></g>
+<g class="liberty-ring" data-marker-index="12"><circle cx="180" cy="121" r="15" fill="none" stroke="#007C91" stroke-width="3" stroke-dasharray="7 4"/><circle cx="180" cy="121" r="8" fill="none" stroke="#18211C" stroke-width="0.8" stroke-dasharray="2 2"/><path d="M 176 121 H 184 M 180 117 V 180 125" stroke="#777" stroke-width=".5"/></g>
+<g class="liberty-ring" data-marker-index="13"><circle cx="30" cy="159" r="15" fill="none" stroke="#007C91" stroke-width="3" stroke-dasharray="7 4"/><circle cx="30" cy="159" r="8" fill="none" stroke="#18211C" stroke-width="0.8" stroke-dasharray="2 2"/><path d="M 26 159 H 34 M 30 155 V 30 163" stroke="#777" stroke-width=".5"/></g>
+<g class="liberty-ring" data-marker-index="14"><circle cx="80" cy="159" r="15" fill="none" stroke="#007C91" stroke-width="3" stroke-dasharray="7 4"/><circle cx="80" cy="159" r="8" fill="none" stroke="#18211C" stroke-width="0.8" stroke-dasharray="2 2"/><path d="M 76 159 H 84 M 80 155 V 80 163" stroke="#777" stroke-width=".5"/></g>
+<g class="liberty-ring" data-marker-index="15"><circle cx="130" cy="159" r="15" fill="none" stroke="#007C91" stroke-width="3" stroke-dasharray="7 4"/><circle cx="130" cy="159" r="8" fill="none" stroke="#18211C" stroke-width="0.8" stroke-dasharray="2 2"/><path d="M 126 159 H 134 M 130 155 V 130 163" stroke="#777" stroke-width=".5"/></g>
+<g class="liberty-ring" data-marker-index="16"><circle cx="180" cy="159" r="15" fill="none" stroke="#007C91" stroke-width="3" stroke-dasharray="7 4"/><circle cx="180" cy="159" r="8" fill="none" stroke="#18211C" stroke-width="0.8" stroke-dasharray="2 2"/><path d="M 176 159 H 184 M 180 155 V 180 163" stroke="#777" stroke-width=".5"/></g>
+<g class="liberty-ring" data-marker-index="17"><circle cx="30" cy="197" r="15" fill="none" stroke="#007C91" stroke-width="3" stroke-dasharray="7 4"/><circle cx="30" cy="197" r="8" fill="none" stroke="#18211C" stroke-width="0.8" stroke-dasharray="2 2"/><path d="M 26 197 H 34 M 30 193 V 30 201" stroke="#777" stroke-width=".5"/></g>
+<g class="liberty-ring" data-marker-index="18"><circle cx="80" cy="197" r="15" fill="none" stroke="#007C91" stroke-width="3" stroke-dasharray="7 4"/><circle cx="80" cy="197" r="8" fill="none" stroke="#18211C" stroke-width="0.8" stroke-dasharray="2 2"/><path d="M 76 197 H 84 M 80 193 V 80 201" stroke="#777" stroke-width=".5"/></g>
+<g class="liberty-ring" data-marker-index="19"><circle cx="130" cy="197" r="15" fill="none" stroke="#007C91" stroke-width="3" stroke-dasharray="7 4"/><circle cx="130" cy="197" r="8" fill="none" stroke="#18211C" stroke-width="0.8" stroke-dasharray="2 2"/><path d="M 126 197 H 134 M 130 193 V 130 201" stroke="#777" stroke-width=".5"/></g>
+<g class="liberty-ring" data-marker-index="20"><circle cx="180" cy="197" r="15" fill="none" stroke="#007C91" stroke-width="3" stroke-dasharray="7 4"/><circle cx="180" cy="197" r="8" fill="none" stroke="#18211C" stroke-width="0.8" stroke-dasharray="2 2"/><path d="M 176 197 H 184 M 180 193 V 180 201" stroke="#777" stroke-width=".5"/></g>
+<g class="liberty-ring" data-marker-index="21"><circle cx="30" cy="235" r="15" fill="none" stroke="#007C91" stroke-width="3" stroke-dasharray="7 4"/><circle cx="30" cy="235" r="8" fill="none" stroke="#18211C" stroke-width="0.8" stroke-dasharray="2 2"/><path d="M 26 235 H 34 M 30 231 V 30 239" stroke="#777" stroke-width=".5"/></g>
+<g class="liberty-ring" data-marker-index="22"><circle cx="80" cy="235" r="15" fill="none" stroke="#007C91" stroke-width="3" stroke-dasharray="7 4"/><circle cx="80" cy="235" r="8" fill="none" stroke="#18211C" stroke-width="0.8" stroke-dasharray="2 2"/><path d="M 76 235 H 84 M 80 231 V 80 239" stroke="#777" stroke-width=".5"/></g>
+<g class="liberty-ring" data-marker-index="23"><circle cx="130" cy="235" r="15" fill="none" stroke="#007C91" stroke-width="3" stroke-dasharray="7 4"/><circle cx="130" cy="235" r="8" fill="none" stroke="#18211C" stroke-width="0.8" stroke-dasharray="2 2"/><path d="M 126 235 H 134 M 130 231 V 130 239" stroke="#777" stroke-width=".5"/></g>
+<g class="liberty-ring" data-marker-index="24"><circle cx="180" cy="235" r="15" fill="none" stroke="#007C91" stroke-width="3" stroke-dasharray="7 4"/><circle cx="180" cy="235" r="8" fill="none" stroke="#18211C" stroke-width="0.8" stroke-dasharray="2 2"/><path d="M 176 235 H 184 M 180 231 V 180 239" stroke="#777" stroke-width=".5"/></g>
+<text x="10" y="278" class="small" text-anchor="start" >灰度识别：双虚线环；不要用实心圆代替</text>
+<g id="calibration-ruler" data-length-mm="100">
+<line x1="55" y1="286" x2="155" y2="286" stroke="#18211C" stroke-width="0.7"/>
+<line x1="55" y1="282" x2="55" y2="290" stroke="#18211C" stroke-width="0.6"/>
+<line x1="65" y1="284.2" x2="65" y2="287.8" stroke="#18211C" stroke-width="0.6"/>
+<line x1="75" y1="284.2" x2="75" y2="287.8" stroke="#18211C" stroke-width="0.6"/>
+<line x1="85" y1="284.2" x2="85" y2="287.8" stroke="#18211C" stroke-width="0.6"/>
+<line x1="95" y1="284.2" x2="95" y2="287.8" stroke="#18211C" stroke-width="0.6"/>
+<line x1="105" y1="283.5" x2="105" y2="288.5" stroke="#18211C" stroke-width="0.6"/>
+<line x1="115" y1="284.2" x2="115" y2="287.8" stroke="#18211C" stroke-width="0.6"/>
+<line x1="125" y1="284.2" x2="125" y2="287.8" stroke="#18211C" stroke-width="0.6"/>
+<line x1="135" y1="284.2" x2="135" y2="287.8" stroke="#18211C" stroke-width="0.6"/>
+<line x1="145" y1="284.2" x2="145" y2="287.8" stroke="#18211C" stroke-width="0.6"/>
+<line x1="155" y1="282" x2="155" y2="290" stroke="#18211C" stroke-width="0.6"/>
+<text x="105.0" y="281" class="small" text-anchor="middle" >100 mm 校准尺</text>
+</g>
+</svg>

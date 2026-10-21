@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "DEV-POS-001",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "Position",
+  "size": 5,
+  "stones": [
+    {
+      "row": 2,
+      "col": 2,
+      "color": "X"
+    }
+  ],
+  "toPlay": "W",
+  "historyPolicy": "fresh-setup",
+  "history": null
+}

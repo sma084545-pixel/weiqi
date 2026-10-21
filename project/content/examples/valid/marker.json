@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "DEV-MARKER-001",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "Marker",
+  "size": 5,
+  "marker": {
+    "markerId": "target-1",
+    "type": "target",
+    "points": [
+      {
+        "row": 2,
+        "col": 2
+      }
+    ],
+    "label": "中央黑子",
+    "owner": "B"
+  }
+}

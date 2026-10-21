@@ -1,0 +1,85 @@
+---
+schemaVersion: 1
+id: DOC-T05-CHANGED-FILES
+revision: 1
+rulesetId: GO-CLUB-AREA-1
+---
+
+# T05 逐文件变更
+
+baseVersion=0.5.0；resultVersion=0.6.0。以下只列 T05 新增或修改；完整项目哈希见 `release-manifest.json`。独立 T18 材料及 T00–T04 历史成果被继承但不属于本次变更。
+
+- `CHANGELOG.md`
+- `README.md`
+- `SOURCES.md`
+- `content/t05/capture-demos.json`
+- `dist-engine/README.md`
+- `dist-engine/THIRD_PARTY_NOTICES.md`
+- `dist-engine/go-club-rules.mjs`
+- `dist-engine/go-club-rules.mjs.map`
+- `dist-engine/package.json`
+- `dist-engine/types/constants.d.ts`
+- `dist-engine/types/content.generated.d.ts`
+- `dist-engine/types/coordinates.d.ts`
+- `dist-engine/types/persistence.d.ts`
+- `dist-engine/types/rules/contract.d.ts`
+- `dist-engine/types/rules/engine.d.ts`
+- `dist-engine/types/rules/errors.zh.d.ts`
+- `dist-engine/types/rules/game-store.d.ts`
+- `dist-engine/types/rules/index.d.ts`
+- `dist-engine/types/rules/internal.d.ts`
+- `dist-engine/types/rules/placement.d.ts`
+- `dist-engine/types/rules/scoring.d.ts`
+- `dist-engine/types/rules/topology.d.ts`
+- `dist-engine/types/validation.d.ts`
+- `dist/assets/index-BMESBecS.css`
+- `dist/assets/index-D8Ho3ATu.js`
+- `dist/index.html`
+- `docs/CHANGED_FILES.md`
+- `docs/CONTENT_SCHEMA.md`
+- `docs/INTERFACES.md`
+- `docs/PROJECT_CONTRACT.md`
+- `docs/STYLE_GUIDE.md`
+- `docs/requirements-matrix.md`
+- `docs/t03/LEARNING_HUB_USAGE.md`
+- `docs/t03/MODULE_REGISTRY.md`
+- `docs/t04/LIBERTY_LAB_USAGE.md`
+- `docs/t04/REQUIREMENT_TRACE.md`
+- `docs/t05/ACCEPTANCE.md`
+- `docs/t05/CAPTURE_LAB_USAGE.md`
+- `docs/t05/EXPECTED_RESULTS.md`
+- `docs/t05/FIDELITY_LEDGER.md`
+- `docs/t05/RULE_TRACE.md`
+- `docs/t05/design-concept.png`
+- `handoff/T05.md`
+- `index.html`
+- `output/playwright/t05/1280-final-projector-grayscale.png`
+- `output/playwright/t05/1280-initial.png`
+- `output/playwright/t05/360-initial.png`
+- `output/playwright/t05/768-initial.png`
+- `output/validation/T05/command-report.json`
+- `output/validation/content-report.json`
+- `package.json`
+- `release-manifest.json`
+- `scripts/package-t05.py`
+- `scripts/validate-content.ts`
+- `src/core/constants.ts`
+- `src/core/rules/contract.ts`
+- `src/features/capture-lab/CaptureLab.css`
+- `src/features/capture-lab/CaptureLab.tsx`
+- `src/features/capture-lab/StepPlayer.tsx`
+- `src/features/capture-lab/demos.ts`
+- `src/features/capture-lab/evaluation.ts`
+- `src/features/capture-lab/frames.ts`
+- `src/features/learning-hub/LearningHub.tsx`
+- `src/features/learning-hub/registry.ts`
+- `src/features/learning-hub/stages.ts`
+- `src/features/liberty-lab/LibertyLab.tsx`
+- `tests/browser/t05.spec.ts`
+- `tests/fixtures/t05-capture-expected.json`
+- `tests/t03/registry.test.ts`
+- `tests/t05/capture-lab.test.tsx`
+- `tests/t05/demos.test.ts`
+- `tests/t05/evaluation.test.ts`
+- `tests/t05/frames.test.ts`
+- `tests/t05/step-player.test.tsx`

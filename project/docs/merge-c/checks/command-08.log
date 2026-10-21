@@ -1,0 +1,12 @@
+
+ RUN  v5.0.0 /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/merge-c-20261006/validation/go-club
+
+
+ Test Files  43 passed (43)
+      Tests  358 passed (358)
+   Start at  10:40:46
+   Duration  5.79s (import 32%, tests 27%, transform 21%, environment 20%)
+
+    Isolate  43 workers spawned · ~276ms startup each (spawn + environment, per file)
+             at least ~1.04s faster with isolate: false — reuses workers across files instead of one per file
+

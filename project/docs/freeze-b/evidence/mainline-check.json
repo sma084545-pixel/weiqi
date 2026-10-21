@@ -1,0 +1,8 @@
+{
+  "command": "pnpm check",
+  "startedAt": "2026-09-19T17:08:47.036581+08:00",
+  "exitCode": 1,
+  "status": "failed",
+  "log": "docs/freeze-b/evidence/mainline-check.log",
+  "dependencyMode": "existing frozen T15 dependencies reused; lockfile unchanged"
+}

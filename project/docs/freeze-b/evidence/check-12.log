@@ -1,0 +1,1 @@
+PASS: standalone ESM library: create, place, pass, undo/redo, serialize/replay; no React, browser, network or installed consumer dependencies.

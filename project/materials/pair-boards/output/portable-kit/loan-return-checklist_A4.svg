@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="210mm" height="297mm" viewBox="0 0 210 297" id="T19-LOAN-CHECKLIST-A4">
+<metadata>{&quot;id&quot;: &quot;T19-LOAN-CHECKLIST-A4&quot;, &quot;kind&quot;: &quot;portable-kit-print-sheet&quot;, &quot;pageMm&quot;: [210, 297], &quot;printScalePercent&quot;: 100, &quot;resultVersion&quot;: &quot;0.2.0-t19.1&quot;, &quot;revision&quot;: 1, &quot;rulesetId&quot;: &quot;GO-CLUB-AREA-1&quot;, &quot;schemaVersion&quot;: 1}</metadata>
+<style>text{font-family:"Arial Unicode MS","PingFang SC","Hiragino Sans GB",sans-serif}.cut{stroke-dasharray:2 1}.guide{stroke-dasharray:3 2}</style>
+<text x="15.000" y="14.000" font-size="5.000mm" text-anchor="start" fill="#111111" font-weight="bold" class="">便携棋具借还清单 | 每页 2 份</text>
+<text x="15.000" y="23.000" font-size="2.900mm" text-anchor="start" fill="#333333" font-weight="normal" class="">沿虚线裁切。只记录活动管理所需信息；是否填写姓名由教师按实际安排决定。</text>
+<text x="195.000" y="14.000" font-size="2.700mm" text-anchor="end" fill="#444444" font-weight="normal" class="">借还清单</text>
+<text x="15.000" y="287.000" font-size="2.400mm" text-anchor="start" fill="#111111" font-weight="normal" class="">A4 210×297 mm | 适用棋子直径：不限定 | 100% / 实际大小打印 | GO-CLUB-AREA-1</text>
+<line x1="55.000" y1="273.000" x2="155.000" y2="273.000" stroke="#111111" stroke-width="0.450" class="calibration-ruler"/>
+<line x1="55.000" y1="270.000" x2="55.000" y2="276.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="55.000" y="279.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">0</text>
+<line x1="65.000" y1="271.000" x2="65.000" y2="275.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="65.000" y="279.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">10</text>
+<line x1="75.000" y1="271.000" x2="75.000" y2="275.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="75.000" y="279.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">20</text>
+<line x1="85.000" y1="271.000" x2="85.000" y2="275.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="85.000" y="279.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">30</text>
+<line x1="95.000" y1="271.000" x2="95.000" y2="275.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="95.000" y="279.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">40</text>
+<line x1="105.000" y1="270.000" x2="105.000" y2="276.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="105.000" y="279.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">50</text>
+<line x1="115.000" y1="271.000" x2="115.000" y2="275.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="115.000" y="279.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">60</text>
+<line x1="125.000" y1="271.000" x2="125.000" y2="275.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="125.000" y="279.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">70</text>
+<line x1="135.000" y1="271.000" x2="135.000" y2="275.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="135.000" y="279.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">80</text>
+<line x1="145.000" y1="271.000" x2="145.000" y2="275.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="145.000" y="279.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">90</text>
+<line x1="155.000" y1="270.000" x2="155.000" y2="276.000" stroke="#111111" stroke-width="0.400" class="calibration-tick"/>
+<text x="155.000" y="279.000" font-size="2.300mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-label">100</text>
+<text x="105.000" y="269.000" font-size="2.500mm" text-anchor="middle" fill="#111111" font-weight="normal" class="calibration-title">校准尺 100 mm</text>
+<rect x="12.000" y="32.000" width="186.000" height="105.000" rx="2.000" fill="#FFFFFF" stroke="#333333" stroke-width="0.350" class="cut loan-checklist"/>
+<text x="18.000" y="42.000" font-size="4.000mm" text-anchor="start" fill="#111111" font-weight="bold" class="">双人棋具套装借还清单 1</text>
+<text x="192.000" y="42.000" font-size="2.800mm" text-anchor="end" fill="#111111" font-weight="normal" class="">Kit ID: __________</text>
+<text x="18.000" y="52.000" font-size="2.800mm" text-anchor="start" fill="#111111" font-weight="normal" class="">借出日期/节次：____________   借用人或小组（可选）：__________________</text>
+<text x="18.000" y="62.000" font-size="3.100mm" text-anchor="start" fill="#35515A" font-weight="bold" class="">借出时核对</text>
+<text x="18.000" y="70.000" font-size="2.800mm" text-anchor="start" fill="#111111" font-weight="normal" class="">□ 9×9 棋盘  □ 13×13 扩展  □ 黑棋袋  □ 白棋袋  □ 规则卡</text>
+<text x="18.000" y="78.000" font-size="2.800mm" text-anchor="start" fill="#111111" font-weight="normal" class="">□ 透明覆片/文件袋  □ 可擦写笔  □ 擦布  □ 收纳袋/封套</text>
+<text x="18.000" y="89.000" font-size="2.800mm" text-anchor="start" fill="#111111" font-weight="normal" class="">借出数量：黑 ____  白 ____  |  状态备注：____________________________</text>
+<line x1="18.000" y1="95.000" x2="192.000" y2="95.000" stroke="#999999" stroke-width="0.250" class=""/>
+<text x="18.000" y="103.000" font-size="3.100mm" text-anchor="start" fill="#35515A" font-weight="bold" class="">归还时核对</text>
+<text x="18.000" y="111.000" font-size="2.800mm" text-anchor="start" fill="#111111" font-weight="normal" class="">□ 全部归位  □ 数量已核  □ 棋盘/覆片已擦净  □ 破损已记录</text>
+<text x="18.000" y="121.000" font-size="2.800mm" text-anchor="start" fill="#111111" font-weight="normal" class="">归还数量：黑 ____  白 ____  |  缺失/破损：____________________________</text>
+<text x="18.000" y="131.000" font-size="2.700mm" text-anchor="start" fill="#111111" font-weight="normal" class="">借出确认：____________   归还确认：____________   日期：____________</text>
+<rect x="12.000" y="149.000" width="186.000" height="105.000" rx="2.000" fill="#FFFFFF" stroke="#333333" stroke-width="0.350" class="cut loan-checklist"/>
+<text x="18.000" y="159.000" font-size="4.000mm" text-anchor="start" fill="#111111" font-weight="bold" class="">双人棋具套装借还清单 2</text>
+<text x="192.000" y="159.000" font-size="2.800mm" text-anchor="end" fill="#111111" font-weight="normal" class="">Kit ID: __________</text>
+<text x="18.000" y="169.000" font-size="2.800mm" text-anchor="start" fill="#111111" font-weight="normal" class="">借出日期/节次：____________   借用人或小组（可选）：__________________</text>
+<text x="18.000" y="179.000" font-size="3.100mm" text-anchor="start" fill="#35515A" font-weight="bold" class="">借出时核对</text>
+<text x="18.000" y="187.000" font-size="2.800mm" text-anchor="start" fill="#111111" font-weight="normal" class="">□ 9×9 棋盘  □ 13×13 扩展  □ 黑棋袋  □ 白棋袋  □ 规则卡</text>
+<text x="18.000" y="195.000" font-size="2.800mm" text-anchor="start" fill="#111111" font-weight="normal" class="">□ 透明覆片/文件袋  □ 可擦写笔  □ 擦布  □ 收纳袋/封套</text>
+<text x="18.000" y="206.000" font-size="2.800mm" text-anchor="start" fill="#111111" font-weight="normal" class="">借出数量：黑 ____  白 ____  |  状态备注：____________________________</text>
+<line x1="18.000" y1="212.000" x2="192.000" y2="212.000" stroke="#999999" stroke-width="0.250" class=""/>
+<text x="18.000" y="220.000" font-size="3.100mm" text-anchor="start" fill="#35515A" font-weight="bold" class="">归还时核对</text>
+<text x="18.000" y="228.000" font-size="2.800mm" text-anchor="start" fill="#111111" font-weight="normal" class="">□ 全部归位  □ 数量已核  □ 棋盘/覆片已擦净  □ 破损已记录</text>
+<text x="18.000" y="238.000" font-size="2.800mm" text-anchor="start" fill="#111111" font-weight="normal" class="">归还数量：黑 ____  白 ____  |  缺失/破损：____________________________</text>
+<text x="18.000" y="248.000" font-size="2.700mm" text-anchor="start" fill="#111111" font-weight="normal" class="">借出确认：____________   归还确认：____________   日期：____________</text>
+</svg>

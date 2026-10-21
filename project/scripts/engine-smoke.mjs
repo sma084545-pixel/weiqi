@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import {startGame,tryMove,applyPass,undo,redo,serializeGame,restoreGame} from '../dist-engine/go-club-rules.mjs';
+const value=r=>{if(!r.ok)assert.fail(JSON.stringify(r));return r.value;};
+const setup={schemaVersion:1,id:'DEV-T01-SMOKE-POS',revision:1,rulesetId:'GO-CLUB-AREA-1',kind:'Position',size:9,stones:[],toPlay:'B',historyPolicy:'fresh-setup',history:null};
+let s=value(startGame(setup,{mode:'full-game',komi:0,gameId:'DEV-T01-SMOKE-GAME'}));
+s=value(tryMove(s,{type:'place',color:'B',at:{row:4,col:4}})).nextState;
+assert.equal(s.board[4][4],'B');s=value(applyPass(s,'W')).nextState;
+assert.deepEqual(value(restoreGame(value(serializeGame(s)))),s);
+assert.deepEqual(value(redo(value(undo(s)))).board,s.board);
+console.log('PASS: standalone ESM library: create, place, pass, undo/redo, serialize/replay; no React, browser, network or installed consumer dependencies.');

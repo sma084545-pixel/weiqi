@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "FREEZE-B-VISUAL-REVIEW",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "reviewedAt": "2026-09-19",
+  "reviewerType": "assistant-digital-review",
+  "humanTeacherReview": false,
+  "scope": {
+    "renderedPdfPages": 70,
+    "contactSheetsViewed": 13,
+    "sets": [
+      {"id": "T09-questions", "pages": 18, "contactSheets": 3},
+      {"id": "T09-answers", "pages": 36, "contactSheets": 6},
+      {"id": "T20-independent-cards", "pages": 8, "contactSheets": 2},
+      {"id": "T20-A4-imposition", "pages": 6, "contactSheets": 1},
+      {"id": "T20-A6-imposition", "pages": 2, "contactSheets": 1}
+    ],
+    "grayscaleSpotChecks": ["T20 independent card page 3", "T20 independent card page 5"]
+  },
+  "checks": [
+    {"name": "No visibly clipped page content or overlapping text", "status": "passed"},
+    {"name": "Board intersections, stones, target numbers and page identities are visibly aligned", "status": "passed"},
+    {"name": "T20 A4/A6 imposition preserves paired orientation and card bounds", "status": "passed"},
+    {"name": "Black/white stones and shape markers remain distinguishable in grayscale spot checks", "status": "passed"}
+  ],
+  "limitations": [
+    "Contact-sheet review supplements, but does not replace, the coordinate and geometry assertions.",
+    "No physical print, cut-registration, projector, student, or human Go teacher review was performed."
+  ],
+  "status": "passed-digital-assistant-review"
+}

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="650" viewBox="0 0 600 650" role="img" aria-labelledby="title desc">
+<title id="title">LIB-005  r1 整块与敌子共同限制</title>
+<desc id="desc">完整9乘9棋盘，左上row=0，列向右，行号自下向上；目标数字为题目标记。黑：D5 E5 D4 E4；白：C5 D6</desc>
+<metadata>{&quot;schemaVersion&quot;: 1, &quot;id&quot;: &quot;SVG-LIB-005&quot;, &quot;revision&quot;: 1, &quot;rulesetId&quot;: &quot;GO-CLUB-AREA-1&quot;, &quot;contentRef&quot;: {&quot;id&quot;: &quot;LIB-005&quot;, &quot;revision&quot;: 1}}</metadata>
+<rect width="600" height="650" fill="white"/>
+<g font-family="Arial Unicode MS, PingFang SC, sans-serif" fill="#172a32"><text x="30" y="32" font-size="21">LIB-005  r1 · 9×9 完整棋盘</text><text x="30" y="61" font-size="16">上方 row=0；列 A →；显示行号自下向上</text></g>
+<g stroke="#78746a" stroke-width="1.4">
+<line x1="65.0" y1="100" x2="65.0" y2="570"/>
+<line x1="65" y1="100.0" x2="535" y2="100.0"/>
+<line x1="123.75" y1="100" x2="123.75" y2="570"/>
+<line x1="65" y1="158.75" x2="535" y2="158.75"/>
+<line x1="182.5" y1="100" x2="182.5" y2="570"/>
+<line x1="65" y1="217.5" x2="535" y2="217.5"/>
+<line x1="241.25" y1="100" x2="241.25" y2="570"/>
+<line x1="65" y1="276.25" x2="535" y2="276.25"/>
+<line x1="300.0" y1="100" x2="300.0" y2="570"/>
+<line x1="65" y1="335.0" x2="535" y2="335.0"/>
+<line x1="358.75" y1="100" x2="358.75" y2="570"/>
+<line x1="65" y1="393.75" x2="535" y2="393.75"/>
+<line x1="417.5" y1="100" x2="417.5" y2="570"/>
+<line x1="65" y1="452.5" x2="535" y2="452.5"/>
+<line x1="476.25" y1="100" x2="476.25" y2="570"/>
+<line x1="65" y1="511.25" x2="535" y2="511.25"/>
+<line x1="535.0" y1="100" x2="535.0" y2="570"/>
+<line x1="65" y1="570.0" x2="535" y2="570.0"/>
+</g><g font-family="Arial Unicode MS, sans-serif" text-anchor="middle" fill="#172a32" font-size="19">
+<text x="65.0" y="604">A</text>
+<text x="35" y="107.0">9</text>
+<text x="123.75" y="604">B</text>
+<text x="35" y="165.75">8</text>
+<text x="182.5" y="604">C</text>
+<text x="35" y="224.5">7</text>
+<text x="241.25" y="604">D</text>
+<text x="35" y="283.25">6</text>
+<text x="300.0" y="604">E</text>
+<text x="35" y="342.0">5</text>
+<text x="358.75" y="604">F</text>
+<text x="35" y="400.75">4</text>
+<text x="417.5" y="604">G</text>
+<text x="35" y="459.5">3</text>
+<text x="476.25" y="604">H</text>
+<text x="35" y="518.25">2</text>
+<text x="535.0" y="604">J</text>
+<text x="35" y="577.0">1</text>
+</g>
+<circle data-row="4" data-col="3" data-color="B" cx="241.25" cy="335.0" r="24" fill="#20272a" stroke="#20272a" stroke-width="2"/>
+<text x="241.25" y="342.0" text-anchor="middle" font-family="Arial Unicode MS, sans-serif" font-size="20" fill="white">1</text>
+<circle data-row="4" data-col="4" data-color="B" cx="300.0" cy="335.0" r="24" fill="#20272a" stroke="#20272a" stroke-width="2"/>
+<text x="300.0" y="342.0" text-anchor="middle" font-family="Arial Unicode MS, sans-serif" font-size="20" fill="white">1</text>
+<circle data-row="5" data-col="3" data-color="B" cx="241.25" cy="393.75" r="24" fill="#20272a" stroke="#20272a" stroke-width="2"/>
+<text x="241.25" y="400.75" text-anchor="middle" font-family="Arial Unicode MS, sans-serif" font-size="20" fill="white">1</text>
+<circle data-row="5" data-col="4" data-color="B" cx="300.0" cy="393.75" r="24" fill="#20272a" stroke="#20272a" stroke-width="2"/>
+<text x="300.0" y="400.75" text-anchor="middle" font-family="Arial Unicode MS, sans-serif" font-size="20" fill="white">1</text>
+<circle data-row="4" data-col="2" data-color="W" cx="182.5" cy="335.0" r="24" fill="#fff" stroke="#20272a" stroke-width="2"/>
+<circle data-row="3" data-col="3" data-color="W" cx="241.25" cy="276.25" r="24" fill="#fff" stroke="#20272a" stroke-width="2"/>
+<text x="30" y="638" font-size="15" font-family="Arial Unicode MS, sans-serif" fill="#43535b">数字=目标；黑方轮次；新教学起点</text></svg>

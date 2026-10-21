@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "GO-CLUB-LATEST-RELEASE",
+  "revision": 3,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "taskId": "ONLINE_PLAY",
+  "resultVersion": "0.20.0-online.1",
+  "programVersion": "0.20.0",
+  "mainline": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/online-play-20261021/mainline/go-club",
+  "releaseDirectory": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/release/0.20.0-online.1",
+  "archives": [
+    {
+      "path": "go-club-0.20.0-online.1-full.zip",
+      "sha256": "957bd35059b43c06f73bcbdab943f6b7728ef6837e62b246976b8cf4799eaee6",
+      "bytes": 225428458
+    },
+    {
+      "path": "go-club-0.20.0-online.1-app.zip",
+      "sha256": "c3a6224ea8875f54b1f5f568a331359440d4fae046d936e62b7fa9d8821a45c0",
+      "bytes": 431215
+    }
+  ],
+  "handoff": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/online-play-20261021/mainline/go-club/handoff/ONLINE_PLAY.md",
+  "archiveCheck": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/release/0.20.0-online.1/ARCHIVE_CHECK.json",
+  "status": "complete"
+}

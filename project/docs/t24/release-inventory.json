@@ -1,0 +1,4909 @@
+{
+  "schemaVersion": 1,
+  "id": "T24-RESOURCE-INVENTORY",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "resultVersion": "0.17.1-t24.1",
+  "programVersion": "0.17.1",
+  "freezeId": "GO-CLUB-FREEZE-B-20260919-01",
+  "formalPuzzleCount": 30,
+  "terminalCount": 6,
+  "uniquePrimarySlideCount": 25,
+  "taskInputs": [
+    {
+      "taskId": "T00",
+      "handoff": "handoff/T00.md",
+      "resultVersion": "0.1.0",
+      "sha256": "ad0621ade993bf80e931261bcd09fee26c65456eceb2588802c166285455e31f"
+    },
+    {
+      "taskId": "T01",
+      "handoff": "handoff/T01.md",
+      "resultVersion": "0.2.0",
+      "sha256": "f7defdc4c150c662a0ca077f6be16481af338141c94f5c6109030a3796dcf7cf"
+    },
+    {
+      "taskId": "T02",
+      "handoff": "handoff/T02.md",
+      "resultVersion": "0.3.0",
+      "sha256": "1f64e246d5af678867b23518e52176b0578b1e32e0b2a4fa0aba704ef0b75093"
+    },
+    {
+      "taskId": "T03",
+      "handoff": "handoff/T03.md",
+      "resultVersion": "0.4.0",
+      "sha256": "1626630ee0f0c0638f61cf368934d1e15d080db6af2e25478b758aaedfc7e7c2"
+    },
+    {
+      "taskId": "T04",
+      "handoff": "handoff/T04.md",
+      "resultVersion": "0.5.0",
+      "sha256": "59737e82884648ef4102c4eb6a78956b27b62dbfe930a186b1e53d6ad9ca9267"
+    },
+    {
+      "taskId": "T05",
+      "handoff": "handoff/T05.md",
+      "resultVersion": "0.6.0",
+      "sha256": "a08505badf2e1e8b574196c0a1574f8d332c2fa7f85a7231449e28e04703ea68"
+    },
+    {
+      "taskId": "T06",
+      "handoff": "handoff/T06.md",
+      "resultVersion": "0.7.0",
+      "sha256": "d356796a6fa73a753ed80dc1c61ad57a9354243b770a6bd79e349beb0e5ead8a"
+    },
+    {
+      "taskId": "T07",
+      "handoff": "handoff/T07.md",
+      "resultVersion": "0.8.0",
+      "sha256": "b68e9e575435bb41ec533b04e265e973cdc3162b4b6451fb6ca9565058aed9be"
+    },
+    {
+      "taskId": "T08",
+      "handoff": "handoff/T08.md",
+      "resultVersion": "0.9.0",
+      "sha256": "ed829ca0315ad37882632de52ec445b0784314c5d477364a0c175a8103b06b7b"
+    },
+    {
+      "taskId": "T09",
+      "handoff": "handoff/T09.md",
+      "resultVersion": "0.2.0-t09.1",
+      "sha256": "00601485ff0f6150ebc9e1f619efb58e0f6f5c0459eaee4e5850ad5b2e080e61"
+    },
+    {
+      "taskId": "T10",
+      "handoff": "handoff/T10.md",
+      "resultVersion": "0.10.0",
+      "sha256": "1ff9faccee5683c56bef8ec07976aeba58a59c54680135567c3ec5a23a1ceacf"
+    },
+    {
+      "taskId": "T11",
+      "handoff": "handoff/T11.md",
+      "resultVersion": "0.11.0",
+      "sha256": "e7378ed67fd08c06bee6da99a6e6e67c619d1757506e0156ddfca5c41218d9dc"
+    },
+    {
+      "taskId": "T12",
+      "handoff": "handoff/T12.md",
+      "resultVersion": "0.12.0",
+      "sha256": "ca249a668c5f9674970f249a739fa964650b2283fe3e7067a80d37291a07c56b"
+    },
+    {
+      "taskId": "T13",
+      "handoff": "handoff/T13.md",
+      "resultVersion": "0.13.0",
+      "sha256": "4e84fa548ec41a51430b252cd4d94509e7a83746caa068556e0b0fb2e182cc31"
+    },
+    {
+      "taskId": "T14",
+      "handoff": "handoff/T14.md",
+      "resultVersion": "0.14.0",
+      "sha256": "120f1ac8e5327e32ba2decc3822433a5202fd8e9f8d89f34028b3c60574d1630"
+    },
+    {
+      "taskId": "T15",
+      "handoff": "handoff/T15.md",
+      "resultVersion": "0.15.0",
+      "sha256": "173625c4698d3867081972e6e5dc1338e60b39a919c8a50d7837af892e5b3657"
+    },
+    {
+      "taskId": "T16",
+      "handoff": "handoff/T16.md",
+      "resultVersion": "0.16.0",
+      "sha256": "73db92365d593cad6cd7cdc5e7e669d073c61476123329e1782db39e2eda0bc4"
+    },
+    {
+      "taskId": "T17",
+      "handoff": "handoff/T17.md",
+      "resultVersion": "0.17.0",
+      "sha256": "8be6331338ec6cc4df1707fee4c0277202edd93480a732ec38f8d1c9dbf8db9f"
+    },
+    {
+      "taskId": "T18",
+      "handoff": "handoff/T18.md",
+      "resultVersion": "0.2.0+t18.1",
+      "sha256": "bb191dc30e42c3467c955d1a8fc4972f205831204a9d3db7ea12338a4d3506e0"
+    },
+    {
+      "taskId": "T19",
+      "handoff": "handoff/T19.md",
+      "resultVersion": "0.2.0-t19.1",
+      "sha256": "eebd06f6689fc89d20c5d83d6ae9daae2bd596b0caff01b396064ab79c19ef87"
+    },
+    {
+      "taskId": "T20",
+      "handoff": "handoff/T20.md",
+      "resultVersion": "0.2.0-t20.1（材料分支版本；程序package.json仍0.2.0）",
+      "sha256": "e4643f151be6578c34044217ffd422fb278cddb0787199c287937b368335acdb"
+    },
+    {
+      "taskId": "T21",
+      "handoff": "handoff/T21.md",
+      "resultVersion": "0.15.1-t21.1（材料增量）",
+      "sha256": "26cd98c2abddc0cabc52d18529c09b6577930d39a8844e6bfa2a75bf9ec0aec4"
+    },
+    {
+      "taskId": "T22",
+      "handoff": "handoff/T22.md",
+      "resultVersion": "0.15.1-t22.1",
+      "sha256": "418b779064e862934be56dfa007d3822004431b4b3c05bb1b6daa01f293ccd5e"
+    },
+    {
+      "taskId": "T23",
+      "handoff": "handoff/T23.md",
+      "resultVersion": "0.17.0-plus-t23.1",
+      "sha256": "852f554fe58e0087f865e3cef8e60eb71c85cd549c8c2ae91b12a4df9fc6be5b"
+    }
+  ],
+  "formalContents": [
+    {
+      "id": "LIB-001",
+      "revision": 1,
+      "kind": "Puzzle",
+      "source": "content/puzzles/LIB-001.json",
+      "sourceSha256": "3c5fa560f7cd43a13e14021d5e1baa80353592e38e95e454355d4c18b6158257",
+      "diagram": "content/artwork/LIB-001.svg",
+      "diagramSha256": "3b0dbb84dff31496c0add57070f3b75fe3e0d63b00d6a8eeb6936d7c3c8c00a7",
+      "readingAnswer": "content/print/T09_答案册.md",
+      "microLessonReferences": [
+        {
+          "lessonId": "T22-ML-01",
+          "slide": 1,
+          "diagramKey": "LIB-001",
+          "nodePath": []
+        },
+        {
+          "lessonId": "T22-ML-01",
+          "slide": 2,
+          "diagramKey": "LIB-001",
+          "nodePath": []
+        }
+      ],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIB-001",
+            "content/t09/pedagogy.json: LIB-001"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIB-001",
+            "content/t09/pedagogy.json: LIB-001"
+          ]
+        },
+        "solutionChecked": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIB-001",
+            "content/t09/pedagogy.json: LIB-001"
+          ]
+        },
+        "externalReferenceChecked": {
+          "status": "passed",
+          "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIB-001",
+            "content/t09/pedagogy.json: LIB-001",
+            "content/t09/SOURCES.md"
+          ]
+        },
+        "modelChecked": {
+          "status": "passed",
+          "method": "Authored reasoning + explicit finite scope, not human review",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIB-001",
+            "content/t09/pedagogy.json: LIB-001"
+          ]
+        },
+        "humanReviewed": null
+      },
+      "humanReviewed": null,
+      "cardFront": "materials/challenge-cards/editable/front/LIB-001-front.svg",
+      "cardBack": "materials/challenge-cards/editable/back/LIB-001-back.svg",
+      "frontPdfPage": 1,
+      "backPdfPage": 1,
+      "teacherAnswerPage": 4
+    },
+    {
+      "id": "LIB-002",
+      "revision": 1,
+      "kind": "Puzzle",
+      "source": "content/puzzles/LIB-002.json",
+      "sourceSha256": "8a057d4f583931bdaed4e45f2b6080858e6af9eca6096f248a9d8f01e057972c",
+      "diagram": "content/artwork/LIB-002.svg",
+      "diagramSha256": "6b80f76280718a1dc2df493bdf05f80bfbc98cdba1f49582d714c48c9a59fbe2",
+      "readingAnswer": "content/print/T09_答案册.md",
+      "microLessonReferences": [],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIB-002",
+            "content/t09/pedagogy.json: LIB-002"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIB-002",
+            "content/t09/pedagogy.json: LIB-002"
+          ]
+        },
+        "solutionChecked": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIB-002",
+            "content/t09/pedagogy.json: LIB-002"
+          ]
+        },
+        "externalReferenceChecked": {
+          "status": "passed",
+          "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIB-002",
+            "content/t09/pedagogy.json: LIB-002",
+            "content/t09/SOURCES.md"
+          ]
+        },
+        "modelChecked": {
+          "status": "passed",
+          "method": "Authored reasoning + explicit finite scope, not human review",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIB-002",
+            "content/t09/pedagogy.json: LIB-002"
+          ]
+        },
+        "humanReviewed": null
+      },
+      "humanReviewed": null,
+      "cardFront": "materials/challenge-cards/editable/front/LIB-002-front.svg",
+      "cardBack": "materials/challenge-cards/editable/back/LIB-002-back.svg",
+      "frontPdfPage": 1,
+      "backPdfPage": 1,
+      "teacherAnswerPage": 5
+    },
+    {
+      "id": "LIB-003",
+      "revision": 1,
+      "kind": "Puzzle",
+      "source": "content/puzzles/LIB-003.json",
+      "sourceSha256": "bba49850e48d1a5a9e741a8228fff30bb61471124fb395c6863d4957a7be753f",
+      "diagram": "content/artwork/LIB-003.svg",
+      "diagramSha256": "96624e4cc670dbde09486030a2202d649b7c172de9c1791385334cc600fafb0b",
+      "readingAnswer": "content/print/T09_答案册.md",
+      "microLessonReferences": [],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIB-003",
+            "content/t09/pedagogy.json: LIB-003"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIB-003",
+            "content/t09/pedagogy.json: LIB-003"
+          ]
+        },
+        "solutionChecked": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIB-003",
+            "content/t09/pedagogy.json: LIB-003"
+          ]
+        },
+        "externalReferenceChecked": {
+          "status": "passed",
+          "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIB-003",
+            "content/t09/pedagogy.json: LIB-003",
+            "content/t09/SOURCES.md"
+          ]
+        },
+        "modelChecked": {
+          "status": "passed",
+          "method": "Authored reasoning + explicit finite scope, not human review",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIB-003",
+            "content/t09/pedagogy.json: LIB-003"
+          ]
+        },
+        "humanReviewed": null
+      },
+      "humanReviewed": null,
+      "cardFront": "materials/challenge-cards/editable/front/LIB-003-front.svg",
+      "cardBack": "materials/challenge-cards/editable/back/LIB-003-back.svg",
+      "frontPdfPage": 2,
+      "backPdfPage": 2,
+      "teacherAnswerPage": 6
+    },
+    {
+      "id": "LIB-004",
+      "revision": 1,
+      "kind": "Puzzle",
+      "source": "content/puzzles/LIB-004.json",
+      "sourceSha256": "bbb1fb3435c71c4212ec85917bf4c7226216023ea15723b082a184c87a3cec0a",
+      "diagram": "content/artwork/LIB-004.svg",
+      "diagramSha256": "0c97d44c499d6911a5bc7bd8a823eedd03d44abb7c2e7023d55f5ce05b78ae39",
+      "readingAnswer": "content/print/T09_答案册.md",
+      "microLessonReferences": [
+        {
+          "lessonId": "T22-ML-01",
+          "slide": 4,
+          "diagramKey": "LIB-004",
+          "nodePath": []
+        }
+      ],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIB-004",
+            "content/t09/pedagogy.json: LIB-004"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIB-004",
+            "content/t09/pedagogy.json: LIB-004"
+          ]
+        },
+        "solutionChecked": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIB-004",
+            "content/t09/pedagogy.json: LIB-004"
+          ]
+        },
+        "externalReferenceChecked": {
+          "status": "passed",
+          "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIB-004",
+            "content/t09/pedagogy.json: LIB-004",
+            "content/t09/SOURCES.md"
+          ]
+        },
+        "modelChecked": {
+          "status": "passed",
+          "method": "Authored reasoning + explicit finite scope, not human review",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIB-004",
+            "content/t09/pedagogy.json: LIB-004"
+          ]
+        },
+        "humanReviewed": null
+      },
+      "humanReviewed": null,
+      "cardFront": "materials/challenge-cards/editable/front/LIB-004-front.svg",
+      "cardBack": "materials/challenge-cards/editable/back/LIB-004-back.svg",
+      "frontPdfPage": 2,
+      "backPdfPage": 2,
+      "teacherAnswerPage": 7
+    },
+    {
+      "id": "LIB-005",
+      "revision": 1,
+      "kind": "Puzzle",
+      "source": "content/puzzles/LIB-005.json",
+      "sourceSha256": "0d8565c2908a2876ea9a70331354d17ea2158bc20d7429517a5d49fb41e57387",
+      "diagram": "content/artwork/LIB-005.svg",
+      "diagramSha256": "6d86ea35afc083aa219cfa47fcc6fdeb2219e1f2e4dc3bf767f8b95e7c40f916",
+      "readingAnswer": "content/print/T09_答案册.md",
+      "microLessonReferences": [],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIB-005",
+            "content/t09/pedagogy.json: LIB-005"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIB-005",
+            "content/t09/pedagogy.json: LIB-005"
+          ]
+        },
+        "solutionChecked": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIB-005",
+            "content/t09/pedagogy.json: LIB-005"
+          ]
+        },
+        "externalReferenceChecked": {
+          "status": "passed",
+          "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIB-005",
+            "content/t09/pedagogy.json: LIB-005",
+            "content/t09/SOURCES.md"
+          ]
+        },
+        "modelChecked": {
+          "status": "passed",
+          "method": "Authored reasoning + explicit finite scope, not human review",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIB-005",
+            "content/t09/pedagogy.json: LIB-005"
+          ]
+        },
+        "humanReviewed": null
+      },
+      "humanReviewed": null,
+      "cardFront": "materials/challenge-cards/editable/front/LIB-005-front.svg",
+      "cardBack": "materials/challenge-cards/editable/back/LIB-005-back.svg",
+      "frontPdfPage": 3,
+      "backPdfPage": 3,
+      "teacherAnswerPage": 8
+    },
+    {
+      "id": "CAP-001",
+      "revision": 1,
+      "kind": "Puzzle",
+      "source": "content/puzzles/CAP-001.json",
+      "sourceSha256": "e0a0950af03ba144d4464790b1292ac4a77b7534bc5a1228b77c194862f767cd",
+      "diagram": "content/artwork/CAP-001.svg",
+      "diagramSha256": "7d4bb190248a6f3e048682f3e8e1b027f98052a43c26e6df64628d6246a47ca4",
+      "readingAnswer": "content/print/T09_答案册.md",
+      "microLessonReferences": [
+        {
+          "lessonId": "T22-ML-02",
+          "slide": 1,
+          "diagramKey": "CAP-001",
+          "nodePath": []
+        },
+        {
+          "lessonId": "T22-ML-02",
+          "slide": 2,
+          "diagramKey": "CAP-001",
+          "nodePath": []
+        },
+        {
+          "lessonId": "T22-ML-02",
+          "slide": 2,
+          "diagramKey": "CAP-001-SUCCESS",
+          "nodePath": [
+            "l1-1"
+          ]
+        }
+      ],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CAP-001",
+            "content/t09/pedagogy.json: CAP-001"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CAP-001",
+            "content/t09/pedagogy.json: CAP-001"
+          ]
+        },
+        "solutionChecked": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CAP-001",
+            "content/t09/pedagogy.json: CAP-001"
+          ]
+        },
+        "externalReferenceChecked": {
+          "status": "passed",
+          "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CAP-001",
+            "content/t09/pedagogy.json: CAP-001",
+            "content/t09/SOURCES.md"
+          ]
+        },
+        "modelChecked": {
+          "status": "passed",
+          "method": "Authored reasoning + explicit finite scope, not human review",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CAP-001",
+            "content/t09/pedagogy.json: CAP-001"
+          ]
+        },
+        "humanReviewed": null
+      },
+      "humanReviewed": null,
+      "cardFront": "materials/challenge-cards/editable/front/CAP-001-front.svg",
+      "cardBack": "materials/challenge-cards/editable/back/CAP-001-back.svg",
+      "frontPdfPage": 3,
+      "backPdfPage": 3,
+      "teacherAnswerPage": 9
+    },
+    {
+      "id": "CAP-002",
+      "revision": 1,
+      "kind": "Puzzle",
+      "source": "content/puzzles/CAP-002.json",
+      "sourceSha256": "f72172c4db6adf32228632d7660f174b649ae3ebbbedd9dd3f3bed1ba3e4e61e",
+      "diagram": "content/artwork/CAP-002.svg",
+      "diagramSha256": "5416860fd7082428bd86f958b4606b961abc79fdfc8e900a0337091a0249eadb",
+      "readingAnswer": "content/print/T09_答案册.md",
+      "microLessonReferences": [
+        {
+          "lessonId": "T22-ML-02",
+          "slide": 4,
+          "diagramKey": "CAP-002",
+          "nodePath": []
+        }
+      ],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CAP-002",
+            "content/t09/pedagogy.json: CAP-002"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CAP-002",
+            "content/t09/pedagogy.json: CAP-002"
+          ]
+        },
+        "solutionChecked": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CAP-002",
+            "content/t09/pedagogy.json: CAP-002"
+          ]
+        },
+        "externalReferenceChecked": {
+          "status": "passed",
+          "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CAP-002",
+            "content/t09/pedagogy.json: CAP-002",
+            "content/t09/SOURCES.md"
+          ]
+        },
+        "modelChecked": {
+          "status": "passed",
+          "method": "Authored reasoning + explicit finite scope, not human review",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CAP-002",
+            "content/t09/pedagogy.json: CAP-002"
+          ]
+        },
+        "humanReviewed": null
+      },
+      "humanReviewed": null,
+      "cardFront": "materials/challenge-cards/editable/front/CAP-002-front.svg",
+      "cardBack": "materials/challenge-cards/editable/back/CAP-002-back.svg",
+      "frontPdfPage": 4,
+      "backPdfPage": 4,
+      "teacherAnswerPage": 10
+    },
+    {
+      "id": "CAP-003",
+      "revision": 1,
+      "kind": "Puzzle",
+      "source": "content/puzzles/CAP-003.json",
+      "sourceSha256": "092eb801f433d09ad685e1d0718151eea40b41bcdc4765cba639d85d999a4682",
+      "diagram": "content/artwork/CAP-003.svg",
+      "diagramSha256": "3955600ae8b32c1c8c85d7232a9459db18f88e60f9dd89e474fcd9d1c4e292a5",
+      "readingAnswer": "content/print/T09_答案册.md",
+      "microLessonReferences": [],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CAP-003",
+            "content/t09/pedagogy.json: CAP-003"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CAP-003",
+            "content/t09/pedagogy.json: CAP-003"
+          ]
+        },
+        "solutionChecked": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CAP-003",
+            "content/t09/pedagogy.json: CAP-003"
+          ]
+        },
+        "externalReferenceChecked": {
+          "status": "passed",
+          "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CAP-003",
+            "content/t09/pedagogy.json: CAP-003",
+            "content/t09/SOURCES.md"
+          ]
+        },
+        "modelChecked": {
+          "status": "passed",
+          "method": "Authored reasoning + explicit finite scope, not human review",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CAP-003",
+            "content/t09/pedagogy.json: CAP-003"
+          ]
+        },
+        "humanReviewed": null
+      },
+      "humanReviewed": null,
+      "cardFront": "materials/challenge-cards/editable/front/CAP-003-front.svg",
+      "cardBack": "materials/challenge-cards/editable/back/CAP-003-back.svg",
+      "frontPdfPage": 4,
+      "backPdfPage": 4,
+      "teacherAnswerPage": 11
+    },
+    {
+      "id": "CAP-004",
+      "revision": 1,
+      "kind": "Puzzle",
+      "source": "content/puzzles/CAP-004.json",
+      "sourceSha256": "2f598b1d4a5d70b283bd0d4a2bd5728742c6a2b5c103de46e208409e5257a700",
+      "diagram": "content/artwork/CAP-004.svg",
+      "diagramSha256": "d241e4ac26275f782e9f10c9031e0c2a6a571408c12b4a28cd84fe65739ab8a7",
+      "readingAnswer": "content/print/T09_答案册.md",
+      "microLessonReferences": [],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CAP-004",
+            "content/t09/pedagogy.json: CAP-004"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CAP-004",
+            "content/t09/pedagogy.json: CAP-004"
+          ]
+        },
+        "solutionChecked": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CAP-004",
+            "content/t09/pedagogy.json: CAP-004"
+          ]
+        },
+        "externalReferenceChecked": {
+          "status": "passed",
+          "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CAP-004",
+            "content/t09/pedagogy.json: CAP-004",
+            "content/t09/SOURCES.md"
+          ]
+        },
+        "modelChecked": {
+          "status": "passed",
+          "method": "Authored reasoning + explicit finite scope, not human review",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CAP-004",
+            "content/t09/pedagogy.json: CAP-004"
+          ]
+        },
+        "humanReviewed": null
+      },
+      "humanReviewed": null,
+      "cardFront": "materials/challenge-cards/editable/front/CAP-004-front.svg",
+      "cardBack": "materials/challenge-cards/editable/back/CAP-004-back.svg",
+      "frontPdfPage": 5,
+      "backPdfPage": 5,
+      "teacherAnswerPage": 12
+    },
+    {
+      "id": "CAP-005",
+      "revision": 1,
+      "kind": "Puzzle",
+      "source": "content/puzzles/CAP-005.json",
+      "sourceSha256": "8272de484c2b56a7997481bb5b93c914698d6e595087850c37130eeed222e79d",
+      "diagram": "content/artwork/CAP-005.svg",
+      "diagramSha256": "35ac08d90ba0524d74c598d8dd318c3a708612eba525c5c333729d9efd19fca7",
+      "readingAnswer": "content/print/T09_答案册.md",
+      "microLessonReferences": [],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CAP-005",
+            "content/t09/pedagogy.json: CAP-005"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CAP-005",
+            "content/t09/pedagogy.json: CAP-005"
+          ]
+        },
+        "solutionChecked": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CAP-005",
+            "content/t09/pedagogy.json: CAP-005"
+          ]
+        },
+        "externalReferenceChecked": {
+          "status": "passed",
+          "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CAP-005",
+            "content/t09/pedagogy.json: CAP-005",
+            "content/t09/SOURCES.md"
+          ]
+        },
+        "modelChecked": {
+          "status": "passed",
+          "method": "Authored reasoning + explicit finite scope, not human review",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CAP-005",
+            "content/t09/pedagogy.json: CAP-005"
+          ]
+        },
+        "humanReviewed": null
+      },
+      "humanReviewed": null,
+      "cardFront": "materials/challenge-cards/editable/front/CAP-005-front.svg",
+      "cardBack": "materials/challenge-cards/editable/back/CAP-005-back.svg",
+      "frontPdfPage": 5,
+      "backPdfPage": 5,
+      "teacherAnswerPage": 13
+    },
+    {
+      "id": "CON-001",
+      "revision": 1,
+      "kind": "Puzzle",
+      "source": "content/puzzles/CON-001.json",
+      "sourceSha256": "fc6f68f65b0461f248bbacd27c9753327bc5f8d86e4763ebad2d93999bd46013",
+      "diagram": "content/artwork/CON-001.svg",
+      "diagramSha256": "2689d00864f15782f2e8f81322a32be261e0aee55d1fb5453036ef5ceac1aaa4",
+      "readingAnswer": "content/print/T09_答案册.md",
+      "microLessonReferences": [
+        {
+          "lessonId": "T22-ML-04",
+          "slide": 1,
+          "diagramKey": "CON-001",
+          "nodePath": []
+        },
+        {
+          "lessonId": "T22-ML-04",
+          "slide": 2,
+          "diagramKey": "CON-001-SUCCESS",
+          "nodePath": [
+            "l1-1"
+          ]
+        },
+        {
+          "lessonId": "T22-ML-04",
+          "slide": 3,
+          "diagramKey": "CON-001-SUCCESS",
+          "nodePath": [
+            "l1-1"
+          ]
+        },
+        {
+          "lessonId": "T22-ML-04",
+          "slide": 3,
+          "diagramKey": "CON-001-CUT",
+          "nodePath": [
+            "l2-1",
+            "l2-2"
+          ]
+        }
+      ],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CON-001",
+            "content/t09/pedagogy.json: CON-001"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CON-001",
+            "content/t09/pedagogy.json: CON-001"
+          ]
+        },
+        "solutionChecked": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CON-001",
+            "content/t09/pedagogy.json: CON-001"
+          ]
+        },
+        "externalReferenceChecked": {
+          "status": "passed",
+          "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CON-001",
+            "content/t09/pedagogy.json: CON-001",
+            "content/t09/SOURCES.md"
+          ]
+        },
+        "modelChecked": {
+          "status": "passed",
+          "method": "Authored reasoning + explicit finite scope, not human review",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CON-001",
+            "content/t09/pedagogy.json: CON-001"
+          ]
+        },
+        "humanReviewed": null
+      },
+      "humanReviewed": null,
+      "cardFront": "materials/challenge-cards/editable/front/CON-001-front.svg",
+      "cardBack": "materials/challenge-cards/editable/back/CON-001-back.svg",
+      "frontPdfPage": 6,
+      "backPdfPage": 6,
+      "teacherAnswerPage": 14
+    },
+    {
+      "id": "CON-002",
+      "revision": 1,
+      "kind": "Puzzle",
+      "source": "content/puzzles/CON-002.json",
+      "sourceSha256": "aa877a3ef8e658715254ca2efee4ea07a34593be8a5d122aecbe198bee8339c0",
+      "diagram": "content/artwork/CON-002.svg",
+      "diagramSha256": "555f8ac6058e3d0f8de6e168ea012e7d9ac1a210236e2f5afcc85b40dbd04c36",
+      "readingAnswer": "content/print/T09_答案册.md",
+      "microLessonReferences": [
+        {
+          "lessonId": "T22-ML-04",
+          "slide": 4,
+          "diagramKey": "CON-002",
+          "nodePath": []
+        }
+      ],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CON-002",
+            "content/t09/pedagogy.json: CON-002"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CON-002",
+            "content/t09/pedagogy.json: CON-002"
+          ]
+        },
+        "solutionChecked": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CON-002",
+            "content/t09/pedagogy.json: CON-002"
+          ]
+        },
+        "externalReferenceChecked": {
+          "status": "passed",
+          "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CON-002",
+            "content/t09/pedagogy.json: CON-002",
+            "content/t09/SOURCES.md"
+          ]
+        },
+        "modelChecked": {
+          "status": "passed",
+          "method": "Authored reasoning + explicit finite scope, not human review",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CON-002",
+            "content/t09/pedagogy.json: CON-002"
+          ]
+        },
+        "humanReviewed": null
+      },
+      "humanReviewed": null,
+      "cardFront": "materials/challenge-cards/editable/front/CON-002-front.svg",
+      "cardBack": "materials/challenge-cards/editable/back/CON-002-back.svg",
+      "frontPdfPage": 6,
+      "backPdfPage": 6,
+      "teacherAnswerPage": 15
+    },
+    {
+      "id": "CON-003",
+      "revision": 1,
+      "kind": "Puzzle",
+      "source": "content/puzzles/CON-003.json",
+      "sourceSha256": "7b5b4efdd21de2f90023f34b9c8dee3f1e11743c9a4c434cc03b816c16ae30c7",
+      "diagram": "content/artwork/CON-003.svg",
+      "diagramSha256": "b2ec230dc07fdf68a04ae47d38b2685c24d0a748d413dcb2b4c96edb7ab33038",
+      "readingAnswer": "content/print/T09_答案册.md",
+      "microLessonReferences": [],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CON-003",
+            "content/t09/pedagogy.json: CON-003"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CON-003",
+            "content/t09/pedagogy.json: CON-003"
+          ]
+        },
+        "solutionChecked": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CON-003",
+            "content/t09/pedagogy.json: CON-003"
+          ]
+        },
+        "externalReferenceChecked": {
+          "status": "passed",
+          "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CON-003",
+            "content/t09/pedagogy.json: CON-003",
+            "content/t09/SOURCES.md"
+          ]
+        },
+        "modelChecked": {
+          "status": "passed",
+          "method": "Authored reasoning + explicit finite scope, not human review",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CON-003",
+            "content/t09/pedagogy.json: CON-003"
+          ]
+        },
+        "humanReviewed": null
+      },
+      "humanReviewed": null,
+      "cardFront": "materials/challenge-cards/editable/front/CON-003-front.svg",
+      "cardBack": "materials/challenge-cards/editable/back/CON-003-back.svg",
+      "frontPdfPage": 7,
+      "backPdfPage": 7,
+      "teacherAnswerPage": 16
+    },
+    {
+      "id": "CON-004",
+      "revision": 1,
+      "kind": "Puzzle",
+      "source": "content/puzzles/CON-004.json",
+      "sourceSha256": "4537bfa53a47ef670c096ea5e87573ad848cd6b4f3464fbfbbb41ea302371211",
+      "diagram": "content/artwork/CON-004.svg",
+      "diagramSha256": "c7efd9352ecf6255d578d07eaf4073a1c5ac254fd970e8eed3fe7b2c80881df7",
+      "readingAnswer": "content/print/T09_答案册.md",
+      "microLessonReferences": [],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CON-004",
+            "content/t09/pedagogy.json: CON-004"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CON-004",
+            "content/t09/pedagogy.json: CON-004"
+          ]
+        },
+        "solutionChecked": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CON-004",
+            "content/t09/pedagogy.json: CON-004"
+          ]
+        },
+        "externalReferenceChecked": {
+          "status": "passed",
+          "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CON-004",
+            "content/t09/pedagogy.json: CON-004",
+            "content/t09/SOURCES.md"
+          ]
+        },
+        "modelChecked": {
+          "status": "passed",
+          "method": "Authored reasoning + explicit finite scope, not human review",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CON-004",
+            "content/t09/pedagogy.json: CON-004"
+          ]
+        },
+        "humanReviewed": null
+      },
+      "humanReviewed": null,
+      "cardFront": "materials/challenge-cards/editable/front/CON-004-front.svg",
+      "cardBack": "materials/challenge-cards/editable/back/CON-004-back.svg",
+      "frontPdfPage": 7,
+      "backPdfPage": 7,
+      "teacherAnswerPage": 17
+    },
+    {
+      "id": "CON-005",
+      "revision": 1,
+      "kind": "Puzzle",
+      "source": "content/puzzles/CON-005.json",
+      "sourceSha256": "0b5327dc3885e5f4e49308e5164e79953d1065423074a7f0b0afd8d8df24520c",
+      "diagram": "content/artwork/CON-005.svg",
+      "diagramSha256": "e24d5354b3e74bf6821604a7263d488ff4b9938e9c8786d1010c6b842d6c59e9",
+      "readingAnswer": "content/print/T09_答案册.md",
+      "microLessonReferences": [],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CON-005",
+            "content/t09/pedagogy.json: CON-005"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CON-005",
+            "content/t09/pedagogy.json: CON-005"
+          ]
+        },
+        "solutionChecked": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CON-005",
+            "content/t09/pedagogy.json: CON-005"
+          ]
+        },
+        "externalReferenceChecked": {
+          "status": "passed",
+          "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CON-005",
+            "content/t09/pedagogy.json: CON-005",
+            "content/t09/SOURCES.md"
+          ]
+        },
+        "modelChecked": {
+          "status": "passed",
+          "method": "Authored reasoning + explicit finite scope, not human review",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: CON-005",
+            "content/t09/pedagogy.json: CON-005"
+          ]
+        },
+        "humanReviewed": null
+      },
+      "humanReviewed": null,
+      "cardFront": "materials/challenge-cards/editable/front/CON-005-front.svg",
+      "cardBack": "materials/challenge-cards/editable/back/CON-005-back.svg",
+      "frontPdfPage": 8,
+      "backPdfPage": 8,
+      "teacherAnswerPage": 18
+    },
+    {
+      "id": "LIFE-001",
+      "revision": 1,
+      "kind": "Puzzle",
+      "source": "content/puzzles/LIFE-001.json",
+      "sourceSha256": "3e800b83347c378568c5b0ff8a4a96412fa44081df9711eb325cc0d1c3ca4c2f",
+      "diagram": "content/artwork/LIFE-001.svg",
+      "diagramSha256": "45e52ed412a33f747c0a78a3caf025ee3503416cf30fa682f8c6ed2ed1657c16",
+      "readingAnswer": "content/print/T09_答案册.md",
+      "microLessonReferences": [
+        {
+          "lessonId": "T22-ML-05",
+          "slide": 3,
+          "diagramKey": "LIFE-001",
+          "nodePath": []
+        }
+      ],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIFE-001",
+            "content/t09/pedagogy.json: LIFE-001"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIFE-001",
+            "content/t09/pedagogy.json: LIFE-001"
+          ]
+        },
+        "solutionChecked": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIFE-001",
+            "content/t09/pedagogy.json: LIFE-001"
+          ]
+        },
+        "externalReferenceChecked": {
+          "status": "passed",
+          "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIFE-001",
+            "content/t09/pedagogy.json: LIFE-001",
+            "content/t09/SOURCES.md"
+          ]
+        },
+        "modelChecked": {
+          "status": "passed",
+          "method": "Authored reasoning + explicit finite scope, not human review",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIFE-001",
+            "content/t09/pedagogy.json: LIFE-001"
+          ]
+        },
+        "humanReviewed": null
+      },
+      "humanReviewed": null,
+      "cardFront": "materials/challenge-cards/editable/front/LIFE-001-front.svg",
+      "cardBack": "materials/challenge-cards/editable/back/LIFE-001-back.svg",
+      "frontPdfPage": 8,
+      "backPdfPage": 8,
+      "teacherAnswerPage": 19
+    },
+    {
+      "id": "LIFE-002",
+      "revision": 1,
+      "kind": "Puzzle",
+      "source": "content/puzzles/LIFE-002.json",
+      "sourceSha256": "4a9c755d45126cef93464d2e42c74b51af63468701c701d64957910269b32526",
+      "diagram": "content/artwork/LIFE-002.svg",
+      "diagramSha256": "37eec93256e13270547197356180ec11fe9674917677ba222920e8a4bdc16be8",
+      "readingAnswer": "content/print/T09_答案册.md",
+      "microLessonReferences": [
+        {
+          "lessonId": "T22-ML-05",
+          "slide": 1,
+          "diagramKey": "LIFE-002",
+          "nodePath": []
+        },
+        {
+          "lessonId": "T22-ML-05",
+          "slide": 2,
+          "diagramKey": "LIFE-002",
+          "nodePath": []
+        },
+        {
+          "lessonId": "T22-ML-05",
+          "slide": 2,
+          "diagramKey": "LIFE-002-SUCCESS",
+          "nodePath": [
+            "l1-1"
+          ]
+        }
+      ],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIFE-002",
+            "content/t09/pedagogy.json: LIFE-002"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIFE-002",
+            "content/t09/pedagogy.json: LIFE-002"
+          ]
+        },
+        "solutionChecked": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIFE-002",
+            "content/t09/pedagogy.json: LIFE-002"
+          ]
+        },
+        "externalReferenceChecked": {
+          "status": "passed",
+          "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIFE-002",
+            "content/t09/pedagogy.json: LIFE-002",
+            "content/t09/SOURCES.md"
+          ]
+        },
+        "modelChecked": {
+          "status": "passed",
+          "method": "Authored reasoning + explicit finite scope, not human review",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIFE-002",
+            "content/t09/pedagogy.json: LIFE-002"
+          ]
+        },
+        "humanReviewed": null
+      },
+      "humanReviewed": null,
+      "cardFront": "materials/challenge-cards/editable/front/LIFE-002-front.svg",
+      "cardBack": "materials/challenge-cards/editable/back/LIFE-002-back.svg",
+      "frontPdfPage": 9,
+      "backPdfPage": 9,
+      "teacherAnswerPage": 20
+    },
+    {
+      "id": "LIFE-003",
+      "revision": 1,
+      "kind": "Puzzle",
+      "source": "content/puzzles/LIFE-003.json",
+      "sourceSha256": "1909976bc369d0434b0db10720cbb722be4cb4ca49b2781668b56cb8ee8f6ffc",
+      "diagram": "content/artwork/LIFE-003.svg",
+      "diagramSha256": "2ccc504437fb6d85adb9ef2075bd86f922769bdfd3c48d0103dc6680c28c0d90",
+      "readingAnswer": "content/print/T09_答案册.md",
+      "microLessonReferences": [
+        {
+          "lessonId": "T22-ML-05",
+          "slide": 4,
+          "diagramKey": "LIFE-003",
+          "nodePath": []
+        }
+      ],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIFE-003",
+            "content/t09/pedagogy.json: LIFE-003"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIFE-003",
+            "content/t09/pedagogy.json: LIFE-003"
+          ]
+        },
+        "solutionChecked": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIFE-003",
+            "content/t09/pedagogy.json: LIFE-003"
+          ]
+        },
+        "externalReferenceChecked": {
+          "status": "passed",
+          "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIFE-003",
+            "content/t09/pedagogy.json: LIFE-003",
+            "content/t09/SOURCES.md"
+          ]
+        },
+        "modelChecked": {
+          "status": "passed",
+          "method": "Authored reasoning + explicit finite scope, not human review",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIFE-003",
+            "content/t09/pedagogy.json: LIFE-003"
+          ]
+        },
+        "humanReviewed": null
+      },
+      "humanReviewed": null,
+      "cardFront": "materials/challenge-cards/editable/front/LIFE-003-front.svg",
+      "cardBack": "materials/challenge-cards/editable/back/LIFE-003-back.svg",
+      "frontPdfPage": 9,
+      "backPdfPage": 9,
+      "teacherAnswerPage": 21
+    },
+    {
+      "id": "LIFE-004",
+      "revision": 1,
+      "kind": "Puzzle",
+      "source": "content/puzzles/LIFE-004.json",
+      "sourceSha256": "4ae5d60c5a862d20e64e8b7ffab7659cabe13d3289f6c682d80c171f4ad849ca",
+      "diagram": "content/artwork/LIFE-004.svg",
+      "diagramSha256": "44471a992cf4f28d3b148dd21425eeca62dcbc20c83f30e097fa83e54b12c93a",
+      "readingAnswer": "content/print/T09_答案册.md",
+      "microLessonReferences": [],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIFE-004",
+            "content/t09/pedagogy.json: LIFE-004"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIFE-004",
+            "content/t09/pedagogy.json: LIFE-004"
+          ]
+        },
+        "solutionChecked": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIFE-004",
+            "content/t09/pedagogy.json: LIFE-004"
+          ]
+        },
+        "externalReferenceChecked": {
+          "status": "passed",
+          "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIFE-004",
+            "content/t09/pedagogy.json: LIFE-004",
+            "content/t09/SOURCES.md"
+          ]
+        },
+        "modelChecked": {
+          "status": "passed",
+          "method": "Authored reasoning + explicit finite scope, not human review",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIFE-004",
+            "content/t09/pedagogy.json: LIFE-004"
+          ]
+        },
+        "humanReviewed": null
+      },
+      "humanReviewed": null,
+      "cardFront": "materials/challenge-cards/editable/front/LIFE-004-front.svg",
+      "cardBack": "materials/challenge-cards/editable/back/LIFE-004-back.svg",
+      "frontPdfPage": 10,
+      "backPdfPage": 10,
+      "teacherAnswerPage": 22
+    },
+    {
+      "id": "LIFE-005",
+      "revision": 1,
+      "kind": "Puzzle",
+      "source": "content/puzzles/LIFE-005.json",
+      "sourceSha256": "506f62c281d0c1f09c8dfff2725fe0677fcfcf9ecda05615b10adeff4a968992",
+      "diagram": "content/artwork/LIFE-005.svg",
+      "diagramSha256": "70806b90cd1e8e1c03ca200204e473d31955b6c8d6000d0a121e1a32396e2799",
+      "readingAnswer": "content/print/T09_答案册.md",
+      "microLessonReferences": [
+        {
+          "lessonId": "T22-ML-05",
+          "slide": 3,
+          "diagramKey": "LIFE-005",
+          "nodePath": []
+        }
+      ],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIFE-005",
+            "content/t09/pedagogy.json: LIFE-005"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIFE-005",
+            "content/t09/pedagogy.json: LIFE-005"
+          ]
+        },
+        "solutionChecked": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIFE-005",
+            "content/t09/pedagogy.json: LIFE-005"
+          ]
+        },
+        "externalReferenceChecked": {
+          "status": "passed",
+          "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIFE-005",
+            "content/t09/pedagogy.json: LIFE-005",
+            "content/t09/SOURCES.md"
+          ]
+        },
+        "modelChecked": {
+          "status": "passed",
+          "method": "Authored reasoning + explicit finite scope, not human review",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: LIFE-005",
+            "content/t09/pedagogy.json: LIFE-005"
+          ]
+        },
+        "humanReviewed": null
+      },
+      "humanReviewed": null,
+      "cardFront": "materials/challenge-cards/editable/front/LIFE-005-front.svg",
+      "cardBack": "materials/challenge-cards/editable/back/LIFE-005-back.svg",
+      "frontPdfPage": 10,
+      "backPdfPage": 10,
+      "teacherAnswerPage": 23
+    },
+    {
+      "id": "AREA-001",
+      "revision": 1,
+      "kind": "Puzzle",
+      "source": "content/puzzles/AREA-001.json",
+      "sourceSha256": "9865586cc32ac7887e9aa4951ac9a2fbf668bbdc52e997bfeebc60b4fa73f7cd",
+      "diagram": "content/artwork/AREA-001.svg",
+      "diagramSha256": "57343fd4a65c14b19d3d98dcb595311fc279dd5da1296300b3c2b9d2984ab621",
+      "readingAnswer": "content/print/T09_答案册.md",
+      "microLessonReferences": [],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: AREA-001",
+            "content/t09/pedagogy.json: AREA-001"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: AREA-001",
+            "content/t09/pedagogy.json: AREA-001"
+          ]
+        },
+        "solutionChecked": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: AREA-001",
+            "content/t09/pedagogy.json: AREA-001"
+          ]
+        },
+        "externalReferenceChecked": {
+          "status": "passed",
+          "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: AREA-001",
+            "content/t09/pedagogy.json: AREA-001",
+            "content/t09/SOURCES.md"
+          ]
+        },
+        "modelChecked": {
+          "status": "passed",
+          "method": "Authored reasoning + explicit finite scope, not human review",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: AREA-001",
+            "content/t09/pedagogy.json: AREA-001"
+          ]
+        },
+        "humanReviewed": null
+      },
+      "humanReviewed": null,
+      "cardFront": "materials/challenge-cards/editable/front/AREA-001-front.svg",
+      "cardBack": "materials/challenge-cards/editable/back/AREA-001-back.svg",
+      "frontPdfPage": 11,
+      "backPdfPage": 11,
+      "teacherAnswerPage": 24
+    },
+    {
+      "id": "AREA-002",
+      "revision": 1,
+      "kind": "Puzzle",
+      "source": "content/puzzles/AREA-002.json",
+      "sourceSha256": "4e2e9c14b90ce85a6296c709773d97f9c2a9a9a0018c29dd7a25d21cc4953cdb",
+      "diagram": "content/artwork/AREA-002.svg",
+      "diagramSha256": "955f141be71e0f97fb3022e84abc55af7b9c7701ca9c1f3b60c88efd34008658",
+      "readingAnswer": "content/print/T09_答案册.md",
+      "microLessonReferences": [],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: AREA-002",
+            "content/t09/pedagogy.json: AREA-002"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: AREA-002",
+            "content/t09/pedagogy.json: AREA-002"
+          ]
+        },
+        "solutionChecked": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: AREA-002",
+            "content/t09/pedagogy.json: AREA-002"
+          ]
+        },
+        "externalReferenceChecked": {
+          "status": "passed",
+          "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: AREA-002",
+            "content/t09/pedagogy.json: AREA-002",
+            "content/t09/SOURCES.md"
+          ]
+        },
+        "modelChecked": {
+          "status": "passed",
+          "method": "Authored reasoning + explicit finite scope, not human review",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: AREA-002",
+            "content/t09/pedagogy.json: AREA-002"
+          ]
+        },
+        "humanReviewed": null
+      },
+      "humanReviewed": null,
+      "cardFront": "materials/challenge-cards/editable/front/AREA-002-front.svg",
+      "cardBack": "materials/challenge-cards/editable/back/AREA-002-back.svg",
+      "frontPdfPage": 11,
+      "backPdfPage": 11,
+      "teacherAnswerPage": 25
+    },
+    {
+      "id": "AREA-003",
+      "revision": 1,
+      "kind": "Puzzle",
+      "source": "content/puzzles/AREA-003.json",
+      "sourceSha256": "c77db09cb0b7697a01fb9554aaccf6990b3889d79b3846ba94e9e2cbce2264cc",
+      "diagram": "content/artwork/AREA-003.svg",
+      "diagramSha256": "f8ff6954b49d9ec9aee70d3e8a692cfb4086b4fcff5d06d05ff29d379a03f87a",
+      "readingAnswer": "content/print/T09_答案册.md",
+      "microLessonReferences": [],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: AREA-003",
+            "content/t09/pedagogy.json: AREA-003"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: AREA-003",
+            "content/t09/pedagogy.json: AREA-003"
+          ]
+        },
+        "solutionChecked": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: AREA-003",
+            "content/t09/pedagogy.json: AREA-003"
+          ]
+        },
+        "externalReferenceChecked": {
+          "status": "passed",
+          "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: AREA-003",
+            "content/t09/pedagogy.json: AREA-003",
+            "content/t09/SOURCES.md"
+          ]
+        },
+        "modelChecked": {
+          "status": "passed",
+          "method": "Authored reasoning + explicit finite scope, not human review",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: AREA-003",
+            "content/t09/pedagogy.json: AREA-003"
+          ]
+        },
+        "humanReviewed": null
+      },
+      "humanReviewed": null,
+      "cardFront": "materials/challenge-cards/editable/front/AREA-003-front.svg",
+      "cardBack": "materials/challenge-cards/editable/back/AREA-003-back.svg",
+      "frontPdfPage": 12,
+      "backPdfPage": 12,
+      "teacherAnswerPage": 26
+    },
+    {
+      "id": "AREA-004",
+      "revision": 1,
+      "kind": "Puzzle",
+      "source": "content/puzzles/AREA-004.json",
+      "sourceSha256": "2129c1b57829c623de628c0bcf203025c317c380a75bc09dab6c8ecf2f191687",
+      "diagram": "content/artwork/AREA-004.svg",
+      "diagramSha256": "1bbd6b5e5f460d57cbdfac6c5ab93c66fe2f88b48e86c02b08b4ab219b5b6ee3",
+      "readingAnswer": "content/print/T09_答案册.md",
+      "microLessonReferences": [],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: AREA-004",
+            "content/t09/pedagogy.json: AREA-004"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: AREA-004",
+            "content/t09/pedagogy.json: AREA-004"
+          ]
+        },
+        "solutionChecked": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: AREA-004",
+            "content/t09/pedagogy.json: AREA-004"
+          ]
+        },
+        "externalReferenceChecked": {
+          "status": "passed",
+          "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: AREA-004",
+            "content/t09/pedagogy.json: AREA-004",
+            "content/t09/SOURCES.md"
+          ]
+        },
+        "modelChecked": {
+          "status": "passed",
+          "method": "Authored reasoning + explicit finite scope, not human review",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: AREA-004",
+            "content/t09/pedagogy.json: AREA-004"
+          ]
+        },
+        "humanReviewed": null
+      },
+      "humanReviewed": null,
+      "cardFront": "materials/challenge-cards/editable/front/AREA-004-front.svg",
+      "cardBack": "materials/challenge-cards/editable/back/AREA-004-back.svg",
+      "frontPdfPage": 12,
+      "backPdfPage": 12,
+      "teacherAnswerPage": 27
+    },
+    {
+      "id": "AREA-005",
+      "revision": 1,
+      "kind": "Puzzle",
+      "source": "content/puzzles/AREA-005.json",
+      "sourceSha256": "32e94ab284735f1814f0acb990a4b3289c1bc4bd702f2d415470f8a5435c6554",
+      "diagram": "content/artwork/AREA-005.svg",
+      "diagramSha256": "0122c62b90170df1cb16652e82dc52f77d900ca31b5e047450d84264b8aa6487",
+      "readingAnswer": "content/print/T09_答案册.md",
+      "microLessonReferences": [
+        {
+          "lessonId": "T22-ML-03",
+          "slide": 1,
+          "diagramKey": "AREA-005",
+          "nodePath": []
+        }
+      ],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: AREA-005",
+            "content/t09/pedagogy.json: AREA-005"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: AREA-005",
+            "content/t09/pedagogy.json: AREA-005"
+          ]
+        },
+        "solutionChecked": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: AREA-005",
+            "content/t09/pedagogy.json: AREA-005"
+          ]
+        },
+        "externalReferenceChecked": {
+          "status": "passed",
+          "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: AREA-005",
+            "content/t09/pedagogy.json: AREA-005",
+            "content/t09/SOURCES.md"
+          ]
+        },
+        "modelChecked": {
+          "status": "passed",
+          "method": "Authored reasoning + explicit finite scope, not human review",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: AREA-005",
+            "content/t09/pedagogy.json: AREA-005"
+          ]
+        },
+        "humanReviewed": null
+      },
+      "humanReviewed": null,
+      "cardFront": "materials/challenge-cards/editable/front/AREA-005-front.svg",
+      "cardBack": "materials/challenge-cards/editable/back/AREA-005-back.svg",
+      "frontPdfPage": 13,
+      "backPdfPage": 13,
+      "teacherAnswerPage": 28
+    },
+    {
+      "id": "DISC-001",
+      "revision": 1,
+      "kind": "Puzzle",
+      "source": "content/puzzles/DISC-001.json",
+      "sourceSha256": "309fbe53ee677d08e50c7e1196de664f75c46921b17459a0d6b62cadce78fff1",
+      "diagram": "content/artwork/DISC-001.svg",
+      "diagramSha256": "84a39d8a9021b10e3da47bd7bb08fa1fe6c43c8852c7f6b1b70f43159f86910f",
+      "readingAnswer": "content/print/T09_答案册.md",
+      "microLessonReferences": [],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: DISC-001",
+            "content/t09/pedagogy.json: DISC-001"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: DISC-001",
+            "content/t09/pedagogy.json: DISC-001"
+          ]
+        },
+        "solutionChecked": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: DISC-001",
+            "content/t09/pedagogy.json: DISC-001"
+          ]
+        },
+        "externalReferenceChecked": {
+          "status": "passed",
+          "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: DISC-001",
+            "content/t09/pedagogy.json: DISC-001",
+            "content/t09/SOURCES.md"
+          ]
+        },
+        "modelChecked": {
+          "status": "passed",
+          "method": "Authored reasoning + explicit finite scope, not human review",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: DISC-001",
+            "content/t09/pedagogy.json: DISC-001"
+          ]
+        },
+        "humanReviewed": null
+      },
+      "humanReviewed": null,
+      "cardFront": "materials/challenge-cards/editable/front/DISC-001-front.svg",
+      "cardBack": "materials/challenge-cards/editable/back/DISC-001-back.svg",
+      "frontPdfPage": 13,
+      "backPdfPage": 13,
+      "teacherAnswerPage": 29
+    },
+    {
+      "id": "DISC-002",
+      "revision": 1,
+      "kind": "Puzzle",
+      "source": "content/puzzles/DISC-002.json",
+      "sourceSha256": "989d275f49faad33b2ef1773fd20dca7fbcae652b805c5b735031dbad428067e",
+      "diagram": "content/artwork/DISC-002.svg",
+      "diagramSha256": "c93d4f45b70bea760cad0b0d1e33cf526c2eea8d79716a85dfa462143bf55f09",
+      "readingAnswer": "content/print/T09_答案册.md",
+      "microLessonReferences": [],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: DISC-002",
+            "content/t09/pedagogy.json: DISC-002"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: DISC-002",
+            "content/t09/pedagogy.json: DISC-002"
+          ]
+        },
+        "solutionChecked": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: DISC-002",
+            "content/t09/pedagogy.json: DISC-002"
+          ]
+        },
+        "externalReferenceChecked": {
+          "status": "passed",
+          "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: DISC-002",
+            "content/t09/pedagogy.json: DISC-002",
+            "content/t09/SOURCES.md"
+          ]
+        },
+        "modelChecked": {
+          "status": "passed",
+          "method": "Authored reasoning + explicit finite scope, not human review",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: DISC-002",
+            "content/t09/pedagogy.json: DISC-002"
+          ]
+        },
+        "humanReviewed": null
+      },
+      "humanReviewed": null,
+      "cardFront": "materials/challenge-cards/editable/front/DISC-002-front.svg",
+      "cardBack": "materials/challenge-cards/editable/back/DISC-002-back.svg",
+      "frontPdfPage": 14,
+      "backPdfPage": 14,
+      "teacherAnswerPage": 30
+    },
+    {
+      "id": "DISC-003",
+      "revision": 1,
+      "kind": "Puzzle",
+      "source": "content/puzzles/DISC-003.json",
+      "sourceSha256": "aac6b4679d2517d03e9eeed1f2ffc3897c56e5651dd3176b8bf3368e0035a599",
+      "diagram": "content/artwork/DISC-003.svg",
+      "diagramSha256": "1c26e5a1c4e861e6b674736e95650ccf59f3f06515db9e71c0ae23e19b927e5b",
+      "readingAnswer": "content/print/T09_答案册.md",
+      "microLessonReferences": [],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: DISC-003",
+            "content/t09/pedagogy.json: DISC-003"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: DISC-003",
+            "content/t09/pedagogy.json: DISC-003"
+          ]
+        },
+        "solutionChecked": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: DISC-003",
+            "content/t09/pedagogy.json: DISC-003"
+          ]
+        },
+        "externalReferenceChecked": {
+          "status": "passed",
+          "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: DISC-003",
+            "content/t09/pedagogy.json: DISC-003",
+            "content/t09/SOURCES.md"
+          ]
+        },
+        "modelChecked": {
+          "status": "passed",
+          "method": "Authored reasoning + explicit finite scope, not human review",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: DISC-003",
+            "content/t09/pedagogy.json: DISC-003"
+          ]
+        },
+        "humanReviewed": null
+      },
+      "humanReviewed": null,
+      "cardFront": "materials/challenge-cards/editable/front/DISC-003-front.svg",
+      "cardBack": "materials/challenge-cards/editable/back/DISC-003-back.svg",
+      "frontPdfPage": 14,
+      "backPdfPage": 14,
+      "teacherAnswerPage": 31
+    },
+    {
+      "id": "DISC-004",
+      "revision": 1,
+      "kind": "Puzzle",
+      "source": "content/puzzles/DISC-004.json",
+      "sourceSha256": "15f35fb4a699b6c8083cb901675c9c79e17a61a0dd742bb4673067b2830ea6ac",
+      "diagram": "content/artwork/DISC-004.svg",
+      "diagramSha256": "1be0ff6739cbd2f2266063feccae56632fda8aabecf54e70a672dc613c06bbe0",
+      "readingAnswer": "content/print/T09_答案册.md",
+      "microLessonReferences": [],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: DISC-004",
+            "content/t09/pedagogy.json: DISC-004"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: DISC-004",
+            "content/t09/pedagogy.json: DISC-004"
+          ]
+        },
+        "solutionChecked": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: DISC-004",
+            "content/t09/pedagogy.json: DISC-004"
+          ]
+        },
+        "externalReferenceChecked": {
+          "status": "passed",
+          "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: DISC-004",
+            "content/t09/pedagogy.json: DISC-004",
+            "content/t09/SOURCES.md"
+          ]
+        },
+        "modelChecked": {
+          "status": "passed",
+          "method": "Authored reasoning + explicit finite scope, not human review",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: DISC-004",
+            "content/t09/pedagogy.json: DISC-004"
+          ]
+        },
+        "humanReviewed": null
+      },
+      "humanReviewed": null,
+      "cardFront": "materials/challenge-cards/editable/front/DISC-004-front.svg",
+      "cardBack": "materials/challenge-cards/editable/back/DISC-004-back.svg",
+      "frontPdfPage": 15,
+      "backPdfPage": 15,
+      "teacherAnswerPage": 32
+    },
+    {
+      "id": "DISC-005",
+      "revision": 1,
+      "kind": "Puzzle",
+      "source": "content/puzzles/DISC-005.json",
+      "sourceSha256": "5e8d7c96a647be704dcffbcd955902598a627079ae8cddb20c19036fc4b5d3bc",
+      "diagram": "content/artwork/DISC-005.svg",
+      "diagramSha256": "9c279e7335bdd5537e965eac423f892333e41a26f3730af0e195bdb5280af023",
+      "readingAnswer": "content/print/T09_答案册.md",
+      "microLessonReferences": [],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: DISC-005",
+            "content/t09/pedagogy.json: DISC-005"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: DISC-005",
+            "content/t09/pedagogy.json: DISC-005"
+          ]
+        },
+        "solutionChecked": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: DISC-005",
+            "content/t09/pedagogy.json: DISC-005"
+          ]
+        },
+        "externalReferenceChecked": {
+          "status": "passed",
+          "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: DISC-005",
+            "content/t09/pedagogy.json: DISC-005",
+            "content/t09/SOURCES.md"
+          ]
+        },
+        "modelChecked": {
+          "status": "passed",
+          "method": "Authored reasoning + explicit finite scope, not human review",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: DISC-005",
+            "content/t09/pedagogy.json: DISC-005"
+          ]
+        },
+        "humanReviewed": null
+      },
+      "humanReviewed": null,
+      "cardFront": "materials/challenge-cards/editable/front/DISC-005-front.svg",
+      "cardBack": "materials/challenge-cards/editable/back/DISC-005-back.svg",
+      "frontPdfPage": 15,
+      "backPdfPage": 15,
+      "teacherAnswerPage": 33
+    },
+    {
+      "id": "END-001",
+      "revision": 1,
+      "kind": "TerminalFixture",
+      "source": "content/endgames/END-001.json",
+      "sourceSha256": "88fe7f6226f33da4d12f0cf14121be2c4f6b4ee7da376f3d9dd77bc080b4ebed",
+      "diagram": "content/artwork/END-001.svg",
+      "diagramSha256": "1767e83e395ec501ca903abf9e77ec5692971bb135500d3ece09e273916ebe20",
+      "readingAnswer": "content/print/T09_答案册.md",
+      "microLessonReferences": [],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: END-001",
+            "content/t09/pedagogy.json: END-001"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: END-001",
+            "content/t09/pedagogy.json: END-001"
+          ]
+        },
+        "solutionChecked": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: END-001",
+            "content/t09/pedagogy.json: END-001"
+          ]
+        },
+        "externalReferenceChecked": {
+          "status": "passed",
+          "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: END-001",
+            "content/t09/pedagogy.json: END-001",
+            "content/t09/SOURCES.md"
+          ]
+        },
+        "modelChecked": {
+          "status": "passed",
+          "method": "Authored reasoning + explicit finite scope, not human review",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: END-001",
+            "content/t09/pedagogy.json: END-001"
+          ]
+        },
+        "humanReviewed": null
+      },
+      "humanReviewed": null,
+      "terminalStatus": "teaching-assumption",
+      "expectedScore": {
+        "blackStones": 8,
+        "whiteStones": 13,
+        "blackTerritory": [
+          {
+            "row": 0,
+            "col": 1
+          },
+          {
+            "row": 0,
+            "col": 3
+          }
+        ],
+        "whiteTerritory": [
+          {
+            "row": 4,
+            "col": 1
+          },
+          {
+            "row": 4,
+            "col": 3
+          }
+        ],
+        "neutralPoints": [],
+        "komi": 0,
+        "blackTotal": 10,
+        "whiteTotal": 15,
+        "difference": -5,
+        "winner": "W",
+        "basis": "teaching-assumption"
+      }
+    },
+    {
+      "id": "END-002",
+      "revision": 1,
+      "kind": "TerminalFixture",
+      "source": "content/endgames/END-002.json",
+      "sourceSha256": "fdc052992973abb3140041ea3d62d1cc9078eb4eeaf15dda2c36604af6170859",
+      "diagram": "content/artwork/END-002.svg",
+      "diagramSha256": "1ff889b484b9f517090ba35d8040fb31098cd6aaf1922a800261671ca18b3f1e",
+      "readingAnswer": "content/print/T09_答案册.md",
+      "microLessonReferences": [
+        {
+          "lessonId": "T22-ML-03",
+          "slide": 4,
+          "diagramKey": "END-002",
+          "nodePath": []
+        }
+      ],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: END-002",
+            "content/t09/pedagogy.json: END-002"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: END-002",
+            "content/t09/pedagogy.json: END-002"
+          ]
+        },
+        "solutionChecked": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: END-002",
+            "content/t09/pedagogy.json: END-002"
+          ]
+        },
+        "externalReferenceChecked": {
+          "status": "passed",
+          "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: END-002",
+            "content/t09/pedagogy.json: END-002",
+            "content/t09/SOURCES.md"
+          ]
+        },
+        "modelChecked": {
+          "status": "passed",
+          "method": "Authored reasoning + explicit finite scope, not human review",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: END-002",
+            "content/t09/pedagogy.json: END-002"
+          ]
+        },
+        "humanReviewed": null
+      },
+      "humanReviewed": null,
+      "terminalStatus": "teaching-assumption",
+      "expectedScore": {
+        "blackStones": 8,
+        "whiteStones": 8,
+        "blackTerritory": [
+          {
+            "row": 0,
+            "col": 1
+          },
+          {
+            "row": 0,
+            "col": 3
+          }
+        ],
+        "whiteTerritory": [
+          {
+            "row": 4,
+            "col": 1
+          },
+          {
+            "row": 4,
+            "col": 3
+          }
+        ],
+        "neutralPoints": [
+          {
+            "row": 2,
+            "col": 0
+          },
+          {
+            "row": 2,
+            "col": 1
+          },
+          {
+            "row": 2,
+            "col": 2
+          },
+          {
+            "row": 2,
+            "col": 3
+          },
+          {
+            "row": 2,
+            "col": 4
+          }
+        ],
+        "komi": 0,
+        "blackTotal": 10,
+        "whiteTotal": 10,
+        "difference": 0,
+        "winner": "draw",
+        "basis": "teaching-assumption"
+      }
+    },
+    {
+      "id": "END-003",
+      "revision": 1,
+      "kind": "TerminalFixture",
+      "source": "content/endgames/END-003.json",
+      "sourceSha256": "a2f8051b0b151056e18d1aec42f7499f4e6b6c8c82e30ac279e9da17ee6282f6",
+      "diagram": "content/artwork/END-003.svg",
+      "diagramSha256": "341b4611442712759332fd22a8740643525925fd5977becac1936701bbd7d1fb",
+      "readingAnswer": "content/print/T09_答案册.md",
+      "microLessonReferences": [],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: END-003",
+            "content/t09/pedagogy.json: END-003"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: END-003",
+            "content/t09/pedagogy.json: END-003"
+          ]
+        },
+        "solutionChecked": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: END-003",
+            "content/t09/pedagogy.json: END-003"
+          ]
+        },
+        "externalReferenceChecked": {
+          "status": "passed",
+          "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: END-003",
+            "content/t09/pedagogy.json: END-003",
+            "content/t09/SOURCES.md"
+          ]
+        },
+        "modelChecked": {
+          "status": "passed",
+          "method": "Authored reasoning + explicit finite scope, not human review",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: END-003",
+            "content/t09/pedagogy.json: END-003"
+          ]
+        },
+        "humanReviewed": null
+      },
+      "humanReviewed": null,
+      "terminalStatus": "teaching-assumption",
+      "expectedScore": {
+        "blackStones": 11,
+        "whiteStones": 8,
+        "blackTerritory": [
+          {
+            "row": 0,
+            "col": 0
+          },
+          {
+            "row": 0,
+            "col": 2
+          },
+          {
+            "row": 0,
+            "col": 4
+          },
+          {
+            "row": 1,
+            "col": 2
+          }
+        ],
+        "whiteTerritory": [
+          {
+            "row": 4,
+            "col": 1
+          },
+          {
+            "row": 4,
+            "col": 3
+          }
+        ],
+        "neutralPoints": [],
+        "komi": 0,
+        "blackTotal": 15,
+        "whiteTotal": 10,
+        "difference": 5,
+        "winner": "B",
+        "basis": "teaching-assumption"
+      }
+    },
+    {
+      "id": "END-004",
+      "revision": 1,
+      "kind": "TerminalFixture",
+      "source": "content/endgames/END-004.json",
+      "sourceSha256": "967208e0213d5d786b5fe1bb37600d44f8fed7fb629e4d19f6ddaa8d1248eabe",
+      "diagram": "content/artwork/END-004.svg",
+      "diagramSha256": "6d1b3e0cfc8a67c3ab95fe3e2eebeb8b6b5b1e0eb1baa754450aabf183cc1996",
+      "readingAnswer": "content/print/T09_答案册.md",
+      "microLessonReferences": [],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: END-004",
+            "content/t09/pedagogy.json: END-004"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: END-004",
+            "content/t09/pedagogy.json: END-004"
+          ]
+        },
+        "solutionChecked": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: END-004",
+            "content/t09/pedagogy.json: END-004"
+          ]
+        },
+        "externalReferenceChecked": {
+          "status": "passed",
+          "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: END-004",
+            "content/t09/pedagogy.json: END-004",
+            "content/t09/SOURCES.md"
+          ]
+        },
+        "modelChecked": {
+          "status": "passed",
+          "method": "Authored reasoning + explicit finite scope, not human review",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: END-004",
+            "content/t09/pedagogy.json: END-004"
+          ]
+        },
+        "humanReviewed": null
+      },
+      "humanReviewed": null,
+      "terminalStatus": "teaching-assumption",
+      "expectedScore": {
+        "blackStones": 8,
+        "whiteStones": 8,
+        "blackTerritory": [
+          {
+            "row": 0,
+            "col": 1
+          },
+          {
+            "row": 0,
+            "col": 3
+          }
+        ],
+        "whiteTerritory": [
+          {
+            "row": 4,
+            "col": 1
+          },
+          {
+            "row": 4,
+            "col": 3
+          }
+        ],
+        "neutralPoints": [
+          {
+            "row": 2,
+            "col": 0
+          },
+          {
+            "row": 2,
+            "col": 1
+          },
+          {
+            "row": 2,
+            "col": 2
+          },
+          {
+            "row": 2,
+            "col": 3
+          },
+          {
+            "row": 2,
+            "col": 4
+          }
+        ],
+        "komi": 0.5,
+        "blackTotal": 10,
+        "whiteTotal": 10.5,
+        "difference": -0.5,
+        "winner": "W",
+        "basis": "teaching-assumption"
+      }
+    },
+    {
+      "id": "END-005",
+      "revision": 1,
+      "kind": "TerminalFixture",
+      "source": "content/endgames/END-005.json",
+      "sourceSha256": "81dfe29d1a8ca9b96aac90cae4f3d64b23faa248ada69cd7c325798eab35a3be",
+      "diagram": "content/artwork/END-005.svg",
+      "diagramSha256": "2addc5f39e76cfc5172905133decaf145e1fbc695903308c7cdafd8251ec623e",
+      "readingAnswer": "content/print/T09_答案册.md",
+      "microLessonReferences": [],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: END-005",
+            "content/t09/pedagogy.json: END-005"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: END-005",
+            "content/t09/pedagogy.json: END-005"
+          ]
+        },
+        "solutionChecked": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: END-005",
+            "content/t09/pedagogy.json: END-005"
+          ]
+        },
+        "externalReferenceChecked": {
+          "status": "passed",
+          "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: END-005",
+            "content/t09/pedagogy.json: END-005",
+            "content/t09/SOURCES.md"
+          ]
+        },
+        "modelChecked": {
+          "status": "passed",
+          "method": "Authored reasoning + explicit finite scope, not human review",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: END-005",
+            "content/t09/pedagogy.json: END-005"
+          ]
+        },
+        "humanReviewed": null
+      },
+      "humanReviewed": null,
+      "terminalStatus": "teaching-assumption",
+      "expectedScore": {
+        "blackStones": 8,
+        "whiteStones": 13,
+        "blackTerritory": [
+          {
+            "row": 0,
+            "col": 1
+          },
+          {
+            "row": 0,
+            "col": 3
+          }
+        ],
+        "whiteTerritory": [
+          {
+            "row": 4,
+            "col": 1
+          },
+          {
+            "row": 4,
+            "col": 3
+          }
+        ],
+        "neutralPoints": [],
+        "komi": 0,
+        "blackTotal": 10,
+        "whiteTotal": 15,
+        "difference": -5,
+        "winner": "W",
+        "basis": "teaching-assumption"
+      }
+    },
+    {
+      "id": "END-006",
+      "revision": 1,
+      "kind": "TerminalFixture",
+      "source": "content/endgames/END-006.json",
+      "sourceSha256": "29bc999f1712bfe3a30c1eb41178ed0c7beae2a1749642815ace3b9662715603",
+      "diagram": "content/artwork/END-006.svg",
+      "diagramSha256": "8c7b03962a5e74a0621d3a7602c279da1b1489d019dc3458ef0eba0467a62824",
+      "readingAnswer": "content/print/T09_答案册.md",
+      "microLessonReferences": [],
+      "validation": {
+        "structure": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: END-006",
+            "content/t09/pedagogy.json: END-006"
+          ]
+        },
+        "moveLegality": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: END-006",
+            "content/t09/pedagogy.json: END-006"
+          ]
+        },
+        "solutionChecked": {
+          "status": "passed",
+          "method": "T00 structure / T01 engine / independent vectors as applicable",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: END-006",
+            "content/t09/pedagogy.json: END-006"
+          ]
+        },
+        "externalReferenceChecked": {
+          "status": "passed",
+          "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: END-006",
+            "content/t09/pedagogy.json: END-006",
+            "content/t09/SOURCES.md"
+          ]
+        },
+        "modelChecked": {
+          "status": "passed",
+          "method": "Authored reasoning + explicit finite scope, not human review",
+          "checkedAt": "2026-09-07",
+          "evidence": [
+            "content/validation/results.json: END-006",
+            "content/t09/pedagogy.json: END-006"
+          ]
+        },
+        "humanReviewed": null
+      },
+      "humanReviewed": null,
+      "terminalStatus": "unsettled",
+      "expectedScore": null
+    }
+  ],
+  "pdfs": [
+    {
+      "path": "content/print/T09_挑战卡_A4.pdf",
+      "pages": 18,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "sha256": "f6c7968e57c50d2b1c34b450a17967184624600586d4f396030d1349698acd8b"
+    },
+    {
+      "path": "content/print/T09_答案册.pdf",
+      "pages": 36,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "sha256": "f0d978e995e953c57b072aa876d98a5dd43f1a14ad8b2710bcbbf4be894f8798"
+    },
+    {
+      "path": "materials/challenge-cards/output/T21_challenge_cards_back_A4.pdf",
+      "pages": 15,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "sha256": "9b2eb6b8e1a71e5d2a7c8fd6030142f4a64df9d6207789e9b8b97549188fa5d3"
+    },
+    {
+      "path": "materials/challenge-cards/output/T21_challenge_cards_front_A4.pdf",
+      "pages": 15,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "sha256": "0e8d592efed5b19f3655f0bde77a2c403a544d0b913095bb0e4ffeaf92180467"
+    },
+    {
+      "path": "materials/challenge-cards/output/T21_duplex_test_page1.pdf",
+      "pages": 2,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "sha256": "00a0fab7c700c5f8be95b9584533eca8490234b18567056d9f91b3e3f81c9f14"
+    },
+    {
+      "path": "materials/challenge-cards/output/T21_teacher_answer_book.pdf",
+      "pages": 33,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "sha256": "683f8c60994591003040548642a04035b9cdd54faf133da5b2e25546bb08a22b"
+    },
+    {
+      "path": "materials/demo-board/assembly-guide.pdf",
+      "pages": 8,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "sha256": "c94ac0de1f73b22fd0a8191c75f964dca6d9b30485a1898eb6b7c81339086ae0"
+    },
+    {
+      "path": "materials/demo-board/board-9x9-450mm-1to1.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          450.0,
+          450.0
+        ]
+      ],
+      "sha256": "a4a1f55e40eae5c19f55d3e57b5d61a0027e6c52f56c18dea22a66d629dca7a8"
+    },
+    {
+      "path": "materials/demo-board/board-9x9-a4-tiled.pdf",
+      "pages": 6,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "sha256": "6ca917217bc6a37d6f392f771e179358bad85b445b040c043dbcce2e365abcce"
+    },
+    {
+      "path": "materials/demo-board/pieces-markers-a4.pdf",
+      "pages": 6,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "sha256": "4fc579fee0dc01f34c2c1fdfbde9a19e7e3ee65fb593d770620a2174a28bd0cd"
+    },
+    {
+      "path": "materials/demo-board/teaching-flows-a3.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          420.0,
+          297.0
+        ]
+      ],
+      "sha256": "45bc7284c293d7fe7203dfe9046693cd4e586ead3ead609be2d9dda562dfa713"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_01_screen_alternatives.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.01,
+          297.0
+        ]
+      ],
+      "sha256": "02931d183d8139cc4878325481d8dbc9487bb32800437097133d91ddd48398f6"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_02_peer_teaching.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.01,
+          297.0
+        ]
+      ],
+      "sha256": "acbb2fcf48dcc62e055ebf860fdbf339a91ad894a2c3f5ef48ee9a15ae9dad93"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_03_prepare_close.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.01,
+          297.0
+        ]
+      ],
+      "sha256": "5fa4f1b3692b9bb2ab3f705ece4e945dac3d5a494603409f36117997b7bd58b1"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_04_voluntary_feedback.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.01,
+          297.0
+        ]
+      ],
+      "sha256": "29f486c5be7aebde29c8ee5b38436a89958d4af8de3b07d23d2687d407952240"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_05_teacher_observation.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.01,
+          297.0
+        ]
+      ],
+      "sha256": "71ee7907b320e449cdccfe22c31e44d961d22134f13dfd28f50a0e6a61d8d87c"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_06_revision_record.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.01,
+          297.0
+        ]
+      ],
+      "sha256": "b9dc16548e2e84a1afaa86eb054962f8a247a3dae9230180a471882d114a9769"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_07_new_member.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.01,
+          297.0
+        ]
+      ],
+      "sha256": "6e736c7f357c9685df536ae85c625adaf460bee369f9c82994eb6495fff8588d"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_08_paper_game_log.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.01,
+          297.0
+        ]
+      ],
+      "sha256": "0162c33eff5b0d4c9500be350582725fd72adc1d84ddeec2006c838ae79a61c7"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_01.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.01,
+          297.0
+        ]
+      ],
+      "sha256": "c00cd24991b4d79683443138a39641c5d31e681e2940c70d0c6c867201584da0"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_02.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.01,
+          297.0
+        ]
+      ],
+      "sha256": "e0b3381096ee89084c91c1a8022097d38601a39f94a7f0d2003bb4b42b47ad38"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_03.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.01,
+          297.0
+        ]
+      ],
+      "sha256": "b671dbda8e6da8620039545f8b600026ad449e62062aa7ebaa8c17dfefdfec09"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_04.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.01,
+          297.0
+        ]
+      ],
+      "sha256": "0083c4d35d8490edb91206aa30194d1d2d3dae7ab34ac87c1f02643c0146ba64"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_05.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.01,
+          297.0
+        ]
+      ],
+      "sha256": "96a48a585dd6328e2ac7cc62cba8b1307a5ebf793c23d2b2031075f73f78dbfe"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_06.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.01,
+          297.0
+        ]
+      ],
+      "sha256": "6283e5236c2ee912f9d37a461c6712c4251fe52f1544a6963ffda27391def516"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_board_5x5_A4.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "sha256": "a7418661b2ab85456d8f7e61e2f8832095bef5c6e46adefce18331253c7bbbea"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_facilitator_manual.pdf",
+      "pages": 20,
+      "pageSizesMm": [
+        [
+          210.01,
+          297.0
+        ],
+        [
+          210.01,
+          297.0
+        ],
+        [
+          210.01,
+          297.0
+        ],
+        [
+          210.01,
+          297.0
+        ],
+        [
+          210.01,
+          297.0
+        ],
+        [
+          210.01,
+          297.0
+        ],
+        [
+          210.01,
+          297.0
+        ],
+        [
+          210.01,
+          297.0
+        ],
+        [
+          210.01,
+          297.0
+        ],
+        [
+          210.01,
+          297.0
+        ],
+        [
+          210.01,
+          297.0
+        ],
+        [
+          210.01,
+          297.0
+        ],
+        [
+          210.01,
+          297.0
+        ],
+        [
+          210.01,
+          297.0
+        ],
+        [
+          210.01,
+          297.0
+        ],
+        [
+          210.01,
+          297.0
+        ],
+        [
+          210.01,
+          297.0
+        ],
+        [
+          210.01,
+          297.0
+        ],
+        [
+          210.01,
+          297.0
+        ],
+        [
+          210.01,
+          297.0
+        ]
+      ],
+      "sha256": "d760330fbef9331d511b5c039b38738703ec7cf9d9fc3ce69f70154bd60ae776"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_01_screen_alternatives/T23_01_screen_alternatives.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.01,
+          297.0
+        ]
+      ],
+      "sha256": "ea1d6e3325b2344a91d80661cf53d62d8f22bf125111288ff409f30636c12367"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_02_peer_teaching/T23_02_peer_teaching.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.01,
+          297.0
+        ]
+      ],
+      "sha256": "b832adee2efb51b89ac6716733b84b605ea322c172d9b34a7350ffb1d9ef15b3"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_03_prepare_close/T23_03_prepare_close.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.01,
+          297.0
+        ]
+      ],
+      "sha256": "7c30e3a3ba7a34a535170f6071aa3a2fad595263a7a2248529dc701a56880afc"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_04_voluntary_feedback/T23_04_voluntary_feedback.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.01,
+          297.0
+        ]
+      ],
+      "sha256": "91c0a3a608c2c4ee2900e6235be64e3e2a775af170a3b9f1fbfd3d04fcff2bb7"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_05_teacher_observation/T23_05_teacher_observation.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.01,
+          297.0
+        ]
+      ],
+      "sha256": "a9f2e6b5e83179083d841b26b337192ba6d9b9a5853a839d46f7acc328330621"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_06_revision_record/T23_06_revision_record.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.01,
+          297.0
+        ]
+      ],
+      "sha256": "f5293a349c60b9c9dd19eb389c642ef3395e2cf0923e701bb90f32bc3236ef4f"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_07_new_member/T23_07_new_member.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.01,
+          297.0
+        ]
+      ],
+      "sha256": "9ea46ce2ad61b71b4f4d68091c07bf9c7121782ad54fb3c4cb30b1430daa78f6"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_08_paper_game_log/T23_08_paper_game_log.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.01,
+          297.0
+        ]
+      ],
+      "sha256": "db3d26fa182f03bb25eb456063e246d8a847519675b9df90b5b87e5eb756d525"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_activity_01/T23_activity_01.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.01,
+          297.0
+        ]
+      ],
+      "sha256": "840cbbda6ad92fc03af876a43be939c5da0be32d7fc34e7f47247ed072bb067f"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_activity_02/T23_activity_02.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.01,
+          297.0
+        ]
+      ],
+      "sha256": "2ae34a2c01d13953cbb28014a060abba2a1fe6513a9a6de8dc9cdcad206fb85a"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_activity_03/T23_activity_03.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.01,
+          297.0
+        ]
+      ],
+      "sha256": "3e466d1e42f50acefb92782c45f4dc5dd99b31ea2eaf5267ca11a85c413d79ed"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_activity_04/T23_activity_04.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.01,
+          297.0
+        ]
+      ],
+      "sha256": "4366bf8a4442b43def769c8e5ccdbb4c5ab00d877fc33d877e5bb49e0e9e76b3"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_activity_05/T23_activity_05.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.01,
+          297.0
+        ]
+      ],
+      "sha256": "1ee60fa0bf1562513430732ed67190ecf4aba4bea3423542324720b07b8192cc"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_activity_06/T23_activity_06.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.01,
+          297.0
+        ]
+      ],
+      "sha256": "09e0375098ff4c4ae5b76ba1b3b1f943bb4b6ac9a065b92a5def41ef3b48533c"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/T23_facilitator_manual.pdf",
+      "pages": 20,
+      "pageSizesMm": [
+        [
+          210.01,
+          297.0
+        ],
+        [
+          210.01,
+          297.0
+        ],
+        [
+          210.01,
+          297.0
+        ],
+        [
+          210.01,
+          297.0
+        ],
+        [
+          210.01,
+          297.0
+        ],
+        [
+          210.01,
+          297.0
+        ],
+        [
+          210.01,
+          297.0
+        ],
+        [
+          210.01,
+          297.0
+        ],
+        [
+          210.01,
+          297.0
+        ],
+        [
+          210.01,
+          297.0
+        ],
+        [
+          210.01,
+          297.0
+        ],
+        [
+          210.01,
+          297.0
+        ],
+        [
+          210.01,
+          297.0
+        ],
+        [
+          210.01,
+          297.0
+        ],
+        [
+          210.01,
+          297.0
+        ],
+        [
+          210.01,
+          297.0
+        ],
+        [
+          210.01,
+          297.0
+        ],
+        [
+          210.01,
+          297.0
+        ],
+        [
+          210.01,
+          297.0
+        ],
+        [
+          210.01,
+          297.0
+        ]
+      ],
+      "sha256": "3f0079b4e4332390b0ed24da139f46c80b36b79c88dbd1a57ee006588ba9b077"
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_All_25_r1.pdf",
+      "pages": 25,
+      "pageSizesMm": [
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ]
+      ],
+      "sha256": "4c611e790411aeac0cadae21671e3eb7856aeebb632d65564fb68d80a4ea5a05"
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_01_r1.pdf",
+      "pages": 5,
+      "pageSizesMm": [
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ]
+      ],
+      "sha256": "ef406f908219c6a63faefdc62233f2cd3f5d3d78bc3146bfe4d25f9f74938e20"
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_02_r1.pdf",
+      "pages": 5,
+      "pageSizesMm": [
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ]
+      ],
+      "sha256": "5f0a80c5eb8da4d45e390ecc6e1439558a696ab79a70cbc86f2b769debb36248"
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_03_r1.pdf",
+      "pages": 5,
+      "pageSizesMm": [
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ]
+      ],
+      "sha256": "190280b8f73110c2b87c8979eb3903cf761180978c73f75022ce40af38139aca"
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_04_r1.pdf",
+      "pages": 5,
+      "pageSizesMm": [
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ]
+      ],
+      "sha256": "3b04db7958bcfb4eb9836c408e93222b81c79c9be3bbe3447552711965cb52e2"
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_05_r1.pdf",
+      "pages": 5,
+      "pageSizesMm": [
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ],
+        [
+          338.67,
+          190.5
+        ]
+      ],
+      "sha256": "2d982f9660d3e45b658bfdb79b214f5a61a3b8f2b36d8d1f31b98156917620d2"
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_Teacher_Summary_5pages_r1.pdf",
+      "pages": 5,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "sha256": "2c56d9c457dc5e8aa7ab3135d218b2f730e1c36afb0bed5ac166e16c040d195b"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a3_coordinates.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          420.0,
+          297.0
+        ]
+      ],
+      "sha256": "95490f8b06e50c3ec9c8e84c3b4494a82e86f8c531f994109760b7741f57dfeb"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a3_coordinates_tiled-A4.pdf",
+      "pages": 2,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "sha256": "2ea8fbdf0ea528eeffd564b557ff215fbbcdc0c52cdb3235b18860d18c9e9bab"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a3_plain.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          420.0,
+          297.0
+        ]
+      ],
+      "sha256": "bcdb0523943a56ae4b7609db164732b1814a75288d7992cb14de5b77e1307158"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a3_plain_tiled-A4.pdf",
+      "pages": 2,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "sha256": "7610a319e5c770b1833cc6875646b9650a3e152c7d20a064b46f9b93f223a13c"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a4_coordinates.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "sha256": "67908975c2074a81c17957d01b70708da470768e729be9fedae2778fe8234aa1"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a4_plain.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "sha256": "77760768ca85ad06fc5d8e0eb68ed2a4bce322849e6015d434bc09a275668305"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a3_coordinates.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          420.0,
+          297.0
+        ]
+      ],
+      "sha256": "3639858c83b8e8920cdb5f3e981f9aec0ccc1d9b0dcaa9873e4317595d0b2293"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a3_coordinates_tiled-A4.pdf",
+      "pages": 2,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "sha256": "fa2b3ff14412b89d3a91a65ba62c349bfce199a588a94ecc1d9b85acbd277ffb"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a3_plain.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          420.0,
+          297.0
+        ]
+      ],
+      "sha256": "094999beae0ee9a679f8cc7f3af35e0467ba098e488e5bf2d4fa76b3a9fecaa0"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a3_plain_tiled-A4.pdf",
+      "pages": 2,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "sha256": "e4dbf83fa26889fc3e858d669b78bd7cfaa011aa0a9d305fba33524725519f7a"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a4_coordinates.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "sha256": "48e094337970c7e5694e2fae4dc3477d8478d09bcab8d70f36073912cfd16135"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a4_plain.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "sha256": "73a76c45bdf5136799135a9b00b48061f9334067c91330e1cc1f723310265ab7"
+    },
+    {
+      "path": "materials/pair-boards/output/overlays/liberty-overlay_13x13-a3.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          420.0,
+          297.0
+        ]
+      ],
+      "sha256": "e0116f5d9b477e6a69ffa585312985b34ebfa19d2af3e29c070c420802cfc60d"
+    },
+    {
+      "path": "materials/pair-boards/output/overlays/liberty-overlay_13x13-a4.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "sha256": "3facf44adf1078ed2acff7c75fb656f69eeeeb5191317d98fab0e41991ad43ae"
+    },
+    {
+      "path": "materials/pair-boards/output/overlays/liberty-overlay_9x9-a3.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          420.0,
+          297.0
+        ]
+      ],
+      "sha256": "5efd148e9563bd2ed74bc9deb7be7704a857667755d086317bda863bd1271dfc"
+    },
+    {
+      "path": "materials/pair-boards/output/overlays/liberty-overlay_9x9-a4.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "sha256": "0523e1ba2abc87e8932e34c64df4b4338260ed95dbe7525b8dc4d1ca9c301c65"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/loan-return-checklist_A4.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "sha256": "4288578866880c7c6a5ce2ea5c7bfaedb4ef32a4fea32147882dc87c48cfdba9"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_12mm_black-white_338.pdf",
+      "pages": 2,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "sha256": "5ad8988e27b26057de7539359b70743c59d0754d5a222f7189dc036b693e38e6"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_12mm_black_169.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "sha256": "95396d5bcfec94381ae4662a54d266d219dce5c8248eba39b42b672bf4d0262b"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_12mm_white_169.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "sha256": "4b85021bf549863d50e43715c252065668d6437cc45cd0d731c79c460a14d87e"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_18mm_black-white_180.pdf",
+      "pages": 2,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "sha256": "a89840bfb301ebf1206dee8a2fe9377675c2a6bed50ace1dfe3ea2054c07159d"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_18mm_black_90.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "sha256": "a88af6c334fe80659080c7f817f9e3d3a620f001fc7e92df6841310ad93cbdf0"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_18mm_white_90.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "sha256": "dd77478bceb4aed011d74df4b8de0fa54b197321d2e3b7086390415f583abab2"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/portable-kit-layout_A4.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "sha256": "0eab9787828e6270b129b4db14dcb819897f82cf62d9efc54524c25c9f407ae2"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/storage-labels_A4.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "sha256": "bed47a29e5cbbbf9d3a8d8a800ede1ef43298202220aaa5161de05b2ea44c8fa"
+    },
+    {
+      "path": "materials/pair-boards/output/print-pack_13x13-A3-extension.pdf",
+      "pages": 2,
+      "pageSizesMm": [
+        [
+          420.0,
+          297.0
+        ],
+        [
+          420.0,
+          297.0
+        ]
+      ],
+      "sha256": "4a5ecc893d2b1dc5d25324e3cb090b4d89bbbed83feeb2ed05a6104c5a9aa30e"
+    },
+    {
+      "path": "materials/pair-boards/output/print-pack_13x13-A4-small-extension.pdf",
+      "pages": 4,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "sha256": "b756d44799d02dc810ee1e69665914f29e7e16f6f54827942997c9c651fd4c1c"
+    },
+    {
+      "path": "materials/pair-boards/output/print-pack_9x9-A4-portable-kit.pdf",
+      "pages": 7,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "sha256": "83fc7e6796c08b25db12c6294dd6c5ea650d560390cc721456766cb2930daac9"
+    },
+    {
+      "path": "materials/rule-cards/pdf/01-main-front.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          148.0,
+          210.0
+        ]
+      ],
+      "sha256": "62c7fcc18e99d28ca3e613449a4574dedd26586a50e28422f7228ce08d5b5371"
+    },
+    {
+      "path": "materials/rule-cards/pdf/02-main-back.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          148.0,
+          210.0
+        ]
+      ],
+      "sha256": "ef30abc02924366ee564a4caadd81340795258a62c913719fb829015fbed9518"
+    },
+    {
+      "path": "materials/rule-cards/pdf/03-detail-front.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          148.0,
+          210.0
+        ]
+      ],
+      "sha256": "5839089cbb3bbf772b9de0001abd2da388840ed6137d0ddec1151f8964b94e2f"
+    },
+    {
+      "path": "materials/rule-cards/pdf/04-detail-back.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          148.0,
+          210.0
+        ]
+      ],
+      "sha256": "d79c584965cdff7931cf342a2ab22ce80e5e7a5a3b14eebe1bd41ce0df2b7b2c"
+    },
+    {
+      "path": "materials/rule-cards/pdf/05-score.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          148.0,
+          210.0
+        ]
+      ],
+      "sha256": "201ad8c0767aa7187d607b90a384afdc6c974db06645af5ce1c128855b91c891"
+    },
+    {
+      "path": "materials/rule-cards/pdf/06-pathway.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          148.0,
+          210.0
+        ]
+      ],
+      "sha256": "d4da6bf7d772d62477615bc1e66c953b55537327627b996c93c0b26a1d24254f"
+    },
+    {
+      "path": "materials/rule-cards/pdf/07-mini-front.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          105.0,
+          148.0
+        ]
+      ],
+      "sha256": "6f7338d48383a4d39ad24273d528b22db91ac6bae4dc403d28c61bc79cdcb5de"
+    },
+    {
+      "path": "materials/rule-cards/pdf/08-mini-back.pdf",
+      "pages": 1,
+      "pageSizesMm": [
+        [
+          105.0,
+          148.0
+        ]
+      ],
+      "sha256": "d1e0ea15c210f81fd2028ca24361c6ed7962cfef49f95148872a21223b6416ba"
+    },
+    {
+      "path": "materials/rule-cards/pdf/PRINT-A4-landscape-short-edge.pdf",
+      "pages": 6,
+      "pageSizesMm": [
+        [
+          297.0,
+          210.0
+        ],
+        [
+          297.0,
+          210.0
+        ],
+        [
+          297.0,
+          210.0
+        ],
+        [
+          297.0,
+          210.0
+        ],
+        [
+          297.0,
+          210.0
+        ],
+        [
+          297.0,
+          210.0
+        ]
+      ],
+      "sha256": "ed608bc9db4491808843ac7608bf7f8c02dec45e8f76a739fd7bf2e132c5fd55"
+    },
+    {
+      "path": "materials/rule-cards/pdf/PRINT-A4-portrait-long-edge-mini.pdf",
+      "pages": 2,
+      "pageSizesMm": [
+        [
+          210.0,
+          297.0
+        ],
+        [
+          210.0,
+          297.0
+        ]
+      ],
+      "sha256": "4aa90d2b658746c8736d0855064bc1c6dbbe6642635700eab3ac13dc4d55690e"
+    },
+    {
+      "path": "materials/rule-cards/pdf/all-independent-cards.pdf",
+      "pages": 8,
+      "pageSizesMm": [
+        [
+          148.0,
+          210.0
+        ],
+        [
+          148.0,
+          210.0
+        ],
+        [
+          148.0,
+          210.0
+        ],
+        [
+          148.0,
+          210.0
+        ],
+        [
+          148.0,
+          210.0
+        ],
+        [
+          148.0,
+          210.0
+        ],
+        [
+          105.0,
+          148.0
+        ],
+        [
+          105.0,
+          148.0
+        ]
+      ],
+      "sha256": "728a728831b2a7ed60c091555980274258d9c0ad659a96bbe04d03f5bb1902e8"
+    },
+    {
+      "path": "materials/rule-cards/pdf/capture-mini-A6-duplex.pdf",
+      "pages": 2,
+      "pageSizesMm": [
+        [
+          105.0,
+          148.0
+        ],
+        [
+          105.0,
+          148.0
+        ]
+      ],
+      "sha256": "4402fe60240903d2085ba284295a95918bc89f1c5de06e97f7cc5260d1a998c4"
+    },
+    {
+      "path": "materials/rule-cards/pdf/detailed-A5-duplex.pdf",
+      "pages": 2,
+      "pageSizesMm": [
+        [
+          148.0,
+          210.0
+        ],
+        [
+          148.0,
+          210.0
+        ]
+      ],
+      "sha256": "736c0cd25999d6ce863f1b5fdff6ab09dc0c9fb64517f952ea2b0eedd035d262"
+    },
+    {
+      "path": "materials/rule-cards/pdf/main-rule-A5-duplex.pdf",
+      "pages": 2,
+      "pageSizesMm": [
+        [
+          148.0,
+          210.0
+        ],
+        [
+          148.0,
+          210.0
+        ]
+      ],
+      "sha256": "8dbd03fc2483195eb25ec4be3e2da19f3e0f4748b7b2859f9c460d0756552759"
+    }
+  ],
+  "pptx": [
+    {
+      "path": "content/print/T09_教学演示_r1.pptx",
+      "slides": 36,
+      "notes": 36,
+      "sha256": "6e30628e59936a819c470eb5664f074b9d6eaa62c4377468859ec140571850e5"
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_All_25_r1.pptx",
+      "slides": 25,
+      "notes": 25,
+      "sha256": "415c199fc6e015b3abe7ef6673a8ff32a58a97f0b594d5f54f9f9988773a4a46"
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_01_r1.pptx",
+      "slides": 5,
+      "notes": 5,
+      "sha256": "70d6910b0f424533fe55e1eee3f79333e4e62f37d4d8ea12030305fd517d20d5"
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_02_r1.pptx",
+      "slides": 5,
+      "notes": 5,
+      "sha256": "f5e24d16ec90df6311d350ac7b1d03f2947b2ca94bf2c1c456ca4895ba80b04b"
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_03_r1.pptx",
+      "slides": 5,
+      "notes": 5,
+      "sha256": "59773f2bde2c4099a156e3c8b46a32a46c30694ba8451190a084034718d4df17"
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_04_r1.pptx",
+      "slides": 5,
+      "notes": 5,
+      "sha256": "af0821b033f244c27db4b96ff2eb5cb5d2dfc46edbd1bb74ff0ea1fee70b5f05"
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_05_r1.pptx",
+      "slides": 5,
+      "notes": 5,
+      "sha256": "ba21a6c2439cdd38d9096608fea1d172cc7cf856fdbd019127f1a7120bf5327c"
+    }
+  ],
+  "materialVersions": {
+    "T18": "0.2.0+t18.1",
+    "T19": "0.2.1-t19.2 (13路A4覆片/派生4页包r2;其余原T19r1)",
+    "T20": "0.2.0-t20.1",
+    "T21": "0.15.1-t21.1",
+    "T22": "0.15.1-t22.1",
+    "T23": "0.17.0-plus-t23.1"
+  },
+  "humanReviewed": null
+}

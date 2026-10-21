@@ -1,0 +1,1658 @@
+{
+  "schemaVersion": 1,
+  "id": "T22-RENDERED-BOARDS",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "freezeId": "GO-CLUB-FREEZE-B-20260919-01",
+  "boards": [
+    {
+      "globalSlide": 1,
+      "slideId": "T22-ML-01-S01",
+      "name": "board0",
+      "key": "LIB-001",
+      "sourceId": "LIB-001",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/content/puzzles/LIB-001.json",
+      "sourceSha256": "3c5fa560f7cd43a13e14021d5e1baa80353592e38e95e454355d4c18b6158257",
+      "nodePath": [],
+      "size": 9,
+      "x": 147,
+      "y": 226,
+      "span": 326,
+      "spacing": 40.75,
+      "stones": [
+        {
+          "row": 4,
+          "col": 4,
+          "color": "B"
+        }
+      ],
+      "targetPoints": [
+        {
+          "row": 4,
+          "col": 4
+        }
+      ],
+      "liberties": [],
+      "lastMove": null
+    },
+    {
+      "globalSlide": 2,
+      "slideId": "T22-ML-01-S02",
+      "name": "board0",
+      "key": "LIB-001",
+      "sourceId": "LIB-001",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/content/puzzles/LIB-001.json",
+      "sourceSha256": "3c5fa560f7cd43a13e14021d5e1baa80353592e38e95e454355d4c18b6158257",
+      "nodePath": [],
+      "size": 9,
+      "x": 147,
+      "y": 226,
+      "span": 326,
+      "spacing": 40.75,
+      "stones": [
+        {
+          "row": 4,
+          "col": 4,
+          "color": "B"
+        }
+      ],
+      "targetPoints": [
+        {
+          "row": 4,
+          "col": 4
+        }
+      ],
+      "liberties": [
+        {
+          "row": 3,
+          "col": 4
+        },
+        {
+          "row": 4,
+          "col": 3
+        },
+        {
+          "row": 4,
+          "col": 5
+        },
+        {
+          "row": 5,
+          "col": 4
+        }
+      ],
+      "lastMove": null
+    },
+    {
+      "globalSlide": 3,
+      "slideId": "T22-ML-01-S03",
+      "name": "board0",
+      "key": "RULE-DEMO-T20-CONNECT",
+      "sourceId": "RULE-DEMO-T20-CONNECT",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/materials/rule-cards/data/RULE-DEMO-T20-CONNECT.json",
+      "sourceSha256": "c745c0a49849f21ca32a94106865328fb005d1a75136403754b5c713a0a07127",
+      "nodePath": [],
+      "size": 5,
+      "x": 147,
+      "y": 226,
+      "span": 326,
+      "spacing": 81.5,
+      "stones": [
+        {
+          "row": 1,
+          "col": 1,
+          "color": "B"
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "color": "B"
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "color": "B"
+        }
+      ],
+      "targetPoints": [],
+      "liberties": [],
+      "lastMove": null
+    },
+    {
+      "globalSlide": 4,
+      "slideId": "T22-ML-01-S04",
+      "name": "board0",
+      "key": "LIB-004",
+      "sourceId": "LIB-004",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/content/puzzles/LIB-004.json",
+      "sourceSha256": "bbb1fb3435c71c4212ec85917bf4c7226216023ea15723b082a184c87a3cec0a",
+      "nodePath": [],
+      "size": 5,
+      "x": 147,
+      "y": 226,
+      "span": 326,
+      "spacing": 81.5,
+      "stones": [
+        {
+          "row": 1,
+          "col": 1,
+          "color": "B"
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "color": "B"
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "color": "B"
+        }
+      ],
+      "targetPoints": [
+        {
+          "row": 1,
+          "col": 1
+        },
+        {
+          "row": 2,
+          "col": 1
+        },
+        {
+          "row": 2,
+          "col": 2
+        }
+      ],
+      "liberties": [],
+      "lastMove": null
+    },
+    {
+      "globalSlide": 5,
+      "slideId": "T22-ML-01-S05",
+      "name": "board0",
+      "key": "T22-EMPTY-5",
+      "sourceId": "T22-EMPTY-5",
+      "sourceRevision": 1,
+      "sourcePath": "local-original-empty",
+      "sourceSha256": null,
+      "nodePath": [],
+      "size": 5,
+      "x": 147,
+      "y": 226,
+      "span": 326,
+      "spacing": 81.5,
+      "stones": [],
+      "targetPoints": [],
+      "liberties": [],
+      "lastMove": null
+    },
+    {
+      "globalSlide": 6,
+      "slideId": "T22-ML-02-S01",
+      "name": "board0",
+      "key": "CAP-001",
+      "sourceId": "CAP-001",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/content/puzzles/CAP-001.json",
+      "sourceSha256": "e0a0950af03ba144d4464790b1292ac4a77b7534bc5a1228b77c194862f767cd",
+      "nodePath": [],
+      "size": 5,
+      "x": 147,
+      "y": 226,
+      "span": 326,
+      "spacing": 81.5,
+      "stones": [
+        {
+          "row": 1,
+          "col": 2,
+          "color": "B"
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "color": "B"
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "color": "B"
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "color": "W"
+        }
+      ],
+      "targetPoints": [
+        {
+          "row": 2,
+          "col": 2
+        }
+      ],
+      "liberties": [],
+      "lastMove": null
+    },
+    {
+      "globalSlide": 7,
+      "slideId": "T22-ML-02-S02",
+      "name": "board0",
+      "key": "CAP-001",
+      "sourceId": "CAP-001",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/content/puzzles/CAP-001.json",
+      "sourceSha256": "e0a0950af03ba144d4464790b1292ac4a77b7534bc5a1228b77c194862f767cd",
+      "nodePath": [],
+      "size": 5,
+      "x": 236,
+      "y": 200,
+      "span": 250,
+      "spacing": 62.5,
+      "stones": [
+        {
+          "row": 1,
+          "col": 2,
+          "color": "B"
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "color": "B"
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "color": "B"
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "color": "W"
+        }
+      ],
+      "targetPoints": [
+        {
+          "row": 2,
+          "col": 2
+        }
+      ],
+      "liberties": [],
+      "lastMove": null
+    },
+    {
+      "globalSlide": 7,
+      "slideId": "T22-ML-02-S02",
+      "name": "board1",
+      "key": "CAP-001-SUCCESS",
+      "sourceId": "CAP-001",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/content/puzzles/CAP-001.json",
+      "sourceSha256": "e0a0950af03ba144d4464790b1292ac4a77b7534bc5a1228b77c194862f767cd",
+      "nodePath": [
+        "l1-1"
+      ],
+      "size": 5,
+      "x": 856,
+      "y": 200,
+      "span": 250,
+      "spacing": 62.5,
+      "stones": [
+        {
+          "row": 1,
+          "col": 2,
+          "color": "B"
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "color": "B"
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "color": "B"
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "color": "B"
+        }
+      ],
+      "targetPoints": [],
+      "liberties": [],
+      "lastMove": {
+        "row": 2,
+        "col": 3
+      }
+    },
+    {
+      "globalSlide": 8,
+      "slideId": "T22-ML-02-S03",
+      "name": "board0",
+      "key": "RULE-DEMO-T20-LEGAL-BEFORE",
+      "sourceId": "RULE-DEMO-T20-LEGAL-BEFORE",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/materials/rule-cards/data/RULE-DEMO-T20-LEGAL-BEFORE.json",
+      "sourceSha256": "4dc310af6907bf6ec3c6ff7dda5a0b5b31620c36fa90f7d6f6ac06ebbc066109",
+      "nodePath": [],
+      "size": 5,
+      "x": 236,
+      "y": 200,
+      "span": 250,
+      "spacing": 62.5,
+      "stones": [
+        {
+          "row": 0,
+          "col": 1,
+          "color": "W"
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "color": "B"
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "color": "W"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "color": "B"
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "color": "B"
+        }
+      ],
+      "targetPoints": [],
+      "liberties": [],
+      "lastMove": null
+    },
+    {
+      "globalSlide": 8,
+      "slideId": "T22-ML-02-S03",
+      "name": "board1",
+      "key": "RULE-DEMO-T20-LEGAL-AFTER",
+      "sourceId": "RULE-DEMO-T20-LEGAL-AFTER",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/materials/rule-cards/data/RULE-DEMO-T20-LEGAL-AFTER.json",
+      "sourceSha256": "a6e455337c43630ef583417544bd2e285ae507dee005acc4159149d073a6a909",
+      "nodePath": [],
+      "size": 5,
+      "x": 856,
+      "y": 200,
+      "span": 250,
+      "spacing": 62.5,
+      "stones": [
+        {
+          "row": 0,
+          "col": 0,
+          "color": "B"
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "color": "B"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "color": "B"
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "color": "B"
+        }
+      ],
+      "targetPoints": [],
+      "liberties": [],
+      "lastMove": null
+    },
+    {
+      "globalSlide": 9,
+      "slideId": "T22-ML-02-S04",
+      "name": "board0",
+      "key": "CAP-002",
+      "sourceId": "CAP-002",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/content/puzzles/CAP-002.json",
+      "sourceSha256": "f72172c4db6adf32228632d7660f174b649ae3ebbbedd9dd3f3bed1ba3e4e61e",
+      "nodePath": [],
+      "size": 5,
+      "x": 147,
+      "y": 226,
+      "span": 326,
+      "spacing": 81.5,
+      "stones": [
+        {
+          "row": 0,
+          "col": 0,
+          "color": "B"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "color": "B"
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "color": "B"
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "color": "W"
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "color": "W"
+        }
+      ],
+      "targetPoints": [
+        {
+          "row": 0,
+          "col": 1
+        },
+        {
+          "row": 0,
+          "col": 2
+        }
+      ],
+      "liberties": [],
+      "lastMove": null
+    },
+    {
+      "globalSlide": 10,
+      "slideId": "T22-ML-02-S05",
+      "name": "board0",
+      "key": "T22-EMPTY-5",
+      "sourceId": "T22-EMPTY-5",
+      "sourceRevision": 1,
+      "sourcePath": "local-original-empty",
+      "sourceSha256": null,
+      "nodePath": [],
+      "size": 5,
+      "x": 147,
+      "y": 226,
+      "span": 326,
+      "spacing": 81.5,
+      "stones": [],
+      "targetPoints": [],
+      "liberties": [],
+      "lastMove": null
+    },
+    {
+      "globalSlide": 11,
+      "slideId": "T22-ML-03-S01",
+      "name": "board0",
+      "key": "AREA-005",
+      "sourceId": "AREA-005",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/content/puzzles/AREA-005.json",
+      "sourceSha256": "32e94ab284735f1814f0acb990a4b3289c1bc4bd702f2d415470f8a5435c6554",
+      "nodePath": [],
+      "size": 5,
+      "x": 147,
+      "y": 226,
+      "span": 326,
+      "spacing": 81.5,
+      "stones": [
+        {
+          "row": 0,
+          "col": 0,
+          "color": "B"
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "color": "B"
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "color": "B"
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "color": "B"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "color": "B"
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "color": "B"
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "color": "B"
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "color": "B"
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "color": "W"
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "color": "W"
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "color": "W"
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "color": "W"
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "color": "W"
+        },
+        {
+          "row": 3,
+          "col": 0,
+          "color": "W"
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "color": "W"
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "color": "W"
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "color": "W"
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "color": "W"
+        },
+        {
+          "row": 4,
+          "col": 0,
+          "color": "W"
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "color": "W"
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "color": "W"
+        }
+      ],
+      "targetPoints": [],
+      "liberties": [],
+      "lastMove": null
+    },
+    {
+      "globalSlide": 13,
+      "slideId": "T22-ML-03-S03",
+      "name": "board0",
+      "key": "RULE-DEMO-T20-KO-BEFORE",
+      "sourceId": "RULE-DEMO-T20-KO-BEFORE",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/materials/rule-cards/data/RULE-DEMO-T20-KO-BEFORE.json",
+      "sourceSha256": "d4fe9642a299e6abb7fd957cb5d7fd0cf5f339980f812404f8f46f0dcf8d73b5",
+      "nodePath": [],
+      "size": 5,
+      "x": 236,
+      "y": 200,
+      "span": 250,
+      "spacing": 62.5,
+      "stones": [
+        {
+          "row": 1,
+          "col": 2,
+          "color": "B"
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "color": "W"
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "color": "B"
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "color": "W"
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "color": "W"
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "color": "B"
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "color": "W"
+        }
+      ],
+      "targetPoints": [],
+      "liberties": [],
+      "lastMove": null
+    },
+    {
+      "globalSlide": 13,
+      "slideId": "T22-ML-03-S03",
+      "name": "board1",
+      "key": "RULE-DEMO-T20-KO-AFTER",
+      "sourceId": "RULE-DEMO-T20-KO-AFTER",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/materials/rule-cards/data/RULE-DEMO-T20-KO-AFTER.json",
+      "sourceSha256": "89d9a194282bdbbce299ed730cec96191f7fc70c7667e1e3861122fb7b31fd43",
+      "nodePath": [],
+      "size": 5,
+      "x": 856,
+      "y": 200,
+      "span": 250,
+      "spacing": 62.5,
+      "stones": [
+        {
+          "row": 1,
+          "col": 2,
+          "color": "B"
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "color": "W"
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "color": "B"
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "color": "B"
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "color": "W"
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "color": "B"
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "color": "W"
+        }
+      ],
+      "targetPoints": [],
+      "liberties": [],
+      "lastMove": null
+    },
+    {
+      "globalSlide": 14,
+      "slideId": "T22-ML-03-S04",
+      "name": "board0",
+      "key": "END-002",
+      "sourceId": "END-002",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/content/endgames/END-002.json",
+      "sourceSha256": "fdc052992973abb3140041ea3d62d1cc9078eb4eeaf15dda2c36604af6170859",
+      "nodePath": [],
+      "size": 5,
+      "x": 147,
+      "y": 226,
+      "span": 326,
+      "spacing": 81.5,
+      "stones": [
+        {
+          "row": 0,
+          "col": 0,
+          "color": "B"
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "color": "B"
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "color": "B"
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "color": "B"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "color": "B"
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "color": "B"
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "color": "B"
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "color": "B"
+        },
+        {
+          "row": 3,
+          "col": 0,
+          "color": "W"
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "color": "W"
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "color": "W"
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "color": "W"
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "color": "W"
+        },
+        {
+          "row": 4,
+          "col": 0,
+          "color": "W"
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "color": "W"
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "color": "W"
+        }
+      ],
+      "targetPoints": [],
+      "liberties": [],
+      "lastMove": null
+    },
+    {
+      "globalSlide": 15,
+      "slideId": "T22-ML-03-S05",
+      "name": "board0",
+      "key": "T22-EMPTY-9",
+      "sourceId": "T22-EMPTY-9",
+      "sourceRevision": 1,
+      "sourcePath": "local-original-empty",
+      "sourceSha256": null,
+      "nodePath": [],
+      "size": 9,
+      "x": 147,
+      "y": 226,
+      "span": 326,
+      "spacing": 40.75,
+      "stones": [],
+      "targetPoints": [],
+      "liberties": [],
+      "lastMove": null
+    },
+    {
+      "globalSlide": 16,
+      "slideId": "T22-ML-04-S01",
+      "name": "board0",
+      "key": "CON-001",
+      "sourceId": "CON-001",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/content/puzzles/CON-001.json",
+      "sourceSha256": "fc6f68f65b0461f248bbacd27c9753327bc5f8d86e4763ebad2d93999bd46013",
+      "nodePath": [],
+      "size": 5,
+      "x": 147,
+      "y": 226,
+      "span": 326,
+      "spacing": 81.5,
+      "stones": [
+        {
+          "row": 2,
+          "col": 1,
+          "color": "B"
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "color": "B"
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "color": "W"
+        }
+      ],
+      "targetPoints": [
+        {
+          "row": 2,
+          "col": 1
+        },
+        {
+          "row": 2,
+          "col": 3
+        }
+      ],
+      "liberties": [],
+      "lastMove": null
+    },
+    {
+      "globalSlide": 17,
+      "slideId": "T22-ML-04-S02",
+      "name": "board0",
+      "key": "CON-001-SUCCESS",
+      "sourceId": "CON-001",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/content/puzzles/CON-001.json",
+      "sourceSha256": "fc6f68f65b0461f248bbacd27c9753327bc5f8d86e4763ebad2d93999bd46013",
+      "nodePath": [
+        "l1-1"
+      ],
+      "size": 5,
+      "x": 147,
+      "y": 226,
+      "span": 326,
+      "spacing": 81.5,
+      "stones": [
+        {
+          "row": 1,
+          "col": 2,
+          "color": "W"
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "color": "B"
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "color": "B"
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "color": "B"
+        }
+      ],
+      "targetPoints": [],
+      "liberties": [],
+      "lastMove": {
+        "row": 2,
+        "col": 2
+      }
+    },
+    {
+      "globalSlide": 18,
+      "slideId": "T22-ML-04-S03",
+      "name": "board0",
+      "key": "CON-001-SUCCESS",
+      "sourceId": "CON-001",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/content/puzzles/CON-001.json",
+      "sourceSha256": "fc6f68f65b0461f248bbacd27c9753327bc5f8d86e4763ebad2d93999bd46013",
+      "nodePath": [
+        "l1-1"
+      ],
+      "size": 5,
+      "x": 236,
+      "y": 200,
+      "span": 250,
+      "spacing": 62.5,
+      "stones": [
+        {
+          "row": 1,
+          "col": 2,
+          "color": "W"
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "color": "B"
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "color": "B"
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "color": "B"
+        }
+      ],
+      "targetPoints": [],
+      "liberties": [],
+      "lastMove": {
+        "row": 2,
+        "col": 2
+      }
+    },
+    {
+      "globalSlide": 18,
+      "slideId": "T22-ML-04-S03",
+      "name": "board1",
+      "key": "CON-001-CUT",
+      "sourceId": "CON-001",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/content/puzzles/CON-001.json",
+      "sourceSha256": "fc6f68f65b0461f248bbacd27c9753327bc5f8d86e4763ebad2d93999bd46013",
+      "nodePath": [
+        "l2-1",
+        "l2-2"
+      ],
+      "size": 5,
+      "x": 856,
+      "y": 200,
+      "span": 250,
+      "spacing": 62.5,
+      "stones": [
+        {
+          "row": 1,
+          "col": 2,
+          "color": "W"
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "color": "B"
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "color": "W"
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "color": "B"
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "color": "B"
+        }
+      ],
+      "targetPoints": [],
+      "liberties": [],
+      "lastMove": {
+        "row": 2,
+        "col": 2
+      }
+    },
+    {
+      "globalSlide": 19,
+      "slideId": "T22-ML-04-S04",
+      "name": "board0",
+      "key": "CON-002",
+      "sourceId": "CON-002",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/content/puzzles/CON-002.json",
+      "sourceSha256": "aa877a3ef8e658715254ca2efee4ea07a34593be8a5d122aecbe198bee8339c0",
+      "nodePath": [],
+      "size": 5,
+      "x": 147,
+      "y": 226,
+      "span": 326,
+      "spacing": 81.5,
+      "stones": [
+        {
+          "row": 1,
+          "col": 1,
+          "color": "B"
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "color": "B"
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "color": "W"
+        }
+      ],
+      "targetPoints": [
+        {
+          "row": 1,
+          "col": 1
+        },
+        {
+          "row": 2,
+          "col": 2
+        }
+      ],
+      "liberties": [],
+      "lastMove": null
+    },
+    {
+      "globalSlide": 20,
+      "slideId": "T22-ML-04-S05",
+      "name": "board0",
+      "key": "T22-EMPTY-9",
+      "sourceId": "T22-EMPTY-9",
+      "sourceRevision": 1,
+      "sourcePath": "local-original-empty",
+      "sourceSha256": null,
+      "nodePath": [],
+      "size": 9,
+      "x": 147,
+      "y": 226,
+      "span": 326,
+      "spacing": 40.75,
+      "stones": [],
+      "targetPoints": [],
+      "liberties": [],
+      "lastMove": null
+    },
+    {
+      "globalSlide": 21,
+      "slideId": "T22-ML-05-S01",
+      "name": "board0",
+      "key": "LIFE-002",
+      "sourceId": "LIFE-002",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/content/puzzles/LIFE-002.json",
+      "sourceSha256": "4a9c755d45126cef93464d2e42c74b51af63468701c701d64957910269b32526",
+      "nodePath": [],
+      "size": 5,
+      "x": 147,
+      "y": 226,
+      "span": 326,
+      "spacing": 81.5,
+      "stones": [
+        {
+          "row": 1,
+          "col": 2,
+          "color": "B"
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "color": "B"
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "color": "B"
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "color": "B"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "color": "W"
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "color": "W"
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "color": "W"
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "color": "W"
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "color": "W"
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "color": "W"
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "color": "W"
+        }
+      ],
+      "targetPoints": [
+        {
+          "row": 1,
+          "col": 2
+        },
+        {
+          "row": 2,
+          "col": 1
+        },
+        {
+          "row": 2,
+          "col": 3
+        }
+      ],
+      "liberties": [],
+      "lastMove": null
+    },
+    {
+      "globalSlide": 22,
+      "slideId": "T22-ML-05-S02",
+      "name": "board0",
+      "key": "LIFE-002",
+      "sourceId": "LIFE-002",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/content/puzzles/LIFE-002.json",
+      "sourceSha256": "4a9c755d45126cef93464d2e42c74b51af63468701c701d64957910269b32526",
+      "nodePath": [],
+      "size": 5,
+      "x": 236,
+      "y": 200,
+      "span": 250,
+      "spacing": 62.5,
+      "stones": [
+        {
+          "row": 1,
+          "col": 2,
+          "color": "B"
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "color": "B"
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "color": "B"
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "color": "B"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "color": "W"
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "color": "W"
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "color": "W"
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "color": "W"
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "color": "W"
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "color": "W"
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "color": "W"
+        }
+      ],
+      "targetPoints": [
+        {
+          "row": 1,
+          "col": 2
+        },
+        {
+          "row": 2,
+          "col": 1
+        },
+        {
+          "row": 2,
+          "col": 3
+        }
+      ],
+      "liberties": [],
+      "lastMove": null
+    },
+    {
+      "globalSlide": 22,
+      "slideId": "T22-ML-05-S02",
+      "name": "board1",
+      "key": "LIFE-002-SUCCESS",
+      "sourceId": "LIFE-002",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/content/puzzles/LIFE-002.json",
+      "sourceSha256": "4a9c755d45126cef93464d2e42c74b51af63468701c701d64957910269b32526",
+      "nodePath": [
+        "l1-1"
+      ],
+      "size": 5,
+      "x": 856,
+      "y": 200,
+      "span": 250,
+      "spacing": 62.5,
+      "stones": [
+        {
+          "row": 0,
+          "col": 2,
+          "color": "W"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "color": "W"
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "color": "W"
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "color": "W"
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "color": "W"
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "color": "W"
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "color": "W"
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "color": "B"
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "color": "W"
+        }
+      ],
+      "targetPoints": [],
+      "liberties": [],
+      "lastMove": {
+        "row": 2,
+        "col": 2
+      }
+    },
+    {
+      "globalSlide": 23,
+      "slideId": "T22-ML-05-S03",
+      "name": "board0",
+      "key": "LIFE-001",
+      "sourceId": "LIFE-001",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/content/puzzles/LIFE-001.json",
+      "sourceSha256": "3e800b83347c378568c5b0ff8a4a96412fa44081df9711eb325cc0d1c3ca4c2f",
+      "nodePath": [],
+      "size": 5,
+      "x": 236,
+      "y": 200,
+      "span": 250,
+      "spacing": 62.5,
+      "stones": [
+        {
+          "row": 0,
+          "col": 0,
+          "color": "B"
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "color": "B"
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "color": "B"
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "color": "B"
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "color": "B"
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "color": "B"
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "color": "B"
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "color": "B"
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "color": "B"
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "color": "B"
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "color": "B"
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "color": "B"
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "color": "B"
+        },
+        {
+          "row": 3,
+          "col": 0,
+          "color": "W"
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "color": "W"
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "color": "W"
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "color": "W"
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "color": "W"
+        }
+      ],
+      "targetPoints": [],
+      "liberties": [],
+      "lastMove": null
+    },
+    {
+      "globalSlide": 23,
+      "slideId": "T22-ML-05-S03",
+      "name": "board1",
+      "key": "LIFE-005",
+      "sourceId": "LIFE-005",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/content/puzzles/LIFE-005.json",
+      "sourceSha256": "506f62c281d0c1f09c8dfff2725fe0677fcfcf9ecda05615b10adeff4a968992",
+      "nodePath": [],
+      "size": 5,
+      "x": 856,
+      "y": 200,
+      "span": 250,
+      "spacing": 62.5,
+      "stones": [
+        {
+          "row": 0,
+          "col": 0,
+          "color": "B"
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "color": "B"
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "color": "B"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "color": "B"
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "color": "B"
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "color": "B"
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "color": "W"
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "color": "W"
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "color": "W"
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "color": "W"
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "color": "W"
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "color": "W"
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "color": "W"
+        }
+      ],
+      "targetPoints": [],
+      "liberties": [],
+      "lastMove": null
+    },
+    {
+      "globalSlide": 24,
+      "slideId": "T22-ML-05-S04",
+      "name": "board0",
+      "key": "LIFE-003",
+      "sourceId": "LIFE-003",
+      "sourceRevision": 1,
+      "sourcePath": "assets/frozen/content/puzzles/LIFE-003.json",
+      "sourceSha256": "1909976bc369d0434b0db10720cbb722be4cb4ca49b2781668b56cb8ee8f6ffc",
+      "nodePath": [],
+      "size": 5,
+      "x": 147,
+      "y": 226,
+      "span": 326,
+      "spacing": 81.5,
+      "stones": [
+        {
+          "row": 0,
+          "col": 3,
+          "color": "B"
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "color": "B"
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "color": "B"
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "color": "B"
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "color": "B"
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "color": "W"
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "color": "W"
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "color": "W"
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "color": "W"
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "color": "W"
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "color": "W"
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "color": "W"
+        }
+      ],
+      "targetPoints": [
+        {
+          "row": 1,
+          "col": 1
+        }
+      ],
+      "liberties": [],
+      "lastMove": null
+    },
+    {
+      "globalSlide": 25,
+      "slideId": "T22-ML-05-S05",
+      "name": "board0",
+      "key": "T22-EMPTY-9",
+      "sourceId": "T22-EMPTY-9",
+      "sourceRevision": 1,
+      "sourcePath": "local-original-empty",
+      "sourceSha256": null,
+      "nodePath": [],
+      "size": 9,
+      "x": 147,
+      "y": 226,
+      "span": 326,
+      "spacing": 40.75,
+      "stones": [],
+      "targetPoints": [],
+      "liberties": [],
+      "lastMove": null
+    }
+  ]
+}

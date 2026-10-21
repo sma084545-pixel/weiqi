@@ -1,0 +1,563 @@
+{
+  "schemaVersion": 1,
+  "id": "T19-FILE-MANIFEST",
+  "revision": 2,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "baseVersion": "0.2.0",
+  "resultVersion": "0.2.1-t19.2",
+  "selfHashExcluded": true,
+  "fileCount": 110,
+  "files": [
+    {
+      "path": "handoff/T19.md",
+      "bytes": 5326,
+      "sha256": "eebd06f6689fc89d20c5d83d6ae9daae2bd596b0caff01b396064ab79c19ef87"
+    },
+    {
+      "path": "materials/pair-boards/CHANGELOG.md",
+      "bytes": 1044,
+      "sha256": "340fecdc5c42094fd23751c0294cf431a25088876dab3c200cb993a46b159d89"
+    },
+    {
+      "path": "materials/pair-boards/PRINT_AND_ASSEMBLY.md",
+      "bytes": 3764,
+      "sha256": "257c11b75aaa95837d451527f65fd705e2a687cd9a3e4fa43940027146b563d0"
+    },
+    {
+      "path": "materials/pair-boards/README.md",
+      "bytes": 4913,
+      "sha256": "c9029f73ba3a0ae89f5cb1b9c13bbdeeca407eb1d916bec463942e63e17382ee"
+    },
+    {
+      "path": "materials/pair-boards/SOURCES.md",
+      "bytes": 1897,
+      "sha256": "ba0186f03400581d734bca86a97e028c465277b09c9dbdf8ef1368d69fa28206"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a3_coordinates.pdf",
+      "bytes": 58337,
+      "sha256": "95490f8b06e50c3ec9c8e84c3b4494a82e86f8c531f994109760b7741f57dfeb"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a3_coordinates.svg",
+      "bytes": 17919,
+      "sha256": "3745bac0e940181e287c347c5bbc27bb233a999a524ede8773d01e965a0b2f95"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a3_coordinates_tiled-A4.pdf",
+      "bytes": 66202,
+      "sha256": "2ea8fbdf0ea528eeffd564b557ff215fbbcdc0c52cdb3235b18860d18c9e9bab"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a3_plain.pdf",
+      "bytes": 58772,
+      "sha256": "bcdb0523943a56ae4b7609db164732b1814a75288d7992cb14de5b77e1307158"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a3_plain.svg",
+      "bytes": 10337,
+      "sha256": "ccd6b862ae4064a854ef2c73df239f214d4671cbadf54200ccf37fd71762ce73"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a3_plain_tiled-A4.pdf",
+      "bytes": 65846,
+      "sha256": "7610a319e5c770b1833cc6875646b9650a3e152c7d20a064b46f9b93f223a13c"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a4_coordinates.pdf",
+      "bytes": 54968,
+      "sha256": "67908975c2074a81c17957d01b70708da470768e729be9fedae2778fe8234aa1"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a4_coordinates.svg",
+      "bytes": 16530,
+      "sha256": "5dbc5d51075982ddee8dfbac2da057a495246d7ab462e8baeb63a8f73148f5bc"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a4_plain.pdf",
+      "bytes": 54645,
+      "sha256": "77760768ca85ad06fc5d8e0eb68ed2a4bce322849e6015d434bc09a275668305"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a4_plain.svg",
+      "bytes": 9072,
+      "sha256": "58b69f76d61549ad3bded6c6393093d98a2dfaa72a66ae46a9a6ba5d5805587f"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a3_coordinates.pdf",
+      "bytes": 58067,
+      "sha256": "3639858c83b8e8920cdb5f3e981f9aec0ccc1d9b0dcaa9873e4317595d0b2293"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a3_coordinates.svg",
+      "bytes": 14616,
+      "sha256": "8be354920c81bb56ad08cc01426d873bbd0f19643f62e2cfdd81e7b806b266aa"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a3_coordinates_tiled-A4.pdf",
+      "bytes": 65680,
+      "sha256": "fa2b3ff14412b89d3a91a65ba62c349bfce199a588a94ecc1d9b85acbd277ffb"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a3_plain.pdf",
+      "bytes": 58667,
+      "sha256": "094999beae0ee9a679f8cc7f3af35e0467ba098e488e5bf2d4fa76b3a9fecaa0"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a3_plain.svg",
+      "bytes": 9334,
+      "sha256": "ba4cc1e0610914d1825f3b1f8db8abc26e307cca47b00f64a011e142d0e6fbf7"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a3_plain_tiled-A4.pdf",
+      "bytes": 65665,
+      "sha256": "e4dbf83fa26889fc3e858d669b78bd7cfaa011aa0a9d305fba33524725519f7a"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a4_coordinates.pdf",
+      "bytes": 54675,
+      "sha256": "48e094337970c7e5694e2fae4dc3477d8478d09bcab8d70f36073912cfd16135"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a4_coordinates.svg",
+      "bytes": 13231,
+      "sha256": "d101a47d210d6e77cb7c584ee6a7e0454af6f2bd5e4874647bc046ce771d9fe0"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a4_plain.pdf",
+      "bytes": 54513,
+      "sha256": "73a76c45bdf5136799135a9b00b48061f9334067c91330e1cc1f723310265ab7"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a4_plain.svg",
+      "bytes": 8071,
+      "sha256": "06d453d68b792fae5c9c1913bcde498f63ec101bbf0399a8072a9fa43ad02fd0"
+    },
+    {
+      "path": "materials/pair-boards/output/overlays/liberty-overlay_13x13-a3.pdf",
+      "bytes": 55198,
+      "sha256": "e0116f5d9b477e6a69ffa585312985b34ebfa19d2af3e29c070c420802cfc60d"
+    },
+    {
+      "path": "materials/pair-boards/output/overlays/liberty-overlay_13x13-a3.svg",
+      "bytes": 7644,
+      "sha256": "64b9dc7bd9abc5e880b999239f27526791409f2c491d876616b466ca86ba97bf"
+    },
+    {
+      "path": "materials/pair-boards/output/overlays/liberty-overlay_13x13-a4.pdf",
+      "bytes": 59689,
+      "sha256": "3facf44adf1078ed2acff7c75fb656f69eeeeb5191317d98fab0e41991ad43ae"
+    },
+    {
+      "path": "materials/pair-boards/output/overlays/liberty-overlay_13x13-a4.svg",
+      "bytes": 6773,
+      "sha256": "e5886fac893100de63fb0b017cbd8d2081dd86b1a9200dcb6be475b68f81c5f6"
+    },
+    {
+      "path": "materials/pair-boards/output/overlays/liberty-overlay_9x9-a3.pdf",
+      "bytes": 55200,
+      "sha256": "5efd148e9563bd2ed74bc9deb7be7704a857667755d086317bda863bd1271dfc"
+    },
+    {
+      "path": "materials/pair-boards/output/overlays/liberty-overlay_9x9-a3.svg",
+      "bytes": 7639,
+      "sha256": "c9630f541d406703a07d837be06cd0b22ad83070a0bc397660540f1fb904d9a5"
+    },
+    {
+      "path": "materials/pair-boards/output/overlays/liberty-overlay_9x9-a4.pdf",
+      "bytes": 59689,
+      "sha256": "0523e1ba2abc87e8932e34c64df4b4338260ed95dbe7525b8dc4d1ca9c301c65"
+    },
+    {
+      "path": "materials/pair-boards/output/overlays/liberty-overlay_9x9-a4.svg",
+      "bytes": 6766,
+      "sha256": "38d8c610dc49b43472d8470c8812c45acafe814721fb7fad819ab17eec3ee06f"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/loan-return-checklist_A4.pdf",
+      "bytes": 70225,
+      "sha256": "4288578866880c7c6a5ce2ea5c7bfaedb4ef32a4fea32147882dc87c48cfdba9"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/loan-return-checklist_A4.svg",
+      "bytes": 9077,
+      "sha256": "0378377a0dc52eebdc28e5624e09a31a91160a4f25f8460c552cdc13c67bdf76"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_12mm_black-white_338.pdf",
+      "bytes": 161382,
+      "sha256": "5ad8988e27b26057de7539359b70743c59d0754d5a222f7189dc036b693e38e6"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_12mm_black_169.pdf",
+      "bytes": 81503,
+      "sha256": "95396d5bcfec94381ae4662a54d266d219dce5c8248eba39b42b672bf4d0262b"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_12mm_black_169.svg",
+      "bytes": 51552,
+      "sha256": "1d8fc8df2689f796eab6a66a096251591fcab43ed0e823d7529d9c9a8596253e"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_12mm_white_169.pdf",
+      "bytes": 81232,
+      "sha256": "4b85021bf549863d50e43715c252065668d6437cc45cd0d731c79c460a14d87e"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_12mm_white_169.svg",
+      "bytes": 51552,
+      "sha256": "a61ef9c84917173e8fa2137b772e9e86227a7c53f507f897e653b82289ae1910"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_18mm_black-white_180.pdf",
+      "bytes": 152989,
+      "sha256": "a89840bfb301ebf1206dee8a2fe9377675c2a6bed50ace1dfe3ea2054c07159d"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_18mm_black_90.pdf",
+      "bytes": 77297,
+      "sha256": "a88af6c334fe80659080c7f817f9e3d3a620f001fc7e92df6841310ad93cbdf0"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_18mm_black_90.svg",
+      "bytes": 30091,
+      "sha256": "524d7ceb2cbe5fd32731cf51866132c00ec7bc927c7aa2527986178571c09083"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_18mm_white_90.pdf",
+      "bytes": 77055,
+      "sha256": "dd77478bceb4aed011d74df4b8de0fa54b197321d2e3b7086390415f583abab2"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_18mm_white_90.svg",
+      "bytes": 30091,
+      "sha256": "021a62d9c7547f1949aa449714d20cdeb8031ab3bc3fedc7d981c29d9b881811"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/portable-kit-layout_A4.pdf",
+      "bytes": 93641,
+      "sha256": "0eab9787828e6270b129b4db14dcb819897f82cf62d9efc54524c25c9f407ae2"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/portable-kit-layout_A4.svg",
+      "bytes": 9351,
+      "sha256": "e71003fd3bb463fd670274a3a38d9af15f816cc1c5b2440d1f55afa1382e65f5"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/storage-labels_A4.pdf",
+      "bytes": 69347,
+      "sha256": "bed47a29e5cbbbf9d3a8d8a800ede1ef43298202220aaa5161de05b2ea44c8fa"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/storage-labels_A4.svg",
+      "bytes": 9802,
+      "sha256": "3e07fb532be0071f8ffb6d12bfddd70d4568af1088c685e044953c1e00d79510"
+    },
+    {
+      "path": "materials/pair-boards/output/print-pack_13x13-A3-extension.pdf",
+      "bytes": 112085,
+      "sha256": "4a5ecc893d2b1dc5d25324e3cb090b4d89bbbed83feeb2ed05a6104c5a9aa30e"
+    },
+    {
+      "path": "materials/pair-boards/output/print-pack_13x13-A4-small-extension.pdf",
+      "bytes": 274083,
+      "sha256": "b756d44799d02dc810ee1e69665914f29e7e16f6f54827942997c9c651fd4c1c"
+    },
+    {
+      "path": "materials/pair-boards/output/print-pack_9x9-A4-portable-kit.pdf",
+      "bytes": 495717,
+      "sha256": "83fc7e6796c08b25db12c6294dd6c5ea650d560390cc721456766cb2930daac9"
+    },
+    {
+      "path": "materials/pair-boards/qa/PRINT_AND_GEOMETRY_ACCEPTANCE.md",
+      "bytes": 5403,
+      "sha256": "59f16c15eea2338d824d8b677df5a777026d85fd66161157e56b6c690cefc956"
+    },
+    {
+      "path": "materials/pair-boards/qa/contact-sheets/boards-color.png",
+      "bytes": 188006,
+      "sha256": "25a1fa5a69f35c8bd1684271e4a14d705e3afc9c0dca01fa82c5d6c469a93d6f"
+    },
+    {
+      "path": "materials/pair-boards/qa/contact-sheets/boards-grayscale.png",
+      "bytes": 173544,
+      "sha256": "d05d913527e030fd6329da70e13fe1b6ada15d9b500ecd6d3bd48085322b94cf"
+    },
+    {
+      "path": "materials/pair-boards/qa/contact-sheets/overlays-color.png",
+      "bytes": 23755,
+      "sha256": "999a9b4206a8b660d97e08926b0d923e6d78361161da19d2a8843eafa7346ddb"
+    },
+    {
+      "path": "materials/pair-boards/qa/contact-sheets/overlays-grayscale.png",
+      "bytes": 23355,
+      "sha256": "8c8fdec11cfde766ef6c4caec78c9c6c654fd7e182e44b5725ae4ff6199eb421"
+    },
+    {
+      "path": "materials/pair-boards/qa/contact-sheets/portable-kit-color.png",
+      "bytes": 362358,
+      "sha256": "3b615def2f5704ed63cbba384205d83a65a5daff3b97e8d1ddcea6698d864c9c"
+    },
+    {
+      "path": "materials/pair-boards/qa/contact-sheets/portable-kit-grayscale.png",
+      "bytes": 360755,
+      "sha256": "a09139b1a715402c5f1266182fd8dd3d4b8dbf4171b001ce6077404c4a32137f"
+    },
+    {
+      "path": "materials/pair-boards/qa/contact-sheets/print-packs-color.png",
+      "bytes": 337224,
+      "sha256": "c2f52b5ee7406cbbedab41ee5242b987c7cd02c489555c29af40d42c4699efdb"
+    },
+    {
+      "path": "materials/pair-boards/qa/contact-sheets/print-packs-grayscale.png",
+      "bytes": 328742,
+      "sha256": "03beba4b282771a7a70347bb91ac1f3d0a7961baa909c803660ffc58ae17d172"
+    },
+    {
+      "path": "materials/pair-boards/qa/geometry-report.json",
+      "bytes": 11329,
+      "sha256": "ac9fc2785e04b2e83bb13d1ec55243ddeabc7fd8d795920ef672f758c14386f8"
+    },
+    {
+      "path": "materials/pair-boards/qa/render-manifest.json",
+      "bytes": 7335,
+      "sha256": "a9d784d8541441d4d487d4748e1927c7d2292478b39981f8899e66952404eaae"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_13x13-a3_coordinates-1.png",
+      "bytes": 82620,
+      "sha256": "fae297aeb5a6d00554e614d3874cac263f55f9926c638f34c6ab07c8fa057ef8"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_13x13-a3_coordinates_tiled-A4-1.png",
+      "bytes": 30420,
+      "sha256": "90233d4c49431b408040fd93eddf0140ff17fe1918a4c1e9a0503aa832d663bd"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_13x13-a3_coordinates_tiled-A4-2.png",
+      "bytes": 77862,
+      "sha256": "e0e43b512e71080c8518e7d443a07ea3ee6dc0e80048db20df3ef4cb73626b31"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_13x13-a3_plain-1.png",
+      "bytes": 71052,
+      "sha256": "7be743b7c9229279c1be1d34a5949858b771e565e39dd0f2c1b8dd88edef4dff"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_13x13-a3_plain_tiled-A4-1.png",
+      "bytes": 21884,
+      "sha256": "4e0c5ff542b6e8ea55b4b1997825a3de83caf2c0c8089d8b2b39f616ef25d2f2"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_13x13-a3_plain_tiled-A4-2.png",
+      "bytes": 74535,
+      "sha256": "588347aeb280913652f6c69e728642de4ce7d803dd65b2fa6b0ea7a0285a076b"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_13x13-a4_coordinates-1.png",
+      "bytes": 62058,
+      "sha256": "0031af15176c7c6137c01055f4271cab8eaeacbe44c5f14a3024026d19a490f0"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_13x13-a4_plain-1.png",
+      "bytes": 50521,
+      "sha256": "17f466ec643d57f601236c53ffcb0596bebda197b32dde35920abe224ee0ee74"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_9x9-a3_coordinates-1.png",
+      "bytes": 75467,
+      "sha256": "f0643740d81250f5f4483f5dfdd25bbf0bc05c526a285ef34d01955efeb152fd"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_9x9-a3_coordinates_tiled-A4-1.png",
+      "bytes": 27898,
+      "sha256": "8f1ba52aa4fe6abd7d79c0b3f80866ca7dc0f2956dec66fa77e36efd6da4c872"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_9x9-a3_coordinates_tiled-A4-2.png",
+      "bytes": 75525,
+      "sha256": "d4b5e41687bbc8ccb11378b1b428635f6567dc1d7dc2377228634a83ae9982cb"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_9x9-a3_plain-1.png",
+      "bytes": 70342,
+      "sha256": "9ef696cf55791f78118098dd117a6bdb4c191ee52991906d81726475bcde70a6"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_9x9-a3_plain_tiled-A4-1.png",
+      "bytes": 21568,
+      "sha256": "b57238be7d65a93f2a8d9b857d856dd05ea9894c69eeee28d7cdb6b49a88bf68"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_9x9-a3_plain_tiled-A4-2.png",
+      "bytes": 73326,
+      "sha256": "b8d9b34de246e04601ea932a953378d8f2e8850eda3367ef05a695774604b339"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_9x9-a4_coordinates-1.png",
+      "bytes": 58032,
+      "sha256": "950407948922d8b92b2fc3e3a04730b44c57a3811bc944f0f174407d93f1f4fb"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_9x9-a4_plain-1.png",
+      "bytes": 49688,
+      "sha256": "c57f9835d6f9b331a473eec26842e4e3cf5897edc25e524a224a101f448b380d"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/overlays/liberty-overlay_13x13-a3-1.png",
+      "bytes": 59712,
+      "sha256": "00961118bf057738df29ff045bc12321f9a02df144b21c73f349f19d767217b4"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/overlays/liberty-overlay_13x13-a4-1.png",
+      "bytes": 56857,
+      "sha256": "b154a7adc7e128e296703a738a5a9eaaa750e33757c8a3fdfa0d7d0642424665"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/overlays/liberty-overlay_9x9-a3-1.png",
+      "bytes": 59665,
+      "sha256": "1c603fdd55e0b07032920ff9fb54776c7b27dd9c613c85ef8300f875c534b7e2"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/overlays/liberty-overlay_9x9-a4-1.png",
+      "bytes": 57082,
+      "sha256": "62a718f4d98ddeaa555f0b2ee86970905ab3ce6ab2ac6b8c647d1541f72cad3f"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/portable-kit/loan-return-checklist_A4-1.png",
+      "bytes": 124188,
+      "sha256": "04f261b25ffb7e2a2ff10bdccf128171e1569ca851b81d7b89d25811e1aa36a3"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/portable-kit/paper-stones_12mm_black-white_338-1.png",
+      "bytes": 286724,
+      "sha256": "3152418fc37353a30e1a647a4bf1ce50b09c15c8c226fe2a41e5a69e0d25ee26"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/portable-kit/paper-stones_12mm_black-white_338-2.png",
+      "bytes": 216020,
+      "sha256": "7ac9578a4ea788bace7e81f2c3bdf50de856988c362717439229411e1ff13be8"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/portable-kit/paper-stones_12mm_black_169-1.png",
+      "bytes": 286724,
+      "sha256": "3152418fc37353a30e1a647a4bf1ce50b09c15c8c226fe2a41e5a69e0d25ee26"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/portable-kit/paper-stones_12mm_white_169-1.png",
+      "bytes": 216020,
+      "sha256": "7ac9578a4ea788bace7e81f2c3bdf50de856988c362717439229411e1ff13be8"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/portable-kit/paper-stones_18mm_black-white_180-1.png",
+      "bytes": 254882,
+      "sha256": "36239966c0c0767036ef947a6ef4fe3e07c8ec12cd4225abb49b2d4b1e041550"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/portable-kit/paper-stones_18mm_black-white_180-2.png",
+      "bytes": 201377,
+      "sha256": "3b0616912000124153686660af1c24cbb3a9b3d3f45a84902f3e09e7a3e1c186"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/portable-kit/paper-stones_18mm_black_90-1.png",
+      "bytes": 254882,
+      "sha256": "36239966c0c0767036ef947a6ef4fe3e07c8ec12cd4225abb49b2d4b1e041550"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/portable-kit/paper-stones_18mm_white_90-1.png",
+      "bytes": 201377,
+      "sha256": "3b0616912000124153686660af1c24cbb3a9b3d3f45a84902f3e09e7a3e1c186"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/portable-kit/portable-kit-layout_A4-1.png",
+      "bytes": 109543,
+      "sha256": "63be8234db7c72ce42f9dfc4554e10c2b997e49f13e33a8034e85f2efaf94587"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/portable-kit/storage-labels_A4-1.png",
+      "bytes": 108491,
+      "sha256": "da420b97a0c36f1806e26fb1f22cacee4ff9a838303d0f6d5d1969d01b00df20"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/print-packs/print-pack_13x13-A3-extension-1.png",
+      "bytes": 82620,
+      "sha256": "fae297aeb5a6d00554e614d3874cac263f55f9926c638f34c6ab07c8fa057ef8"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/print-packs/print-pack_13x13-A3-extension-2.png",
+      "bytes": 59712,
+      "sha256": "00961118bf057738df29ff045bc12321f9a02df144b21c73f349f19d767217b4"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/print-packs/print-pack_13x13-A4-small-extension-1.png",
+      "bytes": 62058,
+      "sha256": "0031af15176c7c6137c01055f4271cab8eaeacbe44c5f14a3024026d19a490f0"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/print-packs/print-pack_13x13-A4-small-extension-2.png",
+      "bytes": 56857,
+      "sha256": "b154a7adc7e128e296703a738a5a9eaaa750e33757c8a3fdfa0d7d0642424665"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/print-packs/print-pack_13x13-A4-small-extension-3.png",
+      "bytes": 286724,
+      "sha256": "3152418fc37353a30e1a647a4bf1ce50b09c15c8c226fe2a41e5a69e0d25ee26"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/print-packs/print-pack_13x13-A4-small-extension-4.png",
+      "bytes": 216020,
+      "sha256": "7ac9578a4ea788bace7e81f2c3bdf50de856988c362717439229411e1ff13be8"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/print-packs/print-pack_9x9-A4-portable-kit-1.png",
+      "bytes": 58032,
+      "sha256": "950407948922d8b92b2fc3e3a04730b44c57a3811bc944f0f174407d93f1f4fb"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/print-packs/print-pack_9x9-A4-portable-kit-2.png",
+      "bytes": 57082,
+      "sha256": "62a718f4d98ddeaa555f0b2ee86970905ab3ce6ab2ac6b8c647d1541f72cad3f"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/print-packs/print-pack_9x9-A4-portable-kit-3.png",
+      "bytes": 254882,
+      "sha256": "36239966c0c0767036ef947a6ef4fe3e07c8ec12cd4225abb49b2d4b1e041550"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/print-packs/print-pack_9x9-A4-portable-kit-4.png",
+      "bytes": 201377,
+      "sha256": "3b0616912000124153686660af1c24cbb3a9b3d3f45a84902f3e09e7a3e1c186"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/print-packs/print-pack_9x9-A4-portable-kit-5.png",
+      "bytes": 108491,
+      "sha256": "da420b97a0c36f1806e26fb1f22cacee4ff9a838303d0f6d5d1969d01b00df20"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/print-packs/print-pack_9x9-A4-portable-kit-6.png",
+      "bytes": 124188,
+      "sha256": "04f261b25ffb7e2a2ff10bdccf128171e1569ca851b81d7b89d25811e1aa36a3"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/print-packs/print-pack_9x9-A4-portable-kit-7.png",
+      "bytes": 109543,
+      "sha256": "63be8234db7c72ce42f9dfc4554e10c2b997e49f13e33a8034e85f2efaf94587"
+    },
+    {
+      "path": "materials/pair-boards/tools/generate_pair_boards.py",
+      "bytes": 32764,
+      "sha256": "472dd5eaa553e45cfff617fa8426ba4ecf6bce089a4c9a0f0d28de00c680ab13"
+    },
+    {
+      "path": "materials/pair-boards/tools/package_t19.py",
+      "bytes": 4335,
+      "sha256": "f0b15b1059aa028705de6596955dcc7335a88f0d139921477826f6c79e5ce943"
+    },
+    {
+      "path": "materials/pair-boards/tools/verify_geometry.py",
+      "bytes": 8967,
+      "sha256": "7f515407f8cddbe4f2e274f2d0c6ec2b77ea4d71613f0515e4d02e4100487898"
+    }
+  ],
+  "currentRepair": "T24: 13路A4覆片/派生包r2;原2026-09-06渲染图仅是历史证据，当前复验docs/t24/checks"
+}

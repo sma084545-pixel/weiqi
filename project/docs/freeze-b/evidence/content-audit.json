@@ -1,0 +1,382 @@
+{
+  "schemaVersion": 1,
+  "id": "FREEZE-B-CONTENT-AUDIT",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "checkedAt": "2026-09-19",
+  "formalPuzzles": 30,
+  "terminals": 6,
+  "items": [
+    {
+      "id": "LIB-001",
+      "revision": 1,
+      "kind": "Puzzle",
+      "mode": "verified-covered-scope",
+      "status": "passed",
+      "humanReviewed": null,
+      "checks": 12,
+      "solutionScope": "liberties"
+    },
+    {
+      "id": "LIB-002",
+      "revision": 1,
+      "kind": "Puzzle",
+      "mode": "verified-covered-scope",
+      "status": "passed",
+      "humanReviewed": null,
+      "checks": 12,
+      "solutionScope": "liberties"
+    },
+    {
+      "id": "LIB-003",
+      "revision": 1,
+      "kind": "Puzzle",
+      "mode": "verified-covered-scope",
+      "status": "passed",
+      "humanReviewed": null,
+      "checks": 13,
+      "solutionScope": "liberties"
+    },
+    {
+      "id": "LIB-004",
+      "revision": 1,
+      "kind": "Puzzle",
+      "mode": "verified-covered-scope",
+      "status": "passed",
+      "humanReviewed": null,
+      "checks": 14,
+      "solutionScope": "liberties"
+    },
+    {
+      "id": "LIB-005",
+      "revision": 1,
+      "kind": "Puzzle",
+      "mode": "verified-covered-scope",
+      "status": "passed",
+      "humanReviewed": null,
+      "checks": 15,
+      "solutionScope": "liberties"
+    },
+    {
+      "id": "CAP-001",
+      "revision": 1,
+      "kind": "Puzzle",
+      "mode": "verified-covered-scope",
+      "status": "passed",
+      "humanReviewed": null,
+      "checks": 22,
+      "solutionScope": "capture-now"
+    },
+    {
+      "id": "CAP-002",
+      "revision": 1,
+      "kind": "Puzzle",
+      "mode": "verified-covered-scope",
+      "status": "passed",
+      "humanReviewed": null,
+      "checks": 23,
+      "solutionScope": "capture-now"
+    },
+    {
+      "id": "CAP-003",
+      "revision": 1,
+      "kind": "Puzzle",
+      "mode": "verified-covered-scope",
+      "status": "passed",
+      "humanReviewed": null,
+      "checks": 22,
+      "solutionScope": "capture-now"
+    },
+    {
+      "id": "CAP-004",
+      "revision": 1,
+      "kind": "Puzzle",
+      "mode": "verified-covered-scope",
+      "status": "passed",
+      "humanReviewed": null,
+      "checks": 23,
+      "solutionScope": "capture-now"
+    },
+    {
+      "id": "CAP-005",
+      "revision": 1,
+      "kind": "Puzzle",
+      "mode": "verified-covered-scope",
+      "status": "passed",
+      "humanReviewed": null,
+      "checks": 25,
+      "solutionScope": "capture-now"
+    },
+    {
+      "id": "CON-001",
+      "revision": 1,
+      "kind": "Puzzle",
+      "mode": "verified-covered-scope",
+      "status": "passed",
+      "humanReviewed": null,
+      "checks": 47,
+      "solutionScope": "connect"
+    },
+    {
+      "id": "CON-002",
+      "revision": 1,
+      "kind": "Puzzle",
+      "mode": "verified-covered-scope",
+      "status": "passed",
+      "humanReviewed": null,
+      "checks": 51,
+      "solutionScope": "connect"
+    },
+    {
+      "id": "CON-003",
+      "revision": 1,
+      "kind": "Puzzle",
+      "mode": "verified-covered-scope",
+      "status": "passed",
+      "humanReviewed": null,
+      "checks": 45,
+      "solutionScope": "escape"
+    },
+    {
+      "id": "CON-004",
+      "revision": 1,
+      "kind": "Puzzle",
+      "mode": "verified-covered-scope",
+      "status": "passed",
+      "humanReviewed": null,
+      "checks": 46,
+      "solutionScope": "connect"
+    },
+    {
+      "id": "CON-005",
+      "revision": 1,
+      "kind": "Puzzle",
+      "mode": "verified-covered-scope",
+      "status": "passed",
+      "humanReviewed": null,
+      "checks": 46,
+      "solutionScope": "connect"
+    },
+    {
+      "id": "LIFE-001",
+      "revision": 1,
+      "kind": "Puzzle",
+      "mode": "verified-covered-scope",
+      "status": "passed",
+      "humanReviewed": null,
+      "checks": 20,
+      "solutionScope": "two-eyes"
+    },
+    {
+      "id": "LIFE-002",
+      "revision": 1,
+      "kind": "Puzzle",
+      "mode": "verified-covered-scope",
+      "status": "passed",
+      "humanReviewed": null,
+      "checks": 25,
+      "solutionScope": "capture-now"
+    },
+    {
+      "id": "LIFE-003",
+      "revision": 1,
+      "kind": "Puzzle",
+      "mode": "verified-covered-scope",
+      "status": "passed",
+      "humanReviewed": null,
+      "checks": 29,
+      "solutionScope": "split-eyes"
+    },
+    {
+      "id": "LIFE-004",
+      "revision": 1,
+      "kind": "Puzzle",
+      "mode": "verified-covered-scope",
+      "status": "passed",
+      "humanReviewed": null,
+      "checks": 48,
+      "solutionScope": "split-eyes"
+    },
+    {
+      "id": "LIFE-005",
+      "revision": 1,
+      "kind": "Puzzle",
+      "mode": "verified-covered-scope",
+      "status": "passed",
+      "humanReviewed": null,
+      "checks": 26,
+      "solutionScope": "capture-within-3"
+    },
+    {
+      "id": "AREA-001",
+      "revision": 1,
+      "kind": "Puzzle",
+      "mode": "verified-covered-scope",
+      "status": "passed",
+      "humanReviewed": null,
+      "checks": 15,
+      "solutionScope": "area-reference"
+    },
+    {
+      "id": "AREA-002",
+      "revision": 1,
+      "kind": "Puzzle",
+      "mode": "verified-covered-scope",
+      "status": "passed",
+      "humanReviewed": null,
+      "checks": 15,
+      "solutionScope": "area-reference"
+    },
+    {
+      "id": "AREA-003",
+      "revision": 1,
+      "kind": "Puzzle",
+      "mode": "verified-covered-scope",
+      "status": "passed",
+      "humanReviewed": null,
+      "checks": 15,
+      "solutionScope": "area-reference"
+    },
+    {
+      "id": "AREA-004",
+      "revision": 1,
+      "kind": "Puzzle",
+      "mode": "verified-covered-scope",
+      "status": "passed",
+      "humanReviewed": null,
+      "checks": 15,
+      "solutionScope": "area-reference"
+    },
+    {
+      "id": "AREA-005",
+      "revision": 1,
+      "kind": "Puzzle",
+      "mode": "verified-covered-scope",
+      "status": "passed",
+      "humanReviewed": null,
+      "checks": 17,
+      "solutionScope": "area-reference"
+    },
+    {
+      "id": "DISC-001",
+      "revision": 1,
+      "kind": "Puzzle",
+      "mode": "discussion-only",
+      "status": "passed",
+      "humanReviewed": null,
+      "checks": 22,
+      "solutionScope": "open-rubric"
+    },
+    {
+      "id": "DISC-002",
+      "revision": 1,
+      "kind": "Puzzle",
+      "mode": "discussion-only",
+      "status": "passed",
+      "humanReviewed": null,
+      "checks": 21,
+      "solutionScope": "open-rubric"
+    },
+    {
+      "id": "DISC-003",
+      "revision": 1,
+      "kind": "Puzzle",
+      "mode": "discussion-only",
+      "status": "passed",
+      "humanReviewed": null,
+      "checks": 21,
+      "solutionScope": "open-rubric"
+    },
+    {
+      "id": "DISC-004",
+      "revision": 1,
+      "kind": "Puzzle",
+      "mode": "discussion-only",
+      "status": "passed",
+      "humanReviewed": null,
+      "checks": 21,
+      "solutionScope": "open-rubric"
+    },
+    {
+      "id": "DISC-005",
+      "revision": 1,
+      "kind": "Puzzle",
+      "mode": "discussion-only",
+      "status": "passed",
+      "humanReviewed": null,
+      "checks": 21,
+      "solutionScope": "open-rubric"
+    },
+    {
+      "id": "END-001",
+      "revision": 1,
+      "kind": "TerminalFixture",
+      "mode": "teaching-assumption",
+      "status": "passed",
+      "humanReviewed": null,
+      "checks": 12,
+      "solutionScope": "teaching-assumption"
+    },
+    {
+      "id": "END-002",
+      "revision": 1,
+      "kind": "TerminalFixture",
+      "mode": "teaching-assumption",
+      "status": "passed",
+      "humanReviewed": null,
+      "checks": 12,
+      "solutionScope": "teaching-assumption"
+    },
+    {
+      "id": "END-003",
+      "revision": 1,
+      "kind": "TerminalFixture",
+      "mode": "teaching-assumption",
+      "status": "passed",
+      "humanReviewed": null,
+      "checks": 14,
+      "solutionScope": "teaching-assumption"
+    },
+    {
+      "id": "END-004",
+      "revision": 1,
+      "kind": "TerminalFixture",
+      "mode": "teaching-assumption",
+      "status": "passed",
+      "humanReviewed": null,
+      "checks": 24,
+      "solutionScope": "teaching-assumption"
+    },
+    {
+      "id": "END-005",
+      "revision": 1,
+      "kind": "TerminalFixture",
+      "mode": "teaching-assumption",
+      "status": "passed",
+      "humanReviewed": null,
+      "checks": 15,
+      "solutionScope": "teaching-assumption"
+    },
+    {
+      "id": "END-006",
+      "revision": 1,
+      "kind": "TerminalFixture",
+      "mode": "unsettled",
+      "status": "passed",
+      "humanReviewed": null,
+      "checks": 17,
+      "solutionScope": "unsettled"
+    }
+  ],
+  "protectedT15Files": 173,
+  "changedProtectedFiles": [],
+  "excludedPrefixes": [
+    "TEST",
+    "TEMPLATE",
+    "DEMO",
+    "DEV",
+    "RULE-DEMO-T20"
+  ],
+  "status": "passed",
+  "humanReviewed": null
+}

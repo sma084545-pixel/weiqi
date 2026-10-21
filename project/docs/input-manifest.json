@@ -1,0 +1,492 @@
+{
+  "schemaVersion": 1,
+  "id": "DOC-INPUT-MANIFEST",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "InputManifest",
+  "sourcePackageVersion": "1.1.0",
+  "sourceRoot": "/Users/maxiao/Desktop/weiqi/deliverables/go_cas_gpt_work_execution_v1_1 2",
+  "tasks": [
+    {
+      "id": "T00",
+      "title": "课程蓝图、统一规范与项目基础",
+      "deps": [],
+      "covers": [
+        "beginner pathway 与混合水平分流",
+        "统一术语与课程目标",
+        "统一规则、数据模型、接口和版本交接",
+        "可运行工程基础"
+      ],
+      "file": "prompts/T00_project_contract.md",
+      "sha256": "a63cdf128360ecbd687e69d1dbb1e45289a076cc0c1c2cf0aa0dcdd55df1ce6a",
+      "initialReadSha256": "a63cdf128360ecbd687e69d1dbb1e45289a076cc0c1c2cf0aa0dcdd55df1ce6a"
+    },
+    {
+      "id": "T01",
+      "title": "围棋规则引擎与状态历史",
+      "deps": [
+        "T00"
+      ],
+      "covers": [
+        "棋块与去重气计算",
+        "提子、自杀禁着、位置超级劫",
+        "撤回重做与完整历史恢复",
+        "停手、终局状态、认输",
+        "面积计分纯函数及规则测试"
+      ],
+      "file": "prompts/T01_rules_engine.md",
+      "sha256": "8eddf95ba6e6f0886b229e4b282d58e93bea1d5941d1e47ae07ad8c59f02ebf7",
+      "initialReadSha256": "8eddf95ba6e6f0886b229e4b282d58e93bea1d5941d1e47ae07ad8c59f02ebf7"
+    },
+    {
+      "id": "T02",
+      "title": "通用互动棋盘与可访问操作",
+      "deps": [
+        "T00",
+        "T01"
+      ],
+      "covers": [
+        "5/9/13/19 路统一棋盘",
+        "气环、目标、顺序和最后一手标记",
+        "触屏、键盘、投影及小屏操作"
+      ],
+      "file": "prompts/T02_board_component.md",
+      "sha256": "6086a3b94f4ff1449c844b383e1abf4be62fb93124430b40d8a13686b728fe40",
+      "initialReadSha256": "6086a3b94f4ff1449c844b383e1abf4be62fb93124430b40d8a13686b728fe40"
+    },
+    {
+      "id": "T03",
+      "title": "学习入口与自选学习路线",
+      "deps": [
+        "T00",
+        "T01",
+        "T02"
+      ],
+      "covers": [
+        "新手入口与自选学习路径",
+        "模块导航、返回和可用状态",
+        "低压力学习进度与教师入口"
+      ],
+      "file": "prompts/T03_learning_hub.md",
+      "sha256": "3fdb75675248ee3872e1f2506f9a48590b83b63742a939cfd050f3edaccb81de",
+      "initialReadSha256": "3fdb75675248ee3872e1f2506f9a48590b83b63742a939cfd050f3edaccb81de"
+    },
+    {
+      "id": "T04",
+      "title": "找气、数气与先预测后验证",
+      "deps": [
+        "T00",
+        "T01",
+        "T02",
+        "T03"
+      ],
+      "covers": [
+        "点击棋块并显示全部气",
+        "圈气集合评测",
+        "预测气数后揭示",
+        "数气误区对比演示"
+      ],
+      "file": "prompts/T04_liberty_lab.md",
+      "sha256": "b66c9f6bb031a9df346d0ff173df3b21ecd4577c0314d8a665111444c65a23a8",
+      "initialReadSha256": "b66c9f6bb031a9df346d0ff173df3b21ecd4577c0314d8a665111444c65a23a8"
+    },
+    {
+      "id": "T05",
+      "title": "提子过程动画与因果反馈",
+      "deps": [
+        "T00",
+        "T01",
+        "T02",
+        "T03",
+        "T04"
+      ],
+      "covers": [
+        "先预测被提棋子再验证",
+        "落子—检查—提子分步动画",
+        "合法提子与自杀禁着对比",
+        "动画撤回、重置与取消"
+      ],
+      "file": "prompts/T05_capture_lab.md",
+      "sha256": "727e1759ba0ff604b25e01277932eff95c0671629190029783e8b02f5c09d496",
+      "initialReadSha256": "727e1759ba0ff604b25e01277932eff95c0671629190029783e8b02f5c09d496"
+    },
+    {
+      "id": "T06",
+      "title": "自由摆棋与规则模式切换",
+      "deps": [
+        "T00",
+        "T01",
+        "T02",
+        "T03",
+        "T04",
+        "T05"
+      ],
+      "covers": [
+        "自由放黑白、擦除、标记、尺寸切换",
+        "摆棋验证与按规则试下切换",
+        "临时局面保存及导出"
+      ],
+      "file": "prompts/T06_setup_sandbox.md",
+      "sha256": "a5fbce5e958b323203b3e76ef711215a5accbfcc44622bacf87d5a9074363282",
+      "initialReadSha256": "a5fbce5e958b323203b3e76ef711215a5accbfcc44622bacf87d5a9074363282"
+    },
+    {
+      "id": "T07",
+      "title": "同屏双人吃子小游戏",
+      "deps": [
+        "T00",
+        "T01",
+        "T02",
+        "T03",
+        "T05",
+        "T06"
+      ],
+      "covers": [
+        "同屏吃子小游戏与胜负",
+        "双方同意悔棋、交换颜色重开",
+        "终局最后几手回看与转向完整对弈"
+      ],
+      "file": "prompts/T07_capture_game.md",
+      "sha256": "6eaa75c910d9681b83d895e9d23c18fceafa2a7cd455cf63994de3fd82a73080",
+      "initialReadSha256": "6eaa75c910d9681b83d895e9d23c18fceafa2a7cd455cf63994de3fd82a73080"
+    },
+    {
+      "id": "T08",
+      "title": "完整小棋盘对弈与终局确认",
+      "deps": [
+        "T00",
+        "T01",
+        "T02",
+        "T03",
+        "T06",
+        "T07"
+      ],
+      "covers": [
+        "完整 9/13/19 路对弈和自由让子",
+        "停手、死子双方确认、争议恢复",
+        "可解释面积计分与逐手回看"
+      ],
+      "file": "prompts/T08_full_game.md",
+      "sha256": "89eeca35e0a4da0d64049ab5b195d2849c641628baa25960061ca1cf1f6ebaf6",
+      "initialReadSha256": "89eeca35e0a4da0d64049ab5b195d2849c641628baa25960061ca1cf1f6ebaf6"
+    },
+    {
+      "id": "T09",
+      "title": "30 张挑战题与 6 个终局示例",
+      "deps": [
+        "T00",
+        "T01"
+      ],
+      "covers": [
+        "30 题六类别共享题库",
+        "6 个完整终局教学示例",
+        "答案、反驳、三层提示与解答证据",
+        "题目 ID、来源、验证状态和矢量棋形"
+      ],
+      "file": "prompts/T09_content_library.md",
+      "sha256": "c0e5559b5a9d20c28dbc3224a81e7b5d2827169cbe4411a2d06898449a362fe9",
+      "initialReadSha256": "c0e5559b5a9d20c28dbc3224a81e7b5d2827169cbe4411a2d06898449a362fe9"
+    },
+    {
+      "id": "T10",
+      "title": "互动判题、分层提示与未知分支处理",
+      "deps": [
+        "T00",
+        "T01",
+        "T02",
+        "T03",
+        "T09"
+      ],
+      "covers": [
+        "多题型互动练习与类别筛选",
+        "三层提示、错误反驳和多解支持",
+        "未知分支、自由试下、重试与换题"
+      ],
+      "file": "prompts/T10_puzzle_runner.md",
+      "sha256": "aa86db57f0a243525a6947fdbe8ef399651dd9d1677002b0863c81decff9ac0e",
+      "initialReadSha256": "aa86db57f0a243525a6947fdbe8ef399651dd9d1677002b0863c81decff9ac0e"
+    },
+    {
+      "id": "T11",
+      "title": "眼、假眼与基础死活演示",
+      "deps": [
+        "T00",
+        "T01",
+        "T02",
+        "T03",
+        "T09",
+        "T10"
+      ],
+      "covers": [
+        "真眼、假眼、独立眼的对照教学",
+        "先手做眼与关键点防守",
+        "死活证据边界及具体变化演示"
+      ],
+      "file": "prompts/T11_life_death.md",
+      "sha256": "6224b9adfe2858eb03dd08cf779158ce8c56ea791f05539a00db43256f0c155b",
+      "initialReadSha256": "6224b9adfe2858eb03dd08cf779158ce8c56ea791f05539a00db43256f0c155b"
+    },
+    {
+      "id": "T12",
+      "title": "开放判断题与同伴合作挑战",
+      "deps": [
+        "T00",
+        "T01",
+        "T02",
+        "T03",
+        "T09",
+        "T10"
+      ],
+      "covers": [
+        "A/B 取舍、对手回应和开放解释",
+        "双人角色轮换与合作小游戏",
+        "开放讨论记录与线下活动说明"
+      ],
+      "file": "prompts/T12_cooperative_challenges.md",
+      "sha256": "04ddf1969173e92f4a43151b989bd15ea1c660028891f0210467676f0e32eb37",
+      "initialReadSha256": "04ddf1969173e92f4a43151b989bd15ea1c660028891f0210467676f0e32eb37"
+    },
+    {
+      "id": "T13",
+      "title": "围地、终局辨认与数子练习",
+      "deps": [
+        "T00",
+        "T01",
+        "T02",
+        "T03",
+        "T08",
+        "T09",
+        "T10"
+      ],
+      "covers": [
+        "终局/未终局与争议辨认",
+        "黑白围空和中立区域互动标记",
+        "面积分解、贴目试算及提子数量对比"
+      ],
+      "file": "prompts/T13_territory_trainer.md",
+      "sha256": "a517958127abfed792eea8a4ac714d14646a811cb7a0f24eef2b829166d7efac",
+      "initialReadSha256": "a517958127abfed792eea8a4ac714d14646a811cb7a0f24eef2b829166d7efac"
+    },
+    {
+      "id": "T14",
+      "title": "教师出题与答案变化编辑器",
+      "deps": [
+        "T00",
+        "T01",
+        "T02",
+        "T03",
+        "T06",
+        "T09",
+        "T10"
+      ],
+      "covers": [
+        "教师摆题、题干、提示、目标编辑",
+        "多分支答案与合法性校验",
+        "学生预览、草稿、复制、修订与发布记录"
+      ],
+      "file": "prompts/T14_teacher_editor.md",
+      "sha256": "baa95650e6417226b7135d608715993d4de397b355cd65f706ed7c274edee3d0",
+      "initialReadSha256": "baa95650e6417226b7135d608715993d4de397b355cd65f706ed7c274edee3d0"
+    },
+    {
+      "id": "T15",
+      "title": "JSON、SGF 与棋盘图导入导出",
+      "deps": [
+        "T00",
+        "T01",
+        "T02",
+        "T08",
+        "T09",
+        "T14"
+      ],
+      "covers": [
+        "JSON 内容备份与版本/冲突处理",
+        "SGF 对局、停手、摆子和变化交换",
+        "SVG/PNG/PDF 棋形导出与批量清单"
+      ],
+      "file": "prompts/T15_interchange_exports.md",
+      "sha256": "973f70e5a0b3d1e5c036f5630269a396c6ab74223ee874419986ac02e61ae365",
+      "initialReadSha256": "973f70e5a0b3d1e5c036f5630269a396c6ab74223ee874419986ac02e61ae365"
+    },
+    {
+      "id": "T16",
+      "title": "离线运行、本机保存与版本迁移",
+      "deps": [
+        "T00",
+        "T03",
+        "T10",
+        "T14",
+        "T15"
+      ],
+      "covers": [
+        "离线资源缓存与准备检查",
+        "本机进度、棋局、草稿持久化",
+        "安全迁移、备份恢复、选择性清除"
+      ],
+      "file": "prompts/T16_offline_storage.md",
+      "sha256": "90e4bb92875c13ae461893263764087e4d11b237b0c2ea25f154c96ee45de017",
+      "initialReadSha256": "90e4bb92875c13ae461893263764087e4d11b237b0c2ea25f154c96ee45de017"
+    },
+    {
+      "id": "T17",
+      "title": "成员反馈与 CAS 迭代证据记录",
+      "deps": [
+        "T00",
+        "T03",
+        "T12",
+        "T14",
+        "T16"
+      ],
+      "covers": [
+        "活动难度、偏好与建议反馈",
+        "基于真实记录的汇总与缺失处理",
+        "资源版本迭代日志与 CAS 证据导出"
+      ],
+      "file": "prompts/T17_feedback_evidence.md",
+      "sha256": "8a8a92dc21b8f9ba0b343fb6fd4c905f2977ab90a2e14c9eba2b30da35523e6f",
+      "initialReadSha256": "8a8a92dc21b8f9ba0b343fb6fd4c905f2977ab90a2e14c9eba2b30da35523e6f"
+    },
+    {
+      "id": "T18",
+      "title": "磁性演示棋盘与可操作标记设计",
+      "deps": [
+        "T00"
+      ],
+      "covers": [
+        "大号磁性/非磁性演示棋盘",
+        "气环、目标、数字等实体标记",
+        "实际尺寸图纸、拼接打印、材料与装配"
+      ],
+      "file": "prompts/T18_demonstration_board.md",
+      "sha256": "40a326a245e2091c8450f5205e1a38287e6c4dd18e41e5dbba0b98c14de9e59f",
+      "initialReadSha256": "c482688ba1a9bf9911e5971e40c39f6372237fd29bad5aad20c7e0c4b2e3c491",
+      "differenceFromInitialRead": "T18 only: additional leading title text 围棋 CAS｜演示棋盘; remaining bytes identical."
+    },
+    {
+      "id": "T19",
+      "title": "双人练习棋盘与便携棋具",
+      "deps": [
+        "T00"
+      ],
+      "covers": [
+        "9×9 与 13×13 便携可打印棋盘",
+        "纸棋子、覆片、收纳与套数计算",
+        "实际棋子直径适配和打印校准"
+      ],
+      "file": "prompts/T19_pair_boards.md",
+      "sha256": "da779b1717712ba0c9c7fe0e5578848db9639c87aa3e1cf9c2efad4b1cc073c3",
+      "initialReadSha256": "da779b1717712ba0c9c7fe0e5578848db9639c87aa3e1cf9c2efad4b1cc073c3"
+    },
+    {
+      "id": "T20",
+      "title": "双面规则卡与自选学习路线卡",
+      "deps": [
+        "T00"
+      ],
+      "covers": [
+        "双面基础规则与规则补充卡",
+        "吃子小游戏、面积计分例卡",
+        "可自主勾选的 beginner pathway 卡"
+      ],
+      "file": "prompts/T20_rules_pathway_cards.md",
+      "sha256": "1297d1d6df92fa69a30dcb80847fec3a27c6d83eff5271e969ba6c09d87685c1",
+      "initialReadSha256": "1297d1d6df92fa69a30dcb80847fec3a27c6d83eff5271e969ba6c09d87685c1"
+    },
+    {
+      "id": "T21",
+      "title": "30 张纸质挑战卡与教师答案册",
+      "deps": [
+        "T00",
+        "T09",
+        "T20"
+      ],
+      "covers": [
+        "30 张双面挑战卡与难度标记",
+        "教师答案册及同版本同步",
+        "任务站、合作解题等线下玩法"
+      ],
+      "file": "prompts/T21_printable_challenges.md",
+      "sha256": "438c7920593dd2fa6e99bafeeb64b08472ba8d8adabe17738ad4e72ef0df0ea3",
+      "initialReadSha256": "438c7920593dd2fa6e99bafeeb64b08472ba8d8adabe17738ad4e72ef0df0ea3"
+    },
+    {
+      "id": "T22",
+      "title": "5 套可编辑微课 PPT 与讲解备注",
+      "deps": [
+        "T00",
+        "T09",
+        "T20"
+      ],
+      "covers": [
+        "5 套短微课与 25 张主讲幻灯片",
+        "逐页讲稿、提问、误区回应和转场备注",
+        "独立/合并可编辑 PPTX 与 PDF"
+      ],
+      "file": "prompts/T22_micro_lessons.md",
+      "sha256": "49f61ecddbddd3dadbeae8d08048632ba4e317479f1424c91dcf8ddf33bbd6de",
+      "initialReadSha256": "49f61ecddbddd3dadbeae8d08048632ba4e317479f1424c91dcf8ddf33bbd6de"
+    },
+    {
+      "id": "T23",
+      "title": "活动流程、同伴教学与教师手册",
+      "deps": [
+        "T00",
+        "T09",
+        "T18",
+        "T19",
+        "T20",
+        "T21",
+        "T22"
+      ],
+      "covers": [
+        "6 次 45 分钟活动流程",
+        "混合水平分流与同伴教学方法",
+        "无屏替代、常见情况处理及反馈空表"
+      ],
+      "file": "prompts/T23_facilitator_kit.md",
+      "sha256": "578e5e40c1fdcf10eaa225a916eebea7f7bff1d4c09e02ff54ae8dd6e7cf09e7",
+      "initialReadSha256": "578e5e40c1fdcf10eaa225a916eebea7f7bff1d4c09e02ff54ae8dd6e7cf09e7"
+    },
+    {
+      "id": "T24",
+      "title": "整套集成、规则一致性审查与交付",
+      "deps": [
+        "T00",
+        "T01",
+        "T02",
+        "T03",
+        "T04",
+        "T05",
+        "T06",
+        "T07",
+        "T08",
+        "T09",
+        "T10",
+        "T11",
+        "T12",
+        "T13",
+        "T14",
+        "T15",
+        "T16",
+        "T17",
+        "T18",
+        "T19",
+        "T20",
+        "T21",
+        "T22",
+        "T23"
+      ],
+      "covers": [
+        "全模块集成与真实用户流程验证",
+        "规则、题库、纸卡、PPT 跨版本一致性",
+        "完整源文件/成品打包、验收报告和交付通知"
+      ],
+      "file": "prompts/T24_integration_acceptance.md",
+      "sha256": "7fad0eab792935c3e297af83c21561b86a4f9c8270a69309f17d714066835ad6",
+      "initialReadSha256": "7fad0eab792935c3e297af83c21561b86a4f9c8270a69309f17d714066835ad6"
+    }
+  ],
+  "initialReadRoot": "/Users/maxiao/Desktop/weiqi/deliverables/go_cas_gpt_work_execution_v1_1",
+  "authorityRecheckedAt": "2026-09-06",
+  "authorityReason": "Current Desktop/weiqi/AGENTS.md explicitly designates this prompts directory."
+}

@@ -1,0 +1,910 @@
+[
+  {
+    "path": "materials/rule-cards/pdf/all-independent-cards.pdf",
+    "page": 1,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+STHeitiTC-Light-0",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "materials/rule-cards/pdf/all-independent-cards.pdf",
+    "page": 2,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+STHeitiTC-Light-0",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "materials/rule-cards/pdf/all-independent-cards.pdf",
+    "page": 3,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+STHeitiTC-Light-0",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "materials/rule-cards/pdf/all-independent-cards.pdf",
+    "page": 4,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+STHeitiTC-Light-0",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAB+STHeitiTC-Light-0",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "materials/rule-cards/pdf/all-independent-cards.pdf",
+    "page": 5,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+STHeitiTC-Light-0",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "materials/rule-cards/pdf/all-independent-cards.pdf",
+    "page": 6,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+STHeitiTC-Light-0",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "materials/rule-cards/pdf/all-independent-cards.pdf",
+    "page": 7,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+STHeitiTC-Light-0",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "materials/rule-cards/pdf/all-independent-cards.pdf",
+    "page": 8,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+STHeitiTC-Light-0",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "content/print/T09_\u7b54\u6848\u518c.pdf",
+    "page": 1,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAB+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAC+ArialUnicodeMS",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "content/print/T09_\u7b54\u6848\u518c.pdf",
+    "page": 2,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAB+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAC+ArialUnicodeMS",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "content/print/T09_\u7b54\u6848\u518c.pdf",
+    "page": 3,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAB+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAC+ArialUnicodeMS",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "content/print/T09_\u7b54\u6848\u518c.pdf",
+    "page": 4,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAB+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAC+ArialUnicodeMS",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "content/print/T09_\u7b54\u6848\u518c.pdf",
+    "page": 5,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAB+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAC+ArialUnicodeMS",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "content/print/T09_\u7b54\u6848\u518c.pdf",
+    "page": 6,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAB+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAC+ArialUnicodeMS",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "content/print/T09_\u7b54\u6848\u518c.pdf",
+    "page": 7,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAB+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAC+ArialUnicodeMS",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "content/print/T09_\u7b54\u6848\u518c.pdf",
+    "page": 8,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAB+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAC+ArialUnicodeMS",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "content/print/T09_\u7b54\u6848\u518c.pdf",
+    "page": 9,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAB+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAC+ArialUnicodeMS",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "content/print/T09_\u7b54\u6848\u518c.pdf",
+    "page": 10,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAB+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAC+ArialUnicodeMS",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "content/print/T09_\u7b54\u6848\u518c.pdf",
+    "page": 11,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAB+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAC+ArialUnicodeMS",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "content/print/T09_\u7b54\u6848\u518c.pdf",
+    "page": 12,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAB+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAC+ArialUnicodeMS",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "content/print/T09_\u7b54\u6848\u518c.pdf",
+    "page": 13,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAB+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAC+ArialUnicodeMS",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "content/print/T09_\u7b54\u6848\u518c.pdf",
+    "page": 14,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAB+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAC+ArialUnicodeMS",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "content/print/T09_\u7b54\u6848\u518c.pdf",
+    "page": 15,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAB+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAC+ArialUnicodeMS",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "content/print/T09_\u7b54\u6848\u518c.pdf",
+    "page": 16,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAB+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAC+ArialUnicodeMS",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "content/print/T09_\u7b54\u6848\u518c.pdf",
+    "page": 17,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAB+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAC+ArialUnicodeMS",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "content/print/T09_\u7b54\u6848\u518c.pdf",
+    "page": 18,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAB+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAC+ArialUnicodeMS",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "content/print/T09_\u7b54\u6848\u518c.pdf",
+    "page": 19,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAB+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAC+ArialUnicodeMS",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "content/print/T09_\u7b54\u6848\u518c.pdf",
+    "page": 20,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAB+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAC+ArialUnicodeMS",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "content/print/T09_\u7b54\u6848\u518c.pdf",
+    "page": 21,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAB+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAC+ArialUnicodeMS",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "content/print/T09_\u7b54\u6848\u518c.pdf",
+    "page": 22,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAB+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAC+ArialUnicodeMS",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "content/print/T09_\u7b54\u6848\u518c.pdf",
+    "page": 23,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAB+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAC+ArialUnicodeMS",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "content/print/T09_\u7b54\u6848\u518c.pdf",
+    "page": 24,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAB+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAC+ArialUnicodeMS",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "content/print/T09_\u7b54\u6848\u518c.pdf",
+    "page": 25,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAB+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAC+ArialUnicodeMS",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "content/print/T09_\u7b54\u6848\u518c.pdf",
+    "page": 26,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAB+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAC+ArialUnicodeMS",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "content/print/T09_\u7b54\u6848\u518c.pdf",
+    "page": 27,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAB+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAC+ArialUnicodeMS",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "content/print/T09_\u7b54\u6848\u518c.pdf",
+    "page": 28,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAB+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAC+ArialUnicodeMS",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "content/print/T09_\u7b54\u6848\u518c.pdf",
+    "page": 29,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAB+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAC+ArialUnicodeMS",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "content/print/T09_\u7b54\u6848\u518c.pdf",
+    "page": 30,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAB+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAC+ArialUnicodeMS",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "content/print/T09_\u7b54\u6848\u518c.pdf",
+    "page": 31,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAB+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAC+ArialUnicodeMS",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "content/print/T09_\u7b54\u6848\u518c.pdf",
+    "page": 32,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAB+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAC+ArialUnicodeMS",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "content/print/T09_\u7b54\u6848\u518c.pdf",
+    "page": 33,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAB+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAC+ArialUnicodeMS",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "content/print/T09_\u7b54\u6848\u518c.pdf",
+    "page": 34,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAB+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAC+ArialUnicodeMS",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "content/print/T09_\u7b54\u6848\u518c.pdf",
+    "page": 35,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAB+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAC+ArialUnicodeMS",
+        "embedded": true
+      }
+    ]
+  },
+  {
+    "path": "content/print/T09_\u7b54\u6848\u518c.pdf",
+    "page": 36,
+    "fonts": [
+      {
+        "baseFont": "/Helvetica",
+        "embedded": false
+      },
+      {
+        "baseFont": "/AAAAAA+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAB+ArialUnicodeMS",
+        "embedded": true
+      },
+      {
+        "baseFont": "/AAAAAC+ArialUnicodeMS",
+        "embedded": true
+      }
+    ]
+  }
+]

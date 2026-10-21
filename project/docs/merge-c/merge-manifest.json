@@ -1,0 +1,4287 @@
+{
+  "schemaVersion": 1,
+  "id": "MERGE-C-FILES",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "baseVersion": "T17 0.17.0",
+  "resultVersion": "0.17.0-merge-c.1",
+  "files": [
+    {
+      "taskId": "T18",
+      "path": "handoff/T18.md",
+      "action": "reuse-identical",
+      "inputSha256": "bb191dc30e42c3467c955d1a8fc4972f205831204a9d3db7ea12338a4d3506e0",
+      "resultSha256": "bb191dc30e42c3467c955d1a8fc4972f205831204a9d3db7ea12338a4d3506e0"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/CHANGED_FILES.md",
+      "action": "reuse-identical",
+      "inputSha256": "e72e133cca33d218107e4b6432469c33e25ed8f68fd1db40335eeb7a21a54724",
+      "resultSha256": "e72e133cca33d218107e4b6432469c33e25ed8f68fd1db40335eeb7a21a54724"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/README.md",
+      "action": "reuse-identical",
+      "inputSha256": "4b8965bb6503bd2a2073f253c280f17923546213e10433a04703e5a21d020a59",
+      "resultSha256": "4b8965bb6503bd2a2073f253c280f17923546213e10433a04703e5a21d020a59"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/artifact-manifest.json",
+      "action": "preserve-mainline",
+      "inputSha256": "e86af2526364c3b1462039dfb6403f8d130c15dd9b5ab34d9d666ff967f064b9",
+      "resultSha256": "2aea502494f3473364886f75c9f4cc9507a080ed9c971cb4582ee9852deedaa4"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/assembly-diagrams-a4.svg",
+      "action": "reuse-identical",
+      "inputSha256": "06b6e8f90ea6b9f1374c229c55a92333f3aba34b71387c768a0136c302a96cd9",
+      "resultSha256": "06b6e8f90ea6b9f1374c229c55a92333f3aba34b71387c768a0136c302a96cd9"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/assembly-guide.md",
+      "action": "reuse-identical",
+      "inputSha256": "6551fac8f15ed09ec8117f67be3b0170bb8594f387fa8985376b71f185e7889c",
+      "resultSha256": "6551fac8f15ed09ec8117f67be3b0170bb8594f387fa8985376b71f185e7889c"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/assembly-guide.pdf",
+      "action": "reuse-identical",
+      "inputSha256": "c94ac0de1f73b22fd0a8191c75f964dca6d9b30485a1898eb6b7c81339086ae0",
+      "resultSha256": "c94ac0de1f73b22fd0a8191c75f964dca6d9b30485a1898eb6b7c81339086ae0"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/board-9x9-450mm-1to1.pdf",
+      "action": "reuse-identical",
+      "inputSha256": "a4a1f55e40eae5c19f55d3e57b5d61a0027e6c52f56c18dea22a66d629dca7a8",
+      "resultSha256": "a4a1f55e40eae5c19f55d3e57b5d61a0027e6c52f56c18dea22a66d629dca7a8"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/board-9x9-450mm.svg",
+      "action": "reuse-identical",
+      "inputSha256": "21927ec2ff29e1d766055df04bab8bc527c4207dc77643151f9e7cce363eb18f",
+      "resultSha256": "21927ec2ff29e1d766055df04bab8bc527c4207dc77643151f9e7cce363eb18f"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/board-9x9-a4-tiled.pdf",
+      "action": "reuse-identical",
+      "inputSha256": "6ca917217bc6a37d6f392f771e179358bad85b445b040c043dbcce2e365abcce",
+      "resultSha256": "6ca917217bc6a37d6f392f771e179358bad85b445b040c043dbcce2e365abcce"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/dimensions.json",
+      "action": "reuse-identical",
+      "inputSha256": "3faddb1360973b6728104fe89b22cca8b024b96b458da24ce8aaa5060b3aea55",
+      "resultSha256": "3faddb1360973b6728104fe89b22cca8b024b96b458da24ce8aaa5060b3aea55"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/editable-sheets/black-stones-01.svg",
+      "action": "reuse-identical",
+      "inputSha256": "73b4963ff83e03262ac68c8aa29cb3c4e325ea6f7dc2174e93236195ff06bf59",
+      "resultSha256": "73b4963ff83e03262ac68c8aa29cb3c4e325ea6f7dc2174e93236195ff06bf59"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/editable-sheets/black-stones-02.svg",
+      "action": "reuse-identical",
+      "inputSha256": "cc33f9ef99b126b7a7dee9f14348e77e6bc99744ff526f387c1157618a690cad",
+      "resultSha256": "cc33f9ef99b126b7a7dee9f14348e77e6bc99744ff526f387c1157618a690cad"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/editable-sheets/liberty-rings.svg",
+      "action": "reuse-identical",
+      "inputSha256": "6e05cef9ba29394f769ff8b77215154fccd8fbc502cf668b097a1dfc4789520a",
+      "resultSha256": "6e05cef9ba29394f769ff8b77215154fccd8fbc502cf668b097a1dfc4789520a"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/editable-sheets/targets-sequence-last.svg",
+      "action": "reuse-identical",
+      "inputSha256": "5303e17fb8dd3762bf488a1dc0a9982958781f3282ab55102d660ee9ae769f70",
+      "resultSha256": "5303e17fb8dd3762bf488a1dc0a9982958781f3282ab55102d660ee9ae769f70"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/editable-sheets/white-stones-01.svg",
+      "action": "reuse-identical",
+      "inputSha256": "e029bdd31c686403dad8e90db00ce8115a90629126580f8d27c5b8cd0c6b48af",
+      "resultSha256": "e029bdd31c686403dad8e90db00ce8115a90629126580f8d27c5b8cd0c6b48af"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/editable-sheets/white-stones-02.svg",
+      "action": "reuse-identical",
+      "inputSha256": "1a8a74a1f8db488bd10c559902922ba48a83995623613cc060dc8fd08465a521",
+      "resultSha256": "1a8a74a1f8db488bd10c559902922ba48a83995623613cc060dc8fd08465a521"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/generate_assets.py",
+      "action": "reuse-identical",
+      "inputSha256": "f586d1812574459cbad16bde359203359452f3a1e87a254c70219f4ad99a0341",
+      "resultSha256": "f586d1812574459cbad16bde359203359452f3a1e87a254c70219f4ad99a0341"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/make_contact_sheets.py",
+      "action": "reuse-identical",
+      "inputSha256": "865cc018be502d5ffa422fb9f71d612f8caa38cc585765150cd6c7a74a326788",
+      "resultSha256": "865cc018be502d5ffa422fb9f71d612f8caa38cc585765150cd6c7a74a326788"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/materials-list.md",
+      "action": "reuse-identical",
+      "inputSha256": "1bfa4baa4746e1a27b680bef04846ca2232960c7affeea298604b889ff089fdc",
+      "resultSha256": "1bfa4baa4746e1a27b680bef04846ca2232960c7affeea298604b889ff089fdc"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/package_release.py",
+      "action": "reuse-identical",
+      "inputSha256": "7fc448a7f52a7ac943ad3e02b2fe5a70f8f9a8f2caf375c54d04ed8bfc0a9aed",
+      "resultSha256": "7fc448a7f52a7ac943ad3e02b2fe5a70f8f9a8f2caf375c54d04ed8bfc0a9aed"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/pieces-markers-a4.pdf",
+      "action": "reuse-identical",
+      "inputSha256": "4fc579fee0dc01f34c2c1fdfbde9a19e7e3ee65fb593d770620a2174a28bd0cd",
+      "resultSha256": "4fc579fee0dc01f34c2c1fdfbde9a19e7e3ee65fb593d770620a2174a28bd0cd"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/board-contact.jpg",
+      "action": "reuse-identical",
+      "inputSha256": "56829be5257c6f9078aa5b7d6056686c927e0ab886c9b63e8c31b2fa6cd93854",
+      "resultSha256": "56829be5257c6f9078aa5b7d6056686c927e0ab886c9b63e8c31b2fa6cd93854"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/commands.log",
+      "action": "preserve-mainline",
+      "inputSha256": "ce600c530d059df05c46d7ee5a940e148f3a6f289736db5bb2f0f7c6e65a35fd",
+      "resultSha256": "8c15f4fee33e548e868104bad8ca3bc210130742a4010efeab40a2e6f4ce849a"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/guide-contact.jpg",
+      "action": "reuse-identical",
+      "inputSha256": "080058d28405921acccf4dfc2fbb42200d76e53a086d6f9e04cadf0a99706ee8",
+      "resultSha256": "080058d28405921acccf4dfc2fbb42200d76e53a086d6f9e04cadf0a99706ee8"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/pieces-color-contact.jpg",
+      "action": "reuse-identical",
+      "inputSha256": "b3d6116d72bca692f4937ce558eff63c0c2f87de15ded5e79335885a7bec0fe4",
+      "resultSha256": "b3d6116d72bca692f4937ce558eff63c0c2f87de15ded5e79335885a7bec0fe4"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/pieces-gray-contact.jpg",
+      "action": "reuse-identical",
+      "inputSha256": "6b87d56310fe188ae0890c552c40be5ad6d7a9ee7add8dedb80b02d9159fb943",
+      "resultSha256": "6b87d56310fe188ae0890c552c40be5ad6d7a9ee7add8dedb80b02d9159fb943"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/rendered/board-1to1-1.png",
+      "action": "reuse-identical",
+      "inputSha256": "4f58e3536867b09c0ad31255db017fcef956b89abd00fce2bb170ebcd31cd63f",
+      "resultSha256": "4f58e3536867b09c0ad31255db017fcef956b89abd00fce2bb170ebcd31cd63f"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/rendered/guide-1.png",
+      "action": "reuse-identical",
+      "inputSha256": "34f9d89c80463510747c58c1b61c6b66174cef03da318dec7d2c43dd139e81b5",
+      "resultSha256": "34f9d89c80463510747c58c1b61c6b66174cef03da318dec7d2c43dd139e81b5"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/rendered/guide-2.png",
+      "action": "reuse-identical",
+      "inputSha256": "ac20e3e399c867a40a1061bdfb8398f26ea34118ddf1e815de95347e0ce299e7",
+      "resultSha256": "ac20e3e399c867a40a1061bdfb8398f26ea34118ddf1e815de95347e0ce299e7"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/rendered/guide-3.png",
+      "action": "reuse-identical",
+      "inputSha256": "77b95b72d831914769024e079309542fde9b1655e6a379f6e48d8458e637ffa2",
+      "resultSha256": "77b95b72d831914769024e079309542fde9b1655e6a379f6e48d8458e637ffa2"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/rendered/guide-4.png",
+      "action": "reuse-identical",
+      "inputSha256": "0196e1a63dbc1dab529b3a070cc3f2d745c450afa7a4ce9063181ed65263b962",
+      "resultSha256": "0196e1a63dbc1dab529b3a070cc3f2d745c450afa7a4ce9063181ed65263b962"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/rendered/guide-5.png",
+      "action": "reuse-identical",
+      "inputSha256": "6426f1defb68890da767dd9cf6bbd17063be34b66e7e6f7f31279dbe4576e64d",
+      "resultSha256": "6426f1defb68890da767dd9cf6bbd17063be34b66e7e6f7f31279dbe4576e64d"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/rendered/guide-6.png",
+      "action": "reuse-identical",
+      "inputSha256": "4b7cb27612773f04269986d03bfe44a999db13422501e266a6ce3e396d00cf89",
+      "resultSha256": "4b7cb27612773f04269986d03bfe44a999db13422501e266a6ce3e396d00cf89"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/rendered/guide-7.png",
+      "action": "reuse-identical",
+      "inputSha256": "29ec95b1586e5ff142ab6b56043ad4ec460097f821cf385b7f3aa2e557001f53",
+      "resultSha256": "29ec95b1586e5ff142ab6b56043ad4ec460097f821cf385b7f3aa2e557001f53"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/rendered/guide-8.png",
+      "action": "reuse-identical",
+      "inputSha256": "c3f2e5b75964f5d7d1113df7e462c548b1f5fb01a014f21764e75337f17bcb4b",
+      "resultSha256": "c3f2e5b75964f5d7d1113df7e462c548b1f5fb01a014f21764e75337f17bcb4b"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/rendered/pieces-color-1.png",
+      "action": "reuse-identical",
+      "inputSha256": "dd572c24106420ae61efe2853763b583df4370f8cf5fc07a260b924a8ed714a9",
+      "resultSha256": "dd572c24106420ae61efe2853763b583df4370f8cf5fc07a260b924a8ed714a9"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/rendered/pieces-color-2.png",
+      "action": "reuse-identical",
+      "inputSha256": "700d941df3766567c756de03f96f7c880e90a88d5c0dc72292606851c25e2600",
+      "resultSha256": "700d941df3766567c756de03f96f7c880e90a88d5c0dc72292606851c25e2600"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/rendered/pieces-color-3.png",
+      "action": "reuse-identical",
+      "inputSha256": "65f8eab57467d334c79919d132f48791dc35344b46ea9602f704269d087d9587",
+      "resultSha256": "65f8eab57467d334c79919d132f48791dc35344b46ea9602f704269d087d9587"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/rendered/pieces-color-4.png",
+      "action": "reuse-identical",
+      "inputSha256": "2b9f5c00fce1673e41bccc3150d9999adcb60b6d84b26cc485213f796486e31c",
+      "resultSha256": "2b9f5c00fce1673e41bccc3150d9999adcb60b6d84b26cc485213f796486e31c"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/rendered/pieces-color-5.png",
+      "action": "reuse-identical",
+      "inputSha256": "7ce1a54cbec600427ed37cf5a68ee74b4c98c79dde017d9894b2bb891054eac0",
+      "resultSha256": "7ce1a54cbec600427ed37cf5a68ee74b4c98c79dde017d9894b2bb891054eac0"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/rendered/pieces-color-6.png",
+      "action": "reuse-identical",
+      "inputSha256": "0728e3e1925acda29148fdbc3d4aab567d091a917725099fa6f352139db32cda",
+      "resultSha256": "0728e3e1925acda29148fdbc3d4aab567d091a917725099fa6f352139db32cda"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/rendered/pieces-gray-1.png",
+      "action": "reuse-identical",
+      "inputSha256": "00a051ec87a1d100b7a5b0dfc1ee63f65ec3d7280de27a475707574140877c93",
+      "resultSha256": "00a051ec87a1d100b7a5b0dfc1ee63f65ec3d7280de27a475707574140877c93"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/rendered/pieces-gray-2.png",
+      "action": "reuse-identical",
+      "inputSha256": "ac8a7575c8303363c4f2765292dfbccfca6dcb5e5ee1fbaf18932ef765d464cf",
+      "resultSha256": "ac8a7575c8303363c4f2765292dfbccfca6dcb5e5ee1fbaf18932ef765d464cf"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/rendered/pieces-gray-3.png",
+      "action": "reuse-identical",
+      "inputSha256": "c706193e9e94183104425f8cc2cd8d85aaec2e9316354bb71d88dcc1952d0e0e",
+      "resultSha256": "c706193e9e94183104425f8cc2cd8d85aaec2e9316354bb71d88dcc1952d0e0e"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/rendered/pieces-gray-4.png",
+      "action": "reuse-identical",
+      "inputSha256": "e5aae3e156f5855c380a694dbc964f73b7cc8662152db65ef0369c9e2c90931f",
+      "resultSha256": "e5aae3e156f5855c380a694dbc964f73b7cc8662152db65ef0369c9e2c90931f"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/rendered/pieces-gray-5.png",
+      "action": "reuse-identical",
+      "inputSha256": "00c20cd6bad38153347ba133469ab29e7a993099bcbdeafd98971421fc54999d",
+      "resultSha256": "00c20cd6bad38153347ba133469ab29e7a993099bcbdeafd98971421fc54999d"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/rendered/pieces-gray-6.png",
+      "action": "reuse-identical",
+      "inputSha256": "a4cf762bf1002e0331a19e8db6ff7202e0ffc1d6a787da1933cdb0c6ba474983",
+      "resultSha256": "a4cf762bf1002e0331a19e8db6ff7202e0ffc1d6a787da1933cdb0c6ba474983"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/rendered/teaching-1.png",
+      "action": "reuse-identical",
+      "inputSha256": "c902c08b4fdd7d1d9a7b1209c95285614fcd769319e28e5b3ccb699026d1be36",
+      "resultSha256": "c902c08b4fdd7d1d9a7b1209c95285614fcd769319e28e5b3ccb699026d1be36"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/rendered/tiles-color-1.png",
+      "action": "reuse-identical",
+      "inputSha256": "1cb662063cb85be416039fb2b060ce52582d3fefcb80349fdf17c6b73cdf75c5",
+      "resultSha256": "1cb662063cb85be416039fb2b060ce52582d3fefcb80349fdf17c6b73cdf75c5"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/rendered/tiles-color-2.png",
+      "action": "reuse-identical",
+      "inputSha256": "8e9672d6925a266f275670c7c441937b3441ec1e9936ee5c8730f1cc4f1e8573",
+      "resultSha256": "8e9672d6925a266f275670c7c441937b3441ec1e9936ee5c8730f1cc4f1e8573"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/rendered/tiles-color-3.png",
+      "action": "reuse-identical",
+      "inputSha256": "2411822e9d7633c6cf580ba4fb17d25c0d9f0846143990ffb22ed4a463f48277",
+      "resultSha256": "2411822e9d7633c6cf580ba4fb17d25c0d9f0846143990ffb22ed4a463f48277"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/rendered/tiles-color-4.png",
+      "action": "reuse-identical",
+      "inputSha256": "698446f26477139b4d0368ef05dd3650bb60ee1742c95fa05a561ec2c7ef77ec",
+      "resultSha256": "698446f26477139b4d0368ef05dd3650bb60ee1742c95fa05a561ec2c7ef77ec"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/rendered/tiles-color-5.png",
+      "action": "reuse-identical",
+      "inputSha256": "ee8572cd6776fe9a995aade808845d8fe1611226808a1ca3283371bef8f11ffe",
+      "resultSha256": "ee8572cd6776fe9a995aade808845d8fe1611226808a1ca3283371bef8f11ffe"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/rendered/tiles-color-6.png",
+      "action": "reuse-identical",
+      "inputSha256": "73e65697a2bbf787e0a4f38e59bc21de75eed80b6d7aa066665b1e7eb4da5aa0",
+      "resultSha256": "73e65697a2bbf787e0a4f38e59bc21de75eed80b6d7aa066665b1e7eb4da5aa0"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/rendered/tiles-gray-1.png",
+      "action": "reuse-identical",
+      "inputSha256": "2e624012695fa08f4d14b64292cbfb8484d8499af94443fd7420590710ae006f",
+      "resultSha256": "2e624012695fa08f4d14b64292cbfb8484d8499af94443fd7420590710ae006f"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/rendered/tiles-gray-2.png",
+      "action": "reuse-identical",
+      "inputSha256": "d9f3d66b6197ddcce797a2331b5598481967705d4b2a029cbd16928961302064",
+      "resultSha256": "d9f3d66b6197ddcce797a2331b5598481967705d4b2a029cbd16928961302064"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/rendered/tiles-gray-3.png",
+      "action": "reuse-identical",
+      "inputSha256": "577c9b91465a50d341315df8ddba56c9d4c009fc4121e7d5af9548d2a7d490ec",
+      "resultSha256": "577c9b91465a50d341315df8ddba56c9d4c009fc4121e7d5af9548d2a7d490ec"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/rendered/tiles-gray-4.png",
+      "action": "reuse-identical",
+      "inputSha256": "e8ae20bc4db225c1c364e650b222585860818c950a6e98c7dd62c84a6e25706f",
+      "resultSha256": "e8ae20bc4db225c1c364e650b222585860818c950a6e98c7dd62c84a6e25706f"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/rendered/tiles-gray-5.png",
+      "action": "reuse-identical",
+      "inputSha256": "675d2125c6fea6f0c6ea27ac8b41decca38a6372b507037fc4117c3f4906f2fc",
+      "resultSha256": "675d2125c6fea6f0c6ea27ac8b41decca38a6372b507037fc4117c3f4906f2fc"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/rendered/tiles-gray-6.png",
+      "action": "reuse-identical",
+      "inputSha256": "c36dcaa403a2af2207cb8fd6453fc142805f4b091c9c96c9e81b885134cd2217",
+      "resultSha256": "c36dcaa403a2af2207cb8fd6453fc142805f4b091c9c96c9e81b885134cd2217"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/teaching-contact.jpg",
+      "action": "reuse-identical",
+      "inputSha256": "10def4d56c41b81f37ad2246e80763ea8023775d653d1cc0d6c121e14f173f8e",
+      "resultSha256": "10def4d56c41b81f37ad2246e80763ea8023775d653d1cc0d6c121e14f173f8e"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/tiles-color-contact.jpg",
+      "action": "reuse-identical",
+      "inputSha256": "c695d6ee22e6445fa07f4465a4ae0560f109737028825220f2979c5218d1af53",
+      "resultSha256": "c695d6ee22e6445fa07f4465a4ae0560f109737028825220f2979c5218d1af53"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/qa/tiles-gray-contact.jpg",
+      "action": "reuse-identical",
+      "inputSha256": "5404cca708d51269176df1b7e267345391fc5b932d31ca06d3d80e543430500a",
+      "resultSha256": "5404cca708d51269176df1b7e267345391fc5b932d31ca06d3d80e543430500a"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/render_and_contact_sheet.sh",
+      "action": "reuse-identical",
+      "inputSha256": "35b4635c29c5e38e7ba9b92c5b3f4bd4b39421189b54a490aa589ca8d2eb3f72",
+      "resultSha256": "35b4635c29c5e38e7ba9b92c5b3f4bd4b39421189b54a490aa589ca8d2eb3f72"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/sources.md",
+      "action": "reuse-identical",
+      "inputSha256": "3acbd8d56069009406054530bdd425cf320e42906911fbbe3402ca4033f7b7d6",
+      "resultSha256": "3acbd8d56069009406054530bdd425cf320e42906911fbbe3402ca4033f7b7d6"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/teaching-flows-a3.pdf",
+      "action": "reuse-identical",
+      "inputSha256": "45bc7284c293d7fe7203dfe9046693cd4e586ead3ead609be2d9dda562dfa713",
+      "resultSha256": "45bc7284c293d7fe7203dfe9046693cd4e586ead3ead609be2d9dda562dfa713"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/teaching-flows-a3.svg",
+      "action": "reuse-identical",
+      "inputSha256": "daae5fcfbfd8db312d925973ea8102246f7a09000c3a8ccca3e26b9b2692d29f",
+      "resultSha256": "daae5fcfbfd8db312d925973ea8102246f7a09000c3a8ccca3e26b9b2692d29f"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/teaching-setups.json",
+      "action": "reuse-identical",
+      "inputSha256": "73ca7761f13554dc2a79a4d6081e2c8ba58188f495ab44e0107651e12484cf2d",
+      "resultSha256": "73ca7761f13554dc2a79a4d6081e2c8ba58188f495ab44e0107651e12484cf2d"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/trial-record.csv",
+      "action": "reuse-identical",
+      "inputSha256": "7461b57d3f1544089b1162048ddf71b834198fddf741893604a67cd3bee6932a",
+      "resultSha256": "7461b57d3f1544089b1162048ddf71b834198fddf741893604a67cd3bee6932a"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/verification-report.json",
+      "action": "reuse-identical",
+      "inputSha256": "c3ae762444463377c23ffb690147af93727ba54c454cd50156bc11734cb104cd",
+      "resultSha256": "c3ae762444463377c23ffb690147af93727ba54c454cd50156bc11734cb104cd"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/verify_assets.py",
+      "action": "reuse-identical",
+      "inputSha256": "7fa2be72a826e2c4da6bea52ebdb8061aa9a3145b6b5f102d4156f082feb13ec",
+      "resultSha256": "7fa2be72a826e2c4da6bea52ebdb8061aa9a3145b6b5f102d4156f082feb13ec"
+    },
+    {
+      "taskId": "T18",
+      "path": "materials/demo-board/visual-check.md",
+      "action": "reuse-identical",
+      "inputSha256": "362031d18e3e685a0ec0caa7036ee050d1f060c19417599e5eabe21f1698c860",
+      "resultSha256": "362031d18e3e685a0ec0caa7036ee050d1f060c19417599e5eabe21f1698c860"
+    },
+    {
+      "taskId": "T19",
+      "path": "handoff/T19.md",
+      "action": "add",
+      "inputSha256": "eebd06f6689fc89d20c5d83d6ae9daae2bd596b0caff01b396064ab79c19ef87",
+      "resultSha256": "eebd06f6689fc89d20c5d83d6ae9daae2bd596b0caff01b396064ab79c19ef87"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/CHANGELOG.md",
+      "action": "add",
+      "inputSha256": "f68e97a11895ac5a6efdc4222a1ec7f1745ec82afd1abe7032fef9cf9329d7a1",
+      "resultSha256": "f68e97a11895ac5a6efdc4222a1ec7f1745ec82afd1abe7032fef9cf9329d7a1"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/FILE_MANIFEST.json",
+      "action": "add",
+      "inputSha256": "784e52f71fcddd18ed075347bedfbe0114d897af93428d2ef894cbb697eb5649",
+      "resultSha256": "784e52f71fcddd18ed075347bedfbe0114d897af93428d2ef894cbb697eb5649"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/PRINT_AND_ASSEMBLY.md",
+      "action": "add",
+      "inputSha256": "257c11b75aaa95837d451527f65fd705e2a687cd9a3e4fa43940027146b563d0",
+      "resultSha256": "257c11b75aaa95837d451527f65fd705e2a687cd9a3e4fa43940027146b563d0"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/README.md",
+      "action": "add",
+      "inputSha256": "0b96b64fca423878105047783ee4d5fc50c437306ef92b94a7c322f3c998f4b7",
+      "resultSha256": "0b96b64fca423878105047783ee4d5fc50c437306ef92b94a7c322f3c998f4b7"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/SOURCES.md",
+      "action": "add",
+      "inputSha256": "ba0186f03400581d734bca86a97e028c465277b09c9dbdf8ef1368d69fa28206",
+      "resultSha256": "ba0186f03400581d734bca86a97e028c465277b09c9dbdf8ef1368d69fa28206"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a3_coordinates.pdf",
+      "action": "add",
+      "inputSha256": "95490f8b06e50c3ec9c8e84c3b4494a82e86f8c531f994109760b7741f57dfeb",
+      "resultSha256": "95490f8b06e50c3ec9c8e84c3b4494a82e86f8c531f994109760b7741f57dfeb"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a3_coordinates.svg",
+      "action": "add",
+      "inputSha256": "3745bac0e940181e287c347c5bbc27bb233a999a524ede8773d01e965a0b2f95",
+      "resultSha256": "3745bac0e940181e287c347c5bbc27bb233a999a524ede8773d01e965a0b2f95"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a3_coordinates_tiled-A4.pdf",
+      "action": "add",
+      "inputSha256": "2ea8fbdf0ea528eeffd564b557ff215fbbcdc0c52cdb3235b18860d18c9e9bab",
+      "resultSha256": "2ea8fbdf0ea528eeffd564b557ff215fbbcdc0c52cdb3235b18860d18c9e9bab"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a3_plain.pdf",
+      "action": "add",
+      "inputSha256": "bcdb0523943a56ae4b7609db164732b1814a75288d7992cb14de5b77e1307158",
+      "resultSha256": "bcdb0523943a56ae4b7609db164732b1814a75288d7992cb14de5b77e1307158"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a3_plain.svg",
+      "action": "add",
+      "inputSha256": "ccd6b862ae4064a854ef2c73df239f214d4671cbadf54200ccf37fd71762ce73",
+      "resultSha256": "ccd6b862ae4064a854ef2c73df239f214d4671cbadf54200ccf37fd71762ce73"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a3_plain_tiled-A4.pdf",
+      "action": "add",
+      "inputSha256": "7610a319e5c770b1833cc6875646b9650a3e152c7d20a064b46f9b93f223a13c",
+      "resultSha256": "7610a319e5c770b1833cc6875646b9650a3e152c7d20a064b46f9b93f223a13c"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a4_coordinates.pdf",
+      "action": "add",
+      "inputSha256": "67908975c2074a81c17957d01b70708da470768e729be9fedae2778fe8234aa1",
+      "resultSha256": "67908975c2074a81c17957d01b70708da470768e729be9fedae2778fe8234aa1"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a4_coordinates.svg",
+      "action": "add",
+      "inputSha256": "5dbc5d51075982ddee8dfbac2da057a495246d7ab462e8baeb63a8f73148f5bc",
+      "resultSha256": "5dbc5d51075982ddee8dfbac2da057a495246d7ab462e8baeb63a8f73148f5bc"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a4_plain.pdf",
+      "action": "add",
+      "inputSha256": "77760768ca85ad06fc5d8e0eb68ed2a4bce322849e6015d434bc09a275668305",
+      "resultSha256": "77760768ca85ad06fc5d8e0eb68ed2a4bce322849e6015d434bc09a275668305"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a4_plain.svg",
+      "action": "add",
+      "inputSha256": "58b69f76d61549ad3bded6c6393093d98a2dfaa72a66ae46a9a6ba5d5805587f",
+      "resultSha256": "58b69f76d61549ad3bded6c6393093d98a2dfaa72a66ae46a9a6ba5d5805587f"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a3_coordinates.pdf",
+      "action": "add",
+      "inputSha256": "3639858c83b8e8920cdb5f3e981f9aec0ccc1d9b0dcaa9873e4317595d0b2293",
+      "resultSha256": "3639858c83b8e8920cdb5f3e981f9aec0ccc1d9b0dcaa9873e4317595d0b2293"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a3_coordinates.svg",
+      "action": "add",
+      "inputSha256": "8be354920c81bb56ad08cc01426d873bbd0f19643f62e2cfdd81e7b806b266aa",
+      "resultSha256": "8be354920c81bb56ad08cc01426d873bbd0f19643f62e2cfdd81e7b806b266aa"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a3_coordinates_tiled-A4.pdf",
+      "action": "add",
+      "inputSha256": "fa2b3ff14412b89d3a91a65ba62c349bfce199a588a94ecc1d9b85acbd277ffb",
+      "resultSha256": "fa2b3ff14412b89d3a91a65ba62c349bfce199a588a94ecc1d9b85acbd277ffb"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a3_plain.pdf",
+      "action": "add",
+      "inputSha256": "094999beae0ee9a679f8cc7f3af35e0467ba098e488e5bf2d4fa76b3a9fecaa0",
+      "resultSha256": "094999beae0ee9a679f8cc7f3af35e0467ba098e488e5bf2d4fa76b3a9fecaa0"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a3_plain.svg",
+      "action": "add",
+      "inputSha256": "ba4cc1e0610914d1825f3b1f8db8abc26e307cca47b00f64a011e142d0e6fbf7",
+      "resultSha256": "ba4cc1e0610914d1825f3b1f8db8abc26e307cca47b00f64a011e142d0e6fbf7"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a3_plain_tiled-A4.pdf",
+      "action": "add",
+      "inputSha256": "e4dbf83fa26889fc3e858d669b78bd7cfaa011aa0a9d305fba33524725519f7a",
+      "resultSha256": "e4dbf83fa26889fc3e858d669b78bd7cfaa011aa0a9d305fba33524725519f7a"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a4_coordinates.pdf",
+      "action": "add",
+      "inputSha256": "48e094337970c7e5694e2fae4dc3477d8478d09bcab8d70f36073912cfd16135",
+      "resultSha256": "48e094337970c7e5694e2fae4dc3477d8478d09bcab8d70f36073912cfd16135"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a4_coordinates.svg",
+      "action": "add",
+      "inputSha256": "d101a47d210d6e77cb7c584ee6a7e0454af6f2bd5e4874647bc046ce771d9fe0",
+      "resultSha256": "d101a47d210d6e77cb7c584ee6a7e0454af6f2bd5e4874647bc046ce771d9fe0"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a4_plain.pdf",
+      "action": "add",
+      "inputSha256": "73a76c45bdf5136799135a9b00b48061f9334067c91330e1cc1f723310265ab7",
+      "resultSha256": "73a76c45bdf5136799135a9b00b48061f9334067c91330e1cc1f723310265ab7"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a4_plain.svg",
+      "action": "add",
+      "inputSha256": "06d453d68b792fae5c9c1913bcde498f63ec101bbf0399a8072a9fa43ad02fd0",
+      "resultSha256": "06d453d68b792fae5c9c1913bcde498f63ec101bbf0399a8072a9fa43ad02fd0"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/overlays/liberty-overlay_13x13-a3.pdf",
+      "action": "add",
+      "inputSha256": "e0116f5d9b477e6a69ffa585312985b34ebfa19d2af3e29c070c420802cfc60d",
+      "resultSha256": "e0116f5d9b477e6a69ffa585312985b34ebfa19d2af3e29c070c420802cfc60d"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/overlays/liberty-overlay_13x13-a3.svg",
+      "action": "add",
+      "inputSha256": "64b9dc7bd9abc5e880b999239f27526791409f2c491d876616b466ca86ba97bf",
+      "resultSha256": "64b9dc7bd9abc5e880b999239f27526791409f2c491d876616b466ca86ba97bf"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/overlays/liberty-overlay_13x13-a4.pdf",
+      "action": "add",
+      "inputSha256": "67989623fc21794e9c8fa36dce20415c65a1bbf1f8413a8856a4fcdcf028278e",
+      "resultSha256": "67989623fc21794e9c8fa36dce20415c65a1bbf1f8413a8856a4fcdcf028278e"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/overlays/liberty-overlay_13x13-a4.svg",
+      "action": "add",
+      "inputSha256": "d6fba1baeda71711103dc8ecf75c73ae06494bbebd6b9dec400b8f247bb27856",
+      "resultSha256": "d6fba1baeda71711103dc8ecf75c73ae06494bbebd6b9dec400b8f247bb27856"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/overlays/liberty-overlay_9x9-a3.pdf",
+      "action": "add",
+      "inputSha256": "5efd148e9563bd2ed74bc9deb7be7704a857667755d086317bda863bd1271dfc",
+      "resultSha256": "5efd148e9563bd2ed74bc9deb7be7704a857667755d086317bda863bd1271dfc"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/overlays/liberty-overlay_9x9-a3.svg",
+      "action": "add",
+      "inputSha256": "c9630f541d406703a07d837be06cd0b22ad83070a0bc397660540f1fb904d9a5",
+      "resultSha256": "c9630f541d406703a07d837be06cd0b22ad83070a0bc397660540f1fb904d9a5"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/overlays/liberty-overlay_9x9-a4.pdf",
+      "action": "add",
+      "inputSha256": "0523e1ba2abc87e8932e34c64df4b4338260ed95dbe7525b8dc4d1ca9c301c65",
+      "resultSha256": "0523e1ba2abc87e8932e34c64df4b4338260ed95dbe7525b8dc4d1ca9c301c65"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/overlays/liberty-overlay_9x9-a4.svg",
+      "action": "add",
+      "inputSha256": "38d8c610dc49b43472d8470c8812c45acafe814721fb7fad819ab17eec3ee06f",
+      "resultSha256": "38d8c610dc49b43472d8470c8812c45acafe814721fb7fad819ab17eec3ee06f"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/portable-kit/loan-return-checklist_A4.pdf",
+      "action": "add",
+      "inputSha256": "4288578866880c7c6a5ce2ea5c7bfaedb4ef32a4fea32147882dc87c48cfdba9",
+      "resultSha256": "4288578866880c7c6a5ce2ea5c7bfaedb4ef32a4fea32147882dc87c48cfdba9"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/portable-kit/loan-return-checklist_A4.svg",
+      "action": "add",
+      "inputSha256": "0378377a0dc52eebdc28e5624e09a31a91160a4f25f8460c552cdc13c67bdf76",
+      "resultSha256": "0378377a0dc52eebdc28e5624e09a31a91160a4f25f8460c552cdc13c67bdf76"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_12mm_black-white_338.pdf",
+      "action": "add",
+      "inputSha256": "5ad8988e27b26057de7539359b70743c59d0754d5a222f7189dc036b693e38e6",
+      "resultSha256": "5ad8988e27b26057de7539359b70743c59d0754d5a222f7189dc036b693e38e6"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_12mm_black_169.pdf",
+      "action": "add",
+      "inputSha256": "95396d5bcfec94381ae4662a54d266d219dce5c8248eba39b42b672bf4d0262b",
+      "resultSha256": "95396d5bcfec94381ae4662a54d266d219dce5c8248eba39b42b672bf4d0262b"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_12mm_black_169.svg",
+      "action": "add",
+      "inputSha256": "1d8fc8df2689f796eab6a66a096251591fcab43ed0e823d7529d9c9a8596253e",
+      "resultSha256": "1d8fc8df2689f796eab6a66a096251591fcab43ed0e823d7529d9c9a8596253e"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_12mm_white_169.pdf",
+      "action": "add",
+      "inputSha256": "4b85021bf549863d50e43715c252065668d6437cc45cd0d731c79c460a14d87e",
+      "resultSha256": "4b85021bf549863d50e43715c252065668d6437cc45cd0d731c79c460a14d87e"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_12mm_white_169.svg",
+      "action": "add",
+      "inputSha256": "a61ef9c84917173e8fa2137b772e9e86227a7c53f507f897e653b82289ae1910",
+      "resultSha256": "a61ef9c84917173e8fa2137b772e9e86227a7c53f507f897e653b82289ae1910"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_18mm_black-white_180.pdf",
+      "action": "add",
+      "inputSha256": "a89840bfb301ebf1206dee8a2fe9377675c2a6bed50ace1dfe3ea2054c07159d",
+      "resultSha256": "a89840bfb301ebf1206dee8a2fe9377675c2a6bed50ace1dfe3ea2054c07159d"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_18mm_black_90.pdf",
+      "action": "add",
+      "inputSha256": "a88af6c334fe80659080c7f817f9e3d3a620f001fc7e92df6841310ad93cbdf0",
+      "resultSha256": "a88af6c334fe80659080c7f817f9e3d3a620f001fc7e92df6841310ad93cbdf0"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_18mm_black_90.svg",
+      "action": "add",
+      "inputSha256": "524d7ceb2cbe5fd32731cf51866132c00ec7bc927c7aa2527986178571c09083",
+      "resultSha256": "524d7ceb2cbe5fd32731cf51866132c00ec7bc927c7aa2527986178571c09083"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_18mm_white_90.pdf",
+      "action": "add",
+      "inputSha256": "dd77478bceb4aed011d74df4b8de0fa54b197321d2e3b7086390415f583abab2",
+      "resultSha256": "dd77478bceb4aed011d74df4b8de0fa54b197321d2e3b7086390415f583abab2"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_18mm_white_90.svg",
+      "action": "add",
+      "inputSha256": "021a62d9c7547f1949aa449714d20cdeb8031ab3bc3fedc7d981c29d9b881811",
+      "resultSha256": "021a62d9c7547f1949aa449714d20cdeb8031ab3bc3fedc7d981c29d9b881811"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/portable-kit/portable-kit-layout_A4.pdf",
+      "action": "add",
+      "inputSha256": "0eab9787828e6270b129b4db14dcb819897f82cf62d9efc54524c25c9f407ae2",
+      "resultSha256": "0eab9787828e6270b129b4db14dcb819897f82cf62d9efc54524c25c9f407ae2"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/portable-kit/portable-kit-layout_A4.svg",
+      "action": "add",
+      "inputSha256": "e71003fd3bb463fd670274a3a38d9af15f816cc1c5b2440d1f55afa1382e65f5",
+      "resultSha256": "e71003fd3bb463fd670274a3a38d9af15f816cc1c5b2440d1f55afa1382e65f5"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/portable-kit/storage-labels_A4.pdf",
+      "action": "add",
+      "inputSha256": "bed47a29e5cbbbf9d3a8d8a800ede1ef43298202220aaa5161de05b2ea44c8fa",
+      "resultSha256": "bed47a29e5cbbbf9d3a8d8a800ede1ef43298202220aaa5161de05b2ea44c8fa"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/portable-kit/storage-labels_A4.svg",
+      "action": "add",
+      "inputSha256": "3e07fb532be0071f8ffb6d12bfddd70d4568af1088c685e044953c1e00d79510",
+      "resultSha256": "3e07fb532be0071f8ffb6d12bfddd70d4568af1088c685e044953c1e00d79510"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/print-pack_13x13-A3-extension.pdf",
+      "action": "add",
+      "inputSha256": "4a5ecc893d2b1dc5d25324e3cb090b4d89bbbed83feeb2ed05a6104c5a9aa30e",
+      "resultSha256": "4a5ecc893d2b1dc5d25324e3cb090b4d89bbbed83feeb2ed05a6104c5a9aa30e"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/print-pack_13x13-A4-small-extension.pdf",
+      "action": "add",
+      "inputSha256": "67a5d70794f41179e8508b688e686e14f790fe5f178067b709bf2dee0b03c6e9",
+      "resultSha256": "67a5d70794f41179e8508b688e686e14f790fe5f178067b709bf2dee0b03c6e9"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/output/print-pack_9x9-A4-portable-kit.pdf",
+      "action": "add",
+      "inputSha256": "83fc7e6796c08b25db12c6294dd6c5ea650d560390cc721456766cb2930daac9",
+      "resultSha256": "83fc7e6796c08b25db12c6294dd6c5ea650d560390cc721456766cb2930daac9"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/PRINT_AND_GEOMETRY_ACCEPTANCE.md",
+      "action": "add",
+      "inputSha256": "6c018ef17fd057fe242597be99990de3d20c949825bf1f45e192b16acb7ddd58",
+      "resultSha256": "6c018ef17fd057fe242597be99990de3d20c949825bf1f45e192b16acb7ddd58"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/contact-sheets/boards-color.png",
+      "action": "add",
+      "inputSha256": "25a1fa5a69f35c8bd1684271e4a14d705e3afc9c0dca01fa82c5d6c469a93d6f",
+      "resultSha256": "25a1fa5a69f35c8bd1684271e4a14d705e3afc9c0dca01fa82c5d6c469a93d6f"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/contact-sheets/boards-grayscale.png",
+      "action": "add",
+      "inputSha256": "d05d913527e030fd6329da70e13fe1b6ada15d9b500ecd6d3bd48085322b94cf",
+      "resultSha256": "d05d913527e030fd6329da70e13fe1b6ada15d9b500ecd6d3bd48085322b94cf"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/contact-sheets/overlays-color.png",
+      "action": "add",
+      "inputSha256": "999a9b4206a8b660d97e08926b0d923e6d78361161da19d2a8843eafa7346ddb",
+      "resultSha256": "999a9b4206a8b660d97e08926b0d923e6d78361161da19d2a8843eafa7346ddb"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/contact-sheets/overlays-grayscale.png",
+      "action": "add",
+      "inputSha256": "8c8fdec11cfde766ef6c4caec78c9c6c654fd7e182e44b5725ae4ff6199eb421",
+      "resultSha256": "8c8fdec11cfde766ef6c4caec78c9c6c654fd7e182e44b5725ae4ff6199eb421"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/contact-sheets/portable-kit-color.png",
+      "action": "add",
+      "inputSha256": "3b615def2f5704ed63cbba384205d83a65a5daff3b97e8d1ddcea6698d864c9c",
+      "resultSha256": "3b615def2f5704ed63cbba384205d83a65a5daff3b97e8d1ddcea6698d864c9c"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/contact-sheets/portable-kit-grayscale.png",
+      "action": "add",
+      "inputSha256": "a09139b1a715402c5f1266182fd8dd3d4b8dbf4171b001ce6077404c4a32137f",
+      "resultSha256": "a09139b1a715402c5f1266182fd8dd3d4b8dbf4171b001ce6077404c4a32137f"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/contact-sheets/print-packs-color.png",
+      "action": "add",
+      "inputSha256": "c2f52b5ee7406cbbedab41ee5242b987c7cd02c489555c29af40d42c4699efdb",
+      "resultSha256": "c2f52b5ee7406cbbedab41ee5242b987c7cd02c489555c29af40d42c4699efdb"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/contact-sheets/print-packs-grayscale.png",
+      "action": "add",
+      "inputSha256": "03beba4b282771a7a70347bb91ac1f3d0a7961baa909c803660ffc58ae17d172",
+      "resultSha256": "03beba4b282771a7a70347bb91ac1f3d0a7961baa909c803660ffc58ae17d172"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/geometry-report.json",
+      "action": "add",
+      "inputSha256": "83fa15a434ab5ccb7955030a8584221efbaf0e55bc26bb33401f69729e83cf35",
+      "resultSha256": "83fa15a434ab5ccb7955030a8584221efbaf0e55bc26bb33401f69729e83cf35"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/render-manifest.json",
+      "action": "add",
+      "inputSha256": "a9d784d8541441d4d487d4748e1927c7d2292478b39981f8899e66952404eaae",
+      "resultSha256": "a9d784d8541441d4d487d4748e1927c7d2292478b39981f8899e66952404eaae"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_13x13-a3_coordinates-1.png",
+      "action": "add",
+      "inputSha256": "fae297aeb5a6d00554e614d3874cac263f55f9926c638f34c6ab07c8fa057ef8",
+      "resultSha256": "fae297aeb5a6d00554e614d3874cac263f55f9926c638f34c6ab07c8fa057ef8"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_13x13-a3_coordinates_tiled-A4-1.png",
+      "action": "add",
+      "inputSha256": "90233d4c49431b408040fd93eddf0140ff17fe1918a4c1e9a0503aa832d663bd",
+      "resultSha256": "90233d4c49431b408040fd93eddf0140ff17fe1918a4c1e9a0503aa832d663bd"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_13x13-a3_coordinates_tiled-A4-2.png",
+      "action": "add",
+      "inputSha256": "e0e43b512e71080c8518e7d443a07ea3ee6dc0e80048db20df3ef4cb73626b31",
+      "resultSha256": "e0e43b512e71080c8518e7d443a07ea3ee6dc0e80048db20df3ef4cb73626b31"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_13x13-a3_plain-1.png",
+      "action": "add",
+      "inputSha256": "7be743b7c9229279c1be1d34a5949858b771e565e39dd0f2c1b8dd88edef4dff",
+      "resultSha256": "7be743b7c9229279c1be1d34a5949858b771e565e39dd0f2c1b8dd88edef4dff"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_13x13-a3_plain_tiled-A4-1.png",
+      "action": "add",
+      "inputSha256": "4e0c5ff542b6e8ea55b4b1997825a3de83caf2c0c8089d8b2b39f616ef25d2f2",
+      "resultSha256": "4e0c5ff542b6e8ea55b4b1997825a3de83caf2c0c8089d8b2b39f616ef25d2f2"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_13x13-a3_plain_tiled-A4-2.png",
+      "action": "add",
+      "inputSha256": "588347aeb280913652f6c69e728642de4ce7d803dd65b2fa6b0ea7a0285a076b",
+      "resultSha256": "588347aeb280913652f6c69e728642de4ce7d803dd65b2fa6b0ea7a0285a076b"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_13x13-a4_coordinates-1.png",
+      "action": "add",
+      "inputSha256": "0031af15176c7c6137c01055f4271cab8eaeacbe44c5f14a3024026d19a490f0",
+      "resultSha256": "0031af15176c7c6137c01055f4271cab8eaeacbe44c5f14a3024026d19a490f0"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_13x13-a4_plain-1.png",
+      "action": "add",
+      "inputSha256": "17f466ec643d57f601236c53ffcb0596bebda197b32dde35920abe224ee0ee74",
+      "resultSha256": "17f466ec643d57f601236c53ffcb0596bebda197b32dde35920abe224ee0ee74"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_9x9-a3_coordinates-1.png",
+      "action": "add",
+      "inputSha256": "f0643740d81250f5f4483f5dfdd25bbf0bc05c526a285ef34d01955efeb152fd",
+      "resultSha256": "f0643740d81250f5f4483f5dfdd25bbf0bc05c526a285ef34d01955efeb152fd"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_9x9-a3_coordinates_tiled-A4-1.png",
+      "action": "add",
+      "inputSha256": "8f1ba52aa4fe6abd7d79c0b3f80866ca7dc0f2956dec66fa77e36efd6da4c872",
+      "resultSha256": "8f1ba52aa4fe6abd7d79c0b3f80866ca7dc0f2956dec66fa77e36efd6da4c872"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_9x9-a3_coordinates_tiled-A4-2.png",
+      "action": "add",
+      "inputSha256": "d4b5e41687bbc8ccb11378b1b428635f6567dc1d7dc2377228634a83ae9982cb",
+      "resultSha256": "d4b5e41687bbc8ccb11378b1b428635f6567dc1d7dc2377228634a83ae9982cb"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_9x9-a3_plain-1.png",
+      "action": "add",
+      "inputSha256": "9ef696cf55791f78118098dd117a6bdb4c191ee52991906d81726475bcde70a6",
+      "resultSha256": "9ef696cf55791f78118098dd117a6bdb4c191ee52991906d81726475bcde70a6"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_9x9-a3_plain_tiled-A4-1.png",
+      "action": "add",
+      "inputSha256": "b57238be7d65a93f2a8d9b857d856dd05ea9894c69eeee28d7cdb6b49a88bf68",
+      "resultSha256": "b57238be7d65a93f2a8d9b857d856dd05ea9894c69eeee28d7cdb6b49a88bf68"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_9x9-a3_plain_tiled-A4-2.png",
+      "action": "add",
+      "inputSha256": "b8d9b34de246e04601ea932a953378d8f2e8850eda3367ef05a695774604b339",
+      "resultSha256": "b8d9b34de246e04601ea932a953378d8f2e8850eda3367ef05a695774604b339"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_9x9-a4_coordinates-1.png",
+      "action": "add",
+      "inputSha256": "950407948922d8b92b2fc3e3a04730b44c57a3811bc944f0f174407d93f1f4fb",
+      "resultSha256": "950407948922d8b92b2fc3e3a04730b44c57a3811bc944f0f174407d93f1f4fb"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_9x9-a4_plain-1.png",
+      "action": "add",
+      "inputSha256": "c57f9835d6f9b331a473eec26842e4e3cf5897edc25e524a224a101f448b380d",
+      "resultSha256": "c57f9835d6f9b331a473eec26842e4e3cf5897edc25e524a224a101f448b380d"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/overlays/liberty-overlay_13x13-a3-1.png",
+      "action": "add",
+      "inputSha256": "00961118bf057738df29ff045bc12321f9a02df144b21c73f349f19d767217b4",
+      "resultSha256": "00961118bf057738df29ff045bc12321f9a02df144b21c73f349f19d767217b4"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/overlays/liberty-overlay_13x13-a4-1.png",
+      "action": "add",
+      "inputSha256": "b154a7adc7e128e296703a738a5a9eaaa750e33757c8a3fdfa0d7d0642424665",
+      "resultSha256": "b154a7adc7e128e296703a738a5a9eaaa750e33757c8a3fdfa0d7d0642424665"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/overlays/liberty-overlay_9x9-a3-1.png",
+      "action": "add",
+      "inputSha256": "1c603fdd55e0b07032920ff9fb54776c7b27dd9c613c85ef8300f875c534b7e2",
+      "resultSha256": "1c603fdd55e0b07032920ff9fb54776c7b27dd9c613c85ef8300f875c534b7e2"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/overlays/liberty-overlay_9x9-a4-1.png",
+      "action": "add",
+      "inputSha256": "62a718f4d98ddeaa555f0b2ee86970905ab3ce6ab2ac6b8c647d1541f72cad3f",
+      "resultSha256": "62a718f4d98ddeaa555f0b2ee86970905ab3ce6ab2ac6b8c647d1541f72cad3f"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/portable-kit/loan-return-checklist_A4-1.png",
+      "action": "add",
+      "inputSha256": "04f261b25ffb7e2a2ff10bdccf128171e1569ca851b81d7b89d25811e1aa36a3",
+      "resultSha256": "04f261b25ffb7e2a2ff10bdccf128171e1569ca851b81d7b89d25811e1aa36a3"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/portable-kit/paper-stones_12mm_black-white_338-1.png",
+      "action": "add",
+      "inputSha256": "3152418fc37353a30e1a647a4bf1ce50b09c15c8c226fe2a41e5a69e0d25ee26",
+      "resultSha256": "3152418fc37353a30e1a647a4bf1ce50b09c15c8c226fe2a41e5a69e0d25ee26"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/portable-kit/paper-stones_12mm_black-white_338-2.png",
+      "action": "add",
+      "inputSha256": "7ac9578a4ea788bace7e81f2c3bdf50de856988c362717439229411e1ff13be8",
+      "resultSha256": "7ac9578a4ea788bace7e81f2c3bdf50de856988c362717439229411e1ff13be8"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/portable-kit/paper-stones_12mm_black_169-1.png",
+      "action": "add",
+      "inputSha256": "3152418fc37353a30e1a647a4bf1ce50b09c15c8c226fe2a41e5a69e0d25ee26",
+      "resultSha256": "3152418fc37353a30e1a647a4bf1ce50b09c15c8c226fe2a41e5a69e0d25ee26"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/portable-kit/paper-stones_12mm_white_169-1.png",
+      "action": "add",
+      "inputSha256": "7ac9578a4ea788bace7e81f2c3bdf50de856988c362717439229411e1ff13be8",
+      "resultSha256": "7ac9578a4ea788bace7e81f2c3bdf50de856988c362717439229411e1ff13be8"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/portable-kit/paper-stones_18mm_black-white_180-1.png",
+      "action": "add",
+      "inputSha256": "36239966c0c0767036ef947a6ef4fe3e07c8ec12cd4225abb49b2d4b1e041550",
+      "resultSha256": "36239966c0c0767036ef947a6ef4fe3e07c8ec12cd4225abb49b2d4b1e041550"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/portable-kit/paper-stones_18mm_black-white_180-2.png",
+      "action": "add",
+      "inputSha256": "3b0616912000124153686660af1c24cbb3a9b3d3f45a84902f3e09e7a3e1c186",
+      "resultSha256": "3b0616912000124153686660af1c24cbb3a9b3d3f45a84902f3e09e7a3e1c186"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/portable-kit/paper-stones_18mm_black_90-1.png",
+      "action": "add",
+      "inputSha256": "36239966c0c0767036ef947a6ef4fe3e07c8ec12cd4225abb49b2d4b1e041550",
+      "resultSha256": "36239966c0c0767036ef947a6ef4fe3e07c8ec12cd4225abb49b2d4b1e041550"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/portable-kit/paper-stones_18mm_white_90-1.png",
+      "action": "add",
+      "inputSha256": "3b0616912000124153686660af1c24cbb3a9b3d3f45a84902f3e09e7a3e1c186",
+      "resultSha256": "3b0616912000124153686660af1c24cbb3a9b3d3f45a84902f3e09e7a3e1c186"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/portable-kit/portable-kit-layout_A4-1.png",
+      "action": "add",
+      "inputSha256": "63be8234db7c72ce42f9dfc4554e10c2b997e49f13e33a8034e85f2efaf94587",
+      "resultSha256": "63be8234db7c72ce42f9dfc4554e10c2b997e49f13e33a8034e85f2efaf94587"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/portable-kit/storage-labels_A4-1.png",
+      "action": "add",
+      "inputSha256": "da420b97a0c36f1806e26fb1f22cacee4ff9a838303d0f6d5d1969d01b00df20",
+      "resultSha256": "da420b97a0c36f1806e26fb1f22cacee4ff9a838303d0f6d5d1969d01b00df20"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/print-packs/print-pack_13x13-A3-extension-1.png",
+      "action": "add",
+      "inputSha256": "fae297aeb5a6d00554e614d3874cac263f55f9926c638f34c6ab07c8fa057ef8",
+      "resultSha256": "fae297aeb5a6d00554e614d3874cac263f55f9926c638f34c6ab07c8fa057ef8"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/print-packs/print-pack_13x13-A3-extension-2.png",
+      "action": "add",
+      "inputSha256": "00961118bf057738df29ff045bc12321f9a02df144b21c73f349f19d767217b4",
+      "resultSha256": "00961118bf057738df29ff045bc12321f9a02df144b21c73f349f19d767217b4"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/print-packs/print-pack_13x13-A4-small-extension-1.png",
+      "action": "add",
+      "inputSha256": "0031af15176c7c6137c01055f4271cab8eaeacbe44c5f14a3024026d19a490f0",
+      "resultSha256": "0031af15176c7c6137c01055f4271cab8eaeacbe44c5f14a3024026d19a490f0"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/print-packs/print-pack_13x13-A4-small-extension-2.png",
+      "action": "add",
+      "inputSha256": "b154a7adc7e128e296703a738a5a9eaaa750e33757c8a3fdfa0d7d0642424665",
+      "resultSha256": "b154a7adc7e128e296703a738a5a9eaaa750e33757c8a3fdfa0d7d0642424665"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/print-packs/print-pack_13x13-A4-small-extension-3.png",
+      "action": "add",
+      "inputSha256": "3152418fc37353a30e1a647a4bf1ce50b09c15c8c226fe2a41e5a69e0d25ee26",
+      "resultSha256": "3152418fc37353a30e1a647a4bf1ce50b09c15c8c226fe2a41e5a69e0d25ee26"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/print-packs/print-pack_13x13-A4-small-extension-4.png",
+      "action": "add",
+      "inputSha256": "7ac9578a4ea788bace7e81f2c3bdf50de856988c362717439229411e1ff13be8",
+      "resultSha256": "7ac9578a4ea788bace7e81f2c3bdf50de856988c362717439229411e1ff13be8"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/print-packs/print-pack_9x9-A4-portable-kit-1.png",
+      "action": "add",
+      "inputSha256": "950407948922d8b92b2fc3e3a04730b44c57a3811bc944f0f174407d93f1f4fb",
+      "resultSha256": "950407948922d8b92b2fc3e3a04730b44c57a3811bc944f0f174407d93f1f4fb"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/print-packs/print-pack_9x9-A4-portable-kit-2.png",
+      "action": "add",
+      "inputSha256": "62a718f4d98ddeaa555f0b2ee86970905ab3ce6ab2ac6b8c647d1541f72cad3f",
+      "resultSha256": "62a718f4d98ddeaa555f0b2ee86970905ab3ce6ab2ac6b8c647d1541f72cad3f"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/print-packs/print-pack_9x9-A4-portable-kit-3.png",
+      "action": "add",
+      "inputSha256": "36239966c0c0767036ef947a6ef4fe3e07c8ec12cd4225abb49b2d4b1e041550",
+      "resultSha256": "36239966c0c0767036ef947a6ef4fe3e07c8ec12cd4225abb49b2d4b1e041550"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/print-packs/print-pack_9x9-A4-portable-kit-4.png",
+      "action": "add",
+      "inputSha256": "3b0616912000124153686660af1c24cbb3a9b3d3f45a84902f3e09e7a3e1c186",
+      "resultSha256": "3b0616912000124153686660af1c24cbb3a9b3d3f45a84902f3e09e7a3e1c186"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/print-packs/print-pack_9x9-A4-portable-kit-5.png",
+      "action": "add",
+      "inputSha256": "da420b97a0c36f1806e26fb1f22cacee4ff9a838303d0f6d5d1969d01b00df20",
+      "resultSha256": "da420b97a0c36f1806e26fb1f22cacee4ff9a838303d0f6d5d1969d01b00df20"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/print-packs/print-pack_9x9-A4-portable-kit-6.png",
+      "action": "add",
+      "inputSha256": "04f261b25ffb7e2a2ff10bdccf128171e1569ca851b81d7b89d25811e1aa36a3",
+      "resultSha256": "04f261b25ffb7e2a2ff10bdccf128171e1569ca851b81d7b89d25811e1aa36a3"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/qa/rendered-pages/print-packs/print-pack_9x9-A4-portable-kit-7.png",
+      "action": "add",
+      "inputSha256": "63be8234db7c72ce42f9dfc4554e10c2b997e49f13e33a8034e85f2efaf94587",
+      "resultSha256": "63be8234db7c72ce42f9dfc4554e10c2b997e49f13e33a8034e85f2efaf94587"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/tools/generate_pair_boards.py",
+      "action": "add",
+      "inputSha256": "6599415968d2ec2e978f935373e374bf4c112a188fd408548ec7186e21493963",
+      "resultSha256": "6599415968d2ec2e978f935373e374bf4c112a188fd408548ec7186e21493963"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/tools/package_t19.py",
+      "action": "add",
+      "inputSha256": "f0b15b1059aa028705de6596955dcc7335a88f0d139921477826f6c79e5ce943",
+      "resultSha256": "f0b15b1059aa028705de6596955dcc7335a88f0d139921477826f6c79e5ce943"
+    },
+    {
+      "taskId": "T19",
+      "path": "materials/pair-boards/tools/verify_geometry.py",
+      "action": "add",
+      "inputSha256": "18139d2cc650f2a603a1f9ccec6498eafe43b6b3440b1e81a47d6f0486cf18b4",
+      "resultSha256": "18139d2cc650f2a603a1f9ccec6498eafe43b6b3440b1e81a47d6f0486cf18b4"
+    },
+    {
+      "taskId": "T20",
+      "path": "handoff/T20.md",
+      "action": "reuse-identical",
+      "inputSha256": "e4643f151be6578c34044217ffd422fb278cddb0787199c287937b368335acdb",
+      "resultSha256": "e4643f151be6578c34044217ffd422fb278cddb0787199c287937b368335acdb"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/FILE_MANIFEST.json",
+      "action": "reuse-identical",
+      "inputSha256": "a854a184e9d3a440cc9b5effbe8c191bedc62d78a4352496384216620a4b6184",
+      "resultSha256": "a854a184e9d3a440cc9b5effbe8c191bedc62d78a4352496384216620a4b6184"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/PRINT-AND-TEACHER.md",
+      "action": "reuse-identical",
+      "inputSha256": "c1100b5f47b4e34a661a717357c1fc2da42399106bfdb9f34c162c332e274cd9",
+      "resultSha256": "c1100b5f47b4e34a661a717357c1fc2da42399106bfdb9f34c162c332e274cd9"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-CAPTURE-AFTER.json",
+      "action": "reuse-identical",
+      "inputSha256": "c49a90c0bcd509a47859e52e689ebf26cd3410797d70f59258b47bad180240d5",
+      "resultSha256": "c49a90c0bcd509a47859e52e689ebf26cd3410797d70f59258b47bad180240d5"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-CAPTURE-BEFORE.json",
+      "action": "reuse-identical",
+      "inputSha256": "6b7b4142b6aeae8b242c726a148a668ed55efe066c7bc5adcd12cfbade68daed",
+      "resultSha256": "6b7b4142b6aeae8b242c726a148a668ed55efe066c7bc5adcd12cfbade68daed"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-CONNECT.json",
+      "action": "reuse-identical",
+      "inputSha256": "c745c0a49849f21ca32a94106865328fb005d1a75136403754b5c713a0a07127",
+      "resultSha256": "c745c0a49849f21ca32a94106865328fb005d1a75136403754b5c713a0a07127"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-KO-AFTER.json",
+      "action": "reuse-identical",
+      "inputSha256": "89d9a194282bdbbce299ed730cec96191f7fc70c7667e1e3861122fb7b31fd43",
+      "resultSha256": "89d9a194282bdbbce299ed730cec96191f7fc70c7667e1e3861122fb7b31fd43"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-KO-BEFORE.json",
+      "action": "reuse-identical",
+      "inputSha256": "d4fe9642a299e6abb7fd957cb5d7fd0cf5f339980f812404f8f46f0dcf8d73b5",
+      "resultSha256": "d4fe9642a299e6abb7fd957cb5d7fd0cf5f339980f812404f8f46f0dcf8d73b5"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-LEGAL-AFTER.json",
+      "action": "reuse-identical",
+      "inputSha256": "a6e455337c43630ef583417544bd2e285ae507dee005acc4159149d073a6a909",
+      "resultSha256": "a6e455337c43630ef583417544bd2e285ae507dee005acc4159149d073a6a909"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-LEGAL-BEFORE.json",
+      "action": "reuse-identical",
+      "inputSha256": "4dc310af6907bf6ec3c6ff7dda5a0b5b31620c36fa90f7d6f6ac06ebbc066109",
+      "resultSha256": "4dc310af6907bf6ec3c6ff7dda5a0b5b31620c36fa90f7d6f6ac06ebbc066109"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-LIBERTY.json",
+      "action": "reuse-identical",
+      "inputSha256": "6c6907aa5af61161db98b961905a0a08f3382ad6c98bb4ad0ae2c73383c4f67b",
+      "resultSha256": "6c6907aa5af61161db98b961905a0a08f3382ad6c98bb4ad0ae2c73383c4f67b"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-SCORE.json",
+      "action": "reuse-identical",
+      "inputSha256": "4572ff686851003ddb99c7168251dc34ceeb8bfe8463f8717e797b60d534bf91",
+      "resultSha256": "4572ff686851003ddb99c7168251dc34ceeb8bfe8463f8717e797b60d534bf91"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/data/card-manifest.json",
+      "action": "reuse-identical",
+      "inputSha256": "f92021579bd38399d3bd7a72d81092eddb20067fd8a0adc2dbd2474a0a2a7025",
+      "resultSha256": "f92021579bd38399d3bd7a72d81092eddb20067fd8a0adc2dbd2474a0a2a7025"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/data/diagram-index.json",
+      "action": "reuse-identical",
+      "inputSha256": "74b73d83ee5f5651aa4302a8f5d63de7f6936ec60f6a32e21e02b774b1513fa7",
+      "resultSha256": "74b73d83ee5f5651aa4302a8f5d63de7f6936ec60f6a32e21e02b774b1513fa7"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/pdf/01-main-front.pdf",
+      "action": "reuse-identical",
+      "inputSha256": "62c7fcc18e99d28ca3e613449a4574dedd26586a50e28422f7228ce08d5b5371",
+      "resultSha256": "62c7fcc18e99d28ca3e613449a4574dedd26586a50e28422f7228ce08d5b5371"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/pdf/02-main-back.pdf",
+      "action": "reuse-identical",
+      "inputSha256": "ef30abc02924366ee564a4caadd81340795258a62c913719fb829015fbed9518",
+      "resultSha256": "ef30abc02924366ee564a4caadd81340795258a62c913719fb829015fbed9518"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/pdf/03-detail-front.pdf",
+      "action": "reuse-identical",
+      "inputSha256": "5839089cbb3bbf772b9de0001abd2da388840ed6137d0ddec1151f8964b94e2f",
+      "resultSha256": "5839089cbb3bbf772b9de0001abd2da388840ed6137d0ddec1151f8964b94e2f"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/pdf/04-detail-back.pdf",
+      "action": "reuse-identical",
+      "inputSha256": "d79c584965cdff7931cf342a2ab22ce80e5e7a5a3b14eebe1bd41ce0df2b7b2c",
+      "resultSha256": "d79c584965cdff7931cf342a2ab22ce80e5e7a5a3b14eebe1bd41ce0df2b7b2c"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/pdf/05-score.pdf",
+      "action": "reuse-identical",
+      "inputSha256": "201ad8c0767aa7187d607b90a384afdc6c974db06645af5ce1c128855b91c891",
+      "resultSha256": "201ad8c0767aa7187d607b90a384afdc6c974db06645af5ce1c128855b91c891"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/pdf/06-pathway.pdf",
+      "action": "reuse-identical",
+      "inputSha256": "d4da6bf7d772d62477615bc1e66c953b55537327627b996c93c0b26a1d24254f",
+      "resultSha256": "d4da6bf7d772d62477615bc1e66c953b55537327627b996c93c0b26a1d24254f"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/pdf/07-mini-front.pdf",
+      "action": "reuse-identical",
+      "inputSha256": "6f7338d48383a4d39ad24273d528b22db91ac6bae4dc403d28c61bc79cdcb5de",
+      "resultSha256": "6f7338d48383a4d39ad24273d528b22db91ac6bae4dc403d28c61bc79cdcb5de"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/pdf/08-mini-back.pdf",
+      "action": "reuse-identical",
+      "inputSha256": "d1e0ea15c210f81fd2028ca24361c6ed7962cfef49f95148872a21223b6416ba",
+      "resultSha256": "d1e0ea15c210f81fd2028ca24361c6ed7962cfef49f95148872a21223b6416ba"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/pdf/PRINT-A4-landscape-short-edge.pdf",
+      "action": "reuse-identical",
+      "inputSha256": "ed608bc9db4491808843ac7608bf7f8c02dec45e8f76a739fd7bf2e132c5fd55",
+      "resultSha256": "ed608bc9db4491808843ac7608bf7f8c02dec45e8f76a739fd7bf2e132c5fd55"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/pdf/PRINT-A4-portrait-long-edge-mini.pdf",
+      "action": "reuse-identical",
+      "inputSha256": "4aa90d2b658746c8736d0855064bc1c6dbbe6642635700eab3ac13dc4d55690e",
+      "resultSha256": "4aa90d2b658746c8736d0855064bc1c6dbbe6642635700eab3ac13dc4d55690e"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/pdf/all-independent-cards.pdf",
+      "action": "reuse-identical",
+      "inputSha256": "728a728831b2a7ed60c091555980274258d9c0ad659a96bbe04d03f5bb1902e8",
+      "resultSha256": "728a728831b2a7ed60c091555980274258d9c0ad659a96bbe04d03f5bb1902e8"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/pdf/capture-mini-A6-duplex.pdf",
+      "action": "reuse-identical",
+      "inputSha256": "4402fe60240903d2085ba284295a95918bc89f1c5de06e97f7cc5260d1a998c4",
+      "resultSha256": "4402fe60240903d2085ba284295a95918bc89f1c5de06e97f7cc5260d1a998c4"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/pdf/detailed-A5-duplex.pdf",
+      "action": "reuse-identical",
+      "inputSha256": "736c0cd25999d6ce863f1b5fdff6ab09dc0c9fb64517f952ea2b0eedd035d262",
+      "resultSha256": "736c0cd25999d6ce863f1b5fdff6ab09dc0c9fb64517f952ea2b0eedd035d262"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/pdf/main-rule-A5-duplex.pdf",
+      "action": "reuse-identical",
+      "inputSha256": "8dbd03fc2483195eb25ec4be3e2da19f3e0f4748b7b2859f9c460d0756552759",
+      "resultSha256": "8dbd03fc2483195eb25ec4be3e2da19f3e0f4748b7b2859f9c460d0756552759"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/source/01-main-front.svg",
+      "action": "reuse-identical",
+      "inputSha256": "b114ac7eeaf22c93dc082714aeb9e2a5959edd9f180a97dfce4dd24432928038",
+      "resultSha256": "b114ac7eeaf22c93dc082714aeb9e2a5959edd9f180a97dfce4dd24432928038"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/source/02-main-back.svg",
+      "action": "reuse-identical",
+      "inputSha256": "cb07a88c03f7a283201e37c3a9c0b2e26c73673d7360cf3b0c3d6b97757ba1b0",
+      "resultSha256": "cb07a88c03f7a283201e37c3a9c0b2e26c73673d7360cf3b0c3d6b97757ba1b0"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/source/03-detail-front.svg",
+      "action": "reuse-identical",
+      "inputSha256": "a47f34a0483f10fdf12b7735c03649491453a6175fd458cc3bab3a7ae115375d",
+      "resultSha256": "a47f34a0483f10fdf12b7735c03649491453a6175fd458cc3bab3a7ae115375d"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/source/04-detail-back.svg",
+      "action": "reuse-identical",
+      "inputSha256": "a990fe596dd9a17c39547a9660178afe5687ab0d19e22615723fa099315bb410",
+      "resultSha256": "a990fe596dd9a17c39547a9660178afe5687ab0d19e22615723fa099315bb410"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/source/05-score.svg",
+      "action": "reuse-identical",
+      "inputSha256": "9256446d1cdd9384f4702372a3c8e1cc23fba7e4c9cbe4fcf047883dbf42cb9f",
+      "resultSha256": "9256446d1cdd9384f4702372a3c8e1cc23fba7e4c9cbe4fcf047883dbf42cb9f"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/source/06-pathway.svg",
+      "action": "reuse-identical",
+      "inputSha256": "9eff91a03ef33ba60e8f33c0eb0cd23ba634f7a73837b8dd38bd37411fb62cf2",
+      "resultSha256": "9eff91a03ef33ba60e8f33c0eb0cd23ba634f7a73837b8dd38bd37411fb62cf2"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/source/07-mini-front.svg",
+      "action": "reuse-identical",
+      "inputSha256": "dc6e26f6196ca42e460246aae8c0a10067158ce1ba8ed1fb50ca01bb8057a8e4",
+      "resultSha256": "dc6e26f6196ca42e460246aae8c0a10067158ce1ba8ed1fb50ca01bb8057a8e4"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/source/08-mini-back.svg",
+      "action": "reuse-identical",
+      "inputSha256": "0e0fe223605bfcccafe2ea77922a9d292b66015789cfa51db273354df1b02474",
+      "resultSha256": "0e0fe223605bfcccafe2ea77922a9d292b66015789cfa51db273354df1b02474"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/source/PRINT-A4-landscape-short-edge-01.svg",
+      "action": "reuse-identical",
+      "inputSha256": "49f6438de52d71a4e99e697c2800fd108c330b5d1ad71b5a27d4028adf69607a",
+      "resultSha256": "49f6438de52d71a4e99e697c2800fd108c330b5d1ad71b5a27d4028adf69607a"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/source/PRINT-A4-landscape-short-edge-02.svg",
+      "action": "reuse-identical",
+      "inputSha256": "f661a8abcf1af7b1a2c6bb68faed6524d563ba78a33c79f585031e96490e5fdc",
+      "resultSha256": "f661a8abcf1af7b1a2c6bb68faed6524d563ba78a33c79f585031e96490e5fdc"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/source/PRINT-A4-landscape-short-edge-03.svg",
+      "action": "reuse-identical",
+      "inputSha256": "43c4fe5a14931e7475406ca8ac5b31b9635f9eb642e5cad10d90daf06ff8bd59",
+      "resultSha256": "43c4fe5a14931e7475406ca8ac5b31b9635f9eb642e5cad10d90daf06ff8bd59"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/source/PRINT-A4-landscape-short-edge-04.svg",
+      "action": "reuse-identical",
+      "inputSha256": "d2958fa634ebc7da19ec0ebe689007c4d40ac787cfc381636d9c50f0b0c18ea0",
+      "resultSha256": "d2958fa634ebc7da19ec0ebe689007c4d40ac787cfc381636d9c50f0b0c18ea0"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/source/PRINT-A4-landscape-short-edge-05.svg",
+      "action": "reuse-identical",
+      "inputSha256": "f6eee8a680fbbe7945e8d6724af4ab831561cab9ed73b37a2cf85f0b905502c6",
+      "resultSha256": "f6eee8a680fbbe7945e8d6724af4ab831561cab9ed73b37a2cf85f0b905502c6"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/source/PRINT-A4-landscape-short-edge-06.svg",
+      "action": "reuse-identical",
+      "inputSha256": "da9b0b6dae1e633f2a317e369e9f6980aab752654f44e00690fcfe79d89fa025",
+      "resultSha256": "da9b0b6dae1e633f2a317e369e9f6980aab752654f44e00690fcfe79d89fa025"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/source/PRINT-A4-portrait-long-edge-mini-01.svg",
+      "action": "reuse-identical",
+      "inputSha256": "0378ca2cb5d7c9d19354e45376e232905dbf14106bf33a086c11292a23fe423a",
+      "resultSha256": "0378ca2cb5d7c9d19354e45376e232905dbf14106bf33a086c11292a23fe423a"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/source/PRINT-A4-portrait-long-edge-mini-02.svg",
+      "action": "reuse-identical",
+      "inputSha256": "719d6ed0e8f627ae369f3adb3797336da3ad9b72fcb0e0b37dce7a691634b44b",
+      "resultSha256": "719d6ed0e8f627ae369f3adb3797336da3ad9b72fcb0e0b37dce7a691634b44b"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/source/build_cards.py",
+      "action": "reuse-identical",
+      "inputSha256": "c7b3d05841a985f854419e75102e3fe1b2f9cf76dc684c912f2c32c8f93d768d",
+      "resultSha256": "c7b3d05841a985f854419e75102e3fe1b2f9cf76dc684c912f2c32c8f93d768d"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/source/make-contact.py",
+      "action": "reuse-identical",
+      "inputSha256": "138fc15bcfd06a61d38076ed69a6e70a5757178dce2559163ade173f4068c8c4",
+      "resultSha256": "138fc15bcfd06a61d38076ed69a6e70a5757178dce2559163ade173f4068c8c4"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/source/package.py",
+      "action": "reuse-identical",
+      "inputSha256": "33ae31096295776b43c11718669f6e6003faa73549371bd687318a496c666944",
+      "resultSha256": "33ae31096295776b43c11718669f6e6003faa73549371bd687318a496c666944"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/source/verify-demos.mjs",
+      "action": "reuse-identical",
+      "inputSha256": "b00d1de659f899d3e17530e769852546fd0cd6db9970237f50a85e9b02ba9ed0",
+      "resultSha256": "b00d1de659f899d3e17530e769852546fd0cd6db9970237f50a85e9b02ba9ed0"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/source/verify-print.py",
+      "action": "reuse-identical",
+      "inputSha256": "3f288eef828d7bd0f14724d6a3f1c4512af41ccd5ee1fcd52b013e7d70b69d8c",
+      "resultSha256": "3f288eef828d7bd0f14724d6a3f1c4512af41ccd5ee1fcd52b013e7d70b69d8c"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/validation/ACCEPTANCE.md",
+      "action": "reuse-identical",
+      "inputSha256": "a9c197455a65100f473a7a393672b3127191dae1441f5870b7071e1cec54eb82",
+      "resultSha256": "a9c197455a65100f473a7a393672b3127191dae1441f5870b7071e1cec54eb82"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/validation/a4-1.png",
+      "action": "reuse-identical",
+      "inputSha256": "ef0b10e0718cf991af65a9f8eca40f4cbae31f2446d978ce170baa1973f2e529",
+      "resultSha256": "ef0b10e0718cf991af65a9f8eca40f4cbae31f2446d978ce170baa1973f2e529"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/validation/a4-2.png",
+      "action": "reuse-identical",
+      "inputSha256": "03a2dbb21214e96330552520084b827e62829360380a744e6993302cda192ea2",
+      "resultSha256": "03a2dbb21214e96330552520084b827e62829360380a744e6993302cda192ea2"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/validation/a4-3.png",
+      "action": "reuse-identical",
+      "inputSha256": "53c6370fc63bb76a50f58b3ff791907f4eafb1fada26284efeeeb54f473bfe09",
+      "resultSha256": "53c6370fc63bb76a50f58b3ff791907f4eafb1fada26284efeeeb54f473bfe09"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/validation/a4-4.png",
+      "action": "reuse-identical",
+      "inputSha256": "4c653aa411965835be2db7b974d820389461961c50a0ad1b1363a6443efab7a1",
+      "resultSha256": "4c653aa411965835be2db7b974d820389461961c50a0ad1b1363a6443efab7a1"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/validation/a4-5.png",
+      "action": "reuse-identical",
+      "inputSha256": "76eb667b23ff95a65e0bb859675fcf03e085ef29c596f5a51c5d75b13bbbb80e",
+      "resultSha256": "76eb667b23ff95a65e0bb859675fcf03e085ef29c596f5a51c5d75b13bbbb80e"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/validation/a4-6.png",
+      "action": "reuse-identical",
+      "inputSha256": "57bcdaf21917e0fb4849949a754f86a144c2946766a9c83df96232fd429feeba",
+      "resultSha256": "57bcdaf21917e0fb4849949a754f86a144c2946766a9c83df96232fd429feeba"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/validation/a4-contact-1.png",
+      "action": "reuse-identical",
+      "inputSha256": "e0a0b412fad342ac40550cd3ee1da604cf0b864cf65d25e37365145116d5787b",
+      "resultSha256": "e0a0b412fad342ac40550cd3ee1da604cf0b864cf65d25e37365145116d5787b"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/validation/a4-gray-1.png",
+      "action": "reuse-identical",
+      "inputSha256": "f19ce6631030f24c5b5fa16010a8f9cb95639f557b84de67b105576e5aa56e38",
+      "resultSha256": "f19ce6631030f24c5b5fa16010a8f9cb95639f557b84de67b105576e5aa56e38"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/validation/card-1.png",
+      "action": "reuse-identical",
+      "inputSha256": "9874e002ace03934f265146ab02b562fa27495b3738d53af623678295530eeba",
+      "resultSha256": "9874e002ace03934f265146ab02b562fa27495b3738d53af623678295530eeba"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/validation/card-2.png",
+      "action": "reuse-identical",
+      "inputSha256": "19da2d55d22ccb555122e1820224520b3b4f955066226b5804221e6c8f8e22ed",
+      "resultSha256": "19da2d55d22ccb555122e1820224520b3b4f955066226b5804221e6c8f8e22ed"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/validation/card-3.png",
+      "action": "reuse-identical",
+      "inputSha256": "e05ab2eafd7bd73200d454f42cd3bf098439cc3ad34037a83235f622facc9d4e",
+      "resultSha256": "e05ab2eafd7bd73200d454f42cd3bf098439cc3ad34037a83235f622facc9d4e"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/validation/card-4.png",
+      "action": "reuse-identical",
+      "inputSha256": "a08aa2295e9d1a56c302593bd47812ad38431cb9fc0c5efcdcb867099e2ab612",
+      "resultSha256": "a08aa2295e9d1a56c302593bd47812ad38431cb9fc0c5efcdcb867099e2ab612"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/validation/card-5.png",
+      "action": "reuse-identical",
+      "inputSha256": "53976172e02a23d7a0443f44eeffa72f4ea0115d4d95c24e344f47907e2e18f8",
+      "resultSha256": "53976172e02a23d7a0443f44eeffa72f4ea0115d4d95c24e344f47907e2e18f8"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/validation/card-6.png",
+      "action": "reuse-identical",
+      "inputSha256": "db842b9d1993d281601179ee6eaa434eaa4ad84bf2f3fd5ebb864d04615d46c7",
+      "resultSha256": "db842b9d1993d281601179ee6eaa434eaa4ad84bf2f3fd5ebb864d04615d46c7"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/validation/card-7.png",
+      "action": "reuse-identical",
+      "inputSha256": "27cd7d8829caaf88ec824ad0cec8ea7d96c9cb8261e0eaae8a3058803d9afdae",
+      "resultSha256": "27cd7d8829caaf88ec824ad0cec8ea7d96c9cb8261e0eaae8a3058803d9afdae"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/validation/card-8.png",
+      "action": "reuse-identical",
+      "inputSha256": "2f8ab05c14177f26ffe859ac7d1b404275c0ab40cdd2fdf7e76e30eb6ca4baf9",
+      "resultSha256": "2f8ab05c14177f26ffe859ac7d1b404275c0ab40cdd2fdf7e76e30eb6ca4baf9"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/validation/card-contact-1.png",
+      "action": "reuse-identical",
+      "inputSha256": "708242b93413ad89b54e4fbd3d1c0170bd0a258a756d6da1388b77127ce9798e",
+      "resultSha256": "708242b93413ad89b54e4fbd3d1c0170bd0a258a756d6da1388b77127ce9798e"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/validation/card-contact-2.png",
+      "action": "reuse-identical",
+      "inputSha256": "550456204d72f57ed51245d2c3166e07615510cbc19afdac3a9ce588efdaece4",
+      "resultSha256": "550456204d72f57ed51245d2c3166e07615510cbc19afdac3a9ce588efdaece4"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/validation/card-gray-1.png",
+      "action": "reuse-identical",
+      "inputSha256": "1808f24df5275dd886c1b8ef56925c70d5b31e86e71649e1cbdb4cf857473232",
+      "resultSha256": "1808f24df5275dd886c1b8ef56925c70d5b31e86e71649e1cbdb4cf857473232"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/validation/card-gray-2.png",
+      "action": "reuse-identical",
+      "inputSha256": "4691ade8e35310a398955a336282d7c6024162b169260686c9c3102e6a1702a4",
+      "resultSha256": "4691ade8e35310a398955a336282d7c6024162b169260686c9c3102e6a1702a4"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/validation/engine-checks.json",
+      "action": "reuse-identical",
+      "inputSha256": "bbd31de1c58247ee871eb82f9344940e3e1802bd0dab1146b3eb4778e2594aeb",
+      "resultSha256": "bbd31de1c58247ee871eb82f9344940e3e1802bd0dab1146b3eb4778e2594aeb"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/validation/input-manifest.json",
+      "action": "reuse-identical",
+      "inputSha256": "1452173f6081ab340115afc01fa191a1da62e4f8337adf6938578e1912267bab",
+      "resultSha256": "1452173f6081ab340115afc01fa191a1da62e4f8337adf6938578e1912267bab"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/validation/mini-1.png",
+      "action": "reuse-identical",
+      "inputSha256": "a1a458cda61f05f34a90f248c9defe4b48d3286c842b2a58a4be636d7c4d08cf",
+      "resultSha256": "a1a458cda61f05f34a90f248c9defe4b48d3286c842b2a58a4be636d7c4d08cf"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/validation/mini-2.png",
+      "action": "reuse-identical",
+      "inputSha256": "cd720dcc42bc15cd857f9481a642982e46cfebd9bb98e46e27658357f5134498",
+      "resultSha256": "cd720dcc42bc15cd857f9481a642982e46cfebd9bb98e46e27658357f5134498"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/validation/mini-contact-1.png",
+      "action": "reuse-identical",
+      "inputSha256": "4a171aca532603942dd83891ffeba27d7d7260a7f7000906292bae70f6f71538",
+      "resultSha256": "4a171aca532603942dd83891ffeba27d7d7260a7f7000906292bae70f6f71538"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/validation/mini-gray-1.png",
+      "action": "reuse-identical",
+      "inputSha256": "e05d823629c6fdcdc5b599f9723ea07aae64c21a90f9e5016fb5f377314fcbc7",
+      "resultSha256": "e05d823629c6fdcdc5b599f9723ea07aae64c21a90f9e5016fb5f377314fcbc7"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/validation/print-checks.json",
+      "action": "reuse-identical",
+      "inputSha256": "40f41314d1cb2c4debb8ab4e16814040a78f98944e41acfb627e7e48789861cf",
+      "resultSha256": "40f41314d1cb2c4debb8ab4e16814040a78f98944e41acfb627e7e48789861cf"
+    },
+    {
+      "taskId": "T20",
+      "path": "materials/rule-cards/validation/text-geometry.json",
+      "action": "reuse-identical",
+      "inputSha256": "b49e1ecfa4622f9cb63775b01dd088fd598f98258167e4568281dbb076dc33b9",
+      "resultSha256": "b49e1ecfa4622f9cb63775b01dd088fd598f98258167e4568281dbb076dc33b9"
+    },
+    {
+      "taskId": "T21",
+      "path": "handoff/T21.md",
+      "action": "add",
+      "inputSha256": "26cd98c2abddc0cabc52d18529c09b6577930d39a8844e6bfa2a75bf9ec0aec4",
+      "resultSha256": "26cd98c2abddc0cabc52d18529c09b6577930d39a8844e6bfa2a75bf9ec0aec4"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/CARD_INDEX.csv",
+      "action": "add",
+      "inputSha256": "a8ad9ec10ed6c183e803c32b05198a8477039ab41c19c587f5b2e9a10e0ff08f",
+      "resultSha256": "a8ad9ec10ed6c183e803c32b05198a8477039ab41c19c587f5b2e9a10e0ff08f"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/CARD_INDEX.json",
+      "action": "add",
+      "inputSha256": "def1d31d1a1d69f98d8a34edfbe96639cc855fef8a8fa17148a22098ba486fc3",
+      "resultSha256": "def1d31d1a1d69f98d8a34edfbe96639cc855fef8a8fa17148a22098ba486fc3"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/PRINT-AND-ACTIVITIES.md",
+      "action": "add",
+      "inputSha256": "6e0028f56b97fb3ab98c7ecaebdb286d7584b7b30fa0081afef3d5aa3a2c532e",
+      "resultSha256": "6e0028f56b97fb3ab98c7ecaebdb286d7584b7b30fa0081afef3d5aa3a2c532e"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/README.md",
+      "action": "add",
+      "inputSha256": "4eb977ef8077eb5d040b7e530b335aad2d2a91f6e9e2ac38363d6f2a30f108b2",
+      "resultSha256": "4eb977ef8077eb5d040b7e530b335aad2d2a91f6e9e2ac38363d6f2a30f108b2"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/SOURCES.md",
+      "action": "add",
+      "inputSha256": "a71ced3b536fbeb93b3b175d95a4e3a92f9c657d55776cd2df5e0094194cf76f",
+      "resultSha256": "a71ced3b536fbeb93b3b175d95a4e3a92f9c657d55776cd2df5e0094194cf76f"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/back/AREA-001-back.svg",
+      "action": "add",
+      "inputSha256": "4572af775f397f56c063ce0046fef6597f22a1966cc798b34e43bf34736649a2",
+      "resultSha256": "4572af775f397f56c063ce0046fef6597f22a1966cc798b34e43bf34736649a2"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/back/AREA-002-back.svg",
+      "action": "add",
+      "inputSha256": "0c399056a748875f58f59c5e8f443aa6c4f4e6434d0a7363f75ed8274accd574",
+      "resultSha256": "0c399056a748875f58f59c5e8f443aa6c4f4e6434d0a7363f75ed8274accd574"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/back/AREA-003-back.svg",
+      "action": "add",
+      "inputSha256": "6b4f810cbe3c765ae2e7af0cb7ccfaf6ae45393c802d9cf84b27bde49a36e636",
+      "resultSha256": "6b4f810cbe3c765ae2e7af0cb7ccfaf6ae45393c802d9cf84b27bde49a36e636"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/back/AREA-004-back.svg",
+      "action": "add",
+      "inputSha256": "e73fe0328cc30bed645fcae8a452144864d380ae83b8cd751de8e320be042baa",
+      "resultSha256": "e73fe0328cc30bed645fcae8a452144864d380ae83b8cd751de8e320be042baa"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/back/AREA-005-back.svg",
+      "action": "add",
+      "inputSha256": "c48dedeefd65970e4e135cc75fdd5dc6e2d731f388a48b6b1286025b2a018b93",
+      "resultSha256": "c48dedeefd65970e4e135cc75fdd5dc6e2d731f388a48b6b1286025b2a018b93"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/back/CAP-001-back.svg",
+      "action": "add",
+      "inputSha256": "654181c7db5661eb84cab87ca9ec264ad29afa88477fe3cc82a8f29c0b5bc2d8",
+      "resultSha256": "654181c7db5661eb84cab87ca9ec264ad29afa88477fe3cc82a8f29c0b5bc2d8"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/back/CAP-002-back.svg",
+      "action": "add",
+      "inputSha256": "21625f8d32f60eab82a64c590e17b071c9a0130e01fcdb8f6eb1363ea5701bdc",
+      "resultSha256": "21625f8d32f60eab82a64c590e17b071c9a0130e01fcdb8f6eb1363ea5701bdc"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/back/CAP-003-back.svg",
+      "action": "add",
+      "inputSha256": "bb4d327794e6aacfd500743fdb5a2d4c304e2ae32642eb16846218548015d8c9",
+      "resultSha256": "bb4d327794e6aacfd500743fdb5a2d4c304e2ae32642eb16846218548015d8c9"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/back/CAP-004-back.svg",
+      "action": "add",
+      "inputSha256": "3ca367a1cae3d8c6e48efdff1c4b5f54b2d21addbb98cd831a6819fd0552fb2f",
+      "resultSha256": "3ca367a1cae3d8c6e48efdff1c4b5f54b2d21addbb98cd831a6819fd0552fb2f"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/back/CAP-005-back.svg",
+      "action": "add",
+      "inputSha256": "9d68bccd94bfd5ed1599eefd2afe94ecfe2b6fa2b8e8f10618bdf89ac46b2e77",
+      "resultSha256": "9d68bccd94bfd5ed1599eefd2afe94ecfe2b6fa2b8e8f10618bdf89ac46b2e77"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/back/CON-001-back.svg",
+      "action": "add",
+      "inputSha256": "95709d8ff03d8ae3ecb1db68dfe7b048972a5b6502bbc91c434ec3ed369a3b85",
+      "resultSha256": "95709d8ff03d8ae3ecb1db68dfe7b048972a5b6502bbc91c434ec3ed369a3b85"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/back/CON-002-back.svg",
+      "action": "add",
+      "inputSha256": "1be4fb5afe6003f39fe99fff8f9555f11a7db95d482cc3cd835e315bb8a78b8d",
+      "resultSha256": "1be4fb5afe6003f39fe99fff8f9555f11a7db95d482cc3cd835e315bb8a78b8d"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/back/CON-003-back.svg",
+      "action": "add",
+      "inputSha256": "0e4fa2b12174a78899fc07c3018a877b27c72fa439795d3c4a3410e71c2b816f",
+      "resultSha256": "0e4fa2b12174a78899fc07c3018a877b27c72fa439795d3c4a3410e71c2b816f"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/back/CON-004-back.svg",
+      "action": "add",
+      "inputSha256": "83b38aa8919d1d1bda875d4e8ccde868397a66ac962bc1ff1720d25b0a5c0cd7",
+      "resultSha256": "83b38aa8919d1d1bda875d4e8ccde868397a66ac962bc1ff1720d25b0a5c0cd7"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/back/CON-005-back.svg",
+      "action": "add",
+      "inputSha256": "561403549fcaecd984a8ee96d4f41e2b0c0aca5cbc810f146e53e59e4b1209bf",
+      "resultSha256": "561403549fcaecd984a8ee96d4f41e2b0c0aca5cbc810f146e53e59e4b1209bf"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/back/DISC-001-back.svg",
+      "action": "add",
+      "inputSha256": "a750c1e1b01c2aa18ed3ad43c8e6e264556f964797bf204674724542fe0d30ba",
+      "resultSha256": "a750c1e1b01c2aa18ed3ad43c8e6e264556f964797bf204674724542fe0d30ba"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/back/DISC-002-back.svg",
+      "action": "add",
+      "inputSha256": "7607bfa5e66be32f85c1b99ed941f79fa2ebd8d3d5a03b58939affdd2aa318e6",
+      "resultSha256": "7607bfa5e66be32f85c1b99ed941f79fa2ebd8d3d5a03b58939affdd2aa318e6"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/back/DISC-003-back.svg",
+      "action": "add",
+      "inputSha256": "9108ed16b246ee5a3cc37ab916ec0c604450a472e64c824ab8e325e989f2c7b9",
+      "resultSha256": "9108ed16b246ee5a3cc37ab916ec0c604450a472e64c824ab8e325e989f2c7b9"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/back/DISC-004-back.svg",
+      "action": "add",
+      "inputSha256": "834bc5382033cc578c9e134138ea13c34530bbc2490a6a311245c724b9e798e7",
+      "resultSha256": "834bc5382033cc578c9e134138ea13c34530bbc2490a6a311245c724b9e798e7"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/back/DISC-005-back.svg",
+      "action": "add",
+      "inputSha256": "a64e4479b4b664ce88bbf14299a24b9cc5e3e79100e6563da9067625a24a2509",
+      "resultSha256": "a64e4479b4b664ce88bbf14299a24b9cc5e3e79100e6563da9067625a24a2509"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/back/LIB-001-back.svg",
+      "action": "add",
+      "inputSha256": "e916701769f1a09da4e37b446b1852207932bc8813f4b88fc9e057cadf3c9b86",
+      "resultSha256": "e916701769f1a09da4e37b446b1852207932bc8813f4b88fc9e057cadf3c9b86"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/back/LIB-002-back.svg",
+      "action": "add",
+      "inputSha256": "5cb6bbf769ef8500284ebd679235882e1347790e99ff10c3215e68263c57c05d",
+      "resultSha256": "5cb6bbf769ef8500284ebd679235882e1347790e99ff10c3215e68263c57c05d"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/back/LIB-003-back.svg",
+      "action": "add",
+      "inputSha256": "78e6b9ad3a655a5fba5b6629891a3e588bdc9b65810b120232a9ce9e8afaa71c",
+      "resultSha256": "78e6b9ad3a655a5fba5b6629891a3e588bdc9b65810b120232a9ce9e8afaa71c"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/back/LIB-004-back.svg",
+      "action": "add",
+      "inputSha256": "0d0f4d850404ad68c3b0ecf35e46d952b07a50016adfb9e8d3a7aca9b9d1b6b8",
+      "resultSha256": "0d0f4d850404ad68c3b0ecf35e46d952b07a50016adfb9e8d3a7aca9b9d1b6b8"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/back/LIB-005-back.svg",
+      "action": "add",
+      "inputSha256": "e9854cf669b7331d175436194fc71eff616b193bb100d81a510c22092ac191eb",
+      "resultSha256": "e9854cf669b7331d175436194fc71eff616b193bb100d81a510c22092ac191eb"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/back/LIFE-001-back.svg",
+      "action": "add",
+      "inputSha256": "f08646d434385cbbda831f0b9f18c6b0281a8c5b31f7ac6ddf837f91494985b8",
+      "resultSha256": "f08646d434385cbbda831f0b9f18c6b0281a8c5b31f7ac6ddf837f91494985b8"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/back/LIFE-002-back.svg",
+      "action": "add",
+      "inputSha256": "3bf6b954baeeb5dcf8dcd0aa45f85fd6fef883c19d7b2fac8a6756b848085709",
+      "resultSha256": "3bf6b954baeeb5dcf8dcd0aa45f85fd6fef883c19d7b2fac8a6756b848085709"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/back/LIFE-003-back.svg",
+      "action": "add",
+      "inputSha256": "edc3747d7be4db953a959565ed514b0bef8992099e321364ee01e817dc2270c7",
+      "resultSha256": "edc3747d7be4db953a959565ed514b0bef8992099e321364ee01e817dc2270c7"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/back/LIFE-004-back.svg",
+      "action": "add",
+      "inputSha256": "bf7df2eabd4009f714c38c51f93e62c7e3fd60d3cfaeb4bfd0dc581ed90d879e",
+      "resultSha256": "bf7df2eabd4009f714c38c51f93e62c7e3fd60d3cfaeb4bfd0dc581ed90d879e"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/back/LIFE-005-back.svg",
+      "action": "add",
+      "inputSha256": "2adbc0b863f20cec0ed19e96f1357f7026aaffe3957eda10296e3a1145721794",
+      "resultSha256": "2adbc0b863f20cec0ed19e96f1357f7026aaffe3957eda10296e3a1145721794"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/front/AREA-001-front.svg",
+      "action": "add",
+      "inputSha256": "1081f4ed5ab47e57df9ab38349fee5aa9ffd0ef0cac903d192789d2bb13e7823",
+      "resultSha256": "1081f4ed5ab47e57df9ab38349fee5aa9ffd0ef0cac903d192789d2bb13e7823"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/front/AREA-002-front.svg",
+      "action": "add",
+      "inputSha256": "60ac709712877b95be2b35a3cd166bbcc9d3d87ae973c5ea9c586da815c9d076",
+      "resultSha256": "60ac709712877b95be2b35a3cd166bbcc9d3d87ae973c5ea9c586da815c9d076"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/front/AREA-003-front.svg",
+      "action": "add",
+      "inputSha256": "d33785d38b3ba40a042d7ea3f3c9d93b333f2bad964d9586d7c073e5c64ff5e3",
+      "resultSha256": "d33785d38b3ba40a042d7ea3f3c9d93b333f2bad964d9586d7c073e5c64ff5e3"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/front/AREA-004-front.svg",
+      "action": "add",
+      "inputSha256": "49e14b179f1b0ef4f65df3b28313c6630c21f7bc8bd046fbde315cbad8ae236f",
+      "resultSha256": "49e14b179f1b0ef4f65df3b28313c6630c21f7bc8bd046fbde315cbad8ae236f"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/front/AREA-005-front.svg",
+      "action": "add",
+      "inputSha256": "9924a39941bb62ee4017768a639f97dce23e53bf6b97682626c5ab4b0a3b710d",
+      "resultSha256": "9924a39941bb62ee4017768a639f97dce23e53bf6b97682626c5ab4b0a3b710d"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/front/CAP-001-front.svg",
+      "action": "add",
+      "inputSha256": "291377f4b024de7d58ee28ad6a9aa1d7ee6fe6b5691fdc117163799427be146f",
+      "resultSha256": "291377f4b024de7d58ee28ad6a9aa1d7ee6fe6b5691fdc117163799427be146f"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/front/CAP-002-front.svg",
+      "action": "add",
+      "inputSha256": "5f3353a4eaeaf9439a4dab86a90c0dfa96fc3d188f7267fabca5632ec0d92920",
+      "resultSha256": "5f3353a4eaeaf9439a4dab86a90c0dfa96fc3d188f7267fabca5632ec0d92920"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/front/CAP-003-front.svg",
+      "action": "add",
+      "inputSha256": "8e5ab2c29023b639daceef06a228c3fdb73d6ded0e40ddf0bcce403732b73b2f",
+      "resultSha256": "8e5ab2c29023b639daceef06a228c3fdb73d6ded0e40ddf0bcce403732b73b2f"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/front/CAP-004-front.svg",
+      "action": "add",
+      "inputSha256": "80064c658f75c8068f272759c3ce35cbadc9a2280837872fe4b6a9a93cc5de68",
+      "resultSha256": "80064c658f75c8068f272759c3ce35cbadc9a2280837872fe4b6a9a93cc5de68"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/front/CAP-005-front.svg",
+      "action": "add",
+      "inputSha256": "9717bde694f23e32604631dcd0e055dc4ca15fb45e74bd3d2407ddd37ecc4104",
+      "resultSha256": "9717bde694f23e32604631dcd0e055dc4ca15fb45e74bd3d2407ddd37ecc4104"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/front/CON-001-front.svg",
+      "action": "add",
+      "inputSha256": "0641c3e364bbc32b8e307e77244e19d9fbb01bdaf4b2b96694d16b9936e7b3e1",
+      "resultSha256": "0641c3e364bbc32b8e307e77244e19d9fbb01bdaf4b2b96694d16b9936e7b3e1"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/front/CON-002-front.svg",
+      "action": "add",
+      "inputSha256": "04d094ac3de9f56154ef6543bbf03aeb233bf285a002643809dcd65654d7544c",
+      "resultSha256": "04d094ac3de9f56154ef6543bbf03aeb233bf285a002643809dcd65654d7544c"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/front/CON-003-front.svg",
+      "action": "add",
+      "inputSha256": "7f8d93631d7d75563790b2e8b5c999aa15cbcdf9b4328598d7ede86a5be1da22",
+      "resultSha256": "7f8d93631d7d75563790b2e8b5c999aa15cbcdf9b4328598d7ede86a5be1da22"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/front/CON-004-front.svg",
+      "action": "add",
+      "inputSha256": "be2f2df840d1b451fb482c6e72a90901380eb64c2dc9228e910f8e0d8a25dabe",
+      "resultSha256": "be2f2df840d1b451fb482c6e72a90901380eb64c2dc9228e910f8e0d8a25dabe"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/front/CON-005-front.svg",
+      "action": "add",
+      "inputSha256": "9422b8b0b1a62fc56e3d04b1aae3fbb95e73b093f81910a822451ca0a7474b2b",
+      "resultSha256": "9422b8b0b1a62fc56e3d04b1aae3fbb95e73b093f81910a822451ca0a7474b2b"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/front/DISC-001-front.svg",
+      "action": "add",
+      "inputSha256": "bd826d9e7d350e06990ad6dced0ed2f9088e921b10a88bf13e1262ae9e4105af",
+      "resultSha256": "bd826d9e7d350e06990ad6dced0ed2f9088e921b10a88bf13e1262ae9e4105af"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/front/DISC-002-front.svg",
+      "action": "add",
+      "inputSha256": "0ff08c150ca551a29151ab41b5284c65d0a9e30c405b256149ecb90c14e2ff1b",
+      "resultSha256": "0ff08c150ca551a29151ab41b5284c65d0a9e30c405b256149ecb90c14e2ff1b"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/front/DISC-003-front.svg",
+      "action": "add",
+      "inputSha256": "c8f9e4bc5e6da87e80dcdb38e436e00b4905426b2f0016d11521af0be17e7ff9",
+      "resultSha256": "c8f9e4bc5e6da87e80dcdb38e436e00b4905426b2f0016d11521af0be17e7ff9"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/front/DISC-004-front.svg",
+      "action": "add",
+      "inputSha256": "5f795cbdef94a5a7c731f7693e23dc790ee4d04e4f2252fdd6868b0ffbce6faa",
+      "resultSha256": "5f795cbdef94a5a7c731f7693e23dc790ee4d04e4f2252fdd6868b0ffbce6faa"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/front/DISC-005-front.svg",
+      "action": "add",
+      "inputSha256": "2d7690d6f6ea3c5df46232dd89c8a1922318d37ba3c0ce1c1a90f9d9acf02075",
+      "resultSha256": "2d7690d6f6ea3c5df46232dd89c8a1922318d37ba3c0ce1c1a90f9d9acf02075"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/front/LIB-001-front.svg",
+      "action": "add",
+      "inputSha256": "bab5c6b622c24dc345e336c6ca133ff2362d13660dde107e3d995c931a3ff894",
+      "resultSha256": "bab5c6b622c24dc345e336c6ca133ff2362d13660dde107e3d995c931a3ff894"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/front/LIB-002-front.svg",
+      "action": "add",
+      "inputSha256": "9b8bd77f23b54bd8d9500358122b8e005f50dc2ae5a13948b099f136a0833e1c",
+      "resultSha256": "9b8bd77f23b54bd8d9500358122b8e005f50dc2ae5a13948b099f136a0833e1c"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/front/LIB-003-front.svg",
+      "action": "add",
+      "inputSha256": "ba86260d1eb8107b1b48877a18a253ede0b9a5a525347c58ef68ecf6c0fb137c",
+      "resultSha256": "ba86260d1eb8107b1b48877a18a253ede0b9a5a525347c58ef68ecf6c0fb137c"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/front/LIB-004-front.svg",
+      "action": "add",
+      "inputSha256": "6ad91924021b47e32279badce8a6b1e2edbcefff6c107392fd5d52a91554e45e",
+      "resultSha256": "6ad91924021b47e32279badce8a6b1e2edbcefff6c107392fd5d52a91554e45e"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/front/LIB-005-front.svg",
+      "action": "add",
+      "inputSha256": "4a08f9986a3b85b0c644ba58482c0b1a24fa547e8b138c40aba30be156822aa9",
+      "resultSha256": "4a08f9986a3b85b0c644ba58482c0b1a24fa547e8b138c40aba30be156822aa9"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/front/LIFE-001-front.svg",
+      "action": "add",
+      "inputSha256": "c36538d56fe3ec63c59bdce93f7e6cff1f2bf4b5b626256e747a8bf5b784f8d7",
+      "resultSha256": "c36538d56fe3ec63c59bdce93f7e6cff1f2bf4b5b626256e747a8bf5b784f8d7"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/front/LIFE-002-front.svg",
+      "action": "add",
+      "inputSha256": "616b933d30352f472ff4fa599e7e29636b269a06ba5e6d2fe6b7f4b0418c83dd",
+      "resultSha256": "616b933d30352f472ff4fa599e7e29636b269a06ba5e6d2fe6b7f4b0418c83dd"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/front/LIFE-003-front.svg",
+      "action": "add",
+      "inputSha256": "d592612d04cdf758c96858cf057274a1b6853197410b07fb0fd397e3d5fd8d78",
+      "resultSha256": "d592612d04cdf758c96858cf057274a1b6853197410b07fb0fd397e3d5fd8d78"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/front/LIFE-004-front.svg",
+      "action": "add",
+      "inputSha256": "b650659699ae53fd3e2c37d3af96302fb563520e8a1c00ec0836532e5cc7320c",
+      "resultSha256": "b650659699ae53fd3e2c37d3af96302fb563520e8a1c00ec0836532e5cc7320c"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/editable/front/LIFE-005-front.svg",
+      "action": "add",
+      "inputSha256": "259566818aa5dbe8bc48be0feec78f2c46d29de2716f7be2cfe5e335c827928f",
+      "resultSha256": "259566818aa5dbe8bc48be0feec78f2c46d29de2716f7be2cfe5e335c827928f"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/frozen-input/CONTENT_FREEZE.json",
+      "action": "add",
+      "inputSha256": "94ae85ce048b83ff73d8b2ef080665175e5f285904dd89bb7be5ca906d865324",
+      "resultSha256": "94ae85ce048b83ff73d8b2ef080665175e5f285904dd89bb7be5ca906d865324"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/frozen-input/bundle.json",
+      "action": "add",
+      "inputSha256": "a58630def9526df81cd8e27b8fabe8bbe59e9905eb4aad1af2fb6203f9b46532",
+      "resultSha256": "a58630def9526df81cd8e27b8fabe8bbe59e9905eb4aad1af2fb6203f9b46532"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/frozen-input/pedagogy.json",
+      "action": "add",
+      "inputSha256": "3d01eeec7edc2f5e4883eb9cde8c6ca879d3345c5bfa86a9f8426d9f8177944c",
+      "resultSha256": "3d01eeec7edc2f5e4883eb9cde8c6ca879d3345c5bfa86a9f8426d9f8177944c"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/frozen-input/puzzles/AREA-001.json",
+      "action": "add",
+      "inputSha256": "9865586cc32ac7887e9aa4951ac9a2fbf668bbdc52e997bfeebc60b4fa73f7cd",
+      "resultSha256": "9865586cc32ac7887e9aa4951ac9a2fbf668bbdc52e997bfeebc60b4fa73f7cd"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/frozen-input/puzzles/AREA-002.json",
+      "action": "add",
+      "inputSha256": "4e2e9c14b90ce85a6296c709773d97f9c2a9a9a0018c29dd7a25d21cc4953cdb",
+      "resultSha256": "4e2e9c14b90ce85a6296c709773d97f9c2a9a9a0018c29dd7a25d21cc4953cdb"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/frozen-input/puzzles/AREA-003.json",
+      "action": "add",
+      "inputSha256": "c77db09cb0b7697a01fb9554aaccf6990b3889d79b3846ba94e9e2cbce2264cc",
+      "resultSha256": "c77db09cb0b7697a01fb9554aaccf6990b3889d79b3846ba94e9e2cbce2264cc"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/frozen-input/puzzles/AREA-004.json",
+      "action": "add",
+      "inputSha256": "2129c1b57829c623de628c0bcf203025c317c380a75bc09dab6c8ecf2f191687",
+      "resultSha256": "2129c1b57829c623de628c0bcf203025c317c380a75bc09dab6c8ecf2f191687"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/frozen-input/puzzles/AREA-005.json",
+      "action": "add",
+      "inputSha256": "32e94ab284735f1814f0acb990a4b3289c1bc4bd702f2d415470f8a5435c6554",
+      "resultSha256": "32e94ab284735f1814f0acb990a4b3289c1bc4bd702f2d415470f8a5435c6554"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/frozen-input/puzzles/CAP-001.json",
+      "action": "add",
+      "inputSha256": "e0a0950af03ba144d4464790b1292ac4a77b7534bc5a1228b77c194862f767cd",
+      "resultSha256": "e0a0950af03ba144d4464790b1292ac4a77b7534bc5a1228b77c194862f767cd"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/frozen-input/puzzles/CAP-002.json",
+      "action": "add",
+      "inputSha256": "f72172c4db6adf32228632d7660f174b649ae3ebbbedd9dd3f3bed1ba3e4e61e",
+      "resultSha256": "f72172c4db6adf32228632d7660f174b649ae3ebbbedd9dd3f3bed1ba3e4e61e"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/frozen-input/puzzles/CAP-003.json",
+      "action": "add",
+      "inputSha256": "092eb801f433d09ad685e1d0718151eea40b41bcdc4765cba639d85d999a4682",
+      "resultSha256": "092eb801f433d09ad685e1d0718151eea40b41bcdc4765cba639d85d999a4682"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/frozen-input/puzzles/CAP-004.json",
+      "action": "add",
+      "inputSha256": "2f598b1d4a5d70b283bd0d4a2bd5728742c6a2b5c103de46e208409e5257a700",
+      "resultSha256": "2f598b1d4a5d70b283bd0d4a2bd5728742c6a2b5c103de46e208409e5257a700"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/frozen-input/puzzles/CAP-005.json",
+      "action": "add",
+      "inputSha256": "8272de484c2b56a7997481bb5b93c914698d6e595087850c37130eeed222e79d",
+      "resultSha256": "8272de484c2b56a7997481bb5b93c914698d6e595087850c37130eeed222e79d"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/frozen-input/puzzles/CON-001.json",
+      "action": "add",
+      "inputSha256": "fc6f68f65b0461f248bbacd27c9753327bc5f8d86e4763ebad2d93999bd46013",
+      "resultSha256": "fc6f68f65b0461f248bbacd27c9753327bc5f8d86e4763ebad2d93999bd46013"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/frozen-input/puzzles/CON-002.json",
+      "action": "add",
+      "inputSha256": "aa877a3ef8e658715254ca2efee4ea07a34593be8a5d122aecbe198bee8339c0",
+      "resultSha256": "aa877a3ef8e658715254ca2efee4ea07a34593be8a5d122aecbe198bee8339c0"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/frozen-input/puzzles/CON-003.json",
+      "action": "add",
+      "inputSha256": "7b5b4efdd21de2f90023f34b9c8dee3f1e11743c9a4c434cc03b816c16ae30c7",
+      "resultSha256": "7b5b4efdd21de2f90023f34b9c8dee3f1e11743c9a4c434cc03b816c16ae30c7"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/frozen-input/puzzles/CON-004.json",
+      "action": "add",
+      "inputSha256": "4537bfa53a47ef670c096ea5e87573ad848cd6b4f3464fbfbbb41ea302371211",
+      "resultSha256": "4537bfa53a47ef670c096ea5e87573ad848cd6b4f3464fbfbbb41ea302371211"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/frozen-input/puzzles/CON-005.json",
+      "action": "add",
+      "inputSha256": "0b5327dc3885e5f4e49308e5164e79953d1065423074a7f0b0afd8d8df24520c",
+      "resultSha256": "0b5327dc3885e5f4e49308e5164e79953d1065423074a7f0b0afd8d8df24520c"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/frozen-input/puzzles/DISC-001.json",
+      "action": "add",
+      "inputSha256": "309fbe53ee677d08e50c7e1196de664f75c46921b17459a0d6b62cadce78fff1",
+      "resultSha256": "309fbe53ee677d08e50c7e1196de664f75c46921b17459a0d6b62cadce78fff1"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/frozen-input/puzzles/DISC-002.json",
+      "action": "add",
+      "inputSha256": "989d275f49faad33b2ef1773fd20dca7fbcae652b805c5b735031dbad428067e",
+      "resultSha256": "989d275f49faad33b2ef1773fd20dca7fbcae652b805c5b735031dbad428067e"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/frozen-input/puzzles/DISC-003.json",
+      "action": "add",
+      "inputSha256": "aac6b4679d2517d03e9eeed1f2ffc3897c56e5651dd3176b8bf3368e0035a599",
+      "resultSha256": "aac6b4679d2517d03e9eeed1f2ffc3897c56e5651dd3176b8bf3368e0035a599"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/frozen-input/puzzles/DISC-004.json",
+      "action": "add",
+      "inputSha256": "15f35fb4a699b6c8083cb901675c9c79e17a61a0dd742bb4673067b2830ea6ac",
+      "resultSha256": "15f35fb4a699b6c8083cb901675c9c79e17a61a0dd742bb4673067b2830ea6ac"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/frozen-input/puzzles/DISC-005.json",
+      "action": "add",
+      "inputSha256": "5e8d7c96a647be704dcffbcd955902598a627079ae8cddb20c19036fc4b5d3bc",
+      "resultSha256": "5e8d7c96a647be704dcffbcd955902598a627079ae8cddb20c19036fc4b5d3bc"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIB-001.json",
+      "action": "add",
+      "inputSha256": "3c5fa560f7cd43a13e14021d5e1baa80353592e38e95e454355d4c18b6158257",
+      "resultSha256": "3c5fa560f7cd43a13e14021d5e1baa80353592e38e95e454355d4c18b6158257"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIB-002.json",
+      "action": "add",
+      "inputSha256": "8a057d4f583931bdaed4e45f2b6080858e6af9eca6096f248a9d8f01e057972c",
+      "resultSha256": "8a057d4f583931bdaed4e45f2b6080858e6af9eca6096f248a9d8f01e057972c"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIB-003.json",
+      "action": "add",
+      "inputSha256": "bba49850e48d1a5a9e741a8228fff30bb61471124fb395c6863d4957a7be753f",
+      "resultSha256": "bba49850e48d1a5a9e741a8228fff30bb61471124fb395c6863d4957a7be753f"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIB-004.json",
+      "action": "add",
+      "inputSha256": "bbb1fb3435c71c4212ec85917bf4c7226216023ea15723b082a184c87a3cec0a",
+      "resultSha256": "bbb1fb3435c71c4212ec85917bf4c7226216023ea15723b082a184c87a3cec0a"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIB-005.json",
+      "action": "add",
+      "inputSha256": "0d8565c2908a2876ea9a70331354d17ea2158bc20d7429517a5d49fb41e57387",
+      "resultSha256": "0d8565c2908a2876ea9a70331354d17ea2158bc20d7429517a5d49fb41e57387"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIFE-001.json",
+      "action": "add",
+      "inputSha256": "3e800b83347c378568c5b0ff8a4a96412fa44081df9711eb325cc0d1c3ca4c2f",
+      "resultSha256": "3e800b83347c378568c5b0ff8a4a96412fa44081df9711eb325cc0d1c3ca4c2f"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIFE-002.json",
+      "action": "add",
+      "inputSha256": "4a9c755d45126cef93464d2e42c74b51af63468701c701d64957910269b32526",
+      "resultSha256": "4a9c755d45126cef93464d2e42c74b51af63468701c701d64957910269b32526"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIFE-003.json",
+      "action": "add",
+      "inputSha256": "1909976bc369d0434b0db10720cbb722be4cb4ca49b2781668b56cb8ee8f6ffc",
+      "resultSha256": "1909976bc369d0434b0db10720cbb722be4cb4ca49b2781668b56cb8ee8f6ffc"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIFE-004.json",
+      "action": "add",
+      "inputSha256": "4ae5d60c5a862d20e64e8b7ffab7659cabe13d3289f6c682d80c171f4ad849ca",
+      "resultSha256": "4ae5d60c5a862d20e64e8b7ffab7659cabe13d3289f6c682d80c171f4ad849ca"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIFE-005.json",
+      "action": "add",
+      "inputSha256": "506f62c281d0c1f09c8dfff2725fe0677fcfcf9ecda05615b10adeff4a968992",
+      "resultSha256": "506f62c281d0c1f09c8dfff2725fe0677fcfcf9ecda05615b10adeff4a968992"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/output/T21_challenge_cards_back_A4.pdf",
+      "action": "add",
+      "inputSha256": "9b2eb6b8e1a71e5d2a7c8fd6030142f4a64df9d6207789e9b8b97549188fa5d3",
+      "resultSha256": "9b2eb6b8e1a71e5d2a7c8fd6030142f4a64df9d6207789e9b8b97549188fa5d3"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/output/T21_challenge_cards_front_A4.pdf",
+      "action": "add",
+      "inputSha256": "0e8d592efed5b19f3655f0bde77a2c403a544d0b913095bb0e4ffeaf92180467",
+      "resultSha256": "0e8d592efed5b19f3655f0bde77a2c403a544d0b913095bb0e4ffeaf92180467"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/output/T21_duplex_test_page1.pdf",
+      "action": "add",
+      "inputSha256": "00a0fab7c700c5f8be95b9584533eca8490234b18567056d9f91b3e3f81c9f14",
+      "resultSha256": "00a0fab7c700c5f8be95b9584533eca8490234b18567056d9f91b3e3f81c9f14"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/output/T21_teacher_answer_book.pdf",
+      "action": "add",
+      "inputSha256": "683f8c60994591003040548642a04035b9cdd54faf133da5b2e25546bb08a22b",
+      "resultSha256": "683f8c60994591003040548642a04035b9cdd54faf133da5b2e25546bb08a22b"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/source/FONTS.md",
+      "action": "add",
+      "inputSha256": "af62102fc9a4a282bc9736b571c88ec589579452fabbda58851a5c95a75caa90",
+      "resultSha256": "af62102fc9a4a282bc9736b571c88ec589579452fabbda58851a5c95a75caa90"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/source/build_cards.py",
+      "action": "add",
+      "inputSha256": "1711dbcfbc920547c0fee2302b2ff9a4c2e643e17e16c86a535d54b7955e9019",
+      "resultSha256": "1711dbcfbc920547c0fee2302b2ff9a4c2e643e17e16c86a535d54b7955e9019"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/source/package_materials.py",
+      "action": "add",
+      "inputSha256": "86b08b7cca933ae7e4c04267505d43b70f3c705448eb72a3e2e6f21cfc9bc7c4",
+      "resultSha256": "86b08b7cca933ae7e4c04267505d43b70f3c705448eb72a3e2e6f21cfc9bc7c4"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/source/render_qa.py",
+      "action": "add",
+      "inputSha256": "a685e6a67e3ac93bb6b46a16034345a9786e6f3915f72f4d0962999eb845b129",
+      "resultSha256": "a685e6a67e3ac93bb6b46a16034345a9786e6f3915f72f4d0962999eb845b129"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/validation/PACKAGE_PAYLOAD_MANIFEST.json",
+      "action": "add",
+      "inputSha256": "3b5af10be626d73b063d74397ce3753b44b4a1813d99fe1aa29f209f7378130f",
+      "resultSha256": "3b5af10be626d73b063d74397ce3753b44b4a1813d99fe1aa29f209f7378130f"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/validation/VISUAL_QA.md",
+      "action": "add",
+      "inputSha256": "5c752039e20fb77c9627157494e6f9a3cc6313cb9f6af79b23b8a462593b1812",
+      "resultSha256": "5c752039e20fb77c9627157494e6f9a3cc6313cb9f6af79b23b8a462593b1812"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/validation/automated-checks.json",
+      "action": "add",
+      "inputSha256": "92fa59d6e9c889cafb0bc0a02c29b94f79465bcfb62a9c2c214c0f093a0aff05",
+      "resultSha256": "92fa59d6e9c889cafb0bc0a02c29b94f79465bcfb62a9c2c214c0f093a0aff05"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/validation/contact-sheets/back-01-04.jpg",
+      "action": "add",
+      "inputSha256": "3e25cda8ff10cf9b4538a815876a6b6d0aecbe76400d6b214df06328f5fa53f4",
+      "resultSha256": "3e25cda8ff10cf9b4538a815876a6b6d0aecbe76400d6b214df06328f5fa53f4"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/validation/contact-sheets/back-05-08.jpg",
+      "action": "add",
+      "inputSha256": "9c41f40fa7c3a217190f3ed0fcdc30f45e6bd32f8e6d4dea087296a396410e8d",
+      "resultSha256": "9c41f40fa7c3a217190f3ed0fcdc30f45e6bd32f8e6d4dea087296a396410e8d"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/validation/contact-sheets/back-09-12.jpg",
+      "action": "add",
+      "inputSha256": "6b15f6d7aa38ae26b6c958dafdd8f3b38de40cc8ccb73cdb74ca2e4b5fa19442",
+      "resultSha256": "6b15f6d7aa38ae26b6c958dafdd8f3b38de40cc8ccb73cdb74ca2e4b5fa19442"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/validation/contact-sheets/back-13-15.jpg",
+      "action": "add",
+      "inputSha256": "0805f3f78b9130f078737040fe6027d70f4690e5011f632d10c895975235cf46",
+      "resultSha256": "0805f3f78b9130f078737040fe6027d70f4690e5011f632d10c895975235cf46"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/validation/contact-sheets/back-gray-01-04.jpg",
+      "action": "add",
+      "inputSha256": "d6a9a78bb9b7bbf18ce61f0ea21318763086ea00b8a06ccbba95dd30a0b57927",
+      "resultSha256": "d6a9a78bb9b7bbf18ce61f0ea21318763086ea00b8a06ccbba95dd30a0b57927"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/validation/contact-sheets/back-gray-05-08.jpg",
+      "action": "add",
+      "inputSha256": "494729e8f7dbe3dfd944676c3bb159f4da9d7eb201d516231a4f35c9a5fc6a36",
+      "resultSha256": "494729e8f7dbe3dfd944676c3bb159f4da9d7eb201d516231a4f35c9a5fc6a36"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/validation/contact-sheets/back-gray-09-12.jpg",
+      "action": "add",
+      "inputSha256": "a02303f3e204720dd3fb96620de7fcd86774fc2a723bae8d1098427ff407032d",
+      "resultSha256": "a02303f3e204720dd3fb96620de7fcd86774fc2a723bae8d1098427ff407032d"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/validation/contact-sheets/back-gray-13-15.jpg",
+      "action": "add",
+      "inputSha256": "8da0c4db5d765574da5db70803dc13eff3d21c4d00c2a9d567f06cd3652d5e23",
+      "resultSha256": "8da0c4db5d765574da5db70803dc13eff3d21c4d00c2a9d567f06cd3652d5e23"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/validation/contact-sheets/front-01-04.jpg",
+      "action": "add",
+      "inputSha256": "66072ebd6c7090e9362b1b285f7bf790831fac8ca8033247719311f4f0a31af4",
+      "resultSha256": "66072ebd6c7090e9362b1b285f7bf790831fac8ca8033247719311f4f0a31af4"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/validation/contact-sheets/front-05-08.jpg",
+      "action": "add",
+      "inputSha256": "a14939db7885b73ddc9e824717945437d683f8b4e3769ee31e43121daa070cd6",
+      "resultSha256": "a14939db7885b73ddc9e824717945437d683f8b4e3769ee31e43121daa070cd6"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/validation/contact-sheets/front-09-12.jpg",
+      "action": "add",
+      "inputSha256": "4f6e3ea851a7cf32f0ae61d0a862d4cd0c2c81e5bd8e8dc3257ae7503bd09fd3",
+      "resultSha256": "4f6e3ea851a7cf32f0ae61d0a862d4cd0c2c81e5bd8e8dc3257ae7503bd09fd3"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/validation/contact-sheets/front-13-15.jpg",
+      "action": "add",
+      "inputSha256": "4e9c13e6643a5eb571ce066fb2afa863eaa38ae53a7069fbb6096a66d9ee058e",
+      "resultSha256": "4e9c13e6643a5eb571ce066fb2afa863eaa38ae53a7069fbb6096a66d9ee058e"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/validation/contact-sheets/front-gray-01-04.jpg",
+      "action": "add",
+      "inputSha256": "f4cd2332cf967e0674c56d985b05a8f0ac123842dd29fb8c2ee8d0f0a200980f",
+      "resultSha256": "f4cd2332cf967e0674c56d985b05a8f0ac123842dd29fb8c2ee8d0f0a200980f"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/validation/contact-sheets/front-gray-05-08.jpg",
+      "action": "add",
+      "inputSha256": "d0d917e64b17a178017ccc015ccb28c80a25c795bc95d18f47ee292eb56fd6ff",
+      "resultSha256": "d0d917e64b17a178017ccc015ccb28c80a25c795bc95d18f47ee292eb56fd6ff"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/validation/contact-sheets/front-gray-09-12.jpg",
+      "action": "add",
+      "inputSha256": "3cb86b464f5c012c483bef697ebec18f303a5a7282963a92406158a08a272f52",
+      "resultSha256": "3cb86b464f5c012c483bef697ebec18f303a5a7282963a92406158a08a272f52"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/validation/contact-sheets/front-gray-13-15.jpg",
+      "action": "add",
+      "inputSha256": "ed150b79f64245f9b4a84518c96233723a413b79232c63b940bcf3220a393cef",
+      "resultSha256": "ed150b79f64245f9b4a84518c96233723a413b79232c63b940bcf3220a393cef"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/validation/contact-sheets/teacher-01-04.jpg",
+      "action": "add",
+      "inputSha256": "f0984debda46f5ce022b05f84622e1a68846aa6a1c04a2e5069ef9cdf006be0a",
+      "resultSha256": "f0984debda46f5ce022b05f84622e1a68846aa6a1c04a2e5069ef9cdf006be0a"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/validation/contact-sheets/teacher-05-08.jpg",
+      "action": "add",
+      "inputSha256": "594c6b8feaf40f9c425cc681f43cb95ecc79a3136c0496f8611d316682989267",
+      "resultSha256": "594c6b8feaf40f9c425cc681f43cb95ecc79a3136c0496f8611d316682989267"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/validation/contact-sheets/teacher-09-12.jpg",
+      "action": "add",
+      "inputSha256": "7a8f3abe2950c2a0ed13c9b9e5dc07ab2e50fb813600afe4c8eb4833db1fe8e1",
+      "resultSha256": "7a8f3abe2950c2a0ed13c9b9e5dc07ab2e50fb813600afe4c8eb4833db1fe8e1"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/validation/contact-sheets/teacher-13-16.jpg",
+      "action": "add",
+      "inputSha256": "6a099879a0229baae501ffd4d377b02d1acb32f808b07ed33e17bd0d35d99cc9",
+      "resultSha256": "6a099879a0229baae501ffd4d377b02d1acb32f808b07ed33e17bd0d35d99cc9"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/validation/contact-sheets/teacher-17-20.jpg",
+      "action": "add",
+      "inputSha256": "311e20fd1be08ab7dd718be9b79d2ef923fe7da6f92ea103e76af736803de29c",
+      "resultSha256": "311e20fd1be08ab7dd718be9b79d2ef923fe7da6f92ea103e76af736803de29c"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/validation/contact-sheets/teacher-21-24.jpg",
+      "action": "add",
+      "inputSha256": "80387efda9f63ad21bdb134404f824ecfe8e707afa148cd09f231348a323b688",
+      "resultSha256": "80387efda9f63ad21bdb134404f824ecfe8e707afa148cd09f231348a323b688"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/validation/contact-sheets/teacher-25-28.jpg",
+      "action": "add",
+      "inputSha256": "6847bb0eb38683b0f617f3fd54099bb2e3f94419246b97eb70edccc6b0869303",
+      "resultSha256": "6847bb0eb38683b0f617f3fd54099bb2e3f94419246b97eb70edccc6b0869303"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/validation/contact-sheets/teacher-29-32.jpg",
+      "action": "add",
+      "inputSha256": "9414c013638458918b1c39687e6b0aa66b1773f32bbaf6ebc02094426821caae",
+      "resultSha256": "9414c013638458918b1c39687e6b0aa66b1773f32bbaf6ebc02094426821caae"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/validation/contact-sheets/teacher-33-33.jpg",
+      "action": "add",
+      "inputSha256": "0db0bf7649ade6e3377647d4a12a368f5c5cddfa83d8446c665b95cee4f5fb93",
+      "resultSha256": "0db0bf7649ade6e3377647d4a12a368f5c5cddfa83d8446c665b95cee4f5fb93"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/validation/font-embedding.json",
+      "action": "add",
+      "inputSha256": "d95092c5e29edc34e9defa943726821a6cae0ebb7ed5cacc194277d4557856c4",
+      "resultSha256": "d95092c5e29edc34e9defa943726821a6cae0ebb7ed5cacc194277d4557856c4"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/validation/page-map.json",
+      "action": "add",
+      "inputSha256": "7520414fd5bb9605cc3b2f5a3aa252a16540d1fe2d05c7f925196fe146a99d10",
+      "resultSha256": "7520414fd5bb9605cc3b2f5a3aa252a16540d1fe2d05c7f925196fe146a99d10"
+    },
+    {
+      "taskId": "T21",
+      "path": "materials/challenge-cards/validation/render-qa.json",
+      "action": "add",
+      "inputSha256": "9365dbb65cb2a0d70e800f860db45ef7f358026e26fe573aaf993903b78ce435",
+      "resultSha256": "9365dbb65cb2a0d70e800f860db45ef7f358026e26fe573aaf993903b78ce435"
+    },
+    {
+      "taskId": "T22",
+      "path": "handoff/T22.md",
+      "action": "add",
+      "inputSha256": "418b779064e862934be56dfa007d3822004431b4b3c05bb1b6daa01f293ccd5e",
+      "resultSha256": "418b779064e862934be56dfa007d3822004431b4b3c05bb1b6daa01f293ccd5e"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/FILE_MANIFEST.json",
+      "action": "add",
+      "inputSha256": "558791605a1802718e6c85d095a96cb05f6d20e5e637eee9c771bf405dc5fd71",
+      "resultSha256": "558791605a1802718e6c85d095a96cb05f6d20e5e637eee9c771bf405dc5fd71"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/README.md",
+      "action": "add",
+      "inputSha256": "3a516839fb208f219f902efa73452e271073c203b30580675863d0d239ea5b4f",
+      "resultSha256": "3a516839fb208f219f902efa73452e271073c203b30580675863d0d239ea5b4f"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/assets/fonts/NotoSansSC-Regular.ttf",
+      "action": "add",
+      "inputSha256": "4533846d69e662f228a2e9f89b8283a686c61ff9ba77fbe982d45c516abd56f8",
+      "resultSha256": "4533846d69e662f228a2e9f89b8283a686c61ff9ba77fbe982d45c516abd56f8"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/assets/fonts/OFL.txt",
+      "action": "add",
+      "inputSha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+      "resultSha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/assets/fonts-and-assets.md",
+      "action": "add",
+      "inputSha256": "5a57477b8339e7f6a0029196807779d3738cefee02473c7d15653fc3b4588c60",
+      "resultSha256": "5a57477b8339e7f6a0029196807779d3738cefee02473c7d15653fc3b4588c60"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/assets/frozen/content/endgames/END-001.json",
+      "action": "add",
+      "inputSha256": "88fe7f6226f33da4d12f0cf14121be2c4f6b4ee7da376f3d9dd77bc080b4ebed",
+      "resultSha256": "88fe7f6226f33da4d12f0cf14121be2c4f6b4ee7da376f3d9dd77bc080b4ebed"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/assets/frozen/content/endgames/END-002.json",
+      "action": "add",
+      "inputSha256": "fdc052992973abb3140041ea3d62d1cc9078eb4eeaf15dda2c36604af6170859",
+      "resultSha256": "fdc052992973abb3140041ea3d62d1cc9078eb4eeaf15dda2c36604af6170859"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/assets/frozen/content/puzzles/AREA-005.json",
+      "action": "add",
+      "inputSha256": "32e94ab284735f1814f0acb990a4b3289c1bc4bd702f2d415470f8a5435c6554",
+      "resultSha256": "32e94ab284735f1814f0acb990a4b3289c1bc4bd702f2d415470f8a5435c6554"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/assets/frozen/content/puzzles/CAP-001.json",
+      "action": "add",
+      "inputSha256": "e0a0950af03ba144d4464790b1292ac4a77b7534bc5a1228b77c194862f767cd",
+      "resultSha256": "e0a0950af03ba144d4464790b1292ac4a77b7534bc5a1228b77c194862f767cd"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/assets/frozen/content/puzzles/CAP-002.json",
+      "action": "add",
+      "inputSha256": "f72172c4db6adf32228632d7660f174b649ae3ebbbedd9dd3f3bed1ba3e4e61e",
+      "resultSha256": "f72172c4db6adf32228632d7660f174b649ae3ebbbedd9dd3f3bed1ba3e4e61e"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/assets/frozen/content/puzzles/CON-001.json",
+      "action": "add",
+      "inputSha256": "fc6f68f65b0461f248bbacd27c9753327bc5f8d86e4763ebad2d93999bd46013",
+      "resultSha256": "fc6f68f65b0461f248bbacd27c9753327bc5f8d86e4763ebad2d93999bd46013"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/assets/frozen/content/puzzles/CON-002.json",
+      "action": "add",
+      "inputSha256": "aa877a3ef8e658715254ca2efee4ea07a34593be8a5d122aecbe198bee8339c0",
+      "resultSha256": "aa877a3ef8e658715254ca2efee4ea07a34593be8a5d122aecbe198bee8339c0"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/assets/frozen/content/puzzles/LIB-001.json",
+      "action": "add",
+      "inputSha256": "3c5fa560f7cd43a13e14021d5e1baa80353592e38e95e454355d4c18b6158257",
+      "resultSha256": "3c5fa560f7cd43a13e14021d5e1baa80353592e38e95e454355d4c18b6158257"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/assets/frozen/content/puzzles/LIB-004.json",
+      "action": "add",
+      "inputSha256": "bbb1fb3435c71c4212ec85917bf4c7226216023ea15723b082a184c87a3cec0a",
+      "resultSha256": "bbb1fb3435c71c4212ec85917bf4c7226216023ea15723b082a184c87a3cec0a"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/assets/frozen/content/puzzles/LIFE-001.json",
+      "action": "add",
+      "inputSha256": "3e800b83347c378568c5b0ff8a4a96412fa44081df9711eb325cc0d1c3ca4c2f",
+      "resultSha256": "3e800b83347c378568c5b0ff8a4a96412fa44081df9711eb325cc0d1c3ca4c2f"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/assets/frozen/content/puzzles/LIFE-002.json",
+      "action": "add",
+      "inputSha256": "4a9c755d45126cef93464d2e42c74b51af63468701c701d64957910269b32526",
+      "resultSha256": "4a9c755d45126cef93464d2e42c74b51af63468701c701d64957910269b32526"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/assets/frozen/content/puzzles/LIFE-003.json",
+      "action": "add",
+      "inputSha256": "1909976bc369d0434b0db10720cbb722be4cb4ca49b2781668b56cb8ee8f6ffc",
+      "resultSha256": "1909976bc369d0434b0db10720cbb722be4cb4ca49b2781668b56cb8ee8f6ffc"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/assets/frozen/content/puzzles/LIFE-005.json",
+      "action": "add",
+      "inputSha256": "506f62c281d0c1f09c8dfff2725fe0677fcfcf9ecda05615b10adeff4a968992",
+      "resultSha256": "506f62c281d0c1f09c8dfff2725fe0677fcfcf9ecda05615b10adeff4a968992"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/assets/frozen/dist-engine/go-club-rules.mjs",
+      "action": "add",
+      "inputSha256": "028ff1a53af96bc8aa44b2b603ba80ada31b8517c89aeff11088db6683e108b7",
+      "resultSha256": "028ff1a53af96bc8aa44b2b603ba80ada31b8517c89aeff11088db6683e108b7"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/assets/frozen/docs/CURRICULUM.md",
+      "action": "add",
+      "inputSha256": "56b4a55449f3bd027d5864f2121252a53b9a97561204679aa2499ba884f1acbb",
+      "resultSha256": "56b4a55449f3bd027d5864f2121252a53b9a97561204679aa2499ba884f1acbb"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/assets/frozen/docs/RULES.md",
+      "action": "add",
+      "inputSha256": "f90c9adafcbab75f6c64acd789dd02462d2cfb14665374b2ba020f8c1f6fa965",
+      "resultSha256": "f90c9adafcbab75f6c64acd789dd02462d2cfb14665374b2ba020f8c1f6fa965"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/assets/frozen/docs/TERMINOLOGY.md",
+      "action": "add",
+      "inputSha256": "0b53f3cbfc21765db29621e0c87e2d1abd08f54b96181bbc8c1e7522cb9e3d54",
+      "resultSha256": "0b53f3cbfc21765db29621e0c87e2d1abd08f54b96181bbc8c1e7522cb9e3d54"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/assets/frozen/handoff/CONTENT_FREEZE.json",
+      "action": "add",
+      "inputSha256": "94ae85ce048b83ff73d8b2ef080665175e5f285904dd89bb7be5ca906d865324",
+      "resultSha256": "94ae85ce048b83ff73d8b2ef080665175e5f285904dd89bb7be5ca906d865324"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/assets/frozen/handoff/FREEZE_B.md",
+      "action": "add",
+      "inputSha256": "b7bdc44f7987c73542060448137856a7d621b6049f2aad4448af438c2f9158bd",
+      "resultSha256": "b7bdc44f7987c73542060448137856a7d621b6049f2aad4448af438c2f9158bd"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/assets/frozen/handoff/T00.md",
+      "action": "add",
+      "inputSha256": "ad0621ade993bf80e931261bcd09fee26c65456eceb2588802c166285455e31f",
+      "resultSha256": "ad0621ade993bf80e931261bcd09fee26c65456eceb2588802c166285455e31f"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/assets/frozen/handoff/T11.md",
+      "action": "add",
+      "inputSha256": "e7378ed67fd08c06bee6da99a6e6e67c619d1757506e0156ddfca5c41218d9dc",
+      "resultSha256": "e7378ed67fd08c06bee6da99a6e6e67c619d1757506e0156ddfca5c41218d9dc"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/assets/frozen/handoff/T15.md",
+      "action": "add",
+      "inputSha256": "173625c4698d3867081972e6e5dc1338e60b39a919c8a50d7837af892e5b3657",
+      "resultSha256": "173625c4698d3867081972e6e5dc1338e60b39a919c8a50d7837af892e5b3657"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/assets/frozen/handoff/T20.md",
+      "action": "add",
+      "inputSha256": "e4643f151be6578c34044217ffd422fb278cddb0787199c287937b368335acdb",
+      "resultSha256": "e4643f151be6578c34044217ffd422fb278cddb0787199c287937b368335acdb"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/assets/frozen/materials/rule-cards/data/RULE-DEMO-T20-CONNECT.json",
+      "action": "add",
+      "inputSha256": "c745c0a49849f21ca32a94106865328fb005d1a75136403754b5c713a0a07127",
+      "resultSha256": "c745c0a49849f21ca32a94106865328fb005d1a75136403754b5c713a0a07127"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/assets/frozen/materials/rule-cards/data/RULE-DEMO-T20-KO-AFTER.json",
+      "action": "add",
+      "inputSha256": "89d9a194282bdbbce299ed730cec96191f7fc70c7667e1e3861122fb7b31fd43",
+      "resultSha256": "89d9a194282bdbbce299ed730cec96191f7fc70c7667e1e3861122fb7b31fd43"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/assets/frozen/materials/rule-cards/data/RULE-DEMO-T20-KO-BEFORE.json",
+      "action": "add",
+      "inputSha256": "d4fe9642a299e6abb7fd957cb5d7fd0cf5f339980f812404f8f46f0dcf8d73b5",
+      "resultSha256": "d4fe9642a299e6abb7fd957cb5d7fd0cf5f339980f812404f8f46f0dcf8d73b5"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/assets/frozen/materials/rule-cards/data/RULE-DEMO-T20-LEGAL-AFTER.json",
+      "action": "add",
+      "inputSha256": "a6e455337c43630ef583417544bd2e285ae507dee005acc4159149d073a6a909",
+      "resultSha256": "a6e455337c43630ef583417544bd2e285ae507dee005acc4159149d073a6a909"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/assets/frozen/materials/rule-cards/data/RULE-DEMO-T20-LEGAL-BEFORE.json",
+      "action": "add",
+      "inputSha256": "4dc310af6907bf6ec3c6ff7dda5a0b5b31620c36fa90f7d6f6ac06ebbc066109",
+      "resultSha256": "4dc310af6907bf6ec3c6ff7dda5a0b5b31620c36fa90f7d6f6ac06ebbc066109"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/assets/frozen/schemas/content.schema.json",
+      "action": "add",
+      "inputSha256": "82a1a060ff48c7072aba29d5091c55e976eaed04e5d6af5787408885b07e2e88",
+      "resultSha256": "82a1a060ff48c7072aba29d5091c55e976eaed04e5d6af5787408885b07e2e88"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/assets/source-index.json",
+      "action": "add",
+      "inputSha256": "7a6b726c63a1ea501f7c43354a7169f95e00e578f32906c929583bf5e296a4c0",
+      "resultSha256": "7a6b726c63a1ea501f7c43354a7169f95e00e578f32906c929583bf5e296a4c0"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/output/T22_All_25_r1.pdf",
+      "action": "add",
+      "inputSha256": "4c611e790411aeac0cadae21671e3eb7856aeebb632d65564fb68d80a4ea5a05",
+      "resultSha256": "4c611e790411aeac0cadae21671e3eb7856aeebb632d65564fb68d80a4ea5a05"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/output/T22_All_25_r1.pptx",
+      "action": "add",
+      "inputSha256": "415c199fc6e015b3abe7ef6673a8ff32a58a97f0b594d5f54f9f9988773a4a46",
+      "resultSha256": "415c199fc6e015b3abe7ef6673a8ff32a58a97f0b594d5f54f9f9988773a4a46"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/output/T22_MicroLesson_01_r1.pdf",
+      "action": "add",
+      "inputSha256": "ef406f908219c6a63faefdc62233f2cd3f5d3d78bc3146bfe4d25f9f74938e20",
+      "resultSha256": "ef406f908219c6a63faefdc62233f2cd3f5d3d78bc3146bfe4d25f9f74938e20"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/output/T22_MicroLesson_01_r1.pptx",
+      "action": "add",
+      "inputSha256": "70d6910b0f424533fe55e1eee3f79333e4e62f37d4d8ea12030305fd517d20d5",
+      "resultSha256": "70d6910b0f424533fe55e1eee3f79333e4e62f37d4d8ea12030305fd517d20d5"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/output/T22_MicroLesson_02_r1.pdf",
+      "action": "add",
+      "inputSha256": "5f0a80c5eb8da4d45e390ecc6e1439558a696ab79a70cbc86f2b769debb36248",
+      "resultSha256": "5f0a80c5eb8da4d45e390ecc6e1439558a696ab79a70cbc86f2b769debb36248"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/output/T22_MicroLesson_02_r1.pptx",
+      "action": "add",
+      "inputSha256": "f5e24d16ec90df6311d350ac7b1d03f2947b2ca94bf2c1c456ca4895ba80b04b",
+      "resultSha256": "f5e24d16ec90df6311d350ac7b1d03f2947b2ca94bf2c1c456ca4895ba80b04b"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/output/T22_MicroLesson_03_r1.pdf",
+      "action": "add",
+      "inputSha256": "190280b8f73110c2b87c8979eb3903cf761180978c73f75022ce40af38139aca",
+      "resultSha256": "190280b8f73110c2b87c8979eb3903cf761180978c73f75022ce40af38139aca"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/output/T22_MicroLesson_03_r1.pptx",
+      "action": "add",
+      "inputSha256": "59773f2bde2c4099a156e3c8b46a32a46c30694ba8451190a084034718d4df17",
+      "resultSha256": "59773f2bde2c4099a156e3c8b46a32a46c30694ba8451190a084034718d4df17"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/output/T22_MicroLesson_04_r1.pdf",
+      "action": "add",
+      "inputSha256": "3b04db7958bcfb4eb9836c408e93222b81c79c9be3bbe3447552711965cb52e2",
+      "resultSha256": "3b04db7958bcfb4eb9836c408e93222b81c79c9be3bbe3447552711965cb52e2"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/output/T22_MicroLesson_04_r1.pptx",
+      "action": "add",
+      "inputSha256": "af0821b033f244c27db4b96ff2eb5cb5d2dfc46edbd1bb74ff0ea1fee70b5f05",
+      "resultSha256": "af0821b033f244c27db4b96ff2eb5cb5d2dfc46edbd1bb74ff0ea1fee70b5f05"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/output/T22_MicroLesson_05_r1.pdf",
+      "action": "add",
+      "inputSha256": "2d982f9660d3e45b658bfdb79b214f5a61a3b8f2b36d8d1f31b98156917620d2",
+      "resultSha256": "2d982f9660d3e45b658bfdb79b214f5a61a3b8f2b36d8d1f31b98156917620d2"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/output/T22_MicroLesson_05_r1.pptx",
+      "action": "add",
+      "inputSha256": "ba21a6c2439cdd38d9096608fea1d172cc7cf856fdbd019127f1a7120bf5327c",
+      "resultSha256": "ba21a6c2439cdd38d9096608fea1d172cc7cf856fdbd019127f1a7120bf5327c"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/output/T22_Teacher_Summary_5pages_r1.pdf",
+      "action": "add",
+      "inputSha256": "2c56d9c457dc5e8aa7ab3135d218b2f730e1c36afb0bed5ac166e16c040d195b",
+      "resultSha256": "2c56d9c457dc5e8aa7ab3135d218b2f730e1c36afb0bed5ac166e16c040d195b"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/QA.md",
+      "action": "add",
+      "inputSha256": "a9cc18c15d14e0dbda531c3321985cd12234a66dffe9f924634713533af3ecba",
+      "resultSha256": "a9cc18c15d14e0dbda531c3321985cd12234a66dffe9f924634713533af3ecba"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/T22_All_25.validation.json",
+      "action": "add",
+      "inputSha256": "a9dcbf42a5e3fdddb95cb7123a908e87eab6776a6129b76f91d4d8909b45c674",
+      "resultSha256": "a9dcbf42a5e3fdddb95cb7123a908e87eab6776a6129b76f91d4d8909b45c674"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/T22_MicroLesson_01.validation.json",
+      "action": "add",
+      "inputSha256": "caa451ce920f92a182ffee2db84b29628f666da2df6d5e9f6c8dcf25f65c4463",
+      "resultSha256": "caa451ce920f92a182ffee2db84b29628f666da2df6d5e9f6c8dcf25f65c4463"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/T22_MicroLesson_02.validation.json",
+      "action": "add",
+      "inputSha256": "87dc3d00dbd3ecd614671e4b52d7da866c6824355d80aed68a42e40654818ab4",
+      "resultSha256": "87dc3d00dbd3ecd614671e4b52d7da866c6824355d80aed68a42e40654818ab4"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/T22_MicroLesson_03.validation.json",
+      "action": "add",
+      "inputSha256": "b019eb147fe30b93019ced87405b9d8717eaaeaaba8e57b6be7207b4d69b1f2f",
+      "resultSha256": "b019eb147fe30b93019ced87405b9d8717eaaeaaba8e57b6be7207b4d69b1f2f"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/T22_MicroLesson_04.validation.json",
+      "action": "add",
+      "inputSha256": "1b72cc4c7ae034b328ed1c7607a3294f09620188384119cee16d7e388b7501dd",
+      "resultSha256": "1b72cc4c7ae034b328ed1c7607a3294f09620188384119cee16d7e388b7501dd"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/T22_MicroLesson_05.validation.json",
+      "action": "add",
+      "inputSha256": "b08571f3eafc12154b84345e152d10b646b9e5ba1ed96ac51f8c51400fdd0dc5",
+      "resultSha256": "b08571f3eafc12154b84345e152d10b646b9e5ba1ed96ac51f8c51400fdd0dc5"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/content-checks.json",
+      "action": "add",
+      "inputSha256": "07873481a2a87a704a0337d5f94aa9c4ded392950ab99553727b975a792b65c5",
+      "resultSha256": "07873481a2a87a704a0337d5f94aa9c4ded392950ab99553727b975a792b65c5"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/delivery-checks.json",
+      "action": "add",
+      "inputSha256": "3c9337928aabe40b29033753db396205ade843bcebbee191459a2041f46d918e",
+      "resultSha256": "3c9337928aabe40b29033753db396205ade843bcebbee191459a2041f46d918e"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/delivery-checks.log",
+      "action": "add",
+      "inputSha256": "3db95105ac7b234bec28ea927065831107116ba6b3700e4ccbebd774c97cd125",
+      "resultSha256": "3db95105ac7b234bec28ea927065831107116ba6b3700e4ccbebd774c97cd125"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/freeze-lock-check.json",
+      "action": "add",
+      "inputSha256": "5982cecf681f7711b2703d5c16a39d449236624050d6dd4e8dd16caee7760968",
+      "resultSha256": "5982cecf681f7711b2703d5c16a39d449236624050d6dd4e8dd16caee7760968"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/grayscale/page-01.png",
+      "action": "add",
+      "inputSha256": "eb30387815329850d17a5b73a484fb237067e5fd96f6861f6fd1c8c09fda46bf",
+      "resultSha256": "eb30387815329850d17a5b73a484fb237067e5fd96f6861f6fd1c8c09fda46bf"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/grayscale/page-02.png",
+      "action": "add",
+      "inputSha256": "465822bd000b91a6266e837c8874b96cdcb6d6a68182397b44f4c305896913e5",
+      "resultSha256": "465822bd000b91a6266e837c8874b96cdcb6d6a68182397b44f4c305896913e5"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/grayscale/page-03.png",
+      "action": "add",
+      "inputSha256": "abd1452f2388c1743a7719c0087d5afa9c9d40477ac486345e4505c0a279ed5a",
+      "resultSha256": "abd1452f2388c1743a7719c0087d5afa9c9d40477ac486345e4505c0a279ed5a"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/grayscale/page-04.png",
+      "action": "add",
+      "inputSha256": "2ffe4c65787e89aefb7dc290f9826042b56f360378982ba6e8d4f0135996d991",
+      "resultSha256": "2ffe4c65787e89aefb7dc290f9826042b56f360378982ba6e8d4f0135996d991"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/grayscale/page-05.png",
+      "action": "add",
+      "inputSha256": "9abaa3f7d49485b93db9328384402b8e1a4594163724a1cbc510060ad231a5ef",
+      "resultSha256": "9abaa3f7d49485b93db9328384402b8e1a4594163724a1cbc510060ad231a5ef"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/grayscale/page-06.png",
+      "action": "add",
+      "inputSha256": "a02c5d59176a66d45b48737a7e049dc15c4cf584ec6dcdd7b5311eb2b2f6f993",
+      "resultSha256": "a02c5d59176a66d45b48737a7e049dc15c4cf584ec6dcdd7b5311eb2b2f6f993"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/grayscale/page-07.png",
+      "action": "add",
+      "inputSha256": "3c0aafa2662edec1419fa8512e11eef13248d74c33eb33af1e005abd5f816614",
+      "resultSha256": "3c0aafa2662edec1419fa8512e11eef13248d74c33eb33af1e005abd5f816614"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/grayscale/page-08.png",
+      "action": "add",
+      "inputSha256": "ab59401cc5babf7cfd1d4cdf5fff9e278aa8d15305175484103e01b0c7c7e03e",
+      "resultSha256": "ab59401cc5babf7cfd1d4cdf5fff9e278aa8d15305175484103e01b0c7c7e03e"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/grayscale/page-09.png",
+      "action": "add",
+      "inputSha256": "006f25fd09e1506b993dd430752f1bedc3a07153101e16ea6280af12a5b1cfc3",
+      "resultSha256": "006f25fd09e1506b993dd430752f1bedc3a07153101e16ea6280af12a5b1cfc3"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/grayscale/page-10.png",
+      "action": "add",
+      "inputSha256": "2cde54b11409f365300a247470f42142cfe5d90678b3e45a38737aae156bd002",
+      "resultSha256": "2cde54b11409f365300a247470f42142cfe5d90678b3e45a38737aae156bd002"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/grayscale/page-11.png",
+      "action": "add",
+      "inputSha256": "d71021a7b632aecedb9c12bd116fbeebb41e0daeb6e5f9286c1cae007ea1998e",
+      "resultSha256": "d71021a7b632aecedb9c12bd116fbeebb41e0daeb6e5f9286c1cae007ea1998e"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/grayscale/page-12.png",
+      "action": "add",
+      "inputSha256": "49f5ed36ea4e088f7ee5af18c4dfddd6e2578495e74258d45e0fb71c83f66c82",
+      "resultSha256": "49f5ed36ea4e088f7ee5af18c4dfddd6e2578495e74258d45e0fb71c83f66c82"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/grayscale/page-13.png",
+      "action": "add",
+      "inputSha256": "fd753d3de6a4b14ac78727fdeffe3ae56c298696ce708e6a83144c79f488aabb",
+      "resultSha256": "fd753d3de6a4b14ac78727fdeffe3ae56c298696ce708e6a83144c79f488aabb"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/grayscale/page-14.png",
+      "action": "add",
+      "inputSha256": "aca32b194a764a6dff5945d9907da43a1e799574c3dfa3be73af421be3117b3b",
+      "resultSha256": "aca32b194a764a6dff5945d9907da43a1e799574c3dfa3be73af421be3117b3b"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/grayscale/page-15.png",
+      "action": "add",
+      "inputSha256": "361b3d26331fb4c09ed8a1aadb925ff0bafe883c806cf4bfc1c9d7b0471ed1bb",
+      "resultSha256": "361b3d26331fb4c09ed8a1aadb925ff0bafe883c806cf4bfc1c9d7b0471ed1bb"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/grayscale/page-16.png",
+      "action": "add",
+      "inputSha256": "ee59af828fef32f5648a03e2a3fe295211faf5643370a96f2751f5644e2be09c",
+      "resultSha256": "ee59af828fef32f5648a03e2a3fe295211faf5643370a96f2751f5644e2be09c"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/grayscale/page-17.png",
+      "action": "add",
+      "inputSha256": "97089b405a094579a58058c62fdbef521abfd2a0a96fb3a6d28e27e8b448ea06",
+      "resultSha256": "97089b405a094579a58058c62fdbef521abfd2a0a96fb3a6d28e27e8b448ea06"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/grayscale/page-18.png",
+      "action": "add",
+      "inputSha256": "6b86fbbb481344cd37057c8dc038d3b9e9cd67dc68ad466e0631d8c22c1c6018",
+      "resultSha256": "6b86fbbb481344cd37057c8dc038d3b9e9cd67dc68ad466e0631d8c22c1c6018"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/grayscale/page-19.png",
+      "action": "add",
+      "inputSha256": "8f6602c4a446f547b708f80ab20d121a9efac9043089a57785d9e33eaf8c0e78",
+      "resultSha256": "8f6602c4a446f547b708f80ab20d121a9efac9043089a57785d9e33eaf8c0e78"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/grayscale/page-20.png",
+      "action": "add",
+      "inputSha256": "392314db766d70029cb54640de757ec51bea86fcc8f1b104d51675e00514ec7f",
+      "resultSha256": "392314db766d70029cb54640de757ec51bea86fcc8f1b104d51675e00514ec7f"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/grayscale/page-21.png",
+      "action": "add",
+      "inputSha256": "09c6f0dee7ff66924f16183a37deeaaac4bbe829fb2fea735e0eee9dcefa91d8",
+      "resultSha256": "09c6f0dee7ff66924f16183a37deeaaac4bbe829fb2fea735e0eee9dcefa91d8"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/grayscale/page-22.png",
+      "action": "add",
+      "inputSha256": "900b6c7670ed3261aaa8726ea9b9188908ca2afc32b853d10f55f187b6fa2a2f",
+      "resultSha256": "900b6c7670ed3261aaa8726ea9b9188908ca2afc32b853d10f55f187b6fa2a2f"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/grayscale/page-23.png",
+      "action": "add",
+      "inputSha256": "164ee70335c309c8dcebe22d9f0db81553b033606cf51efae51ebaa07041d419",
+      "resultSha256": "164ee70335c309c8dcebe22d9f0db81553b033606cf51efae51ebaa07041d419"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/grayscale/page-24.png",
+      "action": "add",
+      "inputSha256": "8f7be799006a69ed06db5e3c39569a71d44a462ac143c6e3019f94b27ba2a0ba",
+      "resultSha256": "8f7be799006a69ed06db5e3c39569a71d44a462ac143c6e3019f94b27ba2a0ba"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/grayscale/page-25.png",
+      "action": "add",
+      "inputSha256": "76079280b0a9b1ff1002148d2005350ea59efcafddede679874952eafa11cf7b",
+      "resultSha256": "76079280b0a9b1ff1002148d2005350ea59efcafddede679874952eafa11cf7b"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/grayscale-render.log",
+      "action": "add",
+      "inputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "resultSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/layouts/slide-01.json",
+      "action": "add",
+      "inputSha256": "0e6dbd01040b08a823f5d79a1b0351de632c3833bfa4c5722cb7c6d0a9ff6370",
+      "resultSha256": "0e6dbd01040b08a823f5d79a1b0351de632c3833bfa4c5722cb7c6d0a9ff6370"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/layouts/slide-02.json",
+      "action": "add",
+      "inputSha256": "66f2fc3d344f0d37e3d8c7593f4882e1239a92b7d12a3c360d7ca411f0c5c06c",
+      "resultSha256": "66f2fc3d344f0d37e3d8c7593f4882e1239a92b7d12a3c360d7ca411f0c5c06c"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/layouts/slide-03.json",
+      "action": "add",
+      "inputSha256": "2bb3cd21af7772d23161c089c6551d1d0bf4ad489559d7558fa367cd51b3f50b",
+      "resultSha256": "2bb3cd21af7772d23161c089c6551d1d0bf4ad489559d7558fa367cd51b3f50b"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/layouts/slide-04.json",
+      "action": "add",
+      "inputSha256": "6099ee2473a4823a3947951f4fbf026296449cb14e6c2f1ce9cb29ebf1d8c50f",
+      "resultSha256": "6099ee2473a4823a3947951f4fbf026296449cb14e6c2f1ce9cb29ebf1d8c50f"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/layouts/slide-05.json",
+      "action": "add",
+      "inputSha256": "05c0f99d3d9d434e521acbb299750298c8d5150c73e14465fc5c3a7d10868a12",
+      "resultSha256": "05c0f99d3d9d434e521acbb299750298c8d5150c73e14465fc5c3a7d10868a12"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/layouts/slide-06.json",
+      "action": "add",
+      "inputSha256": "eac25b04d91ac78a1d01d69903d6ab9e152767ce9dc488079a427be18d1445e8",
+      "resultSha256": "eac25b04d91ac78a1d01d69903d6ab9e152767ce9dc488079a427be18d1445e8"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/layouts/slide-07.json",
+      "action": "add",
+      "inputSha256": "73cb127c91732683dfee62e399db6dd2b99f5056aaca7fe167d5091d4564ebb7",
+      "resultSha256": "73cb127c91732683dfee62e399db6dd2b99f5056aaca7fe167d5091d4564ebb7"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/layouts/slide-08.json",
+      "action": "add",
+      "inputSha256": "90cf5e92f47e40236775c32cceff7718ed0bb01f212bb3784f14c801c212811a",
+      "resultSha256": "90cf5e92f47e40236775c32cceff7718ed0bb01f212bb3784f14c801c212811a"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/layouts/slide-09.json",
+      "action": "add",
+      "inputSha256": "e39b6dd9f14107d4fff0e05573a1758f600eebdb28d8246dce65c6647623f664",
+      "resultSha256": "e39b6dd9f14107d4fff0e05573a1758f600eebdb28d8246dce65c6647623f664"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/layouts/slide-10.json",
+      "action": "add",
+      "inputSha256": "413bf936262161059ed064332cb423bf53ba146110ed65430ce7b713f066525a",
+      "resultSha256": "413bf936262161059ed064332cb423bf53ba146110ed65430ce7b713f066525a"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/layouts/slide-11.json",
+      "action": "add",
+      "inputSha256": "c5e62ae51f28e9ae76838c89a02a6c723e8f8685fca2df63d098b6bb51d033fa",
+      "resultSha256": "c5e62ae51f28e9ae76838c89a02a6c723e8f8685fca2df63d098b6bb51d033fa"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/layouts/slide-12.json",
+      "action": "add",
+      "inputSha256": "8eb77a3c72294d0518dfe1fa514dffe576e938aaa71438d37d07a16642d123f9",
+      "resultSha256": "8eb77a3c72294d0518dfe1fa514dffe576e938aaa71438d37d07a16642d123f9"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/layouts/slide-13.json",
+      "action": "add",
+      "inputSha256": "5ebab71fb1033f4d9cf70c314e35ed60f679f9ae0c2243445034f9253fb87c82",
+      "resultSha256": "5ebab71fb1033f4d9cf70c314e35ed60f679f9ae0c2243445034f9253fb87c82"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/layouts/slide-14.json",
+      "action": "add",
+      "inputSha256": "c18dfae30fa42490057b956c1c6f37f8e5349be1dc189f0d49dbcce5e9f5acaf",
+      "resultSha256": "c18dfae30fa42490057b956c1c6f37f8e5349be1dc189f0d49dbcce5e9f5acaf"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/layouts/slide-15.json",
+      "action": "add",
+      "inputSha256": "08fad2218c973454b6fd250b2316b100d1f430d763778b6fb01e924958bb3461",
+      "resultSha256": "08fad2218c973454b6fd250b2316b100d1f430d763778b6fb01e924958bb3461"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/layouts/slide-16.json",
+      "action": "add",
+      "inputSha256": "acd8b8da56e9bde7ce5be9e3027da0a60b98e2200e25c8f46e6522f9b4a77c27",
+      "resultSha256": "acd8b8da56e9bde7ce5be9e3027da0a60b98e2200e25c8f46e6522f9b4a77c27"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/layouts/slide-17.json",
+      "action": "add",
+      "inputSha256": "fb1f06a50323289888372053bd911ee1f656318abb54e82e2551626134c85f15",
+      "resultSha256": "fb1f06a50323289888372053bd911ee1f656318abb54e82e2551626134c85f15"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/layouts/slide-18.json",
+      "action": "add",
+      "inputSha256": "d47d17002dcd1e29b576b891d69f039b52ec61b27b2158e8be1b37dfb974c484",
+      "resultSha256": "d47d17002dcd1e29b576b891d69f039b52ec61b27b2158e8be1b37dfb974c484"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/layouts/slide-19.json",
+      "action": "add",
+      "inputSha256": "99db3e261cef685bf14bcd2a400cddeb215a5074514bc1c461f912a0246bbd8f",
+      "resultSha256": "99db3e261cef685bf14bcd2a400cddeb215a5074514bc1c461f912a0246bbd8f"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/layouts/slide-20.json",
+      "action": "add",
+      "inputSha256": "76f479b15e396fb1fa2e232edcdba6df30f82c8df4e01e5cb67802fd35d4348a",
+      "resultSha256": "76f479b15e396fb1fa2e232edcdba6df30f82c8df4e01e5cb67802fd35d4348a"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/layouts/slide-21.json",
+      "action": "add",
+      "inputSha256": "fc79392755ef3cda63e58d198a83f4c9e7d2e9a90e21bbd15615b89a12db93fd",
+      "resultSha256": "fc79392755ef3cda63e58d198a83f4c9e7d2e9a90e21bbd15615b89a12db93fd"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/layouts/slide-22.json",
+      "action": "add",
+      "inputSha256": "39992507be26f047ec6d62d9f2424687858592c4ed694bd276e205aa07d45a39",
+      "resultSha256": "39992507be26f047ec6d62d9f2424687858592c4ed694bd276e205aa07d45a39"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/layouts/slide-23.json",
+      "action": "add",
+      "inputSha256": "ee4a8fd945f69c4b5be76e306aeb4620a3cb1c7920b2fd0636ee5b93de33afae",
+      "resultSha256": "ee4a8fd945f69c4b5be76e306aeb4620a3cb1c7920b2fd0636ee5b93de33afae"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/layouts/slide-24.json",
+      "action": "add",
+      "inputSha256": "c24607fd9cca88c45aca89049b097ac8d2dea7d5642218bc14fc9b8adafec94e",
+      "resultSha256": "c24607fd9cca88c45aca89049b097ac8d2dea7d5642218bc14fc9b8adafec94e"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/layouts/slide-25.json",
+      "action": "add",
+      "inputSha256": "78e30e7249c04a5906555e2ba5b36136db96b37512ffbc8e560d6aa6749d97b4",
+      "resultSha256": "78e30e7249c04a5906555e2ba5b36136db96b37512ffbc8e560d6aa6749d97b4"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/page-by-page.json",
+      "action": "add",
+      "inputSha256": "049f4a7b1949c4ee64a8de9717c5fdafe5188bb98be17abf522821b92b276263",
+      "resultSha256": "049f4a7b1949c4ee64a8de9717c5fdafe5188bb98be17abf522821b92b276263"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-checks.json",
+      "action": "add",
+      "inputSha256": "c545a95a7b5c3f1ad88dad2cf2a71f4248b2b24548a0c84c021cda64933c5912",
+      "resultSha256": "c545a95a7b5c3f1ad88dad2cf2a71f4248b2b24548a0c84c021cda64933c5912"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-01.png",
+      "action": "add",
+      "inputSha256": "34334cd262bc75def689bead2f1648745fd50a2e0d625a11ccc865a328e66f44",
+      "resultSha256": "34334cd262bc75def689bead2f1648745fd50a2e0d625a11ccc865a328e66f44"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-02.png",
+      "action": "add",
+      "inputSha256": "2468b8e978aa2245d4e5be9111e3d22c214e9573f403463f67b8b5e4fb0be1f2",
+      "resultSha256": "2468b8e978aa2245d4e5be9111e3d22c214e9573f403463f67b8b5e4fb0be1f2"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-03.png",
+      "action": "add",
+      "inputSha256": "0ab24897d2cc41cb0b22d627a035733c97c028f3700ae13ccd84ac1d7adb4cae",
+      "resultSha256": "0ab24897d2cc41cb0b22d627a035733c97c028f3700ae13ccd84ac1d7adb4cae"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-04.png",
+      "action": "add",
+      "inputSha256": "da55e8f1fc7988366d6e0a36c43e925210f9cfbca345ebe7c4fca8259623854b",
+      "resultSha256": "da55e8f1fc7988366d6e0a36c43e925210f9cfbca345ebe7c4fca8259623854b"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-05.png",
+      "action": "add",
+      "inputSha256": "4a6608c2c859d6b7f83b0b3d2ee596e34750b3600c0bffdcd60e1ffaf1294326",
+      "resultSha256": "4a6608c2c859d6b7f83b0b3d2ee596e34750b3600c0bffdcd60e1ffaf1294326"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-06.png",
+      "action": "add",
+      "inputSha256": "266b2abf2c891f5a452c20dd9653b1b9498e84bd9104ee3a9504287343b1a306",
+      "resultSha256": "266b2abf2c891f5a452c20dd9653b1b9498e84bd9104ee3a9504287343b1a306"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-07.png",
+      "action": "add",
+      "inputSha256": "be9bda3d37bd31c1ac6c84a1769895892048a994af3a165377006f09e411413a",
+      "resultSha256": "be9bda3d37bd31c1ac6c84a1769895892048a994af3a165377006f09e411413a"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-08.png",
+      "action": "add",
+      "inputSha256": "32fbaa237594751b5718cce7c977e6807b67e194a18c29a4135807158110fdcd",
+      "resultSha256": "32fbaa237594751b5718cce7c977e6807b67e194a18c29a4135807158110fdcd"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-09.png",
+      "action": "add",
+      "inputSha256": "c0953ec0bc891d750ea6bdb11b9b42116da5fe1fe2c3b4c30024cca0cf735a4e",
+      "resultSha256": "c0953ec0bc891d750ea6bdb11b9b42116da5fe1fe2c3b4c30024cca0cf735a4e"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-10.png",
+      "action": "add",
+      "inputSha256": "d3f6b5783ee76f6385e7d448deac802c7ffe1b3e79f7d7f3ef056fe79ff4c4ad",
+      "resultSha256": "d3f6b5783ee76f6385e7d448deac802c7ffe1b3e79f7d7f3ef056fe79ff4c4ad"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-11.png",
+      "action": "add",
+      "inputSha256": "c058dc495fe150a785e33f978eeb36a58ebd7355af60b8415b9027c3022b9002",
+      "resultSha256": "c058dc495fe150a785e33f978eeb36a58ebd7355af60b8415b9027c3022b9002"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-12.png",
+      "action": "add",
+      "inputSha256": "6d45b7d5e8a0be816a1bbf80f348d386934e66b18dcf3856a5d0810a2db6d6c1",
+      "resultSha256": "6d45b7d5e8a0be816a1bbf80f348d386934e66b18dcf3856a5d0810a2db6d6c1"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-13.png",
+      "action": "add",
+      "inputSha256": "f07f71a463ee35f3d33267450f3cbd9f88bd1bed0a042686ba1eef9c1594ab39",
+      "resultSha256": "f07f71a463ee35f3d33267450f3cbd9f88bd1bed0a042686ba1eef9c1594ab39"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-14.png",
+      "action": "add",
+      "inputSha256": "d65a988b3db0b3d4a805170124230d2900012d9a1e8108b2fff597effcbd6cf5",
+      "resultSha256": "d65a988b3db0b3d4a805170124230d2900012d9a1e8108b2fff597effcbd6cf5"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-15.png",
+      "action": "add",
+      "inputSha256": "58cc8bc609630c5c9c71fcdabfd93fba7c9ec896a251dc3aad73cd89c01ec760",
+      "resultSha256": "58cc8bc609630c5c9c71fcdabfd93fba7c9ec896a251dc3aad73cd89c01ec760"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-16.png",
+      "action": "add",
+      "inputSha256": "166f7635149ffbded0f5a742ee230cf0d62eb40779d3ca2772d6a4ed25649c32",
+      "resultSha256": "166f7635149ffbded0f5a742ee230cf0d62eb40779d3ca2772d6a4ed25649c32"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-17.png",
+      "action": "add",
+      "inputSha256": "cc32b2ef345033b82fd579dc84abdbee1db6862b1856644e11e3ef9dfc4f08de",
+      "resultSha256": "cc32b2ef345033b82fd579dc84abdbee1db6862b1856644e11e3ef9dfc4f08de"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-18.png",
+      "action": "add",
+      "inputSha256": "6a91fd599e33492f0d09b2d9c818aff8fdb0274a1d368fd15d6e2ff40c0ee15e",
+      "resultSha256": "6a91fd599e33492f0d09b2d9c818aff8fdb0274a1d368fd15d6e2ff40c0ee15e"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-19.png",
+      "action": "add",
+      "inputSha256": "58340f66e4972c5323c73ebd235070387a2e0e92981d1914c0fd741b61bd680f",
+      "resultSha256": "58340f66e4972c5323c73ebd235070387a2e0e92981d1914c0fd741b61bd680f"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-20.png",
+      "action": "add",
+      "inputSha256": "21a6d63fb61a78e7e40763abc71919aaea14d6b10390b8a513579c7e10bd7528",
+      "resultSha256": "21a6d63fb61a78e7e40763abc71919aaea14d6b10390b8a513579c7e10bd7528"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-21.png",
+      "action": "add",
+      "inputSha256": "375d25a3894e0254f5296995c9f0daa47d6b56c7c4b802bbcc6a269121151a6b",
+      "resultSha256": "375d25a3894e0254f5296995c9f0daa47d6b56c7c4b802bbcc6a269121151a6b"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-22.png",
+      "action": "add",
+      "inputSha256": "823d0afe33ae29b6d05992e11fa0b0f61a8657e2a2f8b2da5f1fdc393295dc0a",
+      "resultSha256": "823d0afe33ae29b6d05992e11fa0b0f61a8657e2a2f8b2da5f1fdc393295dc0a"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-23.png",
+      "action": "add",
+      "inputSha256": "5e7b11a99a1156d5781243b71d4ccc6a53a1a6804a7c6ef1ab2ac16dc1f060de",
+      "resultSha256": "5e7b11a99a1156d5781243b71d4ccc6a53a1a6804a7c6ef1ab2ac16dc1f060de"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-24.png",
+      "action": "add",
+      "inputSha256": "1429168d6b12ad9c3a19a2a381e693ef5a09bd3ced11c026f696ce44a787b7ab",
+      "resultSha256": "1429168d6b12ad9c3a19a2a381e693ef5a09bd3ced11c026f696ce44a787b7ab"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-25.png",
+      "action": "add",
+      "inputSha256": "fc08cc77d9bb857b411221756d04f9ba02f4a893e1b6e051024e8a4c2a48b1de",
+      "resultSha256": "fc08cc77d9bb857b411221756d04f9ba02f4a893e1b6e051024e8a4c2a48b1de"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_01_r1/page-1.png",
+      "action": "add",
+      "inputSha256": "34334cd262bc75def689bead2f1648745fd50a2e0d625a11ccc865a328e66f44",
+      "resultSha256": "34334cd262bc75def689bead2f1648745fd50a2e0d625a11ccc865a328e66f44"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_01_r1/page-2.png",
+      "action": "add",
+      "inputSha256": "2468b8e978aa2245d4e5be9111e3d22c214e9573f403463f67b8b5e4fb0be1f2",
+      "resultSha256": "2468b8e978aa2245d4e5be9111e3d22c214e9573f403463f67b8b5e4fb0be1f2"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_01_r1/page-3.png",
+      "action": "add",
+      "inputSha256": "0ab24897d2cc41cb0b22d627a035733c97c028f3700ae13ccd84ac1d7adb4cae",
+      "resultSha256": "0ab24897d2cc41cb0b22d627a035733c97c028f3700ae13ccd84ac1d7adb4cae"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_01_r1/page-4.png",
+      "action": "add",
+      "inputSha256": "da55e8f1fc7988366d6e0a36c43e925210f9cfbca345ebe7c4fca8259623854b",
+      "resultSha256": "da55e8f1fc7988366d6e0a36c43e925210f9cfbca345ebe7c4fca8259623854b"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_01_r1/page-5.png",
+      "action": "add",
+      "inputSha256": "4a6608c2c859d6b7f83b0b3d2ee596e34750b3600c0bffdcd60e1ffaf1294326",
+      "resultSha256": "4a6608c2c859d6b7f83b0b3d2ee596e34750b3600c0bffdcd60e1ffaf1294326"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_02_r1/page-1.png",
+      "action": "add",
+      "inputSha256": "266b2abf2c891f5a452c20dd9653b1b9498e84bd9104ee3a9504287343b1a306",
+      "resultSha256": "266b2abf2c891f5a452c20dd9653b1b9498e84bd9104ee3a9504287343b1a306"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_02_r1/page-2.png",
+      "action": "add",
+      "inputSha256": "be9bda3d37bd31c1ac6c84a1769895892048a994af3a165377006f09e411413a",
+      "resultSha256": "be9bda3d37bd31c1ac6c84a1769895892048a994af3a165377006f09e411413a"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_02_r1/page-3.png",
+      "action": "add",
+      "inputSha256": "32fbaa237594751b5718cce7c977e6807b67e194a18c29a4135807158110fdcd",
+      "resultSha256": "32fbaa237594751b5718cce7c977e6807b67e194a18c29a4135807158110fdcd"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_02_r1/page-4.png",
+      "action": "add",
+      "inputSha256": "c0953ec0bc891d750ea6bdb11b9b42116da5fe1fe2c3b4c30024cca0cf735a4e",
+      "resultSha256": "c0953ec0bc891d750ea6bdb11b9b42116da5fe1fe2c3b4c30024cca0cf735a4e"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_02_r1/page-5.png",
+      "action": "add",
+      "inputSha256": "d3f6b5783ee76f6385e7d448deac802c7ffe1b3e79f7d7f3ef056fe79ff4c4ad",
+      "resultSha256": "d3f6b5783ee76f6385e7d448deac802c7ffe1b3e79f7d7f3ef056fe79ff4c4ad"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_03_r1/page-1.png",
+      "action": "add",
+      "inputSha256": "c058dc495fe150a785e33f978eeb36a58ebd7355af60b8415b9027c3022b9002",
+      "resultSha256": "c058dc495fe150a785e33f978eeb36a58ebd7355af60b8415b9027c3022b9002"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_03_r1/page-2.png",
+      "action": "add",
+      "inputSha256": "6d45b7d5e8a0be816a1bbf80f348d386934e66b18dcf3856a5d0810a2db6d6c1",
+      "resultSha256": "6d45b7d5e8a0be816a1bbf80f348d386934e66b18dcf3856a5d0810a2db6d6c1"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_03_r1/page-3.png",
+      "action": "add",
+      "inputSha256": "f07f71a463ee35f3d33267450f3cbd9f88bd1bed0a042686ba1eef9c1594ab39",
+      "resultSha256": "f07f71a463ee35f3d33267450f3cbd9f88bd1bed0a042686ba1eef9c1594ab39"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_03_r1/page-4.png",
+      "action": "add",
+      "inputSha256": "d65a988b3db0b3d4a805170124230d2900012d9a1e8108b2fff597effcbd6cf5",
+      "resultSha256": "d65a988b3db0b3d4a805170124230d2900012d9a1e8108b2fff597effcbd6cf5"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_03_r1/page-5.png",
+      "action": "add",
+      "inputSha256": "58cc8bc609630c5c9c71fcdabfd93fba7c9ec896a251dc3aad73cd89c01ec760",
+      "resultSha256": "58cc8bc609630c5c9c71fcdabfd93fba7c9ec896a251dc3aad73cd89c01ec760"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_04_r1/page-1.png",
+      "action": "add",
+      "inputSha256": "166f7635149ffbded0f5a742ee230cf0d62eb40779d3ca2772d6a4ed25649c32",
+      "resultSha256": "166f7635149ffbded0f5a742ee230cf0d62eb40779d3ca2772d6a4ed25649c32"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_04_r1/page-2.png",
+      "action": "add",
+      "inputSha256": "cc32b2ef345033b82fd579dc84abdbee1db6862b1856644e11e3ef9dfc4f08de",
+      "resultSha256": "cc32b2ef345033b82fd579dc84abdbee1db6862b1856644e11e3ef9dfc4f08de"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_04_r1/page-3.png",
+      "action": "add",
+      "inputSha256": "6a91fd599e33492f0d09b2d9c818aff8fdb0274a1d368fd15d6e2ff40c0ee15e",
+      "resultSha256": "6a91fd599e33492f0d09b2d9c818aff8fdb0274a1d368fd15d6e2ff40c0ee15e"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_04_r1/page-4.png",
+      "action": "add",
+      "inputSha256": "58340f66e4972c5323c73ebd235070387a2e0e92981d1914c0fd741b61bd680f",
+      "resultSha256": "58340f66e4972c5323c73ebd235070387a2e0e92981d1914c0fd741b61bd680f"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_04_r1/page-5.png",
+      "action": "add",
+      "inputSha256": "21a6d63fb61a78e7e40763abc71919aaea14d6b10390b8a513579c7e10bd7528",
+      "resultSha256": "21a6d63fb61a78e7e40763abc71919aaea14d6b10390b8a513579c7e10bd7528"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_05_r1/page-1.png",
+      "action": "add",
+      "inputSha256": "375d25a3894e0254f5296995c9f0daa47d6b56c7c4b802bbcc6a269121151a6b",
+      "resultSha256": "375d25a3894e0254f5296995c9f0daa47d6b56c7c4b802bbcc6a269121151a6b"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_05_r1/page-2.png",
+      "action": "add",
+      "inputSha256": "823d0afe33ae29b6d05992e11fa0b0f61a8657e2a2f8b2da5f1fdc393295dc0a",
+      "resultSha256": "823d0afe33ae29b6d05992e11fa0b0f61a8657e2a2f8b2da5f1fdc393295dc0a"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_05_r1/page-3.png",
+      "action": "add",
+      "inputSha256": "5e7b11a99a1156d5781243b71d4ccc6a53a1a6804a7c6ef1ab2ac16dc1f060de",
+      "resultSha256": "5e7b11a99a1156d5781243b71d4ccc6a53a1a6804a7c6ef1ab2ac16dc1f060de"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_05_r1/page-4.png",
+      "action": "add",
+      "inputSha256": "06d8969474e0577c8060d487e2d7f01f88e0cfb99ba0ee6626cb0c33c6b915f9",
+      "resultSha256": "06d8969474e0577c8060d487e2d7f01f88e0cfb99ba0ee6626cb0c33c6b915f9"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_05_r1/page-5.png",
+      "action": "add",
+      "inputSha256": "5d40e383ee861281d4f43bfcecdc6cbd2f422d505f00c02be2d3792ebc772737",
+      "resultSha256": "5d40e383ee861281d4f43bfcecdc6cbd2f422d505f00c02be2d3792ebc772737"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_Teacher_Summary_5pages_r1/page-1.png",
+      "action": "add",
+      "inputSha256": "47e724a428d50def9d32cf267e363a0e5885ad2943fa5227f9505deea8bb0d61",
+      "resultSha256": "47e724a428d50def9d32cf267e363a0e5885ad2943fa5227f9505deea8bb0d61"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_Teacher_Summary_5pages_r1/page-2.png",
+      "action": "add",
+      "inputSha256": "e115028e68ca99dcf6f4e47fa21ec00c987e7e966441cb1a0955bc2f1e783be9",
+      "resultSha256": "e115028e68ca99dcf6f4e47fa21ec00c987e7e966441cb1a0955bc2f1e783be9"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_Teacher_Summary_5pages_r1/page-3.png",
+      "action": "add",
+      "inputSha256": "13c0f5a48435c732ec27e6cc891295a3c798e1b450c77cd6c367aa9c760ee86f",
+      "resultSha256": "13c0f5a48435c732ec27e6cc891295a3c798e1b450c77cd6c367aa9c760ee86f"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_Teacher_Summary_5pages_r1/page-4.png",
+      "action": "add",
+      "inputSha256": "c92888a6a035c8cec017a3837d55b100c8f3cd8aa047ce8c68d6f82ee5b1586f",
+      "resultSha256": "c92888a6a035c8cec017a3837d55b100c8f3cd8aa047ce8c68d6f82ee5b1586f"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/pdf-render/T22_Teacher_Summary_5pages_r1/page-5.png",
+      "action": "add",
+      "inputSha256": "4e1b79a88d461b24837f36d0969b5fb7a8317849263c6d9d80f5fa2a877926d6",
+      "resultSha256": "4e1b79a88d461b24837f36d0969b5fb7a8317849263c6d9d80f5fa2a877926d6"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/slides/slide-01.png",
+      "action": "add",
+      "inputSha256": "24abbb1423c2605763d449dcdc196461db8593677e7c90e805e811f36a498076",
+      "resultSha256": "24abbb1423c2605763d449dcdc196461db8593677e7c90e805e811f36a498076"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/slides/slide-02.png",
+      "action": "add",
+      "inputSha256": "292e9b46a4584f4acb4c26260dc24aecb40fcb994e61eb88310bbb4f6f0dbc8f",
+      "resultSha256": "292e9b46a4584f4acb4c26260dc24aecb40fcb994e61eb88310bbb4f6f0dbc8f"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/slides/slide-03.png",
+      "action": "add",
+      "inputSha256": "381ba672e51b965303f38c54ef4fc39d5c8602072d1df4f72695589d602e5f3a",
+      "resultSha256": "381ba672e51b965303f38c54ef4fc39d5c8602072d1df4f72695589d602e5f3a"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/slides/slide-04.png",
+      "action": "add",
+      "inputSha256": "68dc9a65330a131ad71e34531a789aaa41bdef9ee80123322b91ba15f994f4b1",
+      "resultSha256": "68dc9a65330a131ad71e34531a789aaa41bdef9ee80123322b91ba15f994f4b1"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/slides/slide-05.png",
+      "action": "add",
+      "inputSha256": "ed767568e99df8e2ac730cad62323549903782f9a82dde7667dbdb49ee87f3eb",
+      "resultSha256": "ed767568e99df8e2ac730cad62323549903782f9a82dde7667dbdb49ee87f3eb"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/slides/slide-06.png",
+      "action": "add",
+      "inputSha256": "6d559a4de2a4acd694f1b5b5efe1cfbcc2d36022bf585ae12a9abaf4c1a21a88",
+      "resultSha256": "6d559a4de2a4acd694f1b5b5efe1cfbcc2d36022bf585ae12a9abaf4c1a21a88"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/slides/slide-07.png",
+      "action": "add",
+      "inputSha256": "7cdf85dc5d272b8a2c53daa92786c92d4da3e45bf2956ccfdf6dcec7e62a1cc1",
+      "resultSha256": "7cdf85dc5d272b8a2c53daa92786c92d4da3e45bf2956ccfdf6dcec7e62a1cc1"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/slides/slide-08.png",
+      "action": "add",
+      "inputSha256": "0293cb9a8b22517935020dfc605c9f90db68cd0d8ae9676af2b983fa71295cee",
+      "resultSha256": "0293cb9a8b22517935020dfc605c9f90db68cd0d8ae9676af2b983fa71295cee"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/slides/slide-09.png",
+      "action": "add",
+      "inputSha256": "4fd5e5350801f0a3cb1be0d32df821d5a10ca2f80f44d091deda61eff202f675",
+      "resultSha256": "4fd5e5350801f0a3cb1be0d32df821d5a10ca2f80f44d091deda61eff202f675"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/slides/slide-10.png",
+      "action": "add",
+      "inputSha256": "71cb81522b8447e08fd8737bd71b93d2cea4c8951fa9f6ea5972184de13ae99f",
+      "resultSha256": "71cb81522b8447e08fd8737bd71b93d2cea4c8951fa9f6ea5972184de13ae99f"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/slides/slide-11.png",
+      "action": "add",
+      "inputSha256": "aed606d31f9ee054600d86dad6e7a9355ced1215ac614bc05cf848cb52b8f130",
+      "resultSha256": "aed606d31f9ee054600d86dad6e7a9355ced1215ac614bc05cf848cb52b8f130"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/slides/slide-12.png",
+      "action": "add",
+      "inputSha256": "904b46571333c8f18dad0072f51e526dce78eafaa00a2f3ba7e8ceb035307cd8",
+      "resultSha256": "904b46571333c8f18dad0072f51e526dce78eafaa00a2f3ba7e8ceb035307cd8"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/slides/slide-13.png",
+      "action": "add",
+      "inputSha256": "40b2458d09b6728639197fa8df2ca979e76b5b3fcf98d7d7f86f5ee0d3327c3d",
+      "resultSha256": "40b2458d09b6728639197fa8df2ca979e76b5b3fcf98d7d7f86f5ee0d3327c3d"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/slides/slide-14.png",
+      "action": "add",
+      "inputSha256": "f211e55582acacc0d707c44041921d432eda69b959bf20c281f8acd6c0992fec",
+      "resultSha256": "f211e55582acacc0d707c44041921d432eda69b959bf20c281f8acd6c0992fec"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/slides/slide-15.png",
+      "action": "add",
+      "inputSha256": "7f56ae9abede52136b0085a5840352063429d23516938b64cb32b12cb0f9b254",
+      "resultSha256": "7f56ae9abede52136b0085a5840352063429d23516938b64cb32b12cb0f9b254"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/slides/slide-16.png",
+      "action": "add",
+      "inputSha256": "c05fdbbd01a475045fe48a77ffcac4c9aee7de2cb6f63055eb160c1b5fd3855a",
+      "resultSha256": "c05fdbbd01a475045fe48a77ffcac4c9aee7de2cb6f63055eb160c1b5fd3855a"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/slides/slide-17.png",
+      "action": "add",
+      "inputSha256": "81b8afe96f39309b822e641ef3f71fd0dd39bdcb90f4329d4dbcdb4c88db3eeb",
+      "resultSha256": "81b8afe96f39309b822e641ef3f71fd0dd39bdcb90f4329d4dbcdb4c88db3eeb"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/slides/slide-18.png",
+      "action": "add",
+      "inputSha256": "1197c2763730f76337e3772c1eedcab661e15aa8231b060fb9dfa20d76e4b170",
+      "resultSha256": "1197c2763730f76337e3772c1eedcab661e15aa8231b060fb9dfa20d76e4b170"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/slides/slide-19.png",
+      "action": "add",
+      "inputSha256": "891113ca28744bc8480dc869b82e146dfcfedf81398042afe04ffc33356bbdac",
+      "resultSha256": "891113ca28744bc8480dc869b82e146dfcfedf81398042afe04ffc33356bbdac"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/slides/slide-20.png",
+      "action": "add",
+      "inputSha256": "bc14fab054b4b0aac624a16c6fdcaeba4e361b56f860b7a42f788b3f40ea38ed",
+      "resultSha256": "bc14fab054b4b0aac624a16c6fdcaeba4e361b56f860b7a42f788b3f40ea38ed"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/slides/slide-21.png",
+      "action": "add",
+      "inputSha256": "a2f641057848fb169dd598ba30e91357bc6a3f39c2a387f93d10da279191e7aa",
+      "resultSha256": "a2f641057848fb169dd598ba30e91357bc6a3f39c2a387f93d10da279191e7aa"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/slides/slide-22.png",
+      "action": "add",
+      "inputSha256": "09333aae333e7d14183adb2c05ccea16448bfaee4b4bc0a9110f0bdef40f27b5",
+      "resultSha256": "09333aae333e7d14183adb2c05ccea16448bfaee4b4bc0a9110f0bdef40f27b5"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/slides/slide-23.png",
+      "action": "add",
+      "inputSha256": "b3317831cae1b34b8d982a33c9db51903aa74fa2952ca060915d06c39ca51951",
+      "resultSha256": "b3317831cae1b34b8d982a33c9db51903aa74fa2952ca060915d06c39ca51951"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/slides/slide-24.png",
+      "action": "add",
+      "inputSha256": "512921f9acc22f8d3389d6a77df371894e5803051292192a557d910986336041",
+      "resultSha256": "512921f9acc22f8d3389d6a77df371894e5803051292192a557d910986336041"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/slides/slide-25.png",
+      "action": "add",
+      "inputSha256": "0c7b013238ff8f801a247a323b1ca6864eb4cc2b45bfe1ea2cd34088f4829c54",
+      "resultSha256": "0c7b013238ff8f801a247a323b1ca6864eb4cc2b45bfe1ea2cd34088f4829c54"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/qa/viewer-open-and-pdf.log",
+      "action": "add",
+      "inputSha256": "7c5fe9db3dba5a316c18c633cb62451765f3eda7ac3e31660869fa0860ca6d92",
+      "resultSha256": "7c5fe9db3dba5a316c18c633cb62451765f3eda7ac3e31660869fa0860ca6d92"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/source/author-lessons.py",
+      "action": "add",
+      "inputSha256": "49e52aba9dc80579d98efbc8c18db4d5c24ce733b6f322d2c03c792e3eaa935b",
+      "resultSha256": "49e52aba9dc80579d98efbc8c18db4d5c24ce733b6f322d2c03c792e3eaa935b"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/source/build-lessons.mjs",
+      "action": "add",
+      "inputSha256": "d8d989f30a2fc38b8da8622d6209b47c39a23597d243fa0e642044b58e03bf80",
+      "resultSha256": "d8d989f30a2fc38b8da8622d6209b47c39a23597d243fa0e642044b58e03bf80"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/source/build-teacher-summary.py",
+      "action": "add",
+      "inputSha256": "d30ac38165f2dbd5582c1e251b25818f97bbb2ec63dd52cc8416e4209b0acd19",
+      "resultSha256": "d30ac38165f2dbd5582c1e251b25818f97bbb2ec63dd52cc8416e4209b0acd19"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/source/combined.presentation.json",
+      "action": "add",
+      "inputSha256": "c8cb244df6e05e0d2c66031d5b822739f920a88abe8ce9fe0e7c179f7a350461",
+      "resultSha256": "c8cb244df6e05e0d2c66031d5b822739f920a88abe8ce9fe0e7c179f7a350461"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/source/diagrams.json",
+      "action": "add",
+      "inputSha256": "1baf093d251e13fed23b69ee7087c96f495ec2fa27c897d82b8544e2d273961c",
+      "resultSha256": "1baf093d251e13fed23b69ee7087c96f495ec2fa27c897d82b8544e2d273961c"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/source/lessons.json",
+      "action": "add",
+      "inputSha256": "a0282228c395ee47e2734507fe494f211b8b4995398f7f8c63f708d756dcd7c1",
+      "resultSha256": "a0282228c395ee47e2734507fe494f211b8b4995398f7f8c63f708d756dcd7c1"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/source/package-final.py",
+      "action": "add",
+      "inputSha256": "3ab8b9acfdccfa7bd50b7c236ac0aa4a00aeb8dbcfed0869d5f3504417fcb4e9",
+      "resultSha256": "3ab8b9acfdccfa7bd50b7c236ac0aa4a00aeb8dbcfed0869d5f3504417fcb4e9"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/source/prepare-assets.py",
+      "action": "add",
+      "inputSha256": "ec6d975071813fa4f0e72490c7ce479d192c5264d62969ca00663a89517a3857",
+      "resultSha256": "ec6d975071813fa4f0e72490c7ce479d192c5264d62969ca00663a89517a3857"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/source/rebuild.sh",
+      "action": "add",
+      "inputSha256": "02ec9e02cb07c853b4f6eb535a4185065c33989f0e5778bd6c67ec6ca41ebdcb",
+      "resultSha256": "02ec9e02cb07c853b4f6eb535a4185065c33989f0e5778bd6c67ec6ca41ebdcb"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/source/record-qa.py",
+      "action": "add",
+      "inputSha256": "412b5dd81c6a223ab7bb5d2e9628a47695eba6d015669dfabda706e04b510e1e",
+      "resultSha256": "412b5dd81c6a223ab7bb5d2e9628a47695eba6d015669dfabda706e04b510e1e"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/source/render-pdfs.py",
+      "action": "add",
+      "inputSha256": "928e85f02e68d459ffa375fc7ad898863038883c023af9d090a5a0455ddbefe6",
+      "resultSha256": "928e85f02e68d459ffa375fc7ad898863038883c023af9d090a5a0455ddbefe6"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/source/rendered-board-manifest.json",
+      "action": "add",
+      "inputSha256": "3a5ccf80abdfbdf9393e01632dc4110ddb791a2b11612962b133ce193ee535e2",
+      "resultSha256": "3a5ccf80abdfbdf9393e01632dc4110ddb791a2b11612962b133ce193ee535e2"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/source/speaker-notes.md",
+      "action": "add",
+      "inputSha256": "8efb89a0fe351b0e588ee4c36ffec4d867149f262512f82b997c6258e1791bad",
+      "resultSha256": "8efb89a0fe351b0e588ee4c36ffec4d867149f262512f82b997c6258e1791bad"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/source/teacher-summary.md",
+      "action": "add",
+      "inputSha256": "c66846ec09bfa11cc7fb8f6e4ae8ee417daeaa7bb6d2402ec4b467bf9c5ead11",
+      "resultSha256": "c66846ec09bfa11cc7fb8f6e4ae8ee417daeaa7bb6d2402ec4b467bf9c5ead11"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/source/verify-content.mjs",
+      "action": "add",
+      "inputSha256": "cc226211d37812f374df2f187b1841a1ddd9b95cc47c3ec53f86d241fe16aef5",
+      "resultSha256": "cc226211d37812f374df2f187b1841a1ddd9b95cc47c3ec53f86d241fe16aef5"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/source/verify-delivery.py",
+      "action": "add",
+      "inputSha256": "c5ebd7b9bbb12c83c0f0668f03f2cbf00b1f2521de68b2a8970fac549f16ae68",
+      "resultSha256": "c5ebd7b9bbb12c83c0f0668f03f2cbf00b1f2521de68b2a8970fac549f16ae68"
+    },
+    {
+      "taskId": "T22",
+      "path": "materials/micro-lessons/sources.md",
+      "action": "add",
+      "inputSha256": "ee45a8f82f446fc3939b6aaf79e584c00881751e96f5ceef2e02c858dc3a11e3",
+      "resultSha256": "ee45a8f82f446fc3939b6aaf79e584c00881751e96f5ceef2e02c858dc3a11e3"
+    }
+  ]
+}

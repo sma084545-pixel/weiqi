@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "id": "T23-RENDER-COMMANDS",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "commands": [
+    {
+      "name": "T23_facilitator_manual",
+      "exitCode": 0,
+      "command": [
+        "/Users/maxiao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/Users/maxiao/.codex/plugins/cache/openai-primary-runtime/documents/26.1007.11041/skills/documents/render_docx.py",
+        "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t23-20261009/mainline/go-club/materials/facilitator-kit/output/T23_facilitator_manual.docx",
+        "--output_dir",
+        "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t23-20261009/mainline/go-club/materials/facilitator-kit/validation/rendered/T23_facilitator_manual",
+        "--emit_pdf",
+        "--dpi",
+        "140"
+      ],
+      "log": "T23_facilitator_manual-render.log",
+      "pages": 20,
+      "expectedPages": 20
+    },
+    {
+      "name": "T23_activity_01",
+      "exitCode": 0,
+      "command": [
+        "/Users/maxiao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/Users/maxiao/.codex/plugins/cache/openai-primary-runtime/documents/26.1007.11041/skills/documents/render_docx.py",
+        "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t23-20261009/mainline/go-club/materials/facilitator-kit/output/T23_activity_01.docx",
+        "--output_dir",
+        "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t23-20261009/mainline/go-club/materials/facilitator-kit/validation/rendered/T23_activity_01",
+        "--emit_pdf",
+        "--dpi",
+        "140"
+      ],
+      "log": "T23_activity_01-render.log",
+      "pages": 1,
+      "expectedPages": 1
+    },
+    {
+      "name": "T23_activity_02",
+      "exitCode": 0,
+      "command": [
+        "/Users/maxiao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/Users/maxiao/.codex/plugins/cache/openai-primary-runtime/documents/26.1007.11041/skills/documents/render_docx.py",
+        "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t23-20261009/mainline/go-club/materials/facilitator-kit/output/T23_activity_02.docx",
+        "--output_dir",
+        "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t23-20261009/mainline/go-club/materials/facilitator-kit/validation/rendered/T23_activity_02",
+        "--emit_pdf",
+        "--dpi",
+        "140"
+      ],
+      "log": "T23_activity_02-render.log",
+      "pages": 1,
+      "expectedPages": 1
+    },
+    {
+      "name": "T23_activity_03",
+      "exitCode": 0,
+      "command": [
+        "/Users/maxiao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/Users/maxiao/.codex/plugins/cache/openai-primary-runtime/documents/26.1007.11041/skills/documents/render_docx.py",
+        "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t23-20261009/mainline/go-club/materials/facilitator-kit/output/T23_activity_03.docx",
+        "--output_dir",
+        "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t23-20261009/mainline/go-club/materials/facilitator-kit/validation/rendered/T23_activity_03",
+        "--emit_pdf",
+        "--dpi",
+        "140"
+      ],
+      "log": "T23_activity_03-render.log",
+      "pages": 1,
+      "expectedPages": 1
+    },
+    {
+      "name": "T23_activity_04",
+      "exitCode": 0,
+      "command": [
+        "/Users/maxiao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/Users/maxiao/.codex/plugins/cache/openai-primary-runtime/documents/26.1007.11041/skills/documents/render_docx.py",
+        "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t23-20261009/mainline/go-club/materials/facilitator-kit/output/T23_activity_04.docx",
+        "--output_dir",
+        "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t23-20261009/mainline/go-club/materials/facilitator-kit/validation/rendered/T23_activity_04",
+        "--emit_pdf",
+        "--dpi",
+        "140"
+      ],
+      "log": "T23_activity_04-render.log",
+      "pages": 1,
+      "expectedPages": 1
+    },
+    {
+      "name": "T23_activity_05",
+      "exitCode": 0,
+      "command": [
+        "/Users/maxiao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/Users/maxiao/.codex/plugins/cache/openai-primary-runtime/documents/26.1007.11041/skills/documents/render_docx.py",
+        "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t23-20261009/mainline/go-club/materials/facilitator-kit/output/T23_activity_05.docx",
+        "--output_dir",
+        "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t23-20261009/mainline/go-club/materials/facilitator-kit/validation/rendered/T23_activity_05",
+        "--emit_pdf",
+        "--dpi",
+        "140"
+      ],
+      "log": "T23_activity_05-render.log",
+      "pages": 1,
+      "expectedPages": 1
+    },
+    {
+      "name": "T23_activity_06",
+      "exitCode": 0,
+      "command": [
+        "/Users/maxiao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/Users/maxiao/.codex/plugins/cache/openai-primary-runtime/documents/26.1007.11041/skills/documents/render_docx.py",
+        "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t23-20261009/mainline/go-club/materials/facilitator-kit/output/T23_activity_06.docx",
+        "--output_dir",
+        "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t23-20261009/mainline/go-club/materials/facilitator-kit/validation/rendered/T23_activity_06",
+        "--emit_pdf",
+        "--dpi",
+        "140"
+      ],
+      "log": "T23_activity_06-render.log",
+      "pages": 1,
+      "expectedPages": 1
+    },
+    {
+      "name": "T23_01_screen_alternatives",
+      "exitCode": 0,
+      "command": [
+        "/Users/maxiao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/Users/maxiao/.codex/plugins/cache/openai-primary-runtime/documents/26.1007.11041/skills/documents/render_docx.py",
+        "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t23-20261009/mainline/go-club/materials/facilitator-kit/output/T23_01_screen_alternatives.docx",
+        "--output_dir",
+        "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t23-20261009/mainline/go-club/materials/facilitator-kit/validation/rendered/T23_01_screen_alternatives",
+        "--emit_pdf",
+        "--dpi",
+        "140"
+      ],
+      "log": "T23_01_screen_alternatives-render.log",
+      "pages": 1,
+      "expectedPages": 1
+    },
+    {
+      "name": "T23_02_peer_teaching",
+      "exitCode": 0,
+      "command": [
+        "/Users/maxiao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/Users/maxiao/.codex/plugins/cache/openai-primary-runtime/documents/26.1007.11041/skills/documents/render_docx.py",
+        "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t23-20261009/mainline/go-club/materials/facilitator-kit/output/T23_02_peer_teaching.docx",
+        "--output_dir",
+        "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t23-20261009/mainline/go-club/materials/facilitator-kit/validation/rendered/T23_02_peer_teaching",
+        "--emit_pdf",
+        "--dpi",
+        "140"
+      ],
+      "log": "T23_02_peer_teaching-render.log",
+      "pages": 1,
+      "expectedPages": 1
+    },
+    {
+      "name": "T23_03_prepare_close",
+      "exitCode": 0,
+      "command": [
+        "/Users/maxiao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/Users/maxiao/.codex/plugins/cache/openai-primary-runtime/documents/26.1007.11041/skills/documents/render_docx.py",
+        "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t23-20261009/mainline/go-club/materials/facilitator-kit/output/T23_03_prepare_close.docx",
+        "--output_dir",
+        "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t23-20261009/mainline/go-club/materials/facilitator-kit/validation/rendered/T23_03_prepare_close",
+        "--emit_pdf",
+        "--dpi",
+        "140"
+      ],
+      "log": "T23_03_prepare_close-render.log",
+      "pages": 1,
+      "expectedPages": 1
+    },
+    {
+      "name": "T23_04_voluntary_feedback",
+      "exitCode": 0,
+      "command": [
+        "/Users/maxiao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/Users/maxiao/.codex/plugins/cache/openai-primary-runtime/documents/26.1007.11041/skills/documents/render_docx.py",
+        "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t23-20261009/mainline/go-club/materials/facilitator-kit/output/T23_04_voluntary_feedback.docx",
+        "--output_dir",
+        "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t23-20261009/mainline/go-club/materials/facilitator-kit/validation/rendered/T23_04_voluntary_feedback",
+        "--emit_pdf",
+        "--dpi",
+        "140"
+      ],
+      "log": "T23_04_voluntary_feedback-render.log",
+      "pages": 1,
+      "expectedPages": 1
+    },
+    {
+      "name": "T23_05_teacher_observation",
+      "exitCode": 0,
+      "command": [
+        "/Users/maxiao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/Users/maxiao/.codex/plugins/cache/openai-primary-runtime/documents/26.1007.11041/skills/documents/render_docx.py",
+        "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t23-20261009/mainline/go-club/materials/facilitator-kit/output/T23_05_teacher_observation.docx",
+        "--output_dir",
+        "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t23-20261009/mainline/go-club/materials/facilitator-kit/validation/rendered/T23_05_teacher_observation",
+        "--emit_pdf",
+        "--dpi",
+        "140"
+      ],
+      "log": "T23_05_teacher_observation-render.log",
+      "pages": 1,
+      "expectedPages": 1
+    },
+    {
+      "name": "T23_06_revision_record",
+      "exitCode": 0,
+      "command": [
+        "/Users/maxiao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/Users/maxiao/.codex/plugins/cache/openai-primary-runtime/documents/26.1007.11041/skills/documents/render_docx.py",
+        "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t23-20261009/mainline/go-club/materials/facilitator-kit/output/T23_06_revision_record.docx",
+        "--output_dir",
+        "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t23-20261009/mainline/go-club/materials/facilitator-kit/validation/rendered/T23_06_revision_record",
+        "--emit_pdf",
+        "--dpi",
+        "140"
+      ],
+      "log": "T23_06_revision_record-render.log",
+      "pages": 1,
+      "expectedPages": 1
+    },
+    {
+      "name": "T23_07_new_member",
+      "exitCode": 0,
+      "command": [
+        "/Users/maxiao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/Users/maxiao/.codex/plugins/cache/openai-primary-runtime/documents/26.1007.11041/skills/documents/render_docx.py",
+        "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t23-20261009/mainline/go-club/materials/facilitator-kit/output/T23_07_new_member.docx",
+        "--output_dir",
+        "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t23-20261009/mainline/go-club/materials/facilitator-kit/validation/rendered/T23_07_new_member",
+        "--emit_pdf",
+        "--dpi",
+        "140"
+      ],
+      "log": "T23_07_new_member-render.log",
+      "pages": 1,
+      "expectedPages": 1
+    },
+    {
+      "name": "T23_08_paper_game_log",
+      "exitCode": 0,
+      "command": [
+        "/Users/maxiao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/Users/maxiao/.codex/plugins/cache/openai-primary-runtime/documents/26.1007.11041/skills/documents/render_docx.py",
+        "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t23-20261009/mainline/go-club/materials/facilitator-kit/output/T23_08_paper_game_log.docx",
+        "--output_dir",
+        "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t23-20261009/mainline/go-club/materials/facilitator-kit/validation/rendered/T23_08_paper_game_log",
+        "--emit_pdf",
+        "--dpi",
+        "140"
+      ],
+      "log": "T23_08_paper_game_log-render.log",
+      "pages": 1,
+      "expectedPages": 1
+    }
+  ]
+}

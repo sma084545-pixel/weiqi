@@ -1,0 +1,72 @@
+$ pnpm schema:check && pnpm test && pnpm validate:content && pnpm build && pnpm build:engine && pnpm test:engine-build && pnpm test:engine-capacity
+$ node scripts/generate-types.mjs --check
+$ vitest run
+
+ RUN  v5.0.0 /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/t09-work/go-club
+
+
+ Test Files  10 passed (10)
+      Tests  179 passed (179)
+   Start at  19:45:53
+   Duration  5.04s (tests 56%, import 24%, transform 10%, environment 10%)
+
+$ node --import tsx scripts/validate-content.ts
+PASSED valid/bundle.json {"level":"structural","needsRulesReplay":true}
+PASSED valid/feedback-blank.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/game.json {"level":"structural","needsRulesReplay":true}
+PASSED valid/lesson.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/marker.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/move.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/position.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/puzzle.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/setup.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/terminal.json {"level":"structural","needsRulesReplay":false}
+PASSED invalid/out-of-bounds.json [{"code":"COORD_BOUNDS","path":"/stones/0/row","message":"坐标超出完整棋盘。"}]
+PASSED invalid/duplicate-point.json [{"code":"DUPLICATE_POINT","path":"/stones/1","message":"同一交叉点不能重复占用。"}]
+PASSED invalid/unknown-stone.json [{"code":"SCHEMA_FIELD","path":"/stones/0/color","message":"请使用该字段允许的值。"}]
+PASSED invalid/unknown-major.json [{"code":"SCHEMA_VERSION","path":"/schemaVersion","message":"仅支持内容主版本 1；请保留原文件，使用对应迁移工具。"}]
+$ tsc --noEmit && vite build
+vite v8.2.2 building client environment for production...
+transforming...
+✓ 20 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.49 kB │ gzip:  0.41 kB
+dist/assets/index-1ec2DcE4.css    4.44 kB │ gzip:  1.63 kB
+dist/assets/index-B1kb7XYh.js   195.90 kB │ gzip: 62.64 kB
+
+✓ built in 121ms
+$ vite build --config vite.engine.config.ts && tsc -p tsconfig.engine.json && node scripts/finish-engine-build.mjs
+vite v8.2.2 building client environment for production...
+transforming...
+✓ 83 modules transformed.
+rendering chunks...
+computing gzip size...
+dist-engine/go-club-rules.mjs  300.17 kB │ gzip: 66.09 kB │ map: 551.16 kB
+
+✓ built in 45ms
+$ node scripts/engine-smoke.mjs && tsc -p tsconfig.engine-smoke.json
+PASS: standalone ESM library: create, place, pass, undo/redo, serialize/replay; no React, browser, network or installed consumer dependencies.
+$ node scripts/engine-capacity.mjs
+{
+  "schemaVersion": 1,
+  "id": "REPORT-T01-CAPACITY",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "DeveloperValidationReport",
+  "checkedAt": "2026-09-07T11:46:04.793Z",
+  "method": "Built standalone ESM; seeded legal path and legal pass/resume capacity stress",
+  "humanReviewed": null,
+  "legalPlacements": 240,
+  "currentMoves": 238,
+  "redoSnapshots": 2,
+  "serializedBytes": 12705289,
+  "limitBytes": 64000000,
+  "roundTrip": "passed",
+  "verifiedStoreRoundTrip": "passed",
+  "oversizedEventCount": 2100,
+  "oversizedExportCode": "EXPORT_TOO_LARGE",
+  "oversizedSaveKeepsOldRecord": "passed",
+  "elapsedMilliseconds": 2278,
+  "storage": "in-memory atomic StoragePort; not a browser quota measurement"
+}

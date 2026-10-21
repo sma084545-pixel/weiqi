@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "id": "T24-DOCUMENT-LINKS",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "passed",
+  "checks": [
+    {
+      "file": "README.md",
+      "target": "handoff/T24.md",
+      "passed": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/t24/TEACHER_QUICK_START.md",
+      "passed": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/t24/UPDATE_AND_BACKUP.md",
+      "passed": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/t24/acceptance-matrix.md",
+      "passed": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/t24/test-report.md",
+      "passed": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/t24/known-issues.md",
+      "passed": true
+    },
+    {
+      "file": "docs/t24/version-catalog.md",
+      "target": "../../handoff/T00.md",
+      "passed": true
+    },
+    {
+      "file": "docs/t24/version-catalog.md",
+      "target": "../../handoff/T01.md",
+      "passed": true
+    },
+    {
+      "file": "docs/t24/version-catalog.md",
+      "target": "../../handoff/T02.md",
+      "passed": true
+    },
+    {
+      "file": "docs/t24/version-catalog.md",
+      "target": "../../handoff/T03.md",
+      "passed": true
+    },
+    {
+      "file": "docs/t24/version-catalog.md",
+      "target": "../../handoff/T04.md",
+      "passed": true
+    },
+    {
+      "file": "docs/t24/version-catalog.md",
+      "target": "../../handoff/T05.md",
+      "passed": true
+    },
+    {
+      "file": "docs/t24/version-catalog.md",
+      "target": "../../handoff/T06.md",
+      "passed": true
+    },
+    {
+      "file": "docs/t24/version-catalog.md",
+      "target": "../../handoff/T07.md",
+      "passed": true
+    },
+    {
+      "file": "docs/t24/version-catalog.md",
+      "target": "../../handoff/T08.md",
+      "passed": true
+    },
+    {
+      "file": "docs/t24/version-catalog.md",
+      "target": "../../handoff/T09.md",
+      "passed": true
+    },
+    {
+      "file": "docs/t24/version-catalog.md",
+      "target": "../../handoff/T10.md",
+      "passed": true
+    },
+    {
+      "file": "docs/t24/version-catalog.md",
+      "target": "../../handoff/T11.md",
+      "passed": true
+    },
+    {
+      "file": "docs/t24/version-catalog.md",
+      "target": "../../handoff/T12.md",
+      "passed": true
+    },
+    {
+      "file": "docs/t24/version-catalog.md",
+      "target": "../../handoff/T13.md",
+      "passed": true
+    },
+    {
+      "file": "docs/t24/version-catalog.md",
+      "target": "../../handoff/T14.md",
+      "passed": true
+    },
+    {
+      "file": "docs/t24/version-catalog.md",
+      "target": "../../handoff/T15.md",
+      "passed": true
+    },
+    {
+      "file": "docs/t24/version-catalog.md",
+      "target": "../../handoff/T16.md",
+      "passed": true
+    },
+    {
+      "file": "docs/t24/version-catalog.md",
+      "target": "../../handoff/T17.md",
+      "passed": true
+    },
+    {
+      "file": "docs/t24/version-catalog.md",
+      "target": "../../handoff/T18.md",
+      "passed": true
+    },
+    {
+      "file": "docs/t24/version-catalog.md",
+      "target": "../../handoff/T19.md",
+      "passed": true
+    },
+    {
+      "file": "docs/t24/version-catalog.md",
+      "target": "../../handoff/T20.md",
+      "passed": true
+    },
+    {
+      "file": "docs/t24/version-catalog.md",
+      "target": "../../handoff/T21.md",
+      "passed": true
+    },
+    {
+      "file": "docs/t24/version-catalog.md",
+      "target": "../../handoff/T22.md",
+      "passed": true
+    },
+    {
+      "file": "docs/t24/version-catalog.md",
+      "target": "../../handoff/T23.md",
+      "passed": true
+    },
+    {
+      "file": "docs/t24/README.md",
+      "target": "TEACHER_QUICK_START.md",
+      "passed": true
+    },
+    {
+      "file": "docs/t24/README.md",
+      "target": "UPDATE_AND_BACKUP.md",
+      "passed": true
+    },
+    {
+      "file": "docs/t24/README.md",
+      "target": "acceptance-matrix.md",
+      "passed": true
+    },
+    {
+      "file": "docs/t24/README.md",
+      "target": "test-report.md",
+      "passed": true
+    },
+    {
+      "file": "docs/t24/README.md",
+      "target": "known-issues.md",
+      "passed": true
+    },
+    {
+      "file": "docs/t24/README.md",
+      "target": "changes.md",
+      "passed": true
+    }
+  ]
+}

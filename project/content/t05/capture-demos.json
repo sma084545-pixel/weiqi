@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "BUNDLE-T05-CAPTURE-DEMOS",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "ContentBundle",
+  "developmentOnly": true,
+  "title": "T05 提子实验室开发演示（不计入正式题库）",
+  "items": [
+    {
+      "schemaVersion": 1, "id": "DEMO-CAP-001", "revision": 1, "rulesetId": "GO-CLUB-AREA-1", "kind": "Puzzle", "developmentOnly": true, "category": "CAP",
+      "difficulty": {"level": "beginner", "rationale": "用一手占住单颗白棋的最后一口气。"},
+      "prompt": "选择白棋最后一口气，预测哪颗目标棋会被提走。",
+      "initialPosition": {"schemaVersion": 1, "id": "POS-DEMO-CAP-001", "revision": 1, "rulesetId": "GO-CLUB-AREA-1", "kind": "Position", "size": 5, "stones": [{"row":1,"col":2,"color":"B"},{"row":2,"col":1,"color":"B"},{"row":3,"col":2,"color":"B"},{"row":2,"col":2,"color":"W"}], "toPlay": "B", "historyPolicy": "fresh-setup", "history": null},
+      "targetMarkers": [{"markerId":"target","type":"target","points":[{"row":2,"col":2}],"label":"只剩一口气的白棋","owner":"W"}], "firstPlayer": "B",
+      "conditions": {"boundary":"full-board","external":"真实完整5路棋盘；不存在盘外棋子。","assumptions":["推荐候选点为数据坐标 (2,3)。"],"viewport":null},
+      "hints": ["先找目标白棋的所有气。","确认它现在只剩一口气。","占住 D3 后按提子顺序核对。"],
+      "answer": {"type":"reason-choice","options":[{"optionId":"capture-target","text":"提走 C3 目标白棋"},{"optionId":"no-capture","text":"不会提子"}],"acceptedOptionIds":["capture-target"],"explanation":"黑棋落在 D3，占住目标白棋最后一口气，因此移除 C3 白棋；精确点集见固定测试向量。"},
+      "coveredBranches": [], "sources": [{"type":"original","title":"T05 原创提子演示","url":null,"accessedAt":null,"note":"原创棋形与因果说明；一般提子概念另见 SOURCES.md。"}],
+      "validation": {"structure":{"status":"passed","method":"JSON Schema 与上下文校验","checkedAt":"2026-09-11T12:00:00+08:00","evidence":["pnpm validate:content","tests/t05/demos.test.ts"]},"moveLegality":{"status":"passed","method":"T01 tryMove 规则重放","checkedAt":"2026-09-11T12:00:00+08:00","evidence":["tests/t05/demos.test.ts"]},"solutionChecked":{"status":"passed","method":"独立手算点集与 T01 事件交叉核对","checkedAt":"2026-09-11T12:00:00+08:00","evidence":["tests/fixtures/t05-capture-expected.json","docs/t05/EXPECTED_RESULTS.md"]},"externalReferenceChecked":null,"modelChecked":null,"humanReviewed":null}, "relatedContent": []
+    },
+    {
+      "schemaVersion": 1, "id": "DEMO-CAP-002", "revision": 1, "rulesetId": "GO-CLUB-AREA-1", "kind": "Puzzle", "developmentOnly": true, "category": "CAP",
+      "difficulty": {"level": "beginner", "rationale": "两颗相连白棋须作为一整块提走。"},
+      "prompt": "占住相连白棋块最后一口气，预测整块会怎样变化。",
+      "initialPosition": {"schemaVersion":1,"id":"POS-DEMO-CAP-002","revision":1,"rulesetId":"GO-CLUB-AREA-1","kind":"Position","size":5,"stones":[{"row":1,"col":2,"color":"B"},{"row":1,"col":3,"color":"B"},{"row":2,"col":1,"color":"B"},{"row":3,"col":2,"color":"B"},{"row":3,"col":3,"color":"B"},{"row":2,"col":2,"color":"W"},{"row":2,"col":3,"color":"W"}],"toPlay":"B","historyPolicy":"fresh-setup","history":null},
+      "targetMarkers":[{"markerId":"target","type":"target","points":[{"row":2,"col":2},{"row":2,"col":3}],"label":"相连的白棋块","owner":"W"}],"firstPlayer":"B",
+      "conditions":{"boundary":"full-board","external":"真实完整5路棋盘。","assumptions":["推荐候选点为数据坐标 (2,4)。"],"viewport":null},
+      "hints":["相连同色棋共享整块气。","逐个核对整块外缘。","最后一口气在 E3。"],
+      "answer":{"type":"reason-choice","options":[{"optionId":"capture-whole-group","text":"提走 C3、D3 整块"},{"optionId":"capture-one","text":"只提靠近落点的一颗"}],"acceptedOptionIds":["capture-whole-group"],"explanation":"E3 被占后，相连的 C3、D3 白棋块同时无气，整块一起移除；精确点集见固定测试向量。"},
+      "coveredBranches":[],"sources":[{"type":"original","title":"T05 原创提子演示","url":null,"accessedAt":null,"note":"原创整块提子棋形。"}],
+      "validation":{"structure":{"status":"passed","method":"JSON Schema 与上下文校验","checkedAt":"2026-09-11T12:00:00+08:00","evidence":["pnpm validate:content"]},"moveLegality":{"status":"passed","method":"T01 tryMove 规则重放","checkedAt":"2026-09-11T12:00:00+08:00","evidence":["tests/t05/demos.test.ts"]},"solutionChecked":{"status":"passed","method":"独立手算点集与 T01 事件交叉核对","checkedAt":"2026-09-11T12:00:00+08:00","evidence":["tests/fixtures/t05-capture-expected.json"]},"externalReferenceChecked":null,"modelChecked":null,"humanReviewed":null},"relatedContent":[]
+    },
+    {
+      "schemaVersion":1,"id":"DEMO-CAP-003","revision":1,"rulesetId":"GO-CLUB-AREA-1","kind":"Puzzle","developmentOnly":true,"category":"CAP",
+      "difficulty":{"level":"elementary","rationale":"中心一手同时占住四个不同白棋块的最后一口气。"},"prompt":"选择中心点，预测四个彼此不相连的目标棋块是否会同时被提。",
+      "initialPosition":{"schemaVersion":1,"id":"POS-DEMO-CAP-003","revision":1,"rulesetId":"GO-CLUB-AREA-1","kind":"Position","size":5,"stones":[{"row":0,"col":2,"color":"B"},{"row":1,"col":1,"color":"B"},{"row":1,"col":3,"color":"B"},{"row":2,"col":0,"color":"B"},{"row":2,"col":4,"color":"B"},{"row":3,"col":1,"color":"B"},{"row":3,"col":3,"color":"B"},{"row":4,"col":2,"color":"B"},{"row":1,"col":2,"color":"W"},{"row":2,"col":1,"color":"W"},{"row":2,"col":3,"color":"W"},{"row":3,"col":2,"color":"W"}],"toPlay":"B","historyPolicy":"fresh-setup","history":null},
+      "targetMarkers":[{"markerId":"targets","type":"target","points":[{"row":1,"col":2},{"row":2,"col":1},{"row":2,"col":3},{"row":3,"col":2}],"label":"四个斜邻但不相连的白棋块","owner":"W"}],"firstPlayer":"B",
+      "conditions":{"boundary":"full-board","external":"真实完整5路棋盘。","assumptions":["推荐候选点为数据坐标 (2,2)。"],"viewport":null},"hints":["斜邻白棋不是同一块。","检查每一块最后的气。","中心点同时接触四块白棋。"],
+      "answer":{"type":"reason-choice","options":[{"optionId":"capture-four-groups","text":"同时提走 B3、C4、D3、C2 四块"},{"optionId":"capture-one-group","text":"只提其中一块"}],"acceptedOptionIds":["capture-four-groups"],"explanation":"C3 同时占住四个独立白棋块的最后一口气，四块同时移除且不重复计数；精确点集见固定测试向量。"},"coveredBranches":[],"sources":[{"type":"original","title":"T05 原创提子演示","url":null,"accessedAt":null,"note":"原创同时提多块棋形。"}],
+      "validation":{"structure":{"status":"passed","method":"JSON Schema 与上下文校验","checkedAt":"2026-09-11T12:00:00+08:00","evidence":["pnpm validate:content"]},"moveLegality":{"status":"passed","method":"T01 tryMove 规则重放","checkedAt":"2026-09-11T12:00:00+08:00","evidence":["tests/t05/demos.test.ts"]},"solutionChecked":{"status":"passed","method":"独立手算点集与 T01 事件交叉核对","checkedAt":"2026-09-11T12:00:00+08:00","evidence":["tests/fixtures/t05-capture-expected.json"]},"externalReferenceChecked":null,"modelChecked":null,"humanReviewed":null},"relatedContent":[]
+    },
+    {
+      "schemaVersion":1,"id":"DEMO-CAP-004","revision":1,"rulesetId":"GO-CLUB-AREA-1","kind":"Puzzle","developmentOnly":true,"category":"CAP",
+      "difficulty":{"level":"beginner","rationale":"目标白棋仍有一口气，因此本手不会提子。"},"prompt":"先判断这手是否收尽目标白棋的气；“不会提子”也是有效预测。",
+      "initialPosition":{"schemaVersion":1,"id":"POS-DEMO-CAP-004","revision":1,"rulesetId":"GO-CLUB-AREA-1","kind":"Position","size":5,"stones":[{"row":1,"col":2,"color":"B"},{"row":2,"col":1,"color":"B"},{"row":2,"col":2,"color":"W"}],"toPlay":"B","historyPolicy":"fresh-setup","history":null},
+      "targetMarkers":[{"markerId":"target","type":"target","points":[{"row":2,"col":2}],"label":"仍有两口气的白棋","owner":"W"}],"firstPlayer":"B","conditions":{"boundary":"full-board","external":"真实完整5路棋盘。","assumptions":["推荐候选点为数据坐标 (3,2)。"],"viewport":null},
+      "hints":["落子前目标白棋有两口气。","D3 仍为空。","没有无气的对方棋块就不提子。"],"answer":{"type":"reason-choice","options":[{"optionId":"no-capture","text":"不会提子"},{"optionId":"capture-target","text":"提走 C3 白棋"}],"acceptedOptionIds":["no-capture"],"explanation":"C2 被占后，目标白棋仍有 D3 一口气，所以没有棋子被提；精确空点集见固定测试向量。"},"coveredBranches":[],"sources":[{"type":"original","title":"T05 原创提子演示","url":null,"accessedAt":null,"note":"原创不会提子的对照棋形。"}],
+      "validation":{"structure":{"status":"passed","method":"JSON Schema 与上下文校验","checkedAt":"2026-09-11T12:00:00+08:00","evidence":["pnpm validate:content"]},"moveLegality":{"status":"passed","method":"T01 tryMove 规则重放","checkedAt":"2026-09-11T12:00:00+08:00","evidence":["tests/t05/demos.test.ts"]},"solutionChecked":{"status":"passed","method":"独立手算空点集与 T01 事件交叉核对","checkedAt":"2026-09-11T12:00:00+08:00","evidence":["tests/fixtures/t05-capture-expected.json"]},"externalReferenceChecked":null,"modelChecked":null,"humanReviewed":null},"relatedContent":[]
+    },
+    {
+      "schemaVersion":1,"id":"DEMO-CAP-005","revision":1,"rulesetId":"GO-CLUB-AREA-1","kind":"Puzzle","developmentOnly":true,"category":"CAP",
+      "difficulty":{"level":"elementary","rationale":"候选点暂放后看似无外气，但先提走白棋即可获得气。"},"prompt":"比较暂放时的拥挤外观与提子后的结果，核对规则处理顺序。",
+      "initialPosition":{"schemaVersion":1,"id":"POS-DEMO-CAP-005","revision":1,"rulesetId":"GO-CLUB-AREA-1","kind":"Position","size":5,"stones":[{"row":0,"col":2,"color":"B"},{"row":1,"col":2,"color":"B"},{"row":2,"col":1,"color":"B"},{"row":2,"col":0,"color":"B"},{"row":0,"col":1,"color":"W"},{"row":1,"col":1,"color":"W"},{"row":1,"col":0,"color":"W"}],"toPlay":"B","historyPolicy":"fresh-setup","history":null},
+      "targetMarkers":[{"markerId":"target","type":"target","points":[{"row":0,"col":1},{"row":1,"col":1},{"row":1,"col":0}],"label":"最后一口气在角上的白棋块","owner":"W"}],"firstPlayer":"B","conditions":{"boundary":"full-board","external":"真实完整5路棋盘；左上角是实际边界。","assumptions":["推荐候选点为数据坐标 (0,0)。"],"viewport":null},
+      "hints":["先暂放黑棋，不先判断自杀。","检查相邻白棋块是否无气。","移除白棋后再看新黑棋的气。"],"answer":{"type":"reason-choice","options":[{"optionId":"capture-then-liberty","text":"先提白棋，再得到两口气"},{"optionId":"suicide-first","text":"暂放时无气，所以立即禁着"}],"acceptedOptionIds":["capture-then-liberty"],"explanation":"A5 暂放后先提走无气白棋块，A5 黑棋随即获得 B5、A4 两口气，因此合法；精确点集见固定测试向量。"},"coveredBranches":[],"sources":[{"type":"original","title":"T05 原创提子演示","url":null,"accessedAt":null,"note":"原创先提后有气棋形。"}],
+      "validation":{"structure":{"status":"passed","method":"JSON Schema 与上下文校验","checkedAt":"2026-09-11T12:00:00+08:00","evidence":["pnpm validate:content"]},"moveLegality":{"status":"passed","method":"T01 tryMove 规则重放","checkedAt":"2026-09-11T12:00:00+08:00","evidence":["tests/t05/demos.test.ts"]},"solutionChecked":{"status":"passed","method":"独立手算点集与 T01 事件交叉核对","checkedAt":"2026-09-11T12:00:00+08:00","evidence":["tests/fixtures/t05-capture-expected.json"]},"externalReferenceChecked":null,"modelChecked":null,"humanReviewed":null},"relatedContent":[]
+    },
+    {
+      "schemaVersion":1,"id":"DEMO-CAP-006","revision":1,"rulesetId":"GO-CLUB-AREA-1","kind":"Puzzle","developmentOnly":true,"category":"CAP",
+      "difficulty":{"level":"elementary","rationale":"同盘比较先提后有气的合法点和真正自杀点。"},"prompt":"先尝试 E1 的真正自杀，再尝试 A5 的合法提子；非法尝试不会改变原局面。",
+      "initialPosition":{"schemaVersion":1,"id":"POS-DEMO-CAP-006","revision":1,"rulesetId":"GO-CLUB-AREA-1","kind":"Position","size":5,"stones":[{"row":0,"col":2,"color":"B"},{"row":1,"col":2,"color":"B"},{"row":2,"col":1,"color":"B"},{"row":2,"col":0,"color":"B"},{"row":0,"col":1,"color":"W"},{"row":1,"col":1,"color":"W"},{"row":1,"col":0,"color":"W"},{"row":3,"col":4,"color":"W"},{"row":4,"col":3,"color":"W"}],"toPlay":"B","historyPolicy":"fresh-setup","history":null},
+      "targetMarkers":[{"markerId":"target","type":"target","points":[{"row":0,"col":1},{"row":1,"col":0},{"row":1,"col":1}],"label":"A5 合法着会提走的白棋块","owner":"W"}],"firstPlayer":"B","conditions":{"boundary":"full-board","external":"真实完整5路棋盘；A5 与 E1 均为真实角点。","assumptions":["推荐合法候选点为 (0,0)；非法对照点为 (4,4)。"],"viewport":null},
+      "hints":["E1 相邻白棋仍有别的气。","A5 相邻白棋块会先被提走。","只有提子后己方仍无气才是自杀。"],"answer":{"type":"reason-choice","options":[{"optionId":"a5-legal-e1-suicide","text":"A5 合法，E1 是自杀禁着"},{"optionId":"both-suicide","text":"两个角点都因暂放无气而禁着"}],"acceptedOptionIds":["a5-legal-e1-suicide"],"explanation":"E1 不提子且新黑棋无气，所以被拒绝；A5 先提白棋再获得两口气，所以合法；精确点集见固定测试向量。"},"coveredBranches":[],"sources":[{"type":"original","title":"T05 原创提子演示","url":null,"accessedAt":null,"note":"原创自杀与合法提子对照。"}],
+      "validation":{"structure":{"status":"passed","method":"JSON Schema 与上下文校验","checkedAt":"2026-09-11T12:00:00+08:00","evidence":["pnpm validate:content"]},"moveLegality":{"status":"passed","method":"T01 tryMove 合法与拒绝分支重放","checkedAt":"2026-09-11T12:00:00+08:00","evidence":["tests/t05/demos.test.ts"]},"solutionChecked":{"status":"passed","method":"独立手算点集与 T01 事件交叉核对","checkedAt":"2026-09-11T12:00:00+08:00","evidence":["tests/fixtures/t05-capture-expected.json","docs/t05/EXPECTED_RESULTS.md"]},"externalReferenceChecked":null,"modelChecked":null,"humanReviewed":null},"relatedContent":[]
+    }
+  ]
+}

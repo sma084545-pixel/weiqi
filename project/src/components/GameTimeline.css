@@ -1,0 +1,12 @@
+.game-timeline{min-width:0;margin:1rem 0;padding:1rem;border:1px solid #c1cdc4;border-radius:16px;background:#f6f9f4;color:#20392c}
+.timeline-heading{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.4rem 1rem}
+.timeline-heading label{font-size:1.1rem;font-weight:800}.timeline-heading>span{font-size:.85rem;font-weight:700}
+.game-timeline .timeline-help{margin:.55rem 0;font-size:.85rem;line-height:1.6;color:#4d6054}
+.game-timeline input[type=range]{display:block;width:100%;min-width:0;height:44px;margin:0;padding:0;border:0;accent-color:#276044;cursor:pointer}
+.game-timeline input[type=range]:disabled{cursor:default}.game-timeline input[type=range]:focus-visible{outline:3px solid #276044;outline-offset:3px;border-radius:5px}
+.timeline-position{display:grid;gap:.25rem;min-height:3.6rem;overflow-wrap:anywhere}.timeline-position>span{font-size:.85rem;line-height:1.6}
+.timeline-actions{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.75rem}.game-timeline .timeline-actions button{min-height:44px;margin:0;padding:.5rem .7rem;border:1px solid #8ba193;border-radius:9px;background:#fff;color:#20392c;font:inherit;font-size:.9rem;font-weight:700;cursor:pointer}
+.game-timeline .timeline-actions .timeline-latest{background:#24563c;color:#fff;border-color:#24563c}.game-timeline .timeline-actions button:disabled{opacity:.5;cursor:default}.game-timeline .timeline-actions button:focus-visible{outline:3px solid #276044;outline-offset:3px}
+.game-timeline[data-browsing=true]{border-left:5px solid #9b7132}.app-projector .game-timeline{font-size:1.12rem}.app-projector .game-timeline .timeline-actions button{font-size:1rem}
+@media(max-width:480px){.game-timeline{padding:.8rem}.timeline-actions{display:grid;grid-template-columns:1fr 1fr}.game-timeline .timeline-actions button{font-size:.85rem}.timeline-latest{grid-column:1 / -1}}
+@media(forced-colors:active){.game-timeline,.game-timeline .timeline-actions button{border:1px solid ButtonText}.game-timeline input[type=range]{forced-color-adjust:auto}}

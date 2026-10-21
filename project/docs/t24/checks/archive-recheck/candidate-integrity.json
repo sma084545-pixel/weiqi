@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "T24-ARCHIVE-CHECK",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "resultVersion": "0.17.1-t24.1",
+  "status": "passed",
+  "archive": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/release/0.17.1-t24.1/go-club-T24-0.17.1-t24.1-full.zip",
+  "archiveSha256": "6152d4d3c0f983326461a8f84cb6b4bc738d2211fed8bf16b0dd3b0dc0d1e4c7",
+  "extractedTo": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t24-20261009/candidate-recheck/go-club",
+  "crc": "passed",
+  "fileSha": "passed",
+  "checksumList": "passed",
+  "fileCount": 2514,
+  "counts": {
+    "Puzzle": 30,
+    "TerminalFixture": 6
+  },
+  "allPrerequisiteHandoffs": true,
+  "noNodeModules": true,
+  "humanReviewed": null
+}

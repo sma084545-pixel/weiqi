@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "T15-PRESERVATION-001",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "taskId": "T15",
+  "baseVersion": "0.14.0",
+  "resultVersion": "0.15.0",
+  "status": "passed",
+  "guarded": [
+    {
+      "path": "schemas",
+      "status": "identical",
+      "fileCount": 1,
+      "changed": []
+    },
+    {
+      "path": "src/core",
+      "status": "identical",
+      "fileCount": 14,
+      "changed": []
+    },
+    {
+      "path": "src/components",
+      "status": "identical",
+      "fileCount": 3,
+      "changed": []
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "status": "identical",
+      "fileCount": 1,
+      "changed": []
+    },
+    {
+      "path": "content/puzzles",
+      "status": "identical",
+      "fileCount": 30,
+      "changed": []
+    },
+    {
+      "path": "content/endgames",
+      "status": "identical",
+      "fileCount": 6,
+      "changed": []
+    },
+    {
+      "path": "content/artwork",
+      "status": "identical",
+      "fileCount": 36,
+      "changed": []
+    },
+    {
+      "path": "content/print",
+      "status": "identical",
+      "fileCount": 4,
+      "changed": []
+    },
+    {
+      "path": "content/t09",
+      "status": "identical",
+      "fileCount": 9,
+      "changed": []
+    },
+    {
+      "path": "content/tools",
+      "status": "identical",
+      "fileCount": 9,
+      "changed": []
+    },
+    {
+      "path": "content/validation",
+      "status": "identical",
+      "fileCount": 104,
+      "changed": []
+    },
+    {
+      "path": "content/validation-report.md",
+      "status": "identical",
+      "fileCount": 1,
+      "changed": []
+    },
+    {
+      "path": "src/features/capture-game",
+      "status": "identical",
+      "fileCount": 4,
+      "changed": []
+    },
+    {
+      "path": "src/features/capture-lab",
+      "status": "identical",
+      "fileCount": 6,
+      "changed": []
+    },
+    {
+      "path": "src/features/cooperative",
+      "status": "identical",
+      "fileCount": 3,
+      "changed": []
+    },
+    {
+      "path": "src/features/experiment-board",
+      "status": "identical",
+      "fileCount": 6,
+      "changed": []
+    },
+    {
+      "path": "src/features/full-game",
+      "status": "identical",
+      "fileCount": 5,
+      "changed": []
+    },
+    {
+      "path": "src/features/liberty-lab",
+      "status": "identical",
+      "fileCount": 4,
+      "changed": []
+    },
+    {
+      "path": "src/features/life-lab",
+      "status": "identical",
+      "fileCount": 3,
+      "changed": []
+    },
+    {
+      "path": "src/features/puzzle-runner",
+      "status": "identical",
+      "fileCount": 5,
+      "changed": []
+    },
+    {
+      "path": "src/features/teacher-editor",
+      "status": "identical",
+      "fileCount": 5,
+      "changed": []
+    },
+    {
+      "path": "src/features/territory",
+      "status": "identical",
+      "fileCount": 3,
+      "changed": []
+    },
+    {
+      "path": "materials/t12",
+      "status": "identical",
+      "fileCount": 1,
+      "changed": []
+    },
+    {
+      "path": "materials/t13",
+      "status": "identical",
+      "fileCount": 1,
+      "changed": []
+    }
+  ]
+}

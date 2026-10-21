@@ -1,0 +1,86 @@
+✓ Lockfile passes supply-chain policies (verified 12d ago)
+Lockfile is up to date, resolution step is skipped
+Already up to date
+
+Done in 723ms using pnpm v11.25.0
+$ pnpm schema:check && pnpm test && pnpm validate:content && pnpm validate:t09 && pnpm test:t09-grader && pnpm test:t14 && pnpm test:t15 && pnpm validate:t17 && pnpm verify:merge-a && pnpm verify:t16-freeze && pnpm build && pnpm test:t16-refresh && pnpm build:engine && pnpm test:engine-build && pnpm test:engine-capacity
+$ node scripts/generate-types.mjs --check
+$ vitest run
+
+ RUN  v5.0.0 /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/free-play-20261021/mainline/go-club
+
+ ❯ tests/free-play/model.test.ts (8 tests | 5 failed) 170ms
+   ❯ free local two-player game using the shared full-game engine (8)
+     × 5x5: alternate moves, agree terminal, score a manually counted draw, and replay save 76ms
+     × 9x9: alternate moves, agree terminal, score a manually counted draw, and replay save 16ms
+     × 13x13: alternate moves, agree terminal, score a manually counted draw, and replay save 15ms
+     × 19x19: alternate moves, agree terminal, score a manually counted draw, and replay save 28ms
+     × determines both winners and a draw from area plus opening komi, without second capture points 21ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 5 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/free-play/model.test.ts > free local two-player game using the shared full-game engine > 5x5: alternate moves, agree terminal, score a manually counted draw, and replay save
+ FAIL  tests/free-play/model.test.ts > free local two-player game using the shared full-game engine > 9x9: alternate moves, agree terminal, score a manually counted draw, and replay save
+ FAIL  tests/free-play/model.test.ts > free local two-player game using the shared full-game engine > 13x13: alternate moves, agree terminal, score a manually counted draw, and replay save
+ FAIL  tests/free-play/model.test.ts > free local two-player game using the shared full-game engine > 19x19: alternate moves, agree terminal, score a manually counted draw, and replay save
+AssertionError: expected { reason: 'area', score: { …(11) } } to match object { Object (reason, winner, ...) }
+
+- Expected
++ Received
+
+@@ -4,7 +4,6 @@
+      "blackStones": 1,
+      "blackTotal": 1,
+      "whiteStones": 1,
+      "whiteTotal": 1,
+    },
+-   "winner": "draw",
+  }
+
+ ❯ tests/free-play/model.test.ts:23:52
+     21|   expect(v(scorePreview(scoring))).toMatchObject({blackTotal:1,whiteTo…
+     22|   expect(v(scorePreview(scoring)).neutralPoints).toHaveLength(size*siz…
+     23|   const ended=finish(m);expect(ended.game?.result).toMatchObject({reas…
+       |                                                    ^
+     24|   const memory=new Map<string,string>();const store=createFullGameStor…
+     25|   expect(store.save(ended.game!).ok).toBe(true);const saved=store.load…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/5]⎯
+
+ FAIL  tests/free-play/model.test.ts > free local two-player game using the shared full-game engine > determines both winners and a draw from area plus opening komi, without second capture points
+AssertionError: expected { reason: 'area', score: { …(11) } } to match object { reason: 'area', winner: 'B', …(1) }
+
+- Expected
++ Received
+
+@@ -3,7 +3,6 @@
+    "score": {
+      "blackTotal": 2,
+      "difference": 1,
+      "whiteTotal": 1,
+    },
+-   "winner": "B",
+  }
+
+ ❯ tests/free-play/model.test.ts:44:31
+     42|    for(const [row,col] of [[0,0],[4,4],[0,1]])m=v(playAt(m,{row,col}));
+     43|    const ended=finish(m);
+     44|    expect(ended.game?.result).toMatchObject({reason:'area',winner,scor…
+       |                               ^
+     45|    expect(setKomi(ended,99)).toMatchObject({ok:false,error:{code:'SETT…
+     46|   }
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/5]⎯
+
+
+ Test Files  1 failed | 43 passed (44)
+      Tests  5 failed | 361 passed (366)
+   Start at  13:47:34
+   Duration  10.21s (import 35%, tests 25%, environment 25%, transform 15%, worker 1%)
+
+     Import  158 modules were evaluated 525 times · 19.55s total, 35% of tracked time
+             ~538ms faster with isolate: false — shared modules are evaluated once per worker instead of once per file
+             learn more: https://vitest.dev/guide/improving-performance#test-isolation
+
+[ELIFECYCLE] Test failed. See above for more details.
+[ELIFECYCLE] Command failed with exit code 1.

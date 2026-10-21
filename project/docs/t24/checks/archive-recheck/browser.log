@@ -1,0 +1,11 @@
+[WebServer] (node:1161) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 2 tests using 1 worker
+
+(node:1169) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/browser/t24-refresh.spec.ts:3:1 › immediate save, unsaved edit and route exit all restore the latest editor state (1.1s)
+  ✓  2 tests/browser/t24.spec.ts:8:1 › T24 continuous learner to teacher journey, offline save and recovery (5.2s)
+
+  2 passed (7.2s)

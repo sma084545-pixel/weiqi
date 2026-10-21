@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "id": "MERGE-C-INPUTS",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "inputs": [
+    {
+      "taskId": "T17",
+      "path": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/deliverables/T17_0.17.0/go-club-T17-0.17.0-full.zip",
+      "sha256": "3c535b89b8796906405ecd579460176483a79316c7e4fc6f57e8cd15d8bcb640",
+      "crc": "passed",
+      "extractedTo": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/merge-c-20261006/mainline",
+      "files": 1087,
+      "handoffs": [
+        "go-club/handoff/FREEZE_B.md",
+        "go-club/handoff/MERGE_A.md",
+        "go-club/handoff/T00.md",
+        "go-club/handoff/T01.md",
+        "go-club/handoff/T02.md",
+        "go-club/handoff/T03.md",
+        "go-club/handoff/T04.md",
+        "go-club/handoff/T05.md",
+        "go-club/handoff/T06.md",
+        "go-club/handoff/T07.md",
+        "go-club/handoff/T08.md",
+        "go-club/handoff/T09.md",
+        "go-club/handoff/T10.md",
+        "go-club/handoff/T11.md",
+        "go-club/handoff/T12.md",
+        "go-club/handoff/T13.md",
+        "go-club/handoff/T14.md",
+        "go-club/handoff/T15.md",
+        "go-club/handoff/T16.md",
+        "go-club/handoff/T17.md",
+        "go-club/handoff/T18.md",
+        "go-club/handoff/T20.md",
+        "go-club/handoff/TEMPLATE.md"
+      ],
+      "manifests": [
+        "go-club/content/t09/FILE_MANIFEST.json",
+        "go-club/content/t09/input-manifest.json",
+        "go-club/content/t15/exports/T15-question-svg-manifest.json",
+        "go-club/docs/freeze-b/input-T15-release-manifest.json",
+        "go-club/docs/input-manifest.json",
+        "go-club/docs/t01/input-manifest.json",
+        "go-club/docs/t02/input-manifest.json",
+        "go-club/docs/t03/input-manifest.json",
+        "go-club/docs/t04/input-manifest.json",
+        "go-club/docs/t10/input-manifest.json",
+        "go-club/docs/t11/input-manifest.json",
+        "go-club/docs/t12/input-manifest.json",
+        "go-club/docs/t13/input-manifest.json",
+        "go-club/docs/t14/input-manifest.json",
+        "go-club/docs/t15/input-manifest.json",
+        "go-club/docs/t17/input-manifest.json",
+        "go-club/materials/demo-board/artifact-manifest.json",
+        "go-club/materials/rule-cards/FILE_MANIFEST.json",
+        "go-club/materials/rule-cards/data/card-manifest.json",
+        "go-club/materials/rule-cards/validation/input-manifest.json",
+        "go-club/output/validation/T17/change-manifest.json",
+        "go-club/release-manifest.json"
+      ],
+      "pdfs": 24,
+      "pptx": 1,
+      "top": [
+        "go-club"
+      ]
+    },
+    {
+      "taskId": "T18",
+      "path": "/Users/maxiao/Desktop/weiqi/deliverables/T18_demo_board_0.2.0-plus-t18.1/go-club-T18-0.2.0-plus-t18.1-materials.zip",
+      "sha256": "8a8b836faf75594186f98e2983737e52260104d3d555089637c752ed4d689aa7",
+      "crc": "passed",
+      "extractedTo": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/merge-c-20261006/inputs/T18",
+      "files": 73,
+      "handoffs": [
+        "go-club/handoff/T18.md"
+      ],
+      "manifests": [
+        "go-club/materials/demo-board/artifact-manifest.json"
+      ],
+      "pdfs": 5,
+      "pptx": 0,
+      "top": [
+        "go-club"
+      ]
+    },
+    {
+      "taskId": "T19",
+      "path": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/t19-work/go-club/materials/pair-boards/delivery/T19-pair-boards-0.2.0-t19.1-materials.zip",
+      "sha256": "b8a13626cbe198abc4b7a9e5d5e5a4a098a714d6adfa1a7b8cf084a8712e8b2e",
+      "crc": "passed",
+      "extractedTo": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/merge-c-20261006/inputs/T19",
+      "files": 111,
+      "handoffs": [
+        "go-club/handoff/T19.md"
+      ],
+      "manifests": [
+        "go-club/materials/pair-boards/FILE_MANIFEST.json",
+        "go-club/materials/pair-boards/qa/render-manifest.json"
+      ],
+      "pdfs": 28,
+      "pptx": 0,
+      "top": [
+        "go-club"
+      ]
+    },
+    {
+      "taskId": "T20",
+      "path": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/output/pdf/T20_0.2.0-t20.1/T20-0.2.0-t20.1-MATERIALS.zip",
+      "sha256": "67723509c9aee7f6524032e8807a95a2431e43434f06e35c9440ad01d9dae1e2",
+      "crc": "passed",
+      "extractedTo": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/merge-c-20261006/inputs/T20",
+      "files": 78,
+      "handoffs": [
+        "go-club/handoff/T20.md"
+      ],
+      "manifests": [
+        "go-club/materials/rule-cards/data/card-manifest.json",
+        "go-club/materials/rule-cards/validation/input-manifest.json",
+        "go-club/materials/rule-cards/FILE_MANIFEST.json"
+      ],
+      "pdfs": 14,
+      "pptx": 0,
+      "top": [
+        "go-club"
+      ]
+    },
+    {
+      "taskId": "T21",
+      "path": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/freeze-b-20260919/mainline/go-club/materials/challenge-cards/output/T21-0.15.1-t21.1-MATERIALS.zip",
+      "sha256": "b9664ab19129845a7b886ee44496f84449815b9f70d02821442e3bf8e95064db",
+      "crc": "passed",
+      "extractedTo": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/merge-c-20261006/inputs/T21",
+      "files": 138,
+      "handoffs": [
+        "handoff/T21.md"
+      ],
+      "manifests": [
+        "materials/challenge-cards/validation/PACKAGE_PAYLOAD_MANIFEST.json"
+      ],
+      "pdfs": 4,
+      "pptx": 0,
+      "top": [
+        "handoff",
+        "materials"
+      ]
+    },
+    {
+      "taskId": "T22",
+      "path": "/Users/maxiao/Desktop/weiqi/deliverables/T22_micro_lessons_0.15.1-t22.1/T22_materials_increment_0.15.1-t22.1.zip",
+      "sha256": "cdec3e79b186fd2be30a96d6b1ee0640f6cffc18027c2c0922418a73b29256be",
+      "crc": "passed",
+      "extractedTo": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/merge-c-20261006/inputs/T22",
+      "files": 211,
+      "handoffs": [
+        "handoff/T22.md",
+        "materials/micro-lessons/assets/frozen/handoff/FREEZE_B.md",
+        "materials/micro-lessons/assets/frozen/handoff/T00.md",
+        "materials/micro-lessons/assets/frozen/handoff/T11.md",
+        "materials/micro-lessons/assets/frozen/handoff/T15.md",
+        "materials/micro-lessons/assets/frozen/handoff/T20.md"
+      ],
+      "manifests": [
+        "materials/micro-lessons/FILE_MANIFEST.json",
+        "materials/micro-lessons/source/rendered-board-manifest.json"
+      ],
+      "pdfs": 7,
+      "pptx": 6,
+      "top": [
+        "handoff",
+        "materials"
+      ]
+    }
+  ]
+}

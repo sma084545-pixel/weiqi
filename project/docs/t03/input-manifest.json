@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "INPUT-T03-001",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "TaskInputManifest",
+  "taskId": "T03",
+  "baseVersion": "0.3.0",
+  "sourceRoot": "/Users/maxiao/Desktop/weiqi/go-club",
+  "capturedAt": "2026-09-10",
+  "sourcesDirectory": "empty and unchanged",
+  "files": [
+    {"path":"handoff/T00.md","sha256":"ad0621ade993bf80e931261bcd09fee26c65456eceb2588802c166285455e31f"},
+    {"path":"handoff/T01.md","sha256":"f7defdc4c150c662a0ca077f6be16481af338141c94f5c6109030a3796dcf7cf"},
+    {"path":"handoff/T02.md","sha256":"1f64e246d5af678867b23518e52176b0578b1e32e0b2a4fa0aba704ef0b75093"},
+    {"path":"docs/CURRICULUM.md","sha256":"56b4a55449f3bd027d5864f2121252a53b9a97561204679aa2499ba884f1acbb"},
+    {"path":"docs/INTERFACES.md","sha256":"0279135b687039b2ae398a6bc19e57bd1bdb958de1734340fe5bcc064ca338c8"},
+    {"path":"docs/PROJECT_CONTRACT.md","sha256":"0bd9538fd7e84a776df13aa8e79969080d4e963b5988dc397f5467a77cee1363"},
+    {"path":"docs/t02/BOARD_USAGE.md","sha256":"a200eda74e86024f30bcae4cd48dd1917686ff18a5f0f9167a62c35c459f26f4"},
+    {"path":"src/components/Board.tsx","sha256":"7f9985b2520d0583cfc26283cbd43a00eac1e9039ec749bf96b8efd7f3324807"},
+    {"path":"src/components/Board.css","sha256":"4a9d6e9c7516626758cefbfac231f130c232273ba2a1b40c8d744e92fbddbee1"},
+    {"path":"src/core/persistence.ts","sha256":"488e75ea10061845ed3d1ea194698fe5ef7fc8f2f6e8b2639785ffc0cc1dbcfb"},
+    {"path":"src/core/rules/index.ts","sha256":"55334977e115784fdbdd1b1726569b70ddd48f12e1e58529d4cbbe343e2e9d77"},
+    {"path":"src/features/home/Home.tsx","sha256":"e5f844caa80e992777eadc0211f0c3e5aec29898ee955650d48e4b427a4ce567"},
+    {"path":"package.json","sha256":"e2b733d27e9d4f043445b499629b3148c4f0bf3b5c00abf96e8b9656524ab86d"},
+    {"path":"pnpm-lock.yaml","sha256":"80fb6c23436fb904456dea058ecb97d48d6789c5fc5a3f59bceca8131e7d655c"},
+    {"path":"release-manifest.json","sha256":"ad66f749d3a8a39832f3637877ef0058db8a0d9d23cffa12ccde33e301c4fa54"}
+  ]
+}

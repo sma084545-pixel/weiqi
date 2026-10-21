@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "T09-BASE-CAPACITY",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "BaselineEvidence",
+  "evidence": {
+    "schemaVersion": 1,
+    "id": "REPORT-T01-CAPACITY",
+    "revision": 1,
+    "rulesetId": "GO-CLUB-AREA-1",
+    "kind": "DeveloperValidationReport",
+    "checkedAt": "2026-09-07T11:46:04.793Z",
+    "method": "Built standalone ESM; seeded legal path and legal pass/resume capacity stress",
+    "humanReviewed": null,
+    "legalPlacements": 240,
+    "currentMoves": 238,
+    "redoSnapshots": 2,
+    "serializedBytes": 12705289,
+    "limitBytes": 64000000,
+    "roundTrip": "passed",
+    "verifiedStoreRoundTrip": "passed",
+    "oversizedEventCount": 2100,
+    "oversizedExportCode": "EXPORT_TOO_LARGE",
+    "oversizedSaveKeepsOldRecord": "passed",
+    "elapsedMilliseconds": 2278,
+    "storage": "in-memory atomic StoragePort; not a browser quota measurement"
+  },
+  "boundary": "T01 in-memory storage tests, not real browser quota testing."
+}

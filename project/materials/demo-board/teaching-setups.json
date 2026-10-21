@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "T18-DEMO-BOARD-TEACHING-SETUPS",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "coordinateConvention": "row,col are zero-based from top-left; display columns skip I and display rows count upward",
+  "setups": [
+    {
+      "id": "T18-LIB-CENTER-EDGE-CORNER",
+      "title": "中心、边、角单子气数对照",
+      "boardSize": 9,
+      "mode": "setup",
+      "positions": [
+        { "label": "中心 E5", "stone": { "row": 4, "col": 4, "color": "B" }, "liberties": [{"row":3,"col":4},{"row":4,"col":3},{"row":4,"col":5},{"row":5,"col":4}], "expectedLibertyCount": 4 },
+        { "label": "上边 E9", "stone": { "row": 0, "col": 4, "color": "B" }, "liberties": [{"row":0,"col":3},{"row":0,"col":5},{"row":1,"col":4}], "expectedLibertyCount": 3 },
+        { "label": "左上角 A9", "stone": { "row": 0, "col": 0, "color": "B" }, "liberties": [{"row":0,"col":1},{"row":1,"col":0}], "expectedLibertyCount": 2 }
+      ],
+      "validation": { "modelChecked": "2026-09-06", "humanReviewed": null }
+    },
+    {
+      "id": "T18-LIB-DEDUP-L-SHAPE",
+      "title": "L 形连通块共享气去重",
+      "boardSize": 9,
+      "mode": "setup",
+      "stones": [
+        { "row": 4, "col": 3, "color": "B", "display": "D5" },
+        { "row": 4, "col": 4, "color": "B", "display": "E5" },
+        { "row": 5, "col": 3, "color": "B", "display": "D4" }
+      ],
+      "liberties": [
+        { "row": 3, "col": 3, "display": "D6" },
+        { "row": 4, "col": 2, "display": "C5" },
+        { "row": 3, "col": 4, "display": "E6" },
+        { "row": 4, "col": 5, "display": "F5" },
+        { "row": 5, "col": 4, "display": "E4", "sharedBy": ["E5", "D4"] },
+        { "row": 5, "col": 2, "display": "C4" },
+        { "row": 6, "col": 3, "display": "D3" }
+      ],
+      "rawAdjacencySlots": 8,
+      "duplicateLiberty": "E4",
+      "expectedUniqueLibertyCount": 7,
+      "validation": { "modelChecked": "2026-09-06", "humanReviewed": null }
+    }
+  ]
+}

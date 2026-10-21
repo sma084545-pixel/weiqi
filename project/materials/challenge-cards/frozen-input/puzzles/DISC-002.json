@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "id": "DISC-002",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "Puzzle",
+  "developmentOnly": false,
+  "category": "DISC",
+  "difficulty": {
+    "level": "elementary",
+    "rationale": "开放权衡，局部合法变化易于重放，不要求计算全盘最优。"
+  },
+  "prompt": "黑先，比较 A4 救出 A5 与 E5 改变发展方向。允许选择放弃一子，但须说清代价。",
+  "initialPosition": {
+    "schemaVersion": 1,
+    "id": "POS-DISC-002",
+    "revision": 1,
+    "rulesetId": "GO-CLUB-AREA-1",
+    "kind": "Position",
+    "size": 9,
+    "stones": [
+      {
+        "row": 4,
+        "col": 0,
+        "color": "B"
+      },
+      {
+        "row": 5,
+        "col": 5,
+        "color": "B"
+      },
+      {
+        "row": 3,
+        "col": 0,
+        "color": "W"
+      },
+      {
+        "row": 4,
+        "col": 1,
+        "color": "W"
+      }
+    ],
+    "toPlay": "B",
+    "historyPolicy": "fresh-setup",
+    "history": null
+  },
+  "targetMarkers": [
+    {
+      "markerId": "target-1",
+      "type": "target",
+      "points": [
+        {
+          "row": 4,
+          "col": 0
+        }
+      ],
+      "label": "目标1：A5",
+      "owner": "B"
+    }
+  ],
+  "firstPlayer": "B",
+  "conditions": {
+    "boundary": "full-board",
+    "external": "真实完整 9×9 棋盘，图外无棋子，不使用裁切边缘。",
+    "assumptions": [
+      "成功标准：同伴观察到有依据、有回应、有倾听的讨论即可；不自动判文本对错。",
+      "常见错误：把作者示例当唯一答案，或用输赢给个人价值打分。",
+      "同伴讨论：请先准确复述同伴的选择理由，再说明你是否改变想法。",
+      "新教学起点，过去劫史未知；从当前布局建立新历史，不宣称来自合法实战棋谱。"
+    ],
+    "viewport": null
+  },
+  "hints": [
+    "先任选一个候选，说出它立即改变什么。",
+    "替对手找一个合法回应，不只看自己。",
+    "比较得到了什么、放弃了什么，再听同伴的理由。"
+  ],
+  "answer": {
+    "type": "open-text",
+    "criteria": [
+      "能引用具体坐标、气或连接关系说明自己的目标。",
+      "能提出至少一个合法对方回应，并说明选择的代价。",
+      "能复述同伴的一项依据，说明自己保留或调整想法的原因。"
+    ],
+    "sampleConsiderations": [
+      "A4 使 A5 延伸到两气以上；白 B4 继续施压。取舍是保留目标但局部仍需注意。",
+      "E5 向中心发展；白 A4 提掉 A5。取舍是接受明确的一子损失，不可称它也救了目标。"
+    ],
+    "automaticVerdict": false
+  },
+  "coveredBranches": [],
+  "sources": [
+    {
+      "type": "original",
+      "title": "T09 原创题目、表达与坐标图",
+      "url": null,
+      "accessedAt": null,
+      "note": "依据 GO-CLUB-AREA-1 自行设计和模型推导，未复制协会题图或网上题库。不是教师审题或学生记录。"
+    },
+    {
+      "type": "reference",
+      "title": "British Go Association: How to Play",
+      "url": "https://www.britgo.org/intro/intro2.html",
+      "accessedAt": "2026-09-07",
+      "note": "仅核对正交连接、气、提子与两眼的一般概念。自定义计分、停手及重复规则以项目约定为准；原创题目的正确性另行验证。"
+    }
+  ],
+  "validation": {
+    "structure": {
+      "status": "passed",
+      "method": "T00 structure / T01 engine / independent vectors as applicable",
+      "checkedAt": "2026-09-07",
+      "evidence": [
+        "content/validation/results.json: DISC-002",
+        "content/t09/pedagogy.json: DISC-002"
+      ]
+    },
+    "moveLegality": {
+      "status": "passed",
+      "method": "T00 structure / T01 engine / independent vectors as applicable",
+      "checkedAt": "2026-09-07",
+      "evidence": [
+        "content/validation/results.json: DISC-002",
+        "content/t09/pedagogy.json: DISC-002"
+      ]
+    },
+    "solutionChecked": {
+      "status": "passed",
+      "method": "T00 structure / T01 engine / independent vectors as applicable",
+      "checkedAt": "2026-09-07",
+      "evidence": [
+        "content/validation/results.json: DISC-002",
+        "content/t09/pedagogy.json: DISC-002"
+      ]
+    },
+    "externalReferenceChecked": {
+      "status": "passed",
+      "method": "BGA source concepts and project-rule differences recorded; no copied puzzle answer",
+      "checkedAt": "2026-09-07",
+      "evidence": [
+        "content/validation/results.json: DISC-002",
+        "content/t09/pedagogy.json: DISC-002",
+        "content/t09/SOURCES.md"
+      ]
+    },
+    "modelChecked": {
+      "status": "passed",
+      "method": "Authored reasoning + explicit finite scope, not human review",
+      "checkedAt": "2026-09-07",
+      "evidence": [
+        "content/validation/results.json: DISC-002",
+        "content/t09/pedagogy.json: DISC-002"
+      ]
+    },
+    "humanReviewed": null
+  },
+  "relatedContent": []
+}

@@ -1,0 +1,21 @@
+{
+  "taskId": "FREEZE_B",
+  "mainVersion": "0.15.0",
+  "engineSha256": "028ff1a53af96bc8aa44b2b603ba80ada31b8517c89aeff11088db6683e108b7",
+  "commands": [
+    {
+      "command": "/Users/maxiao/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node materials/rule-cards/source/verify-demos.mjs",
+      "exitCode": 0,
+      "status": "passed",
+      "isolatedCopy": true
+    },
+    {
+      "command": "/Users/maxiao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 materials/rule-cards/source/verify-print.py",
+      "exitCode": 0,
+      "status": "passed",
+      "isolatedCopy": true
+    }
+  ],
+  "regeneratedDataAndSvgDifferences": [],
+  "legacyReportNote": "The original T20 script hardcodes engineVersion 0.2.0. The actual tested engine is the T15 file hash recorded here. Original files are preserved."
+}

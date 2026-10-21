@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "T15-EXPORT-MANIFEST",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "DiagramExportManifest",
+  "preset": "question",
+  "format": "svg",
+  "files": [
+    {
+      "filename": "TEMPLATE-LIB-001-r1-question.svg",
+      "contentId": "TEMPLATE-LIB-001",
+      "contentRevision": 1
+    },
+    {
+      "filename": "TEMPLATE-CAP-001-r1-question.svg",
+      "contentId": "TEMPLATE-CAP-001",
+      "contentRevision": 1
+    },
+    {
+      "filename": "TEMPLATE-LIFE-001-r1-question.svg",
+      "contentId": "TEMPLATE-LIFE-001",
+      "contentRevision": 1
+    },
+    {
+      "filename": "TEMPLATE-DISC-001-r1-question.svg",
+      "contentId": "TEMPLATE-DISC-001",
+      "contentRevision": 1
+    }
+  ]
+}

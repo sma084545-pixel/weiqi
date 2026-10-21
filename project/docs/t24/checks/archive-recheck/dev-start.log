@@ -1,0 +1,8 @@
+{"schemaVersion":1,"id":"T24-CLEAN-DEV-START","revision":1,"rulesetId":"GO-CLUB-AREA-1","status":"passed","cwd":"/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/t24-20261009/candidate-recheck/go-club","command":["pnpm","dev","--port","4197"],"programVersion":"0.17.1","browser":"151.0.7922.34","heading":"从这里开始","humanReviewed":null}
+$ vite --host 127.0.0.1 --port 4197
+
+  VITE v8.2.2  ready in 136 ms
+
+  ➜  Local:   http://127.0.0.1:4197/
+[ELIFECYCLE] Command failed with exit code 143.
+
