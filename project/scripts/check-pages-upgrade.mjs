@@ -1,0 +1,20 @@
+import {chromium,expect} from '@playwright/test';
+import {createServer} from 'node:http';
+import {readFile,writeFile,mkdir} from 'node:fs/promises';
+import {resolve,extname,sep} from 'node:path';
+const old=process.env.OLD_PAGES_ROOT;if(!old)throw Error('Provide OLD_PAGES_ROOT: unchanged public 0.16.0 snapshot at Git commit71953a7.');
+const out='docs/github-pages/checks';await mkdir(out,{recursive:true});let current=false;
+const types={'.html':'text/html;charset=utf-8','.js':'application/javascript','.css':'text/css','.json':'application/json','.md':'text/plain;charset=utf-8','.svg':'image/svg+xml'};
+const server=createServer(async(req,res)=>{try{const path=decodeURIComponent(new URL(req.url,'http://local').pathname);if(!path.startsWith('/weiqi/'))throw Error('outside');const root=resolve(current?'dist':old),file=resolve(root,path==='/weiqi/'?'index.html':path.slice('/weiqi/'.length));if(!file.startsWith(root+sep))throw Error('outside');res.setHeader('Content-Type',types[extname(file)]??'application/octet-stream');res.setHeader('Cache-Control','no-cache');res.end(await readFile(file));}catch{res.writeHead(404);res.end();}});
+await new Promise(accept=>server.listen(0,'127.0.0.1',accept));const base=`http://127.0.0.1:${server.address().port}/weiqi/`;
+const browser=await chromium.launch(),context=await browser.newContext({viewport:{width:1280,height:900}}),page=await context.newPage(),checks=[];
+const cell=(r,c)=>page.locator(`[data-row="${r}"][data-col="${c}"]`);
+try{
+ await page.goto(base+'#/route/STAGE-05');await page.getByRole('button',{name:'还想练习',exact:true}).click();await page.evaluate(()=>navigator.serviceWorker.ready);
+ await page.goto(base+'#/play/full-game');await page.getByRole('button',{name:'验证设置并开始对局'}).click();await cell(0,0).click();await cell(8,8).click();await expect(cell(8,8)).toHaveAttribute('data-stone','W');checks.push('Unmodified published 0.16.0 created a stage mark and legal two-move game');
+ current=true;await page.evaluate(()=>navigator.serviceWorker.getRegistration().then(reg=>reg.update()));await page.getByRole('button',{name:'保存已提交内容并应用'}).click({timeout:30000});await expect(page.locator('.app-version')).toHaveText('版本 0.20.2',{timeout:30000});checks.push('New worker prepared 0.20.2 at same /weiqi origin; old save-and-apply UI upgraded without clearing storage');
+ await page.goto(base+'#/route/STAGE-05');await expect(page.getByRole('button',{name:'还想练习',exact:true})).toHaveAttribute('aria-pressed','true');checks.push('Self-chosen stage mark persisted');
+ await page.goto(base+'#/play/free');await expect(page.locator('.full-game-page')).toHaveAttribute('data-move-count','2');await expect(cell(0,0)).toHaveAttribute('data-stone','B');await expect(cell(8,8)).toHaveAttribute('data-stone','W');await expect(page.getByRole('slider',{name:'棋局滑动条',exact:true})).toHaveAttribute('max','2');checks.push('Old full game resumed in new free-play alias with full history');
+ await page.goto(base+'#/teacher/offline-data');await expect(page.getByRole('heading',{name:'已可离线',exact:true})).toBeVisible({timeout:20000});await context.setOffline(true);await page.goto(base+'#/play/free');await page.reload();await expect(page.locator('.full-game-page')).toHaveAttribute('data-move-count','2');await expect(cell(8,8)).toHaveAttribute('data-stone','W');checks.push('Actual disabled-network reload after update retained the saved game');await page.screenshot({path:out+'/upgrade-offline.png',fullPage:true});await context.setOffline(false);
+ await writeFile(out+'/upgrade.json',JSON.stringify({schemaVersion:1,id:'PAGES-SAME-ORIGIN-UPGRADE',revision:1,rulesetId:'GO-CLUB-AREA-1',status:'passed',fromVersion:'0.16.0',toVersion:'0.20.2',method:'Unmodified old public files and current production build served sequentially from one isolated localhost /weiqi origin; not claimed as public server deployment test.',browser:browser.version(),checks,humanReviewed:null},null,2)+'\n');console.log('PASS: '+checks.join('; '));
+}finally{await browser.close();server.closeAllConnections();await new Promise(accept=>server.close(accept));}

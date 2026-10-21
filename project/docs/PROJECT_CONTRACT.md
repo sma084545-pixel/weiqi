@@ -1,13 +1,13 @@
 ---
 schemaVersion: 1
 id: DOC-PROJECT-CONTRACT
-revision: 19
+revision: 20
 rulesetId: GO-CLUB-AREA-1
 ---
 
-# 项目共同约定 · 0.20.1
+# 项目共同约定 · 0.20.2
 
-当前产品baseVersion=HISTORY_SLIDER 0.19.0-history.1，resultVersion=0.20.0-online.1，程序0.20.0。T00–T24、自由同屏对弈和历史滑动条沿用已验收主线。按用户明确要求增加可选联机房间服务；共享规则、schema、正式内容、材料与本机存储保持。当前交接为handoff/ONLINE_PLAY.md；下文T17逐项说明保留历史，T24材料状态读handoff/T24.md。
+当前产品baseVersion=ONLINE_PLAY 0.20.0-online.1，resultVersion=0.20.2-pages.1，程序0.20.2。T00–T24、自由同屏对弈、历史滑动条和可部署联机服务沿用已验收主线；用户授权同步原GitHub仓库/Pages网址。正式内容、规则、schema、材料、本机数据与依赖锁文件保持。Pages无房间后台时明确说明，不能把静态发布称为异地联机服务已上线。当前交接handoff/GITHUB_PAGES_SYNC.md；下文T17等逐项说明是历史来源。
 
 T00 是产品实现的起点；输入提示词包为 1.1.0，不是产品版本。T00当时的产品 baseVersion 为 none，resultVersion 为 0.1.0，内容主版本 schemaVersion=1，规则 GO-CLUB-AREA-1。输入清单与 SHA-256 见 input-manifest.json。实际读取桌面项目 AGENTS.md、README、起初可用的 START_TO_FINISH.md、manifest.json、T00/T01/T09 正文及全部任务范围；交付前按当前 AGENTS.md 改以 `deliverables/go_cas_gpt_work_execution_v1_1 2/prompts/` 为权威来源，重新读取25份要求及交付边界。24份与初读哈希一致；T18仅增加前置标题文字，其余字节相同。原流程路径交付前已不可访问，不再作为当前入口；T00开始时sources/为空，无旧产品交接或工程。T01取得的实际基线另见t01/input-manifest.json。
 
@@ -77,6 +77,6 @@ T17 通过 T14 建立 LOCAL 资源副本和新 revision，不写冻结正式题�
 online-play / #/play/online使用既有T01规则、T08终局与悔棋和共享Board/GameTimeline，服务器是房间事实源。各席凭据限制执色，匿名会话不是实名身份验证。数据传输与私有房间存储是独立schemaVersion1扩展，不修改封闭内容模型。模块optional requiresNetwork供离线清单区分；没有服务时给出恢复/同屏入口，不宣称房间可离线运行。APP_VERSION统一为0.20.0，新增精确锁定ws8.22.0/@types/ws8.18.2，原依赖未升级。协议、部署、容量和未测项见docs/online/。这是用户授权的联网范围扩展，不改变原核心离线教学约定或纸面赛规。
 
 
-## GITHUB_PAGES_SYNC · 0.20.1-pages.1
+## GITHUB_PAGES_SYNC · 0.20.2-pages.1
 
 主线从ONLINE_PLAY 0.20.0-online.1继承。用户明确要求更新原GitHub仓库/Pages网址。共享规则、内容schema、正式题/终局/材料与依赖锁文件保持；仅修复发布兼容：页脚与version.json提供版本、Pages无服务器时不尝试不存在的房间接口、可通过公开VITE_ONLINE_SERVER_URL接入实际HTTPS后台，服务PUBLIC_APP_URL保留邀请路径/weiqi。原本机Node默认同源行为不变。安装在网站中不等于房间服务器已部署；实际发布结果与未测项读handoff/GITHUB_PAGES_SYNC.md。

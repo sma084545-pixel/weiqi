@@ -1,0 +1,1 @@
+PASS: Unmodified published 0.16.0 created a stage mark and legal two-move game; New worker prepared 0.20.2 at same /weiqi origin; old save-and-apply UI upgraded without clearing storage; Self-chosen stage mark persisted; Old full game resumed in new free-play alias with full history; Actual disabled-network reload after update retained the saved game

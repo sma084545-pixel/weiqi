@@ -1,15 +1,15 @@
 ---
 schemaVersion: 1
 id: DOC-README
-revision: 23
+revision: 24
 rulesetId: GO-CLUB-AREA-1
 ---
 
-# 围棋社工具包 · 原网址同步 · 0.20.1-pages.1
+# 围棋社工具包 · 原网址同步 · 0.20.2-pages.1
 
 新增**联机对弈**：两人打开同一个可访问的网站，一人创建房间，另一人输入房间码；无需注册或真实姓名。棋盘5/9/13/19路、默认9路与0贴目，双方各执一色。服务端用原规则引擎验证落子和提子，支持停手、认输、双方悔棋、断线恢复、终局双方确认后自动面积计分，以及每人独立的棋局滑动条。
 
-当前程序0.20.1，唯一基线ONLINE_PLAY 0.20.0-online.1；GitHub Pages同步交接见handoff/GITHUB_PAGES_SYNC.md。正式30题/6终局、材料、规则、schema和本机存储保持；新增可选Node房间服务。学习进度、草稿、反馈不上传；只有主动联机时发送昵称、棋局、操作与连接状态。尚未公开部署网站。
+当前程序0.20.2，唯一基线ONLINE_PLAY 0.20.0-online.1；GitHub Pages同步交接见handoff/GITHUB_PAGES_SYNC.md。正式30题/6终局、材料、规则、schema和本机存储保持；新增可选Node房间服务。学习进度、草稿、反馈不上传；只有主动联机时发送昵称、棋局、操作与连接状态。尚未公开部署网站。
 
 正式网站仍为 https://sma084545-pixel.github.io/weiqi/ 。页脚显示版本号，version.json可核对生产版本。GitHub Pages提供最新静态教学与同屏功能；联机房间服务尚未接入时明确提示，不能仅靠静态托管同步两台设备。管理员接入方法见docs/github-pages/ONLINE_SETUP.md。旧版先保存当前工作，再应用更新，不清除本机记录。
 

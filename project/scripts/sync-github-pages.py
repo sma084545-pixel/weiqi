@@ -6,19 +6,20 @@ p=argparse.ArgumentParser();p.add_argument('--repo',required=True);args=p.parse_
 R=Path(__file__).resolve().parents[1];repo=Path(args.repo).resolve();version=json.loads((R/'package.json').read_text())['version'];V=version+'-pages.1'
 assert (repo/'.git').is_dir();assert json.loads((R/'dist/version.json').read_text())['programVersion']==version
 sha=lambda path:hashlib.sha256(path.read_bytes()).hexdigest()
+previous=json.loads((repo/'PUBLICATION.json').read_text()) if (repo/'PUBLICATION.json').exists() else {};revision=previous.get('revision',0)+1
 site=[]
 for path in sorted((R/'dist').rglob('*')):
  if path.is_file():
   rel=str(path.relative_to(R/'dist'));target=repo/rel;target.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(path,target);site.append({'path':rel,'bytes':path.stat().st_size,'sha256':sha(path)})
 (repo/'.nojekyll').write_text('\n');source=repo/'project';source.mkdir(exist_ok=True);entries=[]
-exclude_dirs={'node_modules','.git','__pycache__','delivery','font-cache','runtime-data','.pnpm-store'};exclude_root={'dist','dist-engine','dist-server','output'};exclude_files={'.DS_Store','tsconfig.tsbuildinfo','RELEASE_MANIFEST.json','release-manifest.json','SHA256SUMS.txt','.env'}
+exclude_dirs={'node_modules','.git','__pycache__','delivery','font-cache','runtime-data','.pnpm-store','.playwright-cli','.auth'};exclude_root={'dist','dist-engine','dist-server','output'};exclude_files={'.DS_Store','tsconfig.tsbuildinfo','RELEASE_MANIFEST.json','release-manifest.json','SHA256SUMS.txt','.env'}
 for folder,dirs,names in os.walk(R):
  relative=Path(folder).relative_to(R);dirs[:]=[name for name in dirs if name not in exclude_dirs and not name.startswith('lo-') and not (relative==Path('.') and name in exclude_root)]
  for name in sorted(names):
   if name in exclude_files or name.startswith('.env.') or name.endswith(('.pem','.p12','.key')):continue
   path=Path(folder)/name;rel=path.relative_to(R);target=source/rel;target.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(path,target);entries.append({'path':str(rel),'bytes':path.stat().st_size,'sha256':sha(path)})
-(source/'SOURCE_INFO.json').write_text(json.dumps({'schemaVersion':1,'id':'GITHUB-CURRENT-SOURCE','revision':1,'rulesetId':'GO-CLUB-AREA-1','resultVersion':V,'programVersion':version,'sourceBuild':'pnpm install --frozen-lockfile && pnpm build','note':'Buildable source and materials; installed dependencies, private data and generated root build/output excluded. Full release archive includes production builds and all evidence.','files':entries},ensure_ascii=False,indent=2)+'\n')
-manifest={'schemaVersion':1,'id':'GITHUB-PAGES-PUBLICATION','revision':1,'rulesetId':'GO-CLUB-AREA-1','resultVersion':V,'programVersion':version,'siteUrl':'https://sma084545-pixel.github.io/weiqi/','sourceDirectory':'project/','formalPuzzles':30,'terminalFixtures':6,'microLessonPrimarySlides':25,'onlineServerConfigured':False,'onlineStatus':'Room server not deployed; setup explanation and same-screen play available.','files':site,'sourceManifestSha256':sha(source/'SOURCE_INFO.json')}
+(source/'SOURCE_INFO.json').write_text(json.dumps({'schemaVersion':1,'id':'GITHUB-CURRENT-SOURCE','revision':revision,'rulesetId':'GO-CLUB-AREA-1','resultVersion':V,'programVersion':version,'sourceBuild':'pnpm install --frozen-lockfile && pnpm build','note':'Buildable source and materials; installed dependencies, private data and generated root build/output excluded. Full release archive includes production builds and all evidence.','files':entries},ensure_ascii=False,indent=2)+'\n')
+manifest={'schemaVersion':1,'id':'GITHUB-PAGES-PUBLICATION','revision':revision,'rulesetId':'GO-CLUB-AREA-1','resultVersion':V,'programVersion':version,'siteUrl':'https://sma084545-pixel.github.io/weiqi/','sourceDirectory':'project/','formalPuzzles':30,'terminalFixtures':6,'microLessonPrimarySlides':25,'onlineServerConfigured':False,'onlineStatus':'Room server not deployed; setup explanation and same-screen play available.','files':site,'sourceManifestSha256':sha(source/'SOURCE_INFO.json')}
 (repo/'PUBLICATION.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n');(repo/'SHA256SUMS.txt').write_text(''.join(f"{x['sha256']}  {x['path']}\n" for x in site)+f"{sha(repo/'PUBLICATION.json')}  PUBLICATION.json\n"+f"{sha(source/'SOURCE_INFO.json')}  project/SOURCE_INFO.json\n")
 (repo/'README.md').write_text(f'''# 围棋社 · 最新版 {version}
 

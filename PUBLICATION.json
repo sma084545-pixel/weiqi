@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "id": "GITHUB-PAGES-PUBLICATION",
-  "revision": 1,
+  "revision": 3,
   "rulesetId": "GO-CLUB-AREA-1",
-  "resultVersion": "0.20.1-pages.1",
-  "programVersion": "0.20.1",
+  "resultVersion": "0.20.2-pages.1",
+  "programVersion": "0.20.2",
   "siteUrl": "https://sma084545-pixel.github.io/weiqi/",
   "sourceDirectory": "project/",
   "formalPuzzles": 30,
@@ -15,8 +15,8 @@
   "files": [
     {
       "path": "ONLINE_SETUP.md",
-      "bytes": 3346,
-      "sha256": "6890c758e9c09bfcd6cda137ae1da059ce2d23519b306229e571575b77c2af72"
+      "bytes": 3429,
+      "sha256": "80dd746e8eb62c9649b4a41d129dd23cadd83cacd2f95e6e26928fc599f6de23"
     },
     {
       "path": "app.webmanifest",
@@ -24,14 +24,14 @@
       "sha256": "26ae2d10fc5b45982ae4f4f593aaa93b781d4ff63a8bfe2166bc392d01cc9b50"
     },
     {
-      "path": "assets/index-CEIKv_I5.js",
-      "bytes": 1002011,
-      "sha256": "d4466ccb4c68eee6e574bbe0dc0f80642de3e9a274c029d4f9dcfeeacc042543"
-    },
-    {
       "path": "assets/index-D5QJxBHW.css",
       "bytes": 128955,
       "sha256": "51295d933c6192ff468e67f24321d55e105f7ff64b60b6bc0c2495ddd48fd99a"
+    },
+    {
+      "path": "assets/index-DsjWC9p2.js",
+      "bytes": 1002210,
+      "sha256": "09b1a99bb1acffe6ce504041c1c883909a3371560ff260421cca80784f00df4a"
     },
     {
       "path": "content/formal-content-v1.json",
@@ -39,9 +39,14 @@
       "sha256": "a58630def9526df81cd8e27b8fabe8bbe59e9905eb4aad1af2fb6203f9b46532"
     },
     {
+      "path": "favicon.svg",
+      "bytes": 362,
+      "sha256": "ea785687252e962c7a71ac3f537a091354ac3e9c7b363dc4099aeb0075aff2b3"
+    },
+    {
       "path": "index.html",
-      "bytes": 580,
-      "sha256": "56d3b39b869d04423ba345703121798fd3f56eaeacdde0735fecdbd285a995c5"
+      "bytes": 640,
+      "sha256": "d2add27ad2014d98d9701456e69247af711f933a9f4ebdb692fe599db85fe770"
     },
     {
       "path": "materials/t13/territory-counting-card.md",
@@ -55,8 +60,8 @@
     },
     {
       "path": "offline-assets.json",
-      "bytes": 390,
-      "sha256": "a0a4cdaa8ba72097c1860b60cfd62be1bfe77b0a73eceba88493cc6b4d2a06ee"
+      "bytes": 411,
+      "sha256": "9571a8a3b0092b0469572591e9ae7e5a41f749821bd92356f0e0f54c235aa768"
     },
     {
       "path": "offline.html",
@@ -66,13 +71,13 @@
     {
       "path": "sw.js",
       "bytes": 3694,
-      "sha256": "f27857b0f8ae99106d8fcd356ccd9c660bd3f5cc5f03761b6708564257452de9"
+      "sha256": "1d30c5df18ded54bbabb7bcf705f571042aacd19d105def28a9f26cbb8dfce34"
     },
     {
       "path": "version.json",
-      "bytes": 211,
-      "sha256": "3f162415885d1998ee1dee69a66128d83b4f19127bf14ca4c0b895a61bd7b153"
+      "bytes": 215,
+      "sha256": "45bf252af06b02ba06e54bf0bd0398e1e35918282172afd9b107a995357b048e"
     }
   ],
-  "sourceManifestSha256": "de1b1bee0a7d9c5f4c65a890153e75ae93bfb3ae58397fe5d8cb2687c0a1a0c4"
+  "sourceManifestSha256": "6e67f410510d289435f359f9a6bc0bb34c021b84de77c4d7a39c36c8ab806df9"
 }

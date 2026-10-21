@@ -1,4 +1,4 @@
-const APP_VERSION='0.20.1';
+const APP_VERSION='0.20.2';
 const CACHE_PREFIX='go-club-offline-';
 const CACHE_NAME=CACHE_PREFIX+APP_VERSION;
 const STATUS_URL=new URL('./__offline_status__',self.registration.scope).href;

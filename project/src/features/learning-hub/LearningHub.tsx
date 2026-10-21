@@ -11,6 +11,7 @@ import {CaptureGame} from '../capture-game/CaptureGame';
 import {ExperimentBoard} from '../experiment-board/ExperimentBoard';
 import {FullGame} from '../full-game/FullGame';
 import {OnlineGame} from '../online-game/OnlineGame';
+import {onlineConnectionConfig} from '../online-game/hosting';
 import {PuzzleRunner} from '../puzzle-runner/PuzzleRunner';
 import {LifeLab} from '../life-lab/LifeLab';
 import {CooperativeChallenge} from '../cooperative/CooperativeChallenge';
@@ -69,6 +70,7 @@ function ProgressSummary({progress}:{progress:LearningProgress}){
 }
 
 function HomePage({progress,onClear,confirming,setConfirming}:{progress:LearningProgress;onClear:()=>void;confirming:boolean;setConfirming:(value:boolean)=>void}){
+  const onlineAvailable=Boolean(onlineConnectionConfig(location.href,import.meta.env.VITE_ONLINE_SERVER_URL).endpoint);
   return <>
     <section className="hub-hero">
       <div><h1>一起落子，慢慢思考</h1><p>从认识棋盘开始，或按自己的经验直接浏览后面的主题。路线是建议，不是门槛。</p><NavLink className="text-link" route={ROUTE_ROUTE}>查看六阶段学习路线</NavLink></div>
@@ -81,7 +83,7 @@ function HomePage({progress,onClear,confirming,setConfirming}:{progress:Learning
       <EntryCard kind="puzzle" title="我想尝试一道题" description="从六类正式题中自选；可查看分层提示，也可保留未知合法手继续讨论。" available route={PUZZLE_ROUTE}/>
     </div></section>
     <section className="route-preview" aria-labelledby="route-preview-title"><div className="section-title inline"><div><h2 id="route-preview-title">学习路线</h2><p>六个阶段都能直接打开；当前页面不会锁住后续主题。</p></div><NavLink route={ROUTE_ROUTE}>查看完整路线</NavLink></div><ol>{STAGES.map(stage=><li key={stage.id} className={progress.visitedModuleIds.includes(`stage-${String(stage.number).padStart(2,'0')}-guide`)?'visited':''}><span>{stage.number}</span><NavLink route={stageRoute(stage.number)}><strong>{stage.title}</strong><small>{stage.goal}</small></NavLink></li>)}</ol></section>
-    <section className="online-invitation"><div><strong>各用一台设备，也能下一局</strong><p>创建房间并分享房间码；另一位伙伴打开同一网址后加入，无需注册。</p></div><NavLink className="outline-link" route={ONLINE_PLAY_ROUTE}>创建或加入联机房间</NavLink></section><ProgressSummary progress={progress}/>
+    <section className="online-invitation"><div><strong>{onlineAvailable?'各用一台设备，也能下一局':'联机对弈 · 服务待接入'}</strong><p>{onlineAvailable?'创建房间并分享房间码；另一位伙伴打开同一网址后加入，无需注册。':'当前可直接同屏对弈。房间服务器接入后，可各用一台设备下棋。'}</p></div><NavLink className="outline-link" route={ONLINE_PLAY_ROUTE}>{onlineAvailable?'创建或加入联机房间':'查看联机服务说明'}</NavLink></section><ProgressSummary progress={progress}/>
     <section className="teacher-teaser" aria-labelledby="teacher-teaser-title"><div><h2 id="teacher-teaser-title">教师视图</h2><p>打开今日活动、可选45分钟安排和投影显示。当前只列已可用的入口。</p></div><NavLink className="outline-link" route={TEACHER_ROUTE}>进入教师视图</NavLink></section>
   </>;
 }
