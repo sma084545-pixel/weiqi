@@ -1,0 +1,30 @@
+### Result
+{"schemaVersion":1,"id":"RENDER-PUBLIC-RESPONSIVE-JOURNEY","revision":1,"rulesetId":"GO-CLUB-AREA-1","status":"passed","site":"https://sma084545-pixel.github.io/weiqi/","server":"https://weiqi-rooms.onrender.com","frontendVersion":"0.20.3","method":"Actual public site with independent browser contexts; simulated touch/network, not physical devices","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36","checks":["Public 360px, 19-route actual geometry, corner touch/click, keyboard, independent timeline, reduced motion and no page overflow","Public 768px, 13-route actual geometry, corner touch/click, keyboard, independent timeline, reduced motion and no page overflow","Actual public-client network disabled and restored: no forfeit, same seat and next white move synchronized","Public 1280px, 9-route actual geometry, corner touch/click, keyboard, independent timeline, reduced motion and no page overflow"],"pageErrors":[],"humanReviewed":null}
+### Ran Playwright code
+```js
+await (async (page) => {
+ const base='https://sma084545-pixel.github.io/weiqi/',browser=page.context().browser(),checks=[],errors=[],contexts=[];
+ const assert=(v,m)=>{if(!v)throw Error(m);},cell=(p,r,c)=>p.locator(`[data-row="${r}"][data-col="${c}"]`),count=(p,n)=>p.locator(`[data-testid="online-game"][data-move-count="${n}"]`).waitFor({timeout:20000});
+ try{
+  for(const [width,size] of [[360,19],[768,13],[1280,9]]){
+   const ac=await browser.newContext({viewport:{width,height:950},hasTouch:width===360,isMobile:width===360}),bc=await browser.newContext({viewport:{width:1280,height:950}});contexts.push(ac,bc);const a=await ac.newPage(),b=await bc.newPage();
+   for(const p of [a,b]){p.on('pageerror',e=>errors.push(e.message));await p.goto(base+'#/play/online');await p.getByText('服务已连接',{exact:true}).waitFor({timeout:60000});}
+   await a.getByLabel('联机棋盘尺寸').selectOption(String(size));await a.getByRole('button',{name:'创建房间',exact:true}).click();await a.getByText('你执黑',{exact:true}).waitFor();const code=await a.getByLabel('当前房间码').inputValue();await b.getByLabel('输入房间码').fill(code);await b.getByRole('button',{name:'加入房间',exact:true}).click();await b.getByText('你执白',{exact:true}).waitFor();await a.locator('.online-seat').filter({hasText:'白方'}).getByText('已连接',{exact:true}).waitFor();
+   await a.emulateMedia({reducedMotion:'reduce'});assert(await a.getByRole('gridcell').count()===size*size,'Actual board size mismatch');
+   if(width===360)await cell(a,0,0).tap();else await cell(a,0,0).click();await count(b,1);await cell(b,size-1,size-1).click();await count(a,2);
+   await cell(a,0,0).focus();await cell(a,0,0).press('ArrowRight');await cell(a,0,1).press('Enter');await count(b,3);assert(await cell(b,0,1).getAttribute('data-stone')==='B','Keyboard coordinate mismatch');
+   const slider=a.getByRole('slider',{name:'棋局滑动条',exact:true});await slider.focus();await slider.press('Home');await slider.press('ArrowRight');assert(await slider.inputValue()==='1','Keyboard history');await slider.press('End');assert(await slider.inputValue()==='3','History current');assert(await a.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Page horizontal overflow');
+   if(width===360)assert(await a.locator('.board-viewport').evaluate(n=>n.scrollWidth>n.clientWidth),'19-route board must have local scrolling');
+   if(width===1280){
+    await bc.setOffline(true);await b.getByText('网络已断开',{exact:true}).waitFor();await a.locator('.online-seat').filter({hasText:'白方'}).getByText('暂时断线',{exact:true}).waitFor({timeout:35000});assert(await a.getByRole('button',{name:'停一手',exact:true}).isDisabled(),'Missing peer must pause game');await count(a,3);
+    await bc.setOffline(false);await b.getByText('服务已连接',{exact:true}).waitFor({timeout:30000});await a.locator('.online-seat').filter({hasText:'白方'}).getByText('已连接',{exact:true}).waitFor();await cell(b,size-1,size-2).click();await count(a,4);checks.push('Actual public-client network disabled and restored: no forfeit, same seat and next white move synchronized');
+   }
+   await a.screenshot({path:`docs/render/checks/public-${width}.png`,fullPage:true});checks.push(`Public ${width}px, ${size}-route actual geometry, corner touch/click, keyboard, independent timeline, reduced motion and no page overflow`);
+   await ac.close();await bc.close();
+  }
+  assert(errors.length===0,'Runtime errors '+errors.join(';'));
+  return {schemaVersion:1,id:'RENDER-PUBLIC-RESPONSIVE-JOURNEY',revision:1,rulesetId:'GO-CLUB-AREA-1',status:'passed',site:base,server:'https://weiqi-rooms.onrender.com',frontendVersion:'0.20.3',method:'Actual public site with independent browser contexts; simulated touch/network, not physical devices',userAgent:await page.evaluate(()=>navigator.userAgent),checks,pageErrors:errors,humanReviewed:null};
+ }finally{for(const ctx of contexts)try{await ctx.close();}catch{}}
+}
+)(page);
+```

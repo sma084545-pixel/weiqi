@@ -1,0 +1,348 @@
+{
+  "schemaVersion": 1,
+  "id": "RENDER-CHANGE-MANIFEST",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "baseVersion": "0.20.2-pages.1",
+  "resultVersion": "0.20.3-pages.1",
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "kind": "modified",
+      "sha256": "c5a27675ba48513ab6183266b971457737cbac525247a57f576d4b73504620ba"
+    },
+    {
+      "path": "README.md",
+      "kind": "modified",
+      "sha256": "7772a85c6fe0f676337faf39922f87033151ce90c6537a9208a49d7f3b6e700f"
+    },
+    {
+      "path": "SOURCES.md",
+      "kind": "modified",
+      "sha256": "475c2c77c7c421131493acc94895a50598e845d1cb00e67c077d18c025c3af7e"
+    },
+    {
+      "path": "deploy/github-pages.json",
+      "kind": "added",
+      "sha256": "d826f08d493ceff49cf71eb3044b939a297605ed17b652f89de5e1a830c6972e"
+    },
+    {
+      "path": "deploy/render.yaml",
+      "kind": "added",
+      "sha256": "d514f52aab49db45b564e02c4cea440753602bd43c663ea75102fadf2d8da8ad"
+    },
+    {
+      "path": "dist/ONLINE_SETUP.md",
+      "kind": "modified",
+      "sha256": "d0fa44edfe7965446c1e2be01172695130d3100e903cd01cd63c1682bf608a02"
+    },
+    {
+      "path": "dist/assets/index-DP2hyDxq.js",
+      "kind": "added",
+      "sha256": "9b48594aa77768f6c923d508e4b10ed06ee0b3082b4b7ebca00872cd2c21b5f6"
+    },
+    {
+      "path": "dist/index.html",
+      "kind": "modified",
+      "sha256": "f29530f10476bacf6f020c30217d47930d82c9b0143cbb1fabb0b042e12f41cf"
+    },
+    {
+      "path": "dist/offline-assets.json",
+      "kind": "modified",
+      "sha256": "49689baa2331deb03b1345c2d5ba712364676bebfb581c25443804529ce6dc14"
+    },
+    {
+      "path": "dist/sw.js",
+      "kind": "modified",
+      "sha256": "bb002d21696a680d55f1f03625f17e00e7e9975b7757312c7469e9e256b756a5"
+    },
+    {
+      "path": "dist/version.json",
+      "kind": "modified",
+      "sha256": "c4b5e0b98db390b8f75732eb76f8ea5640ebb47ad41931dfa8ee3c5bd9c710e0"
+    },
+    {
+      "path": "dist-engine/package.json",
+      "kind": "modified",
+      "sha256": "f4429027db214ca785845b5292ca3cf9a9eb060512539222e6e2953f136c47d0"
+    },
+    {
+      "path": "dist-engine/types/version.d.ts",
+      "kind": "modified",
+      "sha256": "2aa90a19cd2f5b77e0838306446190514486104bf00e1ebd27cfb45d89452acf"
+    },
+    {
+      "path": "dist-server/server.mjs",
+      "kind": "modified",
+      "sha256": "65155f1dba48bf637aff783b6f2c620de278601bef102f0c0284cf08f1ddfe91"
+    },
+    {
+      "path": "docs/github-pages/ONLINE_SETUP.md",
+      "kind": "modified",
+      "sha256": "d0fa44edfe7965446c1e2be01172695130d3100e903cd01cd63c1682bf608a02"
+    },
+    {
+      "path": "docs/render/ACCEPTANCE.md",
+      "kind": "added",
+      "sha256": "f46801d9758a22639dc32982ab6093bd1663f82033ac483a3ad0f2d81689a0ec"
+    },
+    {
+      "path": "docs/render/BASE-MANIFEST.json",
+      "kind": "added",
+      "sha256": "218588d01eca4e1638c82edab89596b49ce663fff85ba259dcdedaef742cc80f"
+    },
+    {
+      "path": "docs/render/DEPLOYMENT.md",
+      "kind": "added",
+      "sha256": "e26585e58e7742fe24bfe0e9fe11dfd800024ba7d7175bd047fbf2dfd41df476"
+    },
+    {
+      "path": "docs/render/KNOWN_ISSUES.md",
+      "kind": "added",
+      "sha256": "d65cc84c1c2b40c0d04b12e4fa3a6fb5146aeb7b3cf17944790f27079ca22f08"
+    },
+    {
+      "path": "docs/render/checks/QA-online-export.json",
+      "kind": "added",
+      "sha256": "5b7049771b49a28c307a1ee5c8d6da679456cf9a9320bf199f42df2a6c5aa4ea"
+    },
+    {
+      "path": "docs/render/checks/browser.log",
+      "kind": "added",
+      "sha256": "a6f03cd2c9b2ea611ded494c7269bd59968aa90e612a8b909d7f18392aaa2bae"
+    },
+    {
+      "path": "docs/render/checks/build-pages.log",
+      "kind": "added",
+      "sha256": "99fd99cac050064b5943d0b72471f69ee2c11cd7e3100e176855a74dd41ab8a7"
+    },
+    {
+      "path": "docs/render/checks/check.log",
+      "kind": "added",
+      "sha256": "c25bfc93508a0f68d70c06ad351feadec5125f8fde2e04b46ed26ce6a2465529"
+    },
+    {
+      "path": "docs/render/checks/export-replay.json",
+      "kind": "added",
+      "sha256": "7867d61ec492e7e60a341c58ed40c7e92efb68318fb14f7055d337d5c11204c9"
+    },
+    {
+      "path": "docs/render/checks/local-online/1280-live-room.png",
+      "kind": "added",
+      "sha256": "cb9e697175634049c71da12d11805b7a982ce87bc3d56d919971c8e48f5dbf8c"
+    },
+    {
+      "path": "docs/render/checks/local-online/1280-room.png",
+      "kind": "added",
+      "sha256": "0d7003b94a19dc9313d2267bc7e9ea3f41eb4c5c3b4e8380375354165e14bf1f"
+    },
+    {
+      "path": "docs/render/checks/local-online/360-room.png",
+      "kind": "added",
+      "sha256": "92bcd8f9a3c3bafc18529defc4595618d145cb8b3780d81747ca9a7cc5dc5cb1"
+    },
+    {
+      "path": "docs/render/checks/local-online/768-room.png",
+      "kind": "added",
+      "sha256": "46be13d4081819ef723660bf40e7b405b517134bc08136b81ec34bfc4f077bc3"
+    },
+    {
+      "path": "docs/render/checks/preservation.json",
+      "kind": "added",
+      "sha256": "e8c25b36abd495be873c7c054332d2fd1eda6fc95696c633acc1017ea341b42f"
+    },
+    {
+      "path": "docs/render/checks/public-1280.png",
+      "kind": "added",
+      "sha256": "d60375f4a561dbdcf601c521c9660026aca32fb8b6a634d6f6a6c0937be0bb6b"
+    },
+    {
+      "path": "docs/render/checks/public-360.png",
+      "kind": "added",
+      "sha256": "b0743b85de9dba354827944b2e96296ecd78f775747fe2b074572a232ed0c370"
+    },
+    {
+      "path": "docs/render/checks/public-768.png",
+      "kind": "added",
+      "sha256": "dd315e42c67b32f4af9afdc911ee9a02dfdf663cec22b8e5f0677f4ae80e6f09"
+    },
+    {
+      "path": "docs/render/checks/public-check-retries.json",
+      "kind": "added",
+      "sha256": "4547006b4b06bf4f7f9d11e26679269829fb1a4be03e8a6665592be25e561d04"
+    },
+    {
+      "path": "docs/render/checks/public-confirmed-draw.png",
+      "kind": "added",
+      "sha256": "12198fc9a574e39805abe8fc6519e36c320b79d2570b2a466fbee98363a7c83e"
+    },
+    {
+      "path": "docs/render/checks/public-journey-attempt1.log",
+      "kind": "added",
+      "sha256": "04e4932540e9ec3cc632d9a92da4086d0f11994ea2677b23850242d235d08786"
+    },
+    {
+      "path": "docs/render/checks/public-journey-attempt2.log",
+      "kind": "added",
+      "sha256": "eed9c62d78be927b86b5056cd0b72d24c5f9784bf775eb08021a9c355805e151"
+    },
+    {
+      "path": "docs/render/checks/public-journey.json",
+      "kind": "added",
+      "sha256": "199d2cdf154029bfa6ecbded7487e111038a082862158440f3eefd7e63d6bb1d"
+    },
+    {
+      "path": "docs/render/checks/public-journey.log",
+      "kind": "added",
+      "sha256": "2192bc76ac2929735bbebd12c365d06233bc2b37d7408cac0e150bd01f711490"
+    },
+    {
+      "path": "docs/render/checks/public-live-board.png",
+      "kind": "added",
+      "sha256": "dfc1caa74f409c84f5145ea9d1b667e73afd92439547c93b831cc977e6ea9505"
+    },
+    {
+      "path": "docs/render/checks/public-live-room.png",
+      "kind": "added",
+      "sha256": "8cd816d4d8713f36894aebfa60c7120abf3283d2187f18d21e280bf1773ac572"
+    },
+    {
+      "path": "docs/render/checks/public-offline.png",
+      "kind": "added",
+      "sha256": "81c35b692f6ecef3cda1735f1784a875c95b55c4dfa2b4f9c6917b22480a5e1a"
+    },
+    {
+      "path": "docs/render/checks/public-responsive.json",
+      "kind": "added",
+      "sha256": "e4e2493b78febf3bde9fc27088b3f0e020b6ca609a020cb98f4a9ba20a3496dd"
+    },
+    {
+      "path": "docs/render/checks/public-responsive.log",
+      "kind": "added",
+      "sha256": "c07f2a037af752d6f30f25fe2abc00b4e39a52542d61a80207c4ba0fffb418f1"
+    },
+    {
+      "path": "docs/render/checks/public-seed.json",
+      "kind": "added",
+      "sha256": "a71e5e5532afcc5f7609af2aae47c6d1f841b625750cf3021e455ebd52b5f445"
+    },
+    {
+      "path": "docs/render/checks/public-seed.log",
+      "kind": "added",
+      "sha256": "75d6897fd0a05bbe4d418dab3a9ace02bc4d903e6747956f5067aa638fd9352b"
+    },
+    {
+      "path": "docs/render/checks/regression-generated/docs/t24/checks/journey/chromium/full-game.png",
+      "kind": "added",
+      "sha256": "12629d76e28c21eda9595427d4696e2d0327ae6f7fc1ba99f2018b89c57898ad"
+    },
+    {
+      "path": "docs/render/checks/regression-generated/docs/t24/checks/journey/chromium/offline-editor.png",
+      "kind": "added",
+      "sha256": "724aeccf2157798c6a1192a06a83e380f79eadbdec9d2e4050da3edf6c6e3d0e"
+    },
+    {
+      "path": "docs/render/checks/service-probe.json",
+      "kind": "added",
+      "sha256": "655ad68c847940c585baea9a1af59b6b2d12f020b245687ab85cfa668888bade"
+    },
+    {
+      "path": "docs/requirements-matrix.md",
+      "kind": "modified",
+      "sha256": "e750f0892c583531941ba144f3f0782722251495c210dfd6f5c2049637ecda47"
+    },
+    {
+      "path": "handoff/RENDER_DEPLOY.md",
+      "kind": "added",
+      "sha256": "8c016c9d624afbf4e30dcbd9fdf2fc4acc424254b0233fd37500c4606e81c82c"
+    },
+    {
+      "path": "package.json",
+      "kind": "modified",
+      "sha256": "22620e93abc117e87a39413748fd6b556f430ebcb64f14e2de787949f4980442"
+    },
+    {
+      "path": "scripts/build-public-site.mjs",
+      "kind": "added",
+      "sha256": "481c655adcb5877de59970ac6b606b70a1f0035f9bbe9f6356d9159517755e42"
+    },
+    {
+      "path": "scripts/finalize-offline.mjs",
+      "kind": "modified",
+      "sha256": "459b77adc82c89f7ed284adc358639c55f3ffd264ee8b1759da4d56ec376ab39"
+    },
+    {
+      "path": "scripts/package-render.py",
+      "kind": "added",
+      "sha256": "23221249e06da7b70246649845519075ee87ce5df9e522c895d3f4b9b41395f4"
+    },
+    {
+      "path": "scripts/render-public-journey.js",
+      "kind": "added",
+      "sha256": "b37aed266b557399047cd55ab5b5abcbb5af44087d15b8ac5a00ed47f656749f"
+    },
+    {
+      "path": "scripts/render-public-responsive.js",
+      "kind": "added",
+      "sha256": "8110e5d6f1de5eb2a85d28d4d0dbae0c2c2cc97b9f8849d568d3afd1aa0d2a19"
+    },
+    {
+      "path": "scripts/render-public-seed.js",
+      "kind": "added",
+      "sha256": "ab6c9cf8013bc27cbd7fd7f7da3950ffd6407910679ef5af0bc3e4b7565b4ca0"
+    },
+    {
+      "path": "scripts/run-render-browser.py",
+      "kind": "added",
+      "sha256": "25ee0382b234cd00eba12ccd8de2cd6a04af00b9c37e71723ba31e5890dedfce"
+    },
+    {
+      "path": "scripts/smoke-render-app.mjs",
+      "kind": "added",
+      "sha256": "30acc33568f4270fdd4c5803a581782d37f7a84d6ae2a43ac6e633205599ced3"
+    },
+    {
+      "path": "scripts/sync-github-pages.py",
+      "kind": "modified",
+      "sha256": "2e469abac659d3fcca1851b577cbb66286c9ae9ca7f5d3132107fd64b5ac5136"
+    },
+    {
+      "path": "src/core/version.ts",
+      "kind": "modified",
+      "sha256": "c84f962d8ce68947a07929d0438dab0fc6288aec1e1e18ca29fa2aa00f46ae47"
+    },
+    {
+      "path": "src/features/learning-hub/LearningHub.tsx",
+      "kind": "modified",
+      "sha256": "c003701253a5dde8247f83a48959b816b7b1b35c60e3869097367f23f381607e"
+    },
+    {
+      "path": "src/features/online-game/OnlineGame.tsx",
+      "kind": "modified",
+      "sha256": "a5e6dbb860230b0a1e718422dcf0c25097495b7900ab96b4fd89c3081a74ba9e"
+    },
+    {
+      "path": "src/features/online-game/hosting.ts",
+      "kind": "modified",
+      "sha256": "91d42f1da6b4a2ac1c2d10097d25b4639cec9a606468509cae9524cc1ac86410"
+    },
+    {
+      "path": "tests/browser/t16.spec.ts",
+      "kind": "modified",
+      "sha256": "f31b961b0543d374386f9797db95e31874af9bac77f3b2fcf4875a8bb61cb0ba"
+    },
+    {
+      "path": "tests/pages/hosting.test.ts",
+      "kind": "modified",
+      "sha256": "f2b97e81bfe1973e8903ead424cb04673b1e6be72ad9744b15c8c3dab951a75e"
+    },
+    {
+      "path": "docs/render/changed-files.json",
+      "kind": "generated-manifest",
+      "selfHashExcluded": true
+    }
+  ],
+  "removed": [
+    "dist/assets/index-DsjWC9p2.js"
+  ]
+}

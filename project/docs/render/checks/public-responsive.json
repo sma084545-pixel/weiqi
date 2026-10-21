@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "RENDER-PUBLIC-RESPONSIVE-JOURNEY",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "passed",
+  "site": "https://sma084545-pixel.github.io/weiqi/",
+  "server": "https://weiqi-rooms.onrender.com",
+  "frontendVersion": "0.20.3",
+  "method": "Actual public site with independent browser contexts; simulated touch/network, not physical devices",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+  "checks": [
+    "Public 360px, 19-route actual geometry, corner touch/click, keyboard, independent timeline, reduced motion and no page overflow",
+    "Public 768px, 13-route actual geometry, corner touch/click, keyboard, independent timeline, reduced motion and no page overflow",
+    "Actual public-client network disabled and restored: no forfeit, same seat and next white move synchronized",
+    "Public 1280px, 9-route actual geometry, corner touch/click, keyboard, independent timeline, reduced motion and no page overflow"
+  ],
+  "pageErrors": [],
+  "humanReviewed": null
+}

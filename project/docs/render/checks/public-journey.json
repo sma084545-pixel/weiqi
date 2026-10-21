@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "RENDER-PUBLIC-PAGES-JOURNEY",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "passed",
+  "site": "https://sma084545-pixel.github.io/weiqi/",
+  "server": "https://weiqi-rooms.onrender.com",
+  "frontendVersion": "0.20.3",
+  "serverVersion": "0.20.2",
+  "protocolVersion": 1,
+  "method": "Actual public GitHub Pages and Render TLS/WSS; independent isolated browser contexts, not two physical devices",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+  "checks": [
+    "Actual original URL upgrade 0.20.2 to 0.20.3 preserves progress and two-move game",
+    "Public-site actual network-disabled reload keeps local game; formal thirty-puzzle catalog available",
+    "Original Pages two isolated players use public WSS, roles alternate, capture/suicide and rapid repeated input behave correctly",
+    "Independent keyboard timeline does not change live room",
+    "Same-session refresh restores seat; both-role undo restores captures and legal branch",
+    "Public synchronized resignation has winner and no invented score",
+    "Public double pass, reversible dead annotations, cancelled agreements and both-role 1:1 draw",
+    "Local copy and actual GameState download; exported data checked independently by runner"
+  ],
+  "webSocketsOpened": 5,
+  "webSocketUrls": [
+    "wss://weiqi-rooms.onrender.com/api/online/ws"
+  ],
+  "pageErrors": [],
+  "exportPath": "docs/render/checks/QA-online-export.json",
+  "humanReviewed": null,
+  "exportValidation": {
+    "status": "passed",
+    "blackTotal": 1,
+    "whiteTotal": 1,
+    "winner": "draw",
+    "seatCredentialsPresent": false,
+    "purpose": "TEST data from isolated QA room, not member feedback"
+  }
+}

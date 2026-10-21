@@ -1,7 +1,7 @@
 ---
 schemaVersion: 1
 id: DOC-REQUIREMENTS-MATRIX
-revision: 20
+revision: 21
 rulesetId: GO-CLUB-AREA-1
 ---
 
@@ -91,3 +91,13 @@ FREE_PLAY：主页伙伴卡/顶部“双人对弈”/教师入口→#/play/free�
 | 缓存更新和版本可核对 | APP_VERSION0.20.1、页脚、version.json、旧缓存保存后更新检查 |
 | Pages不冒充联机后台 | hosting.ts、8边界单元、上线页面恢复入口、外接HTTPS配置说明 |
 | 原规则/内容/本机记录 | 完整check与浏览器回归；规则/schema/题库/材料/锁文件保留验证 |
+
+
+## 原网址公网联机接入扩展（0.20.3-pages.1）
+
+| 要求 | 实际入口/责任 | 验收位置 | 状态 |
+|---|---|---|---|
+| 原GitHub网站创建/加入与同步 | #/play/online，online-game，Render房间服务 | docs/render/checks/public-journey.json | 通过，真实公网双隔离会话 |
+| 多尺寸/触屏/键盘/重连 | Board、在线房间及历史组件 | docs/render/checks/public-responsive.json | 通过 |
+| 已有本机记录与公开构建可复现 | build:pages、T16缓存更新 | public-seed/public-journey、build-pages.log | 通过 |
+| 永久云存档与实体双设备 | 未包含/未实际测试 | docs/render/KNOWN_ISSUES.md | 未测，不宣称完成 |

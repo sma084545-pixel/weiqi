@@ -1,7 +1,7 @@
 ---
 schemaVersion: 1
 id: DOC-README
-revision: 24
+revision: 25
 rulesetId: GO-CLUB-AREA-1
 ---
 

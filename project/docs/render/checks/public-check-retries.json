@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "id": "RENDER-PUBLIC-CHECK-RETRIES",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "attempt1": "failed automated check: waiting for black confirmation to reset after a white annotation",
+  "procedureCorrection": "Wait for white confirmation control to become enabled after black confirms, then edit and wait for both peers to receive the annotation revision before continuing. No production code or rules change.",
+  "finalAttempt": "passed all public journey steps and independent export validation, without changes to production resources",
+  "attempt2": "UI reached confirmed draw and downloaded export; harness failed because CLI VM does not allow dynamic Node import.",
+  "harnessCorrection": "Use Playwright download.saveAs; parse and independently check JSON in runner, no production change."
+}

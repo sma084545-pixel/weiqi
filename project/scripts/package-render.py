@@ -38,7 +38,7 @@ rulesetId: GO-CLUB-AREA-1
 
 网站继续用 https://sma084545-pixel.github.io/weiqi/ 。原网址联机页已接入 https://weiqi-rooms.onrender.com，选择“联机对弈”，一人创建、另一人输入房间码；无需账号。首次唤醒可能约一分钟，稍候重连。免费临时房间可能在休眠、重启或更新后清空，请保存本机副本或导出。详见docs/render/DEPLOYMENT.md。
 
-本软件包已构建，含dist和dist-server；Node22.22.2+或24.15+时，从解压目录运行：
+本软件包已构建，含dist和dist-server；Node22.22.2起的22.x、24.15起的24.x或26+时，从解压目录运行：
 
     node dist-server/server.mjs
 

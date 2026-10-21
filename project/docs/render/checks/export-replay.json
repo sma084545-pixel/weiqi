@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "RENDER-PUBLIC-EXPORT-REPLAY",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "passed",
+  "method": "Actual public-room export replayed through built standalone rules; independent one-stone-each/mixed-empty-region 1:1 expectation",
+  "moves": 5,
+  "blackTotal": 1,
+  "whiteTotal": 1,
+  "seatCredentialsPresent": false,
+  "recordPurpose": "TEST isolated browser data; not real member record"
+}
