@@ -1,11 +1,15 @@
 ---
 schemaVersion: 1
 id: DOC-CHANGELOG
-revision: 20
+revision: 21
 rulesetId: GO-CLUB-AREA-1
 ---
 
 # 变更日志
+
+## 0.20.3-pages.1 · 2026-10-21
+
+原GitHub网站接入实际Render房间后台；新增可复现的公开构建配置，仅在原网站来源使用公网服务，本地软件保留同源服务；界面说明免费临时房间和首次唤醒。提升程序/离线缓存版本，保持全部规则、schema、正式题revision、材料与依赖锁。后台0.20.2兼容协议1，不强制重启服务。实际公网建房同步与发布证据见handoff/RENDER_DEPLOY.md和docs/render/。
 
 
 ## 0.20.2-pages.1 · 2026-10-21

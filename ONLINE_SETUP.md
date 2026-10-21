@@ -1,33 +1,28 @@
 ---
 schemaVersion: 1
 id: GITHUB-PAGES-ONLINE-SETUP
-revision: 1
+revision: 2
 rulesetId: GO-CLUB-AREA-1
 ---
 
-# 原网址更新与联机接入
+# 原网址已接入联机房间服务
 
-正式入口保持 https://sma084545-pixel.github.io/weiqi/ 。当前程序0.20.2，包含成员反馈、完整教学工具、5/9/13/19路自由双人、真正悔棋和棋局滑动条。静态页面可以运行学习、同屏对弈、题库、创作、导入导出和已准备的本机离线功能；学习进度、草稿、反馈依旧留在本机。
+正式网址保持 https://sma084545-pixel.github.io/weiqi/ ，联机入口 #/play/online，前端0.20.3。后台实际地址 https://weiqi-rooms.onrender.com；默认9路，可选5/13/19路。一人建房、另一人填8位房间码，无需账号或真实姓名。邀请网址保留/weiqi路径。
 
-## 联机状态
+两人各自操作执色，合法落子后自动同步；可独立回看滑动条、双方确认悔棋。停两手后仍须双方确认死子与中立点，才按项目面积规则计算最终胜负；不自动判断任意局面的死活。认输不编造面积分。
 
-GitHub Pages只提供静态网页，不运行Node房间服务。本次没有已有服务器，未购买或另行创建公网托管；网站明确显示“联机服务未接入”，提供同屏对弈入口，不把部署前端称为在线房间已可用。已交付的房间代码、开局/提子/悔棋/终局流程及可部署服务保留在源码和软件包。
+## 首次连接和临时保存
 
-后续有服务器时，可以保持原网址：
+免费实例可能休眠，首次连接可能约一分钟，稍候点“重新连接”。房间为临时保存，后台休眠、重启或更新后可能需要重新开房；请在对弈中“保存本机副本”或导出棋局。短暂掉网不判负，同一会话可恢复仍存在的房间；关闭浏览器会话或后台清空房间不能保证原座位续局。服务器状态不等于长期存档。
 
-1. 将dist和dist-server部署到支持持续Node进程、持久目录和WebSocket的单实例服务器，使用HTTPS。私有房间文件放在不公开的持久目录；不要上传runtime-data或座位凭据。
-2. 服务器设置PUBLIC_ORIGIN=https://sma084545-pixel.github.io（仅源，不含/weiqi），设置PUBLIC_APP_URL=https://sma084545-pixel.github.io/weiqi/#/play/online，让邀请链接返回原网站。配置HTTPS反向代理转发/api/online/ws，保留Origin/Host和WebSocket升级。
-3. 构建前端时设置公开配置VITE_ONLINE_SERVER_URL为实际HTTPS房间服务器的源，例如https://rooms.example.org（必须替换为真实地址；不填密码、令牌、路径或查询参数），先提升package.json和APP_VERSION的补丁版本以触发安全的离线更新，再执行pnpm build并同步dist到GitHub Pages根目录。这个变量会公开在前端，不能放秘密。不要将localhost或仅本地可达的地址当作公网服务器。
-4. 两个独立设备打开原网站，一人创建、另一人输入房间码；检验断线恢复、双方悔棋与终局确认。公开HTTPS前端不连接不安全HTTP后台。Origin校验必须与前端源相符，不需要放宽为任意Origin。
+只有房间昵称、棋局和连接状态发给房间服务；本机学习进度、教师草稿和成员反馈不上传。离线时房间不能同步，但已准备的本机学习工具与同屏对弈仍可使用。
 
-VITE_ONLINE_SERVER_URL不设置时，本地Node版本仍使用同源服务；在github.io上则如实显示服务尚未接入，不发起不存在的房间连接。房间需要服务器连接；静态离线准备不意味着联机可以断网继续同步。
+## 旧版更新
 
-## 已访问旧版时
+先保存当前内容，等待出现“新版本已准备好”，点击“保存已提交内容并应用”；页脚和version.json可核对0.20.3。不要清站点数据。更新后重新确认离线准备状态。
 
-旧网址可能缓存0.16.0。联网打开后等待出现“新版本已准备好”，先保存当前工作，再点“保存已提交内容并应用”；不要清除浏览器数据来更新。页脚和“教师视图→离线与本机数据”可查看版本0.20.2；也可读取相对地址version.json。更新后重新确认“已可离线”。保持同一原网址可沿用本机数据；不默认上传，也不删除草稿/反馈。
+## 维护和验证
 
-## 源码与完整工具包
+源码在仓库project/；公开构建运行corepack pnpm build:pages，读取deploy/github-pages.json；普通pnpm build保留本地同源连接。PUBLIC_ORIGIN严格为https://sma084545-pixel.github.io，PUBLIC_APP_URL保留/weiqi/#/play/online。当前后台0.20.2和前端0.20.3使用协议1、规则GO-CLUB-AREA-1，规则/schema/题库/锁文件未变；不为前端接入强制重启后台。
 
-GitHub仓库project/保存当前可构建源码和材料；历史source/0.16.0分卷仅作溯源。完整版本化归档和SHA256见同仓库的Release v0.20.2-pages.1。后续发布时同步源文件、生产构建、version.json、离线清单、交接和校验记录，避免只改网页或只改本地。
-
-参考：GitHub官方Pages说明 https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages 。没有声称已完成真实双设备跨网、TLS配置、学校审批或真人教学验证。
+完整说明、验收与已知限制见project/docs/render/及handoff/RENDER_DEPLOY.md；完整归档在Release v0.20.3-pages.1。公网验证与本地测试、真人/实体设备验证分开记录。免费托管边界参考https://render.com/docs/free；配置不是永久保存承诺。

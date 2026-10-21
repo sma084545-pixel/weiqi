@@ -70,7 +70,7 @@ function ProgressSummary({progress}:{progress:LearningProgress}){
 }
 
 function HomePage({progress,onClear,confirming,setConfirming}:{progress:LearningProgress;onClear:()=>void;confirming:boolean;setConfirming:(value:boolean)=>void}){
-  const onlineAvailable=Boolean(onlineConnectionConfig(location.href,import.meta.env.VITE_ONLINE_SERVER_URL).endpoint);
+  const onlineAvailable=Boolean(onlineConnectionConfig(location.href,import.meta.env.VITE_ONLINE_SERVER_URL,import.meta.env.VITE_ONLINE_SITE_ORIGIN).endpoint);
   return <>
     <section className="hub-hero">
       <div><h1>一起落子，慢慢思考</h1><p>从认识棋盘开始，或按自己的经验直接浏览后面的主题。路线是建议，不是门槛。</p><NavLink className="text-link" route={ROUTE_ROUTE}>查看六阶段学习路线</NavLink></div>

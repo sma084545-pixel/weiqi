@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "RENDER-PUBLIC-SERVICE-PROBE",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "checkedAt": "2026-10-21T13:29:23.357Z",
+  "server": "https://weiqi-rooms.onrender.com",
+  "health": {
+    "ready": true,
+    "protocolVersion": 1,
+    "programVersion": "0.20.2",
+    "rulesetId": "GO-CLUB-AREA-1"
+  },
+  "hello": {
+    "protocolVersion": 1,
+    "type": "hello",
+    "version": "0.20.2",
+    "rulesetId": "GO-CLUB-AREA-1",
+    "shareUrl": "https://sma084545-pixel.github.io/weiqi/#/play/online"
+  },
+  "unrelatedOriginRejected": 403,
+  "renderDashboard": "not-accessed; saved browser policy denies access",
+  "physicalDevicesTested": false,
+  "status": "passed"
+}

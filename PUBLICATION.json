@@ -1,22 +1,24 @@
 {
   "schemaVersion": 1,
   "id": "GITHUB-PAGES-PUBLICATION",
-  "revision": 4,
+  "revision": 5,
   "rulesetId": "GO-CLUB-AREA-1",
-  "resultVersion": "0.20.2-pages.1",
-  "programVersion": "0.20.2",
+  "resultVersion": "0.20.3-pages.1",
+  "programVersion": "0.20.3",
   "siteUrl": "https://sma084545-pixel.github.io/weiqi/",
   "sourceDirectory": "project/",
   "formalPuzzles": 30,
   "terminalFixtures": 6,
   "microLessonPrimarySlides": 25,
-  "onlineServerConfigured": false,
-  "onlineStatus": "Room server not deployed; setup explanation and same-screen play available.",
+  "onlineServerConfigured": true,
+  "onlineServerOrigin": "https://weiqi-rooms.onrender.com",
+  "onlineRoomsEphemeral": true,
+  "onlineStatus": "Public room server configured; actual journey evidence in docs/render.",
   "files": [
     {
       "path": "ONLINE_SETUP.md",
-      "bytes": 3429,
-      "sha256": "80dd746e8eb62c9649b4a41d129dd23cadd83cacd2f95e6e26928fc599f6de23"
+      "bytes": 2309,
+      "sha256": "d0fa44edfe7965446c1e2be01172695130d3100e903cd01cd63c1682bf608a02"
     },
     {
       "path": "app.webmanifest",
@@ -29,9 +31,9 @@
       "sha256": "51295d933c6192ff468e67f24321d55e105f7ff64b60b6bc0c2495ddd48fd99a"
     },
     {
-      "path": "assets/index-DsjWC9p2.js",
-      "bytes": 1002210,
-      "sha256": "09b1a99bb1acffe6ce504041c1c883909a3371560ff260421cca80784f00df4a"
+      "path": "assets/index-DP2hyDxq.js",
+      "bytes": 1003066,
+      "sha256": "9b48594aa77768f6c923d508e4b10ed06ee0b3082b4b7ebca00872cd2c21b5f6"
     },
     {
       "path": "content/formal-content-v1.json",
@@ -46,7 +48,7 @@
     {
       "path": "index.html",
       "bytes": 640,
-      "sha256": "d2add27ad2014d98d9701456e69247af711f933a9f4ebdb692fe599db85fe770"
+      "sha256": "f29530f10476bacf6f020c30217d47930d82c9b0143cbb1fabb0b042e12f41cf"
     },
     {
       "path": "materials/t13/territory-counting-card.md",
@@ -61,7 +63,7 @@
     {
       "path": "offline-assets.json",
       "bytes": 411,
-      "sha256": "9571a8a3b0092b0469572591e9ae7e5a41f749821bd92356f0e0f54c235aa768"
+      "sha256": "49689baa2331deb03b1345c2d5ba712364676bebfb581c25443804529ce6dc14"
     },
     {
       "path": "offline.html",
@@ -71,13 +73,13 @@
     {
       "path": "sw.js",
       "bytes": 3694,
-      "sha256": "1d30c5df18ded54bbabb7bcf705f571042aacd19d105def28a9f26cbb8dfce34"
+      "sha256": "bb002d21696a680d55f1f03625f17e00e7e9975b7757312c7469e9e256b756a5"
     },
     {
       "path": "version.json",
-      "bytes": 215,
-      "sha256": "45bf252af06b02ba06e54bf0bd0398e1e35918282172afd9b107a995357b048e"
+      "bytes": 365,
+      "sha256": "c4b5e0b98db390b8f75732eb76f8ea5640ebb47ad41931dfa8ee3c5bd9c710e0"
     }
   ],
-  "sourceManifestSha256": "9f1fdb0c41a8c463acbca177839c1ec26e989991a2e1161efc5a78de13bfb2d8"
+  "sourceManifestSha256": "654398906cf933996ee6b80511dee23d00f9f0f3a057f4f322c0d54393c37452"
 }

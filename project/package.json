@@ -1,6 +1,6 @@
 {
   "name": "go-club",
-  "version": "0.20.2",
+  "version": "0.20.3",
   "private": true,
   "type": "module",
   "engines": {
@@ -50,7 +50,8 @@
     "dev:online": "node --import tsx server/index.ts",
     "test:online": "vitest run tests/online",
     "test:online-browser": "playwright test --config=playwright.online.config.ts --workers=1",
-    "test:pages": "vitest run tests/pages"
+    "test:pages": "vitest run tests/pages",
+    "build:pages": "node scripts/build-public-site.mjs"
   },
   "dependencies": {
     "ajv": "8.20.0",

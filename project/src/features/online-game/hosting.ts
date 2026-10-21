@@ -1,9 +1,17 @@
 /** Resolve deployment capabilities without starting a network request. */
 export interface OnlineHosting {endpoint:string|null;message:string|null}
-export function onlineConnectionConfig(pageAddress:string,serverOrigin?:string):OnlineHosting {
+export function onlineConnectionConfig(pageAddress:string,serverOrigin?:string,serverForOrigin?:string):OnlineHosting {
   let page:URL;try{page=new URL(pageAddress);}catch{return {endpoint:null,message:'网站地址无法识别，请从正常的网站或本地服务打开。'};}
   if(!['http:','https:'].includes(page.protocol))return {endpoint:null,message:'联机需要通过网站或本地服务打开，直接打开文件不能建立房间。'};
-  const configured=serverOrigin?.trim();
+  let configured=serverOrigin?.trim();
+  if(configured&&serverForOrigin){
+    try{
+      const scope=new URL(serverForOrigin);
+      if(!['http:','https:'].includes(scope.protocol)||scope.username||scope.password||scope.pathname!=='/'||scope.search||scope.hash)throw Error('scope');
+      // The downloadable app retains its own room server; only the published site uses the public backend.
+      if(page.origin!==scope.origin)configured=undefined;
+    }catch{return {endpoint:null,message:'联机服务的网站来源配置不正确，请联系网站维护者。'};}
+  }
   if(configured){
     try{
       const service=new URL(configured);

@@ -1,59 +1,34 @@
 ---
 schemaVersion: 1
-id: RENDER-ONLINE-DEPLOYMENT-HANDOFF
+id: RENDER-PUBLIC-DEPLOYMENT
 revision: 1
 rulesetId: GO-CLUB-AREA-1
-baseVersion: 0.20.2-pages.1
-status: configuration-ready-cloud-deployment-pending
 ---
 
-# 接通原网址的联机服务
+# 原网站联机部署与维护
 
-原网址保持 https://sma084545-pixel.github.io/weiqi/ 。目前房间后台尚未创建或验证，网页仍如实显示“服务未接入”；本文件和 render.yaml 只是已校验的部署配置，不代表异地对弈已经上线。
+原入口 https://sma084545-pixel.github.io/weiqi/#/play/online；房间服务 https://weiqi-rooms.onrender.com；公共 WSS 路径 /api/online/ws。无需注册账号或真实姓名，一人创建房间并发出房间码，另一人从原入口加入。
 
-[在 Render 中查看并部署此配置](https://render.com/deploy?repo=https%3A%2F%2Fgithub.com%2Fsma084545-pixel%2Fweiqi)
+2026-10-21 实测服务健康和 WSS 握手，programVersion=0.20.2、protocolVersion=1、GO-CLUB-AREA-1，邀请链接返回原 /weiqi/ 路径；无关来源连接返回403。前端0.20.3仅增加公开接入配置与临时保存提示，后端规则和消息模型未变，可以与已运行0.20.2服务配合。云端实际构建提交、账户计费及地区未从后台读取：浏览器站点权限仍阻止助手访问 dashboard.render.com，不声称已检查这些设置。
 
-## 用户需要完成的一步
+## 构建与原网址发布
 
-打开上面的 Render 部署入口。它会读取本仓库根的 render.yaml，展示待创建的 weiqi-rooms 服务。核对为一个 Free Web Service、Singapore、根目录 project，不附加磁盘、数据库或付费计划；确认后由你完成部署。若已存在同用途服务，先使用现有服务，不重复创建。若页面要求购买或添加付款方式，先停止，不必为本配置购买服务。
+源码 deploy/github-pages.json 只含公开配置，不含秘密。运行 corepack pnpm install --frozen-lockfile，再 corepack pnpm build:pages；脚本读取配置并设置 VITE_ONLINE_SERVER_URL、VITE_ONLINE_SITE_ORIGIN、VITE_ONLINE_EPHEMERAL_ROOMS。只有配置中的网站来源使用 Render，本地软件继续连自己的 Node 服务。普通 pnpm build 仍为无公网注入的本地构建；请勿手工改已生成 JS 或只更换版本号。公网配置会进入前端，不能放 API 密钥。
 
-等待服务显示 Live，将 Render 实际给出的 https://…onrender.com 地址发回当前对话（只是公开服务地址，不要发密码或令牌）。助手即可继续提升程序补丁版本、设置公开的 VITE_ONLINE_SERVER_URL、构建并更新原 GitHub Pages 网站，再从原网址的两个独立浏览器会话实际验证建房、加入和同步。
+scripts/sync-github-pages.py 将公开构建放现有仓库根、源码和材料放 project/，保留旧哈希资源供旧页面完成保存后更新。渲染配置同步保存在根 render.yaml 和工程 deploy/render.yaml。规则、schema、正式题、材料与锁文件保持基线。更新说明见 ONLINE_SETUP.md，实际验收见 ACCEPTANCE.md；不由路由存在推断联机成功。
 
-浏览器当前仍以保存的权限策略拒绝助手读取 dashboard.render.com，所以创建服务必须先由用户在已登录页面操作。没有通过其他浏览器、底层调试、Render API 或凭据读取绕过访问限制。
+## Render 配置
 
-## 配置已经包含
+单个 Node Web Service；源码根 project；构建 corepack pnpm install --frozen-lockfile --prod=false && corepack pnpm build；启动 node dist-server/server.mjs；健康检查 /api/online/health。NODE_VERSION=22.23.3，HOST=0.0.0.0，PORT由Render提供；PUBLIC_ORIGIN=https://sma084545-pixel.github.io（不带路径），PUBLIC_APP_URL=https://sma084545-pixel.github.io/weiqi/#/play/online。服务器私有文件 GO_CLUB_DATA_FILE=/tmp/go-club/rooms.json 不在静态目录，不能公开或提交Git。所有共享数据只由一个服务进程处理，不启多实例。
 
-- 仓库 sma084545-pixel/weiqi，分支 main，源码根目录 project；仓库根是 GitHub Pages 成品，不能误作 Node 源码根。
-- Node 22.23.3；项目锁定 pnpm 11.19.0，通过 Corepack 使用。
-- 构建：corepack pnpm install --frozen-lockfile --prod=false && corepack pnpm build
-- 启动：node dist-server/server.mjs
-- 健康检查：/api/online/health；PORT 自动读取 Render 提供值，监听 0.0.0.0。
-- PUBLIC_ORIGIN=https://sma084545-pixel.github.io；PUBLIC_APP_URL=https://sma084545-pixel.github.io/weiqi/#/play/online。邀请链接保留原网址与路径，Origin 不放宽为任意来源。
-- 单实例、关闭自动部署，避免后续普通提交打断现有房间。更新后台时先让双方保存当前棋局。
-- GO_CLUB_DATA_FILE=/tmp/go-club/rooms.json，仅保存房间所需数据，学习进度、教师草稿、成员反馈不上传到后台。
+自动部署在已交付 Blueprint 中关闭。以后修改服务器时，让双方先保存本机副本/导出，再由维护者在Render手动部署；不要在下棋中途更新实例。当前上线后台0.20.2与前端0.20.3协议兼容，不为仅接入前端强制重启正在运行的后台。没有修改计费、添加数据库或付费磁盘。
 
-## 免费服务边界
+## 临时房间与故障恢复
 
-Render 官方说明：免费服务无入站流量 15 分钟后休眠，唤醒约需一分钟；休眠、重启、重部署都会丢失临时文件。这个免费配置没有持久磁盘，房间属于临时房间，不能保证重启后续局。请使用棋局“保存本机副本/导出”，后台重启后可重新开房；本机学习资料和反馈仍在原浏览器。工作区免费额度、现有计费/用量设置以你的 Render 页面为准，当前未读取或修改这些设置。
+按免费实例部署：无入站流量15分钟后可能休眠，唤醒约一分钟；休眠、重启、重新部署会丢失临时文件。不要把本地原子写盘测试当作Render持久化证明。界面明确提醒临时房间、保存本机副本及JSON导出；房间失效后重新建房，本地已保存棋局不随房间清空。页面短暂掉网且服务房间仍在时，保留当前标签页并联网重连，可用本会话座位恢复；关闭浏览器会话可能失去匿名座位。没有账号或跨设备身份恢复。
 
-## 验证状态
+首次连接未就绪：等待实例唤醒后点“重新连接”。网络离线：本机课程和同屏对弈可用，房间不能断网同步。原网站仍显示旧版：先保存正在编辑/对弈的内容，等待“新版本已准备好”，点击“保存已提交内容并应用”；页脚应为0.20.3，不清站点数据。服务不可用或房间丢失：导出本页保留的棋局，返回大厅重开，也可先使用同屏对弈。
 
-通过：以 0.20.2-pages.1 完整归档独立解压，干净锁文件安装；8 项 Node HTTP/WebSocket 服务测试、8 项前端接入配置测试；生产构建；Render 官方 JSON Schema 结构校验和 Free/单实例/来源/路径等精确断言。官方通用 format 校验未启用，已知 HTTPS 地址另作精确核对。
+若希望长期跨重启保留房间，需另行明确选择持久存储方案；本次没有购买。实际双实体设备、独立网络和长时间运维仍需现场检验。
 
-未执行：Render 云端构建、实际 HTTPS 服务健康、公开 WSS 连接、原网站两浏览器建房同步、物理双设备异地网络、休眠后行为。不能把本地测试通过等同于云端部署通过。
-
-## 后续完成条件
-
-取得真实后台地址后，确保 PUBLIC_ORIGIN 和 PUBLIC_APP_URL 仍为上述原网址；前端使用实际后台 HTTPS 源构建。程序版本与离线清单同步提升，原用户保存后应用更新，无需清除站点数据；Render 后台手动部署同一版本。用两个独立浏览器会话从原 GitHub Pages 路径验证角色/轮次、提子与非法动作、双方悔棋、重新连接、停手和双方终局确认。然后生成最新归档、SHA-256 和最终交接，更新 LATEST；现阶段不把“已准备配置”标为完成部署。
-
-## 来源
-
-访问日期 2026-10-21：
-
-- https://render.com/docs/deploy-to-render
-- https://render.com/docs/blueprint-spec
-- https://render.com/schema/render.yaml.json
-- https://render.com/docs/node-version
-- https://render.com/docs/deploys
-- https://render.com/docs/websocket
-- https://render.com/docs/free
+来源（2026-10-21访问）：https://render.com/docs/free 、https://render.com/docs/websocket 、https://render.com/docs/blueprint-spec 、https://vite.dev/guide/env-and-mode 。

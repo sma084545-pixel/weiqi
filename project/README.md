@@ -105,3 +105,10 @@ WebKit可另执行T24_ONLINE_ONLY=1 pnpm exec playwright test tests/browser/t24.
 开发DEMOs/TEMPLATE/TEST数据有标签，不计入30题。没有真实成员反馈、活动成效或CAS工时；实际反馈从空表开始。打印制造、真人教师、课堂、学校CAS认定未发生或未测，不能用自动验证代替。程序不公开部署，不发送材料。
 
 本次专项验证：`pnpm test:history`、`pnpm test:history-browser`。完整检查仍为 `pnpm check` 和 `pnpm test:browser`。
+
+
+## 原网址的公网联机接入（0.20.3）
+
+原网站 https://sma084545-pixel.github.io/weiqi/ 的联机入口 #/play/online 使用 https://weiqi-rooms.onrender.com。部署公开前端用 `corepack pnpm build:pages`，它读取非秘密配置 deploy/github-pages.json；普通 `pnpm build` 不注入公网配置。公开构建只在配置中的网站来源使用 Render，本机软件仍使用自己的 Node 服务；VITE_ 变量不得放密钥。
+
+Render 当前运行 0.20.2、protocolVersion=1，前端 0.20.3 只调整接入与提示，规则、schema、协议兼容。后台自动部署关闭，避免普通提交打断房间；后续维护时先保存棋局再在 Render 手动更新。免费实例临时文件不持久，休眠、重启、重新部署可能需要重新开房，界面已提示保存本机副本/导出。首次唤醒可能约一分钟，稍候重连。无账号、无默认学习数据上传。实际公网验证与剩余限制见 docs/render/ACCEPTANCE.md、handoff/RENDER_DEPLOY.md。

@@ -104,3 +104,8 @@ MDN [input type=range](https://developer.mozilla.org/en-US/docs/Web/HTML/Referen
 ## GITHUB_PAGES_SYNC · 2026-10-21
 
 GitHub官方[Pages说明](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages)和[限制](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits)：核对静态托管、项目路径和容量。官方[GitHub CLI登录说明](https://cli.github.com/manual/gh_auth_login)：恢复已登录的原凭据助手；CLI2.98.0从官方cli/cli发布下载并比对官方SHA256，未输出令牌或申请新权限。modern-web-guidance实际检索并读取local-network-access/accessibility，指导避免静态页自动访问用户本地网络及错误恢复说明。原BGA教学来源边界保持；没有新增正式题或更改赛规。
+
+
+## Render公开联机接入 · 2026-10-21
+
+官方文档实际核查：Render https://render.com/docs/free（免费实例休眠和临时磁盘）、https://render.com/docs/websocket（WSS与断线）、https://render.com/docs/blueprint-spec（配置）；Vite https://vite.dev/guide/env-and-mode（公开构建变量）。这些仅支持部署技术选择，不是课堂效果、人类审核或持久存储保证。现代Web技能检索得到local-network-access指引；本次公网HTTPS/WSS不引入本地网络权限或放宽Origin。
