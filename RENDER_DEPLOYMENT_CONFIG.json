@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "RENDER-DEPLOYMENT-CONFIG-PUBLICATION",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "baseVersion": "0.20.2-pages.1",
+  "programVersion": "0.20.2",
+  "status": "configuration-ready-cloud-deployment-pending",
+  "website": "https://sma084545-pixel.github.io/weiqi/",
+  "deployUrl": "https://render.com/deploy?repo=https%3A%2F%2Fgithub.com%2Fsma084545-pixel%2Fweiqi",
+  "sourceVersionUnchanged": true,
+  "runtimeAssetsUnchanged": true,
+  "checks": {
+    "officialBlueprintSchema": "passed-local",
+    "onlineServiceTests": "8 passed-local",
+    "frontendHostingTests": "8 passed-local",
+    "productionBuild": "passed-local",
+    "cloudDeployment": "not-run-browser-access-blocked",
+    "originalPagesRemoteRooms": "not-run-missing-public-service-origin"
+  },
+  "files": [
+    {
+      "path": "render.yaml",
+      "sha256": "d514f52aab49db45b564e02c4cea440753602bd43c663ea75102fadf2d8da8ad",
+      "bytes": 1143
+    },
+    {
+      "path": "RENDER_SETUP.md",
+      "sha256": "0f461fb99289927427c0c0ccb737552f8152eeca72e88e476700c5052f5eb672",
+      "bytes": 4573
+    }
+  ]
+}
