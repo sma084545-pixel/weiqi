@@ -1,0 +1,724 @@
+{
+  "schemaVersion": 1,
+  "id": "PAGES-CHANGE-MANIFEST",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "baseVersion": "0.20.0-online.1",
+  "resultVersion": "0.20.2-pages.1",
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "kind": "modified",
+      "sha256": "54e5d85736257653f021b598e446b6de6567565f866e3a0fff9d67e2b1514efb"
+    },
+    {
+      "path": "README.md",
+      "kind": "modified",
+      "sha256": "a4d837c2baeb92c42a32d0bd202e9c1f643df42b019f1ad01455ae4a2367cc18"
+    },
+    {
+      "path": "SOURCES.md",
+      "kind": "modified",
+      "sha256": "5d5cf1ff971069dbbd204918ea4de7cd08b7b19065080240ea4155c0e3d82da6"
+    },
+    {
+      "path": "dist/ONLINE_SETUP.md",
+      "kind": "added",
+      "sha256": "80dd746e8eb62c9649b4a41d129dd23cadd83cacd2f95e6e26928fc599f6de23"
+    },
+    {
+      "path": "dist/assets/index-D5QJxBHW.css",
+      "kind": "added",
+      "sha256": "51295d933c6192ff468e67f24321d55e105f7ff64b60b6bc0c2495ddd48fd99a"
+    },
+    {
+      "path": "dist/assets/index-DsjWC9p2.js",
+      "kind": "added",
+      "sha256": "09b1a99bb1acffe6ce504041c1c883909a3371560ff260421cca80784f00df4a"
+    },
+    {
+      "path": "dist/favicon.svg",
+      "kind": "added",
+      "sha256": "ea785687252e962c7a71ac3f537a091354ac3e9c7b363dc4099aeb0075aff2b3"
+    },
+    {
+      "path": "dist/index.html",
+      "kind": "modified",
+      "sha256": "d2add27ad2014d98d9701456e69247af711f933a9f4ebdb692fe599db85fe770"
+    },
+    {
+      "path": "dist/offline-assets.json",
+      "kind": "modified",
+      "sha256": "9571a8a3b0092b0469572591e9ae7e5a41f749821bd92356f0e0f54c235aa768"
+    },
+    {
+      "path": "dist/sw.js",
+      "kind": "modified",
+      "sha256": "1d30c5df18ded54bbabb7bcf705f571042aacd19d105def28a9f26cbb8dfce34"
+    },
+    {
+      "path": "dist/version.json",
+      "kind": "added",
+      "sha256": "45bf252af06b02ba06e54bf0bd0398e1e35918282172afd9b107a995357b048e"
+    },
+    {
+      "path": "dist-engine/favicon.svg",
+      "kind": "added",
+      "sha256": "ea785687252e962c7a71ac3f537a091354ac3e9c7b363dc4099aeb0075aff2b3"
+    },
+    {
+      "path": "dist-engine/package.json",
+      "kind": "modified",
+      "sha256": "de54647836e7c4865b8e9f83ad1e8d61b0c4cca26ec73334ec480bf29597237d"
+    },
+    {
+      "path": "dist-engine/types/version.d.ts",
+      "kind": "modified",
+      "sha256": "29264010560eecdedee337c9bb1cbef8912e17cffd95274c8133f80c142de285"
+    },
+    {
+      "path": "dist-server/favicon.svg",
+      "kind": "added",
+      "sha256": "ea785687252e962c7a71ac3f537a091354ac3e9c7b363dc4099aeb0075aff2b3"
+    },
+    {
+      "path": "dist-server/server.mjs",
+      "kind": "modified",
+      "sha256": "d812177da449a70f55a609424610879b20caa35785f409fc4d79e04cb8ac8b23"
+    },
+    {
+      "path": "docs/INTERFACES.md",
+      "kind": "modified",
+      "sha256": "af3cee2d39ccb85eb78473847bc7204e3f92ceb8ec88925aa414fcfa7de10972"
+    },
+    {
+      "path": "docs/PROJECT_CONTRACT.md",
+      "kind": "modified",
+      "sha256": "3694bc336af79c5a281d53800952e0cc24bb4d1be2e5187ec73004e06d4683d8"
+    },
+    {
+      "path": "docs/github-pages/ACCEPTANCE.md",
+      "kind": "added",
+      "sha256": "5601451e863145f771427091ab6f924494c0be12bb29c48e16e98e989e9814e6"
+    },
+    {
+      "path": "docs/github-pages/BASE-MANIFEST.json",
+      "kind": "added",
+      "sha256": "e9f9a05ed6c30262611ab88cf737d82f4f1636e350224027efac6dbfa3f08763"
+    },
+    {
+      "path": "docs/github-pages/BASE-RELEASE.json",
+      "kind": "added",
+      "sha256": "4acd28dcb3d413f9691348d0c458ea0c7d0d9698fd4fc38116f568cdab598939"
+    },
+    {
+      "path": "docs/github-pages/ONLINE_SETUP.md",
+      "kind": "added",
+      "sha256": "80dd746e8eb62c9649b4a41d129dd23cadd83cacd2f95e6e26928fc599f6de23"
+    },
+    {
+      "path": "docs/github-pages/checks/browser-all-0.20.1.log",
+      "kind": "added",
+      "sha256": "41110be4bd26d0438c49847ae6f4a55b32d4dc3d0311642acb834bf6fbb1e3db"
+    },
+    {
+      "path": "docs/github-pages/checks/browser-all.log",
+      "kind": "added",
+      "sha256": "0f0a73438c42059279b662ddbf9ae605360074716d036052e037859f9d1c1454"
+    },
+    {
+      "path": "docs/github-pages/checks/build-final.log",
+      "kind": "added",
+      "sha256": "2b8b6f4ee8ce133e6792296042714f79e1c02a541dd90f45a4bd75decee762f3"
+    },
+    {
+      "path": "docs/github-pages/checks/check-0.20.1.log",
+      "kind": "added",
+      "sha256": "c056017ebbbeb9c21f36fe11ce3fd39e248f85b83e89d88331fa0f03a99b6c3e"
+    },
+    {
+      "path": "docs/github-pages/checks/check.log",
+      "kind": "added",
+      "sha256": "f9ac305b164c9efbe04037ac21a02d4336799ba9c4434dddac968206ed5b0cb4"
+    },
+    {
+      "path": "docs/github-pages/checks/historical-evidence.json",
+      "kind": "added",
+      "sha256": "8f986d6c4610d030a877ec08e51a466a15a39e1670e03995c74b444a9f4488ff"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/docs/t24/checks/journey/chromium/full-game.png",
+      "kind": "added",
+      "sha256": "0b2fe00a34902d35b8bd22a730022332b5b0ab7871a4a8d14f5f2dfbcb0692b3"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/docs/t24/checks/journey/chromium/offline-editor.png",
+      "kind": "added",
+      "sha256": "5e8bff76b9e318f14aeb5045a7419319342374f9740ba36e18d65f7b5fe8f57e"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/free-play/1280-board.png",
+      "kind": "added",
+      "sha256": "c3e7f73b9360fed6a8461e3216d0c2a30b3051c7347c54d5d868a1407177236f"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/free-play/360-board.png",
+      "kind": "added",
+      "sha256": "44cb3a7f03d29925e4b67bd5e7d334a598c1a9e101942e79657569fa2c8414ab"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/free-play/360-touch-19-offline.png",
+      "kind": "added",
+      "sha256": "5f5457e74c8ed13479bb31836976712b9d1a90a6b59feff94dad4200b3611aba"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/free-play/768-board.png",
+      "kind": "added",
+      "sha256": "3e9404bf9451aa574646a016e6ad14e8a93e523900d4c3b39cbfe5e7f9592c50"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/free-play/final-score.png",
+      "kind": "added",
+      "sha256": "d629d0f3508e0dabb26f536afd8051506aebcf9c6dde91b36ccbe33533c608a4"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/history/1280-history.png",
+      "kind": "added",
+      "sha256": "b1801c107c4118ce69d366cda5dc9032db7118ecf53e7f38f02d30d342253ec2"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/history/360-history.png",
+      "kind": "added",
+      "sha256": "c42509442bacda9d202545c7ea3e37baaabb5a355b6a8b15ff5af475e41c6f85"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/history/360-touch-19-offline.png",
+      "kind": "added",
+      "sha256": "09aefe23962289476a2787e17603bc18c8aed80fb8477621560627a93a85edba"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/history/768-history.png",
+      "kind": "added",
+      "sha256": "024835d08c16e982f15c08cd63c0fdde2f3e91f646ad1edf5e98e99a82fa5cc4"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/online/1280-live-room.png",
+      "kind": "added",
+      "sha256": "1567fd87d037effdab18c42804f2926668ce4c66af96acb966118f38c46e0c89"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/online/1280-room.png",
+      "kind": "added",
+      "sha256": "a49dfe5055ce6d745fdc1af04b43c9fefcebebb4784175c9b1a9b47a7c3e41c3"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/online/360-room.png",
+      "kind": "added",
+      "sha256": "18c3b204d4bf04d33eb8f1c753e453f31ae982bcb30cd1fee2eed61f359f4a68"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/online/768-room.png",
+      "kind": "added",
+      "sha256": "955f7d034a4e205b25f52367e36aa7dab2ea41909824ff34e5749ea7b55de1f9"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t02/1280-markers-grayscale.png",
+      "kind": "added",
+      "sha256": "df97ca53c0afe4700902e32f16801b7f9620c5b2217676c2d29bb3c08165ade3"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t02/1280-select.png",
+      "kind": "added",
+      "sha256": "a3a6c1bd3df963e3b2d1ce8b836957d84ae1b8ed31eb6cc2bce3e92c8fb3d45d"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t02/360-19-scroll.png",
+      "kind": "added",
+      "sha256": "cc66866571285df32ec3037aceae23f0fc437ca7c9bf4ac0563576d536ad0b4e"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t02/360-select.png",
+      "kind": "added",
+      "sha256": "755d80450317e1c50002860e80b838ceac929adec900b24feeeaf3d2c5eb3bb7"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t02/768-select.png",
+      "kind": "added",
+      "sha256": "c0d6eadfc4a3937f03659374489652db91cd18a36374ce3ec972afa8338844be"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t03/1280-home.png",
+      "kind": "added",
+      "sha256": "55fd88c2ab30d910d5150b62d3cf5f0a99c6317f66929140cd4ae26c9be94f6f"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t03/1280-route.png",
+      "kind": "added",
+      "sha256": "770b336420884f6c7aa4ab9a406ce576b1d1bbf605e1bd0ca7dd024f4c350c50"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t03/1280-teacher-projector.png",
+      "kind": "added",
+      "sha256": "91387bdc23c8929604eb653ec890d5b8a3663aff521c3d79c9a1fc6c576b7221"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t03/360-home.png",
+      "kind": "added",
+      "sha256": "a7359383075cbf9c6cb8b4e859e5166ee5fe178c5e48d3bda2e84f929328e4dc"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t03/768-home.png",
+      "kind": "added",
+      "sha256": "f0c7a91f196cbf9a6d657f72be5ff34b9e841a21ed9b77b39e6afc23598ffb4a"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t04/1280-revealed-projector-grayscale.png",
+      "kind": "added",
+      "sha256": "51d01bf3e4e3666c2687a52c0b7e80e26833cfb794dc2d0264bed9764118875c"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t04/1280-sealed.png",
+      "kind": "added",
+      "sha256": "fb7dceab8fe36304d3f66eca51bdb73eb7ff03494157a7e277b6a625147bce63"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t04/360-sealed.png",
+      "kind": "added",
+      "sha256": "ed294f1cd7618f49a4fecca36ae62bf9c38ecf4ef192b9d7ea70f634dc7a1845"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t04/768-sealed.png",
+      "kind": "added",
+      "sha256": "dc6cadad1a7d8e4928df610cd38b0ac4130309caff13a9bb3f0fa9c30116cea3"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t05/1280-final-projector-grayscale.png",
+      "kind": "added",
+      "sha256": "a625fff565780a316fa4de5e2fdcc81375f6d4121456309276c6fcaf00ac755e"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t05/1280-initial.png",
+      "kind": "added",
+      "sha256": "bc40358725de1a0a53b6679230e6435e4d277d15322e15adeb23f6008d97a9c2"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t05/360-initial.png",
+      "kind": "added",
+      "sha256": "f938cc508f2204ff8d9e4696f0bc9738fc5b68fe78563cf27d6ffb742114d330"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t05/768-initial.png",
+      "kind": "added",
+      "sha256": "b2ab49b49559d208d09ddce90ecc92b17e0fcb95d3c8f8699a1027a703ca61f3"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t06/1280-projector-grayscale.png",
+      "kind": "added",
+      "sha256": "b953f85e58489ac5239756ba11b48ab03026eab13fe1b4d8f47ce162f890faf2"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t06/1280-setup.png",
+      "kind": "added",
+      "sha256": "b4309c94cda7b2ca3d6bfe4c3cccb4e7616bf8fc0c8294a619839d9cf40134b3"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t06/360-setup.png",
+      "kind": "added",
+      "sha256": "1af4ea893914a639f301de397851e5d283cd0b2c44c84e1e672830cf1b2b810d"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t06/768-setup.png",
+      "kind": "added",
+      "sha256": "c810224855e1564a6344ac84fc19b6faba0117d9a77d839e95fb408432cab5c2"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t07/1280-finished-projector-grayscale.png",
+      "kind": "added",
+      "sha256": "cefe40dfe953fe82178be73d175ca50a6f5cd812c497964d9705de50fdd84206"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t07/1280-initial.png",
+      "kind": "added",
+      "sha256": "d5d7da168e643b6d9179ec46f5d128b64f6b3b7cfacc1518d9d49aa06ccec208"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t07/360-initial.png",
+      "kind": "added",
+      "sha256": "311f5d334cecba250f3fb19f484aeaaf5190df8dee0ca0d848e4ab881dd293f3"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t07/768-initial.png",
+      "kind": "added",
+      "sha256": "07f289a6a8d6b79dcab88c774d24f015fb7034446b2104bba11a45442d38fab8"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t08/1280-final-score.png",
+      "kind": "added",
+      "sha256": "e1ab28f47dc119c192809e483af2196ac5acf21ff00d5da0672bd84be1c950a1"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t08/1280-setup.png",
+      "kind": "added",
+      "sha256": "30186d7740fa99a33dfb2d1d881eacea98926c3ee17f5e2c4d346f3bd8853403"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t08/360-19x19-projector-grayscale.png",
+      "kind": "added",
+      "sha256": "845e46f0de5af3509a5a30c7b519fb7be2e3b3d5157ca593670a8ab49640d1f3"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t08/360-setup.png",
+      "kind": "added",
+      "sha256": "c9af138e4def02fbfb6ea6af3f96811468fef5d94b59f3e42713194b1c8c80a5"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t08/768-setup.png",
+      "kind": "added",
+      "sha256": "9e70ee55f6aa919998471b7345f1f6452aa52ea8cb0a7a94bd069dafb749840c"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t10/1280-catalog.png",
+      "kind": "added",
+      "sha256": "888257669738c8cd11026ce23b528e00e6e813a0b9bb1e907d0125ce30f6aecc"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t10/1280-move-player.png",
+      "kind": "added",
+      "sha256": "a9e1ec398cc0605c6befb56f6b377c0bef934ceac68a3c4473ab7855c159b4ea"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t10/360-point-set-touch.png",
+      "kind": "added",
+      "sha256": "a7efabcba494c87be2180a446f77ce58a3cf20fb858b568aae67a8a31e3fa654"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t10/768-move-player.png",
+      "kind": "added",
+      "sha256": "1bfc82922875c1e976d235ebc040391b651115cb2a6297a5addbe25d102d752e"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t11/1280-life-lesson.png",
+      "kind": "added",
+      "sha256": "9cab617d41d0b3920afb3fde767054e24e1cec92de322abc77b6fe749b4d2348"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t11/1280-life-top.png",
+      "kind": "added",
+      "sha256": "97c0cd83c74c11fe16f123e234885c999b4a982c4b21dbce314f66a2e7f61537"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t11/360-life-lesson.png",
+      "kind": "added",
+      "sha256": "1c3081bf879509d70a26863353dbc96f9f9b480dbadf174c233146db67565986"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t11/768-life-top.png",
+      "kind": "added",
+      "sha256": "005adc296537d02d7e605a4c230f0bb2924aae76626fe8bf1b8ffd75f703a04c"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t12/1280-cooperative.png",
+      "kind": "added",
+      "sha256": "2ef2bc0a5d933a4990be0072b83006829d94e547574b63b73dafe2dd7de10034"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t12/360-cooperative.png",
+      "kind": "added",
+      "sha256": "cc21fb38b6e0b5fc79de327e171cb56781068b7055c21a20aa0b1c39160b8e96"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t12/768-cooperative.png",
+      "kind": "added",
+      "sha256": "4259c3fe379a41c9ef00efb1d3f04a51d8818c2630740660b751d4f3636e8397"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t13/1280-territory.png",
+      "kind": "added",
+      "sha256": "004fb2426fb3fe959517cc662e8e36422f6ff965a4a729f4080848526a590b6b"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t13/360-territory.png",
+      "kind": "added",
+      "sha256": "1ea15ff50fac8a7dd3f2548b87e4afc13dd2863557d3d2a2c520e87e154b3330"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t13/768-territory.png",
+      "kind": "added",
+      "sha256": "efd5d0f12c7a2a74edc8978adb335eecd3d84f9d5e812f0b8d6f416a9fafcaa9"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t14/1280-editor.png",
+      "kind": "added",
+      "sha256": "1ee1c98d4f6241d7d590e18ae4a47e081da52b465eb6878f09f86719ef5da86e"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t14/360-editor.png",
+      "kind": "added",
+      "sha256": "e5541b4e5f2fd401c7e3f993d754ea6b54f9c4b95c33d6b88a2862d8a244d7c9"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t14/768-editor.png",
+      "kind": "added",
+      "sha256": "c804ab0a90af49783bdb810e2473b3f42495bb904828adaf18f49bbf3daa0a3c"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t15/1280-file-exchange.png",
+      "kind": "added",
+      "sha256": "2c673f39e0d1b9b66491ca7b62f7ab815c5b0d51305acf1738b3320f5e2551e2"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t15/360-file-exchange.png",
+      "kind": "added",
+      "sha256": "2ff62e4650c3def205b76b8b5210a69ed9df128707d385cff2c38e03302def5c"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t15/768-file-exchange.png",
+      "kind": "added",
+      "sha256": "1f573cdcd50dce93f951cb4fb3d1ee772786300b9926e4bef887fe85b53baafb"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t16/1280-offline-data.png",
+      "kind": "added",
+      "sha256": "fa59a068a235bc16b6d47c7d7bee6dcb9c5a0f8042e45a3795f9e566325354b7"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t16/360-offline-data.png",
+      "kind": "added",
+      "sha256": "2d6084fa504a97404a32fdab3abd348060befa9f7765692d31966fca6c00f2a1"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t16/768-offline-data.png",
+      "kind": "added",
+      "sha256": "74f1fd18d7d8af347cf9a29a5fee1a2f7ea128829beaf065c10238bd06c62d30"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t16/offline-ready-1280.png",
+      "kind": "added",
+      "sha256": "621630982bf6d3df81d8224264b4f16ad7af9340be115442d786e266ec7928b9"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t17/1280-feedback.png",
+      "kind": "added",
+      "sha256": "168d38d425635a118be11d41b738ec8fbe27baad0f851228566f7d6a76b9556d"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t17/1280-summary-empty.png",
+      "kind": "added",
+      "sha256": "6817a55d46244967c73fd795d13fb92adcdae2ae6abdb90bab16fa829eced5fd"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t17/1280-summary-three-tests.png",
+      "kind": "added",
+      "sha256": "faf988a697aab4de84722e6e907f32da43d8dd02103cfee92d4a2d2f37452825"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t17/360-feedback.png",
+      "kind": "added",
+      "sha256": "492f5ee057f9ff50a293f7e5b718fa3cdf31eb4f6717d5ac9419aa21aa5a2c8b"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t17/360-summary-empty.png",
+      "kind": "added",
+      "sha256": "6c66c8d97ef1b3628f88b0ae824be425e031c13c7c7190db6e3bdb994cc978d0"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t17/768-feedback.png",
+      "kind": "added",
+      "sha256": "db24fdd0649f53f334201ba919a17e67217e232fbf173d6224ede7416d99576d"
+    },
+    {
+      "path": "docs/github-pages/checks/journey/output/playwright/t17/768-summary-empty.png",
+      "kind": "added",
+      "sha256": "dfa2d37aeb699a50b14fc85f5df6d42124c67b9bef17421c173ddd83b34c852a"
+    },
+    {
+      "path": "docs/github-pages/checks/preservation.json",
+      "kind": "added",
+      "sha256": "8cb9e55ff85f2e20e130bc5b481606501754d84a8434c03dae35cd1589881b82"
+    },
+    {
+      "path": "docs/github-pages/checks/public-360.png",
+      "kind": "added",
+      "sha256": "d57886b4d38b10e64353d8af0864e64e64be17d402387626fedae7f32691789d"
+    },
+    {
+      "path": "docs/github-pages/checks/public-board.png",
+      "kind": "added",
+      "sha256": "eed899af60846196a5b7340bcfd33a3b4a1b03f7374a5bab336f8a2b54e45b2a"
+    },
+    {
+      "path": "docs/github-pages/checks/public-journey.json",
+      "kind": "added",
+      "sha256": "3e54ec0aed366f67954eed478d678b30bc91f3a625ce8ae76124426bbf4358c3"
+    },
+    {
+      "path": "docs/github-pages/checks/public-journey.log",
+      "kind": "added",
+      "sha256": "db9098cf72aa6f7a12f76bf48b776a7408b1b9608e430d028fd266479bc71e5f"
+    },
+    {
+      "path": "docs/github-pages/checks/public-offline.png",
+      "kind": "added",
+      "sha256": "9b2504612ddd3f55b98f6c57ff5710e7e189ce12c5ccc2cbd4698d086a085d61"
+    },
+    {
+      "path": "docs/github-pages/checks/upgrade-offline.png",
+      "kind": "added",
+      "sha256": "5d6e368345471ff4b56c3f3cb30c1729fd59bce765fdca4d813d41b6601028b2"
+    },
+    {
+      "path": "docs/github-pages/checks/upgrade.json",
+      "kind": "added",
+      "sha256": "69f3598295a5014acbc01ea24dc1dea5a59c932f478147e89e262598f8e72c1a"
+    },
+    {
+      "path": "docs/github-pages/checks/upgrade.log",
+      "kind": "added",
+      "sha256": "4f8851ffa19d1d27781326706d612f3eb7fe53eae220eaee4264d88aad08ccac"
+    },
+    {
+      "path": "docs/github-pages/checks/web-guidance.txt",
+      "kind": "added",
+      "sha256": "02564f2e879c02b556afdd84c0b7b81d86a24f7e2ad66b6b1184362b2c3cab95"
+    },
+    {
+      "path": "docs/requirements-matrix.md",
+      "kind": "modified",
+      "sha256": "4931d0a4f33a7d435cec6960c900a4ad2eb1ffd6b63be9e9caeb80c1f01fdcfe"
+    },
+    {
+      "path": "handoff/GITHUB_PAGES_SYNC.md",
+      "kind": "added",
+      "sha256": "079bddc7846b393fa71b912eb8f47e0681b401e956fb390d12f6a21ea6a86fb8"
+    },
+    {
+      "path": "index.html",
+      "kind": "modified",
+      "sha256": "d22c817922b0801c8ac41b7313560bce322b4eb3b149046418fffc15160fc8ff"
+    },
+    {
+      "path": "output/pdf/T17-development-report.pdf",
+      "kind": "modified",
+      "sha256": "0e1a4ff31bce3e48167f409e5a8e11ce10a84bcc8bc0ad6d2114e89f68135ae9"
+    },
+    {
+      "path": "output/pdf/T17-empty-report.pdf",
+      "kind": "modified",
+      "sha256": "c47558842e32dcb58d7821d2ec38754db7dd9e18d0ce39df054faa8c4f90f6fd"
+    },
+    {
+      "path": "output/validation/T01/capacity-report.json",
+      "kind": "modified",
+      "sha256": "c39f081190bbc8ceb6b5145c0006a083255f988664af29fb515a8fc3e10e2747"
+    },
+    {
+      "path": "output/validation/content-report.json",
+      "kind": "modified",
+      "sha256": "d3b8ce3dd062498dff475d50620042347be4d42d3b5d5259849cf0be9e1990ec"
+    },
+    {
+      "path": "package.json",
+      "kind": "modified",
+      "sha256": "38e14b4b6af454b3464e74d68ce08008810349b0697065204e72f83e4bcd6880"
+    },
+    {
+      "path": "playwright.config.ts",
+      "kind": "modified",
+      "sha256": "01ee5cde562b224264cb0e87aaa074a2cb9587d3767a47f72c4e4d261e4484e3"
+    },
+    {
+      "path": "public/favicon.svg",
+      "kind": "added",
+      "sha256": "ea785687252e962c7a71ac3f537a091354ac3e9c7b363dc4099aeb0075aff2b3"
+    },
+    {
+      "path": "scripts/check-pages-upgrade.mjs",
+      "kind": "added",
+      "sha256": "ed7cdf59df73f031c1ebf7fe56c733e8bcc7b77922c934d4adfd608bf19edfc8"
+    },
+    {
+      "path": "scripts/finalize-offline.mjs",
+      "kind": "modified",
+      "sha256": "00916efb8fd4a3306933235fc77c6fe7ead333555d9ea91b73af05aa59787548"
+    },
+    {
+      "path": "scripts/package-pages.py",
+      "kind": "added",
+      "sha256": "420981aaf12219b9757eb264a48432c13d76ef56dfc78c765a43ccd3cc33fc27"
+    },
+    {
+      "path": "scripts/public-pages-journey.js",
+      "kind": "added",
+      "sha256": "69dee2d982185570c4972f27692d60a17ad4362f0bd0f61651df6b183e477cfb"
+    },
+    {
+      "path": "scripts/run-public-pages-check.py",
+      "kind": "added",
+      "sha256": "85b0b933cce4770c7adf8a9eef932f31fdfebd8f53b5ab71e2a971ade19b4b33"
+    },
+    {
+      "path": "scripts/smoke-online-app.mjs",
+      "kind": "modified",
+      "sha256": "510e6682352e90a28507ae49f8310658f2dde821ac3aee5b39ddc22f88dde3de"
+    },
+    {
+      "path": "scripts/sync-github-pages.py",
+      "kind": "added",
+      "sha256": "6f705931c2b9373488f4d260f1ebca9981f00afe9afb7d22b1c4b3561dac9c29"
+    },
+    {
+      "path": "scripts/verify-online-dependencies.mjs",
+      "kind": "modified",
+      "sha256": "b43ab4cc4a3e66fe098b3e6bf4239871ed4bf4086340040b0fa1409dd77de729"
+    },
+    {
+      "path": "server/index.ts",
+      "kind": "modified",
+      "sha256": "33fa514dec2944e805a1e064993800fb6dcac31ff187d4761534f8446d3aa79e"
+    },
+    {
+      "path": "src/core/version.ts",
+      "kind": "modified",
+      "sha256": "87dc897776c516ff019a0dd0c6996f54266a248d480f0deb1c2872fb90ed5e54"
+    },
+    {
+      "path": "src/features/learning-hub/LearningHub.tsx",
+      "kind": "modified",
+      "sha256": "f384da180e093aef042de47fdd15da37a27079a7044d31597e9828ef399072e6"
+    },
+    {
+      "path": "src/features/online-game/OnlineGame.css",
+      "kind": "modified",
+      "sha256": "1e6ad21a5a08a8e1f289fc582e9b671b077dc98bc3c64c145c60e0742a77948f"
+    },
+    {
+      "path": "src/features/online-game/OnlineGame.tsx",
+      "kind": "modified",
+      "sha256": "e04ac8650ea44108bade35d9039a2bd10c7efbe966a0e06e5228c91a0954a6ee"
+    },
+    {
+      "path": "src/features/online-game/hosting.ts",
+      "kind": "added",
+      "sha256": "f342c1bec30b1ce269be2dcbbd3914b3aaaa981e28165ac9e3abc83add98d484"
+    },
+    {
+      "path": "tests/browser/t16.spec.ts",
+      "kind": "modified",
+      "sha256": "2187446aa9afc90521e81859af084fcf245cb328b93649207e337ddfbfa51717"
+    },
+    {
+      "path": "tests/pages/hosting.test.ts",
+      "kind": "added",
+      "sha256": "a3b0bfc6acfc1751547d4938cf3e0db4cc99d5fc3bbfe75d134738b8f946e138"
+    },
+    {
+      "path": "docs/github-pages/changed-files.json",
+      "kind": "generated-manifest",
+      "selfHashExcluded": true
+    }
+  ],
+  "removed": [
+    "dist/assets/index-D5LEyGe-.css",
+    "dist/assets/index-Kj3rowYh.js"
+  ]
+}

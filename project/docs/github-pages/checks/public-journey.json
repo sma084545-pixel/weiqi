@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "PAGES-PUBLIC-JOURNEY",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "passed",
+  "url": "https://sma084545-pixel.github.io/weiqi/",
+  "programVersion": "0.20.2",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+  "checks": [
+    "Original public URL renders final version and honest service status",
+    "Selectable board, alternating colors, actual capture and unchanged illegal move",
+    "Live history slider moves between actual positions without changing the game",
+    "Both-confirmed undo, new branch and refresh persistence",
+    "Formal thirty-puzzle catalog and new feedback entry are installed",
+    "GitHub Pages clearly reports room backend not configured without a WebSocket attempt",
+    "Actual disabled-network reload on the public origin with saved game",
+    "Both passes and both confirmations produce independently checked area result",
+    "Mobile 360px, keyboard range and reduced motion"
+  ],
+  "webSocketsOpened": 0,
+  "pageErrors": [],
+  "humanReviewed": null
+}

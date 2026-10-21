@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "GITHUB-CURRENT-SOURCE",
-  "revision": 3,
+  "revision": 4,
   "rulesetId": "GO-CLUB-AREA-1",
   "resultVersion": "0.20.2-pages.1",
   "programVersion": "0.20.2",
@@ -3890,8 +3890,8 @@
     },
     {
       "path": "handoff/GITHUB_PAGES_SYNC.md",
-      "bytes": 1973,
-      "sha256": "d01b893add10214fc664c371e58e5992d8b32c518fe0c86a9739a09ab489aec5"
+      "bytes": 2818,
+      "sha256": "079bddc7846b393fa71b912eb8f47e0681b401e956fb390d12f6a21ea6a86fb8"
     },
     {
       "path": "handoff/HISTORY_SLIDER.md",
@@ -5675,8 +5675,8 @@
     },
     {
       "path": "docs/github-pages/ACCEPTANCE.md",
-      "bytes": 2112,
-      "sha256": "97a97ccb3f80211803e4bd910d8e30183124ee0e3336f4a1bcb61305a5982bfe"
+      "bytes": 2827,
+      "sha256": "5601451e863145f771427091ab6f924494c0be12bb29c48e16e98e989e9814e6"
     },
     {
       "path": "docs/github-pages/BASE-MANIFEST.json",
@@ -5692,6 +5692,11 @@
       "path": "docs/github-pages/ONLINE_SETUP.md",
       "bytes": 3429,
       "sha256": "80dd746e8eb62c9649b4a41d129dd23cadd83cacd2f95e6e26928fc599f6de23"
+    },
+    {
+      "path": "docs/github-pages/changed-files.json",
+      "bytes": 27430,
+      "sha256": "a996f7cb43365ba84d191dae168ce9e162a52d4d54d5c7639d39871eb2692d2f"
     },
     {
       "path": "docs/github-pages/checks/browser-all-0.20.1.log",
@@ -5726,7 +5731,32 @@
     {
       "path": "docs/github-pages/checks/preservation.json",
       "bytes": 267,
-      "sha256": "e6e45ca54bf85f25850cecedf20e9739f4898be1da39cd3884580a23092bd46a"
+      "sha256": "8cb9e55ff85f2e20e130bc5b481606501754d84a8434c03dae35cd1589881b82"
+    },
+    {
+      "path": "docs/github-pages/checks/public-360.png",
+      "bytes": 278090,
+      "sha256": "d57886b4d38b10e64353d8af0864e64e64be17d402387626fedae7f32691789d"
+    },
+    {
+      "path": "docs/github-pages/checks/public-board.png",
+      "bytes": 306591,
+      "sha256": "eed899af60846196a5b7340bcfd33a3b4a1b03f7374a5bab336f8a2b54e45b2a"
+    },
+    {
+      "path": "docs/github-pages/checks/public-journey.json",
+      "bytes": 1132,
+      "sha256": "3e54ec0aed366f67954eed478d678b30bc91f3a625ce8ae76124426bbf4358c3"
+    },
+    {
+      "path": "docs/github-pages/checks/public-journey.log",
+      "bytes": 7102,
+      "sha256": "db9098cf72aa6f7a12f76bf48b776a7408b1b9608e430d028fd266479bc71e5f"
+    },
+    {
+      "path": "docs/github-pages/checks/public-offline.png",
+      "bytes": 259048,
+      "sha256": "9b2504612ddd3f55b98f6c57ff5710e7e189ce12c5ccc2cbd4698d086a085d61"
     },
     {
       "path": "docs/github-pages/checks/upgrade-offline.png",
