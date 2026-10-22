@@ -1,7 +1,7 @@
 ---
 schemaVersion: 1
 id: ONLINE-USAGE
-revision: 1
+revision: 2
 rulesetId: GO-CLUB-AREA-1
 ---
 
@@ -25,6 +25,9 @@ rulesetId: GO-CLUB-AREA-1
 
 ## 隐私和离线
 
-只有主动进入联机页时才连接房间服务，发送可选昵称、房间操作、棋局和连接状态。本机学习进度、教师草稿、反馈和CAS记录不上传。没有公开房间列表、聊天、实名档案、排名或AI对手。
+只有主动进入联机页时才连接房间服务，发送可选昵称、房间操作、棋局、临时聊天和连接状态。本机学习进度、教师草稿、反馈和CAS记录不上传。没有公开房间列表、公开聊天大厅、实名档案、排名或AI对手。
 
 联机需要连到运行中的服务。本机教学工具、正式题库和同屏棋盘仍可按原方法离线准备；“已可离线”不代表房间连接可以断开。局域网普通HTTP的非localhost来源通常不具备Service Worker条件；公网HTTPS或本机localhost才可准备完整离线资源。
+
+
+0.21窗口与聊天兼容扩展见[最新使用说明](../online-tools/USAGE.md)及[协议扩展](../online-tools/INTERFACES.md)。旧基础对局约定继续适用；当前公网实际服务版本与程序版本分别记录在../online-tools/ACCEPTANCE.md。

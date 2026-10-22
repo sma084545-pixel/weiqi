@@ -7,7 +7,7 @@ rulesetId: GO-CLUB-AREA-1
 
 # 原网址已接入联机房间服务
 
-正式网址保持 https://sma084545-pixel.github.io/weiqi/ ，联机入口 #/play/online，前端0.21.0。后台实际地址 https://weiqi-rooms.onrender.com；默认9路，可选5/13/19路。一人建房、另一人填8位房间码，无需账号或真实姓名。邀请网址保留/weiqi路径。
+正式网址保持 https://sma084545-pixel.github.io/weiqi/ ，联机入口 #/play/online，前端0.21.1。后台实际地址 https://weiqi-rooms.onrender.com（实际服务0.21.0、roomChat=1）；默认9路，可选5/13/19路。一人建房、另一人填8位房间码，无需账号或真实姓名。邀请网址保留/weiqi路径。
 
 两人各自操作执色，合法落子后自动同步；可独立回看滑动条、双方确认悔棋。停两手后仍须双方确认死子与中立点，才按项目面积规则计算最终胜负；不自动判断任意局面的死活。认输不编造面积分。
 
@@ -19,15 +19,15 @@ rulesetId: GO-CLUB-AREA-1
 
 ## 旧版更新
 
-先保存当前内容，等待出现“新版本已准备好”，点击“保存已提交内容并应用”；页脚和version.json可核对0.21.0。不要清站点数据。更新后重新确认离线准备状态。
+先保存当前内容，等待出现“新版本已准备好”，点击“保存已提交内容并应用”；页脚和version.json可核对0.21.1。不要清站点数据。更新后重新确认离线准备状态。
 
 ## 维护和验证
 
-源码在仓库project/；公开构建运行corepack pnpm build:pages，读取deploy/github-pages.json；普通pnpm build保留本地同源连接。PUBLIC_ORIGIN严格为https://sma084545-pixel.github.io，PUBLIC_APP_URL保留/weiqi/#/play/online。旧后台0.20.2和前端0.21.0使用协议1、规则GO-CLUB-AREA-1，规则/schema/题库/锁文件未变；不为前端接入强制重启后台。
+源码在仓库project/；公开构建运行corepack pnpm build:pages，读取deploy/github-pages.json；普通pnpm build保留本地同源连接。PUBLIC_ORIGIN严格为https://sma084545-pixel.github.io，PUBLIC_APP_URL保留/weiqi/#/play/online。后台0.21.0和前端0.21.1使用协议1、规则GO-CLUB-AREA-1，规则/schema/题库/锁文件未变；不为前端接入强制重启后台。
 
-完整说明、验收与已知限制见project/docs/render/及handoff/RENDER_DEPLOY.md；完整归档在Release v0.21.0-pages.1。公网验证与本地测试、真人/实体设备验证分开记录。免费托管边界参考https://render.com/docs/free；配置不是永久保存承诺。
+完整说明、验收与已知限制见project/docs/render/及handoff/RENDER_DEPLOY.md；完整归档在Release v0.21.1-pages.1。公网验证与本地测试、真人/实体设备验证分开记录。免费托管边界参考https://render.com/docs/free；配置不是永久保存承诺。
 
 
-## 0.21.0窗口和聊天更新
+## 0.21.1窗口和聊天更新
 
-棋盘上方可打开悬浮缩略图、独立画中画与最大化。聊天仅当前房间双人临时文字，不进入棋谱；服务重启清空。旧0.20.2后台继续支持下棋，但需要维护者按docs/online-tools/DEPLOYMENT.md手动部署新后端，聊天才可用。旧客户端不订阅新聊天，兼容协议1；实际更新状态见docs/online-tools/ACCEPTANCE.md，不用文档版本替代真实健康检查。
+棋盘上方可打开悬浮缩略图、独立画中画与最大化。聊天仅当前房间双人临时文字，不进入棋谱；服务重启清空。用户已在2026-10-22手动部署后台0.21.0，原网站实际双向聊天、刷新与断网恢复已通过。旧客户端不订阅新聊天，兼容协议1；实际更新状态见docs/online-tools/ACCEPTANCE.md，不用文档版本替代真实健康检查。

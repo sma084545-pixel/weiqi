@@ -1,20 +1,20 @@
 {
   "schemaVersion": 1,
   "id": "RENDER-DEPLOYMENT-CONFIG-PUBLICATION",
-  "revision": 4,
+  "revision": 5,
   "rulesetId": "GO-CLUB-AREA-1",
   "baseVersion": "0.20.3-pages.1",
-  "resultVersion": "0.21.0-pages.1",
-  "programVersion": "0.21.0",
-  "status": "frontend-ready-backend-chat-awaiting-manual-deploy",
+  "resultVersion": "0.21.1-pages.1",
+  "programVersion": "0.21.1",
+  "status": "public-chat-verified-frontend-patch-being-published",
   "website": "https://sma084545-pixel.github.io/weiqi/",
   "serverOrigin": "https://weiqi-rooms.onrender.com",
-  "observedServerProgramVersion": "0.20.2",
+  "observedServerProgramVersion": "0.21.0",
   "protocolVersion": 1,
   "roomsEphemeral": true,
   "healthAndWssProbe": "project/docs/render/checks/service-probe.json",
   "guide": "RENDER_SETUP.md",
-  "note": "User-created existing service. Optional roomChat=1 negotiation added; old service still allows games, chat awaits backend update. No paid service changes.",
+  "note": "User manually deployed chat-capable backend 0.21.0. Frontend 0.21.1 remains protocol compatible; source backend 0.21.1 defensive malformed-message improvement is locally verified and not claimed deployed.",
   "previousVerification": {
     "actualPublicOrigin": "https://sma084545-pixel.github.io/weiqi/",
     "publicRoomJourney": "project/docs/render/checks/public-journey.json",
@@ -25,8 +25,11 @@
     "pageErrors": 0
   },
   "verification": {
+    "publicChat": "project/docs/online-tools/checks/public-backend-chat.json",
     "local": "project/docs/online-tools/ACCEPTANCE.md",
-    "publicChat": "not-yet-tested-awaiting-Render-update",
     "handbook": "project/handoff/ONLINE_PLAY_TOOLS.md"
+  },
+  "capabilities": {
+    "roomChat": 1
   }
 }

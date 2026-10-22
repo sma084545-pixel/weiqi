@@ -80,7 +80,7 @@ export class RoomHub {
     socket.on('message',(data,binary)=>{
       if(Date.now()-windowStart>1000){windowStart=Date.now();count=0;}
       if(++count>40){this.error(socket,'RATE_LIMIT');socket.close(1008,'RATE_LIMIT');return;}
-      let message:ClientMessage;try{if(binary)throw Error('BAD_MESSAGE');message=readClientMessage(JSON.parse(data.toString()));}catch(error){if(this.chatSubscribers.has(socket))this.chatError(socket,(error as Error).message);else this.error(socket,(error as Error).message);return;}
+      let message:ClientMessage,raw:Record<string,unknown>|null=null;try{if(binary)throw Error('BAD_MESSAGE');const parsed=JSON.parse(data.toString());if(parsed&&typeof parsed==='object'&&!Array.isArray(parsed))raw=parsed;message=readClientMessage(parsed);}catch(error){const requestId=typeof raw?.requestId==='string'&&/^[A-Za-z0-9-]{1,80}$/.test(raw.requestId)?raw.requestId:undefined;if(this.chatSubscribers.has(socket)&&(raw?.type==='chat-send'||raw?.type==='enable-chat'))this.chatError(socket,(error as Error).message,requestId);else this.error(socket,(error as Error).message,requestId);return;}
       this.queue=this.queue.then(async()=>{if(socket.readyState===WebSocket.OPEN)await this.handle(socket,message);}).catch(()=>this.error(socket,'SAVE_FAILED',message.requestId));
     });
     socket.on('close',()=>{this.detach(socket);});

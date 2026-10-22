@@ -1,0 +1,58 @@
+### Result
+{"schemaVersion":1,"id":"ONLINE-TOOLS-PUBLIC-JOURNEY","revision":1,"rulesetId":"GO-CLUB-AREA-1","resultVersion":"0.21.0-pages.1","status":"frontend-passed-chat-awaiting-server-update","chatReady":false,"nativePip":true,"actualPublicUrl":"https://sma084545-pixel.github.io/weiqi/","browser":"155.0.8059.86","independentBrowserContexts":true,"physicalDevices":false,"checkedAt":"2026-10-22T02:57:03.873Z","checks":["Actual original URL update to 0.21.0 preserves chosen local progress without clearing data","Original Pages -> public Render WSS: two independent seats alternate legal corner moves","Floating board is synchronized, keyboard movable and follows only this viewer history","Public real Document PiP: move from separate window and peer move synchronized","Actual old public backend is honestly labelled chat-awaiting-update; gameplay stays usable","Original website 360/768/1280px maximize/close/reduced-motion and local board containment","Original formal 30-puzzle catalog remains accessible"],"pageErrors":[],"humanReviewed":null}
+### Ran Playwright code
+```js
+await (async (page) => {
+ const base='https://sma084545-pixel.github.io/weiqi/',checks=[],errors=[],contexts=[],endpoints=[];
+ const assert=(ok,message)=>{if(!ok)throw Error(message);};
+ const watch=p=>{p.on('pageerror',error=>errors.push(error.message));p.on('websocket',socket=>endpoints.push(socket.url()));};
+ const count=(p,n)=>p.locator(`[data-testid="online-game"][data-move-count="${n}"]`).waitFor({timeout:30000});
+ const main=p=>p.locator('.online-board-card>.shared-board'),cell=(view,row,col)=>view.locator(`[data-row="${row}"][data-col="${col}"]`);
+ // Upgrade a real previously loaded page through the app's own update path; do not clear site data.
+ watch(page);await page.goto(base+'#/route/STAGE-05');await page.getByRole('button',{name:'还想练习',exact:true}).waitFor();
+ if(await page.getByRole('button',{name:'还想练习',exact:true}).getAttribute('aria-pressed')!=='true')await page.getByRole('button',{name:'还想练习',exact:true}).click();
+ if(await page.locator('.app-version').innerText()!=='版本 0.21.0'){
+  await page.evaluate(async()=>{const reg=await navigator.serviceWorker.getRegistration();await reg?.update();});
+  await page.getByRole('button',{name:'保存已提交内容并应用'}).click({timeout:60000});
+ }
+ await page.getByText('版本 0.21.0',{exact:true}).waitFor({timeout:60000});await page.goto(base+'#/route/STAGE-05');assert(await page.getByRole('button',{name:'还想练习',exact:true}).getAttribute('aria-pressed')==='true','Chosen progress lost during update');checks.push('Actual original URL update to 0.21.0 preserves chosen local progress without clearing data');
+ const browser=page.context().browser(),ac=await browser.newContext({viewport:{width:1280,height:980}}),bc=await browser.newContext({viewport:{width:1280,height:980}});contexts.push(ac,bc);
+ const a=await ac.newPage(),b=await bc.newPage();
+ const lobby=async p=>{watch(p);await p.goto(base+'#/play/online');await p.getByText('版本 0.21.0',{exact:true}).waitFor({timeout:45000});await p.getByText('服务已连接',{exact:true}).waitFor({timeout:90000});};
+ let chatReady=false,nativePip=false;
+ try{
+  await lobby(a);await a.getByLabel('昵称（可留空）').fill('TEST 公网窗口黑');await a.getByRole('button',{name:'创建房间',exact:true}).click();await a.getByLabel('当前房间码').waitFor();const code=await a.getByLabel('当前房间码').inputValue();
+  await lobby(b);await b.getByLabel('昵称（可留空）').fill('TEST 公网窗口白');await b.getByLabel('输入房间码').fill(code);await b.getByRole('button',{name:'加入房间',exact:true}).click();await b.getByText('你执白',{exact:true}).waitFor();await a.locator('.online-seat').filter({hasText:'白方'}).getByText('已连接',{exact:true}).waitFor();
+  await cell(main(a),0,0).click();await count(b,1);await cell(main(b),8,8).click();await count(a,2);checks.push('Original Pages -> public Render WSS: two independent seats alternate legal corner moves');
+  await a.getByRole('button',{name:'悬浮小棋盘',exact:true}).click();const floating=a.getByRole('complementary',{name:'悬浮小棋盘'});await floating.waitFor();assert(await cell(floating,8,8).getAttribute('data-stone')==='W','Miniature missing synced move');
+  const grip=a.getByRole('button',{name:'移动悬浮棋盘，使用方向键'});await grip.focus();await grip.press('ArrowRight');
+  const timeline=a.locator('.online-board-card').getByRole('slider',{name:'棋局滑动条',exact:true});await timeline.focus();await timeline.press('Home');assert(await cell(floating,0,0).getAttribute('data-stone')==='empty','Miniature does not follow read-only history');assert(await cell(main(b),0,0).getAttribute('data-stone')==='B','Read-only history changed peer');await timeline.press('End');
+  await a.getByRole('button',{name:'关闭悬浮小棋盘'}).click();checks.push('Floating board is synchronized, keyboard movable and follows only this viewer history');
+  await a.getByRole('button',{name:'独立画中画',exact:true}).click();nativePip=await a.evaluate(()=>Boolean(window.documentPictureInPicture?.window));
+  if(nativePip){await a.evaluate(()=>window.documentPictureInPicture.window.document.querySelector('[data-row="1"][data-col="0"]').click());await count(b,3);await cell(main(b),7,8).click();await count(a,4);assert(await a.evaluate(()=>window.documentPictureInPicture.window.document.querySelector('[data-row="7"][data-col="8"]').dataset.stone)==='W','PiP did not sync peer');await a.evaluate(()=>window.documentPictureInPicture.window.close());checks.push('Public real Document PiP: move from separate window and peer move synchronized');}
+  else{await floating.waitFor();await a.getByRole('button',{name:'关闭悬浮小棋盘'}).click();checks.push('Public browser reports unsupported/refused PiP and opens truthful in-page fallback');}
+  chatReady=await a.getByLabel('给同伴的消息').count()>0;
+  if(chatReady){
+   const before=await a.getByTestId('online-game').getAttribute('data-room-revision');
+   await a.getByLabel('给同伴的消息').fill('TEST 公网聊天 <b>按文字显示</b>');await a.getByLabel('给同伴的消息').press('Enter');await b.getByRole('log').getByText('TEST 公网聊天 <b>按文字显示</b>',{exact:true}).waitFor();assert(await b.locator('.chat-log b').count()===0,'HTML interpreted as markup');assert(await a.getByTestId('online-game').getAttribute('data-room-revision')===before,'Chat changed game revision');
+   await b.getByLabel('给同伴的消息').fill('TEST 白方已收到');await b.getByRole('button',{name:'发送消息',exact:true}).click();await a.getByRole('log').getByText('TEST 白方已收到',{exact:true}).waitFor();
+   await b.reload();await b.getByRole('log').getByText('TEST 公网聊天 <b>按文字显示</b>',{exact:true}).waitFor({timeout:45000});checks.push('Public bidirectional authenticated chat, safe literal text, independent game revision and refresh recovery');
+  }else{await a.locator('.chat-unavailable').filter({hasText:'等待更新'}).waitFor();checks.push('Actual old public backend is honestly labelled chat-awaiting-update; gameplay stays usable');}
+  for(const width of [360,768,1280]){
+   await a.setViewportSize({width,height:950});await a.emulateMedia({reducedMotion:'reduce'});await a.getByRole('button',{name:'最大化棋盘',exact:true}).click();const dialog=a.getByRole('dialog',{name:'放大棋盘',exact:true});await dialog.waitFor();assert(await dialog.getByRole('gridcell').count()===81,'Maximized board geometry');
+   if(chatReady&&width===1280){await dialog.getByLabel('给同伴的消息').fill('TEST 放大棋盘仍可聊天');await dialog.getByLabel('给同伴的消息').press('Enter');await b.getByRole('log').getByText('TEST 放大棋盘仍可聊天',{exact:true}).waitFor();}
+   await dialog.locator('.max-board-shell').evaluate(node=>{node.scrollTop=0;});await a.evaluate(()=>{document.activeElement?.blur?.();});await a.mouse.move(0,0);assert(await a.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Page overflow at '+width);await dialog.screenshot({path:`docs/online-tools/checks/public-${width}-maximized.png`});await dialog.getByRole('button',{name:'返回普通棋盘'}).click();
+  }
+  checks.push('Original website 360/768/1280px maximize/close/reduced-motion and local board containment');
+  if(chatReady){await bc.setOffline(true);await b.locator('.connection-badge').filter({hasText:'断开'}).waitFor();await b.getByLabel('给同伴的消息').fill('TEST 断网时保留草稿');assert(await b.getByRole('button',{name:'发送消息',exact:true}).isDisabled(),'Offline chat sent');await bc.setOffline(false);await b.getByText('服务已连接',{exact:true}).waitFor({timeout:60000});await b.getByRole('log').getByText('TEST 白方已收到',{exact:true}).waitFor();assert(await b.getByLabel('给同伴的消息').inputValue()==='TEST 断网时保留草稿','Offline draft lost');checks.push('Actual public disabled-network recovery preserves chat draft and room history');}
+  await a.evaluate(()=>{document.activeElement?.blur?.();scrollTo(0,0);});await a.locator('.online-layout').screenshot({path:'docs/online-tools/checks/public-live-tools.png'});
+  await page.goto(base+'#/challenges');await page.getByText('30道正式题可用',{exact:true}).waitFor();checks.push('Original formal 30-puzzle catalog remains accessible');
+  assert(endpoints.every(url=>url==='wss://weiqi-rooms.onrender.com/api/online/ws'),'Unexpected endpoint');assert(errors.length===0,'Runtime errors: '+errors.join(';'));
+  return {schemaVersion:1,id:'ONLINE-TOOLS-PUBLIC-JOURNEY',revision:1,rulesetId:'GO-CLUB-AREA-1',resultVersion:'0.21.0-pages.1',status:chatReady?'passed':'frontend-passed-chat-awaiting-server-update',chatReady,nativePip,actualPublicUrl:base,browser:browser.version(),independentBrowserContexts:true,physicalDevices:false,checkedAt:new Date().toISOString(),checks,pageErrors:errors,humanReviewed:null};
+ }finally{for(const context of contexts)await context.close();}
+}
+)(page);
+```
+### Page
+- Page URL: https://sma084545-pixel.github.io/weiqi/#/challenges
+- Page Title: 围棋社教学工具

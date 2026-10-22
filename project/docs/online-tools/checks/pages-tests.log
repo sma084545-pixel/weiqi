@@ -1,5 +1,5 @@
 Already up to date
-Done in 305ms using pnpm v11.19.0
+Done in 325ms using pnpm v11.19.0
 $ vitest run tests/pages
 
  RUN  v5.0.0 /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/online-tools-20261022/mainline/go-club
@@ -7,6 +7,6 @@ $ vitest run tests/pages
 
  Test Files  1 passed (1)
       Tests  11 passed (11)
-   Start at  10:50:54
-   Duration  177ms (transform 58%, import 22%, tests 12%, worker 7%)
+   Start at  11:10:28
+   Duration  185ms (transform 61%, import 19%, tests 10%, worker 9%)
 

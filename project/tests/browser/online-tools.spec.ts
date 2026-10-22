@@ -64,3 +64,8 @@ test('native picture-in-picture uses the real browser API or announces the float
 test('older room service without chat capability retains games and announces chat update',async({browser})=>{
  const context=await browser.newContext();await context.routeWebSocket('**/api/online/ws',socket=>{const server=socket.connectToServer();server.onMessage(packet=>{const data=JSON.parse(String(packet));if(data.type==='hello')delete data.capabilities;socket.send(JSON.stringify(data));});});const page=await context.newPage();await lobby(page);await page.getByRole('button',{name:'创建房间',exact:true}).click();await expect(page.locator('.chat-unavailable')).toContainText('等待更新');await expect(page.getByRole('button',{name:'最大化棋盘'})).toBeEnabled();await expect(page.locator('.connection-badge')).toContainText('服务已连接');await context.close();
 });
+
+test('forced Fullscreen refusal remains visible inside the dialog and preserves the game',async({browser})=>{
+ const {a,b,close}=await pair(browser);await a.evaluate(()=>{Element.prototype.requestFullscreen=()=>Promise.reject(new DOMException('Test denial','NotAllowedError'));});
+ await a.getByRole('button',{name:'最大化棋盘',exact:true}).click();const dialog=a.getByRole('dialog',{name:'放大棋盘',exact:true});await dialog.getByRole('button',{name:'进入系统全屏'}).click();await expect(dialog.getByRole('status').filter({hasText:'浏览器未允许系统全屏'})).toBeVisible();await count(a,0);await dialog.getByRole('button',{name:'返回普通棋盘'}).click();await cell(main(a),0,0).click();await count(b,1);await close();
+});

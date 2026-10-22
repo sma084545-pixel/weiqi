@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "ONLINE-TOOLS-PUBLIC-JOURNEY",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "resultVersion": "0.21.0-pages.1",
+  "status": "frontend-passed-chat-awaiting-server-update",
+  "chatReady": false,
+  "nativePip": true,
+  "actualPublicUrl": "https://sma084545-pixel.github.io/weiqi/",
+  "browser": "155.0.8059.86",
+  "independentBrowserContexts": true,
+  "physicalDevices": false,
+  "checkedAt": "2026-10-22T03:04:14.523Z",
+  "checks": [
+    "Actual original URL update to 0.21.0 preserves chosen local progress without clearing data",
+    "Original Pages -> public Render WSS: two independent seats alternate legal corner moves",
+    "Floating board is synchronized, keyboard movable and follows only this viewer history",
+    "Public real Document PiP: move from separate window and peer move synchronized",
+    "Actual old public backend is honestly labelled chat-awaiting-update; gameplay stays usable",
+    "Original website 360/768/1280px maximize/close/reduced-motion and local board containment",
+    "Original formal 30-puzzle catalog remains accessible"
+  ],
+  "pageErrors": [],
+  "humanReviewed": null
+}

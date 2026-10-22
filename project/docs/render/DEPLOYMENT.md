@@ -32,3 +32,6 @@ scripts/sync-github-pages.py 将公开构建放现有仓库根、源码和材料
 若希望长期跨重启保留房间，需另行明确选择持久存储方案；本次没有购买。实际双实体设备、独立网络和长时间运维仍需现场检验。
 
 来源（2026-10-21访问）：https://render.com/docs/free 、https://render.com/docs/websocket 、https://render.com/docs/blueprint-spec 、https://vite.dev/guide/env-and-mode 。
+
+
+本文件主体为0.20.3部署历史。当前0.21窗口与聊天的实际部署/兼容、云端版本与证据，请读../online-tools/DEPLOYMENT.md及ACCEPTANCE.md；不以本文件旧版本状态覆盖最新验收。

@@ -147,3 +147,9 @@ it('chat retains at most 50 recent messages and clears across server restart wit
   await app.close();const restarted=await createOnlineServer({distDir:join(file,'..'),repository:repo}),port=await restarted.listen(0);disposals.push(()=>restarted.close());
   const restored=await peer(`http://127.0.0.1:${port}`);await restored.request({type:'resume',code:blackSeat.code,token:blackSeat.token});expect((await restored.request({type:'enable-chat'})).chat.messages).toEqual([]);expect(replayOnlineGame(restored.room.record).board[0][0]).toBe('B');
 },60000);
+
+
+it('a malformed game packet after chat negotiation returns a game error with its request ID',async()=>{
+ const {url}=await setup(),{black}=await pair(url);await black.request({type:'enable-chat'});const before=black.room.revision;
+ const denied=await black.request({type:'act',version:before,action:{type:'place',at:{row:0,col:0},color:'W'}});expect(denied.type).toBe('error');expect(denied.code).toBe('BAD_MESSAGE');expect(black.room.revision).toBe(before);expect(black.room.record.events).toHaveLength(0);
+},60000);

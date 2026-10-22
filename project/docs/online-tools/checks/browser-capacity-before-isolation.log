@@ -1,0 +1,375 @@
+Already up to date
+Done in 343ms using pnpm v11.19.0
+$ playwright test --config=playwright.online.config.ts --workers=1
+[WebServer] (node:80776) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 16 tests using 1 worker
+
+(node:80777) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 tests/browser/online-tools.spec.ts:17:1 › room chat synchronizes text without changing the game; refresh, offline draft and room isolation (2.2s)
+  ✓   2 tests/browser/online-tools.spec.ts:28:1 › floating miniature follows play and read-only history; pointer, keyboard, resize and close are safe (1.3s)
+  ✓   3 tests/browser/online-tools.spec.ts:39:35 › 360px maximized board, chat, touch/keyboard and focus return (1.3s)
+  ✘   4 tests/browser/online-tools.spec.ts:39:35 › 768px maximized board, chat, touch/keyboard and focus return (5.4s)
+(node:80796) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   5 tests/browser/online-tools.spec.ts:39:35 › 1280px maximized board, chat, touch/keyboard and focus return (5.4s)
+(node:80802) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   6 tests/browser/online-tools.spec.ts:52:1 › native picture-in-picture uses the real browser API or announces the floating fallback (5.4s)
+(node:80808) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   7 tests/browser/online-tools.spec.ts:64:1 › older room service without chat capability retains games and announces chat update (5.4s)
+(node:80813) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   8 tests/browser/online.spec.ts:20:1 › home and existing same-screen board expose the installed online entry (478ms)
+  ✘   9 tests/browser/online.spec.ts:25:1 › two isolated players synchronize turns/capture, illegal suicide and live history without duplicate moves (5.4s)
+(node:80820) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  10 tests/browser/online.spec.ts:36:1 › bad/full room recovery, disconnect and same-tab refresh preserve the authenticated seat (5.4s)
+(node:80828) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  11 tests/browser/online.spec.ts:47:1 › each seat confirms its own undo; rejection retains state, acceptance restores captures (5.4s)
+(node:80843) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  12 tests/browser/online.spec.ts:53:1 › double pass, changing dead marks, both-role score, historic read-only view and disputed restoration (5.4s)
+(node:80850) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  13 tests/browser/online.spec.ts:61:1 › resignation has no invented score; leaving and restoring a room does not give its seat to a third player (5.4s)
+(node:80863) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  14 tests/browser/online.spec.ts:66:35 › 360px room layout, keyboard and local 19-route touch scrolling (5.5s)
+(node:80869) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  15 tests/browser/online.spec.ts:66:35 › 768px room layout, keyboard and local 19-route touch scrolling (5.4s)
+(node:80879) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  16 tests/browser/online.spec.ts:66:35 › 1280px room layout, keyboard and local 19-route touch scrolling (5.6s)
+
+
+  1) tests/browser/online-tools.spec.ts:39:35 › 768px maximized board, chat, touch/keyboard and focus return 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByText('你执黑', { exact: true })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByText('你执黑', { exact: true })
+
+
+       8 | async function pair(browser:Browser,width=1280,size=9,touch=false){
+       9 |  const ac=await browser.newContext({viewport:{width,height:950},hasTouch:touch,isMobile:touch}),bc=await browser.newContext(),a=await ac.newPage(),b=await bc.newPage();
+    > 10 |  await lobby(a);await a.getByLabel('昵称（可留空）').fill('TEST 窗口黑');await a.getByLabel('联机棋盘尺寸').selectOption(String(size));await a.getByRole('button',{name:'创建房间',exact:true}).click();await expect(a.getByText('你执黑',{exact:true})).toBeVisible();
+         |                                                                                                                                                                                                                                   ^
+      11 |  const code=await a.getByLabel('当前房间码').inputValue();await lobby(b);await b.getByLabel('昵称（可留空）').fill('TEST 窗口白');await b.getByLabel('输入房间码').fill(code);await b.getByRole('button',{name:'加入房间',exact:true}).click();await expect(a.locator('.online-seat').filter({hasText:'白方'})).toContainText('已连接');
+      12 |  await expect(a.locator('.chat-unavailable')).toHaveCount(0);await expect(a.getByRole('button',{name:'发送消息',exact:true})).toBeDisabled();
+      13 |  return {a,b,ac,bc,close:async()=>{await ac.close();await bc.close();}};
+        at pair (/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/online-tools-20261022/mainline/go-club/tests/browser/online-tools.spec.ts:10:227)
+        at /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/online-tools-20261022/mainline/go-club/tests/browser/online-tools.spec.ts:40:20
+
+    Error Context: output/playwright/online-results/online-tools-768px-maximiz-c4b9b-h-keyboard-and-focus-return/error-context.md
+
+  2) tests/browser/online-tools.spec.ts:39:35 › 1280px maximized board, chat, touch/keyboard and focus return 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByText('你执黑', { exact: true })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByText('你执黑', { exact: true })
+
+
+       8 | async function pair(browser:Browser,width=1280,size=9,touch=false){
+       9 |  const ac=await browser.newContext({viewport:{width,height:950},hasTouch:touch,isMobile:touch}),bc=await browser.newContext(),a=await ac.newPage(),b=await bc.newPage();
+    > 10 |  await lobby(a);await a.getByLabel('昵称（可留空）').fill('TEST 窗口黑');await a.getByLabel('联机棋盘尺寸').selectOption(String(size));await a.getByRole('button',{name:'创建房间',exact:true}).click();await expect(a.getByText('你执黑',{exact:true})).toBeVisible();
+         |                                                                                                                                                                                                                                   ^
+      11 |  const code=await a.getByLabel('当前房间码').inputValue();await lobby(b);await b.getByLabel('昵称（可留空）').fill('TEST 窗口白');await b.getByLabel('输入房间码').fill(code);await b.getByRole('button',{name:'加入房间',exact:true}).click();await expect(a.locator('.online-seat').filter({hasText:'白方'})).toContainText('已连接');
+      12 |  await expect(a.locator('.chat-unavailable')).toHaveCount(0);await expect(a.getByRole('button',{name:'发送消息',exact:true})).toBeDisabled();
+      13 |  return {a,b,ac,bc,close:async()=>{await ac.close();await bc.close();}};
+        at pair (/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/online-tools-20261022/mainline/go-club/tests/browser/online-tools.spec.ts:10:227)
+        at /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/online-tools-20261022/mainline/go-club/tests/browser/online-tools.spec.ts:40:20
+
+    Error Context: output/playwright/online-results/online-tools-1280px-maximi-5e1bd-h-keyboard-and-focus-return/error-context.md
+
+  3) tests/browser/online-tools.spec.ts:52:1 › native picture-in-picture uses the real browser API or announces the floating fallback 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByText('你执黑', { exact: true })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByText('你执黑', { exact: true })
+
+
+       8 | async function pair(browser:Browser,width=1280,size=9,touch=false){
+       9 |  const ac=await browser.newContext({viewport:{width,height:950},hasTouch:touch,isMobile:touch}),bc=await browser.newContext(),a=await ac.newPage(),b=await bc.newPage();
+    > 10 |  await lobby(a);await a.getByLabel('昵称（可留空）').fill('TEST 窗口黑');await a.getByLabel('联机棋盘尺寸').selectOption(String(size));await a.getByRole('button',{name:'创建房间',exact:true}).click();await expect(a.getByText('你执黑',{exact:true})).toBeVisible();
+         |                                                                                                                                                                                                                                   ^
+      11 |  const code=await a.getByLabel('当前房间码').inputValue();await lobby(b);await b.getByLabel('昵称（可留空）').fill('TEST 窗口白');await b.getByLabel('输入房间码').fill(code);await b.getByRole('button',{name:'加入房间',exact:true}).click();await expect(a.locator('.online-seat').filter({hasText:'白方'})).toContainText('已连接');
+      12 |  await expect(a.locator('.chat-unavailable')).toHaveCount(0);await expect(a.getByRole('button',{name:'发送消息',exact:true})).toBeDisabled();
+      13 |  return {a,b,ac,bc,close:async()=>{await ac.close();await bc.close();}};
+        at pair (/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/online-tools-20261022/mainline/go-club/tests/browser/online-tools.spec.ts:10:227)
+        at /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/online-tools-20261022/mainline/go-club/tests/browser/online-tools.spec.ts:53:20
+
+    Error Context: output/playwright/online-results/online-tools-native-pictur-61b41-unces-the-floating-fallback/error-context.md
+
+  4) tests/browser/online-tools.spec.ts:64:1 › older room service without chat capability retains games and announces chat update 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: locator('.chat-unavailable')
+    Expected substring: "等待更新"
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toContainText" with timeout 5000ms
+      - waiting for locator('.chat-unavailable')
+
+
+      63 |
+      64 | test('older room service without chat capability retains games and announces chat update',async({browser})=>{
+    > 65 |  const context=await browser.newContext();await context.routeWebSocket('**/api/online/ws',socket=>{const server=socket.connectToServer();server.onMessage(packet=>{const data=JSON.parse(String(packet));if(data.type==='hello')delete data.capabilities;socket.send(JSON.stringify(data));});});const page=await context.newPage();await lobby(page);await page.getByRole('button',{name:'创建房间',exact:true}).click();await expect(page.locator('.chat-unavailable')).toContainText('等待更新');await expect(page.getByRole('button',{name:'最大化棋盘'})).toBeEnabled();await expect(page.locator('.connection-badge')).toContainText('服务已连接');await context.close();
+         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^
+      66 | });
+      67 |
+        at /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/online-tools-20261022/mainline/go-club/tests/browser/online-tools.spec.ts:65:455
+
+    Error Context: output/playwright/online-results/online-tools-older-room-se-7a4a9-s-and-announces-chat-update/error-context.md
+
+  5) tests/browser/online.spec.ts:25:1 › two isolated players synchronize turns/capture, illegal suicide and live history without duplicate moves 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByText('你执黑', { exact: true })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByText('你执黑', { exact: true })
+
+
+       9 | async function pair(browser:Browser,options:{size?:number;width?:number;touch?:boolean}={}){
+      10 |   const ac=await browser.newContext({viewport:{width:options.width??1280,height:950},hasTouch:options.touch??false,isMobile:options.touch??false}),bc=await browser.newContext(),a=await ac.newPage(),b=await bc.newPage();
+    > 11 |   await lobby(a);await a.getByLabel('昵称（可留空）').fill('TEST 黑方');await a.getByLabel('联机棋盘尺寸').selectOption(String(options.size??5));await a.getByRole('button',{name:'创建房间',exact:true}).click();await expect(a.getByText('你执黑',{exact:true})).toBeVisible();
+         |                                                                                                                                                                                                                                              ^
+      12 |   const code=await a.getByLabel('当前房间码').inputValue();await expect(a.getByRole('button',{name:'停一手',exact:true})).toBeDisabled();
+      13 |   await lobby(b);await b.getByLabel('昵称（可留空）').fill('TEST 白方');await b.getByLabel('输入房间码').fill(code);await b.getByRole('button',{name:'加入房间',exact:true}).click();await expect(b.getByText('你执白',{exact:true})).toBeVisible();await expect(a.locator('.online-seat').filter({hasText:'白方'})).toContainText('已连接');
+      14 |   return {a,b,ac,bc,code,close:async()=>{await ac.close();await bc.close();}};
+        at pair (/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/online-tools-20261022/mainline/go-club/tests/browser/online.spec.ts:11:238)
+        at /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/online-tools-20261022/mainline/go-club/tests/browser/online.spec.ts:26:21
+
+    Error Context: output/playwright/online-results/online-two-isolated-player-6e936-ory-without-duplicate-moves/error-context.md
+
+  6) tests/browser/online.spec.ts:36:1 › bad/full room recovery, disconnect and same-tab refresh preserve the authenticated seat 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByText('你执黑', { exact: true })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByText('你执黑', { exact: true })
+
+
+       9 | async function pair(browser:Browser,options:{size?:number;width?:number;touch?:boolean}={}){
+      10 |   const ac=await browser.newContext({viewport:{width:options.width??1280,height:950},hasTouch:options.touch??false,isMobile:options.touch??false}),bc=await browser.newContext(),a=await ac.newPage(),b=await bc.newPage();
+    > 11 |   await lobby(a);await a.getByLabel('昵称（可留空）').fill('TEST 黑方');await a.getByLabel('联机棋盘尺寸').selectOption(String(options.size??5));await a.getByRole('button',{name:'创建房间',exact:true}).click();await expect(a.getByText('你执黑',{exact:true})).toBeVisible();
+         |                                                                                                                                                                                                                                              ^
+      12 |   const code=await a.getByLabel('当前房间码').inputValue();await expect(a.getByRole('button',{name:'停一手',exact:true})).toBeDisabled();
+      13 |   await lobby(b);await b.getByLabel('昵称（可留空）').fill('TEST 白方');await b.getByLabel('输入房间码').fill(code);await b.getByRole('button',{name:'加入房间',exact:true}).click();await expect(b.getByText('你执白',{exact:true})).toBeVisible();await expect(a.locator('.online-seat').filter({hasText:'白方'})).toContainText('已连接');
+      14 |   return {a,b,ac,bc,code,close:async()=>{await ac.close();await bc.close();}};
+        at pair (/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/online-tools-20261022/mainline/go-club/tests/browser/online.spec.ts:11:238)
+        at /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/online-tools-20261022/mainline/go-club/tests/browser/online.spec.ts:37:29
+
+    Error Context: output/playwright/online-results/online-bad-full-room-recov-8ae91-erve-the-authenticated-seat/error-context.md
+
+  7) tests/browser/online.spec.ts:47:1 › each seat confirms its own undo; rejection retains state, acceptance restores captures 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByText('你执黑', { exact: true })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByText('你执黑', { exact: true })
+
+
+       9 | async function pair(browser:Browser,options:{size?:number;width?:number;touch?:boolean}={}){
+      10 |   const ac=await browser.newContext({viewport:{width:options.width??1280,height:950},hasTouch:options.touch??false,isMobile:options.touch??false}),bc=await browser.newContext(),a=await ac.newPage(),b=await bc.newPage();
+    > 11 |   await lobby(a);await a.getByLabel('昵称（可留空）').fill('TEST 黑方');await a.getByLabel('联机棋盘尺寸').selectOption(String(options.size??5));await a.getByRole('button',{name:'创建房间',exact:true}).click();await expect(a.getByText('你执黑',{exact:true})).toBeVisible();
+         |                                                                                                                                                                                                                                              ^
+      12 |   const code=await a.getByLabel('当前房间码').inputValue();await expect(a.getByRole('button',{name:'停一手',exact:true})).toBeDisabled();
+      13 |   await lobby(b);await b.getByLabel('昵称（可留空）').fill('TEST 白方');await b.getByLabel('输入房间码').fill(code);await b.getByRole('button',{name:'加入房间',exact:true}).click();await expect(b.getByText('你执白',{exact:true})).toBeVisible();await expect(a.locator('.online-seat').filter({hasText:'白方'})).toContainText('已连接');
+      14 |   return {a,b,ac,bc,code,close:async()=>{await ac.close();await bc.close();}};
+        at pair (/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/online-tools-20261022/mainline/go-club/tests/browser/online.spec.ts:11:238)
+        at /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/online-tools-20261022/mainline/go-club/tests/browser/online.spec.ts:48:21
+
+    Error Context: output/playwright/online-results/online-each-seat-confirms--6201a-cceptance-restores-captures/error-context.md
+
+  8) tests/browser/online.spec.ts:53:1 › double pass, changing dead marks, both-role score, historic read-only view and disputed restoration 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByText('你执黑', { exact: true })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByText('你执黑', { exact: true })
+
+
+       9 | async function pair(browser:Browser,options:{size?:number;width?:number;touch?:boolean}={}){
+      10 |   const ac=await browser.newContext({viewport:{width:options.width??1280,height:950},hasTouch:options.touch??false,isMobile:options.touch??false}),bc=await browser.newContext(),a=await ac.newPage(),b=await bc.newPage();
+    > 11 |   await lobby(a);await a.getByLabel('昵称（可留空）').fill('TEST 黑方');await a.getByLabel('联机棋盘尺寸').selectOption(String(options.size??5));await a.getByRole('button',{name:'创建房间',exact:true}).click();await expect(a.getByText('你执黑',{exact:true})).toBeVisible();
+         |                                                                                                                                                                                                                                              ^
+      12 |   const code=await a.getByLabel('当前房间码').inputValue();await expect(a.getByRole('button',{name:'停一手',exact:true})).toBeDisabled();
+      13 |   await lobby(b);await b.getByLabel('昵称（可留空）').fill('TEST 白方');await b.getByLabel('输入房间码').fill(code);await b.getByRole('button',{name:'加入房间',exact:true}).click();await expect(b.getByText('你执白',{exact:true})).toBeVisible();await expect(a.locator('.online-seat').filter({hasText:'白方'})).toContainText('已连接');
+      14 |   return {a,b,ac,bc,code,close:async()=>{await ac.close();await bc.close();}};
+        at pair (/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/online-tools-20261022/mainline/go-club/tests/browser/online.spec.ts:11:238)
+        at /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/online-tools-20261022/mainline/go-club/tests/browser/online.spec.ts:54:21
+
+    Error Context: output/playwright/online-results/online-double-pass-changin-33471-ew-and-disputed-restoration/error-context.md
+
+  9) tests/browser/online.spec.ts:61:1 › resignation has no invented score; leaving and restoring a room does not give its seat to a third player 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByText('你执黑', { exact: true })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByText('你执黑', { exact: true })
+
+
+       9 | async function pair(browser:Browser,options:{size?:number;width?:number;touch?:boolean}={}){
+      10 |   const ac=await browser.newContext({viewport:{width:options.width??1280,height:950},hasTouch:options.touch??false,isMobile:options.touch??false}),bc=await browser.newContext(),a=await ac.newPage(),b=await bc.newPage();
+    > 11 |   await lobby(a);await a.getByLabel('昵称（可留空）').fill('TEST 黑方');await a.getByLabel('联机棋盘尺寸').selectOption(String(options.size??5));await a.getByRole('button',{name:'创建房间',exact:true}).click();await expect(a.getByText('你执黑',{exact:true})).toBeVisible();
+         |                                                                                                                                                                                                                                              ^
+      12 |   const code=await a.getByLabel('当前房间码').inputValue();await expect(a.getByRole('button',{name:'停一手',exact:true})).toBeDisabled();
+      13 |   await lobby(b);await b.getByLabel('昵称（可留空）').fill('TEST 白方');await b.getByLabel('输入房间码').fill(code);await b.getByRole('button',{name:'加入房间',exact:true}).click();await expect(b.getByText('你执白',{exact:true})).toBeVisible();await expect(a.locator('.online-seat').filter({hasText:'白方'})).toContainText('已连接');
+      14 |   return {a,b,ac,bc,code,close:async()=>{await ac.close();await bc.close();}};
+        at pair (/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/online-tools-20261022/mainline/go-club/tests/browser/online.spec.ts:11:238)
+        at /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/online-tools-20261022/mainline/go-club/tests/browser/online.spec.ts:62:21
+
+    Error Context: output/playwright/online-results/online-resignation-has-no--10736--its-seat-to-a-third-player/error-context.md
+
+  10) tests/browser/online.spec.ts:66:35 › 360px room layout, keyboard and local 19-route touch scrolling 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByText('你执黑', { exact: true })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByText('你执黑', { exact: true })
+
+
+       9 | async function pair(browser:Browser,options:{size?:number;width?:number;touch?:boolean}={}){
+      10 |   const ac=await browser.newContext({viewport:{width:options.width??1280,height:950},hasTouch:options.touch??false,isMobile:options.touch??false}),bc=await browser.newContext(),a=await ac.newPage(),b=await bc.newPage();
+    > 11 |   await lobby(a);await a.getByLabel('昵称（可留空）').fill('TEST 黑方');await a.getByLabel('联机棋盘尺寸').selectOption(String(options.size??5));await a.getByRole('button',{name:'创建房间',exact:true}).click();await expect(a.getByText('你执黑',{exact:true})).toBeVisible();
+         |                                                                                                                                                                                                                                              ^
+      12 |   const code=await a.getByLabel('当前房间码').inputValue();await expect(a.getByRole('button',{name:'停一手',exact:true})).toBeDisabled();
+      13 |   await lobby(b);await b.getByLabel('昵称（可留空）').fill('TEST 白方');await b.getByLabel('输入房间码').fill(code);await b.getByRole('button',{name:'加入房间',exact:true}).click();await expect(b.getByText('你执白',{exact:true})).toBeVisible();await expect(a.locator('.online-seat').filter({hasText:'白方'})).toContainText('已连接');
+      14 |   return {a,b,ac,bc,code,close:async()=>{await ac.close();await bc.close();}};
+        at pair (/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/online-tools-20261022/mainline/go-club/tests/browser/online.spec.ts:11:238)
+        at /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/online-tools-20261022/mainline/go-club/tests/browser/online.spec.ts:67:24
+
+    Error Context: output/playwright/online-results/online-360px-room-layout-k-9df50-al-19-route-touch-scrolling/error-context.md
+
+  11) tests/browser/online.spec.ts:66:35 › 768px room layout, keyboard and local 19-route touch scrolling 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByText('你执黑', { exact: true })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByText('你执黑', { exact: true })
+
+
+       9 | async function pair(browser:Browser,options:{size?:number;width?:number;touch?:boolean}={}){
+      10 |   const ac=await browser.newContext({viewport:{width:options.width??1280,height:950},hasTouch:options.touch??false,isMobile:options.touch??false}),bc=await browser.newContext(),a=await ac.newPage(),b=await bc.newPage();
+    > 11 |   await lobby(a);await a.getByLabel('昵称（可留空）').fill('TEST 黑方');await a.getByLabel('联机棋盘尺寸').selectOption(String(options.size??5));await a.getByRole('button',{name:'创建房间',exact:true}).click();await expect(a.getByText('你执黑',{exact:true})).toBeVisible();
+         |                                                                                                                                                                                                                                              ^
+      12 |   const code=await a.getByLabel('当前房间码').inputValue();await expect(a.getByRole('button',{name:'停一手',exact:true})).toBeDisabled();
+      13 |   await lobby(b);await b.getByLabel('昵称（可留空）').fill('TEST 白方');await b.getByLabel('输入房间码').fill(code);await b.getByRole('button',{name:'加入房间',exact:true}).click();await expect(b.getByText('你执白',{exact:true})).toBeVisible();await expect(a.locator('.online-seat').filter({hasText:'白方'})).toContainText('已连接');
+      14 |   return {a,b,ac,bc,code,close:async()=>{await ac.close();await bc.close();}};
+        at pair (/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/online-tools-20261022/mainline/go-club/tests/browser/online.spec.ts:11:238)
+        at /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/online-tools-20261022/mainline/go-club/tests/browser/online.spec.ts:67:24
+
+    Error Context: output/playwright/online-results/online-768px-room-layout-k-5d9eb-al-19-route-touch-scrolling/error-context.md
+
+  12) tests/browser/online.spec.ts:66:35 › 1280px room layout, keyboard and local 19-route touch scrolling 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByText('你执黑', { exact: true })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByText('你执黑', { exact: true })
+
+
+       9 | async function pair(browser:Browser,options:{size?:number;width?:number;touch?:boolean}={}){
+      10 |   const ac=await browser.newContext({viewport:{width:options.width??1280,height:950},hasTouch:options.touch??false,isMobile:options.touch??false}),bc=await browser.newContext(),a=await ac.newPage(),b=await bc.newPage();
+    > 11 |   await lobby(a);await a.getByLabel('昵称（可留空）').fill('TEST 黑方');await a.getByLabel('联机棋盘尺寸').selectOption(String(options.size??5));await a.getByRole('button',{name:'创建房间',exact:true}).click();await expect(a.getByText('你执黑',{exact:true})).toBeVisible();
+         |                                                                                                                                                                                                                                              ^
+      12 |   const code=await a.getByLabel('当前房间码').inputValue();await expect(a.getByRole('button',{name:'停一手',exact:true})).toBeDisabled();
+      13 |   await lobby(b);await b.getByLabel('昵称（可留空）').fill('TEST 白方');await b.getByLabel('输入房间码').fill(code);await b.getByRole('button',{name:'加入房间',exact:true}).click();await expect(b.getByText('你执白',{exact:true})).toBeVisible();await expect(a.locator('.online-seat').filter({hasText:'白方'})).toContainText('已连接');
+      14 |   return {a,b,ac,bc,code,close:async()=>{await ac.close();await bc.close();}};
+        at pair (/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/online-tools-20261022/mainline/go-club/tests/browser/online.spec.ts:11:238)
+        at /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/online-tools-20261022/mainline/go-club/tests/browser/online.spec.ts:67:24
+
+    Error Context: output/playwright/online-results/online-1280px-room-layout--32239-al-19-route-touch-scrolling/error-context.md
+
+  12 failed
+    tests/browser/online-tools.spec.ts:39:35 › 768px maximized board, chat, touch/keyboard and focus return 
+    tests/browser/online-tools.spec.ts:39:35 › 1280px maximized board, chat, touch/keyboard and focus return 
+    tests/browser/online-tools.spec.ts:52:1 › native picture-in-picture uses the real browser API or announces the floating fallback 
+    tests/browser/online-tools.spec.ts:64:1 › older room service without chat capability retains games and announces chat update 
+    tests/browser/online.spec.ts:25:1 › two isolated players synchronize turns/capture, illegal suicide and live history without duplicate moves 
+    tests/browser/online.spec.ts:36:1 › bad/full room recovery, disconnect and same-tab refresh preserve the authenticated seat 
+    tests/browser/online.spec.ts:47:1 › each seat confirms its own undo; rejection retains state, acceptance restores captures 
+    tests/browser/online.spec.ts:53:1 › double pass, changing dead marks, both-role score, historic read-only view and disputed restoration 
+    tests/browser/online.spec.ts:61:1 › resignation has no invented score; leaving and restoring a room does not give its seat to a third player 
+    tests/browser/online.spec.ts:66:35 › 360px room layout, keyboard and local 19-route touch scrolling 
+    tests/browser/online.spec.ts:66:35 › 768px room layout, keyboard and local 19-route touch scrolling 
+    tests/browser/online.spec.ts:66:35 › 1280px room layout, keyboard and local 19-route touch scrolling 
+  4 passed (1.3m)
+[ELIFECYCLE] Command failed with exit code 1.

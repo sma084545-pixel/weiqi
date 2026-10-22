@@ -1,7 +1,7 @@
 ---
 schemaVersion: 1
 id: ONLINE-PROTOCOL
-revision: 1
+revision: 2
 rulesetId: GO-CLUB-AREA-1
 ---
 
@@ -36,3 +36,6 @@ GameState的setup/history/moves/captures/phase/toPlay/komi等不变。两停进�
 ## 兼容扩展
 
 模块注册新增optional requiresNetwork:boolean，缺省false；离线可用列表排除true项。online-play / #/play/online需要网络，其他已安装模块沿用原本机存储和离线行为。APP_VERSION统一来自src/core/version.ts；原constants与unified-persistence的导出位置保留。数据库与schema没有迁移。新增依赖仅ws8.22.0与开发类型@types/ws8.18.2，已锁定并保留MIT许可证。
+
+
+0.21窗口与聊天兼容扩展见[最新使用说明](../online-tools/USAGE.md)及[协议扩展](../online-tools/INTERFACES.md)。旧基础对局约定继续适用；当前公网实际服务版本与程序版本分别记录在../online-tools/ACCEPTANCE.md。

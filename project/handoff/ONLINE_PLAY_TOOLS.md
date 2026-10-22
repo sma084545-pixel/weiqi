@@ -7,11 +7,11 @@ rulesetId: GO-CLUB-AREA-1
 
 taskId: ONLINE_PLAY_TOOLS
 baseVersion: RENDER_DEPLOY 0.20.3-pages.1
-resultVersion: 0.21.0-pages.1
-programVersion: 0.21.0
+resultVersion: 0.21.1-pages.1
+programVersion: 0.21.1
 rulesetId: GO-CLUB-AREA-1
 schemaVersion: 1
-status: implementation-verified-public-chat-awaiting-server-update
+status: public-features-verified-packaging-in-progress
 
 本轮以已封存完整归档的SHA-256 bf1fb90395e4d2b5970647edc944d13d6501795dffbb36d4d54a41dafce7f505 解压的隔离副本为唯一主线；不改sources/或已封存旧归档。
 
@@ -26,3 +26,8 @@ status: implementation-verified-public-chat-awaiting-server-update
 失败/未测：公网聊天更新和公网全流程必须在现有Render服务部署新后端之后复验。浏览器权限仍阻止助手访问Render后台，不绕过限制访问API；维护者需在已有服务手动部署最新提交。当前不能把静态Pages发布等同聊天已上线。
 
 迁移：无schema/规则或存储主版本迁移。旧页面先保存当前工作再应用更新；不要清站点数据。聊天为瞬时记录不迁移。Render重启可能清空临时房间，先保存/导出棋局再手动更新；随后重开房间。保持原GitHub网址、PUBLIC_ORIGIN和房间源。
+
+本地最终：398项单元/49文件、851内容检查、176静态+16在线浏览器流程、11项Pages检查通过；13项在线单元包含50条上限与服务器重启聊天清空。原网站0.21.1已发布（89a37a36d0cd1ecc41d54b5ac474f58d48d09b1f，Pages built），Chrome155.0.8059.86实测双人轮流落子、独立PiP、悬浮/回看、三尺寸最大化与升级保留进度均通过。公网聊天仍待Render从0.20.2手动更新；源码与实际公网状态分开记录。
+
+
+2026-10-22用户完成Render手动部署后，实际后台0.21.0+roomChat=1已上线。公开原网址双向收发、HTML仅作文字、发消息不改棋局revision、刷新/实际断网恢复、三尺寸放大与真实Document PiP均已通过（public-backend-chat.json；Chrome155.0.8059.86，非实体设备/教师审核）。最终程序0.21.1为收尾补丁，兼容该后台；0.21.1源码中非法报文错误通道的额外加固仅本地验证，云端仍是用户部署的0.21.0，不冒称新后台补丁已运行。

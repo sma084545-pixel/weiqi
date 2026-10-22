@@ -1,7 +1,7 @@
 ---
 schemaVersion: 1
 id: ONLINE-KNOWN-ISSUES
-revision: 1
+revision: 2
 rulesetId: GO-CLUB-AREA-1
 ---
 
@@ -20,3 +20,6 @@ rulesetId: GO-CLUB-AREA-1
 - 生产JS仍有原有单包体积提示，本次约1MB未压缩；静态资源本地缓存、无外部CDN。没有以构建通过宣称性能或学校CAS认可。
 
 初轮截图发现联机容器按钮样式覆盖了棋盘交点背景，已收窄样式作用域，并增加透明背景/零边框/零内距的三尺寸浏览器断言。初次完整检查因MERGE_A旧锁文件指纹拒绝新增ws，已保留原指纹及正式文件，添加精确散列/新增依赖白名单验证；没有绕过规则/schema/内容校验。失败原日志与修正证据均保留。
+
+
+0.21窗口与聊天兼容扩展见[最新使用说明](../online-tools/USAGE.md)及[协议扩展](../online-tools/INTERFACES.md)。旧基础对局约定继续适用；当前公网实际服务版本与程序版本分别记录在../online-tools/ACCEPTANCE.md。

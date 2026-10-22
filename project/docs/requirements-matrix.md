@@ -101,3 +101,11 @@ FREE_PLAY：主页伙伴卡/顶部“双人对弈”/教师入口→#/play/free�
 | 多尺寸/触屏/键盘/重连 | Board、在线房间及历史组件 | docs/render/checks/public-responsive.json | 通过 |
 | 已有本机记录与公开构建可复现 | build:pages、T16缓存更新 | public-seed/public-journey、build-pages.log | 通过 |
 | 永久云存档与实体双设备 | 未包含/未实际测试 | docs/render/KNOWN_ISSUES.md | 未测，不宣称完成 |
+
+
+## 用户追加：联机棋盘窗口与聊天
+
+|要求|责任模块|验收位置|状态|
+|---|---|---|---|
+|页内浮图/独立画中画/棋盘最大化与系统全屏|online-game/BoardDisplayTools、共享Board|docs/online-tools/ACCEPTANCE.md；online-tools.spec.ts|本地通过，公网以实测记录为准|
+|房间双人聊天、临时记录、版本协商与隔离|online-game/client、protocol、RoomChat；server/rooms|tests/online/server.test.ts；公开原网址public-journey|本地通过，待完成云端版本核对|

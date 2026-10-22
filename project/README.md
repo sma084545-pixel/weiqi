@@ -5,7 +5,7 @@ revision: 26
 rulesetId: GO-CLUB-AREA-1
 ---
 
-# 围棋社工具包 · 0.21.0
+# 围棋社工具包 · 0.21.1
 
 原网站保持 https://sma084545-pixel.github.io/weiqi/ ，联机入口 #/play/online。新增可拖动悬浮棋盘、独立画中画、最大化/系统全屏及房间双人聊天。使用与兼容边界见[窗口与聊天](docs/online-tools/USAGE.md)，更新服务器见[部署指南](docs/online-tools/DEPLOYMENT.md)。本次主线基线RENDER_DEPLOY 0.20.3-pages.1；保留GO-CLUB-AREA-1、schemaVersion1、30题/6终局、课件纸卡和原存储。
 
@@ -17,7 +17,7 @@ rulesetId: GO-CLUB-AREA-1
 
 检查：`corepack pnpm check`、`corepack pnpm test:browser`、`corepack pnpm test:online`、`corepack pnpm test:pages`。实际命令、结果及限制在docs/online-tools/checks/和handoff/ONLINE_PLAY_TOOLS.md。本机学习离线与房间联网分别验证；升级先保存备份再应用，不清站点数据。
 
-联机服务器为https://weiqi-rooms.onrender.com，聊天需部署0.21.0并重新连接。服务端以共同规则验证双方轮次、提子、超级劫、悔棋与终局清单。预览不等于死活裁判，双方确认后才形成面积分。聊天仅当前房间两位伙伴临时文字，不混入棋谱；正式题库和本机教师草稿、反馈不上传。
+联机服务器为https://weiqi-rooms.onrender.com，网页与带roomChat=1的后台0.21.0已接通并实测聊天；程序包为0.21.1。服务端以共同规则验证双方轮次、提子、超级劫、悔棋与终局清单。预览不等于死活裁判，双方确认后才形成面积分。聊天仅当前房间两位伙伴临时文字，不混入棋谱；正式题库和本机教师草稿、反馈不上传。
 
 ---
 
