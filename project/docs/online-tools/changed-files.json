@@ -24,7 +24,7 @@
     {
       "path": "dist/ONLINE_SETUP.md",
       "kind": "modified",
-      "sha256": "b3045da701fa3fe0854563801036d395391b8d8e5d5f14a7bfdaa34dd26cd738"
+      "sha256": "6c6b9655af11550949adf2172333ea0ad3d8739c2895b9629473c8d22bb53afd"
     },
     {
       "path": "dist/assets/index-DL-R1VRT.css",
@@ -214,7 +214,7 @@
     {
       "path": "docs/online-tools/checks/build-pages.log",
       "kind": "added",
-      "sha256": "4a2c281f80fe6b61eeab69cfa212a72f894041bef467b3374673e9500349c2e9"
+      "sha256": "726436491a26ac668febef31139263b26d303b78716ede20e553146024384481"
     },
     {
       "path": "docs/online-tools/checks/build-tools.log",

@@ -1,5 +1,5 @@
 Already up to date
-Done in 448ms using pnpm v11.19.0
+Done in 306ms using pnpm v11.19.0
 $ node scripts/build-public-site.mjs
 $ tsc --noEmit && vite build && node scripts/finalize-offline.mjs && vite build --config vite.server.config.ts
 vite v8.2.2 building client environment for production...
@@ -11,7 +11,7 @@ dist/index.html                     0.64 kB │ gzip:   0.45 kB
 dist/assets/index-DL-R1VRT.css    134.87 kB │ gzip:  27.00 kB
 dist/assets/index-DpKgjCkP.js   1,016.30 kB │ gzip: 266.16 kB
 
-✓ built in 230ms
+✓ built in 224ms
 [plugin builtin:vite-reporter] 
 (!) Some chunks are larger than 500 kB after minification. Consider:
 - Using dynamic import() to code-split the application
@@ -25,4 +25,4 @@ rendering chunks...
 computing gzip size...
 dist-server/server.mjs  454.61 kB │ gzip: 100.66 kB
 
-✓ built in 56ms
+✓ built in 52ms

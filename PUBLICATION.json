@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "GITHUB-PAGES-PUBLICATION",
-  "revision": 11,
+  "revision": 12,
   "rulesetId": "GO-CLUB-AREA-1",
   "resultVersion": "0.21.1-pages.1",
   "programVersion": "0.21.1",
@@ -17,8 +17,8 @@
   "files": [
     {
       "path": "ONLINE_SETUP.md",
-      "bytes": 2770,
-      "sha256": "b3045da701fa3fe0854563801036d395391b8d8e5d5f14a7bfdaa34dd26cd738"
+      "bytes": 2786,
+      "sha256": "6c6b9655af11550949adf2172333ea0ad3d8739c2895b9629473c8d22bb53afd"
     },
     {
       "path": "app.webmanifest",
@@ -81,5 +81,5 @@
       "sha256": "fcf0ff3411d6e674f60e84feffff6e99613c4dd953e6e4f569ee911898a8cc9c"
     }
   ],
-  "sourceManifestSha256": "3ed503d27941662404dcbcfa4997a2ea41f1b88704f44d24189bd3382aaf63d0"
+  "sourceManifestSha256": "5bfc1b3e5cd0711380b39c8d1d4035e70a1c5f6392067a2a0a2a0bc63a77ed01"
 }
