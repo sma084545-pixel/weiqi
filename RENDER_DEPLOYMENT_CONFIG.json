@@ -6,7 +6,7 @@
   "baseVersion": "0.21.1-pages.1",
   "resultVersion": "0.21.2-pages.1",
   "programVersion": "0.21.2",
-  "status": "frontend-published-verification-pending",
+  "status": "complete-with-documented-hosting-limits",
   "website": "https://sma084545-pixel.github.io/weiqi/",
   "serverOrigin": "https://weiqi-rooms.onrender.com",
   "observedServerProgramVersion": "0.21.0",
@@ -26,7 +26,7 @@
   },
   "verification": {
     "publicChat": "project/docs/online-tools/checks/public-journey.json",
-    "publicBrowser": "Chrome155.0.8059.86; independent contexts; not physical devices",
+    "publicBrowser": "Chrome155.0.8059.86; actual public floating-board play and 19-route touch simulation; independent contexts, not physical devices",
     "local": "project/docs/floating-play/ACCEPTANCE.md",
     "handbook": "project/handoff/ONLINE_FLOATING_PLAY.md",
     "publicFloating": "project/docs/floating-play/checks/public-journey.json"

@@ -1,0 +1,355 @@
+{
+  "schemaVersion": 1,
+  "id": "FLOATING-PLAY-CHANGE-MANIFEST",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "baseVersion": "0.21.1-pages.1",
+  "resultVersion": "0.21.2-pages.1",
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "kind": "modified",
+      "sha256": "8255b674ea463728c4c01fe8bff5077e812cafc708c3680758db15b9c70ca2e1"
+    },
+    {
+      "path": "README.md",
+      "kind": "modified",
+      "sha256": "4fccefcd3ab174405475a3daa031fe36609dc8f8f51cc05c2234b798358efec8"
+    },
+    {
+      "path": "dist/ONLINE_SETUP.md",
+      "kind": "modified",
+      "sha256": "a2b468c209c94b323e217ea981cb90625a402b921c70361b37c6ef1bca25f384"
+    },
+    {
+      "path": "dist/assets/index-B8ix4I1j.js",
+      "kind": "added",
+      "sha256": "52b8afc4fb90d2b2b3b4124524105361d10465e640a2423009ca948b876bbc60"
+    },
+    {
+      "path": "dist/assets/index-CJAe6hZ4.css",
+      "kind": "added",
+      "sha256": "529528b30e45e7b648aa23aa943edbd6f2fb6ca10687d2bd6709737b500a3dd0"
+    },
+    {
+      "path": "dist/index.html",
+      "kind": "modified",
+      "sha256": "895897b8620572a284f72cf80c2b92dbb25f693c5ff4f9882e6f551ba8bbac97"
+    },
+    {
+      "path": "dist/offline-assets.json",
+      "kind": "modified",
+      "sha256": "2f4852938ca11518e4c3c75036d5fae264ea7d10f7ac4c77827e68986e551663"
+    },
+    {
+      "path": "dist/sw.js",
+      "kind": "modified",
+      "sha256": "b2ed6f9f8dce7a685bf16e5e653c300fad36130d71e6bac4cc6b9a899d7e019f"
+    },
+    {
+      "path": "dist/version.json",
+      "kind": "modified",
+      "sha256": "a6a5402e2dfafb06492eeb93a084cee8cf6fb9d734656c6979a0005128c9826a"
+    },
+    {
+      "path": "dist-engine/package.json",
+      "kind": "modified",
+      "sha256": "671da53166dd8236799e1ff7c993f2081829246c76970628953d382e53464347"
+    },
+    {
+      "path": "dist-engine/types/version.d.ts",
+      "kind": "modified",
+      "sha256": "4e980f44f4b83641c20b3bf3a736079d8cedfc4fc46319f013936c6836f96d4f"
+    },
+    {
+      "path": "dist-server/server.mjs",
+      "kind": "modified",
+      "sha256": "2186b0a36103b3d191c614936c67891cb652570152fabbf4be40a88bf0c17731"
+    },
+    {
+      "path": "docs/floating-play/ACCEPTANCE.md",
+      "kind": "added",
+      "sha256": "58d3b0506b95739c040230e57d7a02df50a57edc4402f1ed0b4987de9795efae"
+    },
+    {
+      "path": "docs/floating-play/BASE-MANIFEST.json",
+      "kind": "added",
+      "sha256": "f468f2de76adedbe8902e8586aeb8f9312ddadc023ce1233bdbc6356e560b550"
+    },
+    {
+      "path": "docs/floating-play/KNOWN_ISSUES.md",
+      "kind": "added",
+      "sha256": "0356ba8c3b2a867f573671a3930834139b2527b79fd3a1351529269ba759cd15"
+    },
+    {
+      "path": "docs/floating-play/SOURCES.md",
+      "kind": "added",
+      "sha256": "e4f7b2803b59294f9909e85bd4ba54a20c4c336f2c85ca7d5ee72e66f134d0d6"
+    },
+    {
+      "path": "docs/floating-play/USAGE.md",
+      "kind": "added",
+      "sha256": "470f6ce9e2b52344b5c17de74e2eb130a627ea9609366b32902de169f985865e"
+    },
+    {
+      "path": "docs/floating-play/checks/browser/1280-floating-5.png",
+      "kind": "added",
+      "sha256": "82a2cc27e372bba0220e23105271957823fb7f0308580ca27fb8b73f4f1fc552"
+    },
+    {
+      "path": "docs/floating-play/checks/browser/1280-maximized.png",
+      "kind": "added",
+      "sha256": "8af39c1a2778e3d6119e76401dc80a0ce829c2233763cea47faa7fc7461d5de4"
+    },
+    {
+      "path": "docs/floating-play/checks/browser/360-floating-19.png",
+      "kind": "added",
+      "sha256": "cc0e1768bfcda61585eb1cf227d705f1e3fbec5695be651e8a8a312e475b52af"
+    },
+    {
+      "path": "docs/floating-play/checks/browser/360-maximized.png",
+      "kind": "added",
+      "sha256": "7d2c0c03abcf1d9edc38ed3ab062e8f9d4488be1c2cc62af7b51420167eecfc5"
+    },
+    {
+      "path": "docs/floating-play/checks/browser/768-floating-13.png",
+      "kind": "added",
+      "sha256": "04e94f196681bd76c6804891fdeb6f7e1bab1392aa6ddde886c73be8e3b02f4a"
+    },
+    {
+      "path": "docs/floating-play/checks/browser/768-maximized.png",
+      "kind": "added",
+      "sha256": "ab925049e49661873bc95f01d1f29a04531457bf369dc20cb415f28a6ef01fe8"
+    },
+    {
+      "path": "docs/floating-play/checks/browser/chat.png",
+      "kind": "added",
+      "sha256": "45148f8298364a5bf15dcd4f695db3e5ac4107b61399e00de485cdef2bad6289"
+    },
+    {
+      "path": "docs/floating-play/checks/browser/native-pip.json",
+      "kind": "added",
+      "sha256": "7d0308af7b67785e833bd216c09261b8d68d90b2a29f94233e92007604fb8c45"
+    },
+    {
+      "path": "docs/floating-play/checks/browser/regression/1280-live-room.png",
+      "kind": "added",
+      "sha256": "c3341e18ba5fbec577766c913a2e6de5a4f3c9490e2f31e9fadead5cdbc14521"
+    },
+    {
+      "path": "docs/floating-play/checks/browser/regression/1280-room.png",
+      "kind": "added",
+      "sha256": "989f6bba9af286324e277803ce3753e7eb18b71cc8df591c8d25ca8ea8a43841"
+    },
+    {
+      "path": "docs/floating-play/checks/browser/regression/360-room.png",
+      "kind": "added",
+      "sha256": "73498ce3e071147e2ef1c4454935c727067c8f71aee84918acafd14bc474ced0"
+    },
+    {
+      "path": "docs/floating-play/checks/browser/regression/768-room.png",
+      "kind": "added",
+      "sha256": "51e401ff7281952939fd5f202831dfde44a6beecdbe1a989ecdd701e30798512"
+    },
+    {
+      "path": "docs/floating-play/checks/browser-regression.log",
+      "kind": "added",
+      "sha256": "be6bd8664acc29e39e0613aa230522954a7c8d32b87dd167290c1b15c77bf7c6"
+    },
+    {
+      "path": "docs/floating-play/checks/build-pages.log",
+      "kind": "added",
+      "sha256": "e59b735d60ac1aa328439b2043cf87abb641429bb577ad53703fa74407b97dc7"
+    },
+    {
+      "path": "docs/floating-play/checks/check.log",
+      "kind": "added",
+      "sha256": "6f810ae2cc421e3040f96506306f6052077b754296284e4ed103584700635f7d"
+    },
+    {
+      "path": "docs/floating-play/checks/local-checks.json",
+      "kind": "added",
+      "sha256": "4500a800f2ffeb58af3971c0d3c8e9a5426d17f543e8d88a3b7f41fbcb1dae7d"
+    },
+    {
+      "path": "docs/floating-play/checks/online-browser-initial-failure.log",
+      "kind": "added",
+      "sha256": "36039ad8b8a4c4d8442e61d1360853fa7f443469a1d45fcdc3ab74afc4147b90"
+    },
+    {
+      "path": "docs/floating-play/checks/online-browser.log",
+      "kind": "added",
+      "sha256": "2b057857e8ffd958ddc76655be1b2de011d55cf9a1be3283f36b8774016ba900"
+    },
+    {
+      "path": "docs/floating-play/checks/pages.log",
+      "kind": "added",
+      "sha256": "23fb1c7ee5562519c556cff79743e34e428e27b7fc1b718650c03b8356c86150"
+    },
+    {
+      "path": "docs/floating-play/checks/preservation.json",
+      "kind": "added",
+      "sha256": "e445db8b9a34e41a2434b9b9d61c90fb453c83922151239ce8a3b654c3b8b021"
+    },
+    {
+      "path": "docs/floating-play/checks/public-1280-maximized.png",
+      "kind": "added",
+      "sha256": "d45487323a676ef80928b0f7484ac7b14457cb53e617477be3660db6fe8beb2a"
+    },
+    {
+      "path": "docs/floating-play/checks/public-360-floating-19.png",
+      "kind": "added",
+      "sha256": "36811b62d16ffc6da48869afbc630059d279f5c48b6ca1193bde2d74f8a0368e"
+    },
+    {
+      "path": "docs/floating-play/checks/public-360-maximized.png",
+      "kind": "added",
+      "sha256": "00be0bbe4da3088a30fcfa68fe65577c8f3612a969dba215f87b6bc6ab646039"
+    },
+    {
+      "path": "docs/floating-play/checks/public-768-maximized.png",
+      "kind": "added",
+      "sha256": "85d7c6ac0306cfcdcc75edc79de2af6fb799cabd16da78c3669c73e9d2098fbf"
+    },
+    {
+      "path": "docs/floating-play/checks/public-journey.json",
+      "kind": "added",
+      "sha256": "6582d246935d4113bdb96bcc00936ebcb3387b2730fce095cf07044ff5dc932b"
+    },
+    {
+      "path": "docs/floating-play/checks/public-journey.log",
+      "kind": "added",
+      "sha256": "f8b955d43695097866720c2d51f1b4d2f1188a8462872d1f83645ff83dfa6689"
+    },
+    {
+      "path": "docs/floating-play/checks/public-live-tools.png",
+      "kind": "added",
+      "sha256": "2aca2e896d267546c3e4eb9c5edc3206fa10ef94700ebff345bab3a7f7b71b56"
+    },
+    {
+      "path": "docs/floating-play/checks/regression-generated/docs/t24/checks/journey/chromium/full-game.png",
+      "kind": "added",
+      "sha256": "b00006274e7a198ff6966c49fc88192e7de4a12820dfcd806ef2617fd58c64a8"
+    },
+    {
+      "path": "docs/floating-play/checks/regression-generated/docs/t24/checks/journey/chromium/offline-editor.png",
+      "kind": "added",
+      "sha256": "6d11d745c5f4d2de96ef2438f2532949c05b3897371464b2da3487951d3cd8d8"
+    },
+    {
+      "path": "docs/floating-play/checks/resolved-failure.md",
+      "kind": "added",
+      "sha256": "4f9f83ebbd32694f97f5fdecb7e83a55a410b06b13122f5bf50d9db067c3ae95"
+    },
+    {
+      "path": "docs/github-pages/ONLINE_SETUP.md",
+      "kind": "modified",
+      "sha256": "a2b468c209c94b323e217ea981cb90625a402b921c70361b37c6ef1bca25f384"
+    },
+    {
+      "path": "docs/online-tools/DEPLOYMENT.md",
+      "kind": "modified",
+      "sha256": "34729333d7e74e7201da5d3f0e396cfd2e9e5a1f65991c865cc389ac91068d06"
+    },
+    {
+      "path": "docs/online-tools/INTERFACES.md",
+      "kind": "modified",
+      "sha256": "e4ff3190269c472dee11c26d4fba678ae0b46214953a312d109565630e94af58"
+    },
+    {
+      "path": "docs/online-tools/USAGE.md",
+      "kind": "modified",
+      "sha256": "eb48dbd462b97d4b89350e03f713d047b9be3fe72ccdf7bbaadfcf4e9e36fd1d"
+    },
+    {
+      "path": "handoff/ONLINE_FLOATING_PLAY.md",
+      "kind": "added",
+      "sha256": "806118a11830b3c5def2502028046216ee170019849355eef41a47326bcda172"
+    },
+    {
+      "path": "package.json",
+      "kind": "modified",
+      "sha256": "dae6b64563c7fb890a65018ba11ad325d1b15e4202aa3be588de2f56586f7d9e"
+    },
+    {
+      "path": "scripts/online-floating-public.js",
+      "kind": "added",
+      "sha256": "7b7c97f47338dde5a704141247ffda381b641ade6772ee5632f37fc30a46ed6f"
+    },
+    {
+      "path": "scripts/package-floating-play.py",
+      "kind": "added",
+      "sha256": "9d9d98afa4ca6fbfca4213122e6a3034b4415f39152bba5e8f26a831967a1159"
+    },
+    {
+      "path": "scripts/run-floating-play-browser.py",
+      "kind": "added",
+      "sha256": "e66a6443f52ebaeae051f6b7a0de603b0d9703c4afb30612a62a5267854db401"
+    },
+    {
+      "path": "scripts/smoke-floating-play-app.mjs",
+      "kind": "added",
+      "sha256": "c334dc6693e2740d6bb05cfbe80a2821b3a857e5a203dc7014fbb4298e6a3ac2"
+    },
+    {
+      "path": "scripts/sync-github-pages.py",
+      "kind": "modified",
+      "sha256": "f5364386ad6930976e0421c7a35e27f3e2304659c17af4c33daa1de5d70d9592"
+    },
+    {
+      "path": "scripts/verify-floating-play-archive.py",
+      "kind": "added",
+      "sha256": "a2460faf19ed520028a2ad28f302c991c4cbbabb0b4736f22f137c235dd42a17"
+    },
+    {
+      "path": "scripts/verify-floating-play-preservation.py",
+      "kind": "added",
+      "sha256": "0da63d4b00f4e99e49c64488b475d9ab2d1071c6c4d9fc9fc5be3395cc70a370"
+    },
+    {
+      "path": "src/core/version.ts",
+      "kind": "modified",
+      "sha256": "13591c096e805cab9985a3e6046992716ff03be82dba5856e15c8e0fb2d35fc9"
+    },
+    {
+      "path": "src/features/online-game/BoardDisplayTools.tsx",
+      "kind": "modified",
+      "sha256": "7aba999363ea4964696e74600b21343ba7cf3b3b173556c5c4f9bb4823d0735b"
+    },
+    {
+      "path": "src/features/online-game/OnlineGame.tsx",
+      "kind": "modified",
+      "sha256": "e3a89dfb569772982db53e3599e2e1b3525efbe788f4f64051c1178e517b280d"
+    },
+    {
+      "path": "src/features/online-game/OnlineTools.css",
+      "kind": "modified",
+      "sha256": "2ab459a792b0628f863d9f9f267d9ca9f9b01ae6c4b5a026723e19a7d3ca3c19"
+    },
+    {
+      "path": "tests/browser/online-tools.spec.ts",
+      "kind": "modified",
+      "sha256": "f21f3c7662c054a9075f73f1e4dc022e21b17549fa85d1386aaa8150cb36ad21"
+    },
+    {
+      "path": "tests/browser/t16.spec.ts",
+      "kind": "modified",
+      "sha256": "d179c87fb6ab95c56769c82f2d2464b06f0da1528ccf1d075e6194e5672c2842"
+    },
+    {
+      "path": "启动联机对弈.command",
+      "kind": "executable-metadata",
+      "sha256": "74996fd4610e4d5d86aed3a452b53d795ed0e90e77b694826f58eaa4abdb5274",
+      "mode": "0755"
+    },
+    {
+      "path": "docs/floating-play/changed-files.json",
+      "kind": "generated-manifest",
+      "selfHashExcluded": true
+    }
+  ],
+  "removed": [
+    "dist/assets/index-DL-R1VRT.css",
+    "dist/assets/index-DpKgjCkP.js"
+  ]
+}

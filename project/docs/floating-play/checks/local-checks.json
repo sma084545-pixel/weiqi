@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "FLOATING-PLAY-LOCAL-CHECKS",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "resultVersion": "0.21.2-pages.1",
+  "status": "passed",
+  "commands": [
+    {
+      "command": "corepack pnpm install --frozen-lockfile",
+      "exitCode": 0
+    },
+    {
+      "command": "corepack pnpm check",
+      "exitCode": 0,
+      "log": "check.log",
+      "unitTests": 399,
+      "contentChecks": 851
+    },
+    {
+      "command": "corepack pnpm exec playwright test --workers=1",
+      "exitCode": 0,
+      "log": "browser-regression.log",
+      "tests": 176
+    },
+    {
+      "command": "ONLINE_EVIDENCE_ROOT=docs/floating-play/checks/browser/regression ONLINE_TOOLS_EVIDENCE_ROOT=docs/floating-play/checks/browser corepack pnpm test:online-browser",
+      "exitCode": 0,
+      "log": "online-browser.log",
+      "tests": 21
+    },
+    {
+      "command": "corepack pnpm test:pages",
+      "exitCode": 0,
+      "log": "pages.log",
+      "tests": 11
+    },
+    {
+      "command": "corepack pnpm build:pages",
+      "exitCode": 0,
+      "log": "build-pages.log"
+    },
+    {
+      "command": "python3 scripts/verify-floating-play-preservation.py --restore-generated",
+      "exitCode": 0,
+      "log": "preservation.json",
+      "protectedFiles": 1041
+    }
+  ],
+  "testedBrowser": "Chromium 151.0.7922.34",
+  "actualPublicProbe": {
+    "ready": true,
+    "protocolVersion": 1,
+    "programVersion": "0.21.0",
+    "capabilities": {
+      "roomChat": 1
+    },
+    "rulesetId": "GO-CLUB-AREA-1"
+  },
+  "humanReviewed": null,
+  "notTested": [
+    "physical phones and independent geographical networks",
+    "native Safari and Firefox",
+    "screen readers",
+    "real classroom use"
+  ],
+  "resolvedFailures": "resolved-failure.md"
+}
