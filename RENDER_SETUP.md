@@ -1,11 +1,13 @@
 ---
 schemaVersion: 1
 id: ONLINE-TOOLS-DEPLOYMENT
-revision: 1
+revision: 2
 rulesetId: GO-CLUB-AREA-1
 ---
 
 # 更新原网站与房间服务器
+
+当前0.21.2仅更新悬浮小棋盘交互，无需重新部署Render。主线底本0.21.1-pages.1，现有0.21.0后台兼容；用原网站等待更新后核对页脚0.21.2即可。新说明与实际验证在docs/floating-play/。以下保留0.21.1首次窗口/聊天部署过程，不能将历史待部署说明当成当前状态。
 
 唯一主线基线RENDER_DEPLOY 0.20.3-pages.1，新程序0.21.1（结果版本0.21.1-pages.1）。GitHub仓库sma084545-pixel/weiqi，静态网站仍为https://sma084545-pixel.github.io/weiqi/；源码目录project/；房间地址https://weiqi-rooms.onrender.com。
 

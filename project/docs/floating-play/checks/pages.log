@@ -1,0 +1,12 @@
+Already up to date
+Done in 577ms using pnpm v11.19.0
+$ vitest run tests/pages
+
+ RUN  v5.0.0 /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/floating-play-20261022/mainline/go-club
+
+
+ Test Files  1 passed (1)
+      Tests  11 passed (11)
+   Start at  11:46:24
+   Duration  252ms (transform 57%, import 22%, tests 11%, worker 10%)
+

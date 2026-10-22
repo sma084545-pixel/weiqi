@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "version": "0.21.1",
+  "version": "0.21.2",
   "resources": [
     "./ONLINE_SETUP.md",
     "./app.webmanifest",
-    "./assets/index-DL-R1VRT.css",
-    "./assets/index-DpKgjCkP.js",
+    "./assets/index-B8ix4I1j.js",
+    "./assets/index-CJAe6hZ4.css",
     "./content/formal-content-v1.json",
     "./favicon.svg",
     "./index.html",

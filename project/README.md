@@ -1,13 +1,15 @@
 ---
 schemaVersion: 1
 id: DOC-README
-revision: 26
+revision: 27
 rulesetId: GO-CLUB-AREA-1
 ---
 
-# 围棋社工具包 · 0.21.1
+# 围棋社工具包 · 0.21.2
 
-原网站保持 https://sma084545-pixel.github.io/weiqi/ ，联机入口 #/play/online。新增可拖动悬浮棋盘、独立画中画、最大化/系统全屏及房间双人聊天。使用与兼容边界见[窗口与聊天](docs/online-tools/USAGE.md)，更新服务器见[部署指南](docs/online-tools/DEPLOYMENT.md)。本次主线基线RENDER_DEPLOY 0.20.3-pages.1；保留GO-CLUB-AREA-1、schemaVersion1、30题/6终局、课件纸卡和原存储。
+原网站保持 https://sma084545-pixel.github.io/weiqi/ ，联机入口 #/play/online。新增可拖动悬浮棋盘、独立画中画、最大化/系统全屏及房间双人聊天。使用与兼容边界见[窗口与聊天](docs/online-tools/USAGE.md)，更新服务器见[部署指南](docs/online-tools/DEPLOYMENT.md)。本次主线基线ONLINE_PLAY_TOOLS 0.21.1-pages.1；保留GO-CLUB-AREA-1、schemaVersion1、30题/6终局、课件纸卡和原存储。
+
+0.21.2起悬浮小棋盘可按本人轮次直接落子，终局确认时可标记死子。回看保持只读；13/19路在小窗内滚动。说明见[直接操作](docs/floating-play/USAGE.md)，交接见[本轮交接](handoff/ONLINE_FLOATING_PLAY.md)。这是前端更新，无需为此重启Render。
 
 ## 本地运行与构建
 
@@ -17,7 +19,7 @@ rulesetId: GO-CLUB-AREA-1
 
 检查：`corepack pnpm check`、`corepack pnpm test:browser`、`corepack pnpm test:online`、`corepack pnpm test:pages`。实际命令、结果及限制在docs/online-tools/checks/和handoff/ONLINE_PLAY_TOOLS.md。本机学习离线与房间联网分别验证；升级先保存备份再应用，不清站点数据。
 
-联机服务器为https://weiqi-rooms.onrender.com，网页与带roomChat=1的后台0.21.0已接通并实测聊天；程序包为0.21.1。服务端以共同规则验证双方轮次、提子、超级劫、悔棋与终局清单。预览不等于死活裁判，双方确认后才形成面积分。聊天仅当前房间两位伙伴临时文字，不混入棋谱；正式题库和本机教师草稿、反馈不上传。
+联机服务器为https://weiqi-rooms.onrender.com，网页与带roomChat=1的后台0.21.0已接通并实测聊天；程序包为0.21.2。服务端以共同规则验证双方轮次、提子、超级劫、悔棋与终局清单。预览不等于死活裁判，双方确认后才形成面积分。聊天仅当前房间两位伙伴临时文字，不混入棋谱；正式题库和本机教师草稿、反馈不上传。
 
 ---
 

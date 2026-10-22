@@ -25,15 +25,49 @@ test('room chat synchronizes text without changing the game; refresh, offline dr
  await a.screenshot({path:`evidence/chat.png`.replace('evidence',evidence),fullPage:true});await close();
 });
 
-test('floating miniature follows play and read-only history; pointer, keyboard, resize and close are safe',async({browser})=>{
- const {a,b,close}=await pair(browser);await a.getByRole('button',{name:'悬浮小棋盘',exact:true}).click();const floating=a.getByRole('complementary',{name:'悬浮小棋盘'}),handle=a.getByRole('button',{name:'移动悬浮棋盘，使用方向键'});
- await expect(floating.getByRole('gridcell')).toHaveCount(81);await expect(cell(floating,0,0)).toBeDisabled();const miniaturePoint=await cell(floating,0,0).boundingBox();await a.mouse.click(miniaturePoint!.x+miniaturePoint!.width/2,miniaturePoint!.y+miniaturePoint!.height/2);await count(a,0);
- await cell(main(a),0,0).click();await count(b,1);await expect(cell(floating,0,0)).toHaveAttribute('data-stone','B');await cell(main(b),8,8).click();await count(a,2);
- const slider=a.getByRole('slider',{name:'棋局滑动条',exact:true});await slider.focus();await slider.press('Home');await expect(cell(floating,0,0)).toHaveAttribute('data-stone','empty');await expect(floating).toContainText('只读回看');await slider.press('End');
+test('floating board directly plays both colors once, follows read-only history and remains draggable',async({browser})=>{
+ const {a,b,close}=await pair(browser);await a.getByRole('button',{name:'悬浮小棋盘',exact:true}).click();await b.getByRole('button',{name:'悬浮小棋盘',exact:true}).click();
+ const floating=a.getByRole('complementary',{name:'悬浮小棋盘'}),other=b.getByRole('complementary',{name:'悬浮小棋盘'}),handle=a.getByRole('button',{name:'移动悬浮棋盘，使用方向键'});
+ await expect(floating.getByRole('gridcell')).toHaveCount(81);await expect(cell(floating,0,0)).toBeEnabled();
+ await cell(floating,0,0).dblclick();await count(b,1);await expect(cell(main(a),0,0)).toHaveAttribute('data-stone','B');await expect(cell(floating,0,1)).toBeDisabled();
+ const blocked=await cell(floating,0,1).boundingBox();await a.mouse.click(blocked!.x+blocked!.width/2,blocked!.y+blocked!.height/2);await count(a,1);
+ await cell(other,8,8).focus();await cell(other,8,8).press('Space');await count(a,2);await expect(cell(floating,8,8)).toHaveAttribute('data-stone','W');
+ const slider=a.getByRole('slider',{name:'棋局滑动条',exact:true});await slider.focus();await slider.press('Home');await expect(cell(floating,0,0)).toHaveAttribute('data-stone','empty');await expect(floating).toContainText('只读回看');await expect(cell(floating,0,1)).toBeDisabled();
+ const historic=await cell(floating,0,1).boundingBox();await a.mouse.click(historic!.x+historic!.width/2,historic!.y+historic!.height/2);await count(b,2);await expect(cell(main(b),0,0)).toHaveAttribute('data-stone','B');await slider.press('End');
  const before=await floating.boundingBox();await handle.focus();await handle.press('ArrowRight');const shifted=await floating.boundingBox();expect(shifted!.x).toBe(before!.x+16);
- const grip=await handle.boundingBox();await a.mouse.move(grip!.x+20,grip!.y+20);await a.mouse.down();await a.mouse.move(480,360,{steps:8});await a.mouse.up();const moved=await floating.boundingBox();expect(moved!.x).toBeGreaterThan(100);
- await a.setViewportSize({width:360,height:740});const clamped=await floating.boundingBox();expect(clamped!.x).toBeGreaterThanOrEqual(0);expect(clamped!.x+clamped!.width).toBeLessThanOrEqual(360);
+ const grip=await handle.boundingBox();await a.mouse.move(grip!.x+20,grip!.y+20);await a.mouse.down();await a.mouse.move(480,360,{steps:8});await a.mouse.up();const moved=await floating.boundingBox();expect(moved!.x).toBeGreaterThan(100);await count(a,2);
+ await a.setViewportSize({width:360,height:740});await expect.poll(async()=>{const box=await floating.boundingBox();return box!.x+box!.width;}).toBeLessThanOrEqual(360);
  await a.getByRole('button',{name:'关闭悬浮小棋盘'}).click();await expect(floating).toHaveCount(0);await count(a,2);await close();
+});
+
+test('floating board uses the same capture, suicide, undo, scoring and finished-state guards',async({browser})=>{
+ const {a,b,close}=await pair(browser,1280,5);
+ for(const page of [a,b])await page.getByRole('button',{name:'悬浮小棋盘',exact:true}).click();
+ const mini=(page:Page)=>page.getByRole('complementary',{name:'悬浮小棋盘'});
+ const play=async(page:Page,row:number,col:number,n:number)=>{await cell(mini(page),row,col).click();await count(a,n);await count(b,n);};
+ await play(a,1,0,1);await play(b,0,0,2);await play(a,0,1,3);await expect(cell(mini(b),0,0)).toHaveAttribute('data-stone','empty');
+ await cell(mini(b),0,0).click();await expect(b.locator('.online-message')).toContainText('无气');await count(a,3);await expect(cell(mini(b),4,4)).toBeEnabled();await play(b,4,4,4);
+ await a.getByRole('button',{name:'申请悔棋',exact:true}).click();await expect(cell(mini(a),2,2)).toBeDisabled();await b.getByRole('button',{name:'拒绝悔棋，保留棋局'}).click();await count(a,4);
+ await a.getByRole('button',{name:'申请悔棋',exact:true}).click();await a.getByRole('button',{name:'黑方确认悔棋',exact:true}).click();await b.getByRole('button',{name:'白方确认悔棋',exact:true}).click();await count(a,3);await expect(cell(mini(b),4,4)).toHaveAttribute('data-stone','empty');await play(b,4,3,4);
+ await a.getByRole('button',{name:'停一手',exact:true}).click();await count(b,5);await b.getByRole('button',{name:'停一手',exact:true}).click();await expect(a.getByTestId('online-game')).toHaveAttribute('data-phase','scoring');
+ await a.getByRole('button',{name:'黑方确认当前清单'}).click();await cell(mini(b),1,0).click();await expect(a.getByRole('button',{name:'黑方确认当前清单'})).toBeEnabled();await expect(mini(a).locator('[data-marker-kind="target"]')).toHaveCount(1);await expect(cell(main(a),1,0)).toHaveAttribute('data-stone','B');
+ await cell(mini(b),1,0).click();await a.getByRole('button',{name:'黑方确认当前清单'}).click();await b.getByRole('button',{name:'白方确认当前清单'}).click();await expect(a.getByTestId('online-game')).toHaveAttribute('data-phase','finished');await expect(cell(mini(a),2,2)).toBeDisabled();const locked=await cell(mini(a),2,2).boundingBox();await a.mouse.click(locked!.x+locked!.width/2,locked!.y+locked!.height/2);await count(a,7);await close();
+});
+
+for(const [size,width] of [[5,1280],[13,768],[19,360]])test(`${width}px floating ${size}-route corners, scrolling, touch/keyboard and reset`,async({browser})=>{
+ const {a,b,close}=await pair(browser,width,size,width===360);await a.emulateMedia({reducedMotion:'reduce'});await a.getByRole('button',{name:'悬浮小棋盘',exact:true}).click();
+ const mini=a.getByRole('complementary',{name:'悬浮小棋盘'}),viewport=mini.locator('.board-viewport');await expect(mini.getByRole('gridcell')).toHaveCount(size*size);
+ const geometry=await cell(mini,0,0).boundingBox();expect(geometry!.width).toBeGreaterThanOrEqual(31.5);expect(geometry!.height).toBeGreaterThanOrEqual(31.5);
+ if(width===360)await cell(mini,0,0).tap();else await cell(mini,0,0).click();await count(b,1);await cell(main(b),size-1,size-1).click();await count(a,2);
+ // Keyboard moves into a locally scrolled part of the mini board, then selects once.
+ await cell(mini,size-1,0).focus();await cell(mini,size-1,0).press('End');await cell(mini,size-1,size-1).press('ArrowLeft');await cell(mini,size-1,size-2).press('Enter');await count(b,3);await expect(cell(main(b),size-1,size-2)).toHaveAttribute('data-stone','B');
+ await cell(main(b),0,size-1).click();await count(a,4);
+ if(size>9){expect(await viewport.evaluate(node=>node.scrollWidth>node.clientWidth)).toBe(true);expect(await viewport.evaluate(node=>node.scrollHeight>node.clientHeight)).toBe(true);}
+ if(width===360)await cell(mini,0,size-2).tap();else await cell(mini,0,size-2).click();await count(b,5);await expect(cell(main(b),0,size-2)).toHaveAttribute('data-stone','B');
+ await mini.getByRole('button',{name:'复位小窗',exact:true}).click();await expect.poll(()=>viewport.evaluate(node=>node.scrollLeft+node.scrollTop)).toBe(0);await count(a,5);
+ const closeHit=await mini.getByRole('button',{name:'关闭悬浮小棋盘'}).evaluate(node=>{const b=node.getBoundingClientRect();return node.contains(document.elementFromPoint(b.x+b.width/2,b.y+b.height/2));});expect(closeHit).toBe(true);
+ expect(await a.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);const bounds=await mini.boundingBox();expect(bounds!.x+bounds!.width).toBeLessThanOrEqual(width);
+ await mini.screenshot({path:`${evidence}/${width}-floating-${size}.png`});await close();
 });
 
 for(const width of [360,768,1280])test(`${width}px maximized board, chat, touch/keyboard and focus return`,async({browser})=>{

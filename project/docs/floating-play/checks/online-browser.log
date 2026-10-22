@@ -1,0 +1,33 @@
+Already up to date
+Done in 313ms using pnpm v11.19.0
+$ playwright test --config=playwright.online.config.ts --workers=1
+[WebServer] (node:85694) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 21 tests using 1 worker
+
+(node:85695) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 tests/browser/online-tools.spec.ts:17:1 › room chat synchronizes text without changing the game; refresh, offline draft and room isolation (2.2s)
+  ✓   2 tests/browser/online-tools.spec.ts:28:1 › floating board directly plays both colors once, follows read-only history and remains draggable (1.4s)
+  ✓   3 tests/browser/online-tools.spec.ts:43:1 › floating board uses the same capture, suicide, undo, scoring and finished-state guards (1.9s)
+  ✓   4 tests/browser/online-tools.spec.ts:57:56 › 1280px floating 5-route corners, scrolling, touch/keyboard and reset (1.3s)
+  ✓   5 tests/browser/online-tools.spec.ts:57:56 › 768px floating 13-route corners, scrolling, touch/keyboard and reset (1.4s)
+  ✓   6 tests/browser/online-tools.spec.ts:57:56 › 360px floating 19-route corners, scrolling, touch/keyboard and reset (1.5s)
+  ✓   7 tests/browser/online-tools.spec.ts:73:35 › 360px maximized board, chat, touch/keyboard and focus return (1.4s)
+  ✓   8 tests/browser/online-tools.spec.ts:73:35 › 768px maximized board, chat, touch/keyboard and focus return (1.3s)
+  ✓   9 tests/browser/online-tools.spec.ts:73:35 › 1280px maximized board, chat, touch/keyboard and focus return (1.6s)
+  ✓  10 tests/browser/online-tools.spec.ts:86:1 › native picture-in-picture uses the real browser API or announces the floating fallback (961ms)
+  ✓  11 tests/browser/online-tools.spec.ts:98:1 › older room service without chat capability retains games and announces chat update (567ms)
+  ✓  12 tests/browser/online-tools.spec.ts:102:1 › forced Fullscreen refusal remains visible inside the dialog and preserves the game (1.2s)
+  ✓  13 tests/browser/online.spec.ts:20:1 › home and existing same-screen board expose the installed online entry (551ms)
+  ✓  14 tests/browser/online.spec.ts:25:1 › two isolated players synchronize turns/capture, illegal suicide and live history without duplicate moves (1.5s)
+  ✓  15 tests/browser/online.spec.ts:36:1 › bad/full room recovery, disconnect and same-tab refresh preserve the authenticated seat (2.3s)
+  ✓  16 tests/browser/online.spec.ts:47:1 › each seat confirms its own undo; rejection retains state, acceptance restores captures (1.6s)
+  ✓  17 tests/browser/online.spec.ts:53:1 › double pass, changing dead marks, both-role score, historic read-only view and disputed restoration (1.8s)
+  ✓  18 tests/browser/online.spec.ts:61:1 › resignation has no invented score; leaving and restoring a room does not give its seat to a third player (1.4s)
+  ✓  19 tests/browser/online.spec.ts:66:35 › 360px room layout, keyboard and local 19-route touch scrolling (1.6s)
+  ✓  20 tests/browser/online.spec.ts:66:35 › 768px room layout, keyboard and local 19-route touch scrolling (2.4s)
+  ✓  21 tests/browser/online.spec.ts:66:35 › 1280px room layout, keyboard and local 19-route touch scrolling (1.7s)
+
+  21 passed (33.0s)
