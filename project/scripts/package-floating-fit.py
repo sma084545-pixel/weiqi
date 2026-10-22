@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """Package the verified current extension; all private room/chat runtime data excluded."""
 from pathlib import Path
 import os,json,hashlib,zipfile,shutil
@@ -28,7 +29,24 @@ full=DEST/f'go-club-{V}-full.zip'
 with zipfile.ZipFile(full,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as z:
  for p in files():z.write(p,'go-club/'+str(p.relative_to(R)))
 with zipfile.ZipFile(full) as z:assert z.testzip() is None;assert len(z.namelist())==m['fileCount'];assert not any('/node_modules/' in n or '/runtime-data/' in n for n in z.namelist())
-readme=f'''# 围棋社 · {version}\n\n原网站 https://sma084545-pixel.github.io/weiqi/ ，联机入口 #/play/online。悬浮小棋盘现在可直接操作，保留独立画中画、棋盘最大化/系统全屏、房间聊天。\n\n本包状态：{status}。实际公网验收见docs/floating-fit/ACCEPTANCE.md。聊天需要Render后端具备roomChat=1；旧后端仍能下棋并如实提示待更新。\n\n已构建，无需安装node_modules。使用兼容Node22.22.2起22系/24.15起24系/26+，在目录运行：\n\n    node dist-server/server.mjs\n\n也可打开“启动联机对弈.command”。浏览器打开http://127.0.0.1:4190/，终端Ctrl+C停止。局域网伙伴使用终端显示的本机网络地址，127.0.0.1不能用于异地；公网使用原GitHub网站和既有Render服务。\n\n悬浮与独立小窗均自适应显示完整棋盘，无需滚动；新旧窗口均显示同一对局；悬浮、放大及独立PiP均可按本人轮次落子或在终局时标记死子，历史回看只读。停两手后仍需双方确认死子清单，程序才按面积规则算分，不自动猜任意局面死活。\n\n房间与聊天都是临时数据，服务休眠/重启/更新可能清空，先保存本机副本或导出棋局。聊天最多最近50条，重启清空，不进入棋谱。无账号，无默认本机学习进度/草稿/反馈上传。关闭独立PiP不离开房间。不支持独立PiP时回退页内小棋盘。\n\n完整源码、30题/6终局、所有可编辑材料/PDF/PPTX和验证在full.zip与GitHub仓库project/。备份与更新不要清除浏览器站点数据；先保存当前工作，再应用更新。详见附带文档。\n'''
+readme=f'''# 围棋社 · {version}
+
+原网站 https://sma084545-pixel.github.io/weiqi/ ，联机入口 #/play/online。悬浮小棋盘现在可直接操作，保留独立画中画、棋盘最大化/系统全屏、房间聊天。
+
+本包状态：{status}。实际公网验收见docs/floating-fit/ACCEPTANCE.md。聊天需要Render后端具备roomChat=1；旧后端仍能下棋并如实提示待更新。
+
+已构建，无需安装node_modules。使用兼容Node22.22.2起22系/24.15起24系/26+，在目录运行：
+
+    node dist-server/server.mjs
+
+也可打开“启动联机对弈.command”。浏览器打开http://127.0.0.1:4190/，终端Ctrl+C停止。局域网伙伴使用终端显示的本机网络地址，127.0.0.1不能用于异地；公网使用原GitHub网站和既有Render服务。
+
+悬浮与独立小窗均自适应显示完整棋盘，无需滚动；新旧窗口均显示同一对局；悬浮、放大及独立PiP均可按本人轮次落子或在终局时标记死子，历史回看只读。停两手后仍需双方确认死子清单，程序才按面积规则算分，不自动猜任意局面死活。
+
+房间与聊天都是临时数据，服务休眠/重启/更新可能清空，先保存本机副本或导出棋局。聊天最多最近50条，重启清空，不进入棋谱。无账号，无默认本机学习进度/草稿/反馈上传。关闭独立PiP不离开房间。不支持独立PiP时回退页内小棋盘。
+
+完整源码、30题/6终局、所有可编辑材料/PDF/PPTX和验证在full.zip与GitHub仓库project/。备份与更新不要清除浏览器站点数据；先保存当前工作，再应用更新。详见附带文档。
+'''
 app_files=[]
 for folder in ['dist','dist-server']:
  for p in sorted((R/folder).rglob('*')):

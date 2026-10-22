@@ -1,0 +1,420 @@
+{
+  "schemaVersion": 1,
+  "id": "FLOATING-FIT-CHANGE-MANIFEST",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "baseVersion": "0.21.2-pages.1",
+  "resultVersion": "0.21.3-pages.1",
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "kind": "modified",
+      "sha256": "ca53fe8db6b5afee640e90f38bf1db569ae90c596bff355ae6cdc278a60e862e"
+    },
+    {
+      "path": "README.md",
+      "kind": "modified",
+      "sha256": "82498385a993dc57194ac1b4a74d5a6e455f0cbe9a09d919d026ce9d88893532"
+    },
+    {
+      "path": "dist/ONLINE_SETUP.md",
+      "kind": "modified",
+      "sha256": "ab828c5c04bf964a73498f2c602fbec1cf5496c6748fca93b4517524a9bd411f"
+    },
+    {
+      "path": "dist/assets/index-5aWw60tY.js",
+      "kind": "added",
+      "sha256": "eab8fea8cb9c95cd6a942e9a550733b8d622c8eef978d5fd8841f85024294b57"
+    },
+    {
+      "path": "dist/assets/index-Bna-LClt.css",
+      "kind": "added",
+      "sha256": "d47ef402a0eb784af23885ace0d101be8272801efb5d2e206c03acf7c50ae808"
+    },
+    {
+      "path": "dist/index.html",
+      "kind": "modified",
+      "sha256": "55321cad2669cffa4df4e6012b6dca128ac09d6730f97062c68d8c40cde68906"
+    },
+    {
+      "path": "dist/offline-assets.json",
+      "kind": "modified",
+      "sha256": "e89d39c910819b16feedfe1f6e4dbc8f7bb2cedd9f1b7bf8a90a8ea902afc193"
+    },
+    {
+      "path": "dist/sw.js",
+      "kind": "modified",
+      "sha256": "c543bb4907f19d748d5c363290ef1e4da83173c1c466c251bb83ee2dac1ae5e2"
+    },
+    {
+      "path": "dist/version.json",
+      "kind": "modified",
+      "sha256": "e1b2e3f953a26762a00699546453416d72ddce3b12ba74c7cac747262a7245f4"
+    },
+    {
+      "path": "dist-engine/package.json",
+      "kind": "modified",
+      "sha256": "ffd4f356f8f2c60f81043c1402b2224e96d7d44112fa776a7a0aaaadcb17da2e"
+    },
+    {
+      "path": "dist-engine/types/version.d.ts",
+      "kind": "modified",
+      "sha256": "6d6ec8c034dea15b81078279a4ca54fe3ee72164248a4a0c305e5170f7c7595a"
+    },
+    {
+      "path": "dist-server/server.mjs",
+      "kind": "modified",
+      "sha256": "5787a44c0200998d6e4b3490d567fa18dca930bf4970baf1e6b525df2d777828"
+    },
+    {
+      "path": "docs/floating-fit/ACCEPTANCE.md",
+      "kind": "added",
+      "sha256": "1122a1df5e88699949a167eab73844144d94c7c664211a7c4212373b76ce709e"
+    },
+    {
+      "path": "docs/floating-fit/BASE-MANIFEST.json",
+      "kind": "added",
+      "sha256": "4d531f0e2d8118512059535890ee2c48d58d0d6be89ff3b1050a54f309891c62"
+    },
+    {
+      "path": "docs/floating-fit/KNOWN_ISSUES.md",
+      "kind": "added",
+      "sha256": "45704a573fd6a1f4eff87aef8cb05dfc39aa10d7db0b652622fbbd0666b19130"
+    },
+    {
+      "path": "docs/floating-fit/SOURCES.md",
+      "kind": "added",
+      "sha256": "600899a3ae8acc04cd77a22d20f794e053c9721e89b731a54fe23999b6352c69"
+    },
+    {
+      "path": "docs/floating-fit/USAGE.md",
+      "kind": "added",
+      "sha256": "915dda06ccaef56735ce50ac75649d705f2fa8f02f7e9b25bc39252f5db96749"
+    },
+    {
+      "path": "docs/floating-fit/checks/browser/1280-floating-5.png",
+      "kind": "added",
+      "sha256": "4d77ebfc744996d775fa89b16ad8a069144543cff9b0afc1412d80fbce429f6b"
+    },
+    {
+      "path": "docs/floating-fit/checks/browser/1280-maximized.png",
+      "kind": "added",
+      "sha256": "31d1065970f44644e667923ed2df8e8cea899f6a60a1b9e4be10a849b1d934c0"
+    },
+    {
+      "path": "docs/floating-fit/checks/browser/360-floating-19.png",
+      "kind": "added",
+      "sha256": "4109d21ee560bf277d37d2c7c385c1ea0f0d897b767c59d165f2f3a690d69e6e"
+    },
+    {
+      "path": "docs/floating-fit/checks/browser/360-maximized.png",
+      "kind": "added",
+      "sha256": "7d2c0c03abcf1d9edc38ed3ab062e8f9d4488be1c2cc62af7b51420167eecfc5"
+    },
+    {
+      "path": "docs/floating-fit/checks/browser/768-floating-13.png",
+      "kind": "added",
+      "sha256": "649c567f8fe6c31c976ffe46c19b4d838ac3672463d5b93f53251705b6166288"
+    },
+    {
+      "path": "docs/floating-fit/checks/browser/768-floating-9.png",
+      "kind": "added",
+      "sha256": "46148e985fd6f37cf2df0048d2ccae38411a376f9d2cad2069a219f3d456813c"
+    },
+    {
+      "path": "docs/floating-fit/checks/browser/768-maximized.png",
+      "kind": "added",
+      "sha256": "ab925049e49661873bc95f01d1f29a04531457bf369dc20cb415f28a6ef01fe8"
+    },
+    {
+      "path": "docs/floating-fit/checks/browser/chat.png",
+      "kind": "added",
+      "sha256": "f702376eb417ca9804f6582a19d1d87077f4c90bd9e584640087782b6f121eb7"
+    },
+    {
+      "path": "docs/floating-fit/checks/browser/native-pip.json",
+      "kind": "added",
+      "sha256": "7d0308af7b67785e833bd216c09261b8d68d90b2a29f94233e92007604fb8c45"
+    },
+    {
+      "path": "docs/floating-fit/checks/browser/regression/1280-live-room.png",
+      "kind": "added",
+      "sha256": "cd104dd73355be6f7446712af86a6b74453bce93b44e9446aa70798d4fba6ea3"
+    },
+    {
+      "path": "docs/floating-fit/checks/browser/regression/1280-room.png",
+      "kind": "added",
+      "sha256": "86e4217298a7ccfebf64377776a93c70d185a9c125cf3de6741fc6a9b8f99802"
+    },
+    {
+      "path": "docs/floating-fit/checks/browser/regression/360-room.png",
+      "kind": "added",
+      "sha256": "d75e9e9c62182e0e5e27b50813ee5df133b7642dcb2eee2d48c4dabe655b96fe"
+    },
+    {
+      "path": "docs/floating-fit/checks/browser/regression/768-room.png",
+      "kind": "added",
+      "sha256": "01e52a0a078ac54fce00bbef4417fca05e90dcbd146394c3caf991f0813ac1e6"
+    },
+    {
+      "path": "docs/floating-fit/checks/build-pages.log",
+      "kind": "added",
+      "sha256": "809072f5cd2604dbe106593a3938c73842a395adce3869489fadc1b2c4ae123f"
+    },
+    {
+      "path": "docs/floating-fit/checks/check-sandbox-denied.log",
+      "kind": "added",
+      "sha256": "a1930503675d0bbed802789decb7e1339567bc2de98b2d970e8ad14537a80b18"
+    },
+    {
+      "path": "docs/floating-fit/checks/check.log",
+      "kind": "added",
+      "sha256": "5c4f9979ff917009e407e9f1668017c4b1a16d1ccc83b274cdcbe6530788ea47"
+    },
+    {
+      "path": "docs/floating-fit/checks/geometry-debug.log",
+      "kind": "added",
+      "sha256": "1e400fd7d93cc1d830ef0146cc4875cd106c0156899b572f8e04c2b69a6800dc"
+    },
+    {
+      "path": "docs/floating-fit/checks/install.log",
+      "kind": "added",
+      "sha256": "61146af8e0225be9e92f17da8139384820d4f512e4188a7645b6f4c09c751b0b"
+    },
+    {
+      "path": "docs/floating-fit/checks/local-1280-floating-19.png",
+      "kind": "added",
+      "sha256": "9d7f63353da494153ad1a84c8ed260b4b82be3e9c85e27c6470c955db688ddd4"
+    },
+    {
+      "path": "docs/floating-fit/checks/local-360-floating-19.png",
+      "kind": "added",
+      "sha256": "0408cefbd03b7f9fe69e6a758dda6ea1ba66244351ebd473603efbc3b5d27cca"
+    },
+    {
+      "path": "docs/floating-fit/checks/local-740-floating-19.png",
+      "kind": "added",
+      "sha256": "495044a71b92a25457eae6a186573cd6932555040566adf85436044a55dbc29c"
+    },
+    {
+      "path": "docs/floating-fit/checks/local-checks.json",
+      "kind": "added",
+      "sha256": "1518452374d3fecd8db21bfaf9d30680eac472c59393aa2d4c5c85bec3e5c957"
+    },
+    {
+      "path": "docs/floating-fit/checks/local-preview.json",
+      "kind": "added",
+      "sha256": "0385c456b11333bbaeea5b24e2b7db2e8d703486400f3c83002dbf3a3e9c0740"
+    },
+    {
+      "path": "docs/floating-fit/checks/local-preview.log",
+      "kind": "added",
+      "sha256": "d8da4357a3c78f6d351fbce6f418b128ffbb16062bfde4213018799c3e84218f"
+    },
+    {
+      "path": "docs/floating-fit/checks/online-browser-initial.log",
+      "kind": "added",
+      "sha256": "11e3ca69db6f431aee784b97714030a3cb5a12e95ffceb70e71c7e528d216060"
+    },
+    {
+      "path": "docs/floating-fit/checks/online-browser.log",
+      "kind": "added",
+      "sha256": "7252760ad461c26c07e381fb71f9185fa432f0f481ec7ca2c365ac34c5348bda"
+    },
+    {
+      "path": "docs/floating-fit/checks/pages.log",
+      "kind": "added",
+      "sha256": "0e77ce8393a747d0af90d156e9832829cd2d98d9aaaa847a729943f63a4eba13"
+    },
+    {
+      "path": "docs/floating-fit/checks/pre-fix/geometry-13-740.json",
+      "kind": "added",
+      "sha256": "6f75417803a7971ba35589eba442c7fa9c8cb2b06e22c62f2f0eb0cb06adc4c6"
+    },
+    {
+      "path": "docs/floating-fit/checks/pre-fix/geometry-13-740.png",
+      "kind": "added",
+      "sha256": "72be9262b61e6d03cecb98f69611967c1d0f52df2e67daad0471f22dd045b3fe"
+    },
+    {
+      "path": "docs/floating-fit/checks/pre-fix/geometry-19-740.json",
+      "kind": "added",
+      "sha256": "40000f615826dc718c720f85461359f15b63496e9ccf0f36e5c530950d59dd84"
+    },
+    {
+      "path": "docs/floating-fit/checks/pre-fix/geometry-19-740.png",
+      "kind": "added",
+      "sha256": "486996989747b21a542a3bf56f98ebbcf2260b93c0d8ea51dd6d58152373d636"
+    },
+    {
+      "path": "docs/floating-fit/checks/preservation.json",
+      "kind": "added",
+      "sha256": "d8bc46088dfad78ee2bfbc6a44d601f28e21395f2857187dff8789501c9a70e4"
+    },
+    {
+      "path": "docs/floating-fit/checks/public-1280-floating-19.png",
+      "kind": "added",
+      "sha256": "34ac988dc94d4dcd2c8bcf1d715a8e51b1fa3a1043ec3d56a99d9ab5d365314c"
+    },
+    {
+      "path": "docs/floating-fit/checks/public-1280-maximized.png",
+      "kind": "added",
+      "sha256": "dedfdd1b29d4450b92ed4a949933453bb3d13c2984ed269b6a3d12a4cd9e37ca"
+    },
+    {
+      "path": "docs/floating-fit/checks/public-360-floating-19.png",
+      "kind": "added",
+      "sha256": "1415c8d7dab32ddeaae6098e46a9395b7516c0011bdda9502cf555a16e2c7254"
+    },
+    {
+      "path": "docs/floating-fit/checks/public-360-maximized.png",
+      "kind": "added",
+      "sha256": "00be0bbe4da3088a30fcfa68fe65577c8f3612a969dba215f87b6bc6ab646039"
+    },
+    {
+      "path": "docs/floating-fit/checks/public-740-floating-19.png",
+      "kind": "added",
+      "sha256": "c8e32c7652ac20a1b6d67a72e2886d310af837d42ec02cf7a8f4a4b6d42579c3"
+    },
+    {
+      "path": "docs/floating-fit/checks/public-768-floating-19.png",
+      "kind": "added",
+      "sha256": "e385ac8531c6c970063e4e41c96814ea6381e3de7987c5da1cd66c8769937fff"
+    },
+    {
+      "path": "docs/floating-fit/checks/public-768-maximized.png",
+      "kind": "added",
+      "sha256": "c6faa9eb3b86a25a7a72aeaa351e9be19baa0721be371c8437bb479e9249da8f"
+    },
+    {
+      "path": "docs/floating-fit/checks/public-journey.json",
+      "kind": "added",
+      "sha256": "eeaec21cb810285dda4cae37812c22de8c8ae0b7f3822f0b9ce51a124fc1151d"
+    },
+    {
+      "path": "docs/floating-fit/checks/public-journey.log",
+      "kind": "added",
+      "sha256": "4adbd251dff18d765dd08c0671961692328fa8bb6f39785f077b2fb4573aa67f"
+    },
+    {
+      "path": "docs/floating-fit/checks/public-live-tools.png",
+      "kind": "added",
+      "sha256": "844c6782d9c07e3ef2813d7fbce874250eb4ff07afdfd36821fc79af582fe300"
+    },
+    {
+      "path": "docs/floating-fit/checks/resolved-issues.md",
+      "kind": "added",
+      "sha256": "34db67f6acd05f22526e0bdb71ea2d1731968e7355d028b874be326617ea8b3a"
+    },
+    {
+      "path": "docs/github-pages/ONLINE_SETUP.md",
+      "kind": "modified",
+      "sha256": "ab828c5c04bf964a73498f2c602fbec1cf5496c6748fca93b4517524a9bd411f"
+    },
+    {
+      "path": "docs/online-tools/DEPLOYMENT.md",
+      "kind": "modified",
+      "sha256": "11262654d89e1e347ba4e6acf5279bb80e8a78dd9835cac41647dc0211143160"
+    },
+    {
+      "path": "docs/online-tools/INTERFACES.md",
+      "kind": "modified",
+      "sha256": "bcec06b84469294fa882bc5414144d8df1628184f0de5df068ba14956251956a"
+    },
+    {
+      "path": "docs/online-tools/USAGE.md",
+      "kind": "modified",
+      "sha256": "d9f91aac9198a091586397a4a2b0a324713657cadbffeab7d9fa919fe0e8db0b"
+    },
+    {
+      "path": "handoff/ONLINE_FLOATING_FIT.md",
+      "kind": "added",
+      "sha256": "7ef1d7bf8f7abdbf652b5e557f40b18743d8fc444b7abf40ca9c3809e5f23f1a"
+    },
+    {
+      "path": "package.json",
+      "kind": "modified",
+      "sha256": "ce8ceec6af37ceab6437ae95d0710f311b678b74a16741469745e86c71c0a949"
+    },
+    {
+      "path": "scripts/local-floating-fit.js",
+      "kind": "added",
+      "sha256": "64ae4bfe9392819ae42ba26bc8774d0e022ca09c6b5f245fb4ab5fa5c87a79f2"
+    },
+    {
+      "path": "scripts/online-floating-fit-public.js",
+      "kind": "added",
+      "sha256": "f51005a3451de9c077c7d40b3c70fc8240b9dc34b3724cb9d5e74639804261fd"
+    },
+    {
+      "path": "scripts/package-floating-fit.py",
+      "kind": "added",
+      "sha256": "08297d0603ac513c3e7f228ef05645953cd9131e5cfe678244f87009b31cf4e9"
+    },
+    {
+      "path": "scripts/run-floating-fit-browser.py",
+      "kind": "added",
+      "sha256": "6ad72507ac3c30f560ffabc96aba88c58c1b8f565baf016ec3e6680688de0591"
+    },
+    {
+      "path": "scripts/smoke-floating-fit-app.mjs",
+      "kind": "added",
+      "sha256": "32e6d4da2d8c833bf95d1ca12ff179233897bdc59bc3465caa9647787b39f852"
+    },
+    {
+      "path": "scripts/sync-github-pages.py",
+      "kind": "modified",
+      "sha256": "4d97dd2c3a6f0bfdf970412a24507fb7748edfb2f50c85469cf65acfc13e3d2c"
+    },
+    {
+      "path": "scripts/verify-floating-fit-archive.py",
+      "kind": "added",
+      "sha256": "3d74300b519fbaa15b6d8579cdec78f8f01f351195134237289fc29e83cebf53"
+    },
+    {
+      "path": "scripts/verify-floating-fit-preservation.py",
+      "kind": "added",
+      "sha256": "a7928165ac3afde3b8d57bd0ab8f34ba092d55ca94e5cbe8fa682957fc4985af"
+    },
+    {
+      "path": "src/core/version.ts",
+      "kind": "modified",
+      "sha256": "f1fe2e5769b17e9bdd11c4ce3c8112958f43b7dfd371ed597f050430532e34d7"
+    },
+    {
+      "path": "src/features/online-game/BoardDisplayTools.tsx",
+      "kind": "modified",
+      "sha256": "3ef3ee925b89ed9bd3ee9e9fc0bf72b5b278f17d50b2afccb9ffac2465b9d970"
+    },
+    {
+      "path": "src/features/online-game/OnlineTools.css",
+      "kind": "modified",
+      "sha256": "fa87f5d6240ad6941ca4d982d71b3e57c1d3c108af029a7800f9f5f48e8418e6"
+    },
+    {
+      "path": "tests/browser/online-tools.spec.ts",
+      "kind": "modified",
+      "sha256": "a33ae8cc6baa9ac77048849b0d1ef499bb5e9500155c4cbc167538055a4d2a63"
+    },
+    {
+      "path": "tests/browser/t16.spec.ts",
+      "kind": "modified",
+      "sha256": "495777fdd79504d28554404b9799b0d01fb76374e7cf752f35c85c9aa09aa70a"
+    },
+    {
+      "path": "启动联机对弈.command",
+      "kind": "executable-metadata",
+      "sha256": "74996fd4610e4d5d86aed3a452b53d795ed0e90e77b694826f58eaa4abdb5274",
+      "mode": "0755"
+    },
+    {
+      "path": "docs/floating-fit/changed-files.json",
+      "kind": "generated-manifest",
+      "selfHashExcluded": true
+    }
+  ],
+  "removed": [
+    "dist/assets/index-B8ix4I1j.js",
+    "dist/assets/index-CJAe6hZ4.css"
+  ]
+}

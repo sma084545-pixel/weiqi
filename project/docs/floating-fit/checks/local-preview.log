@@ -1,0 +1,20 @@
+### Result
+{"schemaVersion":1,"id":"FLOATING-FIT-LOCAL-PREVIEW","revision":1,"rulesetId":"GO-CLUB-AREA-1","resultVersion":"0.21.3-pages.1","status":"passed","browser":"155.0.8059.86","actualUrl":"http://127.0.0.1:4190/#/play/online","checks":["actual localhost4190 version0.21.3, 361 visible intersections, direct touch corner play synchronized with partner","all four corner stones visible after portrait, landscape and desktop resize without scrolling"],"humanReviewed":null}
+### Ran Playwright code
+```js
+await (async (page)=>{
+ const browser=page.context().browser(),aContext=await browser.newContext({viewport:{width:360,height:740},hasTouch:true,isMobile:true}),bContext=await browser.newContext(),a=await aContext.newPage(),b=await bContext.newPage(),checks=[];
+ const assert=(v,m)=>{if(!v)throw Error(m);},count=(p,n)=>p.locator(`[data-testid="online-game"][data-move-count="${n}"]`).waitFor(),at=(v,r,c)=>v.locator(`[data-row="${r}"][data-col="${c}"]`);
+ try{
+  for(const p of [a,b]){await p.goto('http://127.0.0.1:4190/#/play/online');await p.getByText('版本 0.21.3',{exact:true}).waitFor();await p.getByText('服务已连接',{exact:true}).waitFor();}
+  await a.getByLabel('昵称（可留空）').fill('TEST 本机整盘黑');await a.getByLabel('联机棋盘尺寸').selectOption('19');await a.getByRole('button',{name:'创建房间',exact:true}).click();await a.getByLabel('当前房间码').waitFor();const code=await a.getByLabel('当前房间码').inputValue();await b.getByLabel('昵称（可留空）').fill('TEST 本机整盘白');await b.getByLabel('输入房间码').fill(code);await b.getByRole('button',{name:'加入房间',exact:true}).click();await a.locator('.online-seat').filter({hasText:'白方'}).getByText('已连接',{exact:true}).waitFor();
+  await a.getByRole('button',{name:'悬浮小棋盘',exact:true}).tap();const mini=a.getByRole('complementary',{name:'悬浮小棋盘'}),main=b.locator('.online-board-card>.shared-board');
+  const fit=async()=>mini.evaluate(n=>{const p=n.getBoundingClientRect(),v=n.querySelector('.board-viewport'),all=[...n.querySelectorAll('[role="gridcell"]')];return all.length===361&&v.scrollWidth<=v.clientWidth+1&&v.scrollHeight<=v.clientHeight+1&&all.every(x=>{const r=x.getBoundingClientRect();return r.width>0&&r.height>0&&r.left>=p.left&&r.top>=p.top&&r.right<=p.right+.5&&r.bottom<=p.bottom+.5&&r.bottom<=innerHeight&&r.right<=innerWidth;});});
+  assert(await fit(),'Local entire board clipped');await at(mini,18,18).tap();await count(b,1);await at(main,0,0).click();await count(a,2);await at(mini,0,18).tap();await count(b,3);await at(main,18,0).click();await count(a,4);assert(await fit(),'Local stones clipped');checks.push('actual localhost4190 version0.21.3, 361 visible intersections, direct touch corner play synchronized with partner');
+  for(const v of [{width:360,height:740},{width:740,height:360},{width:1280,height:800}]){await a.setViewportSize(v);await mini.getByRole('button',{name:'复位小窗',exact:true}).click();assert(await fit(),'Local resize clipped '+v.width);await mini.screenshot({path:`docs/floating-fit/checks/local-${v.width}-floating-19.png`});}checks.push('all four corner stones visible after portrait, landscape and desktop resize without scrolling');
+  return {schemaVersion:1,id:'FLOATING-FIT-LOCAL-PREVIEW',revision:1,rulesetId:'GO-CLUB-AREA-1',resultVersion:'0.21.3-pages.1',status:'passed',browser:browser.version(),actualUrl:'http://127.0.0.1:4190/#/play/online',checks,humanReviewed:null};
+ }finally{await aContext.close();await bContext.close();}
+})(page);
+```
+### Page
+- Page URL: about:blank

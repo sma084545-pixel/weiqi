@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "FLOATING-FIT-LOCAL-CHECKS",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "resultVersion": "0.21.3-pages.1",
+  "status": "passed",
+  "unitTests": 399,
+  "unitFiles": 49,
+  "contentChecks": 851,
+  "onlineBrowserTests": 22,
+  "pagesTests": 11,
+  "protectedFilesUnchanged": 1042,
+  "formalPuzzles": 30,
+  "terminalFixtures": 6,
+  "testedBrowser": "Chromium151.0.7922.34 and Chrome155.0.8059.86",
+  "publicBrowserChecks": 9,
+  "pageErrors": [],
+  "fullStaticBrowserSuiteThisTurn": "not rerun; prior release evidence only",
+  "humanReviewed": null
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "FLOATING-FIT-LOCAL-PREVIEW",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "resultVersion": "0.21.3-pages.1",
+  "status": "passed",
+  "browser": "155.0.8059.86",
+  "actualUrl": "http://127.0.0.1:4190/#/play/online",
+  "checks": [
+    "actual localhost4190 version0.21.3, 361 visible intersections, direct touch corner play synchronized with partner",
+    "all four corner stones visible after portrait, landscape and desktop resize without scrolling"
+  ],
+  "humanReviewed": null
+}

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "GITHUB-CURRENT-SOURCE",
-  "revision": 15,
+  "revision": 17,
   "rulesetId": "GO-CLUB-AREA-1",
   "resultVersion": "0.21.3-pages.1",
   "programVersion": "0.21.3",
@@ -3909,6 +3909,11 @@
       "sha256": "013a7678135b2f7cb4eed172bd703159dedb25bfc00a8fdda606bba5faf1fee8"
     },
     {
+      "path": "handoff/ONLINE_FLOATING_FIT.md",
+      "bytes": 4873,
+      "sha256": "7ef1d7bf8f7abdbf652b5e557f40b18743d8fc444b7abf40ca9c3809e5f23f1a"
+    },
+    {
       "path": "handoff/ONLINE_FLOATING_PLAY.md",
       "bytes": 4481,
       "sha256": "806118a11830b3c5def2502028046216ee170019849355eef41a47326bcda172"
@@ -6659,9 +6664,19 @@
       "sha256": "106be67bc03ba48c42e820ef4f6e01e90158d67a5c6ed03a5ec15fe0668d8e51"
     },
     {
+      "path": "docs/floating-fit/ACCEPTANCE.md",
+      "bytes": 2547,
+      "sha256": "1122a1df5e88699949a167eab73844144d94c7c664211a7c4212373b76ce709e"
+    },
+    {
       "path": "docs/floating-fit/BASE-MANIFEST.json",
       "bytes": 551433,
       "sha256": "4d531f0e2d8118512059535890ee2c48d58d0d6be89ff3b1050a54f309891c62"
+    },
+    {
+      "path": "docs/floating-fit/KNOWN_ISSUES.md",
+      "bytes": 899,
+      "sha256": "45704a573fd6a1f4eff87aef8cb05dfc39aa10d7db0b652622fbbd0666b19130"
     },
     {
       "path": "docs/floating-fit/SOURCES.md",
@@ -6672,6 +6687,11 @@
       "path": "docs/floating-fit/USAGE.md",
       "bytes": 1386,
       "sha256": "915dda06ccaef56735ce50ac75649d705f2fa8f02f7e9b25bc39252f5db96749"
+    },
+    {
+      "path": "docs/floating-fit/changed-files.json",
+      "bytes": 14582,
+      "sha256": "422721cb605e4f0f51be79f44db85439baef511ec774438d4cf41e93523d407d"
     },
     {
       "path": "docs/floating-fit/checks/build-pages.log",
@@ -6699,6 +6719,36 @@
       "sha256": "61146af8e0225be9e92f17da8139384820d4f512e4188a7645b6f4c09c751b0b"
     },
     {
+      "path": "docs/floating-fit/checks/local-1280-floating-19.png",
+      "bytes": 35711,
+      "sha256": "9d7f63353da494153ad1a84c8ed260b4b82be3e9c85e27c6470c955db688ddd4"
+    },
+    {
+      "path": "docs/floating-fit/checks/local-360-floating-19.png",
+      "bytes": 34640,
+      "sha256": "0408cefbd03b7f9fe69e6a758dda6ea1ba66244351ebd473603efbc3b5d27cca"
+    },
+    {
+      "path": "docs/floating-fit/checks/local-740-floating-19.png",
+      "bytes": 27841,
+      "sha256": "495044a71b92a25457eae6a186573cd6932555040566adf85436044a55dbc29c"
+    },
+    {
+      "path": "docs/floating-fit/checks/local-checks.json",
+      "bytes": 584,
+      "sha256": "1518452374d3fecd8db21bfaf9d30680eac472c59393aa2d4c5c85bec3e5c957"
+    },
+    {
+      "path": "docs/floating-fit/checks/local-preview.json",
+      "bytes": 521,
+      "sha256": "0385c456b11333bbaeea5b24e2b7db2e8d703486400f3c83002dbf3a3e9c0740"
+    },
+    {
+      "path": "docs/floating-fit/checks/local-preview.log",
+      "bytes": 3609,
+      "sha256": "d8da4357a3c78f6d351fbce6f418b128ffbb16062bfde4213018799c3e84218f"
+    },
+    {
       "path": "docs/floating-fit/checks/online-browser-initial.log",
       "bytes": 8095,
       "sha256": "11e3ca69db6f431aee784b97714030a3cb5a12e95ffceb70e71c7e528d216060"
@@ -6717,6 +6767,56 @@
       "path": "docs/floating-fit/checks/preservation.json",
       "bytes": 173412,
       "sha256": "d8bc46088dfad78ee2bfbc6a44d601f28e21395f2857187dff8789501c9a70e4"
+    },
+    {
+      "path": "docs/floating-fit/checks/public-1280-floating-19.png",
+      "bytes": 35528,
+      "sha256": "34ac988dc94d4dcd2c8bcf1d715a8e51b1fa3a1043ec3d56a99d9ab5d365314c"
+    },
+    {
+      "path": "docs/floating-fit/checks/public-1280-maximized.png",
+      "bytes": 101059,
+      "sha256": "dedfdd1b29d4450b92ed4a949933453bb3d13c2984ed269b6a3d12a4cd9e37ca"
+    },
+    {
+      "path": "docs/floating-fit/checks/public-360-floating-19.png",
+      "bytes": 34640,
+      "sha256": "1415c8d7dab32ddeaae6098e46a9395b7516c0011bdda9502cf555a16e2c7254"
+    },
+    {
+      "path": "docs/floating-fit/checks/public-360-maximized.png",
+      "bytes": 65169,
+      "sha256": "00be0bbe4da3088a30fcfa68fe65577c8f3612a969dba215f87b6bc6ab646039"
+    },
+    {
+      "path": "docs/floating-fit/checks/public-740-floating-19.png",
+      "bytes": 27806,
+      "sha256": "c8e32c7652ac20a1b6d67a72e2886d310af837d42ec02cf7a8f4a4b6d42579c3"
+    },
+    {
+      "path": "docs/floating-fit/checks/public-768-floating-19.png",
+      "bytes": 35511,
+      "sha256": "e385ac8531c6c970063e4e41c96814ea6381e3de7987c5da1cd66c8769937fff"
+    },
+    {
+      "path": "docs/floating-fit/checks/public-768-maximized.png",
+      "bytes": 61771,
+      "sha256": "c6faa9eb3b86a25a7a72aeaa351e9be19baa0721be371c8437bb479e9249da8f"
+    },
+    {
+      "path": "docs/floating-fit/checks/public-journey.json",
+      "bytes": 1492,
+      "sha256": "eeaec21cb810285dda4cae37812c22de8c8ae0b7f3822f0b9ce51a124fc1151d"
+    },
+    {
+      "path": "docs/floating-fit/checks/public-journey.log",
+      "bytes": 14204,
+      "sha256": "4adbd251dff18d765dd08c0671961692328fa8bb6f39785f077b2fb4573aa67f"
+    },
+    {
+      "path": "docs/floating-fit/checks/public-live-tools.png",
+      "bytes": 188523,
+      "sha256": "844c6782d9c07e3ef2813d7fbce874250eb4ff07afdfd36821fc79af582fe300"
     },
     {
       "path": "docs/floating-fit/checks/resolved-issues.md",
@@ -13264,6 +13364,11 @@
       "sha256": "795e9564cb806b349282af12bf2755f42be01c0efaff2822bed1da38f16d0d75"
     },
     {
+      "path": "scripts/local-floating-fit.js",
+      "bytes": 3048,
+      "sha256": "64ae4bfe9392819ae42ba26bc8774d0e022ca09c6b5f245fb4ab5fa5c87a79f2"
+    },
+    {
       "path": "scripts/online-floating-fit-public.js",
       "bytes": 12654,
       "sha256": "f51005a3451de9c077c7d40b3c70fc8240b9dc34b3724cb9d5e74639804261fd"
@@ -13285,8 +13390,8 @@
     },
     {
       "path": "scripts/package-floating-fit.py",
-      "bytes": 7525,
-      "sha256": "24e7fc36afa52142e3f560c41abfe8b8b7a54ca8574be558ab4867dff9aa5f7a"
+      "bytes": 7532,
+      "sha256": "08297d0603ac513c3e7f228ef05645953cd9131e5cfe678244f87009b31cf4e9"
     },
     {
       "path": "scripts/package-floating-play.py",
