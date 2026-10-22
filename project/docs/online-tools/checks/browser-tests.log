@@ -1,0 +1,68 @@
+Already up to date
+Done in 404ms using pnpm v11.19.0
+$ playwright test --config=playwright.online.config.ts --workers=1
+[WebServer] (node:78901) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 16 tests using 1 worker
+
+(node:78902) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 tests/browser/online-tools.spec.ts:17:1 › room chat synchronizes text without changing the game; refresh, offline draft and room isolation (2.1s)
+  ✘   2 tests/browser/online-tools.spec.ts:28:1 › floating miniature follows play and read-only history; pointer, keyboard, resize and close are safe (1.0m)
+(node:79013) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   3 tests/browser/online-tools.spec.ts:39:35 › 360px maximized board, chat, touch/keyboard and focus return (1.4s)
+  ✓   4 tests/browser/online-tools.spec.ts:39:35 › 768px maximized board, chat, touch/keyboard and focus return (1.2s)
+  ✓   5 tests/browser/online-tools.spec.ts:39:35 › 1280px maximized board, chat, touch/keyboard and focus return (1.2s)
+  ✓   6 tests/browser/online-tools.spec.ts:50:1 › native picture-in-picture uses the real browser API or announces the floating fallback (963ms)
+  ✓   7 tests/browser/online-tools.spec.ts:62:1 › older room service without chat capability retains games and announces chat update (459ms)
+  ✓   8 tests/browser/online.spec.ts:20:1 › home and existing same-screen board expose the installed online entry (469ms)
+  ✓   9 tests/browser/online.spec.ts:25:1 › two isolated players synchronize turns/capture, illegal suicide and live history without duplicate moves (1.4s)
+  ✓  10 tests/browser/online.spec.ts:36:1 › bad/full room recovery, disconnect and same-tab refresh preserve the authenticated seat (1.9s)
+  ✓  11 tests/browser/online.spec.ts:47:1 › each seat confirms its own undo; rejection retains state, acceptance restores captures (1.4s)
+  ✓  12 tests/browser/online.spec.ts:53:1 › double pass, changing dead marks, both-role score, historic read-only view and disputed restoration (1.6s)
+  ✓  13 tests/browser/online.spec.ts:61:1 › resignation has no invented score; leaving and restoring a room does not give its seat to a third player (1.2s)
+  ✓  14 tests/browser/online.spec.ts:66:35 › 360px room layout, keyboard and local 19-route touch scrolling (1.4s)
+  ✓  15 tests/browser/online.spec.ts:66:35 › 768px room layout, keyboard and local 19-route touch scrolling (1.2s)
+  ✓  16 tests/browser/online.spec.ts:66:35 › 1280px room layout, keyboard and local 19-route touch scrolling (1.2s)
+
+
+  1) tests/browser/online-tools.spec.ts:28:1 › floating miniature follows play and read-only history; pointer, keyboard, resize and close are safe 
+
+    Test timeout of 60000ms exceeded.
+
+    Error: locator.click: Test ended.
+    Call log:
+      - waiting for getByRole('complementary', { name: '悬浮小棋盘' }).locator('[data-row="0"][data-col="0"]')
+        - locator resolved to <button tabindex="0" data-row="0" data-col="0" type="button" role="gridcell" aria-rowindex="1" aria-colindex="1" data-stone="empty" class="intersection" aria-disabled="true" aria-selected="false" aria-label="A9，空点，只读">…</button>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not enabled
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not enabled
+        - retrying click action
+          - waiting 100ms
+        114 × waiting for element to be visible, enabled and stable
+            - element is not enabled
+          - retrying click action
+            - waiting 500ms
+
+
+      28 | test('floating miniature follows play and read-only history; pointer, keyboard, resize and close are safe',async({browser})=>{
+      29 |  const {a,b,close}=await pair(browser);await a.getByRole('button',{name:'悬浮小棋盘',exact:true}).click();const floating=a.getByRole('complementary',{name:'悬浮小棋盘'}),handle=a.getByRole('button',{name:'移动悬浮棋盘，使用方向键'});
+    > 30 |  await expect(floating.getByRole('gridcell')).toHaveCount(81);await cell(floating,0,0).click();await count(a,0);
+         |                                                                                        ^
+      31 |  await cell(main(a),0,0).click();await count(b,1);await expect(cell(floating,0,0)).toHaveAttribute('data-stone','B');await cell(main(b),8,8).click();await count(a,2);
+      32 |  const slider=a.getByRole('slider',{name:'棋局滑动条',exact:true});await slider.focus();await slider.press('Home');await expect(cell(floating,0,0)).toHaveAttribute('data-stone','empty');await expect(floating).toContainText('只读回看');await slider.press('End');
+      33 |  const before=await floating.boundingBox();await handle.focus();await handle.press('ArrowRight');const shifted=await floating.boundingBox();expect(shifted!.x).toBe(before!.x+16);
+        at /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/online-tools-20261022/mainline/go-club/tests/browser/online-tools.spec.ts:30:88
+
+    Error Context: output/playwright/online-results/online-tools-floating-mini-fcd5a-d-resize-and-close-are-safe/error-context.md
+
+  1 failed
+    tests/browser/online-tools.spec.ts:28:1 › floating miniature follows play and read-only history; pointer, keyboard, resize and close are safe 
+  15 passed (1.3m)
+[ELIFECYCLE] Command failed with exit code 1.

@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "id": "GO-CLUB-PUBLIC-VERSION",
-  "revision": 20004,
+  "revision": 21001,
   "rulesetId": "GO-CLUB-AREA-1",
-  "programVersion": "0.20.3",
-  "resultVersion": "0.20.3-pages.1",
+  "programVersion": "0.21.0",
+  "resultVersion": "0.21.0-pages.1",
   "onlineServerConfigured": true,
   "onlineServerOrigin": "https://weiqi-rooms.onrender.com",
   "onlineSiteOrigin": "https://sma084545-pixel.github.io",

@@ -109,3 +109,6 @@ GitHub官方[Pages说明](https://docs.github.com/en/pages/getting-started-with-
 ## Render公开联机接入 · 2026-10-21
 
 官方文档实际核查：Render https://render.com/docs/free（免费实例休眠和临时磁盘）、https://render.com/docs/websocket（WSS与断线）、https://render.com/docs/blueprint-spec（配置）；Vite https://vite.dev/guide/env-and-mode（公开构建变量）。这些仅支持部署技术选择，不是课堂效果、人类审核或持久存储保证。现代Web技能检索得到local-network-access指引；本次公网HTTPS/WSS不引入本地网络权限或放宽Origin。
+
+
+ONLINE_PLAY_TOOLS（2026-10-22实际访问）：[Chrome Document PiP](https://developer.chrome.com/docs/web-platform/document-picture-in-picture)、[MDN requestFullscreen](https://developer.mozilla.org/en-US/docs/Web/API/Element/requestFullscreen)、[MDN dialog](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog)。仅用于API条件/兼容和焦点行为核对；代码与文案为本项目实现，不复制文章图示。modern-web-guidance的drag指引用于独立拖动把手、pointer capture、夹边及键盘替代；没有引入运行时依赖。

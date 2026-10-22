@@ -1,0 +1,4180 @@
+{
+  "schemaVersion": 1,
+  "id": "ONLINE-TOOLS-PRESERVATION",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "baseVersion": "0.20.3-pages.1",
+  "protectedUnchanged": 1040,
+  "protectedFiles": [
+    {
+      "path": "content/artwork/AREA-001.svg",
+      "sha256": "57343fd4a65c14b19d3d98dcb595311fc279dd5da1296300b3c2b9d2984ab621"
+    },
+    {
+      "path": "content/artwork/AREA-002.svg",
+      "sha256": "955f141be71e0f97fb3022e84abc55af7b9c7701ca9c1f3b60c88efd34008658"
+    },
+    {
+      "path": "content/artwork/AREA-003.svg",
+      "sha256": "f8ff6954b49d9ec9aee70d3e8a692cfb4086b4fcff5d06d05ff29d379a03f87a"
+    },
+    {
+      "path": "content/artwork/AREA-004.svg",
+      "sha256": "1bbd6b5e5f460d57cbdfac6c5ab93c66fe2f88b48e86c02b08b4ab219b5b6ee3"
+    },
+    {
+      "path": "content/artwork/AREA-005.svg",
+      "sha256": "0122c62b90170df1cb16652e82dc52f77d900ca31b5e047450d84264b8aa6487"
+    },
+    {
+      "path": "content/artwork/CAP-001.svg",
+      "sha256": "7d4bb190248a6f3e048682f3e8e1b027f98052a43c26e6df64628d6246a47ca4"
+    },
+    {
+      "path": "content/artwork/CAP-002.svg",
+      "sha256": "5416860fd7082428bd86f958b4606b961abc79fdfc8e900a0337091a0249eadb"
+    },
+    {
+      "path": "content/artwork/CAP-003.svg",
+      "sha256": "3955600ae8b32c1c8c85d7232a9459db18f88e60f9dd89e474fcd9d1c4e292a5"
+    },
+    {
+      "path": "content/artwork/CAP-004.svg",
+      "sha256": "d241e4ac26275f782e9f10c9031e0c2a6a571408c12b4a28cd84fe65739ab8a7"
+    },
+    {
+      "path": "content/artwork/CAP-005.svg",
+      "sha256": "35ac08d90ba0524d74c598d8dd318c3a708612eba525c5c333729d9efd19fca7"
+    },
+    {
+      "path": "content/artwork/CON-001.svg",
+      "sha256": "2689d00864f15782f2e8f81322a32be261e0aee55d1fb5453036ef5ceac1aaa4"
+    },
+    {
+      "path": "content/artwork/CON-002.svg",
+      "sha256": "555f8ac6058e3d0f8de6e168ea012e7d9ac1a210236e2f5afcc85b40dbd04c36"
+    },
+    {
+      "path": "content/artwork/CON-003.svg",
+      "sha256": "b2ec230dc07fdf68a04ae47d38b2685c24d0a748d413dcb2b4c96edb7ab33038"
+    },
+    {
+      "path": "content/artwork/CON-004.svg",
+      "sha256": "c7efd9352ecf6255d578d07eaf4073a1c5ac254fd970e8eed3fe7b2c80881df7"
+    },
+    {
+      "path": "content/artwork/CON-005.svg",
+      "sha256": "e24d5354b3e74bf6821604a7263d488ff4b9938e9c8786d1010c6b842d6c59e9"
+    },
+    {
+      "path": "content/artwork/DISC-001.svg",
+      "sha256": "84a39d8a9021b10e3da47bd7bb08fa1fe6c43c8852c7f6b1b70f43159f86910f"
+    },
+    {
+      "path": "content/artwork/DISC-002.svg",
+      "sha256": "c93d4f45b70bea760cad0b0d1e33cf526c2eea8d79716a85dfa462143bf55f09"
+    },
+    {
+      "path": "content/artwork/DISC-003.svg",
+      "sha256": "1c26e5a1c4e861e6b674736e95650ccf59f3f06515db9e71c0ae23e19b927e5b"
+    },
+    {
+      "path": "content/artwork/DISC-004.svg",
+      "sha256": "1be0ff6739cbd2f2266063feccae56632fda8aabecf54e70a672dc613c06bbe0"
+    },
+    {
+      "path": "content/artwork/DISC-005.svg",
+      "sha256": "9c279e7335bdd5537e965eac423f892333e41a26f3730af0e195bdb5280af023"
+    },
+    {
+      "path": "content/artwork/END-001.svg",
+      "sha256": "1767e83e395ec501ca903abf9e77ec5692971bb135500d3ece09e273916ebe20"
+    },
+    {
+      "path": "content/artwork/END-002.svg",
+      "sha256": "1ff889b484b9f517090ba35d8040fb31098cd6aaf1922a800261671ca18b3f1e"
+    },
+    {
+      "path": "content/artwork/END-003.svg",
+      "sha256": "341b4611442712759332fd22a8740643525925fd5977becac1936701bbd7d1fb"
+    },
+    {
+      "path": "content/artwork/END-004.svg",
+      "sha256": "6d1b3e0cfc8a67c3ab95fe3e2eebeb8b6b5b1e0eb1baa754450aabf183cc1996"
+    },
+    {
+      "path": "content/artwork/END-005.svg",
+      "sha256": "2addc5f39e76cfc5172905133decaf145e1fbc695903308c7cdafd8251ec623e"
+    },
+    {
+      "path": "content/artwork/END-006.svg",
+      "sha256": "8c7b03962a5e74a0621d3a7602c279da1b1489d019dc3458ef0eba0467a62824"
+    },
+    {
+      "path": "content/artwork/LIB-001.svg",
+      "sha256": "3b0dbb84dff31496c0add57070f3b75fe3e0d63b00d6a8eeb6936d7c3c8c00a7"
+    },
+    {
+      "path": "content/artwork/LIB-002.svg",
+      "sha256": "6b80f76280718a1dc2df493bdf05f80bfbc98cdba1f49582d714c48c9a59fbe2"
+    },
+    {
+      "path": "content/artwork/LIB-003.svg",
+      "sha256": "96624e4cc670dbde09486030a2202d649b7c172de9c1791385334cc600fafb0b"
+    },
+    {
+      "path": "content/artwork/LIB-004.svg",
+      "sha256": "0c97d44c499d6911a5bc7bd8a823eedd03d44abb7c2e7023d55f5ce05b78ae39"
+    },
+    {
+      "path": "content/artwork/LIB-005.svg",
+      "sha256": "6d86ea35afc083aa219cfa47fcc6fdeb2219e1f2e4dc3bf767f8b95e7c40f916"
+    },
+    {
+      "path": "content/artwork/LIFE-001.svg",
+      "sha256": "45e52ed412a33f747c0a78a3caf025ee3503416cf30fa682f8c6ed2ed1657c16"
+    },
+    {
+      "path": "content/artwork/LIFE-002.svg",
+      "sha256": "37eec93256e13270547197356180ec11fe9674917677ba222920e8a4bdc16be8"
+    },
+    {
+      "path": "content/artwork/LIFE-003.svg",
+      "sha256": "2ccc504437fb6d85adb9ef2075bd86f922769bdfd3c48d0103dc6680c28c0d90"
+    },
+    {
+      "path": "content/artwork/LIFE-004.svg",
+      "sha256": "44471a992cf4f28d3b148dd21425eeca62dcbc20c83f30e097fa83e54b12c93a"
+    },
+    {
+      "path": "content/artwork/LIFE-005.svg",
+      "sha256": "70806b90cd1e8e1c03ca200204e473d31955b6c8d6000d0a121e1a32396e2799"
+    },
+    {
+      "path": "content/endgames/END-001.json",
+      "sha256": "88fe7f6226f33da4d12f0cf14121be2c4f6b4ee7da376f3d9dd77bc080b4ebed"
+    },
+    {
+      "path": "content/endgames/END-002.json",
+      "sha256": "fdc052992973abb3140041ea3d62d1cc9078eb4eeaf15dda2c36604af6170859"
+    },
+    {
+      "path": "content/endgames/END-003.json",
+      "sha256": "a2f8051b0b151056e18d1aec42f7499f4e6b6c8c82e30ac279e9da17ee6282f6"
+    },
+    {
+      "path": "content/endgames/END-004.json",
+      "sha256": "967208e0213d5d786b5fe1bb37600d44f8fed7fb629e4d19f6ddaa8d1248eabe"
+    },
+    {
+      "path": "content/endgames/END-005.json",
+      "sha256": "81dfe29d1a8ca9b96aac90cae4f3d64b23faa248ada69cd7c325798eab35a3be"
+    },
+    {
+      "path": "content/endgames/END-006.json",
+      "sha256": "29bc999f1712bfe3a30c1eb41178ed0c7beae2a1749642815ace3b9662715603"
+    },
+    {
+      "path": "content/examples/README.md",
+      "sha256": "ef365f8a07554391576bcc19712430d851edfbfd2e3ba8629e27e0ce61c4d43d"
+    },
+    {
+      "path": "content/examples/expected-errors.json",
+      "sha256": "5a7070ea61cc6839538c17f7ac0ca825cb2bba8d53fb23ece604828e156279c5"
+    },
+    {
+      "path": "content/examples/invalid/duplicate-point.json",
+      "sha256": "610b5164ebe92e916cea03891674a1759a0357e84c3eef256597a59e340ef2cc"
+    },
+    {
+      "path": "content/examples/invalid/out-of-bounds.json",
+      "sha256": "302f59cd48d99d3695d771b587d14b64732039eb2f4b37336e19488ecf882e70"
+    },
+    {
+      "path": "content/examples/invalid/unknown-major.json",
+      "sha256": "0caf8454323becb982b3bb0374cad6986b2b97b3d56c523825b2a2338eb0b756"
+    },
+    {
+      "path": "content/examples/invalid/unknown-stone.json",
+      "sha256": "4772e8bc2f717f7c96081cc034aa7f350bfc56793e4be9032dcca8dfe0f68505"
+    },
+    {
+      "path": "content/examples/valid/bundle.json",
+      "sha256": "9914bbfb0f5be8e84a6a04438178c179cbd735171c0570cf594da16446207cc3"
+    },
+    {
+      "path": "content/examples/valid/feedback-blank.json",
+      "sha256": "25631dfaa17959f33d8fbebbf951fadf3b3bd18ebc362144c7668f840c43303d"
+    },
+    {
+      "path": "content/examples/valid/game.json",
+      "sha256": "ca673059fa04386f1e4034ab751a189720ac591430d875bf28eb1c960e79b4c8"
+    },
+    {
+      "path": "content/examples/valid/lesson.json",
+      "sha256": "a5c5978871629e1dccaeea77dfbc2bb8d52a10338ec2cb4ddf77112fc8fe3acb"
+    },
+    {
+      "path": "content/examples/valid/marker.json",
+      "sha256": "f08433cc96bb7a757f4899d1fdccea1c9ef83e78aff8873b44b4ab22bc38ca26"
+    },
+    {
+      "path": "content/examples/valid/move.json",
+      "sha256": "a76e68ed7af6e9bd05bb9aa7d89333f7ef79e3c29cf7453003309d6f28e1be05"
+    },
+    {
+      "path": "content/examples/valid/position.json",
+      "sha256": "ac7ae5308582a2326243eaf950be594a5ef9afac4bf8ddfe9f3db3f6c4407255"
+    },
+    {
+      "path": "content/examples/valid/puzzle.json",
+      "sha256": "b62f3f0815a435a8e36996662cc8aa3c8ebb5f5311129bce9e5018a4f44b82f2"
+    },
+    {
+      "path": "content/examples/valid/setup.json",
+      "sha256": "0bd6c7029829367907da2f23f066ff53de956ac6ae8652e309ec4a527021f38c"
+    },
+    {
+      "path": "content/examples/valid/terminal.json",
+      "sha256": "41ed0fc1c9a79c40e0db7a6962b1e3331df2013d36ab71b7663c1b2e375a2b22"
+    },
+    {
+      "path": "content/print/T09_挑战卡_A4.pdf",
+      "sha256": "f6c7968e57c50d2b1c34b450a17967184624600586d4f396030d1349698acd8b"
+    },
+    {
+      "path": "content/print/T09_教学演示_r1.pptx",
+      "sha256": "6e30628e59936a819c470eb5664f074b9d6eaa62c4377468859ec140571850e5"
+    },
+    {
+      "path": "content/print/T09_答案册.md",
+      "sha256": "cb71fb1d03362a039d9ce854716425cfca66f02357d8c78d718f2caf4b543430"
+    },
+    {
+      "path": "content/print/T09_答案册.pdf",
+      "sha256": "f0d978e995e953c57b072aa876d98a5dd43f1a14ad8b2710bcbbf4be894f8798"
+    },
+    {
+      "path": "content/puzzles/AREA-001.json",
+      "sha256": "9865586cc32ac7887e9aa4951ac9a2fbf668bbdc52e997bfeebc60b4fa73f7cd"
+    },
+    {
+      "path": "content/puzzles/AREA-002.json",
+      "sha256": "4e2e9c14b90ce85a6296c709773d97f9c2a9a9a0018c29dd7a25d21cc4953cdb"
+    },
+    {
+      "path": "content/puzzles/AREA-003.json",
+      "sha256": "c77db09cb0b7697a01fb9554aaccf6990b3889d79b3846ba94e9e2cbce2264cc"
+    },
+    {
+      "path": "content/puzzles/AREA-004.json",
+      "sha256": "2129c1b57829c623de628c0bcf203025c317c380a75bc09dab6c8ecf2f191687"
+    },
+    {
+      "path": "content/puzzles/AREA-005.json",
+      "sha256": "32e94ab284735f1814f0acb990a4b3289c1bc4bd702f2d415470f8a5435c6554"
+    },
+    {
+      "path": "content/puzzles/CAP-001.json",
+      "sha256": "e0a0950af03ba144d4464790b1292ac4a77b7534bc5a1228b77c194862f767cd"
+    },
+    {
+      "path": "content/puzzles/CAP-002.json",
+      "sha256": "f72172c4db6adf32228632d7660f174b649ae3ebbbedd9dd3f3bed1ba3e4e61e"
+    },
+    {
+      "path": "content/puzzles/CAP-003.json",
+      "sha256": "092eb801f433d09ad685e1d0718151eea40b41bcdc4765cba639d85d999a4682"
+    },
+    {
+      "path": "content/puzzles/CAP-004.json",
+      "sha256": "2f598b1d4a5d70b283bd0d4a2bd5728742c6a2b5c103de46e208409e5257a700"
+    },
+    {
+      "path": "content/puzzles/CAP-005.json",
+      "sha256": "8272de484c2b56a7997481bb5b93c914698d6e595087850c37130eeed222e79d"
+    },
+    {
+      "path": "content/puzzles/CON-001.json",
+      "sha256": "fc6f68f65b0461f248bbacd27c9753327bc5f8d86e4763ebad2d93999bd46013"
+    },
+    {
+      "path": "content/puzzles/CON-002.json",
+      "sha256": "aa877a3ef8e658715254ca2efee4ea07a34593be8a5d122aecbe198bee8339c0"
+    },
+    {
+      "path": "content/puzzles/CON-003.json",
+      "sha256": "7b5b4efdd21de2f90023f34b9c8dee3f1e11743c9a4c434cc03b816c16ae30c7"
+    },
+    {
+      "path": "content/puzzles/CON-004.json",
+      "sha256": "4537bfa53a47ef670c096ea5e87573ad848cd6b4f3464fbfbbb41ea302371211"
+    },
+    {
+      "path": "content/puzzles/CON-005.json",
+      "sha256": "0b5327dc3885e5f4e49308e5164e79953d1065423074a7f0b0afd8d8df24520c"
+    },
+    {
+      "path": "content/puzzles/DISC-001.json",
+      "sha256": "309fbe53ee677d08e50c7e1196de664f75c46921b17459a0d6b62cadce78fff1"
+    },
+    {
+      "path": "content/puzzles/DISC-002.json",
+      "sha256": "989d275f49faad33b2ef1773fd20dca7fbcae652b805c5b735031dbad428067e"
+    },
+    {
+      "path": "content/puzzles/DISC-003.json",
+      "sha256": "aac6b4679d2517d03e9eeed1f2ffc3897c56e5651dd3176b8bf3368e0035a599"
+    },
+    {
+      "path": "content/puzzles/DISC-004.json",
+      "sha256": "15f35fb4a699b6c8083cb901675c9c79e17a61a0dd742bb4673067b2830ea6ac"
+    },
+    {
+      "path": "content/puzzles/DISC-005.json",
+      "sha256": "5e8d7c96a647be704dcffbcd955902598a627079ae8cddb20c19036fc4b5d3bc"
+    },
+    {
+      "path": "content/puzzles/LIB-001.json",
+      "sha256": "3c5fa560f7cd43a13e14021d5e1baa80353592e38e95e454355d4c18b6158257"
+    },
+    {
+      "path": "content/puzzles/LIB-002.json",
+      "sha256": "8a057d4f583931bdaed4e45f2b6080858e6af9eca6096f248a9d8f01e057972c"
+    },
+    {
+      "path": "content/puzzles/LIB-003.json",
+      "sha256": "bba49850e48d1a5a9e741a8228fff30bb61471124fb395c6863d4957a7be753f"
+    },
+    {
+      "path": "content/puzzles/LIB-004.json",
+      "sha256": "bbb1fb3435c71c4212ec85917bf4c7226216023ea15723b082a184c87a3cec0a"
+    },
+    {
+      "path": "content/puzzles/LIB-005.json",
+      "sha256": "0d8565c2908a2876ea9a70331354d17ea2158bc20d7429517a5d49fb41e57387"
+    },
+    {
+      "path": "content/puzzles/LIFE-001.json",
+      "sha256": "3e800b83347c378568c5b0ff8a4a96412fa44081df9711eb325cc0d1c3ca4c2f"
+    },
+    {
+      "path": "content/puzzles/LIFE-002.json",
+      "sha256": "4a9c755d45126cef93464d2e42c74b51af63468701c701d64957910269b32526"
+    },
+    {
+      "path": "content/puzzles/LIFE-003.json",
+      "sha256": "1909976bc369d0434b0db10720cbb722be4cb4ca49b2781668b56cb8ee8f6ffc"
+    },
+    {
+      "path": "content/puzzles/LIFE-004.json",
+      "sha256": "4ae5d60c5a862d20e64e8b7ffab7659cabe13d3289f6c682d80c171f4ad849ca"
+    },
+    {
+      "path": "content/puzzles/LIFE-005.json",
+      "sha256": "506f62c281d0c1f09c8dfff2725fe0677fcfcf9ecda05615b10adeff4a968992"
+    },
+    {
+      "path": "content/quarantine/README.md",
+      "sha256": "c7fb728e7693798116a3813d798baa92682887d37832d1fade6df4b6724b0b9d"
+    },
+    {
+      "path": "content/t04/liberty-demos.json",
+      "sha256": "82dd7b26ac8df15ca92d3cc67ab92414456b68a7b441d6bc226b184c1036a2de"
+    },
+    {
+      "path": "content/t05/capture-demos.json",
+      "sha256": "ffd4fd3555e40b4fee02b5b29e97b2dc983328606c370e5d0039fc072c102de1"
+    },
+    {
+      "path": "content/t08/development-terminal.json",
+      "sha256": "327f843fb1e38e6a8bbea0ca46ec1fb6b69551c36ba6753b6010c9dd2f78f2d9"
+    },
+    {
+      "path": "content/t09/CHANGED_FILES.md",
+      "sha256": "bc1bad8b0b0feec47c2400714a8458a4aa66691d4e31b51b1c337be03424b4e1"
+    },
+    {
+      "path": "content/t09/FILE_MANIFEST.json",
+      "sha256": "9cdd91d11c91987992365cb4c8b7a859709a96ff7445025eaa02841c6fca3d62"
+    },
+    {
+      "path": "content/t09/README.md",
+      "sha256": "9a7c6046f3046f9f1d43d9a67f8ab031dfb7e82dbe09fddb37550df441ddd2d5"
+    },
+    {
+      "path": "content/t09/SOURCES.md",
+      "sha256": "514476222cf2806b147f8183175312d7df0f520c1fecebf16720720473cc811d"
+    },
+    {
+      "path": "content/t09/bundle.json",
+      "sha256": "a58630def9526df81cd8e27b8fabe8bbe59e9905eb4aad1af2fb6203f9b46532"
+    },
+    {
+      "path": "content/t09/independent-expectations.json",
+      "sha256": "2ae2aeab29b40b66e5d28018429544f68a967c18d517fa1902a8a32048c61dfe"
+    },
+    {
+      "path": "content/t09/input-manifest.json",
+      "sha256": "2fe8ec62c8306472a06ee46e2cd543451caa256df281f345f8194fb193f97c19"
+    },
+    {
+      "path": "content/t09/pedagogy.json",
+      "sha256": "3d01eeec7edc2f5e4883eb9cde8c6ca879d3345c5bfa86a9f8426d9f8177944c"
+    },
+    {
+      "path": "content/t09/release-pool.json",
+      "sha256": "0cfbf43457fac54fa8f074c2af17ccb3a1ef1ccd3c4d93e9244763f8117a7796"
+    },
+    {
+      "path": "content/t14/templates.json",
+      "sha256": "4c6cb099c4cf5771f1dfb4f67c23318a6fa5aeb742fcc08e103696547c0be07e"
+    },
+    {
+      "path": "content/t15/README.md",
+      "sha256": "50c8a8edd3356647e5e30eab58702c1694d52ffb4a7a2ddbda78dfd4ef73fb9a"
+    },
+    {
+      "path": "content/t15/exports/T15-question-svg-batch.zip",
+      "sha256": "0b003c3fa0c4844c09d57779d0a399869defa3546057a27a81b3900e1c53ed00"
+    },
+    {
+      "path": "content/t15/exports/T15-question-svg-manifest.json",
+      "sha256": "322a772b7deeaf5adfa145e449dbaac0ee71e3210989903514ae764a75a96f31"
+    },
+    {
+      "path": "content/t15/exports/TEST-T15-LIB-r1-answer.svg",
+      "sha256": "4a930c448c5751dd99902ec7770018dc5fbd0ae47d8dba679db900e47147d1b2"
+    },
+    {
+      "path": "content/t15/exports/TEST-T15-LIB-r1-question.pdf",
+      "sha256": "e377746e2103d4667b50936d18a329b234c50b4ed069987e44516dbf3881cd17"
+    },
+    {
+      "path": "content/t15/exports/TEST-T15-LIB-r1-question.png",
+      "sha256": "8aae5e2040425aa9305537d205f00ecc1f172afaede43de874ad8aaa06f3c4ca"
+    },
+    {
+      "path": "content/t15/exports/TEST-T15-LIB-r1-question.svg",
+      "sha256": "d9df115d6c4b25f34c53e8aede6d4fa4a9d0318c5a8c83137641848a5085683f"
+    },
+    {
+      "path": "content/t15/samples/TEST-T15-LIB-ROUNDTRIP.json",
+      "sha256": "03c7739e59693fc96ca61960f64c4754b422ceba41554b4ec2b715f8bf561255"
+    },
+    {
+      "path": "content/t15/samples/TEST-T15-two-branches-roundtrip.sgf",
+      "sha256": "325df1539ede9a016a064bf1c6676184dbd7ccfc443d2e9dbdeed9537f875a31"
+    },
+    {
+      "path": "content/t15/samples/TEST-T15-two-branches.sgf",
+      "sha256": "325df1539ede9a016a064bf1c6676184dbd7ccfc443d2e9dbdeed9537f875a31"
+    },
+    {
+      "path": "content/t17/development/TEST-T17-invalid-major.json",
+      "sha256": "cba0832da6afc6beb8810ec48a2a42bc71429e3f796fbd601e187765546722ea"
+    },
+    {
+      "path": "content/t17/development/TEST-T17-report.md",
+      "sha256": "a1b006b672ae495633778739038213a93c86a3639a1532641299219352ec3b15"
+    },
+    {
+      "path": "content/t17/development/TEST-T17-three-replies.json",
+      "sha256": "914caec12096747cbbe6a9402bd64d9db44a0e4b02d9b8a69a5efb47b961fd32"
+    },
+    {
+      "path": "content/t17/development/expected-results.json",
+      "sha256": "576ac7da4784be7df9bd39afe10434e48aded72f1268be949bf9802f22c82434"
+    },
+    {
+      "path": "content/tools/apply_patch.py",
+      "sha256": "24990a05a4d94146df0c196b02ababaee7e177821055476f1e24a2aeffe957bf"
+    },
+    {
+      "path": "content/tools/build_content.py",
+      "sha256": "08cc87a4abc566e381861ab9cb7560e597f50d21e244016f54550f8daa80e9a3"
+    },
+    {
+      "path": "content/tools/build_deck.mjs",
+      "sha256": "497e3f3fc257bd2231264352492a5b4ed162c3f6eb043e6c8d3f6741ea52b06c"
+    },
+    {
+      "path": "content/tools/grade.mjs",
+      "sha256": "fe90a93387224f043d21a3b7cb75d0ab69548a18377eb6c517496cf8e6d651ad"
+    },
+    {
+      "path": "content/tools/package_content.py",
+      "sha256": "88c56ea6d21f6cf64745d21dc11e1be3740535ea0649bcad2e6b2842dad3fac7"
+    },
+    {
+      "path": "content/tools/render_materials.py",
+      "sha256": "e15cb705287766532cdd7568c5f66670e885edc52b607242ac0ae4b239f2d4df"
+    },
+    {
+      "path": "content/tools/test-grade.mjs",
+      "sha256": "df3e41992d8a49829af8892c8ee0eebbc1cdf8c98908bdc1ad74abada43349d5"
+    },
+    {
+      "path": "content/tools/validate.mjs",
+      "sha256": "27471df7d8121f29cf979dcf8a8c337745d0e1397a6b77c7ad3da9f7ada74242"
+    },
+    {
+      "path": "content/tools/validate_exports.py",
+      "sha256": "e67d37fc07d0d4fdff5af2bbff3b0b9a0ea913969186e13a0123bdd41d43eff4"
+    },
+    {
+      "path": "content/validation-report.md",
+      "sha256": "f0060f498015545fc30a67642145cedacb03251bc38a017191cbbe114e8c4f0d"
+    },
+    {
+      "path": "content/validation/adapter-check.log",
+      "sha256": "97e86a03aed21667b3e4f0aaa47744473143ce33cae33788252888af0ff1fd66"
+    },
+    {
+      "path": "content/validation/base-capacity-report.json",
+      "sha256": "0ae6f84fa471317861f07ca097ad9afb702ea2bdbdb80d0deeed9f4c34cad718"
+    },
+    {
+      "path": "content/validation/base-check.log",
+      "sha256": "968de375a0da3484086d77a466cdf924039edc745472734703b1d2ad9f11ec80"
+    },
+    {
+      "path": "content/validation/content-check.log",
+      "sha256": "60fa55bce424a1049b8efad0c466eff4d572e9c5bba7b33a381b2c3ccc8be70b"
+    },
+    {
+      "path": "content/validation/deck-build.log",
+      "sha256": "6297b24f0a6c35669ce2d3d1e73eb26c95a2e8ba61a964ebb30ec3679998e599"
+    },
+    {
+      "path": "content/validation/dependency-check.json",
+      "sha256": "29c0d15ef6b539a2490ba0659b82196a62844337591804b9a912af36e2ceb3e4"
+    },
+    {
+      "path": "content/validation/export-check.json",
+      "sha256": "bf4195c0147a35eadd13fa2e96549b8f76ef7c6700e8833d739c551929367159"
+    },
+    {
+      "path": "content/validation/export-check.log",
+      "sha256": "50deaa1195c0a615105fd5ef9dfa7c85e78e9bbdc495dd05e99b57b2d5820ffb"
+    },
+    {
+      "path": "content/validation/page-map.json",
+      "sha256": "b5633e9fd42febe426b9bac5249ca42350b149ad1c6c4df165d52ae9f033814f"
+    },
+    {
+      "path": "content/validation/patch-check.json",
+      "sha256": "135fb50e0b99da785a0a07980b469bdf4c2569e738d029f76ac7e3896a8e73e0"
+    },
+    {
+      "path": "content/validation/ppt-validation.json",
+      "sha256": "fe8bda53c82a6dc7a2d94e44eaf54c3bdf99de9988ab2a3330f707637cfef810"
+    },
+    {
+      "path": "content/validation/rendered/answers/page-01.png",
+      "sha256": "88e8518a9e67ef96a7a67054c646bf81e06aa49139d595a42458df54a8f47341"
+    },
+    {
+      "path": "content/validation/rendered/answers/page-02.png",
+      "sha256": "8c0ae9ca525f8e068f6ab2a9ff1a4829b372666b084f0fbdda7deba1f0bf0937"
+    },
+    {
+      "path": "content/validation/rendered/answers/page-03.png",
+      "sha256": "a5aabd9427307dc0c2e18440cfa6d4c90ae1552c3a125145566af16df80a76b4"
+    },
+    {
+      "path": "content/validation/rendered/answers/page-04.png",
+      "sha256": "b35d984cf0793ae396b0216d611f8bf07209025aa342db9523307722f4964d4a"
+    },
+    {
+      "path": "content/validation/rendered/answers/page-05.png",
+      "sha256": "010ac6dbe66641ed00e0b176470b55b6a36a29a95c49ddb4b4d7be9a2d4909f8"
+    },
+    {
+      "path": "content/validation/rendered/answers/page-06.png",
+      "sha256": "2b0bbda605226736c41efb383d1799431f5aacc47ba6c0bbfb6d044a2190ea51"
+    },
+    {
+      "path": "content/validation/rendered/answers/page-07.png",
+      "sha256": "fdc545668ccb3bc902308dc5ec1972a414494f847927e40de8caa3db7cf64cad"
+    },
+    {
+      "path": "content/validation/rendered/answers/page-08.png",
+      "sha256": "6a3a18c948bcb4777bedbfc0490e73cad9a9d6798a627f22c8a467d86ec62e05"
+    },
+    {
+      "path": "content/validation/rendered/answers/page-09.png",
+      "sha256": "c28c319753b9f1066a61d4f4e38e312ab47319928327590a5173b60c2644be69"
+    },
+    {
+      "path": "content/validation/rendered/answers/page-10.png",
+      "sha256": "9c381bf402e8a57b124c16cdc8bd40f21fb595d7f523103bbb1c91587bf0bde9"
+    },
+    {
+      "path": "content/validation/rendered/answers/page-11.png",
+      "sha256": "9b803e5065f8beaa7624d6c98babf1bf0d8f3efd3c4c8b38234a0816970b279c"
+    },
+    {
+      "path": "content/validation/rendered/answers/page-12.png",
+      "sha256": "1d44bc99caf616f5b2a56eeb987d609b7cd49c57406f4709bb94e963e8d6e76b"
+    },
+    {
+      "path": "content/validation/rendered/answers/page-13.png",
+      "sha256": "ed88fa88d8f2c2a953c480d0a7c9a72120c7b932fcecd1df5694a8c06e111fca"
+    },
+    {
+      "path": "content/validation/rendered/answers/page-14.png",
+      "sha256": "ae1fa68d87a8f75348889dc033ab107e218e8840d4858ae8dafe27d049959e62"
+    },
+    {
+      "path": "content/validation/rendered/answers/page-15.png",
+      "sha256": "9aa1e2e38b2a524e9d11b8354d0778557f91fadc53a51df5def92740747ae53e"
+    },
+    {
+      "path": "content/validation/rendered/answers/page-16.png",
+      "sha256": "48c71f294ad6948caa66937d0619f4ab8be7d3c745b72874a60ee3f32dfc35bf"
+    },
+    {
+      "path": "content/validation/rendered/answers/page-17.png",
+      "sha256": "85641a25e0c979f77e35e28d23f87ffec88598f12ba372f6a85f6f9f62920cdb"
+    },
+    {
+      "path": "content/validation/rendered/answers/page-18.png",
+      "sha256": "5135ee2bcc7d2908cb4a0a82cfe81f4c89b0a24e8632e87c5871bf78ea67c66d"
+    },
+    {
+      "path": "content/validation/rendered/answers/page-19.png",
+      "sha256": "80a9b1b79fc15fa1fb6b932ad954c778615cd55b249ac1ecaed4c74cba29be69"
+    },
+    {
+      "path": "content/validation/rendered/answers/page-20.png",
+      "sha256": "b5b276cc97d5c8cf5692d44b21ca6722679c90bbde9576d918c407a15e54df25"
+    },
+    {
+      "path": "content/validation/rendered/answers/page-21.png",
+      "sha256": "c5c2fa64bd3d582cb9d31f5854e82cc7a9e0e38a47f3d28409a927a1ccc858c1"
+    },
+    {
+      "path": "content/validation/rendered/answers/page-22.png",
+      "sha256": "8364382b479100c42ac5858356d13dcb8d92686a077865699f3c8e9cec38f763"
+    },
+    {
+      "path": "content/validation/rendered/answers/page-23.png",
+      "sha256": "4e72a65fbd84567000b3000a861ea16ff35629a67612a5acf053acfb72490964"
+    },
+    {
+      "path": "content/validation/rendered/answers/page-24.png",
+      "sha256": "129513beb93864a3ec07f8c3449fa1c177b9adc57274b06448f04dc486a39af5"
+    },
+    {
+      "path": "content/validation/rendered/answers/page-25.png",
+      "sha256": "1002ba6b356f4372e40d23e26aa460c174b2ad5fd6a0245b703f371a341b1100"
+    },
+    {
+      "path": "content/validation/rendered/answers/page-26.png",
+      "sha256": "f8739597c818d58b1ebb29ae37217a37432b7e6d049391a180b92415fda270d7"
+    },
+    {
+      "path": "content/validation/rendered/answers/page-27.png",
+      "sha256": "cba858a6134242d51ec952c8cff64af5006ddca3ed856096610c270a3c1d62ac"
+    },
+    {
+      "path": "content/validation/rendered/answers/page-28.png",
+      "sha256": "883a37cfad5ed6e2e050b17940043d22db02acee12bf736bbb1d827544046793"
+    },
+    {
+      "path": "content/validation/rendered/answers/page-29.png",
+      "sha256": "1438c6a0fe52127de021f7610c073b7df8e83381c78bdf848d5c40270360f21a"
+    },
+    {
+      "path": "content/validation/rendered/answers/page-30.png",
+      "sha256": "eaf822e67a02137397363cf0acfb3ce4c98db5e1d0a684bb51abf3d39f7a75d3"
+    },
+    {
+      "path": "content/validation/rendered/answers/page-31.png",
+      "sha256": "ff132c2434c180525793db1eac287691b20423480d912d0b342cc34f5228b103"
+    },
+    {
+      "path": "content/validation/rendered/answers/page-32.png",
+      "sha256": "64ce49304886ee78dc00d881d467a2708d7ed029abb32c18227c344f91dccf0b"
+    },
+    {
+      "path": "content/validation/rendered/answers/page-33.png",
+      "sha256": "73e23424a4c58a52eea668642a1a05aca74552e52efd4693179ae523308e409e"
+    },
+    {
+      "path": "content/validation/rendered/answers/page-34.png",
+      "sha256": "2800e96c497cc07b7aaf48308da6aecea2231e338684e286369652cf65a5baf9"
+    },
+    {
+      "path": "content/validation/rendered/answers/page-35.png",
+      "sha256": "cfda4119dfe6e3b82bbf2fdcfc3cfbbb53eccab96142fecae81a6022f5b917e9"
+    },
+    {
+      "path": "content/validation/rendered/answers/page-36.png",
+      "sha256": "9ce208290021f8dafd35d90af002485bdf12e6cf6622b951f6938d38352289a7"
+    },
+    {
+      "path": "content/validation/rendered/cards/page-01.png",
+      "sha256": "65dfddc54fee9203cf8fc56d661b5b46fca99ae1e92ed615bdb94f0ca859e495"
+    },
+    {
+      "path": "content/validation/rendered/cards/page-02.png",
+      "sha256": "30c3588fa3616ce4b35b5ec57c8d1bb1f912140f3af13ecc96dc01b6a52e06ea"
+    },
+    {
+      "path": "content/validation/rendered/cards/page-03.png",
+      "sha256": "389c6af40d12db2f934783855171c7439ef0050d09faa067bfdb20aed184b46c"
+    },
+    {
+      "path": "content/validation/rendered/cards/page-04.png",
+      "sha256": "39afc06189bdb9042b725b4c50645c4d5dd3cb7b8d482da349c86101fe0667a8"
+    },
+    {
+      "path": "content/validation/rendered/cards/page-05.png",
+      "sha256": "e2071e663e9aefe01ecfc0c25e4950044620dd09245b5802b931791f7e692894"
+    },
+    {
+      "path": "content/validation/rendered/cards/page-06.png",
+      "sha256": "f2847055b3c9172eef6f4fcd6447420b50c7284735bf225ff73e23a13eaffd83"
+    },
+    {
+      "path": "content/validation/rendered/cards/page-07.png",
+      "sha256": "d6a2e340bb3746090f1b409bf73fa4219528ca64542ac812b802eace2b0f4643"
+    },
+    {
+      "path": "content/validation/rendered/cards/page-08.png",
+      "sha256": "68f3162f8551723c078c678a1b45f838cb3ceec88c2add812e4fd44ec9f142af"
+    },
+    {
+      "path": "content/validation/rendered/cards/page-09.png",
+      "sha256": "6ec0e5716b2ea5c9b4ae98232a267e16de7a9fcfa6beeffadd9eed6c91e5f5e7"
+    },
+    {
+      "path": "content/validation/rendered/cards/page-10.png",
+      "sha256": "b62e027a2efd4c27100f942723438c5f26afa187f291ce55e07b10bbe52de776"
+    },
+    {
+      "path": "content/validation/rendered/cards/page-11.png",
+      "sha256": "ba686ad50a89a49cb286d587c08ceff788ceedc8658674d1551a76a67545e677"
+    },
+    {
+      "path": "content/validation/rendered/cards/page-12.png",
+      "sha256": "c81af90b6bdc78c3c6c34fcd68f669514782bf0508c704e171c55dd163bf1049"
+    },
+    {
+      "path": "content/validation/rendered/cards/page-13.png",
+      "sha256": "15c721c07d0ddd7c98d2241651de5cb5b5a7b1cdf8f88bada26e15ef245a8524"
+    },
+    {
+      "path": "content/validation/rendered/cards/page-14.png",
+      "sha256": "a392f064cb4013e899b2e5ab65bb5fa0f105631850ed7cd5423dea2646c927e9"
+    },
+    {
+      "path": "content/validation/rendered/cards/page-15.png",
+      "sha256": "9953d0c12d304098b7fc23d913b7dc249d06d7bf7eaa1cba5e00be2bfea5e0ad"
+    },
+    {
+      "path": "content/validation/rendered/cards/page-16.png",
+      "sha256": "3fb9736306c3c300f7705859fe519e2a695c23bacc45b672a32aa4f621cd54fb"
+    },
+    {
+      "path": "content/validation/rendered/cards/page-17.png",
+      "sha256": "49a1f700b5a6fa2a9b277fe6ebb9730ad1eb852a8bf72f0c5fd3b600481c591a"
+    },
+    {
+      "path": "content/validation/rendered/cards/page-18.png",
+      "sha256": "d21d6e44e2cd2c4a69d441b4a59efceaee0e1665d50fad0f536137f70470ef2b"
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-1.png",
+      "sha256": "764a45a572c51060210f2393c8a1011134bc4b7b64562b0cb661f3833535e25c"
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-10.png",
+      "sha256": "4fc8977fa5b8eb86702d38ecb59d56b327c9a397c9aae202b50359796e1309cf"
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-11.png",
+      "sha256": "c01b305e43e57cfdbec9a11b47179ef8281a76511a40c61f75a0984179e83833"
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-12.png",
+      "sha256": "4feadc0572df7b5ec03ecda51aa83cccc659307fa43bcf9109b5d00c55d943f8"
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-13.png",
+      "sha256": "22a5d7bcd44415b674b9ff281f542d2e967796f1f26badf25676fcd43a03e06e"
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-14.png",
+      "sha256": "b44b3c0d3ffe7127eb5b469d37a860c12cbee81d7809843917f05b6b060d3771"
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-15.png",
+      "sha256": "6f09b255e8287fec5fb138d3f808348d13488d2385e2e6230287ba612db41db4"
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-16.png",
+      "sha256": "6fadd7322510009acafe0178ba5e0ddc5f82aabf35eb812f2ead1bfdc1beafd7"
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-17.png",
+      "sha256": "0059a0374b5205b7af38b2cdea8cb4c7c8b3ed9330bf8c4ed8e31b4e1690c290"
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-18.png",
+      "sha256": "00dfd2d144ef354c36a9d75eacbab58ab014e3805aa37c34e17cfbfc016abe95"
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-19.png",
+      "sha256": "b48b0ceddaf87b57c19bb97b08f50ace0b58f3dd42c3d5487ff2cb5b494f9e6d"
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-2.png",
+      "sha256": "e4afb89ced4ad4d7d9ad806a22868a102f7db2a26ba9c2acd92413ef6aa2ad65"
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-20.png",
+      "sha256": "0976665946fdc297ac2f7de1fda9ad6e8c1f87722ae56b9d32e0f69d94deedd8"
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-21.png",
+      "sha256": "7769c11e9681e7b924254b7b138dc7b331d5b3ddf581ae5a01bbcb834dc66004"
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-22.png",
+      "sha256": "a550c902feb8ec3f053eab966f11d302962317d6afdddf79676e18b525ce1b9f"
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-23.png",
+      "sha256": "b78a45250e2f2c2925049a0680b6794b6c87f58cc672e33b7b1a153868aeb0e2"
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-24.png",
+      "sha256": "4bdf75d29797ea135813ba81cc755789dd925081cc6a409efd554da854c68950"
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-25.png",
+      "sha256": "1f1df845db7ed8fbe712496193536238877586629ca7ef60391fec5993814fca"
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-26.png",
+      "sha256": "7b884183418b03740fac5f84963b224896b95318d26d599447e5e2bc1eddf04a"
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-27.png",
+      "sha256": "30491364d6aee1d52b1fa2464f473bc291f21129d43e405b6d01e3855a4995cf"
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-28.png",
+      "sha256": "793f6d44fecad918fc45c128fe32e0037b140f93959258df90c3781b54eb1b93"
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-29.png",
+      "sha256": "fe53183295968bac27f43c12c83d18c4308ef9884129d83d29d3277388539e4c"
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-3.png",
+      "sha256": "ef16f927753abd6df1fe34810d440504224d878358e7fb792391688115d9c6e2"
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-30.png",
+      "sha256": "262fbec978b68db732e4e4d2eab4b91da8a7febbd3eef82eee7b94f6203e489f"
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-31.png",
+      "sha256": "40fb06b7add7b46403257951f3cc1a8c1d66637ceb320a5428f619ed6fc73f8a"
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-32.png",
+      "sha256": "ba24a925c802e921c3188dc16da8bec66eeebae5e61c1732eed395e345189901"
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-33.png",
+      "sha256": "9cc4d8e59416a304e783feb7f8214740c1f148fa9753cb71cf6297491dd46cc8"
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-34.png",
+      "sha256": "2672c383e602083226456b5815447585a908cf3883ac93c2d93ad45d17899477"
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-35.png",
+      "sha256": "39d260cab20c50ddc754f9eaf9ffd09b45edc768bd80f878ec35aaad923471fe"
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-36.png",
+      "sha256": "73477f0c035d6a0ba7f0269aedfca09dc1cbb6fca92410687c305aefc4d479d6"
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-4.png",
+      "sha256": "a18c3ec7eb7f00261bd1b480063a9ed7403d2599c282f88bb9bf1d9d57a95675"
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-5.png",
+      "sha256": "5f0606ecb974b7e5566306759a037ec2242e419afb817e6999d6c733734b7f7e"
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-6.png",
+      "sha256": "a1696f10c050f823cd549f8a636ded16176351d08b416eeef2220bfff9443612"
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-7.png",
+      "sha256": "6f8baa452f98473836d274aec56599f58c8e4dea69dba3c6463a1e40c4fb66dd"
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-8.png",
+      "sha256": "920568baec71f75894b8d9d10544235d315d98595d475b28a99bd606f90e889c"
+    },
+    {
+      "path": "content/validation/rendered/slides-delivery/slide-9.png",
+      "sha256": "37dbcb2e4722e03e99105b11b82406047b08ac53c8c197a3f56ae1c69ab32843"
+    },
+    {
+      "path": "content/validation/results.json",
+      "sha256": "8a93ec1394e6280b2b0e8a0503a117fcfd60d10fd5725d247c849278d57c3efe"
+    },
+    {
+      "path": "content/validation/slide-render.log",
+      "sha256": "8c3d72ae47c6f1eab24f1ff2eb00769e63e7405b4823e43311f636e1385147e2"
+    },
+    {
+      "path": "content/validation/visual-review.json",
+      "sha256": "22af1563f7373c8da7830b1b4874d15a27f0c2052f0cf96b3a9e1eb72d855b66"
+    },
+    {
+      "path": "handoff/CONTENT_FREEZE.json",
+      "sha256": "94ae85ce048b83ff73d8b2ef080665175e5f285904dd89bb7be5ca906d865324"
+    },
+    {
+      "path": "handoff/FREEZE_B.md",
+      "sha256": "b7bdc44f7987c73542060448137856a7d621b6049f2aad4448af438c2f9158bd"
+    },
+    {
+      "path": "handoff/FREE_PLAY.md",
+      "sha256": "f6212d783df4a98d8eb45d60742645ad96cea96f7c7b1a9494c27e2fe0216d30"
+    },
+    {
+      "path": "handoff/GITHUB_PAGES_SYNC.md",
+      "sha256": "079bddc7846b393fa71b912eb8f47e0681b401e956fb390d12f6a21ea6a86fb8"
+    },
+    {
+      "path": "handoff/HISTORY_SLIDER.md",
+      "sha256": "508b8496a797b29c3f67cc5ac15ca3bb06c2f955700e9a5d86261ac1af240f17"
+    },
+    {
+      "path": "handoff/MERGE_A.md",
+      "sha256": "3d5c0f8b8a07306b2517d06549cc9c019591b3a0584f29a3b41d920b69e0b9aa"
+    },
+    {
+      "path": "handoff/MERGE_C.md",
+      "sha256": "013a7678135b2f7cb4eed172bd703159dedb25bfc00a8fdda606bba5faf1fee8"
+    },
+    {
+      "path": "handoff/ONLINE_PLAY.md",
+      "sha256": "3130320382369df2fbd03873c16e9651ed32eda2793cd885242f8f3d3112a156"
+    },
+    {
+      "path": "handoff/RENDER_DEPLOY.md",
+      "sha256": "8c016c9d624afbf4e30dcbd9fdf2fc4acc424254b0233fd37500c4606e81c82c"
+    },
+    {
+      "path": "handoff/T00.md",
+      "sha256": "ad0621ade993bf80e931261bcd09fee26c65456eceb2588802c166285455e31f"
+    },
+    {
+      "path": "handoff/T01.md",
+      "sha256": "f7defdc4c150c662a0ca077f6be16481af338141c94f5c6109030a3796dcf7cf"
+    },
+    {
+      "path": "handoff/T02.md",
+      "sha256": "1f64e246d5af678867b23518e52176b0578b1e32e0b2a4fa0aba704ef0b75093"
+    },
+    {
+      "path": "handoff/T03.md",
+      "sha256": "1626630ee0f0c0638f61cf368934d1e15d080db6af2e25478b758aaedfc7e7c2"
+    },
+    {
+      "path": "handoff/T04.md",
+      "sha256": "59737e82884648ef4102c4eb6a78956b27b62dbfe930a186b1e53d6ad9ca9267"
+    },
+    {
+      "path": "handoff/T05.md",
+      "sha256": "a08505badf2e1e8b574196c0a1574f8d332c2fa7f85a7231449e28e04703ea68"
+    },
+    {
+      "path": "handoff/T06.md",
+      "sha256": "d356796a6fa73a753ed80dc1c61ad57a9354243b770a6bd79e349beb0e5ead8a"
+    },
+    {
+      "path": "handoff/T07.md",
+      "sha256": "b68e9e575435bb41ec533b04e265e973cdc3162b4b6451fb6ca9565058aed9be"
+    },
+    {
+      "path": "handoff/T08.md",
+      "sha256": "ed829ca0315ad37882632de52ec445b0784314c5d477364a0c175a8103b06b7b"
+    },
+    {
+      "path": "handoff/T09.md",
+      "sha256": "00601485ff0f6150ebc9e1f619efb58e0f6f5c0459eaee4e5850ad5b2e080e61"
+    },
+    {
+      "path": "handoff/T10.md",
+      "sha256": "1ff9faccee5683c56bef8ec07976aeba58a59c54680135567c3ec5a23a1ceacf"
+    },
+    {
+      "path": "handoff/T11.md",
+      "sha256": "e7378ed67fd08c06bee6da99a6e6e67c619d1757506e0156ddfca5c41218d9dc"
+    },
+    {
+      "path": "handoff/T12.md",
+      "sha256": "ca249a668c5f9674970f249a739fa964650b2283fe3e7067a80d37291a07c56b"
+    },
+    {
+      "path": "handoff/T13.md",
+      "sha256": "4e84fa548ec41a51430b252cd4d94509e7a83746caa068556e0b0fb2e182cc31"
+    },
+    {
+      "path": "handoff/T14.md",
+      "sha256": "120f1ac8e5327e32ba2decc3822433a5202fd8e9f8d89f34028b3c60574d1630"
+    },
+    {
+      "path": "handoff/T15.md",
+      "sha256": "173625c4698d3867081972e6e5dc1338e60b39a919c8a50d7837af892e5b3657"
+    },
+    {
+      "path": "handoff/T16.md",
+      "sha256": "73db92365d593cad6cd7cdc5e7e669d073c61476123329e1782db39e2eda0bc4"
+    },
+    {
+      "path": "handoff/T17.md",
+      "sha256": "8be6331338ec6cc4df1707fee4c0277202edd93480a732ec38f8d1c9dbf8db9f"
+    },
+    {
+      "path": "handoff/T18.md",
+      "sha256": "bb191dc30e42c3467c955d1a8fc4972f205831204a9d3db7ea12338a4d3506e0"
+    },
+    {
+      "path": "handoff/T19.md",
+      "sha256": "eebd06f6689fc89d20c5d83d6ae9daae2bd596b0caff01b396064ab79c19ef87"
+    },
+    {
+      "path": "handoff/T20.md",
+      "sha256": "e4643f151be6578c34044217ffd422fb278cddb0787199c287937b368335acdb"
+    },
+    {
+      "path": "handoff/T21.md",
+      "sha256": "26cd98c2abddc0cabc52d18529c09b6577930d39a8844e6bfa2a75bf9ec0aec4"
+    },
+    {
+      "path": "handoff/T22.md",
+      "sha256": "418b779064e862934be56dfa007d3822004431b4b3c05bb1b6daa01f293ccd5e"
+    },
+    {
+      "path": "handoff/T23.md",
+      "sha256": "852f554fe58e0087f865e3cef8e60eb71c85cd549c8c2ae91b12a4df9fc6be5b"
+    },
+    {
+      "path": "handoff/T24.md",
+      "sha256": "96bc6702ba2871a0529458c96079daa29c17066c23a02468d679fe6544a37b3e"
+    },
+    {
+      "path": "handoff/TEMPLATE.md",
+      "sha256": "06957265c731adaab0c00e9fd94381f5a352bc7efb7774ebdbf4082df518ad76"
+    },
+    {
+      "path": "materials/README.md",
+      "sha256": "0faf7c49793a2c9c2c6dcced44eff897507b3f39100828d527b0789e185cf2d1"
+    },
+    {
+      "path": "materials/challenge-cards/CARD_INDEX.csv",
+      "sha256": "a8ad9ec10ed6c183e803c32b05198a8477039ab41c19c587f5b2e9a10e0ff08f"
+    },
+    {
+      "path": "materials/challenge-cards/CARD_INDEX.json",
+      "sha256": "def1d31d1a1d69f98d8a34edfbe96639cc855fef8a8fa17148a22098ba486fc3"
+    },
+    {
+      "path": "materials/challenge-cards/FILE_MANIFEST.json",
+      "sha256": "fbd83927240a26f8126c9a5a69ca8d17d387452ac235d5d6e5281d55b57d4d69"
+    },
+    {
+      "path": "materials/challenge-cards/PRINT-AND-ACTIVITIES.md",
+      "sha256": "6e0028f56b97fb3ab98c7ecaebdb286d7584b7b30fa0081afef3d5aa3a2c532e"
+    },
+    {
+      "path": "materials/challenge-cards/README.md",
+      "sha256": "4eb977ef8077eb5d040b7e530b335aad2d2a91f6e9e2ac38363d6f2a30f108b2"
+    },
+    {
+      "path": "materials/challenge-cards/SHA256SUMS.txt",
+      "sha256": "1845758799f02b6c8f5d6a4dd58bfbbfd5df32cdd668defb3c97f22e281ec8ae"
+    },
+    {
+      "path": "materials/challenge-cards/SOURCES.md",
+      "sha256": "a71ced3b536fbeb93b3b175d95a4e3a92f9c657d55776cd2df5e0094194cf76f"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/AREA-001-back.svg",
+      "sha256": "4572af775f397f56c063ce0046fef6597f22a1966cc798b34e43bf34736649a2"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/AREA-002-back.svg",
+      "sha256": "0c399056a748875f58f59c5e8f443aa6c4f4e6434d0a7363f75ed8274accd574"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/AREA-003-back.svg",
+      "sha256": "6b4f810cbe3c765ae2e7af0cb7ccfaf6ae45393c802d9cf84b27bde49a36e636"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/AREA-004-back.svg",
+      "sha256": "e73fe0328cc30bed645fcae8a452144864d380ae83b8cd751de8e320be042baa"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/AREA-005-back.svg",
+      "sha256": "c48dedeefd65970e4e135cc75fdd5dc6e2d731f388a48b6b1286025b2a018b93"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/CAP-001-back.svg",
+      "sha256": "654181c7db5661eb84cab87ca9ec264ad29afa88477fe3cc82a8f29c0b5bc2d8"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/CAP-002-back.svg",
+      "sha256": "21625f8d32f60eab82a64c590e17b071c9a0130e01fcdb8f6eb1363ea5701bdc"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/CAP-003-back.svg",
+      "sha256": "bb4d327794e6aacfd500743fdb5a2d4c304e2ae32642eb16846218548015d8c9"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/CAP-004-back.svg",
+      "sha256": "3ca367a1cae3d8c6e48efdff1c4b5f54b2d21addbb98cd831a6819fd0552fb2f"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/CAP-005-back.svg",
+      "sha256": "9d68bccd94bfd5ed1599eefd2afe94ecfe2b6fa2b8e8f10618bdf89ac46b2e77"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/CON-001-back.svg",
+      "sha256": "95709d8ff03d8ae3ecb1db68dfe7b048972a5b6502bbc91c434ec3ed369a3b85"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/CON-002-back.svg",
+      "sha256": "1be4fb5afe6003f39fe99fff8f9555f11a7db95d482cc3cd835e315bb8a78b8d"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/CON-003-back.svg",
+      "sha256": "0e4fa2b12174a78899fc07c3018a877b27c72fa439795d3c4a3410e71c2b816f"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/CON-004-back.svg",
+      "sha256": "83b38aa8919d1d1bda875d4e8ccde868397a66ac962bc1ff1720d25b0a5c0cd7"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/CON-005-back.svg",
+      "sha256": "561403549fcaecd984a8ee96d4f41e2b0c0aca5cbc810f146e53e59e4b1209bf"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/DISC-001-back.svg",
+      "sha256": "a750c1e1b01c2aa18ed3ad43c8e6e264556f964797bf204674724542fe0d30ba"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/DISC-002-back.svg",
+      "sha256": "7607bfa5e66be32f85c1b99ed941f79fa2ebd8d3d5a03b58939affdd2aa318e6"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/DISC-003-back.svg",
+      "sha256": "9108ed16b246ee5a3cc37ab916ec0c604450a472e64c824ab8e325e989f2c7b9"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/DISC-004-back.svg",
+      "sha256": "834bc5382033cc578c9e134138ea13c34530bbc2490a6a311245c724b9e798e7"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/DISC-005-back.svg",
+      "sha256": "a64e4479b4b664ce88bbf14299a24b9cc5e3e79100e6563da9067625a24a2509"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/LIB-001-back.svg",
+      "sha256": "e916701769f1a09da4e37b446b1852207932bc8813f4b88fc9e057cadf3c9b86"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/LIB-002-back.svg",
+      "sha256": "5cb6bbf769ef8500284ebd679235882e1347790e99ff10c3215e68263c57c05d"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/LIB-003-back.svg",
+      "sha256": "78e6b9ad3a655a5fba5b6629891a3e588bdc9b65810b120232a9ce9e8afaa71c"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/LIB-004-back.svg",
+      "sha256": "0d0f4d850404ad68c3b0ecf35e46d952b07a50016adfb9e8d3a7aca9b9d1b6b8"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/LIB-005-back.svg",
+      "sha256": "e9854cf669b7331d175436194fc71eff616b193bb100d81a510c22092ac191eb"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/LIFE-001-back.svg",
+      "sha256": "f08646d434385cbbda831f0b9f18c6b0281a8c5b31f7ac6ddf837f91494985b8"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/LIFE-002-back.svg",
+      "sha256": "3bf6b954baeeb5dcf8dcd0aa45f85fd6fef883c19d7b2fac8a6756b848085709"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/LIFE-003-back.svg",
+      "sha256": "edc3747d7be4db953a959565ed514b0bef8992099e321364ee01e817dc2270c7"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/LIFE-004-back.svg",
+      "sha256": "bf7df2eabd4009f714c38c51f93e62c7e3fd60d3cfaeb4bfd0dc581ed90d879e"
+    },
+    {
+      "path": "materials/challenge-cards/editable/back/LIFE-005-back.svg",
+      "sha256": "2adbc0b863f20cec0ed19e96f1357f7026aaffe3957eda10296e3a1145721794"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/AREA-001-front.svg",
+      "sha256": "1081f4ed5ab47e57df9ab38349fee5aa9ffd0ef0cac903d192789d2bb13e7823"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/AREA-002-front.svg",
+      "sha256": "60ac709712877b95be2b35a3cd166bbcc9d3d87ae973c5ea9c586da815c9d076"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/AREA-003-front.svg",
+      "sha256": "d33785d38b3ba40a042d7ea3f3c9d93b333f2bad964d9586d7c073e5c64ff5e3"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/AREA-004-front.svg",
+      "sha256": "49e14b179f1b0ef4f65df3b28313c6630c21f7bc8bd046fbde315cbad8ae236f"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/AREA-005-front.svg",
+      "sha256": "9924a39941bb62ee4017768a639f97dce23e53bf6b97682626c5ab4b0a3b710d"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/CAP-001-front.svg",
+      "sha256": "291377f4b024de7d58ee28ad6a9aa1d7ee6fe6b5691fdc117163799427be146f"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/CAP-002-front.svg",
+      "sha256": "5f3353a4eaeaf9439a4dab86a90c0dfa96fc3d188f7267fabca5632ec0d92920"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/CAP-003-front.svg",
+      "sha256": "8e5ab2c29023b639daceef06a228c3fdb73d6ded0e40ddf0bcce403732b73b2f"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/CAP-004-front.svg",
+      "sha256": "80064c658f75c8068f272759c3ce35cbadc9a2280837872fe4b6a9a93cc5de68"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/CAP-005-front.svg",
+      "sha256": "9717bde694f23e32604631dcd0e055dc4ca15fb45e74bd3d2407ddd37ecc4104"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/CON-001-front.svg",
+      "sha256": "0641c3e364bbc32b8e307e77244e19d9fbb01bdaf4b2b96694d16b9936e7b3e1"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/CON-002-front.svg",
+      "sha256": "04d094ac3de9f56154ef6543bbf03aeb233bf285a002643809dcd65654d7544c"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/CON-003-front.svg",
+      "sha256": "7f8d93631d7d75563790b2e8b5c999aa15cbcdf9b4328598d7ede86a5be1da22"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/CON-004-front.svg",
+      "sha256": "be2f2df840d1b451fb482c6e72a90901380eb64c2dc9228e910f8e0d8a25dabe"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/CON-005-front.svg",
+      "sha256": "9422b8b0b1a62fc56e3d04b1aae3fbb95e73b093f81910a822451ca0a7474b2b"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/DISC-001-front.svg",
+      "sha256": "bd826d9e7d350e06990ad6dced0ed2f9088e921b10a88bf13e1262ae9e4105af"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/DISC-002-front.svg",
+      "sha256": "0ff08c150ca551a29151ab41b5284c65d0a9e30c405b256149ecb90c14e2ff1b"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/DISC-003-front.svg",
+      "sha256": "c8f9e4bc5e6da87e80dcdb38e436e00b4905426b2f0016d11521af0be17e7ff9"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/DISC-004-front.svg",
+      "sha256": "5f795cbdef94a5a7c731f7693e23dc790ee4d04e4f2252fdd6868b0ffbce6faa"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/DISC-005-front.svg",
+      "sha256": "2d7690d6f6ea3c5df46232dd89c8a1922318d37ba3c0ce1c1a90f9d9acf02075"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/LIB-001-front.svg",
+      "sha256": "bab5c6b622c24dc345e336c6ca133ff2362d13660dde107e3d995c931a3ff894"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/LIB-002-front.svg",
+      "sha256": "9b8bd77f23b54bd8d9500358122b8e005f50dc2ae5a13948b099f136a0833e1c"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/LIB-003-front.svg",
+      "sha256": "ba86260d1eb8107b1b48877a18a253ede0b9a5a525347c58ef68ecf6c0fb137c"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/LIB-004-front.svg",
+      "sha256": "6ad91924021b47e32279badce8a6b1e2edbcefff6c107392fd5d52a91554e45e"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/LIB-005-front.svg",
+      "sha256": "4a08f9986a3b85b0c644ba58482c0b1a24fa547e8b138c40aba30be156822aa9"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/LIFE-001-front.svg",
+      "sha256": "c36538d56fe3ec63c59bdce93f7e6cff1f2bf4b5b626256e747a8bf5b784f8d7"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/LIFE-002-front.svg",
+      "sha256": "616b933d30352f472ff4fa599e7e29636b269a06ba5e6d2fe6b7f4b0418c83dd"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/LIFE-003-front.svg",
+      "sha256": "d592612d04cdf758c96858cf057274a1b6853197410b07fb0fd397e3d5fd8d78"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/LIFE-004-front.svg",
+      "sha256": "b650659699ae53fd3e2c37d3af96302fb563520e8a1c00ec0836532e5cc7320c"
+    },
+    {
+      "path": "materials/challenge-cards/editable/front/LIFE-005-front.svg",
+      "sha256": "259566818aa5dbe8bc48be0feec78f2c46d29de2716f7be2cfe5e335c827928f"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/CONTENT_FREEZE.json",
+      "sha256": "94ae85ce048b83ff73d8b2ef080665175e5f285904dd89bb7be5ca906d865324"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/bundle.json",
+      "sha256": "a58630def9526df81cd8e27b8fabe8bbe59e9905eb4aad1af2fb6203f9b46532"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/pedagogy.json",
+      "sha256": "3d01eeec7edc2f5e4883eb9cde8c6ca879d3345c5bfa86a9f8426d9f8177944c"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/AREA-001.json",
+      "sha256": "9865586cc32ac7887e9aa4951ac9a2fbf668bbdc52e997bfeebc60b4fa73f7cd"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/AREA-002.json",
+      "sha256": "4e2e9c14b90ce85a6296c709773d97f9c2a9a9a0018c29dd7a25d21cc4953cdb"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/AREA-003.json",
+      "sha256": "c77db09cb0b7697a01fb9554aaccf6990b3889d79b3846ba94e9e2cbce2264cc"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/AREA-004.json",
+      "sha256": "2129c1b57829c623de628c0bcf203025c317c380a75bc09dab6c8ecf2f191687"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/AREA-005.json",
+      "sha256": "32e94ab284735f1814f0acb990a4b3289c1bc4bd702f2d415470f8a5435c6554"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/CAP-001.json",
+      "sha256": "e0a0950af03ba144d4464790b1292ac4a77b7534bc5a1228b77c194862f767cd"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/CAP-002.json",
+      "sha256": "f72172c4db6adf32228632d7660f174b649ae3ebbbedd9dd3f3bed1ba3e4e61e"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/CAP-003.json",
+      "sha256": "092eb801f433d09ad685e1d0718151eea40b41bcdc4765cba639d85d999a4682"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/CAP-004.json",
+      "sha256": "2f598b1d4a5d70b283bd0d4a2bd5728742c6a2b5c103de46e208409e5257a700"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/CAP-005.json",
+      "sha256": "8272de484c2b56a7997481bb5b93c914698d6e595087850c37130eeed222e79d"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/CON-001.json",
+      "sha256": "fc6f68f65b0461f248bbacd27c9753327bc5f8d86e4763ebad2d93999bd46013"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/CON-002.json",
+      "sha256": "aa877a3ef8e658715254ca2efee4ea07a34593be8a5d122aecbe198bee8339c0"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/CON-003.json",
+      "sha256": "7b5b4efdd21de2f90023f34b9c8dee3f1e11743c9a4c434cc03b816c16ae30c7"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/CON-004.json",
+      "sha256": "4537bfa53a47ef670c096ea5e87573ad848cd6b4f3464fbfbbb41ea302371211"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/CON-005.json",
+      "sha256": "0b5327dc3885e5f4e49308e5164e79953d1065423074a7f0b0afd8d8df24520c"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/DISC-001.json",
+      "sha256": "309fbe53ee677d08e50c7e1196de664f75c46921b17459a0d6b62cadce78fff1"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/DISC-002.json",
+      "sha256": "989d275f49faad33b2ef1773fd20dca7fbcae652b805c5b735031dbad428067e"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/DISC-003.json",
+      "sha256": "aac6b4679d2517d03e9eeed1f2ffc3897c56e5651dd3176b8bf3368e0035a599"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/DISC-004.json",
+      "sha256": "15f35fb4a699b6c8083cb901675c9c79e17a61a0dd742bb4673067b2830ea6ac"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/DISC-005.json",
+      "sha256": "5e8d7c96a647be704dcffbcd955902598a627079ae8cddb20c19036fc4b5d3bc"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIB-001.json",
+      "sha256": "3c5fa560f7cd43a13e14021d5e1baa80353592e38e95e454355d4c18b6158257"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIB-002.json",
+      "sha256": "8a057d4f583931bdaed4e45f2b6080858e6af9eca6096f248a9d8f01e057972c"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIB-003.json",
+      "sha256": "bba49850e48d1a5a9e741a8228fff30bb61471124fb395c6863d4957a7be753f"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIB-004.json",
+      "sha256": "bbb1fb3435c71c4212ec85917bf4c7226216023ea15723b082a184c87a3cec0a"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIB-005.json",
+      "sha256": "0d8565c2908a2876ea9a70331354d17ea2158bc20d7429517a5d49fb41e57387"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIFE-001.json",
+      "sha256": "3e800b83347c378568c5b0ff8a4a96412fa44081df9711eb325cc0d1c3ca4c2f"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIFE-002.json",
+      "sha256": "4a9c755d45126cef93464d2e42c74b51af63468701c701d64957910269b32526"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIFE-003.json",
+      "sha256": "1909976bc369d0434b0db10720cbb722be4cb4ca49b2781668b56cb8ee8f6ffc"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIFE-004.json",
+      "sha256": "4ae5d60c5a862d20e64e8b7ffab7659cabe13d3289f6c682d80c171f4ad849ca"
+    },
+    {
+      "path": "materials/challenge-cards/frozen-input/puzzles/LIFE-005.json",
+      "sha256": "506f62c281d0c1f09c8dfff2725fe0677fcfcf9ecda05615b10adeff4a968992"
+    },
+    {
+      "path": "materials/challenge-cards/output/T21_challenge_cards_back_A4.pdf",
+      "sha256": "9b2eb6b8e1a71e5d2a7c8fd6030142f4a64df9d6207789e9b8b97549188fa5d3"
+    },
+    {
+      "path": "materials/challenge-cards/output/T21_challenge_cards_front_A4.pdf",
+      "sha256": "0e8d592efed5b19f3655f0bde77a2c403a544d0b913095bb0e4ffeaf92180467"
+    },
+    {
+      "path": "materials/challenge-cards/output/T21_duplex_test_page1.pdf",
+      "sha256": "00a0fab7c700c5f8be95b9584533eca8490234b18567056d9f91b3e3f81c9f14"
+    },
+    {
+      "path": "materials/challenge-cards/output/T21_teacher_answer_book.pdf",
+      "sha256": "683f8c60994591003040548642a04035b9cdd54faf133da5b2e25546bb08a22b"
+    },
+    {
+      "path": "materials/challenge-cards/source/FONTS.md",
+      "sha256": "af62102fc9a4a282bc9736b571c88ec589579452fabbda58851a5c95a75caa90"
+    },
+    {
+      "path": "materials/challenge-cards/source/build_cards.py",
+      "sha256": "1711dbcfbc920547c0fee2302b2ff9a4c2e643e17e16c86a535d54b7955e9019"
+    },
+    {
+      "path": "materials/challenge-cards/source/package_materials.py",
+      "sha256": "86b08b7cca933ae7e4c04267505d43b70f3c705448eb72a3e2e6f21cfc9bc7c4"
+    },
+    {
+      "path": "materials/challenge-cards/source/render_qa.py",
+      "sha256": "a685e6a67e3ac93bb6b46a16034345a9786e6f3915f72f4d0962999eb845b129"
+    },
+    {
+      "path": "materials/challenge-cards/validation/PACKAGE_PAYLOAD_MANIFEST.json",
+      "sha256": "3b5af10be626d73b063d74397ce3753b44b4a1813d99fe1aa29f209f7378130f"
+    },
+    {
+      "path": "materials/challenge-cards/validation/VISUAL_QA.md",
+      "sha256": "5c752039e20fb77c9627157494e6f9a3cc6313cb9f6af79b23b8a462593b1812"
+    },
+    {
+      "path": "materials/challenge-cards/validation/automated-checks.json",
+      "sha256": "92fa59d6e9c889cafb0bc0a02c29b94f79465bcfb62a9c2c214c0f093a0aff05"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/back-01-04.jpg",
+      "sha256": "3e25cda8ff10cf9b4538a815876a6b6d0aecbe76400d6b214df06328f5fa53f4"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/back-05-08.jpg",
+      "sha256": "9c41f40fa7c3a217190f3ed0fcdc30f45e6bd32f8e6d4dea087296a396410e8d"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/back-09-12.jpg",
+      "sha256": "6b15f6d7aa38ae26b6c958dafdd8f3b38de40cc8ccb73cdb74ca2e4b5fa19442"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/back-13-15.jpg",
+      "sha256": "0805f3f78b9130f078737040fe6027d70f4690e5011f632d10c895975235cf46"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/back-gray-01-04.jpg",
+      "sha256": "d6a9a78bb9b7bbf18ce61f0ea21318763086ea00b8a06ccbba95dd30a0b57927"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/back-gray-05-08.jpg",
+      "sha256": "494729e8f7dbe3dfd944676c3bb159f4da9d7eb201d516231a4f35c9a5fc6a36"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/back-gray-09-12.jpg",
+      "sha256": "a02303f3e204720dd3fb96620de7fcd86774fc2a723bae8d1098427ff407032d"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/back-gray-13-15.jpg",
+      "sha256": "8da0c4db5d765574da5db70803dc13eff3d21c4d00c2a9d567f06cd3652d5e23"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/front-01-04.jpg",
+      "sha256": "66072ebd6c7090e9362b1b285f7bf790831fac8ca8033247719311f4f0a31af4"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/front-05-08.jpg",
+      "sha256": "a14939db7885b73ddc9e824717945437d683f8b4e3769ee31e43121daa070cd6"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/front-09-12.jpg",
+      "sha256": "4f6e3ea851a7cf32f0ae61d0a862d4cd0c2c81e5bd8e8dc3257ae7503bd09fd3"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/front-13-15.jpg",
+      "sha256": "4e9c13e6643a5eb571ce066fb2afa863eaa38ae53a7069fbb6096a66d9ee058e"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/front-gray-01-04.jpg",
+      "sha256": "f4cd2332cf967e0674c56d985b05a8f0ac123842dd29fb8c2ee8d0f0a200980f"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/front-gray-05-08.jpg",
+      "sha256": "d0d917e64b17a178017ccc015ccb28c80a25c795bc95d18f47ee292eb56fd6ff"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/front-gray-09-12.jpg",
+      "sha256": "3cb86b464f5c012c483bef697ebec18f303a5a7282963a92406158a08a272f52"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/front-gray-13-15.jpg",
+      "sha256": "ed150b79f64245f9b4a84518c96233723a413b79232c63b940bcf3220a393cef"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/teacher-01-04.jpg",
+      "sha256": "f0984debda46f5ce022b05f84622e1a68846aa6a1c04a2e5069ef9cdf006be0a"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/teacher-05-08.jpg",
+      "sha256": "594c6b8feaf40f9c425cc681f43cb95ecc79a3136c0496f8611d316682989267"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/teacher-09-12.jpg",
+      "sha256": "7a8f3abe2950c2a0ed13c9b9e5dc07ab2e50fb813600afe4c8eb4833db1fe8e1"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/teacher-13-16.jpg",
+      "sha256": "6a099879a0229baae501ffd4d377b02d1acb32f808b07ed33e17bd0d35d99cc9"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/teacher-17-20.jpg",
+      "sha256": "311e20fd1be08ab7dd718be9b79d2ef923fe7da6f92ea103e76af736803de29c"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/teacher-21-24.jpg",
+      "sha256": "80387efda9f63ad21bdb134404f824ecfe8e707afa148cd09f231348a323b688"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/teacher-25-28.jpg",
+      "sha256": "6847bb0eb38683b0f617f3fd54099bb2e3f94419246b97eb70edccc6b0869303"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/teacher-29-32.jpg",
+      "sha256": "9414c013638458918b1c39687e6b0aa66b1773f32bbaf6ebc02094426821caae"
+    },
+    {
+      "path": "materials/challenge-cards/validation/contact-sheets/teacher-33-33.jpg",
+      "sha256": "0db0bf7649ade6e3377647d4a12a368f5c5cddfa83d8446c665b95cee4f5fb93"
+    },
+    {
+      "path": "materials/challenge-cards/validation/font-embedding.json",
+      "sha256": "d95092c5e29edc34e9defa943726821a6cae0ebb7ed5cacc194277d4557856c4"
+    },
+    {
+      "path": "materials/challenge-cards/validation/page-map.json",
+      "sha256": "7520414fd5bb9605cc3b2f5a3aa252a16540d1fe2d05c7f925196fe146a99d10"
+    },
+    {
+      "path": "materials/challenge-cards/validation/render-qa.json",
+      "sha256": "9365dbb65cb2a0d70e800f860db45ef7f358026e26fe573aaf993903b78ce435"
+    },
+    {
+      "path": "materials/demo-board/CHANGED_FILES.md",
+      "sha256": "e72e133cca33d218107e4b6432469c33e25ed8f68fd1db40335eeb7a21a54724"
+    },
+    {
+      "path": "materials/demo-board/README.md",
+      "sha256": "4b8965bb6503bd2a2073f253c280f17923546213e10433a04703e5a21d020a59"
+    },
+    {
+      "path": "materials/demo-board/artifact-manifest.json",
+      "sha256": "2aea502494f3473364886f75c9f4cc9507a080ed9c971cb4582ee9852deedaa4"
+    },
+    {
+      "path": "materials/demo-board/assembly-diagrams-a4.svg",
+      "sha256": "06b6e8f90ea6b9f1374c229c55a92333f3aba34b71387c768a0136c302a96cd9"
+    },
+    {
+      "path": "materials/demo-board/assembly-guide.md",
+      "sha256": "6551fac8f15ed09ec8117f67be3b0170bb8594f387fa8985376b71f185e7889c"
+    },
+    {
+      "path": "materials/demo-board/assembly-guide.pdf",
+      "sha256": "c94ac0de1f73b22fd0a8191c75f964dca6d9b30485a1898eb6b7c81339086ae0"
+    },
+    {
+      "path": "materials/demo-board/board-9x9-450mm-1to1.pdf",
+      "sha256": "a4a1f55e40eae5c19f55d3e57b5d61a0027e6c52f56c18dea22a66d629dca7a8"
+    },
+    {
+      "path": "materials/demo-board/board-9x9-450mm.svg",
+      "sha256": "21927ec2ff29e1d766055df04bab8bc527c4207dc77643151f9e7cce363eb18f"
+    },
+    {
+      "path": "materials/demo-board/board-9x9-a4-tiled.pdf",
+      "sha256": "6ca917217bc6a37d6f392f771e179358bad85b445b040c043dbcce2e365abcce"
+    },
+    {
+      "path": "materials/demo-board/dimensions.json",
+      "sha256": "3faddb1360973b6728104fe89b22cca8b024b96b458da24ce8aaa5060b3aea55"
+    },
+    {
+      "path": "materials/demo-board/editable-sheets/black-stones-01.svg",
+      "sha256": "73b4963ff83e03262ac68c8aa29cb3c4e325ea6f7dc2174e93236195ff06bf59"
+    },
+    {
+      "path": "materials/demo-board/editable-sheets/black-stones-02.svg",
+      "sha256": "cc33f9ef99b126b7a7dee9f14348e77e6bc99744ff526f387c1157618a690cad"
+    },
+    {
+      "path": "materials/demo-board/editable-sheets/liberty-rings.svg",
+      "sha256": "6e05cef9ba29394f769ff8b77215154fccd8fbc502cf668b097a1dfc4789520a"
+    },
+    {
+      "path": "materials/demo-board/editable-sheets/targets-sequence-last.svg",
+      "sha256": "5303e17fb8dd3762bf488a1dc0a9982958781f3282ab55102d660ee9ae769f70"
+    },
+    {
+      "path": "materials/demo-board/editable-sheets/white-stones-01.svg",
+      "sha256": "e029bdd31c686403dad8e90db00ce8115a90629126580f8d27c5b8cd0c6b48af"
+    },
+    {
+      "path": "materials/demo-board/editable-sheets/white-stones-02.svg",
+      "sha256": "1a8a74a1f8db488bd10c559902922ba48a83995623613cc060dc8fd08465a521"
+    },
+    {
+      "path": "materials/demo-board/generate_assets.py",
+      "sha256": "f586d1812574459cbad16bde359203359452f3a1e87a254c70219f4ad99a0341"
+    },
+    {
+      "path": "materials/demo-board/make_contact_sheets.py",
+      "sha256": "865cc018be502d5ffa422fb9f71d612f8caa38cc585765150cd6c7a74a326788"
+    },
+    {
+      "path": "materials/demo-board/materials-list.md",
+      "sha256": "1bfa4baa4746e1a27b680bef04846ca2232960c7affeea298604b889ff089fdc"
+    },
+    {
+      "path": "materials/demo-board/package_release.py",
+      "sha256": "7fc448a7f52a7ac943ad3e02b2fe5a70f8f9a8f2caf375c54d04ed8bfc0a9aed"
+    },
+    {
+      "path": "materials/demo-board/pieces-markers-a4.pdf",
+      "sha256": "4fc579fee0dc01f34c2c1fdfbde9a19e7e3ee65fb593d770620a2174a28bd0cd"
+    },
+    {
+      "path": "materials/demo-board/qa/board-contact.jpg",
+      "sha256": "56829be5257c6f9078aa5b7d6056686c927e0ab886c9b63e8c31b2fa6cd93854"
+    },
+    {
+      "path": "materials/demo-board/qa/commands.log",
+      "sha256": "8c15f4fee33e548e868104bad8ca3bc210130742a4010efeab40a2e6f4ce849a"
+    },
+    {
+      "path": "materials/demo-board/qa/guide-contact.jpg",
+      "sha256": "080058d28405921acccf4dfc2fbb42200d76e53a086d6f9e04cadf0a99706ee8"
+    },
+    {
+      "path": "materials/demo-board/qa/pieces-color-contact.jpg",
+      "sha256": "b3d6116d72bca692f4937ce558eff63c0c2f87de15ded5e79335885a7bec0fe4"
+    },
+    {
+      "path": "materials/demo-board/qa/pieces-gray-contact.jpg",
+      "sha256": "6b87d56310fe188ae0890c552c40be5ad6d7a9ee7add8dedb80b02d9159fb943"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/board-1to1-1.png",
+      "sha256": "4f58e3536867b09c0ad31255db017fcef956b89abd00fce2bb170ebcd31cd63f"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/guide-1.png",
+      "sha256": "34f9d89c80463510747c58c1b61c6b66174cef03da318dec7d2c43dd139e81b5"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/guide-2.png",
+      "sha256": "ac20e3e399c867a40a1061bdfb8398f26ea34118ddf1e815de95347e0ce299e7"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/guide-3.png",
+      "sha256": "77b95b72d831914769024e079309542fde9b1655e6a379f6e48d8458e637ffa2"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/guide-4.png",
+      "sha256": "0196e1a63dbc1dab529b3a070cc3f2d745c450afa7a4ce9063181ed65263b962"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/guide-5.png",
+      "sha256": "6426f1defb68890da767dd9cf6bbd17063be34b66e7e6f7f31279dbe4576e64d"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/guide-6.png",
+      "sha256": "4b7cb27612773f04269986d03bfe44a999db13422501e266a6ce3e396d00cf89"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/guide-7.png",
+      "sha256": "29ec95b1586e5ff142ab6b56043ad4ec460097f821cf385b7f3aa2e557001f53"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/guide-8.png",
+      "sha256": "c3f2e5b75964f5d7d1113df7e462c548b1f5fb01a014f21764e75337f17bcb4b"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/pieces-color-1.png",
+      "sha256": "dd572c24106420ae61efe2853763b583df4370f8cf5fc07a260b924a8ed714a9"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/pieces-color-2.png",
+      "sha256": "700d941df3766567c756de03f96f7c880e90a88d5c0dc72292606851c25e2600"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/pieces-color-3.png",
+      "sha256": "65f8eab57467d334c79919d132f48791dc35344b46ea9602f704269d087d9587"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/pieces-color-4.png",
+      "sha256": "2b9f5c00fce1673e41bccc3150d9999adcb60b6d84b26cc485213f796486e31c"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/pieces-color-5.png",
+      "sha256": "7ce1a54cbec600427ed37cf5a68ee74b4c98c79dde017d9894b2bb891054eac0"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/pieces-color-6.png",
+      "sha256": "0728e3e1925acda29148fdbc3d4aab567d091a917725099fa6f352139db32cda"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/pieces-gray-1.png",
+      "sha256": "00a051ec87a1d100b7a5b0dfc1ee63f65ec3d7280de27a475707574140877c93"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/pieces-gray-2.png",
+      "sha256": "ac8a7575c8303363c4f2765292dfbccfca6dcb5e5ee1fbaf18932ef765d464cf"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/pieces-gray-3.png",
+      "sha256": "c706193e9e94183104425f8cc2cd8d85aaec2e9316354bb71d88dcc1952d0e0e"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/pieces-gray-4.png",
+      "sha256": "e5aae3e156f5855c380a694dbc964f73b7cc8662152db65ef0369c9e2c90931f"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/pieces-gray-5.png",
+      "sha256": "00c20cd6bad38153347ba133469ab29e7a993099bcbdeafd98971421fc54999d"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/pieces-gray-6.png",
+      "sha256": "a4cf762bf1002e0331a19e8db6ff7202e0ffc1d6a787da1933cdb0c6ba474983"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/teaching-1.png",
+      "sha256": "c902c08b4fdd7d1d9a7b1209c95285614fcd769319e28e5b3ccb699026d1be36"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/tiles-color-1.png",
+      "sha256": "1cb662063cb85be416039fb2b060ce52582d3fefcb80349fdf17c6b73cdf75c5"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/tiles-color-2.png",
+      "sha256": "8e9672d6925a266f275670c7c441937b3441ec1e9936ee5c8730f1cc4f1e8573"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/tiles-color-3.png",
+      "sha256": "2411822e9d7633c6cf580ba4fb17d25c0d9f0846143990ffb22ed4a463f48277"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/tiles-color-4.png",
+      "sha256": "698446f26477139b4d0368ef05dd3650bb60ee1742c95fa05a561ec2c7ef77ec"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/tiles-color-5.png",
+      "sha256": "ee8572cd6776fe9a995aade808845d8fe1611226808a1ca3283371bef8f11ffe"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/tiles-color-6.png",
+      "sha256": "73e65697a2bbf787e0a4f38e59bc21de75eed80b6d7aa066665b1e7eb4da5aa0"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/tiles-gray-1.png",
+      "sha256": "2e624012695fa08f4d14b64292cbfb8484d8499af94443fd7420590710ae006f"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/tiles-gray-2.png",
+      "sha256": "d9f3d66b6197ddcce797a2331b5598481967705d4b2a029cbd16928961302064"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/tiles-gray-3.png",
+      "sha256": "577c9b91465a50d341315df8ddba56c9d4c009fc4121e7d5af9548d2a7d490ec"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/tiles-gray-4.png",
+      "sha256": "e8ae20bc4db225c1c364e650b222585860818c950a6e98c7dd62c84a6e25706f"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/tiles-gray-5.png",
+      "sha256": "675d2125c6fea6f0c6ea27ac8b41decca38a6372b507037fc4117c3f4906f2fc"
+    },
+    {
+      "path": "materials/demo-board/qa/rendered/tiles-gray-6.png",
+      "sha256": "c36dcaa403a2af2207cb8fd6453fc142805f4b091c9c96c9e81b885134cd2217"
+    },
+    {
+      "path": "materials/demo-board/qa/teaching-contact.jpg",
+      "sha256": "10def4d56c41b81f37ad2246e80763ea8023775d653d1cc0d6c121e14f173f8e"
+    },
+    {
+      "path": "materials/demo-board/qa/tiles-color-contact.jpg",
+      "sha256": "c695d6ee22e6445fa07f4465a4ae0560f109737028825220f2979c5218d1af53"
+    },
+    {
+      "path": "materials/demo-board/qa/tiles-gray-contact.jpg",
+      "sha256": "5404cca708d51269176df1b7e267345391fc5b932d31ca06d3d80e543430500a"
+    },
+    {
+      "path": "materials/demo-board/render_and_contact_sheet.sh",
+      "sha256": "35b4635c29c5e38e7ba9b92c5b3f4bd4b39421189b54a490aa589ca8d2eb3f72"
+    },
+    {
+      "path": "materials/demo-board/sources.md",
+      "sha256": "3acbd8d56069009406054530bdd425cf320e42906911fbbe3402ca4033f7b7d6"
+    },
+    {
+      "path": "materials/demo-board/teaching-flows-a3.pdf",
+      "sha256": "45bc7284c293d7fe7203dfe9046693cd4e586ead3ead609be2d9dda562dfa713"
+    },
+    {
+      "path": "materials/demo-board/teaching-flows-a3.svg",
+      "sha256": "daae5fcfbfd8db312d925973ea8102246f7a09000c3a8ccca3e26b9b2692d29f"
+    },
+    {
+      "path": "materials/demo-board/teaching-setups.json",
+      "sha256": "73ca7761f13554dc2a79a4d6081e2c8ba58188f495ab44e0107651e12484cf2d"
+    },
+    {
+      "path": "materials/demo-board/trial-record.csv",
+      "sha256": "7461b57d3f1544089b1162048ddf71b834198fddf741893604a67cd3bee6932a"
+    },
+    {
+      "path": "materials/demo-board/verification-report.json",
+      "sha256": "c3ae762444463377c23ffb690147af93727ba54c454cd50156bc11734cb104cd"
+    },
+    {
+      "path": "materials/demo-board/verify_assets.py",
+      "sha256": "7fa2be72a826e2c4da6bea52ebdb8061aa9a3145b6b5f102d4156f082feb13ec"
+    },
+    {
+      "path": "materials/demo-board/visual-check.md",
+      "sha256": "362031d18e3e685a0ec0caa7036ee050d1f060c19417599e5eabe21f1698c860"
+    },
+    {
+      "path": "materials/facilitator-kit/README.md",
+      "sha256": "d31a0b19a72756272672075a1d9e28cf3d9f23f5b5079e7d9b0a9d4391471bf0"
+    },
+    {
+      "path": "materials/facilitator-kit/SOURCES.md",
+      "sha256": "0f9c9e696acc1b59baae1eba2553934c68ba67d17e56a2c6ea1a4e2f39a11f3b"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_01_screen_alternatives.docx",
+      "sha256": "2c8f7b850ddc4d88f2dcba323599a7b605ab7c0f6c7c6e2c69920e5214dc68fc"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_01_screen_alternatives.md",
+      "sha256": "c695ff49c2d1c462d839fcff0e234827148a467ca7e16103df5a932824a7933b"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_01_screen_alternatives.pdf",
+      "sha256": "02931d183d8139cc4878325481d8dbc9487bb32800437097133d91ddd48398f6"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_02_peer_teaching.docx",
+      "sha256": "0a3327b8ec9d460483b5965cb9b494ce69fbcd276c65a71164378f88fa1fd5b5"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_02_peer_teaching.md",
+      "sha256": "e06e2641f189c67b8fa2f7ac5354a7cc9b3ec30cc85ac1761455f19999015455"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_02_peer_teaching.pdf",
+      "sha256": "acbb2fcf48dcc62e055ebf860fdbf339a91ad894a2c3f5ef48ee9a15ae9dad93"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_03_prepare_close.docx",
+      "sha256": "fa4b4c7c292b516c31e8c60748e31a706f94637d57dacdcbbd456ce53bdbf946"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_03_prepare_close.md",
+      "sha256": "e493ba58b273a1e279ee409825b77fcea70e2075ed1f2c009c566ef2bee63970"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_03_prepare_close.pdf",
+      "sha256": "5fa4f1b3692b9bb2ab3f705ece4e945dac3d5a494603409f36117997b7bd58b1"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_04_voluntary_feedback.docx",
+      "sha256": "3498d7a6482020c56663ebd5bf25fbacd9a32f243a698ee50fa1c0faeee0048e"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_04_voluntary_feedback.md",
+      "sha256": "e446218cbc53f4a4bf658d8d68d312056d8fabcd62147a615749baa6a96a1cf3"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_04_voluntary_feedback.pdf",
+      "sha256": "29f486c5be7aebde29c8ee5b38436a89958d4af8de3b07d23d2687d407952240"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_05_teacher_observation.docx",
+      "sha256": "6ed81d233f47ce185614c7deff5a1530e9520726415fc511a86d6cf2d26965b6"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_05_teacher_observation.md",
+      "sha256": "4350b227cccd09a70c289d821d981fe2f4e27167efb13e87abc7dd6f1a2ed2f9"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_05_teacher_observation.pdf",
+      "sha256": "71ee7907b320e449cdccfe22c31e44d961d22134f13dfd28f50a0e6a61d8d87c"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_06_revision_record.docx",
+      "sha256": "0d7fe84673bd3713af8de36fce3dd5963eed7d580e41dfd27132f677de696ab0"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_06_revision_record.md",
+      "sha256": "a7bd511d6fb05312b76891241d69f6245627fc51c2485d56843b679f0920abd9"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_06_revision_record.pdf",
+      "sha256": "b9dc16548e2e84a1afaa86eb054962f8a247a3dae9230180a471882d114a9769"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_07_new_member.docx",
+      "sha256": "e4345e1ff1592116980075afac849b1a6f036ab44f15403383aea1022d414227"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_07_new_member.md",
+      "sha256": "be3e55624a807e0653393a8171fa5d12621815891e98c0e11cf77f6fc0ed18c1"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_07_new_member.pdf",
+      "sha256": "6e736c7f357c9685df536ae85c625adaf460bee369f9c82994eb6495fff8588d"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_08_paper_game_log.docx",
+      "sha256": "4c0054f4b4b470363feb95748749ffff118ce627149b2364f61100d268ac4a46"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_08_paper_game_log.md",
+      "sha256": "6813459239cb9168451adffcfff2d69137346ff4008e97013c353c1b48bbf07e"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_08_paper_game_log.pdf",
+      "sha256": "0162c33eff5b0d4c9500be350582725fd72adc1d84ddeec2006c838ae79a61c7"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_01.docx",
+      "sha256": "b05a275630a86713445a3a7c13a05decd8954de3920e6eccd10b905a96251333"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_01.md",
+      "sha256": "dad8cc568ca8e5ab34f419d9ff6440fbfc1c7aec772cc2446376583ab48201ad"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_01.pdf",
+      "sha256": "c00cd24991b4d79683443138a39641c5d31e681e2940c70d0c6c867201584da0"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_02.docx",
+      "sha256": "a1a6057628564b1a0bdcc49d09ada58372f108e4f1519aa648fe23989c91bb81"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_02.md",
+      "sha256": "03c85322abf7046b0e8a500b185eae912dac6b89c08d5533019d541227352592"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_02.pdf",
+      "sha256": "e0b3381096ee89084c91c1a8022097d38601a39f94a7f0d2003bb4b42b47ad38"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_03.docx",
+      "sha256": "c37a6cbf80a57f0963395411e3d69a11a9aa9130af780ad0244ea89ee6fbfd25"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_03.md",
+      "sha256": "62092217b459ac32cf6c2dfff42b70a3493112aa9bdd0e61b7c28b0ff1e0c2fc"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_03.pdf",
+      "sha256": "b671dbda8e6da8620039545f8b600026ad449e62062aa7ebaa8c17dfefdfec09"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_04.docx",
+      "sha256": "7c488fa9640f0fbeba307e88ace2fa855fbec5480068292d52b0d1d3a03441c6"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_04.md",
+      "sha256": "62748c9f0f11016e2be3baeb0de050020167247fac11f70a99f9db4e92e3f0cc"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_04.pdf",
+      "sha256": "0083c4d35d8490edb91206aa30194d1d2d3dae7ab34ac87c1f02643c0146ba64"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_05.docx",
+      "sha256": "85ceb50d9fad8a9d7c1566a61cd5b261e674821dfb6cdf3b630e61b5aaa1b124"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_05.md",
+      "sha256": "796bbda01c5464a8cf577912fc7a0270d4b02202a87c94906066fdb76389e69b"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_05.pdf",
+      "sha256": "96a48a585dd6328e2ac7cc62cba8b1307a5ebf793c23d2b2031075f73f78dbfe"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_06.docx",
+      "sha256": "54bd63eba3287c099870e5050ae090bed6c9ab1639d4fd2366a3f19e830d820c"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_06.md",
+      "sha256": "631a0d948a344c2d709e518d5bf0f9c8659b6334aa10da7ba2744511bbdb3c9e"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_activity_06.pdf",
+      "sha256": "6283e5236c2ee912f9d37a461c6712c4251fe52f1544a6963ffda27391def516"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_board_5x5_A4.pdf",
+      "sha256": "a7418661b2ab85456d8f7e61e2f8832095bef5c6e46adefce18331253c7bbbea"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_board_5x5_A4.svg",
+      "sha256": "d7cd2166236f0c82117bc07466521561734e17056fa2928cf3a33f796dfdaf9b"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_facilitator_manual.docx",
+      "sha256": "7ccf244047b4e00929195e1767c49ce7d1de3094c4a508b3e02412a7da59460f"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_facilitator_manual.md",
+      "sha256": "bc357399d0654a542fbc6dfe4e9693192622ed491a5f20c7b1f0c0dcf1695ca5"
+    },
+    {
+      "path": "materials/facilitator-kit/output/T23_facilitator_manual.pdf",
+      "sha256": "d760330fbef9331d511b5c039b38738703ec7cf9d9fc3ce69f70154bd60ae776"
+    },
+    {
+      "path": "materials/facilitator-kit/source/author_content.py",
+      "sha256": "43d56f65449263598c9f6b58bd2c090495412c99d10a81a4212fc5a1c9e758b0"
+    },
+    {
+      "path": "materials/facilitator-kit/source/build_board.py",
+      "sha256": "2763961620104c2eb62a45e3999d58319a0d2451fecd9a255a1388f7288991e8"
+    },
+    {
+      "path": "materials/facilitator-kit/source/build_kit.py",
+      "sha256": "e6255618ddfff3cb7a9c40b786421a70d7a0ce91b690f075a6090a9afb8afd6d"
+    },
+    {
+      "path": "materials/facilitator-kit/source/close_delivery.py",
+      "sha256": "26d200ee9b07ced51736ff67fa499850a1d3012f5bcdffd1f0e568e8e8f619ae"
+    },
+    {
+      "path": "materials/facilitator-kit/source/empty-forms.json",
+      "sha256": "b2213447674da1ce4f6231d4034a195613dbe7620d49709fd6d3f5490f199a77"
+    },
+    {
+      "path": "materials/facilitator-kit/source/input-manifest.json",
+      "sha256": "ce9d29d8a58bc2c34a55364aa7834b4ce826b4ceea33aa607803344d4303557a"
+    },
+    {
+      "path": "materials/facilitator-kit/source/kit.json",
+      "sha256": "b7fe79360aa0b46881d5eae55523737a017d0eed59a2ee53902a64e74c1a754e"
+    },
+    {
+      "path": "materials/facilitator-kit/source/page-model.json",
+      "sha256": "720d6718038a7de14b9dbf67b2f4b8bb1d2b2620516f7248de343f071f866d53"
+    },
+    {
+      "path": "materials/facilitator-kit/source/render_all.py",
+      "sha256": "63785221cc6e00fb5e305f854f98ed6fea975ea353dbfad05c39f430b2d5fd81"
+    },
+    {
+      "path": "materials/facilitator-kit/source/resource-map.json",
+      "sha256": "e68aae7010dc5dd6ddaad9d63b3271786c49be32bf0ba90f2ec1c0ef2a4687b2"
+    },
+    {
+      "path": "materials/facilitator-kit/source/verify_kit.py",
+      "sha256": "532b6d12bef5b51cd15d900fdf32507992488f7c74b018d5a3b0a7f7b886a5dd"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/ACCEPTANCE.md",
+      "sha256": "623b4aad286cccee12fb93beeed49be4580216c81d650991221166287c9bab07"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/FILE_MANIFEST.json",
+      "sha256": "fab193e1f520bea71c8e36dbd7d55a0ff3c592fefdd2facb83ece884ff54ba55"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/T23_01_screen_alternatives-render.log",
+      "sha256": "024b72712c80082c03bd38751dae503daedb0921670d8b4f4d3e6d2781fbd7ad"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/T23_02_peer_teaching-render.log",
+      "sha256": "d55dc058a887f41d648ec400db1f68270df201cf632253a005c444aed2390cde"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/T23_03_prepare_close-render.log",
+      "sha256": "eadab5ab473d61902e78c2cfc7a4769118eb9f9bb25bad1dc50e7f818bd0fdbb"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/T23_04_voluntary_feedback-render.log",
+      "sha256": "e11af3a805cdc9f3465ef841c32e131240b2d7acc9523b9f3a47c33c973d562c"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/T23_05_teacher_observation-render.log",
+      "sha256": "2de3ce70ab250542926ee9fa61743bec759bf840c126e3249401ae77c0bf12d5"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/T23_06_revision_record-render.log",
+      "sha256": "566a53f0742d25b0d8252e0df90e8a25ca37733c092f8a1235073bc8d4255bd5"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/T23_07_new_member-render.log",
+      "sha256": "c140291e44ad7ce186070f188b53b70ca4b7f491cceca33f24f5f87daf74d67b"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/T23_08_paper_game_log-render.log",
+      "sha256": "a77f70b5e00f6a3160a45156b09ddc16c9ccba8d9382cacea2564e410d60ad1a"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/T23_activity_01-render.log",
+      "sha256": "290ab15b2aa6f7cc1000ff6cb3ac44a650303b31655b126c4948a5374845e6cf"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/T23_activity_02-render.log",
+      "sha256": "15ee7cf403962829b891e3d84135a177ddedd8214c303f63ee2d0aa6a0d0411d"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/T23_activity_03-render.log",
+      "sha256": "32c360fde79ab30c65af99701bb00cfbe43eeeeeb9ba6cbba59afea269d8bcd2"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/T23_activity_04-render.log",
+      "sha256": "b8b33f48762d7e1b497b469f0523ffa79b32fe3b0fe82cb6022cf986e0d41386"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/T23_activity_05-render.log",
+      "sha256": "756ccef3aea60676e6b8ba62c5739aebe6b39b87b2d308d350d0828b89ef7306"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/T23_activity_06-render.log",
+      "sha256": "346cfb875d4540b5bf603a3996e921f5c8ebbb796089468d3f2e2ea0996974de"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/T23_facilitator_manual-render.log",
+      "sha256": "54274875419f38b6bf73a878ac9f65aae740d4113699397f1e6dc2ca73ce7386"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/TIME_CALCULATION.md",
+      "sha256": "35d04ca42cd840bbbb232a60be341362725e220802bbe7b4b95a9098d3d0532e"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/VISUAL_REVIEW.md",
+      "sha256": "47ac341eafb4b8a3ec6012df02b103ef10b4bd0c8e300ceb606b13626ebcdb97"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/board-build.log",
+      "sha256": "8226e054558ca4bc87cf3330c5b32c1d31e69b79306094bd9e344dda95064af8"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/check-results.json",
+      "sha256": "ed087790a4b4d35e2b207b0f004c55a5abc342d984a05180dd4d61c7b18f7ce4"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/check.log",
+      "sha256": "6fa40e7e162db40034f6cb15d81040fc54fc1a0bc1c1502e22f0238cd340a6aa"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/delivery.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/fontconfig.xml",
+      "sha256": "403a88d1ff1b9ca4f551da8669e1d9493dbb1a6e8be653261e111892cd968d69"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/manual-render-final.log",
+      "sha256": "54274875419f38b6bf73a878ac9f65aae740d4113699397f1e6dc2ca73ce7386"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/manual-render-fontfix.log",
+      "sha256": "91c111babb9c07c590110c368ac956c0cab51ba2f2354c801bb3bb9210cc80c2"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/manual-render.log",
+      "sha256": "9bc030ab1d23cd5d40d9ab0a909f15d121f3a8fcc47c50df82bd0035b3906fb9"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/render-all.log",
+      "sha256": "964315efa6d6ef42c5d37957a1e094320ed37e1ded8c2211113d80ccd30cf11b"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/render-commands.json",
+      "sha256": "5d2a2b126068e44401ad62a99ab35158b0b784415cfcc323fb53d3666bbfe08a"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_01_screen_alternatives/T23_01_screen_alternatives.pdf",
+      "sha256": "ea1d6e3325b2344a91d80661cf53d62d8f22bf125111288ff409f30636c12367"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_01_screen_alternatives/page-1.png",
+      "sha256": "796884106824bbb4ab46e470ce779eba9111b2526ad872f6495117ecf815d19f"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_02_peer_teaching/T23_02_peer_teaching.pdf",
+      "sha256": "b832adee2efb51b89ac6716733b84b605ea322c172d9b34a7350ffb1d9ef15b3"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_02_peer_teaching/page-1.png",
+      "sha256": "1c81d0db62377f22dd5ff50c18feb3556858f3cf894abda8667e66b645b169e5"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_03_prepare_close/T23_03_prepare_close.pdf",
+      "sha256": "7c30e3a3ba7a34a535170f6071aa3a2fad595263a7a2248529dc701a56880afc"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_03_prepare_close/page-1.png",
+      "sha256": "f2eee7e5b2f8bab9224b075a58f2df75a00c9788d27665d14574bf8cc6e8dd6b"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_04_voluntary_feedback/T23_04_voluntary_feedback.pdf",
+      "sha256": "91c0a3a608c2c4ee2900e6235be64e3e2a775af170a3b9f1fbfd3d04fcff2bb7"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_04_voluntary_feedback/page-1.png",
+      "sha256": "30f1a211a249aa76778243018b807475759c07dc58aebcf9279e356a3791fd97"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_05_teacher_observation/T23_05_teacher_observation.pdf",
+      "sha256": "a9f2e6b5e83179083d841b26b337192ba6d9b9a5853a839d46f7acc328330621"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_05_teacher_observation/page-1.png",
+      "sha256": "fd7db8d04c1e9db413b79e96d75d276d13bc7c7b0d71c696135115c11e4ea1bf"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_06_revision_record/T23_06_revision_record.pdf",
+      "sha256": "f5293a349c60b9c9dd19eb389c642ef3395e2cf0923e701bb90f32bc3236ef4f"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_06_revision_record/page-1.png",
+      "sha256": "cbc74a8cd50d5910aa39508a142a54675a4d87d14afba9cbba6c85fc2756bfca"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_07_new_member/T23_07_new_member.pdf",
+      "sha256": "9ea46ce2ad61b71b4f4d68091c07bf9c7121782ad54fb3c4cb30b1430daa78f6"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_07_new_member/page-1.png",
+      "sha256": "9885a6d0b11e3c78c7714b0f5b0346274569b36fc052c06f949fa828c75247c5"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_08_paper_game_log/T23_08_paper_game_log.pdf",
+      "sha256": "db3d26fa182f03bb25eb456063e246d8a847519675b9df90b5b87e5eb756d525"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_08_paper_game_log/page-1.png",
+      "sha256": "a1d2e2da9fa5f5ae51f9bbedab4db5a491f0b4a6c1e58266bbb0dbf24b7fd5d8"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_activity_01/T23_activity_01.pdf",
+      "sha256": "840cbbda6ad92fc03af876a43be939c5da0be32d7fc34e7f47247ed072bb067f"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_activity_01/page-1.png",
+      "sha256": "a20e3078bc27375f98e20d72794039518e9a27af9e0fd078c0e3c23358827411"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_activity_02/T23_activity_02.pdf",
+      "sha256": "2ae34a2c01d13953cbb28014a060abba2a1fe6513a9a6de8dc9cdcad206fb85a"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_activity_02/page-1.png",
+      "sha256": "83df2c67d53912b757ad4ad64be43ee6f6a08048e900fb603c015397583c866e"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_activity_03/T23_activity_03.pdf",
+      "sha256": "3e466d1e42f50acefb92782c45f4dc5dd99b31ea2eaf5267ca11a85c413d79ed"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_activity_03/page-1.png",
+      "sha256": "c493f261739326e6d56d8ed7dead56feaf598085c95638118ac01ed9b9e700c8"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_activity_04/T23_activity_04.pdf",
+      "sha256": "4366bf8a4442b43def769c8e5ccdbb4c5ab00d877fc33d877e5bb49e0e9e76b3"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_activity_04/page-1.png",
+      "sha256": "be13b36934a63c8e1aff629cffa6314a4b419bf8b40b7e2296eb37dbee5ca401"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_activity_05/T23_activity_05.pdf",
+      "sha256": "1ee60fa0bf1562513430732ed67190ecf4aba4bea3423542324720b07b8192cc"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_activity_05/page-1.png",
+      "sha256": "eb912485aa4bb1eac11241391fe4f39f9f12c8d1529422a3918e3a478909cfa6"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_activity_06/T23_activity_06.pdf",
+      "sha256": "09e0375098ff4c4ae5b76ba1b3b1f943bb4b6ac9a065b92a5def41ef3b48533c"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_activity_06/page-1.png",
+      "sha256": "f278638d9e6ead56a21b1885842ca68cfe8510ef9011981436bb3c03d12ee55e"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_board_5x5_A4/page-1.png",
+      "sha256": "7b32b5c0cce2ace888a941290725c4f9518677dce8dd516507addd593ba21009"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/T23_facilitator_manual.pdf",
+      "sha256": "3f0079b4e4332390b0ed24da139f46c80b36b79c88dbd1a57ee006588ba9b077"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-1.png",
+      "sha256": "c164e924d160c34f025849d6cac1ce85cb8c0cdf1f44a0c99ab72d643a0aa93d"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-10.png",
+      "sha256": "00f827be2539ccbc2974b1b5a4725aff6df1820466450500dbfa9bc5896e81fc"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-11.png",
+      "sha256": "a98f25c66d6dc0088d46daa947968a460b4d9abea3cacb308d492755d4417a90"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-12.png",
+      "sha256": "e199f9b98096404a616afa598bf9a912effe788d0175edb5643f8480e5697451"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-13.png",
+      "sha256": "428c7f313e9144e96cc39873413ecd4ab714e91c7321d58996f5e8059ecbb4c8"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-14.png",
+      "sha256": "211811a440137c1554969a7ba099da2ddf2f33f2546bbffc8f5238b859d758c2"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-15.png",
+      "sha256": "7598c8ba64d345fd8a4f9347a053309ab70af71d7daa7565989815c9f2db5418"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-16.png",
+      "sha256": "73d4129bd322d9b08fb16ec8daee72a0019d937d778ebcb7820fcd3b7fe71ca0"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-17.png",
+      "sha256": "d886a2f57c1e70b75e7f2a15bf918549d3ec5a4cfa013169473d3d5192335c19"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-18.png",
+      "sha256": "5b4d1ad1c79ad9dbaaa258945a1e43ab328ac2f1fc0146374fec0394e6721acc"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-19.png",
+      "sha256": "a532fe97576cf23be645cd4f3940552a8206817c597e0d47640d3d93e0b1727d"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-2.png",
+      "sha256": "9218b5a8c9b0dd0d264d01944c53cc11822d3f4a6d33569484617aeb226b7a79"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-20.png",
+      "sha256": "f3509ed984b2419c92ec8f6835b7e64417556b041dee9f24f6de71788ebe152c"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-3.png",
+      "sha256": "4a60c6f7ef02cd0c9edf71cdfc7c5ec45a585c14fe97ca1a8b1f4a1f730407c3"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-4.png",
+      "sha256": "cb448565ed583652e30431949d90ce24b6c2bfa1321c82ffafd20205c299625a"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-5.png",
+      "sha256": "34bd98ba1fc8e941cff6da3d0204fe4d6604e1ec20bf35a4c78f565e839fa137"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-6.png",
+      "sha256": "0bb2d221211e9c87317881a2fbb0b54a23a65ca2edd5973b425dc5cd5146c415"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-7.png",
+      "sha256": "a1fa298d120b469681215b11bfbccff58d095991f025779e5a6f8c9020477ce2"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-8.png",
+      "sha256": "f3cf07ae7f9f0c3f6810a6170eb63fc900ba56f699274a79dc5de8fe10fba263"
+    },
+    {
+      "path": "materials/facilitator-kit/validation/rendered/T23_facilitator_manual/page-9.png",
+      "sha256": "7ce2cb32b64142feb4329cb043d39e1ee924bf44acd4a13e3030934baa06ae0b"
+    },
+    {
+      "path": "materials/micro-lessons/FILE_MANIFEST.json",
+      "sha256": "558791605a1802718e6c85d095a96cb05f6d20e5e637eee9c771bf405dc5fd71"
+    },
+    {
+      "path": "materials/micro-lessons/README.md",
+      "sha256": "3a516839fb208f219f902efa73452e271073c203b30580675863d0d239ea5b4f"
+    },
+    {
+      "path": "materials/micro-lessons/assets/fonts-and-assets.md",
+      "sha256": "5a57477b8339e7f6a0029196807779d3738cefee02473c7d15653fc3b4588c60"
+    },
+    {
+      "path": "materials/micro-lessons/assets/fonts/NotoSansSC-Regular.ttf",
+      "sha256": "4533846d69e662f228a2e9f89b8283a686c61ff9ba77fbe982d45c516abd56f8"
+    },
+    {
+      "path": "materials/micro-lessons/assets/fonts/OFL.txt",
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/content/endgames/END-001.json",
+      "sha256": "88fe7f6226f33da4d12f0cf14121be2c4f6b4ee7da376f3d9dd77bc080b4ebed"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/content/endgames/END-002.json",
+      "sha256": "fdc052992973abb3140041ea3d62d1cc9078eb4eeaf15dda2c36604af6170859"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/content/puzzles/AREA-005.json",
+      "sha256": "32e94ab284735f1814f0acb990a4b3289c1bc4bd702f2d415470f8a5435c6554"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/content/puzzles/CAP-001.json",
+      "sha256": "e0a0950af03ba144d4464790b1292ac4a77b7534bc5a1228b77c194862f767cd"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/content/puzzles/CAP-002.json",
+      "sha256": "f72172c4db6adf32228632d7660f174b649ae3ebbbedd9dd3f3bed1ba3e4e61e"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/content/puzzles/CON-001.json",
+      "sha256": "fc6f68f65b0461f248bbacd27c9753327bc5f8d86e4763ebad2d93999bd46013"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/content/puzzles/CON-002.json",
+      "sha256": "aa877a3ef8e658715254ca2efee4ea07a34593be8a5d122aecbe198bee8339c0"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/content/puzzles/LIB-001.json",
+      "sha256": "3c5fa560f7cd43a13e14021d5e1baa80353592e38e95e454355d4c18b6158257"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/content/puzzles/LIB-004.json",
+      "sha256": "bbb1fb3435c71c4212ec85917bf4c7226216023ea15723b082a184c87a3cec0a"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/content/puzzles/LIFE-001.json",
+      "sha256": "3e800b83347c378568c5b0ff8a4a96412fa44081df9711eb325cc0d1c3ca4c2f"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/content/puzzles/LIFE-002.json",
+      "sha256": "4a9c755d45126cef93464d2e42c74b51af63468701c701d64957910269b32526"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/content/puzzles/LIFE-003.json",
+      "sha256": "1909976bc369d0434b0db10720cbb722be4cb4ca49b2781668b56cb8ee8f6ffc"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/content/puzzles/LIFE-005.json",
+      "sha256": "506f62c281d0c1f09c8dfff2725fe0677fcfcf9ecda05615b10adeff4a968992"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/dist-engine/go-club-rules.mjs",
+      "sha256": "028ff1a53af96bc8aa44b2b603ba80ada31b8517c89aeff11088db6683e108b7"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/docs/CURRICULUM.md",
+      "sha256": "56b4a55449f3bd027d5864f2121252a53b9a97561204679aa2499ba884f1acbb"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/docs/RULES.md",
+      "sha256": "f90c9adafcbab75f6c64acd789dd02462d2cfb14665374b2ba020f8c1f6fa965"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/docs/TERMINOLOGY.md",
+      "sha256": "0b53f3cbfc21765db29621e0c87e2d1abd08f54b96181bbc8c1e7522cb9e3d54"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/handoff/CONTENT_FREEZE.json",
+      "sha256": "94ae85ce048b83ff73d8b2ef080665175e5f285904dd89bb7be5ca906d865324"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/handoff/FREEZE_B.md",
+      "sha256": "b7bdc44f7987c73542060448137856a7d621b6049f2aad4448af438c2f9158bd"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/handoff/T00.md",
+      "sha256": "ad0621ade993bf80e931261bcd09fee26c65456eceb2588802c166285455e31f"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/handoff/T11.md",
+      "sha256": "e7378ed67fd08c06bee6da99a6e6e67c619d1757506e0156ddfca5c41218d9dc"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/handoff/T15.md",
+      "sha256": "173625c4698d3867081972e6e5dc1338e60b39a919c8a50d7837af892e5b3657"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/handoff/T20.md",
+      "sha256": "e4643f151be6578c34044217ffd422fb278cddb0787199c287937b368335acdb"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/materials/rule-cards/data/RULE-DEMO-T20-CONNECT.json",
+      "sha256": "c745c0a49849f21ca32a94106865328fb005d1a75136403754b5c713a0a07127"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/materials/rule-cards/data/RULE-DEMO-T20-KO-AFTER.json",
+      "sha256": "89d9a194282bdbbce299ed730cec96191f7fc70c7667e1e3861122fb7b31fd43"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/materials/rule-cards/data/RULE-DEMO-T20-KO-BEFORE.json",
+      "sha256": "d4fe9642a299e6abb7fd957cb5d7fd0cf5f339980f812404f8f46f0dcf8d73b5"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/materials/rule-cards/data/RULE-DEMO-T20-LEGAL-AFTER.json",
+      "sha256": "a6e455337c43630ef583417544bd2e285ae507dee005acc4159149d073a6a909"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/materials/rule-cards/data/RULE-DEMO-T20-LEGAL-BEFORE.json",
+      "sha256": "4dc310af6907bf6ec3c6ff7dda5a0b5b31620c36fa90f7d6f6ac06ebbc066109"
+    },
+    {
+      "path": "materials/micro-lessons/assets/frozen/schemas/content.schema.json",
+      "sha256": "82a1a060ff48c7072aba29d5091c55e976eaed04e5d6af5787408885b07e2e88"
+    },
+    {
+      "path": "materials/micro-lessons/assets/source-index.json",
+      "sha256": "7a6b726c63a1ea501f7c43354a7169f95e00e578f32906c929583bf5e296a4c0"
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_All_25_r1.pdf",
+      "sha256": "4c611e790411aeac0cadae21671e3eb7856aeebb632d65564fb68d80a4ea5a05"
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_All_25_r1.pptx",
+      "sha256": "415c199fc6e015b3abe7ef6673a8ff32a58a97f0b594d5f54f9f9988773a4a46"
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_01_r1.pdf",
+      "sha256": "ef406f908219c6a63faefdc62233f2cd3f5d3d78bc3146bfe4d25f9f74938e20"
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_01_r1.pptx",
+      "sha256": "70d6910b0f424533fe55e1eee3f79333e4e62f37d4d8ea12030305fd517d20d5"
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_02_r1.pdf",
+      "sha256": "5f0a80c5eb8da4d45e390ecc6e1439558a696ab79a70cbc86f2b769debb36248"
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_02_r1.pptx",
+      "sha256": "f5e24d16ec90df6311d350ac7b1d03f2947b2ca94bf2c1c456ca4895ba80b04b"
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_03_r1.pdf",
+      "sha256": "190280b8f73110c2b87c8979eb3903cf761180978c73f75022ce40af38139aca"
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_03_r1.pptx",
+      "sha256": "59773f2bde2c4099a156e3c8b46a32a46c30694ba8451190a084034718d4df17"
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_04_r1.pdf",
+      "sha256": "3b04db7958bcfb4eb9836c408e93222b81c79c9be3bbe3447552711965cb52e2"
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_04_r1.pptx",
+      "sha256": "af0821b033f244c27db4b96ff2eb5cb5d2dfc46edbd1bb74ff0ea1fee70b5f05"
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_05_r1.pdf",
+      "sha256": "2d982f9660d3e45b658bfdb79b214f5a61a3b8f2b36d8d1f31b98156917620d2"
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_MicroLesson_05_r1.pptx",
+      "sha256": "ba21a6c2439cdd38d9096608fea1d172cc7cf856fdbd019127f1a7120bf5327c"
+    },
+    {
+      "path": "materials/micro-lessons/output/T22_Teacher_Summary_5pages_r1.pdf",
+      "sha256": "2c56d9c457dc5e8aa7ab3135d218b2f730e1c36afb0bed5ac166e16c040d195b"
+    },
+    {
+      "path": "materials/micro-lessons/qa/QA.md",
+      "sha256": "a9cc18c15d14e0dbda531c3321985cd12234a66dffe9f924634713533af3ecba"
+    },
+    {
+      "path": "materials/micro-lessons/qa/T22_All_25.validation.json",
+      "sha256": "a9dcbf42a5e3fdddb95cb7123a908e87eab6776a6129b76f91d4d8909b45c674"
+    },
+    {
+      "path": "materials/micro-lessons/qa/T22_MicroLesson_01.validation.json",
+      "sha256": "caa451ce920f92a182ffee2db84b29628f666da2df6d5e9f6c8dcf25f65c4463"
+    },
+    {
+      "path": "materials/micro-lessons/qa/T22_MicroLesson_02.validation.json",
+      "sha256": "87dc3d00dbd3ecd614671e4b52d7da866c6824355d80aed68a42e40654818ab4"
+    },
+    {
+      "path": "materials/micro-lessons/qa/T22_MicroLesson_03.validation.json",
+      "sha256": "b019eb147fe30b93019ced87405b9d8717eaaeaaba8e57b6be7207b4d69b1f2f"
+    },
+    {
+      "path": "materials/micro-lessons/qa/T22_MicroLesson_04.validation.json",
+      "sha256": "1b72cc4c7ae034b328ed1c7607a3294f09620188384119cee16d7e388b7501dd"
+    },
+    {
+      "path": "materials/micro-lessons/qa/T22_MicroLesson_05.validation.json",
+      "sha256": "b08571f3eafc12154b84345e152d10b646b9e5ba1ed96ac51f8c51400fdd0dc5"
+    },
+    {
+      "path": "materials/micro-lessons/qa/content-checks.json",
+      "sha256": "07873481a2a87a704a0337d5f94aa9c4ded392950ab99553727b975a792b65c5"
+    },
+    {
+      "path": "materials/micro-lessons/qa/delivery-checks.json",
+      "sha256": "3c9337928aabe40b29033753db396205ade843bcebbee191459a2041f46d918e"
+    },
+    {
+      "path": "materials/micro-lessons/qa/delivery-checks.log",
+      "sha256": "3db95105ac7b234bec28ea927065831107116ba6b3700e4ccbebd774c97cd125"
+    },
+    {
+      "path": "materials/micro-lessons/qa/freeze-lock-check.json",
+      "sha256": "5982cecf681f7711b2703d5c16a39d449236624050d6dd4e8dd16caee7760968"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale-render.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-01.png",
+      "sha256": "eb30387815329850d17a5b73a484fb237067e5fd96f6861f6fd1c8c09fda46bf"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-02.png",
+      "sha256": "465822bd000b91a6266e837c8874b96cdcb6d6a68182397b44f4c305896913e5"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-03.png",
+      "sha256": "abd1452f2388c1743a7719c0087d5afa9c9d40477ac486345e4505c0a279ed5a"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-04.png",
+      "sha256": "2ffe4c65787e89aefb7dc290f9826042b56f360378982ba6e8d4f0135996d991"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-05.png",
+      "sha256": "9abaa3f7d49485b93db9328384402b8e1a4594163724a1cbc510060ad231a5ef"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-06.png",
+      "sha256": "a02c5d59176a66d45b48737a7e049dc15c4cf584ec6dcdd7b5311eb2b2f6f993"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-07.png",
+      "sha256": "3c0aafa2662edec1419fa8512e11eef13248d74c33eb33af1e005abd5f816614"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-08.png",
+      "sha256": "ab59401cc5babf7cfd1d4cdf5fff9e278aa8d15305175484103e01b0c7c7e03e"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-09.png",
+      "sha256": "006f25fd09e1506b993dd430752f1bedc3a07153101e16ea6280af12a5b1cfc3"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-10.png",
+      "sha256": "2cde54b11409f365300a247470f42142cfe5d90678b3e45a38737aae156bd002"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-11.png",
+      "sha256": "d71021a7b632aecedb9c12bd116fbeebb41e0daeb6e5f9286c1cae007ea1998e"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-12.png",
+      "sha256": "49f5ed36ea4e088f7ee5af18c4dfddd6e2578495e74258d45e0fb71c83f66c82"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-13.png",
+      "sha256": "fd753d3de6a4b14ac78727fdeffe3ae56c298696ce708e6a83144c79f488aabb"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-14.png",
+      "sha256": "aca32b194a764a6dff5945d9907da43a1e799574c3dfa3be73af421be3117b3b"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-15.png",
+      "sha256": "361b3d26331fb4c09ed8a1aadb925ff0bafe883c806cf4bfc1c9d7b0471ed1bb"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-16.png",
+      "sha256": "ee59af828fef32f5648a03e2a3fe295211faf5643370a96f2751f5644e2be09c"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-17.png",
+      "sha256": "97089b405a094579a58058c62fdbef521abfd2a0a96fb3a6d28e27e8b448ea06"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-18.png",
+      "sha256": "6b86fbbb481344cd37057c8dc038d3b9e9cd67dc68ad466e0631d8c22c1c6018"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-19.png",
+      "sha256": "8f6602c4a446f547b708f80ab20d121a9efac9043089a57785d9e33eaf8c0e78"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-20.png",
+      "sha256": "392314db766d70029cb54640de757ec51bea86fcc8f1b104d51675e00514ec7f"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-21.png",
+      "sha256": "09c6f0dee7ff66924f16183a37deeaaac4bbe829fb2fea735e0eee9dcefa91d8"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-22.png",
+      "sha256": "900b6c7670ed3261aaa8726ea9b9188908ca2afc32b853d10f55f187b6fa2a2f"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-23.png",
+      "sha256": "164ee70335c309c8dcebe22d9f0db81553b033606cf51efae51ebaa07041d419"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-24.png",
+      "sha256": "8f7be799006a69ed06db5e3c39569a71d44a462ac143c6e3019f94b27ba2a0ba"
+    },
+    {
+      "path": "materials/micro-lessons/qa/grayscale/page-25.png",
+      "sha256": "76079280b0a9b1ff1002148d2005350ea59efcafddede679874952eafa11cf7b"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-01.json",
+      "sha256": "0e6dbd01040b08a823f5d79a1b0351de632c3833bfa4c5722cb7c6d0a9ff6370"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-02.json",
+      "sha256": "66f2fc3d344f0d37e3d8c7593f4882e1239a92b7d12a3c360d7ca411f0c5c06c"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-03.json",
+      "sha256": "2bb3cd21af7772d23161c089c6551d1d0bf4ad489559d7558fa367cd51b3f50b"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-04.json",
+      "sha256": "6099ee2473a4823a3947951f4fbf026296449cb14e6c2f1ce9cb29ebf1d8c50f"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-05.json",
+      "sha256": "05c0f99d3d9d434e521acbb299750298c8d5150c73e14465fc5c3a7d10868a12"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-06.json",
+      "sha256": "eac25b04d91ac78a1d01d69903d6ab9e152767ce9dc488079a427be18d1445e8"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-07.json",
+      "sha256": "73cb127c91732683dfee62e399db6dd2b99f5056aaca7fe167d5091d4564ebb7"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-08.json",
+      "sha256": "90cf5e92f47e40236775c32cceff7718ed0bb01f212bb3784f14c801c212811a"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-09.json",
+      "sha256": "e39b6dd9f14107d4fff0e05573a1758f600eebdb28d8246dce65c6647623f664"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-10.json",
+      "sha256": "413bf936262161059ed064332cb423bf53ba146110ed65430ce7b713f066525a"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-11.json",
+      "sha256": "c5e62ae51f28e9ae76838c89a02a6c723e8f8685fca2df63d098b6bb51d033fa"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-12.json",
+      "sha256": "8eb77a3c72294d0518dfe1fa514dffe576e938aaa71438d37d07a16642d123f9"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-13.json",
+      "sha256": "5ebab71fb1033f4d9cf70c314e35ed60f679f9ae0c2243445034f9253fb87c82"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-14.json",
+      "sha256": "c18dfae30fa42490057b956c1c6f37f8e5349be1dc189f0d49dbcce5e9f5acaf"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-15.json",
+      "sha256": "08fad2218c973454b6fd250b2316b100d1f430d763778b6fb01e924958bb3461"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-16.json",
+      "sha256": "acd8b8da56e9bde7ce5be9e3027da0a60b98e2200e25c8f46e6522f9b4a77c27"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-17.json",
+      "sha256": "fb1f06a50323289888372053bd911ee1f656318abb54e82e2551626134c85f15"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-18.json",
+      "sha256": "d47d17002dcd1e29b576b891d69f039b52ec61b27b2158e8be1b37dfb974c484"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-19.json",
+      "sha256": "99db3e261cef685bf14bcd2a400cddeb215a5074514bc1c461f912a0246bbd8f"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-20.json",
+      "sha256": "76f479b15e396fb1fa2e232edcdba6df30f82c8df4e01e5cb67802fd35d4348a"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-21.json",
+      "sha256": "fc79392755ef3cda63e58d198a83f4c9e7d2e9a90e21bbd15615b89a12db93fd"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-22.json",
+      "sha256": "39992507be26f047ec6d62d9f2424687858592c4ed694bd276e205aa07d45a39"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-23.json",
+      "sha256": "ee4a8fd945f69c4b5be76e306aeb4620a3cb1c7920b2fd0636ee5b93de33afae"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-24.json",
+      "sha256": "c24607fd9cca88c45aca89049b097ac8d2dea7d5642218bc14fc9b8adafec94e"
+    },
+    {
+      "path": "materials/micro-lessons/qa/layouts/slide-25.json",
+      "sha256": "78e30e7249c04a5906555e2ba5b36136db96b37512ffbc8e560d6aa6749d97b4"
+    },
+    {
+      "path": "materials/micro-lessons/qa/page-by-page.json",
+      "sha256": "049f4a7b1949c4ee64a8de9717c5fdafe5188bb98be17abf522821b92b276263"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-checks.json",
+      "sha256": "c545a95a7b5c3f1ad88dad2cf2a71f4248b2b24548a0c84c021cda64933c5912"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-01.png",
+      "sha256": "34334cd262bc75def689bead2f1648745fd50a2e0d625a11ccc865a328e66f44"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-02.png",
+      "sha256": "2468b8e978aa2245d4e5be9111e3d22c214e9573f403463f67b8b5e4fb0be1f2"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-03.png",
+      "sha256": "0ab24897d2cc41cb0b22d627a035733c97c028f3700ae13ccd84ac1d7adb4cae"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-04.png",
+      "sha256": "da55e8f1fc7988366d6e0a36c43e925210f9cfbca345ebe7c4fca8259623854b"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-05.png",
+      "sha256": "4a6608c2c859d6b7f83b0b3d2ee596e34750b3600c0bffdcd60e1ffaf1294326"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-06.png",
+      "sha256": "266b2abf2c891f5a452c20dd9653b1b9498e84bd9104ee3a9504287343b1a306"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-07.png",
+      "sha256": "be9bda3d37bd31c1ac6c84a1769895892048a994af3a165377006f09e411413a"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-08.png",
+      "sha256": "32fbaa237594751b5718cce7c977e6807b67e194a18c29a4135807158110fdcd"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-09.png",
+      "sha256": "c0953ec0bc891d750ea6bdb11b9b42116da5fe1fe2c3b4c30024cca0cf735a4e"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-10.png",
+      "sha256": "d3f6b5783ee76f6385e7d448deac802c7ffe1b3e79f7d7f3ef056fe79ff4c4ad"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-11.png",
+      "sha256": "c058dc495fe150a785e33f978eeb36a58ebd7355af60b8415b9027c3022b9002"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-12.png",
+      "sha256": "6d45b7d5e8a0be816a1bbf80f348d386934e66b18dcf3856a5d0810a2db6d6c1"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-13.png",
+      "sha256": "f07f71a463ee35f3d33267450f3cbd9f88bd1bed0a042686ba1eef9c1594ab39"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-14.png",
+      "sha256": "d65a988b3db0b3d4a805170124230d2900012d9a1e8108b2fff597effcbd6cf5"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-15.png",
+      "sha256": "58cc8bc609630c5c9c71fcdabfd93fba7c9ec896a251dc3aad73cd89c01ec760"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-16.png",
+      "sha256": "166f7635149ffbded0f5a742ee230cf0d62eb40779d3ca2772d6a4ed25649c32"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-17.png",
+      "sha256": "cc32b2ef345033b82fd579dc84abdbee1db6862b1856644e11e3ef9dfc4f08de"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-18.png",
+      "sha256": "6a91fd599e33492f0d09b2d9c818aff8fdb0274a1d368fd15d6e2ff40c0ee15e"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-19.png",
+      "sha256": "58340f66e4972c5323c73ebd235070387a2e0e92981d1914c0fd741b61bd680f"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-20.png",
+      "sha256": "21a6d63fb61a78e7e40763abc71919aaea14d6b10390b8a513579c7e10bd7528"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-21.png",
+      "sha256": "375d25a3894e0254f5296995c9f0daa47d6b56c7c4b802bbcc6a269121151a6b"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-22.png",
+      "sha256": "823d0afe33ae29b6d05992e11fa0b0f61a8657e2a2f8b2da5f1fdc393295dc0a"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-23.png",
+      "sha256": "5e7b11a99a1156d5781243b71d4ccc6a53a1a6804a7c6ef1ab2ac16dc1f060de"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-24.png",
+      "sha256": "1429168d6b12ad9c3a19a2a381e693ef5a09bd3ced11c026f696ce44a787b7ab"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_All_25_r1/page-25.png",
+      "sha256": "fc08cc77d9bb857b411221756d04f9ba02f4a893e1b6e051024e8a4c2a48b1de"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_01_r1/page-1.png",
+      "sha256": "34334cd262bc75def689bead2f1648745fd50a2e0d625a11ccc865a328e66f44"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_01_r1/page-2.png",
+      "sha256": "2468b8e978aa2245d4e5be9111e3d22c214e9573f403463f67b8b5e4fb0be1f2"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_01_r1/page-3.png",
+      "sha256": "0ab24897d2cc41cb0b22d627a035733c97c028f3700ae13ccd84ac1d7adb4cae"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_01_r1/page-4.png",
+      "sha256": "da55e8f1fc7988366d6e0a36c43e925210f9cfbca345ebe7c4fca8259623854b"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_01_r1/page-5.png",
+      "sha256": "4a6608c2c859d6b7f83b0b3d2ee596e34750b3600c0bffdcd60e1ffaf1294326"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_02_r1/page-1.png",
+      "sha256": "266b2abf2c891f5a452c20dd9653b1b9498e84bd9104ee3a9504287343b1a306"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_02_r1/page-2.png",
+      "sha256": "be9bda3d37bd31c1ac6c84a1769895892048a994af3a165377006f09e411413a"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_02_r1/page-3.png",
+      "sha256": "32fbaa237594751b5718cce7c977e6807b67e194a18c29a4135807158110fdcd"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_02_r1/page-4.png",
+      "sha256": "c0953ec0bc891d750ea6bdb11b9b42116da5fe1fe2c3b4c30024cca0cf735a4e"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_02_r1/page-5.png",
+      "sha256": "d3f6b5783ee76f6385e7d448deac802c7ffe1b3e79f7d7f3ef056fe79ff4c4ad"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_03_r1/page-1.png",
+      "sha256": "c058dc495fe150a785e33f978eeb36a58ebd7355af60b8415b9027c3022b9002"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_03_r1/page-2.png",
+      "sha256": "6d45b7d5e8a0be816a1bbf80f348d386934e66b18dcf3856a5d0810a2db6d6c1"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_03_r1/page-3.png",
+      "sha256": "f07f71a463ee35f3d33267450f3cbd9f88bd1bed0a042686ba1eef9c1594ab39"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_03_r1/page-4.png",
+      "sha256": "d65a988b3db0b3d4a805170124230d2900012d9a1e8108b2fff597effcbd6cf5"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_03_r1/page-5.png",
+      "sha256": "58cc8bc609630c5c9c71fcdabfd93fba7c9ec896a251dc3aad73cd89c01ec760"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_04_r1/page-1.png",
+      "sha256": "166f7635149ffbded0f5a742ee230cf0d62eb40779d3ca2772d6a4ed25649c32"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_04_r1/page-2.png",
+      "sha256": "cc32b2ef345033b82fd579dc84abdbee1db6862b1856644e11e3ef9dfc4f08de"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_04_r1/page-3.png",
+      "sha256": "6a91fd599e33492f0d09b2d9c818aff8fdb0274a1d368fd15d6e2ff40c0ee15e"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_04_r1/page-4.png",
+      "sha256": "58340f66e4972c5323c73ebd235070387a2e0e92981d1914c0fd741b61bd680f"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_04_r1/page-5.png",
+      "sha256": "21a6d63fb61a78e7e40763abc71919aaea14d6b10390b8a513579c7e10bd7528"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_05_r1/page-1.png",
+      "sha256": "375d25a3894e0254f5296995c9f0daa47d6b56c7c4b802bbcc6a269121151a6b"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_05_r1/page-2.png",
+      "sha256": "823d0afe33ae29b6d05992e11fa0b0f61a8657e2a2f8b2da5f1fdc393295dc0a"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_05_r1/page-3.png",
+      "sha256": "5e7b11a99a1156d5781243b71d4ccc6a53a1a6804a7c6ef1ab2ac16dc1f060de"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_05_r1/page-4.png",
+      "sha256": "06d8969474e0577c8060d487e2d7f01f88e0cfb99ba0ee6626cb0c33c6b915f9"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_MicroLesson_05_r1/page-5.png",
+      "sha256": "5d40e383ee861281d4f43bfcecdc6cbd2f422d505f00c02be2d3792ebc772737"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_Teacher_Summary_5pages_r1/page-1.png",
+      "sha256": "47e724a428d50def9d32cf267e363a0e5885ad2943fa5227f9505deea8bb0d61"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_Teacher_Summary_5pages_r1/page-2.png",
+      "sha256": "e115028e68ca99dcf6f4e47fa21ec00c987e7e966441cb1a0955bc2f1e783be9"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_Teacher_Summary_5pages_r1/page-3.png",
+      "sha256": "13c0f5a48435c732ec27e6cc891295a3c798e1b450c77cd6c367aa9c760ee86f"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_Teacher_Summary_5pages_r1/page-4.png",
+      "sha256": "c92888a6a035c8cec017a3837d55b100c8f3cd8aa047ce8c68d6f82ee5b1586f"
+    },
+    {
+      "path": "materials/micro-lessons/qa/pdf-render/T22_Teacher_Summary_5pages_r1/page-5.png",
+      "sha256": "4e1b79a88d461b24837f36d0969b5fb7a8317849263c6d9d80f5fa2a877926d6"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-01.png",
+      "sha256": "24abbb1423c2605763d449dcdc196461db8593677e7c90e805e811f36a498076"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-02.png",
+      "sha256": "292e9b46a4584f4acb4c26260dc24aecb40fcb994e61eb88310bbb4f6f0dbc8f"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-03.png",
+      "sha256": "381ba672e51b965303f38c54ef4fc39d5c8602072d1df4f72695589d602e5f3a"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-04.png",
+      "sha256": "68dc9a65330a131ad71e34531a789aaa41bdef9ee80123322b91ba15f994f4b1"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-05.png",
+      "sha256": "ed767568e99df8e2ac730cad62323549903782f9a82dde7667dbdb49ee87f3eb"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-06.png",
+      "sha256": "6d559a4de2a4acd694f1b5b5efe1cfbcc2d36022bf585ae12a9abaf4c1a21a88"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-07.png",
+      "sha256": "7cdf85dc5d272b8a2c53daa92786c92d4da3e45bf2956ccfdf6dcec7e62a1cc1"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-08.png",
+      "sha256": "0293cb9a8b22517935020dfc605c9f90db68cd0d8ae9676af2b983fa71295cee"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-09.png",
+      "sha256": "4fd5e5350801f0a3cb1be0d32df821d5a10ca2f80f44d091deda61eff202f675"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-10.png",
+      "sha256": "71cb81522b8447e08fd8737bd71b93d2cea4c8951fa9f6ea5972184de13ae99f"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-11.png",
+      "sha256": "aed606d31f9ee054600d86dad6e7a9355ced1215ac614bc05cf848cb52b8f130"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-12.png",
+      "sha256": "904b46571333c8f18dad0072f51e526dce78eafaa00a2f3ba7e8ceb035307cd8"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-13.png",
+      "sha256": "40b2458d09b6728639197fa8df2ca979e76b5b3fcf98d7d7f86f5ee0d3327c3d"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-14.png",
+      "sha256": "f211e55582acacc0d707c44041921d432eda69b959bf20c281f8acd6c0992fec"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-15.png",
+      "sha256": "7f56ae9abede52136b0085a5840352063429d23516938b64cb32b12cb0f9b254"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-16.png",
+      "sha256": "c05fdbbd01a475045fe48a77ffcac4c9aee7de2cb6f63055eb160c1b5fd3855a"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-17.png",
+      "sha256": "81b8afe96f39309b822e641ef3f71fd0dd39bdcb90f4329d4dbcdb4c88db3eeb"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-18.png",
+      "sha256": "1197c2763730f76337e3772c1eedcab661e15aa8231b060fb9dfa20d76e4b170"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-19.png",
+      "sha256": "891113ca28744bc8480dc869b82e146dfcfedf81398042afe04ffc33356bbdac"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-20.png",
+      "sha256": "bc14fab054b4b0aac624a16c6fdcaeba4e361b56f860b7a42f788b3f40ea38ed"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-21.png",
+      "sha256": "a2f641057848fb169dd598ba30e91357bc6a3f39c2a387f93d10da279191e7aa"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-22.png",
+      "sha256": "09333aae333e7d14183adb2c05ccea16448bfaee4b4bc0a9110f0bdef40f27b5"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-23.png",
+      "sha256": "b3317831cae1b34b8d982a33c9db51903aa74fa2952ca060915d06c39ca51951"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-24.png",
+      "sha256": "512921f9acc22f8d3389d6a77df371894e5803051292192a557d910986336041"
+    },
+    {
+      "path": "materials/micro-lessons/qa/slides/slide-25.png",
+      "sha256": "0c7b013238ff8f801a247a323b1ca6864eb4cc2b45bfe1ea2cd34088f4829c54"
+    },
+    {
+      "path": "materials/micro-lessons/qa/viewer-open-and-pdf.log",
+      "sha256": "7c5fe9db3dba5a316c18c633cb62451765f3eda7ac3e31660869fa0860ca6d92"
+    },
+    {
+      "path": "materials/micro-lessons/source/author-lessons.py",
+      "sha256": "49e52aba9dc80579d98efbc8c18db4d5c24ce733b6f322d2c03c792e3eaa935b"
+    },
+    {
+      "path": "materials/micro-lessons/source/build-lessons.mjs",
+      "sha256": "d8d989f30a2fc38b8da8622d6209b47c39a23597d243fa0e642044b58e03bf80"
+    },
+    {
+      "path": "materials/micro-lessons/source/build-teacher-summary.py",
+      "sha256": "d30ac38165f2dbd5582c1e251b25818f97bbb2ec63dd52cc8416e4209b0acd19"
+    },
+    {
+      "path": "materials/micro-lessons/source/combined.presentation.json",
+      "sha256": "c8cb244df6e05e0d2c66031d5b822739f920a88abe8ce9fe0e7c179f7a350461"
+    },
+    {
+      "path": "materials/micro-lessons/source/diagrams.json",
+      "sha256": "1baf093d251e13fed23b69ee7087c96f495ec2fa27c897d82b8544e2d273961c"
+    },
+    {
+      "path": "materials/micro-lessons/source/lessons.json",
+      "sha256": "a0282228c395ee47e2734507fe494f211b8b4995398f7f8c63f708d756dcd7c1"
+    },
+    {
+      "path": "materials/micro-lessons/source/package-final.py",
+      "sha256": "3ab8b9acfdccfa7bd50b7c236ac0aa4a00aeb8dbcfed0869d5f3504417fcb4e9"
+    },
+    {
+      "path": "materials/micro-lessons/source/prepare-assets.py",
+      "sha256": "ec6d975071813fa4f0e72490c7ce479d192c5264d62969ca00663a89517a3857"
+    },
+    {
+      "path": "materials/micro-lessons/source/rebuild.sh",
+      "sha256": "02ec9e02cb07c853b4f6eb535a4185065c33989f0e5778bd6c67ec6ca41ebdcb"
+    },
+    {
+      "path": "materials/micro-lessons/source/record-qa.py",
+      "sha256": "412b5dd81c6a223ab7bb5d2e9628a47695eba6d015669dfabda706e04b510e1e"
+    },
+    {
+      "path": "materials/micro-lessons/source/render-pdfs.py",
+      "sha256": "928e85f02e68d459ffa375fc7ad898863038883c023af9d090a5a0455ddbefe6"
+    },
+    {
+      "path": "materials/micro-lessons/source/rendered-board-manifest.json",
+      "sha256": "3a5ccf80abdfbdf9393e01632dc4110ddb791a2b11612962b133ce193ee535e2"
+    },
+    {
+      "path": "materials/micro-lessons/source/speaker-notes.md",
+      "sha256": "8efb89a0fe351b0e588ee4c36ffec4d867149f262512f82b997c6258e1791bad"
+    },
+    {
+      "path": "materials/micro-lessons/source/teacher-summary.md",
+      "sha256": "c66846ec09bfa11cc7fb8f6e4ae8ee417daeaa7bb6d2402ec4b467bf9c5ead11"
+    },
+    {
+      "path": "materials/micro-lessons/source/verify-content.mjs",
+      "sha256": "cc226211d37812f374df2f187b1841a1ddd9b95cc47c3ec53f86d241fe16aef5"
+    },
+    {
+      "path": "materials/micro-lessons/source/verify-delivery.py",
+      "sha256": "c5ebd7b9bbb12c83c0f0668f03f2cbf00b1f2521de68b2a8970fac549f16ae68"
+    },
+    {
+      "path": "materials/micro-lessons/sources.md",
+      "sha256": "ee45a8f82f446fc3939b6aaf79e584c00881751e96f5ceef2e02c858dc3a11e3"
+    },
+    {
+      "path": "materials/pair-boards/CHANGELOG.md",
+      "sha256": "340fecdc5c42094fd23751c0294cf431a25088876dab3c200cb993a46b159d89"
+    },
+    {
+      "path": "materials/pair-boards/FILE_MANIFEST.json",
+      "sha256": "e4a8e96982d17efd311d99a13817c358794c1c87b252e741370a6dc8425ed28e"
+    },
+    {
+      "path": "materials/pair-boards/PRINT_AND_ASSEMBLY.md",
+      "sha256": "257c11b75aaa95837d451527f65fd705e2a687cd9a3e4fa43940027146b563d0"
+    },
+    {
+      "path": "materials/pair-boards/README.md",
+      "sha256": "c9029f73ba3a0ae89f5cb1b9c13bbdeeca407eb1d916bec463942e63e17382ee"
+    },
+    {
+      "path": "materials/pair-boards/SOURCES.md",
+      "sha256": "ba0186f03400581d734bca86a97e028c465277b09c9dbdf8ef1368d69fa28206"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a3_coordinates.pdf",
+      "sha256": "95490f8b06e50c3ec9c8e84c3b4494a82e86f8c531f994109760b7741f57dfeb"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a3_coordinates.svg",
+      "sha256": "3745bac0e940181e287c347c5bbc27bb233a999a524ede8773d01e965a0b2f95"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a3_coordinates_tiled-A4.pdf",
+      "sha256": "2ea8fbdf0ea528eeffd564b557ff215fbbcdc0c52cdb3235b18860d18c9e9bab"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a3_plain.pdf",
+      "sha256": "bcdb0523943a56ae4b7609db164732b1814a75288d7992cb14de5b77e1307158"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a3_plain.svg",
+      "sha256": "ccd6b862ae4064a854ef2c73df239f214d4671cbadf54200ccf37fd71762ce73"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a3_plain_tiled-A4.pdf",
+      "sha256": "7610a319e5c770b1833cc6875646b9650a3e152c7d20a064b46f9b93f223a13c"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a4_coordinates.pdf",
+      "sha256": "67908975c2074a81c17957d01b70708da470768e729be9fedae2778fe8234aa1"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a4_coordinates.svg",
+      "sha256": "5dbc5d51075982ddee8dfbac2da057a495246d7ab462e8baeb63a8f73148f5bc"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a4_plain.pdf",
+      "sha256": "77760768ca85ad06fc5d8e0eb68ed2a4bce322849e6015d434bc09a275668305"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_13x13-a4_plain.svg",
+      "sha256": "58b69f76d61549ad3bded6c6393093d98a2dfaa72a66ae46a9a6ba5d5805587f"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a3_coordinates.pdf",
+      "sha256": "3639858c83b8e8920cdb5f3e981f9aec0ccc1d9b0dcaa9873e4317595d0b2293"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a3_coordinates.svg",
+      "sha256": "8be354920c81bb56ad08cc01426d873bbd0f19643f62e2cfdd81e7b806b266aa"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a3_coordinates_tiled-A4.pdf",
+      "sha256": "fa2b3ff14412b89d3a91a65ba62c349bfce199a588a94ecc1d9b85acbd277ffb"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a3_plain.pdf",
+      "sha256": "094999beae0ee9a679f8cc7f3af35e0467ba098e488e5bf2d4fa76b3a9fecaa0"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a3_plain.svg",
+      "sha256": "ba4cc1e0610914d1825f3b1f8db8abc26e307cca47b00f64a011e142d0e6fbf7"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a3_plain_tiled-A4.pdf",
+      "sha256": "e4dbf83fa26889fc3e858d669b78bd7cfaa011aa0a9d305fba33524725519f7a"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a4_coordinates.pdf",
+      "sha256": "48e094337970c7e5694e2fae4dc3477d8478d09bcab8d70f36073912cfd16135"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a4_coordinates.svg",
+      "sha256": "d101a47d210d6e77cb7c584ee6a7e0454af6f2bd5e4874647bc046ce771d9fe0"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a4_plain.pdf",
+      "sha256": "73a76c45bdf5136799135a9b00b48061f9334067c91330e1cc1f723310265ab7"
+    },
+    {
+      "path": "materials/pair-boards/output/boards/go-board_9x9-a4_plain.svg",
+      "sha256": "06d453d68b792fae5c9c1913bcde498f63ec101bbf0399a8072a9fa43ad02fd0"
+    },
+    {
+      "path": "materials/pair-boards/output/overlays/liberty-overlay_13x13-a3.pdf",
+      "sha256": "e0116f5d9b477e6a69ffa585312985b34ebfa19d2af3e29c070c420802cfc60d"
+    },
+    {
+      "path": "materials/pair-boards/output/overlays/liberty-overlay_13x13-a3.svg",
+      "sha256": "64b9dc7bd9abc5e880b999239f27526791409f2c491d876616b466ca86ba97bf"
+    },
+    {
+      "path": "materials/pair-boards/output/overlays/liberty-overlay_13x13-a4.pdf",
+      "sha256": "3facf44adf1078ed2acff7c75fb656f69eeeeb5191317d98fab0e41991ad43ae"
+    },
+    {
+      "path": "materials/pair-boards/output/overlays/liberty-overlay_13x13-a4.svg",
+      "sha256": "e5886fac893100de63fb0b017cbd8d2081dd86b1a9200dcb6be475b68f81c5f6"
+    },
+    {
+      "path": "materials/pair-boards/output/overlays/liberty-overlay_9x9-a3.pdf",
+      "sha256": "5efd148e9563bd2ed74bc9deb7be7704a857667755d086317bda863bd1271dfc"
+    },
+    {
+      "path": "materials/pair-boards/output/overlays/liberty-overlay_9x9-a3.svg",
+      "sha256": "c9630f541d406703a07d837be06cd0b22ad83070a0bc397660540f1fb904d9a5"
+    },
+    {
+      "path": "materials/pair-boards/output/overlays/liberty-overlay_9x9-a4.pdf",
+      "sha256": "0523e1ba2abc87e8932e34c64df4b4338260ed95dbe7525b8dc4d1ca9c301c65"
+    },
+    {
+      "path": "materials/pair-boards/output/overlays/liberty-overlay_9x9-a4.svg",
+      "sha256": "38d8c610dc49b43472d8470c8812c45acafe814721fb7fad819ab17eec3ee06f"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/loan-return-checklist_A4.pdf",
+      "sha256": "4288578866880c7c6a5ce2ea5c7bfaedb4ef32a4fea32147882dc87c48cfdba9"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/loan-return-checklist_A4.svg",
+      "sha256": "0378377a0dc52eebdc28e5624e09a31a91160a4f25f8460c552cdc13c67bdf76"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_12mm_black-white_338.pdf",
+      "sha256": "5ad8988e27b26057de7539359b70743c59d0754d5a222f7189dc036b693e38e6"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_12mm_black_169.pdf",
+      "sha256": "95396d5bcfec94381ae4662a54d266d219dce5c8248eba39b42b672bf4d0262b"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_12mm_black_169.svg",
+      "sha256": "1d8fc8df2689f796eab6a66a096251591fcab43ed0e823d7529d9c9a8596253e"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_12mm_white_169.pdf",
+      "sha256": "4b85021bf549863d50e43715c252065668d6437cc45cd0d731c79c460a14d87e"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_12mm_white_169.svg",
+      "sha256": "a61ef9c84917173e8fa2137b772e9e86227a7c53f507f897e653b82289ae1910"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_18mm_black-white_180.pdf",
+      "sha256": "a89840bfb301ebf1206dee8a2fe9377675c2a6bed50ace1dfe3ea2054c07159d"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_18mm_black_90.pdf",
+      "sha256": "a88af6c334fe80659080c7f817f9e3d3a620f001fc7e92df6841310ad93cbdf0"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_18mm_black_90.svg",
+      "sha256": "524d7ceb2cbe5fd32731cf51866132c00ec7bc927c7aa2527986178571c09083"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_18mm_white_90.pdf",
+      "sha256": "dd77478bceb4aed011d74df4b8de0fa54b197321d2e3b7086390415f583abab2"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/paper-stones_18mm_white_90.svg",
+      "sha256": "021a62d9c7547f1949aa449714d20cdeb8031ab3bc3fedc7d981c29d9b881811"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/portable-kit-layout_A4.pdf",
+      "sha256": "0eab9787828e6270b129b4db14dcb819897f82cf62d9efc54524c25c9f407ae2"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/portable-kit-layout_A4.svg",
+      "sha256": "e71003fd3bb463fd670274a3a38d9af15f816cc1c5b2440d1f55afa1382e65f5"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/storage-labels_A4.pdf",
+      "sha256": "bed47a29e5cbbbf9d3a8d8a800ede1ef43298202220aaa5161de05b2ea44c8fa"
+    },
+    {
+      "path": "materials/pair-boards/output/portable-kit/storage-labels_A4.svg",
+      "sha256": "3e07fb532be0071f8ffb6d12bfddd70d4568af1088c685e044953c1e00d79510"
+    },
+    {
+      "path": "materials/pair-boards/output/print-pack_13x13-A3-extension.pdf",
+      "sha256": "4a5ecc893d2b1dc5d25324e3cb090b4d89bbbed83feeb2ed05a6104c5a9aa30e"
+    },
+    {
+      "path": "materials/pair-boards/output/print-pack_13x13-A4-small-extension.pdf",
+      "sha256": "b756d44799d02dc810ee1e69665914f29e7e16f6f54827942997c9c651fd4c1c"
+    },
+    {
+      "path": "materials/pair-boards/output/print-pack_9x9-A4-portable-kit.pdf",
+      "sha256": "83fc7e6796c08b25db12c6294dd6c5ea650d560390cc721456766cb2930daac9"
+    },
+    {
+      "path": "materials/pair-boards/qa/PRINT_AND_GEOMETRY_ACCEPTANCE.md",
+      "sha256": "59f16c15eea2338d824d8b677df5a777026d85fd66161157e56b6c690cefc956"
+    },
+    {
+      "path": "materials/pair-boards/qa/contact-sheets/boards-color.png",
+      "sha256": "25a1fa5a69f35c8bd1684271e4a14d705e3afc9c0dca01fa82c5d6c469a93d6f"
+    },
+    {
+      "path": "materials/pair-boards/qa/contact-sheets/boards-grayscale.png",
+      "sha256": "d05d913527e030fd6329da70e13fe1b6ada15d9b500ecd6d3bd48085322b94cf"
+    },
+    {
+      "path": "materials/pair-boards/qa/contact-sheets/overlays-color.png",
+      "sha256": "999a9b4206a8b660d97e08926b0d923e6d78361161da19d2a8843eafa7346ddb"
+    },
+    {
+      "path": "materials/pair-boards/qa/contact-sheets/overlays-grayscale.png",
+      "sha256": "8c8fdec11cfde766ef6c4caec78c9c6c654fd7e182e44b5725ae4ff6199eb421"
+    },
+    {
+      "path": "materials/pair-boards/qa/contact-sheets/portable-kit-color.png",
+      "sha256": "3b615def2f5704ed63cbba384205d83a65a5daff3b97e8d1ddcea6698d864c9c"
+    },
+    {
+      "path": "materials/pair-boards/qa/contact-sheets/portable-kit-grayscale.png",
+      "sha256": "a09139b1a715402c5f1266182fd8dd3d4b8dbf4171b001ce6077404c4a32137f"
+    },
+    {
+      "path": "materials/pair-boards/qa/contact-sheets/print-packs-color.png",
+      "sha256": "c2f52b5ee7406cbbedab41ee5242b987c7cd02c489555c29af40d42c4699efdb"
+    },
+    {
+      "path": "materials/pair-boards/qa/contact-sheets/print-packs-grayscale.png",
+      "sha256": "03beba4b282771a7a70347bb91ac1f3d0a7961baa909c803660ffc58ae17d172"
+    },
+    {
+      "path": "materials/pair-boards/qa/geometry-report.json",
+      "sha256": "ac9fc2785e04b2e83bb13d1ec55243ddeabc7fd8d795920ef672f758c14386f8"
+    },
+    {
+      "path": "materials/pair-boards/qa/render-manifest.json",
+      "sha256": "a9d784d8541441d4d487d4748e1927c7d2292478b39981f8899e66952404eaae"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_13x13-a3_coordinates-1.png",
+      "sha256": "fae297aeb5a6d00554e614d3874cac263f55f9926c638f34c6ab07c8fa057ef8"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_13x13-a3_coordinates_tiled-A4-1.png",
+      "sha256": "90233d4c49431b408040fd93eddf0140ff17fe1918a4c1e9a0503aa832d663bd"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_13x13-a3_coordinates_tiled-A4-2.png",
+      "sha256": "e0e43b512e71080c8518e7d443a07ea3ee6dc0e80048db20df3ef4cb73626b31"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_13x13-a3_plain-1.png",
+      "sha256": "7be743b7c9229279c1be1d34a5949858b771e565e39dd0f2c1b8dd88edef4dff"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_13x13-a3_plain_tiled-A4-1.png",
+      "sha256": "4e0c5ff542b6e8ea55b4b1997825a3de83caf2c0c8089d8b2b39f616ef25d2f2"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_13x13-a3_plain_tiled-A4-2.png",
+      "sha256": "588347aeb280913652f6c69e728642de4ce7d803dd65b2fa6b0ea7a0285a076b"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_13x13-a4_coordinates-1.png",
+      "sha256": "0031af15176c7c6137c01055f4271cab8eaeacbe44c5f14a3024026d19a490f0"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_13x13-a4_plain-1.png",
+      "sha256": "17f466ec643d57f601236c53ffcb0596bebda197b32dde35920abe224ee0ee74"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_9x9-a3_coordinates-1.png",
+      "sha256": "f0643740d81250f5f4483f5dfdd25bbf0bc05c526a285ef34d01955efeb152fd"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_9x9-a3_coordinates_tiled-A4-1.png",
+      "sha256": "8f1ba52aa4fe6abd7d79c0b3f80866ca7dc0f2956dec66fa77e36efd6da4c872"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_9x9-a3_coordinates_tiled-A4-2.png",
+      "sha256": "d4b5e41687bbc8ccb11378b1b428635f6567dc1d7dc2377228634a83ae9982cb"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_9x9-a3_plain-1.png",
+      "sha256": "9ef696cf55791f78118098dd117a6bdb4c191ee52991906d81726475bcde70a6"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_9x9-a3_plain_tiled-A4-1.png",
+      "sha256": "b57238be7d65a93f2a8d9b857d856dd05ea9894c69eeee28d7cdb6b49a88bf68"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_9x9-a3_plain_tiled-A4-2.png",
+      "sha256": "b8d9b34de246e04601ea932a953378d8f2e8850eda3367ef05a695774604b339"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_9x9-a4_coordinates-1.png",
+      "sha256": "950407948922d8b92b2fc3e3a04730b44c57a3811bc944f0f174407d93f1f4fb"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/boards/go-board_9x9-a4_plain-1.png",
+      "sha256": "c57f9835d6f9b331a473eec26842e4e3cf5897edc25e524a224a101f448b380d"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/overlays/liberty-overlay_13x13-a3-1.png",
+      "sha256": "00961118bf057738df29ff045bc12321f9a02df144b21c73f349f19d767217b4"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/overlays/liberty-overlay_13x13-a4-1.png",
+      "sha256": "b154a7adc7e128e296703a738a5a9eaaa750e33757c8a3fdfa0d7d0642424665"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/overlays/liberty-overlay_9x9-a3-1.png",
+      "sha256": "1c603fdd55e0b07032920ff9fb54776c7b27dd9c613c85ef8300f875c534b7e2"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/overlays/liberty-overlay_9x9-a4-1.png",
+      "sha256": "62a718f4d98ddeaa555f0b2ee86970905ab3ce6ab2ac6b8c647d1541f72cad3f"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/portable-kit/loan-return-checklist_A4-1.png",
+      "sha256": "04f261b25ffb7e2a2ff10bdccf128171e1569ca851b81d7b89d25811e1aa36a3"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/portable-kit/paper-stones_12mm_black-white_338-1.png",
+      "sha256": "3152418fc37353a30e1a647a4bf1ce50b09c15c8c226fe2a41e5a69e0d25ee26"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/portable-kit/paper-stones_12mm_black-white_338-2.png",
+      "sha256": "7ac9578a4ea788bace7e81f2c3bdf50de856988c362717439229411e1ff13be8"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/portable-kit/paper-stones_12mm_black_169-1.png",
+      "sha256": "3152418fc37353a30e1a647a4bf1ce50b09c15c8c226fe2a41e5a69e0d25ee26"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/portable-kit/paper-stones_12mm_white_169-1.png",
+      "sha256": "7ac9578a4ea788bace7e81f2c3bdf50de856988c362717439229411e1ff13be8"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/portable-kit/paper-stones_18mm_black-white_180-1.png",
+      "sha256": "36239966c0c0767036ef947a6ef4fe3e07c8ec12cd4225abb49b2d4b1e041550"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/portable-kit/paper-stones_18mm_black-white_180-2.png",
+      "sha256": "3b0616912000124153686660af1c24cbb3a9b3d3f45a84902f3e09e7a3e1c186"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/portable-kit/paper-stones_18mm_black_90-1.png",
+      "sha256": "36239966c0c0767036ef947a6ef4fe3e07c8ec12cd4225abb49b2d4b1e041550"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/portable-kit/paper-stones_18mm_white_90-1.png",
+      "sha256": "3b0616912000124153686660af1c24cbb3a9b3d3f45a84902f3e09e7a3e1c186"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/portable-kit/portable-kit-layout_A4-1.png",
+      "sha256": "63be8234db7c72ce42f9dfc4554e10c2b997e49f13e33a8034e85f2efaf94587"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/portable-kit/storage-labels_A4-1.png",
+      "sha256": "da420b97a0c36f1806e26fb1f22cacee4ff9a838303d0f6d5d1969d01b00df20"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/print-packs/print-pack_13x13-A3-extension-1.png",
+      "sha256": "fae297aeb5a6d00554e614d3874cac263f55f9926c638f34c6ab07c8fa057ef8"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/print-packs/print-pack_13x13-A3-extension-2.png",
+      "sha256": "00961118bf057738df29ff045bc12321f9a02df144b21c73f349f19d767217b4"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/print-packs/print-pack_13x13-A4-small-extension-1.png",
+      "sha256": "0031af15176c7c6137c01055f4271cab8eaeacbe44c5f14a3024026d19a490f0"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/print-packs/print-pack_13x13-A4-small-extension-2.png",
+      "sha256": "b154a7adc7e128e296703a738a5a9eaaa750e33757c8a3fdfa0d7d0642424665"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/print-packs/print-pack_13x13-A4-small-extension-3.png",
+      "sha256": "3152418fc37353a30e1a647a4bf1ce50b09c15c8c226fe2a41e5a69e0d25ee26"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/print-packs/print-pack_13x13-A4-small-extension-4.png",
+      "sha256": "7ac9578a4ea788bace7e81f2c3bdf50de856988c362717439229411e1ff13be8"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/print-packs/print-pack_9x9-A4-portable-kit-1.png",
+      "sha256": "950407948922d8b92b2fc3e3a04730b44c57a3811bc944f0f174407d93f1f4fb"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/print-packs/print-pack_9x9-A4-portable-kit-2.png",
+      "sha256": "62a718f4d98ddeaa555f0b2ee86970905ab3ce6ab2ac6b8c647d1541f72cad3f"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/print-packs/print-pack_9x9-A4-portable-kit-3.png",
+      "sha256": "36239966c0c0767036ef947a6ef4fe3e07c8ec12cd4225abb49b2d4b1e041550"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/print-packs/print-pack_9x9-A4-portable-kit-4.png",
+      "sha256": "3b0616912000124153686660af1c24cbb3a9b3d3f45a84902f3e09e7a3e1c186"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/print-packs/print-pack_9x9-A4-portable-kit-5.png",
+      "sha256": "da420b97a0c36f1806e26fb1f22cacee4ff9a838303d0f6d5d1969d01b00df20"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/print-packs/print-pack_9x9-A4-portable-kit-6.png",
+      "sha256": "04f261b25ffb7e2a2ff10bdccf128171e1569ca851b81d7b89d25811e1aa36a3"
+    },
+    {
+      "path": "materials/pair-boards/qa/rendered-pages/print-packs/print-pack_9x9-A4-portable-kit-7.png",
+      "sha256": "63be8234db7c72ce42f9dfc4554e10c2b997e49f13e33a8034e85f2efaf94587"
+    },
+    {
+      "path": "materials/pair-boards/tools/generate_pair_boards.py",
+      "sha256": "472dd5eaa553e45cfff617fa8426ba4ecf6bce089a4c9a0f0d28de00c680ab13"
+    },
+    {
+      "path": "materials/pair-boards/tools/package_t19.py",
+      "sha256": "f0b15b1059aa028705de6596955dcc7335a88f0d139921477826f6c79e5ce943"
+    },
+    {
+      "path": "materials/pair-boards/tools/verify_geometry.py",
+      "sha256": "7f515407f8cddbe4f2e274f2d0c6ec2b77ea4d71613f0515e4d02e4100487898"
+    },
+    {
+      "path": "materials/rule-cards/FILE_MANIFEST.json",
+      "sha256": "a854a184e9d3a440cc9b5effbe8c191bedc62d78a4352496384216620a4b6184"
+    },
+    {
+      "path": "materials/rule-cards/PRINT-AND-TEACHER.md",
+      "sha256": "c1100b5f47b4e34a661a717357c1fc2da42399106bfdb9f34c162c332e274cd9"
+    },
+    {
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-CAPTURE-AFTER.json",
+      "sha256": "c49a90c0bcd509a47859e52e689ebf26cd3410797d70f59258b47bad180240d5"
+    },
+    {
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-CAPTURE-BEFORE.json",
+      "sha256": "6b7b4142b6aeae8b242c726a148a668ed55efe066c7bc5adcd12cfbade68daed"
+    },
+    {
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-CONNECT.json",
+      "sha256": "c745c0a49849f21ca32a94106865328fb005d1a75136403754b5c713a0a07127"
+    },
+    {
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-KO-AFTER.json",
+      "sha256": "89d9a194282bdbbce299ed730cec96191f7fc70c7667e1e3861122fb7b31fd43"
+    },
+    {
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-KO-BEFORE.json",
+      "sha256": "d4fe9642a299e6abb7fd957cb5d7fd0cf5f339980f812404f8f46f0dcf8d73b5"
+    },
+    {
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-LEGAL-AFTER.json",
+      "sha256": "a6e455337c43630ef583417544bd2e285ae507dee005acc4159149d073a6a909"
+    },
+    {
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-LEGAL-BEFORE.json",
+      "sha256": "4dc310af6907bf6ec3c6ff7dda5a0b5b31620c36fa90f7d6f6ac06ebbc066109"
+    },
+    {
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-LIBERTY.json",
+      "sha256": "6c6907aa5af61161db98b961905a0a08f3382ad6c98bb4ad0ae2c73383c4f67b"
+    },
+    {
+      "path": "materials/rule-cards/data/RULE-DEMO-T20-SCORE.json",
+      "sha256": "4572ff686851003ddb99c7168251dc34ceeb8bfe8463f8717e797b60d534bf91"
+    },
+    {
+      "path": "materials/rule-cards/data/card-manifest.json",
+      "sha256": "f92021579bd38399d3bd7a72d81092eddb20067fd8a0adc2dbd2474a0a2a7025"
+    },
+    {
+      "path": "materials/rule-cards/data/diagram-index.json",
+      "sha256": "74b73d83ee5f5651aa4302a8f5d63de7f6936ec60f6a32e21e02b774b1513fa7"
+    },
+    {
+      "path": "materials/rule-cards/pdf/01-main-front.pdf",
+      "sha256": "62c7fcc18e99d28ca3e613449a4574dedd26586a50e28422f7228ce08d5b5371"
+    },
+    {
+      "path": "materials/rule-cards/pdf/02-main-back.pdf",
+      "sha256": "ef30abc02924366ee564a4caadd81340795258a62c913719fb829015fbed9518"
+    },
+    {
+      "path": "materials/rule-cards/pdf/03-detail-front.pdf",
+      "sha256": "5839089cbb3bbf772b9de0001abd2da388840ed6137d0ddec1151f8964b94e2f"
+    },
+    {
+      "path": "materials/rule-cards/pdf/04-detail-back.pdf",
+      "sha256": "d79c584965cdff7931cf342a2ab22ce80e5e7a5a3b14eebe1bd41ce0df2b7b2c"
+    },
+    {
+      "path": "materials/rule-cards/pdf/05-score.pdf",
+      "sha256": "201ad8c0767aa7187d607b90a384afdc6c974db06645af5ce1c128855b91c891"
+    },
+    {
+      "path": "materials/rule-cards/pdf/06-pathway.pdf",
+      "sha256": "d4da6bf7d772d62477615bc1e66c953b55537327627b996c93c0b26a1d24254f"
+    },
+    {
+      "path": "materials/rule-cards/pdf/07-mini-front.pdf",
+      "sha256": "6f7338d48383a4d39ad24273d528b22db91ac6bae4dc403d28c61bc79cdcb5de"
+    },
+    {
+      "path": "materials/rule-cards/pdf/08-mini-back.pdf",
+      "sha256": "d1e0ea15c210f81fd2028ca24361c6ed7962cfef49f95148872a21223b6416ba"
+    },
+    {
+      "path": "materials/rule-cards/pdf/PRINT-A4-landscape-short-edge.pdf",
+      "sha256": "ed608bc9db4491808843ac7608bf7f8c02dec45e8f76a739fd7bf2e132c5fd55"
+    },
+    {
+      "path": "materials/rule-cards/pdf/PRINT-A4-portrait-long-edge-mini.pdf",
+      "sha256": "4aa90d2b658746c8736d0855064bc1c6dbbe6642635700eab3ac13dc4d55690e"
+    },
+    {
+      "path": "materials/rule-cards/pdf/all-independent-cards.pdf",
+      "sha256": "728a728831b2a7ed60c091555980274258d9c0ad659a96bbe04d03f5bb1902e8"
+    },
+    {
+      "path": "materials/rule-cards/pdf/capture-mini-A6-duplex.pdf",
+      "sha256": "4402fe60240903d2085ba284295a95918bc89f1c5de06e97f7cc5260d1a998c4"
+    },
+    {
+      "path": "materials/rule-cards/pdf/detailed-A5-duplex.pdf",
+      "sha256": "736c0cd25999d6ce863f1b5fdff6ab09dc0c9fb64517f952ea2b0eedd035d262"
+    },
+    {
+      "path": "materials/rule-cards/pdf/main-rule-A5-duplex.pdf",
+      "sha256": "8dbd03fc2483195eb25ec4be3e2da19f3e0f4748b7b2859f9c460d0756552759"
+    },
+    {
+      "path": "materials/rule-cards/source/01-main-front.svg",
+      "sha256": "b114ac7eeaf22c93dc082714aeb9e2a5959edd9f180a97dfce4dd24432928038"
+    },
+    {
+      "path": "materials/rule-cards/source/02-main-back.svg",
+      "sha256": "cb07a88c03f7a283201e37c3a9c0b2e26c73673d7360cf3b0c3d6b97757ba1b0"
+    },
+    {
+      "path": "materials/rule-cards/source/03-detail-front.svg",
+      "sha256": "a47f34a0483f10fdf12b7735c03649491453a6175fd458cc3bab3a7ae115375d"
+    },
+    {
+      "path": "materials/rule-cards/source/04-detail-back.svg",
+      "sha256": "a990fe596dd9a17c39547a9660178afe5687ab0d19e22615723fa099315bb410"
+    },
+    {
+      "path": "materials/rule-cards/source/05-score.svg",
+      "sha256": "9256446d1cdd9384f4702372a3c8e1cc23fba7e4c9cbe4fcf047883dbf42cb9f"
+    },
+    {
+      "path": "materials/rule-cards/source/06-pathway.svg",
+      "sha256": "9eff91a03ef33ba60e8f33c0eb0cd23ba634f7a73837b8dd38bd37411fb62cf2"
+    },
+    {
+      "path": "materials/rule-cards/source/07-mini-front.svg",
+      "sha256": "dc6e26f6196ca42e460246aae8c0a10067158ce1ba8ed1fb50ca01bb8057a8e4"
+    },
+    {
+      "path": "materials/rule-cards/source/08-mini-back.svg",
+      "sha256": "0e0fe223605bfcccafe2ea77922a9d292b66015789cfa51db273354df1b02474"
+    },
+    {
+      "path": "materials/rule-cards/source/PRINT-A4-landscape-short-edge-01.svg",
+      "sha256": "49f6438de52d71a4e99e697c2800fd108c330b5d1ad71b5a27d4028adf69607a"
+    },
+    {
+      "path": "materials/rule-cards/source/PRINT-A4-landscape-short-edge-02.svg",
+      "sha256": "f661a8abcf1af7b1a2c6bb68faed6524d563ba78a33c79f585031e96490e5fdc"
+    },
+    {
+      "path": "materials/rule-cards/source/PRINT-A4-landscape-short-edge-03.svg",
+      "sha256": "43c4fe5a14931e7475406ca8ac5b31b9635f9eb642e5cad10d90daf06ff8bd59"
+    },
+    {
+      "path": "materials/rule-cards/source/PRINT-A4-landscape-short-edge-04.svg",
+      "sha256": "d2958fa634ebc7da19ec0ebe689007c4d40ac787cfc381636d9c50f0b0c18ea0"
+    },
+    {
+      "path": "materials/rule-cards/source/PRINT-A4-landscape-short-edge-05.svg",
+      "sha256": "f6eee8a680fbbe7945e8d6724af4ab831561cab9ed73b37a2cf85f0b905502c6"
+    },
+    {
+      "path": "materials/rule-cards/source/PRINT-A4-landscape-short-edge-06.svg",
+      "sha256": "da9b0b6dae1e633f2a317e369e9f6980aab752654f44e00690fcfe79d89fa025"
+    },
+    {
+      "path": "materials/rule-cards/source/PRINT-A4-portrait-long-edge-mini-01.svg",
+      "sha256": "0378ca2cb5d7c9d19354e45376e232905dbf14106bf33a086c11292a23fe423a"
+    },
+    {
+      "path": "materials/rule-cards/source/PRINT-A4-portrait-long-edge-mini-02.svg",
+      "sha256": "719d6ed0e8f627ae369f3adb3797336da3ad9b72fcb0e0b37dce7a691634b44b"
+    },
+    {
+      "path": "materials/rule-cards/source/build_cards.py",
+      "sha256": "c7b3d05841a985f854419e75102e3fe1b2f9cf76dc684c912f2c32c8f93d768d"
+    },
+    {
+      "path": "materials/rule-cards/source/make-contact.py",
+      "sha256": "138fc15bcfd06a61d38076ed69a6e70a5757178dce2559163ade173f4068c8c4"
+    },
+    {
+      "path": "materials/rule-cards/source/package.py",
+      "sha256": "33ae31096295776b43c11718669f6e6003faa73549371bd687318a496c666944"
+    },
+    {
+      "path": "materials/rule-cards/source/verify-demos.mjs",
+      "sha256": "b00d1de659f899d3e17530e769852546fd0cd6db9970237f50a85e9b02ba9ed0"
+    },
+    {
+      "path": "materials/rule-cards/source/verify-print.py",
+      "sha256": "3f288eef828d7bd0f14724d6a3f1c4512af41ccd5ee1fcd52b013e7d70b69d8c"
+    },
+    {
+      "path": "materials/rule-cards/validation/ACCEPTANCE.md",
+      "sha256": "a9c197455a65100f473a7a393672b3127191dae1441f5870b7071e1cec54eb82"
+    },
+    {
+      "path": "materials/rule-cards/validation/a4-1.png",
+      "sha256": "ef0b10e0718cf991af65a9f8eca40f4cbae31f2446d978ce170baa1973f2e529"
+    },
+    {
+      "path": "materials/rule-cards/validation/a4-2.png",
+      "sha256": "03a2dbb21214e96330552520084b827e62829360380a744e6993302cda192ea2"
+    },
+    {
+      "path": "materials/rule-cards/validation/a4-3.png",
+      "sha256": "53c6370fc63bb76a50f58b3ff791907f4eafb1fada26284efeeeb54f473bfe09"
+    },
+    {
+      "path": "materials/rule-cards/validation/a4-4.png",
+      "sha256": "4c653aa411965835be2db7b974d820389461961c50a0ad1b1363a6443efab7a1"
+    },
+    {
+      "path": "materials/rule-cards/validation/a4-5.png",
+      "sha256": "76eb667b23ff95a65e0bb859675fcf03e085ef29c596f5a51c5d75b13bbbb80e"
+    },
+    {
+      "path": "materials/rule-cards/validation/a4-6.png",
+      "sha256": "57bcdaf21917e0fb4849949a754f86a144c2946766a9c83df96232fd429feeba"
+    },
+    {
+      "path": "materials/rule-cards/validation/a4-contact-1.png",
+      "sha256": "e0a0b412fad342ac40550cd3ee1da604cf0b864cf65d25e37365145116d5787b"
+    },
+    {
+      "path": "materials/rule-cards/validation/a4-gray-1.png",
+      "sha256": "f19ce6631030f24c5b5fa16010a8f9cb95639f557b84de67b105576e5aa56e38"
+    },
+    {
+      "path": "materials/rule-cards/validation/card-1.png",
+      "sha256": "9874e002ace03934f265146ab02b562fa27495b3738d53af623678295530eeba"
+    },
+    {
+      "path": "materials/rule-cards/validation/card-2.png",
+      "sha256": "19da2d55d22ccb555122e1820224520b3b4f955066226b5804221e6c8f8e22ed"
+    },
+    {
+      "path": "materials/rule-cards/validation/card-3.png",
+      "sha256": "e05ab2eafd7bd73200d454f42cd3bf098439cc3ad34037a83235f622facc9d4e"
+    },
+    {
+      "path": "materials/rule-cards/validation/card-4.png",
+      "sha256": "a08aa2295e9d1a56c302593bd47812ad38431cb9fc0c5efcdcb867099e2ab612"
+    },
+    {
+      "path": "materials/rule-cards/validation/card-5.png",
+      "sha256": "53976172e02a23d7a0443f44eeffa72f4ea0115d4d95c24e344f47907e2e18f8"
+    },
+    {
+      "path": "materials/rule-cards/validation/card-6.png",
+      "sha256": "db842b9d1993d281601179ee6eaa434eaa4ad84bf2f3fd5ebb864d04615d46c7"
+    },
+    {
+      "path": "materials/rule-cards/validation/card-7.png",
+      "sha256": "27cd7d8829caaf88ec824ad0cec8ea7d96c9cb8261e0eaae8a3058803d9afdae"
+    },
+    {
+      "path": "materials/rule-cards/validation/card-8.png",
+      "sha256": "2f8ab05c14177f26ffe859ac7d1b404275c0ab40cdd2fdf7e76e30eb6ca4baf9"
+    },
+    {
+      "path": "materials/rule-cards/validation/card-contact-1.png",
+      "sha256": "708242b93413ad89b54e4fbd3d1c0170bd0a258a756d6da1388b77127ce9798e"
+    },
+    {
+      "path": "materials/rule-cards/validation/card-contact-2.png",
+      "sha256": "550456204d72f57ed51245d2c3166e07615510cbc19afdac3a9ce588efdaece4"
+    },
+    {
+      "path": "materials/rule-cards/validation/card-gray-1.png",
+      "sha256": "1808f24df5275dd886c1b8ef56925c70d5b31e86e71649e1cbdb4cf857473232"
+    },
+    {
+      "path": "materials/rule-cards/validation/card-gray-2.png",
+      "sha256": "4691ade8e35310a398955a336282d7c6024162b169260686c9c3102e6a1702a4"
+    },
+    {
+      "path": "materials/rule-cards/validation/engine-checks.json",
+      "sha256": "bbd31de1c58247ee871eb82f9344940e3e1802bd0dab1146b3eb4778e2594aeb"
+    },
+    {
+      "path": "materials/rule-cards/validation/input-manifest.json",
+      "sha256": "1452173f6081ab340115afc01fa191a1da62e4f8337adf6938578e1912267bab"
+    },
+    {
+      "path": "materials/rule-cards/validation/mini-1.png",
+      "sha256": "a1a458cda61f05f34a90f248c9defe4b48d3286c842b2a58a4be636d7c4d08cf"
+    },
+    {
+      "path": "materials/rule-cards/validation/mini-2.png",
+      "sha256": "cd720dcc42bc15cd857f9481a642982e46cfebd9bb98e46e27658357f5134498"
+    },
+    {
+      "path": "materials/rule-cards/validation/mini-contact-1.png",
+      "sha256": "4a171aca532603942dd83891ffeba27d7d7260a7f7000906292bae70f6f71538"
+    },
+    {
+      "path": "materials/rule-cards/validation/mini-gray-1.png",
+      "sha256": "e05d823629c6fdcdc5b599f9723ea07aae64c21a90f9e5016fb5f377314fcbc7"
+    },
+    {
+      "path": "materials/rule-cards/validation/print-checks.json",
+      "sha256": "40f41314d1cb2c4debb8ab4e16814040a78f98944e41acfb627e7e48789861cf"
+    },
+    {
+      "path": "materials/rule-cards/validation/text-geometry.json",
+      "sha256": "b49e1ecfa4622f9cb63775b01dd088fd598f98258167e4568281dbb076dc33b9"
+    },
+    {
+      "path": "materials/t12/peer-activity-one-page.md",
+      "sha256": "2af613d61c9f5cc31fb278242fe48f145ca72430d2b4c45d0e8002685549dc93"
+    },
+    {
+      "path": "materials/t13/territory-counting-card.md",
+      "sha256": "158917237f52ac5cca0fd2106823f28b5b2ce0310b24cd7bd455c10583de229b"
+    },
+    {
+      "path": "materials/t17/CAS-evidence-template.md",
+      "sha256": "02db2b62aefe8d0dc007f3a243a47d4f298f73c86169a42b65edba6be52e5bcc"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "sha256": "84a5b92eaabb8b26b2ed578cfc75b0065a001092a9c6878b42a1b844adee9b5a"
+    },
+    {
+      "path": "schemas/content.schema.json",
+      "sha256": "82a1a060ff48c7072aba29d5091c55e976eaed04e5d6af5787408885b07e2e88"
+    },
+    {
+      "path": "schemas/t17-evidence.schema.json",
+      "sha256": "2013cddc5d70c95a9ffa5e42e370fd5d49b90a0b0acd5c1517037e4be3d6d949"
+    },
+    {
+      "path": "src/core/constants.ts",
+      "sha256": "a05af8496eb3266d34cef5f8dedd7c6f9b6d83bd51a75bb50cbdda1b8d303028"
+    },
+    {
+      "path": "src/core/content.generated.d.ts",
+      "sha256": "051a94eda12a064248aac313a97a90c93336a934a13cf39583314c03b68b23b1"
+    },
+    {
+      "path": "src/core/coordinates.ts",
+      "sha256": "eb51c267c8f48bfea6538d439d3e5c0c43d6eeb4a1aefb5266da047add3a8b81"
+    },
+    {
+      "path": "src/core/game-history.ts",
+      "sha256": "82f77cabb0fd4f3dfb1d87f3e143126f401d8ae148dfa4f277d49f818a372bc3"
+    },
+    {
+      "path": "src/core/offline.ts",
+      "sha256": "52bf2b36cb0da6f53413adf151b356ba26c7e762a67438163b6b031d1a567be0"
+    },
+    {
+      "path": "src/core/persistence.ts",
+      "sha256": "8db6f37b16baeb76f82babd8288a2445ca1c338c1905986d8b8262009b4d95ef"
+    },
+    {
+      "path": "src/core/rules/contract.ts",
+      "sha256": "c83f724155ef53b8bfb625dbf502549e061b1aeb8c02d6db69ebf0352698cff0"
+    },
+    {
+      "path": "src/core/rules/engine.ts",
+      "sha256": "c26657287972a8afc1935c691c4cc649199d1070209eb8873ef72f2494b3e014"
+    },
+    {
+      "path": "src/core/rules/errors.zh.ts",
+      "sha256": "72b1cf7d81f6501117fbbd3908981a14605aa2d3912125c98811682811a8cc6d"
+    },
+    {
+      "path": "src/core/rules/game-store.ts",
+      "sha256": "6e24e8bce6f044eb440148e254b9645bbce7a8b15a97e369339d682534ff832c"
+    },
+    {
+      "path": "src/core/rules/index.ts",
+      "sha256": "55334977e115784fdbdd1b1726569b70ddd48f12e1e58529d4cbbe343e2e9d77"
+    },
+    {
+      "path": "src/core/rules/internal.ts",
+      "sha256": "f5709f56f5a7c84e26cb6cf0dc246847d7acecf40136a8f77449172ff2294e29"
+    },
+    {
+      "path": "src/core/rules/placement.ts",
+      "sha256": "b344b4291fe2fb77195030768c09e6018022eaa72c1ad668c4febf8c86b51d0b"
+    },
+    {
+      "path": "src/core/rules/scoring.ts",
+      "sha256": "9ec7fa559c40442bd132e1ee385aaf08911d56bafbc1c48b436caa8b3a5036d4"
+    },
+    {
+      "path": "src/core/rules/topology.ts",
+      "sha256": "5bcc0672e9f75fe1ce9845bdade83bc5a9008fa9a5bc1950dac13833df947596"
+    },
+    {
+      "path": "src/core/unified-persistence.ts",
+      "sha256": "f7c468e6a09b89d5d3479171778144d2308dc9abd70381d35eb9758a39b02ef8"
+    },
+    {
+      "path": "src/core/validation.ts",
+      "sha256": "152405b95158ae2e3a27b5b354c6ee7b4093b9661623bbd8050b503920aa2296"
+    }
+  ],
+  "restoredHistoricalGenerated": [
+    "docs/t24/checks/journey/chromium/full-game.png",
+    "docs/t24/checks/journey/chromium/offline-editor.png"
+  ],
+  "newEvidenceCaptured": [
+    "docs/online-tools/checks/regression-generated/docs/t24/checks/journey/chromium/full-game.png",
+    "docs/online-tools/checks/regression-generated/docs/t24/checks/journey/chromium/offline-editor.png"
+  ],
+  "violations": [],
+  "status": "passed"
+}

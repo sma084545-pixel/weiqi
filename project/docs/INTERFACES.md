@@ -212,3 +212,8 @@ server/rooms.ts的RoomHub维护单进程顺序事务，RoomRepository.load/save�
 ## GitHub Pages发布兼容
 
 onlineConnectionConfig(pageAddress,serverOrigin?)返回{endpoint,message}，纯函数、不发请求。Pages且未配置服务器时endpoint=null并提供恢复说明；配置HTTPS公网房间源后使用该源/api/online/ws，HTTPS前端拒绝不安全HTTP后台/凭据/查询参数/路径。OnlineGame只在endpoint存在时建立原OnlineClient，其他状态和引擎接口不变。PUBLIC_ORIGIN仍校验前端源；新增PUBLIC_APP_URL只决定邀请页面的完整URL，支持/weiqi子路径。version.json带共同顶层身份和实际程序版本，不表示已部署后台。
+
+
+## ONLINE_PLAY_TOOLS 兼容扩展
+
+聊天能力协商、独立瞬时消息类型和窗口受控展示接口见[详细约定](online-tools/INTERFACES.md)。protocolVersion=1/内容schemaVersion=1保持；不混入GameState或面积计分。

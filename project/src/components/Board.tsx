@@ -80,7 +80,7 @@ export function Board({
   },[resetViewKey,size]);
 
   useEffect(()=>{
-    if(!focusPoint||!grid.current?.contains(document.activeElement))return;
+    if(!focusPoint||!grid.current?.contains(grid.current.ownerDocument.activeElement))return;
     cells.current.get(activeIndex)?.focus({preventScroll:true});
   },[activeIndex,focusPoint]);
 

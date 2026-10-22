@@ -13,7 +13,7 @@ export async function createOnlineServer(options:{distDir:string;repository:Room
     response.setHeader('X-Content-Type-Options','nosniff');response.setHeader('Referrer-Policy','same-origin');
     if(request.method!=='GET'&&request.method!=='HEAD'){response.writeHead(405);response.end();return;}
     let pathname:string;try{pathname=decodeURIComponent(new URL(request.url??'/','http://local.invalid').pathname);}catch{response.writeHead(400);response.end();return;}
-    if(pathname==='/api/online/health'){response.setHeader('Content-Type',types['.json']);response.setHeader('Cache-Control','no-store');response.end(JSON.stringify({ready:true,protocolVersion:1,programVersion:APP_VERSION,rulesetId:'GO-CLUB-AREA-1'}));return;}
+    if(pathname==='/api/online/health'){response.setHeader('Content-Type',types['.json']);response.setHeader('Cache-Control','no-store');response.end(JSON.stringify({ready:true,protocolVersion:1,programVersion:APP_VERSION,capabilities:{roomChat:1},rulesetId:'GO-CLUB-AREA-1'}));return;}
     if(pathname.length>4096||pathname.includes('\0')||pathname.includes('\\')){response.writeHead(400);response.end();return;}
     const filename=resolve(dist,'.'+(pathname==='/'?'/index.html':pathname));
     if(!filename.startsWith(dist+sep)||!types[extname(filename)]||pathname.split('/').some(part=>part.startsWith('.'))){response.writeHead(404);response.end();return;}

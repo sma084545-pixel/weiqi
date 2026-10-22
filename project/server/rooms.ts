@@ -6,7 +6,7 @@ import WebSocket from 'ws';
 import type {Color,GameState,Size} from '../src/core/content.generated';
 import {RULE_ERROR_ZH,rulesEngine} from '../src/core/rules';
 import {createFullGameMatch,playAt,passTurn,resignGame,toggleDeadGroup,confirmScoreFor,resumeDisputedPlay,requestUndo,confirmUndo,refuseUndo,type FullGameMatch,type FullGameFlowResult} from '../src/features/full-game/model';
-import {compactGame,replayOnlineGame,readClientMessage,validatePublicRoom,ROOM_CODE,type ClientMessage,type PublicRoom,type ServerMessage} from '../src/features/online-game/protocol';
+import {compactGame,replayOnlineGame,readClientMessage,validatePublicRoom,ROOM_CODE,CHAT_HISTORY_LIMIT,type RoomChatSnapshot,type ClientMessage,type PublicRoom,type ServerMessage} from '../src/features/online-game/protocol';
 
 interface Seat {nickname:string;tokenHash:string;recentRequests:string[]}
 interface Room {code:string;version:number;match:FullGameMatch;players:Record<Color,Seat|null>;lastActive:number}
@@ -39,6 +39,8 @@ export class RoomHub {
   private rooms=new Map<string,Room>();
   private sockets=new Map<string,Map<Color,WebSocket>>();
   private memberships=new Map<WebSocket,{code:string;color:Color;token:string}>();
+  private chats=new Map<string,{snapshot:RoomChatSnapshot;seen:Record<Color,string[]>;sent:Record<Color,number[]>}>();
+  private chatSubscribers=new WeakSet<WebSocket>();
   private queue:Promise<void>=Promise.resolve();
   constructor(private repository:RoomRepository,private maxRooms=100,private idleMs=24*60*60*1000,private shareUrl?:string){}
   async load(){
@@ -70,18 +72,27 @@ export class RoomHub {
     const connections=this.sockets.get(room.code)??new Map<Color,WebSocket>(),old=connections.get(color);connections.set(color,socket);this.sockets.set(room.code,connections);this.memberships.set(socket,{code:room.code,color,token});room.lastActive=Date.now();
     if(old&&old!==socket){this.memberships.delete(old);old.close(4009,'SEAT_RECONNECTED');}
   }
-  private detach(socket:WebSocket){const member=this.memberships.get(socket);if(!member)return;this.memberships.delete(socket);if(this.sockets.get(member.code)?.get(member.color)===socket)this.sockets.get(member.code)?.delete(member.color);const room=this.rooms.get(member.code);if(room){room.lastActive=Date.now();this.broadcast(room);}}
+  private detach(socket:WebSocket){this.chatSubscribers.delete(socket);const member=this.memberships.get(socket);if(!member)return;this.memberships.delete(socket);if(this.sockets.get(member.code)?.get(member.color)===socket)this.sockets.get(member.code)?.delete(member.color);const room=this.rooms.get(member.code);if(room){room.lastActive=Date.now();this.broadcast(room);}}
   attach(socket:WebSocket){
-    this.send(socket,{protocolVersion:1,type:'hello',version:APP_VERSION,rulesetId:'GO-CLUB-AREA-1',shareUrl:this.shareUrl});
+    this.send(socket,{protocolVersion:1,type:'hello',version:APP_VERSION,rulesetId:'GO-CLUB-AREA-1',shareUrl:this.shareUrl,capabilities:{roomChat:1}});
     let count=0,windowStart=Date.now();
     socket.on('error',()=>{});
     socket.on('message',(data,binary)=>{
       if(Date.now()-windowStart>1000){windowStart=Date.now();count=0;}
       if(++count>40){this.error(socket,'RATE_LIMIT');socket.close(1008,'RATE_LIMIT');return;}
-      let message:ClientMessage;try{if(binary)throw Error('BAD_MESSAGE');message=readClientMessage(JSON.parse(data.toString()));}catch(error){this.error(socket,(error as Error).message);return;}
+      let message:ClientMessage;try{if(binary)throw Error('BAD_MESSAGE');message=readClientMessage(JSON.parse(data.toString()));}catch(error){if(this.chatSubscribers.has(socket))this.chatError(socket,(error as Error).message);else this.error(socket,(error as Error).message);return;}
       this.queue=this.queue.then(async()=>{if(socket.readyState===WebSocket.OPEN)await this.handle(socket,message);}).catch(()=>this.error(socket,'SAVE_FAILED',message.requestId));
     });
     socket.on('close',()=>{this.detach(socket);});
+  }
+  private chat(room:Room){
+    let chat=this.chats.get(room.code);
+    if(!chat){chat={snapshot:{schemaVersion:1,id:`ONLINE-CHAT-${room.code}`,revision:1,rulesetId:'GO-CLUB-AREA-1',kind:'OnlineRoomChat',code:room.code,messages:[]},seen:{B:[],W:[]},sent:{B:[],W:[]}};this.chats.set(room.code,chat);}
+    return chat;
+  }
+  private chatError(socket:WebSocket,code:string,requestId?:string){
+    const text:Record<string,string>={CHAT_BAD_TEXT:'请输入1至500字的文字，请勿包含控制字符。',CHAT_NOT_ENABLED:'聊天尚未就绪，请重新连接房间。',CHAT_RATE_LIMIT:'消息发得有点快，请等几秒再发送。'};
+    this.send(socket,{protocolVersion:1,type:'chat-error',requestId,code,message:text[code]??'聊天消息没有发送，请稍后重试；棋局不受影响。'});
   }
   private async handle(socket:WebSocket,message:ClientMessage){
     const member=this.memberships.get(socket);
@@ -108,6 +119,22 @@ export class RoomHub {
     }
     if(!member){this.error(socket,'NOT_IN_ROOM',message.requestId);return;}
     const room=this.rooms.get(member.code);if(!room){this.error(socket,'ROOM_NOT_FOUND',message.requestId);return;}
+    if(message.type==='enable-chat'){
+      this.chatSubscribers.add(socket);this.send(socket,{protocolVersion:1,type:'chat-state',requestId:message.requestId,chat:this.chat(room).snapshot});return;
+    }
+    if(message.type==='chat-send'){
+      if(!this.chatSubscribers.has(socket)){this.chatError(socket,'CHAT_NOT_ENABLED',message.requestId);return;}
+      const chat=this.chat(room),now=Date.now();
+      if(chat.seen[member.color].includes(message.requestId)){this.send(socket,{protocolVersion:1,type:'chat-state',requestId:message.requestId,chat:chat.snapshot});return;}
+      const recent=chat.sent[member.color].filter(at=>now-at<3000);
+      if(recent.length>=3){this.chatError(socket,'CHAT_RATE_LIMIT',message.requestId);return;}
+      chat.sent[member.color]=[...recent,now];chat.seen[member.color]=[...chat.seen[member.color].slice(-63),message.requestId];
+      const sequence=chat.snapshot.revision;
+      chat.snapshot={...chat.snapshot,revision:sequence+1,messages:[...chat.snapshot.messages,{id:`${room.code}-${sequence}`,sequence,color:member.color,nickname:room.players[member.color]!.nickname,text:message.text.replace(/\r\n/g,'\n').trim(),sentAt:new Date(now).toISOString()}].slice(-CHAT_HISTORY_LIMIT)};
+      room.lastActive=now;
+      for(const peer of this.sockets.get(room.code)?.values()??[])if(this.chatSubscribers.has(peer))this.send(peer,{protocolVersion:1,type:'chat-state',requestId:peer===socket?message.requestId:undefined,chat:chat.snapshot});
+      return;
+    }
     if(message.type==='leave'){this.detach(socket);this.send(socket,{protocolVersion:1,type:'left',requestId:message.requestId});return;}
     if(message.type==='sync'){this.state(socket,room,message.requestId);return;}
     if(message.type!=='act')return;
@@ -139,7 +166,7 @@ export class RoomHub {
   }
   async expire(){
     const expired=[...this.rooms.values()].filter(room=>!this.present(room,'B')&&!this.present(room,'W')&&Date.now()-room.lastActive>this.idleMs);
-    if(!expired.length)return;const codes=new Set(expired.map(room=>room.code));await this.repository.save([...this.rooms.values()].filter(room=>!codes.has(room.code)).map(room=>this.saved(room)));for(const code of codes){this.rooms.delete(code);this.sockets.delete(code);}
+    if(!expired.length)return;const codes=new Set(expired.map(room=>room.code));await this.repository.save([...this.rooms.values()].filter(room=>!codes.has(room.code)).map(room=>this.saved(room)));for(const code of codes){this.rooms.delete(code);this.chats.delete(code);this.sockets.delete(code);}
   }
   async close(){for(const socket of this.memberships.keys())socket.close(1001,'SERVER_SHUTDOWN');await this.queue;}
 }

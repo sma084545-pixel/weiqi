@@ -10,7 +10,7 @@ export function verifyOnlineDependencies(root=process.cwd()){
  assert.equal(change.schemaVersion,1);assert.equal(change.id,'ONLINE-DEPENDENCY-CHANGE');assert.equal(change.rulesetId,'GO-CLUB-AREA-1');assert.equal(change.resultVersion,'0.20.0-online.1');assert.equal(change.baseVersion,manifest.resultVersion);
  assert.equal(sha('docs/online/provenance/HISTORY-pnpm-lock.yaml'),change.baseLockSha256);assert.equal(change.baseLockSha256,manifest.files.find(item=>item.path==='pnpm-lock.yaml').sha256);
  assert.equal(sha('docs/online/provenance/HISTORY-package.json'),change.basePackageSha256);assert.equal(change.basePackageSha256,manifest.files.find(item=>item.path==='package.json').sha256);
- assert.equal(sha('pnpm-lock.yaml'),change.resultLockSha256);assert.match(current.version,/^0\.20\.\d+$/); // Deployment-only patches retain this exact audited lock.
+ assert.equal(sha('pnpm-lock.yaml'),change.resultLockSha256);assert.match(current.version,/^0\.(20|21)\.\d+$/); // Online UI/chat extension retains this exact audited dependency lock.
  assert.deepEqual(change.addedDependencies,{ws:'8.22.0'});assert.deepEqual(change.addedDevDependencies,{'@types/ws':'8.18.2'});
  assert.deepEqual(current.dependencies,{...base.dependencies,...change.addedDependencies});assert.deepEqual(current.devDependencies,{...base.devDependencies,...change.addedDevDependencies});
  return change;

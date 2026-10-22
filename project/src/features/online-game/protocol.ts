@@ -15,18 +15,26 @@ export interface PublicRoom {
   protocolVersion:1;code:string;record:OnlineGameRecord;scoring:ScoringDraft;undoRequest:UndoRequest|null;
   players:Record<Color,{nickname:string;connected:boolean}|null>;message:string;
 }
+export const CHAT_LIMIT=500;
+export const CHAT_HISTORY_LIMIT=50;
+export interface RoomChatMessage {id:string;sequence:number;color:Color;nickname:string;text:string;sentAt:string}
+/** Transient room transport; deliberately excluded from GameState and saved room files. */
+export interface RoomChatSnapshot {schemaVersion:1;id:string;revision:number;rulesetId:'GO-CLUB-AREA-1';kind:'OnlineRoomChat';code:string;messages:RoomChatMessage[]}
 export interface OnlineMembership {code:string;token:string;color:Color}
 export type ClientMessage=
   |{protocolVersion:1;type:'create';requestId:string;nickname:string;size:number;komi:number}
   |{protocolVersion:1;type:'join';requestId:string;nickname:string;code:string}
   |{protocolVersion:1;type:'resume';requestId:string;code:string;token:string}
   |{protocolVersion:1;type:'act';requestId:string;version:number;action:OnlineAction}
-  |{protocolVersion:1;type:'sync'|'leave';requestId:string};
+  |{protocolVersion:1;type:'sync'|'leave'|'enable-chat';requestId:string}
+  |{protocolVersion:1;type:'chat-send';requestId:string;text:string};
 export type ServerMessage=
-  |{protocolVersion:1;type:'hello';version:string;rulesetId:'GO-CLUB-AREA-1';shareUrl?:string}
+  |{protocolVersion:1;type:'hello';version:string;rulesetId:'GO-CLUB-AREA-1';shareUrl?:string;capabilities?:{roomChat?:1}}
   |{protocolVersion:1;type:'joined';requestId:string;membership:OnlineMembership;room:PublicRoom}
   |{protocolVersion:1;type:'state';requestId?:string;room:PublicRoom}
   |{protocolVersion:1;type:'left';requestId:string}
+  |{protocolVersion:1;type:'chat-state';requestId?:string;chat:RoomChatSnapshot}
+  |{protocolVersion:1;type:'chat-error';requestId?:string;code:string;message:string}
   |{protocolVersion:1;type:'error';requestId?:string;code:string;message:string;room?:PublicRoom};
 
 export const compactGame=(game:GameState):OnlineGameRecord=>({schemaVersion:1,id:game.id,revision:game.revision,rulesetId:game.rulesetId,kind:'OnlineGameRecord',setup:game.setup,komi:game.komi,events:game.moves});
@@ -73,12 +81,13 @@ export function validatePublicRoom(value:unknown):PublicRoom {
 
 export function readClientMessage(value:unknown):ClientMessage {
   if(!object(value)||value.protocolVersion!==1||typeof value.requestId!=='string'||!/^[A-Za-z0-9-]{1,80}$/.test(value.requestId))throw Error('BAD_MESSAGE');
-  const allowed:Record<string,string[]>={create:['nickname','size','komi'],join:['nickname','code'],resume:['code','token'],act:['version','action'],sync:[],leave:[]};
+  const allowed:Record<string,string[]>={create:['nickname','size','komi'],join:['nickname','code'],resume:['code','token'],act:['version','action'],sync:[],leave:[],'enable-chat':[],'chat-send':['text']};
   if(typeof value.type!=='string'||!Object.hasOwn(allowed,value.type)||Object.keys(value).some(key=>!['protocolVersion','type','requestId',...allowed[value.type as string]].includes(key)))throw Error('BAD_MESSAGE');
   if(value.type==='create'||value.type==='join')if(typeof value.nickname!=='string'||value.nickname.trim().length>32||/[\u0000-\u001f]/.test(value.nickname))throw Error('BAD_NICKNAME');
   if(value.type==='create'&&(![5,9,13,19].includes(value.size as number)||typeof value.komi!=='number'||!Number.isFinite(value.komi)))throw Error('BAD_SETTINGS');
   if((value.type==='join'||value.type==='resume')&&(typeof value.code!=='string'||!ROOM_CODE.test(value.code)))throw Error('BAD_ROOM_CODE');
   if(value.type==='resume'&&(typeof value.token!=='string'||!/^[A-Za-z0-9_-]{32,100}$/.test(value.token)))throw Error('ROOM_AUTH_FAILED');
+  if(value.type==='chat-send'&&(typeof value.text!=='string'||!value.text.trim()||value.text.length>CHAT_LIMIT||/[\u0000-\u0008\u000b-\u001f\u007f]/.test(value.text)))throw Error('CHAT_BAD_TEXT');
   if(value.type==='act'){
     if(!Number.isSafeInteger(value.version)||(value.version as number)<1||!object(value.action))throw Error('BAD_MESSAGE');
     const action=value.action;
@@ -88,4 +97,15 @@ export function readClientMessage(value:unknown):ClientMessage {
     if(hasPoint&&(!object(action.at)||!Number.isInteger(action.at.row)||!Number.isInteger(action.at.col)||Object.keys(action.at).some(key=>!['row','col'].includes(key))))throw Error('BAD_MESSAGE');
   }
   return value as unknown as ClientMessage;
+}
+
+export function validateRoomChat(value:unknown):RoomChatSnapshot {
+  if(!object(value)||value.schemaVersion!==1||value.rulesetId!=='GO-CLUB-AREA-1'||value.kind!=='OnlineRoomChat'||typeof value.code!=='string'||!ROOM_CODE.test(value.code)||value.id!==`ONLINE-CHAT-${value.code}`||!Number.isSafeInteger(value.revision)||(value.revision as number)<1||!Array.isArray(value.messages)||value.messages.length>CHAT_HISTORY_LIMIT)throw Error('聊天同步格式不正确，请重连后重试。');
+  let previous=0;
+  for(const item of value.messages){
+    if(!object(item)||!Number.isSafeInteger(item.sequence)||(item.sequence as number)<=previous||item.id!==`${value.code}-${item.sequence}`||!['B','W'].includes(item.color as string)||typeof item.nickname!=='string'||item.nickname.length>32||typeof item.text!=='string'||!item.text.trim()||item.text.length>CHAT_LIMIT||/[\u0000-\u0008\u000b-\u001f\u007f]/.test(item.text)||typeof item.sentAt!=='string'||!Number.isFinite(Date.parse(item.sentAt)))throw Error('聊天内容未通过校验，请重新连接。');
+    previous=item.sequence as number;
+  }
+  if(previous>(value.revision as number)-1)throw Error('聊天序号不一致，请重新连接。');
+  return value as unknown as RoomChatSnapshot;
 }

@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "id": "RENDER-DEPLOYMENT-CONFIG-PUBLICATION",
-  "revision": 3,
+  "revision": 4,
   "rulesetId": "GO-CLUB-AREA-1",
-  "baseVersion": "0.20.2-pages.1",
-  "resultVersion": "0.20.3-pages.1",
-  "programVersion": "0.20.3",
-  "status": "complete-with-documented-hosting-limits",
+  "baseVersion": "0.20.3-pages.1",
+  "resultVersion": "0.21.0-pages.1",
+  "programVersion": "0.21.0",
+  "status": "frontend-ready-backend-chat-awaiting-manual-deploy",
   "website": "https://sma084545-pixel.github.io/weiqi/",
   "serverOrigin": "https://weiqi-rooms.onrender.com",
   "observedServerProgramVersion": "0.20.2",
@@ -14,8 +14,8 @@
   "roomsEphemeral": true,
   "healthAndWssProbe": "project/docs/render/checks/service-probe.json",
   "guide": "RENDER_SETUP.md",
-  "note": "Created by user; Render dashboard access not available. Program patch keeps server rules and wire protocol unchanged.",
-  "verification": {
+  "note": "User-created existing service. Optional roomChat=1 negotiation added; old service still allows games, chat awaits backend update. No paid service changes.",
+  "previousVerification": {
     "actualPublicOrigin": "https://sma084545-pixel.github.io/weiqi/",
     "publicRoomJourney": "project/docs/render/checks/public-journey.json",
     "responsiveAndNetwork": "project/docs/render/checks/public-responsive.json",
@@ -23,5 +23,10 @@
     "independentBrowserContexts": true,
     "physicalDevices": false,
     "pageErrors": 0
+  },
+  "verification": {
+    "local": "project/docs/online-tools/ACCEPTANCE.md",
+    "publicChat": "not-yet-tested-awaiting-Render-update",
+    "handbook": "project/handoff/ONLINE_PLAY_TOOLS.md"
   }
 }

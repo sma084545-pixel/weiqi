@@ -1,53 +1,23 @@
 ---
 schemaVersion: 1
 id: DOC-README
-revision: 25
+revision: 26
 rulesetId: GO-CLUB-AREA-1
 ---
 
-# 围棋社工具包 · 原网址同步 · 0.20.2-pages.1
+# 围棋社工具包 · 0.21.0
 
-新增**联机对弈**：两人打开同一个可访问的网站，一人创建房间，另一人输入房间码；无需注册或真实姓名。棋盘5/9/13/19路、默认9路与0贴目，双方各执一色。服务端用原规则引擎验证落子和提子，支持停手、认输、双方悔棋、断线恢复、终局双方确认后自动面积计分，以及每人独立的棋局滑动条。
+原网站保持 https://sma084545-pixel.github.io/weiqi/ ，联机入口 #/play/online。新增可拖动悬浮棋盘、独立画中画、最大化/系统全屏及房间双人聊天。使用与兼容边界见[窗口与聊天](docs/online-tools/USAGE.md)，更新服务器见[部署指南](docs/online-tools/DEPLOYMENT.md)。本次主线基线RENDER_DEPLOY 0.20.3-pages.1；保留GO-CLUB-AREA-1、schemaVersion1、30题/6终局、课件纸卡和原存储。
 
-当前程序0.20.2，唯一基线ONLINE_PLAY 0.20.0-online.1；GitHub Pages同步交接见handoff/GITHUB_PAGES_SYNC.md。正式30题/6终局、材料、规则、schema和本机存储保持；新增可选Node房间服务。学习进度、草稿、反馈不上传；只有主动联机时发送昵称、棋局、操作与连接状态。尚未公开部署网站。
+## 本地运行与构建
 
-正式网站仍为 https://sma084545-pixel.github.io/weiqi/ 。页脚显示版本号，version.json可核对生产版本。GitHub Pages提供最新静态教学与同屏功能；联机房间服务尚未接入时明确提示，不能仅靠静态托管同步两台设备。管理员接入方法见docs/github-pages/ONLINE_SETUP.md。旧版先保存当前工作，再应用更新，不清除本机记录。
+已构建完整包/软件包含dist和dist-server，有兼容Node即可运行`node dist-server/server.mjs`；默认http://127.0.0.1:4190/。也可打开“启动联机对弈.command”；Ctrl+C停止服务。本机地址不能发给异地伙伴。
 
-## 启动
+源码：从工程目录执行`corepack pnpm install --frozen-lockfile`、`corepack pnpm build`、`corepack pnpm start`；发布原GitHub网站用`corepack pnpm build:pages`。Node22.22.2起的22系、24.15起的24系或26+；锁定pnpm11.19.0与现有依赖。纯前端开发`pnpm dev`不提供房间接口。无AI API、账号、付费服务或默认学习数据上传。
 
-已附生产构建和打包的服务；有Node时可直接启动，不需要node_modules：
+检查：`corepack pnpm check`、`corepack pnpm test:browser`、`corepack pnpm test:online`、`corepack pnpm test:pages`。实际命令、结果及限制在docs/online-tools/checks/和handoff/ONLINE_PLAY_TOOLS.md。本机学习离线与房间联网分别验证；升级先保存备份再应用，不清站点数据。
 
-```sh
-node dist-server/server.mjs
-```
-
-macOS可双击“启动联机对弈.command”。默认监听0.0.0.0:4190，浏览器打开http://127.0.0.1:4190/#/play/online。终端显示可供同网伙伴尝试的局域网地址；localhost只能供本机使用。跨地点需要自行部署到双方能访问的服务器，见[启动与部署](docs/online/DEPLOYMENT.md)。本交付没有购买、外发或自动发布。
-
-源码安装、构建和启动：
-
-```sh
-pnpm install --frozen-lockfile
-pnpm build
-pnpm start
-```
-
-纯本机教学开发用pnpm dev；它是静态前端服务，不提供联机接口。修改后端可pnpm dev:online，修改前端后需重建。只有主机需要Node；参与者仅用浏览器。同屏对弈仍在#/play/free；既有离线教学可单独从dist启动静态服务。
-
-## 使用与验证
-
-先读[联机使用说明](docs/online/USAGE.md)、[协议与存储](docs/online/PROTOCOL.md)、[验收记录](docs/online/ACCEPTANCE.md)、[已知限制](docs/online/KNOWN_ISSUES.md)和[本次交接](handoff/ONLINE_PLAY.md)。当前逐文件版本以RELEASE_MANIFEST.json与work/release/LATEST.json为准；下方T24记录为历史来源，不代表本次程序版本。
-
-```sh
-pnpm check
-pnpm test:browser
-pnpm test:online
-pnpm test:online-browser
-python3 scripts/verify-online-preservation.py
-```
-
-check覆盖47文件382个单元检查与现有完整内容/构建/离线/引擎验证。test:browser先跑静态本机界面，再启动真正Node服务跑双浏览器联机，不能用静态预览冒充WebSocket检查。Node和pnpm要求沿用package.json，锁文件记录仅新增ws与其类型。浏览器、断网、归档复查等实际范围见验收报告。
-
-保持原来源/端口可沿用本机记录。更新前备份、保存当前工作后应用新版本，再准备离线缓存。房间数据独立保存在服务器runtime-data/，不混入下载包；备份/更新需停止房间服务后复制私有文件。首次准备完成的本机教学可离线，联机房间需要服务连接。file://不具备同等运行能力。
+联机服务器为https://weiqi-rooms.onrender.com，聊天需部署0.21.0并重新连接。服务端以共同规则验证双方轮次、提子、超级劫、悔棋与终局清单。预览不等于死活裁判，双方确认后才形成面积分。聊天仅当前房间两位伙伴临时文字，不混入棋谱；正式题库和本机教师草稿、反馈不上传。
 
 ---
 

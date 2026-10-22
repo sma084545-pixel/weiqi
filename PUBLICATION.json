@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "id": "GITHUB-PAGES-PUBLICATION",
-  "revision": 7,
+  "revision": 9,
   "rulesetId": "GO-CLUB-AREA-1",
-  "resultVersion": "0.20.3-pages.1",
-  "programVersion": "0.20.3",
+  "resultVersion": "0.21.0-pages.1",
+  "programVersion": "0.21.0",
   "siteUrl": "https://sma084545-pixel.github.io/weiqi/",
   "sourceDirectory": "project/",
   "formalPuzzles": 30,
@@ -13,12 +13,12 @@
   "onlineServerConfigured": true,
   "onlineServerOrigin": "https://weiqi-rooms.onrender.com",
   "onlineRoomsEphemeral": true,
-  "onlineStatus": "Public room server configured; actual journey evidence in docs/render.",
+  "onlineStatus": "Public room server configured; capability-negotiated chat; current verification in docs/online-tools.",
   "files": [
     {
       "path": "ONLINE_SETUP.md",
-      "bytes": 2309,
-      "sha256": "d0fa44edfe7965446c1e2be01172695130d3100e903cd01cd63c1682bf608a02"
+      "bytes": 2770,
+      "sha256": "8ae3e79ec1af82ecd81d4f2d2670d9c6643050cb2502ec400529eff89ce3a3ff"
     },
     {
       "path": "app.webmanifest",
@@ -26,14 +26,14 @@
       "sha256": "26ae2d10fc5b45982ae4f4f593aaa93b781d4ff63a8bfe2166bc392d01cc9b50"
     },
     {
-      "path": "assets/index-D5QJxBHW.css",
-      "bytes": 128955,
-      "sha256": "51295d933c6192ff468e67f24321d55e105f7ff64b60b6bc0c2495ddd48fd99a"
+      "path": "assets/index-DL-R1VRT.css",
+      "bytes": 134874,
+      "sha256": "49885c067d707e71421b298d8ec964e6b2dccb436964db09afea73383a92d30a"
     },
     {
-      "path": "assets/index-DP2hyDxq.js",
-      "bytes": 1003066,
-      "sha256": "9b48594aa77768f6c923d508e4b10ed06ee0b3082b4b7ebca00872cd2c21b5f6"
+      "path": "assets/index-DzTPtWEk.js",
+      "bytes": 1016179,
+      "sha256": "6616f6d9c34fda0103af34ba29e0c97f5dad74ad769dff2ebba870c647f37586"
     },
     {
       "path": "content/formal-content-v1.json",
@@ -48,7 +48,7 @@
     {
       "path": "index.html",
       "bytes": 640,
-      "sha256": "f29530f10476bacf6f020c30217d47930d82c9b0143cbb1fabb0b042e12f41cf"
+      "sha256": "0a9b41f3cf06a0bf19611385019752da2e50ccd68d33c35c1bb499756493ab42"
     },
     {
       "path": "materials/t13/territory-counting-card.md",
@@ -63,7 +63,7 @@
     {
       "path": "offline-assets.json",
       "bytes": 411,
-      "sha256": "49689baa2331deb03b1345c2d5ba712364676bebfb581c25443804529ce6dc14"
+      "sha256": "3af06db4a07b7ea10ffe21c23d8f1d690c404797acfd34189e8575c4deaa923e"
     },
     {
       "path": "offline.html",
@@ -73,13 +73,13 @@
     {
       "path": "sw.js",
       "bytes": 3694,
-      "sha256": "bb002d21696a680d55f1f03625f17e00e7e9975b7757312c7469e9e256b756a5"
+      "sha256": "0d1e74d6714d6595fe8033cb361a1b49a65ebe6875840b100108e4d3ac5d9e23"
     },
     {
       "path": "version.json",
       "bytes": 365,
-      "sha256": "c4b5e0b98db390b8f75732eb76f8ea5640ebb47ad41931dfa8ee3c5bd9c710e0"
+      "sha256": "1c79a7172e9e5c1866d43549f45f98bf831b8047e332ba8b9fb089907cceefab"
     }
   ],
-  "sourceManifestSha256": "60d3c35cd83fb436b49e59c8e0660b4adee402d31e09b79754ace4431407ab3b"
+  "sourceManifestSha256": "acee1c47f0dc4c938f94d12f8281afbfc7eef871fbecbcb6d16523eb82c7227b"
 }

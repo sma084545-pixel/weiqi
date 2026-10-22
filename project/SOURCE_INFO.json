@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "id": "GITHUB-CURRENT-SOURCE",
-  "revision": 7,
+  "revision": 9,
   "rulesetId": "GO-CLUB-AREA-1",
-  "resultVersion": "0.20.3-pages.1",
-  "programVersion": "0.20.3",
+  "resultVersion": "0.21.0-pages.1",
+  "programVersion": "0.21.0",
   "sourceBuild": "pnpm install --frozen-lockfile && pnpm build",
   "note": "Buildable source and materials; installed dependencies, private data and generated root build/output excluded. Full release archive includes production builds and all evidence.",
   "files": [
@@ -20,8 +20,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 23863,
-      "sha256": "c5a27675ba48513ab6183266b971457737cbac525247a57f576d4b73504620ba"
+      "bytes": 24297,
+      "sha256": "b2ae17fbf5f620145c9e8ce98aa309c869f8a510cc3fd1ba74c022d800fb4ab0"
     },
     {
       "path": "MERGE_C_RELEASE_MANIFEST.json",
@@ -30,8 +30,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 9026,
-      "sha256": "7772a85c6fe0f676337faf39922f87033151ce90c6537a9208a49d7f3b6e700f"
+      "bytes": 7459,
+      "sha256": "a8cf9444e928aa18dd4ba875ea9bf3f642fe7b87cf237bf07d147305b9bede8e"
     },
     {
       "path": "README_MERGE_C.md",
@@ -40,8 +40,8 @@
     },
     {
       "path": "SOURCES.md",
-      "bytes": 20757,
-      "sha256": "475c2c77c7c421131493acc94895a50598e845d1cb00e67c077d18c025c3af7e"
+      "bytes": 21342,
+      "sha256": "f7b055e8702931b2e296c633237b068a3e6ff8c1ae411841de026617b40b56f8"
     },
     {
       "path": "index.html",
@@ -51,12 +51,12 @@
     {
       "path": "package.json",
       "bytes": 3843,
-      "sha256": "22620e93abc117e87a39413748fd6b556f430ebcb64f14e2de787949f4980442"
+      "sha256": "5610e1866ac309efe60444df2443396e8969f047af8c31cc8f0ac144a6facc98"
     },
     {
       "path": "playwright.config.ts",
-      "bytes": 452,
-      "sha256": "01ee5cde562b224264cb0e87aaa074a2cb9587d3767a47f72c4e4d261e4484e3"
+      "bytes": 465,
+      "sha256": "52ed8fedd66f1228b7e38ee3636adc8145a71ab9474928388b8a24d8e5bb9462"
     },
     {
       "path": "playwright.history-webkit.config.ts",
@@ -70,8 +70,8 @@
     },
     {
       "path": "playwright.online.config.ts",
-      "bytes": 495,
-      "sha256": "1102d307eaef342a2c9814fd85333605e7ea353da5e5d7d49744cc1f83663dee"
+      "bytes": 508,
+      "sha256": "779bf3201f1f2de54a96f21e00e004ecfff813dfcd15bb59622a65f7ac94b5fc"
     },
     {
       "path": "pnpm-lock.yaml",
@@ -3914,6 +3914,11 @@
       "sha256": "3130320382369df2fbd03873c16e9651ed32eda2793cd885242f8f3d3112a156"
     },
     {
+      "path": "handoff/ONLINE_PLAY_TOOLS.md",
+      "bytes": 2766,
+      "sha256": "52b870796e2f4b2bb35ed6e1db27df54069478980a9728a8ba50b4266e376fa0"
+    },
+    {
       "path": "handoff/RENDER_DEPLOY.md",
       "bytes": 3942,
       "sha256": "8c016c9d624afbf4e30dcbd9fdf2fc4acc424254b0233fd37500c4606e81c82c"
@@ -4199,6 +4204,11 @@
       "sha256": "1afc6647a5587389d915b549832c1972d44e29036c428d2741b86d0af24bcab7"
     },
     {
+      "path": "tests/browser/online-tools.spec.ts",
+      "bytes": 10207,
+      "sha256": "1723d80cd039f06196bd95f7c21faedb60f6f9f28b99e7c1bf6b6e51ee28d522"
+    },
+    {
       "path": "tests/browser/online.spec.ts",
       "bytes": 11798,
       "sha256": "19e36de0d441c4737f576259a2244fbf4b50e2e5d18195f8bfa7bb3860febe41"
@@ -4276,7 +4286,7 @@
     {
       "path": "tests/browser/t16.spec.ts",
       "bytes": 9299,
-      "sha256": "f31b961b0543d374386f9797db95e31874af9bac77f3b2fcf4875a8bb61cb0ba"
+      "sha256": "1d0bd9f85f2046d3f3b61f3779fd8481e33f9604b44c64e680b7744175d05556"
     },
     {
       "path": "tests/browser/t17.spec.ts",
@@ -4385,8 +4395,13 @@
     },
     {
       "path": "tests/online/server.test.ts",
-      "bytes": 13907,
-      "sha256": "b9f5304a789fc1bcc253b7e4fd13a11513b1154f7dd6f8da7049006ac5c23649"
+      "bytes": 18500,
+      "sha256": "ed1db50c0596c688144ee0fc08c54c779193e1fd02ddb1e8bfc9379763dc6cab"
+    },
+    {
+      "path": "tests/online/tools.test.ts",
+      "bytes": 1585,
+      "sha256": "f4380ff5ed8a65a245e725f6ff556ea66c986c11c75be0c0778e9c2a7f5ec78a"
     },
     {
       "path": "tests/t08/model.test.ts",
@@ -5610,8 +5625,8 @@
     },
     {
       "path": "server/http.ts",
-      "bytes": 4297,
-      "sha256": "76dfdbd57b730250bbedcf64fda26be108482917f445b30a197c087d759a248e"
+      "bytes": 4323,
+      "sha256": "affdfb8e3e9c750ac47203e2cd9e8313119206f118fa3177803a00d71ab760d5"
     },
     {
       "path": "server/index.ts",
@@ -5620,8 +5635,8 @@
     },
     {
       "path": "server/rooms.ts",
-      "bytes": 16608,
-      "sha256": "3eb4069456a4b105f6e986f2dd5fccd2d25aa10f4bb109eac516766bc41f3cde"
+      "bytes": 19299,
+      "sha256": "044ac085e3f12bdc9ce09cbbb5bc1e7731d8c185216f004eb6d61c5dd761968b"
     },
     {
       "path": "docs/ACCEPTANCE.md",
@@ -5645,8 +5660,8 @@
     },
     {
       "path": "docs/INTERFACES.md",
-      "bytes": 34560,
-      "sha256": "af3cee2d39ccb85eb78473847bc7204e3f92ceb8ec88925aa414fcfa7de10972"
+      "bytes": 34802,
+      "sha256": "72dd61bc25da3d1ee85490372535990049a1866d4936b4fc776877cbed5de912"
     },
     {
       "path": "docs/PROJECT_CONTRACT.md",
@@ -5705,8 +5720,8 @@
     },
     {
       "path": "docs/github-pages/ONLINE_SETUP.md",
-      "bytes": 2309,
-      "sha256": "d0fa44edfe7965446c1e2be01172695130d3100e903cd01cd63c1682bf608a02"
+      "bytes": 2770,
+      "sha256": "8ae3e79ec1af82ecd81d4f2d2670d9c6643050cb2502ec400529eff89ce3a3ff"
     },
     {
       "path": "docs/github-pages/changed-files.json",
@@ -6177,6 +6192,151 @@
       "path": "docs/github-pages/checks/journey/docs/t24/checks/journey/chromium/offline-editor.png",
       "bytes": 526355,
       "sha256": "5e8bff76b9e318f14aeb5045a7419319342374f9740ba36e18d65f7b5fe8f57e"
+    },
+    {
+      "path": "docs/online-tools/ACCEPTANCE.md",
+      "bytes": 2841,
+      "sha256": "3369f667ff26efa7085e764ff0ef71a61d06ee75e0931b027496edfefe351945"
+    },
+    {
+      "path": "docs/online-tools/BASE-MANIFEST.json",
+      "bytes": 533506,
+      "sha256": "3572ec6303ceb66bbbe855521fde51c63901f6d035f74b65a36640038d2704ac"
+    },
+    {
+      "path": "docs/online-tools/DEPLOYMENT.md",
+      "bytes": 2384,
+      "sha256": "00288db78ee2a5b584b077eca1235146e368cdbe356b7aec1b7c12fc3a9d2644"
+    },
+    {
+      "path": "docs/online-tools/INTERFACES.md",
+      "bytes": 2777,
+      "sha256": "7235fa1c338039235e2a978e041555275394b26e59579977f9e6c13f1cb0724f"
+    },
+    {
+      "path": "docs/online-tools/KNOWN_ISSUES.md",
+      "bytes": 1087,
+      "sha256": "29f393756cdb52484c70945f64871fa9fc474de7f2a89e38c91ceb0288258115"
+    },
+    {
+      "path": "docs/online-tools/USAGE.md",
+      "bytes": 2284,
+      "sha256": "7c9f602be08026ff64a018863adf996276b74731135fff635466564318befb1e"
+    },
+    {
+      "path": "docs/online-tools/checks/browser-final.log",
+      "bytes": 2753,
+      "sha256": "3422e112292c55ea0ad146538413f06194bc8960f00cc97f1a137a32df7b819c"
+    },
+    {
+      "path": "docs/online-tools/checks/browser-tests-rerun.log",
+      "bytes": 2754,
+      "sha256": "1e081ce7ff86d59070b0fc531db1709b978753a315d2ef7a7aefdba074046801"
+    },
+    {
+      "path": "docs/online-tools/checks/browser-tests.log",
+      "bytes": 5857,
+      "sha256": "647eb0e134afee56c029304d5b438bcf7847e896b766ccfd314e3a132b996bbb"
+    },
+    {
+      "path": "docs/online-tools/checks/build-initial.log",
+      "bytes": 1144,
+      "sha256": "de3a47e1ecc6b4e0894a48a191b1180e1d981bc4b7b518c9780aef123adb6be7"
+    },
+    {
+      "path": "docs/online-tools/checks/build-pages.log",
+      "bytes": 1181,
+      "sha256": "2618bd9e66e496b1b34c24847171e9948c35256319d689b8aaa80881f3b74f58"
+    },
+    {
+      "path": "docs/online-tools/checks/build-tools.log",
+      "bytes": 1144,
+      "sha256": "08b4b78c29fae942bca8089c3f5730f21ca18a32cf44491fdb5338d8d6f6da25"
+    },
+    {
+      "path": "docs/online-tools/checks/full-check.log",
+      "bytes": 6818,
+      "sha256": "154d105e2f472932f5e84758ad3488fc053e7b3737e13cca74c7d2cb33ebcad2"
+    },
+    {
+      "path": "docs/online-tools/checks/pages-tests.log",
+      "bytes": 360,
+      "sha256": "7072157d3509520889fa4ad07e8e84e4c6c2a4398e737d661e46f16d07f1e357"
+    },
+    {
+      "path": "docs/online-tools/checks/preservation.json",
+      "bytes": 173350,
+      "sha256": "50223af4323b4d189dbc47053fe2b88ca75c8ed79415001f7296f2c0c7489418"
+    },
+    {
+      "path": "docs/online-tools/checks/server-initial.log",
+      "bytes": 359,
+      "sha256": "0df1431139f0a4dc7609fb9cc800d8537976a1cf5b002d7da21299283ac0c2c1"
+    },
+    {
+      "path": "docs/online-tools/checks/server-tests.log",
+      "bytes": 361,
+      "sha256": "97106fe7dbf7ed1792e42061316dd91fce43cfa24008f5849f107f82f1e87b59"
+    },
+    {
+      "path": "docs/online-tools/checks/static-browser.log",
+      "bytes": 22362,
+      "sha256": "9ab2480ae8cff1d82bad51f58e67fdd010f0ca753753f031192e8811f83a46f0"
+    },
+    {
+      "path": "docs/online-tools/checks/regression-generated/docs/t24/checks/journey/chromium/full-game.png",
+      "bytes": 289050,
+      "sha256": "0fad32016a829bc165a9b87865ce402983e4778ccd5233905285746b42b19bc6"
+    },
+    {
+      "path": "docs/online-tools/checks/regression-generated/docs/t24/checks/journey/chromium/offline-editor.png",
+      "bytes": 526476,
+      "sha256": "8df8bd503ab4afe1faf7b0044b756c5696c3c9fa747ce34335301ad4a8ad4af7"
+    },
+    {
+      "path": "docs/online-tools/checks/browser/1280-maximized.png",
+      "bytes": 73673,
+      "sha256": "39c53cbbd440e69c8d27deed9aa3b8552e0f13d19a28f2c8ccb3cad354a1f4e7"
+    },
+    {
+      "path": "docs/online-tools/checks/browser/360-maximized.png",
+      "bytes": 41963,
+      "sha256": "7d2c0c03abcf1d9edc38ed3ab062e8f9d4488be1c2cc62af7b51420167eecfc5"
+    },
+    {
+      "path": "docs/online-tools/checks/browser/768-maximized.png",
+      "bytes": 54626,
+      "sha256": "ab925049e49661873bc95f01d1f29a04531457bf369dc20cb415f28a6ef01fe8"
+    },
+    {
+      "path": "docs/online-tools/checks/browser/chat.png",
+      "bytes": 273160,
+      "sha256": "dd451949078eab8c321be2d48c4441f41a8df6df06d5dc83e28f4a02a19adf34"
+    },
+    {
+      "path": "docs/online-tools/checks/browser/native-pip.json",
+      "bytes": 118,
+      "sha256": "7d0308af7b67785e833bd216c09261b8d68d90b2a29f94233e92007604fb8c45"
+    },
+    {
+      "path": "docs/online-tools/checks/browser/regression/1280-live-room.png",
+      "bytes": 272027,
+      "sha256": "bd013f1289f116eb95d567f16a55f863014f4f192723ad483d520752a8d5fa3f"
+    },
+    {
+      "path": "docs/online-tools/checks/browser/regression/1280-room.png",
+      "bytes": 266607,
+      "sha256": "3d76c5548c6d1872781d6711e64f6efca42958051c9a9185233eeee1181195d5"
+    },
+    {
+      "path": "docs/online-tools/checks/browser/regression/360-room.png",
+      "bytes": 238691,
+      "sha256": "2aa3c18a10348f39d36524222a9c9df93d92d52423b4a5a19279f938b7327fcd"
+    },
+    {
+      "path": "docs/online-tools/checks/browser/regression/768-room.png",
+      "bytes": 252912,
+      "sha256": "ddf754d8a043873ddea9a1770bd1e14fb9aa25edd0c0a56f889bda17279c24d3"
     },
     {
       "path": "docs/t11/ACCEPTANCE.md",
@@ -12870,8 +13030,8 @@
     },
     {
       "path": "scripts/sync-github-pages.py",
-      "bytes": 7067,
-      "sha256": "2e469abac659d3fcca1851b577cbb66286c9ae9ca7f5d3132107fd64b5ac5136"
+      "bytes": 7153,
+      "sha256": "c9379ff10b684f25a32a08ad8131a421f40a75c5bfa4e6beeff8ac0047ab7a6a"
     },
     {
       "path": "scripts/validate-content.ts",
@@ -12920,13 +13080,18 @@
     },
     {
       "path": "scripts/verify-online-dependencies.mjs",
-      "bytes": 2060,
-      "sha256": "b43ab4cc4a3e66fe098b3e6bf4239871ed4bf4086340040b0fa1409dd77de729"
+      "bytes": 2078,
+      "sha256": "d8360f7528500524f6c4af9f0dd4729b0a9e76e6a63a3e856a9714568a58fd46"
     },
     {
       "path": "scripts/verify-online-preservation.py",
       "bytes": 1546,
       "sha256": "19d3cc783d8a0d713ca672ff73220572fe0c932863e69a2a1c7aca79499b6326"
+    },
+    {
+      "path": "scripts/verify-online-tools-preservation.py",
+      "bytes": 2588,
+      "sha256": "8ffb6309e4a1f087794e07cf3736c50de0ffff748274f15d2c020d2a0cb189ef"
     },
     {
       "path": "scripts/verify-t01.py",
@@ -13056,7 +13221,7 @@
     {
       "path": "src/core/version.ts",
       "bytes": 117,
-      "sha256": "c84f962d8ce68947a07929d0438dab0fc6288aec1e1e18ca29fa2aa00f46ae47"
+      "sha256": "e9ac281180eb63e03ef7c23349e1f1e1726904d3d1c20fb00cb9177f4c97853e"
     },
     {
       "path": "src/core/rules/contract.ts",
@@ -13304,19 +13469,34 @@
       "sha256": "f2acbb73e5e5beb0c61e357d7db51cd006040cbd58709dbf87cdc0a0e716046f"
     },
     {
+      "path": "src/features/online-game/BoardDisplayTools.tsx",
+      "bytes": 7793,
+      "sha256": "3d3010aee8cf2d65b2ee9d9e2c782be66f33de2f5d5054d44fc91d4892e6674e"
+    },
+    {
       "path": "src/features/online-game/OnlineGame.css",
       "bytes": 6019,
       "sha256": "1e6ad21a5a08a8e1f289fc582e9b671b077dc98bc3c64c145c60e0742a77948f"
     },
     {
       "path": "src/features/online-game/OnlineGame.tsx",
-      "bytes": 15154,
-      "sha256": "a5e6dbb860230b0a1e718422dcf0c25097495b7900ab96b4fd89c3081a74ba9e"
+      "bytes": 16997,
+      "sha256": "3da1c7d36ee5c2f061bf9c9c1ed257140907c18fe8c377880981c2e74cdce6cb"
+    },
+    {
+      "path": "src/features/online-game/OnlineTools.css",
+      "bytes": 5952,
+      "sha256": "209ef890d931076c61636621423df4744d90971f725f1e8cca03fdd46dd15367"
+    },
+    {
+      "path": "src/features/online-game/RoomChat.tsx",
+      "bytes": 3041,
+      "sha256": "25c05c23e43020358dc4b3dcaa7f59675f1f6e34633a0f1b2408c7657e453df9"
     },
     {
       "path": "src/features/online-game/client.ts",
-      "bytes": 8763,
-      "sha256": "0e0564b5fe29479c9e088ae44c9efb2f81022cb0676942b0e2f20884515321aa"
+      "bytes": 11414,
+      "sha256": "7975df0696946b16503355e7d792b4861cd89500fcffc09a7cf413e7043c3df0"
     },
     {
       "path": "src/features/online-game/hosting.ts",
@@ -13325,8 +13505,8 @@
     },
     {
       "path": "src/features/online-game/protocol.ts",
-      "bytes": 8479,
-      "sha256": "f3ae4eb4968900d731571186939c10c934574a1c1d4cb4bc97c950a8d920d0f4"
+      "bytes": 10679,
+      "sha256": "f31153c41427ba758c5557ea4a835e3d229d1f52d4c0e1f2848cc74388af41bb"
     },
     {
       "path": "src/features/liberty-lab/LibertyLab.css",
@@ -13455,8 +13635,8 @@
     },
     {
       "path": "src/components/Board.tsx",
-      "bytes": 8277,
-      "sha256": "a17c86a1062fe96f39c0427399db03671ae6a45679357d4db914377e9049e581"
+      "bytes": 8295,
+      "sha256": "7a45c1ee1bd04b991fdd3d8eb980ed6bdf5803aa09248b57631c6a67222f0ede"
     },
     {
       "path": "src/components/GameTimeline.css",

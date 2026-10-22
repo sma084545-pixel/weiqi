@@ -1,4 +1,4 @@
-import {afterEach,describe,expect,it} from 'vitest';
+import {afterEach,describe,expect,it,vi} from 'vitest';
 import {mkdtemp,readFile,writeFile,rm} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
@@ -103,4 +103,47 @@ it('failed writes leave the authoritative game unchanged and a damaged store is 
 it('rejects cross-origin upgrades and keeps private files outside the static root',async()=>{
   const {url}=await setup();const status=await new Promise<number>((accept,reject)=>{const socket=new WebSocket(url.replace('http:','ws:')+'/api/online/ws',{origin:'https://other.example'});socket.on('error',()=>{});socket.on('unexpected-response',(_,response)=>{accept(response.statusCode!);response.resume();socket.terminate();});socket.on('open',()=>{socket.terminate();reject(Error('cross-origin upgrade was accepted'));});});expect(status).toBe(403);
   const response=await fetch(url+'/.env');expect(response.status).toBe(404);
+},60000);
+
+it('negotiated room chat is seat-bound, isolated, escaped data, idempotent and independent of game history',async()=>{
+  const {url,file}=await setup(),{black,white,blackSeat,code}=await pair(url),other=await pair(url);
+  const unnegotiated:ServerMessage[]=[];white.socket.on('message',data=>unnegotiated.push(JSON.parse(data.toString())));
+  const before=black.room.revision;
+  const enabled=await black.request({type:'enable-chat'});expect(enabled.chat.messages).toEqual([]);
+  const id=black.send({type:'chat-send',text:'<img src=x onerror=alert(1)>\n一起下棋'});
+  const first=await black.wait(message=>message.type==='chat-state'&&message.requestId===id);
+  expect(first.chat.messages).toHaveLength(1);expect(first.chat.messages[0]).toMatchObject({color:'B',nickname:'TEST 黑',text:'<img src=x onerror=alert(1)>\n一起下棋'});
+  black.socket.send(JSON.stringify({protocolVersion:1,type:'chat-send',requestId:id,text:'different duplicate'}));
+  expect((await black.wait(message=>message.type==='chat-state'&&message.requestId===id)).chat.messages).toHaveLength(1);
+  await black.act(point(0,0));await white.wait(message=>message.type==='state'&&message.room.record.events.length===1);
+  expect(unnegotiated.some(message=>message.type==='chat-state')).toBe(false);
+  expect(black.room.revision).toBe(before+1);expect(black.room.record.events).toHaveLength(1);
+  const whiteChat=await white.request({type:'enable-chat'});expect(whiteChat.chat.messages).toHaveLength(1);
+  const reply=await white.request({type:'chat-send',text:'收到，轮到我'});expect(reply.chat.messages[1].color).toBe('W');
+  await black.wait(message=>message.type==='chat-state'&&message.chat.messages.length===2);
+  expect((await other.black.request({type:'enable-chat'})).chat.messages).toEqual([]);
+  const outsider=await peer(url);expect((await outsider.request({type:'chat-send',text:'不能窥看'})).code).toBe('NOT_IN_ROOM');
+  const saved=await readFile(file,'utf8');expect(saved).not.toContain('onerror');expect(saved).not.toContain('一起下棋');expect(saved).not.toContain('OnlineRoomChat');
+  const resumed=await peer(url);await resumed.request({type:'resume',code,token:blackSeat.token});expect((await resumed.request({type:'enable-chat'})).chat.messages).toHaveLength(2);
+},60000);
+
+it('chat rejects spoofed authors, blank/long/control text and rate bursts without changing play',async()=>{
+  const {url}=await setup(),{black,white}=await pair(url);await black.request({type:'enable-chat'});const revision=black.room.revision;
+  for(const text of ['','  ','a'.repeat(501),'bad\u0000text']){
+    black.send({type:'chat-send',text});const error=await black.wait(message=>message.type==='chat-error');expect(error.code).toBe('CHAT_BAD_TEXT');
+  }
+  black.send({type:'chat-send',text:'spoof',color:'W'});expect((await black.wait(message=>message.type==='chat-error')).code).toBe('BAD_MESSAGE');
+  for(let i=0;i<3;i++)expect((await black.request({type:'chat-send',text:`消息 ${i}`})).type).toBe('chat-state');
+  expect((await black.request({type:'chat-send',text:'过快'})).code).toBe('CHAT_RATE_LIMIT');expect(black.room.revision).toBe(revision);
+  await black.act(point(0,0));await white.wait(message=>message.type==='state'&&message.room.record.events.length===1);await white.act(point(4,4));expect(white.room.record.events).toHaveLength(2);
+},60000);
+
+
+it('chat retains at most 50 recent messages and clears across server restart without losing saved game',async()=>{
+  const {app,url,file,repo}=await setup(),{black,white,blackSeat}=await pair(url);await black.act(point(0,0));await white.wait(message=>message.type==='state'&&message.room.record.events.length===1);await black.request({type:'enable-chat'});
+  const base=Date.now(),clock=vi.spyOn(Date,'now');let last:any;
+  try{for(let i=1;i<=55;i++){clock.mockReturnValue(base+i*3001);last=await black.request({type:'chat-send',text:`TEST ${i}`});}}finally{clock.mockRestore();}
+  expect(last.chat.messages).toHaveLength(50);expect(last.chat.messages[0].sequence).toBe(6);expect(last.chat.messages[49].sequence).toBe(55);expect(last.chat.revision).toBe(56);
+  await app.close();const restarted=await createOnlineServer({distDir:join(file,'..'),repository:repo}),port=await restarted.listen(0);disposals.push(()=>restarted.close());
+  const restored=await peer(`http://127.0.0.1:${port}`);await restored.request({type:'resume',code:blackSeat.code,token:blackSeat.token});expect((await restored.request({type:'enable-chat'})).chat.messages).toEqual([]);expect(replayOnlineGame(restored.room.record).board[0][0]).toBe('B');
 },60000);
