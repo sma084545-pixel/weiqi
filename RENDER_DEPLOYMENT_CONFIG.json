@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "id": "RENDER-DEPLOYMENT-CONFIG-PUBLICATION",
-  "revision": 7,
+  "revision": 8,
   "rulesetId": "GO-CLUB-AREA-1",
-  "baseVersion": "0.21.1-pages.1",
-  "resultVersion": "0.21.2-pages.1",
-  "programVersion": "0.21.2",
-  "status": "complete-with-documented-hosting-limits",
+  "baseVersion": "0.21.2-pages.1",
+  "resultVersion": "0.21.3-pages.1",
+  "programVersion": "0.21.3",
+  "status": "frontend-published-verification-pending",
   "website": "https://sma084545-pixel.github.io/weiqi/",
   "serverOrigin": "https://weiqi-rooms.onrender.com",
   "observedServerProgramVersion": "0.21.0",
@@ -14,7 +14,7 @@
   "roomsEphemeral": true,
   "healthAndWssProbe": "project/docs/render/checks/service-probe.json",
   "guide": "RENDER_SETUP.md",
-  "note": "Frontend-only interactive floating board patch. Existing public backend 0.21.0 is protocol compatible. No Render redeploy requested; backend defensive malformed-packet hardening remains locally verified only.",
+  "note": "Frontend-only whole-board fit for floating and native PiP. Public backend 0.21.0 remains compatible; no Render deployment requested.",
   "previousVerification": {
     "actualPublicOrigin": "https://sma084545-pixel.github.io/weiqi/",
     "publicRoomJourney": "project/docs/render/checks/public-journey.json",
@@ -27,9 +27,9 @@
   "verification": {
     "publicChat": "project/docs/online-tools/checks/public-journey.json",
     "publicBrowser": "Chrome155.0.8059.86; actual public floating-board play and 19-route touch simulation; independent contexts, not physical devices",
-    "local": "project/docs/floating-play/ACCEPTANCE.md",
-    "handbook": "project/handoff/ONLINE_FLOATING_PLAY.md",
-    "publicFloating": "project/docs/floating-play/checks/public-journey.json"
+    "local": "project/docs/floating-fit/ACCEPTANCE.md",
+    "handbook": "project/handoff/ONLINE_FLOATING_FIT.md",
+    "publicFloating": "project/docs/floating-fit/checks/public-journey.json"
   },
   "capabilities": {
     "roomChat": 1

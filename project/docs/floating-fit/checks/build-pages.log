@@ -1,0 +1,28 @@
+Already up to date
+Done in 307ms using pnpm v11.19.0
+$ node scripts/build-public-site.mjs
+$ tsc --noEmit && vite build && node scripts/finalize-offline.mjs && vite build --config vite.server.config.ts
+vite v8.2.2 building client environment for production...
+transforming...
+✓ 188 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.64 kB │ gzip:   0.45 kB
+dist/assets/index-Bna-LClt.css    135.59 kB │ gzip:  27.20 kB
+dist/assets/index-5aWw60tY.js   1,016.42 kB │ gzip: 266.21 kB
+
+✓ built in 220ms
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+Offline bundle 0.21.3: 11 required resources.
+vite v8.2.2 building ssr environment for production...
+transforming...
+✓ 105 modules transformed.
+rendering chunks...
+computing gzip size...
+dist-server/server.mjs  454.61 kB │ gzip: 100.66 kB
+
+✓ built in 54ms

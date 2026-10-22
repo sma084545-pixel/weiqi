@@ -1,7 +1,7 @@
 ---
 schemaVersion: 1
 id: ONLINE-TOOLS-INTERFACES
-revision: 2
+revision: 3
 rulesetId: GO-CLUB-AREA-1
 ---
 
@@ -22,3 +22,7 @@ BoardDisplayTools接收renderBoard(view, resetViewKey?)、timeline、chat、stat
 Document PiP和系统FullScreen是渐进增强，实际调用必须由按钮手势触发。打开失败有页内浮图/最大化替代；没有以mock对象冒充系统PiP验收。React portal保持同一状态，样式仅复制已有本地CSS，不请求外部CDN。独立小窗关闭不关闭WebSocket；组件离开时关闭小窗。最大化使用原生dialog焦点限制和返回焦点。
 
 0.21.2的小窗复位递增resetViewKey，由受控Board复位局部滚动；小窗棋盘保持标准最小交叉点尺寸，不在CSS中压缩--board-min。键盘focus-visible时只把焦点滚到可见区域，指针点击不触发此跟随。浮窗层级高于导航栏，最大化dialog仍在浏览器顶层。
+
+## 0.21.3整盘适配（替代上文0.21.2小窗滚动几何）
+
+compact-board使用明确分配的flex剩余空间和size容器，以min(100cqi,100cqb)容纳正方形Board。只覆盖两个小窗中的展示尺寸，不修改BoardProps、数据坐标、事件命中或引擎。每个交叉点仍是原生按钮，完整N²交点同时排布；mini/pip不设置最小交点导致裁切，不再滚动。普通/放大棋盘的最小点击区域与滚动保持。短窗口折叠辅助说明，按钮和整盘保留；PiP使用同样的适配壳。

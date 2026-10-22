@@ -54,20 +54,24 @@ test('floating board uses the same capture, suicide, undo, scoring and finished-
  await cell(mini(b),1,0).click();await a.getByRole('button',{name:'黑方确认当前清单'}).click();await b.getByRole('button',{name:'白方确认当前清单'}).click();await expect(a.getByTestId('online-game')).toHaveAttribute('data-phase','finished');await expect(cell(mini(a),2,2)).toBeDisabled();const locked=await cell(mini(a),2,2).boundingBox();await a.mouse.click(locked!.x+locked!.width/2,locked!.y+locked!.height/2);await count(a,7);await close();
 });
 
-for(const [size,width] of [[5,1280],[13,768],[19,360]])test(`${width}px floating ${size}-route corners, scrolling, touch/keyboard and reset`,async({browser})=>{
+for(const [size,width] of [[5,1280],[9,768],[13,768],[19,360]])test(`${width}px floating ${size}-route entire board and direct corner hit remain visible`,async({browser})=>{
  const {a,b,close}=await pair(browser,width,size,width===360);await a.emulateMedia({reducedMotion:'reduce'});await a.getByRole('button',{name:'悬浮小棋盘',exact:true}).click();
- const mini=a.getByRole('complementary',{name:'悬浮小棋盘'}),viewport=mini.locator('.board-viewport');await expect(mini.getByRole('gridcell')).toHaveCount(size*size);
- const geometry=await cell(mini,0,0).boundingBox();expect(geometry!.width).toBeGreaterThanOrEqual(31.5);expect(geometry!.height).toBeGreaterThanOrEqual(31.5);
- if(width===360)await cell(mini,0,0).tap();else await cell(mini,0,0).click();await count(b,1);await cell(main(b),size-1,size-1).click();await count(a,2);
- // Keyboard moves into a locally scrolled part of the mini board, then selects once.
- await cell(mini,size-1,0).focus();await cell(mini,size-1,0).press('End');await cell(mini,size-1,size-1).press('ArrowLeft');await cell(mini,size-1,size-2).press('Enter');await count(b,3);await expect(cell(main(b),size-1,size-2)).toHaveAttribute('data-stone','B');
- await cell(main(b),0,size-1).click();await count(a,4);
- if(size>9){expect(await viewport.evaluate(node=>node.scrollWidth>node.clientWidth)).toBe(true);expect(await viewport.evaluate(node=>node.scrollHeight>node.clientHeight)).toBe(true);}
- if(width===360)await cell(mini,0,size-2).tap();else await cell(mini,0,size-2).click();await count(b,5);await expect(cell(main(b),0,size-2)).toHaveAttribute('data-stone','B');
- await mini.getByRole('button',{name:'复位小窗',exact:true}).click();await expect.poll(()=>viewport.evaluate(node=>node.scrollLeft+node.scrollTop)).toBe(0);await count(a,5);
+ const mini=a.getByRole('complementary',{name:'悬浮小棋盘'});await expect(mini.getByRole('gridcell')).toHaveCount(size*size);
+ const visible=async()=>mini.evaluate(node=>{
+  const panel=node.getBoundingClientRect(),points=[...node.querySelectorAll<HTMLElement>('[role="gridcell"]')];
+  const viewport=node.querySelector<HTMLElement>('.board-viewport')!,area=node.querySelector<HTMLElement>('.compact-board')!.getBoundingClientRect();
+  return {points:points.length,allInside:points.every(point=>{const b=point.getBoundingClientRect();return b.width>0&&b.height>0&&b.left>=panel.left&&b.top>=panel.top&&b.right<=panel.right+.5&&b.bottom<=panel.bottom+.5&&b.left>=area.left-.5&&b.top>=area.top-.5&&b.right<=area.right+.5&&b.bottom<=area.bottom+.5;}),noScroll:viewport.scrollWidth<=viewport.clientWidth+1&&viewport.scrollHeight<=viewport.clientHeight+1,panelInside:panel.left>=0&&panel.top>=0&&panel.right<=innerWidth&&panel.bottom<=innerHeight};
+ });
+ await expect.poll(visible).toEqual({points:size*size,allInside:true,noScroll:true,panelInside:true});
+ if(width===360)await cell(mini,size-1,size-1).tap();else await cell(mini,size-1,size-1).click();await count(b,1);await expect(cell(main(b),size-1,size-1)).toHaveAttribute('data-stone','B');
+ await cell(main(b),0,0).click();await count(a,2);await cell(mini,0,size-1).focus();await cell(mini,0,size-1).press('Enter');await count(b,3);await expect(cell(main(b),0,size-1)).toHaveAttribute('data-stone','B');await cell(main(b),size-1,0).click();await count(a,4);
+ await expect.poll(visible).toEqual({points:size*size,allInside:true,noScroll:true,panelInside:true});
+ await mini.screenshot({path:`${evidence}/${width}-floating-${size}.png`});
+ // Short landscape and rotated tall windows must show all intersections, without scrolling.
+ for(const dimensions of [{width:740,height:360},{width:360,height:740},{width:1280,height:800}]){await a.setViewportSize(dimensions);await a.waitForTimeout(100);if(!(await visible()).allInside){await writeFile(`${evidence}/geometry-${size}-${dimensions.width}.json`,JSON.stringify(await mini.evaluate(node=>{const rect=(n:Element|null)=>n?.getBoundingClientRect().toJSON();const all=[...node.querySelectorAll<HTMLElement>('[role="gridcell"]')].map(n=>n.getBoundingClientRect());return {panel:rect(node),area:rect(node.querySelector('.compact-board')),figure:rect(node.querySelector('.shared-board')),frame:rect(node.querySelector('.board-frame')),grid:rect(node.querySelector('.board-grid')),pointBounds:{left:Math.min(...all.map(r=>r.left)),right:Math.max(...all.map(r=>r.right)),top:Math.min(...all.map(r=>r.top)),bottom:Math.max(...all.map(r=>r.bottom))}};}),null,2));await mini.screenshot({path:`${evidence}/geometry-${size}-${dimensions.width}.png`});}await expect.poll(visible).toEqual({points:size*size,allInside:true,noScroll:true,panelInside:true});}
+ await mini.getByRole('button',{name:'复位小窗',exact:true}).click();await expect.poll(visible).toEqual({points:size*size,allInside:true,noScroll:true,panelInside:true});
  const closeHit=await mini.getByRole('button',{name:'关闭悬浮小棋盘'}).evaluate(node=>{const b=node.getBoundingClientRect();return node.contains(document.elementFromPoint(b.x+b.width/2,b.y+b.height/2));});expect(closeHit).toBe(true);
- expect(await a.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);const bounds=await mini.boundingBox();expect(bounds!.x+bounds!.width).toBeLessThanOrEqual(width);
- await mini.screenshot({path:`${evidence}/${width}-floating-${size}.png`});await close();
+ expect(await a.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await close();
 });
 
 for(const width of [360,768,1280])test(`${width}px maximized board, chat, touch/keyboard and focus return`,async({browser})=>{
@@ -84,12 +88,13 @@ for(const width of [360,768,1280])test(`${width}px maximized board, chat, touch/
 });
 
 test('native picture-in-picture uses the real browser API or announces the floating fallback',async({browser})=>{
- const {a,b,close}=await pair(browser),support=await a.evaluate(()=>('documentPictureInPicture' in window));await a.getByRole('button',{name:'独立画中画',exact:true}).click();
+ const {a,b,close}=await pair(browser,1280,19),support=await a.evaluate(()=>('documentPictureInPicture' in window));await a.getByRole('button',{name:'独立画中画',exact:true}).click();
  const opened=await a.evaluate(()=>Boolean((window as any).documentPictureInPicture?.window));
  if(opened){
    await expect(a.locator('.board-display-message')).toContainText('独立画中画已打开');
-   await a.evaluate(()=>{const doc=(window as any).documentPictureInPicture.window.document;const at=doc.querySelector('[data-row="0"][data-col="0"]');if(!at)throw Error('PiP board missing');at.click();});await count(b,1);await cell(main(b),8,8).click();await count(a,2);
-   expect(await a.evaluate(()=>(window as any).documentPictureInPicture.window.document.querySelector('[data-row="8"][data-col="8"]').dataset.stone)).toBe('W');
+   await a.evaluate(()=>{const doc=(window as any).documentPictureInPicture.window.document;const at=doc.querySelector('[data-row="0"][data-col="0"]');if(!at)throw Error('PiP board missing');at.click();});await count(b,1);await cell(main(b),18,18).click();await count(a,2);
+   const fits=await a.evaluate(()=>{const w=(window as any).documentPictureInPicture.window as Window;const points=[...w.document.querySelectorAll<HTMLElement>('[role="gridcell"]')];return points.length===361&&points.every(p=>{const r=p.getBoundingClientRect();return r.width>0&&r.height>0&&r.x>=0&&r.y>=0&&r.right<=w.innerWidth+.5&&r.bottom<=w.innerHeight+.5;});});expect(fits).toBe(true);
+   expect(await a.evaluate(()=>(window as any).documentPictureInPicture.window.document.querySelector('[data-row="18"][data-col="18"]').dataset.stone)).toBe('W');
    await a.evaluate(()=>(window as any).documentPictureInPicture.window.close());
  }else{await expect(a.getByRole('complementary',{name:'悬浮小棋盘'})).toBeVisible();await expect(a.locator('.board-display-message')).toContainText(/浏览器/);}
  await writeFile(`${evidence}/native-pip.json`,JSON.stringify({support,opened,evidence:opened?'real requestWindow, real engine move and peer synchronization':'real browser fallback; no mock PiP'},null,2));await close();

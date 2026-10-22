@@ -21,13 +21,13 @@ for folder,dirs,names in os.walk(R):
   if name in exclude_files or name.startswith('.env.') or name.endswith(('.pem','.p12','.key')):continue
   path=Path(folder)/name;rel=path.relative_to(R);target=source/rel;target.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(path,target);entries.append({'path':str(rel),'bytes':path.stat().st_size,'sha256':sha(path)})
 (source/'SOURCE_INFO.json').write_text(json.dumps({'schemaVersion':1,'id':'GITHUB-CURRENT-SOURCE','revision':revision,'rulesetId':'GO-CLUB-AREA-1','resultVersion':V,'programVersion':version,'sourceBuild':'pnpm install --frozen-lockfile && pnpm build','note':'Buildable source and materials; installed dependencies, private data and generated root build/output excluded. Full release archive includes production builds and all evidence.','files':entries},ensure_ascii=False,indent=2)+'\n')
-manifest={'schemaVersion':1,'id':'GITHUB-PAGES-PUBLICATION','revision':revision,'rulesetId':'GO-CLUB-AREA-1','resultVersion':V,'programVersion':version,'siteUrl':'https://sma084545-pixel.github.io/weiqi/','sourceDirectory':'project/','formalPuzzles':30,'terminalFixtures':6,'microLessonPrimarySlides':25,'onlineServerConfigured':configured,'onlineServerOrigin':server_origin,'onlineRoomsEphemeral':ephemeral,'onlineStatus':'Public room server configured; capability-negotiated chat; current verification in docs/floating-play.' if configured else 'Room server not configured.','files':site,'sourceManifestSha256':sha(source/'SOURCE_INFO.json')}
+manifest={'schemaVersion':1,'id':'GITHUB-PAGES-PUBLICATION','revision':revision,'rulesetId':'GO-CLUB-AREA-1','resultVersion':V,'programVersion':version,'siteUrl':'https://sma084545-pixel.github.io/weiqi/','sourceDirectory':'project/','formalPuzzles':30,'terminalFixtures':6,'microLessonPrimarySlides':25,'onlineServerConfigured':configured,'onlineServerOrigin':server_origin,'onlineRoomsEphemeral':ephemeral,'onlineStatus':'Public room server configured; capability-negotiated chat; current verification in docs/floating-fit.' if configured else 'Room server not configured.','files':site,'sourceManifestSha256':sha(source/'SOURCE_INFO.json')}
 (repo/'PUBLICATION.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n');(repo/'SHA256SUMS.txt').write_text(''.join(f"{x['sha256']}  {x['path']}\n" for x in site)+f"{sha(repo/'PUBLICATION.json')}  PUBLICATION.json\n"+f"{sha(source/'SOURCE_INFO.json')}  project/SOURCE_INFO.json\n")
 (repo/'README.md').write_text(f'''# 围棋社 · 最新版 {version}
 
 **原网址：[打开学习工具](https://sma084545-pixel.github.io/weiqi/)**
 
-悬浮小棋盘现在可直接按本人轮次落子或标记死子；保留独立画中画、最大化/系统全屏与房间聊天，保留完整教学、自由双人对弈、5/9/13/19路、回退和棋局滑动条。包含30道正式题、6个终局、可编辑课件、教具与主持材料；GO-CLUB-AREA-1、schemaVersion1及正式revision保持。
+悬浮小棋盘现在完整显示整盘，可直接按本人轮次落子或标记死子；保留独立画中画、最大化/系统全屏与房间聊天，保留完整教学、自由双人对弈、5/9/13/19路、回退和棋局滑动条。包含30道正式题、6个终局、可编辑课件、教具与主持材料；GO-CLUB-AREA-1、schemaVersion1及正式revision保持。
 
 - [学习入口](https://sma084545-pixel.github.io/weiqi/#/home)
 - [自由双人对弈](https://sma084545-pixel.github.io/weiqi/#/play/free)
@@ -56,7 +56,7 @@ Node版本要求见package.json；默认本机/局域网服务端口4190，Ctrl+
 
 [完整工具包、轻量软件与校验值](https://github.com/sma084545-pixel/weiqi/releases/tag/v{V})包含生产构建、全部可编辑材料、PDF/PPTX、交接和验证。历史source/0.16.0分卷只作溯源，不作为当前主线。
 
-当前静态清单PUBLICATION.json、SHA256SUMS.txt；源码清单project/SOURCE_INFO.json。本次验收见project/docs/floating-play/。自动化、实体制造与真人教学验证分别记录；不声称提高智商、治疗压力、改善学业或保证CAS认可。第三方许可证随docs和字体目录保留。
+当前静态清单PUBLICATION.json、SHA256SUMS.txt；源码清单project/SOURCE_INFO.json。本次验收见project/docs/floating-fit/。自动化、实体制造与真人教学验证分别记录；不声称提高智商、治疗压力、改善学业或保证CAS认可。第三方许可证随docs和字体目录保留。
 ''')
 (repo/'source/README.md').write_text('# 历史源码0.16.0\n\n仅保留旧分卷用于追踪。最新源码在../project/，完整包见仓库Release，不要用旧分卷覆盖当前主线。\n')
 (repo/'.gitignore').write_text('project/node_modules/\nproject/dist/\nproject/dist-server/\nproject/dist-engine/\nproject/runtime-data/\nproject/.env\nproject/.env.*\n.DS_Store\n')

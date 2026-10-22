@@ -1,11 +1,13 @@
 ---
 schemaVersion: 1
 id: ONLINE-TOOLS-DEPLOYMENT
-revision: 2
+revision: 3
 rulesetId: GO-CLUB-AREA-1
 ---
 
 # 更新原网站与房间服务器
+
+当前0.21.3修正悬浮/独立小窗整盘显示；基线0.21.2-pages.1。仅前端更新，原Render0.21.0兼容，无需重新部署。实际证据与新说明在docs/floating-fit/，以下保留历史部署过程。
 
 当前0.21.2仅更新悬浮小棋盘交互，无需重新部署Render。主线底本0.21.1-pages.1，现有0.21.0后台兼容；用原网站等待更新后核对页脚0.21.2即可。新说明与实际验证在docs/floating-play/。以下保留0.21.1首次窗口/聊天部署过程，不能将历史待部署说明当成当前状态。
 

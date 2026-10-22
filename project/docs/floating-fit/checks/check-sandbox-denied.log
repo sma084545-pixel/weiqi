@@ -1,0 +1,47 @@
+Already up to date
+Done in 310ms using pnpm v11.19.0
+$ pnpm schema:check && pnpm test && pnpm validate:content && pnpm validate:t09 && pnpm test:t09-grader && pnpm test:t14 && pnpm test:t15 && pnpm validate:t17 && pnpm verify:merge-a && pnpm verify:t16-freeze && pnpm build && pnpm test:t16-refresh && pnpm build:engine && pnpm test:engine-build && pnpm test:engine-capacity
+$ node scripts/generate-types.mjs --check
+$ vitest run
+
+ RUN  v5.0.0 /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/floating-fit-20261022/mainline/go-club
+
+ ❯ tests/online/server.test.ts (12 tests | 10 failed) 50ms
+   × two seats alternate, capture once, reject suicide/wrong role/stale/duplicate packets, and keep a third party out 14ms
+   × mutual undo preserves refusal, blocks intervening play, restores captured stones and branches cleanly 5ms
+   × two passes, changed dead marks, ordered role confirmations and dispute restoration use the shared full-game model 2ms
+   × reconnect survives server restart and disconnect never manufactures a win 2ms
+   × failed writes leave the authoritative game unchanged and a damaged store is not deleted 1ms
+   × rejects cross-origin upgrades and keeps private files outside the static root 1ms
+   × negotiated room chat is seat-bound, isolated, escaped data, idempotent and independent of game history 2ms
+   × chat rejects spoofed authors, blank/long/control text and rate bursts without changing play 2ms
+   × chat retains at most 50 recent messages and clears across server restart without losing saved game 3ms
+   × a malformed game packet after chat negotiation returns a game error with its request ID 1ms
+
+⎯⎯⎯⎯⎯⎯ Failed Tests 10 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/online/server.test.ts > two seats alternate, capture once, reject suicide/wrong role/stale/duplicate packets, and keep a third party out
+ FAIL  tests/online/server.test.ts > mutual undo preserves refusal, blocks intervening play, restores captured stones and branches cleanly
+ FAIL  tests/online/server.test.ts > two passes, changed dead marks, ordered role confirmations and dispute restoration use the shared full-game model
+ FAIL  tests/online/server.test.ts > reconnect survives server restart and disconnect never manufactures a win
+ FAIL  tests/online/server.test.ts > failed writes leave the authoritative game unchanged and a damaged store is not deleted
+ FAIL  tests/online/server.test.ts > rejects cross-origin upgrades and keeps private files outside the static root
+ FAIL  tests/online/server.test.ts > negotiated room chat is seat-bound, isolated, escaped data, idempotent and independent of game history
+ FAIL  tests/online/server.test.ts > chat rejects spoofed authors, blank/long/control text and rate bursts without changing play
+ FAIL  tests/online/server.test.ts > chat retains at most 50 recent messages and clears across server restart without losing saved game
+ FAIL  tests/online/server.test.ts > a malformed game packet after chat negotiation returns a game error with its request ID
+Error: listen EPERM: operation not permitted 127.0.0.1
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/10]⎯
+
+
+ Test Files  1 failed | 48 passed (49)
+      Tests  10 failed | 389 passed (399)
+   Start at  16:29:54
+   Duration  10.75s (import 34%, tests 32%, environment 26%, transform 8%, worker 1%)
+
+     Import  179 modules were evaluated 450 times · 11.57s total, 34% of tracked time
+             ~964ms faster with isolate: false — shared modules are evaluated once per worker instead of once per file
+             learn more: https://vitest.dev/guide/improving-performance#test-isolation
+
+[ELIFECYCLE] Test failed. See above for more details.
+[ELIFECYCLE] Command failed with exit code 1.
