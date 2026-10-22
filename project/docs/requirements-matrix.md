@@ -107,5 +107,5 @@ FREE_PLAY：主页伙伴卡/顶部“双人对弈”/教师入口→#/play/free�
 
 |要求|责任模块|验收位置|状态|
 |---|---|---|---|
-|页内浮图/独立画中画/棋盘最大化与系统全屏|online-game/BoardDisplayTools、共享Board|docs/online-tools/ACCEPTANCE.md；online-tools.spec.ts|本地通过，公网以实测记录为准|
-|房间双人聊天、临时记录、版本协商与隔离|online-game/client、protocol、RoomChat；server/rooms|tests/online/server.test.ts；公开原网址public-journey|本地通过，待完成云端版本核对|
+|页内浮图/独立画中画/棋盘最大化与系统全屏|online-game/BoardDisplayTools、共享Board|docs/online-tools/ACCEPTANCE.md；online-tools.spec.ts|通过：公开原网址和本地均有实测证据|
+|房间双人聊天、临时记录、版本协商与隔离|online-game/client、protocol、RoomChat；server/rooms|tests/online/server.test.ts；公开原网址public-journey|通过：公网后台0.21.0/网页0.21.1实际收发，已记录版本差异|

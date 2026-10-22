@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "ONLINE-TOOLS-BARE-APP-SMOKE",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "resultVersion": "0.21.1-pages.1",
+  "status": "passed",
+  "browser": "151.0.7922.34",
+  "server": "fresh app.zip extraction; dist-server without node_modules",
+  "checks": [
+    "bare bundled server health",
+    "two isolated anonymous seats",
+    "bundled chat capability and actual two-peer message",
+    "bundled maximize and floating controls",
+    "default nine-route both colors synchronized",
+    "same-session refresh seat restored",
+    "manual unified local save",
+    "both-role confirmation produces hand-checked 1:1 draw",
+    "schema GameState export without seat credentials"
+  ],
+  "humanReviewed": null
+}

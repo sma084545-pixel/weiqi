@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "id": "RENDER-DEPLOYMENT-CONFIG-PUBLICATION",
-  "revision": 5,
+  "revision": 6,
   "rulesetId": "GO-CLUB-AREA-1",
   "baseVersion": "0.20.3-pages.1",
   "resultVersion": "0.21.1-pages.1",
   "programVersion": "0.21.1",
-  "status": "public-chat-verified-frontend-patch-being-published",
+  "status": "complete-with-documented-hosting-limits",
   "website": "https://sma084545-pixel.github.io/weiqi/",
   "serverOrigin": "https://weiqi-rooms.onrender.com",
   "observedServerProgramVersion": "0.21.0",
@@ -25,7 +25,8 @@
     "pageErrors": 0
   },
   "verification": {
-    "publicChat": "project/docs/online-tools/checks/public-backend-chat.json",
+    "publicChat": "project/docs/online-tools/checks/public-journey.json",
+    "publicBrowser": "Chrome155.0.8059.86; independent contexts; not physical devices",
     "local": "project/docs/online-tools/ACCEPTANCE.md",
     "handbook": "project/handoff/ONLINE_PLAY_TOOLS.md"
   },

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "GITHUB-CURRENT-SOURCE",
-  "revision": 10,
+  "revision": 11,
   "rulesetId": "GO-CLUB-AREA-1",
   "resultVersion": "0.21.1-pages.1",
   "programVersion": "0.21.1",
@@ -3915,8 +3915,8 @@
     },
     {
       "path": "handoff/ONLINE_PLAY_TOOLS.md",
-      "bytes": 3774,
-      "sha256": "0e95bf5d7ca441e459dedb150a01cb303fe33af851d7b089dc9c95d755afa43b"
+      "bytes": 5735,
+      "sha256": "e5ed1aa723a6af149bf7a13d9f0c52698dab1c460d1efbbc249f55e56ab488ca"
     },
     {
       "path": "handoff/RENDER_DEPLOY.md",
@@ -5700,8 +5700,8 @@
     },
     {
       "path": "docs/requirements-matrix.md",
-      "bytes": 19018,
-      "sha256": "01c4114ab71a85e0f3676a92b785cac19088349c2c057eeff59e8ca3eba8587e"
+      "bytes": 19061,
+      "sha256": "12e01ce991aecfaa7f8ad63988b347e94a46063b8ea1efb3c3d7b101da6e5342"
     },
     {
       "path": "docs/github-pages/ACCEPTANCE.md",
@@ -6195,8 +6195,8 @@
     },
     {
       "path": "docs/online-tools/ACCEPTANCE.md",
-      "bytes": 3797,
-      "sha256": "b1674f23d4a0b48cd140576c0249f1cb08df7545c051156d3213225a51945a15"
+      "bytes": 4703,
+      "sha256": "0cc318734b2b97269232a15d25ac76da4e5d26246bb11fff469983ba169ab3cc"
     },
     {
       "path": "docs/online-tools/BASE-MANIFEST.json",
@@ -6225,13 +6225,18 @@
     },
     {
       "path": "docs/online-tools/changed-files.json",
-      "bytes": 13464,
-      "sha256": "fc199553da0f40bbc6b4fbe312c0245080b70faa9771abc3415904b5e5f43a4d"
+      "bytes": 16312,
+      "sha256": "84be95a895f916c627ffb137904470e31053a78accd20b6e90fa874169ded4f4"
     },
     {
       "path": "docs/online-tools/checks/backend-health.json",
       "bytes": 119,
       "sha256": "1109881767287c9c66604f26e0e04d5526df077f24fcf963ef894de97e43d339"
+    },
+    {
+      "path": "docs/online-tools/checks/bare-app.json",
+      "bytes": 738,
+      "sha256": "3b982d3f2b50934fb1f84ad33eed443dce144b343bb8b735e3aab5fbf0484155"
     },
     {
       "path": "docs/online-tools/checks/browser-capacity-before-isolation.log",
@@ -6285,18 +6290,18 @@
     },
     {
       "path": "docs/online-tools/checks/public-1280-maximized.png",
-      "bytes": 96447,
-      "sha256": "ce60aeb2817ec2b3a0caafa0c3b1705933f6fba4a05caf98145c794e90de5dd8"
+      "bytes": 99703,
+      "sha256": "b0315a43546d3c46bbf05d827f94d131207d6d9692e70680c90b906ea9488486"
     },
     {
       "path": "docs/online-tools/checks/public-360-maximized.png",
-      "bytes": 59500,
-      "sha256": "067edaf19d4dbe830f86f1828e01ffc5352f07ea074adaec98033c8265069d15"
+      "bytes": 63509,
+      "sha256": "52b37c560584d08efef4502f689f0faa2d4192048f1921bea136380d29b6f608"
     },
     {
       "path": "docs/online-tools/checks/public-768-maximized.png",
-      "bytes": 56193,
-      "sha256": "71b34171c81e2733d16a2eb584b35689cf995ed1b512af072c7008cf07691913"
+      "bytes": 60560,
+      "sha256": "4478a3d12a25fa6a024a88f169147287b4c7649f6fbc6c2059d30bd5ef2efb75"
     },
     {
       "path": "docs/online-tools/checks/public-backend-chat.json",
@@ -6320,18 +6325,18 @@
     },
     {
       "path": "docs/online-tools/checks/public-journey.json",
-      "bytes": 1147,
-      "sha256": "45aeee1d687fbcbe67b4af8b11b49b121231ff8a882b0d650c89bad605e254e0"
+      "bytes": 1210,
+      "sha256": "bca67e6bedb22d9fa9344deac5e37fd4a26edefdd57222dc2efad394c90a3260"
     },
     {
       "path": "docs/online-tools/checks/public-journey.log",
-      "bytes": 10205,
-      "sha256": "f5baa89a6247c4c35682c16dc2789bede1d12d15d3fd4d8b02f1c682ef86e6e3"
+      "bytes": 10153,
+      "sha256": "b5758dc82951c64c9a49aa4a89fa0575749dfe855abae0d44a2cae67cf496e42"
     },
     {
       "path": "docs/online-tools/checks/public-live-tools.png",
-      "bytes": 186945,
-      "sha256": "d3b9cdb5128a5908a4aeacec7b542686715937aeb2fa6befe502fdada7cb24f3"
+      "bytes": 186429,
+      "sha256": "c319ca86f55fee4b9cd0ff15a857dbfe9c5e6abd6a9f2318ce74584f3917f555"
     },
     {
       "path": "docs/online-tools/checks/server-initial.log",
@@ -12955,8 +12960,8 @@
     },
     {
       "path": "scripts/package-online-tools.py",
-      "bytes": 7183,
-      "sha256": "3e826558ad40ef15dd270691c38b686dbee3652ed750910ffa8c29e969401314"
+      "bytes": 7359,
+      "sha256": "3877dabc046306b169c1fc47c59faeb1791d593ebdbac7725bd6e44afdb202a2"
     },
     {
       "path": "scripts/package-online.py",
@@ -13177,6 +13182,11 @@
       "path": "scripts/verify-online-preservation.py",
       "bytes": 1546,
       "sha256": "19d3cc783d8a0d713ca672ff73220572fe0c932863e69a2a1c7aca79499b6326"
+    },
+    {
+      "path": "scripts/verify-online-tools-archive.py",
+      "bytes": 3149,
+      "sha256": "5a1e83342340692ff4865f65290bb62a23b9eac73704d9e4922b602ed9a84056"
     },
     {
       "path": "scripts/verify-online-tools-preservation.py",

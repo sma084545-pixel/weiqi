@@ -4,7 +4,7 @@ from pathlib import Path
 import os,json,hashlib,zipfile,shutil
 R=Path(__file__).resolve().parents[1];version=json.loads((R/'package.json').read_text())['version'];V=version+'-pages.1';DEST=R.parents[2]/'release'/V;DEST.mkdir(parents=True,exist_ok=True)
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
-public=json.loads((R/'docs/online-tools/checks/public-journey.json').read_text());complete=public['status']=='passed';status='complete' if complete else 'stage-backend-chat-awaiting-manual-deploy'
+public=json.loads((R/'docs/online-tools/checks/public-journey.json').read_text());complete=public['status']=='passed';assert public['resultVersion']==V;status='complete' if complete else 'stage-backend-chat-awaiting-manual-deploy'
 def files():
  result=[]
  for folder,dirs,names in os.walk(R):
@@ -17,6 +17,7 @@ def files():
  return sorted(result)
 old=json.loads((R/'docs/online-tools/BASE-MANIFEST.json').read_text());prev={x['path']:x['sha256'] for x in old['files']};excluded={'RELEASE_MANIFEST.json','release-manifest.json','SHA256SUMS.txt'};self_change='docs/online-tools/changed-files.json'
 changed=[{'path':str(p.relative_to(R)),'kind':'added' if str(p.relative_to(R)) not in prev else 'modified','sha256':sha(p)} for p in files() if str(p.relative_to(R)) not in excluded|{self_change} and prev.get(str(p.relative_to(R)))!=sha(p)]
+changed.append({'path':'启动联机对弈.command','kind':'executable-metadata','sha256':sha(R/'启动联机对弈.command'),'mode':'0755'})
 changed.append({'path':self_change,'kind':'generated-manifest','selfHashExcluded':True})
 (R/self_change).write_text(json.dumps({'schemaVersion':1,'id':'ONLINE-TOOLS-CHANGE-MANIFEST','revision':1,'rulesetId':'GO-CLUB-AREA-1','baseVersion':'0.20.3-pages.1','resultVersion':V,'files':changed,'removed':[x for x in prev if not (R/x).exists()]},ensure_ascii=False,indent=2)+'\n')
 entries=[{'path':str(p.relative_to(R)),'bytes':p.stat().st_size,'sha256':sha(p)} for p in files() if str(p.relative_to(R)) not in excluded]
