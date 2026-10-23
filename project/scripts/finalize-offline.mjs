@@ -3,7 +3,7 @@ import {join,relative} from 'node:path';
 import {fileURLToPath} from 'node:url';
 const root=fileURLToPath(new URL('..',import.meta.url)),dist=join(root,'dist');
 const pkg=JSON.parse(await readFile(join(root,'package.json'),'utf8'));
-await writeFile(join(dist,'version.json'),JSON.stringify({schemaVersion:1,id:'GO-CLUB-PUBLIC-VERSION',revision:pkg.version.split('.').reduce((value,part)=>value*1000+Number(part),0)+1,rulesetId:'GO-CLUB-AREA-1',programVersion:pkg.version,resultVersion:pkg.version+'-pages.1',onlineServerConfigured:Boolean(process.env.VITE_ONLINE_SERVER_URL),onlineServerOrigin:process.env.VITE_ONLINE_SERVER_URL??null,onlineSiteOrigin:process.env.VITE_ONLINE_SITE_ORIGIN??null,onlineRoomsEphemeral:process.env.VITE_ONLINE_EPHEMERAL_ROOMS==='true'},null,2)+'\n');
+await writeFile(join(dist,'version.json'),JSON.stringify({schemaVersion:1,id:'GO-CLUB-PUBLIC-VERSION',revision:pkg.version.split('.').reduce((value,part)=>value*1000+Number(part),0)+1,rulesetId:'GO-CLUB-AREA-1',programVersion:pkg.version,resultVersion:pkg.version+'-pages.1',onlineServerConfigured:Boolean(process.env.VITE_ONLINE_SERVER_URL),onlineServerOrigin:process.env.VITE_ONLINE_SERVER_URL??null,onlineSiteOrigin:process.env.VITE_ONLINE_SITE_ORIGIN??null,onlineRoomsEphemeral:process.env.VITE_ONLINE_EPHEMERAL_ROOMS==='true',katagoAnalysisConfigured:Boolean(process.env.VITE_KATAGO_API_ORIGIN),katagoAnalysisOrigin:process.env.VITE_KATAGO_API_ORIGIN??null},null,2)+'\n');
 await cp(join(root,'docs/github-pages/ONLINE_SETUP.md'),join(dist,'ONLINE_SETUP.md'));
 await mkdir(join(dist,'content'),{recursive:true});
 await cp(join(root,'content/t09/bundle.json'),join(dist,'content/formal-content-v1.json'));

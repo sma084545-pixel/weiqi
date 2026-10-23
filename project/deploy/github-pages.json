@@ -1,10 +1,11 @@
 {
   "schemaVersion": 1,
   "id": "GO-CLUB-PUBLIC-HOSTING",
-  "revision": 1,
+  "revision": 2,
   "rulesetId": "GO-CLUB-AREA-1",
   "siteUrl": "https://sma084545-pixel.github.io/weiqi/",
   "serverOrigin": "https://weiqi-rooms.onrender.com",
   "protocolVersion": 1,
-  "roomsEphemeral": true
+  "roomsEphemeral": true,
+  "analysisOrigin": null
 }
