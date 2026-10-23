@@ -31,7 +31,7 @@ export interface ReviewAnalysisResponse {
 }
 export type AnalysisErrorCode='INVALID_REQUEST'|'GAME_NOT_FINISHED'|'UNSUPPORTED_RULES'|'NOT_READY'|'BUSY'|'RATE_LIMITED'|'TIMEOUT'|'CANCELLED'|'ENGINE_FAILED'|'RESULT_MISMATCH'|'BODY_TOO_LARGE'|'ORIGIN_DENIED';
 export interface AnalysisErrorBody {error:{code:AnalysisErrorCode;message:string;field?:string;requestId?:string};}
-export interface AnalysisHealth {service:'go-club-katago';status:'starting'|'ready'|'restarting'|'failed'|'stopping';ready:boolean;active:number;queued:number;engineVersion:string;model:string;uptimeSeconds:number;}
+export interface AnalysisHealth {service:'go-club-katago';status:'starting'|'ready'|'restarting'|'failed'|'stopping';ready:boolean;active:number;queued:number;engineVersion:string;model:string;uptimeSeconds:number;engineStartupMs?:number|null;resources?:{cgroupMemoryLimitBytes:number|null;cgroupMemoryPeakBytes:number|null;cpuQuota:number|null};}
 
 /** Send only setup and effective events, not local progress, names, feedback or snapshots. */
 export function makeReviewRequest(game:GameState,reviewIndex:number,positionId:string):ReviewAnalysisRequest {

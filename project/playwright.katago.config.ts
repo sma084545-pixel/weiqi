@@ -1,0 +1,2 @@
+import {defineConfig} from '@playwright/test';
+export default defineConfig({testDir:'tests/browser',testMatch:'katago-review.spec.ts',outputDir:'docs/katago/checks/frontend-results',reporter:[['list'],['json',{outputFile:'docs/katago/checks/frontend-browser.json'}]],use:{baseURL:'http://127.0.0.1:4208',browserName:'chromium'},webServer:{command:'./node_modules/.bin/vite --host 127.0.0.1 --port 4208',url:'http://127.0.0.1:4208',reuseExistingServer:false,env:{VITE_KATAGO_API_ORIGIN:'https://analysis.example'}}});

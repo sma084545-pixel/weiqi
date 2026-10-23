@@ -1,5 +1,6 @@
 import {spawn,type ChildProcessWithoutNullStreams} from 'node:child_process';
 import {randomUUID} from 'node:crypto';
+import {readFileSync} from 'node:fs';
 import type {AnalysisHealth,ReviewAnalysisResponse} from '../../src/core/analysis/contract';
 import {ApiError,normalizeAnalysis,type PreparedAnalysis} from './position';
 
@@ -19,18 +20,20 @@ export class KataGoEngine {
   private stopping=false;
   private logs:string[]=[];
   private instance=0;
+  private launchedAt=0;
+  private startupMs:number|null=null;
   constructor(readonly options:EngineOptions){}
-  health():AnalysisHealth{return {service:'go-club-katago',status:this.status,ready:this.status==='ready',active:this.active?1:0,queued:this.queue.length,engineVersion:this.options.version,model:this.options.model,uptimeSeconds:Math.floor((Date.now()-this.created)/1000)};}
+  health():AnalysisHealth{return {service:'go-club-katago',status:this.status,ready:this.status==='ready',active:this.active?1:0,queued:this.queue.length,engineVersion:this.options.version,model:this.options.model,uptimeSeconds:Math.floor((Date.now()-this.created)/1000),engineStartupMs:this.startupMs,resources:containerResources()};}
   start(){if(this.child||this.stopping)return;this.launch();}
   private log(event:string,data?:Record<string,unknown>){this.options.log?.(event,data);}
   private launch(){
     if(this.stopping)return;
-    this.status=this.failures?'restarting':'starting';const instance=++this.instance;
+    this.status=this.failures?'restarting':'starting';this.launchedAt=Date.now();this.startupMs=null;const instance=++this.instance;
     let child:ChildProcessWithoutNullStreams;
     try{child=spawn(this.options.executable,this.options.args,{stdio:['pipe','pipe','pipe'],env:{...process.env,OMP_NUM_THREADS:'1',OPENBLAS_NUM_THREADS:'1'}});}catch{this.failed(instance);return;}
     this.child=child;let stdout='',stderr='',versionReady=false,modelReady=false;
     const versionId=`version-${instance}`,modelId=`models-${instance}`;
-    const ready=()=>{if(versionReady&&modelReady&&instance===this.instance&&!this.stopping){clearTimeout(this.startupTimer);this.status='ready';this.failures=0;this.log('engine_ready',{startupMs:Date.now()-this.created});this.pump();}};
+    const ready=()=>{if(versionReady&&modelReady&&instance===this.instance&&!this.stopping){clearTimeout(this.startupTimer);this.status='ready';this.startupMs=Date.now()-this.launchedAt;this.failures=0;this.log('engine_ready',{startupMs:this.startupMs});this.pump();}};
     child.stdout.on('data',(chunk:Buffer)=>{
       if(instance!==this.instance)return;stdout+=chunk.toString('utf8');
       if(Buffer.byteLength(stdout)>2_000_000){this.failed(instance);return;}
@@ -105,4 +108,12 @@ export class KataGoEngine {
     const child=this.child;this.child=null;++this.instance;if(!child)return;
     await new Promise<void>(resolve=>{const timer=setTimeout(()=>{child.kill('SIGKILL');resolve();},3000);child.once('exit',()=>{clearTimeout(timer);resolve();});child.stdin.end();child.kill('SIGTERM');});
   }
+}
+
+/** Fixed Linux cgroup files only; unsupported hosts report null, never host memory as container data. */
+function containerResources():NonNullable<AnalysisHealth['resources']>{
+ const read=(name:string)=>{try{return readFileSync(`/sys/fs/cgroup/${name}`,'utf8').trim().slice(0,128);}catch{return '';}};
+ const numeric=(value:string)=>/^\d+$/.test(value)&&Number.isSafeInteger(Number(value))?Number(value):null;
+ const [quota,period]=read('cpu.max').split(/\s+/).map(Number);
+ return {cgroupMemoryLimitBytes:numeric(read('memory.max')),cgroupMemoryPeakBytes:numeric(read('memory.peak')),cpuQuota:Number.isFinite(quota)&&period>0?quota/period:null};
 }
