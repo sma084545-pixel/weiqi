@@ -1,0 +1,128 @@
+Already up to date
+Done in 359ms using pnpm v11.19.0
+$ pnpm schema:check && pnpm test && pnpm validate:content && pnpm validate:t09 && pnpm test:t09-grader && pnpm test:t14 && pnpm test:t15 && pnpm validate:t17 && pnpm verify:merge-a && pnpm verify:t16-freeze && pnpm build && pnpm test:t16-refresh && pnpm build:engine && pnpm test:engine-build && pnpm test:engine-capacity
+$ node scripts/generate-types.mjs --check
+$ vitest run
+
+ RUN  v5.0.0 /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/katago-20261023/mainline/go-club
+
+
+ Test Files  52 passed (52)
+      Tests  429 passed (429)
+   Start at  15:57:05
+   Duration  13.55s (import 35%, tests 32%, environment 25%, transform 7%, worker 1%)
+
+     Import  191 modules were evaluated 512 times · 15.55s total, 35% of tracked time
+             ~1.35s faster with isolate: false — shared modules are evaluated once per worker instead of once per file
+             learn more: https://vitest.dev/guide/improving-performance#test-isolation
+
+$ node --import tsx scripts/validate-content.ts
+PASSED valid/bundle.json {"level":"structural","needsRulesReplay":true}
+PASSED valid/feedback-blank.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/game.json {"level":"structural","needsRulesReplay":true}
+PASSED valid/lesson.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/marker.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/move.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/position.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/puzzle.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/setup.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/terminal.json {"level":"structural","needsRulesReplay":false}
+PASSED content/t04/liberty-demos.json {"level":"structural","needsRulesReplay":false}
+PASSED content/t05/capture-demos.json {"level":"structural","needsRulesReplay":false}
+PASSED content/t08/development-terminal.json {"level":"structural","needsRulesReplay":false}
+PASSED invalid/out-of-bounds.json [{"code":"COORD_BOUNDS","path":"/stones/0/row","message":"坐标超出完整棋盘。"}]
+PASSED invalid/duplicate-point.json [{"code":"DUPLICATE_POINT","path":"/stones/1","message":"同一交叉点不能重复占用。"}]
+PASSED invalid/unknown-stone.json [{"code":"SCHEMA_FIELD","path":"/stones/0/color","message":"请使用该字段允许的值。"}]
+PASSED invalid/unknown-major.json [{"code":"SCHEMA_VERSION","path":"/schemaVersion","message":"仅支持内容主版本 1；请保留原文件，使用对应迁移工具。"}]
+$ node --import tsx content/tools/validate.mjs
+PASS: 851 checks, 134 recorded moves replayed, 2179 explored rule transitions, 30 puzzles + 6 fixtures. Human review not performed.
+$ node content/tools/test-grade.mjs
+PASS: 20 adapter checks including legal unknown, multiple solutions, invalid-state preservation and open discussion.
+PASS: known wrong first move immediately fails the one-move objective.
+$ vitest run tests/t14
+
+ RUN  v5.0.0 /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/katago-20261023/mainline/go-club
+
+
+ Test Files  2 passed (2)
+      Tests  13 passed (13)
+   Start at  15:57:21
+   Duration  1.43s (environment 34%, import 27%, transform 25%, tests 14%)
+
+$ vitest run tests/t15
+
+ RUN  v5.0.0 /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/katago-20261023/mainline/go-club
+
+
+ Test Files  4 passed (4)
+      Tests  16 passed (16)
+   Start at  15:57:23
+   Duration  463ms (import 60%, transform 34%, tests 5%, worker 1%)
+
+$ node --import tsx scripts/validate-t17.ts
+PASS T17: empty, 3 labelled test replies, independent counts/missing/denominators, default test exclusion, schemaVersion rejection. No real participant records generated.
+$ node scripts/verify-merge-a.mjs
+PASS: MERGE_A integrity; 201 T09 files, 30 formal puzzles, 6 endgames, schema v1 and GO-CLUB-AREA-1 verified.
+$ node scripts/verify-t16-freeze-preservation.mjs
+PASS GO-CLUB-FREEZE-B-20260919-01: 201 content/rules/schema files unchanged; 30 puzzles + 6 terminals remain at frozen revisions.
+$ tsc --noEmit && vite build && node scripts/finalize-offline.mjs && vite build --config vite.server.config.ts
+vite v8.2.2 building client environment for production...
+transforming...
+✓ 194 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.64 kB │ gzip:   0.45 kB
+dist/assets/index-Dui6NNVj.css    137.83 kB │ gzip:  27.58 kB
+dist/assets/index-DDBnnOIl.js   1,025.24 kB │ gzip: 269.58 kB
+
+✓ built in 1.84s
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+Offline bundle 0.22.0: 11 required resources.
+vite v8.2.2 building ssr environment for production...
+transforming...
+✓ 105 modules transformed.
+rendering chunks...
+computing gzip size...
+dist-server/server.mjs  454.61 kB │ gzip: 100.66 kB
+
+✓ built in 55ms
+$ node scripts/verify-t16-refresh.mjs
+{"ok":true,"check":"teacher-editor-refresh-recovery","title":"刷新后仍在的草稿","status":"可编辑草稿 已恢复上次尚未提交的编辑内容。"}
+$ vite build --config vite.engine.config.ts && tsc -p tsconfig.engine.json && node scripts/finish-engine-build.mjs
+vite v8.2.2 building client environment for production...
+transforming...
+✓ 84 modules transformed.
+rendering chunks...
+computing gzip size...
+dist-engine/go-club-rules.mjs  299.23 kB │ gzip: 66.06 kB │ map: 550.74 kB
+
+✓ built in 54ms
+$ node scripts/engine-smoke.mjs && tsc -p tsconfig.engine-smoke.json
+PASS: standalone ESM library: create, place, pass, undo/redo, serialize/replay; no React, browser, network or installed consumer dependencies.
+$ node scripts/engine-capacity.mjs
+{
+  "schemaVersion": 1,
+  "id": "REPORT-T01-CAPACITY",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "DeveloperValidationReport",
+  "checkedAt": "2026-10-23T07:57:36.886Z",
+  "method": "Built standalone ESM; seeded legal path and legal pass/resume capacity stress",
+  "humanReviewed": null,
+  "legalPlacements": 240,
+  "currentMoves": 238,
+  "redoSnapshots": 2,
+  "serializedBytes": 12705289,
+  "limitBytes": 64000000,
+  "roundTrip": "passed",
+  "verifiedStoreRoundTrip": "passed",
+  "oversizedEventCount": 2100,
+  "oversizedExportCode": "EXPORT_TOO_LARGE",
+  "oversizedSaveKeepsOldRecord": "passed",
+  "elapsedMilliseconds": 2370,
+  "storage": "in-memory atomic StoragePort; not a browser quota measurement"
+}

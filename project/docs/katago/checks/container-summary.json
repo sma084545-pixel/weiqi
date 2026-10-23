@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "testKind": "real-linux-docker",
+  "ciRun": "https://github.com/sma084545-pixel/weiqi/actions/runs/39921333516",
+  "commit": "f77348f0235d102762e11f7b3a4f4c8577eb393d",
+  "status": "passed",
+  "cpuQuota": 0.1,
+  "memoryLimitMiB": 512,
+  "observedPeakMiB": 94.84765625,
+  "analysisHttpMilliseconds": [
+    9895,
+    8898,
+    8003,
+    9395
+  ],
+  "healthReadyWaitMs": 9303,
+  "renderTested": false,
+  "limits": "One sequential request per size. Not Render cold-start or concurrency evidence."
+}

@@ -1,0 +1,22 @@
+Already up to date
+Done in 317ms using pnpm v11.19.0
+[WebServer] (node:822) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 11 tests using 1 worker
+
+(node:828) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 tests/browser/t16.spec.ts:10:1 › legacy localStorage migrates once to IndexedDB and refresh restores progress (758ms)
+  ✓   2 tests/browser/t16.spec.ts:15:1 › full game is autosaved through the unified store and reopens after refresh (634ms)
+  ✓   3 tests/browser/t16.spec.ts:17:1 › complete backup exports ids and revisions, while damaged restore does not overwrite (425ms)
+  ✓   4 tests/browser/t16.spec.ts:19:1 › a valid backup restores the original content id and revision atomically (563ms)
+  ✓   5 tests/browser/t16.spec.ts:21:1 › selective progress clear preserves draft records and formal content remains installed (577ms)
+  ✓   6 tests/browser/t16.spec.ts:23:1 › prepared app and formal puzzle catalog work after network is actually disabled (830ms)
+  ✓   7 tests/browser/t16.spec.ts:25:1 › first offline reload without a completed cache shows the honest recovery page (408ms)
+  ✓   8 tests/browser/t16.spec.ts:27:1 › blocked browser storage gives a recoverable message and keeps the page usable (320ms)
+  ✓   9 tests/browser/t16.spec.ts:29:35 › 360px offline management has no page overflow (420ms)
+  ✓  10 tests/browser/t16.spec.ts:29:35 › 768px offline management has no page overflow (421ms)
+  ✓  11 tests/browser/t16.spec.ts:29:35 › 1280px offline management has no page overflow (463ms)
+
+  11 passed (7.8s)

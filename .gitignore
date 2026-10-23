@@ -2,6 +2,7 @@ project/node_modules/
 project/dist/
 project/dist-server/
 project/dist-engine/
+project/dist-analysis/
 project/runtime-data/
 project/.env
 project/.env.*

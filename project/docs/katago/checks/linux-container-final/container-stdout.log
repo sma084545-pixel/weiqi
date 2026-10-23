@@ -1,0 +1,2 @@
+{"event":"http_listening","port":10000,"engine":"KataGo","version":"1.18.1"}
+{"event":"engine_ready","startupMs":1105,"at":"2026-10-23T08:06:42.944Z"}

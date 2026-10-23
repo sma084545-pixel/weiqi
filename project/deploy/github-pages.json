@@ -7,5 +7,5 @@
   "serverOrigin": "https://weiqi-rooms.onrender.com",
   "protocolVersion": 1,
   "roomsEphemeral": true,
-  "analysisOrigin": null
+  "analysisOrigin": "https://weiqi-katago.onrender.com"
 }

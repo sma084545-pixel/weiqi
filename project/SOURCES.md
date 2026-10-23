@@ -112,3 +112,10 @@ GitHub官方[Pages说明](https://docs.github.com/en/pages/getting-started-with-
 
 
 ONLINE_PLAY_TOOLS（2026-10-22实际访问）：[Chrome Document PiP](https://developer.chrome.com/docs/web-platform/document-picture-in-picture)、[MDN requestFullscreen](https://developer.mozilla.org/en-US/docs/Web/API/Element/requestFullscreen)、[MDN dialog](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog)。仅用于API条件/兼容和焦点行为核对；代码与文案为本项目实现，不复制文章图示。modern-web-guidance的drag指引用于独立拖动把手、pointer capture、夹边及键盘替代；没有引入运行时依赖。
+
+
+## 0.22.0 KataGo 复盘接入（2026-10-23访问）
+
+- KataGo v1.18.1 官方源码、MIT与第三方声明：https://github.com/lightvector/KataGo/tree/v1.18.1 。JSON协议 https://github.com/lightvector/KataGo/blob/v1.18.1/docs/Analysis_Engine.md ；编译 https://github.com/lightvector/KataGo/blob/v1.18.1/Compiling.md 。固定模型来自官方训练历史所链接的 https://katagoarchive.org/g170/ （CC0）。精确下载URL、SHA256及副本许可证保存在 analysis-engine/engine-manifest.json 和 licenses/。
+- Render官方Web Services/Docker/Free/Pricing/Health Checks/Blueprint与Build Pipeline文档实际核查。具体URLs和访问证据见 docs/katago/checks/render-official-resources.json；资源、收费与后台未核查边界见 docs/katago/RENDER-OPTIONS.md。
+- 新增HTTP调度、协议适配、前端文案与测试为本次项目实现。KataGo不是本项目原创引擎；规则仍为GO-CLUB-AREA-1，明确映射而非将其他赛规混入。本次程序/引擎检查不是人类教师审查或课堂效果证据。

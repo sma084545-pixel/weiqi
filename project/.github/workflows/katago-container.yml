@@ -1,0 +1,43 @@
+name: KataGo real container verification
+on:
+  push:
+    branches: [feat/katago-review]
+    paths: ['project/server/analysis/**', 'project/src/core/**', 'project/schemas/**', 'project/analysis-engine/**', 'project/scripts/katago-real-smoke.mjs', 'project/vite.analysis.config.ts', '.github/workflows/katago-container.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: katago-container-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  cpu-engine:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '22.23.3'
+      - name: Build pinned Eigen CPU engine and HTTP service
+        run: docker build --progress=plain -f project/analysis-engine/Dockerfile -t weiqi-katago:test project
+      - name: Run real container under constrained CPU and memory
+        run: |
+          mkdir -p evidence
+          docker run -d --name weiqi-katago --memory=512m --cpus=0.1 -e PUBLIC_ORIGIN=https://sma084545-pixel.github.io -p 4207:10000 weiqi-katago:test
+          KATAGO_TEST_LOCATION=github-actions-linux-docker-0.1cpu-512m KATAGO_TEST_REPORT=evidence/real-http-smoke.json node project/scripts/katago-real-smoke.mjs
+          docker exec weiqi-katago cat /sys/fs/cgroup/memory.peak > evidence/memory-peak-bytes.txt
+          docker inspect --format '{{json .State}}' weiqi-katago > evidence/container-state.json
+          docker exec weiqi-katago /opt/katago/katago version > evidence/engine-version.txt
+      - name: Capture diagnostics
+        if: always()
+        run: |
+          mkdir -p evidence
+          docker logs weiqi-katago > evidence/container-stdout.log 2> evidence/container-stderr.log || true
+          docker inspect weiqi-katago --format '{{json .HostConfig}}' > evidence/resource-limits.json || true
+          docker rm -f weiqi-katago || true
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        if: always()
+        with:
+          name: katago-real-container-evidence
+          path: evidence/
+          retention-days: 14

@@ -84,3 +84,10 @@ WebKit可另执行T24_ONLINE_ONLY=1 pnpm exec playwright test tests/browser/t24.
 原网站 https://sma084545-pixel.github.io/weiqi/ 的联机入口 #/play/online 使用 https://weiqi-rooms.onrender.com。部署公开前端用 `corepack pnpm build:pages`，它读取非秘密配置 deploy/github-pages.json；普通 `pnpm build` 不注入公网配置。公开构建只在配置中的网站来源使用 Render，本机软件仍使用自己的 Node 服务；VITE_ 变量不得放密钥。
 
 Render 当前运行 0.20.2、protocolVersion=1，前端 0.20.3 只调整接入与提示，规则、schema、协议兼容。后台自动部署关闭，避免普通提交打断房间；后续维护时先保存棋局再在 Render 手动更新。免费实例临时文件不持久，休眠、重启、重新部署可能需要重新开房，界面已提示保存本机副本/导出。首次唤醒可能约一分钟，稍候重连。无账号、无默认学习数据上传。实际公网验证与剩余限制见 docs/render/ACCEPTANCE.md、handoff/RENDER_DEPLOY.md。
+
+
+## KataGo 终局后复盘（0.22.0）
+
+在原网站的自由双人对弈结束后，可拖动棋局滑动条并手动分析当前复盘局面。真实Eigen CPU引擎运行于独立Render服务，提供数字候选、后续变化、黑方胜率与预计目差；不改变双方终局确认，也不在进行中提示下一手。
+
+分析后端构建：`pnpm build:analysis`；本机单元/协议检查：`pnpm test:analysis`；独立UI回归：`pnpm test:analysis-browser`。Docker、精确来源/校验值、限额、环境变量、更新和回滚见 [部署说明](docs/katago/DEPLOYMENT.md)，实际验收与限制见 [检查报告](docs/katago/ACCEPTANCE.md)。正式前端地址通过 deploy/github-pages.json 的 analysisOrigin 集中配置，`pnpm build:pages`注入；普通本机对弈不依赖分析服务。公网分析仅允许原GitHub Pages Origin，其他本地/自有网站需运营者配置自己的允许Origin。

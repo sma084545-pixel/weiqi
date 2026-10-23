@@ -1,0 +1,1 @@
+{"service":"go-club-katago","status":"ready","ready":true,"active":0,"queued":0,"engineVersion":"1.18.1","model":"g170-b6c96-s175395328-d26788732","uptimeSeconds":166,"engineStartupMs":1399,"resources":{"cgroupMemoryLimitBytes":536870912,"cgroupMemoryPeakBytes":71868416,"cpuQuota":0.15}}
