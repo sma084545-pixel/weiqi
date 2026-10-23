@@ -1,0 +1,172 @@
+{
+  "status": "passed",
+  "queries": [
+    {
+      "id": "B-to-play",
+      "initialStones": [
+        [
+          "B",
+          "D4"
+        ],
+        [
+          "W",
+          "F6"
+        ]
+      ],
+      "initialPlayer": "B",
+      "moves": [],
+      "rules": {
+        "ko": "POSITIONAL",
+        "scoring": "AREA",
+        "suicide": false,
+        "tax": "NONE",
+        "hasButton": false,
+        "whiteHandicapBonus": "0",
+        "friendlyPassOk": true
+      },
+      "komi": 6.5,
+      "boardXSize": 9,
+      "boardYSize": 9,
+      "maxVisits": 1
+    },
+    {
+      "id": "W-to-play",
+      "initialStones": [
+        [
+          "B",
+          "D4"
+        ]
+      ],
+      "initialPlayer": "W",
+      "moves": [],
+      "rules": {
+        "ko": "POSITIONAL",
+        "scoring": "AREA",
+        "suicide": false,
+        "tax": "NONE",
+        "hasButton": false,
+        "whiteHandicapBonus": "0",
+        "friendlyPassOk": true
+      },
+      "komi": 0,
+      "boardXSize": 9,
+      "boardYSize": 9,
+      "maxVisits": 1
+    }
+  ],
+  "results": {
+    "BLACK": {
+      "B-to-play": {
+        "id": "B-to-play",
+        "isDuringSearch": false,
+        "moveInfos": [],
+        "rootInfo": {
+          "currentPlayer": "B",
+          "rawLead": 1.22190797,
+          "rawNoResultProb": 0.0,
+          "rawScoreSelfplay": 1.29096031,
+          "rawScoreSelfplayStdev": 12.8810867,
+          "rawStScoreError": -1.0,
+          "rawStWrError": -0.5,
+          "rawVarTimeLeft": -1.0,
+          "rawWinrate": 0.594330609,
+          "scoreLead": 1.22190797,
+          "scoreSelfplay": 1.29096031,
+          "scoreStdev": 12.8810867,
+          "symHash": "0F5DE3C84E0A211AD804B9E1E0D7720C",
+          "thisHash": "0F5DE3C84E0A211AD804B9E1E0D7720C",
+          "utility": 0.195408226,
+          "visits": 1,
+          "weight": 1.0,
+          "winrate": 0.594330609
+        },
+        "turnNumber": 0
+      },
+      "W-to-play": {
+        "id": "W-to-play",
+        "isDuringSearch": false,
+        "moveInfos": [],
+        "rootInfo": {
+          "currentPlayer": "W",
+          "rawLead": 6.22660875,
+          "rawNoResultProb": 0.0,
+          "rawScoreSelfplay": 6.83666801,
+          "rawScoreSelfplayStdev": 15.246155,
+          "rawStScoreError": -1.0,
+          "rawStWrError": -0.5,
+          "rawVarTimeLeft": -1.0,
+          "rawWinrate": 0.863968909,
+          "scoreLead": 6.22660875,
+          "scoreSelfplay": 6.83666801,
+          "scoreStdev": 15.246155,
+          "symHash": "69795B14D8DAF2F1819C41F5EDECC0B9",
+          "thisHash": "8953FD9AD1D848F3DB8C87D35901B45D",
+          "utility": 0.760340416,
+          "visits": 1,
+          "weight": 1.0,
+          "winrate": 0.863968909
+        },
+        "turnNumber": 0
+      }
+    },
+    "WHITE": {
+      "B-to-play": {
+        "id": "B-to-play",
+        "isDuringSearch": false,
+        "moveInfos": [],
+        "rootInfo": {
+          "currentPlayer": "B",
+          "rawLead": -1.22190797,
+          "rawNoResultProb": 0.0,
+          "rawScoreSelfplay": -1.29096031,
+          "rawScoreSelfplayStdev": 12.8810867,
+          "rawStScoreError": -1.0,
+          "rawStWrError": -0.5,
+          "rawVarTimeLeft": -1.0,
+          "rawWinrate": 0.405669391,
+          "scoreLead": -1.22190797,
+          "scoreSelfplay": -1.29096031,
+          "scoreStdev": 12.8810867,
+          "symHash": "0F5DE3C84E0A211AD804B9E1E0D7720C",
+          "thisHash": "0F5DE3C84E0A211AD804B9E1E0D7720C",
+          "utility": -0.195408226,
+          "visits": 1,
+          "weight": 1.0,
+          "winrate": 0.405669391
+        },
+        "turnNumber": 0
+      },
+      "W-to-play": {
+        "id": "W-to-play",
+        "isDuringSearch": false,
+        "moveInfos": [],
+        "rootInfo": {
+          "currentPlayer": "W",
+          "rawLead": -6.22660875,
+          "rawNoResultProb": 0.0,
+          "rawScoreSelfplay": -6.83666801,
+          "rawScoreSelfplayStdev": 15.246155,
+          "rawStScoreError": -1.0,
+          "rawStWrError": -0.5,
+          "rawVarTimeLeft": -1.0,
+          "rawWinrate": 0.136031091,
+          "scoreLead": -6.22660875,
+          "scoreSelfplay": -6.83666801,
+          "scoreStdev": 15.246155,
+          "symHash": "69795B14D8DAF2F1819C41F5EDECC0B9",
+          "thisHash": "8953FD9AD1D848F3DB8C87D35901B45D",
+          "utility": -0.760340416,
+          "visits": 1,
+          "weight": 1.0,
+          "winrate": 0.136031091
+        },
+        "turnNumber": 0
+      }
+    }
+  },
+  "assertions": [
+    "BLACK and WHITE winrates sum to1 (tolerance1e-6)",
+    "BLACK and WHITE scoreLead signs invert (tolerance1e-5)",
+    "currentPlayer remains requested B/W rather than changing perspective"
+  ]
+}

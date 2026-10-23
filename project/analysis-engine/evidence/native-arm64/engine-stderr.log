@@ -1,0 +1,42 @@
+2026-10-23 15:45:55+0800: Running with following config:
+analysisPVLen = 10
+assumeMultipleStartingBlackMovesAreHandicap = false
+conservativePass = true
+ignorePreRootHistory = false
+logAllRequests = false
+logAllResponses = false
+logErrorsAndWarnings = true
+logSearchInfo = false
+logToStderr = true
+maxBoardXSizeForNNBuffer = 19
+maxBoardYSizeForNNBuffer = 19
+maxTime = 15
+maxVisits = 64
+nnCacheSizePowerOfTwo = 12
+nnMaxBatchSize = 1
+nnMutexPoolSizePowerOfTwo = 8
+nnRandomize = true
+numAnalysisThreads = 1
+numEigenThreadsPerModel = 1
+numSearchThreads = 1
+preventCleanupPhase = true
+reportAnalysisWinratesAs = BLACK
+warnUnusedFields = true
+
+2026-10-23 15:45:55+0800: Analysis Engine starting...
+2026-10-23 15:45:55+0800: KataGo v1.18.1
+2026-10-23 15:45:55+0800: nnRandSeed0 = 700619837360307249
+2026-10-23 15:45:55+0800: After dedups: nnModelFile0 = /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/katago-20261023/research/g170-b6c96-s175395328-d26788732.bin.gz useFP16 auto
+2026-10-23 15:45:55+0800: Initializing neural net buffer to be size 19 * 19 allowing smaller boards
+2026-10-23 15:45:55+0800: Eigen (CPU) backend thread 0: Model version 8
+2026-10-23 15:45:55+0800: Eigen (CPU) backend thread 0: Model name: g170-b6c96-s175395328-d26788732 (convnet, 1027911 params)
+2026-10-23 15:45:55+0800: Loaded config /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/katago-20261023/mainline/go-club/analysis-engine/analysis.cfg
+2026-10-23 15:45:55+0800: Loaded model /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/katago-20261023/research/g170-b6c96-s175395328-d26788732.bin.gz
+2026-10-23 15:45:55+0800: Analyzing up to 1 positions at a time in parallel
+2026-10-23 15:45:55+0800: Started, ready to begin handling requests
+2026-10-23 15:46:02+0800: /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/katago-20261023/research/g170-b6c96-s175395328-d26788732.bin.gz
+2026-10-23 15:46:02+0800: NN rows: 752
+2026-10-23 15:46:02+0800: NN batches: 752
+2026-10-23 15:46:02+0800: NN avg batch size: 1
+2026-10-23 15:46:02+0800: GPU -1 finishing, processed 752 rows 752 batches
+2026-10-23 15:46:02+0800: All cleaned up, quitting

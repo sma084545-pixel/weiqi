@@ -26,7 +26,8 @@
     "vite.config.ts",
     "vite.engine.config.ts",
     "server",
-    "vite.server.config.ts"
+    "vite.server.config.ts",
+    "vite.analysis.config.ts"
   ],
   "exclude": [
     "scripts/engine-types-smoke.ts"

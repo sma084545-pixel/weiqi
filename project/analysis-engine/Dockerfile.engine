@@ -1,0 +1,12 @@
+# Standalone engine smoke-test image. The application Dockerfile reuses these scripts.
+FROM debian:bookworm-slim AS engine-build
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates curl build-essential cmake zlib1g-dev && rm -rf /var/lib/apt/lists/*
+COPY analysis-engine/build-engine.sh analysis-engine/fetch-model.sh /build/
+RUN sh /build/build-engine.sh /opt/katago && sh /build/fetch-model.sh /opt/katago/model.bin.gz
+FROM debian:bookworm-slim
+RUN apt-get update && apt-get install -y --no-install-recommends libstdc++6 zlib1g && rm -rf /var/lib/apt/lists/*
+COPY --from=engine-build /opt/katago /opt/katago
+COPY analysis-engine/analysis.cfg /opt/katago/analysis.cfg
+COPY analysis-engine/licenses /opt/katago/notices/project-notices
+USER 10001:10001
+ENTRYPOINT ["/opt/katago/katago", "analysis", "-config", "/opt/katago/analysis.cfg", "-model", "/opt/katago/model.bin.gz", "-quit-without-waiting"]

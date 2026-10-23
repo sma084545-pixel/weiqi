@@ -1,0 +1,954 @@
+{
+  "testKind": "real-engine-http",
+  "location": "native-local",
+  "at": "2026-10-23T07:53:22.442Z",
+  "base": "http://127.0.0.1:4207",
+  "health": {
+    "service": "go-club-katago",
+    "status": "ready",
+    "ready": true,
+    "active": 0,
+    "queued": 0,
+    "engineVersion": "1.18.1",
+    "model": "g170-b6c96-s175395328-d26788732",
+    "uptimeSeconds": 44
+  },
+  "readyWaitMs": 33,
+  "checks": [
+    {
+      "name": "exact-origin-preflight",
+      "status": "passed"
+    },
+    {
+      "name": "foreign-origin-denied",
+      "status": "passed"
+    },
+    {
+      "name": "5-board-history",
+      "status": "passed",
+      "httpMs": 558,
+      "result": {
+        "schemaVersion": 1,
+        "requestId": "1e0e2192-e511-4f2d-9b44-c1ffc7e3d7cc",
+        "positionId": "real-5",
+        "perspective": "B",
+        "toPlay": "W",
+        "blackWinrate": 0.0288260135,
+        "blackScoreLead": -12.0585427,
+        "visits": 64,
+        "elapsedMs": 545,
+        "engine": {
+          "name": "KataGo",
+          "version": "1.18.1",
+          "model": "g170-b6c96-s175395328-d26788732",
+          "backend": "Eigen CPU",
+          "maxVisits": 64
+        },
+        "candidates": [
+          {
+            "order": 0,
+            "move": {
+              "type": "place",
+              "at": {
+                "row": 2,
+                "col": 2
+              }
+            },
+            "visits": 62,
+            "blackWinrate": 0.027948192,
+            "blackScoreLead": -12.2112271,
+            "pv": [
+              {
+                "type": "place",
+                "at": {
+                  "row": 2,
+                  "col": 2
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 2,
+                  "col": 1
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 1,
+                  "col": 2
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 3,
+                  "col": 2
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 3,
+                  "col": 3
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 4,
+                  "col": 1
+                }
+              }
+            ]
+          },
+          {
+            "order": 1,
+            "move": {
+              "type": "place",
+              "at": {
+                "row": 2,
+                "col": 1
+              }
+            },
+            "visits": 1,
+            "blackWinrate": 0.429217219,
+            "blackScoreLead": -2.09045506,
+            "pv": [
+              {
+                "type": "place",
+                "at": {
+                  "row": 2,
+                  "col": 1
+                }
+              }
+            ]
+          },
+          {
+            "order": 2,
+            "move": {
+              "type": "place",
+              "at": {
+                "row": 1,
+                "col": 2
+              }
+            },
+            "visits": 1,
+            "blackWinrate": 0.429217219,
+            "blackScoreLead": -2.09045506,
+            "pv": [
+              {
+                "type": "place",
+                "at": {
+                  "row": 1,
+                  "col": 2
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "9-board-history-setup-pass",
+      "status": "passed",
+      "httpMs": 594,
+      "result": {
+        "schemaVersion": 1,
+        "requestId": "acbe358e-c973-4b2c-8642-da9929cd515b",
+        "positionId": "real-9",
+        "perspective": "B",
+        "toPlay": "B",
+        "blackWinrate": 0.728776528,
+        "blackScoreLead": 3.36405129,
+        "visits": 64,
+        "elapsedMs": 586,
+        "engine": {
+          "name": "KataGo",
+          "version": "1.18.1",
+          "model": "g170-b6c96-s175395328-d26788732",
+          "backend": "Eigen CPU",
+          "maxVisits": 64
+        },
+        "candidates": [
+          {
+            "order": 0,
+            "move": {
+              "type": "place",
+              "at": {
+                "row": 3,
+                "col": 5
+              }
+            },
+            "visits": 37,
+            "blackWinrate": 0.725753953,
+            "blackScoreLead": 3.28594093,
+            "pv": [
+              {
+                "type": "place",
+                "at": {
+                  "row": 3,
+                  "col": 5
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 5,
+                  "col": 3
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 3,
+                  "col": 2
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 5,
+                  "col": 6
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 4,
+                  "col": 6
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 5,
+                  "col": 5
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 4,
+                  "col": 4
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 5,
+                  "col": 4
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 5,
+                  "col": 1
+                }
+              }
+            ]
+          },
+          {
+            "order": 1,
+            "move": {
+              "type": "place",
+              "at": {
+                "row": 5,
+                "col": 3
+              }
+            },
+            "visits": 37,
+            "blackWinrate": 0.725753953,
+            "blackScoreLead": 3.28594093,
+            "pv": [
+              {
+                "type": "place",
+                "at": {
+                  "row": 5,
+                  "col": 3
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 3,
+                  "col": 5
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 5,
+                  "col": 6
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 3,
+                  "col": 2
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 4,
+                  "col": 2
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 3,
+                  "col": 3
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 4,
+                  "col": 4
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 3,
+                  "col": 4
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 3,
+                  "col": 7
+                }
+              }
+            ]
+          },
+          {
+            "order": 2,
+            "move": {
+              "type": "place",
+              "at": {
+                "row": 3,
+                "col": 6
+              }
+            },
+            "visits": 3,
+            "blackWinrate": 0.742089917,
+            "blackScoreLead": 3.82250004,
+            "pv": [
+              {
+                "type": "place",
+                "at": {
+                  "row": 3,
+                  "col": 6
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 4,
+                  "col": 3
+                }
+              }
+            ]
+          },
+          {
+            "order": 3,
+            "move": {
+              "type": "place",
+              "at": {
+                "row": 5,
+                "col": 2
+              }
+            },
+            "visits": 3,
+            "blackWinrate": 0.742089917,
+            "blackScoreLead": 3.82250004,
+            "pv": [
+              {
+                "type": "place",
+                "at": {
+                  "row": 5,
+                  "col": 2
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 4,
+                  "col": 5
+                }
+              }
+            ]
+          },
+          {
+            "order": 4,
+            "move": {
+              "type": "place",
+              "at": {
+                "row": 6,
+                "col": 3
+              }
+            },
+            "visits": 3,
+            "blackWinrate": 0.742089917,
+            "blackScoreLead": 3.82250004,
+            "pv": [
+              {
+                "type": "place",
+                "at": {
+                  "row": 6,
+                  "col": 3
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 3,
+                  "col": 4
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "13-board-history-dispute-resume",
+      "status": "passed",
+      "httpMs": 488,
+      "result": {
+        "schemaVersion": 1,
+        "requestId": "e66ca3e7-1ade-4948-bc63-6cfef063b3b1",
+        "positionId": "real-13",
+        "perspective": "B",
+        "toPlay": "B",
+        "blackWinrate": 0.683168417,
+        "blackScoreLead": 5.32088072,
+        "visits": 64,
+        "elapsedMs": 481,
+        "engine": {
+          "name": "KataGo",
+          "version": "1.18.1",
+          "model": "g170-b6c96-s175395328-d26788732",
+          "backend": "Eigen CPU",
+          "maxVisits": 64
+        },
+        "candidates": [
+          {
+            "order": 0,
+            "move": {
+              "type": "place",
+              "at": {
+                "row": 3,
+                "col": 3
+              }
+            },
+            "visits": 13,
+            "blackWinrate": 0.686863282,
+            "blackScoreLead": 5.3290712,
+            "pv": [
+              {
+                "type": "place",
+                "at": {
+                  "row": 3,
+                  "col": 3
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 9,
+                  "col": 3
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 9,
+                  "col": 9
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 3,
+                  "col": 9
+                }
+              }
+            ]
+          },
+          {
+            "order": 1,
+            "move": {
+              "type": "place",
+              "at": {
+                "row": 3,
+                "col": 9
+              }
+            },
+            "visits": 21,
+            "blackWinrate": 0.682927459,
+            "blackScoreLead": 5.28698783,
+            "pv": [
+              {
+                "type": "place",
+                "at": {
+                  "row": 3,
+                  "col": 9
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 9,
+                  "col": 3
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 9,
+                  "col": 9
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 3,
+                  "col": 3
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 2,
+                  "col": 2
+                }
+              }
+            ]
+          },
+          {
+            "order": 2,
+            "move": {
+              "type": "place",
+              "at": {
+                "row": 9,
+                "col": 3
+              }
+            },
+            "visits": 21,
+            "blackWinrate": 0.682927459,
+            "blackScoreLead": 5.28698783,
+            "pv": [
+              {
+                "type": "place",
+                "at": {
+                  "row": 9,
+                  "col": 3
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 3,
+                  "col": 9
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 9,
+                  "col": 9
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 3,
+                  "col": 3
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 2,
+                  "col": 2
+                }
+              }
+            ]
+          },
+          {
+            "order": 3,
+            "move": {
+              "type": "place",
+              "at": {
+                "row": 9,
+                "col": 9
+              }
+            },
+            "visits": 14,
+            "blackWinrate": 0.678290545,
+            "blackScoreLead": 5.27186069,
+            "pv": [
+              {
+                "type": "place",
+                "at": {
+                  "row": 9,
+                  "col": 9
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 9,
+                  "col": 3
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 3,
+                  "col": 9
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 3,
+                  "col": 3
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 2,
+                  "col": 2
+                }
+              }
+            ]
+          },
+          {
+            "order": 4,
+            "move": {
+              "type": "place",
+              "at": {
+                "row": 2,
+                "col": 3
+              }
+            },
+            "visits": 6,
+            "blackWinrate": 0.686892609,
+            "blackScoreLead": 5.35372299,
+            "pv": [
+              {
+                "type": "place",
+                "at": {
+                  "row": 2,
+                  "col": 3
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 9,
+                  "col": 3
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 9,
+                  "col": 9
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 3,
+                  "col": 9
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "19-board-history",
+      "status": "passed",
+      "httpMs": 594,
+      "result": {
+        "schemaVersion": 1,
+        "requestId": "92f6f04e-ea05-474e-8f86-c59110b1bc82",
+        "positionId": "real-19",
+        "perspective": "B",
+        "toPlay": "W",
+        "blackWinrate": 0.355631055,
+        "blackScoreLead": -8.21190707,
+        "visits": 64,
+        "elapsedMs": 587,
+        "engine": {
+          "name": "KataGo",
+          "version": "1.18.1",
+          "model": "g170-b6c96-s175395328-d26788732",
+          "backend": "Eigen CPU",
+          "maxVisits": 64
+        },
+        "candidates": [
+          {
+            "order": 0,
+            "move": {
+              "type": "place",
+              "at": {
+                "row": 15,
+                "col": 2
+              }
+            },
+            "visits": 18,
+            "blackWinrate": 0.348682412,
+            "blackScoreLead": -8.40228502,
+            "pv": [
+              {
+                "type": "place",
+                "at": {
+                  "row": 15,
+                  "col": 2
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 15,
+                  "col": 16
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 3,
+                  "col": 16
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 3,
+                  "col": 2
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 3,
+                  "col": 14
+                }
+              }
+            ]
+          },
+          {
+            "order": 1,
+            "move": {
+              "type": "place",
+              "at": {
+                "row": 2,
+                "col": 15
+              }
+            },
+            "visits": 18,
+            "blackWinrate": 0.348682412,
+            "blackScoreLead": -8.40228502,
+            "pv": [
+              {
+                "type": "place",
+                "at": {
+                  "row": 2,
+                  "col": 15
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 16,
+                  "col": 15
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 16,
+                  "col": 3
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 2,
+                  "col": 3
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 14,
+                  "col": 3
+                }
+              }
+            ]
+          },
+          {
+            "order": 2,
+            "move": {
+              "type": "place",
+              "at": {
+                "row": 16,
+                "col": 15
+              }
+            },
+            "visits": 14,
+            "blackWinrate": 0.355947055,
+            "blackScoreLead": -8.04370021,
+            "pv": [
+              {
+                "type": "place",
+                "at": {
+                  "row": 16,
+                  "col": 15
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 15,
+                  "col": 2
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 3,
+                  "col": 2
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 3,
+                  "col": 16
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 3,
+                  "col": 15
+                }
+              }
+            ]
+          },
+          {
+            "order": 3,
+            "move": {
+              "type": "place",
+              "at": {
+                "row": 15,
+                "col": 16
+              }
+            },
+            "visits": 14,
+            "blackWinrate": 0.355947055,
+            "blackScoreLead": -8.04370021,
+            "pv": [
+              {
+                "type": "place",
+                "at": {
+                  "row": 15,
+                  "col": 16
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 2,
+                  "col": 15
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 2,
+                  "col": 3
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 16,
+                  "col": 3
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 15,
+                  "col": 3
+                }
+              }
+            ]
+          },
+          {
+            "order": 4,
+            "move": {
+              "type": "place",
+              "at": {
+                "row": 16,
+                "col": 3
+              }
+            },
+            "visits": 14,
+            "blackWinrate": 0.358570367,
+            "blackScoreLead": -8.01229577,
+            "pv": [
+              {
+                "type": "place",
+                "at": {
+                  "row": 16,
+                  "col": 3
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 2,
+                  "col": 15
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 2,
+                  "col": 3
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 15,
+                  "col": 16
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "unfinished-game-denied",
+      "status": "passed"
+    }
+  ]
+}

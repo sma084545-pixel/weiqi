@@ -1,0 +1,19 @@
+# Import THIS file via Render New > Blueprint > Blueprint Path.
+# It intentionally does not manage or modify the existing weiqi-rooms service.
+services:
+  - type: web
+    name: weiqi-katago
+    runtime: docker
+    plan: free
+    region: singapore
+    numInstances: 1
+    rootDir: project
+    dockerfilePath: analysis-engine/Dockerfile
+    dockerContext: .
+    healthCheckPath: /readyz
+    autoDeployTrigger: off
+    envVars:
+      - key: PUBLIC_ORIGIN
+        value: https://sma084545-pixel.github.io
+      - key: KATAGO_MAX_VISITS
+        value: "64"

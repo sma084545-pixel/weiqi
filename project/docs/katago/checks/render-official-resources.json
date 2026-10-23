@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 1,
+  "id": "CHECK-KATAGO-RENDER-OFFICIAL-RESOURCES",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "checkedAt": "2026-10-23T07:44:42Z",
+  "timeZone": "Asia/Shanghai",
+  "evidenceType": "official-document-research",
+  "accountInspected": false,
+  "accountPlanAvailabilityVerified": false,
+  "serviceCreated": false,
+  "paidResourceAuthorized": false,
+  "paidResourceCreated": false,
+  "plans": [
+    {
+      "id": "free",
+      "cpu": 0.1,
+      "ramMB": 512,
+      "priceUSDPerMonthPerInstance": 0,
+      "availability": "official-public-plan-only",
+      "fitness": "unmeasured"
+    },
+    {
+      "id": "0.5c-512mb",
+      "legacyId": "starter",
+      "cpu": 0.5,
+      "ramMB": 512,
+      "priceUSDPerMonthPerInstance": 7,
+      "availability": "official-public-plan-only",
+      "fitness": "unmeasured",
+      "note": "Same RAM as Free; paying for this plan does not repair an engine memory overflow."
+    },
+    {
+      "id": "1c-2g",
+      "legacyId": "standard",
+      "cpu": 1,
+      "ramGB": 2,
+      "priceUSDPerMonthPerInstance": 25,
+      "availability": "official-public-plan-only",
+      "fitness": "unmeasured",
+      "requiresExplicitBudgetApproval": true
+    }
+  ],
+  "workspacePricing": {
+    "plan": "Hobby",
+    "baseUSDPerMonth": 0,
+    "computeBilledSeparately": true,
+    "includedOutboundGBPerMonth": 5,
+    "outboundOverageUSDPerGB": 0.15,
+    "includedStandardBuildMinutesPerMonth": 500,
+    "standardBuildOverageUSDPer1000Minutes": 5,
+    "accountPaymentMethodVerified": false,
+    "accountSpendLimitVerified": false,
+    "taxesAndActualBillingCurrencyVerified": false,
+    "zeroTotalBillGuaranteed": false
+  },
+  "freeLimits": {
+    "idleSpinDownMinutes": 15,
+    "documentedWakeApproxMinutes": 1,
+    "engineInitializationAddsUnmeasuredDelay": true,
+    "freeInstanceHoursPerWorkspacePerMonth": 750,
+    "hoursSharedAcrossAllFreeWebServices": true,
+    "existingRoomServiceMayShareAllowance": true,
+    "actualWorkspaceMembershipAndUsageVerified": false,
+    "persistentDiskAllowed": false,
+    "sshAndShellAvailable": false,
+    "oneOffJobsAvailable": false,
+    "singleInstanceOnly": true,
+    "runtimeFilesystemDurabilityGuaranteed": false,
+    "selfRequestsToAvoidSleepAllowedByProject": false,
+    "overageBoundary": "Shared hours can suspend Free services; bandwidth/build use may be billed with a payment method or suspended at applicable limits. Account billing settings are unverified."
+  },
+  "deployment": {
+    "serviceType": "web",
+    "runtime": "docker",
+    "host": "0.0.0.0",
+    "portEnvironmentVariable": "PORT",
+    "documentedDefaultPort": 10000,
+    "gpuAssumed": false,
+    "singleInstancePlanned": true,
+    "singlePersistentEnginePlanned": true,
+    "modelPreparedAtBuildPlanned": true,
+    "buildkitSupported": true,
+    "multistageBuildSupported": true,
+    "dockerignoreSupported": true,
+    "httpResponseDocumentedMaxMinutes": 100,
+    "buildDocumentedMaxMinutes": 120,
+    "applicationMustSetOwnAnalysisDeadline": true,
+    "productionFrontendOrigin": "https://sma084545-pixel.github.io",
+    "productionFrontendUrl": "https://sma084545-pixel.github.io/weiqi/"
+  },
+  "healthChecks": {
+    "successHTTPStatusClasses": [2, 3],
+    "responseDeadlineSeconds": 5,
+    "newDeployReadyDeadlineMinutes": 15,
+    "runningConsecutiveFailureStopRoutingSeconds": 15,
+    "runningConsecutiveFailureRestartSeconds": 60,
+    "probeMustNotRunSearch": true,
+    "unreadyEngineMustNotBeReportedReady": true
+  },
+  "modelCandidate": {
+    "source": "official-general",
+    "family": "g170-b6c96",
+    "approxDownloadMiB": 3.65,
+    "finalEngineVersionAndModelHash": null,
+    "memoryPeakMB": null,
+    "analysisDurationSeconds": null,
+    "renderColdStartSeconds": null,
+    "realBenchmarkCompleted": false,
+    "freeFeasibility": "unverified",
+    "note": "Download size is not loaded model/process memory. This is a candidate, not a proven deployment."
+  },
+  "accessBoundary": {
+    "source": "root-agent-current-tool-observation",
+    "browserDashboardAccess": "denied-by-saved-permission",
+    "reportedDeniedAttempts": 2,
+    "userSaidAllowedButToolStillDenied": true,
+    "cliOrAPIPermissionBypassAllowed": false,
+    "secretReadOrRequestedByThisResearch": false,
+    "minimumNextUserAction": "Complete the final Render Dashboard create/deploy operation using the prepared accurate configuration, after any necessary budget approval."
+  },
+  "validation": {
+    "officialSpecificationsAndPrices": "passed-document-check",
+    "officialFreeAndQuotaLimits": "passed-document-check",
+    "officialDockerAndHealthRequirements": "passed-document-check",
+    "actualAccountPlansAndBilling": "not-tested-permission-denied",
+    "modelPeakMemoryAndFreeCapacity": "not-tested",
+    "renderDockerBuildAndStartup": "not-tested",
+    "realRenderKataGoAnalysis": "not-tested",
+    "productionWebsiteEndToEnd": "not-tested"
+  },
+  "sources": [
+    {
+      "id": "compute-plans",
+      "url": "https://render.com/docs/compute-plans",
+      "accessedOn": "2026-10-23",
+      "usedFor": ["CPU", "RAM", "plan IDs", "per-instance billing"],
+      "method": "official-page-full-text"
+    },
+    {
+      "id": "pricing",
+      "url": "https://render.com/pricing",
+      "accessedOn": "2026-10-23",
+      "usedFor": ["compute prices", "Hobby price", "bandwidth allowance and overage", "build allowance and overage"],
+      "method": "official-HTML-table-and-visible-text-extraction",
+      "note": "Web text extraction omitted the dynamic tables; direct read of the same official HTML verified the table values."
+    },
+    {
+      "id": "plan-naming-update",
+      "url": "https://render.com/docs/compute-plans-update",
+      "accessedOn": "2026-10-23",
+      "usedFor": ["2026-08-26 renaming", "legacy IDs remain supported", "no corresponding price/spec changes"],
+      "method": "official-page-full-text"
+    },
+    {
+      "id": "free",
+      "url": "https://render.com/docs/free",
+      "accessedOn": "2026-10-23",
+      "usedFor": ["sleep and wake", "shared free hours", "ephemeral filesystem", "disk and SSH restrictions", "overage/suspension boundary"],
+      "method": "official-page-full-text"
+    },
+    {
+      "id": "web-services",
+      "url": "https://render.com/docs/web-services",
+      "accessedOn": "2026-10-23",
+      "usedFor": ["Web Service type", "port binding", "HTTPS hostname", "Git deployment options"],
+      "method": "official-page-full-text"
+    },
+    {
+      "id": "docker",
+      "url": "https://render.com/docs/docker",
+      "accessedOn": "2026-10-23",
+      "usedFor": ["BuildKit", "multistage", "layer cache", "dockerignore", "secret build boundary"],
+      "method": "official-page-full-text"
+    },
+    {
+      "id": "health-checks",
+      "url": "https://render.com/docs/health-checks",
+      "accessedOn": "2026-10-23",
+      "usedFor": ["HTTP status and deadline", "new deploy readiness window", "running failure routing and restart"],
+      "method": "official-page-full-text"
+    },
+    {
+      "id": "platform-time-limits",
+      "url": "https://render.com/docs/render-vs-vercel-comparison",
+      "accessedOn": "2026-10-23",
+      "usedFor": ["100-minute HTTP limit", "120-minute build limit"],
+      "method": "official-page-full-text"
+    },
+    {
+      "id": "cli",
+      "url": "https://render.com/docs/cli",
+      "accessedOn": "2026-10-23",
+      "usedFor": ["official deployment tooling capabilities only"],
+      "method": "official-page-full-text",
+      "usedToAccessAccount": false
+    },
+    {
+      "id": "api",
+      "url": "https://render.com/docs/api",
+      "accessedOn": "2026-10-23",
+      "usedFor": ["secret credential boundary only"],
+      "method": "official-page-full-text",
+      "usedToAccessAccount": false
+    }
+  ],
+  "evidenceBoundary": "Document verification is not runtime testing, account authorization, a deployment, or proof of capacity."
+}

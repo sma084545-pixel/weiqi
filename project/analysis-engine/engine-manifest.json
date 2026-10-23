@@ -1,0 +1,55 @@
+{
+  "manifestVersion": 1,
+  "engine": {
+    "name": "KataGo",
+    "version": "1.18.1",
+    "gitCommit": "92ee95c0a4b25fec214da00951ab69e97e207729",
+    "backend": "EIGEN",
+    "sourceUrl": "https://codeload.github.com/lightvector/KataGo/tar.gz/refs/tags/v1.18.1",
+    "sourceSha256": "011a205c60c22f83008ba92d31f91196640f620edbfc2f09af79ef3f3311750c",
+    "license": "MIT (bundled third-party notices also apply)",
+    "portableBuild": {
+      "USE_AVX2": 0,
+      "marchNative": false,
+      "BUILD_DISTRIBUTED": 0
+    }
+  },
+  "eigen": {
+    "version": "3.4.0",
+    "url": "https://gitlab.com/libeigen/eigen/-/archive/3.4.0/eigen-3.4.0.tar.gz",
+    "sha256": "8586084f71f9bde545ee7fa6d00288b264a2b7ac3607b974e54d13e7162c1c72",
+    "license": "MPL-2.0 and per-file permissive notices; see licenses/eigen"
+  },
+  "model": {
+    "name": "g170-b6c96-s175395328-d26788732",
+    "filename": "g170-b6c96-s175395328-d26788732.bin.gz",
+    "url": "https://katagoarchive.org/g170/neuralnets/g170-b6c96-s175395328-d26788732.bin.gz",
+    "sha256": "f57fddf4672364d385d6ab177364ab819810d1123e229cb2649c4f337a2160b1",
+    "downloadBytes": 3827339,
+    "architecture": "6 residual blocks, 96 channels",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://katagoarchive.org/g170/LICENSE.txt",
+    "provenance": "Official archived g170 training run; archive is linked from pinned official TrainingHistory.md",
+    "limitations": "Old, intentionally small resource-constrained model; not comparable to latest large KataGo networks. Low visits are not a precise human rank."
+  },
+  "rules": {
+    "ko": "POSITIONAL",
+    "scoring": "AREA",
+    "suicide": false,
+    "tax": "NONE",
+    "hasButton": false,
+    "whiteHandicapBonus": "0",
+    "friendlyPassOk": true
+  },
+  "outputPerspective": "BLACK",
+  "defaultLimits": {
+    "analysisThreads": 1,
+    "searchThreads": 1,
+    "eigenThreads": 1,
+    "maxVisits": 64,
+    "maxTimeSeconds": 15,
+    "neuralCachePowerOfTwo": 12,
+    "ownership": false
+  },
+  "accessDate": "2026-10-23"
+}

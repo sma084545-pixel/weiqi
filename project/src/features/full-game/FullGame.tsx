@@ -12,6 +12,8 @@ import {
 } from './model';
 import {createFullGameStore,fullGameJson} from './storage';
 import {browserStoragePort} from '../../core/unified-persistence';
+import {useKataGoReview} from '../katago-review/useKataGoReview';
+import {KataGoReview} from '../katago-review/KataGoReview';
 import './FullGame.css';
 
 const colorName=(color:Color)=>color==='B'?'黑方':'白方';
@@ -75,6 +77,7 @@ export function FullGame({projector=false,freePlay=false}:{projector?:boolean;fr
   const game=match.game;
   useEffect(()=>{moveGate.current=false;},[game?.revision]);
   const history=useGameHistory(game);
+  const analysis=useKataGoReview(game,history.index,freePlay);
   const reviewIndex=history.viewingHistory?history.index:null;
   const frame=history.viewingHistory?history.frame:null;
   const previewResult=useMemo(()=>game&&(game.phase==='scoring'||game.result?.reason==='area')?scorePreview(match):null,[game,match.scoring]);
@@ -114,7 +117,7 @@ export function FullGame({projector=false,freePlay=false}:{projector?:boolean;fr
 
     <section className="full-game-layout">
       <div className="full-board-panel"><div className="full-board-heading"><div><span>{game?`${game.size}路 · 贴目 ${game.komi}`:`${match.setup.size}路 · 贴目 ${match.setup.komi}`}</span><h2>{game?'对局棋盘':'开局棋盘'}</h2></div><strong>{status}</strong></div>
-        <Board size={game?.size??match.setup.size} board={board} label={`完整${game?.size??match.setup.size}路棋盘，${status}`} mode={mode} disabled={Boolean(frame)||(game?.phase==='finished')} selected={null} onSelect={select} onPlay={play} markers={markers} showCoordinates displayMode={projector?'projector':'standard'}/>
+        <Board size={game?.size??match.setup.size} board={board} label={`完整${game?.size??match.setup.size}路棋盘，${status}`} mode={mode} disabled={Boolean(frame)||(game?.phase==='finished')} selected={null} onSelect={select} onPlay={play} markers={[...markers,...analysis.markers]} showCoordinates displayMode={projector?'projector':'standard'}/>
         <div className="full-legend"><span><i className="legend-stone black"/>黑子</span><span><i className="legend-stone white"/>白子</span><span><i className="legend-last"/>最后一手</span>{dead.length>0&&<span><i className="legend-dead">△</i>待确认死子</span>}</div>
         {game&&history.frame&&<GameTimeline max={history.max} value={history.index} onChange={history.goTo} title={history.frame.title} description={history.frame.description}/>}
       </div>
@@ -140,6 +143,7 @@ export function FullGame({projector=false,freePlay=false}:{projector?:boolean;fr
 
     {!frame&&game?.phase==='scoring'&&preview&&<><ScoreDetails score={preview} captures={game.captures} final={false}/><section className="neutral-list"><h2>当前中立点清单</h2><p>{preview.neutralPoints.length?preview.neutralPoints.map(at=>displayCoord(at,game.size)).join('、'):'当前预览没有中立点。'} 双方确认的是这份由当前死子标记产生的清单；这不是自动死活判断。</p></section></>}
     {!frame&&game?.phase==='finished'&&finalScore&&<ScoreDetails score={finalScore} captures={game.captures} final/>}
+    {game&&<KataGoReview analysis={analysis} size={game.size} index={history.index}/>}
 
     <section className="full-game-about"><h2>从吃子小游戏过渡</h2><p>完整围棋不会在首次提子时结束。双方围绕整盘面积继续行动，连续停手后共同确认；有争议就回到原盘实际演示。</p><a href={CAPTURE_GAME_ROUTE}>返回双人吃子小游戏</a></section>
   </div>;
