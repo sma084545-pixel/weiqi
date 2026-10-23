@@ -1,15 +1,15 @@
 ---
 schemaVersion: 1
 id: DOC-README
-revision: 28
+revision: 29
 rulesetId: GO-CLUB-AREA-1
 ---
 
-# 围棋社工具包 · 0.21.3
+# 围棋社工具包 · 0.22.0
 
-原网站保持 https://sma084545-pixel.github.io/weiqi/ ，联机入口 #/play/online。新增可拖动悬浮棋盘、独立画中画、最大化/系统全屏及房间双人聊天。使用与兼容边界见[窗口与聊天](docs/online-tools/USAGE.md)，更新服务器见[部署指南](docs/online-tools/DEPLOYMENT.md)。本次主线基线ONLINE_FLOATING_PLAY 0.21.2-pages.1；保留GO-CLUB-AREA-1、schemaVersion1、30题/6终局、课件纸卡和原存储。
+原网站保持 https://sma084545-pixel.github.io/weiqi/ 。0.22.0新增真实KataGo终局后复盘，入口 #/play/free；联机入口仍为 #/play/online。保留可拖动悬浮棋盘、独立画中画、最大化/系统全屏及房间双人聊天。使用与兼容边界见[窗口与聊天](docs/online-tools/USAGE.md)，更新服务器见[部署指南](docs/online-tools/DEPLOYMENT.md)。本次主线基线ONLINE_FLOATING_FIT 0.21.3-pages.1；保留GO-CLUB-AREA-1、schemaVersion1、30题/6终局、课件纸卡和原存储。
 
-0.21.3起悬浮小棋盘可按本人轮次直接落子，终局确认时可标记死子。回看保持只读；5/9/13/19路按小窗宽高完整显示，无需滚动。说明见[直接操作](docs/floating-fit/USAGE.md)，交接见[本轮交接](handoff/ONLINE_FLOATING_FIT.md)。这是前端更新，无需为此重启Render。
+0.21.3起悬浮小棋盘可按本人轮次直接落子，终局确认时可标记死子。回看保持只读；5/9/13/19路按小窗宽高完整显示，无需滚动。说明见[直接操作](docs/floating-fit/USAGE.md)，交接见[本轮交接](handoff/ONLINE_FLOATING_FIT.md)。该悬浮修复继续沿用；KataGo使用独立分析服务，不能用房间服务替代。
 
 ## 本地运行与构建
 

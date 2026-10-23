@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "id": "KATAGO-RELEASE-VERIFICATION",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "resultVersion": "0.22.0-pages.1",
+  "status": "passed",
+  "releaseUrl": "https://github.com/sma084545-pixel/weiqi/releases/tag/v0.22.0-pages.1",
+  "checks": {
+    "ARCHIVE_CHECK.json": {
+      "schemaVersion": 1,
+      "id": "KATAGO-ARCHIVE-CHECK",
+      "revision": 1,
+      "rulesetId": "GO-CLUB-AREA-1",
+      "resultVersion": "0.22.0-pages.1",
+      "status": "passed",
+      "archive": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/release/0.22.0-pages.1/go-club-0.22.0-pages.1-full.zip",
+      "archiveSha256": "687f8e838fc64c4a47c69b139b727db26ab21212883b44f106f75932e2fb68ea",
+      "archiveBytes": 264235229,
+      "crc": "passed",
+      "manifestFileHashes": "passed",
+      "fileCount": 3194,
+      "formalPuzzles": 30,
+      "terminalFixtures": 6,
+      "freshExtract": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/katago-20261023/verification/final-extract/go-club",
+      "commands": [
+        {
+          "command": "pnpm install --frozen-lockfile --prod=false",
+          "exitCode": 0,
+          "elapsedSeconds": 1.7,
+          "log": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/katago-20261023/verification/final-extract/command-0.log"
+        },
+        {
+          "command": "pnpm build:pages",
+          "exitCode": 0,
+          "elapsedSeconds": 8.11,
+          "log": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/katago-20261023/verification/final-extract/command-1.log"
+        },
+        {
+          "command": "pnpm build:analysis",
+          "exitCode": 0,
+          "elapsedSeconds": 0.61,
+          "log": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/katago-20261023/verification/final-extract/command-2.log"
+        },
+        {
+          "command": "pnpm validate:t09",
+          "exitCode": 0,
+          "elapsedSeconds": 1.62,
+          "log": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/katago-20261023/verification/final-extract/command-3.log"
+        },
+        {
+          "command": "pnpm test:analysis",
+          "exitCode": 0,
+          "elapsedSeconds": 2.79,
+          "log": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/katago-20261023/verification/final-extract/command-4.log"
+        }
+      ],
+      "humanReviewed": null
+    },
+    "PUBLIC_ASSET_CHECK.json": {
+      "schemaVersion": 1,
+      "id": "KATAGO-PUBLIC-ASSET-CHECK",
+      "revision": 1,
+      "rulesetId": "GO-CLUB-AREA-1",
+      "resultVersion": "0.22.0-pages.1",
+      "status": "passed",
+      "files": [
+        {
+          "path": "ONLINE_SETUP.md",
+          "url": "https://sma084545-pixel.github.io/weiqi/ONLINE_SETUP.md",
+          "bytes": 1713,
+          "expectedSha256": "ab828c5c04bf964a73498f2c602fbec1cf5496c6748fca93b4517524a9bd411f",
+          "actualSha256": "ab828c5c04bf964a73498f2c602fbec1cf5496c6748fca93b4517524a9bd411f",
+          "freshBuildSha256": "ab828c5c04bf964a73498f2c602fbec1cf5496c6748fca93b4517524a9bd411f",
+          "status": "passed"
+        },
+        {
+          "path": "app.webmanifest",
+          "url": "https://sma084545-pixel.github.io/weiqi/app.webmanifest",
+          "bytes": 256,
+          "expectedSha256": "26ae2d10fc5b45982ae4f4f593aaa93b781d4ff63a8bfe2166bc392d01cc9b50",
+          "actualSha256": "26ae2d10fc5b45982ae4f4f593aaa93b781d4ff63a8bfe2166bc392d01cc9b50",
+          "freshBuildSha256": "26ae2d10fc5b45982ae4f4f593aaa93b781d4ff63a8bfe2166bc392d01cc9b50",
+          "status": "passed"
+        },
+        {
+          "path": "assets/index-DJfA_h7J.js",
+          "url": "https://sma084545-pixel.github.io/weiqi/assets/index-DJfA_h7J.js",
+          "bytes": 1025820,
+          "expectedSha256": "a5e36a00c594544028e8e76c85d9f9c761695f1d83490e210301613bb44b77bb",
+          "actualSha256": "a5e36a00c594544028e8e76c85d9f9c761695f1d83490e210301613bb44b77bb",
+          "freshBuildSha256": "a5e36a00c594544028e8e76c85d9f9c761695f1d83490e210301613bb44b77bb",
+          "status": "passed"
+        },
+        {
+          "path": "assets/index-Dui6NNVj.css",
+          "url": "https://sma084545-pixel.github.io/weiqi/assets/index-Dui6NNVj.css",
+          "bytes": 137833,
+          "expectedSha256": "25ebecf722f4b63125ef380a98c36d0c748410efa63a417f76053563af45d82c",
+          "actualSha256": "25ebecf722f4b63125ef380a98c36d0c748410efa63a417f76053563af45d82c",
+          "freshBuildSha256": "25ebecf722f4b63125ef380a98c36d0c748410efa63a417f76053563af45d82c",
+          "status": "passed"
+        },
+        {
+          "path": "content/formal-content-v1.json",
+          "url": "https://sma084545-pixel.github.io/weiqi/content/formal-content-v1.json",
+          "bytes": 249844,
+          "expectedSha256": "a58630def9526df81cd8e27b8fabe8bbe59e9905eb4aad1af2fb6203f9b46532",
+          "actualSha256": "a58630def9526df81cd8e27b8fabe8bbe59e9905eb4aad1af2fb6203f9b46532",
+          "freshBuildSha256": "a58630def9526df81cd8e27b8fabe8bbe59e9905eb4aad1af2fb6203f9b46532",
+          "status": "passed"
+        },
+        {
+          "path": "favicon.svg",
+          "url": "https://sma084545-pixel.github.io/weiqi/favicon.svg",
+          "bytes": 362,
+          "expectedSha256": "ea785687252e962c7a71ac3f537a091354ac3e9c7b363dc4099aeb0075aff2b3",
+          "actualSha256": "ea785687252e962c7a71ac3f537a091354ac3e9c7b363dc4099aeb0075aff2b3",
+          "freshBuildSha256": "ea785687252e962c7a71ac3f537a091354ac3e9c7b363dc4099aeb0075aff2b3",
+          "status": "passed"
+        },
+        {
+          "path": "index.html",
+          "url": "https://sma084545-pixel.github.io/weiqi/index.html",
+          "bytes": 640,
+          "expectedSha256": "212f34d58d5e2dbe849cd78eee4af5d2e6a1ce4eb33dfbfe9b3eac0b231c78b4",
+          "actualSha256": "212f34d58d5e2dbe849cd78eee4af5d2e6a1ce4eb33dfbfe9b3eac0b231c78b4",
+          "freshBuildSha256": "212f34d58d5e2dbe849cd78eee4af5d2e6a1ce4eb33dfbfe9b3eac0b231c78b4",
+          "status": "passed"
+        },
+        {
+          "path": "materials/t13/territory-counting-card.md",
+          "url": "https://sma084545-pixel.github.io/weiqi/materials/t13/territory-counting-card.md",
+          "bytes": 1372,
+          "expectedSha256": "158917237f52ac5cca0fd2106823f28b5b2ce0310b24cd7bd455c10583de229b",
+          "actualSha256": "158917237f52ac5cca0fd2106823f28b5b2ce0310b24cd7bd455c10583de229b",
+          "freshBuildSha256": "158917237f52ac5cca0fd2106823f28b5b2ce0310b24cd7bd455c10583de229b",
+          "status": "passed"
+        },
+        {
+          "path": "materials/t17/CAS-evidence-template.md",
+          "url": "https://sma084545-pixel.github.io/weiqi/materials/t17/CAS-evidence-template.md",
+          "bytes": 1613,
+          "expectedSha256": "02db2b62aefe8d0dc007f3a243a47d4f298f73c86169a42b65edba6be52e5bcc",
+          "actualSha256": "02db2b62aefe8d0dc007f3a243a47d4f298f73c86169a42b65edba6be52e5bcc",
+          "freshBuildSha256": "02db2b62aefe8d0dc007f3a243a47d4f298f73c86169a42b65edba6be52e5bcc",
+          "status": "passed"
+        },
+        {
+          "path": "offline-assets.json",
+          "url": "https://sma084545-pixel.github.io/weiqi/offline-assets.json",
+          "bytes": 411,
+          "expectedSha256": "aa91ebb18b4fa6d0d8ed032cf1a7f29db9ae3403402620d8543204a696d04141",
+          "actualSha256": "aa91ebb18b4fa6d0d8ed032cf1a7f29db9ae3403402620d8543204a696d04141",
+          "freshBuildSha256": "aa91ebb18b4fa6d0d8ed032cf1a7f29db9ae3403402620d8543204a696d04141",
+          "status": "passed"
+        },
+        {
+          "path": "offline.html",
+          "url": "https://sma084545-pixel.github.io/weiqi/offline.html",
+          "bytes": 880,
+          "expectedSha256": "b5379d9413769029799e8e7914650cab8a5c3477bce36531ee91762389005fe5",
+          "actualSha256": "b5379d9413769029799e8e7914650cab8a5c3477bce36531ee91762389005fe5",
+          "freshBuildSha256": "b5379d9413769029799e8e7914650cab8a5c3477bce36531ee91762389005fe5",
+          "status": "passed"
+        },
+        {
+          "path": "sw.js",
+          "url": "https://sma084545-pixel.github.io/weiqi/sw.js",
+          "bytes": 3694,
+          "expectedSha256": "b6d4378d32889636cb3d9d9ca521cf366c0ed01b4f6e0415faf297ba171ee202",
+          "actualSha256": "b6d4378d32889636cb3d9d9ca521cf366c0ed01b4f6e0415faf297ba171ee202",
+          "freshBuildSha256": "b6d4378d32889636cb3d9d9ca521cf366c0ed01b4f6e0415faf297ba171ee202",
+          "status": "passed"
+        },
+        {
+          "path": "version.json",
+          "url": "https://sma084545-pixel.github.io/weiqi/version.json",
+          "bytes": 464,
+          "expectedSha256": "40bed82eb2ad5924c19c09b07b2670c1278625352afc248594c5d3e7fb49838e",
+          "actualSha256": "40bed82eb2ad5924c19c09b07b2670c1278625352afc248594c5d3e7fb49838e",
+          "freshBuildSha256": "40bed82eb2ad5924c19c09b07b2670c1278625352afc248594c5d3e7fb49838e",
+          "status": "passed"
+        }
+      ]
+    },
+    "PRESERVATION_CHECK.json": {
+      "schemaVersion": 1,
+      "id": "KATAGO-PRESERVATION",
+      "revision": 1,
+      "rulesetId": "GO-CLUB-AREA-1",
+      "baseVersion": "0.21.3-pages.1",
+      "resultVersion": "0.22.0-pages.1",
+      "status": "passed",
+      "protectedFiles": 996,
+      "exactBytesUnchanged": true,
+      "formalPuzzles": 30,
+      "terminalFixtures": 6,
+      "schemaVersionUnchanged": true,
+      "dependencyLockUnchanged": true
+    },
+    "APP_SMOKE_CHECK.json": {
+      "schemaVersion": 1,
+      "id": "KATAGO-BARE-APP-SMOKE",
+      "revision": 1,
+      "rulesetId": "GO-CLUB-AREA-1",
+      "resultVersion": "0.22.0-pages.1",
+      "status": "passed",
+      "noNodeModules": true,
+      "archiveCrcAndManifestHashes": "passed",
+      "publicCloudAnalysisOnlyOnOfficialWebsite": true,
+      "actual": {
+        "status": "passed",
+        "programVersion": "0.22.0",
+        "root": "fresh app.zip without node_modules",
+        "result": "本局结果\n黑方获胜\n\n白方认输，本局结束。",
+        "localCloudAnalysisDisabled": "本局结束后 · 自选复盘\nKataGo 复盘分析\n第 2 步局面\n\n拖动棋局滑动条选一手，再手动分析。只发送本局起点、着法和贴目；学习记录与反馈不上传。\n\n分析服务尚未接通。基本对弈、保存和逐手复盘可正常使用。"
+      }
+    }
+  }
+}

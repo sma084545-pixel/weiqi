@@ -1,0 +1,9 @@
+### Result
+{"version":"版本 0.21.3","buttons":["保存已提交内容并应用","准备或重新核对离线资源","检查应用更新","保存已提交内容并应用更新","导出完整备份","","学习进度与作答记录","保存的对局与临时局面","教师草稿、讨论与交接库","显示与本机设置","活动反馈、改进与 CAS 过程记录"]}
+### Ran Playwright code
+```js
+await (async (page) => { await page.goto("https://sma084545-pixel.github.io/weiqi/#/teacher/offline-data"); await page.getByRole("button",{name:"检查应用更新"}).click(); return {version:await page.locator(".app-version").innerText(),buttons:await page.getByRole("button").allTextContents()}; })(page);
+```
+### Page
+- Page URL: https://sma084545-pixel.github.io/weiqi/#/teacher/offline-data
+- Page Title: 围棋社教学工具

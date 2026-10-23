@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "GITHUB-CURRENT-SOURCE",
-  "revision": 18,
+  "revision": 19,
   "rulesetId": "GO-CLUB-AREA-1",
   "resultVersion": "0.22.0-pages.1",
   "programVersion": "0.22.0",
@@ -26,7 +26,7 @@
     {
       "path": "CHANGELOG.md",
       "bytes": 26107,
-      "sha256": "c7d1faf2d37e4e8b86c71bcc71d742ea7f86cac595033d68417ab51076f59c03"
+      "sha256": "920a91688395a082685f32cb1ca731ab86cb1a449901bc16e50cb6f398aebf86"
     },
     {
       "path": "MERGE_C_RELEASE_MANIFEST.json",
@@ -35,8 +35,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 8774,
-      "sha256": "dce12dcf6cbce33c9eb8d5855b03b4e287785d7c91c5e1f96c122bcddcc216d4"
+      "bytes": 8887,
+      "sha256": "a008c05bb4603beea196765e6f7b18b2759e536cfbbdc90d771664a00b9a6ec8"
     },
     {
       "path": "README_MERGE_C.md",
@@ -46,7 +46,7 @@
     {
       "path": "SOURCES.md",
       "bytes": 22396,
-      "sha256": "2c36ce526f3234b469b6538a0a464482da024b8bb9abbe9f05fa1941592bd2c0"
+      "sha256": "13d55644b4c08c7fb12136ce0b42d90ea0380d54b13fb6d4f05d4f0a82273e95"
     },
     {
       "path": "index.html",
@@ -3915,8 +3915,8 @@
     },
     {
       "path": "handoff/KATAGO_REVIEW.md",
-      "bytes": 3430,
-      "sha256": "d887769ef70ad8d4cc115593534f897eb21efb4da1d9ae1f1697942766ed7b4d"
+      "bytes": 4328,
+      "sha256": "589d37b5a43068f9f948007027d61586a9632a6d750151f327e3e68dea34c99c"
     },
     {
       "path": "handoff/MERGE_A.md",
@@ -4300,8 +4300,8 @@
     },
     {
       "path": "tests/browser/t05.spec.ts",
-      "bytes": 7402,
-      "sha256": "ee4c14fcffbfbde8c768cab7bc483d4d80540e1ddd0752d10fc53cc1b46fd240"
+      "bytes": 7452,
+      "sha256": "2b82c325beaa4a645ac04da8e328c34bca67a715b26a1b16a216f61906ff93e8"
     },
     {
       "path": "tests/browser/t06.spec.ts",
@@ -6449,34 +6449,14 @@
       "sha256": "8675327a6be07903d132a96ff8d63d175c20297b822c2725065d61f316bfb051"
     },
     {
-      "path": "docs/online-tools/checks/browser/1280-floating-5.png",
-      "bytes": 33261,
-      "sha256": "4d77ebfc744996d775fa89b16ad8a069144543cff9b0afc1412d80fbce429f6b"
-    },
-    {
       "path": "docs/online-tools/checks/browser/1280-maximized.png",
-      "bytes": 73832,
-      "sha256": "3bc59af0e777f854964c9fed209c880a0bdae522dce9ca7ef678e9a07652a3d5"
-    },
-    {
-      "path": "docs/online-tools/checks/browser/360-floating-19.png",
-      "bytes": 33667,
-      "sha256": "4109d21ee560bf277d37d2c7c385c1ea0f0d897b767c59d165f2f3a690d69e6e"
+      "bytes": 73579,
+      "sha256": "6473f11f2001ee141ff38d4ea2cef2ac7c43387e71443701c7779d9e53b9835c"
     },
     {
       "path": "docs/online-tools/checks/browser/360-maximized.png",
       "bytes": 41963,
       "sha256": "7d2c0c03abcf1d9edc38ed3ab062e8f9d4488be1c2cc62af7b51420167eecfc5"
-    },
-    {
-      "path": "docs/online-tools/checks/browser/768-floating-13.png",
-      "bytes": 31584,
-      "sha256": "649c567f8fe6c31c976ffe46c19b4d838ac3672463d5b93f53251705b6166288"
-    },
-    {
-      "path": "docs/online-tools/checks/browser/768-floating-9.png",
-      "bytes": 30731,
-      "sha256": "46148e985fd6f37cf2df0048d2ccae38411a376f9d2cad2069a219f3d456813c"
     },
     {
       "path": "docs/online-tools/checks/browser/768-maximized.png",
@@ -6485,8 +6465,8 @@
     },
     {
       "path": "docs/online-tools/checks/browser/chat.png",
-      "bytes": 273429,
-      "sha256": "56d7d44af6e3907025cff0c283db851090b65de0efa3051ef41e311c48091f99"
+      "bytes": 272796,
+      "sha256": "9d94216d5a6cf3dc9e6015738b34c501a67e77a01d2981768186dc477ad35f17"
     },
     {
       "path": "docs/online-tools/checks/browser/native-pip.json",
@@ -7845,8 +7825,8 @@
     },
     {
       "path": "docs/t24/checks/journey/chromium/full-game.png",
-      "bytes": 289053,
-      "sha256": "972a12138c5f6d2e197d9283ce66698381b0bedaf06e5e8cf1f2e84d5ab33dff"
+      "bytes": 267426,
+      "sha256": "15abedf93f91af5ab0a648307264042b9c7291d278566fd86ba01c2afc249363"
     },
     {
       "path": "docs/t24/checks/journey/chromium/journey.json",
@@ -7855,8 +7835,8 @@
     },
     {
       "path": "docs/t24/checks/journey/chromium/offline-editor.png",
-      "bytes": 526481,
-      "sha256": "5ef19d08776f5adbb7306424606540a8df486f23f0ccc24c0a7e0c6388a45852"
+      "bytes": 522187,
+      "sha256": "514e0554118b92446a1b54dc543f51401c5ab52cf014954388de3ddc123bdd2c"
     },
     {
       "path": "docs/t24/checks/rendered/sheet-001.jpg",
@@ -10520,8 +10500,8 @@
     },
     {
       "path": "docs/katago/ACCEPTANCE.md",
-      "bytes": 4812,
-      "sha256": "9de2c4f20b71c11bd66158bc78bb538e21182842660399bfa1514c8c9c8d428b"
+      "bytes": 6119,
+      "sha256": "f548267b3586b3cfc8590360998f49471d33ba982c0a4d5fa851f87c4e8f11d2"
     },
     {
       "path": "docs/katago/BASE-MANIFEST.json",
@@ -10530,13 +10510,18 @@
     },
     {
       "path": "docs/katago/DEPLOYMENT.md",
-      "bytes": 7298,
-      "sha256": "dcc1700cffb8471642a4c7bdec6d8d945a85c5411568ecf375e169b7dce02b64"
+      "bytes": 7388,
+      "sha256": "ac3c7bad161a112d648124acc6939b0b748235072696d0d5f900e739f430b768"
     },
     {
       "path": "docs/katago/RENDER-OPTIONS.md",
       "bytes": 7285,
       "sha256": "14f09931b0143a27378855a0e861574dd95f7f6620c5f866ee9f1c2fea237f8e"
+    },
+    {
+      "path": "docs/katago/changed-files.json",
+      "bytes": 43821,
+      "sha256": "71444cfd358564b2b8934b38f86c2586206f89ac2498232d46552b7d91778b7c"
     },
     {
       "path": "docs/katago/checks/Analysis_Engine-v1.18.1.md",
@@ -10554,9 +10539,19 @@
       "sha256": "f8dbf4ccf4a9371f89591a865b1c282ef972023a715c937ec0040ea3ca08bb71"
     },
     {
+      "path": "docs/katago/checks/archive-candidate-verification.log",
+      "bytes": 1403,
+      "sha256": "6e54413555cd2a1a85230cb523068b0516d9840d44af7b879650a8a7a952d770"
+    },
+    {
+      "path": "docs/katago/checks/browser-regression-complete.log",
+      "bytes": 22364,
+      "sha256": "ead8b0c0697c0c94afa3840c7aae1e9245a8beb8a50903f1607d3fa1139a0ac2"
+    },
+    {
       "path": "docs/katago/checks/browser-regression-final.log",
-      "bytes": 13513,
-      "sha256": "867161808e518521b997ca5c34abf6ffdbfd8ba0d3e716876d4d251cfa2bbf39"
+      "bytes": 24169,
+      "sha256": "b5c00d463e0c754aab5a76000924533c371e403886b6e5d3ca7f6b74c3d201b5"
     },
     {
       "path": "docs/katago/checks/browser-regression.log",
@@ -10564,29 +10559,44 @@
       "sha256": "8f9e7746a8365d4da98db357a19878fb048b345cf10d5a827e2902a3cc38f80e"
     },
     {
+      "path": "docs/katago/checks/capture-regression-final.log",
+      "bytes": 1622,
+      "sha256": "460d4a98fe15a10bde34c19459cf11628aab5ace66b64b4da6fdaa7319456df5"
+    },
+    {
+      "path": "docs/katago/checks/capture-regression-recheck.log",
+      "bytes": 1622,
+      "sha256": "19ce13cea089457bd7418a4f06c4c9c7d1120bafedc3426a3fe2b03643104839"
+    },
+    {
       "path": "docs/katago/checks/container-summary.json",
       "bytes": 521,
       "sha256": "cda4e1aa5400d9b78a5f0a86909fb9ff99d230daf76abe807fdd4ef7bdecbe33"
     },
     {
+      "path": "docs/katago/checks/frontend-browser-final.log",
+      "bytes": 1660,
+      "sha256": "5b1539e5c446568597b076f648659bcaa97b33c60759f1cd177783a60bba1045"
+    },
+    {
       "path": "docs/katago/checks/frontend-browser.json",
-      "bytes": 11341,
-      "sha256": "b6bf182c84c18be69bb83da6e90574158f8fa8cd5328d04b08a89409f9b16f55"
+      "bytes": 11198,
+      "sha256": "e6fc5fae83acc21d4cdd00b4abc19beae62d88ad9c9a0c3282fd9027bdf6a734"
     },
     {
       "path": "docs/katago/checks/frontend-review-1280.png",
-      "bytes": 371916,
-      "sha256": "8613afeb6387108b97025092b009e447489841ae12b61aa4d4b26ab066d242d3"
+      "bytes": 371834,
+      "sha256": "5d0e0aaad304b9bb47aa3d61a0c9333d94b6921e90dc44c1a361d6951f1c7c20"
     },
     {
       "path": "docs/katago/checks/frontend-review-360.png",
-      "bytes": 336132,
-      "sha256": "50fb8706f879a418ff328f296a3990212779a3f6bb701a59b85f1060c9bdf97a"
+      "bytes": 336048,
+      "sha256": "d3232ffea5cd5a47cac534adbe8ed632654a8cd3fca2b7a41ce2d74c7bfcd650"
     },
     {
       "path": "docs/katago/checks/frontend-review-768.png",
-      "bytes": 350113,
-      "sha256": "93a04a44a3cc83ef5de7bb948d26bb1684cdd2a96f979338395dc14cb9f30e10"
+      "bytes": 350010,
+      "sha256": "f6cf520da4bbdce719b3a2e4d28cba3a96b3cd4f68c9a658470aaaa6924eef37"
     },
     {
       "path": "docs/katago/checks/frontend-ui-review.md",
@@ -10597,6 +10607,11 @@
       "path": "docs/katago/checks/frontend-unit.log",
       "bytes": 290,
       "sha256": "0cfa36ef63ac800f6ed3ef31c717df1a58a265954a98a6d6e3227bca8d9d3740"
+    },
+    {
+      "path": "docs/katago/checks/input-capacity.json",
+      "bytes": 607,
+      "sha256": "4b0e1d89282ad5333f3887a93f2fbfe21adbd29c275d7b658630e8cfd7191f77"
     },
     {
       "path": "docs/katago/checks/linux-container-build.log",
@@ -10639,6 +10654,11 @@
       "sha256": "6ee044e2f2f16cb15089085d8b2a7fe7d3c5c90fe56f524cf8bcadefa524b595"
     },
     {
+      "path": "docs/katago/checks/native-real-recovery.json",
+      "bytes": 5935,
+      "sha256": "1f77c8b9a8e75dcfc2fae36d6e4d6d3513baabf0b3ee05e9694e713ce4e3c6df"
+    },
+    {
       "path": "docs/katago/checks/offline-regression-recheck.log",
       "bytes": 1809,
       "sha256": "b8c9996407c5e61f6215d07aceebf9e837cb313dc1500410fa1878b0fae7b496"
@@ -10664,9 +10684,74 @@
       "sha256": "9fa6a2b26b1ed94d399cc15141565975b8d6dd40ef52602c75e3068bc79ff373"
     },
     {
+      "path": "docs/katago/checks/public-after-local-stop.json",
+      "bytes": 4440,
+      "sha256": "dc7ce1e690a2ac259d31dde02416f1005ce08ee0fac28dbdc103af7fea3c8b1a"
+    },
+    {
+      "path": "docs/katago/checks/public-after-local-stop.log",
+      "bytes": 2347,
+      "sha256": "cf9394ce7e26141abe8d1eae51fb89437be433de9d599261e906db1be31baf3f"
+    },
+    {
+      "path": "docs/katago/checks/public-before-upgrade.log",
+      "bytes": 570,
+      "sha256": "ace4cf9846a0eb5c41c432d764a5b91bdf81c3ccad044191d69f76b59cb22e2a"
+    },
+    {
       "path": "docs/katago/checks/public-build.log",
       "bytes": 1181,
       "sha256": "3f55ffa03804b7b20a8e99f28ce5a47303180333da93f22d73568d728f5447f0"
+    },
+    {
+      "path": "docs/katago/checks/public-desktop-real.png",
+      "bytes": 416250,
+      "sha256": "c9107ccc37fc2140741651dfd6d201f08fa2901db9fb4723d2f98ad663a99a4a"
+    },
+    {
+      "path": "docs/katago/checks/public-index-headers.txt",
+      "bytes": 694,
+      "sha256": "148fef8963b0bb22f1c897d10bb6e58ce2c26df81915d4101b0cf8c4f270cc6d"
+    },
+    {
+      "path": "docs/katago/checks/public-index.html",
+      "bytes": 640,
+      "sha256": "212f34d58d5e2dbe849cd78eee4af5d2e6a1ce4eb33dfbfe9b3eac0b231c78b4"
+    },
+    {
+      "path": "docs/katago/checks/public-journey-first-publish-wait.log",
+      "bytes": 181,
+      "sha256": "7fbca1070303ec0efa1305bdd96ccfdac55e3aded3372e9bd083d1f3855cf16c"
+    },
+    {
+      "path": "docs/katago/checks/public-journey.json",
+      "bytes": 18965,
+      "sha256": "6797197f7dd847b431e2c1d04ab1e7914cfd4f19f4732b31d70e783b2995cd41"
+    },
+    {
+      "path": "docs/katago/checks/public-journey.log",
+      "bytes": 13517,
+      "sha256": "76824aeb86b32ec5853342665f1b60d969e7cc381f29379097dbca5a7d525d95"
+    },
+    {
+      "path": "docs/katago/checks/public-mobile-real.png",
+      "bytes": 352092,
+      "sha256": "37f286c3d94605a2ac2946221a06867f4886c56ecb8dc75605b17af5e1f2256f"
+    },
+    {
+      "path": "docs/katago/checks/public-sw.js",
+      "bytes": 3694,
+      "sha256": "b6d4378d32889636cb3d9d9ca521cf366c0ed01b4f6e0415faf297ba171ee202"
+    },
+    {
+      "path": "docs/katago/checks/public-update-check.log",
+      "bytes": 833,
+      "sha256": "8eddb865af251e187318ecb5122988ded95e65ee2d4f01e8a589a6e3a7c8bd8a"
+    },
+    {
+      "path": "docs/katago/checks/public-version.json",
+      "bytes": 464,
+      "sha256": "40bed82eb2ad5924c19c09b07b2670c1278625352afc248594c5d3e7fb49838e"
     },
     {
       "path": "docs/katago/checks/real-http-smoke.json",
@@ -10674,9 +10759,19 @@
       "sha256": "def52b52726dd9bb57d2bd466cd700441c88d7105e50e7129bb80502381b8c06"
     },
     {
+      "path": "docs/katago/checks/render-concurrency.json",
+      "bytes": 22019,
+      "sha256": "33873152839a10d763eb43c480eb8e640943ef4a60d7e0c0d6a1204e5cd9ec0b"
+    },
+    {
       "path": "docs/katago/checks/render-health-after-smoke.json",
       "bytes": 288,
       "sha256": "d02f8c0a8606be92d3303104822744978b1f1a4546753576e74a3bdf7403d250"
+    },
+    {
+      "path": "docs/katago/checks/render-health-final.json",
+      "bytes": 289,
+      "sha256": "745677e63f2fd6e3f79e008c4c70f48bd12e55f1fc18b6e3748ae854093c567f"
     },
     {
       "path": "docs/katago/checks/render-official-resources.json",
@@ -10732,6 +10827,46 @@
       "path": "docs/katago/checks/frontend-results/.last-run.json",
       "bytes": 45,
       "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "path": "docs/katago/checks/inherited-regression-screenshots/docs/online-tools/checks/browser/1280-floating-5.png",
+      "bytes": 33261,
+      "sha256": "4d77ebfc744996d775fa89b16ad8a069144543cff9b0afc1412d80fbce429f6b"
+    },
+    {
+      "path": "docs/katago/checks/inherited-regression-screenshots/docs/online-tools/checks/browser/1280-maximized.png",
+      "bytes": 73832,
+      "sha256": "3bc59af0e777f854964c9fed209c880a0bdae522dce9ca7ef678e9a07652a3d5"
+    },
+    {
+      "path": "docs/katago/checks/inherited-regression-screenshots/docs/online-tools/checks/browser/360-floating-19.png",
+      "bytes": 33667,
+      "sha256": "4109d21ee560bf277d37d2c7c385c1ea0f0d897b767c59d165f2f3a690d69e6e"
+    },
+    {
+      "path": "docs/katago/checks/inherited-regression-screenshots/docs/online-tools/checks/browser/768-floating-13.png",
+      "bytes": 31584,
+      "sha256": "649c567f8fe6c31c976ffe46c19b4d838ac3672463d5b93f53251705b6166288"
+    },
+    {
+      "path": "docs/katago/checks/inherited-regression-screenshots/docs/online-tools/checks/browser/768-floating-9.png",
+      "bytes": 30731,
+      "sha256": "46148e985fd6f37cf2df0048d2ccae38411a376f9d2cad2069a219f3d456813c"
+    },
+    {
+      "path": "docs/katago/checks/inherited-regression-screenshots/docs/online-tools/checks/browser/chat.png",
+      "bytes": 273429,
+      "sha256": "56d7d44af6e3907025cff0c283db851090b65de0efa3051ef41e311c48091f99"
+    },
+    {
+      "path": "docs/katago/checks/inherited-regression-screenshots/docs/t24/checks/journey/chromium/full-game.png",
+      "bytes": 288980,
+      "sha256": "b311139555155b6e905934c97bb39f13decef3d94d4868e8c145bb41de6ba359"
+    },
+    {
+      "path": "docs/katago/checks/inherited-regression-screenshots/docs/t24/checks/journey/chromium/offline-editor.png",
+      "bytes": 526396,
+      "sha256": "a26d2717f8078220f9816e9599aba31113aeea65705a442b423a585acb49affb"
     },
     {
       "path": "docs/katago/checks/linux-container/container-state.json",
@@ -13714,6 +13849,21 @@
       "sha256": "ed394dbbf14a34d4f730ea1ab6cf015248db14351f46b75e1cce5eb47dad6128"
     },
     {
+      "path": "scripts/katago-input-capacity.ts",
+      "bytes": 1133,
+      "sha256": "862c17ea6be953b0b507855e737101059530d4f61f381a9bc99f734748be4294"
+    },
+    {
+      "path": "scripts/katago-public-journey.js",
+      "bytes": 6535,
+      "sha256": "9db1ac7ed2698cbcaafe97c210b9cc7111c49af314726368da3b9b20cb2a1891"
+    },
+    {
+      "path": "scripts/katago-real-recovery.ts",
+      "bytes": 2498,
+      "sha256": "3698284a1217807708647e5a2f37a744256c937c897e38a5447c73ba44c891f0"
+    },
+    {
       "path": "scripts/katago-real-smoke.mjs",
       "bytes": 3942,
       "sha256": "e9772efe97a09b0f7c9614a7d130e9948c314cb65400956539fc791a331b3047"
@@ -13762,6 +13912,11 @@
       "path": "scripts/package-history.py",
       "bytes": 5954,
       "sha256": "a0eb306d7bfb0dfcf0400f90bfb0ee4efcc1216746d24e51111c95962b2c57f8"
+    },
+    {
+      "path": "scripts/package-katago-review.py",
+      "bytes": 4060,
+      "sha256": "61870f54287d32718c0590bfad85c8182d29cdf1e871a88454e1cdbd4097fcd7"
     },
     {
       "path": "scripts/package-merge-a.py",
@@ -14007,6 +14162,11 @@
       "path": "scripts/verify-history-preservation.py",
       "bytes": 1584,
       "sha256": "5270ccd82642b188ba7d86dcff2b18a497c664793413e276f086333293dba92e"
+    },
+    {
+      "path": "scripts/verify-katago-archive.py",
+      "bytes": 2782,
+      "sha256": "645384330f37a4c29faa193b2e5869764c797b9bc3a0eff625a3454bb83b9cc2"
     },
     {
       "path": "scripts/verify-materials-t24.py",

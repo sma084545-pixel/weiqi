@@ -1,0 +1,303 @@
+{
+  "testKind": "real-engine-process-failure-and-recovery",
+  "platform": "darwin",
+  "status": "passed",
+  "events": [
+    {
+      "name": "engine_ready",
+      "startupMs": 171
+    },
+    {
+      "name": "engine_exit",
+      "code": null,
+      "signal": "SIGKILL"
+    },
+    {
+      "name": "engine_restart",
+      "attempt": 1
+    },
+    {
+      "name": "engine_ready",
+      "startupMs": 141
+    },
+    {
+      "name": "engine_exit",
+      "code": null,
+      "signal": "SIGTERM"
+    }
+  ],
+  "recoveredAnalysis": {
+    "schemaVersion": 1,
+    "requestId": "4a2db3bc-7dba-4f95-8279-7e4c27b1b027",
+    "positionId": "DEV-REAL-RECOVERY",
+    "perspective": "B",
+    "toPlay": "B",
+    "blackWinrate": 0.594844431,
+    "blackScoreLead": 5.27626086,
+    "visits": 64,
+    "elapsedMs": 604,
+    "engine": {
+      "name": "KataGo",
+      "version": "1.18.1",
+      "model": "g170-b6c96-s175395328-d26788732",
+      "backend": "Eigen CPU",
+      "maxVisits": 64
+    },
+    "candidates": [
+      {
+        "order": 0,
+        "move": {
+          "type": "place",
+          "at": {
+            "row": 3,
+            "col": 16
+          }
+        },
+        "visits": 42,
+        "blackWinrate": 0.596014234,
+        "blackScoreLead": 5.30311296,
+        "pv": [
+          {
+            "type": "place",
+            "at": {
+              "row": 3,
+              "col": 16
+            }
+          },
+          {
+            "type": "place",
+            "at": {
+              "row": 15,
+              "col": 2
+            }
+          },
+          {
+            "type": "place",
+            "at": {
+              "row": 15,
+              "col": 16
+            }
+          },
+          {
+            "type": "place",
+            "at": {
+              "row": 3,
+              "col": 2
+            }
+          },
+          {
+            "type": "place",
+            "at": {
+              "row": 15,
+              "col": 14
+            }
+          }
+        ]
+      },
+      {
+        "order": 1,
+        "move": {
+          "type": "place",
+          "at": {
+            "row": 15,
+            "col": 16
+          }
+        },
+        "visits": 42,
+        "blackWinrate": 0.596014234,
+        "blackScoreLead": 5.30311296,
+        "pv": [
+          {
+            "type": "place",
+            "at": {
+              "row": 15,
+              "col": 16
+            }
+          },
+          {
+            "type": "place",
+            "at": {
+              "row": 3,
+              "col": 2
+            }
+          },
+          {
+            "type": "place",
+            "at": {
+              "row": 3,
+              "col": 16
+            }
+          },
+          {
+            "type": "place",
+            "at": {
+              "row": 15,
+              "col": 2
+            }
+          },
+          {
+            "type": "place",
+            "at": {
+              "row": 3,
+              "col": 14
+            }
+          }
+        ]
+      },
+      {
+        "order": 2,
+        "move": {
+          "type": "place",
+          "at": {
+            "row": 3,
+            "col": 2
+          }
+        },
+        "visits": 42,
+        "blackWinrate": 0.596014234,
+        "blackScoreLead": 5.30311296,
+        "pv": [
+          {
+            "type": "place",
+            "at": {
+              "row": 3,
+              "col": 2
+            }
+          },
+          {
+            "type": "place",
+            "at": {
+              "row": 15,
+              "col": 16
+            }
+          },
+          {
+            "type": "place",
+            "at": {
+              "row": 15,
+              "col": 2
+            }
+          },
+          {
+            "type": "place",
+            "at": {
+              "row": 3,
+              "col": 16
+            }
+          },
+          {
+            "type": "place",
+            "at": {
+              "row": 15,
+              "col": 4
+            }
+          }
+        ]
+      },
+      {
+        "order": 3,
+        "move": {
+          "type": "place",
+          "at": {
+            "row": 15,
+            "col": 2
+          }
+        },
+        "visits": 42,
+        "blackWinrate": 0.596014234,
+        "blackScoreLead": 5.30311296,
+        "pv": [
+          {
+            "type": "place",
+            "at": {
+              "row": 15,
+              "col": 2
+            }
+          },
+          {
+            "type": "place",
+            "at": {
+              "row": 3,
+              "col": 16
+            }
+          },
+          {
+            "type": "place",
+            "at": {
+              "row": 3,
+              "col": 2
+            }
+          },
+          {
+            "type": "place",
+            "at": {
+              "row": 15,
+              "col": 16
+            }
+          },
+          {
+            "type": "place",
+            "at": {
+              "row": 3,
+              "col": 4
+            }
+          }
+        ]
+      },
+      {
+        "order": 4,
+        "move": {
+          "type": "place",
+          "at": {
+            "row": 16,
+            "col": 3
+          }
+        },
+        "visits": 42,
+        "blackWinrate": 0.596014234,
+        "blackScoreLead": 5.30311296,
+        "pv": [
+          {
+            "type": "place",
+            "at": {
+              "row": 16,
+              "col": 3
+            }
+          },
+          {
+            "type": "place",
+            "at": {
+              "row": 2,
+              "col": 15
+            }
+          },
+          {
+            "type": "place",
+            "at": {
+              "row": 16,
+              "col": 15
+            }
+          },
+          {
+            "type": "place",
+            "at": {
+              "row": 2,
+              "col": 3
+            }
+          },
+          {
+            "type": "place",
+            "at": {
+              "row": 14,
+              "col": 15
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "originalPid": 3972,
+  "lastPid": 3974,
+  "childStopped": true,
+  "humanReviewed": null
+}

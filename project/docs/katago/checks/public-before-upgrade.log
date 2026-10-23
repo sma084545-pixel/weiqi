@@ -1,0 +1,9 @@
+### Result
+{"version":"版本 0.21.3","marked":"true"}
+### Ran Playwright code
+```js
+await (async (page) => { await page.goto("https://sma084545-pixel.github.io/weiqi/#/route/STAGE-05"); const mark=page.getByRole("button",{name:"还想练习",exact:true}); if(await mark.getAttribute("aria-pressed")!=="true") await mark.click(); return {version:await page.locator(".app-version").innerText(),marked:await mark.getAttribute("aria-pressed")}; })(page);
+```
+### Page
+- Page URL: https://sma084545-pixel.github.io/weiqi/#/route/STAGE-05
+- Page Title: 围棋社教学工具

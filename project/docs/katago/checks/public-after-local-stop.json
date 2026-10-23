@@ -1,0 +1,223 @@
+{
+  "url": "https://weiqi-katago.onrender.com/api/analyze",
+  "status": 200,
+  "result": {
+    "schemaVersion": 1,
+    "requestId": "a1bf0204-71b6-4729-96f3-371cf4787390",
+    "positionId": "review-e0e7b967-e053-44a2-ab71-4acf3808f58d",
+    "perspective": "B",
+    "toPlay": "W",
+    "blackWinrate": 0.402293548,
+    "blackScoreLead": -1.38885023,
+    "visits": 64,
+    "elapsedMs": 1025,
+    "engine": {
+      "name": "KataGo",
+      "version": "1.18.1",
+      "model": "g170-b6c96-s175395328-d26788732",
+      "backend": "Eigen CPU",
+      "maxVisits": 64
+    },
+    "candidates": [
+      {
+        "order": 0,
+        "move": {
+          "type": "place",
+          "at": {
+            "row": 3,
+            "col": 3
+          }
+        },
+        "visits": 41,
+        "blackWinrate": 0.391324958,
+        "blackScoreLead": -1.59087114,
+        "pv": [
+          {
+            "type": "place",
+            "at": {
+              "row": 3,
+              "col": 3
+            }
+          },
+          {
+            "type": "place",
+            "at": {
+              "row": 3,
+              "col": 2
+            }
+          },
+          {
+            "type": "place",
+            "at": {
+              "row": 4,
+              "col": 2
+            }
+          },
+          {
+            "type": "place",
+            "at": {
+              "row": 2,
+              "col": 2
+            }
+          },
+          {
+            "type": "place",
+            "at": {
+              "row": 5,
+              "col": 2
+            }
+          },
+          {
+            "type": "place",
+            "at": {
+              "row": 2,
+              "col": 3
+            }
+          }
+        ]
+      },
+      {
+        "order": 1,
+        "move": {
+          "type": "place",
+          "at": {
+            "row": 5,
+            "col": 3
+          }
+        },
+        "visits": 5,
+        "blackWinrate": 0.463403717,
+        "blackScoreLead": -0.229053578,
+        "pv": [
+          {
+            "type": "place",
+            "at": {
+              "row": 5,
+              "col": 3
+            }
+          },
+          {
+            "type": "place",
+            "at": {
+              "row": 3,
+              "col": 5
+            }
+          },
+          {
+            "type": "place",
+            "at": {
+              "row": 5,
+              "col": 2
+            }
+          }
+        ]
+      },
+      {
+        "order": 2,
+        "move": {
+          "type": "place",
+          "at": {
+            "row": 2,
+            "col": 3
+          }
+        },
+        "visits": 7,
+        "blackWinrate": 0.456325376,
+        "blackScoreLead": -0.412015451,
+        "pv": [
+          {
+            "type": "place",
+            "at": {
+              "row": 2,
+              "col": 3
+            }
+          },
+          {
+            "type": "place",
+            "at": {
+              "row": 3,
+              "col": 2
+            }
+          },
+          {
+            "type": "place",
+            "at": {
+              "row": 2,
+              "col": 2
+            }
+          }
+        ]
+      },
+      {
+        "order": 3,
+        "move": {
+          "type": "place",
+          "at": {
+            "row": 5,
+            "col": 5
+          }
+        },
+        "visits": 5,
+        "blackWinrate": 0.451310447,
+        "blackScoreLead": -0.556854463,
+        "pv": [
+          {
+            "type": "place",
+            "at": {
+              "row": 5,
+              "col": 5
+            }
+          },
+          {
+            "type": "place",
+            "at": {
+              "row": 3,
+              "col": 3
+            }
+          },
+          {
+            "type": "place",
+            "at": {
+              "row": 6,
+              "col": 5
+            }
+          }
+        ]
+      },
+      {
+        "order": 4,
+        "move": {
+          "type": "place",
+          "at": {
+            "row": 3,
+            "col": 2
+          }
+        },
+        "visits": 4,
+        "blackWinrate": 0.44237238,
+        "blackScoreLead": -0.87058779,
+        "pv": [
+          {
+            "type": "place",
+            "at": {
+              "row": 3,
+              "col": 2
+            }
+          },
+          {
+            "type": "place",
+            "at": {
+              "row": 3,
+              "col": 5
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "localEngineAndPreviewStopped": true,
+  "localPorts": {
+    "4207": "closed",
+    "4210": "closed"
+  }
+}

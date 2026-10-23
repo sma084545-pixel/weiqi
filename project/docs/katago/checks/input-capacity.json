@@ -1,0 +1,24 @@
+{
+  "testKind": "real-rule-replay-input-boundary",
+  "status": "passed",
+  "platform": "darwin",
+  "events": 1600,
+  "kataGoMoves": 1066,
+  "elapsedMs": 121.31879200000003,
+  "before": {
+    "rss": 102055936,
+    "heapTotal": 33177600,
+    "heapUsed": 18044144,
+    "external": 4381528,
+    "arrayBuffers": 2136753
+  },
+  "after": {
+    "rss": 129695744,
+    "heapTotal": 63062016,
+    "heapUsed": 33938448,
+    "external": 4420252,
+    "arrayBuffers": 2136753
+  },
+  "finalPhase": "finished",
+  "limits": "128MiB JavaScript heap; native process measurement only, not cloud concurrency or engine memory."
+}

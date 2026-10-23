@@ -1,3 +1,10 @@
+---
+schemaVersion: 1
+id: DOC-KATAGO-DEPLOYMENT
+revision: 1
+rulesetId: GO-CLUB-AREA-1
+---
+
 # KataGo 终局后复盘：部署、更新与恢复
 
 本功能只在“自由双人对弈”结束后提供手动分析。进行中、两停后的终局确认中都不能调用。终局可由双方确认计分或认输形成；拖动原有棋局滑动条选择历史局面，再点“分析当前复盘局面”。推荐、变化、胜率和目差来自真实 KataGo，不替代双方终局确认。

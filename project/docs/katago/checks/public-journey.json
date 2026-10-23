@@ -1,0 +1,826 @@
+{
+  "schemaVersion": 1,
+  "id": "KATAGO-PUBLIC-JOURNEY",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "resultVersion": "0.22.0-pages.1",
+  "status": "passed",
+  "actualPublicUrl": "https://sma084545-pixel.github.io/weiqi/",
+  "actualServiceUrl": "https://weiqi-katago.onrender.com",
+  "browser": "155.0.8059.86",
+  "checkedAt": "2026-10-23T15:40:37.371Z",
+  "realEngine": true,
+  "mockResponses": false,
+  "physicalDevices": false,
+  "humanReviewed": null,
+  "checks": [
+    "original GitHub Pages shows0.22.0; existing cache applied without clearing data",
+    "self-marked development progress survives old0.21.3 to0.22.0 cache upgrade",
+    "real GitHubOrigin→Render POST200;9x9 komi6.5; completed-game historical white turn; black perspective; candidate marker/PV",
+    "switching review clears result; refresh restores completed game",
+    "360px touch/reduced-motion;5x5 finished by resignation; actual Render analysis; no page overflow",
+    "network disabled: completed game and review restore; online analysis is optional"
+  ],
+  "desktop": {
+    "httpStatus": 200,
+    "httpMs": 8762,
+    "request": {
+      "schemaVersion": 1,
+      "positionId": "review-e9a3def6-8a46-45c6-89fe-84764167719e",
+      "game": {
+        "setup": {
+          "schemaVersion": 1,
+          "id": "LOCAL-T08-START-9",
+          "revision": 1,
+          "rulesetId": "GO-CLUB-AREA-1",
+          "kind": "Position",
+          "size": 9,
+          "toPlay": "B",
+          "historyPolicy": "fresh-setup",
+          "history": null,
+          "stones": []
+        },
+        "komi": 6.5,
+        "events": [
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 6,
+              "col": 2
+            }
+          },
+          {
+            "type": "place",
+            "color": "W",
+            "at": {
+              "row": 2,
+              "col": 6
+            }
+          },
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 6,
+              "col": 6
+            }
+          },
+          {
+            "type": "place",
+            "color": "W",
+            "at": {
+              "row": 2,
+              "col": 2
+            }
+          },
+          {
+            "type": "pass",
+            "color": "B"
+          },
+          {
+            "type": "pass",
+            "color": "W"
+          },
+          {
+            "type": "confirm-score",
+            "agreement": {
+              "deadStones": [],
+              "neutralPoints": [
+                {
+                  "row": 0,
+                  "col": 0
+                },
+                {
+                  "row": 0,
+                  "col": 1
+                },
+                {
+                  "row": 0,
+                  "col": 2
+                },
+                {
+                  "row": 0,
+                  "col": 3
+                },
+                {
+                  "row": 0,
+                  "col": 4
+                },
+                {
+                  "row": 0,
+                  "col": 5
+                },
+                {
+                  "row": 0,
+                  "col": 6
+                },
+                {
+                  "row": 0,
+                  "col": 7
+                },
+                {
+                  "row": 0,
+                  "col": 8
+                },
+                {
+                  "row": 1,
+                  "col": 0
+                },
+                {
+                  "row": 1,
+                  "col": 1
+                },
+                {
+                  "row": 1,
+                  "col": 2
+                },
+                {
+                  "row": 1,
+                  "col": 3
+                },
+                {
+                  "row": 1,
+                  "col": 4
+                },
+                {
+                  "row": 1,
+                  "col": 5
+                },
+                {
+                  "row": 1,
+                  "col": 6
+                },
+                {
+                  "row": 1,
+                  "col": 7
+                },
+                {
+                  "row": 1,
+                  "col": 8
+                },
+                {
+                  "row": 2,
+                  "col": 0
+                },
+                {
+                  "row": 2,
+                  "col": 1
+                },
+                {
+                  "row": 2,
+                  "col": 3
+                },
+                {
+                  "row": 2,
+                  "col": 4
+                },
+                {
+                  "row": 2,
+                  "col": 5
+                },
+                {
+                  "row": 2,
+                  "col": 7
+                },
+                {
+                  "row": 2,
+                  "col": 8
+                },
+                {
+                  "row": 3,
+                  "col": 0
+                },
+                {
+                  "row": 3,
+                  "col": 1
+                },
+                {
+                  "row": 3,
+                  "col": 2
+                },
+                {
+                  "row": 3,
+                  "col": 3
+                },
+                {
+                  "row": 3,
+                  "col": 4
+                },
+                {
+                  "row": 3,
+                  "col": 5
+                },
+                {
+                  "row": 3,
+                  "col": 6
+                },
+                {
+                  "row": 3,
+                  "col": 7
+                },
+                {
+                  "row": 3,
+                  "col": 8
+                },
+                {
+                  "row": 4,
+                  "col": 0
+                },
+                {
+                  "row": 4,
+                  "col": 1
+                },
+                {
+                  "row": 4,
+                  "col": 2
+                },
+                {
+                  "row": 4,
+                  "col": 3
+                },
+                {
+                  "row": 4,
+                  "col": 4
+                },
+                {
+                  "row": 4,
+                  "col": 5
+                },
+                {
+                  "row": 4,
+                  "col": 6
+                },
+                {
+                  "row": 4,
+                  "col": 7
+                },
+                {
+                  "row": 4,
+                  "col": 8
+                },
+                {
+                  "row": 5,
+                  "col": 0
+                },
+                {
+                  "row": 5,
+                  "col": 1
+                },
+                {
+                  "row": 5,
+                  "col": 2
+                },
+                {
+                  "row": 5,
+                  "col": 3
+                },
+                {
+                  "row": 5,
+                  "col": 4
+                },
+                {
+                  "row": 5,
+                  "col": 5
+                },
+                {
+                  "row": 5,
+                  "col": 6
+                },
+                {
+                  "row": 5,
+                  "col": 7
+                },
+                {
+                  "row": 5,
+                  "col": 8
+                },
+                {
+                  "row": 6,
+                  "col": 0
+                },
+                {
+                  "row": 6,
+                  "col": 1
+                },
+                {
+                  "row": 6,
+                  "col": 3
+                },
+                {
+                  "row": 6,
+                  "col": 4
+                },
+                {
+                  "row": 6,
+                  "col": 5
+                },
+                {
+                  "row": 6,
+                  "col": 7
+                },
+                {
+                  "row": 6,
+                  "col": 8
+                },
+                {
+                  "row": 7,
+                  "col": 0
+                },
+                {
+                  "row": 7,
+                  "col": 1
+                },
+                {
+                  "row": 7,
+                  "col": 2
+                },
+                {
+                  "row": 7,
+                  "col": 3
+                },
+                {
+                  "row": 7,
+                  "col": 4
+                },
+                {
+                  "row": 7,
+                  "col": 5
+                },
+                {
+                  "row": 7,
+                  "col": 6
+                },
+                {
+                  "row": 7,
+                  "col": 7
+                },
+                {
+                  "row": 7,
+                  "col": 8
+                },
+                {
+                  "row": 8,
+                  "col": 0
+                },
+                {
+                  "row": 8,
+                  "col": 1
+                },
+                {
+                  "row": 8,
+                  "col": 2
+                },
+                {
+                  "row": 8,
+                  "col": 3
+                },
+                {
+                  "row": 8,
+                  "col": 4
+                },
+                {
+                  "row": 8,
+                  "col": 5
+                },
+                {
+                  "row": 8,
+                  "col": 6
+                },
+                {
+                  "row": 8,
+                  "col": 7
+                },
+                {
+                  "row": 8,
+                  "col": 8
+                }
+              ],
+              "confirmedBy": [
+                "B",
+                "W"
+              ]
+            }
+          }
+        ]
+      },
+      "reviewIndex": 3
+    },
+    "result": {
+      "schemaVersion": 1,
+      "requestId": "c7e464e1-93d1-4809-b922-9742a46a2c74",
+      "positionId": "review-e9a3def6-8a46-45c6-89fe-84764167719e",
+      "perspective": "B",
+      "toPlay": "W",
+      "blackWinrate": 0.400713291,
+      "blackScoreLead": -1.37281556,
+      "visits": 64,
+      "elapsedMs": 6092,
+      "engine": {
+        "name": "KataGo",
+        "version": "1.18.1",
+        "model": "g170-b6c96-s175395328-d26788732",
+        "backend": "Eigen CPU",
+        "maxVisits": 64
+      },
+      "candidates": [
+        {
+          "order": 0,
+          "move": {
+            "type": "place",
+            "at": {
+              "row": 3,
+              "col": 3
+            }
+          },
+          "visits": 41,
+          "blackWinrate": 0.389356131,
+          "blackScoreLead": -1.57713657,
+          "pv": [
+            {
+              "type": "place",
+              "at": {
+                "row": 3,
+                "col": 3
+              }
+            },
+            {
+              "type": "place",
+              "at": {
+                "row": 3,
+                "col": 2
+              }
+            },
+            {
+              "type": "place",
+              "at": {
+                "row": 4,
+                "col": 2
+              }
+            },
+            {
+              "type": "place",
+              "at": {
+                "row": 2,
+                "col": 2
+              }
+            },
+            {
+              "type": "place",
+              "at": {
+                "row": 5,
+                "col": 2
+              }
+            },
+            {
+              "type": "place",
+              "at": {
+                "row": 2,
+                "col": 3
+              }
+            }
+          ]
+        },
+        {
+          "order": 1,
+          "move": {
+            "type": "place",
+            "at": {
+              "row": 5,
+              "col": 3
+            }
+          },
+          "visits": 5,
+          "blackWinrate": 0.463403717,
+          "blackScoreLead": -0.229053578,
+          "pv": [
+            {
+              "type": "place",
+              "at": {
+                "row": 5,
+                "col": 3
+              }
+            },
+            {
+              "type": "place",
+              "at": {
+                "row": 3,
+                "col": 5
+              }
+            },
+            {
+              "type": "place",
+              "at": {
+                "row": 5,
+                "col": 2
+              }
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "move": {
+            "type": "place",
+            "at": {
+              "row": 5,
+              "col": 5
+            }
+          },
+          "visits": 5,
+          "blackWinrate": 0.451310447,
+          "blackScoreLead": -0.556854463,
+          "pv": [
+            {
+              "type": "place",
+              "at": {
+                "row": 5,
+                "col": 5
+              }
+            },
+            {
+              "type": "place",
+              "at": {
+                "row": 3,
+                "col": 3
+              }
+            },
+            {
+              "type": "place",
+              "at": {
+                "row": 6,
+                "col": 5
+              }
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "move": {
+            "type": "place",
+            "at": {
+              "row": 2,
+              "col": 3
+            }
+          },
+          "visits": 5,
+          "blackWinrate": 0.448442336,
+          "blackScoreLead": -0.532896963,
+          "pv": [
+            {
+              "type": "place",
+              "at": {
+                "row": 2,
+                "col": 3
+              }
+            },
+            {
+              "type": "place",
+              "at": {
+                "row": 3,
+                "col": 2
+              }
+            },
+            {
+              "type": "place",
+              "at": {
+                "row": 2,
+                "col": 2
+              }
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "move": {
+            "type": "place",
+            "at": {
+              "row": 3,
+              "col": 2
+            }
+          },
+          "visits": 5,
+          "blackWinrate": 0.450319814,
+          "blackScoreLead": -0.622381124,
+          "pv": [
+            {
+              "type": "place",
+              "at": {
+                "row": 3,
+                "col": 2
+              }
+            },
+            {
+              "type": "place",
+              "at": {
+                "row": 3,
+                "col": 5
+              }
+            },
+            {
+              "type": "place",
+              "at": {
+                "row": 2,
+                "col": 5
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "touch": {
+    "httpStatus": 200,
+    "httpMs": 4422,
+    "request": {
+      "schemaVersion": 1,
+      "positionId": "review-a220242b-2e85-4b25-9238-092221c77533",
+      "game": {
+        "setup": {
+          "schemaVersion": 1,
+          "id": "LOCAL-T08-START-5",
+          "revision": 1,
+          "rulesetId": "GO-CLUB-AREA-1",
+          "kind": "Position",
+          "size": 5,
+          "toPlay": "B",
+          "historyPolicy": "fresh-setup",
+          "history": null,
+          "stones": []
+        },
+        "komi": 0,
+        "events": [
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 0,
+              "col": 0
+            }
+          },
+          {
+            "type": "resign",
+            "color": "W"
+          }
+        ]
+      },
+      "reviewIndex": 1
+    },
+    "result": {
+      "schemaVersion": 1,
+      "requestId": "7ed88895-72f7-40ef-bdc3-078dccc5b5da",
+      "positionId": "review-a220242b-2e85-4b25-9238-092221c77533",
+      "perspective": "B",
+      "toPlay": "W",
+      "blackWinrate": 0.0296169047,
+      "blackScoreLead": -11.8053825,
+      "visits": 64,
+      "elapsedMs": 2182,
+      "engine": {
+        "name": "KataGo",
+        "version": "1.18.1",
+        "model": "g170-b6c96-s175395328-d26788732",
+        "backend": "Eigen CPU",
+        "maxVisits": 64
+      },
+      "candidates": [
+        {
+          "order": 0,
+          "move": {
+            "type": "place",
+            "at": {
+              "row": 2,
+              "col": 2
+            }
+          },
+          "visits": 61,
+          "blackWinrate": 0.028126572,
+          "blackScoreLead": -11.9329344,
+          "pv": [
+            {
+              "type": "place",
+              "at": {
+                "row": 2,
+                "col": 2
+              }
+            },
+            {
+              "type": "place",
+              "at": {
+                "row": 2,
+                "col": 1
+              }
+            },
+            {
+              "type": "place",
+              "at": {
+                "row": 3,
+                "col": 1
+              }
+            },
+            {
+              "type": "place",
+              "at": {
+                "row": 1,
+                "col": 2
+              }
+            },
+            {
+              "type": "place",
+              "at": {
+                "row": 1,
+                "col": 1
+              }
+            },
+            {
+              "type": "place",
+              "at": {
+                "row": 2,
+                "col": 3
+              }
+            }
+          ]
+        },
+        {
+          "order": 1,
+          "move": {
+            "type": "place",
+            "at": {
+              "row": 2,
+              "col": 1
+            }
+          },
+          "visits": 1,
+          "blackWinrate": 0.529359147,
+          "blackScoreLead": -1.44959629,
+          "pv": [
+            {
+              "type": "place",
+              "at": {
+                "row": 2,
+                "col": 1
+              }
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "move": {
+            "type": "place",
+            "at": {
+              "row": 1,
+              "col": 2
+            }
+          },
+          "visits": 1,
+          "blackWinrate": 0.529359147,
+          "blackScoreLead": -1.44959629,
+          "pv": [
+            {
+              "type": "place",
+              "at": {
+                "row": 1,
+                "col": 2
+              }
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "move": {
+            "type": "place",
+            "at": {
+              "row": 1,
+              "col": 1
+            }
+          },
+          "visits": 1,
+          "blackWinrate": 0.640153065,
+          "blackScoreLead": -0.965433836,
+          "pv": [
+            {
+              "type": "place",
+              "at": {
+                "row": 1,
+                "col": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "network": [
+    {
+      "url": "https://weiqi-katago.onrender.com/api/analyze",
+      "status": 200,
+      "method": "POST"
+    },
+    {
+      "url": "https://weiqi-katago.onrender.com/api/analyze",
+      "status": 200,
+      "method": "POST"
+    }
+  ],
+  "pageErrors": [],
+  "consoleErrors": []
+}

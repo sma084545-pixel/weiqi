@@ -1,3 +1,12 @@
+---
+schemaVersion: 1
+id: DOC-CHANGELOG
+revision: 22
+rulesetId: GO-CLUB-AREA-1
+---
+
+# 变更日志
+
 ## 0.22.0 — KataGo 终局后复盘（2026-10-23）
 
 - 自由双人对弈结束后，手动分析当前复盘局面；数字推荐、候选变化、黑方视角胜率与预计目差。切手/悔棋/重开/离开取消旧请求并丢弃迟到结果。
@@ -16,15 +25,6 @@
 - 联机悬浮小棋盘复用主棋盘落子/死子标记，保持轮次、历史、悔棋和连接限制。
 - 保留约32px交叉点区域，大棋盘局部滚动、键盘跟随焦点及小窗复位。
 - 前端补丁；无规则/schema、正式内容、依赖或存储迁移，无需更新Render。
-
----
-schemaVersion: 1
-id: DOC-CHANGELOG
-revision: 21
-rulesetId: GO-CLUB-AREA-1
----
-
-# 变更日志
 
 ## 0.20.3-pages.1 · 2026-10-21
 

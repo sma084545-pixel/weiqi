@@ -111,3 +111,107 @@ Running 176 tests using 1 worker
   ✓  100 tests/browser/t10.spec.ts:56:31 › 1280px player remains readable and reduced motion is honored (581ms)
   ✓  101 tests/browser/t11.spec.ts:7:1 › stage 5 opens the installed short lesson and keeps free play available (392ms)
   ✓  102 tests/browser/t11.spec.ts:12:1 › false eye and two-eye trials use actual rule legality and preserve the board on suicide (818ms)
+  ✓  103 tests/browser/t11.spec.ts:19:1 › comparisons expose connected-space, turn change, outer liberties and evidence limits (786ms)
+  ✓  104 tests/browser/t11.spec.ts:28:1 › formal LIFE practice reuses T10 hints and verified tree, then returns unchanged (685ms)
+  ✓  105 tests/browser/t11.spec.ts:34:1 › 360px touch and keyboard can complete the opening check without page overflow (647ms)
+  ✓  106 tests/browser/t11.spec.ts:40:31 › 768px lesson remains readable (507ms)
+  ✓  107 tests/browser/t11.spec.ts:40:31 › 1280px lesson remains readable (549ms)
+  ✓  108 tests/browser/t12.spec.ts:18:1 › stage 6 and teacher view expose the installed cooperative route (426ms)
+  ✓  109 tests/browser/t12.spec.ts:25:1 › all five DISC puzzles run with A and B choices and hide author references until preview (758ms)
+  ✓  110 tests/browser/t12.spec.ts:34:1 › different legal candidates and a self-selected point are discussed without automatic quality verdicts (789ms)
+  ✓  111 tests/browser/t12.spec.ts:42:1 › role switching preserves entries and the three activities keep their local-task boundaries (477ms)
+  ✓  112 tests/browser/t12.spec.ts:49:1 › multiple local anonymous records persist and deleting one leaves the other (1.1s)
+  ✓  113 tests/browser/t12.spec.ts:58:1 › printable guide download carries the same formal IDs (369ms)
+  ✓  114 tests/browser/t12.spec.ts:62:1 › 360px touch and keyboard can finish a discussion without overflow (726ms)
+  ✓  115 tests/browser/t12.spec.ts:68:31 › 768px cooperative page remains readable (485ms)
+  ✓  116 tests/browser/t12.spec.ts:68:31 › 1280px cooperative page remains readable (577ms)
+  ✓  117 tests/browser/t13.spec.ts:20:1 › stage 3 and teacher view expose the installed T13 route (427ms)
+  ✓  118 tests/browser/t13.spec.ts:30:1 › all six END fixtures are selectable and the unsettled counterexample stays scoreless (981ms)
+  ✓  119 tests/browser/t13.spec.ts:46:1 › answers stay hidden until submission and connected regions can be labeled and undone (618ms)
+  ✓  120 tests/browser/t13.spec.ts:64:1 › a complete END-001 answer reveals dead stones through totals in order (782ms)
+  ✓  121 tests/browser/t13.spec.ts:80:1 › dead-stone removal and komi trial never mutate the authored fixture (1.0s)
+  ✓  122 tests/browser/t13.spec.ts:96:1 › capture comparison unlocks only after both predictions and explains area semantics (596ms)
+  ✓  123 tests/browser/t13.spec.ts:105:1 › downloaded physical-board card uses the same rules and END ids (348ms)
+  ✓  124 tests/browser/t13.spec.ts:113:1 › 360px touch and keyboard label a board-edge region without page overflow (588ms)
+  ✓  125 tests/browser/t13.spec.ts:123:31 › 768px territory page is readable (426ms)
+  ✓  126 tests/browser/t13.spec.ts:123:31 › 1280px territory page is readable (479ms)
+  ✓  127 tests/browser/t14.spec.ts:27:1 › teacher view opens the local editor and explains its access boundary (506ms)
+  ✓  128 tests/browser/t14.spec.ts:36:1 › a number puzzle can be authored, checked, saved, refreshed and loaded by the actual T10 catalog (1.0s)
+  ✓  129 tests/browser/t14.spec.ts:54:1 › student preview uses T10 and returns to the unchanged draft (580ms)
+  ✓  130 tests/browser/t14.spec.ts:65:1 › tree editor rejects an occupied point atomically and can save an unknown branch (542ms)
+  ✓  131 tests/browser/t14.spec.ts:80:1 › official content stays read-only until copy or revision and soft deletion is reversible (637ms)
+  ✓  132 tests/browser/t14.spec.ts:97:1 › Puzzle and Bundle downloads preserve schema identity (542ms)
+  ✓  133 tests/browser/t14.spec.ts:107:1 › 360px touch and keyboard author one board point without page overflow (941ms)
+  ✓  134 tests/browser/t14.spec.ts:117:31 › 768px editor is readable (594ms)
+  ✓  135 tests/browser/t14.spec.ts:117:31 › 1280px editor is readable (619ms)
+  ✓  136 tests/browser/t15.spec.ts:7:1 › teacher view links to the installed file exchange (530ms)
+  ✓  137 tests/browser/t15.spec.ts:9:1 › JSON preview imports a puzzle as a T14 draft only after confirmation (572ms)
+  ✓  138 tests/browser/t15.spec.ts:11:1 › bad JSON and limits do not overwrite imported content (588ms)
+  ✓  139 tests/browser/t15.spec.ts:13:1 › SGF keeps two branches and creates only the explicitly selected GameRecord line (513ms)
+  ✓  140 tests/browser/t15.spec.ts:15:1 › different or missing RU requires explicit project-rule consent (589ms)
+  ✓  141 tests/browser/t15.spec.ts:17:1 › non-root setup is reported at its node and original text remains (524ms)
+  ✓  142 tests/browser/t15.spec.ts:19:1 › question SVG has no answer layer while answer PDF is A4 (634ms)
+  ✓  143 tests/browser/t15.spec.ts:21:1 › batch export contains stable names and manifest (468ms)
+  ✓  144 tests/browser/t15.spec.ts:23:1 › 360px touch layout has no page overflow and PNG exports (912ms)
+  ✓  145 tests/browser/t15.spec.ts:25:31 › 768px file exchange is readable (760ms)
+  ✓  146 tests/browser/t15.spec.ts:25:31 › 1280px file exchange is readable (637ms)
+  ✓  147 tests/browser/t16.spec.ts:10:1 › legacy localStorage migrates once to IndexedDB and refresh restores progress (432ms)
+  ✓  148 tests/browser/t16.spec.ts:15:1 › full game is autosaved through the unified store and reopens after refresh (582ms)
+  ✓  149 tests/browser/t16.spec.ts:17:1 › complete backup exports ids and revisions, while damaged restore does not overwrite (416ms)
+  ✓  150 tests/browser/t16.spec.ts:19:1 › a valid backup restores the original content id and revision atomically (552ms)
+  ✓  151 tests/browser/t16.spec.ts:21:1 › selective progress clear preserves draft records and formal content remains installed (543ms)
+  ✓  152 tests/browser/t16.spec.ts:23:1 › prepared app and formal puzzle catalog work after network is actually disabled (784ms)
+  ✓  153 tests/browser/t16.spec.ts:25:1 › first offline reload without a completed cache shows the honest recovery page (390ms)
+  ✓  154 tests/browser/t16.spec.ts:27:1 › blocked browser storage gives a recoverable message and keeps the page usable (318ms)
+  ✓  155 tests/browser/t16.spec.ts:29:35 › 360px offline management has no page overflow (416ms)
+  ✓  156 tests/browser/t16.spec.ts:29:35 › 768px offline management has no page overflow (424ms)
+  ✓  157 tests/browser/t16.spec.ts:29:35 › 1280px offline management has no page overflow (444ms)
+  ✓  158 tests/browser/t17.spec.ts:12:1 › keyboard submit explicitly activates the button and selecting Enter does not submit early (481ms)
+  ✓  159 tests/browser/t17.spec.ts:13:1 › failed second record write aborts the revision/evidence transaction (800ms)
+  ✓  160 tests/browser/t17.spec.ts:14:1 › empty reviewed report PDF contains no fictitious feedback (476ms)
+  ✓  161 tests/browser/t17.spec.ts:15:1 › feedback form and evidence save still work with network disabled after preparation (794ms)
+  ✓  162 tests/browser/t17.spec.ts:16:1 › empty feedback is optional, activity is required, and teacher empty state is honest (307ms)
+  ✓  163 tests/browser/t17.spec.ts:17:1 › synchronous double click writes once and next member sees an empty form (502ms)
+  ✓  164 tests/browser/t17.spec.ts:18:1 › three labelled fixtures have correct denominators and deletion changes only one (488ms)
+  ✓  165 tests/browser/t17.spec.ts:19:1 › tests default out of all export formats and explicit inclusion is marked (568ms)
+  ✓  166 tests/browser/t17.spec.ts:20:1 › review removes private free text only in the export and unsafe text never executes (679ms)
+  ✓  167 tests/browser/t17.spec.ts:21:1 › feedback issue links to local T14 versions, original survives and no observation is invented (833ms)
+  ✓  168 tests/browser/t17.spec.ts:22:1 › CAS process accepts manual minutes without auto hours and keeps blank implementation unobserved (561ms)
+  ✓  169 tests/browser/t17.spec.ts:23:1 › report print window has safe text and creates a readable A4 PDF (607ms)
+  ✓  170 tests/browser/t17.spec.ts:24:1 › evidence refresh, full backup, and selective progress clear preserve records (687ms)
+  ✓  171 tests/browser/t17.spec.ts:25:1 › evidence clear preserves drafts and full restore retains feedback identities and revisions (1.1s)
+  ✓  172 tests/browser/t17.spec.ts:26:35 › 360px keyboard and touch feedback is usable with no page overflow (675ms)
+  ✓  173 tests/browser/t17.spec.ts:26:35 › 768px keyboard and touch feedback is usable with no page overflow (685ms)
+  ✓  174 tests/browser/t17.spec.ts:26:35 › 1280px keyboard and touch feedback is usable with no page overflow (714ms)
+  ✓  175 tests/browser/t24-refresh.spec.ts:3:1 › immediate save, unsaved edit and route exit all restore the latest editor state (1.1s)
+  ✓  176 tests/browser/t24.spec.ts:8:1 › T24 continuous learner to teacher journey, offline save and recovery (5.1s)
+
+
+  1) tests/browser/t05.spec.ts:45:1 › keyboard and touch each choose one candidate without duplicate callbacks 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByText(/D3 合法/)
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByText(/D3 合法/)
+
+
+      45 | test('keyboard and touch each choose one candidate without duplicate callbacks',async({browser})=>{
+      46 |   const context=await browser.newContext({hasTouch:true,isMobile:true,viewport:{width:360,height:900}});const page=await context.newPage();await page.goto('/#/learn/captures');
+    > 47 |   const d3=page.locator('[data-row="2"][data-col="3"]');await d3.focus();await page.keyboard.press('Enter');await expect(page.getByText(/D3 合法/)).toBeVisible();
+         |                                                                                                                                                   ^
+      48 |   await page.getByRole('button',{name:'重置当前演示'}).tap();await d3.tap();await expect(page.locator('[data-marker-kind="candidate"]')).toHaveCount(1);await context.close();
+      49 | });
+      50 |
+        at /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/katago-20261023/mainline/go-club/tests/browser/t05.spec.ts:47:147
+
+    Error Context: output/playwright/results/t05-keyboard-and-touch-eac-0186b-without-duplicate-callbacks/error-context.md
+
+  1 failed
+    tests/browser/t05.spec.ts:45:1 › keyboard and touch each choose one candidate without duplicate callbacks 
+  175 passed (2.1m)

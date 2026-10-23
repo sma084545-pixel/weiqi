@@ -44,7 +44,7 @@ test('switching demo and leaving the route cancel pending playback',async({page}
 
 test('keyboard and touch each choose one candidate without duplicate callbacks',async({browser})=>{
   const context=await browser.newContext({hasTouch:true,isMobile:true,viewport:{width:360,height:900}});const page=await context.newPage();await page.goto('/#/learn/captures');
-  const d3=page.locator('[data-row="2"][data-col="3"]');await d3.focus();await page.keyboard.press('Enter');await expect(page.getByText(/D3 合法/)).toBeVisible();
+  await expect(page.locator('#main')).toBeFocused();const d3=page.locator('[data-row="2"][data-col="3"]');await d3.focus();await page.keyboard.press('Enter');await expect(page.getByText(/D3 合法/)).toBeVisible();
   await page.getByRole('button',{name:'重置当前演示'}).tap();await d3.tap();await expect(page.locator('[data-marker-kind="candidate"]')).toHaveCount(1);await context.close();
 });
 
