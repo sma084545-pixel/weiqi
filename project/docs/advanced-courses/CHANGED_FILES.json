@@ -1,0 +1,696 @@
+{
+  "schemaVersion": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "taskId": "ADVANCED_COURSES",
+  "baseVersion": "0.22.0-pages.1",
+  "resultVersion": "0.23.0-pages.1",
+  "id": "ADVANCED-CHANGE-MANIFEST",
+  "revision": 1,
+  "kind": "ChangeManifest",
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "change": "modified",
+      "baseSha256": "920a91688395a082685f32cb1ca731ab86cb1a449901bc16e50cb6f398aebf86",
+      "sha256": "10708a210e67630e79663b8447bd6ac31e14e7ecd4a41bcd149fe5444081f442"
+    },
+    {
+      "path": "README.md",
+      "change": "modified",
+      "baseSha256": "a008c05bb4603beea196765e6f7b18b2759e536cfbbdc90d771664a00b9a6ec8",
+      "sha256": "79e1cfcfa77c2f6448b0afc553b1f11db4e3dbb6616e028aef55fed6bbd2b7b4"
+    },
+    {
+      "path": "SOURCES.md",
+      "change": "modified",
+      "baseSha256": "13d55644b4c08c7fb12136ce0b42d90ea0380d54b13fb6d4f05d4f0a82273e95",
+      "sha256": "3a8291cc39eaba7c2e3a6753ea5790e8c57753ac2e305b761a8f4386504ff804"
+    },
+    {
+      "path": "content/advanced-courses/bundle.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "3a1e07d3e18e4ebab3d77154364b40d349344ad3caae578e012da910fa9eb0fb"
+    },
+    {
+      "path": "docs/CURRICULUM.md",
+      "change": "modified",
+      "baseSha256": "56b4a55449f3bd027d5864f2121252a53b9a97561204679aa2499ba884f1acbb",
+      "sha256": "db7887a7d19247db084e909e6fb46a7732a852e19a112cb0ee51bf1a1f8bf5ae"
+    },
+    {
+      "path": "docs/INTERFACES.md",
+      "change": "modified",
+      "baseSha256": "72dd61bc25da3d1ee85490372535990049a1866d4936b4fc776877cbed5de912",
+      "sha256": "ad77507190f4537981ab3d00dce11bc671c4de61c8908602bca9b52fbf9564e9"
+    },
+    {
+      "path": "docs/TERMINOLOGY.md",
+      "change": "modified",
+      "baseSha256": "0b53f3cbfc21765db29621e0c87e2d1abd08f54b96181bbc8c1e7522cb9e3d54",
+      "sha256": "749d5bf348c16a84d73784f81698083776532300eb4b3ad36654609d98252ea8"
+    },
+    {
+      "path": "docs/advanced-courses/ACCEPTANCE.md",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "5c7601fc8206018178c92812d1abdc28e39af54603298db5cdd53d70ce66bc6f"
+    },
+    {
+      "path": "docs/advanced-courses/IMPLEMENTATION.md",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "796c0691aa903b73b1bff1e0bbbcb8e67c23f065d064733ba95eede03024c364"
+    },
+    {
+      "path": "docs/advanced-courses/VISUAL_REVIEW.md",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "8c696bbf236cf0cbf46a58468cb9988874bb3e2624304ca660015348a95e9437"
+    },
+    {
+      "path": "docs/advanced-courses/checks/analysis-ui-regression.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "0b8e229f20e535c91e736f6bff2c58339d9feef11aafea98b517bda76399b634"
+    },
+    {
+      "path": "docs/advanced-courses/checks/analysis-ui-regression.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "50711c2010944b1c0463f50b246f1d6a0f62a18800de44177f362acff894819b"
+    },
+    {
+      "path": "docs/advanced-courses/checks/browser-input.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "e81a5c5db09adac8fb60fba46c802ec24a5454be140aed92f5b2fd6a48c36a33"
+    },
+    {
+      "path": "docs/advanced-courses/checks/browser-journey-first.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "587aaead3d97946e2b8118eb031e2ef037e4d34ede769b0435d369f32f145d92"
+    },
+    {
+      "path": "docs/advanced-courses/checks/browser-journey-second.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "cb1b78365dfc646d9d7a7b51f31b3876672607556687483e14f404d8d00e0bd5"
+    },
+    {
+      "path": "docs/advanced-courses/checks/browser-journey.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "8c683d54421c47b853ccda9d47cb9f00611f523e9b8478b7db25a8eaab8a0361"
+    },
+    {
+      "path": "docs/advanced-courses/checks/browser-journey.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "3e0ef38acc961cd8f14b7dbe4e9a7aa5b55f0a08d10069589e95036e091b0ff5"
+    },
+    {
+      "path": "docs/advanced-courses/checks/browser-regression-first.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "14c3c9480694e6537d45f09e6848c5a9fac7947c20d5f0d5159d3d1fe01d0493"
+    },
+    {
+      "path": "docs/advanced-courses/checks/browser-regression.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "08c8127d5d2d4623ab67690e4cf353c4fc6d8b87b3a4d0adf5d4fe78876b21d3"
+    },
+    {
+      "path": "docs/advanced-courses/checks/build-analysis.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "27b97f5b177408d490ffc315b724c00fc1b0fb428c204a5a1bc48643d0e7746b"
+    },
+    {
+      "path": "docs/advanced-courses/checks/build-final.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "0f3a84f3af24d500d0cae6dea01b25a58619f0a94332e9ca873bf348169f151f"
+    },
+    {
+      "path": "docs/advanced-courses/checks/build-first.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "40c277b4972223abefe8b97f3f279049cfecb1dc0b42b786282818062f8adcec"
+    },
+    {
+      "path": "docs/advanced-courses/checks/build-pages.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "7af5ed9fce7abe1399de87f49e722b0bf2e84666cd548aceb88ce269f43eb80c"
+    },
+    {
+      "path": "docs/advanced-courses/checks/content-validation.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "cef227e4633bb901ccd31aae59375ff383a2563e1fc25ec789512442c0174913"
+    },
+    {
+      "path": "docs/advanced-courses/checks/content-validation.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "218346003d68373a7e8266b131c475a01693c34b2c2da5b653981ac08216a08b"
+    },
+    {
+      "path": "docs/advanced-courses/checks/preservation.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "563a5544e02274bb5021533519e77cdc0bf2312027487700d2a67e949e3b0789"
+    },
+    {
+      "path": "docs/advanced-courses/checks/production-browser-journey.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "db7af9b8f173e9cf37583ca5274d188330032ca8bb9892d20abedc5dcb816bd1"
+    },
+    {
+      "path": "docs/advanced-courses/checks/production-browser-journey.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "fd50d1327b1cc01df4796e3d9845ee4b691fd74670ea415f3ffbf8d7031d95df"
+    },
+    {
+      "path": "docs/advanced-courses/checks/project-check-first.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "ef2fa6ac50f52d3343b4502e2013b5eb6cbb32020b7e963a3c9c778b826c582e"
+    },
+    {
+      "path": "docs/advanced-courses/checks/project-check-frozen-doc-first.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "e41ff2e51b8e206c54c680e3b3722ee62fb5d32df607a79efc3fa1644f799dac"
+    },
+    {
+      "path": "docs/advanced-courses/checks/project-check.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "21f2a3d6e2f68fe86cf0cc5d48fcc39eec7090a7656d4250c672cac038326104"
+    },
+    {
+      "path": "docs/advanced-courses/checks/public-browser-journey.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "1957032d7ae7285401f35d66d290e97ce08413c7591943a278bfc30e103b97cf"
+    },
+    {
+      "path": "docs/advanced-courses/checks/public-browser-journey.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "67795e1efce3c150b772b5c31227ea485473fc83fff74887ed72ed8402cd731f"
+    },
+    {
+      "path": "docs/advanced-courses/checks/screenshots/katago-ui-regression/checks-frontend-review-1280.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "6c3e4c2d6be921ebc0523bda3c0ae93303732567b509bf491596f5516883211f"
+    },
+    {
+      "path": "docs/advanced-courses/checks/screenshots/katago-ui-regression/checks-frontend-review-360.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "78bd09e90b904efc496e808ad3832b679aaee9fcfd3815d27ca5f0d22d5cf6ce"
+    },
+    {
+      "path": "docs/advanced-courses/checks/screenshots/katago-ui-regression/checks-frontend-review-768.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "10898330164c0b2b4329a59f031949d1a01b7435732062992af165dd349afd60"
+    },
+    {
+      "path": "docs/advanced-courses/checks/screenshots/local/advanced-feedback-1280.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "343db1511c06871fe062161cfc5d756b712addb9fc17b91b02968c319ce40b9c"
+    },
+    {
+      "path": "docs/advanced-courses/checks/screenshots/local/advanced-groups-360.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "177e9619d4a5d6f052bf7aee11f439bb9aa959408ebf4ebe657a93706b133d56"
+    },
+    {
+      "path": "docs/advanced-courses/checks/screenshots/local/advanced-guided13-1280.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "9e6d309f7a9c3d96b9070ef1441ac1b03a0c3eea7b8759ca1e894b8222a28bd1"
+    },
+    {
+      "path": "docs/advanced-courses/checks/screenshots/local/advanced-keyboard-768.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "42c41d604153a23061fa164187bedd46a027799a6abf4d49976c4b339d59220b"
+    },
+    {
+      "path": "docs/advanced-courses/checks/screenshots/local/advanced-ladder-reduced-360.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "f7c9c00cdb78e4f79d0e300fa2399be1eee5ce835badebc4694ceb668a86a004"
+    },
+    {
+      "path": "docs/advanced-courses/checks/screenshots/local/advanced-offline-game.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "c8cdfe6a85b2450d7f6110f99888aca05f93058568aa097322bb206a592efa85"
+    },
+    {
+      "path": "docs/advanced-courses/checks/screenshots/local/advanced-route-1280.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "5b7dd3875d40a44587ff89e61ded51faced12da830c2d8c09c25c5b4fabeb333"
+    },
+    {
+      "path": "docs/advanced-courses/checks/screenshots/local/advanced-seven-1280.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "b93eccb1fc64be9e86f7e8abcaccee887d4af31db31fcef807415f16e6a0fae9"
+    },
+    {
+      "path": "docs/advanced-courses/checks/screenshots/local/advanced-shared-360.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "5d7ad861d01917163e4f1353f5c5cc03da92e180e4fa9c11bbb1523c58210c4f"
+    },
+    {
+      "path": "docs/advanced-courses/checks/screenshots/public/advanced-feedback-1280.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "343db1511c06871fe062161cfc5d756b712addb9fc17b91b02968c319ce40b9c"
+    },
+    {
+      "path": "docs/advanced-courses/checks/screenshots/public/advanced-groups-360.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "602ed767c2decea350d9f44e8fa377ec4a5896279b19092b0a7b67c2ab75ad29"
+    },
+    {
+      "path": "docs/advanced-courses/checks/screenshots/public/advanced-guided13-1280.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "81c4a79342d94477780052691b911a0088f1f11ee27fbc0ae93f3b7170f0d7a4"
+    },
+    {
+      "path": "docs/advanced-courses/checks/screenshots/public/advanced-keyboard-768.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "42c41d604153a23061fa164187bedd46a027799a6abf4d49976c4b339d59220b"
+    },
+    {
+      "path": "docs/advanced-courses/checks/screenshots/public/advanced-ladder-reduced-360.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "8a51afd732e4a0923564d8a1272466f970847de1bd9fe244570e195a00385f7f"
+    },
+    {
+      "path": "docs/advanced-courses/checks/screenshots/public/advanced-offline-game.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "c8cdfe6a85b2450d7f6110f99888aca05f93058568aa097322bb206a592efa85"
+    },
+    {
+      "path": "docs/advanced-courses/checks/screenshots/public/advanced-public-upgrade.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "2d43bcf92f9adec1448e174ae8a9706d9f98d231ae08106529d5dd1f9eca32e1"
+    },
+    {
+      "path": "docs/advanced-courses/checks/screenshots/public/advanced-route-1280.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "5b7dd3875d40a44587ff89e61ded51faced12da830c2d8c09c25c5b4fabeb333"
+    },
+    {
+      "path": "docs/advanced-courses/checks/screenshots/public/advanced-seven-1280.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "b93eccb1fc64be9e86f7e8abcaccee887d4af31db31fcef807415f16e6a0fae9"
+    },
+    {
+      "path": "docs/advanced-courses/checks/screenshots/public/advanced-shared-360.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "5d7ad861d01917163e4f1353f5c5cc03da92e180e4fa9c11bbb1523c58210c4f"
+    },
+    {
+      "path": "docs/advanced-courses/checks/typecheck.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/advanced-courses/checks/unit-first.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "00b1202e317b052c50019249edc7a5f0b302ae5dea0bb0fba6dab33aff908d0d"
+    },
+    {
+      "path": "docs/advanced-courses/checks/unit.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "c91eb81ec5bcd3af7dba8b1df87ae0761deecb3c2cc0e9bf06840ba7d0361070"
+    },
+    {
+      "path": "docs/advanced-courses/checks/upgrade-baseline.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "7dd1e94ba19ec9400eaee929c63cbe4c618fbb55c70df87d2ffafe44a3576d4e"
+    },
+    {
+      "path": "docs/advanced-courses/checks/upgrade-baseline.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "da63723fadbb081d4cbddd879244f1b298a146b56a6decdb8e31ba1804e01287"
+    },
+    {
+      "path": "docs/advanced-courses/checks/upgrade-result.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "19aa8088e2f89209d9a896b8093f8ea84bf1b6c4c4073925663b03205d1b7db1"
+    },
+    {
+      "path": "docs/advanced-courses/checks/upgrade-result.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "a447bf7c4aa07afe52b3ff8f7427744223c7ba903ed5baab7c86a9f683d025e2"
+    },
+    {
+      "path": "docs/online-tools/checks/browser/1280-floating-5.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "4d77ebfc744996d775fa89b16ad8a069144543cff9b0afc1412d80fbce429f6b"
+    },
+    {
+      "path": "docs/online-tools/checks/browser/1280-maximized.png",
+      "change": "modified",
+      "baseSha256": "6473f11f2001ee141ff38d4ea2cef2ac7c43387e71443701c7779d9e53b9835c",
+      "sha256": "b9532b8c99b8de6224157bbd6cb404ec2c6d395026b992d2aa5199b53b2dc404"
+    },
+    {
+      "path": "docs/online-tools/checks/browser/360-floating-19.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "4109d21ee560bf277d37d2c7c385c1ea0f0d897b767c59d165f2f3a690d69e6e"
+    },
+    {
+      "path": "docs/online-tools/checks/browser/768-floating-13.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "649c567f8fe6c31c976ffe46c19b4d838ac3672463d5b93f53251705b6166288"
+    },
+    {
+      "path": "docs/online-tools/checks/browser/768-floating-9.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "648f502ac9356b5b765e94b9dd3fd7c202bccd9fc49997969e6d3df08e7265ac"
+    },
+    {
+      "path": "docs/online-tools/checks/browser/chat.png",
+      "change": "modified",
+      "baseSha256": "9d94216d5a6cf3dc9e6015738b34c501a67e77a01d2981768186dc477ad35f17",
+      "sha256": "6a0e9a3a97d246d2fa5bb58bdb6e8bbe955c1b47f13c7c514ccd9c186130fb38"
+    },
+    {
+      "path": "docs/requirements-matrix.md",
+      "change": "modified",
+      "baseSha256": "12e01ce991aecfaa7f8ad63988b347e94a46063b8ea1efb3c3d7b101da6e5342",
+      "sha256": "c3d030ee9765ee10359947609914018329b0939dfd1b8ebbab5d1b9a64677328"
+    },
+    {
+      "path": "docs/t24/checks/journey/chromium/full-game.png",
+      "change": "modified",
+      "baseSha256": "15abedf93f91af5ab0a648307264042b9c7291d278566fd86ba01c2afc249363",
+      "sha256": "701d08f806eba486f24020d92e7b4c92599cc16ba6cd4a8a08425b0b59373b03"
+    },
+    {
+      "path": "docs/t24/checks/journey/chromium/offline-editor.png",
+      "change": "modified",
+      "baseSha256": "514e0554118b92446a1b54dc543f51401c5ab52cf014954388de3ddc123bdd2c",
+      "sha256": "26e69965a5a30fa09345b229ebb2fc3ae6cf7a03a7aabcb07ab77a2ee3477a85"
+    },
+    {
+      "path": "handoff/ADVANCED_COURSES.md",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "8c398637600f88b654c3ed5354597754451bb5d626d49d6d87ebc1802153c42e"
+    },
+    {
+      "path": "package.json",
+      "change": "modified",
+      "baseSha256": "a2e354a9f1772e557c62aa5ebb466a9e79086a30934b726de4139ef4fb6d4196",
+      "sha256": "6fdd41b9b26936e0d876f31fb7cf86f53ddd4ffb185b154e3ecd8a0b9d31cdda"
+    },
+    {
+      "path": "playwright.advanced-regression.config.ts",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "97dc1d3196fe17e970ab86486d3ae92e24ca58792b70784caebafc653af9a425"
+    },
+    {
+      "path": "schemas/advanced-course.schema.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "341b21b984ff20f0c4e28e5d6afa6e30fb3609f0d77f8c426d792ca3f7d521e3"
+    },
+    {
+      "path": "scripts/advanced-browser-fixtures.ts",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "7c4379471a679f187899c0bf554d209dd0cc42cba2342158494f59740bca6d7d"
+    },
+    {
+      "path": "scripts/advanced-browser-journey.js",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "4810ca9a12bc209b470896d15abef477fb278d51d231f63ff22bc4e394f8aeba"
+    },
+    {
+      "path": "scripts/advanced-prepare-upgrade.js",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "ee6c2a9ef7b698ba0a99e51e7270ec17b187f1fa141b1fb17d2ac2d18698fa13"
+    },
+    {
+      "path": "scripts/advanced-quick-browser.js",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "038a08625b84f7e88d9c417c84f826f13d637d619762d6f44ab3e321c4875989"
+    },
+    {
+      "path": "scripts/advanced-upgrade-result.js",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "35b1020e5e059d7dab89bd490f25284f9598e26aef403f40540b8b97d9a5f3ea"
+    },
+    {
+      "path": "scripts/build-advanced-content.py",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "a5025373c9e0e8ba1d94b6ae0f1fc6e62d3733714d662be5fb72dc03b8e0b8e6"
+    },
+    {
+      "path": "scripts/build-advanced-schema.py",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "a3ea5135d57f333b49c3b9fff440eca6e90f0654d435a1b873532341457e4190"
+    },
+    {
+      "path": "scripts/package-advanced.py",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "8be061bd7762d67b9d0fa7cc4939d5edbf06b6982fecbe0c26ed830ab7292ba4"
+    },
+    {
+      "path": "scripts/run-advanced-browser.py",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "c977f48e68081f039873371eaa248e79d8630f5ecea083c1db531a95424c87f2"
+    },
+    {
+      "path": "scripts/sync-github-pages.py",
+      "change": "modified",
+      "baseSha256": "98cec6c4da5fb95ccfc5dfa9fb915820b3216458371edb4a5d94d28c2d1a9a5d",
+      "sha256": "d6b1a85947d56119e444b05029e19de34c7160e436cbef7bce53f2d4822888fa"
+    },
+    {
+      "path": "scripts/validate-advanced.ts",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "25dd2c84218d9650f41b5f414b15dc76e740b1dd2e9eab6ef338d3d65483225c"
+    },
+    {
+      "path": "scripts/verify-advanced-archive.py",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "4332b12b3fdd9854922a8c1a6159e1812a85173331f302cd6816e2686b772a64"
+    },
+    {
+      "path": "scripts/verify-advanced-preservation.py",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "906afcc63650b1231404f867cb7d48f9a5f94b562fc5018ddfe3e6612028547c"
+    },
+    {
+      "path": "scripts/verify-online-dependencies.mjs",
+      "change": "modified",
+      "baseSha256": "a460665e75097b844fdc244d2a582cc7200acb9518ea1117f49ff09baa964acf",
+      "sha256": "05d6b4688a1302d6e1970f143d47a2e04cc6d37f7b2366b765dfa94217d39589"
+    },
+    {
+      "path": "src/components/Board.tsx",
+      "change": "modified",
+      "baseSha256": "7a45c1ee1bd04b991fdd3d8eb980ed6bdf5803aa09248b57631c6a67222f0ede",
+      "sha256": "ca35add8c5b0e83ee96e3f18611978a253bfc54ff47fe8e54ec6bbcb576e9c47"
+    },
+    {
+      "path": "src/core/rules/contract.ts",
+      "change": "modified",
+      "baseSha256": "c83f724155ef53b8bfb625dbf502549e061b1aeb8c02d6db69ebf0352698cff0",
+      "sha256": "8a0532698901efd3499510cdd1f215f8b7be1dbb49617ab93f8b9fc8c3e7b086"
+    },
+    {
+      "path": "src/core/version.ts",
+      "change": "modified",
+      "baseSha256": "87b1489617d74de6e95cf1a112eceab26050542223c02dd311bdd95dbbc84902",
+      "sha256": "f1ad35972c20aeca28814bf530053e2139a865f15aa8e900a98b23561b1da5b8"
+    },
+    {
+      "path": "src/features/advanced-courses/AdvancedLesson.css",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "bbe251c43c12baa388c06abbaf3b1dccd93d068569cca6e6eae09144660a28c4"
+    },
+    {
+      "path": "src/features/advanced-courses/AdvancedLesson.tsx",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "3a2bfac91a8497bdd999dc628819725d5d8dfc3fcfe0cf118489a9261bccef7b"
+    },
+    {
+      "path": "src/features/advanced-courses/GuidedExample.tsx",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "7a5195572ac40a6ba836687d93fcf44e61ee7718de1cc18ecb4d4d3a9e8987ef"
+    },
+    {
+      "path": "src/features/advanced-courses/GuidedGame.tsx",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "a479b19d6f45a5881f9d4a162689dfa699b13caa18a031886109f09cac5def9c"
+    },
+    {
+      "path": "src/features/advanced-courses/SceneExercise.tsx",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "30d57e908f404fca79fb9a13db9dd61b16e73d5f64c4c84c0ca15ea2916d0c02"
+    },
+    {
+      "path": "src/features/advanced-courses/data.ts",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "bc86e997aae1afaea0f2c8161aefa09cb5ae743c4813fddf08a70b616cfbfcff"
+    },
+    {
+      "path": "src/features/advanced-courses/game-storage.ts",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "41d3f50f03f938f371d92081befa4fab6c17e8b5d7577d0992d69ec43f7456d3"
+    },
+    {
+      "path": "src/features/advanced-courses/model.ts",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "382cc9992e0390ca52f1e0044f514cdb0a04cd558b96a85dfea47fab4116f62f"
+    },
+    {
+      "path": "src/features/advanced-courses/progress.ts",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "c7125e241beefc8fdf3f0d8c2b439e9e59b872c281af634eca59d9592fb2824e"
+    },
+    {
+      "path": "src/features/advanced-courses/teaching-bot.ts",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "39a7e9bb2bba3559cd873af374770a2a2d7824fa2bd1042277601f30c4eb1fc2"
+    },
+    {
+      "path": "src/features/advanced-courses/types.ts",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "437af421490009560d21997edbd13f4d70d1904404774def57d1cd2491f2c544"
+    },
+    {
+      "path": "src/features/learning-hub/LearningHub.tsx",
+      "change": "modified",
+      "baseSha256": "c003701253a5dde8247f83a48959b816b7b1b35c60e3869097367f23f381607e",
+      "sha256": "d114e9b0b016780471bb5fd337ac3dbfd0db6bef4c84c7315b4689db4aaa4a3b"
+    },
+    {
+      "path": "src/features/learning-hub/progress.ts",
+      "change": "modified",
+      "baseSha256": "740ea8f1301931ee1ff52c9f443b6435e2ca4c912e93b42af9e03b38a3049803",
+      "sha256": "2d492cf99ebebb8f946c77c3b35544bef3bc960c69565d679d1cbf1e01cd92ee"
+    },
+    {
+      "path": "src/features/learning-hub/registry.ts",
+      "change": "modified",
+      "baseSha256": "ce19697eeb818be2e9f77b632a6ad951b14a6726e45ecf00d57f630b62f251b7",
+      "sha256": "f6b8e765f577c9c87d5bb2306ebdaf5e3ed380465f6ef1396609eef8216df12f"
+    },
+    {
+      "path": "src/features/learning-hub/stages.ts",
+      "change": "modified",
+      "baseSha256": "945c95232a4bbdfc8f68cf1879cf393cc221625245b7d2562cf2750d56ff627c",
+      "sha256": "b2d8ba74e5c4d2da0953259794c53777318eaa5ca330b5c5205f3dd649b4eed3"
+    },
+    {
+      "path": "src/features/learning-hub/types.ts",
+      "change": "modified",
+      "baseSha256": "48f5b23c960a560f234db12c23e7cf86a6205e7d0b713a65078fbe2fec5e8de8",
+      "sha256": "d1916befd4b5219c38ac868d21d4fd77eacca26dd2a5ec8fc636a116e85e4d95"
+    },
+    {
+      "path": "src/features/puzzle-runner/grading.ts",
+      "change": "modified",
+      "baseSha256": "f15fefc36c7acc26284215936fda40f7973e9afad75a92dfd6570d33a5ae5b43",
+      "sha256": "7208f64632e8bdad1057baf87a530b107bdad905b7dbf5f242c0638e28bef0ac"
+    },
+    {
+      "path": "tests/advanced-courses/content.test.ts",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "d00361697ffcd5fe6982031cfed05e6228a929366f493a7a418a5f03190e109c"
+    },
+    {
+      "path": "tests/advanced-courses/grading-progress.test.ts",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "f3313dec6519c68ba8c24c397483048b58d35b58ae30b1d278c4793c1664cb8d"
+    },
+    {
+      "path": "tests/advanced-courses/teaching-bot.test.ts",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "079b36722f35c1bde14a79d76154d68117b4245cc8a39e12bcf04ad4718892e6"
+    },
+    {
+      "path": "tests/browser/t03.spec.ts",
+      "change": "modified",
+      "baseSha256": "0e6f1ba2561fc641ffc734435bae58567166e0946463b2eaa6282b497ebef2ae",
+      "sha256": "37ee381011aa4092b3146c9039a4b34ffadaefb5285a8846de88505442eb406e"
+    },
+    {
+      "path": "tests/t03/navigation.test.tsx",
+      "change": "modified",
+      "baseSha256": "9abdfae4439b5b9ed2abb9d27276a0e47f708f0acc4e73e224892004f3cd912c",
+      "sha256": "9ba7fac0b7ce61c3008e972079b8bee6891207a92f8d746ddab87d5da9894947"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "ADVANCED-PUBLIC-UPGRADE",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "resultVersion": "0.23.0-pages.1",
+  "status": "passed",
+  "url": "https://sma084545-pixel.github.io/weiqi/",
+  "fromVersion": "0.22.0",
+  "toVersion": "0.23.0",
+  "actualBefore": "版本 0.22.0",
+  "existingRecordPreserved": true,
+  "advancedMarkSurvivesRefresh": true,
+  "legacyStageMarksRemainSixOnly": true,
+  "siteDataCleared": false,
+  "testData": "explicit isolated automation self-mark; not student evidence",
+  "browser": "155.0.8059.86",
+  "checkedAt": "2026-10-24T02:53:45.213Z"
+}

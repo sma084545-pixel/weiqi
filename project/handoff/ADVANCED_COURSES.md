@@ -5,7 +5,7 @@
 - resultVersion: 0.23.0-pages.1
 - rulesetId: GO-CLUB-AREA-1
 - schemaVersion: 1
-- status: local-verified release candidate; public/archive verification pending
+- status: live-verified; final archive proof accompanies release as ARCHIVE_CHECK.json
 
 本轮只续接学习路线7–12。现有课程1–6的ID、编号与完整数据对象相同；没有从旧工程覆盖主线。work/advanced-course-20261024/mainline/go-club为本轮工作副本，0.22.0已封存基线不改，sources/只读。
 
@@ -21,8 +21,12 @@ src/features/advanced-courses/、content/advanced-courses/bundle.json、schemas/
 
 486单测（新增57）、851正式题库断言、37场景实际UI、176原浏览器、22联机、360/768/1280、键盘/触屏/减少动画以及禁用网络刷新已通过。具体命令/日志/修正见docs/advanced-courses/ACCEPTANCE.md与checks/。1100个受保护文件哈希一致，旧6课完整数据对象相同。实际Chrome155.0.8059.86，触屏为模拟，不是物理手机或人类教学验证。
 
-正式网站升级与最终ZIP干净解压复验完成后更新本交接；不能把本地候选说明当作正式发布证据。KataGo和rooms部署配置/后台源码不变，无新增费用或服务。无复杂通用死活/战略AI、进阶材料编辑器、新纸卡PPT或中级课程；这些是后续扩展，不是坏链接入口。
+正式网站37场景、13路完整确认、实际断网及0.22→0.23缓存升级已通过，checks/public-browser-journey.json及upgrade-result.json为真实证据。最终ZIP的CRC/SHA/干净解压命令记录单独随归档附ARCHIVE_CHECK.json；缺失时不得把本交接当作归档已验证。KataGo和rooms部署配置/后台源码不变，无新增费用或服务。无复杂通用死活/战略AI、进阶材料编辑器、新纸卡PPT或中级课程；这些是后续扩展，不是坏链接入口。
 
 ## 迁移与下一轮输入
 
 无需修改GO-CLUB-AREA-1、正式content schema1、冻结30题/6终局/revision。原本机数据不清空；旧缓存先保存再通过原应用更新入口应用新版本。新增课程编辑或修订须提高相应revision、重建bundle、重跑结构/合法变化/独立预期/交互，并保留本机revision边界。下一轮使用本轮最终完整归档、handoff、docs/advanced-courses与共同schema/规则；不从0.22.0重开替代项目。
+
+## 实际发布
+
+原网站https://sma084545-pixel.github.io/weiqi/，学习路线#/route，课程7入口#/route/STAGE-07。首次发布提交f67a9baaa3c0222b70ff2e635dbc7ec0300b670f，main分支，原Pages流程。后续只补充验收、归档与交接记录；最终提交以Release标签/外附PACKAGE_INFO为准。rooms/KataGo未重部署、未购买任何资源。本轮真实测试与旧0.22证据分开，不把模拟UI回归冒充真实引擎调用。

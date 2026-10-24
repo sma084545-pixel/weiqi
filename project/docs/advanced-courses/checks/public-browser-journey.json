@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "id": "ADVANCED-REAL-BROWSER-JOURNEY",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "resultVersion": "0.23.0-pages.1",
+  "status": "passed",
+  "actualUrl": "https://sma084545-pixel.github.io/weiqi/",
+  "browser": "155.0.8059.86",
+  "mockResponses": false,
+  "physicalDevices": false,
+  "humanReviewed": null,
+  "testData": "explicit isolated synthetic input; not member feedback or real classroom evidence",
+  "checks": [
+    "twelve consecutive stages, actual divider, no unlock gate",
+    "all 37 exercises across six lessons completed through actual UI; concept and guided boards available; marks are self chosen",
+    "suboptimal explanation, uncovered legal unknown, occupied illegal unchanged, three hints and fresh retry",
+    "point set missing/extra explained and reset",
+    "three-ply snapback, undo, verified branches and route-change playback cancellation",
+    "real complete 13-road rule bot: turn locks, cancellation, undo, slider read-only, scoring-draft refresh, disagreement history, confirmed draw",
+    "old course5 progress and independent T08 game preserved; KataGo remains postgame-only",
+    "actual browser network disabled: refresh restores answer screen, grading/save and 13-road bot continue without any cloud request",
+    "360 touch: point set, whole group, 13-road local scrolling/zoom reset, reduced-motion ladder;768 keyboard arrows/Space/Tab/Enter"
+  ],
+  "sceneRuns": [
+    {
+      "id": "ADV-07-01",
+      "interaction": "compare",
+      "passed": true
+    },
+    {
+      "id": "ADV-07-02",
+      "interaction": "group",
+      "passed": true
+    },
+    {
+      "id": "ADV-07-03",
+      "interaction": "point",
+      "passed": true
+    },
+    {
+      "id": "ADV-07-04",
+      "interaction": "point",
+      "passed": true
+    },
+    {
+      "id": "ADV-07-05",
+      "interaction": "choice",
+      "passed": true
+    },
+    {
+      "id": "ADV-07-06",
+      "interaction": "point",
+      "passed": true
+    },
+    {
+      "id": "ADV-08-01",
+      "interaction": "point",
+      "passed": true
+    },
+    {
+      "id": "ADV-08-02",
+      "interaction": "choice",
+      "passed": true
+    },
+    {
+      "id": "ADV-08-03",
+      "interaction": "point",
+      "passed": true
+    },
+    {
+      "id": "ADV-08-04",
+      "interaction": "sequence",
+      "passed": true
+    },
+    {
+      "id": "ADV-08-05",
+      "interaction": "point",
+      "passed": true
+    },
+    {
+      "id": "ADV-08-06",
+      "interaction": "choice",
+      "passed": true
+    },
+    {
+      "id": "ADV-08-07",
+      "interaction": "sequence",
+      "passed": true
+    },
+    {
+      "id": "ADV-08-08",
+      "interaction": "choice",
+      "passed": true
+    },
+    {
+      "id": "ADV-09-01",
+      "interaction": "points",
+      "passed": true
+    },
+    {
+      "id": "ADV-09-02",
+      "interaction": "choice",
+      "passed": true
+    },
+    {
+      "id": "ADV-09-03",
+      "interaction": "compare",
+      "passed": true
+    },
+    {
+      "id": "ADV-09-04",
+      "interaction": "points",
+      "passed": true
+    },
+    {
+      "id": "ADV-09-05",
+      "interaction": "sequence",
+      "passed": true
+    },
+    {
+      "id": "ADV-09-06",
+      "interaction": "sequence",
+      "passed": true
+    },
+    {
+      "id": "ADV-09-07",
+      "interaction": "choice",
+      "passed": true
+    },
+    {
+      "id": "ADV-10-01",
+      "interaction": "group",
+      "passed": true
+    },
+    {
+      "id": "ADV-10-02",
+      "interaction": "choice",
+      "passed": true
+    },
+    {
+      "id": "ADV-10-03",
+      "interaction": "point",
+      "passed": true
+    },
+    {
+      "id": "ADV-10-04",
+      "interaction": "sequence",
+      "passed": true
+    },
+    {
+      "id": "ADV-10-05",
+      "interaction": "point",
+      "passed": true
+    },
+    {
+      "id": "ADV-10-06",
+      "interaction": "choice",
+      "passed": true
+    },
+    {
+      "id": "ADV-11-01",
+      "interaction": "point",
+      "passed": true
+    },
+    {
+      "id": "ADV-11-02",
+      "interaction": "point",
+      "passed": true
+    },
+    {
+      "id": "ADV-11-03",
+      "interaction": "point",
+      "passed": true
+    },
+    {
+      "id": "ADV-11-04",
+      "interaction": "point",
+      "passed": true
+    },
+    {
+      "id": "ADV-11-05",
+      "interaction": "choice",
+      "passed": true
+    },
+    {
+      "id": "ADV-11-06",
+      "interaction": "choice",
+      "passed": true
+    },
+    {
+      "id": "ADV-12-01",
+      "interaction": "point",
+      "passed": true
+    },
+    {
+      "id": "ADV-12-02",
+      "interaction": "point",
+      "passed": true
+    },
+    {
+      "id": "ADV-12-03",
+      "interaction": "choice",
+      "passed": true
+    },
+    {
+      "id": "ADV-12-04",
+      "interaction": "point",
+      "passed": true
+    }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "analysisRequests": 0
+}

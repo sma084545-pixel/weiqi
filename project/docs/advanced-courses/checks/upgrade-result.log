@@ -1,0 +1,27 @@
+### Result
+{"schemaVersion":1,"id":"ADVANCED-PUBLIC-UPGRADE","revision":1,"rulesetId":"GO-CLUB-AREA-1","resultVersion":"0.23.0-pages.1","status":"passed","url":"https://sma084545-pixel.github.io/weiqi/","fromVersion":"0.22.0","toVersion":"0.23.0","actualBefore":"版本 0.22.0","existingRecordPreserved":true,"advancedMarkSurvivesRefresh":true,"legacyStageMarksRemainSixOnly":true,"siteDataCleared":false,"testData":"explicit isolated automation self-mark; not student evidence","browser":"155.0.8059.86","checkedAt":"2026-10-24T02:53:45.213Z"}
+### Ran Playwright code
+```js
+await (async(page)=>{
+ const base='https://sma084545-pixel.github.io/weiqi/';
+ await page.goto(base+'#/teacher/offline-data');await page.getByRole('heading',{name:'离线与本机数据',exact:true}).waitFor();
+ const before=await page.locator('.app-version').innerText();
+ if(before!=='版本 0.23.0'){
+  await page.getByRole('button',{name:'检查应用更新',exact:true}).click();
+  const apply=page.getByRole('button',{name:'保存已提交内容并应用',exact:true}).first();await apply.waitFor({timeout:60000});await apply.click();
+ }
+ await page.getByText('版本 0.23.0',{exact:true}).waitFor({timeout:60000});
+ await page.goto(base+'#/route/STAGE-05');await page.getByRole('button',{name:'还想练习',exact:true}).waitFor();if(await page.getByRole('button',{name:'还想练习',exact:true}).getAttribute('aria-pressed')!=='true')throw Error('old course5 mark lost');
+ await page.goto(base+'#/route/STAGE-07');await page.getByRole('heading',{name:'好形与坏形',exact:true}).waitFor();await page.getByRole('navigation',{name:'本课环节'}).getByRole('button',{name:/Lesson Summary/}).click();await page.getByRole('button',{name:'我会了',exact:true}).click();
+ const progress=await page.evaluate(async()=>{const db=await new Promise((resolve,reject)=>{const r=indexedDB.open('go-club-local');r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error);});const record=await new Promise((resolve,reject)=>{const r=db.transaction('records','readonly').objectStore('records').get('go-club:learning-progress:v1');r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error);});db.close();return JSON.parse(record.value);});
+ if(progress.stageMarks['STAGE-05']!=='practice'||progress.advancedLessons['STAGE-07@1'].selfMark!=='learned'||Object.keys(progress.stageMarks).some(id=>!/^STAGE-0[1-6]$/.test(id)))throw Error('old and new marking structures conflict');
+ await page.reload();await page.getByRole('button',{name:'我会了',exact:true}).waitFor();if(await page.getByRole('button',{name:'我会了',exact:true}).getAttribute('aria-pressed')!=='true')throw Error('new mark did not survive reload');
+ await page.evaluate(()=>{scrollTo(0,0);if(document.activeElement instanceof HTMLElement)document.activeElement.blur();});await page.screenshot({path:'output/playwright/advanced-public-upgrade.png',fullPage:true});
+ return {schemaVersion:1,id:'ADVANCED-PUBLIC-UPGRADE',revision:1,rulesetId:'GO-CLUB-AREA-1',resultVersion:'0.23.0-pages.1',status:'passed',url:base,fromVersion:'0.22.0',toVersion:'0.23.0',actualBefore:before,existingRecordPreserved:true,advancedMarkSurvivesRefresh:true,legacyStageMarksRemainSixOnly:true,siteDataCleared:false,testData:'explicit isolated automation self-mark; not student evidence',browser:page.context().browser().version(),checkedAt:new Date().toISOString()};
+}
+)(page);
+```
+### Page
+- Page URL: https://sma084545-pixel.github.io/weiqi/#/route/STAGE-07
+- Page Title: 围棋社教学工具
+

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "GITHUB-CURRENT-SOURCE",
-  "revision": 21,
+  "revision": 22,
   "rulesetId": "GO-CLUB-AREA-1",
   "resultVersion": "0.23.0-pages.1",
   "programVersion": "0.23.0",
@@ -3895,8 +3895,8 @@
     },
     {
       "path": "handoff/ADVANCED_COURSES.md",
-      "bytes": 3168,
-      "sha256": "6a58991eff13d1aaa3b9c730494b139b5ec4189019627e2bc5d534892328b338"
+      "bytes": 3808,
+      "sha256": "8c398637600f88b654c3ed5354597754451bb5d626d49d6d87ebc1802153c42e"
     },
     {
       "path": "handoff/CONTENT_FREEZE.json",
@@ -10635,18 +10635,18 @@
     },
     {
       "path": "docs/katago/checks/frontend-review-1280.png",
-      "bytes": 371993,
-      "sha256": "6c3e4c2d6be921ebc0523bda3c0ae93303732567b509bf491596f5516883211f"
+      "bytes": 371834,
+      "sha256": "5d0e0aaad304b9bb47aa3d61a0c9333d94b6921e90dc44c1a361d6951f1c7c20"
     },
     {
       "path": "docs/katago/checks/frontend-review-360.png",
-      "bytes": 336089,
-      "sha256": "78bd09e90b904efc496e808ad3832b679aaee9fcfd3815d27ca5f0d22d5cf6ce"
+      "bytes": 336048,
+      "sha256": "d3232ffea5cd5a47cac534adbe8ed632654a8cd3fca2b7a41ce2d74c7bfcd650"
     },
     {
       "path": "docs/katago/checks/frontend-review-768.png",
       "bytes": 350010,
-      "sha256": "10898330164c0b2b4329a59f031949d1a01b7435732062992af165dd349afd60"
+      "sha256": "f6cf520da4bbdce719b3a2e4d28cba3a96b3cd4f68c9a658470aaaa6924eef37"
     },
     {
       "path": "docs/katago/checks/frontend-ui-review.md",
@@ -10955,8 +10955,13 @@
     },
     {
       "path": "docs/advanced-courses/ACCEPTANCE.md",
-      "bytes": 3954,
-      "sha256": "a62c2f13a4319f839aa4b3605db77e1eb2c74741c0a1e688c470f0710043ee57"
+      "bytes": 4570,
+      "sha256": "5c7601fc8206018178c92812d1abdc28e39af54603298db5cdd53d70ce66bc6f"
+    },
+    {
+      "path": "docs/advanced-courses/CHANGED_FILES.json",
+      "bytes": 26043,
+      "sha256": "4064982cc149bdd5586f3d7e302a9487721427b29d8d686e880ae13ea4382b94"
     },
     {
       "path": "docs/advanced-courses/IMPLEMENTATION.md",
@@ -10965,8 +10970,8 @@
     },
     {
       "path": "docs/advanced-courses/VISUAL_REVIEW.md",
-      "bytes": 1458,
-      "sha256": "0ee2d9e5a01f3a627bd41737799e38776e885d9d4bbc1a788a872c1c60612d06"
+      "bytes": 1662,
+      "sha256": "8c696bbf236cf0cbf46a58468cb9988874bb3e2624304ca660015348a95e9437"
     },
     {
       "path": "docs/advanced-courses/checks/analysis-ui-regression.json",
@@ -11012,6 +11017,11 @@
       "path": "docs/advanced-courses/checks/browser-regression.log",
       "bytes": 25826,
       "sha256": "08c8127d5d2d4623ab67690e4cf353c4fc6d8b87b3a4d0adf5d4fe78876b21d3"
+    },
+    {
+      "path": "docs/advanced-courses/checks/build-analysis.log",
+      "bytes": 265,
+      "sha256": "27b97f5b177408d490ffc315b724c00fc1b0fb428c204a5a1bc48643d0e7746b"
     },
     {
       "path": "docs/advanced-courses/checks/build-final.log",
@@ -11069,6 +11079,16 @@
       "sha256": "21f2a3d6e2f68fe86cf0cc5d48fcc39eec7090a7656d4250c672cac038326104"
     },
     {
+      "path": "docs/advanced-courses/checks/public-browser-journey.json",
+      "bytes": 4837,
+      "sha256": "1957032d7ae7285401f35d66d290e97ce08413c7591943a278bfc30e103b97cf"
+    },
+    {
+      "path": "docs/advanced-courses/checks/public-browser-journey.log",
+      "bytes": 59945,
+      "sha256": "67795e1efce3c150b772b5c31227ea485473fc83fff74887ed72ed8402cd731f"
+    },
+    {
       "path": "docs/advanced-courses/checks/typecheck.log",
       "bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -11092,6 +11112,16 @@
       "path": "docs/advanced-courses/checks/upgrade-baseline.log",
       "bytes": 1266,
       "sha256": "da63723fadbb081d4cbddd879244f1b298a146b56a6decdb8e31ba1804e01287"
+    },
+    {
+      "path": "docs/advanced-courses/checks/upgrade-result.json",
+      "bytes": 603,
+      "sha256": "19aa8088e2f89209d9a896b8093f8ea84bf1b6c4c4073925663b03205d1b7db1"
+    },
+    {
+      "path": "docs/advanced-courses/checks/upgrade-result.log",
+      "bytes": 3525,
+      "sha256": "a447bf7c4aa07afe52b3ff8f7427744223c7ba903ed5baab7c86a9f683d025e2"
     },
     {
       "path": "docs/advanced-courses/checks/screenshots/local/advanced-feedback-1280.png",
@@ -11137,6 +11167,71 @@
       "path": "docs/advanced-courses/checks/screenshots/local/advanced-shared-360.png",
       "bytes": 216972,
       "sha256": "5d7ad861d01917163e4f1353f5c5cc03da92e180e4fa9c11bbb1523c58210c4f"
+    },
+    {
+      "path": "docs/advanced-courses/checks/screenshots/public/advanced-feedback-1280.png",
+      "bytes": 248481,
+      "sha256": "343db1511c06871fe062161cfc5d756b712addb9fc17b91b02968c319ce40b9c"
+    },
+    {
+      "path": "docs/advanced-courses/checks/screenshots/public/advanced-groups-360.png",
+      "bytes": 222908,
+      "sha256": "602ed767c2decea350d9f44e8fa377ec4a5896279b19092b0a7b67c2ab75ad29"
+    },
+    {
+      "path": "docs/advanced-courses/checks/screenshots/public/advanced-guided13-1280.png",
+      "bytes": 234657,
+      "sha256": "81c4a79342d94477780052691b911a0088f1f11ee27fbc0ae93f3b7170f0d7a4"
+    },
+    {
+      "path": "docs/advanced-courses/checks/screenshots/public/advanced-keyboard-768.png",
+      "bytes": 215464,
+      "sha256": "42c41d604153a23061fa164187bedd46a027799a6abf4d49976c4b339d59220b"
+    },
+    {
+      "path": "docs/advanced-courses/checks/screenshots/public/advanced-ladder-reduced-360.png",
+      "bytes": 194801,
+      "sha256": "8a51afd732e4a0923564d8a1272466f970847de1bd9fe244570e195a00385f7f"
+    },
+    {
+      "path": "docs/advanced-courses/checks/screenshots/public/advanced-offline-game.png",
+      "bytes": 247813,
+      "sha256": "c8cdfe6a85b2450d7f6110f99888aca05f93058568aa097322bb206a592efa85"
+    },
+    {
+      "path": "docs/advanced-courses/checks/screenshots/public/advanced-public-upgrade.png",
+      "bytes": 145205,
+      "sha256": "2d43bcf92f9adec1448e174ae8a9706d9f98d231ae08106529d5dd1f9eca32e1"
+    },
+    {
+      "path": "docs/advanced-courses/checks/screenshots/public/advanced-route-1280.png",
+      "bytes": 689992,
+      "sha256": "5b7dd3875d40a44587ff89e61ded51faced12da830c2d8c09c25c5b4fabeb333"
+    },
+    {
+      "path": "docs/advanced-courses/checks/screenshots/public/advanced-seven-1280.png",
+      "bytes": 205881,
+      "sha256": "b93eccb1fc64be9e86f7e8abcaccee887d4af31db31fcef807415f16e6a0fae9"
+    },
+    {
+      "path": "docs/advanced-courses/checks/screenshots/public/advanced-shared-360.png",
+      "bytes": 216972,
+      "sha256": "5d7ad861d01917163e4f1353f5c5cc03da92e180e4fa9c11bbb1523c58210c4f"
+    },
+    {
+      "path": "docs/advanced-courses/checks/screenshots/katago-ui-regression/checks-frontend-review-1280.png",
+      "bytes": 371993,
+      "sha256": "6c3e4c2d6be921ebc0523bda3c0ae93303732567b509bf491596f5516883211f"
+    },
+    {
+      "path": "docs/advanced-courses/checks/screenshots/katago-ui-regression/checks-frontend-review-360.png",
+      "bytes": 336089,
+      "sha256": "78bd09e90b904efc496e808ad3832b679aaee9fcfd3815d27ca5f0d22d5cf6ce"
+    },
+    {
+      "path": "docs/advanced-courses/checks/screenshots/katago-ui-regression/checks-frontend-review-768.png",
+      "bytes": 350010,
+      "sha256": "10898330164c0b2b4329a59f031949d1a01b7435732062992af165dd349afd60"
     },
     {
       "path": "docs/t07/ACCEPTANCE.md",
@@ -14004,6 +14099,11 @@
       "sha256": "038a08625b84f7e88d9c417c84f826f13d637d619762d6f44ab3e321c4875989"
     },
     {
+      "path": "scripts/advanced-upgrade-result.js",
+      "bytes": 2815,
+      "sha256": "35b1020e5e059d7dab89bd490f25284f9598e26aef403f40540b8b97d9a5f3ea"
+    },
+    {
       "path": "scripts/audit-merge-c.py",
       "bytes": 5868,
       "sha256": "643db45ebeecfbc1f4db90dd547041eff89c60756e23ba30d52cddf8a2a3f80f"
@@ -14162,6 +14262,11 @@
       "path": "scripts/online-tools-public.js",
       "bytes": 8990,
       "sha256": "5880f956a128a691f13661504836cfe52c8c0a2d5785fb16119fcc9653c3b623"
+    },
+    {
+      "path": "scripts/package-advanced.py",
+      "bytes": 4785,
+      "sha256": "8be061bd7762d67b9d0fa7cc4939d5edbf06b6982fecbe0c26ed830ab7292ba4"
     },
     {
       "path": "scripts/package-floating-fit.py",
@@ -14407,6 +14512,11 @@
       "path": "scripts/validate-t17.ts",
       "bytes": 1953,
       "sha256": "895d554166fce67445340b526222d367194a9b1e9525c9c1429534664e163ab4"
+    },
+    {
+      "path": "scripts/verify-advanced-archive.py",
+      "bytes": 2512,
+      "sha256": "4332b12b3fdd9854922a8c1a6159e1812a85173331f302cd6816e2686b772a64"
     },
     {
       "path": "scripts/verify-advanced-preservation.py",

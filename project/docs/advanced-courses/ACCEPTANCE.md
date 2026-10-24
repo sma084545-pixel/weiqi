@@ -1,13 +1,13 @@
 ---
 schemaVersion: 1
 id: DOC-ADVANCED-ACCEPTANCE
-revision: 1
+revision: 2
 rulesetId: GO-CLUB-AREA-1
 ---
 
 # 课程7–12验收 · 0.23.0-pages.1
 
-当前为已通过本地验收的发布候选；正式网站发布、旧缓存升级和最终归档检查尚待本轮后续执行，不以此候选文档宣称已上线。最终状态以checks/public-browser-journey.json、upgrade-result.json及release目录ARCHIVE_CHECK.json、PUBLICATION_PROOF.json为准。
+功能与本机、正式网站验收已通过。原地址https://sma084545-pixel.github.io/weiqi/已发布0.23.0。最终归档CRC/SHA、重新解压与干净安装构建结果随交付另附release目录ARCHIVE_CHECK.json与PUBLICATION_PROOF.json；这两个交付证明缺失时，不把源码说明当作完整交付。
 
 |验收项|当前状态|证据|
 |---|---|---|
@@ -26,8 +26,8 @@ rulesetId: GO-CLUB-AREA-1
 |KataGo前端兼容|通过|独立8项UI回归；后端源码/部署配置未变，不重复声称真实引擎重新部署|
 |360触屏、768键盘、1280桌面、减少动画|通过|生产构建实际旅程、截图与VISUAL_REVIEW；13路局部滚动/缩放/复位|
 |真实断网|通过|准备缓存后禁用浏览器网络并刷新，作答/保存/机器人继续；非仅代码检查|
-|正式原网站、旧缓存升级|待测|将使用原GitHubPages地址实测，旧0.22.0上下文已准备|
-|最终ZIP校验和干净重装|待测|最终release外附ARCHIVE_CHECK与SHA256SUMS|
+|正式原网站、旧缓存升级|通过|public-browser-journey.json：37场景、13路和实际断网；upgrade-result.json：0.22→0.23保留旧标记，新标记刷新恢复，不清数据|
+|最终ZIP校验和干净重装|外附交付证明|最终release/ARCHIVE_CHECK.json与SHA256SUMS；按其中实际状态判断，不由本文替代|
 |人类教师审核、实体手机、真实课堂|未测|没有冒称人类复核或已取得学习效果|
 
 实际运行命令：pnpm install --frozen-lockfile --prod=false；pnpm check；pnpm test:advanced；pnpm validate:advanced --write；pnpm test:browser；Playwright CLI的advanced-browser-journey（本地开发及生产构建）；pnpm build:pages。Node22.23.3、pnpm11.25.0执行既有pnpm11.19.0锁定声明与精确依赖锁，没有升级依赖。
@@ -36,6 +36,8 @@ rulesetId: GO-CLUB-AREA-1
 
 已修正：共享注册器在Node浏览器测试中加载JSON需要type:json声明；新测试对history.layouts契约的数组断言；重试测试先清已保存答案；引导棋交点误继承控制按钮样式（现排除intersection，断言透明/无边框/无padding）；待确认死子与单方确认刷新保存。冻结CONTENT_SCHEMA说明恢复为原字节，新课程格式放独立补充文档；没有静默改规则或冻结题。
 
-第一次失败日志保留供追踪，不作为当前失败项。当前没有已知阻断或重要功能缺陷；公网和归档仍待实际执行后才能标记整项完成。
+第一次失败日志保留供追踪，不作为当前失败项。当前没有已知阻断或重要功能缺陷；原网站已实测通过。完整交付还需核对随最终ZIP附带的归档证明。
 
 剩余边界：只实际运行Chrome155及触屏模拟；未实际Safari/Firefox/实体手机/屏幕阅读器。本轮不制作进阶纸卡或微课，不扩展中级内容。机器人是本地规则策略，不是段位AI；有限变化/目标比较不证明任意局面的最佳手或死活。没有虚构学生反馈、CAS工时、真人审核或实施成效。旧材料/题库不因新增场景重新编号。
+
+正式站点本轮真实Chrome155：全部37场景、三类屏宽、触屏/键盘、机器人流程、已禁用网络刷新和旧缓存升级均通过，页面/控制台错误为0。没有模拟核心规则或使用虚构学生反馈。KataGo8项为明确模拟HTTP的界面回归，不冒称本轮再次部署/测量真实引擎；原0.22历史截图恢复原字节，本轮副本另存checks/screenshots/katago-ui-regression。
