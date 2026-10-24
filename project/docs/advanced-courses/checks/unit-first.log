@@ -1,0 +1,122 @@
+$ vitest run tests/advanced-courses
+
+ RUN  v5.0.0 /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/advanced-course-20261024/mainline/go-club
+
+ ❯ tests/advanced-courses/content.test.ts (46 tests | 38 failed) 138ms
+   ❯ advanced course coordinate and evidence contracts (46)
+     × ADV-07-01: legal complete board, choices, literal liberty and capture vectors 8ms
+     × ADV-07-02: legal complete board, choices, literal liberty and capture vectors 1ms
+     × ADV-07-03: legal complete board, choices, literal liberty and capture vectors 1ms
+     × ADV-07-04: legal complete board, choices, literal liberty and capture vectors 1ms
+     × ADV-07-05: legal complete board, choices, literal liberty and capture vectors 1ms
+     × ADV-07-06: legal complete board, choices, literal liberty and capture vectors 2ms
+     × ADV-08-01: legal complete board, choices, literal liberty and capture vectors 1ms
+     × ADV-08-02: legal complete board, choices, literal liberty and capture vectors 1ms
+     × ADV-08-03: legal complete board, choices, literal liberty and capture vectors 1ms
+     × ADV-08-04: legal complete board, choices, literal liberty and capture vectors 0ms
+     × ADV-08-05: legal complete board, choices, literal liberty and capture vectors 0ms
+     × ADV-08-06: legal complete board, choices, literal liberty and capture vectors 0ms
+     × ADV-08-07: legal complete board, choices, literal liberty and capture vectors 0ms
+     × ADV-08-08: legal complete board, choices, literal liberty and capture vectors 0ms
+     × ADV-09-01: legal complete board, choices, literal liberty and capture vectors 0ms
+     × ADV-09-02: legal complete board, choices, literal liberty and capture vectors 0ms
+     × ADV-09-03: legal complete board, choices, literal liberty and capture vectors 0ms
+     × ADV-09-04: legal complete board, choices, literal liberty and capture vectors 0ms
+     × ADV-09-05: legal complete board, choices, literal liberty and capture vectors 0ms
+     × ADV-09-06: legal complete board, choices, literal liberty and capture vectors 0ms
+     × ADV-09-07: legal complete board, choices, literal liberty and capture vectors 0ms
+     × ADV-10-01: legal complete board, choices, literal liberty and capture vectors 0ms
+     × ADV-10-02: legal complete board, choices, literal liberty and capture vectors 1ms
+     × ADV-10-03: legal complete board, choices, literal liberty and capture vectors 1ms
+     × ADV-10-04: legal complete board, choices, literal liberty and capture vectors 3ms
+     × ADV-10-05: legal complete board, choices, literal liberty and capture vectors 0ms
+     × ADV-10-06: legal complete board, choices, literal liberty and capture vectors 0ms
+     × ADV-11-01: legal complete board, choices, literal liberty and capture vectors 0ms
+     × ADV-11-02: legal complete board, choices, literal liberty and capture vectors 0ms
+     × ADV-11-03: legal complete board, choices, literal liberty and capture vectors 0ms
+     × ADV-11-04: legal complete board, choices, literal liberty and capture vectors 0ms
+     × ADV-11-05: legal complete board, choices, literal liberty and capture vectors 0ms
+     × ADV-11-06: legal complete board, choices, literal liberty and capture vectors 0ms
+     × ADV-12-01: legal complete board, choices, literal liberty and capture vectors 0ms
+     × ADV-12-02: legal complete board, choices, literal liberty and capture vectors 0ms
+     × ADV-12-03: legal complete board, choices, literal liberty and capture vectors 0ms
+     × ADV-12-04: legal complete board, choices, literal liberty and capture vectors 0ms
+     × snapback is 0,1,3 captured and does not recreate the old layout 1ms
+ ❯ tests/advanced-courses/teaching-bot.test.ts (5 tests | 2 failed) 143ms
+   ❯ complete 13-road teaching partner with shared rules (5)
+     × starts a separate empty 13-road game, uses real turn-taking and a fixed history root 11ms
+     × follows a human pass into real scoring, without declaring arbitrary groups alive 2ms
+
+⎯⎯⎯⎯⎯⎯ Failed Tests 40 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/advanced-courses/content.test.ts > advanced course coordinate and evidence contracts > ADV-07-01: legal complete board, choices, literal liberty and capture vectors
+ FAIL  tests/advanced-courses/content.test.ts > advanced course coordinate and evidence contracts > ADV-07-02: legal complete board, choices, literal liberty and capture vectors
+ FAIL  tests/advanced-courses/content.test.ts > advanced course coordinate and evidence contracts > ADV-07-03: legal complete board, choices, literal liberty and capture vectors
+ FAIL  tests/advanced-courses/content.test.ts > advanced course coordinate and evidence contracts > ADV-07-04: legal complete board, choices, literal liberty and capture vectors
+ FAIL  tests/advanced-courses/content.test.ts > advanced course coordinate and evidence contracts > ADV-07-05: legal complete board, choices, literal liberty and capture vectors
+ FAIL  tests/advanced-courses/content.test.ts > advanced course coordinate and evidence contracts > ADV-07-06: legal complete board, choices, literal liberty and capture vectors
+ FAIL  tests/advanced-courses/content.test.ts > advanced course coordinate and evidence contracts > ADV-08-01: legal complete board, choices, literal liberty and capture vectors
+ FAIL  tests/advanced-courses/content.test.ts > advanced course coordinate and evidence contracts > ADV-08-02: legal complete board, choices, literal liberty and capture vectors
+ FAIL  tests/advanced-courses/content.test.ts > advanced course coordinate and evidence contracts > ADV-08-03: legal complete board, choices, literal liberty and capture vectors
+ FAIL  tests/advanced-courses/content.test.ts > advanced course coordinate and evidence contracts > ADV-08-04: legal complete board, choices, literal liberty and capture vectors
+ FAIL  tests/advanced-courses/content.test.ts > advanced course coordinate and evidence contracts > ADV-08-05: legal complete board, choices, literal liberty and capture vectors
+ FAIL  tests/advanced-courses/content.test.ts > advanced course coordinate and evidence contracts > ADV-08-06: legal complete board, choices, literal liberty and capture vectors
+ FAIL  tests/advanced-courses/content.test.ts > advanced course coordinate and evidence contracts > ADV-08-07: legal complete board, choices, literal liberty and capture vectors
+ FAIL  tests/advanced-courses/content.test.ts > advanced course coordinate and evidence contracts > ADV-08-08: legal complete board, choices, literal liberty and capture vectors
+ FAIL  tests/advanced-courses/content.test.ts > advanced course coordinate and evidence contracts > ADV-09-01: legal complete board, choices, literal liberty and capture vectors
+ FAIL  tests/advanced-courses/content.test.ts > advanced course coordinate and evidence contracts > ADV-09-02: legal complete board, choices, literal liberty and capture vectors
+ FAIL  tests/advanced-courses/content.test.ts > advanced course coordinate and evidence contracts > ADV-09-03: legal complete board, choices, literal liberty and capture vectors
+ FAIL  tests/advanced-courses/content.test.ts > advanced course coordinate and evidence contracts > ADV-09-04: legal complete board, choices, literal liberty and capture vectors
+ FAIL  tests/advanced-courses/content.test.ts > advanced course coordinate and evidence contracts > ADV-09-05: legal complete board, choices, literal liberty and capture vectors
+ FAIL  tests/advanced-courses/content.test.ts > advanced course coordinate and evidence contracts > ADV-09-06: legal complete board, choices, literal liberty and capture vectors
+ FAIL  tests/advanced-courses/content.test.ts > advanced course coordinate and evidence contracts > ADV-09-07: legal complete board, choices, literal liberty and capture vectors
+ FAIL  tests/advanced-courses/content.test.ts > advanced course coordinate and evidence contracts > ADV-10-01: legal complete board, choices, literal liberty and capture vectors
+ FAIL  tests/advanced-courses/content.test.ts > advanced course coordinate and evidence contracts > ADV-10-02: legal complete board, choices, literal liberty and capture vectors
+ FAIL  tests/advanced-courses/content.test.ts > advanced course coordinate and evidence contracts > ADV-10-03: legal complete board, choices, literal liberty and capture vectors
+ FAIL  tests/advanced-courses/content.test.ts > advanced course coordinate and evidence contracts > ADV-10-04: legal complete board, choices, literal liberty and capture vectors
+ FAIL  tests/advanced-courses/content.test.ts > advanced course coordinate and evidence contracts > ADV-10-05: legal complete board, choices, literal liberty and capture vectors
+ FAIL  tests/advanced-courses/content.test.ts > advanced course coordinate and evidence contracts > ADV-10-06: legal complete board, choices, literal liberty and capture vectors
+ FAIL  tests/advanced-courses/content.test.ts > advanced course coordinate and evidence contracts > ADV-11-01: legal complete board, choices, literal liberty and capture vectors
+ FAIL  tests/advanced-courses/content.test.ts > advanced course coordinate and evidence contracts > ADV-11-02: legal complete board, choices, literal liberty and capture vectors
+ FAIL  tests/advanced-courses/content.test.ts > advanced course coordinate and evidence contracts > ADV-11-03: legal complete board, choices, literal liberty and capture vectors
+ FAIL  tests/advanced-courses/content.test.ts > advanced course coordinate and evidence contracts > ADV-11-04: legal complete board, choices, literal liberty and capture vectors
+ FAIL  tests/advanced-courses/content.test.ts > advanced course coordinate and evidence contracts > ADV-11-05: legal complete board, choices, literal liberty and capture vectors
+ FAIL  tests/advanced-courses/content.test.ts > advanced course coordinate and evidence contracts > ADV-11-06: legal complete board, choices, literal liberty and capture vectors
+ FAIL  tests/advanced-courses/content.test.ts > advanced course coordinate and evidence contracts > ADV-12-01: legal complete board, choices, literal liberty and capture vectors
+ FAIL  tests/advanced-courses/content.test.ts > advanced course coordinate and evidence contracts > ADV-12-02: legal complete board, choices, literal liberty and capture vectors
+ FAIL  tests/advanced-courses/content.test.ts > advanced course coordinate and evidence contracts > ADV-12-03: legal complete board, choices, literal liberty and capture vectors
+ FAIL  tests/advanced-courses/content.test.ts > advanced course coordinate and evidence contracts > ADV-12-04: legal complete board, choices, literal liberty and capture vectors
+AssertionError: expected { Object (layouts) } to have property 'length'
+ ❯ tests/advanced-courses/content.test.ts:24:27
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/40]⎯
+
+ FAIL  tests/advanced-courses/content.test.ts > advanced course coordinate and evidence contracts > snapback is 0,1,3 captured and does not recreate the old layout
+AssertionError: expected { layouts: [ …(4) ] } to have property 'length'
+ ❯ tests/advanced-courses/content.test.ts:52:153
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/40]⎯
+
+ FAIL  tests/advanced-courses/teaching-bot.test.ts > complete 13-road teaching partner with shared rules > starts a separate empty 13-road game, uses real turn-taking and a fixed history root
+AssertionError: expected { Object (layouts) } to have property 'length'
+ ❯ tests/advanced-courses/teaching-bot.test.ts:7:179
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/40]⎯
+
+ FAIL  tests/advanced-courses/teaching-bot.test.ts > complete 13-road teaching partner with shared rules > follows a human pass into real scoring, without declaring arbitrary groups alive
+AssertionError: expected { Object (layouts) } to have property 'length'
+ ❯ tests/advanced-courses/teaching-bot.test.ts:11:321
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/40]⎯
+
+
+ Test Files  2 failed | 1 passed (3)
+      Tests  40 failed | 16 passed (56)
+   Start at  10:14:42
+   Duration  754ms (import 45%, transform 31%, tests 24%, worker 1%)
+
+[ELIFECYCLE] Command failed with exit code 1.

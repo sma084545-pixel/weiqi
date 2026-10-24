@@ -15,8 +15,8 @@ test('first visit finds the available liberty entry and can return',async({page}
   await expect(page).toHaveURL(/#\/learn\/liberties$/);
   await expect(page.getByRole('heading',{level:1,name:'气实验室'})).toBeVisible();
   await page.getByRole('link',{name:/返回学习路线/}).click();
-  await expect(page.getByRole('heading',{level:1,name:'六阶段学习路线'})).toBeVisible();
-  await expect(page.locator('[data-stage-id]')).toHaveCount(6);
+  await expect(page.getByRole('heading',{level:1,name:'十二课学习路线'})).toBeVisible();
+  await expect(page.locator('[data-stage-id]')).toHaveCount(12);
   await page.screenshot({path:`${evidence}/1280-route.png`,fullPage:true});
 });
 

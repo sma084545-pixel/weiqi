@@ -1,0 +1,6 @@
+$ playwright test --workers=1 && pnpm test:online-browser
+[WebServer] (node:11531) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+TypeError: Module "file:///Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/advanced-course-20261024/mainline/go-club/content/advanced-courses/bundle.json" needs an import attribute of "type: json"
+
+[ELIFECYCLE] Command failed with exit code 1.

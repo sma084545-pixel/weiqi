@@ -16,7 +16,7 @@ export function initialPuzzleState(puzzle:Puzzle){
   return startGame(puzzle.initialPosition,{mode:'full-game',komi:0,gameId:`T10-${puzzle.id}-${puzzle.revision}`});
 }
 
-export function gradeStaticAnswer(puzzle:Puzzle,response:Response):GradeResult{
+export function gradeStaticAnswer(puzzle:Pick<Puzzle,'answer'>,response:Response):GradeResult{
   const answer=puzzle.answer;
   if(answer.type==='open-text'){
     if(response.type!=='open-text'||!response.text.trim())return {verdict:'invalid',message:'请先写下你的选择和理由。'};

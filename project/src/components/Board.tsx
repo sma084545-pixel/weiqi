@@ -31,7 +31,8 @@ function markerDescription(marker:BoardMarker):string {
 }
 
 function markerNode(marker:BoardMarker){
-  const common={className:`board-marker marker-${marker.kind}${marker.owner?` owner-${marker.owner}`:''}`,'data-marker-kind':marker.kind,'aria-hidden':true} as const;
+  const common={className:`board-marker marker-${marker.kind}${marker.owner?` owner-${marker.owner}`:''}`,'data-marker-kind':marker.kind,'data-marker-text':marker.text,'aria-hidden':true} as const;
+  if((marker.kind==='candidate'||marker.kind==='liberty')&&marker.text)return <span {...common}>{marker.text.slice(0,3)}</span>;
   if(marker.kind==='sequence')return <span {...common}>{marker.number??'?'}</span>;
   if(marker.kind==='ownership')return <span {...common}>{marker.owner==='B'?'黑':marker.owner==='W'?'白':'中'}</span>;
   return <span {...common}/>;

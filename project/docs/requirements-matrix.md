@@ -1,7 +1,7 @@
 ---
 schemaVersion: 1
 id: DOC-REQUIREMENTS-MATRIX
-revision: 21
+revision: 22
 rulesetId: GO-CLUB-AREA-1
 ---
 
@@ -109,3 +109,20 @@ FREE_PLAY：主页伙伴卡/顶部“双人对弈”/教师入口→#/play/free�
 |---|---|---|---|
 |页内浮图/独立画中画/棋盘最大化与系统全屏|online-game/BoardDisplayTools、共享Board|docs/online-tools/ACCEPTANCE.md；online-tools.spec.ts|通过：公开原网址和本地均有实测证据|
 |房间双人聊天、临时记录、版本协商与隔离|online-game/client、protocol、RoomChat；server/rooms|tests/online/server.test.ts；公开原网址public-journey|通过：公网后台0.21.0/网页0.21.1实际收发，已记录版本差异|
+
+## ADVANCED_COURSES · 0.23.0 增量验收入口
+
+原T00–T24的正式内容与材料验收仍单独保留。新增课程是原路线的续接，详情与最终状态见docs/advanced-courses/ACCEPTANCE.md。
+
+|本轮要求|实际责任与文件|验收证据|
+|---|---|---|
+|课程7–12在6后、同样式、阶段分隔与自由跳转|learning-hub/stages.ts、registry.ts、LearningHub.tsx；advanced-courses/AdvancedLesson|browser-journey/production-browser-journey；T03回归|
+|六课统一教学、每课基础/挑战/综合|content/advanced-courses/bundle.json、AdvancedLesson|37个场景逐项UI作答、课程数据Schema与引用校验|
+|选择点、落子、棋块、气集合、顺序、比较|SceneExercise、T10静态评测、共享Board|tests/advanced-courses；37场景及键盘/触屏实际交互|
+|解释正确/次优/已核查问题、未知不判错|model.ts、题目条件、SceneExercise反馈|grading-progress.test.ts；非法/次优/未知/漏选误选浏览器用例|
+|征子、枷、倒扑、真实先手与对杀|作者预期点集/捕获数、T01重放|content-validation.json；content.test.ts；完整23手征子/双防守/0-1-3倒扑|
+|强弱与全盘方向不伪判精确胜负|13路完整布局与目标限定说明|IMPLEMENTATION.md；自动结构/合法性核查，未冒称人类审查|
+|13路综合对弈、关键节点、完整终局|GuidedGame、teaching-bot、T08模型、GameTimeline|实际整局确认/争议/刷新/撤回；机器人确定性与合法性测试|
+|进度、题目revision、旧六课与原棋局兼容|原StoragePort/IndexedDB、可选advancedLessons、独立引导棋会话|grading-progress/teaching-bot存储测试；1100文件保护与旧6数据对比；实际升级复验另附|
+|手机/平板/桌面、减少动画、滚动复位|原Board、局部样式、StepPlayer|360/768/1280截图、真实键盘与触屏模拟、VISUAL_REVIEW.md|
+|源项目/生产构建/完整归档|release/0.23.0-pages.1及handoff/ADVANCED_COURSES.md|最终ARCHIVE_CHECK.json、SHA256SUMS及发布证明|

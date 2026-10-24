@@ -1,3 +1,4 @@
+import {validLessonRecords} from '../advanced-courses/progress';
 import type {StoragePort} from '../../core/persistence';
 import {browserStoragePort} from '../../core/unified-persistence';
 import type {LearningProgress,ProgressResult,StageId,StageMark} from './types';
@@ -15,7 +16,8 @@ function validProgress(value:unknown):value is LearningProgress{
   if(!Array.isArray(item.visitedModuleIds)||!item.visitedModuleIds.every(id=>typeof id==='string'))return false;
   if(item.recentModuleId!==null&&typeof item.recentModuleId!=='string')return false;
   if(!item.stageMarks||typeof item.stageMarks!=='object'||Array.isArray(item.stageMarks))return false;
-  return Object.entries(item.stageMarks).every(([id,mark])=>/^STAGE-0[1-6]$/.test(id)&&(mark==='learned'||mark==='practice'));
+  if(item.advancedLessons!==undefined&&!validLessonRecords(item.advancedLessons))return false;
+  return Object.entries(item.stageMarks).every(([id,mark])=>/^STAGE-(0[1-9]|1[0-2])$/.test(id)&&(mark==='learned'||mark==='practice'));
 }
 
 const storageFailure=(fallback:LearningProgress):ProgressResult<LearningProgress>=>({ok:false,issue:{code:'STORAGE_UNAVAILABLE',message:'本机学习记录暂时无法读取或保存；你仍可继续浏览。'},fallback});

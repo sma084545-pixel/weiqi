@@ -31,7 +31,7 @@ export interface RulesEngine {
 export type BoardMode='readonly'|'select'|'play'|'mark';
 export type BoardDisplayMode='standard'|'projector';
 export type BoardMarkerKind='ownership'|'candidate'|'liberty'|'group'|'target'|'last-move'|'sequence';
-export type BoardMarker={markerId:string;kind:BoardMarkerKind;at:Coord;label?:string;number?:number;owner?:Color|'neutral'};
+export type BoardMarker={markerId:string;kind:BoardMarkerKind;at:Coord;label?:string;number?:number;text?:string;owner?:Color|'neutral'};
 export type BoardProps={
   size:Size;board:BoardMatrix;label:string;
   mode?:BoardMode;disabled?:boolean;

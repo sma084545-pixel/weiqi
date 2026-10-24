@@ -1,0 +1,94 @@
+$ pnpm schema:check && pnpm test && pnpm validate:advanced && pnpm validate:content && pnpm validate:t09 && pnpm test:t09-grader && pnpm test:t14 && pnpm test:t15 && pnpm validate:t17 && pnpm verify:merge-a && pnpm verify:t16-freeze && pnpm build && pnpm test:t16-refresh && pnpm build:engine && pnpm test:engine-build && pnpm test:engine-capacity
+$ node scripts/generate-types.mjs --check
+$ vitest run
+
+ RUN  v5.0.0 /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/advanced-course-20261024/mainline/go-club
+
+
+ Test Files  55 passed (55)
+      Tests  486 passed (486)
+   Start at  10:36:09
+   Duration  24.39s (import 35%, tests 31%, environment 26%, transform 8%, worker 1%)
+
+     Import  207 modules were evaluated 537 times · 27.91s total, 35% of tracked time
+             ~2.26s faster with isolate: false — shared modules are evaluated once per worker instead of once per file
+             learn more: https://vitest.dev/guide/improving-performance#test-isolation
+
+$ node --import tsx scripts/validate-advanced.ts
+{
+  "status": "passed",
+  "lessons": 6,
+  "scenes": 37,
+  "errors": []
+}
+$ node --import tsx scripts/validate-content.ts
+PASSED valid/bundle.json {"level":"structural","needsRulesReplay":true}
+PASSED valid/feedback-blank.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/game.json {"level":"structural","needsRulesReplay":true}
+PASSED valid/lesson.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/marker.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/move.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/position.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/puzzle.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/setup.json {"level":"structural","needsRulesReplay":false}
+PASSED valid/terminal.json {"level":"structural","needsRulesReplay":false}
+PASSED content/t04/liberty-demos.json {"level":"structural","needsRulesReplay":false}
+PASSED content/t05/capture-demos.json {"level":"structural","needsRulesReplay":false}
+PASSED content/t08/development-terminal.json {"level":"structural","needsRulesReplay":false}
+PASSED invalid/out-of-bounds.json [{"code":"COORD_BOUNDS","path":"/stones/0/row","message":"坐标超出完整棋盘。"}]
+PASSED invalid/duplicate-point.json [{"code":"DUPLICATE_POINT","path":"/stones/1","message":"同一交叉点不能重复占用。"}]
+PASSED invalid/unknown-stone.json [{"code":"SCHEMA_FIELD","path":"/stones/0/color","message":"请使用该字段允许的值。"}]
+PASSED invalid/unknown-major.json [{"code":"SCHEMA_VERSION","path":"/schemaVersion","message":"仅支持内容主版本 1；请保留原文件，使用对应迁移工具。"}]
+$ node --import tsx content/tools/validate.mjs
+PASS: 851 checks, 134 recorded moves replayed, 2179 explored rule transitions, 30 puzzles + 6 fixtures. Human review not performed.
+$ node content/tools/test-grade.mjs
+PASS: 20 adapter checks including legal unknown, multiple solutions, invalid-state preservation and open discussion.
+PASS: known wrong first move immediately fails the one-move objective.
+$ vitest run tests/t14
+
+ RUN  v5.0.0 /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/advanced-course-20261024/mainline/go-club
+
+
+ Test Files  2 passed (2)
+      Tests  13 passed (13)
+   Start at  10:36:39
+   Duration  2.38s (environment 36%, transform 27%, import 25%, tests 11%)
+
+$ vitest run tests/t15
+
+ RUN  v5.0.0 /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/advanced-course-20261024/mainline/go-club
+
+
+ Test Files  4 passed (4)
+      Tests  16 passed (16)
+   Start at  10:36:43
+   Duration  1.26s (import 68%, transform 28%, tests 3%, worker 1%)
+
+$ node --import tsx scripts/validate-t17.ts
+PASS T17: empty, 3 labelled test replies, independent counts/missing/denominators, default test exclusion, schemaVersion rejection. No real participant records generated.
+$ node scripts/verify-merge-a.mjs
+PASS: MERGE_A integrity; 201 T09 files, 30 formal puzzles, 6 endgames, schema v1 and GO-CLUB-AREA-1 verified.
+$ node scripts/verify-t16-freeze-preservation.mjs
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Length mismatch: docs/CONTENT_SCHEMA.md
+
+10987 !== 10291
+
+    at file:///Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/advanced-course-20261024/mainline/go-club/scripts/verify-t16-freeze-preservation.mjs:14:91
+    at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:681:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 10987,
+  expected: 10291,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v22.23.3
+[ELIFECYCLE] Command failed with exit code 1.
+[ELIFECYCLE] Command failed with exit code 1.

@@ -1,7 +1,7 @@
 ---
 schemaVersion: 1
 id: DOC-SOURCES
-revision: 22
+revision: 23
 rulesetId: GO-CLUB-AREA-1
 ---
 
@@ -119,3 +119,11 @@ ONLINE_PLAY_TOOLS（2026-10-22实际访问）：[Chrome Document PiP](https://de
 - KataGo v1.18.1 官方源码、MIT与第三方声明：https://github.com/lightvector/KataGo/tree/v1.18.1 。JSON协议 https://github.com/lightvector/KataGo/blob/v1.18.1/docs/Analysis_Engine.md ；编译 https://github.com/lightvector/KataGo/blob/v1.18.1/Compiling.md 。固定模型来自官方训练历史所链接的 https://katagoarchive.org/g170/ （CC0）。精确下载URL、SHA256及副本许可证保存在 analysis-engine/engine-manifest.json 和 licenses/。
 - Render官方Web Services/Docker/Free/Pricing/Health Checks/Blueprint与Build Pipeline文档实际核查。具体URLs和访问证据见 docs/katago/checks/render-official-resources.json；资源、收费与后台未核查边界见 docs/katago/RENDER-OPTIONS.md。
 - 新增HTTP调度、协议适配、前端文案与测试为本次项目实现。KataGo不是本项目原创引擎；规则仍为GO-CLUB-AREA-1，明确映射而非将其他赛规混入。本次程序/引擎检查不是人类教师审查或课堂效果证据。
+
+## 0.23.0 进阶教学增量（访问2026-10-24）
+
+- [BGA · Tesuji And Katachi](https://britgo.org/bgj/00805.html)：核对空三角、气与效率的概念，未复制原图、定式或大段原文。
+- [BGA · How to Play](https://www.britgo.org/intro/intro2.html)：只核对正交连接、气与眼；其不同计分没有混入GO-CLUB-AREA-1。
+- [BGA · An Example Game](https://britgo.org/intro/intro3.html)：参考连接/分断、借提子威胁发展的教学观察；本次棋谱和场景原创，不复制职业示例棋谱。
+- 官方前端指导通过modern-web-guidance的accessibility/forms查询核查，沿用原React/Vite及锁文件。课程数据、坐标、表达与代码另行原创，自动校验与人类审核严格分开。
+- 既有LIFE-001 revision1仅作为明确注明的两眼局面复用；冻结30题和材料未改。新课程不是原纸卡或微课已经增加的证明。

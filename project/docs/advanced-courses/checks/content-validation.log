@@ -1,0 +1,7 @@
+$ node --import tsx scripts/validate-advanced.ts --write
+{
+  "status": "passed",
+  "lessons": 6,
+  "scenes": 37,
+  "errors": []
+}

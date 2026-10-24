@@ -1,0 +1,2160 @@
+{
+  "schemaVersion": 1,
+  "id": "ADVANCED-BROWSER-TEST-INPUT",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "DeveloperTestInput",
+  "purpose": "Explicit synthetic test data, not participant feedback or achieved learning. Used only in isolated disposable contexts.",
+  "lessons": [
+    {
+      "schemaVersion": 1,
+      "id": "STAGE-07",
+      "revision": 1,
+      "rulesetId": "GO-CLUB-AREA-1",
+      "kind": "CourseLesson",
+      "number": 7,
+      "title": "好形与坏形",
+      "english": "Shape & Efficiency",
+      "goal": "用更少的棋完成连接、安全与发展的任务。",
+      "question": "同样三颗棋，紧密是否就更高效？",
+      "introSceneId": "ADV-07-01",
+      "concepts": [
+        {
+          "id": "shape",
+          "title": "位置关系与效率",
+          "text": "连接、气、发展空间和投入的子数一起看。7气与8气是具体事实，不等于自动判活。",
+          "sceneId": "ADV-07-01",
+          "takeaway": "先观察，再比较；题目结论只在给定目标和条件下成立。"
+        },
+        {
+          "id": "patterns",
+          "title": "尖、飞、跳与虎",
+          "text": "尖是斜一步；小飞横二竖一，飞是斜向展开的泛称；一间跳隔一点；虎口三面围护。点名称可用来讨论，能否连接仍须验算。",
+          "sceneId": "ADV-07-05",
+          "takeaway": "先观察，再比较；题目结论只在给定目标和条件下成立。"
+        },
+        {
+          "id": "bad-shape",
+          "title": "空三角、团子、棒形与重复",
+          "text": "空三角常让气与空间重叠；团子和被逼成的长棒可能笨重。直线连接本身不是坏形，救棋、做眼或切断时紧凑形也可能必要。",
+          "sceneId": "ADV-07-06",
+          "takeaway": "先观察，再比较；题目结论只在给定目标和条件下成立。"
+        }
+      ],
+      "guidedSceneIds": [
+        "ADV-07-04"
+      ],
+      "sceneIds": [
+        "ADV-07-01",
+        "ADV-07-02",
+        "ADV-07-03",
+        "ADV-07-04",
+        "ADV-07-05",
+        "ADV-07-06"
+      ],
+      "summary": [
+        "先说清目标，再比较效率。",
+        "尖、飞、跳、虎是观察工具，不保证实连。",
+        "空三角常偏集中；紧急时也可能必要。"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "id": "STAGE-08",
+      "revision": 1,
+      "rulesetId": "GO-CLUB-AREA-1",
+      "kind": "CourseLesson",
+      "number": 8,
+      "title": "手筋与局部技巧",
+      "english": "Tesuji",
+      "goal": "先找弱点，再计算打吃、切断和提子。",
+      "question": "看起来送一子，为什么反而能提三子？",
+      "introSceneId": "ADV-08-04",
+      "concepts": [
+        {
+          "id": "scan",
+          "title": "先扫描，不是见子就打吃",
+          "text": "Atari → Cut → Capture → Weakness：观察威胁、切点、可提棋，也看自己的弱点。",
+          "sceneId": "ADV-08-01",
+          "takeaway": "先观察，再比较；题目结论只在给定目标和条件下成立。"
+        },
+        {
+          "id": "ladder",
+          "title": "征子：沿完整盘面看",
+          "text": "每次从正确一侧打吃，让对方在延长后仍受限制；方向错误或外援接上，原结论可变。",
+          "sceneId": "ADV-08-02",
+          "takeaway": "先观察，再比较；题目结论只在给定目标和条件下成立。"
+        },
+        {
+          "id": "net",
+          "title": "枷：先封逃路",
+          "text": "枷不必每手打吃。先限制出口，再核查不同逃法。",
+          "sceneId": "ADV-08-03",
+          "takeaway": "先观察，再比较；题目结论只在给定目标和条件下成立。"
+        },
+        {
+          "id": "snap",
+          "title": "倒扑：提后重新数气",
+          "text": "看似送子，可能让对方提后整块只剩一气。先提敌再查己气；与劫回提分别检查。",
+          "sceneId": "ADV-08-04",
+          "takeaway": "先观察，再比较；题目结论只在给定目标和条件下成立。"
+        }
+      ],
+      "guidedSceneIds": [
+        "ADV-08-02",
+        "ADV-08-03",
+        "ADV-08-04"
+      ],
+      "sceneIds": [
+        "ADV-08-01",
+        "ADV-08-02",
+        "ADV-08-03",
+        "ADV-08-04",
+        "ADV-08-05",
+        "ADV-08-06",
+        "ADV-08-07",
+        "ADV-08-08"
+      ],
+      "summary": [
+        "扫描打吃、切断、提子与自身弱点。",
+        "征子看方向、完整边界与外援。",
+        "枷看封锁，倒扑看提后最后一气。"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "id": "STAGE-09",
+      "revision": 1,
+      "rulesetId": "GO-CLUB-AREA-1",
+      "kind": "CourseLesson",
+      "number": 9,
+      "title": "对杀与气的计算",
+      "english": "Capturing Race",
+      "goal": "数双方的气、公气和轮次，再验证具体变化。",
+      "question": "同为三气，只换先手会怎样？",
+      "introSceneId": "ADV-09-03",
+      "concepts": [
+        {
+          "id": "count",
+          "title": "双方气、公气与外气",
+          "text": "先列空点集合再取交集。黑独有、白独有、公气用文字和标记分别指出，不能重复算作同一块两口气。",
+          "sceneId": "ADV-09-04",
+          "takeaway": "先观察，再比较；题目结论只在给定目标和条件下成立。"
+        },
+        {
+          "id": "turn",
+          "title": "先手必须真的重算",
+          "text": "同一布局黑先与白先分别合法重放，结论才有依据。",
+          "sceneId": "ADV-09-03",
+          "takeaway": "先观察，再比较；题目结论只在给定目标和条件下成立。"
+        },
+        {
+          "id": "eyes",
+          "title": "眼改变气的使用方式",
+          "text": "受保护真眼不是普通外气。先看吃入是否合法，不引入复杂眼对杀公式。",
+          "sceneId": "ADV-09-07",
+          "takeaway": "先观察，再比较；题目结论只在给定目标和条件下成立。"
+        }
+      ],
+      "guidedSceneIds": [
+        "ADV-09-05",
+        "ADV-09-06"
+      ],
+      "sceneIds": [
+        "ADV-09-01",
+        "ADV-09-02",
+        "ADV-09-03",
+        "ADV-09-04",
+        "ADV-09-05",
+        "ADV-09-06",
+        "ADV-09-07"
+      ],
+      "summary": [
+        "先数双方去重气，再找公气和眼。",
+        "先手影响结果，不能只换颜色标签。",
+        "无眼、无公气的例子不能套给所有对杀。"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "id": "STAGE-10",
+      "revision": 1,
+      "rulesetId": "GO-CLUB-AREA-1",
+      "kind": "CourseLesson",
+      "number": 10,
+      "title": "强棋、弱棋与攻防",
+      "english": "Strong & Weak Groups",
+      "goal": "先找双方弱棋，给攻击一个具体目的。",
+      "question": "白棋活出来，黑的攻击一定失败了吗？",
+      "introSceneId": "ADV-10-04",
+      "concepts": [
+        {
+          "id": "weak",
+          "title": "弱棋看多种证据",
+          "text": "缺眼、无根据、周围敌子、联络困难和逃路受限都是提示。以这张完整13路的三个候选比较，不能对任意棋盘自动评级。",
+          "sceneId": "ADV-10-01",
+          "takeaway": "先观察，再比较；题目结论只在给定目标和条件下成立。"
+        },
+        {
+          "id": "strong",
+          "title": "强棋不是理想强杀目标",
+          "text": "本题的两眼结构已明确，直接填眼被规则拒绝。强棋周边仍可能有收官价值，不能把原则理解成永不靠近。",
+          "sceneId": "ADV-10-02",
+          "takeaway": "先观察，再比较；题目结论只在给定目标和条件下成立。"
+        },
+        {
+          "id": "purpose",
+          "title": "攻击为了什么",
+          "text": "可能要连接自己、拓展空间、限制对方或取得先手。是否全盘划算仍需比较代价。",
+          "sceneId": "ADV-10-04",
+          "takeaway": "先观察，再比较；题目结论只在给定目标和条件下成立。"
+        }
+      ],
+      "guidedSceneIds": [
+        "ADV-10-04"
+      ],
+      "sceneIds": [
+        "ADV-10-01",
+        "ADV-10-02",
+        "ADV-10-03",
+        "ADV-10-04",
+        "ADV-10-05",
+        "ADV-10-06"
+      ],
+      "summary": [
+        "先处理自己的弱点，再选择战场。",
+        "不要无目标地强杀强棋。",
+        "攻击也可为连接、发展或先手，不一定杀棋。"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "id": "STAGE-11",
+      "revision": 1,
+      "rulesetId": "GO-CLUB-AREA-1",
+      "kind": "CourseLesson",
+      "number": 11,
+      "title": "大场与行棋方向",
+      "english": "Big Points & Direction of Play",
+      "goal": "从局部安全转向双方的大场与全盘方向。",
+      "question": "空角很大，但自己的棋只剩一气，先下哪里？",
+      "introSceneId": "ADV-11-03",
+      "concepts": [
+        {
+          "id": "corners",
+          "title": "为什么常从角开始",
+          "text": "真实角有两条盘边、边有一条，中腹没有。少量自有边界可以借角限制同样大小空区，但仍须防侵入。",
+          "sceneId": "ADV-11-01",
+          "takeaway": "先观察，再比较；题目结论只在给定目标和条件下成立。"
+        },
+        {
+          "id": "big",
+          "title": "大场看双方价值",
+          "text": "不只看空地，还看双方都想发展的方向和新棋能否安定；早期势力不是确定实地。",
+          "sceneId": "ADV-11-02",
+          "takeaway": "先观察，再比较；题目结论只在给定目标和条件下成立。"
+        },
+        {
+          "id": "urgent",
+          "title": "先急所，再比较大场",
+          "text": "一气目标是明确急迫证据；有意识弃子须说明补偿。局部稳定才讨论脱先。",
+          "sceneId": "ADV-11-03",
+          "takeaway": "先观察，再比较；题目结论只在给定目标和条件下成立。"
+        }
+      ],
+      "guidedSceneIds": [
+        "ADV-11-03"
+      ],
+      "sceneIds": [
+        "ADV-11-01",
+        "ADV-11-02",
+        "ADV-11-03",
+        "ADV-11-04",
+        "ADV-11-05",
+        "ADV-11-06"
+      ],
+      "summary": [
+        "角、边、中腹是方向提示，不是硬规则。",
+        "急所通常先于大场，先核对弃子代价。",
+        "局部稳定后可脱先，不必永远跟着对方。"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "id": "STAGE-12",
+      "revision": 1,
+      "rulesetId": "GO-CLUB-AREA-1",
+      "kind": "CourseLesson",
+      "number": 12,
+      "title": "13路布局与综合实战",
+      "english": "13×13 Opening & Strategy",
+      "goal": "把棋形、手筋、强弱与方向带入一盘13路。",
+      "question": "这一步是在占角、照顾弱棋，还是发展新方向？",
+      "introSceneId": "ADV-12-01",
+      "concepts": [
+        {
+          "id": "corner",
+          "title": "先形成角部计划",
+          "text": "占角后可守角；对手占角后可挂角，不必急着接触战。",
+          "sceneId": "ADV-12-02",
+          "takeaway": "先观察，再比较；题目结论只在给定目标和条件下成立。"
+        },
+        {
+          "id": "side",
+          "title": "沿边发展，留意轻重",
+          "text": "拆边让棋子分担任务；太紧重复、太远有切断风险。",
+          "sceneId": "ADV-12-04",
+          "takeaway": "先观察，再比较；题目结论只在给定目标和条件下成立。"
+        },
+        {
+          "id": "joseki",
+          "title": "为什么靠、扳、连接",
+          "text": "只学一个原创四手接触示例。它不是固定定式，更不是全局唯一答案；解释双方连接方向，未确认实地不编目数。",
+          "sceneId": "ADV-12-03",
+          "takeaway": "先观察，再比较；题目结论只在给定目标和条件下成立。"
+        }
+      ],
+      "guidedSceneIds": [
+        "ADV-12-03"
+      ],
+      "sceneIds": [
+        "ADV-12-01",
+        "ADV-12-02",
+        "ADV-12-03",
+        "ADV-12-04"
+      ],
+      "summary": [
+        "占角、守角、挂角、拆边都要结合全盘。",
+        "定式不等于完美答案，要能解释每一步。",
+        "一盘棋的结果由规则与终局确认决定。"
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "ADV-07-01",
+      "title": "好形二选一",
+      "interaction": "compare",
+      "positive": {
+        "id": "B",
+        "label": "B：舒展直线",
+        "verdict": "success",
+        "explanation": "B同样三子相连，有8口气，较A多1口。只比较此空盘下的局部效率，不证明整盘安全。"
+      },
+      "initialStones": 3
+    },
+    {
+      "id": "ADV-07-02",
+      "title": "寻找重复用棋",
+      "interaction": "group",
+      "positive": {
+        "id": "B",
+        "label": "右下孤子",
+        "verdict": "success",
+        "explanation": "右下子不与目标块相连，也不改变它的去重气。在本题单一目标下未参与任务；全局上它仍可能有用途。",
+        "at": {
+          "row": 4,
+          "col": 4
+        }
+      },
+      "initialStones": 4
+    },
+    {
+      "id": "ADV-07-03",
+      "title": "修复空三角倾向",
+      "interaction": "point",
+      "positive": {
+        "id": "B",
+        "label": "B：沿直线延伸",
+        "verdict": "success",
+        "explanation": "这手合法，三子有8气，并向下延伸一格。这里只比较给定两手的气与空间。",
+        "at": {
+          "row": 3,
+          "col": 1
+        }
+      },
+      "initialStones": 2
+    },
+    {
+      "id": "ADV-07-04",
+      "title": "连接，但不必立刻挤紧",
+      "interaction": "point",
+      "positive": {
+        "id": "B",
+        "label": "B：上方一间跳",
+        "verdict": "success",
+        "explanation": "B向上方展开，留下上下两个连接选择；对白在两处切入的给定线均已核查。此刻仍是不同连通块，不能误称已经实连。",
+        "at": {
+          "row": 1,
+          "col": 3
+        }
+      },
+      "line": {
+        "id": "upper-cut",
+        "label": "白切上方，黑粘中间",
+        "moves": [
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 1,
+              "col": 3
+            }
+          },
+          {
+            "type": "place",
+            "color": "W",
+            "at": {
+              "row": 1,
+              "col": 2
+            }
+          },
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 2,
+              "col": 2
+            }
+          }
+        ],
+        "notes": [
+          "第 1 手：先检查正交连接与对方的气，再检查己方气。",
+          "第 2 手：先检查正交连接与对方的气，再检查己方气。",
+          "第 3 手：先检查正交连接与对方的气，再检查己方气。"
+        ],
+        "captures": [
+          0,
+          0,
+          0
+        ],
+        "outcome": "黑在中间粘住三组；上方白子仍有外气。本线验证可选择另一连接点，不声称提掉白子。",
+        "verdict": "success"
+      },
+      "initialStones": 5
+    },
+    {
+      "id": "ADV-07-05",
+      "title": "尖、飞、跳与虎的共同问题",
+      "interaction": "choice",
+      "positive": {
+        "id": "no",
+        "label": "不能，需要检查切断和回应",
+        "verdict": "success",
+        "explanation": "正确。尖是斜向一步、小飞是横二竖一、跳中间隔一点；飞泛指斜向展开，虎留下三面围护的口。它们都需要结合敌子检查。"
+      },
+      "initialStones": 2
+    },
+    {
+      "id": "ADV-07-06",
+      "title": "不是所有紧凑形都该删",
+      "interaction": "point",
+      "positive": {
+        "id": "A",
+        "label": "A：先延长救棋",
+        "verdict": "success",
+        "explanation": "目标仅剩下方一气。向下延长后恢复外气，安全任务先于外观。",
+        "at": {
+          "row": 2,
+          "col": 1
+        }
+      },
+      "initialStones": 4
+    },
+    {
+      "id": "ADV-08-01",
+      "title": "双打吃",
+      "interaction": "point",
+      "positive": {
+        "id": "A",
+        "label": "A：占共同的气",
+        "verdict": "success",
+        "explanation": "两块白棋各剩一气，但仍是两块。白救其中一块，黑可提另一块。",
+        "at": {
+          "row": 1,
+          "col": 2
+        }
+      },
+      "line": {
+        "id": "defend-left",
+        "label": "白救左，黑提右",
+        "moves": [
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 1,
+              "col": 2
+            }
+          },
+          {
+            "type": "place",
+            "color": "W",
+            "at": {
+              "row": 2,
+              "col": 1
+            }
+          },
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 2,
+              "col": 3
+            }
+          }
+        ],
+        "notes": [
+          "第 1 手：先检查正交连接与对方的气，再检查己方气。",
+          "第 2 手：先检查正交连接与对方的气，再检查己方气。",
+          "第 3 手：先检查正交连接与对方的气，再检查己方气。"
+        ],
+        "captures": [
+          0,
+          0,
+          1
+        ],
+        "outcome": "黑中间一手让两块各剩一气；白救左后右子被提。",
+        "verdict": "success"
+      },
+      "initialStones": 6
+    },
+    {
+      "id": "ADV-08-02",
+      "title": "征子预测",
+      "interaction": "choice",
+      "positive": {
+        "id": "no",
+        "label": "No · 此线不能",
+        "verdict": "success",
+        "explanation": "沿这条经核查的阶梯线，白在每次打吃后延长，最终到盘边被提。"
+      },
+      "line": {
+        "id": "forced-staircase",
+        "label": "逐步追到真实盘边",
+        "moves": [
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 2,
+              "col": 3
+            }
+          },
+          {
+            "type": "place",
+            "color": "W",
+            "at": {
+              "row": 3,
+              "col": 2
+            }
+          },
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 4,
+              "col": 2
+            }
+          },
+          {
+            "type": "place",
+            "color": "W",
+            "at": {
+              "row": 3,
+              "col": 3
+            }
+          },
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 3,
+              "col": 4
+            }
+          },
+          {
+            "type": "place",
+            "color": "W",
+            "at": {
+              "row": 4,
+              "col": 3
+            }
+          },
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 5,
+              "col": 3
+            }
+          },
+          {
+            "type": "place",
+            "color": "W",
+            "at": {
+              "row": 4,
+              "col": 4
+            }
+          },
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 4,
+              "col": 5
+            }
+          },
+          {
+            "type": "place",
+            "color": "W",
+            "at": {
+              "row": 5,
+              "col": 4
+            }
+          },
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 6,
+              "col": 4
+            }
+          },
+          {
+            "type": "place",
+            "color": "W",
+            "at": {
+              "row": 5,
+              "col": 5
+            }
+          },
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 5,
+              "col": 6
+            }
+          },
+          {
+            "type": "place",
+            "color": "W",
+            "at": {
+              "row": 6,
+              "col": 5
+            }
+          },
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 7,
+              "col": 5
+            }
+          },
+          {
+            "type": "place",
+            "color": "W",
+            "at": {
+              "row": 6,
+              "col": 6
+            }
+          },
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 6,
+              "col": 7
+            }
+          },
+          {
+            "type": "place",
+            "color": "W",
+            "at": {
+              "row": 7,
+              "col": 6
+            }
+          },
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 8,
+              "col": 6
+            }
+          },
+          {
+            "type": "place",
+            "color": "W",
+            "at": {
+              "row": 7,
+              "col": 7
+            }
+          },
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 7,
+              "col": 8
+            }
+          },
+          {
+            "type": "place",
+            "color": "W",
+            "at": {
+              "row": 8,
+              "col": 7
+            }
+          },
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 8,
+              "col": 8
+            }
+          }
+        ],
+        "notes": [
+          "黑先封右边，把白变成一气。",
+          "白沿唯一延长点逃出，仍只有两口气。",
+          "黑从正确一侧打吃；若换另一侧，可能放跑。",
+          "白沿唯一延长点逃出，仍只有两口气。",
+          "黑从正确一侧打吃；若换另一侧，可能放跑。",
+          "白沿唯一延长点逃出，仍只有两口气。",
+          "黑从正确一侧打吃；若换另一侧，可能放跑。",
+          "白沿唯一延长点逃出，仍只有两口气。",
+          "黑从正确一侧打吃；若换另一侧，可能放跑。",
+          "白沿唯一延长点逃出，仍只有两口气。",
+          "黑从正确一侧打吃；若换另一侧，可能放跑。",
+          "白沿唯一延长点逃出，仍只有两口气。",
+          "黑从正确一侧打吃；若换另一侧，可能放跑。",
+          "白沿唯一延长点逃出，仍只有两口气。",
+          "黑从正确一侧打吃；若换另一侧，可能放跑。",
+          "白沿唯一延长点逃出，仍只有两口气。",
+          "黑从正确一侧打吃；若换另一侧，可能放跑。",
+          "白沿唯一延长点逃出，仍只有两口气。",
+          "黑从正确一侧打吃；若换另一侧，可能放跑。",
+          "白沿唯一延长点逃出，仍只有两口气。",
+          "黑从正确一侧打吃；若换另一侧，可能放跑。",
+          "白沿唯一延长点逃出，仍只有两口气。",
+          "黑从正确一侧打吃；若换另一侧，可能放跑。"
+        ],
+        "captures": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          12
+        ],
+        "outcome": "在本完整9路、没有外援且按这条持续打吃的应对线中，白12子在盘边被提。不是任何阶梯状棋都无条件能征。",
+        "verdict": "success"
+      },
+      "initialStones": 4
+    },
+    {
+      "id": "ADV-08-03",
+      "title": "征子还是枷吃",
+      "interaction": "point",
+      "positive": {
+        "id": "B",
+        "label": "B：从外围枷住",
+        "verdict": "success",
+        "explanation": "B先封外圈。白从目标两口气分别延长的两条分支都已合法重放，三子在接上引子前被提。",
+        "at": {
+          "row": 3,
+          "col": 3
+        }
+      },
+      "line": {
+        "id": "net-down",
+        "label": "白先向下逃",
+        "moves": [
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 3,
+              "col": 3
+            }
+          },
+          {
+            "type": "place",
+            "color": "W",
+            "at": {
+              "row": 3,
+              "col": 2
+            }
+          },
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 4,
+              "col": 2
+            }
+          },
+          {
+            "type": "place",
+            "color": "W",
+            "at": {
+              "row": 2,
+              "col": 3
+            }
+          },
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 2,
+              "col": 4
+            }
+          }
+        ],
+        "notes": [
+          "第 1 手：先检查正交连接与对方的气，再检查己方气。",
+          "第 2 手：先检查正交连接与对方的气，再检查己方气。",
+          "第 3 手：先检查正交连接与对方的气，再检查己方气。",
+          "第 4 手：先检查正交连接与对方的气，再检查己方气。",
+          "第 5 手：先检查正交连接与对方的气，再检查己方气。"
+        ],
+        "captures": [
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        "outcome": "黑先封外围；白两次延长后，三个目标子被提，远方白子还在。",
+        "verdict": "success"
+      },
+      "initialStones": 6
+    },
+    {
+      "id": "ADV-08-04",
+      "title": "亲手完成倒扑",
+      "interaction": "sequence",
+      "line": {
+        "id": "snapback",
+        "label": "送一子，再回提三子",
+        "moves": [
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 0,
+              "col": 1
+            }
+          },
+          {
+            "type": "place",
+            "color": "W",
+            "at": {
+              "row": 1,
+              "col": 1
+            }
+          },
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 0,
+              "col": 1
+            }
+          }
+        ],
+        "notes": [
+          "黑放入一子，它只剩下方一气；这一手合法。",
+          "白在下方吃掉刚放的黑子，连成三子，但只有上方一气。",
+          "黑回到刚才的点，提掉白三子。布局不同，故不是简单劫回提。"
+        ],
+        "captures": [
+          0,
+          1,
+          3
+        ],
+        "outcome": "黑先损失1子，再提3子。实际布局改变，位置超级劫不阻止这次倒扑；不能只凭“送子”就判错。",
+        "verdict": "success"
+      },
+      "initialStones": 6
+    },
+    {
+      "id": "ADV-08-05",
+      "title": "找手筋：先看弱点",
+      "interaction": "point",
+      "positive": {
+        "id": "A",
+        "label": "A：中央双打吃",
+        "verdict": "success",
+        "explanation": "左右两块各由2气变1气，白一次普通延长只能救一处。",
+        "at": {
+          "row": 1,
+          "col": 2
+        }
+      },
+      "line": {
+        "id": "defend-left",
+        "label": "白救左，黑提右",
+        "moves": [
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 1,
+              "col": 2
+            }
+          },
+          {
+            "type": "place",
+            "color": "W",
+            "at": {
+              "row": 2,
+              "col": 1
+            }
+          },
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 2,
+              "col": 3
+            }
+          }
+        ],
+        "notes": [
+          "第 1 手：先检查正交连接与对方的气，再检查己方气。",
+          "第 2 手：先检查正交连接与对方的气，再检查己方气。",
+          "第 3 手：先检查正交连接与对方的气，再检查己方气。"
+        ],
+        "captures": [
+          0,
+          0,
+          1
+        ],
+        "outcome": "黑中间一手让两块各剩一气；白救左后右子被提。",
+        "verdict": "success"
+      },
+      "initialStones": 6
+    },
+    {
+      "id": "ADV-08-06",
+      "title": "看到切点也要看自己",
+      "interaction": "choice",
+      "positive": {
+        "id": "no",
+        "label": "否，继续看气与回应",
+        "verdict": "success",
+        "explanation": "要检查切入子能否站住、对方能否反打吃，以及整盘的目标。"
+      },
+      "initialStones": 3
+    },
+    {
+      "id": "ADV-08-07",
+      "title": "用另一种防守核对双打吃",
+      "interaction": "sequence",
+      "line": {
+        "id": "defend-right",
+        "label": "白救右，黑提左",
+        "moves": [
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 1,
+              "col": 2
+            }
+          },
+          {
+            "type": "place",
+            "color": "W",
+            "at": {
+              "row": 2,
+              "col": 3
+            }
+          },
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 2,
+              "col": 1
+            }
+          }
+        ],
+        "notes": [
+          "第 1 手：先检查正交连接与对方的气，再检查己方气。",
+          "第 2 手：先检查正交连接与对方的气，再检查己方气。",
+          "第 3 手：先检查正交连接与对方的气，再检查己方气。"
+        ],
+        "captures": [
+          0,
+          0,
+          1
+        ],
+        "outcome": "对称防守也合法；黑提左子。",
+        "verdict": "success"
+      },
+      "initialStones": 6
+    },
+    {
+      "id": "ADV-08-08",
+      "title": "读到哪，结论就到哪",
+      "interaction": "choice",
+      "positive": {
+        "id": "no",
+        "label": "不能，要看边界与外援",
+        "verdict": "success",
+        "explanation": "完整盘面、正确方向和引子都会改变结果；题目只对已核查变化作断言。"
+      },
+      "initialStones": 4
+    },
+    {
+      "id": "ADV-09-01",
+      "title": "圈出黑方所有气",
+      "interaction": "points",
+      "points": [
+        {
+          "row": 1,
+          "col": 1
+        },
+        {
+          "row": 2,
+          "col": 0
+        },
+        {
+          "row": 2,
+          "col": 2
+        },
+        {
+          "row": 3,
+          "col": 1
+        }
+      ],
+      "initialStones": 2
+    },
+    {
+      "id": "ADV-09-02",
+      "title": "4气对3气，谁先提目标",
+      "interaction": "choice",
+      "positive": {
+        "id": "B",
+        "label": "Black wins · 黑先提目标",
+        "verdict": "success",
+        "explanation": "这道无眼无公气题，黑目标4气、白目标3气，给定5手线先提白；不是整盘胜负。"
+      },
+      "line": {
+        "id": "outside-first",
+        "label": "黑先收白外气",
+        "moves": [
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 3,
+              "col": 5
+            }
+          },
+          {
+            "type": "place",
+            "color": "W",
+            "at": {
+              "row": 2,
+              "col": 2
+            }
+          },
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 4,
+              "col": 6
+            }
+          },
+          {
+            "type": "place",
+            "color": "W",
+            "at": {
+              "row": 3,
+              "col": 1
+            }
+          },
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 5,
+              "col": 5
+            }
+          }
+        ],
+        "notes": [
+          "第 1 手：先检查正交连接与对方的气，再检查己方气。",
+          "第 2 手：先检查正交连接与对方的气，再检查己方气。",
+          "第 3 手：先检查正交连接与对方的气，再检查己方气。",
+          "第 4 手：先检查正交连接与对方的气，再检查己方气。",
+          "第 5 手：先检查正交连接与对方的气，再检查己方气。"
+        ],
+        "captures": [
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        "outcome": "黑第5手提白目标两子，黑目标仍有两口气。外墙保留，不把这一局部捕获叫作整盘获胜。",
+        "verdict": "success"
+      },
+      "initialStones": 33
+    },
+    {
+      "id": "ADV-09-03",
+      "title": "谁先走很重要",
+      "interaction": "compare",
+      "positive": {
+        "id": "first",
+        "label": "这道封闭题先行方先提目标",
+        "verdict": "success",
+        "explanation": "两边目标各3气。黑先线与白先线分别核查，结论相反。"
+      },
+      "line": {
+        "id": "black-first",
+        "label": "黑先行线",
+        "moves": [
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 3,
+              "col": 5
+            }
+          },
+          {
+            "type": "place",
+            "color": "W",
+            "at": {
+              "row": 3,
+              "col": 1
+            }
+          },
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 4,
+              "col": 6
+            }
+          },
+          {
+            "type": "place",
+            "color": "W",
+            "at": {
+              "row": 4,
+              "col": 1
+            }
+          },
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 5,
+              "col": 5
+            }
+          }
+        ],
+        "notes": [
+          "第 1 手：先检查正交连接与对方的气，再检查己方气。",
+          "第 2 手：先检查正交连接与对方的气，再检查己方气。",
+          "第 3 手：先检查正交连接与对方的气，再检查己方气。",
+          "第 4 手：先检查正交连接与对方的气，再检查己方气。",
+          "第 5 手：先检查正交连接与对方的气，再检查己方气。"
+        ],
+        "captures": [
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        "outcome": "同为3气，黑先动手，黑先提掉白目标。",
+        "verdict": "success"
+      },
+      "initialStones": 34
+    },
+    {
+      "id": "ADV-09-04",
+      "title": "寻找公气",
+      "interaction": "points",
+      "points": [
+        {
+          "row": 2,
+          "col": 2
+        }
+      ],
+      "initialStones": 2
+    },
+    {
+      "id": "ADV-09-05",
+      "title": "五手完成对杀",
+      "interaction": "sequence",
+      "line": {
+        "id": "outside-first",
+        "label": "黑先收白外气",
+        "moves": [
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 3,
+              "col": 5
+            }
+          },
+          {
+            "type": "place",
+            "color": "W",
+            "at": {
+              "row": 2,
+              "col": 2
+            }
+          },
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 4,
+              "col": 6
+            }
+          },
+          {
+            "type": "place",
+            "color": "W",
+            "at": {
+              "row": 3,
+              "col": 1
+            }
+          },
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 5,
+              "col": 5
+            }
+          }
+        ],
+        "notes": [
+          "第 1 手：先检查正交连接与对方的气，再检查己方气。",
+          "第 2 手：先检查正交连接与对方的气，再检查己方气。",
+          "第 3 手：先检查正交连接与对方的气，再检查己方气。",
+          "第 4 手：先检查正交连接与对方的气，再检查己方气。",
+          "第 5 手：先检查正交连接与对方的气，再检查己方气。"
+        ],
+        "captures": [
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        "outcome": "黑第5手提白目标两子，黑目标仍有两口气。外墙保留，不把这一局部捕获叫作整盘获胜。",
+        "verdict": "success"
+      },
+      "initialStones": 33
+    },
+    {
+      "id": "ADV-09-06",
+      "title": "反过来：白先行",
+      "interaction": "sequence",
+      "line": {
+        "id": "white-first",
+        "label": "白先行线",
+        "moves": [
+          {
+            "type": "place",
+            "color": "W",
+            "at": {
+              "row": 3,
+              "col": 1
+            }
+          },
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 3,
+              "col": 5
+            }
+          },
+          {
+            "type": "place",
+            "color": "W",
+            "at": {
+              "row": 4,
+              "col": 1
+            }
+          },
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 4,
+              "col": 6
+            }
+          },
+          {
+            "type": "place",
+            "color": "W",
+            "at": {
+              "row": 5,
+              "col": 2
+            }
+          }
+        ],
+        "notes": [
+          "第 1 手：先检查正交连接与对方的气，再检查己方气。",
+          "第 2 手：先检查正交连接与对方的气，再检查己方气。",
+          "第 3 手：先检查正交连接与对方的气，再检查己方气。",
+          "第 4 手：先检查正交连接与对方的气，再检查己方气。",
+          "第 5 手：先检查正交连接与对方的气，再检查己方气。"
+        ],
+        "captures": [
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        "outcome": "同一盘面改为白先行，白先提掉黑目标3子；轮次改变结论。",
+        "verdict": "success"
+      },
+      "initialStones": 34
+    },
+    {
+      "id": "ADV-09-07",
+      "title": "有眼，不只是多一个点",
+      "interaction": "choice",
+      "positive": {
+        "id": "no",
+        "label": "不能，本题吃入会自杀",
+        "verdict": "success",
+        "explanation": "两个眼互相保留气，白填一眼不会先提黑，自己却无气；具体两点均由引擎核查。"
+      },
+      "initialStones": 18
+    },
+    {
+      "id": "ADV-10-01",
+      "title": "哪一块最弱",
+      "interaction": "group",
+      "positive": {
+        "id": "B",
+        "label": "B：中腹孤子",
+        "verdict": "success",
+        "explanation": "B只有(6,7)一气，黑下一手可提；在这三个明确候选中它最急。",
+        "at": {
+          "row": 6,
+          "col": 6
+        },
+        "highlight": [
+          {
+            "row": 6,
+            "col": 7
+          }
+        ]
+      },
+      "initialStones": 19
+    },
+    {
+      "id": "ADV-10-02",
+      "title": "应该攻击这块吗",
+      "interaction": "choice",
+      "positive": {
+        "id": "no",
+        "label": "No · 换个目标",
+        "verdict": "success",
+        "explanation": "这块是同一连通块保护的两个独立真眼；直接填任何一眼均自杀。继续以杀它为目标效率低。"
+      },
+      "initialStones": 18
+    },
+    {
+      "id": "ADV-10-03",
+      "title": "把弱棋赶向哪边",
+      "interaction": "point",
+      "positive": {
+        "id": "A",
+        "label": "A：从右侧施压",
+        "verdict": "success",
+        "explanation": "A限制白向右发展，计划把它引向左侧黑支援；目标是借攻发展，并非此手就强制白往左走。",
+        "at": {
+          "row": 6,
+          "col": 7
+        }
+      },
+      "initialStones": 8
+    },
+    {
+      "id": "ADV-10-04",
+      "title": "攻击不一定要杀棋",
+      "interaction": "sequence",
+      "line": {
+        "id": "gain-not-kill",
+        "label": "白做活，黑连接外侧",
+        "moves": [
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 3,
+              "col": 2
+            }
+          },
+          {
+            "type": "place",
+            "color": "W",
+            "at": {
+              "row": 1,
+              "col": 2
+            }
+          },
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 3,
+              "col": 3
+            }
+          }
+        ],
+        "notes": [
+          "黑从外侧靠近，建立连接方向；白仍有眼形关键点。",
+          "白补在内部关键点，形成互相保护的两眼。",
+          "黑继续连成外侧一块；没有吃白，也完成了本题的外侧发展任务。"
+        ],
+        "captures": [
+          0,
+          0,
+          0
+        ],
+        "outcome": "白在(1,2)分出两个独立眼而活；黑外侧四子连通并向中央延展。完成的是给定连接目标，不是全盘胜负或已经围住的实地。",
+        "verdict": "success"
+      },
+      "initialStones": 14
+    },
+    {
+      "id": "ADV-10-05",
+      "title": "先照顾自己的弱棋",
+      "interaction": "point",
+      "positive": {
+        "id": "save",
+        "label": "A：救自己的一气棋",
+        "verdict": "success",
+        "explanation": "延长后获得外气，先消除自己的直接危险。",
+        "at": {
+          "row": 2,
+          "col": 1
+        }
+      },
+      "initialStones": 17
+    },
+    {
+      "id": "ADV-10-06",
+      "title": "攻击的目标清单",
+      "interaction": "choice",
+      "positive": {
+        "id": "plan",
+        "label": "局部目标可以是连接与发展",
+        "verdict": "success",
+        "explanation": "可验证变化中白做两眼，黑外侧相连。可说局部任务完成，不能据此宣布整盘稳赢。"
+      },
+      "line": {
+        "id": "gain-not-kill",
+        "label": "白做活，黑连接外侧",
+        "moves": [
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 3,
+              "col": 2
+            }
+          },
+          {
+            "type": "place",
+            "color": "W",
+            "at": {
+              "row": 1,
+              "col": 2
+            }
+          },
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 3,
+              "col": 3
+            }
+          }
+        ],
+        "notes": [
+          "黑从外侧靠近，建立连接方向；白仍有眼形关键点。",
+          "白补在内部关键点，形成互相保护的两眼。",
+          "黑继续连成外侧一块；没有吃白，也完成了本题的外侧发展任务。"
+        ],
+        "captures": [
+          0,
+          0,
+          0
+        ],
+        "outcome": "白在(1,2)分出两个独立眼而活；黑外侧四子连通并向中央延展。完成的是给定连接目标，不是全盘胜负或已经围住的实地。",
+        "verdict": "success"
+      },
+      "initialStones": 14
+    },
+    {
+      "id": "ADV-11-01",
+      "title": "角、边、中腹",
+      "interaction": "point",
+      "positive": {
+        "id": "corner",
+        "label": "A：角附近",
+        "verdict": "success",
+        "explanation": "角有两条真实盘边相助，较少自有边界即可限制同样大小的空区；这里没有急所。",
+        "at": {
+          "row": 3,
+          "col": 3
+        }
+      },
+      "initialStones": 0
+    },
+    {
+      "id": "ADV-11-02",
+      "title": "哪里更值得双方争取",
+      "interaction": "point",
+      "positive": {
+        "id": "A",
+        "label": "A：上边开阔处",
+        "verdict": "success",
+        "explanation": "A位于两方之间的开阔边，兼有双方发展价值；是本题给定候选中的优先计划，不是精确最大目数证明。",
+        "at": {
+          "row": 3,
+          "col": 6
+        }
+      },
+      "initialStones": 5
+    },
+    {
+      "id": "ADV-11-03",
+      "title": "大场还是救棋",
+      "interaction": "point",
+      "positive": {
+        "id": "A",
+        "label": "A：救棋急所",
+        "verdict": "success",
+        "explanation": "黑在下面延长，恢复外气。若去远处，白可一手提目标。",
+        "at": {
+          "row": 3,
+          "col": 2
+        }
+      },
+      "initialStones": 5
+    },
+    {
+      "id": "ADV-11-04",
+      "title": "不要一直跟着走",
+      "interaction": "point",
+      "positive": {
+        "id": "B",
+        "label": "B：转向空角",
+        "verdict": "success",
+        "explanation": "本块两眼稳定，可以脱先（tenuki）抢空角。不代表任何对手落子都能忽略。",
+        "at": {
+          "row": 9,
+          "col": 3
+        }
+      },
+      "initialStones": 16
+    },
+    {
+      "id": "ADV-11-05",
+      "title": "同一片空区要几面边界",
+      "interaction": "choice",
+      "positive": {
+        "id": "corner",
+        "label": "真实角边能节省部分围空边界",
+        "verdict": "success",
+        "explanation": "角已有两条真实边，边只有一条，中腹没有盘边。实际仍需堵漏、活棋并防侵入。"
+      },
+      "initialStones": 0
+    },
+    {
+      "id": "ADV-11-06",
+      "title": "先问目标，再选方向",
+      "interaction": "choice",
+      "positive": {
+        "id": "urgent",
+        "label": "先检查自己的急所与弃子代价",
+        "verdict": "success",
+        "explanation": "本题没有已证补偿，先处理一气目标，再回头看大场；有明确弃子计划时可讨论。"
+      },
+      "initialStones": 5
+    },
+    {
+      "id": "ADV-12-01",
+      "title": "布局：先占角",
+      "interaction": "point",
+      "positive": {
+        "id": "A",
+        "label": "A：左上角附近",
+        "verdict": "success",
+        "explanation": "先借角边发展，再观察其他角与边；不是强制星位定式。",
+        "at": {
+          "row": 3,
+          "col": 3
+        }
+      },
+      "initialStones": 0
+    },
+    {
+      "id": "ADV-12-02",
+      "title": "守角、挂角与拆边",
+      "interaction": "point",
+      "positive": {
+        "id": "A",
+        "label": "A：守角方向",
+        "verdict": "success",
+        "explanation": "A与已有角子配合，形成角部发展的计划；仍有侵入与回应，不是永久领地。",
+        "at": {
+          "row": 2,
+          "col": 5
+        }
+      },
+      "initialStones": 2
+    },
+    {
+      "id": "ADV-12-03",
+      "title": "合理变化不是万能答案",
+      "interaction": "choice",
+      "positive": {
+        "id": "why",
+        "label": "逐手解释连接、方向与代价",
+        "verdict": "success",
+        "explanation": "这条线展示接触、扳和连接。各方还没有可靠最终实地，不能只背坐标或称为完美答案。"
+      },
+      "line": {
+        "id": "contact-explained",
+        "label": "接触、扳与连接：仅四手",
+        "moves": [
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 2,
+              "col": 3
+            }
+          },
+          {
+            "type": "place",
+            "color": "W",
+            "at": {
+              "row": 3,
+              "col": 3
+            }
+          },
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 1,
+              "col": 3
+            }
+          },
+          {
+            "type": "place",
+            "color": "W",
+            "at": {
+              "row": 3,
+              "col": 4
+            }
+          }
+        ],
+        "notes": [
+          "黑靠近白，既接触对方，也会让双方更快变强。",
+          "白从下方扳，改变黑的发展方向；不是强制唯一回应。",
+          "黑从上方连接靠子，减少被切断的风险。",
+          "白连接下方两子，与原白子相连；双方各有不同发展方向。"
+        ],
+        "captures": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "outcome": "四手均合法，白下方相连、黑向上相连。只示范计划与连接，不评为固定定式或谁全盘占优。",
+        "verdict": "success"
+      },
+      "initialStones": 2
+    },
+    {
+      "id": "ADV-12-04",
+      "title": "从边走向中央",
+      "interaction": "point",
+      "positive": {
+        "id": "A",
+        "label": "A：向中央一间跳",
+        "verdict": "success",
+        "explanation": "A把发展方向转向中央，保留后续联络；此刻并非同一连通块，需要留意跳点被切。",
+        "at": {
+          "row": 7,
+          "col": 4
+        }
+      },
+      "initialStones": 6
+    }
+  ],
+  "legacyGame": {
+    "schemaVersion": 1,
+    "id": "LOCAL-T08-FULL-GAME",
+    "revision": 3,
+    "rulesetId": "GO-CLUB-AREA-1",
+    "kind": "GameState",
+    "size": 9,
+    "setup": {
+      "schemaVersion": 1,
+      "id": "LOCAL-T08-START-9",
+      "revision": 1,
+      "rulesetId": "GO-CLUB-AREA-1",
+      "kind": "Position",
+      "size": 9,
+      "toPlay": "B",
+      "historyPolicy": "fresh-setup",
+      "history": null,
+      "stones": []
+    },
+    "mode": "full-game",
+    "board": [
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        "B",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "W",
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    ],
+    "toPlay": "B",
+    "history": {
+      "layouts": [
+        "9|.................................................................................",
+        "9|....................B............................................................",
+        "9|....................B.......................................W...................."
+      ]
+    },
+    "moves": [
+      {
+        "type": "place",
+        "color": "B",
+        "at": {
+          "row": 2,
+          "col": 2
+        }
+      },
+      {
+        "type": "place",
+        "color": "W",
+        "at": {
+          "row": 6,
+          "col": 6
+        }
+      }
+    ],
+    "captures": {
+      "B": 0,
+      "W": 0
+    },
+    "consecutivePasses": 0,
+    "phase": "playing",
+    "komi": 0,
+    "lastMove": {
+      "type": "place",
+      "color": "W",
+      "at": {
+        "row": 6,
+        "col": 6
+      }
+    },
+    "agreement": null,
+    "result": null,
+    "undoStack": [
+      {
+        "size": 9,
+        "board": [
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        "toPlay": "B",
+        "history": {
+          "layouts": [
+            "9|................................................................................."
+          ]
+        },
+        "moves": [],
+        "captures": {
+          "B": 0,
+          "W": 0
+        },
+        "consecutivePasses": 0,
+        "phase": "playing",
+        "komi": 0,
+        "lastMove": null,
+        "agreement": null,
+        "result": null
+      },
+      {
+        "size": 9,
+        "board": [
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            "B",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        "toPlay": "W",
+        "history": {
+          "layouts": [
+            "9|.................................................................................",
+            "9|....................B............................................................"
+          ]
+        },
+        "moves": [
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 2,
+              "col": 2
+            }
+          }
+        ],
+        "captures": {
+          "B": 0,
+          "W": 0
+        },
+        "consecutivePasses": 0,
+        "phase": "playing",
+        "komi": 0,
+        "lastMove": {
+          "type": "place",
+          "color": "B",
+          "at": {
+            "row": 2,
+            "col": 2
+          }
+        },
+        "agreement": null,
+        "result": null
+      }
+    ],
+    "redoStack": []
+  }
+}

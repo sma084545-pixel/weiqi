@@ -1,0 +1,9 @@
+### Error
+Error: locator.click: Error: strict mode violation: locator('.adv-practice-picker button').filter({ hasText: '双打吃' }) resolved to 2 elements:
+    1) <button type="button" aria-pressed="true">双打吃</button> aka getByRole('button', { name: '双打吃', exact: true })
+    2) <button type="button" aria-pressed="false">用另一种防守核对双打吃</button> aka getByRole('button', { name: '用另一种防守核对双打吃' })
+
+Call log:
+[2m  - waiting for locator('.adv-practice-picker button').filter({ hasText: '双打吃' })[22m
+
+

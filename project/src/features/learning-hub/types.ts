@@ -1,3 +1,4 @@
+import type {LessonProgress} from '../advanced-courses/types';
 export type ModuleAvailability='available'|'planned';
 
 export interface ModuleRegistration {
@@ -22,7 +23,7 @@ export interface ModuleRegistry {
   getById(id:string):ModuleRegistration|undefined;
 }
 
-export type StageId='STAGE-01'|'STAGE-02'|'STAGE-03'|'STAGE-04'|'STAGE-05'|'STAGE-06';
+export type StageId='STAGE-01'|'STAGE-02'|'STAGE-03'|'STAGE-04'|'STAGE-05'|'STAGE-06'|'STAGE-07'|'STAGE-08'|'STAGE-09'|'STAGE-10'|'STAGE-11'|'STAGE-12';
 export type StageMark='learned'|'practice';
 
 export interface LearningProgress {
@@ -33,6 +34,7 @@ export interface LearningProgress {
   visitedModuleIds:string[];
   stageMarks:Partial<Record<StageId,StageMark>>;
   recentModuleId:string|null;
+  advancedLessons?:Record<string,LessonProgress>;
 }
 
 export interface ProgressIssue {code:'STORAGE_UNAVAILABLE'|'INVALID_PROGRESS';message:string}

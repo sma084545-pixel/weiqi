@@ -1,15 +1,18 @@
 {
   "schemaVersion": 1,
   "id": "GITHUB-PAGES-PUBLICATION",
-  "revision": 19,
+  "revision": 21,
   "rulesetId": "GO-CLUB-AREA-1",
-  "resultVersion": "0.22.0-pages.1",
-  "programVersion": "0.22.0",
+  "resultVersion": "0.23.0-pages.1",
+  "programVersion": "0.23.0",
   "siteUrl": "https://sma084545-pixel.github.io/weiqi/",
   "sourceDirectory": "project/",
   "formalPuzzles": 30,
   "terminalFixtures": 6,
   "microLessonPrimarySlides": 25,
+  "routeStages": 12,
+  "advancedLessons": 6,
+  "advancedScenes": 37,
   "onlineServerConfigured": true,
   "onlineServerOrigin": "https://weiqi-rooms.onrender.com",
   "onlineRoomsEphemeral": true,
@@ -28,14 +31,14 @@
       "sha256": "26ae2d10fc5b45982ae4f4f593aaa93b781d4ff63a8bfe2166bc392d01cc9b50"
     },
     {
-      "path": "assets/index-DJfA_h7J.js",
-      "bytes": 1025820,
-      "sha256": "a5e36a00c594544028e8e76c85d9f9c761695f1d83490e210301613bb44b77bb"
+      "path": "assets/index-C_WK7h6V.js",
+      "bytes": 1171443,
+      "sha256": "e6287bc4d6ae5f710e5c2f8aa98914b11182f5e66de525b276a29d7531fd79d6"
     },
     {
-      "path": "assets/index-Dui6NNVj.css",
-      "bytes": 137833,
-      "sha256": "25ebecf722f4b63125ef380a98c36d0c748410efa63a417f76053563af45d82c"
+      "path": "assets/index-D8K5N_V1.css",
+      "bytes": 147390,
+      "sha256": "0aa622d225719ce91dda8932e5f1c7d88b22b786564992e17a4853121ff09bb1"
     },
     {
       "path": "content/formal-content-v1.json",
@@ -50,7 +53,7 @@
     {
       "path": "index.html",
       "bytes": 640,
-      "sha256": "212f34d58d5e2dbe849cd78eee4af5d2e6a1ce4eb33dfbfe9b3eac0b231c78b4"
+      "sha256": "aa907521a926d96ee6ebbc91510d960eff7e828f90cbd176d0a32fd70cc11d64"
     },
     {
       "path": "materials/t13/territory-counting-card.md",
@@ -65,7 +68,7 @@
     {
       "path": "offline-assets.json",
       "bytes": 411,
-      "sha256": "aa91ebb18b4fa6d0d8ed032cf1a7f29db9ae3403402620d8543204a696d04141"
+      "sha256": "d74ed8660475be7cf19b436c98213b2f243b7de9d5986c59c260932625939bd7"
     },
     {
       "path": "offline.html",
@@ -75,13 +78,13 @@
     {
       "path": "sw.js",
       "bytes": 3694,
-      "sha256": "b6d4378d32889636cb3d9d9ca521cf366c0ed01b4f6e0415faf297ba171ee202"
+      "sha256": "29a68c9d16a011c02ba5d989054002e239eaab2e347c1698070a6fca4cc6f202"
     },
     {
       "path": "version.json",
       "bytes": 464,
-      "sha256": "40bed82eb2ad5924c19c09b07b2670c1278625352afc248594c5d3e7fb49838e"
+      "sha256": "e5da1b004c4c7f5945aced2e95baefffbbfb6b8492ea28c38e4d66f276d4301a"
     }
   ],
-  "sourceManifestSha256": "79e487811739a3e8b8f29a230658428d5698f004f885d7d0db5820b653581e8a"
+  "sourceManifestSha256": "23245aa23938388cbfef39949f21e4778fefe6ae51df761857caeb2e225ed4d3"
 }

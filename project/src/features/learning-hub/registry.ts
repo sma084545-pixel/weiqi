@@ -1,3 +1,4 @@
+import {advancedLessons} from '../advanced-courses/data';
 import type {ModuleRegistration,ModuleRegistry,RouteResolution} from './types';
 
 export const HOME_ROUTE='#/home' as const;
@@ -35,6 +36,7 @@ export const MODULE_DEFINITIONS:readonly ModuleRegistration[]=[
   {id:'stage-04-guide',route:stageRoute(4),label:'连接与切断',requiredContentIds:[],availability:'available',returnRoute:ROUTE_ROUTE,trackVisit:true},
   {id:'stage-05-guide',route:stageRoute(5),label:'眼与基础死活',requiredContentIds:[],availability:'available',returnRoute:ROUTE_ROUTE,trackVisit:true},
   {id:'stage-06-guide',route:stageRoute(6),label:'自选挑战与13路',requiredContentIds:[],availability:'available',returnRoute:ROUTE_ROUTE,trackVisit:true},
+  ...advancedLessons.map(lesson=>({id:`stage-${String(lesson.number).padStart(2,'0')}-guide`,route:stageRoute(lesson.number),label:lesson.title,requiredContentIds:['ADVANCED-COURSES-07-12'],availability:'available' as const,returnRoute:ROUTE_ROUTE,trackVisit:true})),
   {id:'board-lab',route:BOARD_LAB_ROUTE,label:'互动棋盘练习',requiredContentIds:[],availability:'available',returnRoute:HOME_ROUTE,trackVisit:true},
   {id:'liberty-lab',route:LIBERTY_LAB_ROUTE,label:'气实验室',requiredContentIds:['DEMO-LIB-001','DEMO-LIB-002','DEMO-LIB-003','DEMO-LIB-004','DEMO-LIB-005','DEMO-LIB-006','DEMO-LIB-007','DEMO-LIB-008'],availability:'available',returnRoute:stageRoute(1),trackVisit:true},
   {id:'teacher-view',route:TEACHER_ROUTE,label:'教师视图',requiredContentIds:[],availability:'available',returnRoute:HOME_ROUTE,trackVisit:false},
@@ -54,7 +56,7 @@ export const MODULE_DEFINITIONS:readonly ModuleRegistration[]=[
   {id:'puzzle-runner-legacy',route:LEGACY_PUZZLE_ROUTE,label:'互动挑战题（兼容入口）',requiredContentIds:['T09-BUNDLE'],availability:'available',returnRoute:PUZZLE_ROUTE,trackVisit:false},
 ];
 
-export const INSTALLED_CONTENT_IDS=new Set(['DEV-LESSON-001','DEV-LIB-001','DEMO-LIB-001','DEMO-LIB-002','DEMO-LIB-003','DEMO-LIB-004','DEMO-LIB-005','DEMO-LIB-006','DEMO-LIB-007','DEMO-LIB-008','DEMO-CAP-001','DEMO-CAP-002','DEMO-CAP-003','DEMO-CAP-004','DEMO-CAP-005','DEMO-CAP-006','T09-BUNDLE','LIFE-001','LIFE-002','LIFE-003','LIFE-004','LIFE-005','DISC-001','DISC-002','DISC-003','DISC-004','DISC-005','CON-001','CON-003','END-001','END-002','END-003','END-004','END-005','END-006','T14-TEMPLATE-BUNDLE']);
+export const INSTALLED_CONTENT_IDS=new Set(['ADVANCED-COURSES-07-12','DEV-LESSON-001','DEV-LIB-001','DEMO-LIB-001','DEMO-LIB-002','DEMO-LIB-003','DEMO-LIB-004','DEMO-LIB-005','DEMO-LIB-006','DEMO-LIB-007','DEMO-LIB-008','DEMO-CAP-001','DEMO-CAP-002','DEMO-CAP-003','DEMO-CAP-004','DEMO-CAP-005','DEMO-CAP-006','T09-BUNDLE','LIFE-001','LIFE-002','LIFE-003','LIFE-004','LIFE-005','DISC-001','DISC-002','DISC-003','DISC-004','DISC-005','CON-001','CON-003','END-001','END-002','END-003','END-004','END-005','END-006','T14-TEMPLATE-BUNDLE']);
 
 export function createModuleRegistry(definitions:readonly ModuleRegistration[],contentIds:ReadonlySet<string>):ModuleRegistry{
   const ids=new Set<string>(),routes=new Set<string>();

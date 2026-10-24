@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "id": "ADVANCED-UPGRADE-BASELINE",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "prepared",
+  "url": "https://sma084545-pixel.github.io/weiqi/",
+  "version": "版本 0.22.0",
+  "testData": "self-mark created by automated development test, not member feedback",
+  "browser": "155.0.8059.86"
+}

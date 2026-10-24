@@ -1,13 +1,15 @@
 ---
 schemaVersion: 1
 id: DOC-README
-revision: 29
+revision: 30
 rulesetId: GO-CLUB-AREA-1
 ---
 
-# 围棋社工具包 · 0.22.0
+# 围棋社工具包 · 0.23.0
 
-原网站保持 https://sma084545-pixel.github.io/weiqi/ 。0.22.0新增真实KataGo终局后复盘，入口 #/play/free；联机入口仍为 #/play/online。保留可拖动悬浮棋盘、独立画中画、最大化/系统全屏及房间双人聊天。使用与兼容边界见[窗口与聊天](docs/online-tools/USAGE.md)，更新服务器见[部署指南](docs/online-tools/DEPLOYMENT.md)。本次主线基线ONLINE_FLOATING_FIT 0.21.3-pages.1；保留GO-CLUB-AREA-1、schemaVersion1、30题/6终局、课件纸卡和原存储。
+原网站保持 https://sma084545-pixel.github.io/weiqi/ 。本轮基线KATAGO_REVIEW 0.22.0-pages.1，当前0.23.0续接课程7–12：37个互动训练场景、一盘13路引导实战、分层提示与本机进度。沿用原布局与规则，课程1–6不改编号、不设解锁门槛。[使用与实现](docs/advanced-courses/IMPLEMENTATION.md) · [验收](docs/advanced-courses/ACCEPTANCE.md)。
+
+保留0.22.0的真实KataGo终局后复盘（#/play/free）及原联机（#/play/online）、悬浮棋盘、画中画、最大化和聊天。独立分析与房间服务配置不变，本次不重部署后台。GO-CLUB-AREA-1、schemaVersion1、冻结30题/6终局、材料及原本机存档保持；新增课程场景单独计数。旧版本说明见后文历史交接。
 
 0.21.3起悬浮小棋盘可按本人轮次直接落子，终局确认时可标记死子。回看保持只读；5/9/13/19路按小窗宽高完整显示，无需滚动。说明见[直接操作](docs/floating-fit/USAGE.md)，交接见[本轮交接](handoff/ONLINE_FLOATING_FIT.md)。该悬浮修复继续沿用；KataGo使用独立分析服务，不能用房间服务替代。
 
@@ -15,11 +17,11 @@ rulesetId: GO-CLUB-AREA-1
 
 已构建完整包/软件包含dist和dist-server，有兼容Node即可运行`node dist-server/server.mjs`；默认http://127.0.0.1:4190/。也可打开“启动联机对弈.command”；Ctrl+C停止服务。本机地址不能发给异地伙伴。
 
-源码：从工程目录执行`corepack pnpm install --frozen-lockfile`、`corepack pnpm build`、`corepack pnpm start`；发布原GitHub网站用`corepack pnpm build:pages`。Node22.22.2起的22系、24.15起的24系或26+；锁定pnpm11.19.0与现有依赖。纯前端开发`pnpm dev`不提供房间接口。无AI API、账号、付费服务或默认学习数据上传。
+源码：从工程目录执行`corepack pnpm install --frozen-lockfile`、`corepack pnpm build`、`corepack pnpm start`；发布原GitHub网站用`corepack pnpm build:pages`。Node22.22.2起的22系、24.15起的24系或26+；锁定pnpm11.19.0与现有依赖。纯前端开发`pnpm dev`不提供房间接口。核心学习与对弈无需账号或AI服务；真实KataGo仅在终局后主动调用，学习记录不默认上传。
 
 检查：`corepack pnpm check`、`corepack pnpm test:browser`、`corepack pnpm test:online`、`corepack pnpm test:pages`。实际命令、结果及限制在docs/online-tools/checks/和handoff/ONLINE_PLAY_TOOLS.md。本机学习离线与房间联网分别验证；升级先保存备份再应用，不清站点数据。
 
-联机服务器为https://weiqi-rooms.onrender.com，网页与带roomChat=1的后台0.21.0已接通并实测聊天；程序包为0.21.3。服务端以共同规则验证双方轮次、提子、超级劫、悔棋与终局清单。预览不等于死活裁判，双方确认后才形成面积分。聊天仅当前房间两位伙伴临时文字，不混入棋谱；正式题库和本机教师草稿、反馈不上传。
+联机服务器为https://weiqi-rooms.onrender.com，网页与带roomChat=1的后台0.21.0已接通并实测聊天；本次前端为0.23.0；房间服务无须因课程增量重新部署。服务端以共同规则验证双方轮次、提子、超级劫、悔棋与终局清单。预览不等于死活裁判，双方确认后才形成面积分。聊天仅当前房间两位伙伴临时文字，不混入棋谱；正式题库和本机教师草稿、反馈不上传。
 
 ---
 

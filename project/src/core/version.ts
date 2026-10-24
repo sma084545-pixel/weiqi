@@ -1,2 +1,2 @@
 /** Program version shared by the offline client and the optional room server. */
-export const APP_VERSION='0.22.0';
+export const APP_VERSION='0.23.0';

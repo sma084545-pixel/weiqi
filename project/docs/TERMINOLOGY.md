@@ -1,7 +1,7 @@
 ---
 schemaVersion: 1
 id: DOC-TERMINOLOGY
-revision: 1
+revision: 2
 rulesetId: GO-CLUB-AREA-1
 ---
 
@@ -34,3 +34,20 @@ rulesetId: GO-CLUB-AREA-1
 | 摆棋（setup） | 自由放黑白/擦除的编辑 | 不代表合法棋谱或已知劫史 |
 | 新教学起点（fresh-setup） | 明示过去历史未知，经验证从此建立新历史 | 不是证明历史上未发生重复 |
 | 试下（trial） | 返回候选状态，不修改提交状态 | 点击预览不等于提交 |
+
+## 进阶篇术语（0.23.0）
+
+|术语|英文|本项目用法与边界|
+|---|---|---|
+|棋形/效率|shape / efficiency|位置关系与投入是否服务具体任务；不由形名直接判死活|
+|尖、小飞、跳、虎口|diagonal move, small knight’s move, one-space jump, tiger’s mouth|观察距离与联络意图；斜邻与隔空仍非同一连通块|
+|空三角|empty triangle|三子紧凑弯连、留下空角；常低效，也可能因救棋/做眼而必要|
+|手筋/双打吃|tesuji / double atari|有用的局部技巧/同时让两块只剩一气，仍须检查反击|
+|征子/引子|ladder / ladder breaker|持续打吃的阶梯追逐；完整边界与外援可能改变结果|
+|枷/倒扑|net / snapback|先封逃路/允许对方提后再利用最后一气回提；不是任何送子都成立|
+|对杀|capturing race|双方危险棋块围绕先提目标进行计算；先确认眼、公气与外援条件|
+|公气/外气|shared / outside liberties|两目标气集合交集/只属于一方目标的气；同一点在单块内不重复计|
+|强棋/弱棋|strong / weak groups|结合眼位、根据地、连接、敌子和逃路的局面判断，非自动评级|
+|大场/急所/脱先|big point / urgent point / tenuki|比较双方价值/优先需处理的威胁/本地稳定后转向其他处|
+|守角/挂角/拆边|corner enclosure / approach / extension|配合自己的角子/从外侧接近对手角/沿边展开；都不是永久实地|
+|定式|joseki|相应条件下双方局部合理的常见变化，非全盘完美答案或背谱考试|

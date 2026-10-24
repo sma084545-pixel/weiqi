@@ -1,0 +1,10 @@
+$ vitest run tests/advanced-courses
+
+ RUN  v5.0.0 /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/advanced-course-20261024/mainline/go-club
+
+
+ Test Files  3 passed (3)
+      Tests  57 passed (57)
+   Start at  10:21:55
+   Duration  980ms (import 55%, transform 25%, tests 20%, worker 1%)
+

@@ -1,0 +1,530 @@
+{
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "rulesetId": {
+      "const": "GO-CLUB-AREA-1"
+    },
+    "kind": {
+      "const": "AdvancedCourseBundle"
+    },
+    "lessons": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "schemaVersion": {
+            "const": 1
+          },
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          },
+          "revision": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "rulesetId": {
+            "const": "GO-CLUB-AREA-1"
+          },
+          "kind": {
+            "const": "CourseLesson"
+          },
+          "number": {
+            "type": "integer",
+            "minimum": 7,
+            "maximum": 12
+          },
+          "title": {
+            "type": "string"
+          },
+          "english": {
+            "type": "string"
+          },
+          "goal": {
+            "type": "string"
+          },
+          "question": {
+            "type": "string"
+          },
+          "introSceneId": {
+            "type": "string"
+          },
+          "concepts": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "text": {
+                  "type": "string"
+                },
+                "sceneId": {
+                  "type": "string"
+                },
+                "takeaway": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "title",
+                "text",
+                "sceneId",
+                "takeaway"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 1
+          },
+          "guidedSceneIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1
+          },
+          "sceneIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 3,
+            "maxItems": 12
+          },
+          "summary": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 2,
+            "maxItems": 4
+          }
+        },
+        "required": [
+          "schemaVersion",
+          "id",
+          "revision",
+          "rulesetId",
+          "kind",
+          "number",
+          "title",
+          "english",
+          "goal",
+          "question",
+          "introSceneId",
+          "concepts",
+          "guidedSceneIds",
+          "sceneIds",
+          "summary"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 6,
+      "maxItems": 6
+    },
+    "scenes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "schemaVersion": {
+            "const": 1
+          },
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          },
+          "revision": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "rulesetId": {
+            "const": "GO-CLUB-AREA-1"
+          },
+          "kind": {
+            "const": "CourseScene"
+          },
+          "lesson": {
+            "type": "integer",
+            "minimum": 7,
+            "maximum": 12
+          },
+          "tier": {
+            "enum": [
+              "Practice",
+              "Challenge",
+              "Mastery"
+            ]
+          },
+          "level": {
+            "enum": [
+              1,
+              2,
+              3
+            ]
+          },
+          "title": {
+            "type": "string"
+          },
+          "prompt": {
+            "type": "string"
+          },
+          "goal": {
+            "type": "string"
+          },
+          "position": {
+            "$ref": "urn:go-club:schema:content:1#/$defs/Position"
+          },
+          "comparison": {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string"
+              },
+              "position": {
+                "$ref": "urn:go-club:schema:content:1#/$defs/Position"
+              }
+            },
+            "required": [
+              "label",
+              "position"
+            ],
+            "additionalProperties": false
+          },
+          "illustrations": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "position": {
+                  "$ref": "urn:go-club:schema:content:1#/$defs/Position"
+                },
+                "text": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "title",
+                "position",
+                "text"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "interaction": {
+            "enum": [
+              "choice",
+              "compare",
+              "point",
+              "group",
+              "points",
+              "sequence"
+            ]
+          },
+          "targets": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "at": {
+                  "$ref": "urn:go-club:schema:content:1#/$defs/Coord"
+                },
+                "label": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "at",
+                "label"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "conditions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1
+          },
+          "hints": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 3,
+            "maxItems": 3
+          },
+          "choices": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "at": {
+                  "$ref": "urn:go-club:schema:content:1#/$defs/Coord"
+                },
+                "verdict": {
+                  "enum": [
+                    "success",
+                    "suboptimal",
+                    "failure"
+                  ]
+                },
+                "explanation": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "highlight": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "urn:go-club:schema:content:1#/$defs/Coord"
+                  }
+                }
+              },
+              "required": [
+                "id",
+                "label",
+                "verdict",
+                "explanation"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "expectedPoints": {
+            "type": "array",
+            "items": {
+              "$ref": "urn:go-club:schema:content:1#/$defs/Coord"
+            },
+            "uniqueItems": true
+          },
+          "libertyTargets": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "at": {
+                  "$ref": "urn:go-club:schema:content:1#/$defs/Coord"
+                },
+                "expected": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "urn:go-club:schema:content:1#/$defs/Coord"
+                  },
+                  "uniqueItems": true
+                }
+              },
+              "required": [
+                "at",
+                "expected"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "lines": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "moves": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "urn:go-club:schema:content:1#/$defs/Move"
+                  },
+                  "minItems": 1,
+                  "maxItems": 64
+                },
+                "notes": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "captures": {
+                  "type": "array",
+                  "items": {
+                    "type": "integer",
+                    "minimum": 0
+                  }
+                },
+                "outcome": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "verdict": {
+                  "enum": [
+                    "success",
+                    "suboptimal",
+                    "failure"
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "label",
+                "moves",
+                "notes",
+                "captures",
+                "outcome",
+                "verdict"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "explanation": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence": {
+            "type": "object",
+            "properties": {
+              "basis": {
+                "enum": [
+                  "counted-points",
+                  "legal-lines",
+                  "bounded-comparison"
+                ]
+              },
+              "handCalculation": {
+                "type": "string",
+                "minLength": 1
+              },
+              "covered": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "humanReviewed": {
+                "type": "null"
+              },
+              "sourceIds": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "minItems": 1
+              }
+            },
+            "required": [
+              "basis",
+              "handCalculation",
+              "covered",
+              "humanReviewed",
+              "sourceIds"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "schemaVersion",
+          "id",
+          "revision",
+          "rulesetId",
+          "kind",
+          "lesson",
+          "tier",
+          "level",
+          "title",
+          "prompt",
+          "goal",
+          "position",
+          "interaction",
+          "targets",
+          "conditions",
+          "hints",
+          "choices",
+          "lines",
+          "explanation",
+          "evidence"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 35,
+      "maxItems": 50
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "accessed": {
+            "type": "string"
+          },
+          "use": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "url",
+          "accessed",
+          "use"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "id",
+    "revision",
+    "rulesetId",
+    "kind",
+    "lessons",
+    "scenes",
+    "sources"
+  ],
+  "additionalProperties": false,
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "urn:go-club:schema:advanced-course:1",
+  "title": "Advanced course supplement v1, separate from the frozen formal 30-puzzle bank"
+}

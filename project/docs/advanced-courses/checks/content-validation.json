@@ -1,0 +1,560 @@
+{
+  "schemaVersion": 1,
+  "id": "ADVANCED-VALIDATION",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "ValidationReport",
+  "resultVersion": "0.23.0-pages.1",
+  "status": "passed",
+  "formalPuzzlesUnchanged": 30,
+  "advancedLessons": 6,
+  "advancedScenes": 37,
+  "notCountedAsFormalBank": true,
+  "checks": [
+    {
+      "id": "ADV-07-01",
+      "revision": 1,
+      "structural": "passed",
+      "legalMoves": "passed",
+      "independentExpectationCrossCheck": "passed",
+      "comparisonEvidence": "bounded-comparison",
+      "covered": [
+        "A",
+        "B"
+      ],
+      "humanReviewed": null,
+      "issues": []
+    },
+    {
+      "id": "ADV-07-02",
+      "revision": 1,
+      "structural": "passed",
+      "legalMoves": "passed",
+      "independentExpectationCrossCheck": "passed",
+      "comparisonEvidence": "bounded-comparison",
+      "covered": [
+        "A",
+        "B"
+      ],
+      "humanReviewed": null,
+      "issues": []
+    },
+    {
+      "id": "ADV-07-03",
+      "revision": 1,
+      "structural": "passed",
+      "legalMoves": "passed",
+      "independentExpectationCrossCheck": "passed",
+      "comparisonEvidence": "bounded-comparison",
+      "covered": [
+        "A",
+        "B",
+        "C"
+      ],
+      "humanReviewed": null,
+      "issues": []
+    },
+    {
+      "id": "ADV-07-04",
+      "revision": 1,
+      "structural": "passed",
+      "legalMoves": "passed",
+      "independentExpectationCrossCheck": "passed",
+      "comparisonEvidence": "legal-lines",
+      "covered": [
+        "A",
+        "B",
+        "C",
+        "upper-cut",
+        "middle-cut"
+      ],
+      "humanReviewed": null,
+      "issues": []
+    },
+    {
+      "id": "ADV-07-05",
+      "revision": 1,
+      "structural": "passed",
+      "legalMoves": "passed",
+      "independentExpectationCrossCheck": "passed",
+      "comparisonEvidence": "bounded-comparison",
+      "covered": [
+        "yes",
+        "no"
+      ],
+      "humanReviewed": null,
+      "issues": []
+    },
+    {
+      "id": "ADV-07-06",
+      "revision": 1,
+      "structural": "passed",
+      "legalMoves": "passed",
+      "independentExpectationCrossCheck": "passed",
+      "comparisonEvidence": "legal-lines",
+      "covered": [
+        "A",
+        "B",
+        "neglect"
+      ],
+      "humanReviewed": null,
+      "issues": []
+    },
+    {
+      "id": "ADV-08-01",
+      "revision": 1,
+      "structural": "passed",
+      "legalMoves": "passed",
+      "independentExpectationCrossCheck": "passed",
+      "comparisonEvidence": "legal-lines",
+      "covered": [
+        "A",
+        "B",
+        "C",
+        "defend-left",
+        "defend-right"
+      ],
+      "humanReviewed": null,
+      "issues": []
+    },
+    {
+      "id": "ADV-08-02",
+      "revision": 1,
+      "structural": "passed",
+      "legalMoves": "passed",
+      "independentExpectationCrossCheck": "passed",
+      "comparisonEvidence": "legal-lines",
+      "covered": [
+        "yes",
+        "no",
+        "forced-staircase"
+      ],
+      "humanReviewed": null,
+      "issues": []
+    },
+    {
+      "id": "ADV-08-03",
+      "revision": 1,
+      "structural": "passed",
+      "legalMoves": "passed",
+      "independentExpectationCrossCheck": "passed",
+      "comparisonEvidence": "legal-lines",
+      "covered": [
+        "A",
+        "B",
+        "C",
+        "net-down",
+        "net-right",
+        "ladder-breaker"
+      ],
+      "humanReviewed": null,
+      "issues": []
+    },
+    {
+      "id": "ADV-08-04",
+      "revision": 1,
+      "structural": "passed",
+      "legalMoves": "passed",
+      "independentExpectationCrossCheck": "passed",
+      "comparisonEvidence": "legal-lines",
+      "covered": [
+        "snapback"
+      ],
+      "humanReviewed": null,
+      "issues": []
+    },
+    {
+      "id": "ADV-08-05",
+      "revision": 1,
+      "structural": "passed",
+      "legalMoves": "passed",
+      "independentExpectationCrossCheck": "passed",
+      "comparisonEvidence": "legal-lines",
+      "covered": [
+        "A",
+        "B",
+        "C",
+        "defend-left",
+        "defend-right"
+      ],
+      "humanReviewed": null,
+      "issues": []
+    },
+    {
+      "id": "ADV-08-06",
+      "revision": 1,
+      "structural": "passed",
+      "legalMoves": "passed",
+      "independentExpectationCrossCheck": "passed",
+      "comparisonEvidence": "bounded-comparison",
+      "covered": [
+        "yes",
+        "no"
+      ],
+      "humanReviewed": null,
+      "issues": []
+    },
+    {
+      "id": "ADV-08-07",
+      "revision": 1,
+      "structural": "passed",
+      "legalMoves": "passed",
+      "independentExpectationCrossCheck": "passed",
+      "comparisonEvidence": "legal-lines",
+      "covered": [
+        "defend-right",
+        "defend-left"
+      ],
+      "humanReviewed": null,
+      "issues": []
+    },
+    {
+      "id": "ADV-08-08",
+      "revision": 1,
+      "structural": "passed",
+      "legalMoves": "passed",
+      "independentExpectationCrossCheck": "passed",
+      "comparisonEvidence": "bounded-comparison",
+      "covered": [
+        "no",
+        "yes"
+      ],
+      "humanReviewed": null,
+      "issues": []
+    },
+    {
+      "id": "ADV-09-01",
+      "revision": 1,
+      "structural": "passed",
+      "legalMoves": "passed",
+      "independentExpectationCrossCheck": "passed",
+      "comparisonEvidence": "counted-points",
+      "covered": [],
+      "humanReviewed": null,
+      "issues": []
+    },
+    {
+      "id": "ADV-09-02",
+      "revision": 1,
+      "structural": "passed",
+      "legalMoves": "passed",
+      "independentExpectationCrossCheck": "passed",
+      "comparisonEvidence": "legal-lines",
+      "covered": [
+        "B",
+        "W",
+        "D",
+        "outside-first"
+      ],
+      "humanReviewed": null,
+      "issues": []
+    },
+    {
+      "id": "ADV-09-03",
+      "revision": 1,
+      "structural": "passed",
+      "legalMoves": "passed",
+      "independentExpectationCrossCheck": "passed",
+      "comparisonEvidence": "legal-lines",
+      "covered": [
+        "first",
+        "black",
+        "black-first"
+      ],
+      "humanReviewed": null,
+      "issues": []
+    },
+    {
+      "id": "ADV-09-04",
+      "revision": 1,
+      "structural": "passed",
+      "legalMoves": "passed",
+      "independentExpectationCrossCheck": "passed",
+      "comparisonEvidence": "counted-points",
+      "covered": [],
+      "humanReviewed": null,
+      "issues": []
+    },
+    {
+      "id": "ADV-09-05",
+      "revision": 1,
+      "structural": "passed",
+      "legalMoves": "passed",
+      "independentExpectationCrossCheck": "passed",
+      "comparisonEvidence": "legal-lines",
+      "covered": [
+        "outside-first"
+      ],
+      "humanReviewed": null,
+      "issues": []
+    },
+    {
+      "id": "ADV-09-06",
+      "revision": 1,
+      "structural": "passed",
+      "legalMoves": "passed",
+      "independentExpectationCrossCheck": "passed",
+      "comparisonEvidence": "legal-lines",
+      "covered": [
+        "white-first"
+      ],
+      "humanReviewed": null,
+      "issues": []
+    },
+    {
+      "id": "ADV-09-07",
+      "revision": 1,
+      "structural": "passed",
+      "legalMoves": "passed",
+      "independentExpectationCrossCheck": "passed",
+      "comparisonEvidence": "bounded-comparison",
+      "covered": [
+        "no",
+        "yes"
+      ],
+      "humanReviewed": null,
+      "issues": []
+    },
+    {
+      "id": "ADV-10-01",
+      "revision": 1,
+      "structural": "passed",
+      "legalMoves": "passed",
+      "independentExpectationCrossCheck": "passed",
+      "comparisonEvidence": "bounded-comparison",
+      "covered": [
+        "A",
+        "B",
+        "C"
+      ],
+      "humanReviewed": null,
+      "issues": []
+    },
+    {
+      "id": "ADV-10-02",
+      "revision": 1,
+      "structural": "passed",
+      "legalMoves": "passed",
+      "independentExpectationCrossCheck": "passed",
+      "comparisonEvidence": "bounded-comparison",
+      "covered": [
+        "no",
+        "yes"
+      ],
+      "humanReviewed": null,
+      "issues": []
+    },
+    {
+      "id": "ADV-10-03",
+      "revision": 1,
+      "structural": "passed",
+      "legalMoves": "passed",
+      "independentExpectationCrossCheck": "passed",
+      "comparisonEvidence": "bounded-comparison",
+      "covered": [
+        "A",
+        "B",
+        "C"
+      ],
+      "humanReviewed": null,
+      "issues": []
+    },
+    {
+      "id": "ADV-10-04",
+      "revision": 1,
+      "structural": "passed",
+      "legalMoves": "passed",
+      "independentExpectationCrossCheck": "passed",
+      "comparisonEvidence": "legal-lines",
+      "covered": [
+        "gain-not-kill"
+      ],
+      "humanReviewed": null,
+      "issues": []
+    },
+    {
+      "id": "ADV-10-05",
+      "revision": 1,
+      "structural": "passed",
+      "legalMoves": "passed",
+      "independentExpectationCrossCheck": "passed",
+      "comparisonEvidence": "bounded-comparison",
+      "covered": [
+        "save",
+        "attack"
+      ],
+      "humanReviewed": null,
+      "issues": []
+    },
+    {
+      "id": "ADV-10-06",
+      "revision": 1,
+      "structural": "passed",
+      "legalMoves": "passed",
+      "independentExpectationCrossCheck": "passed",
+      "comparisonEvidence": "legal-lines",
+      "covered": [
+        "plan",
+        "kill",
+        "win",
+        "gain-not-kill"
+      ],
+      "humanReviewed": null,
+      "issues": []
+    },
+    {
+      "id": "ADV-11-01",
+      "revision": 1,
+      "structural": "passed",
+      "legalMoves": "passed",
+      "independentExpectationCrossCheck": "passed",
+      "comparisonEvidence": "bounded-comparison",
+      "covered": [
+        "corner",
+        "side",
+        "centre"
+      ],
+      "humanReviewed": null,
+      "issues": []
+    },
+    {
+      "id": "ADV-11-02",
+      "revision": 1,
+      "structural": "passed",
+      "legalMoves": "passed",
+      "independentExpectationCrossCheck": "passed",
+      "comparisonEvidence": "bounded-comparison",
+      "covered": [
+        "A",
+        "B",
+        "C"
+      ],
+      "humanReviewed": null,
+      "issues": []
+    },
+    {
+      "id": "ADV-11-03",
+      "revision": 1,
+      "structural": "passed",
+      "legalMoves": "passed",
+      "independentExpectationCrossCheck": "passed",
+      "comparisonEvidence": "legal-lines",
+      "covered": [
+        "A",
+        "B",
+        "C",
+        "urgent-refutation"
+      ],
+      "humanReviewed": null,
+      "issues": []
+    },
+    {
+      "id": "ADV-11-04",
+      "revision": 1,
+      "structural": "passed",
+      "legalMoves": "passed",
+      "independentExpectationCrossCheck": "passed",
+      "comparisonEvidence": "bounded-comparison",
+      "covered": [
+        "A",
+        "B",
+        "C"
+      ],
+      "humanReviewed": null,
+      "issues": []
+    },
+    {
+      "id": "ADV-11-05",
+      "revision": 1,
+      "structural": "passed",
+      "legalMoves": "passed",
+      "independentExpectationCrossCheck": "passed",
+      "comparisonEvidence": "bounded-comparison",
+      "covered": [
+        "corner",
+        "centre",
+        "all"
+      ],
+      "humanReviewed": null,
+      "issues": []
+    },
+    {
+      "id": "ADV-11-06",
+      "revision": 1,
+      "structural": "passed",
+      "legalMoves": "passed",
+      "independentExpectationCrossCheck": "passed",
+      "comparisonEvidence": "bounded-comparison",
+      "covered": [
+        "urgent",
+        "follow",
+        "big"
+      ],
+      "humanReviewed": null,
+      "issues": []
+    },
+    {
+      "id": "ADV-12-01",
+      "revision": 1,
+      "structural": "passed",
+      "legalMoves": "passed",
+      "independentExpectationCrossCheck": "passed",
+      "comparisonEvidence": "bounded-comparison",
+      "covered": [
+        "A",
+        "B",
+        "C"
+      ],
+      "humanReviewed": null,
+      "issues": []
+    },
+    {
+      "id": "ADV-12-02",
+      "revision": 1,
+      "structural": "passed",
+      "legalMoves": "passed",
+      "independentExpectationCrossCheck": "passed",
+      "comparisonEvidence": "bounded-comparison",
+      "covered": [
+        "A",
+        "B",
+        "C"
+      ],
+      "humanReviewed": null,
+      "issues": []
+    },
+    {
+      "id": "ADV-12-03",
+      "revision": 1,
+      "structural": "passed",
+      "legalMoves": "passed",
+      "independentExpectationCrossCheck": "passed",
+      "comparisonEvidence": "legal-lines",
+      "covered": [
+        "why",
+        "memorize",
+        "contact-explained"
+      ],
+      "humanReviewed": null,
+      "issues": []
+    },
+    {
+      "id": "ADV-12-04",
+      "revision": 1,
+      "structural": "passed",
+      "legalMoves": "passed",
+      "independentExpectationCrossCheck": "passed",
+      "comparisonEvidence": "bounded-comparison",
+      "covered": [
+        "A",
+        "B",
+        "C"
+      ],
+      "humanReviewed": null,
+      "issues": []
+    }
+  ],
+  "errors": [],
+  "humanReviewed": null,
+  "limits": "Legal replay and literal point/capture vectors are checked. Strategic comparisons are bounded authored goals, not universal engine evaluations; no human/classroom review."
+}

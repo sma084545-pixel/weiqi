@@ -1,7 +1,7 @@
 ---
 schemaVersion: 1
 id: DOC-INTERFACES
-revision: 18
+revision: 19
 rulesetId: GO-CLUB-AREA-1
 ---
 
@@ -217,3 +217,11 @@ onlineConnectionConfig(pageAddress,serverOrigin?)返回{endpoint,message}，纯�
 ## ONLINE_PLAY_TOOLS 兼容扩展
 
 聊天能力协商、独立瞬时消息类型和窗口受控展示接口见[详细约定](online-tools/INTERFACES.md)。protocolVersion=1/内容schemaVersion=1保持；不混入GameState或面积计分。
+
+## 0.23.0 增量接口
+
+BoardMarker新增可选text:string，仅显示最多3字符的候选/气标记（A/B/C、黑/白/公），通过React文本节点渲染，不执行HTML；不传text时旧显示行为不变。Board仍受控，无新的合法性或计分算法。
+
+CourseBundle/CourseLesson/CourseScene及SceneResponse见src/features/advanced-courses/types.ts；CourseScene直接使用共同Position、Coord和Move，所有演示重放通过startGame/tryMove。judgeScene返回success/suboptimal/failure/unknown/illegal/incomplete，战略评价仅针对题目条件。T10 gradeStaticAnswer参数收窄为Pick<Puzzle,'answer'>，原所有Puzzle调用兼容，判题算法未改。
+
+LearningProgress增加可选advancedLessons（lesson-id@revision索引）；旧字段和schemaVersion1保持。课程状态与自选标记不构成门槛；场景revision变化不复用旧完成结果。GuidedGameSession独立键、共同GameState与终局注释见advanced-courses/game-storage.ts；使用同一T16端口和事务键。没有新增数据库或服务端接口。

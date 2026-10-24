@@ -1,6 +1,6 @@
 {
   "name": "go-club",
-  "version": "0.22.0",
+  "version": "0.23.0",
   "private": true,
   "type": "module",
   "engines": {
@@ -14,7 +14,7 @@
     "schema:types": "node scripts/generate-types.mjs",
     "schema:check": "node scripts/generate-types.mjs --check",
     "validate:content": "node --import tsx scripts/validate-content.ts",
-    "check": "pnpm schema:check && pnpm test && pnpm validate:content && pnpm validate:t09 && pnpm test:t09-grader && pnpm test:t14 && pnpm test:t15 && pnpm validate:t17 && pnpm verify:merge-a && pnpm verify:t16-freeze && pnpm build && pnpm test:t16-refresh && pnpm build:engine && pnpm test:engine-build && pnpm test:engine-capacity",
+    "check": "pnpm schema:check && pnpm test && pnpm validate:advanced && pnpm validate:content && pnpm validate:t09 && pnpm test:t09-grader && pnpm test:t14 && pnpm test:t15 && pnpm validate:t17 && pnpm verify:merge-a && pnpm verify:t16-freeze && pnpm build && pnpm test:t16-refresh && pnpm build:engine && pnpm test:engine-build && pnpm test:engine-capacity",
     "test:browser": "playwright test --workers=1 && pnpm test:online-browser",
     "build:engine": "vite build --config vite.engine.config.ts && tsc -p tsconfig.engine.json && node scripts/finish-engine-build.mjs",
     "test:engine": "vitest run tests/t01",
@@ -55,7 +55,9 @@
     "build:analysis": "vite build --config vite.analysis.config.ts",
     "start:analysis": "node dist-analysis/analysis.mjs",
     "test:analysis": "vitest run tests/analysis",
-    "test:analysis-browser": "playwright test --config playwright.katago.config.ts --workers=1"
+    "test:analysis-browser": "playwright test --config playwright.katago.config.ts --workers=1",
+    "validate:advanced": "node --import tsx scripts/validate-advanced.ts",
+    "test:advanced": "vitest run tests/advanced-courses"
   },
   "dependencies": {
     "ajv": "8.20.0",

@@ -33,7 +33,7 @@ describe('T03 navigation and recovery',()=>{
     expect(host.querySelector('[aria-label*="第1口气"]')).not.toBeNull();
     expect(host.querySelector('a[href="#/learn/liberties"]')?.textContent).toContain('进入气实验室');
     expect([...host.querySelectorAll<HTMLAnchorElement>('a[href="#/route"]')].some(link=>link.textContent?.includes('返回学习路线'))).toBe(true);
-    go('#/route');expect(host.querySelector('h1')?.textContent).toBe('六阶段学习路线');
+    go('#/route');expect(host.querySelector('h1')?.textContent).toBe('十二课学习路线');
   });
   it('lets an experienced member open stage 5 directly without a prerequisite gate',()=>{
     renderAt('#/route/STAGE-05');
