@@ -14,7 +14,7 @@ const keys=(value:Record<string,unknown>,allowed:string[],field:string)=>{if(Obj
 export const KATAGO_RULES=Object.freeze({ko:'POSITIONAL',scoring:'AREA',suicide:false,tax:'NONE',hasButton:false,whiteHandicapBonus:'0',friendlyPassOk:true});
 export interface PreparedAnalysis {request:ReviewAnalysisRequest;state:GameState|GameSnapshot;query:Record<string,unknown>;turnNumber:number;}
 
-export function prepareAnalysis(input:unknown,maxVisits=64):PreparedAnalysis {
+export function prepareAnalysis(input:unknown,maxVisits=64,purpose:'review'|'ai-move'='review'):PreparedAnalysis {
   if(!object(input))invalid('/');keys(input,['schemaVersion','positionId','game','reviewIndex'],'/');
   if(input.schemaVersion!==1)invalid('/schemaVersion');
   if(typeof input.positionId!=='string'||!/^[A-Za-z0-9_.:-]{1,160}$/.test(input.positionId))invalid('/positionId');
@@ -48,7 +48,8 @@ export function prepareAnalysis(input:unknown,maxVisits=64):PreparedAnalysis {
     current=next;
     if(index+1===input.reviewIndex)selected=current;
   }
-  if(current.phase!=='finished')throw new ApiError('GAME_NOT_FINISHED',409,'请先完成这一局，再在复盘中分析。');
+  if(purpose==='review'&&current.phase!=='finished')throw new ApiError('GAME_NOT_FINISHED',409,'请先完成这一局，再在复盘中分析。');
+  if(purpose==='ai-move'&&(current.phase!=='playing'||input.reviewIndex!==events.length))throw new ApiError('GAME_NOT_PLAYING',409,'AI 只在当前进行中的局面轮流落子。');
   const req=input as unknown as ReviewAnalysisRequest;
   const moves=events.slice(0,req.reviewIndex).filter((e:GameEvent)=>e.type==='place'||e.type==='pass').map((e:GameEvent)=>[('color' in e)?e.color:'B',e.type==='place'?displayCoord(e.at,current.size):'pass']);
   const query={initialStones:validated.value.position.stones.map(s=>[s.color,displayCoord(s,current.size)]),initialPlayer:validated.value.position.toPlay,

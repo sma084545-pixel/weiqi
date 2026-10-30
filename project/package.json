@@ -1,6 +1,6 @@
 {
   "name": "go-club",
-  "version": "0.23.0",
+  "version": "0.24.0",
   "private": true,
   "type": "module",
   "engines": {
@@ -57,7 +57,8 @@
     "test:analysis": "vitest run tests/analysis",
     "test:analysis-browser": "playwright test --config playwright.katago.config.ts --workers=1",
     "validate:advanced": "node --import tsx scripts/validate-advanced.ts",
-    "test:advanced": "vitest run tests/advanced-courses"
+    "test:advanced": "vitest run tests/advanced-courses",
+    "test:ai": "vitest run tests/ai-game"
   },
   "dependencies": {
     "ajv": "8.20.0",

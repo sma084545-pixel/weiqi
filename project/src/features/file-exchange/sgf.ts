@@ -1,5 +1,6 @@
 import type {Color,Coord,GameEvent,GameState,Position,Size} from '../../core/content.generated';
 import {rulesEngine} from '../../core/rules';
+import {APP_VERSION} from '../../core/version';
 import {safeFilename} from './json';
 import {DEFAULT_IMPORT_LIMITS,type ImportIssue,type ImportLimits,type SgfGameTree,type SgfImportPreview,type SgfLine,type SgfMaterialized,type SgfNode,type SgfProperty} from './types';
 
@@ -125,7 +126,7 @@ export function serializeSgfTree(tree:SgfGameTree){
   const branch=(root:SgfNode):string=>{let out='(',current=root;while(true){out+=node(current);if(current.children.length===1){current=current.children[0];continue;}for(const child of current.children)out+=branch(child);return out+')';}};return branch(tree.root)+'\n';
 }
 export function serializeGameToSgf(game:GameState):{text:string;warnings:string[]}{
-  const warnings:string[]=[],root=[`GM[1]`,`FF[4]`,`CA[UTF-8]`,`AP[GoClub:0.15.0]`,`SZ[${game.size}]`,`RU[GO-CLUB-AREA-1]`,`KM[${game.komi}]`,`PL[${game.setup.toPlay}]`];
+  const warnings:string[]=[],root=[`GM[1]`,`FF[4]`,`CA[UTF-8]`,`AP[GoClub:${APP_VERSION}]`,`SZ[${game.size}]`,`RU[GO-CLUB-AREA-1]`,`KM[${game.komi}]`,`PL[${game.setup.toPlay}]`];
   const black=game.setup.stones.filter(stone=>stone.color==='B').map(stone=>`[${pointToSgf(stone)}]`).join(''),white=game.setup.stones.filter(stone=>stone.color==='W').map(stone=>`[${pointToSgf(stone)}]`).join('');if(black)root.push(`AB${black}`);if(white)root.push(`AW${white}`);root.push(`C[${escapeValue('由围棋社工具按 GO-CLUB-AREA-1 导出；JSON 才是完整状态的权威格式。')}]`);
   let body=`(;${root.join('')}`;for(const event of game.moves){if(event.type==='place')body+=`;${event.color}[${pointToSgf(event.at)}]`;else if(event.type==='pass')body+=`;${event.color}[]`;else if(event.type==='resign')warnings.push('认输没有写成 B/W 着法；请使用 JSON 保留最终结果。');else warnings.push(`${event.type} 是项目终局流程，SGF 首版不无损表达；JSON 中仍保留。`);}return {text:body+')\n',warnings:[...new Set(warnings)]};
 }

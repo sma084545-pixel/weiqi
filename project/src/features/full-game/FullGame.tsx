@@ -48,7 +48,7 @@ function UndoDialog({match,onChange,onNotice}:{match:FullGameMatch;onChange:(nex
   </dialog>;
 }
 
-function ConfirmDialog({open,title,description,confirmLabel,onConfirm,onClose}:{open:boolean;title:string;description:string;confirmLabel:string;onConfirm:()=>void;onClose:()=>void}){
+export function ConfirmDialog({open,title,description,confirmLabel,onConfirm,onClose}:{open:boolean;title:string;description:string;confirmLabel:string;onConfirm:()=>void;onClose:()=>void}){
   const ref=useRef<HTMLDialogElement>(null),titleId=useId();
   useEffect(()=>{const node=ref.current;if(!node)return;if(open&&!node.open)node.showModal();if(!open&&node.open)node.close();},[open]);
   return <dialog ref={ref} className="full-dialog" aria-labelledby={titleId} onCancel={event=>{event.preventDefault();onClose();}}><h2 id={titleId}>{title}</h2><p>{description}</p><div className="dialog-actions"><button type="button" className="primary-action" onClick={onConfirm}>{confirmLabel}</button><button type="button" className="outline-action" onClick={onClose}>取消</button></div></dialog>;
@@ -115,6 +115,7 @@ export function FullGame({projector=false,freePlay=false}:{projector?:boolean;fr
     <section className="full-game-hero"><p><a href={freePlay?HOME_ROUTE:ROUTE_ROUTE}>{freePlay?'← 返回学习入口':'← 返回学习路线'}</a></p><span className="module-kicker">完整围棋 · 同屏双人</span><h1>{freePlay?'自由双人对弈':'完整小棋盘对弈'}</h1><p>{freePlay?'两人共用一台设备，黑白轮流落子。自由选择棋盘大小，系统处理提子与禁着；两人停手并确认终局后，自动数子判定黑胜、白胜或和棋。':'默认9路，可选5、13、19路；5路用于小棋盘练习。双方连续停手后共同确认死子与中立点；系统不会替你们猜任意棋块的死活。'}</p>{freePlay&&<ol className="free-play-steps"><li><span>1</span>选棋盘，开始对弈</li><li><span>2</span>黑白轮流点交叉点</li><li><span>3</span>双方停手，确认后自动计分</li></ol>}{freePlay&&<p><a href="#/play/online">各用一台设备？进入联机对弈 →</a></p>}</section>
     {freePlay&&resultTitle&&!frame&&<section className="free-play-result" role="status" aria-live="polite" aria-atomic="true" data-testid="free-play-result"><div><span>本局结果</span><h2>{resultTitle}</h2></div><p>{finalScore?`黑方 ${finalScore.blackTotal} 分 · 白方 ${finalScore.whiteTotal} 分${finalScore.winner==='draw'?'':` · 相差 ${Math.abs(finalScore.difference)} 分`}`:`${game?.result?.reason==='resign'?colorName(game.toPlay):'一方'}认输，本局结束。`}</p></section>}
 
+    <p className="ai-from-partner"><a href="#/play/ai">想独自练习？进入 AI 对弈 →</a></p>
     <section className="full-game-layout">
       <div className="full-board-panel"><div className="full-board-heading"><div><span>{game?`${game.size}路 · 贴目 ${game.komi}`:`${match.setup.size}路 · 贴目 ${match.setup.komi}`}</span><h2>{game?'对局棋盘':'开局棋盘'}</h2></div><strong>{status}</strong></div>
         <Board size={game?.size??match.setup.size} board={board} label={`完整${game?.size??match.setup.size}路棋盘，${status}`} mode={mode} disabled={Boolean(frame)||(game?.phase==='finished')} selected={null} onSelect={select} onPlay={play} markers={[...markers,...analysis.markers]} showCoordinates displayMode={projector?'projector':'standard'}/>

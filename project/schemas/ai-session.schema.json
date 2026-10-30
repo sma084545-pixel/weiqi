@@ -1,0 +1,117 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "urn:go-club:schema:ai-session:1",
+  "title": "AiGameSession (additive schemaVersion 1)",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "id",
+    "revision",
+    "rulesetId",
+    "kind",
+    "options",
+    "game",
+    "scoring"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "id": {
+      "const": "LOCAL-AI-SESSION"
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "rulesetId": {
+      "const": "GO-CLUB-AREA-1"
+    },
+    "kind": {
+      "const": "AiGameSession"
+    },
+    "options": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "humanColor",
+        "difficulty"
+      ],
+      "properties": {
+        "humanColor": {
+          "enum": [
+            "B",
+            "W"
+          ]
+        },
+        "difficulty": {
+          "enum": [
+            "relaxed",
+            "standard",
+            "challenge"
+          ]
+        }
+      }
+    },
+    "game": {
+      "$ref": "urn:go-club:schema:content:1#/$defs/GameState"
+    },
+    "scoring": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "deadStones",
+        "confirmedBy"
+      ],
+      "properties": {
+        "deadStones": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "urn:go-club:schema:content:1#/$defs/Coord"
+          }
+        },
+        "confirmedBy": {
+          "enum": [
+            [],
+            [
+              "B"
+            ],
+            [
+              "B",
+              "W"
+            ]
+          ]
+        }
+      }
+    }
+  },
+  "$comment": "Shape validation supplements, and never substitutes for, legal setup/event replay, whole-group annotations and active-path positional superko in parseAiSession. Finished games may retain both confirmations.",
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "game": {
+            "properties": {
+              "phase": {
+                "const": "scoring"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "scoring": {
+            "properties": {
+              "confirmedBy": {
+                "maxItems": 1
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

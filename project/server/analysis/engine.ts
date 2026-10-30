@@ -98,7 +98,7 @@ export class KataGoEngine {
     if(raw.error){this.settle(job,new ApiError('ENGINE_FAILED',502,'引擎拒绝了此局分析；原对局未改变。'));clearTimeout(job.cleanup);this.active=null;this.pump();return;}
     if(raw.isDuringSearch!==false)return;
     clearTimeout(job.cleanup);
-    if(!job.settled){try{this.settle(job,undefined,normalizeAnalysis(raw,job.prepared,job.id,Date.now()-job.started,this.options));}catch(error){this.settle(job,error);}}
+    if(!job.settled){try{this.settle(job,undefined,normalizeAnalysis(raw,job.prepared,job.id,Date.now()-job.started,{...this.options,maxVisits:Number(job.prepared.query.maxVisits)}));}catch(error){this.settle(job,error);}}
     this.active=null;this.pump();
   }
   async stop(){

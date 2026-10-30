@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 1,
+  "id": "LOCAL-AI-SESSION",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "AiGameSession",
+  "options": {
+    "humanColor": "B",
+    "difficulty": "challenge"
+  },
+  "game": {
+    "schemaVersion": 1,
+    "id": "LOCAL-AI-FULL-GAME",
+    "revision": 1,
+    "rulesetId": "GO-CLUB-AREA-1",
+    "kind": "GameState",
+    "size": 5,
+    "setup": {
+      "schemaVersion": 1,
+      "id": "DEV-AI-FORCED-PASS",
+      "revision": 1,
+      "rulesetId": "GO-CLUB-AREA-1",
+      "kind": "Position",
+      "size": 5,
+      "stones": [
+        {
+          "row": 0,
+          "col": 0,
+          "color": "B"
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "color": "B"
+        },
+        {
+          "row": 0,
+          "col": 2,
+          "color": "B"
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "color": "B"
+        },
+        {
+          "row": 0,
+          "col": 4,
+          "color": "B"
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "color": "B"
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "color": "B"
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "color": "B"
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "color": "B"
+        },
+        {
+          "row": 2,
+          "col": 1,
+          "color": "B"
+        },
+        {
+          "row": 2,
+          "col": 2,
+          "color": "B"
+        },
+        {
+          "row": 2,
+          "col": 3,
+          "color": "B"
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "color": "B"
+        },
+        {
+          "row": 3,
+          "col": 0,
+          "color": "B"
+        },
+        {
+          "row": 3,
+          "col": 1,
+          "color": "B"
+        },
+        {
+          "row": 3,
+          "col": 2,
+          "color": "B"
+        },
+        {
+          "row": 3,
+          "col": 3,
+          "color": "B"
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "color": "B"
+        },
+        {
+          "row": 4,
+          "col": 0,
+          "color": "B"
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "color": "B"
+        },
+        {
+          "row": 4,
+          "col": 2,
+          "color": "B"
+        },
+        {
+          "row": 4,
+          "col": 3,
+          "color": "B"
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "color": "B"
+        }
+      ],
+      "toPlay": "W",
+      "historyPolicy": "fresh-setup",
+      "history": null
+    },
+    "mode": "full-game",
+    "board": [
+      [
+        "B",
+        "B",
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        null,
+        "B",
+        null,
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B",
+        "B",
+        "B"
+      ],
+      [
+        "B",
+        "B",
+        "B",
+        "B",
+        "B"
+      ]
+    ],
+    "toPlay": "W",
+    "history": {
+      "layouts": [
+        "5|BBBBBB.B.BBBBBBBBBBBBBBBB"
+      ]
+    },
+    "moves": [],
+    "captures": {
+      "B": 0,
+      "W": 0
+    },
+    "consecutivePasses": 0,
+    "phase": "playing",
+    "komi": 0,
+    "lastMove": null,
+    "agreement": null,
+    "result": null,
+    "undoStack": [],
+    "redoStack": []
+  },
+  "scoring": {
+    "deadStones": [],
+    "confirmedBy": []
+  }
+}

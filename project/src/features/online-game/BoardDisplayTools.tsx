@@ -7,7 +7,7 @@ const pipApi=()=>(window as Window&{documentPictureInPicture?:PiPApi}).documentP
 export const clampFloating=(x:number,y:number,width:number,height:number,viewportWidth:number,viewportHeight:number)=>({x:Math.max(8,Math.min(x,Math.max(8,viewportWidth-width-8))),y:Math.max(8,Math.min(y,Math.max(8,viewportHeight-height-8)))});
 
 /** Additional controlled views of the same room. No board/rules/history are copied or committed here. */
-export function BoardDisplayTools({renderBoard,timeline,chat,status,turnActions}:{renderBoard:(view:BoardView,resetViewKey?:number)=>ReactNode;timeline:ReactNode;chat:ReactNode;status:string;turnActions:ReactNode}){
+export function BoardDisplayTools({renderBoard,timeline,chat,status,turnActions,context='online'}:{renderBoard:(view:BoardView,resetViewKey?:number)=>ReactNode;timeline:ReactNode;chat:ReactNode;status:string;turnActions:ReactNode;context?:'online'|'ai'}){
   const [miniViewKey,setMiniViewKey]=useState(0);
   const [floating,setFloating]=useState(false),[maximized,setMaximized]=useState(false),[position,setPosition]=useState({x:8,y:80}),[pip,setPip]=useState<Window|null>(null),[message,setMessage]=useState(''),[fullscreen,setFullscreen]=useState(false);
   const panel=useRef<HTMLElement>(null),dialog=useRef<HTMLDialogElement>(null),shell=useRef<HTMLDivElement>(null),opener=useRef<HTMLButtonElement>(null),pipRef=useRef<Window|null>(null),alive=useRef(true);
@@ -32,12 +32,12 @@ export function BoardDisplayTools({renderBoard,timeline,chat,status,turnActions}
     if(pipRef.current&&!pipRef.current.closed){pipRef.current.focus();return;}
     try{
       const target=await api.requestWindow({width:560,height:740});if(!alive.current){target.close();return;}
-      target.document.title='围棋房间 · 画中画';target.document.documentElement.lang='zh-CN';
+      target.document.title=context==='ai'?'AI 对弈 · 画中画':'围棋房间 · 画中画';target.document.documentElement.lang='zh-CN';
       const base=target.document.createElement('base');base.href=document.baseURI;target.document.head.append(base);
       for(const source of document.querySelectorAll('link[rel="stylesheet"],style'))target.document.head.append(source.cloneNode(true));
       target.document.body.className='online-pip-body';pipRef.current=target;setPip(target);setFloating(false);
       target.addEventListener('pagehide',()=>{if(pipRef.current===target){pipRef.current=null;if(alive.current)setPip(null);}},{once:true});
-      setMessage('独立画中画已打开，与当前房间实时同步；关闭小窗不会离开房间。');
+      setMessage(context==='ai'?'独立画中画已打开，与当前 AI 棋局同步；关闭小窗不会结束对局。':'独立画中画已打开，与当前房间实时同步；关闭小窗不会离开房间。');
     }catch{if(alive.current){setFloating(true);setMessage('浏览器没有打开独立小窗，已改用页内悬浮棋盘；可以继续对弈。');}}
   };
   const toggleFullscreen=async()=>{
@@ -56,6 +56,6 @@ export function BoardDisplayTools({renderBoard,timeline,chat,status,turnActions}
         {message&&<p className="board-display-message" role="status">{message}</p>}<div className="max-board-layout"><div className="max-board-main">{renderBoard('full')}{timeline}<div className="online-actions">{turnActions}</div></div><aside>{chat}</aside></div>
       </div>
     </dialog>}
-    {pip&&createPortal(<div className="online-tool-surface pip-board"><header><h1>联机棋盘 · 画中画</h1><p>{status}</p></header><div className="pip-board-area compact-board">{renderBoard('pip')}</div><div className="online-actions">{turnActions}<button type="button" onClick={()=>{window.focus();pip.close();}}>返回主窗口</button></div><p>同一房间实时同步。确认死子、悔棋和聊天请回主窗口；关闭小窗不影响棋局。</p></div>,pip.document.body)}
+    {pip&&createPortal(<div className="online-tool-surface pip-board"><header><h1>{context==='ai'?'AI 对弈':'联机棋盘'} · 画中画</h1><p>{status}</p></header><div className="pip-board-area compact-board">{renderBoard('pip')}</div><div className="online-actions">{turnActions}<button type="button" onClick={()=>{window.focus();pip.close();}}>返回主窗口</button></div><p>{context==='ai'?'与当前 AI 棋局同步。确认死子、导入与赛后分析请回主窗口；关闭小窗不影响棋局。':'同一房间实时同步。确认死子、悔棋和聊天请回主窗口；关闭小窗不影响棋局。'}</p></div>,pip.document.body)}
   </>;
 }

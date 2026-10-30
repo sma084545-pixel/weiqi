@@ -144,6 +144,8 @@ test('T24 continuous learner to teacher journey, offline save and recovery',asyn
     await page.goto('/#/feedback');await page.getByRole('button',{name:'建立活动',exact:true}).click();
     await page.getByLabel('活动编号（留空自动建立）').fill('TEST-T24-JOURNEY');await page.getByLabel('活动日期',{exact:true}).fill('2026-10-09');
     await page.getByLabel('活动简名').fill('自动化开发验证，不是真实活动');await page.getByRole('button',{name:'保存活动',exact:true}).click();
+    // Creation commits asynchronously; wait for persistence before filling the next member's form.
+    await expect(page.getByRole('status').filter({hasText:'已建立活动 TEST-T24-JOURNEY'})).toBeVisible();
     await page.getByLabel('今天活动难度感受').selectOption('comfortable');await page.getByLabel('最喜欢的活动').selectOption('liberties');
     await page.getByLabel('希望下次改变什么').fill('固定测试文本，不是真实成员意见');
     await page.getByRole('button',{name:'提交这一份'}).evaluate((b:HTMLButtonElement)=>{b.click();b.click();});
