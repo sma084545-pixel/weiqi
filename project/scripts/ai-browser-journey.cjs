@@ -74,9 +74,10 @@ async page => {
   }
   for(const [width,size,level,human] of [[360,5,'relaxed','B'],[768,13,'standard','W'],[1280,19,'challenge','B']]){
     const t=await fresh(width,true),{p,plans,cell,attr,click}=t;
-    await p.getByLabel('棋盘尺寸').selectOption(String(size));await p.getByLabel('难度',{exact:true}).selectOption(level);
+    await p.getByLabel('棋盘尺寸').selectOption(String(size));await p.getByLabel('难度').selectOption(level);
     if(human==='W'){await p.getByRole('radio',{name:'白方（AI 先行）'}).check();plans.push({move:{type:'place',at:{row:0,col:0}}});}
     await t.start();if(human==='W'){await attr('data-move-count',1);await attr('data-turn','W');}else await attr('data-move-count',0);
+    if(size===5)assert(await p.locator('.full-board-panel>.shared-board .board-grid').evaluate(el=>el.getBoundingClientRect().right<=el.closest('.board-viewport').getBoundingClientRect().right),'small full board fits without clipping corner');
     await click('悬浮小棋盘');const mini=p.getByRole('complementary',{name:'悬浮小棋盘'});await mini.waitFor();
     const geometry=await mini.locator('.board-grid').evaluate((el,size)=>{const rect=el.getBoundingClientRect(),panel=el.closest('.floating-board').getBoundingClientRect();return {count:el.querySelectorAll('[data-row][data-col]').length,visible:rect.left>=0&&rect.top>=0&&rect.right<=innerWidth+.5&&rect.bottom<=innerHeight+.5&&rect.bottom<=panel.bottom};},size);
     assert(geometry.count===size*size&&geometry.visible,'entire floating '+size+' board must fit at '+width);
@@ -94,5 +95,5 @@ async page => {
     await t.start();await attr('data-move-count',1);await attr('data-turn','B');assert(t.requests[0].game.setup.toPlay==='W','free handicap White first');
     report.push({name:'handicap-validate-size-loss-confirmation-white-first',status:'passed'});await t.close();
   }
-  console.log(JSON.stringify({schemaVersion:1,id:'AI-PLAY-CLI-JOURNEY',revision:1,rulesetId:'GO-CLUB-AREA-1',kind:'DeveloperValidationReport',at:new Date().toISOString(),browser:browser.version(),mode:'actual-browser-explicit-transport-test-doubles',checks:report,humanReviewed:null}));
+  return {schemaVersion:1,id:'AI-PLAY-CLI-JOURNEY',revision:1,rulesetId:'GO-CLUB-AREA-1',kind:'DeveloperValidationReport',at:new Date().toISOString(),browser:browser.version(),mode:'actual-browser-explicit-transport-test-doubles',checks:report,humanReviewed:null};
 }

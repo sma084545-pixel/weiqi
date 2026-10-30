@@ -1,0 +1,19 @@
+Already up to date
+Done in 144ms using pnpm v11.19.0
+[WebServer] (node:20003) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 8 tests using 1 worker
+
+(node:20009) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/browser/katago-review.spec.ts:18:1 › analysis is available only after ending, is manual, shows black perspective and marks exact points (786ms)
+  ✓  2 tests/browser/katago-review.spec.ts:32:1 › double click, jumping and cancelled late result cannot overwrite a new review position (523ms)
+  ✓  3 tests/browser/katago-review.spec.ts:47:1 › starting and busy remain recoverable with a user-triggered retry and navigation works (676ms)
+  ✓  4 tests/browser/katago-review.spec.ts:56:1 › two passes require both confirmations before any analysis can be requested (486ms)
+  ✓  5 tests/browser/katago-review.spec.ts:63:1 › touch can finish and request a review without hover or duplicate submission (563ms)
+  ✓  6 tests/browser/katago-review.spec.ts:70:35 › 360px keyboard/manual review remains within viewport with reduced motion (526ms)
+  ✓  7 tests/browser/katago-review.spec.ts:70:35 › 768px keyboard/manual review remains within viewport with reduced motion (517ms)
+  ✓  8 tests/browser/katago-review.spec.ts:70:35 › 1280px keyboard/manual review remains within viewport with reduced motion (519ms)
+
+  8 passed (5.1s)

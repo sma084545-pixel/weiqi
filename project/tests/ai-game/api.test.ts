@@ -39,7 +39,7 @@ describe('AI HTTP transport with explicit development engine fixture',()=>{
     const server=createAnalysisServer(e,'https://sma084545-pixel.github.io',{aiRatePerMinute:3,globalPerMinute:8});await new Promise<void>(r=>server.listen(0,'127.0.0.1',r));const addr=server.address() as {port:number},url=`http://127.0.0.1:${addr.port}`;
     try{
       const pre=await fetch(url+'/api/ai-move',{method:'OPTIONS',headers:{Origin:'https://sma084545-pixel.github.io','Access-Control-Request-Method':'POST','Access-Control-Request-Headers':'content-type'}});expect(pre.status).toBe(204);expect(pre.headers.get('Access-Control-Allow-Origin')).toBe('https://sma084545-pixel.github.io');
-      expect((await (await fetch(url+'/healthz')).json()).features).toContain('ai-move');
+      expect((await (await fetch(url+'/healthz')).json())).toMatchObject({appVersion:'0.24.0',apiVersion:2,features:['review','ai-move']});
       const post=(d:unknown,path='/api/ai-move')=>fetch(url+path,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)});
       expect((await post({...body(),game:{...body().game,events:[]},reviewIndex:0,aiColor:undefined,difficulty:undefined},'/api/analyze')).status).toBe(409);
       for(const difficulty of ['relaxed','standard','challenge']){const res=await post(body(difficulty)),data=await res.json();expect(res.status).toBe(200);expect(data.engine.name).toBe('KataGo');expect(data.engine.maxVisits).toBe(({relaxed:8,standard:24,challenge:64} as any)[difficulty]);expect('candidates' in data).toBe(false);expect('blackScoreLead' in data).toBe(false);}

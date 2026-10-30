@@ -1,5 +1,6 @@
 import {expect,test,type Page} from '@playwright/test';
 import type {ReviewAnalysisRequest,ReviewAnalysisResponse} from '../../src/core/analysis/contract';
+const evidenceRoot=process.env.KATAGO_UI_EVIDENCE_ROOT??'docs/katago/checks';
 
 // These deterministic network fixtures check UI behavior only. Real KataGo/API evidence is recorded separately.
 const cell=(page:Page,row:number,col:number)=>page.locator(`[data-row="${row}"][data-col="${col}"]`);
@@ -71,5 +72,5 @@ for(const width of [360,768,1280])test(`${width}px keyboard/manual review remain
   await page.route('**/api/analyze',async route=>fulfill(route,fixture(route.request().postDataJSON())));
   await ready(page);await finish(page);const button=page.getByRole('button',{name:'分析当前复盘局面'});await button.focus();await page.keyboard.press('Enter');await expect(page.getByTestId('katago-result')).toBeVisible();
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
-  await page.evaluate(()=>{scrollTo(0,0);if(document.activeElement instanceof HTMLElement)document.activeElement.blur();});await page.screenshot({path:`docs/katago/checks/frontend-review-${width}.png`,fullPage:true});
+  await page.evaluate(()=>{scrollTo(0,0);if(document.activeElement instanceof HTMLElement)document.activeElement.blur();});await page.screenshot({path:`${evidenceRoot}/frontend-review-${width}.png`,fullPage:true});
 });

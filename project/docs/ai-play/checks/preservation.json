@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "AI-BASE-PRESERVATION",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "taskId": "AI_PLAY",
+  "baseVersion": "0.23.0-pages.1",
+  "resultVersion": "0.24.0-pages.1",
+  "status": "passed",
+  "protectedFiles": 1593,
+  "preservedPrefixes": [
+    "content/",
+    "materials/",
+    "src/core/rules/",
+    "docs/t24/",
+    "docs/advanced-courses/"
+  ],
+  "refreshedHistoricalCheckOutputsRestoredFromBaseline": [
+    "docs/t24/checks/journey/chromium/offline-editor.png",
+    "docs/t24/checks/journey/chromium/full-game.png"
+  ],
+  "failed": [],
+  "note": "Current run logs are in docs/ai-play/checks, not overwritten historical teaching/release evidence."
+}

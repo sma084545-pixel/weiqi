@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "id": "AI-PLAY-REAL-BROWSER",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "DeveloperValidationReport",
+  "at": "2026-10-30T17:55:48.561Z",
+  "browser": "156.0.8078.76",
+  "mode": "real-browser-real-KataGo-no-mocks",
+  "base": "http://127.0.0.1:4215",
+  "checks": [
+    {
+      "name": "real-nine-human-black-ai-white-undo-redo-refresh",
+      "status": "passed",
+      "responses": [
+        {
+          "url": "http://127.0.0.1:4219/api/ai-move",
+          "status": 200,
+          "result": {
+            "schemaVersion": 1,
+            "positionId": "ai-7c0d0c43-5d3b-403c-b97d-03e523c83bca",
+            "requestId": "576cf450-87f8-4ee3-89b2-986a4f11c709",
+            "aiColor": "W",
+            "difficulty": "standard",
+            "move": {
+              "type": "place",
+              "at": {
+                "row": 5,
+                "col": 4
+              }
+            },
+            "engine": {
+              "name": "KataGo",
+              "version": "1.18.1",
+              "model": "g170-b6c96-s175395328-d26788732",
+              "backend": "Eigen CPU",
+              "maxVisits": 24
+            },
+            "visits": 24,
+            "elapsedMs": 31
+          }
+        }
+      ]
+    },
+    {
+      "name": "real-five-white-human-ai-black-keyboard-mobile",
+      "status": "passed",
+      "responses": [
+        {
+          "url": "http://127.0.0.1:4219/api/ai-move",
+          "status": 200,
+          "result": {
+            "schemaVersion": 1,
+            "positionId": "ai-df165df6-7989-402a-b300-0d39a8f33e04",
+            "requestId": "b1b02fdf-5e9f-454f-b21d-aba727e973bd",
+            "aiColor": "B",
+            "difficulty": "relaxed",
+            "move": {
+              "type": "place",
+              "at": {
+                "row": 2,
+                "col": 2
+              }
+            },
+            "engine": {
+              "name": "KataGo",
+              "version": "1.18.1",
+              "model": "g170-b6c96-s175395328-d26788732",
+              "backend": "Eigen CPU",
+              "maxVisits": 8
+            },
+            "visits": 8,
+            "elapsedMs": 1
+          }
+        },
+        {
+          "url": "http://127.0.0.1:4219/api/ai-move",
+          "status": 200,
+          "result": {
+            "schemaVersion": 1,
+            "positionId": "ai-4b7d09b1-a319-4106-b5ae-1c575503e42c",
+            "requestId": "8d334be9-e32c-44ee-b805-be4c350efc2d",
+            "aiColor": "B",
+            "difficulty": "relaxed",
+            "move": {
+              "type": "place",
+              "at": {
+                "row": 1,
+                "col": 1
+              }
+            },
+            "engine": {
+              "name": "KataGo",
+              "version": "1.18.1",
+              "model": "g170-b6c96-s175395328-d26788732",
+              "backend": "Eigen CPU",
+              "maxVisits": 8
+            },
+            "visits": 8,
+            "elapsedMs": 61
+          }
+        }
+      ]
+    },
+    {
+      "name": "real-forced-pass-manual-confirmation-25-0-postgame-review",
+      "status": "passed",
+      "responses": [
+        {
+          "url": "http://127.0.0.1:4219/api/ai-move",
+          "status": 200,
+          "result": {
+            "schemaVersion": 1,
+            "positionId": "ai-6b8f1300-8612-4572-aba7-121685c095ca",
+            "requestId": "647e2911-845d-49ea-ba51-d78f428e4040",
+            "aiColor": "W",
+            "difficulty": "challenge",
+            "move": {
+              "type": "pass"
+            },
+            "engine": {
+              "name": "KataGo",
+              "version": "1.18.1",
+              "model": "g170-b6c96-s175395328-d26788732",
+              "backend": "Eigen CPU",
+              "maxVisits": 64
+            },
+            "visits": 64,
+            "elapsedMs": 1
+          }
+        },
+        {
+          "url": "http://127.0.0.1:4219/api/analyze",
+          "status": 200,
+          "result": {
+            "schemaVersion": 1,
+            "requestId": "974b0d7c-3f79-4124-80af-d5796875e2c2",
+            "positionId": "review-6bacaff9-cce5-4a29-86c9-fad3888d8488",
+            "perspective": "B",
+            "toPlay": "W",
+            "blackWinrate": 0.999999067,
+            "blackScoreLead": 25.4354658,
+            "visits": 64,
+            "elapsedMs": 1,
+            "engine": {
+              "name": "KataGo",
+              "version": "1.18.1",
+              "model": "g170-b6c96-s175395328-d26788732",
+              "backend": "Eigen CPU",
+              "maxVisits": 64
+            },
+            "candidates": [
+              {
+                "order": 0,
+                "move": {
+                  "type": "pass"
+                },
+                "visits": 63,
+                "blackWinrate": 0.999999154,
+                "blackScoreLead": 25.3435595,
+                "pv": [
+                  {
+                    "type": "pass"
+                  },
+                  {
+                    "type": "pass"
+                  },
+                  {
+                    "type": "pass"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "humanReviewed": null,
+  "status": "passed"
+}

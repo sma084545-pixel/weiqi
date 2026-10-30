@@ -21,17 +21,20 @@ for folder,dirs,names in os.walk(R):
   if name in exclude_files or name.startswith('.env.') or name.endswith(('.pem','.p12','.key')):continue
   path=Path(folder)/name;rel=path.relative_to(R);target=source/rel;target.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(path,target);entries.append({'path':str(rel),'bytes':path.stat().st_size,'sha256':sha(path)})
 (source/'SOURCE_INFO.json').write_text(json.dumps({'schemaVersion':1,'id':'GITHUB-CURRENT-SOURCE','revision':revision,'rulesetId':'GO-CLUB-AREA-1','resultVersion':V,'programVersion':version,'sourceBuild':'pnpm install --frozen-lockfile && pnpm build','note':'Buildable source and materials; installed dependencies, private data and generated root build/output excluded. Full release archive includes production builds and all evidence.','files':entries},ensure_ascii=False,indent=2)+'\n')
-manifest={'schemaVersion':1,'id':'GITHUB-PAGES-PUBLICATION','revision':revision,'rulesetId':'GO-CLUB-AREA-1','resultVersion':V,'programVersion':version,'siteUrl':'https://sma084545-pixel.github.io/weiqi/','sourceDirectory':'project/','formalPuzzles':30,'terminalFixtures':6,'microLessonPrimarySlides':25,'routeStages':12,'advancedLessons':6,'advancedScenes':37,'onlineServerConfigured':configured,'onlineServerOrigin':server_origin,'onlineRoomsEphemeral':ephemeral,'katagoAnalysisOrigin':public_version.get('katagoAnalysisOrigin'),'katagoAnalysisConfigured':public_version.get('katagoAnalysisConfigured',False),'onlineStatus':'Public room server configured; chat and floating-board verification retained in docs/floating-fit.' if configured else 'Room server not configured.','files':site,'sourceManifestSha256':sha(source/'SOURCE_INFO.json')}
+manifest={'schemaVersion':1,'id':'GITHUB-PAGES-PUBLICATION','revision':revision,'rulesetId':'GO-CLUB-AREA-1','resultVersion':V,'programVersion':version,'siteUrl':'https://sma084545-pixel.github.io/weiqi/','sourceDirectory':'project/','formalPuzzles':30,'terminalFixtures':6,'microLessonPrimarySlides':25,'routeStages':12,'advancedLessons':6,'advancedScenes':37,'aiPlayRoute':'#/play/ai','aiDifficultyProfiles':['relaxed','standard','challenge'],'aiPlayRequiresNetwork':True,'onlineServerConfigured':configured,'onlineServerOrigin':server_origin,'onlineRoomsEphemeral':ephemeral,'katagoAnalysisOrigin':public_version.get('katagoAnalysisOrigin'),'katagoAnalysisConfigured':public_version.get('katagoAnalysisConfigured',False),'onlineStatus':'Public room server configured; chat and floating-board verification retained in docs/floating-fit.' if configured else 'Room server not configured.','files':site,'sourceManifestSha256':sha(source/'SOURCE_INFO.json')}
 (repo/'PUBLICATION.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n');(repo/'SHA256SUMS.txt').write_text(''.join(f"{x['sha256']}  {x['path']}\n" for x in site)+f"{sha(repo/'PUBLICATION.json')}  PUBLICATION.json\n"+f"{sha(source/'SOURCE_INFO.json')}  project/SOURCE_INFO.json\n")
 (repo/'README.md').write_text(f'''# 围棋社 · 最新版 {version}
 
 **原网址：[打开学习工具](https://sma084545-pixel.github.io/weiqi/)**
 
-学习路线现有12课；课程7–12含棋形、手筋、对杀、强弱攻防、大场方向、37个互动场景及一盘13路本地教学机器人实战。
+新增真实KataGo AI对弈：选择轻松/标准/挑战、执色和5/9/13/19路，正常轮流落子，支持一手/最近回合悔棋、重做、棋局滑动条、本机续玩、JSON/SGF和赛后复盘。三档是相对搜索强度，不对应人类段级位；结束后人工确认死子及面积计分。新着法需联网，不提供真人进行中胜率提示。
+
+学习路线保留12课、37个进阶互动场景和原13路引导实战。
 
 自由双人对弈结束后，可手动调用Render上的真实KataGo，分析任一复盘局面并查看数字推荐、候选变化、黑方胜率和预计目差。保留悬浮小棋盘、画中画、最大化、聊天、完整教学、5/9/13/19路、回退和棋局滑动条。包含30道正式题、6个终局、可编辑课件、教具与主持材料；GO-CLUB-AREA-1、schemaVersion1及正式revision保持。
 
 - [学习入口](https://sma084545-pixel.github.io/weiqi/#/home)
+- [与 AI 下一盘](https://sma084545-pixel.github.io/weiqi/#/play/ai)
 - [自由双人对弈](https://sma084545-pixel.github.io/weiqi/#/play/free)
 - [题目挑战](https://sma084545-pixel.github.io/weiqi/#/challenges)
 - [教师工具](https://sma084545-pixel.github.io/weiqi/#/teacher)
@@ -42,6 +45,10 @@ manifest={'schemaVersion':1,'id':'GITHUB-PAGES-PUBLICATION','revision':revision,
 ## 联机边界
 
 原网址的[联机双人对弈](https://sma084545-pixel.github.io/weiqi/#/play/online)通过独立HTTPS房间服务器{server_origin}同步。无需账号或真实姓名；一人建房，另一人输入房间码。免费部署房间是临时数据，休眠、重启或更新后可能重新开房；对局中可保存本机副本/导出。首次唤醒可能约一分钟，稍候重连。GitHub Pages继续提供静态网页，房间服务另在Render运行；本机进度/草稿/反馈不上传。实际验证及边界见[接入说明](ONLINE_SETUP.md)。
+
+## AI 对弈与终局后复盘
+
+[使用方法](project/docs/ai-play/USAGE.md) · [本轮验收与限制](project/docs/ai-play/ACCEPTANCE.md) · [更新与回滚](project/docs/ai-play/DEPLOYMENT.md)。AI服务沿用已有独立Render KataGo Web Service，API版本2提供对弈新着法；房间服务保持不变。没有新增付费资源、账号或默认反馈上传。
 
 ## KataGo 终局后复盘
 

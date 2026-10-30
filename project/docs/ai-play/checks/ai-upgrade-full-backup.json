@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "LOCAL-BACKUP-2026-10-30T18-02-54-939Z",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "LocalBackup",
+  "appVersion": "0.24.0",
+  "storageSchemaVersion": 1,
+  "createdAt": "2026-10-30T18:02:54.939Z",
+  "records": [
+    {
+      "key": "go-club:full-game:ai:v1",
+      "namespace": "games",
+      "schemaVersion": 1,
+      "contentId": "LOCAL-AI-SESSION",
+      "contentRevision": 3,
+      "value": "{\"schemaVersion\":1,\"id\":\"LOCAL-AI-SESSION\",\"revision\":3,\"rulesetId\":\"GO-CLUB-AREA-1\",\"kind\":\"AiGameSession\",\"options\":{\"humanColor\":\"B\",\"difficulty\":\"standard\"},\"game\":{\"schemaVersion\":1,\"id\":\"LOCAL-AI-FULL-GAME\",\"revision\":2,\"rulesetId\":\"GO-CLUB-AREA-1\",\"kind\":\"GameState\",\"size\":5,\"setup\":{\"schemaVersion\":1,\"id\":\"LOCAL-AI-SETUP\",\"revision\":1,\"rulesetId\":\"GO-CLUB-AREA-1\",\"kind\":\"Position\",\"size\":5,\"toPlay\":\"B\",\"historyPolicy\":\"fresh-setup\",\"history\":null,\"stones\":[]},\"mode\":\"full-game\",\"board\":[[\"B\",null,null,null,null],[null,null,null,null,null],[null,null,null,null,null],[null,null,null,null,null],[null,null,null,null,null]],\"toPlay\":\"W\",\"history\":{\"layouts\":[\"5|.........................\",\"5|B........................\"]},\"moves\":[{\"type\":\"place\",\"color\":\"B\",\"at\":{\"row\":0,\"col\":0}}],\"captures\":{\"B\":0,\"W\":0},\"consecutivePasses\":0,\"phase\":\"playing\",\"komi\":0,\"lastMove\":{\"type\":\"place\",\"color\":\"B\",\"at\":{\"row\":0,\"col\":0}},\"agreement\":null,\"result\":null,\"undoStack\":[{\"size\":5,\"board\":[[null,null,null,null,null],[null,null,null,null,null],[null,null,null,null,null],[null,null,null,null,null],[null,null,null,null,null]],\"toPlay\":\"B\",\"history\":{\"layouts\":[\"5|.........................\"]},\"moves\":[],\"captures\":{\"B\":0,\"W\":0},\"consecutivePasses\":0,\"phase\":\"playing\",\"komi\":0,\"lastMove\":null,\"agreement\":null,\"result\":null}],\"redoStack\":[]},\"scoring\":{\"deadStones\":[],\"confirmedBy\":[]}}\n",
+      "updatedAt": "2026-10-30T18:02:54.805Z"
+    },
+    {
+      "key": "go-club:learning-progress:v1",
+      "namespace": "progress",
+      "schemaVersion": 1,
+      "contentId": "LOCAL-LEARNING-PROGRESS",
+      "contentRevision": 7,
+      "value": "{\"schemaVersion\":1,\"id\":\"LOCAL-LEARNING-PROGRESS\",\"revision\":7,\"rulesetId\":\"GO-CLUB-AREA-1\",\"visitedModuleIds\":[\"stage-05-guide\",\"free-play\",\"ai-play\"],\"stageMarks\":{\"STAGE-05\":\"practice\"},\"recentModuleId\":\"ai-play\"}",
+      "updatedAt": "2026-10-30T18:02:39.685Z"
+    },
+    {
+      "key": "go-club:teacher-drafts:v1",
+      "namespace": "drafts",
+      "schemaVersion": 1,
+      "contentId": "LOCAL-T14-WORKSPACE",
+      "contentRevision": 2,
+      "value": "{\"schemaVersion\":1,\"id\":\"LOCAL-T14-WORKSPACE\",\"revision\":2,\"rulesetId\":\"GO-CLUB-AREA-1\",\"kind\":\"TeacherDraftWorkspace\",\"entries\":[{\"entryId\":\"draft-TEMPLATE-LIB-001-1-1793383358006\",\"title\":\"DEV-AI-UPGRADE — 开发草稿，不是真实成员作品\",\"learningGoal\":\"认识正交相邻的气并准确计数\",\"puzzle\":{\"schemaVersion\":1,\"id\":\"TEMPLATE-LIB-001\",\"revision\":1,\"rulesetId\":\"GO-CLUB-AREA-1\",\"kind\":\"Puzzle\",\"developmentOnly\":true,\"category\":\"LIB\",\"difficulty\":{\"level\":\"beginner\",\"rationale\":\"单子中心数气，只有一次去重计数。\"},\"prompt\":\"数出标记黑子的气。\",\"initialPosition\":{\"schemaVersion\":1,\"id\":\"POS-TEMPLATE-LIB-001\",\"revision\":1,\"rulesetId\":\"GO-CLUB-AREA-1\",\"kind\":\"Position\",\"size\":5,\"stones\":[{\"row\":2,\"col\":2,\"color\":\"B\"}],\"toPlay\":\"B\",\"historyPolicy\":\"fresh-setup\",\"history\":null},\"targetMarkers\":[{\"markerId\":\"target-1\",\"type\":\"target\",\"points\":[{\"row\":2,\"col\":2}],\"label\":\"模板目标棋块\",\"owner\":\"B\"}],\"firstPlayer\":\"B\",\"conditions\":{\"boundary\":\"full-board\",\"external\":\"真实完整 5×5 棋盘；模板外部无附加棋子。\",\"assumptions\":[\"学习目标：认识正交相邻的气并准确计数\",\"新教学起点，过去劫史未知；发布前需重新核查内容。\"],\"viewport\":null},\"hints\":[\"观察上下左右。\",\"排除斜角和非空点。\",\"把找到的空点去重后计数。\"],\"answer\":{\"type\":\"number\",\"value\":4,\"explanation\":\"中心单子有四口气；发布前请重新核查。\"},\"coveredBranches\":[],\"sources\":[{\"type\":\"original\",\"title\":\"T14 本机编辑模板\",\"url\":null,\"accessedAt\":null,\"note\":\"原创开发模板；只用于创建草稿，不计入正式30题，也不代表解答已由人类复核。\"}],\"validation\":{\"structure\":{\"status\":\"passed\",\"method\":\"T14 模板生成器与 schema v1 校验\",\"checkedAt\":\"2026-09-15\",\"evidence\":[\"模板结构通过\"]},\"moveLegality\":{\"status\":\"passed\",\"method\":\"T01 validateSetup 与已录着法重放\",\"checkedAt\":\"2026-09-15\",\"evidence\":[\"模板起点和示例分支合法\"]},\"solutionChecked\":{\"status\":\"partial\",\"method\":\"模板示例答案仅供起步，发布前须由使用者重新核查\",\"checkedAt\":\"2026-09-15\",\"evidence\":[\"不得继承为发布证明\"]},\"externalReferenceChecked\":null,\"modelChecked\":null,\"humanReviewed\":null},\"relatedContent\":[]},\"lifecycle\":\"draft\",\"origin\":{\"kind\":\"template\",\"sourceId\":\"TEMPLATE-LIB-001\",\"sourceRevision\":1},\"solutionCheckMethod\":\"\",\"numberAnswerText\":\"4\",\"solutionCheckConfirmed\":false,\"humanReviewSelfReported\":false,\"humanReviewer\":\"\",\"humanReviewScope\":\"\",\"updatedAt\":\"2026-10-30T18:02:38.006Z\"}]}",
+      "updatedAt": "2026-10-30T18:02:38.057Z"
+    },
+    {
+      "key": "go-club:teacher-editor-session:v1",
+      "namespace": "drafts",
+      "schemaVersion": 1,
+      "contentId": "LOCAL-T14-EDITOR-SESSION",
+      "contentRevision": 1,
+      "value": "{\"schemaVersion\":1,\"id\":\"LOCAL-T14-EDITOR-SESSION\",\"revision\":1,\"rulesetId\":\"GO-CLUB-AREA-1\",\"kind\":\"TeacherEditorSession\",\"entry\":{\"entryId\":\"draft-TEMPLATE-LIB-001-1-1793383358006\",\"title\":\"DEV-AI-UPGRADE — 开发草稿，不是真实成员作品\",\"learningGoal\":\"认识正交相邻的气并准确计数\",\"puzzle\":{\"schemaVersion\":1,\"id\":\"TEMPLATE-LIB-001\",\"revision\":1,\"rulesetId\":\"GO-CLUB-AREA-1\",\"kind\":\"Puzzle\",\"developmentOnly\":true,\"category\":\"LIB\",\"difficulty\":{\"level\":\"beginner\",\"rationale\":\"单子中心数气，只有一次去重计数。\"},\"prompt\":\"数出标记黑子的气。\",\"initialPosition\":{\"schemaVersion\":1,\"id\":\"POS-TEMPLATE-LIB-001\",\"revision\":1,\"rulesetId\":\"GO-CLUB-AREA-1\",\"kind\":\"Position\",\"size\":5,\"stones\":[{\"row\":2,\"col\":2,\"color\":\"B\"}],\"toPlay\":\"B\",\"historyPolicy\":\"fresh-setup\",\"history\":null},\"targetMarkers\":[{\"markerId\":\"target-1\",\"type\":\"target\",\"points\":[{\"row\":2,\"col\":2}],\"label\":\"模板目标棋块\",\"owner\":\"B\"}],\"firstPlayer\":\"B\",\"conditions\":{\"boundary\":\"full-board\",\"external\":\"真实完整 5×5 棋盘；模板外部无附加棋子。\",\"assumptions\":[\"学习目标：认识正交相邻的气并准确计数\",\"新教学起点，过去劫史未知；发布前需重新核查内容。\"],\"viewport\":null},\"hints\":[\"观察上下左右。\",\"排除斜角和非空点。\",\"把找到的空点去重后计数。\"],\"answer\":{\"type\":\"number\",\"value\":4,\"explanation\":\"中心单子有四口气；发布前请重新核查。\"},\"coveredBranches\":[],\"sources\":[{\"type\":\"original\",\"title\":\"T14 本机编辑模板\",\"url\":null,\"accessedAt\":null,\"note\":\"原创开发模板；只用于创建草稿，不计入正式30题，也不代表解答已由人类复核。\"}],\"validation\":{\"structure\":{\"status\":\"passed\",\"method\":\"T14 模板生成器与 schema v1 校验\",\"checkedAt\":\"2026-09-15\",\"evidence\":[\"模板结构通过\"]},\"moveLegality\":{\"status\":\"passed\",\"method\":\"T01 validateSetup 与已录着法重放\",\"checkedAt\":\"2026-09-15\",\"evidence\":[\"模板起点和示例分支合法\"]},\"solutionChecked\":{\"status\":\"partial\",\"method\":\"模板示例答案仅供起步，发布前须由使用者重新核查\",\"checkedAt\":\"2026-09-15\",\"evidence\":[\"不得继承为发布证明\"]},\"externalReferenceChecked\":null,\"modelChecked\":null,\"humanReviewed\":null},\"relatedContent\":[]},\"lifecycle\":\"draft\",\"origin\":{\"kind\":\"template\",\"sourceId\":\"TEMPLATE-LIB-001\",\"sourceRevision\":1},\"solutionCheckMethod\":\"\",\"numberAnswerText\":\"4\",\"solutionCheckConfirmed\":false,\"humanReviewSelfReported\":false,\"humanReviewer\":\"\",\"humanReviewScope\":\"\",\"updatedAt\":\"2026-10-30T18:02:38.006Z\"},\"readOnly\":false,\"updatedAt\":\"2026-10-30T18:02:39.582Z\"}",
+      "updatedAt": "2026-10-30T18:02:39.582Z"
+    },
+    {
+      "key": "go-club:v1:LOCAL-T08-FULL-GAME",
+      "namespace": "games",
+      "schemaVersion": 1,
+      "contentId": "LOCAL-T08-FULL-GAME",
+      "contentRevision": 3,
+      "value": "{\"schemaVersion\":1,\"id\":\"LOCAL-T08-FULL-GAME\",\"revision\":3,\"rulesetId\":\"GO-CLUB-AREA-1\",\"kind\":\"GameState\",\"size\":9,\"setup\":{\"schemaVersion\":1,\"id\":\"LOCAL-T08-START-9\",\"revision\":1,\"rulesetId\":\"GO-CLUB-AREA-1\",\"kind\":\"Position\",\"size\":9,\"toPlay\":\"B\",\"historyPolicy\":\"fresh-setup\",\"history\":null,\"stones\":[]},\"mode\":\"full-game\",\"board\":[[\"B\",null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,\"W\"]],\"toPlay\":\"B\",\"history\":{\"layouts\":[\"9|.................................................................................\",\"9|B................................................................................\",\"9|B...............................................................................W\"]},\"moves\":[{\"type\":\"place\",\"color\":\"B\",\"at\":{\"row\":0,\"col\":0}},{\"type\":\"place\",\"color\":\"W\",\"at\":{\"row\":8,\"col\":8}}],\"captures\":{\"B\":0,\"W\":0},\"consecutivePasses\":0,\"phase\":\"playing\",\"komi\":0,\"lastMove\":{\"type\":\"place\",\"color\":\"W\",\"at\":{\"row\":8,\"col\":8}},\"agreement\":null,\"result\":null,\"undoStack\":[{\"size\":9,\"board\":[[null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null]],\"toPlay\":\"B\",\"history\":{\"layouts\":[\"9|.................................................................................\"]},\"moves\":[],\"captures\":{\"B\":0,\"W\":0},\"consecutivePasses\":0,\"phase\":\"playing\",\"komi\":0,\"lastMove\":null,\"agreement\":null,\"result\":null},{\"size\":9,\"board\":[[\"B\",null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null]],\"toPlay\":\"W\",\"history\":{\"layouts\":[\"9|.................................................................................\",\"9|B................................................................................\"]},\"moves\":[{\"type\":\"place\",\"color\":\"B\",\"at\":{\"row\":0,\"col\":0}}],\"captures\":{\"B\":0,\"W\":0},\"consecutivePasses\":0,\"phase\":\"playing\",\"komi\":0,\"lastMove\":{\"type\":\"place\",\"color\":\"B\",\"at\":{\"row\":0,\"col\":0}},\"agreement\":null,\"result\":null}],\"redoStack\":[]}",
+      "updatedAt": "2026-10-30T18:02:39.592Z"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "AI-UPGRADE-OFFLINE",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "DeveloperValidationReport",
+  "status": "passed",
+  "fromVersion": "0.23.0",
+  "toVersion": "0.24.0",
+  "browser": "156.0.8078.76",
+  "method": "Actual service worker and disabled browser network at one isolated /weiqi/ localhost origin; no public deployment or real member record claimed",
+  "checks": [
+    {
+      "name": "actual-worker-upgrade-0.23-to-0.24-without-clearing-human-save-draft-or-marks",
+      "status": "passed"
+    },
+    {
+      "name": "network-disabled-reload-ai-page-human-move-save-and-honest-ai-network-error",
+      "status": "passed"
+    },
+    {
+      "name": "full-backup-and-selective-progress-clear-preserve-ai-and-human-and-draft",
+      "status": "passed"
+    }
+  ],
+  "at": "2026-10-30T18:02:55.066Z",
+  "humanReviewed": null
+}

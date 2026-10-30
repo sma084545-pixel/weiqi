@@ -1,7 +1,7 @@
 ---
 schemaVersion: 1
 id: DOC-INTERFACES
-revision: 19
+revision: 20
 rulesetId: GO-CLUB-AREA-1
 ---
 
@@ -225,3 +225,9 @@ BoardMarker新增可选text:string，仅显示最多3字符的候选/气标记�
 CourseBundle/CourseLesson/CourseScene及SceneResponse见src/features/advanced-courses/types.ts；CourseScene直接使用共同Position、Coord和Move，所有演示重放通过startGame/tryMove。judgeScene返回success/suboptimal/failure/unknown/illegal/incomplete，战略评价仅针对题目条件。T10 gradeStaticAnswer参数收窄为Pick<Puzzle,'answer'>，原所有Puzzle调用兼容，判题算法未改。
 
 LearningProgress增加可选advancedLessons（lesson-id@revision索引）；旧字段和schemaVersion1保持。课程状态与自选标记不构成门槛；场景revision变化不复用旧完成结果。GuidedGameSession独立键、共同GameState与终局注释见advanced-courses/game-storage.ts；使用同一T16端口和事务键。没有新增数据库或服务端接口。
+
+## AI_PLAY 0.24.0兼容增量
+
+唯一引擎/Board/坐标约定不变。新增src/core/analysis/ai-contract.ts：AiMoveRequest带setup、实际有效events、komi、aiColor、difficulty和positionId；AiMoveResponse仅合法place/pass及身份/引擎诊断，不返回进行中评价。POST/api/ai-move与旧/api/analyze分开门槛、共享有界进程与取消。健康能力apiVersion2增量字段保持旧客户端兼容。
+
+AI续玩文档AiGameSession另有schemas/ai-session.schema.json，schemaVersion仍1，稳定id LOCAL-AI-SESSION、正revision、rulesetId不变，内部GameState沿用既有schema并重放验证。公共存储namespace games下独立键go-club:full-game:ai:v1；清学习进度不清该键。不替换原T08真人或引导棋局键。进一步契约、网络上限与回滚见ai-play/DEPLOYMENT.md。
