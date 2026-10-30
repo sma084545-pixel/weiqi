@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "AI-PLAY-CLI-JOURNEY",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "DeveloperValidationReport",
+  "at": "2026-10-30T18:00:48.135Z",
+  "browser": "156.0.8078.76",
+  "mode": "actual-browser-explicit-transport-test-doubles",
+  "checks": [
+    {
+      "name": "turns-undo-redo-slider-branch-refresh-import-export-resign-review-gate",
+      "status": "passed",
+      "requests": 2
+    },
+    {
+      "name": "rapid-double-click-cancel-undo-busy-stale-route-return-explicit-retry",
+      "status": "passed",
+      "requests": 5
+    },
+    {
+      "name": "two-pass-dead-group-confirm-reset-refresh-dispute-original-board-manual-score",
+      "status": "passed",
+      "fixedExpected": "23 black stones + 2 black empty points = 25, white 0, komi 0"
+    },
+    {
+      "name": "responsive-touch-keyboard-reduced-motion-floating-max-360",
+      "status": "passed",
+      "size": 5,
+      "difficulty": "relaxed",
+      "human": "B",
+      "geometry": {
+        "count": 25,
+        "visible": true
+      }
+    },
+    {
+      "name": "responsive-touch-keyboard-reduced-motion-floating-max-768",
+      "status": "passed",
+      "size": 13,
+      "difficulty": "standard",
+      "human": "W",
+      "geometry": {
+        "count": 169,
+        "visible": true
+      }
+    },
+    {
+      "name": "responsive-touch-keyboard-reduced-motion-floating-max-1280",
+      "status": "passed",
+      "size": 19,
+      "difficulty": "challenge",
+      "human": "B",
+      "geometry": {
+        "count": 361,
+        "visible": true
+      }
+    },
+    {
+      "name": "handicap-validate-size-loss-confirmation-white-first",
+      "status": "passed"
+    }
+  ],
+  "humanReviewed": null,
+  "status": "passed"
+}

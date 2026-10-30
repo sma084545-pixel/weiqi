@@ -2,7 +2,7 @@ import type {GameState,Coord} from '../../core/content.generated';
 import type {StoragePort} from '../../core/persistence';
 import {getGroup,serializeGame,MAX_GAME_BYTES} from '../../core/rules';
 import {restoreFullGame,type FullGameMatch,type ScoringDraft} from '../full-game/model';
-import {AI_GAME_ID,validAiOptions,type AiOptions} from './model';
+import {AI_GAME_ID,validAiOptions,validAiKomi,type AiOptions} from './model';
 
 export const AI_SESSION_KEY='go-club:full-game:ai:v1';
 export const MAX_AI_SESSION_BYTES=MAX_GAME_BYTES+262144;
@@ -12,11 +12,11 @@ export function parseAiSession(text:string):AiSessionRead {
   try{
     if(new TextEncoder().encode(text).length>MAX_AI_SESSION_BYTES)throw Error();
     const d=JSON.parse(text) as AiSessionDocument;
-    if(!d||d.schemaVersion!==1||d.id!=='LOCAL-AI-SESSION'||d.rulesetId!=='GO-CLUB-AREA-1'||d.kind!=='AiGameSession'||!Number.isSafeInteger(d.revision)||d.revision<1||!validAiOptions(d.options))throw Error();
+    if(!d||Object.keys(d).some(k=>!['schemaVersion','id','revision','rulesetId','kind','options','game','scoring'].includes(k))||d.schemaVersion!==1||d.id!=='LOCAL-AI-SESSION'||d.rulesetId!=='GO-CLUB-AREA-1'||d.kind!=='AiGameSession'||!Number.isSafeInteger(d.revision)||d.revision<1||!validAiOptions(d.options))throw Error();
     const restored=restoreFullGame(d.game);if(!restored.ok||!restored.value.game||restored.value.game.id!==AI_GAME_ID)throw Error();
     const g=restored.value.game,draft=d.scoring;
-    if(!draft||!Array.isArray(draft.deadStones)||!Array.isArray(draft.confirmedBy)||draft.confirmedBy.length>2||draft.confirmedBy.some((c,i)=>c!==(i===0?'B':'W')))throw Error();
-    const valid=(p:Coord)=>p&&Number.isInteger(p.row)&&Number.isInteger(p.col)&&p.row>=0&&p.row<g.size&&p.col>=0&&p.col<g.size;
+    if(!validAiKomi(g.komi)||!draft||Object.keys(draft).some(k=>k!=='deadStones'&&k!=='confirmedBy')||!Array.isArray(draft.deadStones)||!Array.isArray(draft.confirmedBy)||draft.confirmedBy.length>2||draft.confirmedBy.some((c,i)=>c!==(i===0?'B':'W')))throw Error();
+    const valid=(p:Coord)=>p&&Object.keys(p).every(k=>k==='row'||k==='col')&&Number.isInteger(p.row)&&Number.isInteger(p.col)&&p.row>=0&&p.row<g.size&&p.col>=0&&p.col<g.size;
     if(!draft.deadStones.every(valid))throw Error();
     const keys=new Set(draft.deadStones.map(p=>`${p.row},${p.col}`));if(keys.size!==draft.deadStones.length)throw Error();
     for(const p of draft.deadStones){const group=getGroup(g.board,p);if(!group.ok||!group.value||group.value.stones.some(at=>!keys.has(`${at.row},${at.col}`)))throw Error();}
@@ -25,7 +25,7 @@ export function parseAiSession(text:string):AiSessionRead {
   }catch{return {ok:false,message:'AI 对局记录未通过版本、设置或规则重放校验，现有棋局与原数据均未改变。可先导出备份后重试。'};}
 }
 export function aiSessionJson(match:FullGameMatch,options:AiOptions,revision=match.game?.revision??1):string {
-  if(!match.game||!validAiOptions(options))throw Error('尚无有效 AI 对局');
+  if(!match.game||!validAiOptions(options)||!validAiKomi(match.game.komi))throw Error('尚无有效 AI 对局');
   const serialized=serializeGame(match.game);if(!serialized.ok)throw Error('棋局无法序列化，原存档保留');
   const d:AiSessionDocument={schemaVersion:1,id:'LOCAL-AI-SESSION',revision,rulesetId:'GO-CLUB-AREA-1',kind:'AiGameSession',options,game:JSON.parse(serialized.value),scoring:match.scoring};
   const text=JSON.stringify(d);if(new TextEncoder().encode(text).length>MAX_AI_SESSION_BYTES)throw Error('记录过大，请导出主线棋谱。');

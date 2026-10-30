@@ -69,7 +69,7 @@ pnpm start
 
 Node版本要求见package.json；默认本机/局域网服务端口4190，Ctrl+C停止。私有runtime-data/凭据/已安装依赖不在仓库。
 
-[完整工具包、轻量软件与校验值](https://github.com/sma084545-pixel/weiqi/releases/tag/v{V})包含生产构建、全部可编辑材料、PDF/PPTX、交接和验证。历史source/0.16.0分卷只作溯源，不作为当前主线。
+[最新已完成工具包、轻量软件与校验值](https://github.com/sma084545-pixel/weiqi/releases/latest)包含生产构建、全部可编辑材料、PDF/PPTX、交接和验证；部署中的版本以project/handoff/AI_PLAY.md为准，不把源码更新等同于正式全链路完成。历史source/0.16.0分卷只作溯源，不作为当前主线。
 
 当前静态清单PUBLICATION.json、SHA256SUMS.txt；源码清单project/SOURCE_INFO.json。本次课程验收见[课程说明](project/docs/advanced-courses/IMPLEMENTATION.md)、[验收报告](project/docs/advanced-courses/ACCEPTANCE.md)；KataGo验收见project/docs/katago/，先前悬浮棋盘验收在project/docs/floating-fit/。自动化、实体制造与真人教学验证分别记录；不声称提高智商、治疗压力、改善学业或保证CAS认可。第三方许可证随docs和字体目录保留。
 ''')

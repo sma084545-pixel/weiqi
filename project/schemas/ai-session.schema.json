@@ -55,7 +55,21 @@
       }
     },
     "game": {
-      "$ref": "urn:go-club:schema:content:1#/$defs/GameState"
+      "allOf": [
+        {
+          "$ref": "urn:go-club:schema:content:1#/$defs/GameState"
+        },
+        {
+          "properties": {
+            "komi": {
+              "type": "number",
+              "minimum": -100,
+              "maximum": 100,
+              "multipleOf": 0.5
+            }
+          }
+        }
+      ]
     },
     "scoring": {
       "type": "object",

@@ -55,6 +55,15 @@ describe('AI full-game model uses the shared rule/history implementation',()=>{
 });
 
 describe('independent AI session persistence and safe import',()=>{
+  it('rejects undeclared session/options/draft fields before they can survive a schema-invalid export',()=>{
+    for(const change of [(d:any)=>d.extra='unrecognized',(d:any)=>d.options.extra='unrecognized',(d:any)=>d.scoring.extra='unrecognized']){
+      const d=JSON.parse(aiSessionJson(start(),DEFAULT_AI_OPTIONS));change(d);expect(parseAiSession(JSON.stringify(d)).ok).toBe(false);
+    }
+  });
+  it('rejects a legally replayable game outside the AI service komi range while keeping the generic rules unchanged',()=>{
+    const ordinary=unwrap(rulesEngine.startGame(start().game!.setup,{mode:'full-game',gameId:AI_GAME_ID,komi:200}));expect(rulesEngine.restoreGame(ordinary).ok).toBe(true);
+    const d=JSON.parse(aiSessionJson(start(),DEFAULT_AI_OPTIONS));d.game=ordinary;expect(parseAiSession(JSON.stringify(d)).ok).toBe(false);
+  });
   it('published additive schema accepts playing and confirmed exports and rejects malformed identities',()=>{
     const ajv=new Ajv({allErrors:true,strict:false});ajv.addSchema(contentSchema);const valid=ajv.compile(aiSchema);
     let m=start();expect(valid(JSON.parse(aiSessionJson(m,DEFAULT_AI_OPTIONS)))).toBe(true);

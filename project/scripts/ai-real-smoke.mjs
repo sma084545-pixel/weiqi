@@ -19,6 +19,11 @@ const place=(g,row,col)=>value(rules.tryMove(g,{type:'place',color:g.toPlay,at:{
 const pre=await fetch(base+'/api/ai-move',{method:'OPTIONS',headers:{Origin:origin,'Access-Control-Request-Method':'POST','Access-Control-Request-Headers':'content-type'}});
 assert.equal(pre.status,204);assert.equal(pre.headers.get('Access-Control-Allow-Origin'),origin);
 checks.push({name:'exact-origin-ai-preflight',status:'passed'});
+for(const local of ['http://127.0.0.1:4190','http://localhost:4190']){
+  const res=await fetch(base+'/api/ai-move',{method:'OPTIONS',headers:{Origin:local,'Access-Control-Request-Method':'POST','Access-Control-Request-Headers':'content-type'}});assert.equal(res.status,204);assert.equal(res.headers.get('Access-Control-Allow-Origin'),local);
+}
+assert.equal((await fetch(base+'/readyz',{headers:{Origin:'http://127.0.0.1:4191'}})).status,403);
+checks.push({name:'exact-local-app-origins-only',status:'passed'});
 const payload=(game,difficulty,id)=>({schemaVersion:1,positionId:id,aiColor:game.toPlay,difficulty,game:{setup:game.setup,komi:game.komi,events:game.moves}});
 const request=async(g,difficulty,name)=>{
   const req=payload(g,difficulty,name),at=Date.now();

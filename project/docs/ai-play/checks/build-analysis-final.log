@@ -1,11 +1,11 @@
 Already up to date
-Done in 171ms using pnpm v11.19.0
+Done in 147ms using pnpm v11.19.0
 $ vite build --config vite.analysis.config.ts
 vite v8.2.2 building ssr environment for production...
 transforming...
 ✓ 90 modules transformed.
 rendering chunks...
 computing gzip size...
-dist-analysis/analysis.mjs  324.15 kB │ gzip: 73.81 kB
+dist-analysis/analysis.mjs  324.35 kB │ gzip: 73.88 kB
 
-✓ built in 27ms
+✓ built in 23ms

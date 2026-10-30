@@ -7,11 +7,12 @@ import {createFullGameMatch,validateCurrentSetup,restoreFullGame,playAt,passTurn
 export const AI_GAME_ID='LOCAL-AI-FULL-GAME';
 export interface AiOptions {humanColor:Color;difficulty:AiDifficulty}
 export const DEFAULT_AI_OPTIONS:AiOptions={humanColor:'B',difficulty:'standard'};
-export const validAiOptions=(v:unknown):v is AiOptions=>!!v&&typeof v==='object'&&['B','W'].includes((v as AiOptions).humanColor)&&isAiDifficulty((v as AiOptions).difficulty);
+export const validAiOptions=(v:unknown):v is AiOptions=>!!v&&typeof v==='object'&&!Array.isArray(v)&&Object.keys(v).every(k=>k==='humanColor'||k==='difficulty')&&['B','W'].includes((v as AiOptions).humanColor)&&isAiDifficulty((v as AiOptions).difficulty);
+export const validAiKomi=(n:number)=>Number.isFinite(n)&&Math.abs(n)<=100&&Number.isInteger(n*2);
 export function startAiGame(match:FullGameMatch):FullGameFlowResult {
   if(match.game)return {ok:false,error:{code:'SETTINGS_LOCKED'}};
   const checked=validateCurrentSetup(match);if(!checked.ok)return checked;
-  if(Math.abs(match.setup.komi)>100||!Number.isInteger(match.setup.komi*2))return {ok:false,error:{code:'INVALID_ARGUMENT',field:'/komi'}};
+  if(!validAiKomi(match.setup.komi))return {ok:false,error:{code:'INVALID_ARGUMENT',field:'/komi'}};
   const started=rulesEngine.startGame({...checked.value.position,id:'LOCAL-AI-SETUP'},{mode:'full-game',komi:match.setup.komi,gameId:AI_GAME_ID});
   return started.ok?{ok:true,value:{...match,game:started.value,scoring:{deadStones:[],confirmedBy:[]},message:'对局开始，难度、执色、贴目与起始方式已锁定。'}}:started;
 }

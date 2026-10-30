@@ -33,13 +33,20 @@ describe('AI endpoint validates history and limits without changing ordinary rev
 const engines:KataGoEngine[]=[];
 afterEach(async()=>{await Promise.all(engines.splice(0).map(e=>e.stop()));});
 describe('AI HTTP transport with explicit development engine fixture',()=>{
+  it('optionally permits only the two exact local app origins, not other ports or github.io sites',async()=>{
+    const e=new KataGoEngine({executable:process.execPath,args:[],version:'test',model:'test',maxVisits:64,maxQueue:2,timeoutMs:500,startupTimeoutMs:500});
+    const s=createAnalysisServer(e,'https://sma084545-pixel.github.io',{additionalOrigins:['http://127.0.0.1:4190','http://localhost:4190']});await new Promise<void>(r=>s.listen(0,'127.0.0.1',r));const url=`http://127.0.0.1:${(s.address() as {port:number}).port}`;
+    try{for(const origin of ['http://127.0.0.1:4190','http://localhost:4190']){const res=await fetch(url+'/api/ai-move',{method:'OPTIONS',headers:{Origin:origin,'Access-Control-Request-Method':'POST','Access-Control-Request-Headers':'content-type'}});expect(res.status).toBe(204);expect(res.headers.get('Access-Control-Allow-Origin')).toBe(origin);}
+      for(const origin of ['http://127.0.0.1:4191','https://other.github.io'])expect((await fetch(url+'/readyz',{headers:{Origin:origin}})).status).toBe(403);
+    }finally{s.closeAllConnections();await new Promise<void>(r=>s.close(()=>r()));}
+  });
   it('real HTTP route, exact-origin CORS, separate review gate, budgets, limits and ready capabilities',async()=>{
     const e=new KataGoEngine({executable:process.execPath,args:[fileURLToPath(new URL('../analysis/process-fixture.mjs',import.meta.url))],version:'1.18.1',model:'test-model',maxVisits:64,maxQueue:2,timeoutMs:2000,startupTimeoutMs:2000});engines.push(e);e.start();
     for(let i=0;i<100&&!e.health().ready;i++)await new Promise(r=>setTimeout(r,10));expect(e.health().ready).toBe(true);
     const server=createAnalysisServer(e,'https://sma084545-pixel.github.io',{aiRatePerMinute:3,globalPerMinute:8});await new Promise<void>(r=>server.listen(0,'127.0.0.1',r));const addr=server.address() as {port:number},url=`http://127.0.0.1:${addr.port}`;
     try{
       const pre=await fetch(url+'/api/ai-move',{method:'OPTIONS',headers:{Origin:'https://sma084545-pixel.github.io','Access-Control-Request-Method':'POST','Access-Control-Request-Headers':'content-type'}});expect(pre.status).toBe(204);expect(pre.headers.get('Access-Control-Allow-Origin')).toBe('https://sma084545-pixel.github.io');
-      expect((await (await fetch(url+'/healthz')).json())).toMatchObject({appVersion:'0.24.0',apiVersion:2,features:['review','ai-move']});
+      expect((await (await fetch(url+'/healthz')).json())).toMatchObject({appVersion:'0.24.1',apiVersion:2,features:['review','ai-move']});
       const post=(d:unknown,path='/api/ai-move')=>fetch(url+path,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)});
       expect((await post({...body(),game:{...body().game,events:[]},reviewIndex:0,aiColor:undefined,difficulty:undefined},'/api/analyze')).status).toBe(409);
       for(const difficulty of ['relaxed','standard','challenge']){const res=await post(body(difficulty)),data=await res.json();expect(res.status).toBe(200);expect(data.engine.name).toBe('KataGo');expect(data.engine.maxVisits).toBe(({relaxed:8,standard:24,challenge:64} as any)[difficulty]);expect('candidates' in data).toBe(false);expect('blackScoreLead' in data).toBe(false);}

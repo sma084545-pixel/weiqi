@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "AI-DOCUMENT-PIP",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "passed",
+  "independentWindow": true,
+  "intersections": 81,
+  "mainMoves": "4",
+  "response": {
+    "schemaVersion": 1,
+    "positionId": "ai-cfcf5148-b081-45cc-aae5-1bfa3e808349",
+    "requestId": "0d3bc44c-4770-4641-b500-133f5e74f66e",
+    "aiColor": "W",
+    "difficulty": "standard",
+    "move": {
+      "type": "place",
+      "at": {
+        "row": 3,
+        "col": 4
+      }
+    },
+    "engine": {
+      "name": "KataGo",
+      "version": "1.18.1",
+      "model": "g170-b6c96-s175395328-d26788732",
+      "backend": "Eigen CPU",
+      "maxVisits": 24
+    },
+    "visits": 24,
+    "elapsedMs": 121
+  },
+  "browser": "156.0.8078.76",
+  "at": "2026-10-30T18:15:38.782Z"
+}

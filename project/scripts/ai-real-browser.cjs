@@ -20,7 +20,10 @@ async page => {
     await click('撤回一手');await attr('data-move-count',1);await attr('data-paused','true');await click('重做一手');await attr('data-move-count',2);
     await p.reload();await attr('data-move-count',2);await attr('data-paused','true');assert(responses.length===1,'refresh/undo/redo must not duplicate inference');
     await p.evaluate(()=>scrollTo(0,0));await p.screenshot({path:'output/playwright/ai-real-9-full.png',fullPage:true});
-    checks.push({name:'real-nine-human-black-ai-white-undo-redo-refresh',status:'passed',responses});await t.close();
+    await click('我认输');await click('确认我认输');await attr('data-phase','finished');await p.getByText(/本局以认输结束，不编造面积分/).waitFor();
+    await p.getByRole('slider',{name:'棋局滑动条'}).focus();await p.keyboard.press('Home');await p.keyboard.press('ArrowRight');await click('分析当前复盘局面');await p.getByTestId('katago-result').waitFor();
+    assert(responses.some(r=>r.url.endsWith('/api/analyze')&&r.status===200),'real completed nine-board review');
+    checks.push({name:'real-nine-human-black-ai-white-undo-redo-refresh-resign-postgame-review',status:'passed',responses});await t.close();
   }
   {
     const t=await fresh(360,true),{p,attr,click,responses}=t;await p.getByLabel('棋盘尺寸').selectOption('5');await p.getByLabel('难度').selectOption('relaxed');await p.getByRole('radio',{name:'白方（AI 先行）'}).check();await click('验证设置并开始 AI 对局');await attr('data-move-count',1);await attr('data-turn','W');

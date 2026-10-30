@@ -4,7 +4,7 @@
   "revision": 1,
   "rulesetId": "GO-CLUB-AREA-1",
   "kind": "DeveloperValidationReport",
-  "at": "2026-10-30T18:00:48.135Z",
+  "at": "2026-10-30T18:29:40.089Z",
   "browser": "156.0.8078.76",
   "mode": "actual-browser-explicit-transport-test-doubles",
   "checks": [

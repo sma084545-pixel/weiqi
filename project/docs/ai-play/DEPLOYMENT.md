@@ -11,7 +11,7 @@ rulesetId: GO-CLUB-AREA-1
 
 - 页面：`#/play/ai`；集中地址：`deploy/github-pages.json.analysisOrigin`，发布构建注入 `VITE_KATAGO_API_ORIGIN`。
 - 服务： https://weiqi-katago.onrender.com ，就绪 `/readyz`、存活 `/healthz`。新版本返回 `apiVersion:2` 及 `features:[review,ai-move]`；健康200不是完成对弈的证明。
-- 新增 `POST /api/ai-move`，沿用 exact Origin `https://sma084545-pixel.github.io` 和 Content-Type 预检，无凭据/用户账号。请求带 schemaVersion1、唯一positionId、真实setup/events/komi、aiColor、difficulty。服务端重放合法历史并复查轮次；返回匹配的requestId/positionId、唯一合法place/pass、引擎与搜索诊断。进行中的对弈接口不返回胜率、目差或候选分析。
+- 新增 `POST /api/ai-move`，沿用 exact Origin `https://sma084545-pixel.github.io` ，以及本机软件两个固定Origin `http://127.0.0.1:4190` / `http://localhost:4190`，和 Content-Type 预检，无凭据/用户账号。请求带 schemaVersion1、唯一positionId、真实setup/events/komi、aiColor、difficulty。服务端重放合法历史并复查轮次；返回匹配的requestId/positionId、唯一合法place/pass、引擎与搜索诊断。进行中的对弈接口不返回胜率、目差或候选分析。
 - 原 `/api/analyze` 保留“完整对局结束后”门槛；没有通过伪造认输来请求普通进行中局面。
 - 3档最大搜索8/24/64，受 `KATAGO_MAX_VISITS` 上限限制。最大15秒搜索；引擎单实例单工作进程，1计算+2等待，90秒总期限。客户端100秒超时；180毫秒可取消启用，避免StrictMode重复。
 - 每IP每分钟AI12次、赛后分析6次，全服务18次；客户端表最多512键。256KB请求、1600有效事件；超限、排队满、超时、引擎退出各有明确错误。取消和历史变化会终止/清理对应计算；无自动无限重试。
@@ -24,7 +24,7 @@ KataGo1.18.1、Eigen CPU、6块96通道小模型 `g170-b6c96-s175395328-d2678873
 
 ## 环境变量（仅名称与用途）
 
-`PORT` Render监听端口；`PUBLIC_ORIGIN` 唯一允许网页来源；`KATAGO_MAX_VISITS` 1–64总预算上限；`KATAGO_PATH`、`KATAGO_MODEL`、`KATAGO_CONFIG` 本机/镜像内固定引擎文件；`VITE_KATAGO_API_ORIGIN` 前端集中公开服务地址。沿用原服务默认值，无新秘密。不得把平台凭据放进网页。
+`PORT` Render监听端口；`PUBLIC_ORIGIN` 正式网页来源（另固定允许两个本机软件Origin）；`KATAGO_MAX_VISITS` 1–64总预算上限；`KATAGO_PATH`、`KATAGO_MODEL`、`KATAGO_CONFIG` 本机/镜像内固定引擎文件；`VITE_KATAGO_API_ORIGIN` 前端集中公开服务地址。沿用原服务默认值，无新秘密。不得把平台凭据放进网页。
 
 ## 更新与回滚
 
@@ -39,3 +39,5 @@ KataGo1.18.1、Eigen CPU、6块96通道小模型 `g170-b6c96-s175395328-d2678873
 本任务沿用现有免费服务，无新增付费资源。免费实例有休眠、共享时间与构建/带宽额度；账户剩余额度须由账户持有人核对，不推断账单。普通CPU仅有限并发，冷启动/忙时可能手动等待重试；实测配置、耗时和内存见验收报告，不能由少量样本保证每步秒回或多人实时服务。
 
 官方核对： [KataGo v1.18.1 Analysis Engine](https://github.com/lightvector/KataGo/blob/v1.18.1/docs/Analysis_Engine.md)、[Render免费限制](https://render.com/docs/free)、[部署](https://render.com/docs/deploys)、[实例](https://render.com/docs/compute-plans)，访问2026-10-30。旧模型/引擎与完整Docker来源保留原许可证说明。
+
+本机软件的127.0.0.1:4190与localhost:4190已加入服务端两个精确CORS白名单，仍不允许任意github.io、其他端口或任意局域网IP。这样正式网站与默认本机软件都能调用同一Render引擎，不伪造Origin或使用账户代理。该增量需要最新0.24.1后端；c6a80ac只支持正式网站，不能据此宣称本机也已接通。

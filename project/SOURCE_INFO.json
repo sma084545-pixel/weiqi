@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "id": "GITHUB-CURRENT-SOURCE",
-  "revision": 24,
+  "revision": 25,
   "rulesetId": "GO-CLUB-AREA-1",
-  "resultVersion": "0.24.0-pages.1",
-  "programVersion": "0.24.0",
+  "resultVersion": "0.24.1-pages.1",
+  "programVersion": "0.24.1",
   "sourceBuild": "pnpm install --frozen-lockfile && pnpm build",
   "note": "Buildable source and materials; installed dependencies, private data and generated root build/output excluded. Full release archive includes production builds and all evidence.",
   "files": [
@@ -25,8 +25,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 27607,
-      "sha256": "da9cfad0876737a5d1aa8c8ab80e314e56e069071349810dc734180496599be8"
+      "bytes": 27758,
+      "sha256": "cb22398e8b3505f871a266e95fb2b236d1ab5250ea01beb7da8a47cffbbae8d7"
     },
     {
       "path": "MERGE_C_RELEASE_MANIFEST.json",
@@ -36,7 +36,7 @@
     {
       "path": "README.md",
       "bytes": 9713,
-      "sha256": "3f82307821e33ead9eb91507027d1e3585c365de2f4e3679785421fc683d02b3"
+      "sha256": "149a5e942b3e4ae29f4f1a02e04b38badacd2db57a253c7e24fc33f522c33356"
     },
     {
       "path": "README_MERGE_C.md",
@@ -56,7 +56,7 @@
     {
       "path": "package.json",
       "bytes": 4318,
-      "sha256": "66ea34268cf9c5f9d6e193985091dd62de37803f030c435334acfb5a2612450d"
+      "sha256": "2210242053f45adc2de52ff212c1581d5f183dd276a929a8598131cdab647b55"
     },
     {
       "path": "playwright.advanced-regression.config.ts",
@@ -3905,8 +3905,8 @@
     },
     {
       "path": "handoff/AI_PLAY.md",
-      "bytes": 4076,
-      "sha256": "5356613bda0e6a0aaccbc8a1cbea583c0427a1ab948fa13a4f2bfc1e80287a11"
+      "bytes": 6296,
+      "sha256": "3ff0595dce4b7852898c472a5d9ce4c852b3aef213bd28835ba44e439a9a0736"
     },
     {
       "path": "handoff/CONTENT_FREEZE.json",
@@ -4495,8 +4495,8 @@
     },
     {
       "path": "tests/ai-game/api.test.ts",
-      "bytes": 6349,
-      "sha256": "e12e11dda84bbe4453f0451e83186beaeac2dd0d848824bb722a3162ff9b8a89"
+      "bytes": 7479,
+      "sha256": "9646501c72131b13f574a2a825355c3565773c65af029863641cea83bec44afa"
     },
     {
       "path": "tests/ai-game/client.test.ts",
@@ -4505,8 +4505,8 @@
     },
     {
       "path": "tests/ai-game/model.test.ts",
-      "bytes": 9365,
-      "sha256": "739cb0ecaecea50ba542904e8f9a9c00dbd76bb1e290230c81be0bfc32ff1924"
+      "bytes": 10204,
+      "sha256": "442d0f12cca2fb8d9694fa56d5364d9f1c7f2005edd6e41ed5ef37daa77aa498"
     },
     {
       "path": "tests/ai-game/fixtures/forced-pass.json",
@@ -5775,13 +5775,13 @@
     },
     {
       "path": "server/analysis/http.ts",
-      "bytes": 6249,
-      "sha256": "2a71300fbbddd5bf18ed55e82ec8eda0a47f2b4e2e7412b967d9524009be38e5"
+      "bytes": 6392,
+      "sha256": "4187b652932f52cca1cd85d4e312049ed86ad1ba9830acaa367921cd1ac2a453"
     },
     {
       "path": "server/analysis/index.ts",
-      "bytes": 1830,
-      "sha256": "c0db77367cf8431c03e9d27c8db86428a2459467ef17e99021c27a1513d1e482"
+      "bytes": 1995,
+      "sha256": "17a9fe537e7864f0291ec332767a65c3e76109741f0787c44b5ebba7abef103d"
     },
     {
       "path": "server/analysis/position.ts",
@@ -7405,18 +7405,23 @@
     },
     {
       "path": "docs/ai-play/ACCEPTANCE.md",
-      "bytes": 4301,
-      "sha256": "0ee1b074ac9969d6ccee9e68c25aa5708c9af45f0c453b687d8c4eebd549be46"
+      "bytes": 5310,
+      "sha256": "4ee50eca38a64b3f3a9e5535b3f0a9a9ab6fd44f075eae4be51bfccb66f95fde"
+    },
+    {
+      "path": "docs/ai-play/CHANGED_FILES.json",
+      "bytes": 18566,
+      "sha256": "155e405c62bc342174a7381b2fc48f9bca8e7eaa85b029a942f806642928075b"
     },
     {
       "path": "docs/ai-play/DEPLOYMENT.md",
-      "bytes": 4881,
-      "sha256": "fba465c915b5a5fb9aded04206b68e41afd02004c7de598602adb2a34b99a9c9"
+      "bytes": 5388,
+      "sha256": "ce3abd379174edb7f31286a9185f05d9d1467850c1a519713c55ca0c707f46d9"
     },
     {
       "path": "docs/ai-play/KNOWN_ISSUES.md",
-      "bytes": 1838,
-      "sha256": "14c5ea8782be5070f1cddb448a7eccc8bc68357aaa9b1c2ceb538357ffda86eb"
+      "bytes": 1842,
+      "sha256": "e6d38920cd97b9ae6448a80dc486af31cfac375434a6609cb47cbb62462d2306"
     },
     {
       "path": "docs/ai-play/USAGE.md",
@@ -7459,6 +7464,11 @@
       "sha256": "33293e61c19f1aacfe79ba68c682d0c423804def2508795469dcd324c2ccdd09"
     },
     {
+      "path": "docs/ai-play/checks/ai-public-upgrade-setup.png",
+      "bytes": 474279,
+      "sha256": "9bd15939c3c41f7d5528d92e03b1f24aee4899845a115f71a09bf3112fdbacbc"
+    },
+    {
       "path": "docs/ai-play/checks/ai-real-360-keyboard.png",
       "bytes": 283304,
       "sha256": "234509cd318131e3940f60d36052a4426cc819df2ee2573296f612d69bdd031e"
@@ -7472,6 +7482,11 @@
       "path": "docs/ai-play/checks/ai-real-9-full.png",
       "bytes": 320465,
       "sha256": "539f41f38f1a048d1e17fca3283d1eaa3098b977dfec11083129208bb5925587"
+    },
+    {
+      "path": "docs/ai-play/checks/ai-real-document-pip.png",
+      "bytes": 83960,
+      "sha256": "5dd989368d9167c878970b56cfdf08535ccfe19ed4510e51db3471744e234cce"
     },
     {
       "path": "docs/ai-play/checks/ai-real-pass-finish-review.png",
@@ -7504,9 +7519,14 @@
       "sha256": "868ca346636299799db9347f0304ba6682edb88660424add55019067a3a6025b"
     },
     {
-      "path": "docs/ai-play/checks/browser-journey.json",
+      "path": "docs/ai-play/checks/browser-journey-initial.json",
       "bytes": 1730,
       "sha256": "8ef4a5d26e3b884ede52d0b1f1f13c7f25d439c1edae251e5371aeba6632d9dd"
+    },
+    {
+      "path": "docs/ai-play/checks/browser-journey.json",
+      "bytes": 1730,
+      "sha256": "1a8f34dac8e1e43b0fcb0abbc4376d7b4b839609ca52ad47e4bc1f0de9b15910"
     },
     {
       "path": "docs/ai-play/checks/browser-regression-final.log",
@@ -7526,22 +7546,32 @@
     {
       "path": "docs/ai-play/checks/build-analysis-final.log",
       "bytes": 317,
-      "sha256": "6910239850466e591d6cb99f96fde3bf5db76c525c6d30adce5f598813297b7e"
+      "sha256": "955656de56b3f029695797cb6f93fd11c432c403f16565191bcf4cf8b202bb0b"
     },
     {
       "path": "docs/ai-play/checks/build-pages-final.log",
       "bytes": 1181,
-      "sha256": "379b710e6b8c599aed6891287c393909ca285427a9778dd98294888017fde053"
+      "sha256": "c7be70fd4bc878312f9eedea9d0456fad77f5b4cf5d8f85532eb2b02e085b2d1"
     },
     {
       "path": "docs/ai-play/checks/check-final.log",
       "bytes": 6949,
-      "sha256": "624eafb08ae66ac1c63f9c331030be6a7647a1905f635c7b9f41b36510d86c76"
+      "sha256": "9b7549866d7ae0aab08306b8b2a269cd8069e00f94a10b8fe5c28a60ac92e95d"
     },
     {
       "path": "docs/ai-play/checks/check-initial.log",
       "bytes": 6949,
       "sha256": "7b0b78bfb462cf518d356d96ca2772ec10647f092dd97ff635cfb2b198eb536b"
+    },
+    {
+      "path": "docs/ai-play/checks/check-loopback-type-failure.log",
+      "bytes": 4777,
+      "sha256": "143f65a0d556a2ad609ce5c6a6927fd38afc28b1e47c286e85f00eef71961338"
+    },
+    {
+      "path": "docs/ai-play/checks/document-pip.json",
+      "bytes": 791,
+      "sha256": "022118d319aaf8e0929e32ec19661c40d3055729d2c78349c40dd50c2bfa7485"
     },
     {
       "path": "docs/ai-play/checks/frontend-review-1280.png",
@@ -7559,9 +7589,19 @@
       "sha256": "88fa83c195a2625ccbe24bc18f3c35cc8776e7bdef1eb9afa78c4da9dd3ed170"
     },
     {
-      "path": "docs/ai-play/checks/native-real-browser.json",
+      "path": "docs/ai-play/checks/native-real-browser-initial.json",
       "bytes": 5205,
       "sha256": "4a33b667a1f61807c659afd4bc0a0af1da5586840bccf61c87319599339250bc"
+    },
+    {
+      "path": "docs/ai-play/checks/native-real-browser.json",
+      "bytes": 11487,
+      "sha256": "bb4cd3b88be5d5aad055c8f7ce100f488ae4808f8b04e931f4b2368bfcee0fb9"
+    },
+    {
+      "path": "docs/ai-play/checks/native-real-http-0241.json",
+      "bytes": 8918,
+      "sha256": "8b6b8daea7ce2452897a0b7fb46148defe11e26cc2e5c8d28c20fadcb7cc4b60"
     },
     {
       "path": "docs/ai-play/checks/native-real-http.json",
@@ -7571,7 +7611,17 @@
     {
       "path": "docs/ai-play/checks/preservation.json",
       "bytes": 687,
-      "sha256": "015be8d1bc39f65ca11eb09b71cc960acb9a2c25df3d36cbdf036da8a57fb562"
+      "sha256": "7d59c122848d177a3876d77bf1430d0954f153298e50a1657377b5c6a064e942"
+    },
+    {
+      "path": "docs/ai-play/checks/public-assets.json",
+      "bytes": 2699,
+      "sha256": "0144f7bf9c01fe7e93c853c8b71899ea9193becb0f53704eb8b4b54f005d2ec6"
+    },
+    {
+      "path": "docs/ai-play/checks/public-upgrade.json",
+      "bytes": 434,
+      "sha256": "276d5b47c85e03b65bba5a973dbaef88d088d8835395762657555d36ec99fd24"
     },
     {
       "path": "docs/ai-play/checks/upgrade-offline.json",
@@ -7615,6 +7665,46 @@
     },
     {
       "path": "docs/ai-play/checks/docker-real-5ed6920/resource-limits.json",
+      "bytes": 1547,
+      "sha256": "df65b1c7c21fc4ac7df46835d755e9618b047528767934a9b37467789721c5d8"
+    },
+    {
+      "path": "docs/ai-play/checks/docker-real-c6a80ac/ai-real-http.json",
+      "bytes": 8910,
+      "sha256": "9a4a3cc04f2ba5dbc711441d9b32e6b4303802640c436f8a4dfb5d14f2c51e08"
+    },
+    {
+      "path": "docs/ai-play/checks/docker-real-c6a80ac/container-state.json",
+      "bytes": 594,
+      "sha256": "8b07dc034e377f173f42110eac9033f4bae50ebd1a320770539eef6e80a25971"
+    },
+    {
+      "path": "docs/ai-play/checks/docker-real-c6a80ac/container-stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/ai-play/checks/docker-real-c6a80ac/container-stdout.log",
+      "bytes": 151,
+      "sha256": "1561d2c1880ca9070ba61b855d0685b1cd4c6d1943c04714da859b6d5e9527f8"
+    },
+    {
+      "path": "docs/ai-play/checks/docker-real-c6a80ac/engine-version.txt",
+      "bytes": 99,
+      "sha256": "5af6ff0df26dd1e91ea4907572175522f4deb21831b26765964fea9dcc01138a"
+    },
+    {
+      "path": "docs/ai-play/checks/docker-real-c6a80ac/memory-peak-bytes.txt",
+      "bytes": 9,
+      "sha256": "241bdeab208c3615e8b662a514e329dbbfe60ca480130a6ffffba4320a9d5aeb"
+    },
+    {
+      "path": "docs/ai-play/checks/docker-real-c6a80ac/real-http-smoke.json",
+      "bytes": 20838,
+      "sha256": "bb80695f00d96035be0246358abf08cdad1a7f07fef1bf6bdf4b4ba1d5be02e5"
+    },
+    {
+      "path": "docs/ai-play/checks/docker-real-c6a80ac/resource-limits.json",
       "bytes": 1547,
       "sha256": "df65b1c7c21fc4ac7df46835d755e9618b047528767934a9b37467789721c5d8"
     },
@@ -14300,8 +14390,8 @@
     },
     {
       "path": "schemas/ai-session.schema.json",
-      "bytes": 2403,
-      "sha256": "d8cc54d81e92c69c76ea7c6db80dffb0918245cefe3b622465158c6759978569"
+      "bytes": 2672,
+      "sha256": "9e8bbb43e445d542ea26036a7c53ad0ed37c56127535138a86cb8083c1054527"
     },
     {
       "path": "schemas/content.schema.json",
@@ -14364,19 +14454,29 @@
       "sha256": "131b076bfde8edc973843f50b5da96c64d170a170e10db56dd6172597e1103e0"
     },
     {
+      "path": "scripts/ai-document-pip-browser.cjs",
+      "bytes": 1708,
+      "sha256": "3378ba8ab90fd2d897bfd45ded255f8e03f2dced4cef8b52478069b7aba59a46"
+    },
+    {
+      "path": "scripts/ai-public-upgrade.cjs",
+      "bytes": 1543,
+      "sha256": "1c3c28b1c0f0171df7abb5d5c0b11218ae3e0e784e1dba51526926404513bf09"
+    },
+    {
       "path": "scripts/ai-real-browser.cjs",
-      "bytes": 5068,
-      "sha256": "fabf76e9f555c93f1d0f176f74419592aaf1285cab346bf4a939395749fdd00d"
+      "bytes": 5597,
+      "sha256": "8bb59eaf2a1ee9f5c03863bbbdcd380d524f7851469b560dc4f995c912a6ae3f"
     },
     {
       "path": "scripts/ai-real-smoke.mjs",
-      "bytes": 5976,
-      "sha256": "1a4d9005dcdd35eceb54feb5525eb6d25ecded15b1e234b731d79f16edc23df6"
+      "bytes": 6487,
+      "sha256": "c3cb2996ec9cda49900945f33f5fbbdbd8e94b67203b2800f367fca8008eeb46"
     },
     {
       "path": "scripts/ai-upgrade-browser.cjs",
       "bytes": 5752,
-      "sha256": "8862f17c2fce928ea1a8f27f9afdd0ac93a3ed7c041dfa81d99acaceb5706d03"
+      "sha256": "f6dc53a7fd5554c6414e581e6c8a7ca258b87d3eb73bc7b4d42b36f2ceb95934"
     },
     {
       "path": "scripts/ai-upgrade-server.py",
@@ -14547,6 +14647,11 @@
       "path": "scripts/package-advanced.py",
       "bytes": 4785,
       "sha256": "8be061bd7762d67b9d0fa7cc4939d5edbf06b6982fecbe0c26ed830ab7292ba4"
+    },
+    {
+      "path": "scripts/package-ai-play.py",
+      "bytes": 7756,
+      "sha256": "6288230a378bf049c5094da39250de5b5567814df198a53c405dd7640e17a61a"
     },
     {
       "path": "scripts/package-floating-fit.py",
@@ -14775,8 +14880,8 @@
     },
     {
       "path": "scripts/sync-github-pages.py",
-      "bytes": 9345,
-      "sha256": "e7f6627af5c750777a3d64417b800f7b1f3ebebb913860bcb194bf9c69b32ccf"
+      "bytes": 9459,
+      "sha256": "bba430620a058977184eb20013b0e01bfecba17fdb5ecbf8e6e9b7036ca7bdac"
     },
     {
       "path": "scripts/validate-advanced.ts",
@@ -15151,7 +15256,7 @@
     {
       "path": "src/core/version.ts",
       "bytes": 117,
-      "sha256": "242bfdb3429f67f24d49c6e47da5de86abcdd99aa2f6acb20ae5052d02b2a684"
+      "sha256": "d1efc367fcfbb5d02192d958292e67986b6907f677eab1c5650d208857e92d83"
     },
     {
       "path": "src/core/analysis/ai-contract.ts",
@@ -15635,13 +15740,13 @@
     },
     {
       "path": "src/features/ai-game/model.ts",
-      "bytes": 2964,
-      "sha256": "98534154c3ea7cc07b04adac2009bba88fb82c92070cf4b7e8211c75f26e9ad6"
+      "bytes": 3103,
+      "sha256": "83a4ff96a08ae30666bfd78df0c150187e743ce72ad6975ade8c274d4770b8b5"
     },
     {
       "path": "src/features/ai-game/storage.ts",
-      "bytes": 4047,
-      "sha256": "b1d0e177a006536911551dd1ab61a549428dedebe3a788e79060d010cf77b066"
+      "bytes": 4342,
+      "sha256": "b38ebae100fb714cd7df7639467e78a957ed515304daab5963113bdab1275fc7"
     },
     {
       "path": "src/features/ai-game/useAiOpponent.ts",

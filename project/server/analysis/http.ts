@@ -5,8 +5,9 @@ import {prepareAiMove,selectAiMove} from './ai';
 import {APP_VERSION} from '../../src/core/version';
 
 export const MAX_BODY_BYTES=256_000;
-export function createAnalysisServer(engine:KataGoEngine,origin:string,options:{ratePerMinute?:number;aiRatePerMinute?:number;globalPerMinute?:number}={}){
+export function createAnalysisServer(engine:KataGoEngine,origin:string,options:{ratePerMinute?:number;aiRatePerMinute?:number;globalPerMinute?:number;additionalOrigins?:readonly string[]}={}){
   const rate=options.ratePerMinute??6,globalRate=options.globalPerMinute??18;
+  const allowedOrigins=new Set([origin,...options.additionalOrigins??[]]);
   const clients=new Map<string,{start:number;count:number}>();let global={start:Date.now(),count:0};
   function consume(req:IncomingMessage,ai:boolean){
     const now=Date.now();if(now-global.start>=60_000)global={start:now,count:0};
@@ -24,8 +25,8 @@ export function createAnalysisServer(engine:KataGoEngine,origin:string,options:{
     const send=(status:number,body:unknown)=>{if(res.destroyed||res.writableEnded)return;res.writeHead(status,{'Content-Type':'application/json; charset=utf-8'});res.end(JSON.stringify(body));};
     try{
       const caller=req.headers.origin;
-      if(caller&&caller!==origin)throw new ApiError('ORIGIN_DENIED',403,'此来源不允许调用分析接口。');
-      if(caller===origin){res.setHeader('Access-Control-Allow-Origin',origin);res.setHeader('Access-Control-Expose-Headers','Retry-After');}
+      if(caller&&!allowedOrigins.has(caller))throw new ApiError('ORIGIN_DENIED',403,'此来源不允许调用分析接口。');
+      if(caller&&allowedOrigins.has(caller)){res.setHeader('Access-Control-Allow-Origin',caller);res.setHeader('Access-Control-Expose-Headers','Retry-After');}
       const path=new URL(req.url??'/',`http://${req.headers.host??'localhost'}`).pathname;
       if(req.method==='OPTIONS'){
         if(path!=='/api/analyze'&&path!=='/api/ai-move')throw new ApiError('INVALID_REQUEST',404,'没有这个接口。');

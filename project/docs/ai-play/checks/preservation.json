@@ -5,7 +5,7 @@
   "rulesetId": "GO-CLUB-AREA-1",
   "taskId": "AI_PLAY",
   "baseVersion": "0.23.0-pages.1",
-  "resultVersion": "0.24.0-pages.1",
+  "resultVersion": "0.24.1-pages.1",
   "status": "passed",
   "protectedFiles": 1593,
   "preservedPrefixes": [

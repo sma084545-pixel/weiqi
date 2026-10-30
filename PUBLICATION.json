@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "id": "GITHUB-PAGES-PUBLICATION",
-  "revision": 24,
+  "revision": 25,
   "rulesetId": "GO-CLUB-AREA-1",
-  "resultVersion": "0.24.0-pages.1",
-  "programVersion": "0.24.0",
+  "resultVersion": "0.24.1-pages.1",
+  "programVersion": "0.24.1",
   "siteUrl": "https://sma084545-pixel.github.io/weiqi/",
   "sourceDirectory": "project/",
   "formalPuzzles": 30,
@@ -43,9 +43,9 @@
       "sha256": "83fba6a9506d1562d0a19feba39131aa2bc98c39fc1aa1f994b6660ff3620138"
     },
     {
-      "path": "assets/index-Tqw4n5mr.js",
-      "bytes": 1197257,
-      "sha256": "ec4105daecb844942ec513f2792512b7dbde1c2eab16b346a4dbc7d646c7b63a"
+      "path": "assets/index-NZduioz3.js",
+      "bytes": 1197614,
+      "sha256": "9888f1bcd504551e52ad798bd3dca3fe1ff22f2b523932d9e5deb20792a536ae"
     },
     {
       "path": "content/formal-content-v1.json",
@@ -60,7 +60,7 @@
     {
       "path": "index.html",
       "bytes": 640,
-      "sha256": "bc8868cd7af84adddd78faeced5ae9c9d585a6dedc2dbcce59e5f18aa38c06d3"
+      "sha256": "8b0b0fedfc482c8b11e3fd69b8114b4b04364867476c0c6c334c94f01dfc257c"
     },
     {
       "path": "materials/t13/territory-counting-card.md",
@@ -75,7 +75,7 @@
     {
       "path": "offline-assets.json",
       "bytes": 411,
-      "sha256": "352fc66fae19226c2b6a8379eff897aca33c281aa0a226cf95fa5b817d47c7fe"
+      "sha256": "11d3d6577d6ce8843fd56fde46040cb47ec1969a37639b79b29904beac3b0ef6"
     },
     {
       "path": "offline.html",
@@ -85,13 +85,13 @@
     {
       "path": "sw.js",
       "bytes": 3694,
-      "sha256": "0255ff94ea8504f4e01246168784eed35562738a25df93952c37216df0def53e"
+      "sha256": "67897f153ec4e00939270d87b2b9bd06be5031d8545254327f9077d28561d521"
     },
     {
       "path": "version.json",
       "bytes": 464,
-      "sha256": "ad510cfefabe1184cee1c440712efe3d2c39f28f056c24419e96161e8fc349df"
+      "sha256": "9726fe44003dbe4adaec5d39ee34fdaff562c80bac1e89fd7d78f6def46dc56e"
     }
   ],
-  "sourceManifestSha256": "ba8bd439f2ad7c28a8b6fd5658979a0c714fb14558e991edffcf1aebba1db350"
+  "sourceManifestSha256": "6e7bada4b59a25831602de1a8eebf252775c08264f2baa5ba3bf7f083eb0ce9e"
 }
