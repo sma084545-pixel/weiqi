@@ -4,18 +4,18 @@ import argparse,hashlib,json,os,zipfile,shutil
 R=Path(__file__).resolve().parents[1]
 p=argparse.ArgumentParser();p.add_argument('--base',required=True);p.add_argument('--output',required=True);p.add_argument('--stage',action='store_true');a=p.parse_args();B=Path(a.base).resolve();O=Path(a.output).resolve()
 assert R!=O and R not in O.parents
-assert json.loads((R/'package.json').read_text())['version']=='0.24.1'
+assert json.loads((R/'package.json').read_text())['version']=='0.24.2'
 log=(R/'docs/ai-play/checks/check-final.log').read_text();assert '532 passed (532)' in log and 'error TS' not in log and 'ELIFECYCLE' not in log,'Full check must pass before packaging'
 for name in ['browser-journey.json','native-real-browser.json','upgrade-offline.json','preservation.json']:
     assert json.loads((R/'docs/ai-play/checks'/name).read_text())['status']=='passed',name
 docker=json.loads((R/'docs/ai-play/checks/docker-real-5ed6920/ai-real-http.json').read_text());assert len(docker['checks'])>=14 and all(x['status']=='passed' for x in docker['checks'])
 if not a.stage:
     public=json.loads((R/'docs/ai-play/checks/public-real-browser.json').read_text());assert public['status']=='passed'
-    ready=json.loads((R/'docs/ai-play/checks/public-ready.json').read_text());assert ready.get('appVersion')=='0.24.1' and ready['apiVersion']==2 and ready['ready']
+    ready=json.loads((R/'docs/ai-play/checks/public-ready.json').read_text());assert ready.get('appVersion') in ['0.24.1','0.24.2'] and ready['apiVersion']==2 and ready['ready']
     assert json.loads((R/'docs/ai-play/checks/public-publication.json').read_text())['status']=='passed'
-V='0.24.1-pages.1';status='awaiting-render-deployment-and-public-e2e' if a.stage else 'complete-digital-scope-with-documented-limits';stem='go-club-0.24.1-predeploy' if a.stage else 'go-club-'+V
+V='0.24.2-pages.1';status='awaiting-render-deployment-and-public-e2e' if a.stage else 'complete-digital-scope-with-documented-limits';stem='go-club-0.24.2-predeploy' if a.stage else 'go-club-'+V
 O.mkdir(parents=True,exist_ok=True);full=O/(stem+'-full.zip');app=O/(stem+'-app.zip');assert not full.exists() and not app.exists(),'Never overwrite a sealed packet'
-identity={'schemaVersion':1,'id':'AI-PLAY-RELEASE','revision':1,'rulesetId':'GO-CLUB-AREA-1','taskId':'AI_PLAY','baseVersion':'0.23.0-pages.1','resultVersion':V,'programVersion':'0.24.1','status':status}
+identity={'schemaVersion':1,'id':'AI-PLAY-RELEASE','revision':1,'rulesetId':'GO-CLUB-AREA-1','taskId':'AI_PLAY','baseVersion':'0.23.0-pages.1','resultVersion':V,'programVersion':'0.24.2','status':status}
 exclude_dirs={'node_modules','.git','__pycache__','delivery','font-cache','runtime-data','.pnpm-store','.playwright-cli','.auth'};self_files={'RELEASE_MANIFEST.json','release-manifest.json','SHA256SUMS.txt'}
 def files(root):
     result=[]
@@ -53,7 +53,7 @@ app_files.append((R/'启动联机对弈.command','启动联机对弈.command'))
 for folder in ['docs/ai-play','docs/katago','docs/online','docs/t24/third-party','docs/online/third-party','analysis-engine/licenses']:
     app_files += [(x,str(x.relative_to(R))) for x in sorted((R/folder).rglob('*')) if x.is_file() and ('/checks/' not in str(x) and '/third-party/' in str(x) or x.suffix in ['.md','.txt'] and '/checks/' not in str(x))]
 notice='这是部署前阶段包，等待已有Render服务更新与正式跨域验收。' if a.stage else '正式网站与已有Render AI服务已按验收记录接通。'
-readme=f'''# 围棋社 AI 对弈 · 0.24.1\n\n{notice}\n\n原网站：https://sma084545-pixel.github.io/weiqi/#/play/ai 。三档相对难度，5/9/13/19路、悔棋/重做、滑动回看、独立保存与赛后KataGo复盘。新着法需联网，死子清单仍需人工核对；难度不对应段级位。\n\n本地已有Node22.22.2+或24.15+等兼容版本时，从解压目录运行 `node dist-server/server.mjs`，打开 http://127.0.0.1:4190/#/play/ai 。macOS也可双击启动联机对弈.command。Ctrl+C停止。不需安装node_modules，远端引擎不依赖个人电脑常开。\n\n更新先导出本机备份，再在相同来源应用新版本，不清站点数据。续玩JSON包含难度和对局；SGF主线只作棋谱交接。完整源码/材料/后台Docker在full.zip；使用、限制和回滚见docs/ai-play/。无新付费资源、无公开排名、不上传学习记录或反馈。\n'''
+readme=f'''# 围棋社 AI 对弈 · 0.24.2\n\n{notice}\n\n原网站：https://sma084545-pixel.github.io/weiqi/#/play/ai 。三档相对难度，5/9/13/19路、悔棋/重做、滑动回看、独立保存与赛后KataGo复盘。新着法需联网，死子清单仍需人工核对；难度不对应段级位。\n\n本地已有Node22.22.2+或24.15+等兼容版本时，从解压目录运行 `node dist-server/server.mjs`，打开 http://127.0.0.1:4190/#/play/ai 。macOS也可双击启动联机对弈.command。Ctrl+C停止。不需安装node_modules，远端引擎不依赖个人电脑常开。\n\n更新先导出本机备份，再在相同来源应用新版本，不清站点数据。续玩JSON包含难度和对局；SGF主线只作棋谱交接。完整源码/材料/后台Docker在full.zip；使用、限制和回滚见docs/ai-play/。无新付费资源、无公开排名、不上传学习记录或反馈。\n'''
 app_files=[(path,name) for name,path in sorted({name:path for path,name in app_files}.items())]
 app_entries=[{'path':n,'bytes':x.stat().st_size,'sha256':sha(x)} for x,n in app_files]
 app_entries.append({'path':'README.md','bytes':len(readme.encode()),'sha256':hashlib.sha256(readme.encode()).hexdigest()})

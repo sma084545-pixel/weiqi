@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "id": "GITHUB-PAGES-PUBLICATION",
-  "revision": 25,
+  "revision": 26,
   "rulesetId": "GO-CLUB-AREA-1",
-  "resultVersion": "0.24.1-pages.1",
-  "programVersion": "0.24.1",
+  "resultVersion": "0.24.2-pages.1",
+  "programVersion": "0.24.2",
   "siteUrl": "https://sma084545-pixel.github.io/weiqi/",
   "sourceDirectory": "project/",
   "formalPuzzles": 30,
@@ -38,14 +38,14 @@
       "sha256": "26ae2d10fc5b45982ae4f4f593aaa93b781d4ff63a8bfe2166bc392d01cc9b50"
     },
     {
+      "path": "assets/index-BI_4C-0i.js",
+      "bytes": 1197705,
+      "sha256": "c9156bd76b6cf016fde66f2d877b508ceaa6a01e6e69cdd6a519fbd8709bd01a"
+    },
+    {
       "path": "assets/index-CYqM5-jJ.css",
       "bytes": 149930,
       "sha256": "83fba6a9506d1562d0a19feba39131aa2bc98c39fc1aa1f994b6660ff3620138"
-    },
-    {
-      "path": "assets/index-NZduioz3.js",
-      "bytes": 1197614,
-      "sha256": "9888f1bcd504551e52ad798bd3dca3fe1ff22f2b523932d9e5deb20792a536ae"
     },
     {
       "path": "content/formal-content-v1.json",
@@ -60,7 +60,7 @@
     {
       "path": "index.html",
       "bytes": 640,
-      "sha256": "8b0b0fedfc482c8b11e3fd69b8114b4b04364867476c0c6c334c94f01dfc257c"
+      "sha256": "e85345bcdf5ed6dac20021d1e799aa435e8646b06018c9ba18ba51cb36e95c30"
     },
     {
       "path": "materials/t13/territory-counting-card.md",
@@ -75,7 +75,7 @@
     {
       "path": "offline-assets.json",
       "bytes": 411,
-      "sha256": "11d3d6577d6ce8843fd56fde46040cb47ec1969a37639b79b29904beac3b0ef6"
+      "sha256": "40c7a8f834cff16b2a3b299857fdac411fe732b1da5028c95c467c080493effa"
     },
     {
       "path": "offline.html",
@@ -85,13 +85,13 @@
     {
       "path": "sw.js",
       "bytes": 3694,
-      "sha256": "67897f153ec4e00939270d87b2b9bd06be5031d8545254327f9077d28561d521"
+      "sha256": "244ba365ed55b08a5e7673b4723b7c56b9eb26ea0a5e6089881e53d9f8ce5dbc"
     },
     {
       "path": "version.json",
       "bytes": 464,
-      "sha256": "9726fe44003dbe4adaec5d39ee34fdaff562c80bac1e89fd7d78f6def46dc56e"
+      "sha256": "959eb1d27af763f1cb5859512121144a0c706f77e7d3b495f1daf3e60547acc8"
     }
   ],
-  "sourceManifestSha256": "6e7bada4b59a25831602de1a8eebf252775c08264f2baa5ba3bf7f083eb0ce9e"
+  "sourceManifestSha256": "4a1df85c6781f5f1a2ff4b1291f35132f5f5f15100e20f8ed5bf058d88c5d91e"
 }

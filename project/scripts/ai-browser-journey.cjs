@@ -89,7 +89,7 @@ async page => {
     report.push({name:'responsive-touch-keyboard-reduced-motion-floating-max-'+width,status:'passed',size,difficulty:level,human,geometry});await t.close();
   }
   {
-    const t=await fresh(),{p,cell,click,attr}=t;await p.getByRole('radio',{name:'本社团自由放置让子'}).check();await cell(2,2).click();
+    const t=await fresh(),{p,cell,click,attr}=t;await p.getByRole('radio',{name:'本社团自由放置让子'}).check();await p.getByRole('radio',{name:'白方（让子后你先）',exact:true}).waitFor();await cell(2,2).click();
     await p.getByLabel('棋盘尺寸').selectOption('5');await p.getByRole('dialog',{name:'清除起始黑子后更改设置？'}).waitFor();await click('取消');
     assert(await p.getByLabel('棋盘尺寸').inputValue()==='9','cancel resize preserves board');
     await t.start();await attr('data-move-count',1);await attr('data-turn','B');assert(t.requests[0].game.setup.toPlay==='W','free handicap White first');

@@ -1,7 +1,7 @@
 ---
 taskId: AI_PLAY
 baseVersion: ADVANCED_COURSES 0.23.0-pages.1
-resultVersion: 0.24.1-pages.1
+resultVersion: 0.24.2-pages.1
 rulesetId: GO-CLUB-AREA-1
 schemaVersion: 1
 status: implementation-verified-awaiting-public-deployment
@@ -47,3 +47,5 @@ status: implementation-verified-awaiting-public-deployment
 续玩导入拒绝未知顶层/选项/注释字段，并与开局相同限制贴目，避免导出与新增schema不一致。通用规则仍可接受其原有贴目范围，未改真人存档。额外2项测试，全套531、AI45通过。0.24前端已曾发布，因此当前程序提升到0.24.1让Service Worker确实检测更新；旧有效AI记录与存储键不变。c6a80ac的API2协议对正式网站仍兼容，但新增本机CORS白名单需要最新0.24.1后端；本任务要求网站与默认本机软件均可用，因而仍需Manual Deploy最新main。下一步正式包/验收用0.24.1-pages.1。
 
 本机软件的127.0.0.1:4190与localhost:4190已加入服务端两个精确CORS白名单，仍不允许任意github.io、其他端口或任意局域网IP。这样正式网站与默认本机软件都能调用同一Render引擎，不伪造Origin或使用账户代理。该增量需要最新0.24.1后端；c6a80ac只支持正式网站，不能据此宣称本机也已接通。
+
+最终候选0.24.2修正自由让子时的选色括号（白方由你/AI执棋时均明确白先），避免空盘提示与让子白先说明冲突。仅视图文案和程序缓存版本改变；后台最低0.24.1（含精确本机Origin）仍兼容。正式归档使用0.24.2-pages.1，完成前不提升LATEST。

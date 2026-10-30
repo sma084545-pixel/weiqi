@@ -5,8 +5,8 @@
   "rulesetId": "GO-CLUB-AREA-1",
   "taskId": "AI_PLAY",
   "baseVersion": "0.23.0-pages.1",
-  "resultVersion": "0.24.0-pages.1",
-  "programVersion": "0.24.0",
+  "resultVersion": "0.24.1-pages.1",
+  "programVersion": "0.24.1",
   "status": "awaiting-render-deployment-and-public-e2e",
   "kind": "ChangeManifest",
   "files": [
@@ -20,13 +20,13 @@
       "path": "CHANGELOG.md",
       "change": "modified",
       "baseSha256": "10708a210e67630e79663b8447bd6ac31e14e7ecd4a41bcd149fe5444081f442",
-      "sha256": "da9cfad0876737a5d1aa8c8ab80e314e56e069071349810dc734180496599be8"
+      "sha256": "cb22398e8b3505f871a266e95fb2b236d1ab5250ea01beb7da8a47cffbbae8d7"
     },
     {
       "path": "README.md",
       "change": "modified",
       "baseSha256": "79e1cfcfa77c2f6448b0afc553b1f11db4e3dbb6616e028aef55fed6bbd2b7b4",
-      "sha256": "3f82307821e33ead9eb91507027d1e3585c365de2f4e3679785421fc683d02b3"
+      "sha256": "149a5e942b3e4ae29f4f1a02e04b38badacd2db57a253c7e24fc33f522c33356"
     },
     {
       "path": "docs/INTERFACES.md",
@@ -38,19 +38,19 @@
       "path": "docs/ai-play/ACCEPTANCE.md",
       "change": "added",
       "baseSha256": null,
-      "sha256": "0ee1b074ac9969d6ccee9e68c25aa5708c9af45f0c453b687d8c4eebd549be46"
+      "sha256": "4ee50eca38a64b3f3a9e5535b3f0a9a9ab6fd44f075eae4be51bfccb66f95fde"
     },
     {
       "path": "docs/ai-play/DEPLOYMENT.md",
       "change": "added",
       "baseSha256": null,
-      "sha256": "fba465c915b5a5fb9aded04206b68e41afd02004c7de598602adb2a34b99a9c9"
+      "sha256": "ce3abd379174edb7f31286a9185f05d9d1467850c1a519713c55ca0c707f46d9"
     },
     {
       "path": "docs/ai-play/KNOWN_ISSUES.md",
       "change": "added",
       "baseSha256": null,
-      "sha256": "14c5ea8782be5070f1cddb448a7eccc8bc68357aaa9b1c2ceb538357ffda86eb"
+      "sha256": "e6d38920cd97b9ae6448a80dc486af31cfac375434a6609cb47cbb62462d2306"
     },
     {
       "path": "docs/ai-play/USAGE.md",
@@ -101,6 +101,12 @@
       "sha256": "33293e61c19f1aacfe79ba68c682d0c423804def2508795469dcd324c2ccdd09"
     },
     {
+      "path": "docs/ai-play/checks/ai-public-upgrade-setup.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "9bd15939c3c41f7d5528d92e03b1f24aee4899845a115f71a09bf3112fdbacbc"
+    },
+    {
       "path": "docs/ai-play/checks/ai-real-360-keyboard.png",
       "change": "added",
       "baseSha256": null,
@@ -117,6 +123,12 @@
       "change": "added",
       "baseSha256": null,
       "sha256": "539f41f38f1a048d1e17fca3283d1eaa3098b977dfec11083129208bb5925587"
+    },
+    {
+      "path": "docs/ai-play/checks/ai-real-document-pip.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "5dd989368d9167c878970b56cfdf08535ccfe19ed4510e51db3471744e234cce"
     },
     {
       "path": "docs/ai-play/checks/ai-real-pass-finish-review.png",
@@ -155,10 +167,16 @@
       "sha256": "868ca346636299799db9347f0304ba6682edb88660424add55019067a3a6025b"
     },
     {
-      "path": "docs/ai-play/checks/browser-journey.json",
+      "path": "docs/ai-play/checks/browser-journey-initial.json",
       "change": "added",
       "baseSha256": null,
       "sha256": "8ef4a5d26e3b884ede52d0b1f1f13c7f25d439c1edae251e5371aeba6632d9dd"
+    },
+    {
+      "path": "docs/ai-play/checks/browser-journey.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "1a8f34dac8e1e43b0fcb0abbc4376d7b4b839609ca52ad47e4bc1f0de9b15910"
     },
     {
       "path": "docs/ai-play/checks/browser-regression-final.log",
@@ -182,25 +200,31 @@
       "path": "docs/ai-play/checks/build-analysis-final.log",
       "change": "added",
       "baseSha256": null,
-      "sha256": "6910239850466e591d6cb99f96fde3bf5db76c525c6d30adce5f598813297b7e"
+      "sha256": "955656de56b3f029695797cb6f93fd11c432c403f16565191bcf4cf8b202bb0b"
     },
     {
       "path": "docs/ai-play/checks/build-pages-final.log",
       "change": "added",
       "baseSha256": null,
-      "sha256": "379b710e6b8c599aed6891287c393909ca285427a9778dd98294888017fde053"
+      "sha256": "c7be70fd4bc878312f9eedea9d0456fad77f5b4cf5d8f85532eb2b02e085b2d1"
     },
     {
       "path": "docs/ai-play/checks/check-final.log",
       "change": "added",
       "baseSha256": null,
-      "sha256": "624eafb08ae66ac1c63f9c331030be6a7647a1905f635c7b9f41b36510d86c76"
+      "sha256": "9b7549866d7ae0aab08306b8b2a269cd8069e00f94a10b8fe5c28a60ac92e95d"
     },
     {
       "path": "docs/ai-play/checks/check-initial.log",
       "change": "added",
       "baseSha256": null,
       "sha256": "7b0b78bfb462cf518d356d96ca2772ec10647f092dd97ff635cfb2b198eb536b"
+    },
+    {
+      "path": "docs/ai-play/checks/check-loopback-type-failure.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "143f65a0d556a2ad609ce5c6a6927fd38afc28b1e47c286e85f00eef71961338"
     },
     {
       "path": "docs/ai-play/checks/docker-real-5ed6920/ai-real-http.json",
@@ -251,6 +275,60 @@
       "sha256": "df65b1c7c21fc4ac7df46835d755e9618b047528767934a9b37467789721c5d8"
     },
     {
+      "path": "docs/ai-play/checks/docker-real-c6a80ac/ai-real-http.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "9a4a3cc04f2ba5dbc711441d9b32e6b4303802640c436f8a4dfb5d14f2c51e08"
+    },
+    {
+      "path": "docs/ai-play/checks/docker-real-c6a80ac/container-state.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "8b07dc034e377f173f42110eac9033f4bae50ebd1a320770539eef6e80a25971"
+    },
+    {
+      "path": "docs/ai-play/checks/docker-real-c6a80ac/container-stderr.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/ai-play/checks/docker-real-c6a80ac/container-stdout.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "1561d2c1880ca9070ba61b855d0685b1cd4c6d1943c04714da859b6d5e9527f8"
+    },
+    {
+      "path": "docs/ai-play/checks/docker-real-c6a80ac/engine-version.txt",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "5af6ff0df26dd1e91ea4907572175522f4deb21831b26765964fea9dcc01138a"
+    },
+    {
+      "path": "docs/ai-play/checks/docker-real-c6a80ac/memory-peak-bytes.txt",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "241bdeab208c3615e8b662a514e329dbbfe60ca480130a6ffffba4320a9d5aeb"
+    },
+    {
+      "path": "docs/ai-play/checks/docker-real-c6a80ac/real-http-smoke.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "bb80695f00d96035be0246358abf08cdad1a7f07fef1bf6bdf4b4ba1d5be02e5"
+    },
+    {
+      "path": "docs/ai-play/checks/docker-real-c6a80ac/resource-limits.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "df65b1c7c21fc4ac7df46835d755e9618b047528767934a9b37467789721c5d8"
+    },
+    {
+      "path": "docs/ai-play/checks/document-pip.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "022118d319aaf8e0929e32ec19661c40d3055729d2c78349c40dd50c2bfa7485"
+    },
+    {
       "path": "docs/ai-play/checks/frontend-review-1280.png",
       "change": "added",
       "baseSha256": null,
@@ -269,10 +347,22 @@
       "sha256": "88fa83c195a2625ccbe24bc18f3c35cc8776e7bdef1eb9afa78c4da9dd3ed170"
     },
     {
-      "path": "docs/ai-play/checks/native-real-browser.json",
+      "path": "docs/ai-play/checks/native-real-browser-initial.json",
       "change": "added",
       "baseSha256": null,
       "sha256": "4a33b667a1f61807c659afd4bc0a0af1da5586840bccf61c87319599339250bc"
+    },
+    {
+      "path": "docs/ai-play/checks/native-real-browser.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "bb4cd3b88be5d5aad055c8f7ce100f488ae4808f8b04e931f4b2368bfcee0fb9"
+    },
+    {
+      "path": "docs/ai-play/checks/native-real-http-0241.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "8b6b8daea7ce2452897a0b7fb46148defe11e26cc2e5c8d28c20fadcb7cc4b60"
     },
     {
       "path": "docs/ai-play/checks/native-real-http.json",
@@ -284,7 +374,19 @@
       "path": "docs/ai-play/checks/preservation.json",
       "change": "added",
       "baseSha256": null,
-      "sha256": "015be8d1bc39f65ca11eb09b71cc960acb9a2c25df3d36cbdf036da8a57fb562"
+      "sha256": "7d59c122848d177a3876d77bf1430d0954f153298e50a1657377b5c6a064e942"
+    },
+    {
+      "path": "docs/ai-play/checks/public-assets.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "0144f7bf9c01fe7e93c853c8b71899ea9193becb0f53704eb8b4b54f005d2ec6"
+    },
+    {
+      "path": "docs/ai-play/checks/public-upgrade.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "276d5b47c85e03b65bba5a973dbaef88d088d8835395762657555d36ec99fd24"
     },
     {
       "path": "docs/ai-play/checks/upgrade-offline.json",
@@ -296,13 +398,13 @@
       "path": "handoff/AI_PLAY.md",
       "change": "added",
       "baseSha256": null,
-      "sha256": "5356613bda0e6a0aaccbc8a1cbea583c0427a1ab948fa13a4f2bfc1e80287a11"
+      "sha256": "3ff0595dce4b7852898c472a5d9ce4c852b3aef213bd28835ba44e439a9a0736"
     },
     {
       "path": "package.json",
       "change": "modified",
       "baseSha256": "6fdd41b9b26936e0d876f31fb7cf86f53ddd4ffb185b154e3ecd8a0b9d31cdda",
-      "sha256": "66ea34268cf9c5f9d6e193985091dd62de37803f030c435334acfb5a2612450d"
+      "sha256": "2210242053f45adc2de52ff212c1581d5f183dd276a929a8598131cdab647b55"
     },
     {
       "path": "playwright.ai-analysis.config.ts",
@@ -314,7 +416,7 @@
       "path": "schemas/ai-session.schema.json",
       "change": "added",
       "baseSha256": null,
-      "sha256": "d8cc54d81e92c69c76ea7c6db80dffb0918245cefe3b622465158c6759978569"
+      "sha256": "9e8bbb43e445d542ea26036a7c53ad0ed37c56127535138a86cb8083c1054527"
     },
     {
       "path": "scripts/ai-browser-journey.cjs",
@@ -323,22 +425,34 @@
       "sha256": "131b076bfde8edc973843f50b5da96c64d170a170e10db56dd6172597e1103e0"
     },
     {
+      "path": "scripts/ai-document-pip-browser.cjs",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "3378ba8ab90fd2d897bfd45ded255f8e03f2dced4cef8b52478069b7aba59a46"
+    },
+    {
+      "path": "scripts/ai-public-upgrade.cjs",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "1c3c28b1c0f0171df7abb5d5c0b11218ae3e0e784e1dba51526926404513bf09"
+    },
+    {
       "path": "scripts/ai-real-browser.cjs",
       "change": "added",
       "baseSha256": null,
-      "sha256": "fabf76e9f555c93f1d0f176f74419592aaf1285cab346bf4a939395749fdd00d"
+      "sha256": "8bb59eaf2a1ee9f5c03863bbbdcd380d524f7851469b560dc4f995c912a6ae3f"
     },
     {
       "path": "scripts/ai-real-smoke.mjs",
       "change": "added",
       "baseSha256": null,
-      "sha256": "1a4d9005dcdd35eceb54feb5525eb6d25ecded15b1e234b731d79f16edc23df6"
+      "sha256": "c3cb2996ec9cda49900945f33f5fbbdbd8e94b67203b2800f367fca8008eeb46"
     },
     {
       "path": "scripts/ai-upgrade-browser.cjs",
       "change": "added",
       "baseSha256": null,
-      "sha256": "8862f17c2fce928ea1a8f27f9afdd0ac93a3ed7c041dfa81d99acaceb5706d03"
+      "sha256": "f6dc53a7fd5554c6414e581e6c8a7ca258b87d3eb73bc7b4d42b36f2ceb95934"
     },
     {
       "path": "scripts/ai-upgrade-server.py",
@@ -350,13 +464,13 @@
       "path": "scripts/package-ai-play.py",
       "change": "added",
       "baseSha256": null,
-      "sha256": "fb5f1983a9d10e16eb2368b6f2e03f4e3a08335b4afa3e9b1a56c053739ba1ee"
+      "sha256": "6288230a378bf049c5094da39250de5b5567814df198a53c405dd7640e17a61a"
     },
     {
       "path": "scripts/sync-github-pages.py",
       "change": "modified",
       "baseSha256": "d6b1a85947d56119e444b05029e19de34c7160e436cbef7bce53f2d4822888fa",
-      "sha256": "e7f6627af5c750777a3d64417b800f7b1f3ebebb913860bcb194bf9c69b32ccf"
+      "sha256": "bba430620a058977184eb20013b0e01bfecba17fdb5ecbf8e6e9b7036ca7bdac"
     },
     {
       "path": "scripts/verify-online-dependencies.mjs",
@@ -380,7 +494,13 @@
       "path": "server/analysis/http.ts",
       "change": "modified",
       "baseSha256": "085ca11a61024aa7951d4192f6e252726bbc77a537138f5ed0ec67837a2a29d9",
-      "sha256": "2a71300fbbddd5bf18ed55e82ec8eda0a47f2b4e2e7412b967d9524009be38e5"
+      "sha256": "4187b652932f52cca1cd85d4e312049ed86ad1ba9830acaa367921cd1ac2a453"
+    },
+    {
+      "path": "server/analysis/index.ts",
+      "change": "modified",
+      "baseSha256": "c0db77367cf8431c03e9d27c8db86428a2459467ef17e99021c27a1513d1e482",
+      "sha256": "17a9fe537e7864f0291ec332767a65c3e76109741f0787c44b5ebba7abef103d"
     },
     {
       "path": "server/analysis/position.ts",
@@ -404,7 +524,7 @@
       "path": "src/core/version.ts",
       "change": "modified",
       "baseSha256": "f1ad35972c20aeca28814bf530053e2139a865f15aa8e900a98b23561b1da5b8",
-      "sha256": "242bfdb3429f67f24d49c6e47da5de86abcdd99aa2f6acb20ae5052d02b2a684"
+      "sha256": "d1efc367fcfbb5d02192d958292e67986b6907f677eab1c5650d208857e92d83"
     },
     {
       "path": "src/features/ai-game/AiGame.css",
@@ -428,13 +548,13 @@
       "path": "src/features/ai-game/model.ts",
       "change": "added",
       "baseSha256": null,
-      "sha256": "98534154c3ea7cc07b04adac2009bba88fb82c92070cf4b7e8211c75f26e9ad6"
+      "sha256": "83a4ff96a08ae30666bfd78df0c150187e743ce72ad6975ade8c274d4770b8b5"
     },
     {
       "path": "src/features/ai-game/storage.ts",
       "change": "added",
       "baseSha256": null,
-      "sha256": "b1d0e177a006536911551dd1ab61a549428dedebe3a788e79060d010cf77b066"
+      "sha256": "b38ebae100fb714cd7df7639467e78a957ed515304daab5963113bdab1275fc7"
     },
     {
       "path": "src/features/ai-game/useAiOpponent.ts",
@@ -482,7 +602,7 @@
       "path": "tests/ai-game/api.test.ts",
       "change": "added",
       "baseSha256": null,
-      "sha256": "e12e11dda84bbe4453f0451e83186beaeac2dd0d848824bb722a3162ff9b8a89"
+      "sha256": "9646501c72131b13f574a2a825355c3565773c65af029863641cea83bec44afa"
     },
     {
       "path": "tests/ai-game/client.test.ts",
@@ -500,7 +620,7 @@
       "path": "tests/ai-game/model.test.ts",
       "change": "added",
       "baseSha256": null,
-      "sha256": "739cb0ecaecea50ba542904e8f9a9c00dbd76bb1e290230c81be0bfc32ff1924"
+      "sha256": "442d0f12cca2fb8d9694fa56d5364d9f1c7f2005edd6e41ed5ef37daa77aa498"
     },
     {
       "path": "tests/browser/katago-review.spec.ts",

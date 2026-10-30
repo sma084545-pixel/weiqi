@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "id": "GITHUB-CURRENT-SOURCE",
-  "revision": 25,
+  "revision": 26,
   "rulesetId": "GO-CLUB-AREA-1",
-  "resultVersion": "0.24.1-pages.1",
-  "programVersion": "0.24.1",
+  "resultVersion": "0.24.2-pages.1",
+  "programVersion": "0.24.2",
   "sourceBuild": "pnpm install --frozen-lockfile && pnpm build",
   "note": "Buildable source and materials; installed dependencies, private data and generated root build/output excluded. Full release archive includes production builds and all evidence.",
   "files": [
@@ -25,8 +25,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 27758,
-      "sha256": "cb22398e8b3505f871a266e95fb2b236d1ab5250ea01beb7da8a47cffbbae8d7"
+      "bytes": 27884,
+      "sha256": "a4c870e509048295b06fc691526d8e0c79bc37a8bff080c7aaad3c848c685a0e"
     },
     {
       "path": "MERGE_C_RELEASE_MANIFEST.json",
@@ -36,7 +36,7 @@
     {
       "path": "README.md",
       "bytes": 9713,
-      "sha256": "149a5e942b3e4ae29f4f1a02e04b38badacd2db57a253c7e24fc33f522c33356"
+      "sha256": "d7ac431fc10f2142d649d10f17f1c181c17b9eee652ad19158b46c1038fda083"
     },
     {
       "path": "README_MERGE_C.md",
@@ -56,7 +56,7 @@
     {
       "path": "package.json",
       "bytes": 4318,
-      "sha256": "2210242053f45adc2de52ff212c1581d5f183dd276a929a8598131cdab647b55"
+      "sha256": "b9803bc04ffef5b9b25e86119bcb3603b6434217b6b82ec644018102f4ee9441"
     },
     {
       "path": "playwright.advanced-regression.config.ts",
@@ -3905,8 +3905,8 @@
     },
     {
       "path": "handoff/AI_PLAY.md",
-      "bytes": 6296,
-      "sha256": "3ff0595dce4b7852898c472a5d9ce4c852b3aef213bd28835ba44e439a9a0736"
+      "bytes": 6612,
+      "sha256": "ad706d7fa1d572239cc08ace2b6e2f9b5e56aeaadcb3d0bc6b9b0c8c1f5b7dd2"
     },
     {
       "path": "handoff/CONTENT_FREEZE.json",
@@ -4496,7 +4496,7 @@
     {
       "path": "tests/ai-game/api.test.ts",
       "bytes": 7479,
-      "sha256": "9646501c72131b13f574a2a825355c3565773c65af029863641cea83bec44afa"
+      "sha256": "091d8710f592db9a7bdd211e235c1f3481c748d76b70189c60d495426472247c"
     },
     {
       "path": "tests/ai-game/client.test.ts",
@@ -7405,13 +7405,13 @@
     },
     {
       "path": "docs/ai-play/ACCEPTANCE.md",
-      "bytes": 5310,
-      "sha256": "4ee50eca38a64b3f3a9e5535b3f0a9a9ab6fd44f075eae4be51bfccb66f95fde"
+      "bytes": 5556,
+      "sha256": "d73f0b90feae4bc12efe03f79be39c54232fc46e9c534f675f9c7391a6e17c04"
     },
     {
       "path": "docs/ai-play/CHANGED_FILES.json",
-      "bytes": 18566,
-      "sha256": "155e405c62bc342174a7381b2fc48f9bca8e7eaa85b029a942f806642928075b"
+      "bytes": 22897,
+      "sha256": "10a903b3ca73f9a13b749fa68a69fd1ae8ab9347c8eb4eb1ee27b56f98ef638d"
     },
     {
       "path": "docs/ai-play/DEPLOYMENT.md",
@@ -7526,7 +7526,7 @@
     {
       "path": "docs/ai-play/checks/browser-journey.json",
       "bytes": 1730,
-      "sha256": "1a8f34dac8e1e43b0fcb0abbc4376d7b4b839609ca52ad47e4bc1f0de9b15910"
+      "sha256": "377c1401b9ec5d156798d9bbb8298a5b751b7266552f252839227e88a615cf02"
     },
     {
       "path": "docs/ai-play/checks/browser-regression-final.log",
@@ -7546,17 +7546,17 @@
     {
       "path": "docs/ai-play/checks/build-analysis-final.log",
       "bytes": 317,
-      "sha256": "955656de56b3f029695797cb6f93fd11c432c403f16565191bcf4cf8b202bb0b"
+      "sha256": "ca46cae666e280ace345491784c6b4dfac4a16c10d41e8f2300de9f5b7e4a2e5"
     },
     {
       "path": "docs/ai-play/checks/build-pages-final.log",
       "bytes": 1181,
-      "sha256": "c7be70fd4bc878312f9eedea9d0456fad77f5b4cf5d8f85532eb2b02e085b2d1"
+      "sha256": "bc4c117d7a72313536084a64edd517b6f19b166a5938dece09d0f8d6b0e6fe63"
     },
     {
       "path": "docs/ai-play/checks/check-final.log",
-      "bytes": 6949,
-      "sha256": "9b7549866d7ae0aab08306b8b2a269cd8069e00f94a10b8fe5c28a60ac92e95d"
+      "bytes": 7061,
+      "sha256": "f3f3dfc6ee84dd0cd677315b2cbee4c746cb4716c9988850bd17365a4e0de7dd"
     },
     {
       "path": "docs/ai-play/checks/check-initial.log",
@@ -7611,7 +7611,7 @@
     {
       "path": "docs/ai-play/checks/preservation.json",
       "bytes": 687,
-      "sha256": "7d59c122848d177a3876d77bf1430d0954f153298e50a1657377b5c6a064e942"
+      "sha256": "5654d37225e60332da38f8f52550ded610702ac5c2057657458be629c9dbad2d"
     },
     {
       "path": "docs/ai-play/checks/public-assets.json",
@@ -14450,8 +14450,8 @@
     },
     {
       "path": "scripts/ai-browser-journey.cjs",
-      "bytes": 12655,
-      "sha256": "131b076bfde8edc973843f50b5da96c64d170a170e10db56dd6172597e1103e0"
+      "bytes": 12740,
+      "sha256": "59383a846114beed3a2a28390d3ca0b14b6e901a0874a914850c02f5b8d9515b"
     },
     {
       "path": "scripts/ai-document-pip-browser.cjs",
@@ -14461,7 +14461,7 @@
     {
       "path": "scripts/ai-public-upgrade.cjs",
       "bytes": 1543,
-      "sha256": "1c3c28b1c0f0171df7abb5d5c0b11218ae3e0e784e1dba51526926404513bf09"
+      "sha256": "00197c820a77f4a8db9c8799964c7d93d7cd032e002301e04dd14985c061058e"
     },
     {
       "path": "scripts/ai-real-browser.cjs",
@@ -14476,7 +14476,7 @@
     {
       "path": "scripts/ai-upgrade-browser.cjs",
       "bytes": 5752,
-      "sha256": "f6dc53a7fd5554c6414e581e6c8a7ca258b87d3eb73bc7b4d42b36f2ceb95934"
+      "sha256": "29870f9e2143099c7a758e808f0ff588fb13c9fa3a72661aa27366fd3aaf278e"
     },
     {
       "path": "scripts/ai-upgrade-server.py",
@@ -14650,8 +14650,8 @@
     },
     {
       "path": "scripts/package-ai-play.py",
-      "bytes": 7756,
-      "sha256": "6288230a378bf049c5094da39250de5b5567814df198a53c405dd7640e17a61a"
+      "bytes": 7769,
+      "sha256": "b122ae4bb11f9d67db73c2b0ef37f0251d9614b9e1d787a2a019cce749528fcd"
     },
     {
       "path": "scripts/package-floating-fit.py",
@@ -15256,7 +15256,7 @@
     {
       "path": "src/core/version.ts",
       "bytes": 117,
-      "sha256": "d1efc367fcfbb5d02192d958292e67986b6907f677eab1c5650d208857e92d83"
+      "sha256": "3823ea5eac65c6f7f9389cf24674eb84e163d1d5bebecd409d01bbdf0888ee87"
     },
     {
       "path": "src/core/analysis/ai-contract.ts",
@@ -15730,8 +15730,8 @@
     },
     {
       "path": "src/features/ai-game/AiGame.tsx",
-      "bytes": 19257,
-      "sha256": "96b94f9ad2ceb62df95f554b7093ebe78da14bdf553ff8aaf9ba045162ff7ba5"
+      "bytes": 19356,
+      "sha256": "f52e0b95e7dffcdc8b0d29f3be8ed553cea6fb98b77f7ff2ecb32df49e9ca123"
     },
     {
       "path": "src/features/ai-game/client.ts",

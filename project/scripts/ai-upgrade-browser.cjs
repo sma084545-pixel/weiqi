@@ -10,7 +10,7 @@ async page => {
     await p.goto(base+'#/teacher/offline-data');await p.getByRole('heading',{name:'已可离线',exact:true}).waitFor({timeout:30000});const before=await records();
     assert(Object.keys(before).some(k=>k.includes('FULL-GAME')),'human save exists before upgrade');
     await p.request.get('http://127.0.0.1:4220/__ai_test_switch_to_current__');await p.getByRole('button',{name:'检查应用更新',exact:true}).click();
-    const apply=p.getByRole('button',{name:'保存已提交内容并应用',exact:true}).first();await apply.waitFor({timeout:60000});assert(await p.locator('.app-version').innerText()==='版本 0.23.0','no forced update');await apply.click();await p.getByText('版本 0.24.1',{exact:true}).waitFor({timeout:60000});
+    const apply=p.getByRole('button',{name:'保存已提交内容并应用',exact:true}).first();await apply.waitFor({timeout:60000});assert(await p.locator('.app-version').innerText()==='版本 0.23.0','no forced update');await apply.click();await p.getByText('版本 0.24.2',{exact:true}).waitFor({timeout:60000});
     await p.goto(base+'#/route/STAGE-05');assert(await p.getByRole('button',{name:'还想练习',exact:true}).getAttribute('aria-pressed')==='true','old stage mark retained');
     await p.goto(base+'#/teacher/editor');assert(await p.getByLabel('列表标题').inputValue()==='DEV-AI-UPGRADE — 开发草稿，不是真实成员作品','draft retained');
     await p.goto(base+'#/play/free');await p.waitForFunction(()=>document.querySelector('.full-game-page')?.getAttribute('data-move-count')==='2');
@@ -25,6 +25,6 @@ async page => {
     await p.getByRole('button',{name:'学习进度与作答记录',exact:true}).click();await p.getByRole('button',{name:'确认清除该范围'}).click();await p.getByRole('status').filter({hasText:'已清除“学习进度与作答记录”'}).waitFor();
     const cleared=await records();assert(cleared[humanKey]===after[humanKey]&&cleared['go-club:full-game:ai:v1']===after['go-club:full-game:ai:v1'],'progress clear must preserve both game types');
     assert(Object.keys(cleared).some(k=>k.includes('teacher-drafts')),'progress clear retains drafts');checks.push({name:'full-backup-and-selective-progress-clear-preserve-ai-and-human-and-draft',status:'passed'});
-    return {schemaVersion:1,id:'AI-UPGRADE-OFFLINE',revision:1,rulesetId:'GO-CLUB-AREA-1',kind:'DeveloperValidationReport',status:'passed',fromVersion:'0.23.0',toVersion:'0.24.1',browser:page.context().browser().version(),method:'Actual service worker and disabled browser network at one isolated /weiqi/ localhost origin; no public deployment or real member record claimed',checks,at:new Date().toISOString(),humanReviewed:null};
+    return {schemaVersion:1,id:'AI-UPGRADE-OFFLINE',revision:1,rulesetId:'GO-CLUB-AREA-1',kind:'DeveloperValidationReport',status:'passed',fromVersion:'0.23.0',toVersion:'0.24.2',browser:page.context().browser().version(),method:'Actual service worker and disabled browser network at one isolated /weiqi/ localhost origin; no public deployment or real member record claimed',checks,at:new Date().toISOString(),humanReviewed:null};
   }finally{await c.setOffline(false);await c.close();}
 }

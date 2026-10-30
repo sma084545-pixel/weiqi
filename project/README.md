@@ -5,7 +5,7 @@ revision: 31
 rulesetId: GO-CLUB-AREA-1
 ---
 
-# 围棋社工具包 · 0.24.1
+# 围棋社工具包 · 0.24.2
 
 原网站保持 https://sma084545-pixel.github.io/weiqi/ 。本轮基线 ADVANCED_COURSES 0.23.0-pages.1，新增 `#/play/ai` 真实 KataGo 对弈：轻松/标准/挑战三档相对搜索强度、选择执色、5/9/13/19路、自由让子、停手、悔棋/重做、棋局滑动条、独立保存与棋谱导出。结束后才开放候选变化、胜率与预计目差。三档不对应人类段级位；AI 不自动确认死活，双停后仍须人工核对清单。
 
@@ -23,7 +23,7 @@ rulesetId: GO-CLUB-AREA-1
 
 检查：`corepack pnpm check`、`corepack pnpm test:browser`、`corepack pnpm test:online`、`corepack pnpm test:pages`。实际命令、结果及限制在docs/online-tools/checks/和handoff/ONLINE_PLAY_TOOLS.md。本机学习离线与房间联网分别验证；升级先保存备份再应用，不清站点数据。
 
-联机服务器为https://weiqi-rooms.onrender.com，网页与带roomChat=1的后台0.21.0已接通并实测聊天；本次前端为0.24.1；房间服务无须因课程增量重新部署。服务端以共同规则验证双方轮次、提子、超级劫、悔棋与终局清单。预览不等于死活裁判，双方确认后才形成面积分。聊天仅当前房间两位伙伴临时文字，不混入棋谱；正式题库和本机教师草稿、反馈不上传。
+联机服务器为https://weiqi-rooms.onrender.com，网页与带roomChat=1的后台0.21.0已接通并实测聊天；本次前端为0.24.2；房间服务无须因课程增量重新部署。服务端以共同规则验证双方轮次、提子、超级劫、悔棋与终局清单。预览不等于死活裁判，双方确认后才形成面积分。聊天仅当前房间两位伙伴临时文字，不混入棋谱；正式题库和本机教师草稿、反馈不上传。
 
 ---
 
