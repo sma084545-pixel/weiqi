@@ -1,7 +1,7 @@
 ---
 schemaVersion: 1
 id: DOC-README
-revision: 31
+revision: 32
 rulesetId: GO-CLUB-AREA-1
 ---
 
@@ -9,7 +9,7 @@ rulesetId: GO-CLUB-AREA-1
 
 原网站保持 https://sma084545-pixel.github.io/weiqi/ 。本轮基线 ADVANCED_COURSES 0.23.0-pages.1，新增 `#/play/ai` 真实 KataGo 对弈：轻松/标准/挑战三档相对搜索强度、选择执色、5/9/13/19路、自由让子、停手、悔棋/重做、棋局滑动条、独立保存与棋谱导出。结束后才开放候选变化、胜率与预计目差。三档不对应人类段级位；AI 不自动确认死活，双停后仍须人工核对清单。
 
-[AI 对弈使用说明](docs/ai-play/USAGE.md) · [接口与部署](docs/ai-play/DEPLOYMENT.md) · [验收证据](docs/ai-play/ACCEPTANCE.md) · [本轮交接](handoff/AI_PLAY.md)。前端、房间服务和 AI 服务分开部署；后端必须具备 `/api/ai-move`，旧版仅有复盘接口时会如实提示尚未更新，不伪造 AI 落子。
+[AI 对弈使用说明](docs/ai-play/USAGE.md) · [接口与部署](docs/ai-play/DEPLOYMENT.md) · [验收证据](docs/ai-play/ACCEPTANCE.md) · [本轮交接](handoff/AI_PLAY.md)。前端、房间服务和 AI 服务分开部署；原网站及默认本机4190已与 Render 0.24.2/API2 实测接通；旧后端仅有复盘接口时仍会如实提示需更新，不伪造 AI 落子。
 
 继续保留课程1–12、37个进阶场景、正式30题/6终局和全部材料。GO-CLUB-AREA-1、schemaVersion=1、规则引擎、正式内容/冻结清单与已有学习记录保持。真人双人、联机、聊天、悬浮棋盘、画中画、最大化和赛后复盘不变。新着法需联网；本机保存、浏览与已缓存的基础教学仍可离线。
 

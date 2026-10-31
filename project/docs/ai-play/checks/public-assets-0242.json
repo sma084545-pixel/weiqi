@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "id": "AI-PUBLIC-ASSET-PROOF-0242",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "passed",
+  "scope": "Frontend only; actual Render AI still awaiting user deployment",
+  "resultVersion": "0.24.2-pages.1",
+  "commit": "43a57e3",
+  "at": "2026-10-30T19:05:35.514Z",
+  "files": [
+    {
+      "path": "ONLINE_SETUP.md",
+      "bytes": 1713,
+      "sha256": "ab828c5c04bf964a73498f2c602fbec1cf5496c6748fca93b4517524a9bd411f",
+      "status": "passed"
+    },
+    {
+      "path": "app.webmanifest",
+      "bytes": 256,
+      "sha256": "26ae2d10fc5b45982ae4f4f593aaa93b781d4ff63a8bfe2166bc392d01cc9b50",
+      "status": "passed"
+    },
+    {
+      "path": "assets/index-BI_4C-0i.js",
+      "bytes": 1197705,
+      "sha256": "c9156bd76b6cf016fde66f2d877b508ceaa6a01e6e69cdd6a519fbd8709bd01a",
+      "status": "passed"
+    },
+    {
+      "path": "assets/index-CYqM5-jJ.css",
+      "bytes": 149930,
+      "sha256": "83fba6a9506d1562d0a19feba39131aa2bc98c39fc1aa1f994b6660ff3620138",
+      "status": "passed"
+    },
+    {
+      "path": "content/formal-content-v1.json",
+      "bytes": 249844,
+      "sha256": "a58630def9526df81cd8e27b8fabe8bbe59e9905eb4aad1af2fb6203f9b46532",
+      "status": "passed"
+    },
+    {
+      "path": "favicon.svg",
+      "bytes": 362,
+      "sha256": "ea785687252e962c7a71ac3f537a091354ac3e9c7b363dc4099aeb0075aff2b3",
+      "status": "passed"
+    },
+    {
+      "path": "index.html",
+      "bytes": 640,
+      "sha256": "e85345bcdf5ed6dac20021d1e799aa435e8646b06018c9ba18ba51cb36e95c30",
+      "status": "passed"
+    },
+    {
+      "path": "materials/t13/territory-counting-card.md",
+      "bytes": 1372,
+      "sha256": "158917237f52ac5cca0fd2106823f28b5b2ce0310b24cd7bd455c10583de229b",
+      "status": "passed"
+    },
+    {
+      "path": "materials/t17/CAS-evidence-template.md",
+      "bytes": 1613,
+      "sha256": "02db2b62aefe8d0dc007f3a243a47d4f298f73c86169a42b65edba6be52e5bcc",
+      "status": "passed"
+    },
+    {
+      "path": "offline-assets.json",
+      "bytes": 411,
+      "sha256": "40c7a8f834cff16b2a3b299857fdac411fe732b1da5028c95c467c080493effa",
+      "status": "passed"
+    },
+    {
+      "path": "offline.html",
+      "bytes": 880,
+      "sha256": "b5379d9413769029799e8e7914650cab8a5c3477bce36531ee91762389005fe5",
+      "status": "passed"
+    },
+    {
+      "path": "sw.js",
+      "bytes": 3694,
+      "sha256": "244ba365ed55b08a5e7673b4723b7c56b9eb26ea0a5e6089881e53d9f8ce5dbc",
+      "status": "passed"
+    },
+    {
+      "path": "version.json",
+      "bytes": 464,
+      "sha256": "959eb1d27af763f1cb5859512121144a0c706f77e7d3b495f1daf3e60547acc8",
+      "status": "passed"
+    }
+  ]
+}

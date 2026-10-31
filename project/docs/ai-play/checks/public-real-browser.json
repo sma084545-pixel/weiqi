@@ -1,0 +1,428 @@
+{
+  "schemaVersion": 1,
+  "id": "AI-PLAY-REAL-BROWSER",
+  "revision": 2,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "kind": "DeveloperValidationReport",
+  "at": "2026-10-31T00:59:18.143Z",
+  "browser": "156.0.8078.76",
+  "mode": "real-browser-real-KataGo-no-mocks",
+  "base": "https://sma084545-pixel.github.io/weiqi",
+  "checks": [
+    {
+      "name": "real-nine-human-black-ai-white-undo-redo-refresh-resign-postgame-review",
+      "status": "passed",
+      "responses": [
+        {
+          "url": "https://weiqi-katago.onrender.com/api/ai-move",
+          "status": 200,
+          "httpMs": 2018,
+          "result": {
+            "schemaVersion": 1,
+            "positionId": "ai-9e31e6c4-7c53-4509-92ec-67e4460c61e1",
+            "requestId": "35335709-797e-4784-88cb-93db5ee75ef4",
+            "aiColor": "W",
+            "difficulty": "standard",
+            "move": {
+              "type": "place",
+              "at": {
+                "row": 5,
+                "col": 4
+              }
+            },
+            "engine": {
+              "name": "KataGo",
+              "version": "1.18.1",
+              "model": "g170-b6c96-s175395328-d26788732",
+              "backend": "Eigen CPU",
+              "maxVisits": 24
+            },
+            "visits": 24,
+            "elapsedMs": 1
+          }
+        },
+        {
+          "url": "https://weiqi-katago.onrender.com/api/analyze",
+          "status": 200,
+          "httpMs": 1269,
+          "result": {
+            "schemaVersion": 1,
+            "requestId": "b2ece03d-b7ab-4350-a5fa-a10f75818c87",
+            "positionId": "review-7adbbe44-c36c-48d8-8803-5c7fa0378ef1",
+            "perspective": "B",
+            "toPlay": "W",
+            "blackWinrate": 0.113483379,
+            "blackScoreLead": -7.1112781,
+            "visits": 64,
+            "elapsedMs": 359,
+            "engine": {
+              "name": "KataGo",
+              "version": "1.18.1",
+              "model": "g170-b6c96-s175395328-d26788732",
+              "backend": "Eigen CPU",
+              "maxVisits": 64
+            },
+            "candidates": [
+              {
+                "order": 0,
+                "move": {
+                  "type": "place",
+                  "at": {
+                    "row": 5,
+                    "col": 4
+                  }
+                },
+                "visits": 24,
+                "blackWinrate": 0.105858878,
+                "blackScoreLead": -7.43588376,
+                "pv": [
+                  {
+                    "type": "place",
+                    "at": {
+                      "row": 5,
+                      "col": 4
+                    }
+                  },
+                  {
+                    "type": "place",
+                    "at": {
+                      "row": 3,
+                      "col": 2
+                    }
+                  },
+                  {
+                    "type": "place",
+                    "at": {
+                      "row": 3,
+                      "col": 5
+                    }
+                  },
+                  {
+                    "type": "place",
+                    "at": {
+                      "row": 5,
+                      "col": 2
+                    }
+                  }
+                ]
+              },
+              {
+                "order": 1,
+                "move": {
+                  "type": "place",
+                  "at": {
+                    "row": 4,
+                    "col": 5
+                  }
+                },
+                "visits": 24,
+                "blackWinrate": 0.105858878,
+                "blackScoreLead": -7.43588376,
+                "pv": [
+                  {
+                    "type": "place",
+                    "at": {
+                      "row": 4,
+                      "col": 5
+                    }
+                  },
+                  {
+                    "type": "place",
+                    "at": {
+                      "row": 2,
+                      "col": 3
+                    }
+                  },
+                  {
+                    "type": "place",
+                    "at": {
+                      "row": 5,
+                      "col": 3
+                    }
+                  },
+                  {
+                    "type": "place",
+                    "at": {
+                      "row": 2,
+                      "col": 5
+                    }
+                  }
+                ]
+              },
+              {
+                "order": 2,
+                "move": {
+                  "type": "place",
+                  "at": {
+                    "row": 4,
+                    "col": 4
+                  }
+                },
+                "visits": 14,
+                "blackWinrate": 0.127358813,
+                "blackScoreLead": -6.58306109,
+                "pv": [
+                  {
+                    "type": "place",
+                    "at": {
+                      "row": 4,
+                      "col": 4
+                    }
+                  },
+                  {
+                    "type": "place",
+                    "at": {
+                      "row": 6,
+                      "col": 4
+                    }
+                  },
+                  {
+                    "type": "place",
+                    "at": {
+                      "row": 5,
+                      "col": 5
+                    }
+                  },
+                  {
+                    "type": "place",
+                    "at": {
+                      "row": 6,
+                      "col": 5
+                    }
+                  }
+                ]
+              },
+              {
+                "order": 3,
+                "move": {
+                  "type": "place",
+                  "at": {
+                    "row": 5,
+                    "col": 5
+                  }
+                },
+                "visits": 12,
+                "blackWinrate": 0.112264137,
+                "blackScoreLead": -7.20879402,
+                "pv": [
+                  {
+                    "type": "place",
+                    "at": {
+                      "row": 5,
+                      "col": 5
+                    }
+                  },
+                  {
+                    "type": "place",
+                    "at": {
+                      "row": 3,
+                      "col": 3
+                    }
+                  },
+                  {
+                    "type": "place",
+                    "at": {
+                      "row": 3,
+                      "col": 5
+                    }
+                  },
+                  {
+                    "type": "place",
+                    "at": {
+                      "row": 6,
+                      "col": 3
+                    }
+                  }
+                ]
+              },
+              {
+                "order": 4,
+                "move": {
+                  "type": "place",
+                  "at": {
+                    "row": 4,
+                    "col": 3
+                  }
+                },
+                "visits": 8,
+                "blackWinrate": 0.121802577,
+                "blackScoreLead": -6.65656782,
+                "pv": [
+                  {
+                    "type": "place",
+                    "at": {
+                      "row": 4,
+                      "col": 3
+                    }
+                  },
+                  {
+                    "type": "place",
+                    "at": {
+                      "row": 4,
+                      "col": 5
+                    }
+                  },
+                  {
+                    "type": "place",
+                    "at": {
+                      "row": 6,
+                      "col": 4
+                    }
+                  },
+                  {
+                    "type": "place",
+                    "at": {
+                      "row": 6,
+                      "col": 5
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "real-five-white-human-ai-black-keyboard-mobile",
+      "status": "passed",
+      "responses": [
+        {
+          "url": "https://weiqi-katago.onrender.com/api/ai-move",
+          "status": 200,
+          "httpMs": 1575,
+          "result": {
+            "schemaVersion": 1,
+            "positionId": "ai-a6a83c24-cc57-4dc5-acfb-d25ba842bd5e",
+            "requestId": "79aab94a-685c-4dee-8d7e-350ab45b66ab",
+            "aiColor": "B",
+            "difficulty": "relaxed",
+            "move": {
+              "type": "place",
+              "at": {
+                "row": 2,
+                "col": 2
+              }
+            },
+            "engine": {
+              "name": "KataGo",
+              "version": "1.18.1",
+              "model": "g170-b6c96-s175395328-d26788732",
+              "backend": "Eigen CPU",
+              "maxVisits": 8
+            },
+            "visits": 8,
+            "elapsedMs": 1
+          }
+        },
+        {
+          "url": "https://weiqi-katago.onrender.com/api/ai-move",
+          "status": 200,
+          "httpMs": 937,
+          "result": {
+            "schemaVersion": 1,
+            "positionId": "ai-d674601e-4b04-4c5b-9649-c60baef66c28",
+            "requestId": "e62b2699-3d18-4e6d-afe4-687cc71e3357",
+            "aiColor": "B",
+            "difficulty": "relaxed",
+            "move": {
+              "type": "place",
+              "at": {
+                "row": 1,
+                "col": 1
+              }
+            },
+            "engine": {
+              "name": "KataGo",
+              "version": "1.18.1",
+              "model": "g170-b6c96-s175395328-d26788732",
+              "backend": "Eigen CPU",
+              "maxVisits": 8
+            },
+            "visits": 8,
+            "elapsedMs": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "real-forced-pass-manual-confirmation-25-0-postgame-review",
+      "status": "passed",
+      "responses": [
+        {
+          "url": "https://weiqi-katago.onrender.com/api/ai-move",
+          "status": 200,
+          "httpMs": 1694,
+          "result": {
+            "schemaVersion": 1,
+            "positionId": "ai-7c068792-4f64-4b03-9159-cbd8e91f6e92",
+            "requestId": "19c3534b-1108-4adf-ae9c-c2211be57b26",
+            "aiColor": "W",
+            "difficulty": "challenge",
+            "move": {
+              "type": "pass"
+            },
+            "engine": {
+              "name": "KataGo",
+              "version": "1.18.1",
+              "model": "g170-b6c96-s175395328-d26788732",
+              "backend": "Eigen CPU",
+              "maxVisits": 64
+            },
+            "visits": 64,
+            "elapsedMs": 3
+          }
+        },
+        {
+          "url": "https://weiqi-katago.onrender.com/api/analyze",
+          "status": 200,
+          "httpMs": 874,
+          "result": {
+            "schemaVersion": 1,
+            "requestId": "1dfa5657-bda4-4d4d-a4bd-74e9ab8e27fb",
+            "positionId": "review-2b4f0f92-4fc7-4b20-97a7-924d7f250bff",
+            "perspective": "B",
+            "toPlay": "W",
+            "blackWinrate": 0.999999554,
+            "blackScoreLead": 25.4521831,
+            "visits": 64,
+            "elapsedMs": 2,
+            "engine": {
+              "name": "KataGo",
+              "version": "1.18.1",
+              "model": "g170-b6c96-s175395328-d26788732",
+              "backend": "Eigen CPU",
+              "maxVisits": 64
+            },
+            "candidates": [
+              {
+                "order": 0,
+                "move": {
+                  "type": "pass"
+                },
+                "visits": 63,
+                "blackWinrate": 0.999999649,
+                "blackScoreLead": 25.3529183,
+                "pv": [
+                  {
+                    "type": "pass"
+                  },
+                  {
+                    "type": "pass"
+                  },
+                  {
+                    "type": "pass"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "humanReviewed": null,
+  "status": "passed"
+}

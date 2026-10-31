@@ -6,7 +6,7 @@
   "kind": "DeveloperValidationReport",
   "status": "passed",
   "fromVersion": "0.23.0",
-  "toVersion": "0.24.0",
+  "toVersion": "0.24.2",
   "browser": "156.0.8078.76",
   "method": "Actual service worker and disabled browser network at one isolated /weiqi/ localhost origin; no public deployment or real member record claimed",
   "checks": [
@@ -23,6 +23,6 @@
       "status": "passed"
     }
   ],
-  "at": "2026-10-30T18:02:55.066Z",
+  "at": "2026-10-30T18:59:35.661Z",
   "humanReviewed": null
 }

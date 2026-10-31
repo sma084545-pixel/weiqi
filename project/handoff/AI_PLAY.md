@@ -4,48 +4,54 @@ baseVersion: ADVANCED_COURSES 0.23.0-pages.1
 resultVersion: 0.24.2-pages.1
 rulesetId: GO-CLUB-AREA-1
 schemaVersion: 1
-status: implementation-verified-awaiting-public-deployment
+status: complete-digital-scope-with-documented-limits
 ---
 
-# AI 对弈增量交接
+# 真实 AI 对弈增量交接
 
-主线：`work/ai-play-20261030/mainline/go-club`。以已核对SHA的0.23.0完整归档解压，不从旧T01或材料支线覆盖。sources只读未动。当前唯一完成主版本仍由work/release/LATEST.json指向0.23.0；正式部署与新归档复查后才提升LATEST。
+2026-10-31，现有原网站 https://sma084545-pixel.github.io/weiqi/#/play/ai 与本机默认4190软件都已调用现有Render真实KataGo，3+3段实际浏览器流程通过。账户持有人完成手动部署；未新建或升级付费资源，也未绕过被拒绝的Render后台权限。本交接所称完成指本次数字功能范围，不代表真人棋力、课堂效果或任意死活自动裁判。
 
-## 修改文件
+唯一新主线源码：`work/ai-play-20261030/mainline/go-club`。基线取自已完成0.23.0归档，SHA-256为 `6f99a1be987df3c45d629cf919075e23ef4a0c6c0ee1ab1e861c9be7d268d0ee`，未从旧T01/材料支线覆盖。sources只读未动。最新完整包在`work/release/0.24.2-pages.1/`；完成归档旁复查后才提升`work/release/LATEST.json`，旧归档保留为历史。
 
-新增src/features/ai-game/{AiGame.tsx,AiGame.css,model.ts,storage.ts,client.ts,useAiOpponent.ts}，src/core/analysis/ai-contract.ts，server/analysis/ai.ts，schemas/ai-session.schema.json，tests/ai-game/及固定开发fixture；真实HTTP/浏览器/缓存升级脚本，docs/ai-play/。
+## 实现与修改文件
 
-最小调整server/analysis/{position,http,engine}.ts（独立ai-move用途、限定搜索、统一排队取消、就绪能力与appVersion），src/core/analysis/contract.ts（增量错误/健康字段），LearningHub/registry/导航响应式、FullGame暴露现有确认对话框与入口，BoardDisplayTools增加可选AI文字上下文。T15 SGF的AP版本由过时硬编码0.15.0改为公共APP_VERSION。程序版本0.24.0；未改规则算法、坐标、内容schema1、正式题/终局/进阶题、依赖或锁文件。
+- 新增`src/features/ai-game/{AiGame.tsx,AiGame.css,model.ts,storage.ts,client.ts,useAiOpponent.ts}`、`src/core/analysis/ai-contract.ts`、`server/analysis/ai.ts`、`schemas/ai-session.schema.json`、`tests/ai-game/`及明确测试fixture。
+- 最小调整`server/analysis/{position,http,engine,index}.ts`：独立ai-move用途、重放校验、限定搜索、共用排队取消、就绪能力与程序版本。原分析仍要求对局结束；不靠伪造认输绕过门槛。API版本2不改变内容schema1。
+- LearningHub/registry/导航添加`ai-play`、`#/play/ai`和联网声明；FullGame复用确认对话框与入口；BoardDisplayTools增加可选AI语境，原联机默认不变；新手机布局按原样式修复溢出。
+- T15 SGF的AP版本改用公共APP_VERSION，避免旧0.15硬编码；续玩新schema严格拒绝未知字段/无效贴目。
+- 新增真实HTTP、CLI浏览器、禁网缓存升级脚本、归档脚本和`docs/ai-play/`。精确逐文件清单/基线及结果摘要见`docs/ai-play/CHANGED_FILES.json`和发布旁`CHANGE_MANIFEST.json`。
+- 未改T01落子规则、T02棋盘核心、GO-CLUB-AREA-1、坐标、正式30题/6终局/37进阶场景、纸卡课件、内容revision、依赖和锁文件；1593个保护文件字节核对一致。
 
-公共存储新增键go-club:full-game:ai:v1，namespace games；AiGameSession版本1持有options、完整GameState及待确认清单。原真人/引导对局、学习进度键与revision策略不变，无强制迁移。源码新扩展schema独立，不改T00生成类型。JSON导入仍要合法重放，不能相信外部赢家/提子数/历史。
+## 使用范围
 
-## 实际检查
+轻松/标准/挑战为8/24/64最大访问预算，双执色、5/9/13/19、自由让子白先、轮流合法落子、暂停/显式重试、悔棋一手/最近回合、redo分支截断、只读滑动复盘、悬浮整盘/独立画中画/最大化及JSON/SGF。难度不是人类段级位。轻松从实际搜索过且接近首候选的非pass中抽样，不生成随机合法点冒充引擎。
 
-- Node22.23.3、pnpm11.19.0；`pnpm install --frozen-lockfile --prod=false`；`pnpm check`532单测及内容/冻结/类型/构建/容量校验；`pnpm build:analysis`、`pnpm build:pages`。
-- `pnpm test:browser`176+22回归；`KATAGO_UI_EVIDENCE_ROOT=docs/ai-play/checks pnpm exec playwright test --config playwright.ai-analysis.config.ts --workers=1`8条原复盘UI回归。
-- `pnpm test:ai`46项；`node scripts/ai-real-smoke.mjs`真实引擎HTTP14项；CLI运行scripts/ai-browser-journey.cjs（7组真实浏览器流程，明确传输替身）及scripts/ai-real-browser.cjs（3段真实KataGo浏览器对弈/复盘）。`scripts/ai-upgrade-browser.cjs`实际0.23→0.24同源Service Worker升级和禁网刷新通过，原真人/草稿/标记与新AI备份相互独立。结果、请求身份、截图和时间记录在docs/ai-play/checks及output/playwright/ai-*。
-- GitHub真实Docker验证工作流支持feat/ai-play，单容器0.1CPU/512MB；GitHub Actions 41102368132在5ed6920通过真实复盘7项和新AI14项，容器资源与日志保留于checks/docker-real-5ed6920。最终发布提交的增量验证另记。正式Render和原Pages链路待部署、实测。schema/程序版本独立于KataGo1.18.1。
-- 初次T24旧测试存在未等待异步活动保存；补充状态等待后完整流程通过。初次AI小屏横向溢出已修复复验；不隐藏原失败日志。
+连续两停转人工清单；修改死子取消双方确认，争议保留原盘与超级劫历史。AI不代替使用者核定任意死亡。最终面积分不重复加提子，认输不假造分。只有结束后能主动查看真实候选、变化、黑方胜率和预计目差；估计不修改原终局结果。
 
-## 失败、未测和迁移要求
+## 保存与兼容
 
-目前没有已知阻断本机AI用途的规则错误；正式发布仍受Render后台保存权限拒绝所阻，需账户持有人对现有weiqi-katago更新main最新提交，保持Free且不动weiqi-rooms。之后必须实测/readyz apiVersion2以及原网站实际AI落子和赛后分析，不能只看health200。未授权付费、未绕过浏览器权限；无新账号/数据库/模型上传。
+公共存储新增`go-club:full-game:ai:v1`，namespace `games`，AiGameSession schema1持有options、完整可重放GameState和待核对注释。真人/引导棋局和课程进度键不变，不强制迁移。刷新后AI暂停，由使用者继续，避免重复计算。合法导入必须重放，不相信外部提子/赢家/重复历史。备份覆盖独立AI键；清学习进度不清棋局/草稿；续玩JSON保留难度和redo路径，SGF主线不完整携带终局注释与AI设置。
 
-旧缓存用“保存已提交内容并应用”，不清站点数据。暂停/刷新后AI不自动重发；需要用户继续。除网络服务新接口以外，无强制数据迁移；卸载AI模块时先导出其独立续玩JSON。
+## 实际检查与证据
 
-已知限制和未测（真机浏览器、人类棋力校准、多人负载）见docs/ai-play/KNOWN_ISSUES.md；没有声称CAS认可、认知收益、真实教学效果或人类教师审核。归档与正式发布证据完成后补充到本交接；不要提前把阶段版称为部署完成。
+- Node22.23.3、pnpm11.19.0，`corepack pnpm install --frozen-lockfile --prod=false`；`corepack pnpm check`通过532项单测及类型/schema/正式内容851断言/冻结/容量/构建；`corepack pnpm build:analysis`、`corepack pnpm build:pages`。
+- `corepack pnpm test:ai`46项；既有`pnpm test:browser`176条、online22条及原复盘UI8条通过。CLI运行`scripts/ai-browser-journey.cjs`7组，传输替身明确标记；`scripts/ai-real-browser.cjs`原生3段、正式网站3段、本机4190至Render3段实际引擎。报告和截图在`docs/ai-play/checks/`，不是学生记录。
+- `scripts/ai-upgrade-browser.cjs`真正禁用网络，0.23→0.24.2 Service Worker升级、旧自标记/真人棋局/草稿、新AI恢复与备份隔离通过。AI断网只保存/浏览，不假称离线计算。
+- Docker真实Linux CI Actions41109154159 / `6eb3f38`：0.1CPU/512MB、15项AI+7项review，固定KataGo1.18.1 Eigen与g170-b6c96模型；最终0.24.2相对该后台只变程序文字及让子提示，API逻辑不变。早期5ed6920/c6a80ac单列历史证据。
+- 正式后端 main `43a57e3e4d484595195d51d181149eeea020988c`，GitHub部署7452023481成功；`/readyz`0.24.2/API2、1实例、512MiB上限/实际CPU配额采样0.15。`public-ready-final.json`采样active0/queued0、内存峰值约72.8MiB。3个精确CORS来源通过，其他github.io拒绝。没有定期请求保活。
+- `public-real-browser.json`与`public-local-real-browser.json`各3段流程、真实POST、控制台及页面错误0；`public-publication.json`核对13个正式线上构建文件散列。真实9路→undo/redo→刷新→认输→赛后分析，5路白方键盘与唯一合法pass→人工25–0→复盘均执行；pass例为测试起点，不伪造空盘整局。
+- 完整归档封包后的重新解压、CRC/全文件SHA/数量/干净安装构建及远端Release资产摘要，证据在版本目录`ARCHIVE_CHECK.json`、`PUBLICATION_PROOF.json`与日志；这些旁附检查不宣称已在封包内部倒写。
 
-## 2026-10-31部署阶段
+## 失败修复、未测和限制
 
-- GitHub main c6a80ac692550bd90b585489d7f5343bf4814503，Pages legacy main/root已built，version.json实际0.24.0；浏览器实际旧0.23缓存升级到0.24并保留STAGE-05标记。source及前端已发布；不是全链路完成声明。
-- 真实独立Document PiP中81点完整显示，可直接下出黑方一手并同步接收真实KataGo白方回复；关闭小窗主棋局仍4手，见document-pip.json。
-- Render /readyz最后检查仍未返回apiVersion2/appVersion0.24，保留现有旧复盘服务；需要账户持有人Manual Deploy现有weiqi-katago的main最新提交。已用异步问题请求一次，不重复询问，不借其他浏览器/接口绕过保存的访问拒绝。不得以定期唤醒Render方式保活；没有用户完成部署的新信息时不要反复访问该服务。
-- LATEST.json仍保留0.23完成版；预部署包明确标pending，不当作唯一完成版。正式Live后，继续跑scripts/ai-real-browser.cjs于原网站（独立新浏览器上下文，实际服务，不拦截请求），保存public-real-browser.json、CORS/ready/发布散列证据，再生成并解压验证0.24正式归档、更新LATEST并通知。
+初次旧T24用例未等异步反馈保存：175/176，补充完成状态等待后176全过，业务断言未放宽。新AI手机表单固有宽度溢出已修复；新增精确本机Origin的类型配置遗漏已修复。原失败日志留存。没有未解决的阻断/重要问题。
 
-## 0.24.1补丁与缓存边界
+未测真实Safari/iPhone/iPad、长期多人负载、完整平台休眠/拉镜像冷启动、人类棋力校准；未读取Render受限后台日志或账单。有限搜索和旧小模型不保证强手/精确目差；免费服务休眠与12AI/IP/分钟、18全服务/分钟、1计算+2排队限制仍在。不承诺无限并发/每步秒回；无收费升级、无自动保活。
 
-续玩导入拒绝未知顶层/选项/注释字段，并与开局相同限制贴目，避免导出与新增schema不一致。通用规则仍可接受其原有贴目范围，未改真人存档。额外2项测试，全套531、AI45通过。0.24前端已曾发布，因此当前程序提升到0.24.1让Service Worker确实检测更新；旧有效AI记录与存储键不变。c6a80ac的API2协议对正式网站仍兼容，但新增本机CORS白名单需要最新0.24.1后端；本任务要求网站与默认本机软件均可用，因而仍需Manual Deploy最新main。下一步正式包/验收用0.24.1-pages.1。
+任意外部SGF直接转AI续玩尚未实现，使用T15浏览和AI续玩JSON；已安装37场景与引导13路的本地教学机器人保持原范围。实际打印、制造、真人教学、CAS认定均未在本轮验证。
 
-本机软件的127.0.0.1:4190与localhost:4190已加入服务端两个精确CORS白名单，仍不允许任意github.io、其他端口或任意局域网IP。这样正式网站与默认本机软件都能调用同一Render引擎，不伪造Origin或使用账户代理。该增量需要最新0.24.1后端；c6a80ac只支持正式网站，不能据此宣称本机也已接通。
+## 发布与后续迁移
 
-最终候选0.24.2修正自由让子时的选色括号（白方由你/AI执棋时均明确白先），避免空盘提示与让子白先说明冲突。仅视图文案和程序缓存版本改变；后台最低0.24.1（含精确本机Origin）仍兼容。正式归档使用0.24.2-pages.1，完成前不提升LATEST。
+仓库`sma084545-pixel/weiqi`，Pages为main/root，当前源码在project/。KataGo仍是已有`weiqi-katago`，房间`weiqi-rooms`未部署/修改。Render Blueprint为`project/deploy/katago.render.yaml`，autoDeploy关闭；本轮最终证据文档提交不需再次手动部署。正式网站URL不变，下载见GitHub Release `v0.24.2-pages.1`。
+
+升级前保存/导出，再点网站“保存已提交内容并应用”，不清站点数据。回滚先备份；Render与前端各部署已记录版本，旧review-only后台应显示需更新而非伪造AI。下一个任务以此0.24.2完整包和本交接为基线，先核对LATEST及归档旁证明，不用预部署包或旧归档覆盖。部署/环境变量/模型替换与限制见`docs/ai-play/DEPLOYMENT.md`、`KNOWN_ISSUES.md`。

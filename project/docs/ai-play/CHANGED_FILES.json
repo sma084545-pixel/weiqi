@@ -5,9 +5,9 @@
   "rulesetId": "GO-CLUB-AREA-1",
   "taskId": "AI_PLAY",
   "baseVersion": "0.23.0-pages.1",
-  "resultVersion": "0.24.1-pages.1",
-  "programVersion": "0.24.1",
-  "status": "awaiting-render-deployment-and-public-e2e",
+  "resultVersion": "0.24.2-pages.1",
+  "programVersion": "0.24.2",
+  "status": "complete-digital-scope-with-documented-limits",
   "kind": "ChangeManifest",
   "files": [
     {
@@ -20,13 +20,13 @@
       "path": "CHANGELOG.md",
       "change": "modified",
       "baseSha256": "10708a210e67630e79663b8447bd6ac31e14e7ecd4a41bcd149fe5444081f442",
-      "sha256": "cb22398e8b3505f871a266e95fb2b236d1ab5250ea01beb7da8a47cffbbae8d7"
+      "sha256": "b57c1743bd904c4e520d565c6da516a7e219b64cd438826102c7acf2df7226f9"
     },
     {
       "path": "README.md",
       "change": "modified",
       "baseSha256": "79e1cfcfa77c2f6448b0afc553b1f11db4e3dbb6616e028aef55fed6bbd2b7b4",
-      "sha256": "149a5e942b3e4ae29f4f1a02e04b38badacd2db57a253c7e24fc33f522c33356"
+      "sha256": "d10dc9693c894addf2d4a2f9b5752b27fd6cea43681970295cae5b22f0d7c533"
     },
     {
       "path": "docs/INTERFACES.md",
@@ -38,25 +38,31 @@
       "path": "docs/ai-play/ACCEPTANCE.md",
       "change": "added",
       "baseSha256": null,
-      "sha256": "4ee50eca38a64b3f3a9e5535b3f0a9a9ab6fd44f075eae4be51bfccb66f95fde"
+      "sha256": "4f982bfc5ae38116e9ac1fc546399249cebfc48c3119c813bc5b302311532e00"
     },
     {
       "path": "docs/ai-play/DEPLOYMENT.md",
       "change": "added",
       "baseSha256": null,
-      "sha256": "ce3abd379174edb7f31286a9185f05d9d1467850c1a519713c55ca0c707f46d9"
+      "sha256": "1c5a6f5fd43108c6ec1a6ac844eb89203872a6e7942854953ab9d70b2da15806"
     },
     {
       "path": "docs/ai-play/KNOWN_ISSUES.md",
       "change": "added",
       "baseSha256": null,
-      "sha256": "e6d38920cd97b9ae6448a80dc486af31cfac375434a6609cb47cbb62462d2306"
+      "sha256": "19c996c9e33a0cc4a7b49057027101180a8b92c566281c14de9d5f81e3c2d00f"
     },
     {
       "path": "docs/ai-play/USAGE.md",
       "change": "added",
       "baseSha256": null,
       "sha256": "2f49da8e2f823de40dfeab2b4d6a855c0ec7ec1f17dd312c6720f515d97c7526"
+    },
+    {
+      "path": "docs/ai-play/checks/STATUS.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "dba0e058b0fba82cd3ed50d3cd603c468e6ef8c87487b3c7bae9303cc4583f4b"
     },
     {
       "path": "docs/ai-play/checks/ai-1280-19-touch.png",
@@ -176,7 +182,7 @@
       "path": "docs/ai-play/checks/browser-journey.json",
       "change": "added",
       "baseSha256": null,
-      "sha256": "1a8f34dac8e1e43b0fcb0abbc4376d7b4b839609ca52ad47e4bc1f0de9b15910"
+      "sha256": "377c1401b9ec5d156798d9bbb8298a5b751b7266552f252839227e88a615cf02"
     },
     {
       "path": "docs/ai-play/checks/browser-regression-final.log",
@@ -200,19 +206,19 @@
       "path": "docs/ai-play/checks/build-analysis-final.log",
       "change": "added",
       "baseSha256": null,
-      "sha256": "955656de56b3f029695797cb6f93fd11c432c403f16565191bcf4cf8b202bb0b"
+      "sha256": "ca46cae666e280ace345491784c6b4dfac4a16c10d41e8f2300de9f5b7e4a2e5"
     },
     {
       "path": "docs/ai-play/checks/build-pages-final.log",
       "change": "added",
       "baseSha256": null,
-      "sha256": "c7be70fd4bc878312f9eedea9d0456fad77f5b4cf5d8f85532eb2b02e085b2d1"
+      "sha256": "bc4c117d7a72313536084a64edd517b6f19b166a5938dece09d0f8d6b0e6fe63"
     },
     {
       "path": "docs/ai-play/checks/check-final.log",
       "change": "added",
       "baseSha256": null,
-      "sha256": "9b7549866d7ae0aab08306b8b2a269cd8069e00f94a10b8fe5c28a60ac92e95d"
+      "sha256": "f3f3dfc6ee84dd0cd677315b2cbee4c746cb4716c9988850bd17365a4e0de7dd"
     },
     {
       "path": "docs/ai-play/checks/check-initial.log",
@@ -270,6 +276,54 @@
     },
     {
       "path": "docs/ai-play/checks/docker-real-5ed6920/resource-limits.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "df65b1c7c21fc4ac7df46835d755e9618b047528767934a9b37467789721c5d8"
+    },
+    {
+      "path": "docs/ai-play/checks/docker-real-6eb3f38/ai-real-http.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "74e495a7b1717cc82a69577d24325e353338c86cb5e4906ff038f5d8970fbcf6"
+    },
+    {
+      "path": "docs/ai-play/checks/docker-real-6eb3f38/container-state.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "d1d6e22cce3f3aa418b55b9cdb86820c41ecea52589c0756ba7e8828922e8d62"
+    },
+    {
+      "path": "docs/ai-play/checks/docker-real-6eb3f38/container-stderr.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/ai-play/checks/docker-real-6eb3f38/container-stdout.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "e75465954c52a7cc78a67afa05408e199b47da102e03e77099baea90874bca5a"
+    },
+    {
+      "path": "docs/ai-play/checks/docker-real-6eb3f38/engine-version.txt",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "82323c634e58542e65d94926e26f6aa55cacbc397520ad8561f402152a6eaf75"
+    },
+    {
+      "path": "docs/ai-play/checks/docker-real-6eb3f38/memory-peak-bytes.txt",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "a99b6b4de250d8ef9ca8f7b4c56d73a3bff1c91c1c7ba9accd4a3d7d1bfdfdc8"
+    },
+    {
+      "path": "docs/ai-play/checks/docker-real-6eb3f38/real-http-smoke.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "82213f87cc672040f479f9e4a86687a3c00a11a436b32cbeeb1fde50abf80dc9"
+    },
+    {
+      "path": "docs/ai-play/checks/docker-real-6eb3f38/resource-limits.json",
       "change": "added",
       "baseSha256": null,
       "sha256": "df65b1c7c21fc4ac7df46835d755e9618b047528767934a9b37467789721c5d8"
@@ -371,10 +425,22 @@
       "sha256": "a3b4f6a214d5d3dff509f8657cd6d3a090009145ec2503cef4d210beb9740655"
     },
     {
+      "path": "docs/ai-play/checks/predeploy-extraction-check.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "a2e4af043cdf80df34629607f6f40b6d867eb0be51538323ace6a30936f2b34d"
+    },
+    {
       "path": "docs/ai-play/checks/preservation.json",
       "change": "added",
       "baseSha256": null,
-      "sha256": "7d59c122848d177a3876d77bf1430d0954f153298e50a1657377b5c6a064e942"
+      "sha256": "a58f5a510d3ea49b0d147196515194ebbd3918e02eccd1e92e97a8762b502109"
+    },
+    {
+      "path": "docs/ai-play/checks/public-assets-0242.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "7569140be7667491c472cf847f2bcc3f73113b9f7813f86ddf420510dac7a404"
     },
     {
       "path": "docs/ai-play/checks/public-assets.json",
@@ -383,28 +449,142 @@
       "sha256": "0144f7bf9c01fe7e93c853c8b71899ea9193becb0f53704eb8b4b54f005d2ec6"
     },
     {
+      "path": "docs/ai-play/checks/public-cors.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "48ca3f875c481ba4900bcef7be532cf426ccfc75c5da3dc73c53ff3e01046f51"
+    },
+    {
+      "path": "docs/ai-play/checks/public-local-real-browser.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "681de0352b8fa822a5f0cbd2e587fc4b33d917e297531350e20f34618aceb315"
+    },
+    {
+      "path": "docs/ai-play/checks/public-publication.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "a10c129a5dc9009acc6ac7108b75c6c83f97714600c8bd2e2de826cde6fe0e4b"
+    },
+    {
+      "path": "docs/ai-play/checks/public-ready-final.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "b32b250bc24f69931d0a8c6dfc499409f20197f4552cface4b523dcc99b20dc3"
+    },
+    {
+      "path": "docs/ai-play/checks/public-ready.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "95969f23b994ffec6b2c42df72ea0c6489f1eb8a807d13bb31f99b02fe987350"
+    },
+    {
+      "path": "docs/ai-play/checks/public-real-browser-first.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "3e9c82b6f186f3be80902fb408e1775a6f3d162b662d0a9afac6f55a82ce8598"
+    },
+    {
+      "path": "docs/ai-play/checks/public-real-browser.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "b6c2953c51f9c72110d832529d6dde725b44cbf86b9fcf2abffafb00a1383ce2"
+    },
+    {
+      "path": "docs/ai-play/checks/public-upgrade-0242.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "09a28218402a85379f29001c0c95256200964f2c9aec7f0cb089c74bc8cdd412"
+    },
+    {
       "path": "docs/ai-play/checks/public-upgrade.json",
       "change": "added",
       "baseSha256": null,
       "sha256": "276d5b47c85e03b65bba5a973dbaef88d088d8835395762657555d36ec99fd24"
     },
     {
+      "path": "docs/ai-play/checks/render-github-deployment-status.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "151d599f2b5c1ee3a99cc4787b85b9ea033061efb30bc1665fd36aae8cadb85d"
+    },
+    {
+      "path": "docs/ai-play/checks/screenshots-local/ai-real-360-keyboard.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "31be35f98cddb08ee7ba0f74e1454f720f51e7fc4347fb93fc7a814fa9b15617"
+    },
+    {
+      "path": "docs/ai-play/checks/screenshots-local/ai-real-9-desktop.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "0d02dba720f01ac219ffb1a66d17e0e0bb934a0d1ae1f938bbb528432f2ab39a"
+    },
+    {
+      "path": "docs/ai-play/checks/screenshots-local/ai-real-9-full.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "688214e008c27cfe8355d548f7c2295948e5202ef84054418342cc192a678392"
+    },
+    {
+      "path": "docs/ai-play/checks/screenshots-local/ai-real-document-pip.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "5dd989368d9167c878970b56cfdf08535ccfe19ed4510e51db3471744e234cce"
+    },
+    {
+      "path": "docs/ai-play/checks/screenshots-local/ai-real-pass-finish-review.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "74a966df5a29f049965c7332a0a2370dfffc569181b637b5703d539965fcdfa0"
+    },
+    {
+      "path": "docs/ai-play/checks/screenshots-public/ai-real-360-keyboard.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "31be35f98cddb08ee7ba0f74e1454f720f51e7fc4347fb93fc7a814fa9b15617"
+    },
+    {
+      "path": "docs/ai-play/checks/screenshots-public/ai-real-9-desktop.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "0d02dba720f01ac219ffb1a66d17e0e0bb934a0d1ae1f938bbb528432f2ab39a"
+    },
+    {
+      "path": "docs/ai-play/checks/screenshots-public/ai-real-9-full.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "f7a566568e7a876c0f8e6e482d723085d863b5429adb5e4e5c47be5c018130b9"
+    },
+    {
+      "path": "docs/ai-play/checks/screenshots-public/ai-real-document-pip.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "5dd989368d9167c878970b56cfdf08535ccfe19ed4510e51db3471744e234cce"
+    },
+    {
+      "path": "docs/ai-play/checks/screenshots-public/ai-real-pass-finish-review.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "74a966df5a29f049965c7332a0a2370dfffc569181b637b5703d539965fcdfa0"
+    },
+    {
       "path": "docs/ai-play/checks/upgrade-offline.json",
       "change": "added",
       "baseSha256": null,
-      "sha256": "cb258dbf580f492741262d07c89b47e24fccc5a9814f4201a862eadd20a8cdfd"
+      "sha256": "94d3df962e3451b8c40d1b59f5124ee003fd9719a5e9138c3903579b2fe72d51"
     },
     {
       "path": "handoff/AI_PLAY.md",
       "change": "added",
       "baseSha256": null,
-      "sha256": "3ff0595dce4b7852898c472a5d9ce4c852b3aef213bd28835ba44e439a9a0736"
+      "sha256": "fd35cb6c45ca73f50e9f74516e80c36b5b1e5fbf9945c4053ab809ea5099d495"
     },
     {
       "path": "package.json",
       "change": "modified",
       "baseSha256": "6fdd41b9b26936e0d876f31fb7cf86f53ddd4ffb185b154e3ecd8a0b9d31cdda",
-      "sha256": "2210242053f45adc2de52ff212c1581d5f183dd276a929a8598131cdab647b55"
+      "sha256": "b9803bc04ffef5b9b25e86119bcb3603b6434217b6b82ec644018102f4ee9441"
     },
     {
       "path": "playwright.ai-analysis.config.ts",
@@ -422,7 +602,7 @@
       "path": "scripts/ai-browser-journey.cjs",
       "change": "added",
       "baseSha256": null,
-      "sha256": "131b076bfde8edc973843f50b5da96c64d170a170e10db56dd6172597e1103e0"
+      "sha256": "59383a846114beed3a2a28390d3ca0b14b6e901a0874a914850c02f5b8d9515b"
     },
     {
       "path": "scripts/ai-document-pip-browser.cjs",
@@ -434,13 +614,13 @@
       "path": "scripts/ai-public-upgrade.cjs",
       "change": "added",
       "baseSha256": null,
-      "sha256": "1c3c28b1c0f0171df7abb5d5c0b11218ae3e0e784e1dba51526926404513bf09"
+      "sha256": "00197c820a77f4a8db9c8799964c7d93d7cd032e002301e04dd14985c061058e"
     },
     {
       "path": "scripts/ai-real-browser.cjs",
       "change": "added",
       "baseSha256": null,
-      "sha256": "8bb59eaf2a1ee9f5c03863bbbdcd380d524f7851469b560dc4f995c912a6ae3f"
+      "sha256": "084264fe5bc396ef6a84528c3f5415e4d5bf61696ade69a2ee9e8e925c0b7d03"
     },
     {
       "path": "scripts/ai-real-smoke.mjs",
@@ -452,7 +632,7 @@
       "path": "scripts/ai-upgrade-browser.cjs",
       "change": "added",
       "baseSha256": null,
-      "sha256": "f6dc53a7fd5554c6414e581e6c8a7ca258b87d3eb73bc7b4d42b36f2ceb95934"
+      "sha256": "29870f9e2143099c7a758e808f0ff588fb13c9fa3a72661aa27366fd3aaf278e"
     },
     {
       "path": "scripts/ai-upgrade-server.py",
@@ -464,7 +644,7 @@
       "path": "scripts/package-ai-play.py",
       "change": "added",
       "baseSha256": null,
-      "sha256": "6288230a378bf049c5094da39250de5b5567814df198a53c405dd7640e17a61a"
+      "sha256": "6179a89f0e9020be2f4aab20fd84286a6a3388a41faf6de11388269976805eb2"
     },
     {
       "path": "scripts/sync-github-pages.py",
@@ -524,7 +704,7 @@
       "path": "src/core/version.ts",
       "change": "modified",
       "baseSha256": "f1ad35972c20aeca28814bf530053e2139a865f15aa8e900a98b23561b1da5b8",
-      "sha256": "d1efc367fcfbb5d02192d958292e67986b6907f677eab1c5650d208857e92d83"
+      "sha256": "3823ea5eac65c6f7f9389cf24674eb84e163d1d5bebecd409d01bbdf0888ee87"
     },
     {
       "path": "src/features/ai-game/AiGame.css",
@@ -536,7 +716,7 @@
       "path": "src/features/ai-game/AiGame.tsx",
       "change": "added",
       "baseSha256": null,
-      "sha256": "96b94f9ad2ceb62df95f554b7093ebe78da14bdf553ff8aaf9ba045162ff7ba5"
+      "sha256": "f52e0b95e7dffcdc8b0d29f3be8ed553cea6fb98b77f7ff2ecb32df49e9ca123"
     },
     {
       "path": "src/features/ai-game/client.ts",
@@ -602,7 +782,7 @@
       "path": "tests/ai-game/api.test.ts",
       "change": "added",
       "baseSha256": null,
-      "sha256": "9646501c72131b13f574a2a825355c3565773c65af029863641cea83bec44afa"
+      "sha256": "091d8710f592db9a7bdd211e235c1f3481c748d76b70189c60d495426472247c"
     },
     {
       "path": "tests/ai-game/client.test.ts",

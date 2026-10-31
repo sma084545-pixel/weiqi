@@ -1,7 +1,7 @@
 ---
 schemaVersion: 1
 id: DOC-CHANGELOG
-revision: 24
+revision: 25
 rulesetId: GO-CLUB-AREA-1
 ---
 
@@ -14,7 +14,7 @@ rulesetId: GO-CLUB-AREA-1
 - 复用棋盘/放大/悬浮/画中画、T16存储和T08计分；无引擎/坐标/题库/锁文件修改。手机六项导航两行；修复新AI设置固有宽度溢出。SGF AP版本使用统一程序版本。
 - 让子时的选色说明按实际白先轮次显示，最终候选提升至0.24.2，避免沿用已发布候选的缓存。
 - 收紧续玩文件的未知字段和贴目范围校验；公开过0.24页面后提升到0.24.1以触发缓存更新，保持旧有效记录兼容。
-- 实际验证与部署阶段见docs/ai-play/ACCEPTANCE.md与handoff/AI_PLAY.md，未完成线上部署时不以本条日志冒称已上线。
+- 已在原GitHub网站和默认本机软件完成真实Render对弈及赛后复盘；实际验收、有限样本性能和未测范围见docs/ai-play/ACCEPTANCE.md与handoff/AI_PLAY.md。
 
 ## 0.23.0 — 学习路线7–12（2026-10-24）
 

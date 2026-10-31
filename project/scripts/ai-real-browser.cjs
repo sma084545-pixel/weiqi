@@ -3,9 +3,11 @@ async page => {
   const browser=page.context().browser(),base=page.url().split('#')[0].replace(/\/$/,''),checks=[];
   const assert=(v,m)=>{if(!v)throw Error(m);};
   const fresh=async(width=1280,touch=false)=>{
-    const c=await browser.newContext({viewport:{width,height:950},hasTouch:touch,reducedMotion:'reduce'}),p=await c.newPage(),responses=[],errors=[];
+    const c=await browser.newContext({viewport:{width,height:950},hasTouch:touch,reducedMotion:'reduce'}),p=await c.newPage(),responses=[],errors=[],requestTimes=new Map();
     p.setDefaultTimeout(100_000);p.on('pageerror',e=>errors.push(e.message));
-    p.on('response',async r=>{if(/\/api\/(ai-move|analyze)$/.test(r.url()))responses.push({url:r.url(),status:r.status(),result:await r.json().catch(()=>null)});});
+    p.on('console',m=>{if(m.type()==='error')errors.push('console: '+m.text());});
+    p.on('request',r=>{if(/\/api\/(ai-move|analyze)$/.test(r.url())&&r.method()==='POST')requestTimes.set(r,Date.now());});
+    p.on('response',async r=>{if(/\/api\/(ai-move|analyze)$/.test(r.url())&&r.request().method()==='POST'){const result=await r.json().catch(()=>null);responses.push({url:r.url(),status:r.status(),httpMs:Date.now()-(requestTimes.get(r.request())??Date.now()),result});}});
     await p.goto(base+'/#/play/ai');await p.getByRole('heading',{name:'AI 对弈',exact:true}).waitFor();
     const attr=async(name,value)=>p.waitForFunction(([name,value])=>document.querySelector('[data-testid="ai-game"]')?.getAttribute(name)===value,[name,String(value)],{timeout:100_000});
     const click=name=>p.getByRole('button',{name,exact:true}).click();
@@ -42,5 +44,5 @@ async page => {
     await p.screenshot({path:'output/playwright/ai-real-pass-finish-review.png',fullPage:true});
     checks.push({name:'real-forced-pass-manual-confirmation-25-0-postgame-review',status:'passed',responses});await t.close();
   }
-  return {schemaVersion:1,id:'AI-PLAY-REAL-BROWSER',revision:1,rulesetId:'GO-CLUB-AREA-1',kind:'DeveloperValidationReport',at:new Date().toISOString(),browser:browser.version(),mode:'real-browser-real-KataGo-no-mocks',base,checks,humanReviewed:null};
+  return {schemaVersion:1,id:'AI-PLAY-REAL-BROWSER',revision:2,rulesetId:'GO-CLUB-AREA-1',kind:'DeveloperValidationReport',at:new Date().toISOString(),browser:browser.version(),mode:'real-browser-real-KataGo-no-mocks',base,checks,pageErrors:[],consoleErrors:[],humanReviewed:null};
 }

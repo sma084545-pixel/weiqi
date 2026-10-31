@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "AI-PREDEPLOY-EXTRACT-CHECK",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "passed",
+  "scope": "Archive integrity only; not public Render e2e",
+  "resultVersion": "0.24.2-pages.1",
+  "files": 3416,
+  "allFileHashesMatch": true,
+  "duplicatePaths": false,
+  "puzzles": 30,
+  "endgames": 6,
+  "nodeModulesIncluded": false,
+  "launcherExecutable": true,
+  "freshSource": "/Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/ai-play-20261030/fresh-predeploy-0242/go-club",
+  "frozenInstall": "passed",
+  "aiTests": 46,
+  "cleanBuild": "passed",
+  "productionFilesRebuiltByteIdentically": 13
+}

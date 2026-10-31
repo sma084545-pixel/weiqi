@@ -11,6 +11,7 @@ for name in ['browser-journey.json','native-real-browser.json','upgrade-offline.
 docker=json.loads((R/'docs/ai-play/checks/docker-real-5ed6920/ai-real-http.json').read_text());assert len(docker['checks'])>=14 and all(x['status']=='passed' for x in docker['checks'])
 if not a.stage:
     public=json.loads((R/'docs/ai-play/checks/public-real-browser.json').read_text());assert public['status']=='passed'
+    local=json.loads((R/'docs/ai-play/checks/public-local-real-browser.json').read_text());assert local['status']=='passed'
     ready=json.loads((R/'docs/ai-play/checks/public-ready.json').read_text());assert ready.get('appVersion') in ['0.24.1','0.24.2'] and ready['apiVersion']==2 and ready['ready']
     assert json.loads((R/'docs/ai-play/checks/public-publication.json').read_text())['status']=='passed'
 V='0.24.2-pages.1';status='awaiting-render-deployment-and-public-e2e' if a.stage else 'complete-digital-scope-with-documented-limits';stem='go-club-0.24.2-predeploy' if a.stage else 'go-club-'+V

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "GITHUB-CURRENT-SOURCE",
-  "revision": 26,
+  "revision": 27,
   "rulesetId": "GO-CLUB-AREA-1",
   "resultVersion": "0.24.2-pages.1",
   "programVersion": "0.24.2",
@@ -25,8 +25,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 27884,
-      "sha256": "a4c870e509048295b06fc691526d8e0c79bc37a8bff080c7aaad3c848c685a0e"
+      "bytes": 27929,
+      "sha256": "b57c1743bd904c4e520d565c6da516a7e219b64cd438826102c7acf2df7226f9"
     },
     {
       "path": "MERGE_C_RELEASE_MANIFEST.json",
@@ -35,8 +35,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 9713,
-      "sha256": "d7ac431fc10f2142d649d10f17f1c181c17b9eee652ad19158b46c1038fda083"
+      "bytes": 9749,
+      "sha256": "d10dc9693c894addf2d4a2f9b5752b27fd6cea43681970295cae5b22f0d7c533"
     },
     {
       "path": "README_MERGE_C.md",
@@ -3905,8 +3905,8 @@
     },
     {
       "path": "handoff/AI_PLAY.md",
-      "bytes": 6612,
-      "sha256": "ad706d7fa1d572239cc08ace2b6e2f9b5e56aeaadcb3d0bc6b9b0c8c1f5b7dd2"
+      "bytes": 7373,
+      "sha256": "fd35cb6c45ca73f50e9f74516e80c36b5b1e5fbf9945c4053ab809ea5099d495"
     },
     {
       "path": "handoff/CONTENT_FREEZE.json",
@@ -7405,28 +7405,33 @@
     },
     {
       "path": "docs/ai-play/ACCEPTANCE.md",
-      "bytes": 5556,
-      "sha256": "d73f0b90feae4bc12efe03f79be39c54232fc46e9c534f675f9c7391a6e17c04"
+      "bytes": 5310,
+      "sha256": "4f982bfc5ae38116e9ac1fc546399249cebfc48c3119c813bc5b302311532e00"
     },
     {
       "path": "docs/ai-play/CHANGED_FILES.json",
-      "bytes": 22897,
-      "sha256": "10a903b3ca73f9a13b749fa68a69fd1ae8ab9347c8eb4eb1ee27b56f98ef638d"
+      "bytes": 29474,
+      "sha256": "d37dac50a7c739314669ada8bc84fcda19085ce3046cfd302e2b1eebd27f1ff4"
     },
     {
       "path": "docs/ai-play/DEPLOYMENT.md",
-      "bytes": 5388,
-      "sha256": "ce3abd379174edb7f31286a9185f05d9d1467850c1a519713c55ca0c707f46d9"
+      "bytes": 5856,
+      "sha256": "1c5a6f5fd43108c6ec1a6ac844eb89203872a6e7942854953ab9d70b2da15806"
     },
     {
       "path": "docs/ai-play/KNOWN_ISSUES.md",
-      "bytes": 1842,
-      "sha256": "e6d38920cd97b9ae6448a80dc486af31cfac375434a6609cb47cbb62462d2306"
+      "bytes": 1877,
+      "sha256": "19c996c9e33a0cc4a7b49057027101180a8b92c566281c14de9d5f81e3c2d00f"
     },
     {
       "path": "docs/ai-play/USAGE.md",
       "bytes": 2975,
       "sha256": "2f49da8e2f823de40dfeab2b4d6a855c0ec7ec1f17dd312c6720f515d97c7526"
+    },
+    {
+      "path": "docs/ai-play/checks/STATUS.json",
+      "bytes": 1101,
+      "sha256": "dba0e058b0fba82cd3ed50d3cd603c468e6ef8c87487b3c7bae9303cc4583f4b"
     },
     {
       "path": "docs/ai-play/checks/ai-1280-19-touch.png",
@@ -7609,9 +7614,19 @@
       "sha256": "a3b4f6a214d5d3dff509f8657cd6d3a090009145ec2503cef4d210beb9740655"
     },
     {
+      "path": "docs/ai-play/checks/predeploy-extraction-check.json",
+      "bytes": 668,
+      "sha256": "a2e4af043cdf80df34629607f6f40b6d867eb0be51538323ace6a30936f2b34d"
+    },
+    {
       "path": "docs/ai-play/checks/preservation.json",
-      "bytes": 687,
-      "sha256": "5654d37225e60332da38f8f52550ded610702ac5c2057657458be629c9dbad2d"
+      "bytes": 727,
+      "sha256": "a58f5a510d3ea49b0d147196515194ebbd3918e02eccd1e92e97a8762b502109"
+    },
+    {
+      "path": "docs/ai-play/checks/public-assets-0242.json",
+      "bytes": 2675,
+      "sha256": "7569140be7667491c472cf847f2bcc3f73113b9f7813f86ddf420510dac7a404"
     },
     {
       "path": "docs/ai-play/checks/public-assets.json",
@@ -7619,14 +7634,109 @@
       "sha256": "0144f7bf9c01fe7e93c853c8b71899ea9193becb0f53704eb8b4b54f005d2ec6"
     },
     {
+      "path": "docs/ai-play/checks/public-cors.json",
+      "bytes": 610,
+      "sha256": "48ca3f875c481ba4900bcef7be532cf426ccfc75c5da3dc73c53ff3e01046f51"
+    },
+    {
+      "path": "docs/ai-play/checks/public-local-real-browser.json",
+      "bytes": 12135,
+      "sha256": "681de0352b8fa822a5f0cbd2e587fc4b33d917e297531350e20f34618aceb315"
+    },
+    {
+      "path": "docs/ai-play/checks/public-publication.json",
+      "bytes": 2887,
+      "sha256": "a10c129a5dc9009acc6ac7108b75c6c83f97714600c8bd2e2de826cde6fe0e4b"
+    },
+    {
+      "path": "docs/ai-play/checks/public-ready-final.json",
+      "bytes": 519,
+      "sha256": "b32b250bc24f69931d0a8c6dfc499409f20197f4552cface4b523dcc99b20dc3"
+    },
+    {
+      "path": "docs/ai-play/checks/public-ready.json",
+      "bytes": 408,
+      "sha256": "95969f23b994ffec6b2c42df72ea0c6489f1eb8a807d13bb31f99b02fe987350"
+    },
+    {
+      "path": "docs/ai-play/checks/public-real-browser-first.json",
+      "bytes": 12071,
+      "sha256": "3e9c82b6f186f3be80902fb408e1775a6f3d162b662d0a9afac6f55a82ce8598"
+    },
+    {
+      "path": "docs/ai-play/checks/public-real-browser.json",
+      "bytes": 12152,
+      "sha256": "b6c2953c51f9c72110d832529d6dde725b44cbf86b9fcf2abffafb00a1383ce2"
+    },
+    {
+      "path": "docs/ai-play/checks/public-upgrade-0242.json",
+      "bytes": 434,
+      "sha256": "09a28218402a85379f29001c0c95256200964f2c9aec7f0cb089c74bc8cdd412"
+    },
+    {
       "path": "docs/ai-play/checks/public-upgrade.json",
       "bytes": 434,
       "sha256": "276d5b47c85e03b65bba5a973dbaef88d088d8835395762657555d36ec99fd24"
     },
     {
+      "path": "docs/ai-play/checks/render-github-deployment-status.json",
+      "bytes": 12543,
+      "sha256": "151d599f2b5c1ee3a99cc4787b85b9ea033061efb30bc1665fd36aae8cadb85d"
+    },
+    {
       "path": "docs/ai-play/checks/upgrade-offline.json",
       "bytes": 878,
-      "sha256": "cb258dbf580f492741262d07c89b47e24fccc5a9814f4201a862eadd20a8cdfd"
+      "sha256": "94d3df962e3451b8c40d1b59f5124ee003fd9719a5e9138c3903579b2fe72d51"
+    },
+    {
+      "path": "docs/ai-play/checks/screenshots-public/ai-real-360-keyboard.png",
+      "bytes": 283248,
+      "sha256": "31be35f98cddb08ee7ba0f74e1454f720f51e7fc4347fb93fc7a814fa9b15617"
+    },
+    {
+      "path": "docs/ai-play/checks/screenshots-public/ai-real-9-desktop.png",
+      "bytes": 152283,
+      "sha256": "0d02dba720f01ac219ffb1a66d17e0e0bb934a0d1ae1f938bbb528432f2ab39a"
+    },
+    {
+      "path": "docs/ai-play/checks/screenshots-public/ai-real-9-full.png",
+      "bytes": 320444,
+      "sha256": "f7a566568e7a876c0f8e6e482d723085d863b5429adb5e4e5c47be5c018130b9"
+    },
+    {
+      "path": "docs/ai-play/checks/screenshots-public/ai-real-document-pip.png",
+      "bytes": 83960,
+      "sha256": "5dd989368d9167c878970b56cfdf08535ccfe19ed4510e51db3471744e234cce"
+    },
+    {
+      "path": "docs/ai-play/checks/screenshots-public/ai-real-pass-finish-review.png",
+      "bytes": 402975,
+      "sha256": "74a966df5a29f049965c7332a0a2370dfffc569181b637b5703d539965fcdfa0"
+    },
+    {
+      "path": "docs/ai-play/checks/screenshots-local/ai-real-360-keyboard.png",
+      "bytes": 283248,
+      "sha256": "31be35f98cddb08ee7ba0f74e1454f720f51e7fc4347fb93fc7a814fa9b15617"
+    },
+    {
+      "path": "docs/ai-play/checks/screenshots-local/ai-real-9-desktop.png",
+      "bytes": 152283,
+      "sha256": "0d02dba720f01ac219ffb1a66d17e0e0bb934a0d1ae1f938bbb528432f2ab39a"
+    },
+    {
+      "path": "docs/ai-play/checks/screenshots-local/ai-real-9-full.png",
+      "bytes": 321463,
+      "sha256": "688214e008c27cfe8355d548f7c2295948e5202ef84054418342cc192a678392"
+    },
+    {
+      "path": "docs/ai-play/checks/screenshots-local/ai-real-document-pip.png",
+      "bytes": 83960,
+      "sha256": "5dd989368d9167c878970b56cfdf08535ccfe19ed4510e51db3471744e234cce"
+    },
+    {
+      "path": "docs/ai-play/checks/screenshots-local/ai-real-pass-finish-review.png",
+      "bytes": 402975,
+      "sha256": "74a966df5a29f049965c7332a0a2370dfffc569181b637b5703d539965fcdfa0"
     },
     {
       "path": "docs/ai-play/checks/docker-real-5ed6920/ai-real-http.json",
@@ -7665,6 +7775,46 @@
     },
     {
       "path": "docs/ai-play/checks/docker-real-5ed6920/resource-limits.json",
+      "bytes": 1547,
+      "sha256": "df65b1c7c21fc4ac7df46835d755e9618b047528767934a9b37467789721c5d8"
+    },
+    {
+      "path": "docs/ai-play/checks/docker-real-6eb3f38/ai-real-http.json",
+      "bytes": 8995,
+      "sha256": "74e495a7b1717cc82a69577d24325e353338c86cb5e4906ff038f5d8970fbcf6"
+    },
+    {
+      "path": "docs/ai-play/checks/docker-real-6eb3f38/container-state.json",
+      "bytes": 593,
+      "sha256": "d1d6e22cce3f3aa418b55b9cdb86820c41ecea52589c0756ba7e8828922e8d62"
+    },
+    {
+      "path": "docs/ai-play/checks/docker-real-6eb3f38/container-stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/ai-play/checks/docker-real-6eb3f38/container-stdout.log",
+      "bytes": 151,
+      "sha256": "e75465954c52a7cc78a67afa05408e199b47da102e03e77099baea90874bca5a"
+    },
+    {
+      "path": "docs/ai-play/checks/docker-real-6eb3f38/engine-version.txt",
+      "bytes": 99,
+      "sha256": "82323c634e58542e65d94926e26f6aa55cacbc397520ad8561f402152a6eaf75"
+    },
+    {
+      "path": "docs/ai-play/checks/docker-real-6eb3f38/memory-peak-bytes.txt",
+      "bytes": 9,
+      "sha256": "a99b6b4de250d8ef9ca8f7b4c56d73a3bff1c91c1c7ba9accd4a3d7d1bfdfdc8"
+    },
+    {
+      "path": "docs/ai-play/checks/docker-real-6eb3f38/real-http-smoke.json",
+      "bytes": 24331,
+      "sha256": "82213f87cc672040f479f9e4a86687a3c00a11a436b32cbeeb1fde50abf80dc9"
+    },
+    {
+      "path": "docs/ai-play/checks/docker-real-6eb3f38/resource-limits.json",
       "bytes": 1547,
       "sha256": "df65b1c7c21fc4ac7df46835d755e9618b047528767934a9b37467789721c5d8"
     },
@@ -14465,8 +14615,8 @@
     },
     {
       "path": "scripts/ai-real-browser.cjs",
-      "bytes": 5597,
-      "sha256": "8bb59eaf2a1ee9f5c03863bbbdcd380d524f7851469b560dc4f995c912a6ae3f"
+      "bytes": 5966,
+      "sha256": "084264fe5bc396ef6a84528c3f5415e4d5bf61696ade69a2ee9e8e925c0b7d03"
     },
     {
       "path": "scripts/ai-real-smoke.mjs",
@@ -14650,8 +14800,8 @@
     },
     {
       "path": "scripts/package-ai-play.py",
-      "bytes": 7769,
-      "sha256": "b122ae4bb11f9d67db73c2b0ef37f0251d9614b9e1d787a2a019cce749528fcd"
+      "bytes": 7893,
+      "sha256": "6179a89f0e9020be2f4aab20fd84286a6a3388a41faf6de11388269976805eb2"
     },
     {
       "path": "scripts/package-floating-fit.py",

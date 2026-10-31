@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "AI-PUBLIC-CORS",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "passed",
+  "at": "2026-10-31T00:56:34.544Z",
+  "checks": [
+    {
+      "origin": "https://sma084545-pixel.github.io",
+      "status": "passed",
+      "httpStatus": 204
+    },
+    {
+      "origin": "http://127.0.0.1:4190",
+      "status": "passed",
+      "httpStatus": 204
+    },
+    {
+      "origin": "http://localhost:4190",
+      "status": "passed",
+      "httpStatus": 204
+    },
+    {
+      "name": "foreign-github-origin-denied",
+      "status": "passed",
+      "httpStatus": 403
+    }
+  ]
+}

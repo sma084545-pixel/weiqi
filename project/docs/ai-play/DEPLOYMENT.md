@@ -1,7 +1,7 @@
 ---
 schemaVersion: 1
 id: DOC-AI-PLAY-DEPLOYMENT
-revision: 1
+revision: 2
 rulesetId: GO-CLUB-AREA-1
 ---
 
@@ -40,4 +40,8 @@ KataGo1.18.1、Eigen CPU、6块96通道小模型 `g170-b6c96-s175395328-d2678873
 
 官方核对： [KataGo v1.18.1 Analysis Engine](https://github.com/lightvector/KataGo/blob/v1.18.1/docs/Analysis_Engine.md)、[Render免费限制](https://render.com/docs/free)、[部署](https://render.com/docs/deploys)、[实例](https://render.com/docs/compute-plans)，访问2026-10-30。旧模型/引擎与完整Docker来源保留原许可证说明。
 
-本机软件的127.0.0.1:4190与localhost:4190已加入服务端两个精确CORS白名单，仍不允许任意github.io、其他端口或任意局域网IP。这样正式网站与默认本机软件都能调用同一Render引擎，不伪造Origin或使用账户代理。该增量需要最新0.24.1后端；c6a80ac只支持正式网站，不能据此宣称本机也已接通。
+## 本次正式发布记录
+
+2026-10-31现有weiqi-katago手动部署main `43a57e3`，GitHub部署7452023481成功；readyz实际0.24.2/API2。原网站3段真实浏览器流程与默认4190软件3段流程均通过，三精确CORS通过，其他github.io拒绝。最终文档/归档证据提交不改变已部署后端代码，无需再次部署房间服务。访问后台日志的浏览器权限仍受限，未绕过；部署成功与实际链路独立核实。
+
+本轮完整包位于版本0.24.2-pages.1；归档旁ARCHIVE_CHECK、PUBLICATION_PROOF和SHA256SUMS用于复核。先保存当前工作再应用网站更新，不清除浏览器数据。运行中CPU配额采样0.15、内存上限512MiB与模型初始化1496ms并不等同于官方套餐保证，完整冷启动未测。费用沿用现有Free，未新增或升级任何资源。
