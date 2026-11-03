@@ -1,21 +1,22 @@
-# 围棋社 · 最新版 0.25.2
+# 围棋社 · 最新版 0.26.0
 
 **原网址：[打开学习工具](https://sma084545-pixel.github.io/weiqi/)**
 
 真实KataGo AI对弈保留轻松/标准/挑战，并新增独立强模型“极致”。极致已配置免费独立服务，实际部署验收见本轮报告。选择执色和5/9/13/19路，正常轮流落子，支持一手/最近回合悔棋、重做、棋局滑动条、本机续玩、JSON/SGF和赛后复盘。四档不对应人类段级位；结束后人工确认死子及面积计分。新着法需联网，不提供真人进行中胜率提示。
 
-学习路线保留12课、37个进阶互动场景和原13路引导实战。
+学习路线保留12课、37个进阶互动场景和原13路引导实战；课程6之后与首页新增[辅助下棋 / Guided Play](https://sma084545-pixel.github.io/weiqi/#/play/guided)。可选9/13路、逐级提示、局部反馈、本地教学机器人或现有KataGo对手；报告记录实际操作，不作能力评分。原局归档后可从关键局面重试。
 
 自由双人对弈结束后，可手动调用Render上的真实KataGo，分析任一复盘局面并查看数字推荐、候选变化、黑方胜率和预计目差。保留悬浮小棋盘、画中画、最大化、聊天、完整教学、5/9/13/19路、回退和棋局滑动条。包含30道正式题、6个终局、可编辑课件、教具与主持材料；GO-CLUB-AREA-1、schemaVersion1及正式revision保持。
 
 - [学习入口](https://sma084545-pixel.github.io/weiqi/#/home)
+- [辅助下棋 · 和AI边下边学](https://sma084545-pixel.github.io/weiqi/#/play/guided)
 - [与 AI 下一盘](https://sma084545-pixel.github.io/weiqi/#/play/ai)
 - [自由双人对弈](https://sma084545-pixel.github.io/weiqi/#/play/free)
 - [题目挑战](https://sma084545-pixel.github.io/weiqi/#/challenges)
 - [教师工具](https://sma084545-pixel.github.io/weiqi/#/teacher)
 - [联机状态](https://sma084545-pixel.github.io/weiqi/#/play/online)
 
-旧缓存用户先保存，再点“保存已提交内容并应用”。页脚和[version.json](https://sma084545-pixel.github.io/weiqi/version.json)可核对0.25.2；不要清除站点数据来升级。本机进度/草稿/反馈留在浏览器，不默认上传。
+旧缓存用户先保存，再点“保存已提交内容并应用”。页脚和[version.json](https://sma084545-pixel.github.io/weiqi/version.json)可核对0.26.0；不要清除站点数据来升级。本机进度/草稿/反馈留在浏览器，不默认上传。
 
 ## 联机边界
 
@@ -37,13 +38,13 @@
 
 ```sh
 pnpm install --frozen-lockfile
-pnpm build
+pnpm build:pages
 pnpm start
 # 发布到现有GitHub网站时使用：pnpm build:pages
 ```
 
 Node版本要求见package.json；默认本机/局域网服务端口4190，Ctrl+C停止。私有runtime-data/凭据/已安装依赖不在仓库。
 
-[最新已完成工具包、轻量软件与校验值](https://github.com/sma084545-pixel/weiqi/releases/latest)包含生产构建、全部可编辑材料、PDF/PPTX、交接和验证；本轮部署状态以project/handoff/EXTREME_AI.md为准，不把源码更新等同于正式全链路完成。历史source/0.16.0分卷只作溯源，不作为当前主线。
+[最新已完成工具包、轻量软件与校验值](https://github.com/sma084545-pixel/weiqi/releases/latest)包含生产构建、全部可编辑材料、PDF/PPTX、交接和验证；本轮状态以project/handoff/GUIDED_PLAY.md及project/docs/guided-play/ACCEPTANCE.md为准，不把源码更新等同于正式全链路完成。历史source/0.16.0分卷只作溯源，不作为当前主线。
 
 当前静态清单PUBLICATION.json、SHA256SUMS.txt；源码清单project/SOURCE_INFO.json。本次课程验收见[课程说明](project/docs/advanced-courses/IMPLEMENTATION.md)、[验收报告](project/docs/advanced-courses/ACCEPTANCE.md)；KataGo验收见project/docs/katago/，先前悬浮棋盘验收在project/docs/floating-fit/。自动化、实体制造与真人教学验证分别记录；不声称提高智商、治疗压力、改善学业或保证CAS认可。第三方许可证随docs和字体目录保留。

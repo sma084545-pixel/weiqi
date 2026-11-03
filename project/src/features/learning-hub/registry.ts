@@ -13,6 +13,7 @@ export const FULL_GAME_ROUTE='#/play/full-game' as const;
 export const FREE_PLAY_ROUTE='#/play/free' as const;
 export const ONLINE_PLAY_ROUTE='#/play/online' as const;
 export const AI_PLAY_ROUTE='#/play/ai' as const;
+export const GUIDED_PLAY_ROUTE='#/play/guided' as const;
 export const PUZZLE_ROUTE='#/challenges' as const;
 export const LIFE_LAB_ROUTE='#/learn/life' as const;
 export const COOPERATIVE_ROUTE='#/challenges/together' as const;
@@ -47,6 +48,7 @@ export const MODULE_DEFINITIONS:readonly ModuleRegistration[]=[
   {id:'free-play',route:FREE_PLAY_ROUTE,label:'自由双人对弈',requiredContentIds:[],availability:'available',returnRoute:HOME_ROUTE,trackVisit:true},
   {id:'online-play',route:ONLINE_PLAY_ROUTE,label:'联机双人对弈',requiredContentIds:[],availability:'available',returnRoute:HOME_ROUTE,trackVisit:true,requiresNetwork:true},
   {id:'ai-play',route:AI_PLAY_ROUTE,label:'AI 对弈',requiredContentIds:[],availability:'available',returnRoute:HOME_ROUTE,trackVisit:true,requiresNetwork:true},
+  {id:'guided-play',route:GUIDED_PLAY_ROUTE,label:'辅助下棋 · Guided Play',requiredContentIds:[],availability:'available',returnRoute:ROUTE_ROUTE,trackVisit:true},
   {id:'full-game',route:FULL_GAME_ROUTE,label:'完整小棋盘对弈',requiredContentIds:[],availability:'available',returnRoute:stageRoute(3),trackVisit:true},
   {id:'puzzle-runner',route:PUZZLE_ROUTE,label:'互动挑战题',requiredContentIds:['T09-BUNDLE'],availability:'available',returnRoute:ROUTE_ROUTE,trackVisit:true},
   {id:'life-lab',route:LIFE_LAB_ROUTE,label:'眼与基础死活小课',requiredContentIds:['LIFE-001','LIFE-002','LIFE-003','LIFE-004','LIFE-005'],availability:'available',returnRoute:stageRoute(5),trackVisit:true},

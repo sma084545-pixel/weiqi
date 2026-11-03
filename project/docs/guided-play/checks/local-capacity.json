@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "GUIDED-LOCAL-CAPACITY",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "passed",
+  "measuredAt": "2026-11-03T12:54:24.385Z",
+  "runtime": "v22.23.3",
+  "platform": "darwin/arm64",
+  "measurements": [
+    {
+      "size": 9,
+      "moves": 60,
+      "samples": 60,
+      "medianMs": 3.13,
+      "p95Ms": 3.87,
+      "maxMs": 4.12,
+      "inputUnchanged": true,
+      "legality": "shared engine, actual effective path; no injected layouts"
+    },
+    {
+      "size": 13,
+      "moves": 60,
+      "samples": 60,
+      "medianMs": 4.9,
+      "p95Ms": 7.14,
+      "maxMs": 7.25,
+      "inputUnchanged": true,
+      "legality": "shared engine, actual effective path; no injected layouts"
+    }
+  ],
+  "limits": "Native local CPU measurements; no claim about low-end phones, best-move accuracy or human playing rank.",
+  "humanReviewed": null
+}

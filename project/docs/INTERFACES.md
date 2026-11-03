@@ -239,3 +239,9 @@ AiDifficulty在原relaxed/standard/challenge之后增加extreme；原存档键�
 同一POST/api/ai-move形状继续使用；API2就绪能力通过aiDifficulties列出该服务实际支持的档位。原模型服务只提供旧三档，新强模型服务只提供extreme。选错服务返回409/MODEL_UNAVAILABLE，客户端保持原局；extreme响应若模型或版本不符，即使落点合法也被拒绝。客户端不开放引擎配置或模型路径。极致默认上限64访问、30秒、1活跃+1等待，总期限90秒，采用独立Render Free服务。用户明确只用免费资源；须先在0.1CPU/512MB容器实测，再部署，禁止付费资源或静默升级。
 
 useKataGoReview新增可选第4参数origin和第5参数expectedModel；旧3参数调用完全保持原语义。极致对局结束后使用本局模型，切手/切服务/变模型身份会取消旧请求；仍不得对未结束棋局请求普通复盘。没有修改RulesEngine或Board接口。
+
+## 0.26 辅助下棋兼容增量
+
+模块guided-play / #/play/guided复用原RulesEngine、Board、FullGameMatch、useGameHistory与存储适配器。PositionAnalyzer返回局部TeachingAnalysis，UI仅按明确展开层级生成已有BoardMarker；默认不显示实时胜率、目差或全点评分。基础分析本地执行，KataGo作为可选对手复用原/api/ai-move，不修改后端契约或开放赛中普通复盘。
+
+附加schemas/guided-session.schema.json定义GuidedPlaySession（schemaVersion1、独立稳定会话id、正revision、rulesetId）。当前键go-club:full-game:guided-play:v1与归档在games命名空间；go-club:learning-progress:guided-play:v1在progress；旧存档键和公共schema不改。导入通过合法起点/事件重放、整块注释及身份校验；统计只记录操作与局部事实，不是能力评分。详细边界见guided-play/IMPLEMENTATION.md。

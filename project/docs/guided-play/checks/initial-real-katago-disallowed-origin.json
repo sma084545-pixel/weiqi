@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "GUIDED-REAL-KATAGO",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "failed",
+  "base": "http://127.0.0.1:4216",
+  "error": "TimeoutError: page.waitForResponse: Timeout 110000ms exceeded while waiting for event \"response\"",
+  "at": "2026-11-03T13:12:09.393Z",
+  "networkFailures": [
+    {
+      "url": "https://weiqi-katago.onrender.com/api/ai-move",
+      "failure": {
+        "errorText": "net::ERR_FAILED"
+      }
+    }
+  ],
+  "requests": [
+    {
+      "url": "https://weiqi-katago.onrender.com/api/ai-move",
+      "difficulty": "standard"
+    }
+  ],
+  "visibleState": "← 返回学习路线\n\n从练习走向实战 · GUIDED PLAY\n辅助下棋\n\n每一步仍由你决定。先观察，再比较；需要时打开一点提示，关键着后一起想想原因。\n\n这里是边下边学的独立模式。普通 AI 对弈与自由对弈仍可照常使用。\n\n本局只关注\n气\n打吃\n连接\nLevel 2 · 适度指导 · 真实 KataGo\n9路 · 你执黑 · 贴目0\n一边下，一边想\n对手思考中…\n辅助下棋，对手思考中…。方向键移动焦点；可操作模式中按 Enter 或空格执行。\nA\nB\nC\nD\nE\nF\nG\nH\nJ\n9\n8\n7\n6\n5\n4\n3\n2\n1\n黑\n放大棋盘\n缩小棋盘\n复位视图\n清除教学标记\n棋谱回看 · 棋局滑动条\n对手思考中…\n\n暂时无法连接 AI。棋局已保存在本机，可以稍后重试；新着法需要联网。\n\n按自己的节奏继续\n停一手\n继续 / 重试对手落子\n我认输并回顾\n回退与重试\n撤回一手\n撤回最近回合\n重做一手\n另开一局\n\n回退后对手暂停。新落子会清除旧重做分支与旧教学标记。\n\n保存、导出与续玩\n练的是思考方式\n\n先问目标 → 数气 → 比较候选 → 自己落子 → 回想对手的回应。教学只解释可核实的局部变化，不给每手打分，不自动判断任意棋块死活。两个空点不等于两个受保护的独立真眼；没有两眼也不能一概判死，双活等情况存在。\n\n本地教学与记录可在离线准备后使用；选择 KataGo 时，仅对手的新着法需要联网。失败不换手，不会自动切换对手。没有强制通关、计时或排名。\n\n回到学习路线\n普通 AI 对弈\n自由双人对弈",
+  "errors": []
+}

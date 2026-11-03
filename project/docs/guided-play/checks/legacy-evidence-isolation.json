@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "note": "Existing regression suite writes two historical T24 and four online-tool screenshots. Current outputs preserved separately; all historical documentation assets restored byte-identical. Only INTERFACES.md receives an intentional new section.",
+  "files": [
+    {
+      "originalPath": "docs/t24/checks/journey/chromium/full-game.png",
+      "currentEvidencePath": "docs/guided-play/checks/legacy-regression/checks/journey/chromium/full-game.png",
+      "currentSha256": "ab69b430c77cd3f5d69991069459fa519548bac5fcb73b2ab4d6fc377f0d76f8",
+      "restoredBaselineSha256": "701d08f806eba486f24020d92e7b4c92599cc16ba6cd4a8a08425b0b59373b03"
+    },
+    {
+      "originalPath": "docs/t24/checks/journey/chromium/offline-editor.png",
+      "currentEvidencePath": "docs/guided-play/checks/legacy-regression/checks/journey/chromium/offline-editor.png",
+      "currentSha256": "32ac957d2884bf0bba642dee67392d05788200b86a3536eff85c080fe0278ca1",
+      "restoredBaselineSha256": "26e69965a5a30fa09345b229ebb2fc3ae6cf7a03a7aabcb07ab77a2ee3477a85"
+    },
+    {
+      "originalPath": "docs/online-tools/checks/browser/1280-maximized.png",
+      "currentEvidencePath": "docs/guided-play/checks/legacy-regression/online-tools/checks/browser/1280-maximized.png",
+      "currentSha256": "a737977d33d6ef732dbc7149889db85c833a8705e55cd8d231520fb39557b39f",
+      "restoredBaselineSha256": "b9532b8c99b8de6224157bbd6cb404ec2c6d395026b992d2aa5199b53b2dc404"
+    },
+    {
+      "originalPath": "docs/online-tools/checks/browser/360-floating-19.png",
+      "currentEvidencePath": "docs/guided-play/checks/legacy-regression/online-tools/checks/browser/360-floating-19.png",
+      "currentSha256": "bd8acca30c7b77fef9e9c620da3477cbbab5f3a703e6cdbe85738300efea374a",
+      "restoredBaselineSha256": "4109d21ee560bf277d37d2c7c385c1ea0f0d897b767c59d165f2f3a690d69e6e"
+    },
+    {
+      "originalPath": "docs/online-tools/checks/browser/768-floating-9.png",
+      "currentEvidencePath": "docs/guided-play/checks/legacy-regression/online-tools/checks/browser/768-floating-9.png",
+      "currentSha256": "46148e985fd6f37cf2df0048d2ccae38411a376f9d2cad2069a219f3d456813c",
+      "restoredBaselineSha256": "648f502ac9356b5b765e94b9dd3fd7c202bccd9fc49997969e6d3df08e7265ac"
+    },
+    {
+      "originalPath": "docs/online-tools/checks/browser/chat.png",
+      "currentEvidencePath": "docs/guided-play/checks/legacy-regression/online-tools/checks/browser/chat.png",
+      "currentSha256": "12db72cf18b041344c2e1453dd89c88a121f4c4b1167fd6a53e2489ec1527c25",
+      "restoredBaselineSha256": "6a0e9a3a97d246d2fa5bb58bdb6e8bbe955c1b47f13c7c514ccd9c186130fb38"
+    }
+  ]
+}

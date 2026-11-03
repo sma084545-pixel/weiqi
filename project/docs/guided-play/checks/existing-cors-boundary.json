@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "results": [
+    {
+      "origin": "http://127.0.0.1:4216",
+      "status": 403,
+      "allowOrigin": null
+    },
+    {
+      "origin": "http://127.0.0.1:4190",
+      "status": 204,
+      "allowOrigin": "http://127.0.0.1:4190"
+    },
+    {
+      "origin": "https://sma084545-pixel.github.io",
+      "status": 204,
+      "allowOrigin": "https://sma084545-pixel.github.io"
+    }
+  ],
+  "note": "4216 is deliberately not an allowed CORS origin. Use existing 4190 local runtime or official site. No policy widening required."
+}

@@ -1,0 +1,32 @@
+{
+  "status": 200,
+  "body": {
+    "service": "go-club-katago",
+    "status": "ready",
+    "ready": true,
+    "active": 0,
+    "queued": 0,
+    "engineVersion": "1.18.1",
+    "model": "g170-b6c96-s175395328-d26788732",
+    "uptimeSeconds": 134,
+    "engineStartupMs": 1497,
+    "resources": {
+      "cgroupMemoryLimitBytes": 536870912,
+      "cgroupMemoryPeakBytes": 78905344,
+      "cpuQuota": 0.15
+    },
+    "appVersion": "0.24.2",
+    "apiVersion": 2,
+    "features": [
+      "review",
+      "ai-move"
+    ],
+    "aiDifficulties": [
+      "relaxed",
+      "standard",
+      "challenge"
+    ]
+  },
+  "url": "https://weiqi-katago.onrender.com/healthz",
+  "seconds": 1.39
+}

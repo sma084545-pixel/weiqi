@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "DEV-GUIDED-INDEPENDENT-EXPECTATIONS",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "note": "开发测试，不是正式题库。坐标及预期先按正交邻点独立列出，再交给引擎核对。",
+  "cases": [
+    {"id":"corner-capture","stones":[["W",0,0],["B",0,1]],"at":[1,0],"kind":"good","concept":"capture","captured":1,"liberties":[[0,0],[1,1],[2,0]],"reason":"角上白子原只有(1,0)一气。黑落在那里提走白子，所得空角也是黑的新气。"},
+    {"id":"escape","stones":[["B",0,0],["W",0,1]],"at":[1,0],"kind":"good","concept":"escape","escapes":1,"liberties":[[1,1],[2,0]],"reason":"角黑原仅(1,0)一气，向下延长后两颗黑子共有(1,1)、(2,0)。"},
+    {"id":"merge","stones":[["B",2,1],["B",2,3]],"at":[2,2],"kind":"good","concept":"connection","connections":1,"liberties":[[1,1],[1,2],[1,3],[2,0],[2,4],[3,1],[3,2],[3,3]],"reason":"三颗直线黑子两端各三口、中央两口，共8口；原来两块合成一块。"},
+    {"id":"atari","stones":[["W",0,0]],"at":[0,1],"kind":"good","concept":"atari","atariTargets":1,"reason":"角白原有(0,1)、(1,0)两气，黑占一个以后剩一气。"},
+    {"id":"self-atari","stones":[["W",0,1]],"at":[0,0],"kind":"danger","concept":"liberties","selfAtari":true,"liberties":[[1,0]],"reason":"新黑在角上，右邻被白占，只剩向下一气；合法但危险。"},
+    {"id":"overlooked-atari","stones":[["B",0,0],["W",0,1]],"at":[5,5],"kind":"consider","concept":"liberties","reason":"中心落子合法，原角黑仍仅(1,0)一气。不自动判断弃子一定错。"},
+    {"id":"quiet","stones":[],"at":[4,4],"kind":"ordinary","concept":"liberties","liberties":[[3,4],[4,3],[4,5],[5,4]],"reason":"中心单子四气，尚无提子、直接合并或一气威胁，不强行评好坏。"}
+  ]
+}

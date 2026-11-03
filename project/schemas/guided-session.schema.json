@@ -1,0 +1,210 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "urn:go-club:schema:guided-session:1",
+  "title": "GuidedPlaySession (additive schemaVersion 1)",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "id",
+    "revision",
+    "rulesetId",
+    "kind",
+    "options",
+    "game",
+    "scoring",
+    "hintUses",
+    "parentSessionId"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^GUIDED-[A-Za-z0-9-]{1,110}$"
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "rulesetId": {
+      "const": "GO-CLUB-AREA-1"
+    },
+    "kind": {
+      "const": "GuidedPlaySession"
+    },
+    "options": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "size",
+        "humanColor",
+        "level",
+        "goal",
+        "opponent"
+      ],
+      "properties": {
+        "size": {
+          "enum": [
+            9,
+            13
+          ]
+        },
+        "humanColor": {
+          "enum": [
+            "B",
+            "W"
+          ]
+        },
+        "level": {
+          "enum": [
+            1,
+            2,
+            3
+          ]
+        },
+        "goal": {
+          "enum": [
+            "auto",
+            "liberties",
+            "connection",
+            "life",
+            "opening"
+          ]
+        },
+        "opponent": {
+          "enum": [
+            "local",
+            "katago"
+          ]
+        }
+      }
+    },
+    "game": {
+      "allOf": [
+        {
+          "$ref": "urn:go-club:schema:content:1#/$defs/GameState"
+        },
+        {
+          "properties": {
+            "id": {
+              "const": "LOCAL-GUIDED-PLAY"
+            },
+            "size": {
+              "enum": [
+                9,
+                13
+              ]
+            },
+            "komi": {
+              "const": 0
+            },
+            "mode": {
+              "const": "full-game"
+            }
+          }
+        }
+      ]
+    },
+    "scoring": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "deadStones",
+        "confirmedBy"
+      ],
+      "properties": {
+        "deadStones": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "urn:go-club:schema:content:1#/$defs/Coord"
+          }
+        },
+        "confirmedBy": {
+          "enum": [
+            [],
+            [
+              "B"
+            ],
+            [
+              "B",
+              "W"
+            ]
+          ]
+        }
+      }
+    },
+    "parentSessionId": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string",
+          "pattern": "^GUIDED-[A-Za-z0-9-]{1,110}$"
+        }
+      ]
+    },
+    "hintUses": {
+      "type": "array",
+      "maxItems": 500,
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "index",
+          "level"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "path": {
+            "type": "string",
+            "maxLength": 32000
+          },
+          "index": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 4000
+          },
+          "level": {
+            "enum": [
+              1,
+              2,
+              3,
+              4
+            ]
+          }
+        }
+      }
+    }
+  },
+  "$comment": "Shape validation supplements mandatory legal event replay, whole-group scoring checks and full history validation in parseGuidedSession. No original content schema, formal puzzle IDs or old save keys are changed. Current session <=5 MB; last500 hint requests retained. Teaching records describe operations, not human ability.",
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "game": {
+            "properties": {
+              "phase": {
+                "const": "scoring"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "scoring": {
+            "properties": {
+              "confirmedBy": {
+                "maxItems": 1
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

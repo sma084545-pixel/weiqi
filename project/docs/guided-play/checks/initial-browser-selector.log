@@ -1,0 +1,14 @@
+### Ran Playwright code
+```js
+await page.goto('http://127.0.0.1:4216/#/play/guided');
+```
+### Page
+- Page URL: http://127.0.0.1:4216/#/play/guided
+- Page Title: 辅助下棋 · Guided Play | 围棋社
+### Snapshot
+- [Snapshot](.playwright-cli/page-2026-11-03T12-58-51-406Z.yml)
+### Error
+TimeoutError: locator.selectOption: Timeout 15000ms exceeded.
+Call log:
+[2m  - waiting for getByLabel('棋盘大小', { exact: true })[22m
+

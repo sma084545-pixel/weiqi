@@ -1,11 +1,15 @@
 ---
 schemaVersion: 1
 id: DOC-README
-revision: 32
+revision: 33
 rulesetId: GO-CLUB-AREA-1
 ---
 
-# 围棋社工具包 · 0.25.2
+# 围棋社工具包 · 0.26.0
+
+新增独立“辅助下棋 / Guided Play”模式：学习路线课程6之后或首页快捷入口，9/13路、分级提示、规则型局部反馈、可离线教学机器人及可选真实KataGo对手、悔棋/回看、本机续玩、教学报告和保留原局的重试。原12课、37场景、30正式题、6终局、四档AI及所有真人对弈继续保留。使用见[辅助下棋说明](docs/guided-play/USER_GUIDE.md)，架构/边界见[实现说明](docs/guided-play/IMPLEMENTATION.md)，本轮状态以[交接](handoff/GUIDED_PLAY.md)与[验收](docs/guided-play/ACCEPTANCE.md)为准。
+
+以下0.25.2与0.24.2内容用于基线溯源；当前版本以本页标题和src/core/version.ts为准。
 
 本轮新增“极致”独立强模型，采用用户选择的Free配置。原网站 https://sma084545-pixel.github.io/weiqi/#/play/ai 已实际接通新Render服务；真实落子、悔棋/重做、滑动回看、刷新续玩和同模型赛后复盘通过，本机4190及原三档也已真引擎验证。前端0.25.2会安全更新旧缓存，保留棋谱；先保存，再点“保存已提交内容并应用”，不清站点数据。tf2较强小模型不对应人类段位，Free每步搜索约半分钟，休眠唤醒可能更久。实际证据见[验收报告](docs/extreme-ai/ACCEPTANCE.md)，使用/部署/回滚见[本轮交接](handoff/EXTREME_AI.md)。以下保留0.24.2基线功能说明。
 

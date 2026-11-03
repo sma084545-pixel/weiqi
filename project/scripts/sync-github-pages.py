@@ -30,7 +30,7 @@ for folder,dirs,names in os.walk(R):
   path=Path(folder)/name;rel=path.relative_to(R);target=source/rel;target.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(path,target);entries.append({'path':str(rel),'bytes':path.stat().st_size,'sha256':sha(path)})
 (source/'SOURCE_INFO.json').write_text(json.dumps({'schemaVersion':1,'id':'GITHUB-CURRENT-SOURCE','revision':revision,'rulesetId':'GO-CLUB-AREA-1','resultVersion':V,'programVersion':version,'sourceBuild':'pnpm install --frozen-lockfile && pnpm build','note':'Buildable source and materials; installed dependencies, private data and generated root build/output excluded. Full release archive includes production builds and all evidence.','files':entries},ensure_ascii=False,indent=2)+'\n')
 extreme_configured=public_version.get('katagoExtremeConfigured',False)
-manifest={'schemaVersion':1,'id':'GITHUB-PAGES-PUBLICATION','revision':revision,'rulesetId':'GO-CLUB-AREA-1','resultVersion':V,'programVersion':version,'siteUrl':'https://sma084545-pixel.github.io/weiqi/','sourceDirectory':'project/','formalPuzzles':30,'terminalFixtures':6,'microLessonPrimarySlides':25,'routeStages':12,'advancedLessons':6,'advancedScenes':37,'aiPlayRoute':'#/play/ai','aiDifficultyProfiles':['relaxed','standard','challenge','extreme'],'aiExtremeAvailable':extreme_configured,'aiPlayRequiresNetwork':True,'onlineServerConfigured':configured,'onlineServerOrigin':server_origin,'onlineRoomsEphemeral':ephemeral,'katagoAnalysisOrigin':public_version.get('katagoAnalysisOrigin'),'katagoAnalysisConfigured':public_version.get('katagoAnalysisConfigured',False),'katagoExtremeOrigin':public_version.get('katagoExtremeOrigin'),'onlineStatus':'Public room server configured; chat and floating-board verification retained in docs/floating-fit.' if configured else 'Room server not configured.','files':site,'sourceManifestSha256':sha(source/'SOURCE_INFO.json')}
+manifest={'schemaVersion':1,'id':'GITHUB-PAGES-PUBLICATION','revision':revision,'rulesetId':'GO-CLUB-AREA-1','resultVersion':V,'programVersion':version,'siteUrl':'https://sma084545-pixel.github.io/weiqi/','sourceDirectory':'project/','formalPuzzles':30,'terminalFixtures':6,'microLessonPrimarySlides':25,'routeStages':12,'advancedLessons':6,'advancedScenes':37,'guidedPlayRoute':'#/play/guided','guidedPlayOfflineLocalOpponent':True,'aiPlayRoute':'#/play/ai','aiDifficultyProfiles':['relaxed','standard','challenge','extreme'],'aiExtremeAvailable':extreme_configured,'aiPlayRequiresNetwork':True,'onlineServerConfigured':configured,'onlineServerOrigin':server_origin,'onlineRoomsEphemeral':ephemeral,'katagoAnalysisOrigin':public_version.get('katagoAnalysisOrigin'),'katagoAnalysisConfigured':public_version.get('katagoAnalysisConfigured',False),'katagoExtremeOrigin':public_version.get('katagoExtremeOrigin'),'onlineStatus':'Public room server configured; chat and floating-board verification retained in docs/floating-fit.' if configured else 'Room server not configured.','files':site,'sourceManifestSha256':sha(source/'SOURCE_INFO.json')}
 (repo/'PUBLICATION.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n');(repo/'SHA256SUMS.txt').write_text(''.join(f"{x['sha256']}  {x['path']}\n" for x in site)+f"{sha(repo/'PUBLICATION.json')}  PUBLICATION.json\n"+f"{sha(source/'SOURCE_INFO.json')}  project/SOURCE_INFO.json\n")
 (repo/'README.md').write_text(f'''# 围棋社 · 最新版 {version}
 
@@ -38,11 +38,12 @@ manifest={'schemaVersion':1,'id':'GITHUB-PAGES-PUBLICATION','revision':revision,
 
 真实KataGo AI对弈保留轻松/标准/挑战，并新增独立强模型“极致”。{'极致已配置免费独立服务，实际部署验收见本轮报告。' if extreme_configured else '极致服务等待启用，当前明确显示不可开始；原三档可继续使用。'}选择执色和5/9/13/19路，正常轮流落子，支持一手/最近回合悔棋、重做、棋局滑动条、本机续玩、JSON/SGF和赛后复盘。四档不对应人类段级位；结束后人工确认死子及面积计分。新着法需联网，不提供真人进行中胜率提示。
 
-学习路线保留12课、37个进阶互动场景和原13路引导实战。
+学习路线保留12课、37个进阶互动场景和原13路引导实战；课程6之后与首页新增[辅助下棋 / Guided Play](https://sma084545-pixel.github.io/weiqi/#/play/guided)。可选9/13路、逐级提示、局部反馈、本地教学机器人或现有KataGo对手；报告记录实际操作，不作能力评分。原局归档后可从关键局面重试。
 
 自由双人对弈结束后，可手动调用Render上的真实KataGo，分析任一复盘局面并查看数字推荐、候选变化、黑方胜率和预计目差。保留悬浮小棋盘、画中画、最大化、聊天、完整教学、5/9/13/19路、回退和棋局滑动条。包含30道正式题、6个终局、可编辑课件、教具与主持材料；GO-CLUB-AREA-1、schemaVersion1及正式revision保持。
 
 - [学习入口](https://sma084545-pixel.github.io/weiqi/#/home)
+- [辅助下棋 · 和AI边下边学](https://sma084545-pixel.github.io/weiqi/#/play/guided)
 - [与 AI 下一盘](https://sma084545-pixel.github.io/weiqi/#/play/ai)
 - [自由双人对弈](https://sma084545-pixel.github.io/weiqi/#/play/free)
 - [题目挑战](https://sma084545-pixel.github.io/weiqi/#/challenges)
@@ -71,14 +72,14 @@ manifest={'schemaVersion':1,'id':'GITHUB-PAGES-PUBLICATION','revision':revision,
 
 ```sh
 pnpm install --frozen-lockfile
-pnpm build
+pnpm build:pages
 pnpm start
 # 发布到现有GitHub网站时使用：pnpm build:pages
 ```
 
 Node版本要求见package.json；默认本机/局域网服务端口4190，Ctrl+C停止。私有runtime-data/凭据/已安装依赖不在仓库。
 
-[最新已完成工具包、轻量软件与校验值](https://github.com/sma084545-pixel/weiqi/releases/latest)包含生产构建、全部可编辑材料、PDF/PPTX、交接和验证；本轮部署状态以project/handoff/EXTREME_AI.md为准，不把源码更新等同于正式全链路完成。历史source/0.16.0分卷只作溯源，不作为当前主线。
+[最新已完成工具包、轻量软件与校验值](https://github.com/sma084545-pixel/weiqi/releases/latest)包含生产构建、全部可编辑材料、PDF/PPTX、交接和验证；本轮状态以project/handoff/GUIDED_PLAY.md及project/docs/guided-play/ACCEPTANCE.md为准，不把源码更新等同于正式全链路完成。历史source/0.16.0分卷只作溯源，不作为当前主线。
 
 当前静态清单PUBLICATION.json、SHA256SUMS.txt；源码清单project/SOURCE_INFO.json。本次课程验收见[课程说明](project/docs/advanced-courses/IMPLEMENTATION.md)、[验收报告](project/docs/advanced-courses/ACCEPTANCE.md)；KataGo验收见project/docs/katago/，先前悬浮棋盘验收在project/docs/floating-fit/。自动化、实体制造与真人教学验证分别记录；不声称提高智商、治疗压力、改善学业或保证CAS认可。第三方许可证随docs和字体目录保留。
 ''')

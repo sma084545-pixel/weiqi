@@ -1,0 +1,7 @@
+{
+  "status": "prepared",
+  "oldVersion": "版本 0.25.2",
+  "marker": "guided-upgrade-own-test",
+  "moves": 2,
+  "onlyOwnSyntheticTestData": true
+}

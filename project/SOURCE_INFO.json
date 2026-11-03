@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "id": "GITHUB-CURRENT-SOURCE",
-  "revision": 35,
+  "revision": 37,
   "rulesetId": "GO-CLUB-AREA-1",
-  "resultVersion": "0.25.2-pages.1",
-  "programVersion": "0.25.2",
+  "resultVersion": "0.26.0-pages.1",
+  "programVersion": "0.26.0",
   "sourceBuild": "pnpm install --frozen-lockfile && pnpm build",
   "note": "Buildable source and materials; installed dependencies, private data and generated root build/output excluded. Full release archive includes production builds and all evidence.",
   "files": [
@@ -25,8 +25,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 29691,
-      "sha256": "2fcf00de0c138d55a06386d181e9b58e79f7ebe992d3f1b28d16314ff065c581"
+      "bytes": 30413,
+      "sha256": "581b90859842239f83665e969db7a5c9d4f3017c2cbc748c68723bfc20bb1243"
     },
     {
       "path": "MERGE_C_RELEASE_MANIFEST.json",
@@ -35,8 +35,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 10454,
-      "sha256": "217c53c6ae7a53205900f6a95d31e11864886e2d77ea056bf6a22d707cf33e0d"
+      "bytes": 11161,
+      "sha256": "1e788446caebf9c353d31d025f2903bdc05991236b353d64be8fe61f611e85bd"
     },
     {
       "path": "README_MERGE_C.md",
@@ -55,8 +55,8 @@
     },
     {
       "path": "package.json",
-      "bytes": 4318,
-      "sha256": "4cb13ea8f3e8590ce4d371aee50925c17a1a29def4f1a327c0d47d0d810c7a9e"
+      "bytes": 4369,
+      "sha256": "165f77bfa4816f845337e7ca1f0831526ca20cd52025fd1bc338d5546399476a"
     },
     {
       "path": "playwright.advanced-regression.config.ts",
@@ -3934,6 +3934,11 @@
       "sha256": "079bddc7846b393fa71b912eb8f47e0681b401e956fb390d12f6a21ea6a86fb8"
     },
     {
+      "path": "handoff/GUIDED_PLAY.md",
+      "bytes": 2840,
+      "sha256": "46b0071b583fd06f90cfb6e9924312bb1945a97aabdddb3ca19a1337d55acefa"
+    },
+    {
       "path": "handoff/HISTORY_SLIDER.md",
       "bytes": 4270,
       "sha256": "508b8496a797b29c3f67cc5ac15ca3bb06c2f955700e9a5d86261ac1af240f17"
@@ -4592,6 +4597,26 @@
       "path": "tests/pages/hosting.test.ts",
       "bytes": 3141,
       "sha256": "f2b97e81bfe1973e8903ead424cb04673b1e6be72ad9744b15c8c3dab951a75e"
+    },
+    {
+      "path": "tests/guided-play/analyzer.test.ts",
+      "bytes": 6038,
+      "sha256": "aa4bfd1463bdf9d088fb52d3e7d893076f1897da7ec757a53c8b3a4770c2cbde"
+    },
+    {
+      "path": "tests/guided-play/interaction.test.tsx",
+      "bytes": 13634,
+      "sha256": "16caa5bbf0abca4df161bae17fccee6845364ab8cf3fc9ea2cad55cd1c14d9a3"
+    },
+    {
+      "path": "tests/guided-play/model.test.ts",
+      "bytes": 9702,
+      "sha256": "229ffadc9022de394bc7b2f77442d9d1ce6c2cceb7b315b9dce49141f268876e"
+    },
+    {
+      "path": "tests/guided-play/fixtures/observations.json",
+      "bytes": 1843,
+      "sha256": "be44ae2d1a52b756c3ae2dc9ec5de24ab6e3c262c541ce86d298f17b40fc7750"
     },
     {
       "path": "content/validation-report.md",
@@ -5835,8 +5860,8 @@
     },
     {
       "path": "docs/INTERFACES.md",
-      "bytes": 38047,
-      "sha256": "acd99193ce0f9f6d7084fd3fb00e08c85abd305b9d4f4854f396eeb64136e819"
+      "bytes": 38954,
+      "sha256": "1731f71e042e2eeb5578ca327f25268bd849f576333ad2b1f1a56f0ad3db2e30"
     },
     {
       "path": "docs/PROJECT_CONTRACT.md",
@@ -15134,6 +15159,171 @@
       "sha256": "8ff3f29ec728a8cbdaefbe7f439b60b9aa5a2387a158b3fd20971e0b961061bd"
     },
     {
+      "path": "docs/guided-play/ACCEPTANCE.md",
+      "bytes": 3399,
+      "sha256": "2108bb0f5c510a897c24b5365d9725589a52fb7bacac2a599c53aab12344b087"
+    },
+    {
+      "path": "docs/guided-play/IMPLEMENTATION.md",
+      "bytes": 6405,
+      "sha256": "dc34ac6665fb213b8ee23feec6bddb542ffc30ed95b9bf81d3254d663bcebd26"
+    },
+    {
+      "path": "docs/guided-play/KNOWN_ISSUES.md",
+      "bytes": 1229,
+      "sha256": "ae4efd43e43aa2a45e8f06456a9ffeaf3a1bc7861080e31115bbf6e8481cc460"
+    },
+    {
+      "path": "docs/guided-play/USER_GUIDE.md",
+      "bytes": 2271,
+      "sha256": "60f51c8d9462f25894df2ed6e86dab2fbf89d76a77ad692110f26e350a5eed27"
+    },
+    {
+      "path": "docs/guided-play/checks/analysis-build.log",
+      "bytes": 218,
+      "sha256": "0257dadb214f3ec0f487e0aece7143553d8a91e4991dd87559b5e9192888162d"
+    },
+    {
+      "path": "docs/guided-play/checks/browser-local-previous.log",
+      "bytes": 10958,
+      "sha256": "fe926e307dd420898c36c3f4c4d9d13c18e25a1260f9de5cfd3f56e1a1cbf78e"
+    },
+    {
+      "path": "docs/guided-play/checks/browser-local.json",
+      "bytes": 2150,
+      "sha256": "b72b2d2e477ccd186d2f8c42d94f380c83e6c5aa66dd1507eed8da321d8bc1bd"
+    },
+    {
+      "path": "docs/guided-play/checks/browser-local.log",
+      "bytes": 11149,
+      "sha256": "0db752f55b7324381f6b293ac054ae15f27983cacdc1df330bbeb196a9d9e4f6"
+    },
+    {
+      "path": "docs/guided-play/checks/browser-regression.log",
+      "bytes": 25921,
+      "sha256": "8ca3c25766e6314742bbd09fc07862c9c88c87ad2c5e4bb4a4c3c37f31964920"
+    },
+    {
+      "path": "docs/guided-play/checks/cache-upgrade-before.json",
+      "bytes": 149,
+      "sha256": "c88001ae5899e50c0cef1c08b7c2c2dcca1258178002fc3803aa50f0724842b2"
+    },
+    {
+      "path": "docs/guided-play/checks/cache-upgrade-before.log",
+      "bytes": 1260,
+      "sha256": "889f31f2d7f744d3b8698646207a9b6aeff43624f9b8b4a8023e52bccdb2e208"
+    },
+    {
+      "path": "docs/guided-play/checks/existing-cors-boundary.json",
+      "bytes": 550,
+      "sha256": "69c6a0e605d5b3938f67498fc7b2a12df27a46f3d38d8cbc262ae043993eb5ee"
+    },
+    {
+      "path": "docs/guided-play/checks/full-check.log",
+      "bytes": 6908,
+      "sha256": "aae5140d60894a37198ea2c698bce524bfac0b11b874578d8b346068cdda30ee"
+    },
+    {
+      "path": "docs/guided-play/checks/guided-unit.log",
+      "bytes": 318,
+      "sha256": "4d65a928a2252d0fbb760921b103bdf0eba069c5aa6c29f720d642380f82b1a8"
+    },
+    {
+      "path": "docs/guided-play/checks/initial-browser-selector.log",
+      "bytes": 430,
+      "sha256": "ea5d8f78b5cad00de857c46cac06d82540e94ae3b92e34e17ec31ca4d9234957"
+    },
+    {
+      "path": "docs/guided-play/checks/initial-check-missing-engine-build.log",
+      "bytes": 4890,
+      "sha256": "21fd06ab72d87b52f9b468eff343607d168a34a92e99fd42e0b6c96d40bbc9db"
+    },
+    {
+      "path": "docs/guided-play/checks/initial-check-version-allowlist.log",
+      "bytes": 5434,
+      "sha256": "d8bbadb3d2c8d91283685cd1a278f60d3808505224587acc06ddb818f1cda8fd"
+    },
+    {
+      "path": "docs/guided-play/checks/initial-real-katago-disallowed-origin.json",
+      "bytes": 2327,
+      "sha256": "ae0eb41db5bd83526cf1692a9fb0aca19ef5065787017ce69e31f77ee62b1950"
+    },
+    {
+      "path": "docs/guided-play/checks/initial-real-katago-disallowed-origin.log",
+      "bytes": 6205,
+      "sha256": "04528d32310a798855c3a79453d2e661a9b5f3acd29306e37b940ce3419b63ee"
+    },
+    {
+      "path": "docs/guided-play/checks/initial-real-katago-response-wait.log",
+      "bytes": 107,
+      "sha256": "66cda2b36c1d9071df3686a721e6c08c518423b836a2e803d9c70de8cdb8c983"
+    },
+    {
+      "path": "docs/guided-play/checks/initial-remote-health.json",
+      "bytes": 675,
+      "sha256": "49eb0676617ff17f599cbb98e2296999607dc228af1e88feb8d74542e1f58fcb"
+    },
+    {
+      "path": "docs/guided-play/checks/legacy-evidence-isolation.json",
+      "bytes": 2666,
+      "sha256": "8749e7692e2d48f0fd02b754cd04a554cd60713b2f6389a93ae9576fb719505e"
+    },
+    {
+      "path": "docs/guided-play/checks/local-capacity.json",
+      "bytes": 885,
+      "sha256": "b669a97d4a872a086c6d4949e12eac45cbf726b3ba73e3d7f50185f765804e0b"
+    },
+    {
+      "path": "docs/guided-play/checks/pages-build.log",
+      "bytes": 1128,
+      "sha256": "d41f5ab201c8500bcf07098a9742e31b0ef5be3524ef0cf27c79b6598fc06d7f"
+    },
+    {
+      "path": "docs/guided-play/checks/preservation.json",
+      "bytes": 287628,
+      "sha256": "5baeb228c549ea35485f767cc4d5ecf9292c5ef0b97ec92a5b48bca0e9ae714e"
+    },
+    {
+      "path": "docs/guided-play/checks/real-katago-local.json",
+      "bytes": 1811,
+      "sha256": "95dfa820c5d0b1ca1d2d755ec2b4aa1fe5ad0778569199c1b48ba939797a66b1"
+    },
+    {
+      "path": "docs/guided-play/checks/real-katago-local.log",
+      "bytes": 5581,
+      "sha256": "b51219e3e754e6f6f85db7dc140d8006c5cf289dd869f4b5b27a47614ed409f2"
+    },
+    {
+      "path": "docs/guided-play/checks/legacy-regression/online-tools/checks/browser/1280-maximized.png",
+      "bytes": 73814,
+      "sha256": "a737977d33d6ef732dbc7149889db85c833a8705e55cd8d231520fb39557b39f"
+    },
+    {
+      "path": "docs/guided-play/checks/legacy-regression/online-tools/checks/browser/360-floating-19.png",
+      "bytes": 33666,
+      "sha256": "bd8acca30c7b77fef9e9c620da3477cbbab5f3a703e6cdbe85738300efea374a"
+    },
+    {
+      "path": "docs/guided-play/checks/legacy-regression/online-tools/checks/browser/768-floating-9.png",
+      "bytes": 30731,
+      "sha256": "46148e985fd6f37cf2df0048d2ccae38411a376f9d2cad2069a219f3d456813c"
+    },
+    {
+      "path": "docs/guided-play/checks/legacy-regression/online-tools/checks/browser/chat.png",
+      "bytes": 274265,
+      "sha256": "12db72cf18b041344c2e1453dd89c88a121f4c4b1167fd6a53e2489ec1527c25"
+    },
+    {
+      "path": "docs/guided-play/checks/legacy-regression/checks/journey/chromium/full-game.png",
+      "bytes": 295896,
+      "sha256": "ab69b430c77cd3f5d69991069459fa519548bac5fcb73b2ab4d6fc377f0d76f8"
+    },
+    {
+      "path": "docs/guided-play/checks/legacy-regression/checks/journey/chromium/offline-editor.png",
+      "bytes": 528383,
+      "sha256": "32ac957d2884bf0bba642dee67392d05788200b86a3536eff85c080fe0278ca1"
+    },
+    {
       "path": "schemas/advanced-course.schema.json",
       "bytes": 12950,
       "sha256": "341b21b984ff20f0c4e28e5d6afa6e30fb3609f0d77f8c426d792ca3f7d521e3"
@@ -15147,6 +15337,11 @@
       "path": "schemas/content.schema.json",
       "bytes": 47098,
       "sha256": "82a1a060ff48c7072aba29d5091c55e976eaed04e5d6af5787408885b07e2e88"
+    },
+    {
+      "path": "schemas/guided-session.schema.json",
+      "bytes": 4267,
+      "sha256": "4c253beab8b240553e1601e9b8cabb35e50f2408aeaf415b2ea5aa886ad43fa0"
     },
     {
       "path": "schemas/t17-evidence.schema.json",
@@ -15389,6 +15584,26 @@
       "sha256": "795e9564cb806b349282af12bf2755f42be01c0efaff2822bed1da38f16d0d75"
     },
     {
+      "path": "scripts/guided-play-browser.cjs",
+      "bytes": 9558,
+      "sha256": "8ad720c47d22a902ea9d4cd251367640eab0de5f37d369b29a11af13c8d1f6e1"
+    },
+    {
+      "path": "scripts/guided-play-real-katago.cjs",
+      "bytes": 3941,
+      "sha256": "21b20105e35eb37e6d3bd64e82a9daf6306528b930d151f6c56a828be92d5223"
+    },
+    {
+      "path": "scripts/guided-play-upgrade-after.cjs",
+      "bytes": 2018,
+      "sha256": "7679970f0232b7201ff60a882f44acaf1005054e98d38f0710417d1cff461087"
+    },
+    {
+      "path": "scripts/guided-play-upgrade-before.cjs",
+      "bytes": 1071,
+      "sha256": "12dffd1b166589d74a3a07ddf6dc9edded0bfa17ea1a2fbaa0c42e905783db94"
+    },
+    {
       "path": "scripts/katago-concurrency-smoke.mjs",
       "bytes": 1904,
       "sha256": "ed394dbbf14a34d4f730ea1ab6cf015248db14351f46b75e1cce5eb47dad6128"
@@ -15467,6 +15682,11 @@
       "path": "scripts/package-free-play.py",
       "bytes": 5454,
       "sha256": "7e409e3d2bd112d1389994cfd1a60931c080a95013b7c2ef7f760cba66b21e4b"
+    },
+    {
+      "path": "scripts/package-guided-play.py",
+      "bytes": 6781,
+      "sha256": "abc5a2a5938b39fb60d8c66b253a7f4b8bbe07f5921e007863c3350b6e1283ae"
     },
     {
       "path": "scripts/package-history.py",
@@ -15680,8 +15900,8 @@
     },
     {
       "path": "scripts/sync-github-pages.py",
-      "bytes": 10748,
-      "sha256": "9b86e1a0b4138a0e4939303510d5553f9742b7de931e9e9e4fba9f00be2f93e3"
+      "bytes": 11250,
+      "sha256": "c655a5de8fa490bc8c38dbde33c81c698afb600079f693d66bc18f89a15b48b4"
     },
     {
       "path": "scripts/validate-advanced.ts",
@@ -15744,6 +15964,21 @@
       "sha256": "0da63d4b00f4e99e49c64488b475d9ab2d1071c6c4d9fc9fc5be3395cc70a370"
     },
     {
+      "path": "scripts/verify-guided-archive.py",
+      "bytes": 2723,
+      "sha256": "8ce5c527818d18b4425991ac77aac83371fb902d64997900acbaffbbd026a464"
+    },
+    {
+      "path": "scripts/verify-guided-play.ts",
+      "bytes": 2387,
+      "sha256": "452b54665ed183c2c74640708002de2c302ea51c0804cb9458dbd39a2ccd3078"
+    },
+    {
+      "path": "scripts/verify-guided-preservation.py",
+      "bytes": 2619,
+      "sha256": "2ce98aabe802f45b6f3d5d1ba24ca2b6d85d881690786636b7b7d36dd6cbded2"
+    },
+    {
       "path": "scripts/verify-history-preservation.py",
       "bytes": 1584,
       "sha256": "5270ccd82642b188ba7d86dcff2b18a497c664793413e276f086333293dba92e"
@@ -15775,8 +16010,8 @@
     },
     {
       "path": "scripts/verify-online-dependencies.mjs",
-      "bytes": 2100,
-      "sha256": "738dc958f5cad2f325056fe66d6a9dc5b09de3ddd0abf55cf3e1c07ca35e717d"
+      "bytes": 2120,
+      "sha256": "d1d2b53fe6c7d6a0d3a28830399866c34c822478be6380ed949f18e6e7404ae5"
     },
     {
       "path": "scripts/verify-online-preservation.py",
@@ -16091,7 +16326,7 @@
     {
       "path": "src/core/version.ts",
       "bytes": 117,
-      "sha256": "07bd24670c8789b1df4d15cb4c5e21ed2dd28d8268d6b5aff5d18894d7c153d3"
+      "sha256": "4cfe170fffdeb145fe409332d6f20d1ed28a998a9b82b542a5e9e7390afe9097"
     },
     {
       "path": "src/core/analysis/ai-contract.ts",
@@ -16260,8 +16495,8 @@
     },
     {
       "path": "src/features/learning-hub/LearningHub.tsx",
-      "bytes": 28863,
-      "sha256": "d8255e01a2131a22b780acdb6d66b04444764c52c8e4ef64903148e7e6456012"
+      "bytes": 29829,
+      "sha256": "b80a15e6e5f63de1be03f781536463d8bade001cb109ff0222ac675c980e263e"
     },
     {
       "path": "src/features/learning-hub/progress.ts",
@@ -16270,8 +16505,8 @@
     },
     {
       "path": "src/features/learning-hub/registry.ts",
-      "bytes": 9022,
-      "sha256": "21aed8b9d9ceca9f518490b1bc5a7cff43ad3072364237f503334a25d251c6cf"
+      "bytes": 9248,
+      "sha256": "c03f89cf59fc288aedeb8de5fbc5b4b9c035b3966d45ce8a4b8f02e59a811070"
     },
     {
       "path": "src/features/learning-hub/stages.ts",
@@ -16475,8 +16710,8 @@
     },
     {
       "path": "src/features/offline-data/OfflineData.tsx",
-      "bytes": 9287,
-      "sha256": "3ebc5ab7477ce826fdffdc2f58a9a182c737fb3a1a6de2c13665c793d39bb84b"
+      "bytes": 9385,
+      "sha256": "54580ed622b6c6846fea1b7de10fb6b03a91c9a9be3ec392eca76e6bfe9a33e8"
     },
     {
       "path": "src/features/advanced-courses/AdvancedLesson.css",
@@ -16622,6 +16857,71 @@
       "path": "src/features/experiment-board/storage.ts",
       "bytes": 3420,
       "sha256": "bfb37e4c0730123336c6bd16e515e7811a93f7a73b4140327fc56525ced69d5e"
+    },
+    {
+      "path": "src/features/guided-play/GuidedPlay.css",
+      "bytes": 7934,
+      "sha256": "50f93b25b4960a73113fa9d1db5ce9eca0c4c5de70302565172cbb43e65513c2"
+    },
+    {
+      "path": "src/features/guided-play/GuidedPlay.tsx",
+      "bytes": 17057,
+      "sha256": "b69f86ae4c8e2543799ef722369b63eca9aa75ecf88a3655b23df6cfa3d8e3d3"
+    },
+    {
+      "path": "src/features/guided-play/GuidedPlaySetup.tsx",
+      "bytes": 3419,
+      "sha256": "d784cbf6fff05feda3297e0e7d20d6dc8a9bf55464e656076d616e7dee9c784a"
+    },
+    {
+      "path": "src/features/guided-play/GuidedPlaySummary.tsx",
+      "bytes": 3159,
+      "sha256": "2215735adb84b9aa4716203abd559fe907fd73d8efde136f59ea24d2f0df29fc"
+    },
+    {
+      "path": "src/features/guided-play/TeachingOverlay.ts",
+      "bytes": 1401,
+      "sha256": "b461b7156586738745736fc4164e73b2cc83472d3246fdf25dc7f2ef78194031"
+    },
+    {
+      "path": "src/features/guided-play/TeachingPanel.tsx",
+      "bytes": 3896,
+      "sha256": "7d6d4afd743e2d7cfe12e78aa21f1770464b246c483bbaaa10fa8aa984bf0972"
+    },
+    {
+      "path": "src/features/guided-play/analyzer.ts",
+      "bytes": 11720,
+      "sha256": "432ca220cd31730acfb4519319a7ac3adc492cf3297346ac5c1ceb359e99059a"
+    },
+    {
+      "path": "src/features/guided-play/model.ts",
+      "bytes": 5745,
+      "sha256": "202c255b2fed6bfb96777cf74aaaabf7dc63240d5de187aaf3ffc46b2b95f4aa"
+    },
+    {
+      "path": "src/features/guided-play/opponent.ts",
+      "bytes": 3721,
+      "sha256": "cc22735a1bf71bc84cf5fc957049e89619575501f6054ab073a6911c401e9fbc"
+    },
+    {
+      "path": "src/features/guided-play/storage.ts",
+      "bytes": 8529,
+      "sha256": "4cb6db5879c34cec3227ceac973b7dfe0a3cbe82f86d3d5c93373bca390482df"
+    },
+    {
+      "path": "src/features/guided-play/types.ts",
+      "bytes": 3310,
+      "sha256": "b92ccc4c176a2888253ef54d42fdb89a940f43e148d5599bf1cb877a48ff7365"
+    },
+    {
+      "path": "src/features/guided-play/useGuidedPlay.ts",
+      "bytes": 11649,
+      "sha256": "80234045ed7788c755d4c7c88297c66529c8842007cc6c0d01cd9394a7070cbb"
+    },
+    {
+      "path": "src/features/guided-play/useTeachingAnalysis.ts",
+      "bytes": 2422,
+      "sha256": "9f4ff7ea03222825aabf4ba20ac8c3bae1072543a9981a71256d8738749d233b"
     },
     {
       "path": "src/components/Board.css",

@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "id": "GUIDED-REAL-KATAGO",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "passed",
+  "base": "http://127.0.0.1:4190",
+  "browser": "156.0.8078.80",
+  "at": "2026-11-03T13:13:57.644Z",
+  "service": "https://weiqi-katago.onrender.com/api/ai-move",
+  "response": {
+    "schemaVersion": 1,
+    "positionId": "ai-6c917457-f768-4a82-93e6-8e07e6528e08",
+    "requestId": "578b2dcb-135e-40ca-8671-1da2a3413bfc",
+    "aiColor": "W",
+    "difficulty": "standard",
+    "move": {
+      "type": "place",
+      "at": {
+        "row": 5,
+        "col": 5
+      }
+    },
+    "engine": {
+      "name": "KataGo",
+      "version": "1.18.1",
+      "model": "g170-b6c96-s175395328-d26788732",
+      "backend": "Eigen CPU",
+      "maxVisits": 24
+    },
+    "visits": 24,
+    "elapsedMs": 2429
+  },
+  "requests": [
+    {
+      "url": "https://weiqi-katago.onrender.com/api/ai-move",
+      "aiColor": "W",
+      "difficulty": "standard",
+      "events": [
+        {
+          "type": "place",
+          "color": "B",
+          "at": {
+            "row": 2,
+            "col": 2
+          }
+        }
+      ],
+      "setup": {
+        "schemaVersion": 1,
+        "id": "POS-GUIDED-START",
+        "revision": 1,
+        "rulesetId": "GO-CLUB-AREA-1",
+        "kind": "Position",
+        "size": 9,
+        "stones": [],
+        "toPlay": "B",
+        "historyPolicy": "fresh-setup",
+        "history": null
+      }
+    }
+  ],
+  "checks": [
+    "manual-hints-local",
+    "one-real-render-move",
+    "correct-turn",
+    "shared-legal-client-validation",
+    "undo-round",
+    "refresh-paused",
+    "resign-report",
+    "no-live-evaluation-request"
+  ],
+  "errors": [],
+  "limits": "One representative request, not a load or playing-strength benchmark; no private Render logs or billing read."
+}
