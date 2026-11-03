@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
   "id": "GO-CLUB-PUBLIC-VERSION",
-  "revision": 25001,
+  "revision": 25002,
   "rulesetId": "GO-CLUB-AREA-1",
-  "programVersion": "0.25.0",
-  "resultVersion": "0.25.0-pages.1",
-  "onlineServerConfigured": true,
-  "onlineServerOrigin": "https://weiqi-rooms.onrender.com",
-  "onlineSiteOrigin": "https://sma084545-pixel.github.io",
-  "onlineRoomsEphemeral": true,
-  "katagoAnalysisConfigured": true,
-  "katagoAnalysisOrigin": "https://weiqi-katago.onrender.com",
+  "programVersion": "0.25.1",
+  "resultVersion": "0.25.1-pages.1",
+  "onlineServerConfigured": false,
+  "onlineServerOrigin": null,
+  "onlineSiteOrigin": null,
+  "onlineRoomsEphemeral": false,
+  "katagoAnalysisConfigured": false,
+  "katagoAnalysisOrigin": null,
   "katagoExtremeConfigured": false,
-  "katagoExtremeOrigin": ""
+  "katagoExtremeOrigin": null
 }

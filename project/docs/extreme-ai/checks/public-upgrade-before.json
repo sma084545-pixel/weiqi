@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "EXTREME-PUBLIC-UPGRADE-BEFORE",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "passed",
+  "at": "2026-11-03T01:40:30.061Z",
+  "oldVersion": {
+    "schemaVersion": 1,
+    "id": "GO-CLUB-PUBLIC-VERSION",
+    "revision": 25001,
+    "rulesetId": "GO-CLUB-AREA-1",
+    "programVersion": "0.25.0",
+    "resultVersion": "0.25.0-pages.1",
+    "onlineServerConfigured": true,
+    "onlineServerOrigin": "https://weiqi-rooms.onrender.com",
+    "onlineSiteOrigin": "https://sma084545-pixel.github.io",
+    "onlineRoomsEphemeral": true,
+    "katagoAnalysisConfigured": true,
+    "katagoAnalysisOrigin": "https://weiqi-katago.onrender.com",
+    "katagoExtremeConfigured": false,
+    "katagoExtremeOrigin": ""
+  },
+  "offline": {
+    "type": "OFFLINE_STATUS",
+    "ready": true,
+    "version": "0.25.0",
+    "cachedCount": 11,
+    "error": null
+  },
+  "moves": "2",
+  "difficulty": "standard",
+  "method": "Own isolated developer browser; saved real standard2-move test game, not student data"
+}

@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "id": "GITHUB-CURRENT-SOURCE",
-  "revision": 30,
+  "revision": 32,
   "rulesetId": "GO-CLUB-AREA-1",
-  "resultVersion": "0.25.0-pages.1",
-  "programVersion": "0.25.0",
+  "resultVersion": "0.25.1-pages.1",
+  "programVersion": "0.25.1",
   "sourceBuild": "pnpm install --frozen-lockfile && pnpm build",
   "note": "Buildable source and materials; installed dependencies, private data and generated root build/output excluded. Full release archive includes production builds and all evidence.",
   "files": [
@@ -25,8 +25,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 28750,
-      "sha256": "7ae53fc6c08bdd52e18535624c70245a2ea0a9f5efbef751a586168f1e5ee3b1"
+      "bytes": 29146,
+      "sha256": "1e76dac20289977aefd3ed20b51e4c7ccd90511813229d556d4723c574c167da"
     },
     {
       "path": "MERGE_C_RELEASE_MANIFEST.json",
@@ -35,8 +35,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 10195,
-      "sha256": "d8543ca477ccf8175d6382f3198b5fc0b982715c207e59d679f157c9f654ebb2"
+      "bytes": 10257,
+      "sha256": "345a7d8eaa342e21190d460f522e6dc48704e4b29637bf35bc3c6268bb8658d9"
     },
     {
       "path": "README_MERGE_C.md",
@@ -56,7 +56,7 @@
     {
       "path": "package.json",
       "bytes": 4318,
-      "sha256": "435ed14a3f3feac16269afb44195a7cd78b140ef07ffd7c021971905f30465b3"
+      "sha256": "e5fbc16eb86fc367293b0b19ab6fcf895d5fc5c941272b0ecb1646558a631d29"
     },
     {
       "path": "playwright.advanced-regression.config.ts",
@@ -3915,8 +3915,8 @@
     },
     {
       "path": "handoff/EXTREME_AI.md",
-      "bytes": 2359,
-      "sha256": "8629c00e38fb0fa3603ebe910b9c263f600e9cebf1c45289970b429f752ded91"
+      "bytes": 2581,
+      "sha256": "48bd3b115d1db33a8c1750a8daa73aa02ebca336ed4b687d97f83b2fcdf9a0f1"
     },
     {
       "path": "handoff/FREEZE_B.md",
@@ -4110,8 +4110,8 @@
     },
     {
       "path": "deploy/github-pages.json",
-      "bytes": 360,
-      "sha256": "5c4d3a4c5c93f4be33718ec60bf8f3f7e081d18f7683729427da9afb2c18422a"
+      "bytes": 399,
+      "sha256": "a5b706bde759c902973cab1568c3b47c628db6e1e5aa7285655e12344f0f56ec"
     },
     {
       "path": "deploy/katago-extreme.render.yaml",
@@ -12099,6 +12099,21 @@
       "sha256": "abcf1c6a328a59e5cdb11a1c1eb521320d3024a6a88316c56f26f9f5aac9b393"
     },
     {
+      "path": "docs/extreme-ai/checks/public-ready-initial.json",
+      "bytes": 386,
+      "sha256": "83ca8030ea37c8b3631b3b580fdf0416d5fa0fe2e497a232510fe6d29bec513c"
+    },
+    {
+      "path": "docs/extreme-ai/checks/public-ready.headers",
+      "bytes": 361,
+      "sha256": "01abc36cad3d86ce8187591d9e8bc120980be36ae0a88d2854ab1f9f043d0334"
+    },
+    {
+      "path": "docs/extreme-ai/checks/public-upgrade-before.json",
+      "bytes": 1030,
+      "sha256": "b5ba8ba694d72813751400b7df99e7f14e6e0305d9b40818f153351b7b5a188a"
+    },
+    {
       "path": "docs/extreme-ai/checks/render-public-compute-prices.png",
       "bytes": 112137,
       "sha256": "1819087956c236b7c86ebf9ca854ef28fd1c487c4d26a8f1f74e3a3f063f9a1e"
@@ -15321,7 +15336,7 @@
     {
       "path": "scripts/package-extreme.py",
       "bytes": 8206,
-      "sha256": "f337ba6a39831de633a38debddc0c5967cdbcf62193e31748470ab743b1837bb"
+      "sha256": "e6b0e7513634cd30b0814dab65c7d2ce78ec47b9a1b1f2c1b1a954ae1fef3570"
     },
     {
       "path": "scripts/package-floating-fit.py",
@@ -15961,7 +15976,7 @@
     {
       "path": "src/core/version.ts",
       "bytes": 117,
-      "sha256": "adc80fe9c402632dc93c7decf5999bedfe4aeebd5c1f6c94c5097f342aa8f34c"
+      "sha256": "050303da530fc8ca8caacbe927e7f1cc483e924a8778144bb53b8e63523b0175"
     },
     {
       "path": "src/core/analysis/ai-contract.ts",
