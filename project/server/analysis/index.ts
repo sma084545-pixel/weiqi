@@ -3,6 +3,7 @@ import {resolve} from 'node:path';
 import {KataGoEngine} from './engine';
 import {createAnalysisServer} from './http';
 import {EXTREME_MODEL} from '../../src/core/analysis/ai-contract';
+import {verifyPinnedModel} from './model-integrity';
 
 const appRoot=process.env.APP_ROOT??process.cwd();
 const manifest=JSON.parse(readFileSync(resolve(appRoot,'analysis-engine/engine-manifest.json'),'utf8'));
@@ -16,8 +17,10 @@ if(profile==='extreme'){
 const origin=process.env.PUBLIC_ORIGIN??'https://sma084545-pixel.github.io';
 if(new URL(origin).origin!==origin||(!origin.startsWith('https://')&&!/^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/.test(origin)))throw Error('PUBLIC_ORIGIN must be one exact origin');
 const maxVisits=Number(process.env.KATAGO_MAX_VISITS??64);if(!Number.isInteger(maxVisits)||maxVisits<1||maxVisits>64)throw Error('KATAGO_MAX_VISITS must be1..64');
-const engine=new KataGoEngine({executable:process.env.KATAGO_PATH??'/opt/katago/katago',args:['analysis','-config',process.env.KATAGO_CONFIG??resolve(appRoot,profile==='extreme'?'analysis-engine/analysis-extreme.cfg':'analysis-engine/analysis.cfg'),'-model',process.env.KATAGO_MODEL??'/opt/katago/model.bin.gz','-quit-without-waiting'],
-  version:manifest.engine.version,model:manifest.model.name,maxVisits,maxQueue:profile==='extreme'?1:2,timeoutMs:90_000,startupTimeoutMs:180_000,
+const modelPath=process.env.KATAGO_MODEL??'/opt/katago/model.bin.gz';
+if(profile==='extreme')await verifyPinnedModel(modelPath,manifest.model.sha256);
+const engine=new KataGoEngine({executable:process.env.KATAGO_PATH??'/opt/katago/katago',args:['analysis','-config',process.env.KATAGO_CONFIG??resolve(appRoot,profile==='extreme'?'analysis-engine/analysis-extreme.cfg':'analysis-engine/analysis.cfg'),'-model',modelPath,'-quit-without-waiting'],
+  version:manifest.engine.version,model:manifest.model.name,internalModelName:manifest.model.internalName,maxVisits,maxQueue:profile==='extreme'?1:2,timeoutMs:90_000,startupTimeoutMs:180_000,
   log:(event,data)=>console.log(JSON.stringify({event,...data,at:new Date().toISOString()}))});
 // The downloaded local app uses these two exact origins; no wildcard GitHub/localhost access.
 const server=createAnalysisServer(engine,origin,{additionalOrigins:['http://127.0.0.1:4190','http://localhost:4190'],...(profile==='extreme'?{ratePerMinute:2,aiRatePerMinute:4,globalPerMinute:6}:{})});

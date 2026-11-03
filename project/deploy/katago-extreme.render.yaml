@@ -1,11 +1,10 @@
-# DO NOT apply until the owner explicitly approves the paid service.
-# Only this new strong-model service; existing weiqi-rooms and weiqi-katago unchanged.
-# Checked 2026-11-03: 1c-2g / legacy Standard, 1CPU,2GB, US$25/month compute.
+# FREE ONLY. One new isolated model service; existing services unchanged.
+# 0.1CPU/512MB. No disk, database, paid add-on, or autoscaling.
 services:
   - type: web
     name: weiqi-katago-extreme
     runtime: docker
-    plan: 1c-2g
+    plan: free
     region: singapore
     numInstances: 1
     rootDir: project

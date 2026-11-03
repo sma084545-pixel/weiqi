@@ -1,8 +1,8 @@
 import type {Color,GameState} from '../content.generated';
 import type {AnalysisMove,ReviewAnalysisRequest,ReviewAnalysisResponse} from './contract';
 
-/** Pinned official strongest confidently-rated network checked 2026-11-03. Never fall back to the small net. */
-export const EXTREME_MODEL={name:'kata1-tf3-b11c768-s11003M-d5973M-7gres',engineVersion:'1.18.1'} as const;
+/** Pinned stronger compact network chosen for the owner's free-only limit, checked2026-11-03. Never fall back to the small net. */
+export const EXTREME_MODEL={name:'kata1-tf3-b10c512-s3203M-d5937M',engineVersion:'1.18.1'} as const;
 export const AI_DIFFICULTIES={
   relaxed:{label:'轻松',visits:8,description:'较少搜索，在引擎判断接近的合法候选中选择。'},
   standard:{label:'标准',visits:24,description:'中等搜索，采用引擎优先候选。'},

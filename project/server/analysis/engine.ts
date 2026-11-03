@@ -5,7 +5,7 @@ import type {AnalysisHealth,ReviewAnalysisResponse} from '../../src/core/analysi
 import {ApiError,normalizeAnalysis,type PreparedAnalysis} from './position';
 
 type Job={id:string;prepared:PreparedAnalysis;started:number;resolve:(v:ReviewAnalysisResponse)=>void;reject:(e:unknown)=>void;timer:ReturnType<typeof setTimeout>;signal?:AbortSignal;abort:()=>void;settled:boolean;cleanup?:ReturnType<typeof setTimeout>};
-export interface EngineOptions {executable:string;args:string[];version:string;model:string;maxVisits:number;maxQueue:number;timeoutMs:number;startupTimeoutMs:number;restartDelayMs?:number;cancelGraceMs?:number;log?:(event:string,data?:Record<string,unknown>)=>void;}
+export interface EngineOptions {executable:string;args:string[];version:string;model:string;internalModelName?:string;maxVisits:number;maxQueue:number;timeoutMs:number;startupTimeoutMs:number;restartDelayMs?:number;cancelGraceMs?:number;log?:(event:string,data?:Record<string,unknown>)=>void;}
 
 /** One persistent JSON analysis subprocess, one in-flight search, bounded FIFO. */
 export class KataGoEngine {
@@ -41,7 +41,7 @@ export class KataGoEngine {
         let raw:Record<string,unknown>;try{raw=JSON.parse(line);}catch{this.failed(instance);return;}
         if(!raw||typeof raw!=='object'){this.failed(instance);return;}
         if(raw.id===versionId){if(raw.version!==this.options.version){this.log('engine_version_mismatch');this.failed(instance);return;}versionReady=true;ready();continue;}
-        if(raw.id===modelId){const models=raw.models;if(!Array.isArray(models)||models.length!==1||models[0]?.internalName!==this.options.model){this.log('engine_model_not_ready');this.failed(instance);return;}modelReady=true;ready();continue;}
+        if(raw.id===modelId){const models=raw.models;if(!Array.isArray(models)||models.length!==1||models[0]?.internalName!==(this.options.internalModelName??this.options.model)){this.log('engine_model_not_ready');this.failed(instance);return;}modelReady=true;ready();continue;}
         this.receive(raw);
       }
     });
