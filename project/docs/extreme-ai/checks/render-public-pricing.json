@@ -1,0 +1,11 @@
+{
+  "url": "https://render.com/pricing",
+  "checkedAt": "2026-11-03T00:39:05.241Z",
+  "servicesAndWorkers": "Services & Workers\n\nScale up to 12 CPU and 96 GB of RAM\n\nPrivate services\nWeb services with HTTP/2 and full TLS\nBackground workers\nNode, Python, Go, Rust, Ruby, and Elixir\nCustom Docker containers\nSSDs\n for $0.25/GB per month\nFree (\nlimitations apply\n)\t$0/month\t512 MB RAM\tfree\nLess than 1 CPU\t$7/month\t512 MB RAM\t0.5c-512mb\n1 CPU\t$25/month\t2 GB RAM\t1c-2g\n2 CPU\t$85/month\t4 GB RAM\t2c-4g\n2 CPU\t$135/month\t8 GB RAM\t2c-8g\n2 CPU\t$200/month\t16 GB RAM\t2c-16g\n4 CPU\t$175/month\t8 GB RAM\t4c-8g\n4 CPU\t$225/month\t16 GB RAM\t4c-16g\n4 CPU\t$350/month\t32 GB RAM\t4c-32g\n8 CPU\t$300/month\t16 GB RAM\t8c-16g\n8 CPU\t$450/month\t32 GB RAM\t8c-32g\n8 CPU\t$1,000/month\t64 GB RAM\t8c-64g\n12 CPU\t$450/month\t24 GB RAM\t12c-24g\n12 CPU\t$800/month\t48 GB RAM\t12c-48g\n12 CPU\t$1,500/month\t96 GB RAM\t12c-96g\nExpand compute table\n",
+  "scope": "Public pricing page only, no account or billing access",
+  "schemaVersion": 1,
+  "id": "RENDER-PUBLIC-PRICE-CHECK",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "passed"
+}

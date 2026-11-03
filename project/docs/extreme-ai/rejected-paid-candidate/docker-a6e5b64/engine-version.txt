@@ -1,0 +1,4 @@
+KataGo v1.18.1
+Git revision: <omitted>
+Compile Time: Nov  3 2026 00:38:04
+Using Eigen(CPU) backend

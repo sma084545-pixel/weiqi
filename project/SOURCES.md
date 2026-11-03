@@ -127,3 +127,10 @@ ONLINE_PLAY_TOOLS（2026-10-22实际访问）：[Chrome Document PiP](https://de
 - [BGA · An Example Game](https://britgo.org/intro/intro3.html)：参考连接/分断、借提子威胁发展的教学观察；本次棋谱和场景原创，不复制职业示例棋谱。
 - 官方前端指导通过modern-web-guidance的accessibility/forms查询核查，沿用原React/Vite及锁文件。课程数据、坐标、表达与代码另行原创，自动校验与人类审核严格分开。
 - 既有LIFE-001 revision1仅作为明确注明的两眼局面复用；冻结30题和材料未改。新课程不是原纸卡或微课已经增加的证明。
+
+## 极致模型增量（核查2026-11-03）
+
+- 官方网络列表：https://katagotraining.org/networks/ 。用户只授权免费资源，原最大候选在512MB实测OOM后弃用，随后28.5M的tf3因免费CPU超时也弃用。当前紧凑强候选kata1-tf2-b10c384-s2941M-d5872M，固定下载和SHA见analysis-engine/extreme-manifest.json；需通过真实免费规格容量核查，不声称全网最强，不把站内Elo换算为人类段位。
+- 新kata1模型许可：https://katagotraining.org/network_license/ ，MIT式授权、要求保留版权/许可声明，全文随analysis-engine/licenses/EXTREME-MODEL-LICENSE.txt。原g170的CC0不能沿用到新模型。
+- 引擎1.18.1官方Eigen源码/许可证继续保留；1.18.2只针对特定CUDA GPU的提速，不改变本次CPU后端选择：https://github.com/lightvector/KataGo/releases/tag/v1.18.2 。
+- Render公开规格及免费边界：https://render.com/docs/compute-plans 、https://render.com/docs/free 。Free为0.1CPU/512MB，750小时/月为工作区共享；休眠、构建及带宽额度须按实际账户核对，不启用付费或超额选项。公开价格取证保留在docs/extreme-ai/checks/，不冒称已读取账户账单或创建付费资源。

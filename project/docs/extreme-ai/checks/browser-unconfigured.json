@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "EXTREME-UNCONFIGURED-UI",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "passed",
+  "at": "2026-11-03T00:44:20.060Z",
+  "mode": "actual-browser-production-build-no-strong-service-address",
+  "browser": "156.0.8078.80",
+  "checks": [
+    "honest-not-enabled-message",
+    "cannot-start-unconfigured-model",
+    "old-three-selectable",
+    "zero-fallback-requests"
+  ],
+  "requests": [],
+  "humanReviewed": null
+}

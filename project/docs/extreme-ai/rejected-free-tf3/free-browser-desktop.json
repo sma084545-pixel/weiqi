@@ -1,0 +1,284 @@
+{
+  "schemaVersion": 1,
+  "id": "EXTREME-REAL-DESKTOP",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "passed",
+  "mode": "actual-browser-actual-Eigen-model-not-Render",
+  "at": "2026-11-03T01:15:49.438Z",
+  "browser": "156.0.8078.80",
+  "base": "http://127.0.0.1:4212",
+  "responses": [
+    {
+      "url": "http://127.0.0.1:4211/api/ai-move",
+      "status": 200,
+      "body": {
+        "schemaVersion": 1,
+        "positionId": "ai-c6beb868-ed99-4ab3-9825-8d60c97a252c",
+        "requestId": "d00b2b77-5a3e-4312-8c45-f0f375f9f77a",
+        "aiColor": "W",
+        "difficulty": "extreme",
+        "move": {
+          "type": "place",
+          "at": {
+            "row": 4,
+            "col": 4
+          }
+        },
+        "engine": {
+          "name": "KataGo",
+          "version": "1.18.1",
+          "model": "kata1-tf3-b10c512-s3203M-d5937M",
+          "backend": "Eigen CPU",
+          "maxVisits": 64
+        },
+        "visits": 64,
+        "elapsedMs": 20604
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4211/api/analyze",
+      "status": 200,
+      "body": {
+        "schemaVersion": 1,
+        "requestId": "3a0ed1b4-696f-43cf-bd46-9edefb99c654",
+        "positionId": "review-dcd99fde-c5a1-4e0a-8643-d4ed41a3e51a",
+        "perspective": "B",
+        "toPlay": "W",
+        "blackWinrate": 0.00550357793,
+        "blackScoreLead": -5.87622159,
+        "visits": 64,
+        "elapsedMs": 2613,
+        "engine": {
+          "name": "KataGo",
+          "version": "1.18.1",
+          "model": "kata1-tf3-b10c512-s3203M-d5937M",
+          "backend": "Eigen CPU",
+          "maxVisits": 64
+        },
+        "candidates": [
+          {
+            "order": 0,
+            "move": {
+              "type": "place",
+              "at": {
+                "row": 5,
+                "col": 5
+              }
+            },
+            "visits": 9,
+            "blackWinrate": 0.00440464642,
+            "blackScoreLead": -5.93594705,
+            "pv": [
+              {
+                "type": "place",
+                "at": {
+                  "row": 5,
+                  "col": 5
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 3,
+                  "col": 3
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 3,
+                  "col": 4
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 2,
+                  "col": 4
+                }
+              }
+            ]
+          },
+          {
+            "order": 1,
+            "move": {
+              "type": "place",
+              "at": {
+                "row": 4,
+                "col": 4
+              }
+            },
+            "visits": 9,
+            "blackWinrate": 0.00706991626,
+            "blackScoreLead": -5.87656637,
+            "pv": [
+              {
+                "type": "place",
+                "at": {
+                  "row": 4,
+                  "col": 4
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 2,
+                  "col": 4
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 6,
+                  "col": 3
+                }
+              }
+            ]
+          },
+          {
+            "order": 2,
+            "move": {
+              "type": "place",
+              "at": {
+                "row": 5,
+                "col": 4
+              }
+            },
+            "visits": 8,
+            "blackWinrate": 0.00515389708,
+            "blackScoreLead": -6.07861232,
+            "pv": [
+              {
+                "type": "place",
+                "at": {
+                  "row": 5,
+                  "col": 4
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 3,
+                  "col": 4
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 4,
+                  "col": 6
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 2,
+                  "col": 6
+                }
+              }
+            ]
+          },
+          {
+            "order": 3,
+            "move": {
+              "type": "place",
+              "at": {
+                "row": 4,
+                "col": 5
+              }
+            },
+            "visits": 8,
+            "blackWinrate": 0.00515389708,
+            "blackScoreLead": -6.07861232,
+            "pv": [
+              {
+                "type": "place",
+                "at": {
+                  "row": 4,
+                  "col": 5
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 4,
+                  "col": 3
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 6,
+                  "col": 4
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 6,
+                  "col": 2
+                }
+              }
+            ]
+          },
+          {
+            "order": 4,
+            "move": {
+              "type": "place",
+              "at": {
+                "row": 3,
+                "col": 3
+              }
+            },
+            "visits": 7,
+            "blackWinrate": 0.0054321239,
+            "blackScoreLead": -5.75236247,
+            "pv": [
+              {
+                "type": "place",
+                "at": {
+                  "row": 3,
+                  "col": 3
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 5,
+                  "col": 5
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 4,
+                  "col": 5
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 4,
+                  "col": 6
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "checks": [
+    "four-level-order",
+    "real-strong-white-reply",
+    "undo-redo",
+    "refresh-paused-same-difficulty",
+    "history-readonly",
+    "session-export",
+    "resign-no-fake-score",
+    "same-strong-model-postgame-review"
+  ],
+  "humanReviewed": null
+}

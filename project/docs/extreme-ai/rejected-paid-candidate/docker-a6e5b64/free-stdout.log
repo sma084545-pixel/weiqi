@@ -1,0 +1,3 @@
+{"event":"http_listening","port":10000,"engine":"KataGo","version":"1.18.1"}
+{"event":"engine_exit","code":null,"signal":"SIGKILL","at":"2026-11-03T00:39:01.664Z"}
+{"event":"engine_restart","attempt":1,"at":"2026-11-03T00:39:01.664Z"}

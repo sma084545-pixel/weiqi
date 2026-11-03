@@ -1,0 +1,12 @@
+Already up to date
+Done in 302ms using pnpm v11.19.0
+$ vitest run tests/ai-game
+
+ RUN  v5.0.0 /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/extreme-ai-20261103/mainline/go-club
+
+
+ Test Files  5 passed (5)
+      Tests  55 passed (55)
+   Start at  09:06:10
+   Duration  1.61s (environment 33%, import 30%, tests 23%, transform 13%)
+

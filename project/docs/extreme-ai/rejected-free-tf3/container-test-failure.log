@@ -1,0 +1,32 @@
+cpu-engine	Run real compact strong model under strict FREE resources	﻿2026-11-03T01:14:10.1910690Z ##[group]Run mkdir -p evidence
+cpu-engine	Run real compact strong model under strict FREE resources	2026-11-03T01:14:10.1911136Z ^[[36;1mmkdir -p evidence^[[0m
+cpu-engine	Run real compact strong model under strict FREE resources	2026-11-03T01:14:10.1911783Z ^[[36;1mdocker run -d --name extreme-free --memory=512m --memory-swap=512m --cpus=0.1 -p 4207:10000 weiqi-katago:extreme^[[0m
+cpu-engine	Run real compact strong model under strict FREE resources	2026-11-03T01:14:10.1912890Z ^[[36;1mKATAGO_TEST_ORIGIN=http://127.0.0.1:4207 KATAGO_TEST_LOCATION=github-actions-linux-docker-FREE-0.1cpu-512m EXTREME_TEST_REPORT=evidence/extreme-free-real-http.json node project/scripts/extreme-real-smoke.mjs^[[0m
+cpu-engine	Run real compact strong model under strict FREE resources	2026-11-03T01:14:10.1913945Z ^[[36;1mdocker exec extreme-free cat /sys/fs/cgroup/memory.peak > evidence/memory-peak-bytes.txt^[[0m
+cpu-engine	Run real compact strong model under strict FREE resources	2026-11-03T01:14:10.1914588Z ^[[36;1mdocker exec extreme-free cat /sys/fs/cgroup/memory.events > evidence/memory-events.txt^[[0m
+cpu-engine	Run real compact strong model under strict FREE resources	2026-11-03T01:14:10.1915194Z ^[[36;1mdocker inspect --format '{{json .State}}' extreme-free > evidence/container-state.json^[[0m
+cpu-engine	Run real compact strong model under strict FREE resources	2026-11-03T01:14:10.1915851Z ^[[36;1mdocker exec extreme-free /opt/katago/katago version > evidence/engine-version.txt^[[0m
+cpu-engine	Run real compact strong model under strict FREE resources	2026-11-03T01:14:10.1930560Z shell: /usr/bin/bash -e {0}
+cpu-engine	Run real compact strong model under strict FREE resources	2026-11-03T01:14:10.1931044Z ##[endgroup]
+cpu-engine	Run real compact strong model under strict FREE resources	2026-11-03T01:14:11.6380898Z e8ef03e66739ddae064f62a4dbcaa8056eb871904212751e6e71a99dd75e230c
+cpu-engine	Run real compact strong model under strict FREE resources	2026-11-03T01:15:34.2603377Z {"size":5,"httpMs":54591,"visits":2}
+cpu-engine	Run real compact strong model under strict FREE resources	2026-11-03T01:17:04.2740586Z node:internal/modules/run_main:123
+cpu-engine	Run real compact strong model under strict FREE resources	2026-11-03T01:17:04.2744899Z     triggerUncaughtException(
+cpu-engine	Run real compact strong model under strict FREE resources	2026-11-03T01:17:04.2745779Z     ^
+cpu-engine	Run real compact strong model under strict FREE resources	2026-11-03T01:17:04.2746065Z 
+cpu-engine	Run real compact strong model under strict FREE resources	2026-11-03T01:17:04.2747196Z AssertionError [ERR_ASSERTION]: {"error":{"code":"TIMEOUT","message":"本次分析等待过久，已停止计算；可以稍后重试。"}}
+cpu-engine	Run real compact strong model under strict FREE resources	2026-11-03T01:17:04.2747838Z 
+cpu-engine	Run real compact strong model under strict FREE resources	2026-11-03T01:17:04.2748295Z 504 !== 200
+cpu-engine	Run real compact strong model under strict FREE resources	2026-11-03T01:17:04.2748519Z 
+cpu-engine	Run real compact strong model under strict FREE resources	2026-11-03T01:17:04.2748922Z     at file:///home/runner/work/weiqi/weiqi/project/scripts/extreme-real-smoke.mjs:30:63
+cpu-engine	Run real compact strong model under strict FREE resources	2026-11-03T01:17:04.2749648Z     at process.processTicksAndRejections (node:internal/process/task_queues:103:5) {
+cpu-engine	Run real compact strong model under strict FREE resources	2026-11-03T01:17:04.2750592Z   generatedMessage: false,
+cpu-engine	Run real compact strong model under strict FREE resources	2026-11-03T01:17:04.2750998Z   code: 'ERR_ASSERTION',
+cpu-engine	Run real compact strong model under strict FREE resources	2026-11-03T01:17:04.2751375Z   actual: 504,
+cpu-engine	Run real compact strong model under strict FREE resources	2026-11-03T01:17:04.2751764Z   expected: 200,
+cpu-engine	Run real compact strong model under strict FREE resources	2026-11-03T01:17:04.2752454Z   operator: 'strictEqual',
+cpu-engine	Run real compact strong model under strict FREE resources	2026-11-03T01:17:04.2752854Z   diff: 'simple'
+cpu-engine	Run real compact strong model under strict FREE resources	2026-11-03T01:17:04.2753168Z }
+cpu-engine	Run real compact strong model under strict FREE resources	2026-11-03T01:17:04.2753334Z 
+cpu-engine	Run real compact strong model under strict FREE resources	2026-11-03T01:17:04.2753570Z Node.js v22.23.3
+cpu-engine	Run real compact strong model under strict FREE resources	2026-11-03T01:17:04.2790905Z ##[error]Process completed with exit code 1.

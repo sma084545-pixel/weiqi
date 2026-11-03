@@ -1,0 +1,36 @@
+2026-11-03 08:19:45+0800: Running with following config:
+analysisPVLen = 10
+assumeMultipleStartingBlackMovesAreHandicap = false
+conservativePass = true
+ignorePreRootHistory = false
+logAllRequests = false
+logAllResponses = false
+logErrorsAndWarnings = true
+logSearchInfo = false
+logToStderr = true
+maxBoardXSizeForNNBuffer = 19
+maxBoardYSizeForNNBuffer = 19
+maxTime = 30
+maxVisits = 64
+nnCacheSizePowerOfTwo = 10
+nnMaxBatchSize = 1
+nnMutexPoolSizePowerOfTwo = 8
+nnRandomize = true
+numAnalysisThreads = 1
+numEigenThreadsPerModel = 1
+numSearchThreads = 1
+preventCleanupPhase = true
+reportAnalysisWinratesAs = BLACK
+warnUnusedFields = true
+
+2026-11-03 08:19:45+0800: Analysis Engine starting...
+2026-11-03 08:19:45+0800: KataGo v1.18.1
+2026-11-03 08:19:45+0800: nnRandSeed0 = 6772974737056315002
+2026-11-03 08:19:45+0800: After dedups: nnModelFile0 = /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/extreme-ai-20261103/research/katago-extreme.bin.gz useFP16 auto
+2026-11-03 08:19:45+0800: Initializing neural net buffer to be size 19 * 19 allowing smaller boards
+2026-11-03 08:19:48+0800: Eigen (CPU) backend thread 0: Model version 17
+2026-11-03 08:19:48+0800: Eigen (CPU) backend thread 0: Model name: kata1-tf3-b11c768-s11003M-d5973M-7gres (nbt transformer, 70442025 params)
+2026-11-03 08:19:48+0800: Loaded config /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/extreme-ai-20261103/research/analysis-probe.cfg
+2026-11-03 08:19:48+0800: Loaded model /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/extreme-ai-20261103/research/katago-extreme.bin.gz
+2026-11-03 08:19:48+0800: Analyzing up to 1 positions at a time in parallel
+2026-11-03 08:19:48+0800: Started, ready to begin handling requests

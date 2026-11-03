@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "EXTREME-REAL-MOBILE",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "passed",
+  "mode": "desktop-browser-touch-keyboard-simulation-real-native-model-not-Render",
+  "at": "2026-11-03T01:25:32.653Z",
+  "browser": "156.0.8078.80",
+  "checks": [
+    {
+      "name": "mobile-real-black-first-keyboard-white-cancel-inflight",
+      "status": "passed",
+      "responses": [
+        {
+          "status": 200,
+          "body": {
+            "schemaVersion": 1,
+            "positionId": "ai-11fccc00-d8e8-4c38-ae27-b3721b05ff0a",
+            "requestId": "0d92d373-8d63-43c8-98e3-51b998c217bd",
+            "aiColor": "B",
+            "difficulty": "extreme",
+            "move": {
+              "type": "place",
+              "at": {
+                "row": 2,
+                "col": 2
+              }
+            },
+            "engine": {
+              "name": "KataGo",
+              "version": "1.18.1",
+              "model": "kata1-tf2-b10c384-s2941M-d5872M",
+              "backend": "Eigen CPU",
+              "maxVisits": 64
+            },
+            "visits": 64,
+            "elapsedMs": 1119
+          }
+        }
+      ]
+    },
+    {
+      "name": "768px-13-board-extreme-setup",
+      "status": "passed"
+    },
+    {
+      "name": "1280px-19-board-extreme-setup",
+      "status": "passed"
+    }
+  ],
+  "errors": [],
+  "humanReviewed": null
+}

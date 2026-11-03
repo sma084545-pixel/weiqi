@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "id": "GITHUB-PAGES-PUBLICATION",
-  "revision": 27,
+  "revision": 30,
   "rulesetId": "GO-CLUB-AREA-1",
-  "resultVersion": "0.24.2-pages.1",
-  "programVersion": "0.24.2",
+  "resultVersion": "0.25.0-pages.1",
+  "programVersion": "0.25.0",
   "siteUrl": "https://sma084545-pixel.github.io/weiqi/",
   "sourceDirectory": "project/",
   "formalPuzzles": 30,
@@ -17,14 +17,17 @@
   "aiDifficultyProfiles": [
     "relaxed",
     "standard",
-    "challenge"
+    "challenge",
+    "extreme"
   ],
+  "aiExtremeAvailable": false,
   "aiPlayRequiresNetwork": true,
   "onlineServerConfigured": true,
   "onlineServerOrigin": "https://weiqi-rooms.onrender.com",
   "onlineRoomsEphemeral": true,
   "katagoAnalysisOrigin": "https://weiqi-katago.onrender.com",
   "katagoAnalysisConfigured": true,
+  "katagoExtremeOrigin": "",
   "onlineStatus": "Public room server configured; chat and floating-board verification retained in docs/floating-fit.",
   "files": [
     {
@@ -38,14 +41,14 @@
       "sha256": "26ae2d10fc5b45982ae4f4f593aaa93b781d4ff63a8bfe2166bc392d01cc9b50"
     },
     {
-      "path": "assets/index-BI_4C-0i.js",
-      "bytes": 1197705,
-      "sha256": "c9156bd76b6cf016fde66f2d877b508ceaa6a01e6e69cdd6a519fbd8709bd01a"
-    },
-    {
       "path": "assets/index-CYqM5-jJ.css",
       "bytes": 149930,
       "sha256": "83fba6a9506d1562d0a19feba39131aa2bc98c39fc1aa1f994b6660ff3620138"
+    },
+    {
+      "path": "assets/index-CjyepGx7.js",
+      "bytes": 1198935,
+      "sha256": "362dcc6e369b6b015f9276cf3b5d5e9788b414ef61302d8ebd37ca169dfe3bde"
     },
     {
       "path": "content/formal-content-v1.json",
@@ -60,7 +63,7 @@
     {
       "path": "index.html",
       "bytes": 640,
-      "sha256": "e85345bcdf5ed6dac20021d1e799aa435e8646b06018c9ba18ba51cb36e95c30"
+      "sha256": "6ebdd625ed0bf74eb26b0593dd5e574414856529849565781cd402eead78efa8"
     },
     {
       "path": "materials/t13/territory-counting-card.md",
@@ -75,7 +78,7 @@
     {
       "path": "offline-assets.json",
       "bytes": 411,
-      "sha256": "40c7a8f834cff16b2a3b299857fdac411fe732b1da5028c95c467c080493effa"
+      "sha256": "735ea2740187fda5943e78030c0401bc01ba9ec1a51c000d17105fb448ce547d"
     },
     {
       "path": "offline.html",
@@ -85,13 +88,13 @@
     {
       "path": "sw.js",
       "bytes": 3694,
-      "sha256": "244ba365ed55b08a5e7673b4723b7c56b9eb26ea0a5e6089881e53d9f8ce5dbc"
+      "sha256": "597793af5064603bb0d313a0bc6583c3e26c8b588ba9e57f0efe89eba4fbeff6"
     },
     {
       "path": "version.json",
-      "bytes": 464,
-      "sha256": "959eb1d27af763f1cb5859512121144a0c706f77e7d3b495f1daf3e60547acc8"
+      "bytes": 529,
+      "sha256": "ff06285faf628e7c5bf030eafc1c89e91bab354fa60b83f0ec5251afbf4b1839"
     }
   ],
-  "sourceManifestSha256": "18833187c6e22f051c55560dce809b242c3e14347d1d3ab98a42f9fdfa03e966"
+  "sourceManifestSha256": "0d0a2c4324a995870aafbd3b1ebdad001b6328b8d07c832f551584d1d53f8140"
 }

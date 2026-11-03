@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "EXTREME-PRESERVATION",
+  "revision": 2,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "passed",
+  "baseVersion": "0.24.2-pages.1",
+  "protectedFiles": 1595,
+  "scopes": [
+    "content/",
+    "materials/",
+    "src/core/rules/",
+    "docs/t24/",
+    "docs/advanced-courses/"
+  ],
+  "unchangedFixedFiles": [
+    "pnpm-lock.yaml",
+    "schemas/content.schema.json",
+    "src/components/Board.css",
+    "src/components/Board.tsx",
+    "src/components/board.types.ts"
+  ],
+  "differences": [],
+  "humanReviewed": null
+}

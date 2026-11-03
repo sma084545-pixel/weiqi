@@ -14,20 +14,21 @@ for path in sorted((R/'dist').rglob('*')):
   rel=str(path.relative_to(R/'dist'));target=repo/rel;target.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(path,target);site.append({'path':rel,'bytes':path.stat().st_size,'sha256':sha(path)})
 shutil.copy2(R/'deploy/render.yaml',repo/'render.yaml');shutil.copy2(R/'docs/online-tools/DEPLOYMENT.md',repo/'RENDER_SETUP.md')
 (repo/'.nojekyll').write_text('\n');source=repo/'project';source.mkdir(exist_ok=True);entries=[]
-exclude_dirs={'node_modules','.git','__pycache__','delivery','font-cache','runtime-data','.pnpm-store','.playwright-cli','.auth'};exclude_root={'dist','dist-engine','dist-server','dist-analysis','output'};exclude_files={'.DS_Store','tsconfig.tsbuildinfo','RELEASE_MANIFEST.json','release-manifest.json','SHA256SUMS.txt','.env'}
+exclude_dirs={'node_modules','.git','__pycache__','delivery','font-cache','runtime-data','.pnpm-store','.playwright-cli','.auth'};exclude_root={'dist','dist-engine','dist-server','dist-analysis','output'};exclude_files={'.DS_Store','tsconfig.tsbuildinfo','RELEASE_MANIFEST.json','release-manifest.json','SHA256SUMS.txt','SOURCE_INFO.json','.env'}
 for folder,dirs,names in os.walk(R):
  relative=Path(folder).relative_to(R);dirs[:]=[name for name in dirs if name not in exclude_dirs and not name.startswith('lo-') and not (relative==Path('.') and name in exclude_root)]
  for name in sorted(names):
   if name in exclude_files or name.startswith('.env.') or name.endswith(('.pem','.p12','.key')):continue
   path=Path(folder)/name;rel=path.relative_to(R);target=source/rel;target.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(path,target);entries.append({'path':str(rel),'bytes':path.stat().st_size,'sha256':sha(path)})
 (source/'SOURCE_INFO.json').write_text(json.dumps({'schemaVersion':1,'id':'GITHUB-CURRENT-SOURCE','revision':revision,'rulesetId':'GO-CLUB-AREA-1','resultVersion':V,'programVersion':version,'sourceBuild':'pnpm install --frozen-lockfile && pnpm build','note':'Buildable source and materials; installed dependencies, private data and generated root build/output excluded. Full release archive includes production builds and all evidence.','files':entries},ensure_ascii=False,indent=2)+'\n')
-manifest={'schemaVersion':1,'id':'GITHUB-PAGES-PUBLICATION','revision':revision,'rulesetId':'GO-CLUB-AREA-1','resultVersion':V,'programVersion':version,'siteUrl':'https://sma084545-pixel.github.io/weiqi/','sourceDirectory':'project/','formalPuzzles':30,'terminalFixtures':6,'microLessonPrimarySlides':25,'routeStages':12,'advancedLessons':6,'advancedScenes':37,'aiPlayRoute':'#/play/ai','aiDifficultyProfiles':['relaxed','standard','challenge'],'aiPlayRequiresNetwork':True,'onlineServerConfigured':configured,'onlineServerOrigin':server_origin,'onlineRoomsEphemeral':ephemeral,'katagoAnalysisOrigin':public_version.get('katagoAnalysisOrigin'),'katagoAnalysisConfigured':public_version.get('katagoAnalysisConfigured',False),'onlineStatus':'Public room server configured; chat and floating-board verification retained in docs/floating-fit.' if configured else 'Room server not configured.','files':site,'sourceManifestSha256':sha(source/'SOURCE_INFO.json')}
+extreme_configured=public_version.get('katagoExtremeConfigured',False)
+manifest={'schemaVersion':1,'id':'GITHUB-PAGES-PUBLICATION','revision':revision,'rulesetId':'GO-CLUB-AREA-1','resultVersion':V,'programVersion':version,'siteUrl':'https://sma084545-pixel.github.io/weiqi/','sourceDirectory':'project/','formalPuzzles':30,'terminalFixtures':6,'microLessonPrimarySlides':25,'routeStages':12,'advancedLessons':6,'advancedScenes':37,'aiPlayRoute':'#/play/ai','aiDifficultyProfiles':['relaxed','standard','challenge','extreme'],'aiExtremeAvailable':extreme_configured,'aiPlayRequiresNetwork':True,'onlineServerConfigured':configured,'onlineServerOrigin':server_origin,'onlineRoomsEphemeral':ephemeral,'katagoAnalysisOrigin':public_version.get('katagoAnalysisOrigin'),'katagoAnalysisConfigured':public_version.get('katagoAnalysisConfigured',False),'katagoExtremeOrigin':public_version.get('katagoExtremeOrigin'),'onlineStatus':'Public room server configured; chat and floating-board verification retained in docs/floating-fit.' if configured else 'Room server not configured.','files':site,'sourceManifestSha256':sha(source/'SOURCE_INFO.json')}
 (repo/'PUBLICATION.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n');(repo/'SHA256SUMS.txt').write_text(''.join(f"{x['sha256']}  {x['path']}\n" for x in site)+f"{sha(repo/'PUBLICATION.json')}  PUBLICATION.json\n"+f"{sha(source/'SOURCE_INFO.json')}  project/SOURCE_INFO.json\n")
 (repo/'README.md').write_text(f'''# 围棋社 · 最新版 {version}
 
 **原网址：[打开学习工具](https://sma084545-pixel.github.io/weiqi/)**
 
-新增真实KataGo AI对弈：选择轻松/标准/挑战、执色和5/9/13/19路，正常轮流落子，支持一手/最近回合悔棋、重做、棋局滑动条、本机续玩、JSON/SGF和赛后复盘。三档是相对搜索强度，不对应人类段级位；结束后人工确认死子及面积计分。新着法需联网，不提供真人进行中胜率提示。
+真实KataGo AI对弈保留轻松/标准/挑战，并新增独立强模型“极致”。{'极致已配置免费独立服务，实际部署验收见本轮报告。' if extreme_configured else '极致服务等待启用，当前明确显示不可开始；原三档可继续使用。'}选择执色和5/9/13/19路，正常轮流落子，支持一手/最近回合悔棋、重做、棋局滑动条、本机续玩、JSON/SGF和赛后复盘。四档不对应人类段级位；结束后人工确认死子及面积计分。新着法需联网，不提供真人进行中胜率提示。
 
 学习路线保留12课、37个进阶互动场景和原13路引导实战。
 
@@ -48,7 +49,7 @@ manifest={'schemaVersion':1,'id':'GITHUB-PAGES-PUBLICATION','revision':revision,
 
 ## AI 对弈与终局后复盘
 
-[使用方法](project/docs/ai-play/USAGE.md) · [本轮验收与限制](project/docs/ai-play/ACCEPTANCE.md) · [更新与回滚](project/docs/ai-play/DEPLOYMENT.md)。AI服务沿用已有独立Render KataGo Web Service，API版本2提供对弈新着法；房间服务保持不变。没有新增付费资源、账号或默认反馈上传。
+[极致使用方法](project/docs/extreme-ai/USAGE.md) · [本轮验收与限制](project/docs/extreme-ai/ACCEPTANCE.md) · [免费部署与回滚](project/docs/extreme-ai/DEPLOYMENT.md)。原三档沿用已有Render KataGo服务，极致采用独立Free服务；API版本2与房间服务保持。没有新增付费资源、账号或默认反馈上传。
 
 ## KataGo 终局后复盘
 
@@ -69,7 +70,7 @@ pnpm start
 
 Node版本要求见package.json；默认本机/局域网服务端口4190，Ctrl+C停止。私有runtime-data/凭据/已安装依赖不在仓库。
 
-[最新已完成工具包、轻量软件与校验值](https://github.com/sma084545-pixel/weiqi/releases/latest)包含生产构建、全部可编辑材料、PDF/PPTX、交接和验证；部署中的版本以project/handoff/AI_PLAY.md为准，不把源码更新等同于正式全链路完成。历史source/0.16.0分卷只作溯源，不作为当前主线。
+[最新已完成工具包、轻量软件与校验值](https://github.com/sma084545-pixel/weiqi/releases/latest)包含生产构建、全部可编辑材料、PDF/PPTX、交接和验证；本轮部署状态以project/handoff/EXTREME_AI.md为准，不把源码更新等同于正式全链路完成。历史source/0.16.0分卷只作溯源，不作为当前主线。
 
 当前静态清单PUBLICATION.json、SHA256SUMS.txt；源码清单project/SOURCE_INFO.json。本次课程验收见[课程说明](project/docs/advanced-courses/IMPLEMENTATION.md)、[验收报告](project/docs/advanced-courses/ACCEPTANCE.md)；KataGo验收见project/docs/katago/，先前悬浮棋盘验收在project/docs/floating-fit/。自动化、实体制造与真人教学验证分别记录；不声称提高智商、治疗压力、改善学业或保证CAS认可。第三方许可证随docs和字体目录保留。
 ''')

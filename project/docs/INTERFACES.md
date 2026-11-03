@@ -1,7 +1,7 @@
 ---
 schemaVersion: 1
 id: DOC-INTERFACES
-revision: 20
+revision: 21
 rulesetId: GO-CLUB-AREA-1
 ---
 
@@ -231,3 +231,11 @@ LearningProgress增加可选advancedLessons（lesson-id@revision索引）；旧�
 唯一引擎/Board/坐标约定不变。新增src/core/analysis/ai-contract.ts：AiMoveRequest带setup、实际有效events、komi、aiColor、difficulty和positionId；AiMoveResponse仅合法place/pass及身份/引擎诊断，不返回进行中评价。POST/api/ai-move与旧/api/analyze分开门槛、共享有界进程与取消。健康能力apiVersion2增量字段保持旧客户端兼容。
 
 AI续玩文档AiGameSession另有schemas/ai-session.schema.json，schemaVersion仍1，稳定id LOCAL-AI-SESSION、正revision、rulesetId不变，内部GameState沿用既有schema并重放验证。公共存储namespace games下独立键go-club:full-game:ai:v1；清学习进度不清该键。不替换原T08真人或引导棋局键。进一步契约、网络上限与回滚见ai-play/DEPLOYMENT.md。
+
+## 0.25 极致模型增量（待部署）
+
+AiDifficulty在原relaxed/standard/challenge之后增加extreme；原存档键、schemaVersion1与旧三档预算不变。AiGameSession仅扩充difficulty枚举，旧记录可原样读，新记录回滚到旧程序时安全拒绝。强模型名称/引擎版本固定于EXTREME_MODEL，服务配置由aiServiceOrigin集中选择，VITE_KATAGO_EXTREME_API_ORIGIN与原分析地址分开，不自动降级。
+
+同一POST/api/ai-move形状继续使用；API2就绪能力通过aiDifficulties列出该服务实际支持的档位。原模型服务只提供旧三档，新强模型服务只提供extreme。选错服务返回409/MODEL_UNAVAILABLE，客户端保持原局；extreme响应若模型或版本不符，即使落点合法也被拒绝。客户端不开放引擎配置或模型路径。极致默认上限64访问、30秒、1活跃+1等待，总期限90秒，采用独立Render Free服务。用户明确只用免费资源；须先在0.1CPU/512MB容器实测，再部署，禁止付费资源或静默升级。
+
+useKataGoReview新增可选第4参数origin和第5参数expectedModel；旧3参数调用完全保持原语义。极致对局结束后使用本局模型，切手/切服务/变模型身份会取消旧请求；仍不得对未结束棋局请求普通复盘。没有修改RulesEngine或Board接口。
