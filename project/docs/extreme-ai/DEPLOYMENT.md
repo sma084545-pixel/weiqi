@@ -7,6 +7,10 @@ rulesetId: GO-CLUB-AREA-1
 
 # 免费极致服务部署与回滚
 
+当前实际服务：https://weiqi-katago-extreme.onrender.com ，健康和就绪检查为 /healthz、/readyz。用户按 Free Blueprint 创建，公开就绪接口确认模型为 kata1-tf2-b10c384-s2941M-d5872M、KataGo 1.18.1、API2、内存上限512MB。实际后台版本0.25.0，前端0.25.2；本次前端缓存与发布保护修复不需要重启后台。原两服务保留。
+
+发布顺序必须是全部检查 → pnpm build:pages → 检查 dist/version.json 的三个服务地址与配置一致 → 同步发布。通用 pnpm check 会生成不含公开地址的本地构建，不能在 Pages 构建之后运行并直接上传；新增发布保护会在复制前拒绝漏配。已发布过准备版或0.25.1时，保存后应用0.25.2，不能靠清除站点数据升级。
+
 仅使用 Render Free Web Service，0.1 CPU / 512 MB。用户没有授权付费资源、超额收费或扩容。先确认工作区剩余免费构建/带宽/750 小时共享额度，付费支出限制设为零；超额时暂停，不升级。官方边界：https://render.com/docs/free 。
 
 ## 唯一新增服务

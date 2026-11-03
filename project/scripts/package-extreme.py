@@ -25,13 +25,13 @@ limits=read('docker-free/resource-limits.json')
 assert limits['Memory']==512*1024**2 and limits['MemorySwap']==512*1024**2 and limits['NanoCpus']==100000000
 assert 'plan: free' in (R/'deploy/katago-extreme.render.yaml').read_text()
 if not a.stage:
- for n in ['public-real-browser.json','public-publication.json']:
+ for n in ['public-real-browser.json','public-real-mobile.json','public-upgrade-recovery.json','all-clients-real.json','public-publication.json']:
   assert read(n)['status']=='passed',n
  ready=read('public-ready.json');assert ready['ready'] and ready['model']==model['model']['name'] and ready['aiDifficulties']==['extreme']
  assert json.loads((R/'dist/version.json').read_text())['katagoExtremeConfigured']
 V='0.25.2-pages.1'
 packet='0.25.2-predeploy-free.'+str(a.stage_revision) if a.stage else V
-identity={'schemaVersion':1,'id':'EXTREME-AI-RELEASE','revision':1,'rulesetId':'GO-CLUB-AREA-1','taskId':'EXTREME_AI','baseVersion':'AI_PLAY0.24.2-pages.1','baseArchiveSha256':sha(B),'resultVersion':packet,'programVersion':'0.25.2','status':'awaiting-free-render-creation-and-public-e2e' if a.stage else 'complete-with-documented-limits'}
+identity={'schemaVersion':1,'id':'EXTREME-AI-RELEASE','revision':1,'rulesetId':'GO-CLUB-AREA-1','taskId':'EXTREME_AI','baseVersion':'AI_PLAY 0.24.2-pages.1','baseArchiveSha256':sha(B),'resultVersion':packet,'programVersion':'0.25.2','status':'awaiting-free-render-creation-and-public-e2e' if a.stage else 'complete-with-documented-limits'}
 O.mkdir(parents=True,exist_ok=True)
 full=O/('go-club-'+packet+'-full.zip');app=O/('go-club-'+packet+'-app.zip')
 assert not full.exists() and not app.exists(),'Never overwrite a sealed packet'

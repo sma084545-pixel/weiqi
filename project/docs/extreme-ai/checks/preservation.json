@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "EXTREME-PRESERVATION",
-  "revision": 2,
+  "revision": 3,
   "rulesetId": "GO-CLUB-AREA-1",
   "status": "passed",
   "baseVersion": "0.24.2-pages.1",

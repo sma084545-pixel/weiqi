@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "id": "EXTREME-ALL-CLIENTS",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "passed",
+  "at": "2026-11-03T02:31:53.931Z",
+  "browser": "156.0.8078.80",
+  "checks": [
+    {
+      "name": "local4190-real-Render-extreme-CORS",
+      "status": "passed",
+      "response": {
+        "url": "https://weiqi-katago-extreme.onrender.com/api/ai-move",
+        "status": 200,
+        "body": {
+          "schemaVersion": 1,
+          "positionId": "ai-fcaf3c49-bf7a-4a6a-a2af-5e1be64149ff",
+          "requestId": "a53d5cae-6726-4ddb-b566-0ea48a0ad3db",
+          "aiColor": "B",
+          "difficulty": "extreme",
+          "move": {
+            "type": "place",
+            "at": {
+              "row": 2,
+              "col": 2
+            }
+          },
+          "engine": {
+            "name": "KataGo",
+            "version": "1.18.1",
+            "model": "kata1-tf2-b10c384-s2941M-d5872M",
+            "backend": "Eigen CPU",
+            "maxVisits": 64
+          },
+          "visits": 32,
+          "elapsedMs": 32438
+        }
+      }
+    },
+    {
+      "name": "public-old-level-relaxed",
+      "status": "passed",
+      "response": {
+        "url": "https://weiqi-katago.onrender.com/api/ai-move",
+        "status": 200,
+        "body": {
+          "schemaVersion": 1,
+          "positionId": "ai-9eb45d8e-a3f7-442d-8e56-d600e2332147",
+          "requestId": "6681cb79-ddfc-4f3e-a9ea-748759864033",
+          "aiColor": "W",
+          "difficulty": "relaxed",
+          "move": {
+            "type": "place",
+            "at": {
+              "row": 2,
+              "col": 2
+            }
+          },
+          "engine": {
+            "name": "KataGo",
+            "version": "1.18.1",
+            "model": "g170-b6c96-s175395328-d26788732",
+            "backend": "Eigen CPU",
+            "maxVisits": 8
+          },
+          "visits": 8,
+          "elapsedMs": 5
+        }
+      }
+    },
+    {
+      "name": "public-old-level-standard",
+      "status": "passed",
+      "response": {
+        "url": "https://weiqi-katago.onrender.com/api/ai-move",
+        "status": 200,
+        "body": {
+          "schemaVersion": 1,
+          "positionId": "ai-d81e40a2-52bd-488e-b727-dae6bfba6c7f",
+          "requestId": "d71a4a23-d669-4fa4-a69b-77ccbfcaa1f3",
+          "aiColor": "W",
+          "difficulty": "standard",
+          "move": {
+            "type": "place",
+            "at": {
+              "row": 2,
+              "col": 2
+            }
+          },
+          "engine": {
+            "name": "KataGo",
+            "version": "1.18.1",
+            "model": "g170-b6c96-s175395328-d26788732",
+            "backend": "Eigen CPU",
+            "maxVisits": 24
+          },
+          "visits": 24,
+          "elapsedMs": 1444
+        }
+      }
+    },
+    {
+      "name": "public-old-level-challenge",
+      "status": "passed",
+      "response": {
+        "url": "https://weiqi-katago.onrender.com/api/ai-move",
+        "status": 200,
+        "body": {
+          "schemaVersion": 1,
+          "positionId": "ai-00fae918-6ada-4125-9d7e-73270dc49dd7",
+          "requestId": "fd18b988-4b79-4f02-a7ff-d06884028492",
+          "aiColor": "W",
+          "difficulty": "challenge",
+          "move": {
+            "type": "place",
+            "at": {
+              "row": 2,
+              "col": 2
+            }
+          },
+          "engine": {
+            "name": "KataGo",
+            "version": "1.18.1",
+            "model": "g170-b6c96-s175395328-d26788732",
+            "backend": "Eigen CPU",
+            "maxVisits": 64
+          },
+          "visits": 64,
+          "elapsedMs": 3531
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "humanReviewed": null
+}

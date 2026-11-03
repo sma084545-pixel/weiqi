@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "EXTREME-PUBLIC-PUBLICATION",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "passed",
+  "runtimeCommit": "827958fff458b737eadc7989d62e5d172b1f0ae5",
+  "version": {
+    "schemaVersion": 1,
+    "id": "GO-CLUB-PUBLIC-VERSION",
+    "revision": 25003,
+    "rulesetId": "GO-CLUB-AREA-1",
+    "programVersion": "0.25.2",
+    "resultVersion": "0.25.2-pages.1",
+    "onlineServerConfigured": true,
+    "onlineServerOrigin": "https://weiqi-rooms.onrender.com",
+    "onlineSiteOrigin": "https://sma084545-pixel.github.io",
+    "onlineRoomsEphemeral": true,
+    "katagoAnalysisConfigured": true,
+    "katagoAnalysisOrigin": "https://weiqi-katago.onrender.com",
+    "katagoExtremeConfigured": true,
+    "katagoExtremeOrigin": "https://weiqi-katago-extreme.onrender.com"
+  },
+  "staticFilesVerified": 13,
+  "differences": []
+}

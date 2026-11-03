@@ -1,0 +1,249 @@
+{
+  "schemaVersion": 1,
+  "id": "EXTREME-PUBLIC-DESKTOP",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "passed",
+  "mode": "actual-GitHub-Pages-browser-and-Render-Free-model",
+  "at": "2026-11-03T02:26:46.328Z",
+  "browser": "156.0.8078.80",
+  "base": "https://sma084545-pixel.github.io/weiqi",
+  "responses": [
+    {
+      "url": "https://weiqi-katago-extreme.onrender.com/api/ai-move",
+      "status": 200,
+      "body": {
+        "schemaVersion": 1,
+        "positionId": "ai-68d3f5c6-4451-406e-b731-2217013064c2",
+        "requestId": "bece5123-f1e2-4429-96b2-5708e14d34fb",
+        "aiColor": "W",
+        "difficulty": "extreme",
+        "move": {
+          "type": "place",
+          "at": {
+            "row": 5,
+            "col": 5
+          }
+        },
+        "engine": {
+          "name": "KataGo",
+          "version": "1.18.1",
+          "model": "kata1-tf2-b10c384-s2941M-d5872M",
+          "backend": "Eigen CPU",
+          "maxVisits": 64
+        },
+        "visits": 11,
+        "elapsedMs": 31675
+      }
+    },
+    {
+      "url": "https://weiqi-katago-extreme.onrender.com/api/analyze",
+      "status": 200,
+      "body": {
+        "schemaVersion": 1,
+        "requestId": "4b8d7654-68e8-4448-a758-8bd7755cb851",
+        "positionId": "review-9b6da77b-c67f-4862-92ef-ed7a004ed61c",
+        "perspective": "B",
+        "toPlay": "W",
+        "blackWinrate": 0.00730863387,
+        "blackScoreLead": -5.94198716,
+        "visits": 22,
+        "elapsedMs": 31261,
+        "engine": {
+          "name": "KataGo",
+          "version": "1.18.1",
+          "model": "kata1-tf2-b10c384-s2941M-d5872M",
+          "backend": "Eigen CPU",
+          "maxVisits": 64
+        },
+        "candidates": [
+          {
+            "order": 0,
+            "move": {
+              "type": "place",
+              "at": {
+                "row": 5,
+                "col": 5
+              }
+            },
+            "visits": 7,
+            "blackWinrate": 0.00639375157,
+            "blackScoreLead": -6.06417167,
+            "pv": [
+              {
+                "type": "place",
+                "at": {
+                  "row": 5,
+                  "col": 5
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 3,
+                  "col": 3
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 4,
+                  "col": 3
+                }
+              }
+            ]
+          },
+          {
+            "order": 1,
+            "move": {
+              "type": "place",
+              "at": {
+                "row": 3,
+                "col": 3
+              }
+            },
+            "visits": 3,
+            "blackWinrate": 0.00643886725,
+            "blackScoreLead": -6.06732844,
+            "pv": [
+              {
+                "type": "place",
+                "at": {
+                  "row": 3,
+                  "col": 3
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 5,
+                  "col": 5
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 4,
+                  "col": 5
+                }
+              }
+            ]
+          },
+          {
+            "order": 2,
+            "move": {
+              "type": "place",
+              "at": {
+                "row": 5,
+                "col": 4
+              }
+            },
+            "visits": 4,
+            "blackWinrate": 0.00718777404,
+            "blackScoreLead": -5.90405488,
+            "pv": [
+              {
+                "type": "place",
+                "at": {
+                  "row": 5,
+                  "col": 4
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 3,
+                  "col": 4
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 4,
+                  "col": 6
+                }
+              }
+            ]
+          },
+          {
+            "order": 3,
+            "move": {
+              "type": "place",
+              "at": {
+                "row": 4,
+                "col": 5
+              }
+            },
+            "visits": 4,
+            "blackWinrate": 0.00718777404,
+            "blackScoreLead": -5.90405488,
+            "pv": [
+              {
+                "type": "place",
+                "at": {
+                  "row": 4,
+                  "col": 5
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 4,
+                  "col": 3
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 6,
+                  "col": 4
+                }
+              }
+            ]
+          },
+          {
+            "order": 4,
+            "move": {
+              "type": "place",
+              "at": {
+                "row": 5,
+                "col": 3
+              }
+            },
+            "visits": 3,
+            "blackWinrate": 0.00830979772,
+            "blackScoreLead": -5.79796409,
+            "pv": [
+              {
+                "type": "place",
+                "at": {
+                  "row": 5,
+                  "col": 3
+                }
+              },
+              {
+                "type": "place",
+                "at": {
+                  "row": 3,
+                  "col": 5
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "checks": [
+    "four-level-order",
+    "real-strong-white-reply",
+    "undo-redo",
+    "refresh-paused-same-difficulty",
+    "history-readonly",
+    "session-export",
+    "resign-no-fake-score",
+    "same-strong-model-postgame-review"
+  ],
+  "humanReviewed": null
+}

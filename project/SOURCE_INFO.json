@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "GITHUB-CURRENT-SOURCE",
-  "revision": 33,
+  "revision": 35,
   "rulesetId": "GO-CLUB-AREA-1",
   "resultVersion": "0.25.2-pages.1",
   "programVersion": "0.25.2",
@@ -25,8 +25,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 29146,
-      "sha256": "1e76dac20289977aefd3ed20b51e4c7ccd90511813229d556d4723c574c167da"
+      "bytes": 29691,
+      "sha256": "2fcf00de0c138d55a06386d181e9b58e79f7ebe992d3f1b28d16314ff065c581"
     },
     {
       "path": "MERGE_C_RELEASE_MANIFEST.json",
@@ -35,8 +35,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 10257,
-      "sha256": "345a7d8eaa342e21190d460f522e6dc48704e4b29637bf35bc3c6268bb8658d9"
+      "bytes": 10454,
+      "sha256": "217c53c6ae7a53205900f6a95d31e11864886e2d77ea056bf6a22d707cf33e0d"
     },
     {
       "path": "README_MERGE_C.md",
@@ -3915,8 +3915,8 @@
     },
     {
       "path": "handoff/EXTREME_AI.md",
-      "bytes": 2581,
-      "sha256": "48bd3b115d1db33a8c1750a8daa73aa02ebca336ed4b687d97f83b2fcdf9a0f1"
+      "bytes": 3572,
+      "sha256": "8c47ea21e546261b8cfa1352aa7b3fd49b3185c3a1ff6d840e530b2fb4599eb1"
     },
     {
       "path": "handoff/FREEZE_B.md",
@@ -11750,23 +11750,28 @@
     },
     {
       "path": "docs/extreme-ai/ACCEPTANCE.md",
-      "bytes": 5280,
-      "sha256": "ca23139aa034e91a2c9a07f7382ce302352b20a8db15fb817a8e6537f6466878"
+      "bytes": 7699,
+      "sha256": "27425fc9635ae64eacda321eeeb0bb7dd9462363f00dd9f56a819bccc2ec61a6"
     },
     {
       "path": "docs/extreme-ai/CHANGED_FILES.json",
-      "bytes": 30735,
-      "sha256": "835fb5a3c9adf0438f0754ac1c5ef95b76c19cb79caf14bd78681cfa348c858f"
+      "bytes": 36185,
+      "sha256": "07fc7e3d309a4b5006af686a27350e22b8f28504234dbfb730c3cf0989bdb7ef"
     },
     {
       "path": "docs/extreme-ai/DEPLOYMENT.md",
-      "bytes": 3129,
-      "sha256": "5edc2e9f2ecbd821e8e25f3b0f3ac7013a1a93cff4f1069fd633248d8adbdba4"
+      "bytes": 3915,
+      "sha256": "e853535cf824da06f9f0e685081470ca1cebbd3d8bede28341d5826f1e5dbb6c"
     },
     {
       "path": "docs/extreme-ai/IMPLEMENTATION.md",
-      "bytes": 3959,
-      "sha256": "ddb6ccaa375c93c0071af13bdc43801b0d49fb60a8ca1b5bbd9e7d9a61f7e1c4"
+      "bytes": 3993,
+      "sha256": "f05bb520ae3fe3a44c89ef57b3039b2a94df04d8a63dd577f06f43a4c428a9c2"
+    },
+    {
+      "path": "docs/extreme-ai/KNOWN_ISSUES.md",
+      "bytes": 1420,
+      "sha256": "0d350bc9dda23fc513ef7b7525e21a16b8da4236108f13a5f4a9cdbb69a9f516"
     },
     {
       "path": "docs/extreme-ai/USAGE.md",
@@ -11994,6 +11999,11 @@
       "sha256": "aa67de60d7719cdb535a256294b14de94892c872e9e2b07751b69b57f6a29b3e"
     },
     {
+      "path": "docs/extreme-ai/checks/all-clients-real.json",
+      "bytes": 3705,
+      "sha256": "557e450bd4355d5c4ffeffc5ee1c72aee37bac410f099d26346e63ce5b3f8e98"
+    },
+    {
       "path": "docs/extreme-ai/checks/browser-regression-free.log",
       "bytes": 25922,
       "sha256": "37b8eb1cc2e8df4bbf8ba78914a30da6474d65e96692a32c5d32e82ce032e4bd"
@@ -12006,7 +12016,7 @@
     {
       "path": "docs/extreme-ai/checks/build-analysis-final.log",
       "bytes": 264,
-      "sha256": "330c1ae065cbf4861f487e1ecd52a2b03ec0c6ea0abba6b12a2f34b3ed138672"
+      "sha256": "d7b31cefe4cad93968be92a4ed017ed6d45d29ae9ca19880ccd4410efd739caa"
     },
     {
       "path": "docs/extreme-ai/checks/build-analysis-free.log",
@@ -12015,8 +12025,8 @@
     },
     {
       "path": "docs/extreme-ai/checks/build-pages-final.log",
-      "bytes": 1294,
-      "sha256": "d3ebefd18a57774ddb12aa022e8d4bd4f561b17ee4527252765542b3fc147bcd"
+      "bytes": 1128,
+      "sha256": "c3e5e7d2359cca15da199fcfadeb6056fa6e44691539750ad54d2ec650f99b65"
     },
     {
       "path": "docs/extreme-ai/checks/build-pages-free.log",
@@ -12025,8 +12035,8 @@
     },
     {
       "path": "docs/extreme-ai/checks/check-final.log",
-      "bytes": 6905,
-      "sha256": "b740e843f6f628223c40314c9faebef385131bf4862fcb1fe8cf68ea6ec40315"
+      "bytes": 7073,
+      "sha256": "23f4553887445ff1fe0046641da150686904b8afdebc48c038fc9b493be22300"
     },
     {
       "path": "docs/extreme-ai/checks/check-free.log",
@@ -12096,7 +12106,42 @@
     {
       "path": "docs/extreme-ai/checks/preservation.json",
       "bytes": 547,
-      "sha256": "abcf1c6a328a59e5cdb11a1c1eb521320d3024a6a88316c56f26f9f5aac9b393"
+      "sha256": "a4beaf919e3da96a203e9b2427d647f2be5de9b69a0643f4a61bacdadf114e71"
+    },
+    {
+      "path": "docs/extreme-ai/checks/public-extreme-1280-19-setup.png",
+      "bytes": 249811,
+      "sha256": "e59bd9b8c0e7d89c96e7ccf846a19fa886080731c6eceffb226c86481b797a76"
+    },
+    {
+      "path": "docs/extreme-ai/checks/public-extreme-360-keyboard.png",
+      "bytes": 291365,
+      "sha256": "f1ea7667266016657c1fbe9604a315500d2bbd4abedf1bfab685154f4568e638"
+    },
+    {
+      "path": "docs/extreme-ai/checks/public-extreme-768-13-setup.png",
+      "bytes": 229224,
+      "sha256": "4c891b7edf0ddc5479b62153232df0134e2b26620853ae5130700948060fd81d"
+    },
+    {
+      "path": "docs/extreme-ai/checks/public-extreme-desktop-play.png",
+      "bytes": 324405,
+      "sha256": "f7f6aa715e52d75bdc12b9675421e5eed150791205c7bfdc7cdf60d64c851a9d"
+    },
+    {
+      "path": "docs/extreme-ai/checks/public-extreme-desktop-review.png",
+      "bytes": 468367,
+      "sha256": "77d0daf981b7899f6bd26d330fc9e7ba2dd41c80cb5ca0f50f4306f7b986a995"
+    },
+    {
+      "path": "docs/extreme-ai/checks/public-extreme-session.json",
+      "bytes": 3155,
+      "sha256": "f976294afbc96cfa327a153d175191619f75f49b97a6af396a7516f6dda03640"
+    },
+    {
+      "path": "docs/extreme-ai/checks/public-publication.json",
+      "bytes": 861,
+      "sha256": "79834a9e394ffbd4aaf5b368b9edbe1321c96410dc237c2a229bf0da1b8e1892"
     },
     {
       "path": "docs/extreme-ai/checks/public-ready-initial.json",
@@ -12109,9 +12154,24 @@
       "sha256": "01abc36cad3d86ce8187591d9e8bc120980be36ae0a88d2854ab1f9f043d0334"
     },
     {
+      "path": "docs/extreme-ai/checks/public-ready.json",
+      "bytes": 387,
+      "sha256": "4cb5e93d179bf1ec09ae7ee4bf0f99990464e03c9ef8754c0162e8593af0497d"
+    },
+    {
+      "path": "docs/extreme-ai/checks/public-real-browser.json",
+      "bytes": 6073,
+      "sha256": "70610bcd22533bbfd6706735b384e259010ed4b69443d050404be477fdd0269b"
+    },
+    {
       "path": "docs/extreme-ai/checks/public-real-http.json",
       "bytes": 5830,
       "sha256": "4477716b4b8e75953e0f47fb4856e31c86d8c3fa43f1453818b5ab89d0d902ce"
+    },
+    {
+      "path": "docs/extreme-ai/checks/public-real-mobile.json",
+      "bytes": 1399,
+      "sha256": "ab319058d13af55771390cdd5998eabbf65973f63bd05809516f2da4883146b2"
     },
     {
       "path": "docs/extreme-ai/checks/public-upgrade-after.json",
@@ -12127,6 +12187,16 @@
       "path": "docs/extreme-ai/checks/public-upgrade-preserved.png",
       "bytes": 676708,
       "sha256": "640fae0c83fdcf3c2fe0df48c8d0f406415eb8ecd046629e6bc84600fdee5332"
+    },
+    {
+      "path": "docs/extreme-ai/checks/public-upgrade-recovery.json",
+      "bytes": 659,
+      "sha256": "ed0bc0f1559bb6546aae9c0cc55ab365a44f26bf73ce6b7d09216172deda3a8a"
+    },
+    {
+      "path": "docs/extreme-ai/checks/public-upgrade-recovery.png",
+      "bytes": 676634,
+      "sha256": "44752733feb53cb854e8fa664e1861190f3161690f4e7430fd83ee41a9bb9dc3"
     },
     {
       "path": "docs/extreme-ai/checks/publication-guard.json",
@@ -15254,6 +15324,11 @@
       "sha256": "b022750e8d4d96067cb756b1e6bde63c68808388d6f85d240c4ed284ec4bbefb"
     },
     {
+      "path": "scripts/extreme-all-clients.cjs",
+      "bytes": 2476,
+      "sha256": "86809a1232ca9d1ad9f65256d53ae2fd6bcbbfbf00646d749a25728da0df728d"
+    },
+    {
       "path": "scripts/extreme-browser-desktop.cjs",
       "bytes": 3992,
       "sha256": "f9e31eb4ac22cf803aa0a0c1d3ea51470cc30f251de11c89b15d338fc5787f82"
@@ -15375,8 +15450,8 @@
     },
     {
       "path": "scripts/package-extreme.py",
-      "bytes": 8206,
-      "sha256": "c9e1656120e1d6bf18df0385184061385efd9a55376815800ed1199c64a6a95f"
+      "bytes": 8288,
+      "sha256": "456e0943bf41d6c5ec6a412c3bb4d9e6919700609129b032c5bb2586471b9989"
     },
     {
       "path": "scripts/package-floating-fit.py",
