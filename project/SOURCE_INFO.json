@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "id": "GITHUB-CURRENT-SOURCE",
-  "revision": 32,
+  "revision": 33,
   "rulesetId": "GO-CLUB-AREA-1",
-  "resultVersion": "0.25.1-pages.1",
-  "programVersion": "0.25.1",
+  "resultVersion": "0.25.2-pages.1",
+  "programVersion": "0.25.2",
   "sourceBuild": "pnpm install --frozen-lockfile && pnpm build",
   "note": "Buildable source and materials; installed dependencies, private data and generated root build/output excluded. Full release archive includes production builds and all evidence.",
   "files": [
@@ -56,7 +56,7 @@
     {
       "path": "package.json",
       "bytes": 4318,
-      "sha256": "e5fbc16eb86fc367293b0b19ab6fcf895d5fc5c941272b0ecb1646558a631d29"
+      "sha256": "4cb13ea8f3e8590ce4d371aee50925c17a1a29def4f1a327c0d47d0d810c7a9e"
     },
     {
       "path": "playwright.advanced-regression.config.ts",
@@ -12006,7 +12006,7 @@
     {
       "path": "docs/extreme-ai/checks/build-analysis-final.log",
       "bytes": 264,
-      "sha256": "ff7b9ba9593ee49c5837e64f0659531d63223e263fb177efb40ba0b2080a51f3"
+      "sha256": "330c1ae065cbf4861f487e1ecd52a2b03ec0c6ea0abba6b12a2f34b3ed138672"
     },
     {
       "path": "docs/extreme-ai/checks/build-analysis-free.log",
@@ -12015,8 +12015,8 @@
     },
     {
       "path": "docs/extreme-ai/checks/build-pages-final.log",
-      "bytes": 1128,
-      "sha256": "48bfe34f298948a08bf0fc4417acaa54ba78b444760323196f418c300ecfe0e7"
+      "bytes": 1294,
+      "sha256": "d3ebefd18a57774ddb12aa022e8d4bd4f561b17ee4527252765542b3fc147bcd"
     },
     {
       "path": "docs/extreme-ai/checks/build-pages-free.log",
@@ -12026,7 +12026,7 @@
     {
       "path": "docs/extreme-ai/checks/check-final.log",
       "bytes": 6905,
-      "sha256": "4d07053c93fc2d1d6c6b0ef1b0213af79f31bbf6a61a6f77090edb9a3e19c999"
+      "sha256": "b740e843f6f628223c40314c9faebef385131bf4862fcb1fe8cf68ea6ec40315"
     },
     {
       "path": "docs/extreme-ai/checks/check-free.log",
@@ -12109,9 +12109,29 @@
       "sha256": "01abc36cad3d86ce8187591d9e8bc120980be36ae0a88d2854ab1f9f043d0334"
     },
     {
+      "path": "docs/extreme-ai/checks/public-real-http.json",
+      "bytes": 5830,
+      "sha256": "4477716b4b8e75953e0f47fb4856e31c86d8c3fa43f1453818b5ab89d0d902ce"
+    },
+    {
+      "path": "docs/extreme-ai/checks/public-upgrade-after.json",
+      "bytes": 656,
+      "sha256": "16b102d7e159b8cda292836ecae5fd1b7643787529bfc204ecd0e0bd21b04ebb"
+    },
+    {
       "path": "docs/extreme-ai/checks/public-upgrade-before.json",
       "bytes": 1030,
       "sha256": "b5ba8ba694d72813751400b7df99e7f14e6e0305d9b40818f153351b7b5a188a"
+    },
+    {
+      "path": "docs/extreme-ai/checks/public-upgrade-preserved.png",
+      "bytes": 676708,
+      "sha256": "640fae0c83fdcf3c2fe0df48c8d0f406415eb8ecd046629e6bc84600fdee5332"
+    },
+    {
+      "path": "docs/extreme-ai/checks/publication-guard.json",
+      "bytes": 287,
+      "sha256": "1aa3cc453f3c607cf5b23a4cc808fb6a4cf71970ffebf701d0c340131ec2e8cd"
     },
     {
       "path": "docs/extreme-ai/checks/render-public-compute-prices.png",
@@ -15244,6 +15264,26 @@
       "sha256": "94f2527dbb0c1b1c5196a4a55b27ed3a29fd16271694257c3fea725e18f093e2"
     },
     {
+      "path": "scripts/extreme-public-browser.cjs",
+      "bytes": 4034,
+      "sha256": "3a262d147aa9baf5e587ba1e2b1ed14a945976881ff9a70db8fe4aadd377cd0d"
+    },
+    {
+      "path": "scripts/extreme-public-mobile.cjs",
+      "bytes": 3366,
+      "sha256": "1096198cc0118c847128398c16f3d974a2ba7e4f311acd0ca7627a5e2b23e5fd"
+    },
+    {
+      "path": "scripts/extreme-public-upgrade-recovery.cjs",
+      "bytes": 2292,
+      "sha256": "f4e88578982d7d0b65510ad40bda079b05239fe194e04b8584a2b090c410daa7"
+    },
+    {
+      "path": "scripts/extreme-public-upgrade.cjs",
+      "bytes": 2290,
+      "sha256": "fada736f5ebfdbc7c794398eba6b94e4c70d286a0b5dd3f7b64e3709202f73f1"
+    },
+    {
       "path": "scripts/extreme-real-smoke.mjs",
       "bytes": 5936,
       "sha256": "6ecd1c68aa7545eb0c7f31af9da18063b614931d8000d192566d24990e2edfcd"
@@ -15336,7 +15376,7 @@
     {
       "path": "scripts/package-extreme.py",
       "bytes": 8206,
-      "sha256": "e6b0e7513634cd30b0814dab65c7d2ce78ec47b9a1b1f2c1b1a954ae1fef3570"
+      "sha256": "c9e1656120e1d6bf18df0385184061385efd9a55376815800ed1199c64a6a95f"
     },
     {
       "path": "scripts/package-floating-fit.py",
@@ -15565,8 +15605,8 @@
     },
     {
       "path": "scripts/sync-github-pages.py",
-      "bytes": 9885,
-      "sha256": "e3b4785824d8510fe2c575e4d7dbbb2eb1be9b7e372376a99c03ca3e8806152f"
+      "bytes": 10748,
+      "sha256": "9b86e1a0b4138a0e4939303510d5553f9742b7de931e9e9e4fba9f00be2f93e3"
     },
     {
       "path": "scripts/validate-advanced.ts",
@@ -15976,7 +16016,7 @@
     {
       "path": "src/core/version.ts",
       "bytes": 117,
-      "sha256": "050303da530fc8ca8caacbe927e7f1cc483e924a8778144bb53b8e63523b0175"
+      "sha256": "07bd24670c8789b1df4d15cb4c5e21ed2dd28d8268d6b5aff5d18894d7c153d3"
     },
     {
       "path": "src/core/analysis/ai-contract.ts",

@@ -8,7 +8,7 @@ B=Path(a.base_archive).resolve();O=Path(a.output).resolve()
 assert R!=O and R not in O.parents
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 assert sha(B)=='de5a374a0dbf6b1134c5bd16b795b472913e94c17ce142f75548d2c41c5177a0','Use the verified complete0.24.2 baseline'
-assert json.loads((R/'package.json').read_text())['version']=='0.25.1'
+assert json.loads((R/'package.json').read_text())['version']=='0.25.2'
 E=R/'docs/extreme-ai/checks'
 read=lambda n:json.loads((E/n).read_text())
 log=(E/'check-final.log').read_text()
@@ -29,9 +29,9 @@ if not a.stage:
   assert read(n)['status']=='passed',n
  ready=read('public-ready.json');assert ready['ready'] and ready['model']==model['model']['name'] and ready['aiDifficulties']==['extreme']
  assert json.loads((R/'dist/version.json').read_text())['katagoExtremeConfigured']
-V='0.25.1-pages.1'
-packet='0.25.1-predeploy-free.'+str(a.stage_revision) if a.stage else V
-identity={'schemaVersion':1,'id':'EXTREME-AI-RELEASE','revision':1,'rulesetId':'GO-CLUB-AREA-1','taskId':'EXTREME_AI','baseVersion':'AI_PLAY0.24.2-pages.1','baseArchiveSha256':sha(B),'resultVersion':packet,'programVersion':'0.25.1','status':'awaiting-free-render-creation-and-public-e2e' if a.stage else 'complete-with-documented-limits'}
+V='0.25.2-pages.1'
+packet='0.25.2-predeploy-free.'+str(a.stage_revision) if a.stage else V
+identity={'schemaVersion':1,'id':'EXTREME-AI-RELEASE','revision':1,'rulesetId':'GO-CLUB-AREA-1','taskId':'EXTREME_AI','baseVersion':'AI_PLAY0.24.2-pages.1','baseArchiveSha256':sha(B),'resultVersion':packet,'programVersion':'0.25.2','status':'awaiting-free-render-creation-and-public-e2e' if a.stage else 'complete-with-documented-limits'}
 O.mkdir(parents=True,exist_ok=True)
 full=O/('go-club-'+packet+'-full.zip');app=O/('go-club-'+packet+'-app.zip')
 assert not full.exists() and not app.exists(),'Never overwrite a sealed packet'
@@ -73,7 +73,7 @@ app_files.append((R/'启动联机对弈.command','启动联机对弈.command'))
 for folder in ['docs/extreme-ai','docs/ai-play','docs/katago','analysis-engine/licenses']:
  app_files += [(x,str(x.relative_to(R))) for x in (R/folder).rglob('*') if x.is_file() and x.suffix in ['.md','.txt'] and '/checks/' not in str(x) and '/rejected-' not in str(x)]
 notice='Free部署前阶段包：极致尚未启用，原三档可继续使用。' if a.stage else '极致Free服务与原网站已完成实际联调；详见验收报告。'
-readme='# 围棋社 AI 对弈0.25.1\n\n'+notice+'\n\n原网站：https://sma084545-pixel.github.io/weiqi/#/play/ai 。保留轻松/标准/挑战，新增独立强模型极致；不对应人类段位。5/9/13/19路、回退/重做、棋局滑动条、导出和赛后同模型复盘沿用原功能。新着法需联网，终局仍人工确认。\n\n已有兼容Node22/24/26时，解压后执行 node dist-server/server.mjs ，访问 http://127.0.0.1:4190/#/play/ai ，或macOS双击启动联机对弈.command。不需node_modules。Ctrl+C停止本机服务；远程KataGo不依赖个人电脑常开。先备份再更新，不清站点数据。仅免费资源，休眠/额度边界见docs/extreme-ai/。\n'
+readme='# 围棋社 AI 对弈0.25.2\n\n'+notice+'\n\n原网站：https://sma084545-pixel.github.io/weiqi/#/play/ai 。保留轻松/标准/挑战，新增独立强模型极致；不对应人类段位。5/9/13/19路、回退/重做、棋局滑动条、导出和赛后同模型复盘沿用原功能。新着法需联网，终局仍人工确认。\n\n已有兼容Node22/24/26时，解压后执行 node dist-server/server.mjs ，访问 http://127.0.0.1:4190/#/play/ai ，或macOS双击启动联机对弈.command。不需node_modules。Ctrl+C停止本机服务；远程KataGo不依赖个人电脑常开。先备份再更新，不清站点数据。仅免费资源，休眠/额度边界见docs/extreme-ai/。\n'
 app_files=sorted({n:x for x,n in app_files}.items())
 app_entries=[{'path':n,'bytes':x.stat().st_size,'sha256':sha(x)} for n,x in app_files]
 app_entries.append({'path':'README.md','bytes':len(readme.encode()),'sha256':hashlib.sha256(readme.encode()).hexdigest()})

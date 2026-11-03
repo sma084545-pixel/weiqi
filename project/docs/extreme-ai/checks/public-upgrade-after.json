@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "EXTREME-PUBLIC-UPGRADE-AFTER",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "passed",
+  "at": "2026-11-03T01:46:04.566Z",
+  "before": "版本 0.25.0",
+  "after": "版本 0.25.1",
+  "moves": "2",
+  "difficulty": "standard",
+  "paused": "true",
+  "offline": {
+    "type": "OFFLINE_STATUS",
+    "ready": true,
+    "version": "0.25.1",
+    "cachedCount": 11,
+    "error": null
+  },
+  "checks": [
+    "old-cached-client-retained-until-user-applies",
+    "explicit-save-and-apply",
+    "saved-real-game-preserved",
+    "AI-remains-paused",
+    "new-version-actual-resources-ready"
+  ],
+  "humanReviewed": null
+}

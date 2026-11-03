@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 1,
+  "id": "EXTREME-REAL-HTTP",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "passed",
+  "location": "actual-owner-created-Render-Free-512MB",
+  "at": "2026-11-03T01:44:24.175Z",
+  "totalMs": 120267,
+  "healthBefore": {
+    "service": "go-club-katago",
+    "status": "ready",
+    "ready": true,
+    "active": 0,
+    "queued": 0,
+    "engineVersion": "1.18.1",
+    "model": "kata1-tf2-b10c384-s2941M-d5872M",
+    "uptimeSeconds": 51,
+    "engineStartupMs": 4408,
+    "resources": {
+      "cgroupMemoryLimitBytes": 536870912,
+      "cgroupMemoryPeakBytes": 153964544,
+      "cpuQuota": 0.15
+    },
+    "appVersion": "0.25.0",
+    "apiVersion": 2,
+    "features": [
+      "review",
+      "ai-move"
+    ],
+    "aiDifficulties": [
+      "extreme"
+    ]
+  },
+  "healthAfter": {
+    "service": "go-club-katago",
+    "status": "ready",
+    "ready": true,
+    "active": 0,
+    "queued": 0,
+    "engineVersion": "1.18.1",
+    "model": "kata1-tf2-b10c384-s2941M-d5872M",
+    "uptimeSeconds": 170,
+    "engineStartupMs": 4408,
+    "resources": {
+      "cgroupMemoryLimitBytes": 536870912,
+      "cgroupMemoryPeakBytes": 155586560,
+      "cpuQuota": 0.15
+    },
+    "appVersion": "0.25.0",
+    "apiVersion": 2,
+    "features": [
+      "review",
+      "ai-move"
+    ],
+    "aiDifficulties": [
+      "extreme"
+    ]
+  },
+  "checks": [
+    {
+      "name": "exact-public-local-cors-and-rejection",
+      "status": "passed"
+    },
+    {
+      "name": "real-pinned-model-legal-5",
+      "status": "passed",
+      "size": 5,
+      "httpMs": 19552,
+      "result": {
+        "schemaVersion": 1,
+        "positionId": "extreme-real-5",
+        "requestId": "5f929435-518d-4407-b2ec-43b69d4c230c",
+        "aiColor": "W",
+        "difficulty": "extreme",
+        "move": {
+          "type": "pass"
+        },
+        "engine": {
+          "name": "KataGo",
+          "version": "1.18.1",
+          "model": "kata1-tf2-b10c384-s2941M-d5872M",
+          "backend": "Eigen CPU",
+          "maxVisits": 64
+        },
+        "visits": 64,
+        "elapsedMs": 19116
+      }
+    },
+    {
+      "name": "real-pinned-model-legal-9",
+      "status": "passed",
+      "size": 9,
+      "httpMs": 31196,
+      "result": {
+        "schemaVersion": 1,
+        "positionId": "extreme-real-9",
+        "requestId": "ffdbf3a1-5113-4411-8408-883e1d7d3f87",
+        "aiColor": "B",
+        "difficulty": "extreme",
+        "move": {
+          "type": "place",
+          "at": {
+            "row": 4,
+            "col": 4
+          }
+        },
+        "engine": {
+          "name": "KataGo",
+          "version": "1.18.1",
+          "model": "kata1-tf2-b10c384-s2941M-d5872M",
+          "backend": "Eigen CPU",
+          "maxVisits": 64
+        },
+        "visits": 11,
+        "elapsedMs": 30667
+      }
+    },
+    {
+      "name": "real-pinned-model-legal-13",
+      "status": "passed",
+      "size": 13,
+      "httpMs": 30508,
+      "result": {
+        "schemaVersion": 1,
+        "positionId": "extreme-real-13",
+        "requestId": "142b15b8-511c-46c6-9937-653aced21fd7",
+        "aiColor": "W",
+        "difficulty": "extreme",
+        "move": {
+          "type": "place",
+          "at": {
+            "row": 2,
+            "col": 2
+          }
+        },
+        "engine": {
+          "name": "KataGo",
+          "version": "1.18.1",
+          "model": "kata1-tf2-b10c384-s2941M-d5872M",
+          "backend": "Eigen CPU",
+          "maxVisits": 64
+        },
+        "visits": 10,
+        "elapsedMs": 30066
+      }
+    },
+    {
+      "name": "real-pinned-model-legal-19",
+      "status": "passed",
+      "size": 19,
+      "httpMs": 31582,
+      "result": {
+        "schemaVersion": 1,
+        "positionId": "extreme-real-19",
+        "requestId": "4db0e979-ca14-4ee6-9ee6-3a90e5fe1078",
+        "aiColor": "B",
+        "difficulty": "extreme",
+        "move": {
+          "type": "place",
+          "at": {
+            "row": 3,
+            "col": 16
+          }
+        },
+        "engine": {
+          "name": "KataGo",
+          "version": "1.18.1",
+          "model": "kata1-tf2-b10c384-s2941M-d5872M",
+          "backend": "Eigen CPU",
+          "maxVisits": 64
+        },
+        "visits": 9,
+        "elapsedMs": 31062
+      }
+    },
+    {
+      "name": "manual-confirmation-25-0-and-real-strong-review",
+      "status": "passed",
+      "httpMs": 438,
+      "result": {
+        "schemaVersion": 1,
+        "requestId": "cf1fd14e-4956-40b4-ac8f-9fe464f78ae6",
+        "positionId": "extreme-final-review",
+        "perspective": "B",
+        "toPlay": "W",
+        "blackWinrate": 0.998557563,
+        "blackScoreLead": 24.9630412,
+        "visits": 64,
+        "elapsedMs": 2,
+        "engine": {
+          "name": "KataGo",
+          "version": "1.18.1",
+          "model": "kata1-tf2-b10c384-s2941M-d5872M",
+          "backend": "Eigen CPU",
+          "maxVisits": 64
+        },
+        "candidates": [
+          {
+            "order": 0,
+            "move": {
+              "type": "pass"
+            },
+            "visits": 63,
+            "blackWinrate": 0.998602872,
+            "blackScoreLead": 24.9750285,
+            "pv": [
+              {
+                "type": "pass"
+              },
+              {
+                "type": "pass"
+              },
+              {
+                "type": "pass"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "reject-small-model-difficulty",
+      "status": "passed",
+      "httpStatus": 409,
+      "error": "MODEL_UNAVAILABLE"
+    },
+    {
+      "name": "reject-client-budget",
+      "status": "passed",
+      "httpStatus": 400,
+      "error": "INVALID_REQUEST"
+    },
+    {
+      "name": "reject-oversize",
+      "status": "passed",
+      "httpStatus": 413,
+      "error": "BODY_TOO_LARGE"
+    }
+  ],
+  "humanReviewed": null
+}

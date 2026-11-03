@@ -7,6 +7,14 @@ R=Path(__file__).resolve().parents[1];repo=Path(args.repo).resolve();version=jso
 assert (repo/'.git').exists();assert json.loads((R/'dist/version.json').read_text())['programVersion']==version
 sha=lambda path:hashlib.sha256(path.read_bytes()).hexdigest()
 public_version=json.loads((R/'dist/version.json').read_text());configured=public_version.get('onlineServerConfigured',False);server_origin=public_version.get('onlineServerOrigin');ephemeral=public_version.get('onlineRoomsEphemeral',False)
+# A later generic check/build must never overwrite a correctly configured Pages build.
+# Validate everything before copying even one file into the publication checkout.
+hosting=json.loads((R/'deploy/github-pages.json').read_text())
+for field,expected in [('onlineServerOrigin',hosting['serverOrigin']),('katagoAnalysisOrigin',hosting.get('analysisOrigin') or ''),('katagoExtremeOrigin',hosting.get('extremeAnalysisOrigin') or '')]:
+ assert public_version.get(field)==expected,f'Pages configuration mismatch for {field}; run pnpm build:pages AFTER all checks, then publish.'
+assert configured and public_version.get('onlineSiteOrigin')==hosting['siteUrl'].split('/weiqi/')[0]
+assert public_version.get('katagoAnalysisConfigured')==bool(hosting.get('analysisOrigin'))
+assert public_version.get('katagoExtremeConfigured')==bool(hosting.get('extremeAnalysisOrigin'))
 previous=json.loads((repo/'PUBLICATION.json').read_text()) if (repo/'PUBLICATION.json').exists() else {};revision=previous.get('revision',0)+1
 site=[]
 for path in sorted((R/'dist').rglob('*')):

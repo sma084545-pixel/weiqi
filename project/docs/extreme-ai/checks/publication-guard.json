@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "EXTREME-PUBLISH-GUARD",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "passed",
+  "invalidGenericBuildExit": 1,
+  "publicationUnchanged": true,
+  "message": "Generic build with missing hosted origins rejected before copying any files."
+}
