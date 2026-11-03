@@ -6,10 +6,9 @@ import {analysisOrigin} from './config';
 import {AnalysisClientError,requestReviewAnalysis} from './client';
 
 interface ViewState {identity:object;phase:'idle'|'loading'|'starting'|'error'|'done';result?:ReviewAnalysisResponse;message?:string;}
-export function useKataGoReview(game:GameState|null,index:number,enabled:boolean){
-  const origin=analysisOrigin();
+export function useKataGoReview(game:GameState|null,index:number,enabled:boolean,origin=analysisOrigin(),expectedModel?:string){
   const allowed=Boolean(enabled&&game?.phase==='finished'&&game.mode==='full-game');
-  const identity=useMemo(()=>({}),[game,index,allowed]);
+  const identity=useMemo(()=>({}),[game,index,allowed,origin,expectedModel]);
   const positionId=useMemo(()=>`review-${globalThis.crypto?.randomUUID?.()??`${Date.now()}-${Math.random().toString(36).slice(2)}`}`,[identity]);
   const [state,setState]=useState<ViewState>({identity,phase:'idle'});
   const active=useRef<{identity:object;controller:AbortController;sequence:number}|null>(null);
@@ -27,6 +26,7 @@ export function useKataGoReview(game:GameState|null,index:number,enabled:boolean
     try{
       const frame=index===game.moves.length?game:game.undoStack[index];
       const result=await requestReviewAnalysis(origin,makeReviewRequest(game,index,positionId),frame.toPlay,controller.signal);
+      if(expectedModel&&result.engine.model!==expectedModel)throw new AnalysisClientError('INVALID_RESPONSE','复盘模型与本局设置不符，结果已丢弃；不会自动降级。');
       if(latest.current!==identity||sequence.current!==ticket||controller.signal.aborted)return;
       setState({identity,phase:'done',result});
     }catch(error){

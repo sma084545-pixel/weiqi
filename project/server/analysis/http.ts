@@ -3,9 +3,12 @@ import type {KataGoEngine} from './engine';
 import {ApiError,prepareAnalysis} from './position';
 import {prepareAiMove,selectAiMove} from './ai';
 import {APP_VERSION} from '../../src/core/version';
+import {EXTREME_MODEL} from '../../src/core/analysis/ai-contract';
 
 export const MAX_BODY_BYTES=256_000;
 export function createAnalysisServer(engine:KataGoEngine,origin:string,options:{ratePerMinute?:number;aiRatePerMinute?:number;globalPerMinute?:number;additionalOrigins?:readonly string[]}={}){
+  const extreme=engine.options.model===EXTREME_MODEL.name&&engine.options.version===EXTREME_MODEL.engineVersion;
+  const difficulties=extreme?['extreme']:['relaxed','standard','challenge'];
   const rate=options.ratePerMinute??6,globalRate=options.globalPerMinute??18;
   const allowedOrigins=new Set([origin,...options.additionalOrigins??[]]);
   const clients=new Map<string,{start:number;count:number}>();let global={start:Date.now(),count:0};
@@ -34,7 +37,7 @@ export function createAnalysisServer(engine:KataGoEngine,origin:string,options:{
         if(method!=='POST'||(headers&&String(headers).split(',').some(h=>h.trim().toLowerCase()!=='content-type')))throw new ApiError('INVALID_REQUEST',400,'不支持此预检设置。');
         res.setHeader('Access-Control-Allow-Methods','POST, OPTIONS');res.setHeader('Access-Control-Allow-Headers','Content-Type');res.setHeader('Access-Control-Max-Age','600');res.writeHead(204);res.end();return;
       }
-      if(req.method==='GET'&&(path==='/healthz'||path==='/readyz')){const health=engine.health();send(path==='/readyz'&&!health.ready?503:200,{...health,appVersion:APP_VERSION,apiVersion:2,features:['review','ai-move'],aiDifficulties:['relaxed','standard','challenge']});return;}
+      if(req.method==='GET'&&(path==='/healthz'||path==='/readyz')){const health=engine.health();send(path==='/readyz'&&!health.ready?503:200,{...health,appVersion:APP_VERSION,apiVersion:2,features:['review','ai-move'],aiDifficulties:difficulties});return;}
       if(req.method!=='POST'||(path!=='/api/analyze'&&path!=='/api/ai-move'))throw new ApiError('INVALID_REQUEST',404,'没有这个接口。');
       consume(req,path==='/api/ai-move');
       if(!/^application\/json(?:;|$)/i.test(String(req.headers['content-type']??'')))throw new ApiError('INVALID_REQUEST',415,'请使用 JSON 请求。');
@@ -46,9 +49,12 @@ export function createAnalysisServer(engine:KataGoEngine,origin:string,options:{
       let input:unknown;try{input=JSON.parse(body);}catch{throw new ApiError('INVALID_REQUEST',400,'请求不是有效 JSON。');}
       if(path==='/api/ai-move'){
         const ai=prepareAiMove(input,engine.options.maxVisits);
+        if(!difficulties.includes(ai.request.difficulty))throw new ApiError('MODEL_UNAVAILABLE',409,'当前服务没有所选模型，不会自动降级。','/difficulty');
+        if(extreme)ai.prepared.query.overrideSettings={maxTime:30};
         const result=await engine.analyze(ai.prepared,controller.signal);send(200,selectAiMove(result,ai.request));
       }else{
         const prepared=prepareAnalysis(input,engine.options.maxVisits);
+        if(extreme)prepared.query.overrideSettings={maxTime:30};
         const result=await engine.analyze(prepared,controller.signal);send(200,result);
       }
     }catch(error){

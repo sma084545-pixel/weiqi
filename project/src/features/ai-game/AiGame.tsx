@@ -3,7 +3,7 @@ import {Board} from '../../components/Board';
 import {GameTimeline,useGameHistory} from '../../components/GameTimeline';
 import type {Color,Coord} from '../../core/content.generated';
 import {RULE_ERROR_ZH,type BoardMarker,type BoardMatrix} from '../../core/rules';
-import {AI_DIFFICULTIES,type AiDifficulty} from '../../core/analysis/ai-contract';
+import {AI_DIFFICULTIES,EXTREME_MODEL,type AiDifficulty} from '../../core/analysis/ai-contract';
 import {browserStoragePort} from '../../core/unified-persistence';
 import {FULL_GAME_SIZES,setBoardSize,setKomi,setSetupKind,toggleHandicapStone,confirmScoreFor,toggleDeadGroup,resumeDisputedPlay,scorePreview,resignGame,type FullGameMatch,type FullGameFlowResult} from '../full-game/model';
 import {ConfirmDialog,ScoreDetails} from '../full-game/FullGame';
@@ -14,6 +14,7 @@ import {serializeGameToSgf} from '../file-exchange/sgf';
 import {emptyAiMatch,startAiGame,humanMove,applyAiMove,travelAiHistory,DEFAULT_AI_OPTIONS,type AiOptions} from './model';
 import {aiSessionJson,createAiSessionStore,parseAiSession,MAX_AI_SESSION_BYTES} from './storage';
 import {useAiOpponent} from './useAiOpponent';
+import {aiServiceOrigin} from './config';
 import '../full-game/FullGame.css';
 import '../online-game/OnlineTools.css';
 import './AiGame.css';
@@ -41,7 +42,8 @@ export function AiGame({projector=false}:{projector?:boolean}){
     const result=applyAiMove(latest.current,options,move);
     if(result.ok){setMatch(result.value);setNotice(`AI 已${move.move.type==='pass'?'停一手':'落子'} · 本次思考 ${(move.elapsedMs/1000).toFixed(1)} 秒。`);}else{setPaused(true);setNotice(errorText(result));}
   });
-  const review=useKataGoReview(game,history.index,game?.phase==='finished');
+  const serviceOrigin=aiServiceOrigin(options.difficulty);
+  const review=useKataGoReview(game,history.index,game?.phase==='finished',serviceOrigin,options.difficulty==='extreme'?EXTREME_MODEL.name:undefined);
   useEffect(()=>{moveGate.current=false;},[game]);
   useEffect(()=>{if(!game)return;const result=createAiSessionStore(browserStoragePort()).save(match,options);if(!result.ok)setNotice(result.message);},[match,options]);
   const stop=()=>{opponent.cancel();setPaused(true);};
@@ -55,7 +57,7 @@ export function AiGame({projector=false}:{projector?:boolean}){
   const travel=(direction:'undo'|'redo',round=false)=>{stop();apply(travelAiHistory(match,options,direction,round));};
   const goTo=(n:number)=>{stop();history.goTo(n);};
   const again=()=>{opponent.cancel();setMatch(emptyAiMatch());setPaused(false);setNotice('请选择新一局的设置。');setModal(null);};
-  const start=()=>{const r=startAiGame(match);if(r.ok)setPaused(false);apply(r);};
+  const start=()=>{if(options.difficulty==='extreme'&&!serviceOrigin){setNotice('极致服务尚未启用。可先选择其他三档；现有棋局与存档不受影响。');return;}const r=startAiGame(match);if(r.ok)setPaused(false);apply(r);};
   const preview=useMemo(()=>game&&(game.phase==='scoring'||game.result?.reason==='area')?scorePreview(match):null,[match]);
   const board:BoardMatrix=game?(history.frame?.board??game.board):Array.from({length:match.setup.size},(_,r)=>Array.from({length:match.setup.size},(_,c)=>match.setup.handicapStones.some(p=>p.row===r&&p.col===c)?'B' as const:null));
   const dead=game?.agreement?.deadStones??match.scoring.deadStones;
@@ -72,18 +74,18 @@ export function AiGame({projector=false}:{projector?:boolean}){
   return <div className="full-game-page ai-game-page" data-testid="ai-game" data-view={game?'game':'setup'} data-phase={game?.phase??'setup'} data-move-count={game?.moves.length??0} data-turn={game?.toPlay??''} data-paused={paused} data-difficulty={options.difficulty}>
     <ConfirmDialog open={modal!==null} title={modal==='resign'?'确认认输':modal==='restart'?'重开 AI 对局':modal==='load'?'读取已保存 AI 对局':'导入 AI 续玩文件'} description={modal==='resign'?'本局会以你认输结束，之后可以正常复盘；不生成虚构的数子得分。':'这会替换当前页面棋局，建议先导出当前续玩文件。恢复的 AI 将保持暂停。'} confirmLabel={modal==='resign'?'确认我认输':modal==='restart'?'返回设置并重开':'确认替换当前棋局'} onClose={()=>{setModal(null);setIncoming(null);}} onConfirm={()=>{if(modal==='restart')again();else if(modal==='resign')apply(resignGame(match));else if(modal==='load')restore();else if(incoming){setMatch(incoming.match);setOptions(incoming.options);setPaused(true);setNotice('导入通过，AI 暂停；原始轮次与完整历史已恢复。');}setIncoming(null);setModal(null);}}/>
     <ConfirmDialog open={discard!==null} title="清除起始黑子后更改设置？" description="切换尺寸或改为空盘会清除已摆的起始黑子。取消可保留当前布局。" confirmLabel="确认清除并更改" onClose={()=>setDiscard(null)} onConfirm={()=>{if(discard)apply(discard.type==='size'?setBoardSize(match,discard.size,true):setSetupKind(match,discard.kind,true));setDiscard(null);}}/>
-    <section className="full-game-hero"><p><a href="#/home">← 返回学习入口</a></p><span className="module-kicker">完整围棋 · 与 AI 练习</span><h1>AI 对弈</h1><p>选择执色与练习强度，和真实 KataGo 轮流落子。支持悔棋、重做、滑动回看和本机续玩；新着法需要联网，赛后才开放胜率和候选分析。</p><p className="ai-difficulty-note">轻松、标准、挑战是相对搜索强度，不对应人类段级位。默认9路、贴目0，可出现和棋。</p></section>
+    <section className="full-game-hero"><p><a href="#/home">← 返回学习入口</a></p><span className="module-kicker">完整围棋 · 与 AI 练习</span><h1>AI 对弈</h1><p>选择执色与练习强度，和真实 KataGo 轮流落子。支持悔棋、重做、滑动回看和本机续玩；新着法需要联网，赛后才开放胜率和候选分析。</p><p className="ai-difficulty-note">轻松、标准、挑战按搜索强度区分；极致使用更强模型。四档不对应人类段级位。默认9路、贴目0，可出现和棋。</p></section>
     <section className="full-game-layout"><div className="full-board-panel"><div className="full-board-heading"><div><span>{game?.size??match.setup.size}路 · 贴目 {game?.komi??match.setup.komi}</span><h2>{game?'对局棋盘':'开局棋盘'}</h2></div><strong aria-live="polite">{status}</strong></div>
       {game&&<BoardDisplayTools context="ai" renderBoard={renderBoard} timeline={timeline} chat={<section className="ai-max-help"><h3>本局设置</h3><p>你执{color(options.humanColor)}；难度：{AI_DIFFICULTIES[options.difficulty].label}。</p><p>AI 思考时可暂停或撤回；历史局面只读。终局确认与赛后分析在主页面完成。</p></section>} status={status} turnActions={turnActions}/>}
       {renderBoard('full')}
       <div className="ai-view-controls"><button type="button" disabled={zoom>=1.5} onClick={()=>setZoom(z=>Math.min(1.5,z+.25))}>放大棋盘</button><button type="button" disabled={zoom<=.75} onClick={()=>setZoom(z=>Math.max(.75,z-.25))}>缩小棋盘</button><button type="button" onClick={()=>{setZoom(1);setViewKey(v=>v+1);}}>复位视图</button></div>{timeline}
     </div><aside className="full-game-controls" aria-label="AI 对弈控制">{!game?<>
       <h2>确定本局设置</h2><label htmlFor="ai-size">棋盘尺寸<select id="ai-size" value={match.setup.size} onChange={e=>{const size=Number(e.target.value) as 5|9|13|19;const r=setBoardSize(match,size);if(!r.ok&&r.error.code==='SIZE_CHANGE_REQUIRES_CLEAR')setDiscard({type:'size',size});else apply(r);}}>{FULL_GAME_SIZES.map(s=><option key={s} value={s}>{s}路{s===5?'（小棋盘练习）':''}</option>)}</select></label>
-      <label htmlFor="ai-level">难度<select id="ai-level" value={options.difficulty} onChange={e=>setOptions({...options,difficulty:e.target.value as AiDifficulty})}>{Object.entries(AI_DIFFICULTIES).map(([id,p])=><option key={id} value={id}>{p.label}</option>)}</select></label><p>{AI_DIFFICULTIES[options.difficulty].description}</p>
+      <label htmlFor="ai-level">难度<select id="ai-level" value={options.difficulty} aria-describedby="ai-level-help" onChange={e=>setOptions({...options,difficulty:e.target.value as AiDifficulty})}>{Object.entries(AI_DIFFICULTIES).map(([id,p])=><option key={id} value={id}>{p.label}</option>)}</select></label><p id="ai-level-help" role="status">{AI_DIFFICULTIES[options.difficulty].description}{options.difficulty==='extreme'&&(serviceOrigin?' 每手最多约半分钟计算，繁忙时可能还需排队。':' 极致服务尚未启用；可先使用其他三档。')}</p>
       <fieldset><legend>你的执色</legend>{(['B','W'] as const).map(c=><label className="radio-card" key={c}><input type="radio" name="ai-human-color" value={c} checked={options.humanColor===c} onChange={()=>setOptions({...options,humanColor:c})}/>{color(c)}{match.setup.kind==='free-handicap'?(c==='B'?'（让子后 AI 白先）':'（让子后你先）'):(c==='B'?'（空盘先行）':'（AI 先行）')}</label>)}</fieldset>
       <label htmlFor="ai-komi">白方贴目<input id="ai-komi" type="number" min="-100" max="100" step="0.5" value={match.setup.komi} onChange={e=>{if(Number.isFinite(e.target.valueAsNumber))apply(setKomi(match,e.target.valueAsNumber));}}/></label>
       <fieldset><legend>起始方式</legend>{(['empty','free-handicap'] as const).map(k=><label className="radio-card" key={k}><input type="radio" name="ai-setup-kind" checked={match.setup.kind===k} onChange={()=>{const r=setSetupKind(match,k);if(!r.ok&&r.error.code==='SIZE_CHANGE_REQUIRES_CLEAR')setDiscard({type:'kind',kind:k});else apply(r);}}/>{k==='empty'?'空盘':'本社团自由放置让子'}</label>)}{match.setup.kind==='free-handicap'&&<p>点击棋盘放起始黑子，已放 {match.setup.handicapStones.length} 颗；开始后白方先行。不是正式固定让子规则。</p>}</fieldset>
-      <button type="button" className="start-full-game" onClick={start}>验证设置并开始 AI 对局</button><button type="button" onClick={restore}>读取本机 AI 对局</button>
+      <button type="button" className="start-full-game" disabled={options.difficulty==='extreme'&&!serviceOrigin} onClick={start}>验证设置并开始 AI 对局</button><button type="button" onClick={restore}>读取本机 AI 对局</button>
     </>:<>
       <section className="turn-card"><span className={`turn-stone ${game.toPlay==='B'?'black':'white'}`}/><div><strong>{status}</strong><p>你执{color(options.humanColor)} · {AI_DIFFICULTIES[options.difficulty].label} · {game.size}路</p></div></section>
       {game.phase==='playing'&&<section className="play-actions"><h2>对弈操作</h2><div>{turnActions}<button type="button" disabled={!humanAllowed} onClick={()=>requestModal('resign')}>我认输</button>{game.toPlay!==options.humanColor&&(!paused&&opponent.phase!=='error'?<button type="button" onClick={stop}>暂停 AI 思考</button>:<button type="button" disabled={viewing||!!modal} onClick={()=>{setPaused(false);opponent.retry();}}>继续 / 重试 AI 落子</button>)}</div>{game.toPlay!==options.humanColor&&<p className="ai-engine-status" data-testid="ai-status" data-state={opponent.phase} role="status" aria-live="polite">{paused?'AI 已暂停。可回看、悔棋或手动继续。':opponent.message||'正在准备本次思考。'}</p>}<p>只有轮到你时可落子、停手或认输。请求失败不换手，不自动重试，也不改用随机落子。</p></section>}

@@ -1,10 +1,13 @@
 import type {Color,GameState} from '../content.generated';
 import type {AnalysisMove,ReviewAnalysisRequest,ReviewAnalysisResponse} from './contract';
 
+/** Pinned official strongest confidently-rated network checked 2026-11-03. Never fall back to the small net. */
+export const EXTREME_MODEL={name:'kata1-tf3-b11c768-s11003M-d5973M-7gres',engineVersion:'1.18.1'} as const;
 export const AI_DIFFICULTIES={
   relaxed:{label:'轻松',visits:8,description:'较少搜索，在引擎判断接近的合法候选中选择。'},
   standard:{label:'标准',visits:24,description:'中等搜索，采用引擎优先候选。'},
-  challenge:{label:'挑战',visits:64,description:'本服务当前最高搜索预算，采用引擎优先候选。'},
+  challenge:{label:'挑战',visits:64,description:'更充分搜索，采用引擎优先候选。'},
+  extreme:{label:'极致',visits:64,description:'使用更强的独立模型，采用引擎优先候选；思考可能更久。'},
 } as const;
 export type AiDifficulty=keyof typeof AI_DIFFICULTIES;
 export const isAiDifficulty=(v:unknown):v is AiDifficulty=>typeof v==='string'&&Object.hasOwn(AI_DIFFICULTIES,v);

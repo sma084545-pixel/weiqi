@@ -49,7 +49,8 @@
           "enum": [
             "relaxed",
             "standard",
-            "challenge"
+            "challenge",
+            "extreme"
           ]
         }
       }
@@ -101,7 +102,7 @@
       }
     }
   },
-  "$comment": "Shape validation supplements, and never substitutes for, legal setup/event replay, whole-group annotations and active-path positional superko in parseAiSession. Finished games may retain both confirmations.",
+  "$comment": "Shape validation supplements, and never substitutes for, legal setup/event replay, whole-group annotations and active-path positional superko in parseAiSession. Finished games may retain both confirmations. Additive difficulty extreme in program0.25; older programs reject it safely. Existing three difficulties and storage keys unchanged.",
   "allOf": [
     {
       "if": {

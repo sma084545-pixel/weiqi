@@ -1,14 +1,14 @@
 import {useEffect,useMemo,useRef,useState} from 'react';
 import type {GameState} from '../../core/content.generated';
 import {makeAiMoveRequest,type AiMoveResponse} from '../../core/analysis/ai-contract';
-import {analysisOrigin} from '../katago-review/config';
+import {aiServiceOrigin} from './config';
 import {requestAiMove} from './client';
 import type {AiOptions} from './model';
 
 interface OpponentState {identity:object;phase:'idle'|'loading'|'error';message:string;last?:AiMoveResponse}
 /** Identity follows effective history, not just board layout. One request; explicit retry on failure. */
 export function useAiOpponent(game:GameState|null,options:AiOptions,enabled:boolean,onMove:(move:AiMoveResponse,expected:GameState)=>void){
-  const origin=analysisOrigin(),identity=useMemo(()=>({}),[game,options.humanColor,options.difficulty]);
+  const origin=aiServiceOrigin(options.difficulty),identity=useMemo(()=>({}),[game,options.humanColor,options.difficulty,origin]);
   const [attempt,setAttempt]=useState(0),[state,setState]=useState<OpponentState>({identity,phase:'idle',message:''});
   const current=state.identity===identity?state:{identity,phase:'idle' as const,message:''};
   const sequence=useRef(0),active=useRef<AbortController|null>(null),latest=useRef({identity,enabled});latest.current={identity,enabled};
@@ -21,7 +21,7 @@ export function useAiOpponent(game:GameState|null,options:AiOptions,enabled:bool
     // Deferring the start lets StrictMode's setup/cleanup cancel its disposable first mount.
     const timer=setTimeout(async()=>{
       if(!live())return;
-      if(!origin){setState({identity,phase:'error',message:'本版本尚未接通 AI 服务。可以导出棋局或选择双人对弈。'});return;}
+      if(!origin){setState({identity,phase:'error',message:options.difficulty==='extreme'?'极致服务尚未接通。棋局已保留，不会自动改用较弱模型。':'本版本尚未接通 AI 服务。可以导出棋局或选择双人对弈。'});return;}
       setState({identity,phase:'loading',message:'AI 正在思考。可随时暂停、悔棋或回看。'});
       wake=setTimeout(()=>{if(live())setState({identity,phase:'loading',message:'仍在等待，服务可能正在从休眠中启动。可以取消后稍后重试。'});},15_000);
       try{

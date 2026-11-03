@@ -7,7 +7,7 @@ export function prepareAiMove(input:unknown,serverMaxVisits=64){
   if(!input||typeof input!=='object'||Array.isArray(input))throw new ApiError('INVALID_REQUEST',400,'AI 请求格式不正确。');
   const d=input as Record<string,unknown>;
   if(Object.keys(d).some(k=>!['schemaVersion','positionId','game','aiColor','difficulty'].includes(k)))throw new ApiError('INVALID_REQUEST',400,'难度由服务端限定，不接受自定义引擎参数。');
-  if(!isAiDifficulty(d.difficulty))throw new ApiError('INVALID_REQUEST',400,'请选择轻松、标准或挑战难度。','/difficulty');
+  if(!isAiDifficulty(d.difficulty))throw new ApiError('INVALID_REQUEST',400,'请选择轻松、标准、挑战或极致难度。','/difficulty');
   if(d.aiColor!=='B'&&d.aiColor!=='W')throw new ApiError('INVALID_REQUEST',400,'AI 执色不正确。','/aiColor');
   const req=d as unknown as AiMoveRequest;
   const events=req.game?.events;

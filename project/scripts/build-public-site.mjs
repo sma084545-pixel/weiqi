@@ -9,6 +9,8 @@ for(const value of [site,server])assert.ok(!value.username&&!value.password&&!va
 assert.equal(server.pathname,'/');assert.equal(typeof config.roomsEphemeral,'boolean');
 let analysisOrigin='';
 if(config.analysisOrigin){const analysis=new URL(config.analysisOrigin);assert.equal(analysis.protocol,'https:');assert.equal(analysis.pathname,'/');assert.ok(!analysis.username&&!analysis.password&&!analysis.search&&!analysis.hash);analysisOrigin=analysis.origin;}
+let extremeOrigin='';
+if(config.extremeAnalysisOrigin){const extreme=new URL(config.extremeAnalysisOrigin);assert.equal(extreme.protocol,'https:');assert.equal(extreme.pathname,'/');assert.ok(!extreme.username&&!extreme.password&&!extreme.search&&!extreme.hash);extremeOrigin=extreme.origin;}
 const manager=process.env.npm_execpath;if(!manager)throw Error('Run with pnpm build:pages (or corepack pnpm build:pages).');
-const result=spawnSync(process.execPath,[manager,'run','build'],{stdio:'inherit',env:{...process.env,VITE_KATAGO_API_ORIGIN:analysisOrigin,VITE_ONLINE_SERVER_URL:server.origin,VITE_ONLINE_SITE_ORIGIN:site.origin,VITE_ONLINE_EPHEMERAL_ROOMS:String(config.roomsEphemeral)}});
+const result=spawnSync(process.execPath,[manager,'run','build'],{stdio:'inherit',env:{...process.env,VITE_KATAGO_API_ORIGIN:analysisOrigin,VITE_KATAGO_EXTREME_API_ORIGIN:extremeOrigin,VITE_ONLINE_SERVER_URL:server.origin,VITE_ONLINE_SITE_ORIGIN:site.origin,VITE_ONLINE_EPHEMERAL_ROOMS:String(config.roomsEphemeral)}});
 if(result.error)throw result.error;process.exit(result.status??1);

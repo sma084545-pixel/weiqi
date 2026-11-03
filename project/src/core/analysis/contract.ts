@@ -29,7 +29,7 @@ export interface ReviewAnalysisResponse {
   engine:{name:'KataGo';version:string;model:string;backend:'Eigen CPU';maxVisits:number};
   candidates:AnalysisCandidate[];
 }
-export type AnalysisErrorCode='INVALID_REQUEST'|'GAME_NOT_FINISHED'|'GAME_NOT_PLAYING'|'NOT_AI_TURN'|'UNSUPPORTED_RULES'|'NOT_READY'|'BUSY'|'RATE_LIMITED'|'TIMEOUT'|'CANCELLED'|'ENGINE_FAILED'|'RESULT_MISMATCH'|'BODY_TOO_LARGE'|'ORIGIN_DENIED';
+export type AnalysisErrorCode='INVALID_REQUEST'|'GAME_NOT_FINISHED'|'GAME_NOT_PLAYING'|'NOT_AI_TURN'|'UNSUPPORTED_RULES'|'NOT_READY'|'BUSY'|'RATE_LIMITED'|'TIMEOUT'|'CANCELLED'|'ENGINE_FAILED'|'RESULT_MISMATCH'|'BODY_TOO_LARGE'|'ORIGIN_DENIED'|'MODEL_UNAVAILABLE';
 export interface AnalysisErrorBody {error:{code:AnalysisErrorCode;message:string;field?:string;requestId?:string};}
 export interface AnalysisHealth {service:'go-club-katago';status:'starting'|'ready'|'restarting'|'failed'|'stopping';ready:boolean;active:number;queued:number;engineVersion:string;model:string;uptimeSeconds:number;appVersion?:string;apiVersion?:2;features?:('review'|'ai-move')[];aiDifficulties?:string[];engineStartupMs?:number|null;resources?:{cgroupMemoryLimitBytes:number|null;cgroupMemoryPeakBytes:number|null;cpuQuota:number|null};}
 

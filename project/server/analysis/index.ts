@@ -2,17 +2,25 @@ import {readFileSync} from 'node:fs';
 import {resolve} from 'node:path';
 import {KataGoEngine} from './engine';
 import {createAnalysisServer} from './http';
+import {EXTREME_MODEL} from '../../src/core/analysis/ai-contract';
 
 const appRoot=process.env.APP_ROOT??process.cwd();
 const manifest=JSON.parse(readFileSync(resolve(appRoot,'analysis-engine/engine-manifest.json'),'utf8'));
+const profile=process.env.KATAGO_ENGINE_PROFILE??'standard';
+if(profile!=='standard'&&profile!=='extreme')throw Error('KATAGO_ENGINE_PROFILE must be standard or extreme');
+if(profile==='extreme'){
+  const strong=JSON.parse(readFileSync(resolve(appRoot,'analysis-engine/extreme-manifest.json'),'utf8'));
+  if(strong.model.name!==EXTREME_MODEL.name||manifest.engine.version!==EXTREME_MODEL.engineVersion)throw Error('Extreme model/engine manifest mismatch');
+  manifest.model=strong.model;
+}
 const origin=process.env.PUBLIC_ORIGIN??'https://sma084545-pixel.github.io';
 if(new URL(origin).origin!==origin||(!origin.startsWith('https://')&&!/^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/.test(origin)))throw Error('PUBLIC_ORIGIN must be one exact origin');
 const maxVisits=Number(process.env.KATAGO_MAX_VISITS??64);if(!Number.isInteger(maxVisits)||maxVisits<1||maxVisits>64)throw Error('KATAGO_MAX_VISITS must be1..64');
-const engine=new KataGoEngine({executable:process.env.KATAGO_PATH??'/opt/katago/katago',args:['analysis','-config',process.env.KATAGO_CONFIG??resolve(appRoot,'analysis-engine/analysis.cfg'),'-model',process.env.KATAGO_MODEL??'/opt/katago/model.bin.gz','-quit-without-waiting'],
-  version:manifest.engine.version,model:manifest.model.name,maxVisits,maxQueue:2,timeoutMs:90_000,startupTimeoutMs:180_000,
+const engine=new KataGoEngine({executable:process.env.KATAGO_PATH??'/opt/katago/katago',args:['analysis','-config',process.env.KATAGO_CONFIG??resolve(appRoot,profile==='extreme'?'analysis-engine/analysis-extreme.cfg':'analysis-engine/analysis.cfg'),'-model',process.env.KATAGO_MODEL??'/opt/katago/model.bin.gz','-quit-without-waiting'],
+  version:manifest.engine.version,model:manifest.model.name,maxVisits,maxQueue:profile==='extreme'?1:2,timeoutMs:90_000,startupTimeoutMs:180_000,
   log:(event,data)=>console.log(JSON.stringify({event,...data,at:new Date().toISOString()}))});
 // The downloaded local app uses these two exact origins; no wildcard GitHub/localhost access.
-const server=createAnalysisServer(engine,origin,{additionalOrigins:['http://127.0.0.1:4190','http://localhost:4190']});
+const server=createAnalysisServer(engine,origin,{additionalOrigins:['http://127.0.0.1:4190','http://localhost:4190'],...(profile==='extreme'?{ratePerMinute:2,aiRatePerMinute:4,globalPerMinute:6}:{})});
 const port=Number(process.env.PORT??4207);if(!Number.isInteger(port)||port<1||port>65535)throw Error('PORT invalid');
 server.listen(port,'0.0.0.0',()=>{console.log(JSON.stringify({event:'http_listening',port,engine:'KataGo',version:manifest.engine.version}));engine.start();});
 let stopping=false;

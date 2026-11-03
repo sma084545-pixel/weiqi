@@ -1,4 +1,4 @@
-import type {AiMoveRequest,AiMoveResponse} from '../../core/analysis/ai-contract';
+import {EXTREME_MODEL,type AiMoveRequest,type AiMoveResponse} from '../../core/analysis/ai-contract';
 import type {GameState} from '../../core/content.generated';
 import {rulesEngine} from '../../core/rules';
 import {AnalysisClientError} from '../katago-review/client';
@@ -10,6 +10,7 @@ export function validateAiMoveResponse(value:unknown,request:AiMoveRequest,game:
   const bad=():never=>{throw new AnalysisClientError('INVALID_RESPONSE','AI 返回的着法未通过本局校验，原棋局保持不变。');};
   if(!object(value)||value.schemaVersion!==1||value.positionId!==request.positionId||value.aiColor!==request.aiColor||value.difficulty!==request.difficulty||game.toPlay!==request.aiColor||game.phase!=='playing'||
     typeof value.requestId!=='string'||!value.requestId||value.requestId.length>200||!integer(value.visits)||!finite(value.elapsedMs)||value.elapsedMs<0||!object(value.engine)||value.engine.name!=='KataGo'||value.engine.backend!=='Eigen CPU'||typeof value.engine.version!=='string'||typeof value.engine.model!=='string'||!integer(value.engine.maxVisits)||!object(value.move))return bad();
+  if(request.difficulty==='extreme'&&(value.engine.model!==EXTREME_MODEL.name||value.engine.version!==EXTREME_MODEL.engineVersion))return bad();
   const move=value.move;
   if(move.type==='place'){
     if(!object(move.at)||!integer(move.at.row)||!integer(move.at.col)||Number(move.at.row)>=game.size||Number(move.at.col)>=game.size)return bad();
@@ -20,6 +21,7 @@ export function validateAiMoveResponse(value:unknown,request:AiMoveRequest,game:
 }
 
 const messages:Record<string,string>={
+  MODEL_UNAVAILABLE:'当前服务未提供所选模型。棋局保持不变，不会自动降级为其他难度。',
   NOT_READY:'AI 服务仍在启动或恢复。棋局已保留，请稍后手动重试。',BUSY:'AI 服务正在忙。棋局保持不变，可稍后重试。',RATE_LIMITED:'当前请求较多，请约一分钟后再试。',
   TIMEOUT:'AI 本次思考超时，原棋局已保留。可以重试或暂停后导出。',ENGINE_FAILED:'AI 暂时未能落子。请重试；不会自动改用随机着法。',
   GAME_NOT_PLAYING:'本局已进入确认或结束阶段，AI 已停止落子。',NOT_AI_TURN:'轮次已改变，AI 着法没有应用。',RESULT_MISMATCH:'AI 结果已经过期，未改动棋局。',

@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "KATAGO-EXTREME-MODEL",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "checkedAt": "2026-11-03",
+  "selection": "Official strongest confidently-rated network at time of inspection; latest upload deliberately not assumed strongest.",
+  "networkListing": "https://katagotraining.org/networks/",
+  "model": {
+    "name": "kata1-tf3-b11c768-s11003M-d5973M-7gres",
+    "filename": "kata1-tf3-b11c768-s11003M-d5973M-7gres.bin.gz",
+    "url": "https://media.katagotraining.org/uploaded/networks/models/kata1/kata1-tf3-b11c768-s11003M-d5973M-7gres.bin.gz",
+    "sha256": "93bdb63a3bfae4a70db0cb5265287495ecfc10b1ba1cc6814feeba1cdf055871",
+    "downloadBytes": 262039869,
+    "architecture": "Transformer tf3, 11 nested bottleneck blocks, 768 channels, 70,442,025 parameters",
+    "modelVersion": 17,
+    "license": "CC0-1.0",
+    "licenseUrl": "https://katagotraining.org/network_license/"
+  },
+  "engineVersion": "1.18.1",
+  "backend": "EIGEN CPU",
+  "search": {
+    "maxVisits": 64,
+    "maxTimeSeconds": 30,
+    "active": 1,
+    "queued": 1,
+    "totalDeadlineMs": 90000
+  },
+  "notes": [
+    "Ranking is network-vs-network at rating-site search budgets, not a certified human rank or a guarantee of strongest play at our CPU budget.",
+    "No weights in Git; build downloads pinned official file and verifies SHA256.",
+    "Requires explicit budget approval before deploying paid resources."
+  ]
+}

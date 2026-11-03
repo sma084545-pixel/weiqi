@@ -51,7 +51,7 @@ describe('AI full-game model uses the shared rule/history implementation',()=>{
     let m=unwrap(humanMove(start(),DEFAULT_AI_OPTIONS,null));m=unwrap(applyAiMove(m,DEFAULT_AI_OPTIONS,move(null)));m=unwrap(confirmScoreFor(unwrap(confirmScoreFor(m,'B')),'W'));
     expect(m.game!.result).toMatchObject({reason:'area',score:{winner:'draw',blackTotal:0,whiteTotal:0}});expect(unwrap(travelAiHistory(m,DEFAULT_AI_OPTIONS,'undo')).game!.phase).toBe('scoring');
   });
-  it('three documented budgets are distinct and capped',()=>{expect(Object.values(AI_DIFFICULTIES).map(p=>p.visits)).toEqual([8,24,64]);});
+  it('original three budgets stay unchanged; extreme adds a model rather than an unbounded budget',()=>{expect(Object.keys(AI_DIFFICULTIES)).toEqual(['relaxed','standard','challenge','extreme']);expect(Object.values(AI_DIFFICULTIES).map(p=>p.visits)).toEqual([8,24,64,64]);});
 });
 
 describe('independent AI session persistence and safe import',()=>{

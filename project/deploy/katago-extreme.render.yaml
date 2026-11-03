@@ -1,0 +1,20 @@
+# DO NOT apply until the owner explicitly approves the paid service.
+# Only this new strong-model service; existing weiqi-rooms and weiqi-katago unchanged.
+# Checked 2026-11-03: 1c-2g / legacy Standard, 1CPU,2GB, US$25/month compute.
+services:
+  - type: web
+    name: weiqi-katago-extreme
+    runtime: docker
+    plan: 1c-2g
+    region: singapore
+    numInstances: 1
+    rootDir: project
+    dockerfilePath: analysis-engine/Dockerfile.extreme
+    dockerContext: .
+    healthCheckPath: /readyz
+    autoDeployTrigger: off
+    envVars:
+      - key: PUBLIC_ORIGIN
+        value: https://sma084545-pixel.github.io
+      - key: KATAGO_MAX_VISITS
+        value: "64"
