@@ -1,5 +1,5 @@
 async page=>{
- const browser=page.context().browser(),base=page.url().split('#')[0].replace(/\/$/,''),model='kata1-tf3-b10c512-s3203M-d5937M',checks=[],errors=[];
+ const browser=page.context().browser(),base=page.url().split('#')[0].replace(/\/$/,''),model='kata1-tf2-b10c384-s2941M-d5872M',checks=[],errors=[];
  const c=await browser.newContext({viewport:{width:360,height:900},hasTouch:true,reducedMotion:'reduce'}),p=await c.newPage();p.setDefaultTimeout(100_000);p.on('pageerror',e=>errors.push(e.message));p.on('console',m=>{if(m.type()==='error')errors.push(m.text());});const replies=[];
  p.on('response',async r=>{if(r.request().method()==='POST'&&r.url().endsWith('/api/ai-move'))replies.push({status:r.status(),body:await r.json().catch(()=>null)});});
  const assert=(v,s)=>{if(!v)throw Error(s);},attr=(key,value)=>p.waitForFunction(([k,v])=>document.querySelector('[data-testid="ai-game"]')?.getAttribute(k)===v,[key,String(value)],{timeout:100_000});

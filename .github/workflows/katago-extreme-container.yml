@@ -41,6 +41,9 @@ jobs:
           mkdir -p evidence
           docker logs extreme-free > evidence/container-stdout.log 2> evidence/container-stderr.log || true
           docker inspect extreme-free --format '{{json .HostConfig}}' > evidence/resource-limits.json || true
+          docker exec extreme-free cat /sys/fs/cgroup/memory.peak > evidence/memory-peak-final-bytes.txt || true
+          docker exec extreme-free cat /sys/fs/cgroup/memory.events > evidence/memory-events-final.txt || true
+          docker inspect --format '{{json .State}}' extreme-free > evidence/container-final-state.json || true
           docker rm -f extreme-free || true
       - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
         if: always()

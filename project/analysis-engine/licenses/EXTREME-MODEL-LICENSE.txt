@@ -1,6 +1,6 @@
 KataGo Neural Network License
 Source: https://katagotraining.org/network_license/ (checked 2026-11-03)
-Applies to kata1-tf3-b10c512-s3203M-d5937M.bin.gz.
+Applies to kata1-tf2-b10c384-s2941M-d5872M.bin.gz.
 
 Copyright 2026 David J Wu ("lightvector").
 

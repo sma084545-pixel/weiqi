@@ -2,7 +2,7 @@
 import assert from 'node:assert/strict';
 import {writeFile,mkdir} from 'node:fs/promises';
 import {rulesEngine as rules} from '../dist-engine/go-club-rules.mjs';
-const model='kata1-tf3-b10c512-s3203M-d5937M';
+const model='kata1-tf2-b10c384-s2941M-d5872M';
 const base=process.env.KATAGO_TEST_ORIGIN??'http://127.0.0.1:4211',origin=process.env.KATAGO_TEST_PAGE_ORIGIN??'https://sma084545-pixel.github.io';
 const output=process.env.EXTREME_TEST_REPORT??'docs/extreme-ai/checks/real-http.json';const checks=[],started=Date.now();let health;
 for(let i=0;i<180;i++){try{const r=await fetch(base+'/readyz');health=await r.json();if(r.ok&&health.ready)break;}catch{}await new Promise(r=>setTimeout(r,1000));}
