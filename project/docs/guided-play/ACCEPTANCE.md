@@ -1,17 +1,17 @@
-# 辅助下棋验收 · 0.26.1（公开发布验证前）
+# 辅助下棋验收 · 0.26.2（公开发布验证前）
 
 基线0.25.2-pages.1；GO-CLUB-AREA-1；schemaVersion1。以下均为实际开发检查，不是教师审核或真实课堂效果。正式公开网站验证完成后更新本页。
 
 |项目|状态|证据|
 |---|---|---|
-|分级提示、局部事实、状态与保存|通过|新增51项测试，`checks/guided-unit.log`；独立预期`tests/guided-play/fixtures/observations.json`|
-|现有完整检查、构建与内容校验|通过|592项单元测试，37进阶场景、851正式内容检查及引擎容量检查；`checks/full-check.log`|
+|分级提示、局部事实、状态与保存|通过|新增53项测试，`checks/guided-unit.log`；独立预期`tests/guided-play/fixtures/observations.json`|
+|现有完整检查、构建与内容校验|通过|594项单元测试，37进阶场景、851正式内容检查及引擎容量检查；`checks/full-check.log`|
 |现有浏览器回归|通过|176项主流程与22项联机/悬浮流程；`checks/browser-regression.log`|
 |首次入口→提示→对弈→确认→报告→重试→返回原局|通过|真实Chrome156，`checks/browser-local.json`|
 |360/768/1280、触屏模拟、键盘、减少动画|通过|`checks/browser-local.json`及截图；360px默认9路棋盘scrollWidth=clientWidth=252，13路局部滚动|
 |断网刷新、提示、本地对手及再次保存恢复|通过|真实`BrowserContext.setOffline(true)`；`checks/browser-local.json`，不是仅检查缓存源码|
 |局部教学原生性能|通过|9/13路各60手；`checks/local-capacity.json`，限本机CPU，不保证低端设备时延|
-|规则、Board、正式内容、材料与依赖保持|通过|1,744个受保护文件逐字节比较；`checks/preservation.json`|
+|规则、Board、正式内容、材料与依赖保持|通过|1,743个受保护文件逐字节比较；`checks/preservation.json`|
 |既有Render真实KataGo对手|通过|本机4190→真实服务，KataGo1.18.1/b6，24访问，实际引擎耗时2429ms；`checks/real-katago-local.json`|
 |原网站正式发布|待线上验证|最终更新此行，不以本地构建代替|
 |实体手机、Safari/Firefox、屏幕阅读器、长期负载|未测|没有把Chrome触屏模拟称作实机验证|
@@ -26,3 +26,5 @@
 已知边界见`KNOWN_ISSUES.md`。没有通用死活、棋力等级、全盘最佳着或教学成效的证明。
 
 远程验证初次用了4216预览端口，浏览器跨域失败。后续实测原服务仅允许4190和正式Origin，4216预检403，二者预检204；改在已授权的4190验证后真实落子通过。没有扩大CORS或改动服务。失败记录与`checks/existing-cors-boundary.json`保留。
+
+最终本地启动版断网复验发现既有HTTP静态文件表缺少`.md`与`.webmanifest`，导致缓存清单中的`ONLINE_SETUP.md`返回404。仅补充安全MIME类型（Markdown按纯文本），保留路径与隐藏文件拒绝；新增2个实际HTTP测试。重启本地0.26.2后，完整断网与KataGo对手均通过，检查报告明确带当前程序版本，拒绝沿用旧版本通过记录。报告缩略图另核对完整边线与坐标，无横向裁切。

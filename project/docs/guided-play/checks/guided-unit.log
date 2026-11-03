@@ -3,8 +3,8 @@ $ vitest run tests/guided-play
  RUN  v5.0.0 /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/guided-play-20261103/mainline/go-club
 
 
- Test Files  3 passed (3)
-      Tests  51 passed (51)
-   Start at  21:21:10
-   Duration  1.01s (tests 34%, transform 23%, import 23%, environment 19%)
+ Test Files  4 passed (4)
+      Tests  53 passed (53)
+   Start at  21:29:25
+   Duration  1.02s (tests 29%, import 28%, transform 25%, environment 17%)
 

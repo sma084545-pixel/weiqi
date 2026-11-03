@@ -6,8 +6,8 @@ transforming...
 rendering chunks...
 computing gzip size...
 dist/index.html                     0.64 kB │ gzip:   0.45 kB
-dist/assets/index-CkbpAvyd.css    158.02 kB │ gzip:  31.35 kB
-dist/assets/index-xHyAvyNA.js   1,254.87 kB │ gzip: 333.86 kB
+dist/assets/index-BvUHmAIf.css    158.02 kB │ gzip:  31.34 kB
+dist/assets/index-BhWDKFP4.js   1,254.87 kB │ gzip: 333.86 kB
 
 ✓ built in 116ms
 [plugin builtin:vite-reporter] 
@@ -15,12 +15,12 @@ dist/assets/index-xHyAvyNA.js   1,254.87 kB │ gzip: 333.86 kB
 - Using dynamic import() to code-split the application
 - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
 - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
-Offline bundle 0.26.1: 11 required resources.
+Offline bundle 0.26.2: 11 required resources.
 vite v8.2.2 building ssr environment for production...
 transforming...
 ✓ 105 modules transformed.
 rendering chunks...
 computing gzip size...
-dist-server/server.mjs  458.29 kB │ gzip: 100.83 kB
+dist-server/server.mjs  458.39 kB │ gzip: 100.85 kB
 
-✓ built in 27ms
+✓ built in 33ms

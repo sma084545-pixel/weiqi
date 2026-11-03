@@ -15,6 +15,11 @@ for field,expected in [('onlineServerOrigin',hosting['serverOrigin']),('katagoAn
 assert configured and public_version.get('onlineSiteOrigin')==hosting['siteUrl'].split('/weiqi/')[0]
 assert public_version.get('katagoAnalysisConfigured')==bool(hosting.get('analysisOrigin'))
 assert public_version.get('katagoExtremeConfigured')==bool(hosting.get('extremeAnalysisOrigin'))
+if (R/'src/features/guided-play/GuidedPlay.tsx').exists():
+ guided_check=json.loads((R/'docs/guided-play/checks/browser-local.json').read_text())
+ assert guided_check.get('status')=='passed' and guided_check.get('programVersion')==version,'Current Guided Play browser journey must pass before publication; stale or failed evidence is rejected.'
+ assert '53 passed (53)' in (R/'docs/guided-play/checks/guided-unit.log').read_text()
+
 previous=json.loads((repo/'PUBLICATION.json').read_text()) if (repo/'PUBLICATION.json').exists() else {};revision=previous.get('revision',0)+1
 site=[]
 for path in sorted((R/'dist').rglob('*')):

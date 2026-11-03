@@ -5,7 +5,7 @@ revision: 33
 rulesetId: GO-CLUB-AREA-1
 ---
 
-# 围棋社工具包 · 0.26.1
+# 围棋社工具包 · 0.26.2
 
 新增独立“辅助下棋 / Guided Play”模式：学习路线课程6之后或首页快捷入口，9/13路、分级提示、规则型局部反馈、可离线教学机器人及可选真实KataGo对手、悔棋/回看、本机续玩、教学报告和保留原局的重试。原12课、37场景、30正式题、6终局、四档AI及所有真人对弈继续保留。使用见[辅助下棋说明](docs/guided-play/USER_GUIDE.md)，架构/边界见[实现说明](docs/guided-play/IMPLEMENTATION.md)，本轮状态以[交接](handoff/GUIDED_PLAY.md)与[验收](docs/guided-play/ACCEPTANCE.md)为准。
 

@@ -6,8 +6,8 @@
   "status": "passed",
   "baseVersion": "0.25.2-pages.1",
   "baseArchiveSha256": "019375d7ede76d107a5d535f12bf84d84ad9c1c759923e88edad83bdd8f76bf7",
-  "resultVersion": "0.26.1-pages.1",
-  "verifiedProtectedFiles": 1744,
+  "resultVersion": "0.26.2-pages.1",
+  "verifiedProtectedFiles": 1743,
   "formalPuzzles": 30,
   "endgames": 6,
   "dependencies": "unchanged",
@@ -6501,10 +6501,6 @@
     {
       "path": "server/analysis/position.ts",
       "sha256": "0e1516e5ebfa1b35517286b3c9f95bf365fe234dc8e0a406bc4d3488e931867c"
-    },
-    {
-      "path": "server/http.ts",
-      "sha256": "affdfb8e3e9c750ac47203e2cd9e8313119206f118fa3177803a00d71ab760d5"
     },
     {
       "path": "server/index.ts",

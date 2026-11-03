@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "id": "GITHUB-PAGES-PUBLICATION",
-  "revision": 38,
+  "revision": 39,
   "rulesetId": "GO-CLUB-AREA-1",
-  "resultVersion": "0.26.1-pages.1",
-  "programVersion": "0.26.1",
+  "resultVersion": "0.26.2-pages.1",
+  "programVersion": "0.26.2",
   "siteUrl": "https://sma084545-pixel.github.io/weiqi/",
   "sourceDirectory": "project/",
   "formalPuzzles": 30,
@@ -43,14 +43,14 @@
       "sha256": "26ae2d10fc5b45982ae4f4f593aaa93b781d4ff63a8bfe2166bc392d01cc9b50"
     },
     {
-      "path": "assets/index-CkbpAvyd.css",
-      "bytes": 158022,
-      "sha256": "6669742a14ed53c0c2e6c8da8689ab0414c435cd97e78825572473218d0a87ea"
+      "path": "assets/index-BhWDKFP4.js",
+      "bytes": 1254877,
+      "sha256": "6531c64c61aad3ff57fb5ae969c0e17da51966c9fc45a18c3f987094510927e4"
     },
     {
-      "path": "assets/index-xHyAvyNA.js",
-      "bytes": 1254877,
-      "sha256": "450e4e07c6244d6d4efe226f5fe1785130002d37c37dc89cc07ca938e4d4e660"
+      "path": "assets/index-BvUHmAIf.css",
+      "bytes": 158022,
+      "sha256": "37c20d3b9ac168ddd6a0bf22af78a0587271c33d3e5f2894b0cc352720cdfad5"
     },
     {
       "path": "content/formal-content-v1.json",
@@ -65,7 +65,7 @@
     {
       "path": "index.html",
       "bytes": 640,
-      "sha256": "465d691643a135093db0d40393ac225bcb57a8850ebc895f6f67e6171b76aab3"
+      "sha256": "60b381786e89047bbe3b7d78120caefcb4d4150b3be1c6d73eeccba33cf8d389"
     },
     {
       "path": "materials/t13/territory-counting-card.md",
@@ -80,7 +80,7 @@
     {
       "path": "offline-assets.json",
       "bytes": 411,
-      "sha256": "bb827415ce8a3f41a62d5698b19e5b2e21663de8fad1024b120caaa9680f7028"
+      "sha256": "54692e5b8dcbb1c6f3e82c5c73a78a1b791ea12fcd392d53fb53c05a2ae6159e"
     },
     {
       "path": "offline.html",
@@ -90,13 +90,13 @@
     {
       "path": "sw.js",
       "bytes": 3694,
-      "sha256": "23b54363687e48e01940080466f4f4d59e28b487f98d4f3d6f6445440d9cd051"
+      "sha256": "04d0590f76b43a402ab0c30a93baec881d487f7680c51cc7f1e3a5e8e846240e"
     },
     {
       "path": "version.json",
       "bytes": 569,
-      "sha256": "6ce63cf60766f73c5d7cbb07fde71217d447bb2aedfe9d2f622db129b0d02aab"
+      "sha256": "f5280c5441f7c1ef11bdcd0869f3e230b9e1ebb148c7e5c472c60e5d3e6983e0"
     }
   ],
-  "sourceManifestSha256": "f942a86e8c03e471ab049d9ca58f02caf63804a505c3e5e974a3157e032ddd31"
+  "sourceManifestSha256": "773039ac4408ad4439906884317050391ac8d012cdf013e539776a8d0ac459a5"
 }

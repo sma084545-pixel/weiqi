@@ -4,9 +4,10 @@
   "revision": 1,
   "rulesetId": "GO-CLUB-AREA-1",
   "status": "passed",
-  "base": "http://127.0.0.1:4216",
+  "programVersion": "0.26.2",
+  "base": "http://127.0.0.1:4190",
   "browser": "156.0.8078.80",
-  "at": "2026-11-03T13:06:50.693Z",
+  "at": "2026-11-03T13:30:43.281Z",
   "checks": [
     {
       "name": "desktop-full-new-user-journey",

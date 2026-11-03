@@ -5,19 +5,19 @@
     {
       "originalPath": "docs/t24/checks/journey/chromium/full-game.png",
       "currentEvidencePath": "docs/guided-play/checks/legacy-regression/checks/journey/chromium/full-game.png",
-      "currentSha256": "ab69b430c77cd3f5d69991069459fa519548bac5fcb73b2ab4d6fc377f0d76f8",
+      "currentSha256": "36dc3e4a733855d352b1c4503b8d9def5b0e12cdabcd408f1a299cee0b2525c7",
       "restoredBaselineSha256": "701d08f806eba486f24020d92e7b4c92599cc16ba6cd4a8a08425b0b59373b03"
     },
     {
       "originalPath": "docs/t24/checks/journey/chromium/offline-editor.png",
       "currentEvidencePath": "docs/guided-play/checks/legacy-regression/checks/journey/chromium/offline-editor.png",
-      "currentSha256": "32ac957d2884bf0bba642dee67392d05788200b86a3536eff85c080fe0278ca1",
+      "currentSha256": "f4d690fa3cdc1f24c8e0b176a1fcc074684f4b39b2fcdaeb39c59e67fb32343c",
       "restoredBaselineSha256": "26e69965a5a30fa09345b229ebb2fc3ae6cf7a03a7aabcb07ab77a2ee3477a85"
     },
     {
       "originalPath": "docs/online-tools/checks/browser/1280-maximized.png",
       "currentEvidencePath": "docs/guided-play/checks/legacy-regression/online-tools/checks/browser/1280-maximized.png",
-      "currentSha256": "a737977d33d6ef732dbc7149889db85c833a8705e55cd8d231520fb39557b39f",
+      "currentSha256": "d2428e8c5e1a59d9a39605ef2d96ab3b7f00bf476c99e12369b8fa861ebf3d87",
       "restoredBaselineSha256": "b9532b8c99b8de6224157bbd6cb404ec2c6d395026b992d2aa5199b53b2dc404"
     },
     {
@@ -35,7 +35,7 @@
     {
       "originalPath": "docs/online-tools/checks/browser/chat.png",
       "currentEvidencePath": "docs/guided-play/checks/legacy-regression/online-tools/checks/browser/chat.png",
-      "currentSha256": "12db72cf18b041344c2e1453dd89c88a121f4c4b1167fd6a53e2489ec1527c25",
+      "currentSha256": "6f8c5c071e9243eb76b0fcb78a512e4827155ece373f15d44211e873061eacf8",
       "restoredBaselineSha256": "6a0e9a3a97d246d2fa5bb58bdb6e8bbe955c1b47f13c7c514ccd9c186130fb38"
     }
   ]

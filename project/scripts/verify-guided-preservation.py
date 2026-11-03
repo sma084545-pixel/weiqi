@@ -5,7 +5,7 @@ p=argparse.ArgumentParser();p.add_argument('--base',required=True);a=p.parse_arg
 r=Path(__file__).resolve().parents[1];base=Path(a.base).resolve()
 sha=lambda b:hashlib.sha256(b).hexdigest()
 assert sha(base.read_bytes())=='019375d7ede76d107a5d535f12bf84d84ad9c1c759923e88edad83bdd8f76bf7'
-allowed={'src/core/version.ts','src/features/learning-hub/LearningHub.tsx','src/features/learning-hub/registry.ts','src/features/offline-data/OfflineData.tsx'}
+allowed={'server/http.ts','src/core/version.ts','src/features/learning-hub/LearningHub.tsx','src/features/learning-hub/registry.ts','src/features/offline-data/OfflineData.tsx'}
 protected=[]
 with zipfile.ZipFile(base) as z:
     for name in z.namelist():

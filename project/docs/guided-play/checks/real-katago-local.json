@@ -4,14 +4,15 @@
   "revision": 1,
   "rulesetId": "GO-CLUB-AREA-1",
   "status": "passed",
+  "programVersion": "0.26.2",
   "base": "http://127.0.0.1:4190",
   "browser": "156.0.8078.80",
-  "at": "2026-11-03T13:13:57.644Z",
+  "at": "2026-11-03T13:30:49.725Z",
   "service": "https://weiqi-katago.onrender.com/api/ai-move",
   "response": {
     "schemaVersion": 1,
-    "positionId": "ai-6c917457-f768-4a82-93e6-8e07e6528e08",
-    "requestId": "578b2dcb-135e-40ca-8671-1da2a3413bfc",
+    "positionId": "ai-5ed9eea2-11d0-4513-872f-5d65d673f6fd",
+    "requestId": "1b7136a6-e503-4d00-ac4a-a62935ce4c03",
     "aiColor": "W",
     "difficulty": "standard",
     "move": {
@@ -29,7 +30,7 @@
       "maxVisits": 24
     },
     "visits": 24,
-    "elapsedMs": 2429
+    "elapsedMs": 167
   },
   "requests": [
     {

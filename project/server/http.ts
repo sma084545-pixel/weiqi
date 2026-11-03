@@ -8,7 +8,7 @@ import {RoomHub,type RoomRepository} from './rooms';
 
 export async function createOnlineServer(options:{distDir:string;repository:RoomRepository;publicOrigin?:string;maxRooms?:number;idleMs?:number;shareUrl?:string}){
   const hub=new RoomHub(options.repository,options.maxRooms,options.idleMs,options.shareUrl);await hub.load();
-  const dist=resolve(options.distDir),types:Record<string,string>={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.mjs':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.svg':'image/svg+xml','.png':'image/png','.ico':'image/x-icon','.woff2':'font/woff2','.txt':'text/plain; charset=utf-8'};
+  const dist=resolve(options.distDir),types:Record<string,string>={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.mjs':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.svg':'image/svg+xml','.png':'image/png','.ico':'image/x-icon','.woff2':'font/woff2','.txt':'text/plain; charset=utf-8','.md':'text/plain; charset=utf-8','.webmanifest':'application/manifest+json; charset=utf-8'};
   const server:Server=createServer(async(request,response)=>{
     response.setHeader('X-Content-Type-Options','nosniff');response.setHeader('Referrer-Policy','same-origin');
     if(request.method!=='GET'&&request.method!=='HEAD'){response.writeHead(405);response.end();return;}

@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "id": "GITHUB-CURRENT-SOURCE",
-  "revision": 38,
+  "revision": 39,
   "rulesetId": "GO-CLUB-AREA-1",
-  "resultVersion": "0.26.1-pages.1",
-  "programVersion": "0.26.1",
+  "resultVersion": "0.26.2-pages.1",
+  "programVersion": "0.26.2",
   "sourceBuild": "pnpm install --frozen-lockfile && pnpm build",
   "note": "Buildable source and materials; installed dependencies, private data and generated root build/output excluded. Full release archive includes production builds and all evidence.",
   "files": [
@@ -26,7 +26,7 @@
     {
       "path": "CHANGELOG.md",
       "bytes": 30413,
-      "sha256": "45891ec8564b910e22db0edd11e5a505c94960cb4bce8201a83ccba549712270"
+      "sha256": "9d3895b9bc7c31871546bf33c2fb40a246ec39d704ecd36d5bdcfa55af426acf"
     },
     {
       "path": "MERGE_C_RELEASE_MANIFEST.json",
@@ -36,7 +36,7 @@
     {
       "path": "README.md",
       "bytes": 11161,
-      "sha256": "315bc5204dc1bc4a0f1d56ccabc5dbb13d0a1250fdb745481eb35f95e920e056"
+      "sha256": "fafcf5b532bbeebd05adcfc00030c8714b00df3556aa9411d90d62ea2dc6e733"
     },
     {
       "path": "README_MERGE_C.md",
@@ -56,7 +56,7 @@
     {
       "path": "package.json",
       "bytes": 4369,
-      "sha256": "7cc9b0a6bf2a3a32ba22936b06a76c5cd410a8731b7712149afb3b5c83ff72be"
+      "sha256": "8d352e58590c0ff26f8f88b5d1a511e56ea10f23d79395ba179c2c5d3c0834e0"
     },
     {
       "path": "playwright.advanced-regression.config.ts",
@@ -3935,8 +3935,8 @@
     },
     {
       "path": "handoff/GUIDED_PLAY.md",
-      "bytes": 2840,
-      "sha256": "f799be9fb881cb07ce428b98f344f2cd0aa68a2c883203b53ba45bd58a1b3084"
+      "bytes": 3188,
+      "sha256": "8e874e945af64ad1781b6fd3cff1ffe6d49a6b942e2237d79c3ff2802a7dd6e6"
     },
     {
       "path": "handoff/HISTORY_SLIDER.md",
@@ -4612,6 +4612,11 @@
       "path": "tests/guided-play/model.test.ts",
       "bytes": 9702,
       "sha256": "229ffadc9022de394bc7b2f77442d9d1ce6c2cceb7b315b9dce49141f268876e"
+    },
+    {
+      "path": "tests/guided-play/static-offline.test.ts",
+      "bytes": 1162,
+      "sha256": "80c08fb93151a3a18a6a12303c76135a971587e5d721bf7d4a736cbbb1e7a7e8"
     },
     {
       "path": "tests/guided-play/fixtures/observations.json",
@@ -5795,8 +5800,8 @@
     },
     {
       "path": "server/http.ts",
-      "bytes": 4323,
-      "sha256": "affdfb8e3e9c750ac47203e2cd9e8313119206f118fa3177803a00d71ab760d5"
+      "bytes": 4415,
+      "sha256": "f155c856775b1759673855311f4cc66d7d24143c97d971b816b6ee478eb70148"
     },
     {
       "path": "server/index.ts",
@@ -15160,13 +15165,13 @@
     },
     {
       "path": "docs/guided-play/ACCEPTANCE.md",
-      "bytes": 3399,
-      "sha256": "4505d727e7f5c61c2a15d31c78098296d881afa34e61e988dac17f5b7dbaed75"
+      "bytes": 3875,
+      "sha256": "e486247b5a6b2e42db1dca769eb0d2d4ef8f098aa365d4b4150d47905b1e8660"
     },
     {
       "path": "docs/guided-play/IMPLEMENTATION.md",
-      "bytes": 6405,
-      "sha256": "accc96199796d49cea8f6bb29460fd99d48c9ee18abdb756cf0bb535cd804026"
+      "bytes": 6682,
+      "sha256": "118649e2876646b1f07d87de4bd58ba74a8109579ff4909c88d51f1d933b305c"
     },
     {
       "path": "docs/guided-play/KNOWN_ISSUES.md",
@@ -15180,8 +15185,8 @@
     },
     {
       "path": "docs/guided-play/screenshots/guided-360-13-touch.png",
-      "bytes": 232170,
-      "sha256": "e8ddac1b0cc4edfc8abaa7553e064d7af6270b0206cf223745529f829077f453"
+      "bytes": 237236,
+      "sha256": "e9644e02a8750215f1167f63a47feaf8d1b4defb62e2f23b39518474577bd1b1"
     },
     {
       "path": "docs/guided-play/screenshots/guided-360-9-touch.png",
@@ -15200,18 +15205,18 @@
     },
     {
       "path": "docs/guided-play/screenshots/guided-desktop-candidates.png",
-      "bytes": 335812,
-      "sha256": "5afa3333956c9fe6108163b0e8b32956e479ba4a50fa954f083c4a828d8acd82"
+      "bytes": 335797,
+      "sha256": "fc361c0e9bf4446aa4c6ee56b81a0105b3fbecf5d7328a5b3db93a2eb6930cf9"
     },
     {
       "path": "docs/guided-play/screenshots/guided-desktop-report.png",
-      "bytes": 444958,
-      "sha256": "3548697094c0fa24dffd284a1f8a487a7f15db6adb7b698d851918586c3e682c"
+      "bytes": 445114,
+      "sha256": "fd79d0c461b7a0c5f93328f393dce5d2c15fbfd191336d2224cef1c07b598ed2"
     },
     {
       "path": "docs/guided-play/screenshots/guided-real-katago.png",
-      "bytes": 382795,
-      "sha256": "f99477f64227049a18aa37466e8233b3526c88bf41bdc3b866e9eb355c97d7c2"
+      "bytes": 382770,
+      "sha256": "6a0fad69a999c5e2c7d0e262bee849cf47dccf914f8a5569185b222e2ff9ea9d"
     },
     {
       "path": "docs/guided-play/checks/analysis-build.log",
@@ -15230,18 +15235,18 @@
     },
     {
       "path": "docs/guided-play/checks/browser-local.json",
-      "bytes": 2150,
-      "sha256": "b72b2d2e477ccd186d2f8c42d94f380c83e6c5aa66dd1507eed8da321d8bc1bd"
+      "bytes": 2180,
+      "sha256": "a335e1725752c0eacbf2863436bb5cf12d254bfe8d249c8574c9c8c77de6f856"
     },
     {
       "path": "docs/guided-play/checks/browser-local.log",
-      "bytes": 41,
-      "sha256": "ee13f48c89729a92e564e50c4ce31b0ba5a02c87baffc9008a6da52c456578a6"
+      "bytes": 11397,
+      "sha256": "903ea7d4105c4dcd21e28792a7470df150a361fdfa8f3c2a48739ca1d7fa5331"
     },
     {
       "path": "docs/guided-play/checks/browser-regression.log",
       "bytes": 25921,
-      "sha256": "8ca3c25766e6314742bbd09fc07862c9c88c87ad2c5e4bb4a4c3c37f31964920"
+      "sha256": "e385202352c62aac772b920c19bccb6bb19e487e1143606ffe286bb1aa1b6880"
     },
     {
       "path": "docs/guided-play/checks/cache-upgrade-before.json",
@@ -15261,12 +15266,12 @@
     {
       "path": "docs/guided-play/checks/full-check.log",
       "bytes": 7074,
-      "sha256": "6dd8434ffcf9125fb669148151476c575b9047b0082852f13d4430393c5ad7a2"
+      "sha256": "fb25d152ada665b7c78ab5b8b86be2e05d528e4c88d723d7d28b7d4f9296e202"
     },
     {
       "path": "docs/guided-play/checks/guided-unit.log",
       "bytes": 318,
-      "sha256": "dc19137c275caa721f7ee6031e0c46814ad2ff699077e1041480d77878457a52"
+      "sha256": "2df5bc4329f18cb53581e141432494d6b3bdd22239f592f1c010cd6e2c908483"
     },
     {
       "path": "docs/guided-play/checks/initial-browser-selector.log",
@@ -15304,9 +15309,14 @@
       "sha256": "49eb0676617ff17f599cbb98e2296999607dc228af1e88feb8d74542e1f58fcb"
     },
     {
+      "path": "docs/guided-play/checks/initial-snapshot-fit-geometry.log",
+      "bytes": 41,
+      "sha256": "ee13f48c89729a92e564e50c4ce31b0ba5a02c87baffc9008a6da52c456578a6"
+    },
+    {
       "path": "docs/guided-play/checks/legacy-evidence-isolation.json",
       "bytes": 2666,
-      "sha256": "8749e7692e2d48f0fd02b754cd04a554cd60713b2f6389a93ae9576fb719505e"
+      "sha256": "b66c612869bed6f3edce12e899fa69d7e2fc63ca1f7ecf4b84e23814d6087cda"
     },
     {
       "path": "docs/guided-play/checks/local-capacity.json",
@@ -15316,27 +15326,27 @@
     {
       "path": "docs/guided-play/checks/pages-build.log",
       "bytes": 1128,
-      "sha256": "33a83f413b46024f10b987897071bb913eefc4bafbd310d12ede046ccfaaa488"
+      "sha256": "2ca935196bf724700622f87d86cbbfafdd6979f546aed3f21e0bab1d42605211"
     },
     {
       "path": "docs/guided-play/checks/preservation.json",
-      "bytes": 287628,
-      "sha256": "0eccd682399968bc10f580196dcc85858b9e3a4c681216902182bf8c7ca849de"
+      "bytes": 287500,
+      "sha256": "13fc4422b1b19c7becba1c2344c98d926c8ef5710f57059a1e72c25cd99f10db"
     },
     {
       "path": "docs/guided-play/checks/real-katago-local.json",
-      "bytes": 1811,
-      "sha256": "95dfa820c5d0b1ca1d2d755ec2b4aa1fe5ad0778569199c1b48ba939797a66b1"
+      "bytes": 1840,
+      "sha256": "bdbde044310e7fcd56ca333f371e81a7767032f131fe929d8be622fafdc2af07"
     },
     {
       "path": "docs/guided-play/checks/real-katago-local.log",
-      "bytes": 5581,
-      "sha256": "b51219e3e754e6f6f85db7dc140d8006c5cf289dd869f4b5b27a47614ed409f2"
+      "bytes": 5413,
+      "sha256": "c0308ddfc09d621fc8a923a62112545ba016fc418ddacae94301e840ff65ec37"
     },
     {
       "path": "docs/guided-play/checks/legacy-regression/online-tools/checks/browser/1280-maximized.png",
-      "bytes": 73814,
-      "sha256": "a737977d33d6ef732dbc7149889db85c833a8705e55cd8d231520fb39557b39f"
+      "bytes": 73795,
+      "sha256": "d2428e8c5e1a59d9a39605ef2d96ab3b7f00bf476c99e12369b8fa861ebf3d87"
     },
     {
       "path": "docs/guided-play/checks/legacy-regression/online-tools/checks/browser/360-floating-19.png",
@@ -15350,18 +15360,18 @@
     },
     {
       "path": "docs/guided-play/checks/legacy-regression/online-tools/checks/browser/chat.png",
-      "bytes": 274265,
-      "sha256": "12db72cf18b041344c2e1453dd89c88a121f4c4b1167fd6a53e2489ec1527c25"
+      "bytes": 275069,
+      "sha256": "6f8c5c071e9243eb76b0fcb78a512e4827155ece373f15d44211e873061eacf8"
     },
     {
       "path": "docs/guided-play/checks/legacy-regression/checks/journey/chromium/full-game.png",
-      "bytes": 295896,
-      "sha256": "ab69b430c77cd3f5d69991069459fa519548bac5fcb73b2ab4d6fc377f0d76f8"
+      "bytes": 295872,
+      "sha256": "36dc3e4a733855d352b1c4503b8d9def5b0e12cdabcd408f1a299cee0b2525c7"
     },
     {
       "path": "docs/guided-play/checks/legacy-regression/checks/journey/chromium/offline-editor.png",
-      "bytes": 528383,
-      "sha256": "32ac957d2884bf0bba642dee67392d05788200b86a3536eff85c080fe0278ca1"
+      "bytes": 528362,
+      "sha256": "f4d690fa3cdc1f24c8e0b176a1fcc074684f4b39b2fcdaeb39c59e67fb32343c"
     },
     {
       "path": "schemas/advanced-course.schema.json",
@@ -15625,18 +15635,18 @@
     },
     {
       "path": "scripts/guided-play-browser.cjs",
-      "bytes": 9695,
-      "sha256": "170edc7bd491d7394fa4f22d155d6607324505dcb35a574934debcb630763ade"
+      "bytes": 9780,
+      "sha256": "740cfe6039d6fd1e45df9e48444c3e35e8e5925c2e78c4bca1b4e853753a085c"
     },
     {
       "path": "scripts/guided-play-real-katago.cjs",
-      "bytes": 3941,
-      "sha256": "21b20105e35eb37e6d3bd64e82a9daf6306528b930d151f6c56a828be92d5223"
+      "bytes": 4026,
+      "sha256": "24ab3af125e9a08dc602aa1c976a73cc0affed94a7e149a5d48889cfe7758359"
     },
     {
       "path": "scripts/guided-play-upgrade-after.cjs",
       "bytes": 2267,
-      "sha256": "cee108287b172e8de7ac144f0c92a73632a7d09321e61a9b379292a6d52997d9"
+      "sha256": "b154b9948e5336e94477a09bc44a7ea1e2fa229e4c6fc60224411669a413cf77"
     },
     {
       "path": "scripts/guided-play-upgrade-before.cjs",
@@ -15725,8 +15735,8 @@
     },
     {
       "path": "scripts/package-guided-play.py",
-      "bytes": 6781,
-      "sha256": "3531a6fe0015a39f54e1a3203314fb726534e661ce06949bf362ed1731a8f7c3"
+      "bytes": 7008,
+      "sha256": "8aecdc72b04495e5bd593b4a5273a1ad0bb62faca286002530971283a33d75f4"
     },
     {
       "path": "scripts/package-history.py",
@@ -15899,6 +15909,11 @@
       "sha256": "e66a6443f52ebaeae051f6b7a0de603b0d9703c4afb30612a62a5267854db401"
     },
     {
+      "path": "scripts/run-guided-browser.py",
+      "bytes": 1419,
+      "sha256": "810892f2becdd946cc680f172f4cf46f5b4fcff0f05c6f6c3400f88b201ffd59"
+    },
+    {
       "path": "scripts/run-online-tools-browser.py",
       "bytes": 1054,
       "sha256": "d08605b519724ec482de944cd5e36de6cdd3e116da07cbcc8437bc045c0e3648"
@@ -15940,8 +15955,8 @@
     },
     {
       "path": "scripts/sync-github-pages.py",
-      "bytes": 11250,
-      "sha256": "c655a5de8fa490bc8c38dbde33c81c698afb600079f693d66bc18f89a15b48b4"
+      "bytes": 11682,
+      "sha256": "d37549c1007748b88124c6749e244da347ea07e4bca9ce4b7477409d75f0cc53"
     },
     {
       "path": "scripts/validate-advanced.ts",
@@ -16015,8 +16030,8 @@
     },
     {
       "path": "scripts/verify-guided-preservation.py",
-      "bytes": 2619,
-      "sha256": "2ce98aabe802f45b6f3d5d1ba24ca2b6d85d881690786636b7b7d36dd6cbded2"
+      "bytes": 2636,
+      "sha256": "431e1a4e9c29c9575f57d4ac72f64f91e37ee4f29635cb51dd87fb03a5bd68ab"
     },
     {
       "path": "scripts/verify-history-preservation.py",
@@ -16366,7 +16381,7 @@
     {
       "path": "src/core/version.ts",
       "bytes": 117,
-      "sha256": "d1a4b122795d1c0a684b3a88fd1292e9293a8dcfd82de563b56bd01456fadabc"
+      "sha256": "6078739b3565fcfc64bf92052ff63a2f73487e4272ef22c47f23ff4d989ac1c1"
     },
     {
       "path": "src/core/analysis/ai-contract.ts",
@@ -16901,7 +16916,7 @@
     {
       "path": "src/features/guided-play/GuidedPlay.css",
       "bytes": 8227,
-      "sha256": "db8319d198051138258cf23b37704e9b200f857307552b71a731c22538bbdae3"
+      "sha256": "e43a4c7008da5f5132ac6f1935bab6db9a0670f344f64539c3c9ac2332f8480a"
     },
     {
       "path": "src/features/guided-play/GuidedPlay.tsx",

@@ -17,5 +17,5 @@
 @media(max-width:520px){#guided-board-title,#guided-summary-title{scroll-margin-top:11rem}}
 
 /* Read-only report snapshots fit the complete board; playable boards retain their hit sizes. */
-.guided-moments .board-grid,.guided-moments .column-labels{min-width:0;width:calc(100cqi - 42px)}
-.guided-moments .board-grid,.guided-moments .row-labels{min-height:0;height:calc(100cqi - 42px)}
+.guided-moments .board-grid,.guided-moments .column-labels{min-width:0;width:calc(100cqi - 58px)}
+.guided-moments .board-grid,.guided-moments .row-labels{min-height:0;height:calc(100cqi - 58px)}
