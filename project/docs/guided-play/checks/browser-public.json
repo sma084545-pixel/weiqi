@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "id": "GUIDED-REAL-BROWSER",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "passed",
+  "programVersion": "0.26.2",
+  "base": "https://sma084545-pixel.github.io/weiqi",
+  "browser": "156.0.8078.80",
+  "at": "2026-11-03T13:36:17.022Z",
+  "checks": [
+    {
+      "name": "desktop-full-new-user-journey",
+      "status": "passed",
+      "details": [
+        "route-bridge",
+        "12-courses-preserved",
+        "4-disclosures",
+        "a11y-no-early-answer",
+        "legal-human-choice",
+        "local-opponent",
+        "refresh-paused",
+        "readonly-slider",
+        "undo-redo",
+        "two-pass-manual-confirm",
+        "factual-summary",
+        "download",
+        "retry-and-preserve-original"
+      ]
+    },
+    {
+      "name": "360px-9-road-B-level2",
+      "status": "passed",
+      "geometry": {
+        "scrollWidth": 252,
+        "clientWidth": 252
+      },
+      "checks": [
+        "touch-candidate",
+        "keyboard-arrows-enter",
+        "real-local-reply",
+        "reduced-motion",
+        "no-page-overflow"
+      ]
+    },
+    {
+      "name": "768px-13-road-W-level1",
+      "status": "passed",
+      "geometry": {
+        "scrollWidth": 628,
+        "clientWidth": 626
+      },
+      "checks": [
+        "touch-candidate",
+        "keyboard-arrows-enter",
+        "real-local-reply",
+        "reduced-motion",
+        "no-page-overflow"
+      ]
+    },
+    {
+      "name": "360px-13-road-B-level3",
+      "status": "passed",
+      "geometry": {
+        "scrollWidth": 344,
+        "clientWidth": 252
+      },
+      "checks": [
+        "touch-candidate",
+        "keyboard-arrows-enter",
+        "real-local-reply",
+        "reduced-motion",
+        "no-page-overflow"
+      ]
+    },
+    {
+      "name": "actual-disabled-network-reload-hint-human-local-reply-save-reload",
+      "status": "passed",
+      "network": "BrowserContext.setOffline(true), not a source-only cache inspection"
+    }
+  ],
+  "errors": [],
+  "humanTeachingReview": null,
+  "limits": [
+    "Chrome desktop with touch simulation; not physical phones or screen readers",
+    "Manual endgame confirmation controls exercised, not human death judgement"
+  ]
+}

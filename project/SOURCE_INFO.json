@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "GITHUB-CURRENT-SOURCE",
-  "revision": 39,
+  "revision": 40,
   "rulesetId": "GO-CLUB-AREA-1",
   "resultVersion": "0.26.2-pages.1",
   "programVersion": "0.26.2",
@@ -3935,8 +3935,8 @@
     },
     {
       "path": "handoff/GUIDED_PLAY.md",
-      "bytes": 3188,
-      "sha256": "8e874e945af64ad1781b6fd3cff1ffe6d49a6b942e2237d79c3ff2802a7dd6e6"
+      "bytes": 3752,
+      "sha256": "585aa146fd30b5f420d4f256aaa586daf6a9566eaaaedf4ebb1a87c5c1854d3b"
     },
     {
       "path": "handoff/HISTORY_SLIDER.md",
@@ -15165,8 +15165,8 @@
     },
     {
       "path": "docs/guided-play/ACCEPTANCE.md",
-      "bytes": 3875,
-      "sha256": "e486247b5a6b2e42db1dca769eb0d2d4ef8f098aa365d4b4150d47905b1e8660"
+      "bytes": 4911,
+      "sha256": "03e8af59bf527e8a0e63a4850f14befdff62b243300918ec34d0ad1c0f767394"
     },
     {
       "path": "docs/guided-play/IMPLEMENTATION.md",
@@ -15219,6 +15219,46 @@
       "sha256": "6a0fad69a999c5e2c7d0e262bee849cf47dccf914f8a5569185b222e2ff9ea9d"
     },
     {
+      "path": "docs/guided-play/screenshots/public-guided-360-13-touch.png",
+      "bytes": 243478,
+      "sha256": "229170b08e5bcfd815ed056c9645f6cb9ed8e874c670e951ac1708c1372c13c8"
+    },
+    {
+      "path": "docs/guided-play/screenshots/public-guided-360-9-touch.png",
+      "bytes": 228966,
+      "sha256": "7d0fe0bd7465d331f1e1436f3bd9fe6290f0cc492643b43716a2d01fffce0ca7"
+    },
+    {
+      "path": "docs/guided-play/screenshots/public-guided-768-13-touch.png",
+      "bytes": 253254,
+      "sha256": "c53bb35cc3c5a8365beb5a09795b8c9e08d4331eff03fe1cf48ac847b26a8a4a"
+    },
+    {
+      "path": "docs/guided-play/screenshots/public-guided-actual-offline.png",
+      "bytes": 253563,
+      "sha256": "ee9e7c03973630a2c6f67020262aed736c5cc59fe2fe7fafce6366fa6c573550"
+    },
+    {
+      "path": "docs/guided-play/screenshots/public-guided-desktop-candidates.png",
+      "bytes": 335789,
+      "sha256": "4f327e794f5332c53148673154c6f58909e91c8f8cb6c1c07be1c6e15564e304"
+    },
+    {
+      "path": "docs/guided-play/screenshots/public-guided-desktop-report.png",
+      "bytes": 445063,
+      "sha256": "5e2a98c498361bf51eb09570e14aecbbbe74520aeca26ccecc5424304d56d731"
+    },
+    {
+      "path": "docs/guided-play/screenshots/public-guided-real-katago.png",
+      "bytes": 382770,
+      "sha256": "6a0fad69a999c5e2c7d0e262bee849cf47dccf914f8a5569185b222e2ff9ea9d"
+    },
+    {
+      "path": "docs/guided-play/screenshots/public-guided-upgrade-preserved.png",
+      "bytes": 271101,
+      "sha256": "f2e4ae1adf022ccdef9032febf1bbd55e3d611673a16e4b6fe0e20217bd7625f"
+    },
+    {
       "path": "docs/guided-play/checks/analysis-build.log",
       "bytes": 264,
       "sha256": "2179be046086a5c47c682caf6f1a1117a96bb41a69d56c7f503104a4d6438120"
@@ -15244,6 +15284,16 @@
       "sha256": "903ea7d4105c4dcd21e28792a7470df150a361fdfa8f3c2a48739ca1d7fa5331"
     },
     {
+      "path": "docs/guided-play/checks/browser-public.json",
+      "bytes": 2198,
+      "sha256": "b7f84d2ecd1a6b2e140c1c0cc1e649c81cbdd92e8a292263cbc8e4d6a5a956e9"
+    },
+    {
+      "path": "docs/guided-play/checks/browser-public.log",
+      "bytes": 11840,
+      "sha256": "9b6d054ff97ff2a1f3bf35dd412e771a652cd46d856802aaa86d48deea10be6e"
+    },
+    {
       "path": "docs/guided-play/checks/browser-regression.log",
       "bytes": 25921,
       "sha256": "e385202352c62aac772b920c19bccb6bb19e487e1143606ffe286bb1aa1b6880"
@@ -15257,6 +15307,16 @@
       "path": "docs/guided-play/checks/cache-upgrade-before.log",
       "bytes": 1260,
       "sha256": "889f31f2d7f744d3b8698646207a9b6aeff43624f9b8b4a8023e52bccdb2e208"
+    },
+    {
+      "path": "docs/guided-play/checks/cache-upgrade.json",
+      "bytes": 484,
+      "sha256": "ab78f95045c00e6ce6377140dc7407453754b6946f5d410aa55fa6a35f0af013"
+    },
+    {
+      "path": "docs/guided-play/checks/cache-upgrade.log",
+      "bytes": 2718,
+      "sha256": "729467db5e7f0f27aa1e9744d576f0421b89528a537805a00af1f2272971835e"
     },
     {
       "path": "docs/guided-play/checks/existing-cors-boundary.json",
@@ -15334,6 +15394,11 @@
       "sha256": "13fc4422b1b19c7becba1c2344c98d926c8ef5710f57059a1e72c25cd99f10db"
     },
     {
+      "path": "docs/guided-play/checks/publication-runtime.json",
+      "bytes": 238,
+      "sha256": "2ebcd4ba32519ba6887cee31719885775a897463640acf4eb9c21d676a12f665"
+    },
+    {
       "path": "docs/guided-play/checks/real-katago-local.json",
       "bytes": 1840,
       "sha256": "bdbde044310e7fcd56ca333f371e81a7767032f131fe929d8be622fafdc2af07"
@@ -15342,6 +15407,16 @@
       "path": "docs/guided-play/checks/real-katago-local.log",
       "bytes": 5413,
       "sha256": "c0308ddfc09d621fc8a923a62112545ba016fc418ddacae94301e840ff65ec37"
+    },
+    {
+      "path": "docs/guided-play/checks/real-katago-public.json",
+      "bytes": 1859,
+      "sha256": "89ba219b59187e24988cf913b70d931c15f602fdef129cd5032052cc3d26f8de"
+    },
+    {
+      "path": "docs/guided-play/checks/real-katago-public.log",
+      "bytes": 5432,
+      "sha256": "dc98e32766d5941e0dadc0babd2c73c40ddc50b4d303a6bebfb073dd59d3c795"
     },
     {
       "path": "docs/guided-play/checks/legacy-regression/online-tools/checks/browser/1280-maximized.png",

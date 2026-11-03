@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "programVersion": "0.26.2",
+  "staticFiles": 13,
+  "sourceFiles": 3399,
+  "guidedPlayRoute": "#/play/guided",
+  "allServiceOriginsPreserved": true,
+  "runtimeCommit": "b02805a0bfc12080aa0a6943f74a0e4c338a3c47"
+}

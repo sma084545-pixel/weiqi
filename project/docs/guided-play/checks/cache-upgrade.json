@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "GUIDED-PUBLIC-CACHE-UPGRADE",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "passed",
+  "at": "2026-11-03T13:36:36.893Z",
+  "before": "版本 0.25.2",
+  "applied": [
+    "版本 0.26.2"
+  ],
+  "after": "版本 0.26.2",
+  "moves": 2,
+  "oldStonesPreserved": true,
+  "offline": {
+    "type": "OFFLINE_STATUS",
+    "ready": true,
+    "version": "0.26.2",
+    "cachedCount": 11,
+    "error": null
+  },
+  "onlyOwnSyntheticTestData": true
+}

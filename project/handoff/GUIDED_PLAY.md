@@ -4,7 +4,7 @@ baseVersion: EXTREME_AI 0.25.2-pages.1
 resultVersion: 0.26.2-pages.1
 rulesetId: GO-CLUB-AREA-1
 schemaVersion: 1
-status: local-complete-public-verification-pending
+status: complete-with-documented-limits
 ---
 
 # 辅助下棋交接
@@ -23,11 +23,13 @@ status: local-complete-public-verification-pending
 
 ## 实际检查
 
-见`docs/guided-play/ACCEPTANCE.md`与`checks/`。已通过51新增测试、592总单元测试、198原浏览器回归、实际分级提示与完整对局报告路径、360/768/1280、触屏模拟与键盘、实际断网恢复、1,743受保护文件比较。
+见`docs/guided-play/ACCEPTANCE.md`与`checks/`。已通过53新增测试、594总单元测试、198原浏览器回归、实际分级提示与完整对局报告路径、360/768/1280、触屏模拟与键盘、实际断网恢复、1,743受保护文件比较。
 
 原生本机每尺寸60次分析，9路中位3.13ms/P95 3.87ms，13路中位4.90ms/P95 7.14ms；这是本机样本，不是通用性能保证。
 
-公开网站、归档重新解压、最终提交及下载校验在发布阶段继续记录；未完成之前不以此交接标题宣称全链路完成。
+原网站 https://sma084545-pixel.github.io/weiqi/#/play/guided 与本机4190的完整流程均实际通过。真实Render对手1.18.1/Eigen/b6、24访问，正式网站样本引擎耗时1136ms；提示本地计算。0.25.2→0.26.2真实缓存升级保留旧两手棋与11项缓存资源。运行代码提交 b02805a0bfc12080aa0a6943f74a0e4c338a3c47；后续提交只封存证据与交接。
+
+完整归档、轻量软件、变化清单、校验值与最终源码提交记入发布目录PACKAGE_INFO.json；最终解压/干净安装/检查/构建报告随发布目录verification/ARCHIVE_VERIFY.json提供。本交接须与同SHA归档及passed外部复查报告一起使用，不能只凭文档标题认定压缩包已校验。
 
 ## 迁移与边界
 
