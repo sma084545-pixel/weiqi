@@ -15,3 +15,7 @@
 #guided-board-title,#guided-summary-title{scroll-margin-top:6rem}.guided-timeline{margin-top:1rem}.guided-timeline>summary{min-height:44px;line-height:2;padding:.4rem;cursor:pointer;font-weight:750;color:#0d5147}.guided-play button.intersection.actionable{cursor:pointer}
 
 @media(max-width:520px){#guided-board-title,#guided-summary-title{scroll-margin-top:11rem}}
+
+/* Read-only report snapshots fit the complete board; playable boards retain their hit sizes. */
+.guided-moments .board-grid,.guided-moments .column-labels{min-width:0;width:calc(100cqi - 42px)}
+.guided-moments .board-grid,.guided-moments .row-labels{min-height:0;height:calc(100cqi - 42px)}

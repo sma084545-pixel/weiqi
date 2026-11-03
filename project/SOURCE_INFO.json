@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "id": "GITHUB-CURRENT-SOURCE",
-  "revision": 37,
+  "revision": 38,
   "rulesetId": "GO-CLUB-AREA-1",
-  "resultVersion": "0.26.0-pages.1",
-  "programVersion": "0.26.0",
+  "resultVersion": "0.26.1-pages.1",
+  "programVersion": "0.26.1",
   "sourceBuild": "pnpm install --frozen-lockfile && pnpm build",
   "note": "Buildable source and materials; installed dependencies, private data and generated root build/output excluded. Full release archive includes production builds and all evidence.",
   "files": [
@@ -26,7 +26,7 @@
     {
       "path": "CHANGELOG.md",
       "bytes": 30413,
-      "sha256": "581b90859842239f83665e969db7a5c9d4f3017c2cbc748c68723bfc20bb1243"
+      "sha256": "45891ec8564b910e22db0edd11e5a505c94960cb4bce8201a83ccba549712270"
     },
     {
       "path": "MERGE_C_RELEASE_MANIFEST.json",
@@ -36,7 +36,7 @@
     {
       "path": "README.md",
       "bytes": 11161,
-      "sha256": "1e788446caebf9c353d31d025f2903bdc05991236b353d64be8fe61f611e85bd"
+      "sha256": "315bc5204dc1bc4a0f1d56ccabc5dbb13d0a1250fdb745481eb35f95e920e056"
     },
     {
       "path": "README_MERGE_C.md",
@@ -56,7 +56,7 @@
     {
       "path": "package.json",
       "bytes": 4369,
-      "sha256": "165f77bfa4816f845337e7ca1f0831526ca20cd52025fd1bc338d5546399476a"
+      "sha256": "7cc9b0a6bf2a3a32ba22936b06a76c5cd410a8731b7712149afb3b5c83ff72be"
     },
     {
       "path": "playwright.advanced-regression.config.ts",
@@ -3936,7 +3936,7 @@
     {
       "path": "handoff/GUIDED_PLAY.md",
       "bytes": 2840,
-      "sha256": "46b0071b583fd06f90cfb6e9924312bb1945a97aabdddb3ca19a1337d55acefa"
+      "sha256": "f799be9fb881cb07ce428b98f344f2cd0aa68a2c883203b53ba45bd58a1b3084"
     },
     {
       "path": "handoff/HISTORY_SLIDER.md",
@@ -15161,12 +15161,12 @@
     {
       "path": "docs/guided-play/ACCEPTANCE.md",
       "bytes": 3399,
-      "sha256": "2108bb0f5c510a897c24b5365d9725589a52fb7bacac2a599c53aab12344b087"
+      "sha256": "4505d727e7f5c61c2a15d31c78098296d881afa34e61e988dac17f5b7dbaed75"
     },
     {
       "path": "docs/guided-play/IMPLEMENTATION.md",
       "bytes": 6405,
-      "sha256": "dc34ac6665fb213b8ee23feec6bddb542ffc30ed95b9bf81d3254d663bcebd26"
+      "sha256": "accc96199796d49cea8f6bb29460fd99d48c9ee18abdb756cf0bb535cd804026"
     },
     {
       "path": "docs/guided-play/KNOWN_ISSUES.md",
@@ -15179,9 +15179,49 @@
       "sha256": "60f51c8d9462f25894df2ed6e86dab2fbf89d76a77ad692110f26e350a5eed27"
     },
     {
+      "path": "docs/guided-play/screenshots/guided-360-13-touch.png",
+      "bytes": 232170,
+      "sha256": "e8ddac1b0cc4edfc8abaa7553e064d7af6270b0206cf223745529f829077f453"
+    },
+    {
+      "path": "docs/guided-play/screenshots/guided-360-9-touch.png",
+      "bytes": 228966,
+      "sha256": "7d0fe0bd7465d331f1e1436f3bd9fe6290f0cc492643b43716a2d01fffce0ca7"
+    },
+    {
+      "path": "docs/guided-play/screenshots/guided-768-13-touch.png",
+      "bytes": 253254,
+      "sha256": "c53bb35cc3c5a8365beb5a09795b8c9e08d4331eff03fe1cf48ac847b26a8a4a"
+    },
+    {
+      "path": "docs/guided-play/screenshots/guided-actual-offline.png",
+      "bytes": 253563,
+      "sha256": "ee9e7c03973630a2c6f67020262aed736c5cc59fe2fe7fafce6366fa6c573550"
+    },
+    {
+      "path": "docs/guided-play/screenshots/guided-desktop-candidates.png",
+      "bytes": 335812,
+      "sha256": "5afa3333956c9fe6108163b0e8b32956e479ba4a50fa954f083c4a828d8acd82"
+    },
+    {
+      "path": "docs/guided-play/screenshots/guided-desktop-report.png",
+      "bytes": 444958,
+      "sha256": "3548697094c0fa24dffd284a1f8a487a7f15db6adb7b698d851918586c3e682c"
+    },
+    {
+      "path": "docs/guided-play/screenshots/guided-real-katago.png",
+      "bytes": 382795,
+      "sha256": "f99477f64227049a18aa37466e8233b3526c88bf41bdc3b866e9eb355c97d7c2"
+    },
+    {
       "path": "docs/guided-play/checks/analysis-build.log",
-      "bytes": 218,
-      "sha256": "0257dadb214f3ec0f487e0aece7143553d8a91e4991dd87559b5e9192888162d"
+      "bytes": 264,
+      "sha256": "2179be046086a5c47c682caf6f1a1117a96bb41a69d56c7f503104a4d6438120"
+    },
+    {
+      "path": "docs/guided-play/checks/browser-local-before-snapshot-fit.log",
+      "bytes": 11149,
+      "sha256": "0db752f55b7324381f6b293ac054ae15f27983cacdc1df330bbeb196a9d9e4f6"
     },
     {
       "path": "docs/guided-play/checks/browser-local-previous.log",
@@ -15195,8 +15235,8 @@
     },
     {
       "path": "docs/guided-play/checks/browser-local.log",
-      "bytes": 11149,
-      "sha256": "0db752f55b7324381f6b293ac054ae15f27983cacdc1df330bbeb196a9d9e4f6"
+      "bytes": 41,
+      "sha256": "ee13f48c89729a92e564e50c4ce31b0ba5a02c87baffc9008a6da52c456578a6"
     },
     {
       "path": "docs/guided-play/checks/browser-regression.log",
@@ -15220,13 +15260,13 @@
     },
     {
       "path": "docs/guided-play/checks/full-check.log",
-      "bytes": 6908,
-      "sha256": "aae5140d60894a37198ea2c698bce524bfac0b11b874578d8b346068cdda30ee"
+      "bytes": 7074,
+      "sha256": "6dd8434ffcf9125fb669148151476c575b9047b0082852f13d4430393c5ad7a2"
     },
     {
       "path": "docs/guided-play/checks/guided-unit.log",
       "bytes": 318,
-      "sha256": "4d65a928a2252d0fbb760921b103bdf0eba069c5aa6c29f720d642380f82b1a8"
+      "sha256": "dc19137c275caa721f7ee6031e0c46814ad2ff699077e1041480d77878457a52"
     },
     {
       "path": "docs/guided-play/checks/initial-browser-selector.log",
@@ -15276,12 +15316,12 @@
     {
       "path": "docs/guided-play/checks/pages-build.log",
       "bytes": 1128,
-      "sha256": "d41f5ab201c8500bcf07098a9742e31b0ef5be3524ef0cf27c79b6598fc06d7f"
+      "sha256": "33a83f413b46024f10b987897071bb913eefc4bafbd310d12ede046ccfaaa488"
     },
     {
       "path": "docs/guided-play/checks/preservation.json",
       "bytes": 287628,
-      "sha256": "5baeb228c549ea35485f767cc4d5ecf9292c5ef0b97ec92a5b48bca0e9ae714e"
+      "sha256": "0eccd682399968bc10f580196dcc85858b9e3a4c681216902182bf8c7ca849de"
     },
     {
       "path": "docs/guided-play/checks/real-katago-local.json",
@@ -15585,8 +15625,8 @@
     },
     {
       "path": "scripts/guided-play-browser.cjs",
-      "bytes": 9558,
-      "sha256": "8ad720c47d22a902ea9d4cd251367640eab0de5f37d369b29a11af13c8d1f6e1"
+      "bytes": 9695,
+      "sha256": "170edc7bd491d7394fa4f22d155d6607324505dcb35a574934debcb630763ade"
     },
     {
       "path": "scripts/guided-play-real-katago.cjs",
@@ -15595,8 +15635,8 @@
     },
     {
       "path": "scripts/guided-play-upgrade-after.cjs",
-      "bytes": 2018,
-      "sha256": "7679970f0232b7201ff60a882f44acaf1005054e98d38f0710417d1cff461087"
+      "bytes": 2267,
+      "sha256": "cee108287b172e8de7ac144f0c92a73632a7d09321e61a9b379292a6d52997d9"
     },
     {
       "path": "scripts/guided-play-upgrade-before.cjs",
@@ -15686,7 +15726,7 @@
     {
       "path": "scripts/package-guided-play.py",
       "bytes": 6781,
-      "sha256": "abc5a2a5938b39fb60d8c66b253a7f4b8bbe07f5921e007863c3350b6e1283ae"
+      "sha256": "3531a6fe0015a39f54e1a3203314fb726534e661ce06949bf362ed1731a8f7c3"
     },
     {
       "path": "scripts/package-history.py",
@@ -16326,7 +16366,7 @@
     {
       "path": "src/core/version.ts",
       "bytes": 117,
-      "sha256": "4cfe170fffdeb145fe409332d6f20d1ed28a998a9b82b542a5e9e7390afe9097"
+      "sha256": "d1a4b122795d1c0a684b3a88fd1292e9293a8dcfd82de563b56bd01456fadabc"
     },
     {
       "path": "src/core/analysis/ai-contract.ts",
@@ -16860,8 +16900,8 @@
     },
     {
       "path": "src/features/guided-play/GuidedPlay.css",
-      "bytes": 7934,
-      "sha256": "50f93b25b4960a73113fa9d1db5ce9eca0c4c5de70302565172cbb43e65513c2"
+      "bytes": 8227,
+      "sha256": "db8319d198051138258cf23b37704e9b200f857307552b71a731c22538bbdae3"
     },
     {
       "path": "src/features/guided-play/GuidedPlay.tsx",

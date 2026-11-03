@@ -1,7 +1,7 @@
 ---
 taskId: GUIDED_PLAY
 baseVersion: EXTREME_AI 0.25.2-pages.1
-resultVersion: 0.26.0-pages.1
+resultVersion: 0.26.1-pages.1
 rulesetId: GO-CLUB-AREA-1
 schemaVersion: 1
 status: local-complete-public-verification-pending
@@ -16,7 +16,7 @@ status: local-complete-public-verification-pending
 - 新增`src/features/guided-play/`：设置、分级提示、事实反馈、标记、可替换分析接口、状态控制、本地/现有KataGo对手、独立存储与报告。
 - 接入现有`learning-hub/registry.ts`和`LearningHub.tsx`，补充离线页对KataGo依赖的说明；没有改导航体系或课程编号。
 - 新增附加`schemas/guided-session.schema.json`、开发固定预期、51项测试、浏览器验证与本轮文档。
-- 版本0.26.0。`package.json`只新增测试脚本并把既有引擎构建放在check开头，保证干净源码可校验；旧依赖审计版本白名单加0.26，锁与依赖字节不变。
+- 版本0.26.1。`package.json`只新增测试脚本并把既有引擎构建放在check开头，保证干净源码可校验；旧依赖审计版本白名单加0.26，锁与依赖字节不变。
 - `scripts/sync-github-pages.py`沿用发布配置保护，补充新模式入口与说明；三个现有服务地址不变，不新建或升级Render资源。
 
 ## 实际检查

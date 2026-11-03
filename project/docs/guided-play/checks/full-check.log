@@ -1,3 +1,8 @@
+✓ Lockfile passes supply-chain policies (verified 13d ago)
+Lockfile is up to date, resolution step is skipped
+Already up to date
+
+Done in 304ms using pnpm v11.25.0
 $ pnpm build:engine && pnpm schema:check && pnpm test && pnpm validate:advanced && pnpm validate:content && pnpm validate:t09 && pnpm test:t09-grader && pnpm test:t14 && pnpm test:t15 && pnpm validate:t17 && pnpm verify:merge-a && pnpm verify:t16-freeze && pnpm build && pnpm test:t16-refresh && pnpm test:engine-build && pnpm test:engine-capacity
 $ vite build --config vite.engine.config.ts && tsc -p tsconfig.engine.json && node scripts/finish-engine-build.mjs
 vite v8.2.2 building client environment for production...
@@ -7,7 +12,7 @@ rendering chunks...
 computing gzip size...
 dist-engine/go-club-rules.mjs  302.31 kB │ gzip: 66.16 kB │ map: 553.87 kB
 
-✓ built in 34ms
+✓ built in 41ms
 $ node scripts/generate-types.mjs --check
 $ vitest run
 
@@ -16,11 +21,11 @@ $ vitest run
 
  Test Files  63 passed (63)
       Tests  592 passed (592)
-   Start at  21:08:00
-   Duration  6.26s (tests 36%, import 32%, environment 23%, transform 8%, worker 1%)
+   Start at  21:20:54
+   Duration  6.49s (tests 35%, import 33%, environment 23%, transform 9%, worker 1%)
 
-     Import  241 modules were evaluated 600 times · 6.52s total, 32% of tracked time
-             ~445ms faster with isolate: false — shared modules are evaluated once per worker instead of once per file
+     Import  241 modules were evaluated 608 times · 7.01s total, 33% of tracked time
+             ~476ms faster with isolate: false — shared modules are evaluated once per worker instead of once per file
              learn more: https://vitest.dev/guide/improving-performance#test-isolation
 
 $ node --import tsx scripts/validate-advanced.ts
@@ -60,8 +65,8 @@ $ vitest run tests/t14
 
  Test Files  2 passed (2)
       Tests  13 passed (13)
-   Start at  21:08:08
-   Duration  684ms (environment 32%, transform 28%, import 26%, tests 15%)
+   Start at  21:21:03
+   Duration  684ms (environment 32%, transform 27%, import 26%, tests 14%)
 
 $ vitest run tests/t15
 
@@ -70,8 +75,8 @@ $ vitest run tests/t15
 
  Test Files  4 passed (4)
       Tests  16 passed (16)
-   Start at  21:08:09
-   Duration  253ms (import 64%, transform 31%, tests 4%, worker 1%)
+   Start at  21:21:04
+   Duration  263ms (import 62%, transform 33%, tests 4%, worker 1%)
 
 $ node --import tsx scripts/validate-t17.ts
 PASS T17: empty, 3 labelled test replies, independent counts/missing/denominators, default test exclusion, schemaVersion rejection. No real participant records generated.
@@ -86,16 +91,16 @@ transforming...
 rendering chunks...
 computing gzip size...
 dist/index.html                     0.64 kB │ gzip:   0.45 kB
-dist/assets/index-BUGUAfAu.css    157.82 kB │ gzip:  31.31 kB
-dist/assets/index-CZrHlBhc.js   1,254.19 kB │ gzip: 333.53 kB
+dist/assets/index-CkbpAvyd.css    158.02 kB │ gzip:  31.35 kB
+dist/assets/index-Dih8qfhj.js   1,254.25 kB │ gzip: 333.56 kB
 
-✓ built in 132ms
+✓ built in 137ms
 [plugin builtin:vite-reporter] 
 (!) Some chunks are larger than 500 kB after minification. Consider:
 - Using dynamic import() to code-split the application
 - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
 - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
-Offline bundle 0.26.0: 11 required resources.
+Offline bundle 0.26.1: 11 required resources.
 vite v8.2.2 building ssr environment for production...
 transforming...
 ✓ 105 modules transformed.
@@ -115,7 +120,7 @@ $ node scripts/engine-capacity.mjs
   "revision": 1,
   "rulesetId": "GO-CLUB-AREA-1",
   "kind": "DeveloperValidationReport",
-  "checkedAt": "2026-11-03T13:08:15.611Z",
+  "checkedAt": "2026-11-03T13:21:10.304Z",
   "method": "Built standalone ESM; seeded legal path and legal pass/resume capacity stress",
   "humanReviewed": null,
   "legalPlacements": 240,
@@ -128,6 +133,6 @@ $ node scripts/engine-capacity.mjs
   "oversizedEventCount": 2100,
   "oversizedExportCode": "EXPORT_TOO_LARGE",
   "oversizedSaveKeepsOldRecord": "passed",
-  "elapsedMilliseconds": 1161,
+  "elapsedMilliseconds": 1184,
   "storage": "in-memory atomic StoragePort; not a browser quota measurement"
 }

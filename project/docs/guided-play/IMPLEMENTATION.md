@@ -1,4 +1,4 @@
-# 辅助下棋 / Guided Play · 0.26.0
+# 辅助下棋 / Guided Play · 0.26.1
 
 基线：最新已交付 EXTREME_AI 0.25.2-pages.1。规则仍为 GO-CLUB-AREA-1，内容与存储 schemaVersion 仍为1。本次是独立模式的增量，不改课程编号、正式题库或棋盘规则。
 

@@ -6,7 +6,7 @@
   "status": "passed",
   "baseVersion": "0.25.2-pages.1",
   "baseArchiveSha256": "019375d7ede76d107a5d535f12bf84d84ad9c1c759923e88edad83bdd8f76bf7",
-  "resultVersion": "0.26.0-pages.1",
+  "resultVersion": "0.26.1-pages.1",
   "verifiedProtectedFiles": 1744,
   "formalPuzzles": 30,
   "endgames": 6,

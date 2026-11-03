@@ -5,6 +5,6 @@ $ vitest run tests/guided-play
 
  Test Files  3 passed (3)
       Tests  51 passed (51)
-   Start at  21:16:29
-   Duration  1.26s (tests 33%, environment 27%, import 21%, transform 19%)
+   Start at  21:21:10
+   Duration  1.01s (tests 34%, transform 23%, import 23%, environment 19%)
 
