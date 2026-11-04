@@ -1,4 +1,4 @@
-"""Seal the real verified Guided Play increment plus all previous source/materials."""
+"""Seal the real verified review-continuation increment plus all previous source/materials."""
 from pathlib import Path
 import argparse,json,hashlib,zipfile,os,shutil
 p=argparse.ArgumentParser();p.add_argument('--base',required=True);p.add_argument('--output',required=True);p.add_argument('--commit',required=True);p.add_argument('--runtime-commit',required=True);a=p.parse_args()
@@ -45,7 +45,7 @@ app_files.append(r/'启动联机对弈.command')
 for folder in ['docs/game-review','docs/guided-play','docs/ai-play','docs/extreme-ai','analysis-engine/licenses']:
     app_files.extend(x for x in (r/folder).rglob('*') if x.is_file() and x.suffix in {'.md','.txt'} and '/checks/' not in str(x) and '/rejected-' not in str(x))
 app_entries=[{'path':str(x.relative_to(r)),'bytes':x.stat().st_size,'sha256':sha(x)} for x in sorted(app_files)]
-readme='# 围棋社0.27.1 · 复盘续下与联机AI复盘\n\n解压后有兼容Node22/24/26即可运行 node dist-server/server.mjs ，打开 http://127.0.0.1:4190/#/play/guided 。不需要node_modules；macOS也可双击启动联机对弈.command。\n\n正式网站：https://sma084545-pixel.github.io/weiqi/#/play/guided 。默认本地教学机器人；可选真实KataGo需要联网。完整原对弈和课程继续保留。先保存或备份再通过更新按钮升级，勿清站点数据。使用与边界见docs/game-review/。\n'
+readme='# 围棋社0.27.1 · 复盘续下与联机AI复盘\n\n解压后有兼容Node22/24/26即可运行 node dist-server/server.mjs ，打开 http://127.0.0.1:4190/#/play/free 。不需要node_modules；macOS也可双击启动联机对弈.command。\n\n正式网站：https://sma084545-pixel.github.io/weiqi/#/play/free 。拖动棋局滑动条后点击“从这里继续”；联机结束后可点“AI复盘”。自由AI续下与真实KataGo复盘需要联网；辅助分支可选本地伙伴。完整原对弈和课程继续保留。先保存或备份再通过更新按钮升级，勿清站点数据。使用与边界见docs/game-review/。\n'
 app_entries.append({'path':'README.md','bytes':len(readme.encode()),'sha256':hashlib.sha256(readme.encode()).hexdigest()})
 with zipfile.ZipFile(app,'w',zipfile.ZIP_DEFLATED) as z:
     for x in sorted(app_files):z.write(x,'go-club-app/'+str(x.relative_to(r)))

@@ -4,7 +4,7 @@ baseVersion: GUIDED_PLAY 0.26.2-pages.1
 resultVersion: 0.27.1-pages.1
 rulesetId: GO-CLUB-AREA-1
 schemaVersion: 1
-status: verification-in-progress
+status: complete-with-documented-limits
 ---
 
 # 复盘续下与联机赛后AI复盘
@@ -36,3 +36,5 @@ status: verification-in-progress
 原生Safari/Firefox、实体手机、屏幕阅读器、真人教学和长期多人负载未测。免费服务可能休眠、排队或限流，无并发或固定时延保证。没有新增排名、账号、默认反馈上传或付费资源。
 
 HTTP传输修正（0.27.1）：客户端只发送原始落子/停手/认输/恢复/计分确认动作，不发送可重算的棋块和气列表。API版本与真实着法顺序不变；既有服务逐项重放。已用285项真实操作和原有服务准备逻辑核对，保留轮次与超级劫历史；没有截断历史。0.27.0为本轮先前公开构建，最终包以0.27.1为准。
+
+正式网站验收：0.27.1，运行代码提交17edcd25710a8884920a5fec570c6afa33dcdc26。原GitHub Pages网址A/B两条完整路径及360/768/1280实际通过；真实标准KataGo b6/1.18.1，AI对手24次访问、复盘64次访问，具体耗时和HTTP响应见browser-public.json。0.27.0保留为本轮中间构建证据，未作为最终完整归档。

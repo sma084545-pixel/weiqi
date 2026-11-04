@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "GITHUB-PAGES-PUBLICATION",
-  "revision": 43,
+  "revision": 44,
   "rulesetId": "GO-CLUB-AREA-1",
   "resultVersion": "0.27.1-pages.1",
   "programVersion": "0.27.1",
@@ -101,5 +101,5 @@
       "sha256": "4912ad6d956272c214ff067e763bb7f99554aac208cebc487d04c659871c52f4"
     }
   ],
-  "sourceManifestSha256": "3e2de40e7b609f7cb9ba7b454d60de1ba06d15b1a05500adf6705546dd330956"
+  "sourceManifestSha256": "acebd22e3c3748d20406040f1b9d0726f3983b55f581f68c1c8b1e64e990aa79"
 }

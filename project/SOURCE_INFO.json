@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "GITHUB-CURRENT-SOURCE",
-  "revision": 43,
+  "revision": 44,
   "rulesetId": "GO-CLUB-AREA-1",
   "resultVersion": "0.27.1-pages.1",
   "programVersion": "0.27.1",
@@ -3985,8 +3985,8 @@
     },
     {
       "path": "handoff/REVIEW_BRANCHES.md",
-      "bytes": 3539,
-      "sha256": "c1c50ef663d603a3eb6538b69f75175546c72e236ebf14455472a05f033b3801"
+      "bytes": 3906,
+      "sha256": "6ab4f4d4980b05a8a99eef524b67b85f90831d94362a87f5453827e33827a480"
     },
     {
       "path": "handoff/T00.md",
@@ -6835,8 +6835,8 @@
     },
     {
       "path": "docs/game-review/ACCEPTANCE.md",
-      "bytes": 2096,
-      "sha256": "05101c0eb5f4d828582da3704009761fa3756cbbff990397e74440ec5aadd262"
+      "bytes": 2436,
+      "sha256": "39c5e1ab7f48e1569aa3d767e5e2d05ef30ca43b31d3160fb8a3fa80f7db16dc"
     },
     {
       "path": "docs/game-review/IMPLEMENTATION.md",
@@ -6852,6 +6852,31 @@
       "path": "docs/game-review/USER_GUIDE.md",
       "bytes": 3019,
       "sha256": "182a62d74cbc643edf3002e532d9fbd79dd6a7b05c9c49873a7c95977dc19afb"
+    },
+    {
+      "path": "docs/game-review/screenshots/public-review-1280-guided.png",
+      "bytes": 140687,
+      "sha256": "e367154265b5aeccd7c6f08ac5c86a1aa81db5bb787d5ce24b1c17123d0b3f51"
+    },
+    {
+      "path": "docs/game-review/screenshots/public-review-360-guided.png",
+      "bytes": 76514,
+      "sha256": "90cfd70605e58a31aa40f3adac829284ff6ea75468c135b00fe5ee43d5e9568a"
+    },
+    {
+      "path": "docs/game-review/screenshots/public-review-768-guided.png",
+      "bytes": 82488,
+      "sha256": "760f36dd1129a63652223413ee9e3b069df0eb2b2c2cb862737de7c067c1a742"
+    },
+    {
+      "path": "docs/game-review/screenshots/public-review-A-40-branch.png",
+      "bytes": 166902,
+      "sha256": "16a3a6339ddf87a41ede6c4a2162cdde7b500f8fdfec4c6b1f015bb8fb2d2ac0"
+    },
+    {
+      "path": "docs/game-review/screenshots/public-review-B-online-summary.png",
+      "bytes": 152707,
+      "sha256": "8d92985513cb8896e74696ff41563f583553dd9d8b992fddd3bee0812eea7331"
     },
     {
       "path": "docs/game-review/screenshots/review-1280-guided.png",
@@ -6895,13 +6920,13 @@
     },
     {
       "path": "docs/game-review/checks/browser-public.json",
-      "bytes": 3241,
-      "sha256": "5a17e77fc88bccbf3d85578108e01f1d210b93c62e9ddcab1db6e050d0043fc6"
+      "bytes": 3244,
+      "sha256": "3aba40da8c0d483d8d8dc14a5ede659d81a79dc4a0f5d4687b2ad8bd30aa547b"
     },
     {
       "path": "docs/game-review/checks/browser-public.log",
-      "bytes": 13765,
-      "sha256": "1e27f99f5f475fd36f17c2105c5ed08b040eb02634cd7df83f962506a9bd3c97"
+      "bytes": 13768,
+      "sha256": "f3265200bcd0bae181aed06696d2406af09a3ce20e5dc86eaa53969b37c15dc9"
     },
     {
       "path": "docs/game-review/checks/browser-regression.log",
@@ -7001,7 +7026,7 @@
     {
       "path": "docs/game-review/checks/pages-runtime.json",
       "bytes": 798,
-      "sha256": "2bfec236cdde0b7e0ff264f89bc94e59fe80e2ac25832c23f6e15859cb6043c9"
+      "sha256": "91817297f40793cd7f2db97f449e6cc94073c43c44ef572c9968164895d23299"
     },
     {
       "path": "docs/game-review/checks/preservation.json",
@@ -16105,8 +16130,8 @@
     },
     {
       "path": "scripts/package-review.py",
-      "bytes": 6930,
-      "sha256": "a5b8f3c737c88e09f3f90685b859e7ae3f8413ea26a70c64b7454f17c1c18c9b"
+      "bytes": 7046,
+      "sha256": "3564e2fc271f155ac6d3d85cb54d9c7b0239be4b090bf9c9c35766c1ebae2924"
     },
     {
       "path": "scripts/package-t02.py",
