@@ -8,7 +8,7 @@ export const GUIDED_GAME_ID='LOCAL-GUIDED-PLAY';
 export function validGuidedOptions(value:unknown):value is GuidedOptions {
   if(!value||typeof value!=='object'||Array.isArray(value))return false;
   const v=value as GuidedOptions;
-  return Object.keys(v).length===5&&Object.keys(v).every(k=>['size','humanColor','level','goal','opponent'].includes(k))&&[9,13].includes(v.size)&&['B','W'].includes(v.humanColor)&&[1,2,3].includes(v.level)&&Object.hasOwn(FOCUS,v.goal)&&['local','katago'].includes(v.opponent);
+  return Object.keys(v).length===5&&Object.keys(v).every(k=>['size','humanColor','level','goal','opponent'].includes(k))&&[5,9,13,19].includes(v.size)&&['B','W'].includes(v.humanColor)&&[1,2,3].includes(v.level)&&Object.hasOwn(FOCUS,v.goal)&&['local','katago'].includes(v.opponent);
 }
 export function startGuidedSession(options:GuidedOptions,id:string):GuidedSession {
   if(!validGuidedOptions(options)||!/^GUIDED-[A-Za-z0-9-]{1,110}$/.test(id))throw Error('辅助对局设置无效，请重新选择。');
@@ -42,7 +42,7 @@ export function retryGuidedMoment(session:GuidedSession,beforeIndex:number,newId
 }
 export function guidedSummary(session:GuidedSession):GuidedSummary {
   const game=session.match.game,observations:MoveObservation[]=[];
-  if(game)for(let i=0;i<game.moves.length;i++){
+  if(game)for(let i=session.historyBranch?.startEventCount??0;i<game.moves.length;i++){
     const event=game.moves[i];if(event.type!=='place'||event.color!==session.options.humanColor)continue;
     const observation=observeMove(game.undoStack[i],i+1===game.moves.length?game:game.undoStack[i+1],event,FOCUS[session.options.goal]);
     if(observation)observations.push(observation);

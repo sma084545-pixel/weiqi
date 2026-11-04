@@ -1,0 +1,598 @@
+{
+  "schemaVersion": 1,
+  "id": "GUIDED-PLAY-CHANGES",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "taskId": "GUIDED_PLAY",
+  "baseVersion": "0.25.2-pages.1",
+  "baseArchiveSha256": "019375d7ede76d107a5d535f12bf84d84ad9c1c759923e88edad83bdd8f76bf7",
+  "resultVersion": "0.26.2-pages.1",
+  "programVersion": "0.26.2",
+  "status": "complete-with-documented-limits",
+  "githubCommit": "b59d6304af364e72003e692b3a9ceb513c0fead3",
+  "runtimeCommit": "b02805a0bfc12080aa0a6943f74a0e4c338a3c47",
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "change": "modified",
+      "baseSha256": "2fcf00de0c138d55a06386d181e9b58e79f7ebe992d3f1b28d16314ff065c581",
+      "sha256": "9d3895b9bc7c31871546bf33c2fb40a246ec39d704ecd36d5bdcfa55af426acf"
+    },
+    {
+      "path": "README.md",
+      "change": "modified",
+      "baseSha256": "217c53c6ae7a53205900f6a95d31e11864886e2d77ea056bf6a22d707cf33e0d",
+      "sha256": "fafcf5b532bbeebd05adcfc00030c8714b00df3556aa9411d90d62ea2dc6e733"
+    },
+    {
+      "path": "docs/INTERFACES.md",
+      "change": "modified",
+      "baseSha256": "acd99193ce0f9f6d7084fd3fb00e08c85abd305b9d4f4854f396eeb64136e819",
+      "sha256": "1731f71e042e2eeb5578ca327f25268bd849f576333ad2b1f1a56f0ad3db2e30"
+    },
+    {
+      "path": "docs/guided-play/ACCEPTANCE.md",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "03e8af59bf527e8a0e63a4850f14befdff62b243300918ec34d0ad1c0f767394"
+    },
+    {
+      "path": "docs/guided-play/IMPLEMENTATION.md",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "118649e2876646b1f07d87de4bd58ba74a8109579ff4909c88d51f1d933b305c"
+    },
+    {
+      "path": "docs/guided-play/KNOWN_ISSUES.md",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "ae4efd43e43aa2a45e8f06456a9ffeaf3a1bc7861080e31115bbf6e8481cc460"
+    },
+    {
+      "path": "docs/guided-play/USER_GUIDE.md",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "60f51c8d9462f25894df2ed6e86dab2fbf89d76a77ad692110f26e350a5eed27"
+    },
+    {
+      "path": "docs/guided-play/checks/analysis-build.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "2179be046086a5c47c682caf6f1a1117a96bb41a69d56c7f503104a4d6438120"
+    },
+    {
+      "path": "docs/guided-play/checks/browser-local-before-snapshot-fit.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "0db752f55b7324381f6b293ac054ae15f27983cacdc1df330bbeb196a9d9e4f6"
+    },
+    {
+      "path": "docs/guided-play/checks/browser-local-previous.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "fe926e307dd420898c36c3f4c4d9d13c18e25a1260f9de5cfd3f56e1a1cbf78e"
+    },
+    {
+      "path": "docs/guided-play/checks/browser-local.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "a335e1725752c0eacbf2863436bb5cf12d254bfe8d249c8574c9c8c77de6f856"
+    },
+    {
+      "path": "docs/guided-play/checks/browser-local.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "903ea7d4105c4dcd21e28792a7470df150a361fdfa8f3c2a48739ca1d7fa5331"
+    },
+    {
+      "path": "docs/guided-play/checks/browser-public.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "b7f84d2ecd1a6b2e140c1c0cc1e649c81cbdd92e8a292263cbc8e4d6a5a956e9"
+    },
+    {
+      "path": "docs/guided-play/checks/browser-public.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "9b6d054ff97ff2a1f3bf35dd412e771a652cd46d856802aaa86d48deea10be6e"
+    },
+    {
+      "path": "docs/guided-play/checks/browser-regression.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "e385202352c62aac772b920c19bccb6bb19e487e1143606ffe286bb1aa1b6880"
+    },
+    {
+      "path": "docs/guided-play/checks/cache-upgrade-before.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "c88001ae5899e50c0cef1c08b7c2c2dcca1258178002fc3803aa50f0724842b2"
+    },
+    {
+      "path": "docs/guided-play/checks/cache-upgrade-before.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "889f31f2d7f744d3b8698646207a9b6aeff43624f9b8b4a8023e52bccdb2e208"
+    },
+    {
+      "path": "docs/guided-play/checks/cache-upgrade.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "ab78f95045c00e6ce6377140dc7407453754b6946f5d410aa55fa6a35f0af013"
+    },
+    {
+      "path": "docs/guided-play/checks/cache-upgrade.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "729467db5e7f0f27aa1e9744d576f0421b89528a537805a00af1f2272971835e"
+    },
+    {
+      "path": "docs/guided-play/checks/existing-cors-boundary.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "69c6a0e605d5b3938f67498fc7b2a12df27a46f3d38d8cbc262ae043993eb5ee"
+    },
+    {
+      "path": "docs/guided-play/checks/full-check.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "fb25d152ada665b7c78ab5b8b86be2e05d528e4c88d723d7d28b7d4f9296e202"
+    },
+    {
+      "path": "docs/guided-play/checks/guided-unit.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "2df5bc4329f18cb53581e141432494d6b3bdd22239f592f1c010cd6e2c908483"
+    },
+    {
+      "path": "docs/guided-play/checks/initial-browser-selector.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "ea5d8f78b5cad00de857c46cac06d82540e94ae3b92e34e17ec31ca4d9234957"
+    },
+    {
+      "path": "docs/guided-play/checks/initial-check-missing-engine-build.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "21fd06ab72d87b52f9b468eff343607d168a34a92e99fd42e0b6c96d40bbc9db"
+    },
+    {
+      "path": "docs/guided-play/checks/initial-check-version-allowlist.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "d8bbadb3d2c8d91283685cd1a278f60d3808505224587acc06ddb818f1cda8fd"
+    },
+    {
+      "path": "docs/guided-play/checks/initial-real-katago-disallowed-origin.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "ae0eb41db5bd83526cf1692a9fb0aca19ef5065787017ce69e31f77ee62b1950"
+    },
+    {
+      "path": "docs/guided-play/checks/initial-real-katago-disallowed-origin.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "04528d32310a798855c3a79453d2e661a9b5f3acd29306e37b940ce3419b63ee"
+    },
+    {
+      "path": "docs/guided-play/checks/initial-real-katago-response-wait.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "66cda2b36c1d9071df3686a721e6c08c518423b836a2e803d9c70de8cdb8c983"
+    },
+    {
+      "path": "docs/guided-play/checks/initial-remote-health.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "49eb0676617ff17f599cbb98e2296999607dc228af1e88feb8d74542e1f58fcb"
+    },
+    {
+      "path": "docs/guided-play/checks/initial-snapshot-fit-geometry.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "ee13f48c89729a92e564e50c4ce31b0ba5a02c87baffc9008a6da52c456578a6"
+    },
+    {
+      "path": "docs/guided-play/checks/legacy-evidence-isolation.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "b66c612869bed6f3edce12e899fa69d7e2fc63ca1f7ecf4b84e23814d6087cda"
+    },
+    {
+      "path": "docs/guided-play/checks/legacy-regression/checks/journey/chromium/full-game.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "36dc3e4a733855d352b1c4503b8d9def5b0e12cdabcd408f1a299cee0b2525c7"
+    },
+    {
+      "path": "docs/guided-play/checks/legacy-regression/checks/journey/chromium/offline-editor.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "f4d690fa3cdc1f24c8e0b176a1fcc074684f4b39b2fcdaeb39c59e67fb32343c"
+    },
+    {
+      "path": "docs/guided-play/checks/legacy-regression/online-tools/checks/browser/1280-maximized.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "d2428e8c5e1a59d9a39605ef2d96ab3b7f00bf476c99e12369b8fa861ebf3d87"
+    },
+    {
+      "path": "docs/guided-play/checks/legacy-regression/online-tools/checks/browser/360-floating-19.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "bd8acca30c7b77fef9e9c620da3477cbbab5f3a703e6cdbe85738300efea374a"
+    },
+    {
+      "path": "docs/guided-play/checks/legacy-regression/online-tools/checks/browser/768-floating-9.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "46148e985fd6f37cf2df0048d2ccae38411a376f9d2cad2069a219f3d456813c"
+    },
+    {
+      "path": "docs/guided-play/checks/legacy-regression/online-tools/checks/browser/chat.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "6f8c5c071e9243eb76b0fcb78a512e4827155ece373f15d44211e873061eacf8"
+    },
+    {
+      "path": "docs/guided-play/checks/local-capacity.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "b669a97d4a872a086c6d4949e12eac45cbf726b3ba73e3d7f50185f765804e0b"
+    },
+    {
+      "path": "docs/guided-play/checks/pages-build.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "2ca935196bf724700622f87d86cbbfafdd6979f546aed3f21e0bab1d42605211"
+    },
+    {
+      "path": "docs/guided-play/checks/preservation.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "13fc4422b1b19c7becba1c2344c98d926c8ef5710f57059a1e72c25cd99f10db"
+    },
+    {
+      "path": "docs/guided-play/checks/publication-runtime.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "2ebcd4ba32519ba6887cee31719885775a897463640acf4eb9c21d676a12f665"
+    },
+    {
+      "path": "docs/guided-play/checks/real-katago-local.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "bdbde044310e7fcd56ca333f371e81a7767032f131fe929d8be622fafdc2af07"
+    },
+    {
+      "path": "docs/guided-play/checks/real-katago-local.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "c0308ddfc09d621fc8a923a62112545ba016fc418ddacae94301e840ff65ec37"
+    },
+    {
+      "path": "docs/guided-play/checks/real-katago-public.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "89ba219b59187e24988cf913b70d931c15f602fdef129cd5032052cc3d26f8de"
+    },
+    {
+      "path": "docs/guided-play/checks/real-katago-public.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "dc98e32766d5941e0dadc0babd2c73c40ddc50b4d303a6bebfb073dd59d3c795"
+    },
+    {
+      "path": "docs/guided-play/screenshots/guided-360-13-touch.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "e9644e02a8750215f1167f63a47feaf8d1b4defb62e2f23b39518474577bd1b1"
+    },
+    {
+      "path": "docs/guided-play/screenshots/guided-360-9-touch.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "7d0fe0bd7465d331f1e1436f3bd9fe6290f0cc492643b43716a2d01fffce0ca7"
+    },
+    {
+      "path": "docs/guided-play/screenshots/guided-768-13-touch.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "c53bb35cc3c5a8365beb5a09795b8c9e08d4331eff03fe1cf48ac847b26a8a4a"
+    },
+    {
+      "path": "docs/guided-play/screenshots/guided-actual-offline.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "ee9e7c03973630a2c6f67020262aed736c5cc59fe2fe7fafce6366fa6c573550"
+    },
+    {
+      "path": "docs/guided-play/screenshots/guided-desktop-candidates.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "fc361c0e9bf4446aa4c6ee56b81a0105b3fbecf5d7328a5b3db93a2eb6930cf9"
+    },
+    {
+      "path": "docs/guided-play/screenshots/guided-desktop-report.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "fd79d0c461b7a0c5f93328f393dce5d2c15fbfd191336d2224cef1c07b598ed2"
+    },
+    {
+      "path": "docs/guided-play/screenshots/guided-real-katago.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "6a0fad69a999c5e2c7d0e262bee849cf47dccf914f8a5569185b222e2ff9ea9d"
+    },
+    {
+      "path": "docs/guided-play/screenshots/public-guided-360-13-touch.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "229170b08e5bcfd815ed056c9645f6cb9ed8e874c670e951ac1708c1372c13c8"
+    },
+    {
+      "path": "docs/guided-play/screenshots/public-guided-360-9-touch.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "7d0fe0bd7465d331f1e1436f3bd9fe6290f0cc492643b43716a2d01fffce0ca7"
+    },
+    {
+      "path": "docs/guided-play/screenshots/public-guided-768-13-touch.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "c53bb35cc3c5a8365beb5a09795b8c9e08d4331eff03fe1cf48ac847b26a8a4a"
+    },
+    {
+      "path": "docs/guided-play/screenshots/public-guided-actual-offline.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "ee9e7c03973630a2c6f67020262aed736c5cc59fe2fe7fafce6366fa6c573550"
+    },
+    {
+      "path": "docs/guided-play/screenshots/public-guided-desktop-candidates.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "4f327e794f5332c53148673154c6f58909e91c8f8cb6c1c07be1c6e15564e304"
+    },
+    {
+      "path": "docs/guided-play/screenshots/public-guided-desktop-report.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "5e2a98c498361bf51eb09570e14aecbbbe74520aeca26ccecc5424304d56d731"
+    },
+    {
+      "path": "docs/guided-play/screenshots/public-guided-real-katago.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "6a0fad69a999c5e2c7d0e262bee849cf47dccf914f8a5569185b222e2ff9ea9d"
+    },
+    {
+      "path": "docs/guided-play/screenshots/public-guided-upgrade-preserved.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "f2e4ae1adf022ccdef9032febf1bbd55e3d611673a16e4b6fe0e20217bd7625f"
+    },
+    {
+      "path": "handoff/GUIDED_PLAY.md",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "585aa146fd30b5f420d4f256aaa586daf6a9566eaaaedf4ebb1a87c5c1854d3b"
+    },
+    {
+      "path": "package.json",
+      "change": "modified",
+      "baseSha256": "4cb13ea8f3e8590ce4d371aee50925c17a1a29def4f1a327c0d47d0d810c7a9e",
+      "sha256": "8d352e58590c0ff26f8f88b5d1a511e56ea10f23d79395ba179c2c5d3c0834e0"
+    },
+    {
+      "path": "schemas/guided-session.schema.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "4c253beab8b240553e1601e9b8cabb35e50f2408aeaf415b2ea5aa886ad43fa0"
+    },
+    {
+      "path": "scripts/guided-play-browser.cjs",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "740cfe6039d6fd1e45df9e48444c3e35e8e5925c2e78c4bca1b4e853753a085c"
+    },
+    {
+      "path": "scripts/guided-play-real-katago.cjs",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "24ab3af125e9a08dc602aa1c976a73cc0affed94a7e149a5d48889cfe7758359"
+    },
+    {
+      "path": "scripts/guided-play-upgrade-after.cjs",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "b154b9948e5336e94477a09bc44a7ea1e2fa229e4c6fc60224411669a413cf77"
+    },
+    {
+      "path": "scripts/guided-play-upgrade-before.cjs",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "12dffd1b166589d74a3a07ddf6dc9edded0bfa17ea1a2fbaa0c42e905783db94"
+    },
+    {
+      "path": "scripts/package-guided-play.py",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "8aecdc72b04495e5bd593b4a5273a1ad0bb62faca286002530971283a33d75f4"
+    },
+    {
+      "path": "scripts/run-guided-browser.py",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "810892f2becdd946cc680f172f4cf46f5b4fcff0f05c6f6c3400f88b201ffd59"
+    },
+    {
+      "path": "scripts/sync-github-pages.py",
+      "change": "modified",
+      "baseSha256": "9b86e1a0b4138a0e4939303510d5553f9742b7de931e9e9e4fba9f00be2f93e3",
+      "sha256": "d37549c1007748b88124c6749e244da347ea07e4bca9ce4b7477409d75f0cc53"
+    },
+    {
+      "path": "scripts/verify-guided-archive.py",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "8ce5c527818d18b4425991ac77aac83371fb902d64997900acbaffbbd026a464"
+    },
+    {
+      "path": "scripts/verify-guided-play.ts",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "452b54665ed183c2c74640708002de2c302ea51c0804cb9458dbd39a2ccd3078"
+    },
+    {
+      "path": "scripts/verify-guided-preservation.py",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "431e1a4e9c29c9575f57d4ac72f64f91e37ee4f29635cb51dd87fb03a5bd68ab"
+    },
+    {
+      "path": "scripts/verify-online-dependencies.mjs",
+      "change": "modified",
+      "baseSha256": "738dc958f5cad2f325056fe66d6a9dc5b09de3ddd0abf55cf3e1c07ca35e717d",
+      "sha256": "d1d2b53fe6c7d6a0d3a28830399866c34c822478be6380ed949f18e6e7404ae5"
+    },
+    {
+      "path": "server/http.ts",
+      "change": "modified",
+      "baseSha256": "affdfb8e3e9c750ac47203e2cd9e8313119206f118fa3177803a00d71ab760d5",
+      "sha256": "f155c856775b1759673855311f4cc66d7d24143c97d971b816b6ee478eb70148"
+    },
+    {
+      "path": "src/core/version.ts",
+      "change": "modified",
+      "baseSha256": "07bd24670c8789b1df4d15cb4c5e21ed2dd28d8268d6b5aff5d18894d7c153d3",
+      "sha256": "6078739b3565fcfc64bf92052ff63a2f73487e4272ef22c47f23ff4d989ac1c1"
+    },
+    {
+      "path": "src/features/guided-play/GuidedPlay.css",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "e43a4c7008da5f5132ac6f1935bab6db9a0670f344f64539c3c9ac2332f8480a"
+    },
+    {
+      "path": "src/features/guided-play/GuidedPlay.tsx",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "b69f86ae4c8e2543799ef722369b63eca9aa75ecf88a3655b23df6cfa3d8e3d3"
+    },
+    {
+      "path": "src/features/guided-play/GuidedPlaySetup.tsx",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "d784cbf6fff05feda3297e0e7d20d6dc8a9bf55464e656076d616e7dee9c784a"
+    },
+    {
+      "path": "src/features/guided-play/GuidedPlaySummary.tsx",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "2215735adb84b9aa4716203abd559fe907fd73d8efde136f59ea24d2f0df29fc"
+    },
+    {
+      "path": "src/features/guided-play/TeachingOverlay.ts",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "b461b7156586738745736fc4164e73b2cc83472d3246fdf25dc7f2ef78194031"
+    },
+    {
+      "path": "src/features/guided-play/TeachingPanel.tsx",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "7d6d4afd743e2d7cfe12e78aa21f1770464b246c483bbaaa10fa8aa984bf0972"
+    },
+    {
+      "path": "src/features/guided-play/analyzer.ts",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "432ca220cd31730acfb4519319a7ac3adc492cf3297346ac5c1ceb359e99059a"
+    },
+    {
+      "path": "src/features/guided-play/model.ts",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "202c255b2fed6bfb96777cf74aaaabf7dc63240d5de187aaf3ffc46b2b95f4aa"
+    },
+    {
+      "path": "src/features/guided-play/opponent.ts",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "cc22735a1bf71bc84cf5fc957049e89619575501f6054ab073a6911c401e9fbc"
+    },
+    {
+      "path": "src/features/guided-play/storage.ts",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "4cb6db5879c34cec3227ceac973b7dfe0a3cbe82f86d3d5c93373bca390482df"
+    },
+    {
+      "path": "src/features/guided-play/types.ts",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "b92ccc4c176a2888253ef54d42fdb89a940f43e148d5599bf1cb877a48ff7365"
+    },
+    {
+      "path": "src/features/guided-play/useGuidedPlay.ts",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "80234045ed7788c755d4c7c88297c66529c8842007cc6c0d01cd9394a7070cbb"
+    },
+    {
+      "path": "src/features/guided-play/useTeachingAnalysis.ts",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "9f4ff7ea03222825aabf4ba20ac8c3bae1072543a9981a71256d8738749d233b"
+    },
+    {
+      "path": "src/features/learning-hub/LearningHub.tsx",
+      "change": "modified",
+      "baseSha256": "d8255e01a2131a22b780acdb6d66b04444764c52c8e4ef64903148e7e6456012",
+      "sha256": "b80a15e6e5f63de1be03f781536463d8bade001cb109ff0222ac675c980e263e"
+    },
+    {
+      "path": "src/features/learning-hub/registry.ts",
+      "change": "modified",
+      "baseSha256": "21aed8b9d9ceca9f518490b1bc5a7cff43ad3072364237f503334a25d251c6cf",
+      "sha256": "c03f89cf59fc288aedeb8de5fbc5b4b9c035b3966d45ce8a4b8f02e59a811070"
+    },
+    {
+      "path": "src/features/offline-data/OfflineData.tsx",
+      "change": "modified",
+      "baseSha256": "3ebc5ab7477ce826fdffdc2f58a9a182c737fb3a1a6de2c13665c793d39bb84b",
+      "sha256": "54580ed622b6c6846fea1b7de10fb6b03a91c9a9be3ec392eca76e6bfe9a33e8"
+    },
+    {
+      "path": "tests/guided-play/analyzer.test.ts",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "aa4bfd1463bdf9d088fb52d3e7d893076f1897da7ec757a53c8b3a4770c2cbde"
+    },
+    {
+      "path": "tests/guided-play/fixtures/observations.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "be44ae2d1a52b756c3ae2dc9ec5de24ab6e3c262c541ce86d298f17b40fc7750"
+    },
+    {
+      "path": "tests/guided-play/interaction.test.tsx",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "16caa5bbf0abca4df161bae17fccee6845364ab8cf3fc9ea2cad55cd1c14d9a3"
+    },
+    {
+      "path": "tests/guided-play/model.test.ts",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "229ffadc9022de394bc7b2f77442d9d1ce6c2cceb7b315b9dce49141f268876e"
+    },
+    {
+      "path": "tests/guided-play/static-offline.test.ts",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "80c08fb93151a3a18a6a12303c76135a971587e5d721bf7d4a736cbbb1e7a7e8"
+    }
+  ]
+}

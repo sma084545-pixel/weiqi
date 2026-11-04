@@ -47,8 +47,10 @@
       "properties": {
         "size": {
           "enum": [
+            5,
             9,
-            13
+            13,
+            19
           ]
         },
         "humanColor": {
@@ -176,6 +178,29 @@
               4
             ]
           }
+        }
+      }
+    },
+    "historyBranch": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sourceId",
+        "index",
+        "startEventCount"
+      ],
+      "properties": {
+        "sourceId": {
+          "type": "string",
+          "pattern": "^REVIEW-[a-f0-9]+$"
+        },
+        "index": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "startEventCount": {
+          "type": "integer",
+          "minimum": 0
         }
       }
     }

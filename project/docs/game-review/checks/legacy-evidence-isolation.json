@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "REVIEW-LEGACY-EVIDENCE-ISOLATION",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "passed",
+  "restoredHistoricalImages": [
+    "docs/online-tools/checks/browser/1280-maximized.png",
+    "docs/online-tools/checks/browser/360-floating-19.png",
+    "docs/online-tools/checks/browser/768-floating-9.png",
+    "docs/online-tools/checks/browser/chat.png",
+    "docs/t24/checks/journey/chromium/full-game.png",
+    "docs/t24/checks/journey/chromium/offline-editor.png"
+  ],
+  "currentCopies": "checks/legacy-regression/",
+  "reason": "Historical evidence remains exact; new regression images isolated."
+}

@@ -15,9 +15,15 @@ for field,expected in [('onlineServerOrigin',hosting['serverOrigin']),('katagoAn
 assert configured and public_version.get('onlineSiteOrigin')==hosting['siteUrl'].split('/weiqi/')[0]
 assert public_version.get('katagoAnalysisConfigured')==bool(hosting.get('analysisOrigin'))
 assert public_version.get('katagoExtremeConfigured')==bool(hosting.get('extremeAnalysisOrigin'))
-if (R/'src/features/guided-play/GuidedPlay.tsx').exists():
+if (R/'src/features/game-review/ReviewWorkspace.tsx').exists():
+ check=json.loads((R/'docs/game-review/checks/browser-local.json').read_text())
+ assert check.get('status')=='passed' and check.get('programVersion')==version,'Current continuation A/B journey must pass before publication.'
+ assert '83 passed (83)' in (R/'docs/game-review/checks/affected-unit.log').read_text()
+ guided_check=json.loads((R/'docs/game-review/checks/guided-regression.json').read_text())
+ assert guided_check.get('status')=='passed' and guided_check.get('programVersion')==version,'Existing guided journey must pass on this version.'
+else:
  guided_check=json.loads((R/'docs/guided-play/checks/browser-local.json').read_text())
- assert guided_check.get('status')=='passed' and guided_check.get('programVersion')==version,'Current Guided Play browser journey must pass before publication; stale or failed evidence is rejected.'
+ assert guided_check.get('status')=='passed' and guided_check.get('programVersion')==version
  assert '53 passed (53)' in (R/'docs/guided-play/checks/guided-unit.log').read_text()
 
 previous=json.loads((repo/'PUBLICATION.json').read_text()) if (repo/'PUBLICATION.json').exists() else {};revision=previous.get('revision',0)+1
@@ -35,11 +41,13 @@ for folder,dirs,names in os.walk(R):
   path=Path(folder)/name;rel=path.relative_to(R);target=source/rel;target.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(path,target);entries.append({'path':str(rel),'bytes':path.stat().st_size,'sha256':sha(path)})
 (source/'SOURCE_INFO.json').write_text(json.dumps({'schemaVersion':1,'id':'GITHUB-CURRENT-SOURCE','revision':revision,'rulesetId':'GO-CLUB-AREA-1','resultVersion':V,'programVersion':version,'sourceBuild':'pnpm install --frozen-lockfile && pnpm build','note':'Buildable source and materials; installed dependencies, private data and generated root build/output excluded. Full release archive includes production builds and all evidence.','files':entries},ensure_ascii=False,indent=2)+'\n')
 extreme_configured=public_version.get('katagoExtremeConfigured',False)
-manifest={'schemaVersion':1,'id':'GITHUB-PAGES-PUBLICATION','revision':revision,'rulesetId':'GO-CLUB-AREA-1','resultVersion':V,'programVersion':version,'siteUrl':'https://sma084545-pixel.github.io/weiqi/','sourceDirectory':'project/','formalPuzzles':30,'terminalFixtures':6,'microLessonPrimarySlides':25,'routeStages':12,'advancedLessons':6,'advancedScenes':37,'guidedPlayRoute':'#/play/guided','guidedPlayOfflineLocalOpponent':True,'aiPlayRoute':'#/play/ai','aiDifficultyProfiles':['relaxed','standard','challenge','extreme'],'aiExtremeAvailable':extreme_configured,'aiPlayRequiresNetwork':True,'onlineServerConfigured':configured,'onlineServerOrigin':server_origin,'onlineRoomsEphemeral':ephemeral,'katagoAnalysisOrigin':public_version.get('katagoAnalysisOrigin'),'katagoAnalysisConfigured':public_version.get('katagoAnalysisConfigured',False),'katagoExtremeOrigin':public_version.get('katagoExtremeOrigin'),'onlineStatus':'Public room server configured; chat and floating-board verification retained in docs/floating-fit.' if configured else 'Room server not configured.','files':site,'sourceManifestSha256':sha(source/'SOURCE_INFO.json')}
+manifest={'schemaVersion':1,'id':'GITHUB-PAGES-PUBLICATION','revision':revision,'rulesetId':'GO-CLUB-AREA-1','resultVersion':V,'programVersion':version,'siteUrl':'https://sma084545-pixel.github.io/weiqi/','sourceDirectory':'project/','formalPuzzles':30,'terminalFixtures':6,'microLessonPrimarySlides':25,'routeStages':12,'advancedLessons':6,'advancedScenes':37,'reviewContinuation':True,'onlinePostGameReview':True,'reviewMaxAutomaticPositions':4,'guidedPlayRoute':'#/play/guided','guidedPlayOfflineLocalOpponent':True,'aiPlayRoute':'#/play/ai','aiDifficultyProfiles':['relaxed','standard','challenge','extreme'],'aiExtremeAvailable':extreme_configured,'aiPlayRequiresNetwork':True,'onlineServerConfigured':configured,'onlineServerOrigin':server_origin,'onlineRoomsEphemeral':ephemeral,'katagoAnalysisOrigin':public_version.get('katagoAnalysisOrigin'),'katagoAnalysisConfigured':public_version.get('katagoAnalysisConfigured',False),'katagoExtremeOrigin':public_version.get('katagoExtremeOrigin'),'onlineStatus':'Public room server configured; chat and floating-board verification retained in docs/floating-fit.' if configured else 'Room server not configured.','files':site,'sourceManifestSha256':sha(source/'SOURCE_INFO.json')}
 (repo/'PUBLICATION.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n');(repo/'SHA256SUMS.txt').write_text(''.join(f"{x['sha256']}  {x['path']}\n" for x in site)+f"{sha(repo/'PUBLICATION.json')}  PUBLICATION.json\n"+f"{sha(source/'SOURCE_INFO.json')}  project/SOURCE_INFO.json\n")
 (repo/'README.md').write_text(f'''# 围棋社 · 最新版 {version}
 
 **原网址：[打开学习工具](https://sma084545-pixel.github.io/weiqi/)**
+
+本版新增复盘“从这里继续”：自由AI/辅助分支、完整真实历史、保留原谱和原游标。联机结束后可点“AI复盘”，自动基础战术核查与真实KataGo关键局面抽样；重试回到落子前，不影响结算。使用与边界见[复盘说明](project/docs/game-review/USER_GUIDE.md)。
 
 真实KataGo AI对弈保留轻松/标准/挑战，并新增独立强模型“极致”。{'极致已配置免费独立服务，实际部署验收见本轮报告。' if extreme_configured else '极致服务等待启用，当前明确显示不可开始；原三档可继续使用。'}选择执色和5/9/13/19路，正常轮流落子，支持一手/最近回合悔棋、重做、棋局滑动条、本机续玩、JSON/SGF和赛后复盘。四档不对应人类段级位；结束后人工确认死子及面积计分。新着法需联网，不提供真人进行中胜率提示。
 

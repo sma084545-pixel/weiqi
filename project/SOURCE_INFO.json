@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "id": "GITHUB-CURRENT-SOURCE",
-  "revision": 40,
+  "revision": 42,
   "rulesetId": "GO-CLUB-AREA-1",
-  "resultVersion": "0.26.2-pages.1",
-  "programVersion": "0.26.2",
+  "resultVersion": "0.27.0-pages.1",
+  "programVersion": "0.27.0",
   "sourceBuild": "pnpm install --frozen-lockfile && pnpm build",
   "note": "Buildable source and materials; installed dependencies, private data and generated root build/output excluded. Full release archive includes production builds and all evidence.",
   "files": [
@@ -25,8 +25,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 30413,
-      "sha256": "9d3895b9bc7c31871546bf33c2fb40a246ec39d704ecd36d5bdcfa55af426acf"
+      "bytes": 30853,
+      "sha256": "c487c2e012b411c75d2907adca9b491f1d8dfde1027619d19c207e06f159819a"
     },
     {
       "path": "MERGE_C_RELEASE_MANIFEST.json",
@@ -35,8 +35,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 11161,
-      "sha256": "fafcf5b532bbeebd05adcfc00030c8714b00df3556aa9411d90d62ea2dc6e733"
+      "bytes": 11591,
+      "sha256": "e446653f1f7ab018bd0fd5e459574eaa6e5bc5931ca788cd603a4a6bdbe085c3"
     },
     {
       "path": "README_MERGE_C.md",
@@ -55,8 +55,8 @@
     },
     {
       "path": "package.json",
-      "bytes": 4369,
-      "sha256": "8d352e58590c0ff26f8f88b5d1a511e56ea10f23d79395ba179c2c5d3c0834e0"
+      "bytes": 4420,
+      "sha256": "066ef2dc7503cab6be5caecbf36090831dbdc8b818d29addde4a36ba0825b3ae"
     },
     {
       "path": "playwright.advanced-regression.config.ts",
@@ -3984,6 +3984,11 @@
       "sha256": "8c016c9d624afbf4e30dcbd9fdf2fc4acc424254b0233fd37500c4606e81c82c"
     },
     {
+      "path": "handoff/REVIEW_BRANCHES.md",
+      "bytes": 3148,
+      "sha256": "ae6b297d06f3086afb703ba1138913ee5f2428f53e57ef91b2efd5ac9c5bb863"
+    },
+    {
       "path": "handoff/T00.md",
       "bytes": 5645,
       "sha256": "ad0621ade993bf80e931261bcd09fee26c65456eceb2588802c166285455e31f"
@@ -4167,6 +4172,16 @@
       "path": "tests/validation.test.ts",
       "bytes": 6817,
       "sha256": "d8258d0a0935fceb9315af1da13c87b76c17f5b9f566d4cbbb7726e064000877"
+    },
+    {
+      "path": "tests/game-review/interaction.test.tsx",
+      "bytes": 7799,
+      "sha256": "15673b0c89a960db6af6f3094b1884e2ca2c9e4793c467cb5bd970d1cbfc4857"
+    },
+    {
+      "path": "tests/game-review/model.test.ts",
+      "bytes": 9155,
+      "sha256": "71dd8da47c77e1740674fd25a6c1423718ad5177097a851fefb7f02fd351e782"
     },
     {
       "path": "tests/analysis/client.test.ts",
@@ -6812,6 +6827,171 @@
       "path": "docs/floating-play/checks/browser/regression/768-room.png",
       "bytes": 252924,
       "sha256": "51e401ff7281952939fd5f202831dfde44a6beecdbe1a989ecdd701e30798512"
+    },
+    {
+      "path": "docs/game-review/ACCEPTANCE.md",
+      "bytes": 2096,
+      "sha256": "79c7f3d93e0b490439846da992db5684dc2e1edf8952ae938c8e96b1a950faf0"
+    },
+    {
+      "path": "docs/game-review/IMPLEMENTATION.md",
+      "bytes": 2359,
+      "sha256": "964beab53824671f3a52bbf4662fd6cb08351cce65c73debd8853ad78dceb7a4"
+    },
+    {
+      "path": "docs/game-review/KNOWN_ISSUES.md",
+      "bytes": 1145,
+      "sha256": "1df422bbf6f7821e35dc5307a5455eac173afa35c1a789d753a78b8030aa0c38"
+    },
+    {
+      "path": "docs/game-review/USER_GUIDE.md",
+      "bytes": 3019,
+      "sha256": "182a62d74cbc643edf3002e532d9fbd79dd6a7b05c9c49873a7c95977dc19afb"
+    },
+    {
+      "path": "docs/game-review/screenshots/review-1280-guided.png",
+      "bytes": 140687,
+      "sha256": "e367154265b5aeccd7c6f08ac5c86a1aa81db5bb787d5ce24b1c17123d0b3f51"
+    },
+    {
+      "path": "docs/game-review/screenshots/review-360-guided.png",
+      "bytes": 76514,
+      "sha256": "90cfd70605e58a31aa40f3adac829284ff6ea75468c135b00fe5ee43d5e9568a"
+    },
+    {
+      "path": "docs/game-review/screenshots/review-768-guided.png",
+      "bytes": 82488,
+      "sha256": "760f36dd1129a63652223413ee9e3b069df0eb2b2c2cb862737de7c067c1a742"
+    },
+    {
+      "path": "docs/game-review/screenshots/review-A-40-branch.png",
+      "bytes": 166902,
+      "sha256": "16a3a6339ddf87a41ede6c4a2162cdde7b500f8fdfec4c6b1f015bb8fb2d2ac0"
+    },
+    {
+      "path": "docs/game-review/screenshots/review-B-online-summary.png",
+      "bytes": 152707,
+      "sha256": "8d92985513cb8896e74696ff41563f583553dd9d8b992fddd3bee0812eea7331"
+    },
+    {
+      "path": "docs/game-review/checks/affected-unit.log",
+      "bytes": 344,
+      "sha256": "37f50caaf9ccad3ec0e66d85acd8b6f0e3344e37f60c84c34702af12dbf3e932"
+    },
+    {
+      "path": "docs/game-review/checks/browser-local.json",
+      "bytes": 3224,
+      "sha256": "7a1c39a5b26729c26209353504734289f58c84403bd7cff3bd6cf0e56e0c2cf0"
+    },
+    {
+      "path": "docs/game-review/checks/browser-local.log",
+      "bytes": 13671,
+      "sha256": "1eec364c03420e4b74e57d9d9e5acdca3758d58b918b50762e4c9b3191017ccd"
+    },
+    {
+      "path": "docs/game-review/checks/browser-regression.log",
+      "bytes": 25957,
+      "sha256": "c0576109ee349124bd0f66294f42d231890ab5107a31c04b0068c0366a38c2ee"
+    },
+    {
+      "path": "docs/game-review/checks/full-check.log",
+      "bytes": 6973,
+      "sha256": "6d2a68f4b5b5104ee09967fa64d68ff6ffdf3220d75942ee652048c4b8ebcd85"
+    },
+    {
+      "path": "docs/game-review/checks/guided-regression.json",
+      "bytes": 2180,
+      "sha256": "78017cd921dd5ab66408efbbbc94c2e4a019343a6ccca9c15c3abd1e1e1197fb"
+    },
+    {
+      "path": "docs/game-review/checks/guided-regression.log",
+      "bytes": 11643,
+      "sha256": "42c15a4745789849ea6ac6c274707259ee8a41f43d1e434ec55acc13553d8732"
+    },
+    {
+      "path": "docs/game-review/checks/initial-browser-collapsed-list.json",
+      "bytes": 4438,
+      "sha256": "e24f6292ae3eeab0fd7037c9ebf8514e3d6d6f608dd0c30d292f29c0230f3590"
+    },
+    {
+      "path": "docs/game-review/checks/initial-browser-collapsed-list.log",
+      "bytes": 15075,
+      "sha256": "258e0fac23f384510b0444e7b31203a19ff0f483fe43d044af0216793dd25c74"
+    },
+    {
+      "path": "docs/game-review/checks/initial-browser-scope.json",
+      "bytes": 11222,
+      "sha256": "b3d3153b08fbf595690e0425ffb51a47879e660f6342c50c6c145e6031fb3372"
+    },
+    {
+      "path": "docs/game-review/checks/initial-browser-scope.log",
+      "bytes": 21723,
+      "sha256": "605b40c80f97885a8033adf04db5452ee90571e7bee4b7a357e31d51df93cbf1"
+    },
+    {
+      "path": "docs/game-review/checks/initial-browser-selector.json",
+      "bytes": 2482,
+      "sha256": "260a353ebe47ec9c81fdeb4f38e8de81474501be595fd0702d440ed029099957"
+    },
+    {
+      "path": "docs/game-review/checks/initial-browser-selector.log",
+      "bytes": 13132,
+      "sha256": "a9a4b07336888824e116f5b10cd531689478912541bc73399dc29ad23dfbd95c"
+    },
+    {
+      "path": "docs/game-review/checks/legacy-evidence-isolation.json",
+      "bytes": 647,
+      "sha256": "98384323803a06c2930478965a07bf91a59be44b0d6a36e7218446c63b68ccb9"
+    },
+    {
+      "path": "docs/game-review/checks/pages-build.log",
+      "bytes": 1181,
+      "sha256": "e400f1d6dc023b33e2a59f43586325992971c453d95130d78d8e5eced5683b86"
+    },
+    {
+      "path": "docs/game-review/checks/preservation.json",
+      "bytes": 288887,
+      "sha256": "6a635a43a025af72641d54e3f536b3f400e11ecf8980edc1adee29844fc14320"
+    },
+    {
+      "path": "docs/game-review/checks/review-unit.log",
+      "bytes": 375,
+      "sha256": "f2a88c7cb9caeb085ee0b95fdb6e976f09a862dd2ec4eec48abde4f46e2add9d"
+    },
+    {
+      "path": "docs/game-review/checks/legacy-regression/docs/online-tools/checks/browser/1280-maximized.png",
+      "bytes": 73939,
+      "sha256": "9b77e621fda281d29718b1477d8ef03f1ca070c1970f20337e1d24ff809b3702"
+    },
+    {
+      "path": "docs/game-review/checks/legacy-regression/docs/online-tools/checks/browser/360-floating-19.png",
+      "bytes": 33666,
+      "sha256": "bd8acca30c7b77fef9e9c620da3477cbbab5f3a703e6cdbe85738300efea374a"
+    },
+    {
+      "path": "docs/game-review/checks/legacy-regression/docs/online-tools/checks/browser/768-floating-9.png",
+      "bytes": 30731,
+      "sha256": "46148e985fd6f37cf2df0048d2ccae38411a376f9d2cad2069a219f3d456813c"
+    },
+    {
+      "path": "docs/game-review/checks/legacy-regression/docs/online-tools/checks/browser/chat.png",
+      "bytes": 275278,
+      "sha256": "295e24293b13693c509a11d202f05febc9fb0079d60249879152dadff964fc41"
+    },
+    {
+      "path": "docs/game-review/checks/legacy-regression/docs/t24/checks/journey/chromium/full-game.png",
+      "bytes": 314668,
+      "sha256": "76cbb6b58676826675264e0a92af81506c7d7ee3cd8678afeebe7077e441c2f8"
+    },
+    {
+      "path": "docs/game-review/checks/legacy-regression/docs/t24/checks/journey/chromium/offline-editor.png",
+      "bytes": 528312,
+      "sha256": "3a315968a9c43efb294e33152c72d18b350ba492568f37c86de5332a79976cfb"
+    },
+    {
+      "path": "docs/game-review/fixtures/development-40.json",
+      "bytes": 546318,
+      "sha256": "d059b3bc71de6cd619ddba4bf1f09e2a5d46158f78c4783292797997e21ab166"
     },
     {
       "path": "docs/t11/ACCEPTANCE.md",
@@ -15169,6 +15349,11 @@
       "sha256": "03e8af59bf527e8a0e63a4850f14befdff62b243300918ec34d0ad1c0f767394"
     },
     {
+      "path": "docs/guided-play/CHANGED_FILES.json",
+      "bytes": 21604,
+      "sha256": "d367f226486c24188920c019b36cc7ae293df3a21d5f6570215e4a921d2bbdec"
+    },
+    {
       "path": "docs/guided-play/IMPLEMENTATION.md",
       "bytes": 6682,
       "sha256": "118649e2876646b1f07d87de4bd58ba74a8109579ff4909c88d51f1d933b305c"
@@ -15465,8 +15650,8 @@
     },
     {
       "path": "schemas/guided-session.schema.json",
-      "bytes": 4267,
-      "sha256": "4c253beab8b240553e1601e9b8cabb35e50f2408aeaf415b2ea5aa886ad43fa0"
+      "bytes": 4787,
+      "sha256": "62e27fd5ab47d2d45f9e82918efd5ad38b34afda3fa63bd4cdfb2d8a90f424c7"
     },
     {
       "path": "schemas/t17-evidence.schema.json",
@@ -15859,6 +16044,11 @@
       "sha256": "23221249e06da7b70246649845519075ee87ce5df9e522c895d3f4b9b41395f4"
     },
     {
+      "path": "scripts/package-review.py",
+      "bytes": 6930,
+      "sha256": "5beafc694c7b41e3f5cbcb4bddbc23391b22f9d980c3b68d161336de9016b08b"
+    },
+    {
       "path": "scripts/package-t02.py",
       "bytes": 6136,
       "sha256": "c0548642f299987b4ae2c8b6017f1bcd8f0d0e30c7b41a020ede004a8c6b4874"
@@ -15969,6 +16159,16 @@
       "sha256": "5f980dcba7db93562c9840e6eb62c818669fdc7d5934b5471c544d41fd84e3be"
     },
     {
+      "path": "scripts/review-browser-fixtures.ts",
+      "bytes": 1003,
+      "sha256": "1564ac5693183c96b5b2742efca6fc59b536a8ef87bdb289665f457cf9f3650e"
+    },
+    {
+      "path": "scripts/review-browser-journey.cjs",
+      "bytes": 10848,
+      "sha256": "76a7a807bc8610c7801933443d11187b4462655e98461867bec4935802809cd3"
+    },
+    {
       "path": "scripts/run-advanced-browser.py",
       "bytes": 1806,
       "sha256": "c977f48e68081f039873371eaa248e79d8630f5ecea083c1db531a95424c87f2"
@@ -16030,8 +16230,8 @@
     },
     {
       "path": "scripts/sync-github-pages.py",
-      "bytes": 11682,
-      "sha256": "d37549c1007748b88124c6749e244da347ea07e4bca9ce4b7477409d75f0cc53"
+      "bytes": 12553,
+      "sha256": "d3cae7b0d35bcd347d28f02fb4c0b931361543079f82489b17abecef538f5e92"
     },
     {
       "path": "scripts/validate-advanced.ts",
@@ -16140,8 +16340,8 @@
     },
     {
       "path": "scripts/verify-online-dependencies.mjs",
-      "bytes": 2120,
-      "sha256": "d1d2b53fe6c7d6a0d3a28830399866c34c822478be6380ed949f18e6e7404ae5"
+      "bytes": 2123,
+      "sha256": "60a0621e6429ae61704852d30af6be0d032c1c1aa2a753a95325e8d49c6a2b82"
     },
     {
       "path": "scripts/verify-online-preservation.py",
@@ -16157,6 +16357,16 @@
       "path": "scripts/verify-online-tools-preservation.py",
       "bytes": 2588,
       "sha256": "8ffb6309e4a1f087794e07cf3736c50de0ffff748274f15d2c020d2a0cb189ef"
+    },
+    {
+      "path": "scripts/verify-review-archive.py",
+      "bytes": 2736,
+      "sha256": "9632c4e9537a81775909c99468da6cd1ff9638fd36a310321d88781eb44e8e50"
+    },
+    {
+      "path": "scripts/verify-review-preservation.py",
+      "bytes": 2720,
+      "sha256": "cfd234f3f0b1cf8d1e6c1a35df9a3e0867c5ea38246166bc96c7833b21dd94f7"
     },
     {
       "path": "scripts/verify-t01.py",
@@ -16456,7 +16666,7 @@
     {
       "path": "src/core/version.ts",
       "bytes": 117,
-      "sha256": "6078739b3565fcfc64bf92052ff63a2f73487e4272ef22c47f23ff4d989ac1c1"
+      "sha256": "028e6d0b616e8e0db737152d66b061471064e32a96a6e9f1546a4a21d0657361"
     },
     {
       "path": "src/core/analysis/ai-contract.ts",
@@ -16547,6 +16757,41 @@
       "path": "src/features/capture-lab/frames.ts",
       "bytes": 3372,
       "sha256": "b15d198ea84a5871b07152d4c319553d61b70910e81e43b149383edb5c5d26f3"
+    },
+    {
+      "path": "src/features/game-review/ReviewActions.tsx",
+      "bytes": 2640,
+      "sha256": "ff375d1345205eb25fae0a9a6f5ae9eeeef819704b1b8c17dfd134798202dafd"
+    },
+    {
+      "path": "src/features/game-review/ReviewWorkspace.css",
+      "bytes": 3564,
+      "sha256": "e5605d25028e34911fa2af2d119510318b8ba97f58771825360601f7c6ebf173"
+    },
+    {
+      "path": "src/features/game-review/ReviewWorkspace.tsx",
+      "bytes": 12500,
+      "sha256": "39c351d147d1e57339e905bca09863ea4e0d566399f1e8cb74719f2391a7d881"
+    },
+    {
+      "path": "src/features/game-review/analysis.ts",
+      "bytes": 5536,
+      "sha256": "ca640a671401929806ca84ded2f673c2bdd53a0e3538cdbbce8318c53d19672f"
+    },
+    {
+      "path": "src/features/game-review/model.ts",
+      "bytes": 3390,
+      "sha256": "5e8d918f9f22cfd906930818c635ad2d1b5524db6ad51b22898fad222cceda5b"
+    },
+    {
+      "path": "src/features/game-review/storage.ts",
+      "bytes": 3362,
+      "sha256": "9170d68abd52f7f9c6b2113bac1f6c1745f8b0286d3688b6fde6d7ae965a5309"
+    },
+    {
+      "path": "src/features/game-review/useWholeGameReview.ts",
+      "bytes": 4093,
+      "sha256": "be807c2743ce94335be11cceecd891f43383286aca33bb91ded580710be58edd"
     },
     {
       "path": "src/features/evidence/EvidencePage.css",
@@ -16670,8 +16915,8 @@
     },
     {
       "path": "src/features/full-game/FullGame.tsx",
-      "bytes": 21589,
-      "sha256": "ee5fea3120f86d9d364a93f3cbfd42d0ad47988feb07f16ebe29b2f8ea915e02"
+      "bytes": 21823,
+      "sha256": "d60daffeaf3bb85b3f07d180882092ae003bd05dac61daae7130a491973995a4"
     },
     {
       "path": "src/features/full-game/model.ts",
@@ -16750,8 +16995,8 @@
     },
     {
       "path": "src/features/online-game/OnlineGame.tsx",
-      "bytes": 17022,
-      "sha256": "e3a89dfb569772982db53e3599e2e1b3525efbe788f4f64051c1178e517b280d"
+      "bytes": 17185,
+      "sha256": "a5ca1e55e1549cdfd73c5bfa5f9ddd3d5a307c806a040dfc17d66ea46033c294"
     },
     {
       "path": "src/features/online-game/OnlineTools.css",
@@ -16930,8 +17175,8 @@
     },
     {
       "path": "src/features/ai-game/AiGame.tsx",
-      "bytes": 20036,
-      "sha256": "03503202fe004734b97a76bbc0e32c0d7ccff518a3ea517eb3f1c0308e8cbae8"
+      "bytes": 20828,
+      "sha256": "6344cf485a6163902ba504c9231ff08c8b733e16c318e34ecb7e903ccafaac58"
     },
     {
       "path": "src/features/ai-game/client.ts",
@@ -16995,8 +17240,8 @@
     },
     {
       "path": "src/features/guided-play/GuidedPlay.tsx",
-      "bytes": 17057,
-      "sha256": "b69f86ae4c8e2543799ef722369b63eca9aa75ecf88a3655b23df6cfa3d8e3d3"
+      "bytes": 17543,
+      "sha256": "5b4745f5fb9d2e948f40b08b4c7c4f6c4a8d3a7ea533b706949872fe9dddb646"
     },
     {
       "path": "src/features/guided-play/GuidedPlaySetup.tsx",
@@ -17025,8 +17270,8 @@
     },
     {
       "path": "src/features/guided-play/model.ts",
-      "bytes": 5745,
-      "sha256": "202c255b2fed6bfb96777cf74aaaabf7dc63240d5de187aaf3ffc46b2b95f4aa"
+      "bytes": 5790,
+      "sha256": "a86eb2f2ac7351ea4cd6a0b78a27a6a1b2865f8ff9b563350776af0fd8b8b909"
     },
     {
       "path": "src/features/guided-play/opponent.ts",
@@ -17035,18 +17280,18 @@
     },
     {
       "path": "src/features/guided-play/storage.ts",
-      "bytes": 8529,
-      "sha256": "4cb6db5879c34cec3227ceac973b7dfe0a3cbe82f86d3d5c93373bca390482df"
+      "bytes": 9014,
+      "sha256": "29704f57c04620749924034814eb497b63383bffc4004722e1e4831c21622ad8"
     },
     {
       "path": "src/features/guided-play/types.ts",
-      "bytes": 3310,
-      "sha256": "b92ccc4c176a2888253ef54d42fdb89a940f43e148d5599bf1cb877a48ff7365"
+      "bytes": 3387,
+      "sha256": "8d0b51c974c0c3048ae6b467294416c476c92b8bea68a6bcce02f1c96bff3e69"
     },
     {
       "path": "src/features/guided-play/useGuidedPlay.ts",
-      "bytes": 11649,
-      "sha256": "80234045ed7788c755d4c7c88297c66529c8842007cc6c0d01cd9394a7070cbb"
+      "bytes": 12174,
+      "sha256": "90d8510e3dce80522acbf30f6e405b1e64e2e4b3156f8d9f99b9666f415f96d1"
     },
     {
       "path": "src/features/guided-play/useTeachingAnalysis.ts",

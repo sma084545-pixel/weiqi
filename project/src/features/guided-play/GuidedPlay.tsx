@@ -3,6 +3,8 @@ import {Board} from '../../components/Board';
 import {GameTimeline} from '../../components/GameTimeline';
 import type {BoardMarker,BoardMatrix} from '../../core/rules';
 import {browserStoragePort} from '../../core/unified-persistence';
+import type {StoragePort} from '../../core/persistence';
+import type {GuidedSession} from './types';
 import {ConfirmDialog,ScoreDetails} from '../full-game/FullGame';
 import {confirmScoreFor,resignGame,resumeDisputedPlay,scorePreview,toggleDeadGroup} from '../full-game/model';
 import {serializeGameToSgf} from '../file-exchange/sgf';
@@ -14,6 +16,7 @@ import {teachingOverlay} from './TeachingOverlay';
 import {guidedSummary} from './model';
 import {guidedSessionJson,GUIDED_INTRO_KEY,MAX_GUIDED_BYTES} from './storage';
 import {CONCEPT_LABELS,LEVELS} from './types';
+import {ReviewActions} from '../game-review/ReviewActions';
 import {useGuidedPlay} from './useGuidedPlay';
 import '../full-game/FullGame.css';
 import './GuidedPlay.css';
@@ -22,8 +25,8 @@ function download(text:string,name:string,type='application/json'){
   const url=URL.createObjectURL(new Blob([text],{type})),a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),0);
 }
 const initialZoom=()=>globalThis.matchMedia?.('(max-width:520px)').matches ? .75 : .85;
-export function GuidedPlay({projector=false}:{projector?:boolean}){
-  const c=useGuidedPlay(),{game,session,options,history}=c;
+export function GuidedPlay({projector=false,initialSession,storagePort,embedded=false}:{projector?:boolean;initialSession?:GuidedSession;storagePort?:StoragePort;embedded?:boolean}){
+  const c=useGuidedPlay(initialSession,storagePort),{game,session,options,history}=c;
   const [introSeen,setIntroSeen]=useState(()=>{try{return JSON.parse(browserStoragePort().getItem(GUIDED_INTRO_KEY)??'null')?.seen===true;}catch{return false;}});
   const [zoom,setZoom]=useState(initialZoom),[viewKey,setViewKey]=useState(0),fileInput=useRef<HTMLInputElement>(null),alive=useRef(true);
   useEffect(()=>{alive.current=true;const old=document.title;document.title='辅助下棋 · Guided Play | 围棋社';return()=>{alive.current=false;document.title=old;};},[]);
@@ -52,12 +55,12 @@ export function GuidedPlay({projector=false}:{projector?:boolean}){
     <header className="full-game-hero guided-hero"><p><a href="#/route">← 返回学习路线</a></p><span className="module-kicker">从练习走向实战 · Guided Play</span><h1>辅助下棋</h1><p>每一步仍由你决定。先观察，再比较；需要时打开一点提示，关键着后一起想想原因。</p><p className="guided-mode-note">这里是边下边学的独立模式。普通 AI 对弈与自由对弈仍可照常使用。</p></header>
     {!game&&!introSeen?<section className="guided-onboarding" aria-labelledby="guided-intro-title"><h2 id="guided-intro-title">第一盘，只记住三件事</h2><ol><li><strong>你自己下。</strong>这是一盘正常围棋，你仍然决定每一步。</li><li><strong>提示一点点来。</strong>先给问题，再给区域，最后才是候选。</li><li><strong>只在关键时刻停一停。</strong>看看自己的气，也想想对手在做什么。</li></ol><button type="button" className="primary-action" onClick={intro}>开始第一盘辅助对局</button></section>:!game?<GuidedPlaySetup options={c.settings} colorChoice={c.colorChoice} onColor={c.setColorChoice} onOptions={c.setSettings} onStart={c.start} networkAvailable={!!aiServiceOrigin('relaxed')} completed={c.completed}/>:session&&<>
       <section className="guided-focus" aria-label="本局教学重点"><span>本局只关注</span>{c.focus.map(f=><strong key={f}>{CONCEPT_LABELS[f]}</strong>)}<small>Level {options.level} · {LEVELS[options.level].label} · {options.opponent==='local'?'本地教学机器人':'真实 KataGo'}</small></section>
-      <div className="full-game-layout guided-layout"><section className="full-board-panel guided-board-panel" aria-labelledby="guided-board-title"><div className="full-board-heading"><div><span>{game.size}路 · 你执{options.humanColor==='B'?'黑':'白'} · 贴目0</span><h2 id="guided-board-title" tabIndex={-1}>一边下，一边想</h2></div><strong>{status}</strong></div>
+      <div className="full-game-layout guided-layout"><section className="full-board-panel guided-board-panel" aria-labelledby="guided-board-title"><div className="full-board-heading"><div><span>{game.size}路 · 你执{options.humanColor==='B'?'黑':'白'} · 贴目 {game.komi}</span><h2 id="guided-board-title" tabIndex={-1}>一边下，一边想</h2></div><strong>{status}</strong></div>
         <Board size={game.size} board={board} label={`辅助下棋，${status}`} mode={c.viewing||game.phase==='finished'?'readonly':game.phase==='scoring'?'mark':'play'} disabled={!!c.modal||c.viewing||game.phase==='finished'||(game.phase==='playing'&&!c.humanAllowed)} selected={null} onPlay={at=>c.play(at)} onSelect={at=>{if(game.phase==='scoring'&&!c.viewing)c.apply(toggleDeadGroup(session.match,at));}} markers={markers} showCoordinates zoom={zoom} resetViewKey={viewKey} displayMode={projector?'projector':'standard'}/>
         {overlay.caption&&!history.viewingHistory&&<p className="guided-overlay-caption">{overlay.caption}</p>}
         <div className="guided-actions guided-board-actions"><button type="button" disabled={zoom>=1.5} onClick={()=>setZoom(z=>Math.min(1.5,z+.25))}>放大棋盘</button><button type="button" disabled={zoom<=.75} onClick={()=>setZoom(z=>Math.max(.75,z-.25))}>缩小棋盘</button><button type="button" onClick={()=>{setZoom(initialZoom());setViewKey(k=>k+1);}}>复位视图</button><button type="button" onClick={c.hideHints}>清除教学标记</button></div>
         {c.beforeView&&<div className="guided-preview-notice"><p>正在只读观察你上一手之前。当前棋局保留，想换一手请用“悔棋并重试”。</p><button type="button" onClick={c.continueAfterFeedback}>回到当前局面并继续</button></div>}
-        {history.frame&&!c.beforeView&&<details className="guided-timeline"><summary>棋谱回看 · 棋局滑动条</summary><GameTimeline max={history.max} value={history.index} onChange={c.goTo} title={history.frame.title} description={history.frame.description} help="滑动只读回看，不修改棋局；对手会暂停，旧提示会清除。真正重试请用撤回最近回合。"/></details>}
+        {history.frame&&!c.beforeView&&<details className="guided-timeline"><summary>棋谱回看 · 棋局滑动条</summary><GameTimeline max={history.max} value={history.index} onChange={c.goTo} title={history.frame.title} description={history.frame.description} help="滑动只读回看，不修改棋局；对手会暂停，旧提示会清除。真正重试请用撤回最近回合。"/></details>}{!embedded&&<ReviewActions game={game} index={c.beforeView?.moves.length??history.index} humanColor={options.humanColor} title="辅助下棋" onOpen={c.stop}/>}
       </section><aside className="full-game-controls guided-teaching-panel" aria-label="教学与对局操作">
         <div className="guided-turn" role="status" aria-live="polite"><strong>{status}</strong>{game.phase==='playing'&&game.toPlay!==options.humanColor&&!c.waiting&&!c.viewing&&<p>{c.paused?'对手暂停，可手动继续。':c.opponent.message||'对手正在准备下一手。'}</p>}</div>
         {game.phase==='playing'&&<>
@@ -70,7 +73,7 @@ export function GuidedPlay({projector=false}:{projector?:boolean}){
         </>}
         {game.phase==='scoring'&&!c.viewing&&<section className="scoring-actions"><h2>停下来，共同核对</h2><p>连续两停手只代表准备收尾，机器人没有替你判死活。请与同伴核对：点击整块标记或取消死子，再依次接受同一清单。中立点由边界规则列出。</p>{session.match.scoring.confirmedBy.length===0?<button type="button" onClick={()=>c.apply(confirmScoreFor(session.match,'B'))}>已人工核对黑方清单</button>:<button type="button" onClick={()=>c.apply(confirmScoreFor(session.match,'W'))}>已人工核对白方同一清单并结束</button>}<button type="button" onClick={()=>{c.stop();c.clearTeaching();c.apply(resumeDisputedPlay(session.match,options.humanColor));}}>有争议，恢复原盘面</button><p>不确定就继续实际演示。预览标记不会改变历史棋盘。</p></section>}
         {game.phase==='finished'&&<section><h2>先回想，再看结果</h2><p>下面的本局报告只记录实际操作与棋形变化。你可以滑动回看，或从关键局面再试一次。</p><a className="text-link" href="#guided-summary-title" onClick={e=>{e.preventDefault();document.getElementById('guided-summary-title')?.scrollIntoView({block:'start',behavior:'auto'});}}>查看本局学习报告 ↓</a></section>}
-        <section className="guided-game-controls"><h3>回退与重试</h3><div className="guided-actions"><button type="button" disabled={!game.undoStack.length} onClick={()=>c.travel('undo')}>撤回一手</button><button type="button" disabled={!game.undoStack.length} onClick={()=>c.travel('undo',true)}>撤回最近回合</button><button type="button" disabled={!game.redoStack.length} onClick={()=>c.travel('redo')}>重做一手</button><button type="button" onClick={()=>{c.stop();c.setModal('restart');}}>另开一局</button></div><p>回退后对手暂停。新落子会清除旧重做分支与旧教学标记。</p></section>
+        <section className="guided-game-controls"><h3>回退与重试</h3><div className="guided-actions"><button type="button" disabled={!game.undoStack.length} onClick={()=>c.travel('undo')}>撤回一手</button><button type="button" disabled={!game.undoStack.length} onClick={()=>c.travel('undo',true)}>撤回最近回合</button><button type="button" disabled={!game.redoStack.length} onClick={()=>c.travel('redo')}>重做一手</button>{!embedded&&<button type="button" onClick={()=>{c.stop();c.setModal('restart');}}>另开一局</button>}</div><p>回退后对手暂停。新落子会清除旧重做分支与旧教学标记。</p></section>
         {session.parentSessionId&&<button type="button" onClick={c.returnOriginal}>返回原局报告，保留当前变化</button>}
         <details className="guided-save"><summary>保存、导出与续玩</summary><p>自动保存与普通 AI、双人对弈和课程12存档分开；刷新后暂停对手。</p><div className="guided-actions"><button type="button" onClick={c.save}>保存辅助棋局</button><button type="button" onClick={exportSession}>导出辅助续玩 JSON</button><button type="button" onClick={exportSgf}>导出 SGF 主线</button><button type="button" onClick={()=>fileInput.current?.click()}>导入辅助续玩</button></div></details>
       </aside></div>

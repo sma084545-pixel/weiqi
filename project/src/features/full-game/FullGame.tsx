@@ -14,6 +14,7 @@ import {createFullGameStore,fullGameJson} from './storage';
 import {browserStoragePort} from '../../core/unified-persistence';
 import {useKataGoReview} from '../katago-review/useKataGoReview';
 import {KataGoReview} from '../katago-review/KataGoReview';
+import {ReviewActions} from '../game-review/ReviewActions';
 import './FullGame.css';
 
 const colorName=(color:Color)=>color==='B'?'黑方':'白方';
@@ -121,6 +122,7 @@ export function FullGame({projector=false,freePlay=false}:{projector?:boolean;fr
         <Board size={game?.size??match.setup.size} board={board} label={`完整${game?.size??match.setup.size}路棋盘，${status}`} mode={mode} disabled={Boolean(frame)||(game?.phase==='finished')} selected={null} onSelect={select} onPlay={play} markers={[...markers,...analysis.markers]} showCoordinates displayMode={projector?'projector':'standard'}/>
         <div className="full-legend"><span><i className="legend-stone black"/>黑子</span><span><i className="legend-stone white"/>白子</span><span><i className="legend-last"/>最后一手</span>{dead.length>0&&<span><i className="legend-dead">△</i>待确认死子</span>}</div>
         {game&&history.frame&&<GameTimeline max={history.max} value={history.index} onChange={history.goTo} title={history.frame.title} description={history.frame.description}/>}
+        {game&&<ReviewActions game={game} index={history.index} humanColor={history.frame?.toPlay??game.toPlay} title={freePlay?'自由双人对局':'完整围棋对局'}/>}
       </div>
 
       <aside className="full-game-controls" aria-label="完整对弈控制">

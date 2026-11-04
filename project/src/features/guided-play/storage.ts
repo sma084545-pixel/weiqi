@@ -17,9 +17,11 @@ export function parseGuidedSession(text:string):Read {
   try{
     if(new TextEncoder().encode(text).length>MAX_GUIDED_BYTES)throw Error();
     const d=JSON.parse(text) as Document;
-    if(!plain(d)||Object.keys(d).some(k=>!['schemaVersion','id','revision','rulesetId','kind','options','game','scoring','hintUses','parentSessionId'].includes(k))||d.schemaVersion!==1||!validId(d.id)||d.rulesetId!=='GO-CLUB-AREA-1'||d.kind!=='GuidedPlaySession'||!Number.isSafeInteger(d.revision)||d.revision<1||!validGuidedOptions(d.options)||!(d.parentSessionId===null||validId(d.parentSessionId)))throw Error();
+    if(!plain(d)||Object.keys(d).some(k=>!['schemaVersion','id','revision','rulesetId','kind','options','game','scoring','hintUses','parentSessionId','historyBranch'].includes(k))||d.schemaVersion!==1||!validId(d.id)||d.rulesetId!=='GO-CLUB-AREA-1'||d.kind!=='GuidedPlaySession'||!Number.isSafeInteger(d.revision)||d.revision<1||!validGuidedOptions(d.options)||!(d.parentSessionId===null||validId(d.parentSessionId)))throw Error();
     const r=restoreFullGame(d.game);if(!r.ok||!r.value.game)throw Error();const g=r.value.game;
-    if(g.id!==GUIDED_GAME_ID||g.size!==d.options.size||g.komi!==0||g.setup.stones.length||g.setup.toPlay!=='B')throw Error();
+    if(g.id!==GUIDED_GAME_ID||g.size!==d.options.size)throw Error();
+    if(d.historyBranch){const b=d.historyBranch;if(!plain(b)||Object.keys(b).some(k=>!['sourceId','index','startEventCount'].includes(k))||typeof b.sourceId!=='string'||!/^REVIEW-[a-f0-9]+$/.test(b.sourceId)||!Number.isInteger(b.index)||b.index<0||!Number.isInteger(b.startEventCount)||b.startEventCount<0||b.startEventCount>g.moves.length)throw Error();}
+    else if(![9,13].includes(g.size)||g.komi!==0||g.setup.stones.length||g.setup.toPlay!=='B')throw Error();
     const draft=d.scoring;
     if(!plain(draft)||Object.keys(draft).some(k=>!['deadStones','confirmedBy'].includes(k))||!Array.isArray(draft.deadStones)||!Array.isArray(draft.confirmedBy)||draft.confirmedBy.length>2||draft.confirmedBy.some((c,i)=>c!==(i===0?'B':'W')))throw Error();
     const points=draft.deadStones;
@@ -28,7 +30,7 @@ export function parseGuidedSession(text:string):Read {
     for(const p of points){const group=rulesEngine.getGroup(g.board,p);if(!group.ok||!group.value||group.value.stones.some(q=>!keys.has(`${q.row},${q.col}`)))throw Error();}
     if(g.phase==='scoring'&&draft.confirmedBy.length>1)throw Error();
     if(!Array.isArray(d.hintUses)||d.hintUses.length>500||d.hintUses.some((h:HintUse)=>!plain(h)||Object.keys(h).some(k=>!['index','path','level'].includes(k))||!Number.isInteger(h.index)||h.index<0||h.index>4000||![1,2,3,4].includes(h.level)||typeof h.path!=='string'||h.path.length>32_000))throw Error();
-    return {ok:true,session:{schemaVersion:1,id:d.id,revision:d.revision,rulesetId:'GO-CLUB-AREA-1',kind:'GuidedPlaySession',options:{...d.options},match:g.phase==='scoring'?{...r.value,scoring:{deadStones:points,confirmedBy:draft.confirmedBy}}:r.value,hintUses:d.hintUses.map(h=>({...h})),parentSessionId:d.parentSessionId}};
+    return {ok:true,session:{schemaVersion:1,id:d.id,revision:d.revision,rulesetId:'GO-CLUB-AREA-1',kind:'GuidedPlaySession',options:{...d.options},match:g.phase==='scoring'?{...r.value,scoring:{deadStones:points,confirmedBy:draft.confirmedBy}}:r.value,hintUses:d.hintUses.map(h=>({...h})),parentSessionId:d.parentSessionId,...(d.historyBranch?{historyBranch:{...d.historyBranch}}:{})}};
   }catch{return {ok:false,message:'辅助对局记录未通过版本、设置或规则重放校验。原记录保留，可先导出本机备份，或明确另开一局。'};}
 }
 export function guidedSessionJson(session:GuidedSession):string {

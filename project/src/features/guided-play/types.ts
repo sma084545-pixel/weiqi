@@ -1,4 +1,4 @@
-import type {Color,Coord,GameState} from '../../core/content.generated';
+import type {Color,Coord,GameState,Size} from '../../core/content.generated';
 import type {BoardMarker,GroupStatus} from '../../core/rules';
 import type {FullGameMatch} from '../full-game/model';
 
@@ -6,7 +6,7 @@ export type GuidanceLevel=1|2|3;
 export type LearningGoal='auto'|'liberties'|'connection'|'life'|'opening';
 export type TeachingConcept='liberties'|'atari'|'capture'|'connection'|'escape'|'eyes'|'opening';
 export type GuidedOpponent='local'|'katago';
-export interface GuidedOptions {size:9|13;humanColor:Color;level:GuidanceLevel;goal:LearningGoal;opponent:GuidedOpponent}
+export interface GuidedOptions {size:Size;humanColor:Color;level:GuidanceLevel;goal:LearningGoal;opponent:GuidedOpponent}
 export const DEFAULT_GUIDED_OPTIONS:GuidedOptions={size:9,humanColor:'B',level:2,goal:'auto',opponent:'local'};
 export const LEVELS={1:{label:'全程引导',description:'危险时先问一句；落子仍由你决定。'},2:{label:'适度指导',description:'先独立思考，关键着后反馈；提示按需展开。'},3:{label:'复盘为主',description:'对局中只提醒一气危险，结束后一起回看。'}} as const;
 export const GOALS={auto:'自动选择',liberties:'气与提子',connection:'连接与切断',life:'基础死活',opening:'基础布局'} as const;
@@ -32,6 +32,7 @@ export interface HintUse {path:string;index:number;level:1|2|3|4}
 export interface GuidedSession {
   schemaVersion:1;id:string;revision:number;rulesetId:'GO-CLUB-AREA-1';kind:'GuidedPlaySession';
   options:GuidedOptions;match:FullGameMatch;hintUses:HintUse[];parentSessionId:string|null;
+  historyBranch?:{sourceId:string;index:number;startEventCount:number};
 }
 export type GuidedPhase='USER_THINKING'|'USER_REQUESTED_HINT'|'USER_MOVE_FEEDBACK'|'AI_THINKING'|'AI_MOVE_EXPLANATION'|'HISTORY'|'SCORING'|'GUIDED_PLAY_SUMMARY';
 export interface GuidedSummary {

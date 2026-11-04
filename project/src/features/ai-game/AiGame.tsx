@@ -4,6 +4,8 @@ import {GameTimeline,useGameHistory} from '../../components/GameTimeline';
 import type {Color,Coord} from '../../core/content.generated';
 import {RULE_ERROR_ZH,type BoardMarker,type BoardMatrix} from '../../core/rules';
 import {AI_DIFFICULTIES,EXTREME_MODEL,type AiDifficulty} from '../../core/analysis/ai-contract';
+import type {StoragePort} from '../../core/persistence';
+import {ReviewActions} from '../game-review/ReviewActions';
 import {browserStoragePort} from '../../core/unified-persistence';
 import {FULL_GAME_SIZES,setBoardSize,setKomi,setSetupKind,toggleHandicapStone,confirmScoreFor,toggleDeadGroup,resumeDisputedPlay,scorePreview,resignGame,type FullGameMatch,type FullGameFlowResult} from '../full-game/model';
 import {ConfirmDialog,ScoreDetails} from '../full-game/FullGame';
@@ -25,11 +27,12 @@ function download(text:string,name:string,type='application/json'){
   const url=URL.createObjectURL(new Blob([text],{type})),a=document.createElement('a');a.href=url;a.download=name;a.click();URL.revokeObjectURL(url);
 }
 
-export function AiGame({projector=false}:{projector?:boolean}){
-  const [loaded]=useState(()=>createAiSessionStore(browserStoragePort()).load());
+export function AiGame({projector=false,initial,storagePort,embedded=false,historyFloor=0}:{projector?:boolean;initial?:{match:FullGameMatch;options:AiOptions};storagePort?:StoragePort;embedded?:boolean;historyFloor?:number}){
+  const port=useMemo(()=>storagePort??browserStoragePort(),[storagePort]);
+  const [loaded]=useState(()=>initial?{ok:true as const,match:initial.match,options:initial.options}:createAiSessionStore(port).load());
   const [match,setMatch]=useState<FullGameMatch>(()=>loaded.ok&&loaded.match?loaded.match:emptyAiMatch());
   const [options,setOptions]=useState<AiOptions>(()=>loaded.ok&&loaded.options?loaded.options:{...DEFAULT_AI_OPTIONS});
-  const [paused,setPaused]=useState(()=>loaded.ok&&!!loaded.match),[notice,setNotice]=useState(loaded.ok&&loaded.match?'已恢复本机 AI 棋局；AI 暂停，请按需继续。':loaded.ok?'':loaded.message);
+  const [paused,setPaused]=useState(()=>!initial&&loaded.ok&&!!loaded.match),[notice,setNotice]=useState(initial?'已进入独立续下分支；轮次与完整历史已恢复。':loaded.ok&&loaded.match?'已恢复本机 AI 棋局；AI 暂停，请按需继续。':loaded.ok?'':loaded.message);
   const [modal,setModal]=useState<'restart'|'resign'|'load'|'import'|null>(null),[discard,setDiscard]=useState<{type:'size';size:5|9|13|19}|{type:'kind';kind:'empty'|'free-handicap'}|null>(null);
   const [incoming,setIncoming]=useState<{match:FullGameMatch;options:AiOptions}|null>(null),[zoom,setZoom]=useState(1),[viewKey,setViewKey]=useState(0);
   const latest=useRef(match);latest.current=match;const moveGate=useRef(false),input=useRef<HTMLInputElement>(null),alive=useRef(true);
@@ -45,7 +48,7 @@ export function AiGame({projector=false}:{projector?:boolean}){
   const serviceOrigin=aiServiceOrigin(options.difficulty);
   const review=useKataGoReview(game,history.index,game?.phase==='finished',serviceOrigin,options.difficulty==='extreme'?EXTREME_MODEL.name:undefined);
   useEffect(()=>{moveGate.current=false;},[game]);
-  useEffect(()=>{if(!game)return;const result=createAiSessionStore(browserStoragePort()).save(match,options);if(!result.ok)setNotice(result.message);},[match,options]);
+  useEffect(()=>{if(!game)return;const result=createAiSessionStore(port).save(match,options);if(!result.ok)setNotice(result.message);},[match,options]);
   const stop=()=>{opponent.cancel();setPaused(true);};
   const requestModal=(value:typeof modal)=>{stop();setModal(value);};
   const humanAllowed=!!game&&game.phase==='playing'&&game.toPlay===options.humanColor&&!viewing&&!modal&&!discard;
@@ -54,7 +57,7 @@ export function AiGame({projector=false}:{projector?:boolean}){
     const result=humanMove(match,options,at);if(!result.ok)moveGate.current=false;
     else setPaused(false);apply(result);
   };
-  const travel=(direction:'undo'|'redo',round=false)=>{stop();apply(travelAiHistory(match,options,direction,round));};
+  const travel=(direction:'undo'|'redo',round=false)=>{stop();const count=match.game?.moves.length??0;if(direction==='undo'&&count<=historyFloor){setNotice('已到分支起点，原棋谱保留。');return;}apply(travelAiHistory(match,options,direction,round&&count-historyFloor>=2));};
   const goTo=(n:number)=>{stop();history.goTo(n);};
   const again=()=>{opponent.cancel();setMatch(emptyAiMatch());setPaused(false);setNotice('请选择新一局的设置。');setModal(null);};
   const start=()=>{if(options.difficulty==='extreme'&&!serviceOrigin){setNotice('极致服务尚未启用。可先选择其他三档；现有棋局与存档不受影响。');return;}const r=startAiGame(match);if(r.ok)setPaused(false);apply(r);};
@@ -67,8 +70,8 @@ export function AiGame({projector=false}:{projector?:boolean}){
   const timeline=game&&history.frame?<GameTimeline max={history.max} value={history.index} onChange={goTo} title={history.frame.title} description={history.frame.description} help="滑动只读回看，不改变棋局；回看时会暂停 AI。真正悔棋请用撤回一手或撤回最近回合。"/>:null;
   const turnActions=<><button type="button" disabled={!humanAllowed} onClick={()=>play(null)}>停一手</button><button type="button" disabled={!game?.undoStack.length||!!modal} onClick={()=>travel('undo')}>撤回一手</button><button type="button" disabled={!game?.redoStack.length||!!modal} onClick={()=>travel('redo')}>重做一手</button></>;
   const renderBoard=(variant:'full'|'mini'|'pip',reset=0)=><Board size={game?.size??match.setup.size} board={board} label={`${variant==='mini'?'悬浮小棋盘 · ':''}AI 对弈，${status}`} mode={!game?match.setup.kind==='free-handicap'?'mark':'readonly':viewing||game.phase==='finished'?'readonly':game.phase==='scoring'?'mark':'play'} disabled={!!modal||!!discard||viewing||game?.phase==='finished'||(game?.phase==='playing'&&!humanAllowed)} selected={null} onPlay={at=>play(at)} onSelect={at=>{if(!game)apply(toggleHandicapStone(match,at));else if(game.phase==='scoring'&&!viewing)apply(toggleDeadGroup(match,at));}} markers={markers} showCoordinates zoom={variant==='full'?zoom:.75} resetViewKey={viewKey+reset} displayMode={variant==='full'&&projector?'projector':'standard'}/>;
-  const save=()=>{const r=createAiSessionStore(browserStoragePort()).save(match,options);setNotice(r.ok?'AI 对局、难度和待确认清单已保存到当前设备。':r.message);};
-  const restore=()=>{const r=createAiSessionStore(browserStoragePort()).load();if(r.ok&&r.match&&r.options){setMatch(r.match);setOptions(r.options);setPaused(true);setNotice('已读取，AI 暂停。可回看、悔棋或继续。');}else setNotice(r.ok?'本设备没有已保存的 AI 对局。':r.message);};
+  const save=()=>{const r=createAiSessionStore(port).save(match,options);setNotice(r.ok?'AI 对局、难度和待确认清单已保存到当前设备。':r.message);};
+  const restore=()=>{const r=createAiSessionStore(port).load();if(r.ok&&r.match&&r.options){setMatch(r.match);setOptions(r.options);setPaused(true);setNotice('已读取，AI 暂停。可回看、悔棋或继续。');}else setNotice(r.ok?'本设备没有已保存的 AI 对局。':r.message);};
   const exportOne=(kind:'session'|'game'|'sgf')=>{if(!game)return;try{if(kind==='session')download(aiSessionJson(match,options),'围棋-AI续玩.json');else if(kind==='game')download(JSON.stringify(game,null,2)+'\n','围棋-AI棋局.json');else{const r=serializeGameToSgf(game);download(r.text,'围棋-AI棋局.sgf','application/x-go-sgf');if(r.warnings.length)setNotice(r.warnings.join('；'));}}catch(e){setNotice(e instanceof Error?e.message:'导出未完成，原对局保留。');}};
   const readFile=async(file:File|undefined)=>{if(!file)return;if(file.size>MAX_AI_SESSION_BYTES){setNotice('续玩文件过大，未替换当前棋局。');return;}try{const result=parseAiSession(await file.text());if(!alive.current)return;if(!result.ok){setNotice(result.message);return;}if(!result.match||!result.options)return;stop();setIncoming({match:result.match,options:result.options});setModal('import');}catch{if(alive.current)setNotice('文件读取失败，原棋局保留。');}};
   return <div className="full-game-page ai-game-page" data-testid="ai-game" data-view={game?'game':'setup'} data-phase={game?.phase??'setup'} data-move-count={game?.moves.length??0} data-turn={game?.toPlay??''} data-paused={paused} data-difficulty={options.difficulty}>
@@ -78,7 +81,7 @@ export function AiGame({projector=false}:{projector?:boolean}){
     <section className="full-game-layout"><div className="full-board-panel"><div className="full-board-heading"><div><span>{game?.size??match.setup.size}路 · 贴目 {game?.komi??match.setup.komi}</span><h2>{game?'对局棋盘':'开局棋盘'}</h2></div><strong aria-live="polite">{status}</strong></div>
       {game&&<BoardDisplayTools context="ai" renderBoard={renderBoard} timeline={timeline} chat={<section className="ai-max-help"><h3>本局设置</h3><p>你执{color(options.humanColor)}；难度：{AI_DIFFICULTIES[options.difficulty].label}。</p><p>AI 思考时可暂停或撤回；历史局面只读。终局确认与赛后分析在主页面完成。</p></section>} status={status} turnActions={turnActions}/>}
       {renderBoard('full')}
-      <div className="ai-view-controls"><button type="button" disabled={zoom>=1.5} onClick={()=>setZoom(z=>Math.min(1.5,z+.25))}>放大棋盘</button><button type="button" disabled={zoom<=.75} onClick={()=>setZoom(z=>Math.max(.75,z-.25))}>缩小棋盘</button><button type="button" onClick={()=>{setZoom(1);setViewKey(v=>v+1);}}>复位视图</button></div>{timeline}
+      <div className="ai-view-controls"><button type="button" disabled={zoom>=1.5} onClick={()=>setZoom(z=>Math.min(1.5,z+.25))}>放大棋盘</button><button type="button" disabled={zoom<=.75} onClick={()=>setZoom(z=>Math.max(.75,z-.25))}>缩小棋盘</button><button type="button" onClick={()=>{setZoom(1);setViewKey(v=>v+1);}}>复位视图</button></div>{timeline}{!embedded&&game&&<ReviewActions game={game} index={history.index} humanColor={options.humanColor} title="AI 对局" difficulty={options.difficulty} onOpen={stop}/>}
     </div><aside className="full-game-controls" aria-label="AI 对弈控制">{!game?<>
       <h2>确定本局设置</h2><label htmlFor="ai-size">棋盘尺寸<select id="ai-size" value={match.setup.size} onChange={e=>{const size=Number(e.target.value) as 5|9|13|19;const r=setBoardSize(match,size);if(!r.ok&&r.error.code==='SIZE_CHANGE_REQUIRES_CLEAR')setDiscard({type:'size',size});else apply(r);}}>{FULL_GAME_SIZES.map(s=><option key={s} value={s}>{s}路{s===5?'（小棋盘练习）':''}</option>)}</select></label>
       <label htmlFor="ai-level">难度<select id="ai-level" value={options.difficulty} aria-describedby="ai-level-help" onChange={e=>setOptions({...options,difficulty:e.target.value as AiDifficulty})}>{Object.entries(AI_DIFFICULTIES).map(([id,p])=><option key={id} value={id}>{p.label}</option>)}</select></label><p id="ai-level-help" role="status">{AI_DIFFICULTIES[options.difficulty].description}{options.difficulty==='extreme'&&(serviceOrigin?' 单次搜索约半分钟，启动或排队时可能更久。':' 极致服务尚未启用；可先使用其他三档。')}</p>
@@ -89,7 +92,7 @@ export function AiGame({projector=false}:{projector?:boolean}){
     </>:<>
       <section className="turn-card"><span className={`turn-stone ${game.toPlay==='B'?'black':'white'}`}/><div><strong>{status}</strong><p>你执{color(options.humanColor)} · {AI_DIFFICULTIES[options.difficulty].label} · {game.size}路</p></div></section>
       {game.phase==='playing'&&<section className="play-actions"><h2>对弈操作</h2><div>{turnActions}<button type="button" disabled={!humanAllowed} onClick={()=>requestModal('resign')}>我认输</button>{game.toPlay!==options.humanColor&&(!paused&&opponent.phase!=='error'?<button type="button" onClick={stop}>暂停 AI 思考</button>:<button type="button" disabled={viewing||!!modal} onClick={()=>{setPaused(false);opponent.retry();}}>继续 / 重试 AI 落子</button>)}</div>{game.toPlay!==options.humanColor&&<p className="ai-engine-status" data-testid="ai-status" data-state={opponent.phase} role="status" aria-live="polite">{paused?'AI 已暂停。可回看、悔棋或手动继续。':opponent.message||'正在准备本次思考。'}</p>}<p>只有轮到你时可落子、停手或认输。请求失败不换手，不自动重试，也不改用随机落子。</p></section>}
-      <section className="play-actions"><h2>悔棋与恢复</h2><div><button type="button" disabled={!game.undoStack.length} onClick={()=>travel('undo',true)}>撤回最近回合</button><button type="button" disabled={!game.redoStack.length} onClick={()=>travel('redo',true)}>重做最近回合</button><button type="button" onClick={()=>requestModal('restart')}>重开 / 更改难度</button></div><p>撤回最近回合最多恢复两手，让你重新作决定；撤回一手则只恢复上一项操作。悔棋后 AI 暂停，新落子会清除旧重做分支。</p></section>
+      <section className="play-actions"><h2>悔棋与恢复</h2><div><button type="button" disabled={!game.undoStack.length} onClick={()=>travel('undo',true)}>撤回最近回合</button><button type="button" disabled={!game.redoStack.length} onClick={()=>travel('redo',true)}>重做最近回合</button>{!embedded&&<button type="button" onClick={()=>requestModal('restart')}>重开 / 更改难度</button>}</div><p>撤回最近回合最多恢复两手，让你重新作决定；撤回一手则只恢复上一项操作。悔棋后 AI 暂停，新落子会清除旧重做分支。</p></section>
       {game.phase==='scoring'&&!viewing&&<section className="scoring-actions"><h2>人工终局核对</h2><p>AI 没有自动确认棋块死活。请你与同伴核对黑白双方：点击整块标记或取消死子，再依次接受同一清单；有争议就恢复原盘面。</p>{match.scoring.confirmedBy.length===0?<button type="button" onClick={()=>apply(confirmScoreFor(match,'B'))}>已核对黑方清单</button>:<button type="button" onClick={()=>apply(confirmScoreFor(match,'W'))}>已核对白方同一清单并计分</button>}<button type="button" onClick={()=>{stop();apply(resumeDisputedPlay(match,options.humanColor));}}>有争议，恢复原盘面</button></section>}
       {game.phase==='finished'&&<section className="finished-actions" role="status"><h2>{winner==='draw'?'本局和棋':winner===options.humanColor?'你获得本局胜利':'AI 获得本局胜利'}</h2><p>{game.result?.reason==='resign'?'本局以认输结束，不编造面积分。':'清单经人工确认后，已按面积计分。'}现在可拖动滑动条，并手动分析复盘局面。</p></section>}
       <section className="save-actions"><h2>本机保存与棋谱</h2><div><button type="button" onClick={save}>保存 AI 对局</button><button type="button" onClick={()=>requestModal('load')}>读取本机 AI 对局</button><button type="button" onClick={()=>exportOne('session')}>导出 AI 续玩文件</button><button type="button" onClick={()=>exportOne('game')}>导出标准棋局 JSON</button><button type="button" onClick={()=>exportOne('sgf')}>导出 SGF 主线</button></div><p>自动保存与真人对局分开。JSON 续玩包含难度、完整历史和待确认标记；SGF 主线不包含全部终局流程。</p></section>

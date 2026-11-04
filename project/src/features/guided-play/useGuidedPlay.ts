@@ -2,6 +2,7 @@ import {useEffect,useMemo,useRef,useState} from 'react';
 import type {Coord,GameState} from '../../core/content.generated';
 import {RULE_ERROR_ZH,rulesEngine} from '../../core/rules';
 import {browserStoragePort} from '../../core/unified-persistence';
+import type {StoragePort} from '../../core/persistence';
 import {useGameHistory} from '../../components/GameTimeline';
 import {travelAiHistory} from '../ai-game/model';
 import {playAt,passTurn,type FullGameFlowResult} from '../full-game/model';
@@ -12,14 +13,14 @@ import {useGuidedOpponent} from './opponent';
 import {useTeachingAnalysis} from './useTeachingAnalysis';
 import {DEFAULT_GUIDED_OPTIONS,FOCUS,type GuidedOptions,type GuidedPhase,type GuidedSession,type MoveObservation} from './types';
 
-export function useGuidedPlay(){
-  const port=useMemo(()=>browserStoragePort(),[]),store=useMemo(()=>createGuidedPlayStore(port),[port]),progressStore=useMemo(()=>createGuidedProgressStore(port),[port]);
-  const [loaded]=useState(()=>store.load());
+export function useGuidedPlay(initialSession?:GuidedSession,storagePort?:StoragePort){
+  const port=useMemo(()=>storagePort??browserStoragePort(),[storagePort]),store=useMemo(()=>createGuidedPlayStore(port),[port]),progressStore=useMemo(()=>createGuidedProgressStore(port),[port]);
+  const [loaded]=useState(()=>initialSession?{ok:true as const,session:initialSession}:store.load());
   const [session,setSession]=useState<GuidedSession|null>(loaded.ok?loaded.session:null);
   const [settings,setSettings]=useState<GuidedOptions>({...DEFAULT_GUIDED_OPTIONS});
   const [colorChoice,setColorChoice]=useState<'B'|'W'|'random'>('B');
-  const [paused,setPaused]=useState(!!(loaded.ok&&loaded.session));
-  const [notice,setNotice]=useState(loaded.ok&&loaded.session?'已恢复辅助棋局；对手暂停，请按需继续。':loaded.ok?'':loaded.message);
+  const [paused,setPaused]=useState(!initialSession&&!!(loaded.ok&&loaded.session));
+  const [notice,setNotice]=useState(initialSession?'独立辅助分支已准备好；每一步仍由你决定。':loaded.ok&&loaded.session?'已恢复辅助棋局；对手暂停，请按需继续。':loaded.ok?'':loaded.message);
   const [completed,setCompleted]=useState(()=>{const p=progressStore.load();return p.ok?p.value.completed.length:0;});
   const [feedback,setFeedback]=useState<{before:GameState;after:GameState;observation:MoveObservation;awaiting:boolean}|null>(null);
   const [aiExplanation,setAiExplanation]=useState('');
@@ -73,7 +74,9 @@ export function useGuidedPlay(){
   };
   const travel=(direction:'undo'|'redo',round=false)=>{
     const current=latest.current;if(!current)return;stop();clearTeaching();
-    apply(travelAiHistory(current.match,{humanColor:options.humanColor,difficulty:'relaxed'},direction,round));
+    const floor=current.historyBranch?.startEventCount??0,count=current.match.game?.moves.length??0;
+    if(direction==='undo'&&count<=floor){setNotice('已到这条分支的起点；原棋谱仍在复盘中。');return;}
+    apply(travelAiHistory(current.match,{humanColor:options.humanColor,difficulty:'relaxed'},direction,round&&count-floor>=2));
   };
   const goTo=(index:number)=>{stop();clearTeaching();history.goTo(index);};
   const requestHint=(final=false)=>{

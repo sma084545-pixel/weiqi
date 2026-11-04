@@ -1,0 +1,74 @@
+### Ran Playwright code
+```js
+await page.goto('http://127.0.0.1:4190/#/home');
+```
+### Page
+- Page URL: http://127.0.0.1:4190/#/home
+- Page Title: 围棋社教学工具
+### Snapshot
+- [Snapshot](.playwright-cli/page-2026-11-04T01-33-12-799Z.yml)
+### Result
+{"schemaVersion":1,"id":"GUIDED-REAL-BROWSER","revision":1,"rulesetId":"GO-CLUB-AREA-1","status":"passed","programVersion":"0.27.0","base":"http://127.0.0.1:4190","browser":"156.0.8078.80","at":"2026-11-04T01:33:23.687Z","checks":[{"name":"desktop-full-new-user-journey","status":"passed","details":["route-bridge","12-courses-preserved","4-disclosures","a11y-no-early-answer","legal-human-choice","local-opponent","refresh-paused","readonly-slider","undo-redo","two-pass-manual-confirm","factual-summary","download","retry-and-preserve-original"]},{"name":"360px-9-road-B-level2","status":"passed","geometry":{"scrollWidth":267,"clientWidth":267},"checks":["touch-candidate","keyboard-arrows-enter","real-local-reply","reduced-motion","no-page-overflow"]},{"name":"768px-13-road-W-level1","status":"passed","geometry":{"scrollWidth":641,"clientWidth":641},"checks":["touch-candidate","keyboard-arrows-enter","real-local-reply","reduced-motion","no-page-overflow"]},{"name":"360px-13-road-B-level3","status":"passed","geometry":{"scrollWidth":344,"clientWidth":267},"checks":["touch-candidate","keyboard-arrows-enter","real-local-reply","reduced-motion","no-page-overflow"]},{"name":"actual-disabled-network-reload-hint-human-local-reply-save-reload","status":"passed","network":"BrowserContext.setOffline(true), not a source-only cache inspection"}],"errors":[],"humanTeachingReview":null,"limits":["Chrome desktop with touch simulation; not physical phones or screen readers","Manual endgame confirmation controls exercised, not human death judgement"]}
+### Ran Playwright code
+```js
+await (// Real controlled UI journeys. No intercepted engine responses or injected app state.
+async page=>{
+  const browser=page.context().browser(),base=page.url().split('#')[0].replace(/\/$/,''),checks=[],errors=[];
+  const assert=(v,m)=>{if(!v)throw Error(m);};
+  const contexts=[];
+  const create=async(width,hasTouch=false)=>{const context=await browser.newContext({viewport:{width,height:960},hasTouch,reducedMotion:'reduce'});contexts.push(context);const p=await context.newPage();p.setDefaultTimeout(15000);p.on('pageerror',e=>errors.push(e.message));return {p,context};};
+  const attr=(p,k,v)=>p.waitForFunction(([k,v])=>document.querySelector('[data-testid="guided-play"]')?.getAttribute(k)===v,[k,String(v)]);
+  const btn=(p,name)=>p.getByRole('button',{name,exact:true}).click();
+  const start=async(p,options={})=>{await p.goto(base+'/#/play/guided');await btn(p,'开始第一盘辅助对局');if(options.size)await p.getByLabel('棋盘大小').selectOption(String(options.size));if(options.color)await p.getByLabel('你的执棋').selectOption(options.color);if(options.level)await p.getByLabel('教学强度').selectOption(String(options.level));if(options.goal)await p.getByLabel('本局学习目标').selectOption(options.goal);await btn(p,'开始辅助对局');};
+  const board=p=>p.locator('.guided-board-panel>.shared-board');
+  try{
+    const {p}=await create(1280);
+    await p.goto(base+'/#/route');await p.getByRole('heading',{name:'十二课学习路线',exact:true}).waitFor();assert(await p.locator('[data-stage-id]').count()===12,'preserve twelve lessons');
+    assert(await p.locator('[data-stage-id="STAGE-06"] + .guided-route-bridge').count()===1,'bridge follows course6');
+    await p.locator('.guided-route-bridge a').click();await p.getByRole('heading',{name:'第一盘，只记住三件事'}).waitFor();assert(await p.locator('.guided-onboarding li').count()===3,'short first use');await btn(p,'开始第一盘辅助对局');await btn(p,'开始辅助对局');await attr(p,'data-move-count',0);
+    assert(await board(p).getByRole('gridcell').count()===81,'complete9board');
+    await btn(p,'Hint · 给我一个思考方向');assert(await board(p).locator('[data-marker-kind=candidate]').count()===0,'hint1 no points or labels');
+    assert(!(await board(p).locator('[role=gridcell]').evaluateAll(nodes=>nodes.map(n=>n.getAttribute('aria-label')).join('|'))).includes('候选 A'),'hint1 a11y no answer');
+    await btn(p,'再给一点：观察区域');assert(await board(p).locator('[data-marker-kind=candidate]').count()===9,'hint2region');
+    await btn(p,'再给一点：候选 A / B / C');assert(await board(p).locator('[data-marker-kind=candidate]').count()===3,'hint3candidates');assert(await board(p).locator('[data-marker-text="试"]').count()===0,'final not disclosed');
+    assert(await p.getByRole('button',{name:'再给一点：候选 A / B / C',exact:true}).isDisabled(),'ordinary repeated hint cannot reveal final');
+    await p.evaluate(()=>{document.activeElement?.blur();window.scrollTo(0,0);});await p.screenshot({path:'output/playwright/guided-desktop-candidates.png',fullPage:true});
+    await btn(p,'我还需要帮助：显示建议点');assert(await board(p).locator('[data-marker-text="试"]').count()===1,'explicit final');
+    // User chooses a different legal corner, rather than clicking the disclosed point.
+    await board(p).locator('[data-row="0"][data-col="0"]').click();await attr(p,'data-move-count',2);await attr(p,'data-turn','B');assert(await board(p).locator('[data-marker-kind=candidate]').count()===0,'move clears overlay');
+    await p.reload();await attr(p,'data-move-count',2);assert((await p.locator('.guided-notice').innerText()).includes('暂停'),'restore paused');
+    await p.locator('.guided-timeline>summary').click();const slider=p.getByRole('slider',{name:'棋局滑动条'});await slider.focus();await p.keyboard.press('Home');await attr(p,'data-teaching-phase','HISTORY');assert(await board(p).getByRole('gridcell').first().getAttribute('aria-disabled')==='true','readonly historical board');await p.keyboard.press('End');
+    await btn(p,'撤回最近回合');await attr(p,'data-move-count',0);await btn(p,'重做一手');await attr(p,'data-move-count',1);await btn(p,'重做一手');await attr(p,'data-move-count',2);
+    await btn(p,'停一手');await attr(p,'data-phase','scoring');await btn(p,'已人工核对黑方清单');await btn(p,'已人工核对白方同一清单并结束');await attr(p,'data-phase','finished');await p.getByTestId('guided-summary').waitFor();
+    assert((await p.getByTestId('guided-summary').innerText()).includes('主动展开提示 4 次'),'hint usage');assert(await p.locator('.guided-moments article').count()>0,'actual moment');assert(await p.locator('.guided-moments .board-viewport').first().evaluate(n=>n.scrollWidth<=n.clientWidth+2),'whole readonly snapshot');
+    await p.waitForFunction(()=>document.activeElement?.id==='guided-summary-title');await p.evaluate(()=>{document.activeElement?.blur();window.scrollTo(0,0);});await p.screenshot({path:'output/playwright/guided-desktop-report.png',fullPage:true});
+    const reportDownload=p.waitForEvent('download');await btn(p,'导出本局教学报告');await (await reportDownload).saveAs('output/playwright/guided-report-test.md');
+    await p.getByRole('button',{name:'重新尝试这个局面',exact:true}).first().click();await attr(p,'data-move-count',0);await attr(p,'data-phase','playing');await btn(p,'返回原局报告，保留当前变化');await attr(p,'data-phase','finished');
+    checks.push({name:'desktop-full-new-user-journey',status:'passed',details:['route-bridge','12-courses-preserved','4-disclosures','a11y-no-early-answer','legal-human-choice','local-opponent','refresh-paused','readonly-slider','undo-redo','two-pass-manual-confirm','factual-summary','download','retry-and-preserve-original']});
+    for(const [width,size,color,level] of [[360,9,'B',2],[768,13,'W',1],[360,13,'B',3]]){
+      const {p:t}=await create(width,true);await start(t,{size,color,level,goal:size===13?'connection':'auto'});if(color==='W')await attr(t,'data-move-count',1);await attr(t,'data-turn',color);
+      assert(await board(t).getByRole('gridcell').count()===size*size,'all intersections '+size);assert(await t.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'no page overflow '+width);
+      const geometry=await board(t).locator('.board-viewport').evaluate(n=>({scrollWidth:n.scrollWidth,clientWidth:n.clientWidth}));
+      if(width===360&&size===9)assert(geometry.scrollWidth<=geometry.clientWidth+2,'whole9road fits mobile');
+      if(width===360&&size===13)assert(geometry.scrollWidth>geometry.clientWidth,'13road local scroll');
+      await btn(t,'Hint · 给我一个思考方向');await btn(t,'再给一点：观察区域');await btn(t,'再给一点：候选 A / B / C');
+      const candidate=board(t).locator('[role=gridcell]:has([data-marker-text="B"])');await candidate.tap();await attr(t,'data-move-count',color==='W'?3:2);await attr(t,'data-turn',color);
+      if(!await t.getByRole('button',{name:'隐藏提示与标记',exact:true}).isDisabled())await btn(t,'隐藏提示与标记');
+      const empty=board(t).locator('[data-stone="empty"][aria-disabled="false"]').first();await empty.focus();await t.keyboard.press('ArrowRight');await t.keyboard.press('Enter');
+      await t.waitForFunction(()=>Number(document.querySelector('[data-testid=guided-play]')?.getAttribute('data-move-count'))>=3);
+      if(await t.getByRole('button',{name:'继续下，让对手回应',exact:true}).count())await btn(t,'继续下，让对手回应');
+      await attr(t,'data-turn',color);
+      assert(await t.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'no overflow after input');
+      await t.evaluate(()=>{document.activeElement?.blur();window.scrollTo(0,0);});await t.screenshot({path:`output/playwright/guided-${width}-${size}-touch.png`,fullPage:true});
+      checks.push({name:`${width}px-${size}-road-${color}-level${level}`,status:'passed',geometry,checks:['touch-candidate','keyboard-arrows-enter','real-local-reply','reduced-motion','no-page-overflow']});
+    }
+    const {p:o,context}=await create(768);
+    await o.goto(base+'/#/teacher/offline-data');await o.getByRole('heading',{name:'IndexedDB 已就绪',exact:true}).waitFor();await btn(o,'准备或重新核对离线资源');await o.getByRole('heading',{name:'已可离线',exact:true}).waitFor();
+    await start(o);await context.setOffline(true);await o.reload();await attr(o,'data-move-count',0);await btn(o,'Hint · 给我一个思考方向');await btn(o,'再给一点：观察区域');await board(o).locator('[data-row="2"][data-col="2"]').click();await attr(o,'data-move-count',2);await o.reload();await attr(o,'data-move-count',2);assert(await o.evaluate(()=>navigator.onLine)===false,'actually offline');await o.screenshot({path:'output/playwright/guided-actual-offline.png',fullPage:true});
+    await context.setOffline(false);checks.push({name:'actual-disabled-network-reload-hint-human-local-reply-save-reload',status:'passed',network:'BrowserContext.setOffline(true), not a source-only cache inspection'});
+    assert(errors.length===0,'page errors '+errors.join(';'));
+    return {schemaVersion:1,id:'GUIDED-REAL-BROWSER',revision:1,rulesetId:'GO-CLUB-AREA-1',status:'passed',programVersion:(await p.locator('.app-version').textContent()).replace('版本 ',''),base,browser:browser.version(),at:new Date().toISOString(),checks,errors,humanTeachingReview:null,limits:['Chrome desktop with touch simulation; not physical phones or screen readers','Manual endgame confirmation controls exercised, not human death judgement']};
+  }finally{for(const c of contexts)await c.close();}
+}
+)(page);
+```
