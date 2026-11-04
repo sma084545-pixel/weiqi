@@ -18,7 +18,7 @@ assert public_version.get('katagoExtremeConfigured')==bool(hosting.get('extremeA
 if (R/'src/features/game-review/ReviewWorkspace.tsx').exists():
  check=json.loads((R/'docs/game-review/checks/browser-local.json').read_text())
  assert check.get('status')=='passed' and check.get('programVersion')==version,'Current continuation A/B journey must pass before publication.'
- assert '83 passed (83)' in (R/'docs/game-review/checks/affected-unit.log').read_text()
+ assert '85 passed (85)' in (R/'docs/game-review/checks/affected-unit.log').read_text()
  guided_check=json.loads((R/'docs/game-review/checks/guided-regression.json').read_text())
  assert guided_check.get('status')=='passed' and guided_check.get('programVersion')==version,'Existing guided journey must pass on this version.'
 else:

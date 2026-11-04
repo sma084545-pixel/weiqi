@@ -5,7 +5,7 @@ revision: 34
 rulesetId: GO-CLUB-AREA-1
 ---
 
-# 围棋社工具包 · 0.27.0
+# 围棋社工具包 · 0.27.1
 
 新增“复盘时从这里继续”与“联机赛后 AI 复盘”：精确恢复真实历史、独立AI或辅助分支、保留原谱与返回原游标；全盘基础战术核查及真实KataGo少量关键局面抽样，失败不影响对局和结算。见[使用说明](docs/game-review/USER_GUIDE.md)、[验收](docs/game-review/ACCEPTANCE.md)及[本轮交接](handoff/REVIEW_BRANCHES.md)。以下保留先前功能溯源。
 

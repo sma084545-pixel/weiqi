@@ -2,6 +2,7 @@ import {EXTREME_MODEL,type AiMoveRequest,type AiMoveResponse} from '../../core/a
 import type {GameState} from '../../core/content.generated';
 import {rulesEngine} from '../../core/rules';
 import {AnalysisClientError} from '../katago-review/client';
+import {analysisRequestBody} from '../../core/analysis/contract';
 
 const object=(v:unknown):v is Record<string,unknown>=>!!v&&typeof v==='object'&&!Array.isArray(v);
 const finite=(v:unknown):v is number=>typeof v==='number'&&Number.isFinite(v);
@@ -31,7 +32,7 @@ export async function requestAiMove(origin:string,request:AiMoveRequest,game:Gam
   const cancel=()=>controller.abort();signal.addEventListener('abort',cancel,{once:true});if(signal.aborted)controller.abort();
   const timer=setTimeout(()=>{timedOut=true;controller.abort();},100_000);
   try{
-    const response=await fetcher(`${origin}/api/ai-move`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(request),signal:controller.signal,credentials:'omit',cache:'no-store',referrerPolicy:'no-referrer'});
+    const response=await fetcher(`${origin}/api/ai-move`,{method:'POST',headers:{'Content-Type':'application/json'},body:analysisRequestBody(request),signal:controller.signal,credentials:'omit',cache:'no-store',referrerPolicy:'no-referrer'});
     if(response.status===404)throw new AnalysisClientError('ENGINE_FAILED','AI 服务正在更新，尚未提供对弈接口。可先使用双人对弈，或稍后重试。');
     const text=await response.text();if(text.length>1_000_000)throw new AnalysisClientError('INVALID_RESPONSE','AI 响应过大，已停止读取。');
     let value:unknown;try{value=JSON.parse(text);}catch{throw new AnalysisClientError('NETWORK','AI 服务暂时没有响应，可能正在从休眠中启动。请稍后手动重试。');}

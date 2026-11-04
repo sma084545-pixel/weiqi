@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "REVIEW-LEGACY-EVIDENCE-ISOLATION",
-  "revision": 1,
+  "revision": 2,
   "rulesetId": "GO-CLUB-AREA-1",
   "status": "passed",
   "restoredHistoricalImages": [
@@ -13,5 +13,5 @@
     "docs/t24/checks/journey/chromium/offline-editor.png"
   ],
   "currentCopies": "checks/legacy-regression/",
-  "reason": "Historical evidence remains exact; new regression images isolated."
+  "programVersion": "0.27.1"
 }

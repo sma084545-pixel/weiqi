@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "schemaVersion": 1,
+  "id": "REVIEW-PAGES-RUNTIME",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "commit": "62e56e26298e4b6fc285dbd903c4e699ab89b6e5",
+  "version": {
+    "schemaVersion": 1,
+    "id": "GO-CLUB-PUBLIC-VERSION",
+    "revision": 27001,
+    "rulesetId": "GO-CLUB-AREA-1",
+    "programVersion": "0.27.0",
+    "resultVersion": "0.27.0-pages.1",
+    "onlineServerConfigured": true,
+    "onlineServerOrigin": "https://weiqi-rooms.onrender.com",
+    "onlineSiteOrigin": "https://sma084545-pixel.github.io",
+    "onlineRoomsEphemeral": true,
+    "katagoAnalysisConfigured": true,
+    "katagoAnalysisOrigin": "https://weiqi-katago.onrender.com",
+    "katagoExtremeConfigured": true,
+    "katagoExtremeOrigin": "https://weiqi-katago-extreme.onrender.com"
+  }
+}

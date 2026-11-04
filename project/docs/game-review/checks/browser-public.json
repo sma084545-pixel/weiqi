@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "id": "REVIEW-CONTINUATION-BROWSER",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "passed",
+  "programVersion": "0.27.0",
+  "base": "https://sma084545-pixel.github.io/weiqi",
+  "browser": "156.0.8078.80",
+  "at": "2026-11-04T01:43:15.728Z",
+  "checks": [
+    "A actual original45 → cursor40 → independent AI game → real reply → undo → original cursor40 and byte-identical source",
+    "branch persisted, resumed and restarted independently",
+    "B actual two-browser online game → resignation → full local scan+real KataGo pair → key hand3 → BEFORE hand2 → AI continuation; peer, server revision and result unchanged",
+    "360px, reduced motion, keyboard, independent local guided continuation",
+    "768px, reduced motion, keyboard, independent local guided continuation",
+    "1280px, reduced motion, keyboard, independent local guided continuation"
+  ],
+  "realResponses": [
+    {
+      "url": "https://weiqi-katago.onrender.com/api/ai-move",
+      "status": 200,
+      "engine": {
+        "name": "KataGo",
+        "version": "1.18.1",
+        "model": "g170-b6c96-s175395328-d26788732",
+        "backend": "Eigen CPU",
+        "maxVisits": 24
+      },
+      "aiColor": "W",
+      "elapsedMs": 66,
+      "visits": 24,
+      "reviewPosition": "ai-aa5a0c4f-6c78-4d32-b12f-e1b52e8c2e25"
+    },
+    {
+      "url": "https://weiqi-katago.onrender.com/api/analyze",
+      "status": 200,
+      "engine": {
+        "name": "KataGo",
+        "version": "1.18.1",
+        "model": "g170-b6c96-s175395328-d26788732",
+        "backend": "Eigen CPU",
+        "maxVisits": 64
+      },
+      "elapsedMs": 574,
+      "visits": 64,
+      "reviewPosition": "whole-review-e4865532-9438-4f54-8a1d-3bf595b7db3a"
+    },
+    {
+      "url": "https://weiqi-katago.onrender.com/api/analyze",
+      "status": 200,
+      "engine": {
+        "name": "KataGo",
+        "version": "1.18.1",
+        "model": "g170-b6c96-s175395328-d26788732",
+        "backend": "Eigen CPU",
+        "maxVisits": 64
+      },
+      "elapsedMs": 366,
+      "visits": 64,
+      "reviewPosition": "whole-review-bcf32d23-0d22-42bd-b8f3-a1a823e194fa"
+    },
+    {
+      "url": "https://weiqi-katago.onrender.com/api/ai-move",
+      "status": 200,
+      "engine": {
+        "name": "KataGo",
+        "version": "1.18.1",
+        "model": "g170-b6c96-s175395328-d26788732",
+        "backend": "Eigen CPU",
+        "maxVisits": 24
+      },
+      "aiColor": "W",
+      "elapsedMs": 1,
+      "visits": 24,
+      "reviewPosition": "ai-f2234210-e9b4-424a-b3ae-a815da111de4"
+    }
+  ],
+  "requests": [
+    {
+      "url": "https://weiqi-katago.onrender.com/api/ai-move",
+      "events": 41,
+      "aiColor": "W"
+    },
+    {
+      "url": "https://weiqi-katago.onrender.com/api/analyze",
+      "events": 5,
+      "reviewIndex": 2
+    },
+    {
+      "url": "https://weiqi-katago.onrender.com/api/analyze",
+      "events": 5,
+      "reviewIndex": 3
+    },
+    {
+      "url": "https://weiqi-katago.onrender.com/api/ai-move",
+      "events": 3,
+      "aiColor": "W"
+    }
+  ],
+  "errors": [],
+  "limits": "Synthetic labelled test game and private TEST rooms; real browser/network/engines; no human teaching or native Safari/Firefox test."
+}

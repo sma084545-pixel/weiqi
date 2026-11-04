@@ -6,8 +6,8 @@
   "status": "passed",
   "baseVersion": "0.26.2-pages.1",
   "baseArchiveSha256": "a5a0ccd4f3aa68a07af11502a6e4e014ac546c4a169ef9e10d2b7c465c2c4599",
-  "resultVersion": "0.27.0-pages.1",
-  "verifiedProtectedFiles": 1752,
+  "resultVersion": "0.27.1-pages.1",
+  "verifiedProtectedFiles": 1749,
   "formalPuzzles": 30,
   "endgames": 6,
   "dependencies": "unchanged",
@@ -6543,10 +6543,6 @@
       "sha256": "1cf116a158f78574b2a8e079e42baf361d1602d136d2de38cab158766ee6b577"
     },
     {
-      "path": "src/core/analysis/contract.ts",
-      "sha256": "aeaca90cf29a49fa85c0f24f7b8b9d7f616e6ad672a870e463b89a247b55868c"
-    },
-    {
       "path": "src/core/constants.ts",
       "sha256": "a05af8496eb3266d34cef5f8dedd7c6f9b6d83bd51a75bb50cbdda1b8d303028"
     },
@@ -6661,10 +6657,6 @@
     {
       "path": "src/features/ai-game/AiGame.css",
       "sha256": "220ad367144ef26f0f0924626360b2ff3221418913f3430d810b9e431c324ca6"
-    },
-    {
-      "path": "src/features/ai-game/client.ts",
-      "sha256": "3bbf9ba81c48ce5f08bf9165b419dc0ac3e528894adda2b934e9d23bb14c9585"
     },
     {
       "path": "src/features/ai-game/config.ts",
@@ -6861,10 +6853,6 @@
     {
       "path": "src/features/katago-review/KataGoReview.tsx",
       "sha256": "02ecdedf5466fbde9853d2e187370e747f4ade667a340dd93175ca16caecb951"
-    },
-    {
-      "path": "src/features/katago-review/client.ts",
-      "sha256": "ed8bead3353597ff6caf8f6201020d81647e2ae289f3949f9c88ad2c720145d3"
     },
     {
       "path": "src/features/katago-review/config.ts",

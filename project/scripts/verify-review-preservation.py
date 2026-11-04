@@ -5,7 +5,7 @@ p=argparse.ArgumentParser();p.add_argument('--base',required=True);a=p.parse_arg
 r=Path(__file__).resolve().parents[1];base=Path(a.base).resolve()
 sha=lambda b:hashlib.sha256(b).hexdigest()
 assert sha(base.read_bytes())=='a5a0ccd4f3aa68a07af11502a6e4e014ac546c4a169ef9e10d2b7c465c2c4599'
-allowed={'src/core/version.ts','src/features/full-game/FullGame.tsx','src/features/ai-game/AiGame.tsx','src/features/online-game/OnlineGame.tsx',*{'src/features/guided-play/'+n for n in ['types.ts','model.ts','useGuidedPlay.ts','GuidedPlay.tsx','storage.ts']}}
+allowed={'src/core/analysis/contract.ts','src/features/ai-game/client.ts','src/features/katago-review/client.ts','src/core/version.ts','src/features/full-game/FullGame.tsx','src/features/ai-game/AiGame.tsx','src/features/online-game/OnlineGame.tsx',*{'src/features/guided-play/'+n for n in ['types.ts','model.ts','useGuidedPlay.ts','GuidedPlay.tsx','storage.ts']}}
 protected=[]
 with zipfile.ZipFile(base) as z:
     for name in z.namelist():

@@ -8,7 +8,7 @@ async page=>{
  const attr=(p,test,k,v)=>p.waitForFunction(([test,k,v])=>(document.querySelector('dialog.review-workspace[open]')??document).querySelector(`[data-testid="${test}"]`)?.getAttribute(k)===v,[test,k,String(v)],{timeout:130000});
  const seek=async(scope,index)=>{const slider=scope.getByRole('slider',{name:'棋局滑动条',exact:true});await slider.focus();await slider.press('Home');for(let n=0;n<index;n++)await slider.press('ArrowRight');};
  const boardState=p=>p.locator('.online-board-card>.shared-board [data-row][data-col]').evaluateAll(nodes=>nodes.map(n=>[n.dataset.row,n.dataset.col,n.dataset.stone]));
- const shot=async(p,name)=>{const d=p.locator('dialog.review-workspace[open]');if(await d.count())await d.evaluate(n=>n.scrollTo(0,0));await p.screenshot({path:'output/playwright/'+name,fullPage:false});};
+ const shot=async(p,name)=>{const d=p.locator('dialog.review-workspace[open]');if(await d.count())await d.evaluate(n=>n.scrollTo(0,0));await p.screenshot({path:'output/playwright/'+(base.startsWith('https:')?'public-':'')+name,fullPage:false});};
  try{
   const fixtureResponse=await page.request.get('http://127.0.0.1:4222/development-40.json');assert(fixtureResponse.ok(),'private development fixture readable');const fixture=await fixtureResponse.json();assert(fixture.developmentOnly===true,'fixture marked development only');
   const a=await make();await a.addInitScript(game=>{localStorage.setItem('go-club:v1:LOCAL-T08-FULL-GAME',JSON.stringify(game));},fixture.game);await a.goto(base+'/#/play/free');await a.locator('.full-game-page[data-phase=playing]').waitFor();

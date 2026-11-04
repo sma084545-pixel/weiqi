@@ -1,11 +1,11 @@
 Already up to date
-Done in 146ms using pnpm v11.19.0
+Done in 156ms using pnpm v11.19.0
 
  RUN  v5.0.0 /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/review-branches-20261104/mainline/go-club
 
 
- Test Files  6 passed (6)
-      Tests  83 passed (83)
-   Start at  09:37:46
-   Duration  1.30s (tests 36%, import 23%, environment 21%, transform 20%)
+ Test Files  7 passed (7)
+      Tests  85 passed (85)
+   Start at  09:45:55
+   Duration  1.28s (tests 37%, import 25%, transform 22%, environment 16%)
 

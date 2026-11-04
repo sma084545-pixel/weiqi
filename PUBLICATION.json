@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "id": "GITHUB-PAGES-PUBLICATION",
-  "revision": 42,
+  "revision": 43,
   "rulesetId": "GO-CLUB-AREA-1",
-  "resultVersion": "0.27.0-pages.1",
-  "programVersion": "0.27.0",
+  "resultVersion": "0.27.1-pages.1",
+  "programVersion": "0.27.1",
   "siteUrl": "https://sma084545-pixel.github.io/weiqi/",
   "sourceDirectory": "project/",
   "formalPuzzles": 30,
@@ -46,9 +46,9 @@
       "sha256": "26ae2d10fc5b45982ae4f4f593aaa93b781d4ff63a8bfe2166bc392d01cc9b50"
     },
     {
-      "path": "assets/index-7f7fF8MF.js",
-      "bytes": 1278456,
-      "sha256": "7de1d504cd7aa7aa1c454e58790af58823919b69017a13e1a0ae446450f04342"
+      "path": "assets/index-BR_Csgm2.js",
+      "bytes": 1278751,
+      "sha256": "d39658271d604f145f30c18c07d5e8f67e101d6306f17b522adb1e8e34a2767e"
     },
     {
       "path": "assets/index-DNAHFiAj.css",
@@ -68,7 +68,7 @@
     {
       "path": "index.html",
       "bytes": 640,
-      "sha256": "3ce50845eecba5d5a35881d1342b598116fe4335138a99381ef92772ff315ad0"
+      "sha256": "19b0fc8720fe078e7279a2a776d1831a0246024becd5b2df488f88fed2942ad6"
     },
     {
       "path": "materials/t13/territory-counting-card.md",
@@ -83,7 +83,7 @@
     {
       "path": "offline-assets.json",
       "bytes": 411,
-      "sha256": "0a35feb2ea7903d39a8008321d5c18ec64c5658aae7cf89867dbf1a94be154e1"
+      "sha256": "17d2f1c2094384e21ef0f6952e09180ee38e54ca543ba7af7f3eede2dc03fb51"
     },
     {
       "path": "offline.html",
@@ -93,13 +93,13 @@
     {
       "path": "sw.js",
       "bytes": 3694,
-      "sha256": "8df313279982edf5815cbbd5433a00ab7d0ae919b586e98112e3f505829e3072"
+      "sha256": "0de94245e572b97a86ae914db92f95edcb538932e11598b66ae4ed417f507058"
     },
     {
       "path": "version.json",
       "bytes": 569,
-      "sha256": "1ee0d31250d778d9a2af7834d97a39247fef84b957538cb6ceb4b5b6b3499e59"
+      "sha256": "4912ad6d956272c214ff067e763bb7f99554aac208cebc487d04c659871c52f4"
     }
   ],
-  "sourceManifestSha256": "13151409c203d70da45a92912708e2bc80092cf53f9aab3315b5579f21343d2d"
+  "sourceManifestSha256": "3e2de40e7b609f7cb9ba7b454d60de1ba06d15b1a05500adf6705546dd330956"
 }

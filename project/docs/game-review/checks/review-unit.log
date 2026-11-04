@@ -1,12 +1,12 @@
 Already up to date
-Done in 152ms using pnpm v11.19.0
+Done in 312ms using pnpm v11.19.0
 $ vitest run tests/game-review
 
  RUN  v5.0.0 /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/review-branches-20261104/mainline/go-club
 
 
- Test Files  2 passed (2)
-      Tests  30 passed (30)
-   Start at  09:36:18
-   Duration  903ms (tests 39%, environment 22%, transform 21%, import 18%)
+ Test Files  3 passed (3)
+      Tests  32 passed (32)
+   Start at  13:55:59
+   Duration  3.31s (tests 35%, transform 22%, import 22%, environment 20%)
 

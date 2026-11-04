@@ -33,6 +33,12 @@ export type AnalysisErrorCode='INVALID_REQUEST'|'GAME_NOT_FINISHED'|'GAME_NOT_PL
 export interface AnalysisErrorBody {error:{code:AnalysisErrorCode;message:string;field?:string;requestId?:string};}
 export interface AnalysisHealth {service:'go-club-katago';status:'starting'|'ready'|'restarting'|'failed'|'stopping';ready:boolean;active:number;queued:number;engineVersion:string;model:string;uptimeSeconds:number;appVersion?:string;apiVersion?:2;features?:('review'|'ai-move')[];aiDifficulties?:string[];engineStartupMs?:number|null;resources?:{cgroupMemoryLimitBytes:number|null;cgroupMemoryPeakBytes:number|null;cpuQuota:number|null};}
 
+/** The existing HTTP endpoint replays actions itself. Derived groups/capture metadata are not wire input. */
+export function analysisRequestBody<T extends {game:{events:GameEvent[]}}>(request:T):string {
+  const events=request.game.events.map(event=>event.type==='place'?{type:event.type,color:event.color,at:event.at}:event.type==='pass'||event.type==='resign'?{type:event.type,color:event.color}:event.type==='resume'?{type:event.type,requestedBy:event.requestedBy}:{type:event.type,agreement:event.agreement});
+  return JSON.stringify({...request,game:{...request.game,events}});
+}
+
 /** Send only setup and effective events, not local progress, names, feedback or snapshots. */
 export function makeReviewRequest(game:GameState,reviewIndex:number,positionId:string):ReviewAnalysisRequest {
   if(game.phase!=='finished'||game.mode!=='full-game')throw Error('GAME_NOT_FINISHED');

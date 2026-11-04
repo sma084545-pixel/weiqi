@@ -4,14 +4,14 @@ import argparse,json,hashlib,zipfile,os,shutil
 p=argparse.ArgumentParser();p.add_argument('--base',required=True);p.add_argument('--output',required=True);p.add_argument('--commit',required=True);p.add_argument('--runtime-commit',required=True);a=p.parse_args()
 r=Path(__file__).resolve().parents[1];o=Path(a.output).resolve();base=Path(a.base).resolve();sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 assert sha(base)=='a5a0ccd4f3aa68a07af11502a6e4e014ac546c4a169ef9e10d2b7c465c2c4599'
-assert json.loads((r/'package.json').read_text())['version']=='0.27.0'
+assert json.loads((r/'package.json').read_text())['version']=='0.27.1'
 e=r/'docs/game-review/checks';read=lambda n:json.loads((e/n).read_text())
 for name in ['preservation.json','browser-local.json','browser-public.json','guided-regression.json']:assert read(name)['status']=='passed',name
-assert '624 passed (624)' in (e/'full-check.log').read_text();assert '83 passed (83)' in (e/'affected-unit.log').read_text()
-for name in ['browser-local.json','browser-public.json','guided-regression.json']:assert read(name).get('programVersion')=='0.27.0',('stale evidence',name)
+assert '626 passed (626)' in (e/'full-check.log').read_text();assert '85 passed (85)' in (e/'affected-unit.log').read_text()
+for name in ['browser-local.json','browser-public.json','guided-regression.json']:assert read(name).get('programVersion')=='0.27.1',('stale evidence',name)
 reg=(e/'browser-regression.log').read_text();assert '176 passed' in reg and '22 passed' in reg
-version=json.loads((r/'dist/version.json').read_text());assert version['programVersion']=='0.27.0' and version['katagoAnalysisConfigured'] and version['katagoExtremeConfigured'] and version['onlineServerConfigured']
-identity={'schemaVersion':1,'id':'REVIEW-BRANCHES-RELEASE','revision':1,'rulesetId':'GO-CLUB-AREA-1','taskId':'REVIEW_BRANCHES','baseVersion':'0.26.2-pages.1','baseArchiveSha256':sha(base),'resultVersion':'0.27.0-pages.1','programVersion':'0.27.0','status':'complete-with-documented-limits','githubCommit':a.commit,'runtimeCommit':a.runtime_commit}
+version=json.loads((r/'dist/version.json').read_text());assert version['programVersion']=='0.27.1' and version['katagoAnalysisConfigured'] and version['katagoExtremeConfigured'] and version['onlineServerConfigured']
+identity={'schemaVersion':1,'id':'REVIEW-BRANCHES-RELEASE','revision':1,'rulesetId':'GO-CLUB-AREA-1','taskId':'REVIEW_BRANCHES','baseVersion':'0.26.2-pages.1','baseArchiveSha256':sha(base),'resultVersion':'0.27.1-pages.1','programVersion':'0.27.1','status':'complete-with-documented-limits','githubCommit':a.commit,'runtimeCommit':a.runtime_commit}
 excluded={'node_modules','.git','__pycache__','delivery','font-cache','runtime-data','.pnpm-store','.playwright-cli','.auth'};self_files={'RELEASE_MANIFEST.json','release-manifest.json','SHA256SUMS.txt'}
 def files():
     out=[]
@@ -34,7 +34,7 @@ entries=[{'path':str(x.relative_to(r)),'bytes':x.stat().st_size,'sha256':sha(x)}
 manifest={**identity,'siteUrl':'https://sma084545-pixel.github.io/weiqi/','guidedPlayRoute':'#/play/guided','formalPuzzles':30,'endgames':6,'advancedScenes':37,'microLessonPrimarySlides':25,'protectedFiles':read('preservation.json')['verifiedProtectedFiles'],'files':entries,'excludedFromSelfHash':sorted(self_files),'fileCount':len(entries)+3,'humanReviewed':None}
 for n in ['RELEASE_MANIFEST.json','release-manifest.json']:(r/n).write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
 (r/'SHA256SUMS.txt').write_text(''.join(x['sha256']+'  '+x['path']+'\n' for x in entries)+''.join(sha(r/n)+'  '+n+'\n' for n in ['RELEASE_MANIFEST.json','release-manifest.json']))
-o.mkdir(parents=True,exist_ok=True);full=o/'go-club-0.27.0-pages.1-full.zip';app=o/'go-club-0.27.0-pages.1-app.zip';assert not full.exists() and not app.exists(),'Never overwrite sealed archives'
+o.mkdir(parents=True,exist_ok=True);full=o/'go-club-0.27.1-pages.1-full.zip';app=o/'go-club-0.27.1-pages.1-app.zip';assert not full.exists() and not app.exists(),'Never overwrite sealed archives'
 with zipfile.ZipFile(full,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as z:
     for x in files():z.write(x,'go-club/'+str(x.relative_to(r)))
 with zipfile.ZipFile(full) as z:assert z.testzip() is None and len(z.namelist())==manifest['fileCount'] and not any('/node_modules/' in n or '/runtime-data/' in n for n in z.namelist())
@@ -45,7 +45,7 @@ app_files.append(r/'启动联机对弈.command')
 for folder in ['docs/game-review','docs/guided-play','docs/ai-play','docs/extreme-ai','analysis-engine/licenses']:
     app_files.extend(x for x in (r/folder).rglob('*') if x.is_file() and x.suffix in {'.md','.txt'} and '/checks/' not in str(x) and '/rejected-' not in str(x))
 app_entries=[{'path':str(x.relative_to(r)),'bytes':x.stat().st_size,'sha256':sha(x)} for x in sorted(app_files)]
-readme='# 围棋社0.27.0 · 复盘续下与联机AI复盘\n\n解压后有兼容Node22/24/26即可运行 node dist-server/server.mjs ，打开 http://127.0.0.1:4190/#/play/guided 。不需要node_modules；macOS也可双击启动联机对弈.command。\n\n正式网站：https://sma084545-pixel.github.io/weiqi/#/play/guided 。默认本地教学机器人；可选真实KataGo需要联网。完整原对弈和课程继续保留。先保存或备份再通过更新按钮升级，勿清站点数据。使用与边界见docs/game-review/。\n'
+readme='# 围棋社0.27.1 · 复盘续下与联机AI复盘\n\n解压后有兼容Node22/24/26即可运行 node dist-server/server.mjs ，打开 http://127.0.0.1:4190/#/play/guided 。不需要node_modules；macOS也可双击启动联机对弈.command。\n\n正式网站：https://sma084545-pixel.github.io/weiqi/#/play/guided 。默认本地教学机器人；可选真实KataGo需要联网。完整原对弈和课程继续保留。先保存或备份再通过更新按钮升级，勿清站点数据。使用与边界见docs/game-review/。\n'
 app_entries.append({'path':'README.md','bytes':len(readme.encode()),'sha256':hashlib.sha256(readme.encode()).hexdigest()})
 with zipfile.ZipFile(app,'w',zipfile.ZIP_DEFLATED) as z:
     for x in sorted(app_files):z.write(x,'go-club-app/'+str(x.relative_to(r)))

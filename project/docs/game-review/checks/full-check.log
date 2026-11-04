@@ -1,5 +1,5 @@
 Already up to date
-Done in 147ms using pnpm v11.19.0
+Done in 158ms using pnpm v11.19.0
 $ pnpm build:engine && pnpm schema:check && pnpm test && pnpm validate:advanced && pnpm validate:content && pnpm validate:t09 && pnpm test:t09-grader && pnpm test:t14 && pnpm test:t15 && pnpm validate:t17 && pnpm verify:merge-a && pnpm verify:t16-freeze && pnpm build && pnpm test:t16-refresh && pnpm test:engine-build && pnpm test:engine-capacity
 $ vite build --config vite.engine.config.ts && tsc -p tsconfig.engine.json && node scripts/finish-engine-build.mjs
 vite v8.2.2 building client environment for production...
@@ -9,20 +9,20 @@ rendering chunks...
 computing gzip size...
 dist-engine/go-club-rules.mjs  299.23 kB │ gzip: 66.06 kB │ map: 550.74 kB
 
-✓ built in 37ms
+✓ built in 33ms
 $ node scripts/generate-types.mjs --check
 $ vitest run
 
  RUN  v5.0.0 /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/review-branches-20261104/mainline/go-club
 
 
- Test Files  66 passed (66)
-      Tests  624 passed (624)
-   Start at  09:35:31
-   Duration  6.55s (tests 37%, import 32%, environment 23%, transform 8%, worker 1%)
+ Test Files  67 passed (67)
+      Tests  626 passed (626)
+   Start at  09:45:59
+   Duration  10.56s (import 41%, tests 29%, environment 20%, transform 9%, worker 1%)
 
-     Import  251 modules were evaluated 650 times · 6.87s total, 32% of tracked time
-             ~452ms faster with isolate: false — shared modules are evaluated once per worker instead of once per file
+     Import  253 modules were evaluated 640 times · 12.85s total, 41% of tracked time
+             ~843ms faster with isolate: false — shared modules are evaluated once per worker instead of once per file
              learn more: https://vitest.dev/guide/improving-performance#test-isolation
 
 $ node --import tsx scripts/validate-advanced.ts
@@ -62,8 +62,8 @@ $ vitest run tests/t14
 
  Test Files  2 passed (2)
       Tests  13 passed (13)
-   Start at  09:35:40
-   Duration  692ms (environment 32%, transform 28%, import 26%, tests 14%)
+   Start at  09:46:14
+   Duration  1.73s (environment 32%, transform 27%, import 26%, tests 15%)
 
 $ vitest run tests/t15
 
@@ -72,8 +72,8 @@ $ vitest run tests/t15
 
  Test Files  4 passed (4)
       Tests  16 passed (16)
-   Start at  09:35:41
-   Duration  265ms (import 63%, transform 32%, tests 4%, worker 1%)
+   Start at  09:46:17
+   Duration  629ms (import 63%, transform 32%, tests 5%, worker 1%)
 
 $ node --import tsx scripts/validate-t17.ts
 PASS T17: empty, 3 labelled test replies, independent counts/missing/denominators, default test exclusion, schemaVersion rejection. No real participant records generated.
@@ -89,15 +89,15 @@ rendering chunks...
 computing gzip size...
 dist/index.html                     0.64 kB │ gzip:   0.45 kB
 dist/assets/index-DNAHFiAj.css    161.58 kB │ gzip:  31.81 kB
-dist/assets/index-DBkyjAKG.js   1,277.84 kB │ gzip: 340.82 kB
+dist/assets/index-DVVZrWeu.js   1,278.13 kB │ gzip: 340.90 kB
 
-✓ built in 133ms
+✓ built in 322ms
 [plugin builtin:vite-reporter] 
 (!) Some chunks are larger than 500 kB after minification. Consider:
 - Using dynamic import() to code-split the application
 - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
 - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
-Offline bundle 0.27.0: 11 required resources.
+Offline bundle 0.27.1: 11 required resources.
 vite v8.2.2 building ssr environment for production...
 transforming...
 ✓ 105 modules transformed.
@@ -105,7 +105,7 @@ rendering chunks...
 computing gzip size...
 dist-server/server.mjs  454.71 kB │ gzip: 100.69 kB
 
-✓ built in 29ms
+✓ built in 60ms
 $ node scripts/verify-t16-refresh.mjs
 {"ok":true,"check":"teacher-editor-refresh-recovery","title":"刷新后仍在的草稿","status":"可编辑草稿 已恢复上次尚未提交的编辑内容。"}
 $ node scripts/engine-smoke.mjs && tsc -p tsconfig.engine-smoke.json
@@ -117,7 +117,7 @@ $ node scripts/engine-capacity.mjs
   "revision": 1,
   "rulesetId": "GO-CLUB-AREA-1",
   "kind": "DeveloperValidationReport",
-  "checkedAt": "2026-11-04T01:35:46.935Z",
+  "checkedAt": "2026-11-04T01:46:28.274Z",
   "method": "Built standalone ESM; seeded legal path and legal pass/resume capacity stress",
   "humanReviewed": null,
   "legalPlacements": 240,
@@ -130,6 +130,6 @@ $ node scripts/engine-capacity.mjs
   "oversizedEventCount": 2100,
   "oversizedExportCode": "EXPORT_TOO_LARGE",
   "oversizedSaveKeepsOldRecord": "passed",
-  "elapsedMilliseconds": 1160,
+  "elapsedMilliseconds": 2481,
   "storage": "in-memory atomic StoragePort; not a browser quota measurement"
 }

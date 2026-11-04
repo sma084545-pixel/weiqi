@@ -1,7 +1,7 @@
 ---
 taskId: REVIEW_BRANCHES
 baseVersion: GUIDED_PLAY 0.26.2-pages.1
-resultVersion: 0.27.0-pages.1
+resultVersion: 0.27.1-pages.1
 rulesetId: GO-CLUB-AREA-1
 schemaVersion: 1
 status: verification-in-progress
@@ -16,7 +16,7 @@ status: verification-in-progress
 - 新增`src/features/game-review/`：精确历史前缀、独立存储、原生复盘工作区、全盘战术核查与真实KataGo抽样。
 - `FullGame.tsx`、`AiGame.tsx`、`GuidedPlay.tsx`、`OnlineGame.tsx`接入入口。普通AI/辅助控制器新增可选初始棋局、StoragePort与嵌入参数，普通默认行为保留。
 - GuidedPlaySession可选historyBranch及附加schema支持5/9/13/19路的真实历史、起始摆子与原贴目；旧无此字段存档仍用原校验。分支计数从起点后开始，撤回不跨分支起点。
-- 新增`tests/game-review/`及浏览器、保留性、归档校验工具和本轮文档；版本0.27.0，依赖审计白名单加27。依赖、锁、Board、规则引擎、GameTimeline、分析后端、联机协议不变。
+- 新增`tests/game-review/`及浏览器、保留性、归档校验工具和本轮文档；版本0.27.1，依赖审计白名单加27。依赖、锁、Board、规则引擎、GameTimeline、分析后端、联机协议不变。
 - 更新README、CHANGELOG、发布清单与版本；三个已有Render地址不变，不需重建服务或升级套餐。
 
 ## 保存与迁移
@@ -27,10 +27,12 @@ status: verification-in-progress
 
 ## 实际测试
 
-`pnpm test:review`（30项新增）、`pnpm check`（624项总单元测试及全部内容/引擎/构建检查）、`pnpm test:browser`（176+22项回归）及83项受影响组件测试已运行。真实浏览器A/B完整流程、真实KataGo、360/768/1280、键盘、触屏模拟和减少动画详见`docs/game-review/checks/`。初期测试脚本选择器、折叠列表与重复嵌入节点作用域问题保留失败日志，修正后必须以当前版本passed报告为准。
+`pnpm test:review`（32项新增）、`pnpm check`（626项总单元测试及全部内容/引擎/构建检查）、`pnpm test:browser`（176+22项回归）及85项受影响组件测试已运行。真实浏览器A/B完整流程、真实KataGo、360/768/1280、键盘、触屏模拟和减少动画详见`docs/game-review/checks/`。初期测试脚本选择器、折叠列表与重复嵌入节点作用域问题保留失败日志，修正后必须以当前版本passed报告为准。
 
 ## 能力与未测
 
 基础气/提子/连接/打吃巡检覆盖完整棋谱；KataGo只对最多2手的前后局面抽样，最多4个唯一顺序请求，不冒充逐手完备分析。自杀与劫由原引擎决定；战略错误、弃子收益和任意死活不能由一气或少量搜索一概判定。服务失败可取消/重试，原局和本地分支保留。
 
 原生Safari/Firefox、实体手机、屏幕阅读器、真人教学和长期多人负载未测。免费服务可能休眠、排队或限流，无并发或固定时延保证。没有新增排名、账号、默认反馈上传或付费资源。
+
+HTTP传输修正（0.27.1）：客户端只发送原始落子/停手/认输/恢复/计分确认动作，不发送可重算的棋块和气列表。API版本与真实着法顺序不变；既有服务逐项重放。已用285项真实操作和原有服务准备逻辑核对，保留轮次与超级劫历史；没有截断历史。0.27.0为本轮先前公开构建，最终包以0.27.1为准。

@@ -4,10 +4,10 @@
   "revision": 1,
   "rulesetId": "GO-CLUB-AREA-1",
   "status": "passed",
-  "programVersion": "0.27.0",
+  "programVersion": "0.27.1",
   "base": "http://127.0.0.1:4190",
   "browser": "156.0.8078.80",
-  "at": "2026-11-04T01:38:46.689Z",
+  "at": "2026-11-04T05:56:54.929Z",
   "checks": [
     "A actual original45 → cursor40 → independent AI game → real reply → undo → original cursor40 and byte-identical source",
     "branch persisted, resumed and restarted independently",
@@ -28,9 +28,9 @@
         "maxVisits": 24
       },
       "aiColor": "W",
-      "elapsedMs": 174,
+      "elapsedMs": 2312,
       "visits": 24,
-      "reviewPosition": "ai-ed9b28a0-b638-48fd-8128-812cf8e23e01"
+      "reviewPosition": "ai-5d2b9120-fd34-45be-92f1-2c5b15b09057"
     },
     {
       "url": "https://weiqi-katago.onrender.com/api/analyze",
@@ -42,9 +42,9 @@
         "backend": "Eigen CPU",
         "maxVisits": 64
       },
-      "elapsedMs": 797,
+      "elapsedMs": 6161,
       "visits": 64,
-      "reviewPosition": "whole-review-b7cc410f-136b-4efd-b06e-1ee8d179b9c4"
+      "reviewPosition": "whole-review-d059c9b7-41a4-4a01-9c9c-289d7fe58296"
     },
     {
       "url": "https://weiqi-katago.onrender.com/api/analyze",
@@ -56,9 +56,9 @@
         "backend": "Eigen CPU",
         "maxVisits": 64
       },
-      "elapsedMs": 844,
+      "elapsedMs": 5999,
       "visits": 64,
-      "reviewPosition": "whole-review-0bbc110b-ad94-4c6e-8bcc-b0be61dc8b3a"
+      "reviewPosition": "whole-review-71b7ec89-33b2-4e1a-b428-f904cf0d8bef"
     },
     {
       "url": "https://weiqi-katago.onrender.com/api/ai-move",
@@ -71,9 +71,9 @@
         "maxVisits": 24
       },
       "aiColor": "W",
-      "elapsedMs": 1,
+      "elapsedMs": 2057,
       "visits": 24,
-      "reviewPosition": "ai-995fbe72-77c4-4f63-992b-2c1e68d60a66"
+      "reviewPosition": "ai-2935c5fa-e4d5-4d69-8d89-5054d5db7b4f"
     }
   ],
   "requests": [

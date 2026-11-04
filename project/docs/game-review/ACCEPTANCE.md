@@ -5,17 +5,17 @@ revision: 1
 rulesetId: GO-CLUB-AREA-1
 ---
 
-# 0.27.0 验收
+# 0.27.1 验收
 
 |检查|结果|证据|
 |---|---|---|
-|第0至最后一步、40手、原棋谱不变|通过|30项新增测试；browser-local.json流程A|
+|第0至最后一步、40手、原棋谱不变|通过|32项新增测试；browser-local.json流程A|
 |轮次、初始摆子、提子、劫、自杀、Pass、认输、终局恢复|通过|tests/game-review/model.test.ts，固定独立预期|
 |新分支独立保存、悔棋、重新尝试、恢复与返回原游标|通过|model/interaction测试；浏览器A/B|
 |联机结束→关键手→落子前→真实AI续下；另一设备、结果与服务器revision不变|通过|browser-local.json流程B|
 |全盘基础战术与最多4个真实引擎样本；错误不伪造结果|通过|分析模型与组件测试；浏览器实际/api/analyze响应|
 |AI失败、取消、关闭、重复操作、配额写入失败|通过|新增模型和组件边界测试|
-|624总单元测试及内容/引擎/构建检查|通过|checks/full-check.log|
+|626总单元测试及内容/引擎/构建检查|通过|checks/full-check.log|
 |176既有浏览器+22联机/悬浮棋盘回归|通过|checks/browser-regression.log|
 |360/768/1280、键盘、触屏模拟、减少动画|通过|browser-local.json与screenshots/|
 |正式原网址A/B流程|待实际检查|以browser-public.json当前版本passed结果为准|

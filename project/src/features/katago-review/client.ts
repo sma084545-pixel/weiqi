@@ -1,5 +1,6 @@
 import type {Color,Size} from '../../core/content.generated';
 import type {AnalysisErrorCode,AnalysisMove,ReviewAnalysisRequest,ReviewAnalysisResponse} from '../../core/analysis/contract';
+import {analysisRequestBody} from '../../core/analysis/contract';
 
 export class AnalysisClientError extends Error {
   constructor(public readonly code:AnalysisErrorCode|'NETWORK'|'INVALID_RESPONSE',message:string){super(message);this.name='AnalysisClientError';}
@@ -45,7 +46,7 @@ export async function requestReviewAnalysis(origin:string,request:ReviewAnalysis
   if(signal.aborted)controller.abort();
   const timeout=setTimeout(()=>{timedOut=true;controller.abort();},100_000);
   try{
-    const response=await fetcher(`${origin}/api/analyze`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(request),signal:controller.signal,credentials:'omit',cache:'no-store',referrerPolicy:'no-referrer'});
+    const response=await fetcher(`${origin}/api/analyze`,{method:'POST',headers:{'Content-Type':'application/json'},body:analysisRequestBody(request),signal:controller.signal,credentials:'omit',cache:'no-store',referrerPolicy:'no-referrer'});
     const text=await response.text();
     if(text.length>1_000_000)throw new AnalysisClientError('INVALID_RESPONSE','分析响应过大，已停止读取。');
     let value:unknown;try{value=JSON.parse(text);}catch{throw new AnalysisClientError(response.ok?'INVALID_RESPONSE':'NETWORK',response.ok?'分析响应无法读取。':'服务暂时没有响应，可能正在从休眠中启动。请稍后手动重试。');}
