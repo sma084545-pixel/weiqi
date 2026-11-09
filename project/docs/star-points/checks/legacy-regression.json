@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "BOARD-STARS-REGRESSION-IMAGES",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "passed",
+  "note": "Current screenshots copied here; inherited historical screenshots restored byte for byte.",
+  "files": [
+    {
+      "historicalPath": "docs/online-tools/checks/browser/1280-floating-5.png",
+      "currentEvidence": "docs/star-points/checks/legacy-regression/docs/online-tools/checks/browser/1280-floating-5.png",
+      "sha256": "d1d93dae2fa32bbdcce40d800d3e2bfc7e1192f66b2cf3816195273e31b36e81"
+    },
+    {
+      "historicalPath": "docs/online-tools/checks/browser/1280-maximized.png",
+      "currentEvidence": "docs/star-points/checks/legacy-regression/docs/online-tools/checks/browser/1280-maximized.png",
+      "sha256": "befa12b575ce6cc05e83d52f93a8b1a32dc76521b346df36ae1ec5031e7f85f9"
+    },
+    {
+      "historicalPath": "docs/online-tools/checks/browser/360-floating-19.png",
+      "currentEvidence": "docs/star-points/checks/legacy-regression/docs/online-tools/checks/browser/360-floating-19.png",
+      "sha256": "c85e90a5275db473fed405ca18f39b9e8f4189b6355565fc2ea17e4660495027"
+    },
+    {
+      "historicalPath": "docs/online-tools/checks/browser/360-maximized.png",
+      "currentEvidence": "docs/star-points/checks/legacy-regression/docs/online-tools/checks/browser/360-maximized.png",
+      "sha256": "e54e05eb7699f2408b6b79ec25319658970450c6d5b80f4a608fa48646be5465"
+    },
+    {
+      "historicalPath": "docs/online-tools/checks/browser/768-floating-13.png",
+      "currentEvidence": "docs/star-points/checks/legacy-regression/docs/online-tools/checks/browser/768-floating-13.png",
+      "sha256": "45ca0ee2f5f19670decb1153ecaa278471484d9b50c30066bd7226f1f7842b45"
+    },
+    {
+      "historicalPath": "docs/online-tools/checks/browser/768-floating-9.png",
+      "currentEvidence": "docs/star-points/checks/legacy-regression/docs/online-tools/checks/browser/768-floating-9.png",
+      "sha256": "d748dd025dcac9b888d4b4ae9c99c7e8bdef48fb68c1c5dbdac191696228912e"
+    },
+    {
+      "historicalPath": "docs/online-tools/checks/browser/768-maximized.png",
+      "currentEvidence": "docs/star-points/checks/legacy-regression/docs/online-tools/checks/browser/768-maximized.png",
+      "sha256": "57d6f2f4e07cc3f3e40f80000b9722377e3d4b38627f30c238eb0c3f54dedf13"
+    },
+    {
+      "historicalPath": "docs/online-tools/checks/browser/chat.png",
+      "currentEvidence": "docs/star-points/checks/legacy-regression/docs/online-tools/checks/browser/chat.png",
+      "sha256": "9d99d63875c7b7f9a244eb72df695825dc9d8150885d3c264dd5fca15b301df1"
+    },
+    {
+      "historicalPath": "docs/t24/checks/journey/chromium/full-game.png",
+      "currentEvidence": "docs/star-points/checks/legacy-regression/docs/t24/checks/journey/chromium/full-game.png",
+      "sha256": "eb3665c4745c55c6750ad84e988374aa31e135dbaa2b054fe5fb4f0efa523977"
+    },
+    {
+      "historicalPath": "docs/t24/checks/journey/chromium/offline-editor.png",
+      "currentEvidence": "docs/star-points/checks/legacy-regression/docs/t24/checks/journey/chromium/offline-editor.png",
+      "sha256": "3ca3e418ff85248881f77b8b79c435432e26f5c7d4eba32f4f53aa2fcb8e95c9"
+    }
+  ]
+}

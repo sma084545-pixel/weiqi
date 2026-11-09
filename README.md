@@ -1,8 +1,10 @@
-# 围棋社 · 最新版 0.27.1
+# 围棋社 · 最新版 0.27.2
 
 **原网址：[打开学习工具](https://sma084545-pixel.github.io/weiqi/)**
 
-本版新增复盘“从这里继续”：自由AI/辅助分支、完整真实历史、保留原谱和原游标。联机结束后可点“AI复盘”，自动基础战术核查与真实KataGo关键局面抽样；重试回到落子前，不影响结算。使用与边界见[复盘说明](project/docs/game-review/USER_GUIDE.md)。
+本版为所有实际棋盘加入星位，包含教学、题目、自由/联机/AI、辅助下棋、复盘及悬浮/画中画；动态图导出也使用相同坐标。星位是底纹，不影响落子、规则、存档和题库。
+
+保留复盘“从这里继续”：自由AI/辅助分支、完整真实历史、保留原谱和原游标。联机结束后可点“AI复盘”，自动基础战术核查与真实KataGo关键局面抽样；重试回到落子前，不影响结算。使用与边界见[复盘说明](project/docs/game-review/USER_GUIDE.md)。
 
 真实KataGo AI对弈保留轻松/标准/挑战，并新增独立强模型“极致”。极致已配置免费独立服务，实际部署验收见本轮报告。选择执色和5/9/13/19路，正常轮流落子，支持一手/最近回合悔棋、重做、棋局滑动条、本机续玩、JSON/SGF和赛后复盘。四档不对应人类段级位；结束后人工确认死子及面积计分。新着法需联网，不提供真人进行中胜率提示。
 
@@ -18,7 +20,7 @@
 - [教师工具](https://sma084545-pixel.github.io/weiqi/#/teacher)
 - [联机状态](https://sma084545-pixel.github.io/weiqi/#/play/online)
 
-旧缓存用户先保存，再点“保存已提交内容并应用”。页脚和[version.json](https://sma084545-pixel.github.io/weiqi/version.json)可核对0.27.1；不要清除站点数据来升级。本机进度/草稿/反馈留在浏览器，不默认上传。
+旧缓存用户先保存，再点“保存已提交内容并应用”。页脚和[version.json](https://sma084545-pixel.github.io/weiqi/version.json)可核对0.27.2；不要清除站点数据来升级。本机进度/草稿/反馈留在浏览器，不默认上传。
 
 ## 联机边界
 
@@ -47,6 +49,6 @@ pnpm start
 
 Node版本要求见package.json；默认本机/局域网服务端口4190，Ctrl+C停止。私有runtime-data/凭据/已安装依赖不在仓库。
 
-[最新已完成工具包、轻量软件与校验值](https://github.com/sma084545-pixel/weiqi/releases/latest)包含生产构建、全部可编辑材料、PDF/PPTX、交接和验证；本轮状态以project/handoff/GUIDED_PLAY.md及project/docs/guided-play/ACCEPTANCE.md为准，不把源码更新等同于正式全链路完成。历史source/0.16.0分卷只作溯源，不作为当前主线。
+[最新已完成工具包、轻量软件与校验值](https://github.com/sma084545-pixel/weiqi/releases/latest)包含生产构建、全部可编辑材料、PDF/PPTX、交接和验证；本轮状态以project/handoff/BOARD_STARS.md及project/docs/star-points/ACCEPTANCE.md为准，不把源码更新等同于正式全链路完成。历史source/0.16.0分卷只作溯源，不作为当前主线。
 
 当前静态清单PUBLICATION.json、SHA256SUMS.txt；源码清单project/SOURCE_INFO.json。本次课程验收见[课程说明](project/docs/advanced-courses/IMPLEMENTATION.md)、[验收报告](project/docs/advanced-courses/ACCEPTANCE.md)；KataGo验收见project/docs/katago/，先前悬浮棋盘验收在project/docs/floating-fit/。自动化、实体制造与真人教学验证分别记录；不声称提高智商、治疗压力、改善学业或保证CAS认可。第三方许可证随docs和字体目录保留。

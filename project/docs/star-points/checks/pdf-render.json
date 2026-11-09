@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "BOARD-STARS-PDF-RENDER",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "passed",
+  "renders": [
+    {
+      "pdf": "DEV-STARS-13.pdf",
+      "pages": 1,
+      "a4": true,
+      "rendered": "DEV-STARS-13.png"
+    },
+    {
+      "pdf": "DEV-STARS-19.pdf",
+      "pages": 1,
+      "a4": true,
+      "rendered": "DEV-STARS-19.png"
+    },
+    {
+      "pdf": "DEV-STARS-5.pdf",
+      "pages": 1,
+      "a4": true,
+      "rendered": "DEV-STARS-5.png"
+    },
+    {
+      "pdf": "DEV-STARS-9.pdf",
+      "pages": 1,
+      "a4": true,
+      "rendered": "DEV-STARS-9.png"
+    }
+  ],
+  "crop": "Browser-rendered SVG: DEV-STARS-CROP-browser.png; initial MuPDF render is retained and labelled unsupported",
+  "visualReview": "Assistant viewed all four rendered PDF pages; star alignment, counts, A4 geometry and coordinates readable. Crop SVG requires browser CSS rendering; the initial MuPDF SVG render does not support the inline stylesheet and is not used as visual evidence."
+}

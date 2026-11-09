@@ -12,6 +12,7 @@
 .board-row{position:relative;z-index:1;display:grid;grid-template-columns:repeat(var(--board-size),1fr);min-height:0}
 .intersection{position:relative;display:grid;place-items:center;min-width:0;min-height:0;aspect-ratio:1;padding:0;border:0;border-radius:0;background:transparent;color:#132019;cursor:default;isolation:isolate;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
 .intersection.actionable{cursor:pointer}.intersection.unavailable{cursor:not-allowed}
+.board-star-point{position:absolute;left:50%;top:50%;width:14%;height:14%;min-width:3px;min-height:3px;max-width:7px;max-height:7px;border-radius:50%;background:#574220;transform:translate(-50%,-50%);z-index:0;pointer-events:none}
 .intersection::after{content:"";position:absolute;inset:8%;z-index:10;border:3px solid transparent;border-radius:5px;pointer-events:none}
 .intersection:focus-visible{outline:none}.intersection:focus-visible::after{border-color:#0b5b38;box-shadow:0 0 0 2px #fff}
 .point-preview{position:absolute;width:64%;height:64%;z-index:1;border-radius:50%;background:#143f2a22;opacity:0;transform:scale(.78);pointer-events:none}

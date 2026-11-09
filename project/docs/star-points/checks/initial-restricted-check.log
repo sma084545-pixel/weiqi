@@ -1,0 +1,165 @@
+Already up to date
+Done in 150ms using pnpm v11.19.0
+$ pnpm build:engine && pnpm schema:check && pnpm test && pnpm validate:advanced && pnpm validate:content && pnpm validate:t09 && pnpm test:t09-grader && pnpm test:t14 && pnpm test:t15 && pnpm validate:t17 && pnpm verify:merge-a && pnpm verify:t16-freeze && pnpm build && pnpm test:t16-refresh && pnpm test:engine-build && pnpm test:engine-capacity
+$ vite build --config vite.engine.config.ts && tsc -p tsconfig.engine.json && node scripts/finish-engine-build.mjs
+vite v8.2.2 building client environment for production...
+transforming...
+✓ 84 modules transformed.
+rendering chunks...
+computing gzip size...
+dist-engine/go-club-rules.mjs  299.23 kB │ gzip: 66.06 kB │ map: 550.74 kB
+
+✓ built in 39ms
+$ node scripts/generate-types.mjs --check
+$ vitest run
+
+ RUN  v5.0.0 /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/board-stars-20261109/mainline/go-club
+
+ ❯ tests/online/server.test.ts (12 tests | 10 failed) 25ms
+   × two seats alternate, capture once, reject suicide/wrong role/stale/duplicate packets, and keep a third party out 8ms
+   × mutual undo preserves refusal, blocks intervening play, restores captured stones and branches cleanly 2ms
+   × two passes, changed dead marks, ordered role confirmations and dispute restoration use the shared full-game model 1ms
+   × reconnect survives server restart and disconnect never manufactures a win 2ms
+   × failed writes leave the authoritative game unchanged and a damaged store is not deleted 1ms
+   × rejects cross-origin upgrades and keeps private files outside the static root 1ms
+   × negotiated room chat is seat-bound, isolated, escaped data, idempotent and independent of game history 1ms
+   × chat rejects spoofed authors, blank/long/control text and rate bursts without changing play 1ms
+   × chat retains at most 50 recent messages and clears across server restart without losing saved game 1ms
+   × a malformed game packet after chat negotiation returns a game error with its request ID 1ms
+ ❯ tests/ai-game/extreme.test.ts (6 tests | 1 failed) 5024ms
+   ❯ extreme is a pinned separate model, never an automatic fallback (6)
+     × HTTP advertises actual model, rejects mismatched levels before invoking the engine and caps time server-side 5003ms
+ ❯ tests/analysis/engine.test.ts (5 tests | 1 failed) 5814ms
+   ❯ bounded process transport (explicit development test double) (5)
+     × HTTP CORS, strict body/params, caps, not-finished, per-client rate and isolated health 5006ms
+ ❯ tests/guided-play/static-offline.test.ts (2 tests | 2 failed) 8ms
+   × local production host serves required offline resource ONLINE_SETUP.md with a safe MIME type 6ms
+   × local production host serves required offline resource app.webmanifest with a safe MIME type 2ms
+ ❯ tests/ai-game/api.test.ts (18 tests | 2 failed) 10022ms
+   ❯ AI HTTP transport with explicit development engine fixture (2)
+     × optionally permits only the two exact local app origins, not other ports or github.io sites 5003ms
+     × real HTTP route, exact-origin CORS, separate review gate, budgets, limits and ready capabilities 5009ms
+
+⎯⎯⎯⎯⎯⎯ Failed Tests 16 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/ai-game/api.test.ts > AI HTTP transport with explicit development engine fixture > optionally permits only the two exact local app origins, not other ports or github.io sites
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ tests/ai-game/api.test.ts:37:3
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/16]⎯
+
+ FAIL  tests/ai-game/api.test.ts > AI HTTP transport with explicit development engine fixture > real HTTP route, exact-origin CORS, separate review gate, budgets, limits and ready capabilities
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ tests/ai-game/api.test.ts:44:3
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/16]⎯
+
+ FAIL  tests/ai-game/extreme.test.ts > extreme is a pinned separate model, never an automatic fallback > HTTP advertises actual model, rejects mismatched levels before invoking the engine and caps time server-side
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ tests/ai-game/extreme.test.ts:37:2
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/16]⎯
+
+ FAIL  tests/analysis/engine.test.ts > bounded process transport (explicit development test double) > HTTP CORS, strict body/params, caps, not-finished, per-client rate and isolated health
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ tests/analysis/engine.test.ts:26:2
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/16]⎯
+
+ FAIL  tests/guided-play/static-offline.test.ts > local production host serves required offline resource ONLINE_SETUP.md with a safe MIME type
+ FAIL  tests/guided-play/static-offline.test.ts > local production host serves required offline resource app.webmanifest with a safe MIME type
+ FAIL  tests/online/server.test.ts > two seats alternate, capture once, reject suicide/wrong role/stale/duplicate packets, and keep a third party out
+ FAIL  tests/online/server.test.ts > mutual undo preserves refusal, blocks intervening play, restores captured stones and branches cleanly
+ FAIL  tests/online/server.test.ts > two passes, changed dead marks, ordered role confirmations and dispute restoration use the shared full-game model
+ FAIL  tests/online/server.test.ts > reconnect survives server restart and disconnect never manufactures a win
+ FAIL  tests/online/server.test.ts > failed writes leave the authoritative game unchanged and a damaged store is not deleted
+ FAIL  tests/online/server.test.ts > rejects cross-origin upgrades and keeps private files outside the static root
+ FAIL  tests/online/server.test.ts > negotiated room chat is seat-bound, isolated, escaped data, idempotent and independent of game history
+ FAIL  tests/online/server.test.ts > chat rejects spoofed authors, blank/long/control text and rate bursts without changing play
+ FAIL  tests/online/server.test.ts > chat retains at most 50 recent messages and clears across server restart without losing saved game
+ FAIL  tests/online/server.test.ts > a malformed game packet after chat negotiation returns a game error with its request ID
+Error: listen EPERM: operation not permitted 127.0.0.1
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/16]⎯
+
+⎯⎯⎯⎯⎯⎯ Unhandled Errors ⎯⎯⎯⎯⎯⎯
+
+Vitest caught 4 unhandled errors during the test run.
+This might cause false positive tests. Resolve unhandled errors to make sure your tests are not affected.
+
+⎯⎯⎯⎯⎯ Uncaught Exception ⎯⎯⎯⎯⎯
+Error: listen EPERM: operation not permitted 127.0.0.1
+ ❯ Server.setupListenHandle [as _listen2] node:net:1919:21
+ ❯ listenInCluster node:net:1998:12
+ ❯ node:net:2207:7
+ ❯ processTicksAndRejections node:internal/process/task_queues:89:21
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: 'EPERM', errno: -1, syscall: 'listen', address: '127.0.0.1' }
+This error originated in "tests/ai-game/extreme.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+The last test to run before this error was "HTTP advertises actual model, rejects mismatched levels before invoking the engine and caps time server-side". This means either:
+- the error was thrown while Vitest was running this test, or
+- the error was thrown after the test completed, and this was the most recent test at that point.
+
+⎯⎯⎯⎯⎯ Uncaught Exception ⎯⎯⎯⎯⎯
+Error: listen EPERM: operation not permitted 127.0.0.1
+ ❯ Server.setupListenHandle [as _listen2] node:net:1919:21
+ ❯ listenInCluster node:net:1998:12
+ ❯ node:net:2207:7
+ ❯ processTicksAndRejections node:internal/process/task_queues:89:21
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: 'EPERM', errno: -1, syscall: 'listen', address: '127.0.0.1' }
+This error originated in "tests/ai-game/api.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+The last test to run before this error was "optionally permits only the two exact local app origins, not other ports or github.io sites". This means either:
+- the error was thrown while Vitest was running this test, or
+- the error was thrown after the test completed, and this was the most recent test at that point.
+
+⎯⎯⎯⎯⎯ Uncaught Exception ⎯⎯⎯⎯⎯
+Error: listen EPERM: operation not permitted 127.0.0.1
+ ❯ Server.setupListenHandle [as _listen2] node:net:1919:21
+ ❯ listenInCluster node:net:1998:12
+ ❯ node:net:2207:7
+ ❯ processTicksAndRejections node:internal/process/task_queues:89:21
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: 'EPERM', errno: -1, syscall: 'listen', address: '127.0.0.1' }
+This error originated in "tests/analysis/engine.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+The last test to run before this error was "HTTP CORS, strict body/params, caps, not-finished, per-client rate and isolated health". This means either:
+- the error was thrown while Vitest was running this test, or
+- the error was thrown after the test completed, and this was the most recent test at that point.
+
+⎯⎯⎯⎯⎯ Uncaught Exception ⎯⎯⎯⎯⎯
+Error: listen EPERM: operation not permitted 127.0.0.1
+ ❯ Server.setupListenHandle [as _listen2] node:net:1919:21
+ ❯ listenInCluster node:net:1998:12
+ ❯ node:net:2207:7
+ ❯ processTicksAndRejections node:internal/process/task_queues:89:21
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: 'EPERM', errno: -1, syscall: 'listen', address: '127.0.0.1' }
+This error originated in "tests/ai-game/api.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+The last test to run before this error was "real HTTP route, exact-origin CORS, separate review gate, budgets, limits and ready capabilities". This means either:
+- the error was thrown while Vitest was running this test, or
+- the error was thrown after the test completed, and this was the most recent test at that point.
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+
+ Test Files  5 failed | 62 passed (67)
+      Tests  16 failed | 610 passed (626)
+     Errors  4 errors
+   Start at  21:24:12
+   Duration  11.65s (tests 68%, import 15%, environment 12%, transform 4%)
+
+    Isolate  67 workers spawned · ~123ms startup each (spawn + environment, per file)
+             at least ~1.94s faster with isolate: false — reuses workers across files instead of one per file
+
+[ELIFECYCLE] Test failed. See above for more details.
+[ELIFECYCLE] Command failed with exit code 1.

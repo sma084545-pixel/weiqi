@@ -1,11 +1,14 @@
 Already up to date
-Done in 156ms using pnpm v11.19.0
+Done in 318ms using pnpm v11.19.0
 
- RUN  v5.0.0 /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/review-branches-20261104/mainline/go-club
+ RUN  v5.0.0 /Users/maxiao/.codex/.chatgpt-projects/g-p-6a9bf14616b08191a5fcd62fa51553c8/work/board-stars-20261109/mainline/go-club
 
 
  Test Files  7 passed (7)
       Tests  85 passed (85)
-   Start at  09:45:55
-   Duration  1.28s (tests 37%, import 25%, transform 22%, environment 16%)
+   Start at  21:32:05
+   Duration  3.99s (tests 37%, import 23%, transform 20%, environment 20%)
+
+    Isolate  7 workers spawned · ~461ms startup each (spawn + environment, per file)
+             at least ~345ms faster with isolate: false — reuses workers across files instead of one per file
 

@@ -1,0 +1,514 @@
+{
+  "schemaVersion": 1,
+  "id": "REVIEW-BRANCHES-CHANGES",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "taskId": "REVIEW_BRANCHES",
+  "baseVersion": "0.26.2-pages.1",
+  "baseArchiveSha256": "a5a0ccd4f3aa68a07af11502a6e4e014ac546c4a169ef9e10d2b7c465c2c4599",
+  "resultVersion": "0.27.1-pages.1",
+  "programVersion": "0.27.1",
+  "status": "complete-with-documented-limits",
+  "githubCommit": "4e4bdfdb644a8d95dc7d2cd0ab18cd6651585208",
+  "runtimeCommit": "17edcd25710a8884920a5fec570c6afa33dcdc26",
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "change": "modified",
+      "baseSha256": "9d3895b9bc7c31871546bf33c2fb40a246ec39d704ecd36d5bdcfa55af426acf",
+      "sha256": "092da3f993e5d2173092408c80ee0c6f806e3e4d77dfcfcd7de40877aec79e01"
+    },
+    {
+      "path": "README.md",
+      "change": "modified",
+      "baseSha256": "fafcf5b532bbeebd05adcfc00030c8714b00df3556aa9411d90d62ea2dc6e733",
+      "sha256": "53b1f2a144d0ae7945b6e2e965ecc5815dbd0e587166189c3c35e0c07bd256e7"
+    },
+    {
+      "path": "docs/game-review/ACCEPTANCE.md",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "39c5e1ab7f48e1569aa3d767e5e2d05ef30ca43b31d3160fb8a3fa80f7db16dc"
+    },
+    {
+      "path": "docs/game-review/IMPLEMENTATION.md",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "67481eb88f8b2906deb07b1edcb5282848fec879b731f72d2deb861f68aa29b9"
+    },
+    {
+      "path": "docs/game-review/KNOWN_ISSUES.md",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "0946a04025f40b8d935a5acd3280024b6ba2dc9c79fe74bc6d915cf444ff1934"
+    },
+    {
+      "path": "docs/game-review/USER_GUIDE.md",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "182a62d74cbc643edf3002e532d9fbd79dd6a7b05c9c49873a7c95977dc19afb"
+    },
+    {
+      "path": "docs/game-review/checks/affected-unit.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "31674d337566cf96eb4ce631c6d0847d89a9aa4bf72cfed9946c3b18d542de63"
+    },
+    {
+      "path": "docs/game-review/checks/browser-local.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "15bded74b8da4da5a846371811343598c9348ace1a6565c609142be2a1ca05c0"
+    },
+    {
+      "path": "docs/game-review/checks/browser-local.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "25a5062bf8f429133de10190a0144bd96f7ba009f1a48ff8340aee04262635c7"
+    },
+    {
+      "path": "docs/game-review/checks/browser-public.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "3aba40da8c0d483d8d8dc14a5ede659d81a79dc4a0f5d4687b2ad8bd30aa547b"
+    },
+    {
+      "path": "docs/game-review/checks/browser-public.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "f3265200bcd0bae181aed06696d2406af09a3ce20e5dc86eaa53969b37c15dc9"
+    },
+    {
+      "path": "docs/game-review/checks/browser-regression.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "e593c54c7017a8d6300102d7d120b234b59b1fcc6cc314cc1281707d2a2a21bd"
+    },
+    {
+      "path": "docs/game-review/checks/full-check.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "a75e971c6e534948aa8ed6aa20284483b55c3ed442ad23fdf23de5fb3f9cee2d"
+    },
+    {
+      "path": "docs/game-review/checks/guided-regression.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "77b889e1481aae2026d4b086c0e4bba4e082b447ea899eb90f5eb151cfaaad09"
+    },
+    {
+      "path": "docs/game-review/checks/guided-regression.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "d628756e0a7edc553ff1a29160c04ff7473822cc98a6aa151583251370aebf5d"
+    },
+    {
+      "path": "docs/game-review/checks/initial-browser-collapsed-list.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "e24f6292ae3eeab0fd7037c9ebf8514e3d6d6f608dd0c30d292f29c0230f3590"
+    },
+    {
+      "path": "docs/game-review/checks/initial-browser-collapsed-list.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "258e0fac23f384510b0444e7b31203a19ff0f483fe43d044af0216793dd25c74"
+    },
+    {
+      "path": "docs/game-review/checks/initial-browser-scope.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "b3d3153b08fbf595690e0425ffb51a47879e660f6342c50c6c145e6031fb3372"
+    },
+    {
+      "path": "docs/game-review/checks/initial-browser-scope.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "605b40c80f97885a8033adf04db5452ee90571e7bee4b7a357e31d51df93cbf1"
+    },
+    {
+      "path": "docs/game-review/checks/initial-browser-selector.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "260a353ebe47ec9c81fdeb4f38e8de81474501be595fd0702d440ed029099957"
+    },
+    {
+      "path": "docs/game-review/checks/initial-browser-selector.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "a9a4b07336888824e116f5b10cd531689478912541bc73399dc29ad23dfbd95c"
+    },
+    {
+      "path": "docs/game-review/checks/interim-0.27.0-browser-local.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "7a1c39a5b26729c26209353504734289f58c84403bd7cff3bd6cf0e56e0c2cf0"
+    },
+    {
+      "path": "docs/game-review/checks/interim-0.27.0-browser-local.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "1eec364c03420e4b74e57d9d9e5acdca3758d58b918b50762e4c9b3191017ccd"
+    },
+    {
+      "path": "docs/game-review/checks/interim-0.27.0-browser-public.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "5a17e77fc88bccbf3d85578108e01f1d210b93c62e9ddcab1db6e050d0043fc6"
+    },
+    {
+      "path": "docs/game-review/checks/interim-0.27.0-browser-public.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "1e27f99f5f475fd36f17c2105c5ed08b040eb02634cd7df83f962506a9bd3c97"
+    },
+    {
+      "path": "docs/game-review/checks/interim-0.27.0-guided-regression.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "78017cd921dd5ab66408efbbbc94c2e4a019343a6ccca9c15c3abd1e1e1197fb"
+    },
+    {
+      "path": "docs/game-review/checks/interim-0.27.0-guided-regression.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "42c15a4745789849ea6ac6c274707259ee8a41f43d1e434ec55acc13553d8732"
+    },
+    {
+      "path": "docs/game-review/checks/interim-0.27.0-pages-runtime.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "2bfec236cdde0b7e0ff264f89bc94e59fe80e2ac25832c23f6e15859cb6043c9"
+    },
+    {
+      "path": "docs/game-review/checks/legacy-evidence-isolation.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "6b5dbba46061ea062316dec61dba7f8e5ff0b5b4c31448ac9bdf962ebdf80e5b"
+    },
+    {
+      "path": "docs/game-review/checks/legacy-regression/docs/online-tools/checks/browser/1280-maximized.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "7ff1991420b2f0390400308ec1e550295445587c1c9f9fbf12ac3d4024f766b4"
+    },
+    {
+      "path": "docs/game-review/checks/legacy-regression/docs/online-tools/checks/browser/360-floating-19.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "bd8acca30c7b77fef9e9c620da3477cbbab5f3a703e6cdbe85738300efea374a"
+    },
+    {
+      "path": "docs/game-review/checks/legacy-regression/docs/online-tools/checks/browser/768-floating-9.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "46148e985fd6f37cf2df0048d2ccae38411a376f9d2cad2069a219f3d456813c"
+    },
+    {
+      "path": "docs/game-review/checks/legacy-regression/docs/online-tools/checks/browser/chat.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "222b13028b6e545b286b71b3b2f6f3187b72cd42586ba5544703a597bd88f198"
+    },
+    {
+      "path": "docs/game-review/checks/legacy-regression/docs/t24/checks/journey/chromium/full-game.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "85ddef254f4843ef5a9afe37d0a9e0c995fe7b46b6ded07f26690863255a57e6"
+    },
+    {
+      "path": "docs/game-review/checks/legacy-regression/docs/t24/checks/journey/chromium/offline-editor.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "c421fbda952a5f39e544c5d14d87607c20f91b2e0e05bcf9abdf0b0f6d428ef4"
+    },
+    {
+      "path": "docs/game-review/checks/pages-build.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "3a29ef52f9cc2eeccbbcfe23b389c9ac5c2915fb53ca21ff6eb74c22025c4dd8"
+    },
+    {
+      "path": "docs/game-review/checks/pages-runtime.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "91817297f40793cd7f2db97f449e6cc94073c43c44ef572c9968164895d23299"
+    },
+    {
+      "path": "docs/game-review/checks/preservation.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "4df1225f0120446464df8daa6e03d06d705ddbb820978ec6066d51e1ad35a55a"
+    },
+    {
+      "path": "docs/game-review/checks/review-unit.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "e82a8c11e5cd684ab3ab9bbcdc6cd73e845264c7863bc0c27d86248c1e4d1f2c"
+    },
+    {
+      "path": "docs/game-review/checks/wire-affected.log",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "0f08e409d3c172168532db29b8753f5adadf52aa3d4a9d240362e3ed4e94bed0"
+    },
+    {
+      "path": "docs/game-review/fixtures/development-40.json",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "d059b3bc71de6cd619ddba4bf1f09e2a5d46158f78c4783292797997e21ab166"
+    },
+    {
+      "path": "docs/game-review/screenshots/public-review-1280-guided.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "e367154265b5aeccd7c6f08ac5c86a1aa81db5bb787d5ce24b1c17123d0b3f51"
+    },
+    {
+      "path": "docs/game-review/screenshots/public-review-360-guided.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "90cfd70605e58a31aa40f3adac829284ff6ea75468c135b00fe5ee43d5e9568a"
+    },
+    {
+      "path": "docs/game-review/screenshots/public-review-768-guided.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "760f36dd1129a63652223413ee9e3b069df0eb2b2c2cb862737de7c067c1a742"
+    },
+    {
+      "path": "docs/game-review/screenshots/public-review-A-40-branch.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "16a3a6339ddf87a41ede6c4a2162cdde7b500f8fdfec4c6b1f015bb8fb2d2ac0"
+    },
+    {
+      "path": "docs/game-review/screenshots/public-review-B-online-summary.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "8d92985513cb8896e74696ff41563f583553dd9d8b992fddd3bee0812eea7331"
+    },
+    {
+      "path": "docs/game-review/screenshots/review-1280-guided.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "9e6223728f91ad774f2d4d88b2dcc3847d94d14b44c4e658732ff5ff5c1246fb"
+    },
+    {
+      "path": "docs/game-review/screenshots/review-360-guided.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "90cfd70605e58a31aa40f3adac829284ff6ea75468c135b00fe5ee43d5e9568a"
+    },
+    {
+      "path": "docs/game-review/screenshots/review-768-guided.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "760f36dd1129a63652223413ee9e3b069df0eb2b2c2cb862737de7c067c1a742"
+    },
+    {
+      "path": "docs/game-review/screenshots/review-A-40-branch.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "378f3ce412d9518aa0608f6f40de9df271ad6edbe42428f6db8885976bfe34eb"
+    },
+    {
+      "path": "docs/game-review/screenshots/review-B-online-summary.png",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "8d92985513cb8896e74696ff41563f583553dd9d8b992fddd3bee0812eea7331"
+    },
+    {
+      "path": "handoff/REVIEW_BRANCHES.md",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "6ab4f4d4980b05a8a99eef524b67b85f90831d94362a87f5453827e33827a480"
+    },
+    {
+      "path": "package.json",
+      "change": "modified",
+      "baseSha256": "8d352e58590c0ff26f8f88b5d1a511e56ea10f23d79395ba179c2c5d3c0834e0",
+      "sha256": "5b532729e8c2a43e37afff8c212124665153f0ceeeb6a3d4b4180452e1ab4449"
+    },
+    {
+      "path": "schemas/guided-session.schema.json",
+      "change": "modified",
+      "baseSha256": "4c253beab8b240553e1601e9b8cabb35e50f2408aeaf415b2ea5aa886ad43fa0",
+      "sha256": "62e27fd5ab47d2d45f9e82918efd5ad38b34afda3fa63bd4cdfb2d8a90f424c7"
+    },
+    {
+      "path": "scripts/package-review.py",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "3564e2fc271f155ac6d3d85cb54d9c7b0239be4b090bf9c9c35766c1ebae2924"
+    },
+    {
+      "path": "scripts/review-browser-fixtures.ts",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "1564ac5693183c96b5b2742efca6fc59b536a8ef87bdb289665f457cf9f3650e"
+    },
+    {
+      "path": "scripts/review-browser-journey.cjs",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "884c59f4ffecaee99a2152c4feb8e77d0dd59e7a27f4f4fee9587f3e5a8af635"
+    },
+    {
+      "path": "scripts/sync-github-pages.py",
+      "change": "modified",
+      "baseSha256": "d37549c1007748b88124c6749e244da347ea07e4bca9ce4b7477409d75f0cc53",
+      "sha256": "16c29f4c66cf1a488adcdf4f8a0f82464496160ec19ea416fe33f097c6ced226"
+    },
+    {
+      "path": "scripts/verify-online-dependencies.mjs",
+      "change": "modified",
+      "baseSha256": "d1d2b53fe6c7d6a0d3a28830399866c34c822478be6380ed949f18e6e7404ae5",
+      "sha256": "60a0621e6429ae61704852d30af6be0d032c1c1aa2a753a95325e8d49c6a2b82"
+    },
+    {
+      "path": "scripts/verify-review-archive.py",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "9632c4e9537a81775909c99468da6cd1ff9638fd36a310321d88781eb44e8e50"
+    },
+    {
+      "path": "scripts/verify-review-preservation.py",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "e8a2f17554e81b3f4ba50695fe812daa4d0b72c8e6270e1a2079168ff981943f"
+    },
+    {
+      "path": "src/core/analysis/contract.ts",
+      "change": "modified",
+      "baseSha256": "aeaca90cf29a49fa85c0f24f7b8b9d7f616e6ad672a870e463b89a247b55868c",
+      "sha256": "55a92c000581d061bbde267246e5ba223152070e8596b253ae9998c646d99363"
+    },
+    {
+      "path": "src/core/version.ts",
+      "change": "modified",
+      "baseSha256": "6078739b3565fcfc64bf92052ff63a2f73487e4272ef22c47f23ff4d989ac1c1",
+      "sha256": "396c99472819e42d517cdf0f9fe914eb68b012e7da9eb1b37a7af2f830ee3138"
+    },
+    {
+      "path": "src/features/ai-game/AiGame.tsx",
+      "change": "modified",
+      "baseSha256": "03503202fe004734b97a76bbc0e32c0d7ccff518a3ea517eb3f1c0308e8cbae8",
+      "sha256": "6344cf485a6163902ba504c9231ff08c8b733e16c318e34ecb7e903ccafaac58"
+    },
+    {
+      "path": "src/features/ai-game/client.ts",
+      "change": "modified",
+      "baseSha256": "3bbf9ba81c48ce5f08bf9165b419dc0ac3e528894adda2b934e9d23bb14c9585",
+      "sha256": "123c758a5e87addd441e86e3997996791e75ac2c8245b1d9b0eca79c72b1cf29"
+    },
+    {
+      "path": "src/features/full-game/FullGame.tsx",
+      "change": "modified",
+      "baseSha256": "ee5fea3120f86d9d364a93f3cbfd42d0ad47988feb07f16ebe29b2f8ea915e02",
+      "sha256": "d60daffeaf3bb85b3f07d180882092ae003bd05dac61daae7130a491973995a4"
+    },
+    {
+      "path": "src/features/game-review/ReviewActions.tsx",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "ff375d1345205eb25fae0a9a6f5ae9eeeef819704b1b8c17dfd134798202dafd"
+    },
+    {
+      "path": "src/features/game-review/ReviewWorkspace.css",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "e5605d25028e34911fa2af2d119510318b8ba97f58771825360601f7c6ebf173"
+    },
+    {
+      "path": "src/features/game-review/ReviewWorkspace.tsx",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "39c351d147d1e57339e905bca09863ea4e0d566399f1e8cb74719f2391a7d881"
+    },
+    {
+      "path": "src/features/game-review/analysis.ts",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "ca640a671401929806ca84ded2f673c2bdd53a0e3538cdbbce8318c53d19672f"
+    },
+    {
+      "path": "src/features/game-review/model.ts",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "5e8d918f9f22cfd906930818c635ad2d1b5524db6ad51b22898fad222cceda5b"
+    },
+    {
+      "path": "src/features/game-review/storage.ts",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "9170d68abd52f7f9c6b2113bac1f6c1745f8b0286d3688b6fde6d7ae965a5309"
+    },
+    {
+      "path": "src/features/game-review/useWholeGameReview.ts",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "be807c2743ce94335be11cceecd891f43383286aca33bb91ded580710be58edd"
+    },
+    {
+      "path": "src/features/guided-play/GuidedPlay.tsx",
+      "change": "modified",
+      "baseSha256": "b69f86ae4c8e2543799ef722369b63eca9aa75ecf88a3655b23df6cfa3d8e3d3",
+      "sha256": "5b4745f5fb9d2e948f40b08b4c7c4f6c4a8d3a7ea533b706949872fe9dddb646"
+    },
+    {
+      "path": "src/features/guided-play/model.ts",
+      "change": "modified",
+      "baseSha256": "202c255b2fed6bfb96777cf74aaaabf7dc63240d5de187aaf3ffc46b2b95f4aa",
+      "sha256": "a86eb2f2ac7351ea4cd6a0b78a27a6a1b2865f8ff9b563350776af0fd8b8b909"
+    },
+    {
+      "path": "src/features/guided-play/storage.ts",
+      "change": "modified",
+      "baseSha256": "4cb6db5879c34cec3227ceac973b7dfe0a3cbe82f86d3d5c93373bca390482df",
+      "sha256": "29704f57c04620749924034814eb497b63383bffc4004722e1e4831c21622ad8"
+    },
+    {
+      "path": "src/features/guided-play/types.ts",
+      "change": "modified",
+      "baseSha256": "b92ccc4c176a2888253ef54d42fdb89a940f43e148d5599bf1cb877a48ff7365",
+      "sha256": "8d0b51c974c0c3048ae6b467294416c476c92b8bea68a6bcce02f1c96bff3e69"
+    },
+    {
+      "path": "src/features/guided-play/useGuidedPlay.ts",
+      "change": "modified",
+      "baseSha256": "80234045ed7788c755d4c7c88297c66529c8842007cc6c0d01cd9394a7070cbb",
+      "sha256": "90d8510e3dce80522acbf30f6e405b1e64e2e4b3156f8d9f99b9666f415f96d1"
+    },
+    {
+      "path": "src/features/katago-review/client.ts",
+      "change": "modified",
+      "baseSha256": "ed8bead3353597ff6caf8f6201020d81647e2ae289f3949f9c88ad2c720145d3",
+      "sha256": "b267ff352dda080e7f0aeb1b9339f1e7359c473227670093c5190212dc905c56"
+    },
+    {
+      "path": "src/features/online-game/OnlineGame.tsx",
+      "change": "modified",
+      "baseSha256": "e3a89dfb569772982db53e3599e2e1b3525efbe788f4f64051c1178e517b280d",
+      "sha256": "a5ca1e55e1549cdfd73c5bfa5f9ddd3d5a307c806a040dfc17d66ea46033c294"
+    },
+    {
+      "path": "tests/game-review/interaction.test.tsx",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "15673b0c89a960db6af6f3094b1884e2ca2c9e4793c467cb5bd970d1cbfc4857"
+    },
+    {
+      "path": "tests/game-review/model.test.ts",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "71dd8da47c77e1740674fd25a6c1423718ad5177097a851fefb7f02fd351e782"
+    },
+    {
+      "path": "tests/game-review/wire.test.ts",
+      "change": "added",
+      "baseSha256": null,
+      "sha256": "66f64b0141c84e1287d3d04a5f688feec02a67582b6220fd15338710a2967c3a"
+    }
+  ]
+}

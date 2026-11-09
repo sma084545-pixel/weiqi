@@ -103,3 +103,8 @@ Render 当前运行 0.20.2、protocolVersion=1，前端 0.20.3 只调整接入�
 在原网站的自由双人对弈结束后，可拖动棋局滑动条并手动分析当前复盘局面。真实Eigen CPU引擎运行于独立Render服务，提供数字候选、后续变化、黑方胜率与预计目差；不改变双方终局确认，也不在进行中提示下一手。
 
 分析后端构建：`pnpm build:analysis`；本机单元/协议检查：`pnpm test:analysis`；独立UI回归：`pnpm test:analysis-browser`。Docker、精确来源/校验值、限额、环境变量、更新和回滚见 [部署说明](docs/katago/DEPLOYMENT.md)，实际验收与限制见 [检查报告](docs/katago/ACCEPTANCE.md)。正式前端地址通过 deploy/github-pages.json 的 analysisOrigin 集中配置，`pnpm build:pages`注入；普通本机对弈不依赖分析服务。公网分析仅允许原GitHub Pages Origin，其他本地/自有网站需运营者配置自己的允许Origin。
+
+
+## 0.27.2 星位显示增量
+
+所有实际棋盘、悬浮/画中画和动态导出图同步显示星位，仍使用原落子规则和存档。19路九点、9/13路五点、5路中央定位点；详见[星位说明](docs/star-points/IMPLEMENTATION.md)与[验收](docs/star-points/ACCEPTANCE.md)。本轮交接为[BOARD_STARS](handoff/BOARD_STARS.md)。

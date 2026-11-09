@@ -10,6 +10,7 @@ import {
 import type {BoardMarker,BoardProps} from '../core/rules/contract';
 import {displayCoord,inBounds} from '../core/coordinates';
 import {COLUMNS} from '../core/constants';
+import {boardStarPoints} from '../core/board-star-points';
 import './Board.css';
 
 const pointKey=(row:number,col:number)=>`${row},${col}`;
@@ -51,6 +52,7 @@ export function Board({
   const cells=useRef(new Map<number,HTMLButtonElement>());
   const [internalFocus,setInternalFocus]=useState({row:0,col:0});
   const indices=useMemo(()=>Array.from({length:size},(_,i)=>i),[size]);
+  const stars=useMemo(()=>new Set(boardStarPoints(size).map(at=>pointKey(at.row,at.col))),[size]);
   const unavailable=useMemo(()=>new Set(unavailablePoints.filter(p=>inBounds(p,size)).map(p=>pointKey(p.row,p.col))),[size,unavailablePoints]);
   const validMarkers=useMemo(()=>markers.filter(m=>inBounds(m.at,size)).slice().sort((a,b)=>MARKER_ORDER[a.kind]-MARKER_ORDER[b.kind]),[markers,size]);
   const markersByPoint=useMemo(()=>{
@@ -136,6 +138,7 @@ export function Board({
               onKeyDown={event=>navigate(event,row,col)}
               onClick={activate}
             >
+              {stars.has(key)&&<span className="board-star-point" data-star-row={row} data-star-col={col} aria-hidden="true"/>}
               <span className="point-preview" aria-hidden="true"/>
               {pointMarkers.map(marker=><span className="marker-slot" key={marker.markerId}>{markerNode(marker)}</span>)}
               {value&&<span className={`stone ${value==='B'?'black':'white'}`} aria-hidden="true"><span>{value==='B'?'黑':'白'}</span></span>}

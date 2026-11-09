@@ -4,10 +4,10 @@
   "revision": 1,
   "rulesetId": "GO-CLUB-AREA-1",
   "status": "passed",
-  "programVersion": "0.27.1",
+  "programVersion": "0.27.2",
   "base": "http://127.0.0.1:4190",
   "browser": "156.0.8078.80",
-  "at": "2026-11-04T05:57:14.856Z",
+  "at": "2026-11-09T13:39:10.063Z",
   "checks": [
     {
       "name": "desktop-full-new-user-journey",
@@ -32,8 +32,8 @@
       "name": "360px-9-road-B-level2",
       "status": "passed",
       "geometry": {
-        "scrollWidth": 267,
-        "clientWidth": 267
+        "scrollWidth": 252,
+        "clientWidth": 252
       },
       "checks": [
         "touch-candidate",
@@ -47,8 +47,8 @@
       "name": "768px-13-road-W-level1",
       "status": "passed",
       "geometry": {
-        "scrollWidth": 641,
-        "clientWidth": 641
+        "scrollWidth": 628,
+        "clientWidth": 626
       },
       "checks": [
         "touch-candidate",
@@ -63,7 +63,7 @@
       "status": "passed",
       "geometry": {
         "scrollWidth": 344,
-        "clientWidth": 267
+        "clientWidth": 252
       },
       "checks": [
         "touch-candidate",

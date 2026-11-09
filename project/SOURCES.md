@@ -134,3 +134,8 @@ ONLINE_PLAY_TOOLS（2026-10-22实际访问）：[Chrome Document PiP](https://de
 - 新kata1模型许可：https://katagotraining.org/network_license/ ，MIT式授权、要求保留版权/许可声明，全文随analysis-engine/licenses/EXTREME-MODEL-LICENSE.txt。原g170的CC0不能沿用到新模型。
 - 引擎1.18.1官方Eigen源码/许可证继续保留；1.18.2只针对特定CUDA GPU的提速，不改变本次CPU后端选择：https://github.com/lightvector/KataGo/releases/tag/v1.18.2 。
 - Render公开规格及免费边界：https://render.com/docs/compute-plans 、https://render.com/docs/free 。Free为0.1CPU/512MB，750小时/月为工作区共享；休眠、构建及带宽额度须按实际账户核对，不启用付费或超额选项。公开价格取证保留在docs/extreme-ai/checks/，不冒称已读取账户账单或创建付费资源。
+
+
+## 星位显示（0.27.2，2026-11-09）
+
+BGA所载AGA棋盘定义：https://www.britgo.org/rules/agarules.html ，实际访问2026-11-09，仅核查19路星位坐标；不采用其中不同的贴目、重复或停手计分规则。小棋盘定位点为本项目明确显示选择。标记层可访问性参考已读取的modern-web-guidance accessibility/icons指引；棋盘代码和图示为项目原创表达。正式题库、纸卡和课件不改。

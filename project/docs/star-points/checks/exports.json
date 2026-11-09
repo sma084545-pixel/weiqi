@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "BOARD-STARS-EXPORT-CHECK",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "passed",
+  "checks": [
+    {
+      "size": 5,
+      "count": 1,
+      "centre": "2,2",
+      "svg": "passed",
+      "pdf": "passed"
+    },
+    {
+      "size": 9,
+      "count": 5,
+      "centre": "4,4",
+      "svg": "passed",
+      "pdf": "passed"
+    },
+    {
+      "size": 13,
+      "count": 5,
+      "centre": "6,6",
+      "svg": "passed",
+      "pdf": "passed"
+    },
+    {
+      "size": 19,
+      "count": 9,
+      "centre": "9,9",
+      "svg": "passed",
+      "pdf": "passed"
+    }
+  ],
+  "crop": "original full-board coordinates preserved; no invented crop-centre star",
+  "note": "Explicit development empty positions, not formal puzzles or student records."
+}

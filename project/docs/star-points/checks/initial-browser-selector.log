@@ -1,0 +1,50 @@
+### Ran Playwright code
+```js
+await page.goto('http://127.0.0.1:4190/#/play/free');
+```
+### Page
+- Page URL: http://127.0.0.1:4190/#/play/free
+- Page Title: 围棋社教学工具
+### Snapshot
+- [Snapshot](.playwright-cli/page-2026-11-09T13-36-47-484Z.yml)
+### Result
+{"schemaVersion":1,"id":"BOARD-STARS-BROWSER","revision":1,"rulesetId":"GO-CLUB-AREA-1","status":"failed","base":"http://127.0.0.1:4190","error":"TimeoutError: locator.selectOption: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('棋盘尺寸', { exact: true })\u001b[22m\n","checks":[],"errors":[],"pages":["← 返回学习入口\n\n完整围棋 · 同屏双人\n自由双人对弈\n\n两人共用一台设备，黑白轮流落子。自由选择棋盘大小，系统处理提子与禁着；两人停手并确认终局后，自动数子判定黑胜、白胜或和棋。\n\n1\n选棋盘，开始对弈\n2\n黑白轮流点交叉点\n3\n双方停手，确认后自动计分\n\n各用一台设备？进入联机对弈 →\n\n想独自练习？进入 AI 对弈 →\n\n9路 · 贴目 0\n开局棋盘\n开局设置\n完整9路棋盘，开局设置。方向键移动焦点；可操作模式中按 Enter 或空格执行。\nA\nB\nC\nD\nE\nF\nG\nH\nJ\n9\n8\n7\n6\n5\n4\n3\n2\n1\n黑子\n白子\n最后一手\n步骤 1 / 2\n确定本局设置\n\n默认 9 路、贴目 0，可出现和棋。5 路是小棋盘练习；尺寸和贴目均在开局前确定。\n\n棋盘与贴目\n棋盘尺寸\n5路（小棋盘练习）\n9路（默认）\n13路\n19路\n白方贴目\n贴目在开局时确定，进行中不能静默修改。\n起始方式\n空盘\n黑方先行。\n本社团自由放置让子\n点击棋盘放置任意起始黑子；不是正式固定让子规则，完成后白方先行。\n验证设置并开始对局\n读取当前设备保存的对局\n当前说明\n先选择空盘或本社团自由放置让子；贴目只可在开局前修改。\n从吃子小游戏过渡\n\n完整围棋不会在首次提子时结束。双方围绕整盘面积继续行动，连续停手后共同确认；有争议就回到原盘实际演示。\n\n返回双人吃子小游戏"]}
+### Ran Playwright code
+```js
+await (// Browser acceptance of decorative orientation marks. No engine or room responses are mocked.
+async page=>{
+ const base=page.url().split('#')[0].replace(/\/$/,''),browser=page.context().browser(),contexts=[],checks=[],errors=[];
+ const expected={5:['2,2'],9:['2,2','2,6','4,4','6,2','6,6'],13:['3,3','3,9','6,6','9,3','9,9'],19:['3,3','3,9','3,15','9,3','9,9','9,15','15,3','15,9','15,15']};
+ const assert=(v,m)=>{if(!v)throw Error(m);};
+ const make=async(width=1280,touch=false)=>{const c=await browser.newContext({viewport:{width,height:960},hasTouch:touch,reducedMotion:'reduce'});contexts.push(c);const p=await c.newPage();p.setDefaultTimeout(15000);p.on('pageerror',e=>errors.push(e.message));return p;};
+ const geometry=board=>board.evaluate(node=>({size:Number(node.dataset.boardSize),points:node.querySelectorAll('[role=gridcell]').length,stars:[...node.querySelectorAll('.board-star-point')].map(s=>{const a=s.getBoundingClientRect(),b=s.parentElement.getBoundingClientRect(),style=getComputedStyle(s);return {at:`${s.dataset.starRow},${s.dataset.starCol}`,error:Math.max(Math.abs(a.x+a.width/2-b.x-b.width/2),Math.abs(a.y+a.height/2-b.y-b.height/2)),diameter:a.width,hidden:s.getAttribute('aria-hidden'),pointerEvents:style.pointerEvents,focusable:s.hasAttribute('tabindex')};})}));
+ const inspect=async board=>{const g=await geometry(board);assert(g.points===g.size*g.size,'full intersection count');assert(JSON.stringify(g.stars.map(s=>s.at).sort())===JSON.stringify([...expected[g.size]].sort()),'exact star coordinates '+g.size);assert(g.stars.every(s=>s.error<.6&&s.diameter>=2.9&&s.hidden==='true'&&s.pointerEvents==='none'&&!s.focusable),'centred, visible, inert orientation marks');return g;};
+ try{
+  for(const width of [360,768,1280])for(const size of [5,9,13,19]){
+   const p=await make(width,width===360);await p.goto(base+'/#/play/free');await p.getByLabel('棋盘尺寸',{exact:true}).selectOption(String(size));
+   const board=p.locator('.full-board-panel>.shared-board');await board.locator('.board-star-point').first().waitFor();const initial=await inspect(board);
+   await p.getByRole('button',{name:'验证设置并开始对局',exact:true}).click();const mid=(size-1)/2,centre=board.locator(`[data-row="${mid}"][data-col="${mid}"]`);
+   if(width===360)await centre.tap();else await centre.click();await p.waitForFunction(([r,c])=>document.querySelector(`.full-board-panel>.shared-board [data-row="${r}"][data-col="${c}"]`)?.getAttribute('data-stone')==='B',[mid,mid]);
+   const corner=board.locator('[data-row="0"][data-col="0"]');await corner.focus();await corner.press('Enter');assert(await corner.getAttribute('data-stone')==='W','keyboard white move');
+   const shape=await centre.evaluate(n=>({stone:getComputedStyle(n.querySelector('.stone')).zIndex,star:getComputedStyle(n.querySelector('.board-star-point')).zIndex}));assert(Number(shape.stone)>Number(shape.star),'stone covers dot');await inspect(board);
+   const slider=p.getByRole('slider',{name:'棋局滑动条',exact:true});await slider.focus();await slider.press('Home');assert(await centre.getAttribute('data-stone')==='empty','historic empty star still visible');assert(await centre.getAttribute('aria-disabled')==='true','history is readonly');await slider.press('End');assert(await centre.getAttribute('data-stone')==='B','current state restored');
+   assert(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'no page overflow');
+   if((width===1280&&size===19)||(width===360&&size===9)){await p.evaluate(()=>document.activeElement?.blur());await board.screenshot({path:`output/playwright/stars-${width}-${size}.png`});}
+   checks.push({name:`${width}px-${size}-road`,status:'passed',geometry:initial,tests:['exact coordinates','pointer/touch through star','keyboard turn','stone covers star','read-only history','no page overflow']});
+  }
+  const p=await make();for(const route of ['#/route','#/learn/liberties','#/learn/captures','#/board/experiment','#/learn/life','#/challenges/together','#/learn/territory','#/teacher/editor']){
+   await p.goto(base+'/'+route);await p.locator('.shared-board').first().waitFor();const count=await p.locator('.shared-board').count();for(let i=0;i<count;i++)await inspect(p.locator('.shared-board').nth(i));checks.push({name:route,status:'passed',boards:count});
+  }
+  const b=await make(360,true),w=await make(768);for(const p of [b,w]){await p.goto(base+'/#/play/online');await p.locator('.connection-badge').filter({hasText:'服务已连接'}).waitFor({timeout:130000});}
+  await b.getByLabel('昵称（可留空）').fill('TEST 星位黑');await b.getByRole('button',{name:'创建房间',exact:true}).click();const code=await b.getByLabel('当前房间码').inputValue();await w.getByLabel('昵称（可留空）').fill('TEST 星位白');await w.getByLabel('输入房间码').fill(code);await w.getByRole('button',{name:'加入房间',exact:true}).click();await b.locator('.online-seat').filter({hasText:'白方'}).filter({hasText:'已连接'}).waitFor();
+  await b.getByRole('button',{name:'显示悬浮小棋盘',exact:true}).click();const mini=b.getByRole('complementary',{name:'悬浮小棋盘'});await inspect(mini.locator('.shared-board'));const centre=mini.locator('[data-row="4"][data-col="4"]');await centre.tap();await w.locator('.online-board-card>.shared-board [data-row="4"][data-col="4"][data-stone="B"]').waitFor();await mini.screenshot({path:'output/playwright/stars-mobile-floating.png'});
+  checks.push({name:'online-floating-touch-peer-sync',status:'passed',stars:5});
+  await mini.getByRole('button',{name:'关闭悬浮小棋盘',exact:true}).click();await b.getByRole('button',{name:'独立画中画',exact:true}).click();
+  const pip=await b.evaluate(()=>{const w=window.documentPictureInPicture?.window;if(!w)return null;return {stars:w.document.querySelectorAll('.board-star-point').length,passThrough:[...w.document.querySelectorAll('.board-star-point')].every(n=>w.getComputedStyle(n).pointerEvents==='none')};});
+  if(pip){assert(pip.stars===5&&pip.passThrough,'PiP same markers and safe styles');await b.evaluate(()=>window.documentPictureInPicture.window.close());checks.push({name:'native-picture-in-picture',status:'passed',...pip});}else{assert(await b.getByRole('complementary',{name:'悬浮小棋盘'}).isVisible(),'supported floating fallback');checks.push({name:'picture-in-picture-fallback',status:'passed'});}
+  assert(errors.length===0,'page errors '+errors.join('|'));
+  return {schemaVersion:1,id:'BOARD-STARS-BROWSER',revision:1,rulesetId:'GO-CLUB-AREA-1',status:'passed',programVersion:(await page.locator('.app-version').textContent()).replace('版本 ',''),base,browser:browser.version(),at:new Date().toISOString(),checks,errors,limits:'Desktop Chromium, touch simulation, two isolated sessions; no physical device or human teaching claim.'};
+ }catch(e){return {schemaVersion:1,id:'BOARD-STARS-BROWSER',revision:1,rulesetId:'GO-CLUB-AREA-1',status:'failed',base,error:String(e),checks,errors,pages:await Promise.all(contexts.flatMap(c=>c.pages()).map(p=>p.locator('main').innerText().catch(()=>'')))};}finally{for(const c of contexts)await c.close();}
+}
+)(page);
+```
