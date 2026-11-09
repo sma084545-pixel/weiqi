@@ -1,7 +1,7 @@
 ---
 schemaVersion: 1
 id: DOC-SOURCES
-revision: 23
+revision: 24
 rulesetId: GO-CLUB-AREA-1
 ---
 

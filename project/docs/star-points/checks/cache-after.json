@@ -1,0 +1,438 @@
+{
+  "schemaVersion": 1,
+  "id": "BOARD-STARS-UPGRADE-AFTER",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "passed",
+  "programVersion": "0.27.2",
+  "developmentOnly": true,
+  "game": {
+    "schemaVersion": 1,
+    "id": "LOCAL-T08-FULL-GAME",
+    "revision": 3,
+    "rulesetId": "GO-CLUB-AREA-1",
+    "kind": "GameState",
+    "size": 9,
+    "setup": {
+      "schemaVersion": 1,
+      "id": "LOCAL-T08-START-9",
+      "revision": 1,
+      "rulesetId": "GO-CLUB-AREA-1",
+      "kind": "Position",
+      "size": 9,
+      "toPlay": "B",
+      "historyPolicy": "fresh-setup",
+      "history": null,
+      "stones": []
+    },
+    "mode": "full-game",
+    "board": [
+      [
+        "B",
+        "W",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    ],
+    "toPlay": "B",
+    "history": {
+      "layouts": [
+        "9|.................................................................................",
+        "9|B................................................................................",
+        "9|BW..............................................................................."
+      ]
+    },
+    "moves": [
+      {
+        "type": "place",
+        "color": "B",
+        "at": {
+          "row": 0,
+          "col": 0
+        }
+      },
+      {
+        "type": "place",
+        "color": "W",
+        "at": {
+          "row": 0,
+          "col": 1
+        }
+      }
+    ],
+    "captures": {
+      "B": 0,
+      "W": 0
+    },
+    "consecutivePasses": 0,
+    "phase": "playing",
+    "komi": 0,
+    "lastMove": {
+      "type": "place",
+      "color": "W",
+      "at": {
+        "row": 0,
+        "col": 1
+      }
+    },
+    "agreement": null,
+    "result": null,
+    "undoStack": [
+      {
+        "size": 9,
+        "board": [
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        "toPlay": "B",
+        "history": {
+          "layouts": [
+            "9|................................................................................."
+          ]
+        },
+        "moves": [],
+        "captures": {
+          "B": 0,
+          "W": 0
+        },
+        "consecutivePasses": 0,
+        "phase": "playing",
+        "komi": 0,
+        "lastMove": null,
+        "agreement": null,
+        "result": null
+      },
+      {
+        "size": 9,
+        "board": [
+          [
+            "B",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        "toPlay": "W",
+        "history": {
+          "layouts": [
+            "9|.................................................................................",
+            "9|B................................................................................"
+          ]
+        },
+        "moves": [
+          {
+            "type": "place",
+            "color": "B",
+            "at": {
+              "row": 0,
+              "col": 0
+            }
+          }
+        ],
+        "captures": {
+          "B": 0,
+          "W": 0
+        },
+        "consecutivePasses": 0,
+        "phase": "playing",
+        "komi": 0,
+        "lastMove": {
+          "type": "place",
+          "color": "B",
+          "at": {
+            "row": 0,
+            "col": 0
+          }
+        },
+        "agreement": null,
+        "result": null
+      }
+    ],
+    "redoStack": []
+  },
+  "stars": 5,
+  "note": "Real previous service worker/cache updated by the save-and-apply UI; no storage clearing or mocked cache."
+}

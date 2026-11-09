@@ -1,0 +1,762 @@
+{
+  "schemaVersion": 1,
+  "id": "BOARD-STARS-BROWSER",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "passed",
+  "programVersion": "0.27.2",
+  "base": "https://sma084545-pixel.github.io/weiqi",
+  "browser": "156.0.8078.80",
+  "at": "2026-11-09T13:53:43.286Z",
+  "checks": [
+    {
+      "name": "360px-5-road",
+      "status": "passed",
+      "geometry": {
+        "size": 5,
+        "points": 25,
+        "stars": [
+          {
+            "at": "2,2",
+            "error": 0.00390625,
+            "diameter": 7,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          }
+        ]
+      },
+      "tests": [
+        "exact coordinates",
+        "pointer/touch through star",
+        "keyboard turn",
+        "stone covers star",
+        "read-only history",
+        "no page overflow"
+      ]
+    },
+    {
+      "name": "360px-9-road",
+      "status": "passed",
+      "geometry": {
+        "size": 9,
+        "points": 81,
+        "stars": [
+          {
+            "at": "2,2",
+            "error": 0,
+            "diameter": 4.4765625,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "2,6",
+            "error": 0,
+            "diameter": 4.4765625,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "4,4",
+            "error": 0,
+            "diameter": 4.4765625,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "6,2",
+            "error": 0,
+            "diameter": 4.4765625,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "6,6",
+            "error": 0,
+            "diameter": 4.4765625,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          }
+        ]
+      },
+      "tests": [
+        "exact coordinates",
+        "pointer/touch through star",
+        "keyboard turn",
+        "stone covers star",
+        "read-only history",
+        "no page overflow"
+      ]
+    },
+    {
+      "name": "360px-13-road",
+      "status": "passed",
+      "geometry": {
+        "size": 13,
+        "points": 169,
+        "stars": [
+          {
+            "at": "3,3",
+            "error": 0,
+            "diameter": 4.4765625,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "3,9",
+            "error": 0,
+            "diameter": 4.4765625,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "6,6",
+            "error": 0,
+            "diameter": 4.4765625,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "9,3",
+            "error": 0,
+            "diameter": 4.4765625,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "9,9",
+            "error": 0,
+            "diameter": 4.4765625,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          }
+        ]
+      },
+      "tests": [
+        "exact coordinates",
+        "pointer/touch through star",
+        "keyboard turn",
+        "stone covers star",
+        "read-only history",
+        "no page overflow"
+      ]
+    },
+    {
+      "name": "360px-19-road",
+      "status": "passed",
+      "geometry": {
+        "size": 19,
+        "points": 361,
+        "stars": [
+          {
+            "at": "3,3",
+            "error": 0,
+            "diameter": 4.4765625,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "3,9",
+            "error": 0,
+            "diameter": 4.4765625,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "3,15",
+            "error": 0,
+            "diameter": 4.4765625,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "9,3",
+            "error": 0,
+            "diameter": 4.4765625,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "9,9",
+            "error": 0,
+            "diameter": 4.4765625,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "9,15",
+            "error": 0,
+            "diameter": 4.4765625,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "15,3",
+            "error": 0,
+            "diameter": 4.4765625,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "15,9",
+            "error": 0,
+            "diameter": 4.4765625,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "15,15",
+            "error": 0,
+            "diameter": 4.4765625,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          }
+        ]
+      },
+      "tests": [
+        "exact coordinates",
+        "pointer/touch through star",
+        "keyboard turn",
+        "stone covers star",
+        "read-only history",
+        "no page overflow"
+      ]
+    },
+    {
+      "name": "768px-5-road",
+      "status": "passed",
+      "geometry": {
+        "size": 5,
+        "points": 25,
+        "stars": [
+          {
+            "at": "2,2",
+            "error": 0,
+            "diameter": 7,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          }
+        ]
+      },
+      "tests": [
+        "exact coordinates",
+        "pointer/touch through star",
+        "keyboard turn",
+        "stone covers star",
+        "read-only history",
+        "no page overflow"
+      ]
+    },
+    {
+      "name": "768px-9-road",
+      "status": "passed",
+      "geometry": {
+        "size": 9,
+        "points": 81,
+        "stars": [
+          {
+            "at": "2,2",
+            "error": 0,
+            "diameter": 7,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "2,6",
+            "error": 0,
+            "diameter": 7,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "4,4",
+            "error": 0,
+            "diameter": 7,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "6,2",
+            "error": 0,
+            "diameter": 7,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "6,6",
+            "error": 0,
+            "diameter": 7,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          }
+        ]
+      },
+      "tests": [
+        "exact coordinates",
+        "pointer/touch through star",
+        "keyboard turn",
+        "stone covers star",
+        "read-only history",
+        "no page overflow"
+      ]
+    },
+    {
+      "name": "768px-13-road",
+      "status": "passed",
+      "geometry": {
+        "size": 13,
+        "points": 169,
+        "stars": [
+          {
+            "at": "3,3",
+            "error": 0.00390625,
+            "diameter": 6.8671875,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "3,9",
+            "error": 0.00390625,
+            "diameter": 6.8671875,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "6,6",
+            "error": 0.00390625,
+            "diameter": 6.8671875,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "9,3",
+            "error": 0.00390625,
+            "diameter": 6.8671875,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "9,9",
+            "error": 0.00390625,
+            "diameter": 6.8671875,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          }
+        ]
+      },
+      "tests": [
+        "exact coordinates",
+        "pointer/touch through star",
+        "keyboard turn",
+        "stone covers star",
+        "read-only history",
+        "no page overflow"
+      ]
+    },
+    {
+      "name": "768px-19-road",
+      "status": "passed",
+      "geometry": {
+        "size": 19,
+        "points": 361,
+        "stars": [
+          {
+            "at": "3,3",
+            "error": 0,
+            "diameter": 4.703125,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "3,9",
+            "error": 0,
+            "diameter": 4.703125,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "3,15",
+            "error": 0,
+            "diameter": 4.703125,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "9,3",
+            "error": 0,
+            "diameter": 4.703125,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "9,9",
+            "error": 0,
+            "diameter": 4.703125,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "9,15",
+            "error": 0,
+            "diameter": 4.703125,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "15,3",
+            "error": 0,
+            "diameter": 4.703125,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "15,9",
+            "error": 0,
+            "diameter": 4.703125,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "15,15",
+            "error": 0,
+            "diameter": 4.703125,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          }
+        ]
+      },
+      "tests": [
+        "exact coordinates",
+        "pointer/touch through star",
+        "keyboard turn",
+        "stone covers star",
+        "read-only history",
+        "no page overflow"
+      ]
+    },
+    {
+      "name": "1280px-5-road",
+      "status": "passed",
+      "geometry": {
+        "size": 5,
+        "points": 25,
+        "stars": [
+          {
+            "at": "2,2",
+            "error": 0,
+            "diameter": 7,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          }
+        ]
+      },
+      "tests": [
+        "exact coordinates",
+        "pointer/touch through star",
+        "keyboard turn",
+        "stone covers star",
+        "read-only history",
+        "no page overflow"
+      ]
+    },
+    {
+      "name": "1280px-9-road",
+      "status": "passed",
+      "geometry": {
+        "size": 9,
+        "points": 81,
+        "stars": [
+          {
+            "at": "2,2",
+            "error": 0,
+            "diameter": 7,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "2,6",
+            "error": 0,
+            "diameter": 7,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "4,4",
+            "error": 0,
+            "diameter": 7,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "6,2",
+            "error": 0,
+            "diameter": 7,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "6,6",
+            "error": 0,
+            "diameter": 7,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          }
+        ]
+      },
+      "tests": [
+        "exact coordinates",
+        "pointer/touch through star",
+        "keyboard turn",
+        "stone covers star",
+        "read-only history",
+        "no page overflow"
+      ]
+    },
+    {
+      "name": "1280px-13-road",
+      "status": "passed",
+      "geometry": {
+        "size": 13,
+        "points": 169,
+        "stars": [
+          {
+            "at": "3,3",
+            "error": 0,
+            "diameter": 7,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "3,9",
+            "error": 0,
+            "diameter": 7,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "6,6",
+            "error": 0,
+            "diameter": 7,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "9,3",
+            "error": 0,
+            "diameter": 7,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "9,9",
+            "error": 0,
+            "diameter": 7,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          }
+        ]
+      },
+      "tests": [
+        "exact coordinates",
+        "pointer/touch through star",
+        "keyboard turn",
+        "stone covers star",
+        "read-only history",
+        "no page overflow"
+      ]
+    },
+    {
+      "name": "1280px-19-road",
+      "status": "passed",
+      "geometry": {
+        "size": 19,
+        "points": 361,
+        "stars": [
+          {
+            "at": "3,3",
+            "error": 0,
+            "diameter": 5.1875,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "3,9",
+            "error": 0.00390625,
+            "diameter": 5.1875,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "3,15",
+            "error": 0,
+            "diameter": 5.1875,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "9,3",
+            "error": 0,
+            "diameter": 5.1875,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "9,9",
+            "error": 0.00390625,
+            "diameter": 5.1875,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "9,15",
+            "error": 0,
+            "diameter": 5.1875,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "15,3",
+            "error": 0,
+            "diameter": 5.1875,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "15,9",
+            "error": 0.00390625,
+            "diameter": 5.1875,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          },
+          {
+            "at": "15,15",
+            "error": 0,
+            "diameter": 5.1875,
+            "hidden": "true",
+            "pointerEvents": "none",
+            "focusable": false
+          }
+        ]
+      },
+      "tests": [
+        "exact coordinates",
+        "pointer/touch through star",
+        "keyboard turn",
+        "stone covers star",
+        "read-only history",
+        "no page overflow"
+      ]
+    },
+    {
+      "name": "#/route",
+      "status": "passed",
+      "boards": 12
+    },
+    {
+      "name": "#/learn/liberties",
+      "status": "passed",
+      "boards": 1
+    },
+    {
+      "name": "#/learn/captures",
+      "status": "passed",
+      "boards": 1
+    },
+    {
+      "name": "#/board/experiment",
+      "status": "passed",
+      "boards": 1
+    },
+    {
+      "name": "#/learn/life",
+      "status": "passed",
+      "boards": 6
+    },
+    {
+      "name": "#/challenges/together",
+      "status": "passed",
+      "boards": 1
+    },
+    {
+      "name": "#/learn/territory",
+      "status": "passed",
+      "boards": 1
+    },
+    {
+      "name": "#/teacher/editor",
+      "status": "passed",
+      "boards": 1
+    },
+    {
+      "name": "online-floating-touch-peer-sync",
+      "status": "passed",
+      "stars": 5
+    },
+    {
+      "name": "native-picture-in-picture",
+      "status": "passed",
+      "stars": 5,
+      "passThrough": true
+    }
+  ],
+  "errors": [],
+  "limits": "Desktop Chromium, touch simulation, two isolated sessions; no physical device or human teaching claim."
+}

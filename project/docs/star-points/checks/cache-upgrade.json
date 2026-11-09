@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "BOARD-STARS-CACHE-UPGRADE",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "passed",
+  "before": "0.27.1",
+  "after": "0.27.2",
+  "fullGameStateUnchanged": true,
+  "moves": 2,
+  "newStarPoints": 5,
+  "actualServiceWorkerUpdate": true,
+  "storageCleared": false
+}

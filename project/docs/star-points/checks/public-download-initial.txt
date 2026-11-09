@@ -1,0 +1,1 @@
+Initial Python urllib download batches did not pass: IncompleteRead(0 bytes, 880 expected), then IncompleteRead(15169 bytes, 234675 more expected). No incomplete payload or mismatched hash accepted. Actual original-site browser journey passed independently. Continuing with explicit compressed HTTP downloads.

@@ -4,7 +4,7 @@ baseVersion: REVIEW_BRANCHES 0.27.1-pages.1
 resultVersion: 0.27.2-pages.1
 rulesetId: GO-CLUB-AREA-1
 schemaVersion: 1
-status: implementation-tested-publication-pending
+status: complete-with-documented-limits
 ---
 
 # 全局棋盘星位
@@ -28,3 +28,7 @@ status: implementation-tested-publication-pending
 ## 迁移及下一步
 
 无需数据/schema迁移。保存后应用离线更新，不清站点数据。旧棋谱、反馈、教师草稿与题目全部沿用。下一任务只从最终0.27.2归档及本交接继续，避免用旧封存副本覆盖新主线。
+
+## 正式发布与封存
+
+运行代码提交3c629928af0011df02de6fcebd3c165c768b01fa已发布至原GitHub Pages网址，线上0.27.2的22项星位专项通过，本机4190同步。实际缓存从0.27.1更新至0.27.2保留整盘数据。没有重新部署或改动三个Render服务。最终归档完成状态必须同时核对ZIP外附verification/ARCHIVE_VERIFY.json与发布校验，不能仅凭本文status认定归档已验证。

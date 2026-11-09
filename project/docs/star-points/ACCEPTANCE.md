@@ -20,11 +20,15 @@ rulesetId: GO-CLUB-AREA-1
 | 导出与裁切 | 通过；checks/exports.json；四尺寸SVG/PDF及原坐标裁切；PNG沿用同一SVG栅格化路径 |
 | PDF与SVG视觉检查 | 四份A4 PDF实际渲染并逐图查看；裁切SVG用浏览器渲染后查看，见checks/pdf-render.json和crop-browser.json |
 | 保护范围 | 源码/规则/数据/材料/schema/部署和锁文件逐字节对比；最终以checks/preservation.json为准 |
-| 原GitHub网站 | 尚待发布和公开浏览器验收，不以本地通过替代 |
-| 完整归档 | 尚待最终打包与重新解压校验，不以旧归档替代 |
+| 原GitHub网站 | 通过；原网址实际0.27.2完成同一22项专项，真实双会话同步与原生PiP；见checks/browser-public.json |
+| 完整归档 | 最终CRC/SHA、逐文件核对、干净解压安装和构建结果随最终ZIP外附verification/ARCHIVE_VERIFY.json；缺该证据不作为归档通过 |
 
 初次完整检查因执行环境禁止监听本机端口而失败，610项通过、16项失败；原日志保留为initial-restricted-check.log。允许本机监听后完整626项通过，未改变测试断言或引擎。星位专项脚本最初用exact匹配包含下拉选项文字的label，随后改成匹配实际label；失败保存为initial-browser-selector.json/log，应用代码未因此变更。
 
 MuPDF不能正确渲染这份SVG的内嵌CSS，初次裁切SVG图保留为明确标注的initial-unsupported-renderer.png；以真实浏览器的DEV-STARS-CROP-browser.png作为SVG视觉证据。PDF四页用MuPDF正常渲染。本轮不声称实体打印、真人教师审核、实机触屏或原生Safari/Firefox测试。
 
 既有浏览器回归产生的新截图单独放在checks/legacy-regression，原T24及online-tools历史截图已从封存基线恢复原字节，对应映射见legacy-regression.json。
+
+旧0.27.1真实Service Worker缓存通过“保存已提交内容并应用”更新为0.27.2；两手完整GameState逐字段完全一致，星位从0变5。没有清存储。见checks/cache-upgrade.json及前后原始记录。GitHub发布时仅此前临时gh工具路径失效，改用项目已保存的同版本工具进行本次命令，不修改全局账号配置。
+
+正式网页13项构建资源逐字节/SHA通过，见checks/public-assets.json。最初标准库下载发生IncompleteRead，未接受残缺内容；后用curl --compressed完成全部实际下载。更新仅前端，无Render部署。

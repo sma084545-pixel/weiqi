@@ -1,0 +1,6 @@
+async page=>{
+ const base=page.url().split('#')[0].replace(/\/$/,''),btn=name=>page.getByRole('button',{name,exact:true}).click();
+ await page.goto(base+'/#/teacher/offline-data');await btn('检查应用更新');const apply=page.getByRole('button',{name:'保存已提交内容并应用',exact:true});await apply.waitFor({timeout:30000});await apply.click();await page.waitForFunction(()=>document.querySelector('.app-version')?.textContent==='版本 0.27.2',{},{timeout:30000});
+ await page.goto(base+'/#/play/free');const board=page.locator('.full-board-panel>.shared-board');await board.locator('[data-row="0"][data-col="0"][data-stone="B"]').waitFor();await board.locator('[data-row="0"][data-col="1"][data-stone="W"]').waitFor();const game=await page.evaluate(()=>JSON.parse(globalThis.__goClubStoragePort.getItem('go-club:v1:LOCAL-T08-FULL-GAME')));if(game.moves.length!==2||game.toPlay!=='B'||await board.locator('.board-star-point').count()!==5)throw Error('Game was not preserved or stars not updated');
+ await page.screenshot({path:'output/playwright/stars-actual-cache-upgrade.png',fullPage:false});return {schemaVersion:1,id:'BOARD-STARS-UPGRADE-AFTER',revision:1,rulesetId:'GO-CLUB-AREA-1',status:'passed',programVersion:'0.27.2',developmentOnly:true,game,stars:5,note:'Real previous service worker/cache updated by the save-and-apply UI; no storage clearing or mocked cache.'};
+}

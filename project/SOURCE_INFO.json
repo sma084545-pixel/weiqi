@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "GITHUB-CURRENT-SOURCE",
-  "revision": 46,
+  "revision": 48,
   "rulesetId": "GO-CLUB-AREA-1",
   "resultVersion": "0.27.2-pages.1",
   "programVersion": "0.27.2",
@@ -35,8 +35,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 11945,
-      "sha256": "6af5d5b572e614ea4a14d27a4070ff8444350fa89650b9dd9c35dfaf6ed901c2"
+      "bytes": 12268,
+      "sha256": "35f95708c7f06be62103d9bfdad7fb48a2b03229c874ad2cadaeaa669be7cdd5"
     },
     {
       "path": "README_MERGE_C.md",
@@ -46,7 +46,7 @@
     {
       "path": "SOURCES.md",
       "bytes": 25000,
-      "sha256": "2c9535d1886b8c895d1dbede548ebe18f2e71e2365c609dac553fb3e69be7e80"
+      "sha256": "165cb8c029f80e58e1bcef409eab7f2259989bac2f435aaac3347ba4a25caaf2"
     },
     {
       "path": "index.html",
@@ -3910,8 +3910,8 @@
     },
     {
       "path": "handoff/BOARD_STARS.md",
-      "bytes": 2121,
-      "sha256": "874c458b4918f7dc8d04151b9b328a46547ec73d5500d31f3eaa14ab6da63130"
+      "bytes": 2547,
+      "sha256": "8b79550fd629e2e87f44c0167c766c35bd61511746d4471636d3bd25f20bfef5"
     },
     {
       "path": "handoff/CONTENT_FREEZE.json",
@@ -6660,8 +6660,8 @@
     },
     {
       "path": "docs/star-points/ACCEPTANCE.md",
-      "bytes": 2708,
-      "sha256": "f7ebc03b16fc9e40460d0fe8a0b503438710c9a5e26cb7da98cf600c91c21861"
+      "bytes": 3466,
+      "sha256": "1f44d9f692d73e56c2b333369733ef06423ce67b3d44285b05c6c18b9b217b32"
     },
     {
       "path": "docs/star-points/IMPLEMENTATION.md",
@@ -6679,9 +6679,44 @@
       "sha256": "cdd5c7e2e94ffe4356ba3cbf913feab1ecaaa353491020993ba10631d9cf9034"
     },
     {
+      "path": "docs/star-points/checks/browser-public.json",
+      "bytes": 18174,
+      "sha256": "1944c14fd54f28d5dd82668e06f0bd0be54f42390844f1409f49620c2c1b48aa"
+    },
+    {
+      "path": "docs/star-points/checks/browser-public.log",
+      "bytes": 17123,
+      "sha256": "de1862ba4efb5670ef1b6b60c35978c4f7b46c65ac4217df8f55a9a928c1d33d"
+    },
+    {
       "path": "docs/star-points/checks/browser-regression.log",
       "bytes": 25955,
       "sha256": "5ea1f200d041b72cb4d3677c1005e5b8510edf7972e92d9fd9ad70ca57b5223a"
+    },
+    {
+      "path": "docs/star-points/checks/cache-after.json",
+      "bytes": 7802,
+      "sha256": "e9210a5c4a2a3175d44d7035cb495843d8bd6f83ad72498cb0502f9449b07047"
+    },
+    {
+      "path": "docs/star-points/checks/cache-after.log",
+      "bytes": 5063,
+      "sha256": "e8ef8e0c0bfd816f8febc8b40f1d4293d3eb44d0df2b7d8b91083ba516383c48"
+    },
+    {
+      "path": "docs/star-points/checks/cache-before.json",
+      "bytes": 7792,
+      "sha256": "743a9855b69a0f3c38225782651ad9e94ff3079d4f28f5ce0ece85c504c1ca6c"
+    },
+    {
+      "path": "docs/star-points/checks/cache-before.log",
+      "bytes": 4923,
+      "sha256": "4dec4ffe3ccee96dd1db89d745597ba10cf7cfa62ee7c4cc3d0ef8cad7ae2946"
+    },
+    {
+      "path": "docs/star-points/checks/cache-upgrade.json",
+      "bytes": 311,
+      "sha256": "02e45fac23fe99919423d36aa618eb1a9c1f260820208a6a7fb3839fced0715e"
     },
     {
       "path": "docs/star-points/checks/crop-browser.json",
@@ -6739,9 +6774,24 @@
       "sha256": "1208fb0766edb4275701f5cc7970a5f743641b8dddf335f6a45c7e8219176950"
     },
     {
+      "path": "docs/star-points/checks/public-assets.json",
+      "bytes": 2595,
+      "sha256": "9e0c51eba40d914865326732a10ccb9c7fd93523ad3f32652a559668f0e08871"
+    },
+    {
+      "path": "docs/star-points/checks/public-download-initial.txt",
+      "bytes": 310,
+      "sha256": "e01e2ed7bed709dc6df892e9b1440bf7d6b9793c919cefacbe664af094ee2d8f"
+    },
+    {
       "path": "docs/star-points/checks/render-crop-browser.cjs",
       "bytes": 3383,
       "sha256": "9390802b98d2ef917634c68ef2ef10aa44c693ab5c2cdb45571c27a94084d441"
+    },
+    {
+      "path": "docs/star-points/checks/screenshots/cache-upgrade.png",
+      "bytes": 278348,
+      "sha256": "d8943a73bf0148d4e6877266f1c22c7ae686d99e5dae535362f9986275c0936d"
     },
     {
       "path": "docs/star-points/checks/screenshots/stars-1280-19.png",
@@ -6757,6 +6807,21 @@
       "path": "docs/star-points/checks/screenshots/stars-mobile-floating.png",
       "bytes": 26101,
       "sha256": "c1aa0db6cb79f061d21609c18e47906415e5f23597a3f48aa8bb6aa54ffbe54f"
+    },
+    {
+      "path": "docs/star-points/checks/screenshots/public/stars-1280-19.png",
+      "bytes": 25327,
+      "sha256": "ece2904365775ce9c7769009a1fd6a5f4c3a695ceec103f2a8eb40d7b609b872"
+    },
+    {
+      "path": "docs/star-points/checks/screenshots/public/stars-360-9.png",
+      "bytes": 8745,
+      "sha256": "264f7326d6967f2af6d7a31a4b925aee6969eb5eba636e0991887a0ee469350d"
+    },
+    {
+      "path": "docs/star-points/checks/screenshots/public/stars-mobile-floating.png",
+      "bytes": 26101,
+      "sha256": "6bdd4e7defe2bf6a157e864b916fe84cbc70ad4d595026c07120fc468b97bc7c"
     },
     {
       "path": "docs/star-points/checks/legacy-regression/docs/online-tools/checks/browser/1280-floating-5.png",
@@ -16564,6 +16629,16 @@
       "sha256": "a8af3a60714e3542454af06acceee35270923c4b21b3a9ba552816f9aeb89b2c"
     },
     {
+      "path": "scripts/star-points-upgrade-after.cjs",
+      "bytes": 1393,
+      "sha256": "231dd63c61cbf3f9ffdfb9b4cad35ad10bb822806420c8828044f1394a02e215"
+    },
+    {
+      "path": "scripts/star-points-upgrade-before.cjs",
+      "bytes": 1376,
+      "sha256": "34ecf27d458cf8723a9df0424c06f8bf647c7802c7a7170983ff325929e826c4"
+    },
+    {
       "path": "scripts/sync-github-pages.py",
       "bytes": 12853,
       "sha256": "e805923b1a149dba560531475eb40d6e969fb08f3235eb7b8306c937541fe3b5"
@@ -16704,9 +16779,19 @@
       "sha256": "e8a2f17554e81b3f4ba50695fe812daa4d0b72c8e6270e1a2079168ff981943f"
     },
     {
+      "path": "scripts/verify-star-points-archive.py",
+      "bytes": 3436,
+      "sha256": "ded1fba60bc38a238a0fa3ace0510dcd1cefac78027237729b96e4be95ccc358"
+    },
+    {
       "path": "scripts/verify-star-points-preservation.py",
       "bytes": 1969,
       "sha256": "d7ff16c2fafe1e8fc74efe166e7604480d0286d98512403a5efc24e25a7a20ee"
+    },
+    {
+      "path": "scripts/verify-star-points-public.py",
+      "bytes": 2093,
+      "sha256": "bd8a03065efab66c3d2be3435cdf0b393a1a9b22e0652f32cb9a309e6620e7e9"
     },
     {
       "path": "scripts/verify-t01.py",

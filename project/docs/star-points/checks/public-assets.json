@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "id": "BOARD-STARS-PUBLIC-ASSETS",
+  "revision": 1,
+  "rulesetId": "GO-CLUB-AREA-1",
+  "status": "passed",
+  "programVersion": "0.27.2",
+  "site": "https://sma084545-pixel.github.io/weiqi/",
+  "checkedAt": "2026-11-09T22:01:25.636026+08:00",
+  "runtimeCommit": "3c629928af0011df02de6fcebd3c165c768b01fa",
+  "files": [
+    {
+      "path": "ONLINE_SETUP.md",
+      "bytes": 1713,
+      "sha256": "ab828c5c04bf964a73498f2c602fbec1cf5496c6748fca93b4517524a9bd411f"
+    },
+    {
+      "path": "app.webmanifest",
+      "bytes": 256,
+      "sha256": "26ae2d10fc5b45982ae4f4f593aaa93b781d4ff63a8bfe2166bc392d01cc9b50"
+    },
+    {
+      "path": "assets/index-AnlxPOTn.css",
+      "bytes": 161810,
+      "sha256": "fcb09b8fbb83abb92b1878558626c232ae8742bad707d4540677333c6c970480"
+    },
+    {
+      "path": "assets/index-BykI5NwR.js",
+      "bytes": 1279523,
+      "sha256": "084bccb7b043d618eb7c1cc1876df752ece01eb75cd15ec4e7aca207b1841bc2"
+    },
+    {
+      "path": "content/formal-content-v1.json",
+      "bytes": 249844,
+      "sha256": "a58630def9526df81cd8e27b8fabe8bbe59e9905eb4aad1af2fb6203f9b46532"
+    },
+    {
+      "path": "favicon.svg",
+      "bytes": 362,
+      "sha256": "ea785687252e962c7a71ac3f537a091354ac3e9c7b363dc4099aeb0075aff2b3"
+    },
+    {
+      "path": "index.html",
+      "bytes": 640,
+      "sha256": "148bb6fa0d4a57b799093f9970a1874cd277eae95818ee6cbaa20ad64b193a56"
+    },
+    {
+      "path": "materials/t13/territory-counting-card.md",
+      "bytes": 1372,
+      "sha256": "158917237f52ac5cca0fd2106823f28b5b2ce0310b24cd7bd455c10583de229b"
+    },
+    {
+      "path": "materials/t17/CAS-evidence-template.md",
+      "bytes": 1613,
+      "sha256": "02db2b62aefe8d0dc007f3a243a47d4f298f73c86169a42b65edba6be52e5bcc"
+    },
+    {
+      "path": "offline-assets.json",
+      "bytes": 411,
+      "sha256": "edbbf585f2518f4fead6c6e07e9513e26981a5928306adfec697477c2dbf9d49"
+    },
+    {
+      "path": "offline.html",
+      "bytes": 880,
+      "sha256": "b5379d9413769029799e8e7914650cab8a5c3477bce36531ee91762389005fe5"
+    },
+    {
+      "path": "sw.js",
+      "bytes": 3694,
+      "sha256": "e7bb5137f3c73013adc7b20a196dd444fa695a229e3f097f6ca86563c890c42c"
+    },
+    {
+      "path": "version.json",
+      "bytes": 569,
+      "sha256": "5254e56b6492e456b148be50dfe3aea730e01d4f7060cf06baadb53c9010ab62"
+    }
+  ],
+  "method": "curl --compressed, bounded retries, then exact bytes and SHA-256",
+  "initialFailures": "Initial urllib batches ended with IncompleteRead, no incomplete body was accepted; original-site browser tests passed separately."
+}

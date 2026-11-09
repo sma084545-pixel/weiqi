@@ -1,11 +1,13 @@
 ---
 schemaVersion: 1
 id: DOC-README
-revision: 34
+revision: 35
 rulesetId: GO-CLUB-AREA-1
 ---
 
-# 围棋社工具包 · 0.27.1
+# 围棋社工具包 · 0.27.2
+
+本版统一加入棋盘星位，涵盖教学、题目、编辑、真人/AI对弈、辅助下棋、复盘、悬浮与画中画，以及动态棋盘图导出。落子规则、题库和存档保持。见[本轮交接](handoff/BOARD_STARS.md)与[星位验收](docs/star-points/ACCEPTANCE.md)。以下为先前功能溯源。
 
 新增“复盘时从这里继续”与“联机赛后 AI 复盘”：精确恢复真实历史、独立AI或辅助分支、保留原谱与返回原游标；全盘基础战术核查及真实KataGo少量关键局面抽样，失败不影响对局和结算。见[使用说明](docs/game-review/USER_GUIDE.md)、[验收](docs/game-review/ACCEPTANCE.md)及[本轮交接](handoff/REVIEW_BRANCHES.md)。以下保留先前功能溯源。
 
